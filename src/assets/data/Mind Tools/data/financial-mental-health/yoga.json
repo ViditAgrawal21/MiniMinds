@@ -1,0 +1,75 @@
+{
+  "condition": "Financial Mental Health",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mountain Pose (Tadasana)",
+      "Card Description": "'- **Purpose:** Grounding and calming.  \n   - **Steps:** Stand with feet together, arms at your sides. Distribute your weight evenly on both feet. Engage your thighs, lift your chest, and relax your shoulders. Breathe deeply and calmly.  \n   - **Focus:** Visualize stability and balance in your life, including financial stability.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Tree Pose (Vrksasana)",
+      "Card Description": "'- **Purpose:** Balance and focus.  \n   - **Steps:** Stand on one leg, place the sole of the other foot on the inner thigh or calf (avoid the knee). Bring your palms together at your chest. Balance and hold the pose.  \n   - **Focus:** Develop focus and patience. Visualize growing financial security like a tree taking root.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Warrior II (Virabhadrasana II)",
+      "Card Description": "'- **Purpose:** Confidence and strength.  \n   - **Steps:** Step your feet wide apart, turn your right foot out 90 degrees, bend your right knee, keeping it over your ankle. Extend your arms out and gaze over the front hand.  \n   - **Focus:** Build strength and courage to handle financial challenges.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Seated Forward Bend (Paschimottanasana)",
+      "Card Description": "'- **Purpose:** Calming the mind.  \n   - **Steps:** Sit on the floor with legs extended. Inhale, lift your arms; exhale and bend forward from the hips, reaching for your feet.  \n   - **Focus:** Relax and release stress related to financial worries.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindful Breathing",
+      "Card Description": "'- **Purpose:** Immediate stress reduction.  \n   - **Steps:** Sit comfortably with your spine straight. Close your eyes and pay attention to your breath. Inhale deeply through the nose, exhale slowly through the mouth.  \n   - **Focus:** Let go of financial stress with each exhale. Inhale stability and peace.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Visualization Meditation",
+      "Card Description": "'- **Purpose:** Inspire positive financial mindset.  \n   - **Steps:** Sit comfortably, close your eyes, and relax. Visualize achieving financial stability. Imagine your life free of financial stress.  \n   - **Focus:** Reinforce positive financial outcomes and goals.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Gratitude Meditation",
+      "Card Description": "'- **Purpose:** Shift focus from lack to abundance.  \n   - **Steps:** Sit comfortably and reflect on aspects of your life you are grateful for, including non-material wealth, like relationships or health.  \n   - **Focus:** Cultivate a mindset of abundance and contentment.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan Meditation",
+      "Card Description": "'- **Purpose:** Reduce stress and increase awareness.  \n   - **Steps:** Lie down comfortably. Close your eyes and bring awareness to your body, starting from the top of your head to the toes. Notice any tension and consciously relax.  \n   - **Focus:** Release physical tension related to financial stress.",
+      "xp": 5
+    }
+  ],
+  "count": 8,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 8
+  }
+}

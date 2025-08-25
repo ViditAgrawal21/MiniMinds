@@ -1,0 +1,62 @@
+{
+  "condition": "environment-issues",
+  "intervention_type": "Yoga",
+  "interventions": [
+    {
+      "Issue Name": "Environment Issues",
+      "Intervention Type": "Yoga",
+      "Intervention Sub Type": "Grounding Poses",
+      "Card Title": "Grounding Poses for Environmental Stability",
+      "Card Description": "**Grounding Poses**: These poses help create a sense of stability amidst environmental concerns.\n\n- **Mountain Pose (Tadasana)**: Stand tall with your feet hip-width apart. Engage your leg muscles, tuck your tailbone slightly, and lift through the crown of your head. Focus on your breath, feeling grounded and stable.\n- **Tree Pose (Vrksasana)**: Stand on one leg, place the sole of your other foot on the inner thigh or calf, avoiding the knee. Find balance and focus on a point in front of you. Imagine yourself as a tree, strong and resilient.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Environment Issues",
+      "Intervention Type": "Yoga",
+      "Intervention Sub Type": "Heart-Opening Poses",
+      "Card Title": "Heart-Opening Poses for Environmental Compassion",
+      "Card Description": "**Heart-Opening Poses**: To foster compassion and openness to environmental issues.\n\n- **Camel Pose (Ustrasana)**: Kneel on the floor with your knees hip-width apart, place your hands on your lower back or heels, and gently arch your back, lifting your heart.\n- **Bridge Pose (Setu Bandhasana)**: Lie on your back, bend your knees, and place your feet on the floor. Lift your hips upwards, clasp your hands underneath you, and expand your chest.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Environment Issues",
+      "Intervention Type": "Yoga",
+      "Intervention Sub Type": "Restorative Poses",
+      "Card Title": "Restorative Poses for Environmental Stress",
+      "Card Description": "**Restorative Poses**: These poses help in reducing stress and fostering a sense of surrender and acceptance.\n\n- **Child's Pose (Balasana)**: Kneel on the floor, sit back on your heels, and stretch your arms forward, resting your forehead on the ground.\n- **Legs-Up-the-Wall Pose (Viparita Karani)**: Lie on your back with your legs resting vertically on a wall. Close your eyes and relax with your arms by your sides.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Environment Issues",
+      "Intervention Type": "Yoga",
+      "Intervention Sub Type": "Mindful Breathing",
+      "Card Title": "Mindful Breathing for Environmental Awareness",
+      "Card Description": "**Mindful Breathing**: Begin with simple breath awareness.\n\n- Sit comfortably, close your eyes, and take deep breaths in and out. Focus on your breath as it enters and leaves your body. This can help calm the mind and reduce feelings of anxiety about environmental concerns.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Environment Issues",
+      "Intervention Type": "Yoga",
+      "Intervention Sub Type": "Nature Visualization",
+      "Card Title": "Nature Visualization Meditation",
+      "Card Description": "**Nature Visualization**: Connect with nature mentally.\n\n- Imagine yourself in a natural setting, such as a forest or a beach. Visualize the sights, sounds, and smells, and imagine yourself being nourished by nature. This can evoke a sense of peace and connection to the environment.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Environment Issues",
+      "Intervention Type": "Yoga",
+      "Intervention Sub Type": "Loving-Kindness Meditation",
+      "Card Title": "Loving-Kindness for Earth and Self",
+      "Card Description": "**Loving-Kindness Meditation (Metta)**: To cultivate compassion for yourself and the earth.\n\n- Begin by sending wishes of well-being to yourself, then gradually extend these wishes to the earth and all its inhabitants. Repeat phrases like 'May I be happy,' 'May the earth be at peace.'",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Environment Issues",
+      "Intervention Type": "Yoga",
+      "Intervention Sub Type": "Gratitude Practice",
+      "Card Title": "Environmental Gratitude Practice",
+      "Card Description": "**Gratitude Practice**: Reflect on the positive aspects of the environment.\n\n- Spend a few moments thinking about natural elements you are grateful for, such as sunlight, clean air, or green spaces. This can help shift focus from stress to appreciation.\n\n**Integration into Daily Life:**\n- Start with short practices and gradually increase the duration as you become more comfortable.\n- Incorporate mindful walks in nature, allowing yourself to connect with your surroundings.\n- Create a sustainable environment around you, however small, to reinforce your commitment to environmental well-being.",
+      "xp": 5
+    }
+  ]
+}

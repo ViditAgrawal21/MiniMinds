@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "condition": "anger-management",
+    "intervention_type": "10 Common Suggestions",
+    "source_files": [
+      "thought_pro_filtered.json",
+      "thought_pro_with_extracted_final.json",
+      "Thought_pro_remaining.json"
+    ],
+    "created_from": "Analyzed patterns from 15 existing conditions and created equivalent anger management suggestions",
+    "total_interventions": 10,
+    "creation_date": "2024-12-28",
+    "note": "Created by analyzing common patterns across all existing 10-common-suggestions files"
+  },
+  "interventions": [
+    {
+      "title": "Practice Deep Breathing Techniques",
+      "description": "- **How it works**: Deep breathing activates the parasympathetic nervous system, helping to calm the mind and reduce the physical symptoms of anger.\n   - **Example**: When you feel anger rising, take slow, deep breaths counting to 4 on the inhale, hold for 4, and exhale for 6. Repeat this cycle 5-10 times.",
+      "xp": 2
+    },
+    {
+      "title": "Identify and Understand Triggers",
+      "description": "- **How it works**: Recognizing what specifically triggers your anger helps you prepare and respond more effectively to those situations.\n   - **Example**: Keep an anger journal noting what happened before you got angry, such as being criticized at work or feeling rushed in traffic.",
+      "xp": 2
+    },
+    {
+      "title": "Use the 'Pause and Count' Method",
+      "description": "- **How it works**: Taking a moment to pause before reacting gives you time to choose a more constructive response rather than acting impulsively.\n   - **Example**: When you feel anger building, count slowly from 1 to 10 (or even 20) before speaking or taking action.",
+      "xp": 2
+    },
+    {
+      "title": "Practice Regular Physical Exercise",
+      "description": "- **How it works**: Physical activity releases built-up tension and stress hormones while producing endorphins that improve mood and emotional regulation.\n   - **Example**: Go for a 30-minute walk, hit the gym, or do jumping jacks when you feel frustrated to release physical tension.",
+      "xp": 2
+    },
+    {
+      "title": "Develop Effective Communication Skills",
+      "description": "- **How it works**: Learning to express your needs and feelings clearly and assertively reduces frustration and prevents anger from building up.\n   - **Example**: Use 'I' statements like 'I feel frustrated when meetings start late' instead of 'You always make us wait.'",
+      "xp": 2
+    },
+    {
+      "title": "Establish Healthy Boundaries",
+      "description": "- **How it works**: Setting clear limits on what you will and won't accept helps prevent situations that typically trigger your anger.\n   - **Example**: Let family members know you need 30 minutes to decompress after work before discussing daily issues.",
+      "xp": 2
+    },
+    {
+      "title": "Use Humor and Perspective",
+      "description": "- **How it works**: Finding appropriate humor in situations or putting problems in perspective can defuse anger and reduce its intensity.\n   - **Example**: When stuck in traffic, imagine the cars as slow-moving turtles in a parade rather than obstacles to your progress.",
+      "xp": 2
+    },
+    {
+      "title": "Practice Problem-Solving Techniques",
+      "description": "- **How it works**: Focusing on solutions rather than problems helps channel anger into productive action and reduces feelings of helplessness.\n   - **Example**: If you're angry about a work situation, list 3 possible solutions and choose one to implement rather than just complaining.",
+      "xp": 2
+    },
+    {
+      "title": "Seek Social Support",
+      "description": "- **How it works**: Talking to trusted friends, family, or support groups provides emotional relief and different perspectives on anger-triggering situations.\n   - **Example**: Call a friend to vent about your day or join an anger management support group to learn from others' experiences.",
+      "xp": 2
+    },
+    {
+      "title": "Consider Professional Help When Needed",
+      "description": "- **How it works**: Professional counselors and therapists can provide specialized techniques and strategies for managing chronic anger issues.\n   - **Example**: If anger is affecting your relationships or work performance, schedule sessions with a licensed therapist who specializes in anger management.",
+      "xp": 2
+    }
+  ]
+}

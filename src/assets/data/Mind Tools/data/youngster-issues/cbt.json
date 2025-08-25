@@ -1,0 +1,98 @@
+{
+  "condition": "Youngster Issues",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identifying Negative Thought Patterns",
+      "Description": "'- **Why it Helps:** Recognizing and understanding negative thoughts can reduce their power and emotional impact.\n   - **What to Do:** Keep a thought diary to track situations and the automatic negative thoughts that arise.\n   - **Example:** A teen feels anxious about an upcoming test and thinks, \"I’m going to fail.\" By recording this thought, they can identify it as an automatic negative thought.",
+      "XP": 5,
+      "Journal Template": "Automatic Negative Thought (ANT)\nEvidence for ANT\nEvidence Against ANT\nAlternative Perspective\nHow Does This Thought Make Me Feel?\nWhat Would Happen If I Didn't Have This Thought?\nAction Plan to Challenge This Thought",
+      "extracted_value": "Automatic Negative Thought (ANT)\nEvidence for ANT\nEvidence Against ANT\nAlternative Perspective\nHow Does This Thought Make Me Feel?\nWhat Would Happen If I Didn't Have This Thought?\nAction Plan to Challenge This Thought"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'- **Why it Helps:** Challenging and changing distorted thoughts encourages more balanced thinking.\n   - **What to Do:** Use the thought diary to challenge each negative thought and develop a balanced, realistic alternative.\n   - **Example:** Replace \"I’m going to fail\" with \"I’ve studied hard and will do my best.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"question\": \"Describe the situation that led to your negative emotions or thoughts.\",\n    \"xp\": 5\n  },\n  \"Feelings\": {\n    \"question\": \"How did you feel in the moment?\",\n    \"xp\": 4\n  },\n  \"Automatic Thoughts\": {\n    \"question\": \"Write down the immediate thoughts that came to mind when the situation occurred.\",\n    \"xp\": 6\n  },\n  \"Alternative Thinking\": {\n    \"question\": \"Write down a healthier way of thinking.\",\n    \"xp\": 7\n  },\n  \"Positive Belief and Affirmation\": {\n    \"question\": \"Write down a statement that reflects your healthier beliefs.\",\n    \"xp\": 8\n  },\n  \"Action Plan\": {\n    \"question\": \"What action can you take to support your new thinking?\",\n    \"xp\": 5\n  },\n  \"Improvement\": {\n    \"question\": \"Do you feel slightly better or more optimistic? If so, describe how.\",\n    \"xp\": 4\n  }\n}",
+      "extracted_value": "Describe the situation that led to your negative emotions or thoughts.\nHow did you feel in the moment?\n\n\nWrite down the immediate thoughts that came to mind when the situation occurred.\nWrite down a healthier way of thinking.\nWrite down a statement that reflects your healthier beliefs.\nWhat action can you take to support your new thinking?\n\n\nDo you feel slightly better or more optimistic? If so, describe how.\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Behavioral Activation",
+      "Description": "'- **Why it Helps:** Encouraging activities that are rewarding or give a sense of achievement can improve mood and resilience.\n   - **What to Do:** Schedule regular activities that are enjoyable and skill-building.\n   - **Example:** Organize weekly sessions for hobbies like painting or sports."
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Mindfulness Meditation",
+      "Description": "'- **Why it Helps:** Mindfulness can increase awareness of the present moment, reducing stress and enhancing emotional regulation.\n   - **What to Do:** Dedicate a few minutes each day to a mindfulness practice focusing on breathing or guided meditation.\n   - **Example:** A teen takes 5 minutes before bed to focus on their breath, noticing when their mind wanders.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"time\": \"HH:MM\",\n  \"sessionDuration\": \"minutes\",\n  \"questions\": [\n    {\n      \"question\": \"What was my intention for this mindfulness session today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"Describe the sensations in my body as I sit in stillness.\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Did my mind wander during the session? If so, what were the thoughts that distracted me?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did I feel when my mind wandered? Did I notice any physical sensations or emotions?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What did I do to refocus my attention on my breath or the present moment?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How did I feel at the end of the session? Was there a sense of calm or relaxation?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"Are there any thoughts or emotions that I noticed during the session that I want to explore further in my journal or with a therapist?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"What can I do to incorporate mindfulness into my daily routine more effectively?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nHH:MM\nminutes\nWhat was my intention for this mindfulness session today?\n\n\nDescribe the sensations in my body as I sit in stillness.\nDid my mind wander during the session? If so, what were the thoughts that distracted me?\n\n\nHow did I feel when my mind wandered? Did I notice any physical sensations or emotions?\n\n\nWhat did I do to refocus my attention on my breath or the present moment?\n\n\nHow did I feel at the end of the session? Was there a sense of calm or relaxation?\n\n\nAre there any thoughts or emotions that I noticed during the session that I want to explore further in my journal or with a therapist?\n\n\nWhat can I do to incorporate mindfulness into my daily routine more effectively?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Graded Exposure",
+      "Description": "'- **Why it Helps:** Gradual exposure to feared situations can reduce anxiety over time.\n   - **What to Do:** Create a list of feared situations and gradually expose oneself to these situations in a step-by-step approach.\n   - **Example:** A young person who fears speaking in class might start by answering questions in small group settings and work up to larger classes.",
+      "XP": 3,
+      "Journal Template": "{\n  \"Step 1: Identify the Client's Fear\": {\n    \"questions\": [\n      \"What is the specific fear or anxiety you want to address?\",\n      \"How does this fear impact your daily life?\",\n      \"What are the situations that trigger this fear?\"\n    ],\n    \"XP\": 3\n  },\n  \"Step 2: Develop a Fear Ladder\": {\n    \"questions\": [\n      \"Break down the identified fear into incremental, manageable steps.\",\n      \"List each step from least anxiety-inducing to most frightening.\",\n      \"Why did you choose these specific steps?\"\n    ],\n    \"XP\": 5\n  },\n  \"Step 3: Assign Fear Ratings\": {\n    \"questions\": [\n      \"For each step on the fear ladder, rate your fear level from 0-10.\",\n      \"What does a rating of 0 mean to you?\",\n      \"What does a rating of 10 mean to you?\",\n      \"How do you feel about each step on the ladder?\"\n    ],\n    \"XP\": 6\n  },\n  \"Step 4: Facilitate Gradual Exposure\": {\n    \"questions\": [\n      \"Start with the lowest rung of the fear ladder and interact with it until your fear rating decreases by half or more.\",\n      \"Describe your experience with the first step.\",\n      \"What did you learn from this experience?\",\n      \"How did you manage your anxiety during this exposure?\"\n    ],\n    \"XP\": 7\n  },\n  \"Step 5: Reflect and Adapt\": {\n    \"questions\": [\n      \"Reflect on your experience after each exposure therapy session.\",\n      \"What changes did you notice in your fear response?\",\n      \"How did you manage your anxiety during this exposure?\",\n      \"If a certain step proves too challenging, what will you do next?\"\n    ],\n    \"XP\": 8\n  }\n}",
+      "extracted_value": "What is the specific fear or anxiety you want to address?\nHow does this fear impact your daily life?\nWhat are the situations that trigger this fear?\nBreak down the identified fear into incremental, manageable steps.\nList each step from least anxiety-inducing to most frightening.\nWhy did you choose these specific steps?\nFor each step on the fear ladder, rate your fear level from 0-10.\nWhat does a rating of 0 mean to you?\nWhat does a rating of 10 mean to you?\nHow do you feel about each step on the ladder?\nStart with the lowest rung of the fear ladder and interact with it until your fear rating decreases by half or more.\nDescribe your experience with the first step.\nWhat did you learn from this experience?\nHow did you manage your anxiety during this exposure?\nReflect on your experience after each exposure therapy session.\nWhat changes did you notice in your fear response?\nHow did you manage your anxiety during this exposure?\nIf a certain step proves too challenging, what will you do next?"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Problem-Solving Skills",
+      "Description": "'- **Why it Helps:** Learning to systematically approach problems reduces feelings of overwhelm.\n   - **What to Do:** Identify a problem, brainstorming solutions, weigh pros and cons, then choose and implement the best solution.\n   - **Example:** A teen worried about balancing school and extracurriculars writes down conflicts, possible solutions, and decides to better manage their time.",
+      "XP": 3,
+      "Journal Template": "{\n  \"Problem Identification\": {\n    \"Question\": \"What is the specific problem I am facing?\",\n    \"XP\": 3\n  },\n  \"Brainstorming Solutions\": {\n    \"Question\": \"What are all the possible solutions to this problem?\",\n    \"XP\": 5\n  },\n  \"Pros and Cons Analysis\": {\n    \"Question\": \"What are the advantages and disadvantages of each solution?\",\n    \"XP\": 6\n  },\n  \"Solution Selection\": {\n    \"Question\": \"Which solution do I think is the best, and why?\",\n    \"XP\": 7\n  },\n  \"Implementation Plan\": {\n    \"Question\": \"How will I implement the chosen solution, and what steps will I take?\",\n    \"XP\": 8\n  },\n  \"Reflection and Evaluation\": {\n    \"Question\": \"How did the chosen solution work out? What did I learn from the experience?\",\n    \"XP\": 9\n  }\n}",
+      "extracted_value": "What is the specific problem I am facing?\n\n\nWhat are all the possible solutions to this problem?\n\n\nWhat are the advantages and disadvantages of each solution?\n\n\nWhich solution do I think is the best, and why?\n\n\nHow will I implement the chosen solution, and what steps will I take?\n\n\nHow did the chosen solution work out? What did I learn from the experience?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Thought Stopping",
+      "Description": "'- **Why it Helps:** Interrupting negative thinking patterns prevents them from escalating.\n   - **What to Do:** Notice when a negative thought occurs, consciously tell yourself to \"stop,\" and refocus on a positive task.\n   - **Example:** When worrying, a teen says \"stop\" and switches to a relaxation exercise.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"negativeThought\": \"\",\n  \"trigger\": \"\",\n  \"stopSignal\": \"\",\n  \"positiveTask\": \"\",\n  \"reflection\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What was the negative thought that occurred?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What triggered this negative thought?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What was your stop signal?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What positive task did you switch to?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did you feel after using the stop signal?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What reflection do you have on this experience?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "What was the negative thought that occurred?\n\n\nWhat triggered this negative thought?\n\n\nWhat was your stop signal?\n\n\nWhat positive task did you switch to?\n\n\nHow did you feel after using the stop signal?\n\n\nWhat reflection do you have on this experience?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Relapse Prevention Planning",
+      "Description": "'- **Why it Helps:** Preparing for setbacks increases the likelihood of recovery and sustained improvement.\n   - **What to Do:** Identify potential triggers for backslides and develop strategies to manage them.\n   - **Example:** Create a list of coping strategies for busy exam weeks, such as scheduled breaks and relaxation techniques.",
+      "XP": 7,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"highRiskSituations\": [\n    {\n      \"situation\": \"\",\n      \"trigger\": \"\",\n      \"strategy\": \"\"\n    }\n  ],\n  \"keySigns\": [\n    {\n      \"sign\": \"\",\n      \"thoughts\": \"\",\n      \"feelings\": \"\",\n      \"behaviors\": \"\",\n      \"symptoms\": \"\"\n    }\n  ],\n  \"copingStrategies\": [\n    {\n      \"strategy\": \"\",\n      \"description\": \"\"\n    }\n  ],\n  \"questionsToReflectOn\": [\n    {\n      \"question\": \"What are the situations that make me feel most vulnerable to relapse?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What are the early warning signs that I might be heading towards a relapse?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What coping strategies have worked for me in the past?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What new coping strategies can I learn or practice to manage potential triggers?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"Who can I reach out to for support when I'm feeling overwhelmed or tempted to relapse?\",\n      \"answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nWhat are the situations that make me feel most vulnerable to relapse?\n\n\nWhat are the early warning signs that I might be heading towards a relapse?\n\n\nWhat coping strategies have worked for me in the past?\n\n\nWhat new coping strategies can I learn or practice to manage potential triggers?\n\n\nWho can I reach out to for support when I'm feeling overwhelmed or tempted to relapse?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Positive Self-Talk",
+      "Description": "'- **Why it Helps:** Encouraging affirmative language can build self-esteem.\n   - **What to Do:** Note and counter negative self-talk with positive affirmations or self-compassion.\n   - **Example:** Replace \"I’m not good enough\" with \"I’m doing my best, and that’s okay.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"negativeThought\": \"\",\n  \"positiveAffirmation\": \"\",\n  \"reflection\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What negative self-talk did I experience today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How can I reframe this negative thought into a positive affirmation?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How does this positive affirmation make me feel?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What steps can I take to practice this positive self-talk in my daily life?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "What negative self-talk did I experience today?\n\n\nHow can I reframe this negative thought into a positive affirmation?\n\n\nHow does this positive affirmation make me feel?\n\n\nWhat steps can I take to practice this positive self-talk in my daily life?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Goal Setting",
+      "Description": "'- **Why it Helps:** Setting and achieving goals provides motivation and direction.\n    - **What to Do:** Set SMART (Specific, Measurable, Achievable, Relevant, Time-bound) goals.\n    - **Example:** Instead of \"I want to do better in school,\" a teen sets a goal to \"study math for 30 minutes every weekday.\"\n\nBy incorporating these CBT techniques, young people can better manage their thoughts, emotions, and behaviors, improving their ability to cope with life's challenges.",
+      "XP": 3,
+      "Journal Template": "{\n  \"goalSettingWorksheet\": [\n    {\n      \"question\": \"What is my ultimate goal?\",\n      \"xp\": 3,\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"How will I know if I have met this goal?\",\n      \"xp\": 4,\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What specific actions will I take to achieve this goal?\",\n      \"xp\": 5,\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"How will I measure my progress towards this goal?\",\n      \"xp\": 6,\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What potential obstacles might I face, and how will I overcome them?\",\n      \"xp\": 8,\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What strengths or resources can I use to help me achieve this goal?\",\n      \"xp\": 9,\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"How will I stay motivated and committed to achieving this goal?\",\n      \"xp\": 10,\n      \"answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "What is my ultimate goal?\n\n\nHow will I know if I have met this goal?\n\n\nWhat specific actions will I take to achieve this goal?\n\n\nHow will I measure my progress towards this goal?\n\n\nWhat potential obstacles might I face, and how will I overcome them?\n\n\nWhat strengths or resources can I use to help me achieve this goal?\n\n\nHow will I stay motivated and committed to achieving this goal?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

@@ -1,0 +1,666 @@
+{
+  "condition": "Aggressive Behaviour",
+  "issueType": "Behavioural Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Practice Self-Control",
+            "hindi": "स्व-नियंत्रण का अभ्यास करें",
+            "marathi": "स्व-नियंत्रणाचा सराव करा"
+          },
+          "description": {
+            "english": "This involves learning to manage your emotions and reactions. For example, if someone is provoking you, instead of reacting violently, take a deep breath, count to ten, and walk away from the situation.",
+            "hindi": "इसमें अपनी भावनाओं और प्रतिक्रियाओं को संभालना सीखना शामिल है। उदाहरण के लिए, यदि कोई आपको उकसा रहा है, तो हिंसक प्रतिक्रिया देने के बजाय, एक गहरी सांस लें, दस तक गिनती करें, और स्थिति से दूर चले जाएं।",
+            "marathi": "यामध्ये तुमच्या भावना आणि प्रतिक्रियांना व्यवस्थापित करणे शिकणे समाविष्ट आहे. उदाहरणार्थ, जर कोणी तुम्हाला चिथावणी देत असेल तर हिंसक प्रतिक्रिया देण्याऐवजी एक खोल श्वास घ्या, दहापर्यंत मोजा आणि परिस्थितीपासून दूर जा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "पेशेवर सहायता लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "If violent tendencies persist, it may be beneficial to seek help from a psychologist or psychiatrist. For instance, they can provide therapies or treatments that can help manage aggressive behavior.",
+            "hindi": "यदि हिंसक प्रवृत्तियां बनी रहती हैं, तो मनोवैज्ञानिक या मनोचिकित्सक से सहायता लेना फायदेमंद हो सकता है। उदाहरण के लिए, वे चिकित्सा या उपचार प्रदान कर सकते हैं जो आक्रामक व्यवहार को नियंत्रित करने में मदद कर सकते हैं।",
+            "marathi": "जर हिंसक प्रवृत्ती कायम राहिल्या तर मानसशास्त्रज्ञ किंवा मानसरोगतज्ञाकडून मदत घेणे फायदेशीर असू शकते. उदाहरणार्थ, ते आक्रमक वर्तन नियंत्रित करण्यास मदत करणारी थेरपी किंवा उपचार देऊ शकतात."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Engage in Physical Activities",
+            "hindi": "शारीरिक गतिविधियों में संलग्न हों",
+            "marathi": "शारीरिक क्रियाकलापांमध्ये गुंतवा"
+          },
+          "description": {
+            "english": "Regular exercise can help reduce stress and aggression. For example, joining a local gym or participating in sports can provide a healthy outlet for pent-up energy.",
+            "hindi": "नियमित व्यायाम तनाव और आक्रामकता को कम करने में मदद कर सकता है। उदाहरण के लिए, स्थानीय जिम में शामिल होना या खेलों में भाग लेना दमित ऊर्जा के लिए एक स्वस्थ आउटलेट प्रदान कर सकता है।",
+            "marathi": "नियमित व्यायामामुळे तणाव आणि आक्रमकता कमी होण्यास मदत होते. उदाहरणार्थ, स्थानिक जिममध्ये सामील होणे किंवा खेळांमध्ये भाग घेणे दडपलेल्या शक्तीसाठी निरोगी मार्ग देऊ शकते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Develop Communication Skills",
+            "hindi": "संचार कौशल विकसित करें",
+            "marathi": "संवाद कौशल्ये विकसित करा"
+          },
+          "description": {
+            "english": "Learning to express feelings and thoughts effectively can prevent misunderstandings that may lead to aggression. For instance, instead of shouting or hitting when upset, one can say, \"I feel upset when you do this.\"",
+            "hindi": "भावनाओं और विचारों को प्रभावी रूप से व्यक्त करना सीखना गलतफहमियों को रोक सकता है जो आक्रामकता का कारण बन सकती हैं। उदाहरण के लिए, परेशान होने पर चिल्लाने या मारने के बजाय, कोई कह सकता है, \"जब आप ऐसा करते हैं तो मुझे परेशानी होती है।\"",
+            "marathi": "भावना आणि विचार प्रभावीपणे व्यक्त करणे शिकणे गैरसमज टाळू शकते जे आक्रमकतेकडे नेऊ शकते. उदाहरणार्थ, अस्वस्थ असताना ओरडणे किंवा मारणे याऐवजी \"तुम्ही असे केल्यावर मला त्रास होतो\" असे म्हणता येते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Practice Mindfulness and Meditation",
+            "hindi": "सचेतना और ध्यान का अभ्यास करें",
+            "marathi": "सजगता आणि ध्यानाचा सराव करा"
+          },
+          "description": {
+            "english": "These techniques can help manage stress and anger. For example, taking a few minutes each day to meditate can help calm the mind and reduce aggressive tendencies.",
+            "hindi": "ये तकनीकें तनाव और गुस्से को नियंत्रित करने में मदद कर सकती हैं। उदाहरण के लिए, हर दिन कुछ मिनट ध्यान करना मन को शांत करने और आक्रामक प्रवृत्तियों को कम करने में मदद कर सकता है।",
+            "marathi": "या तंत्रांमुळे तणाव आणि राग नियंत्रित करण्यास मदत होते. उदाहरणार्थ, दररोज काही मिनिटे ध्यान करणे मन शांत करण्यास आणि आक्रमक प्रवृत्ती कमी करण्यास मदत करते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Avoid Substance Abuse",
+            "hindi": "नशीले पदार्थों के सेवन से बचें",
+            "marathi": "मादक द्रव्यांचे सेवन टाळा"
+          },
+          "description": {
+            "english": "Alcohol and drugs can exacerbate violent behavior. For example, if one tends to become aggressive when drinking, it would be best to avoid alcohol.",
+            "hindi": "शराब और ड्रग्स हिंसक व्यवहार को बढ़ा सकते हैं। उदाहरण के लिए, यदि कोई शराब पीने पर आक्रामक हो जाता है, तो शराब से बचना सबसे अच्छा होगा।",
+            "marathi": "दारू आणि ड्रग्स हिंसक वर्तन वाढवू शकतात. उदाहरणार्थ, जर कोणी दारू पिऊन आक्रमक होत असेल तर दारू टाळणे सर्वोत्तम असेल."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Join Support Groups",
+            "hindi": "सहायता समूहों में शामिल हों",
+            "marathi": "सहाय्य गटांमध्ये सामील व्हा"
+          },
+          "description": {
+            "english": "Connecting with others who are dealing with similar issues can provide comfort and practical advice. For example, attending a local anger management group can provide strategies for controlling violent behavior.",
+            "hindi": "समान समस्याओं से निपटने वाले अन्य लोगों के साथ जुड़ना आराम और व्यावहारिक सलाह प्रदान कर सकता है। उदाहरण के लिए, स्थानीय गुस्सा प्रबंधन समूह में भाग लेना हिंसक व्यवहार को नियंत्रित करने की रणनीति प्रदान कर सकता है।",
+            "marathi": "समान समस्यांना तोंड देणाऱ्या इतरांशी जुडणे सांत्वना आणि व्यावहारिक सल्ला देऊ शकते. उदाहरणार्थ, स्थानिक राग व्यवस्थापन गटात सहभागी होणे हिंसक वर्तन नियंत्रित करण्याच्या रणनीती देऊ शकते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Learn Conflict Resolution Skills",
+            "hindi": "संघर्ष समाधान कौशल सीखें",
+            "marathi": "संघर्ष निराकरण कौशल्ये शिका"
+          },
+          "description": {
+            "english": "This involves learning to resolve disagreements in a peaceful manner. For example, instead of resorting to violence during a disagreement, one can use negotiation or compromise to resolve the issue.",
+            "hindi": "इसमें मतभेदों को शांतिपूर्ण तरीके से हल करना सीखना शामिल है। उदाहरण के लिए, असहमति के दौरान हिंसा का सहारा लेने के बजाय, कोई मुद्दे को हल करने के लिए बातचीत या समझौते का उपयोग कर सकता है।",
+            "marathi": "यामध्ये मतभेद शांततेने सोडवणे शिकणे समाविष्ट आहे. उदाहरणार्थ, मतभेदादरम्यान हिंसाचाराचा आधार घेण्याऐवजी समस्या सोडवण्यासाठी वाटाघाटी किंवा तडजोड वापरता येते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Create a Safe Environment",
+            "hindi": "सुरक्षित वातावरण बनाएं",
+            "marathi": "सुरक्षित वातावरण तयार करा"
+          },
+          "description": {
+            "english": "Removing potential triggers or stressors can help reduce violent behavior. For example, if certain TV shows or video games incite aggression, it would be best to avoid them.",
+            "hindi": "संभावित ट्रिगर या तनावों को हटाना हिंसक व्यवहार को कम करने में मदद कर सकता है। उदाहरण के लिए, यदि कुछ टीवी शो या वीडियो गेम आक्रामकता को भड़काते हैं, तो उनसे बचना सबसे अच्छा होगा।",
+            "marathi": "संभाव्य ट्रिगर किंवा तणाव काढून टाकल्याने हिंसक वर्तन कमी करण्यास मदत होते. उदाहरणार्थ, जर काही टीव्ही शो किंवा व्हिडिओ गेम आक्रमकता वाढवत असतील तर ते टाळणे सर्वोत्तम असेल."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 2,
+          "title": {
+            "english": "Use Relaxation Techniques",
+            "hindi": "विश्राम तकनीकों का उपयोग करें",
+            "marathi": "विश्रांती तंत्रांचा वापर करा"
+          },
+          "description": {
+            "english": "Techniques such as deep breathing, progressive muscle relaxation, or listening to calming music can help reduce feelings of anger or aggression. For example, when feeling angry, one can take a few deep breaths and visualize a peaceful scene to calm down.",
+            "hindi": "गहरी सांस लेना, प्रगतिशील मांसपेशी विश्राम, या शांत संगीत सुनना जैसी तकनीकें गुस्से या आक्रामकता की भावनाओं को कम करने में मदद कर सकती हैं। उदाहरण के लिए, गुस्सा महसूस करने पर, कोई कुछ गहरी सांसें ले सकता है और शांत होने के लिए एक शांतिपूर्ण दृश्य की कल्पना कर सकता है।",
+            "marathi": "खोल श्वसन, प्रगतिशील स्नायू शिथिलीकरण किंवा शांत संगीत ऐकणे यासारख्या तंत्रांमुळे राग किंवा आक्रमकतेच्या भावना कमी करण्यास मदत होते. उदाहरणार्थ, राग आल्यावर काही खोल श्वास घेऊन शांत होण्यासाठी शांततापूर्ण दृश्याची कल्पना करता येते."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Tertiary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 4,
+          "title": {
+            "english": "Identify Triggers",
+            "hindi": "ट्रिगर्स की पहचान करें",
+            "marathi": "ट्रिगर्सची ओळख करा"
+          },
+          "description": {
+            "english": "Understanding what triggers violent or aggressive behavior can help manage it. Triggers could be certain situations, people, or emotions. Once identified, strategies can be developed to avoid or cope with these triggers. For example, if crowded places trigger aggression, one could practice deep breathing or visualization techniques before entering such environments.",
+            "hindi": "यह समझना कि हिंसक या आक्रामक व्यवहार को क्या ट्रिगर करता है, इसे प्रबंधित करने में मदत कर सकता है। ट्रिगर कुछ परिस्थितियां, लोग या भावनाएं हो सकते हैं। एक बार पहचान हो जाने के बाद, इन ट्रिगर्स से बचने या उनसे निपटने की रणनीति विकसित की जा सकती है। उदाहरण के लिए, यदि भीड़भाड़ वाली जगहें आक्रामकता को ट्रिगर करती हैं, तो ऐसे वातावरण में जाने से पहले गहरी सांस लेने या विज़ुअलाइज़ेशन तकनीकों का अभ्यास कर सकते हैं।",
+            "marathi": "हिंसक किंवा आक्रमक वर्तन काय ट्रिगर करते हे समजून घेणे त्याचे व्यवस्थापन करण्यास मदत करू शकते. ट्रिगर्स काही परिस्थिती, लोक किंवा भावना असू शकतात. एकदा ओळख झाल्यानंतर या ट्रिगर्सना टाळण्यासाठी किंवा त्यांचा सामना करण्यासाठी रणनीती विकसित केल्या जाऊ शकतात. उदाहरणार्थ, जर गर्दीच्या ठिकाणी आक्रमकता ट्रिगर होत असेल तर अशा वातावरणात जाण्यापूर्वी खोल श्वसन किंवा व्हिज्युअलायझेशन तंत्रांचा सराव करता येतो."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Practice Mindfulness",
+            "hindi": "सचेतना का अभ्यास करें",
+            "marathi": "सजगतेचा सराव करा"
+          },
+          "description": {
+            "english": "Mindfulness helps to stay in the present moment and not react impulsively. It can help manage anger and aggression by providing a space to respond thoughtfully rather than react. For instance, when feeling angry, one could take a few moments to focus on their breath, grounding themselves in the present moment.",
+            "hindi": "सचेतना वर्तमान क्षण में रहने और आवेगशील प्रतिक्रिया न देने में मदद करती है। यह गुस्से और आक्रामकता को प्रबंधित करने में मदत कर सकती है क्योंकि यह प्रतिक्रिया देने के बजाय सोच-समझकर जवाब देने का स्थान प्रदान करती है। उदाहरण के लिए, गुस्सा महसूस करते समय, कोई अपनी सांस पर ध्यान केंद्रित करने के लिए कुछ क्षण ले सकता है, खुद को वर्तमान क्षण में स्थापित कर सकता है।",
+            "marathi": "सजगता सध्याच्या क्षणात राहण्यास आणि आवेगशीरपणे प्रतिक्रिया न देण्यास मदत करते. हे राग आणि आक्रमकता व्यवस्थापित करण्यास मदत करू शकते कारण हे प्रतिक्रिया देण्याऐवजी विचारपूर्वक प्रतिसाद देण्यासाठी जागा प्रदान करते. उदाहरणार्थ, राग आल्यावर त्यांच्या श्वासावर लक्ष केंद्रित करण्यासाठी काही क्षण घेऊन स्वतःला सध्याच्या क्षणात स्थापित करता येते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "संज्ञानात्मक पुनर्गठन",
+            "marathi": "संज्ञानात्मक पुनर्रचना"
+          },
+          "description": {
+            "english": "This involves identifying and changing negative thought patterns that contribute to aggressive behavior. Learn to challenge distorted thinking and replace it with more balanced, realistic thoughts. For example, instead of thinking 'Everyone is against me', consider 'Some people may disagree with me, but that doesn't mean they're against me'.",
+            "hindi": "इसमें आक्रामक व्यवहार में योगदान देने वाले नकारात्मक विचार पैटर्न की पहचान करना और उन्हें बदलना शामिल है। विकृत सोच को चुनौती देना सीखें और इसे अधिक संतुलित, यथार्थवादी विचारों से बदलें। उदाहरण के लिए, 'सभी मेरे खिलाफ हैं' सोचने के बजाय, विचार करें 'कुछ लोग मुझसे असहमत हो सकते हैं, लेकिन इसका मतलब यह नहीं कि वे मेरे खिलाफ हैं'।",
+            "marathi": "यामध्ये आक्रमक वर्तनास हातभार लावणाऱ्या नकारात्मक विचार पद्धतींची ओळख करणे आणि त्यांना बदलणे समाविष्ट आहे. विकृत विचारांना आव्हान देणे शिका आणि ते अधिक संतुलित, वास्तववादी विचारांनी बदला. उदाहरणार्थ, 'सगळे माझ्या विरोधात आहेत' असे विचारण्याऐवजी 'काही लोक माझ्याशी असहमत असू शकतात, पण याचा अर्थ असा नाही की ते माझ्या विरोधात आहेत' असा विचार करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 7,
+          "title": {
+            "english": "Develop Empathy",
+            "hindi": "सहानुभूति विकसित करें",
+            "marathi": "सहानुभूती विकसित करा"
+          },
+          "description": {
+            "english": "Learning to understand and share the feelings of others can reduce aggressive tendencies. Practice perspective-taking by trying to see situations from other people's point of view. This can help reduce conflicts and improve relationships, ultimately decreasing the likelihood of aggressive responses.",
+            "hindi": "दूसरों की भावनाओं को समझना और साझा करना सीखने से आक्रामक प्रवृत्तियों को कम किया जा सकता है। दूसरे लोगों के दृष्टिकोण से स्थितियों को देखने की कोशिश करके दृष्टिकोण-ग्रहण का अभ्यास करें। यह संघर्षों को कम करने और रिश्तों को बेहतर बनाने में मदद कर सकता है, अंततः आक्रामक प्रतिक्रियाओं की संभावना को कम कर सकता है।",
+            "marathi": "इतरांच्या भावना समजून घेणे आणि शेअर करणे शिकल्याने आक्रमक प्रवृत्ती कमी होऊ शकते. इतर लोकांच्या दृष्टिकोनातून परिस्थिती पाहण्याचा प्रयत्न करून दृष्टिकोन-ग्रहणाचा सराव करा. हे संघर्ष कमी करण्यास आणि नातेसंबंध सुधारण्यास मदत करू शकते, शेवटी आक्रमक प्रतिक्रियांची शक्यता कमी करू शकते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Use Assertive Communication",
+            "hindi": "दृढ़ संवाद का उपयोग करें",
+            "marathi": "दृढ संवाद वापरा"
+          },
+          "description": {
+            "english": "Learn to express your needs and feelings clearly and respectfully without being aggressive or passive. Assertive communication helps in resolving conflicts peacefully and reduces the need for aggressive responses. Practice using 'I' statements to express your feelings without blaming others.",
+            "hindi": "आक्रामक या निष्क्रिय हुए बिना अपनी जरूरतों और भावनाओं को स्पष्ट और सम्मानजनक तरीके से व्यक्त करना सीखें। दृढ़ संवाद संघर्षों को शांतिपूर्वक हल करने में मदद करता है और आक्रामक प्रतिक्रियाओं की आवश्यकता को कम करता है। दूसरों को दोष दिए बिना अपनी भावनाओं को व्यक्त करने के लिए 'मैं' कथनों का उपयोग करने का अभ्यास करें।",
+            "marathi": "आक्रमक किंवा निष्क्रिय न होता तुमच्या गरजा आणि भावना स्पष्ट आणि आदरपूर्वक व्यक्त करणे शिका. दृढ संवाद संघर्ष शांततेने सोडवण्यास मदत करतो आणि आक्रमक प्रतिक्रियांची गरज कमी करतो. इतरांना दोष न देता तुमच्या भावना व्यक्त करण्यासाठी 'मी' विधानांचा वापर करण्याचा सराव करा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Problem-Solving Skills",
+            "hindi": "समस्या सुलझाने के कौशल",
+            "marathi": "समस्या सोडवण्याची कौशल्ये"
+          },
+          "description": {
+            "english": "Develop systematic approaches to solving problems that may trigger aggressive behavior. Learn to identify the problem, brainstorm solutions, evaluate options, and implement the best solution. This structured approach can prevent frustration and reduce aggressive responses to challenging situations.",
+            "hindi": "आक्रामक व्यवहार को ट्रिगर करने वाली समस्याओं को हल करने के लिए व्यवस्थित दृष्टिकोण विकसित करें। समस्या की पहचान करना, समाधान पर विचार करना, विकल्पों का मूल्यांकन करना और सर्वोत्तम समाधान को लागू करना सीखें। यह संरचित दृष्टिकोण निराशा को रोक सकता है और चुनौतीपूर्ण स्थितियों के लिए आक्रामक प्रतिक्रियाओं को कम कर सकता है।",
+            "marathi": "आक्रमक वर्तन ट्रिगर करू शकणाऱ्या समस्यांचे निराकरण करण्यासाठी पद्धतशीर दृष्टिकोन विकसित करा. समस्या ओळखणे, उपायांवर विचार करणे, पर्यायांचे मूल्यमापन करणे आणि सर्वोत्तम उपाय राबवणे शिका. हा संरचित दृष्टिकोन निराशा टाळू शकतो आणि आव्हानात्मक परिस्थितींसाठी आक्रमक प्रतिक्रिया कमी करू शकतो."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Relaxation Techniques",
+            "hindi": "विश्राम तकनीकें",
+            "marathi": "विश्रांती तंत्रे"
+          },
+          "description": {
+            "english": "Learn and practice various relaxation techniques such as deep breathing, progressive muscle relaxation, and visualization. These techniques can help reduce physical tension and emotional stress that often precede aggressive behavior. Regular practice makes these techniques more effective in crisis situations.",
+            "hindi": "गहरी सांस लेना, प्रगतिशील मांसपेशी विश्राम और विज़ुअलाइज़ेशन जैसी विभिन्न विश्राम तकनीकों को सीखें और अभ्यास करें। ये तकनीकें शारीरिक तनाव और भावनात्मक तनाव को कम करने में मदद कर सकती हैं जो अक्सर आक्रामक व्यवहार से पहले होती हैं। नियमित अभ्यास इन तकनीकों को संकट की स्थितियों में अधिक प्रभावी बनाता है।",
+            "marathi": "खोल श्वसन, प्रगतिशील स्नायू शिथिलीकरण आणि व्हिज्युअलायझेशन यासारख्या विविध विश्रांती तंत्रांना शिका आणि सराव करा. या तंत्रांमुळे शारीरिक तणाव आणि भावनिक तणाव कमी करण्यास मदत होते जे सहसा आक्रमक वर्तनापूर्वी होते. नियमित सरावामुळे या तंत्रांना संकटकाळात अधिक प्रभावी बनते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 6,
+          "title": {
+            "english": "Social Skills Training",
+            "hindi": "सामाजिक कौशल प्रशिक्षण",
+            "marathi": "सामाजिक कौशल प्रशिक्षण"
+          },
+          "description": {
+            "english": "Improve your ability to interact positively with others through social skills training. This includes learning appropriate ways to express disagreement, handle criticism, and resolve conflicts. Better social skills can reduce misunderstandings and situations that might trigger aggressive behavior.",
+            "hindi": "सामाजिक कौशल प्रशिक्षण के माध्यम से दूसरों के साथ सकारात्मक रूप से बातचीत करने की अपनी क्षमता में सुधार करें। इसमें असहमति व्यक्त करने, आलोचना को संभालने और संघर्षों को हल करने के उपयुक्त तरीके सीखना शामिल है। बेहतर सामाजिक कौशल गलतफहमियों और ऐसी स्थितियों को कम कर सकते हैं जो आक्रामक व्यवहार को ट्रिगर कर सकती हैं।",
+            "marathi": "सामाजिक कौशल प्रशिक्षणाद्वारे इतरांशी सकारात्मक रीतीने संवाद साधण्याची तुमची क्षमता सुधारा. यामध्ये मतभेद व्यक्त करण्याचे, टीकेला हाताळण्याचे आणि संघर्ष सोडवण्याचे योग्य मार्ग शिकणे समाविष्ट आहे. चांगल्या सामाजिक कौशल्यांमुळे गैरसमज आणि अशा परिस्थिती कमी होऊ शकतात ज्या आक्रमक वर्तन ट्रिगर करू शकतात."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 4,
+          "title": {
+            "english": "Distraction Techniques",
+            "hindi": "ध्यान भटकाने की तकनीकें",
+            "marathi": "लक्ष विचलित करण्याची तंत्रे"
+          },
+          "description": {
+            "english": "Learn to use healthy distraction techniques when you feel anger or aggression building up. This could include listening to music, going for a walk, engaging in a hobby, or doing physical exercise. Distraction gives you time to cool down and think more clearly before responding to a situation.",
+            "hindi": "जब आप गुस्से या आक्रामकता को बढ़ते हुए महसूस करें तो स्वस्थ विचलन तकनीकों का उपयोग करना सीखें। इसमें संगीत सुनना, टहलने जाना, किसी शौक में संलग्न होना या शारीरिक व्यायाम करना शामिल हो सकता है। विचलन आपको किसी स्थिति का जवाब देने से पहले शांत होने और अधिक स्पष्ट रूप से सोचने का समय देता है।",
+            "marathi": "जेव्हा तुम्हाला राग किंवा आक्रमकता वाढत असल्याचे जाणवते तेव्हा निरोगी लक्ष विचलित करण्याच्या तंत्रांचा वापर करणे शिका. यामध्ये संगीत ऐकणे, फिरायला जाणे, छंदात गुंतणे किंवा शारीरिक व्यायाम करणे समाविष्ट असू शकते. लक्ष विचलित केल्याने तुम्हाला परिस्थितीला प्रतिसाद देण्यापूर्वी शांत होण्यासाठी आणि अधिक स्पष्टपणे विचार करण्यासाठी वेळ मिळतो."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 7,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "पेशेवर सहायता लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "Don't hesitate to seek help from a mental health professional if aggressive behavior persists. A therapist can provide personalized strategies, help identify underlying causes, and work with you to develop effective coping mechanisms. Professional support is often essential for lasting change.",
+            "hindi": "यदि आक्रामक व्यवहार बना रहता है तो मानसिक स्वास्थ्य पेशेवर से सहायता लेने में संकोच न करें। एक चिकित्सक व्यक्तिगत रणनीति प्रदान कर सकता है, अंतर्निहित कारणों की पहचान करने में मदद कर सकता है, और प्रभावी मुकाबला तंत्र विकसित करने के लिए आपके साथ काम कर सकता है। स्थायी परिवर्तन के लिए पेशेवर सहायता अक्सर आवश्यक होती है।",
+            "marathi": "जर आक्रमक वर्तन कायम राहिले तर मानसिक आरोग्य व्यावसायिकाकडून मदत घेण्यास संकोच करू नका. एक थेरपिस्ट वैयक्तिक रणनीती देऊ शकतो, अंतर्निहित कारणे ओळखण्यास मदत करू शकतो आणि प्रभावी सामना करण्याची यंत्रणा विकसित करण्यासाठी तुमच्यासोबत काम करू शकतो. चिरस्थायी बदलासाठी व्यावसायिक समर्थन अनेकदा आवश्यक असते."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Tertiary", 
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 6,
+          "title": {
+            "english": "Identify Irrational Beliefs",
+            "hindi": "अतार्किक मान्यताओं की पहचान करें",
+            "marathi": "अतार्किक समजुतींची ओळख करा"
+          },
+          "description": {
+            "english": "REBT focuses on identifying and challenging irrational beliefs that lead to aggressive behavior. Common irrational beliefs include 'people must always treat me fairly' or 'I cannot tolerate frustration'. By recognizing these beliefs, individuals can work on replacing them with more rational thoughts.",
+            "hindi": "REBT अतार्किक मान्यताओं की पहचान करने और चुनौती देने पर ध्यान देता है जो आक्रामक व्यवहार का कारण बनती हैं। सामान्य अतार्किक मान्यताओं में 'लोगों को हमेशा मेरे साथ निष्पक्ष व्यवहार करना चाहिए' या 'मैं निराशा सहन नहीं कर सकता' शामिल हैं। इन मान्यताओं को पहचानकर, व्यक्ति उन्हें अधिक तर्कसंगत विचारों से बदलने पर काम कर सकते हैं।",
+            "marathi": "REBT आक्रमक वर्तनास कारणीभूत ठरणाऱ्या अतार्किक समजुती ओळखणे आणि त्यांना आव्हान देण्यावर लक्ष केंद्रित करते. सामान्य अतार्किक समजुतींमध्ये 'लोकांनी नेहमी माझ्याशी न्याय्य वागावे' किंवा 'मी निराशा सहन करू शकत नाही' यांचा समावेश आहे. या समजुती ओळखून व्यक्ती त्यांना अधिक तर्कसंगत विचारांनी बदलण्याचे काम करू शकते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 7,
+          "title": {
+            "english": "Practice Self-Acceptance",
+            "hindi": "स्व-स्वीकृति का अभ्यास करें",
+            "marathi": "स्व-स्वीकृतीचा सराव करा"
+          },
+          "description": {
+            "english": "REBT teaches unconditional self-acceptance, which means accepting yourself as a fallible human being regardless of your performance or approval from others. This can reduce the anger and aggression that often stems from self-condemnation and the need for constant validation.",
+            "hindi": "REBT बिना शर्त स्व-स्वीकृति सिखाता है, जिसका अर्थ है अपने प्रदर्शन या दूसरों की स्वीकृति की परवाह किए बिना खुद को एक त्रुटिपूर्ण इंसान के रूप में स्वीकार करना। यह गुस्से और आक्रामकता को कम कर सकता है जो अक्सर आत्म-निंदा और निरंतर मान्यता की आवश्यकता से उत्पन्न होती है।",
+            "marathi": "REBT बिनशर्त स्व-स्वीकृति शिकवते, ज्याचा अर्थ तुमच्या कामगिरी किंवा इतरांच्या मान्यतेची पर्वा न करता स्वतःला त्रुटीपूर्ण मानव म्हणून स्वीकारणे. हे राग आणि आक्रमकता कमी करू शकते जे सहसा आत्म-निंदा आणि सतत मान्यतेच्या गरजेतून उद्भवते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": {
+            "english": "Use Disputing Techniques",
+            "hindi": "खंडन तकनीकों का उपयोग करें",
+            "marathi": "खंडन तंत्रांचा वापर करा"
+          },
+          "description": {
+            "english": "Learn to actively challenge and dispute irrational beliefs using empirical, logical, and pragmatic questions. Ask yourself: 'Where is the evidence for this belief?', 'Does this belief make logical sense?', and 'How is this belief helping me?' This systematic questioning helps replace irrational thoughts with rational ones.",
+            "hindi": "अनुभवजन्य, तार्किक और व्यावहारिक प्रश्नों का उपयोग करके अतार्किक मान्यताओं को सक्रिय रूप से चुनौती देना और खंडन करना सीखें। अपने आप से पूछें: 'इस मान्यता का प्रमाण कहां है?', 'क्या यह मान्यता तार्किक रूप से समझ में आती है?', और 'यह मान्यता मेरी कैसे मदद कर रही है?' यह व्यवस्थित प्रश्न अतार्किक विचारों को तर्कसंगत विचारों से बदलने में मदद करता है।",
+            "marathi": "अनुभवजन्य, तार्किक आणि व्यावहारिक प्रश्न वापरून अतार्किक समजुतींना सक्रियपणे आव्हान देणे आणि खंडन करणे शिका. स्वतःला विचारा: 'या समजुतीचा पुरावा कुठे आहे?', 'ही समजूत तार्किकदृष्ट्या योग्य आहे का?', आणि 'ही समजूत मला कशी मदत करत आहे?' हे पद्धतशीर प्रश्नविचार अतार्किक विचारांना तर्कसंगत विचारांनी बदलण्यास मदत करते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 6,
+          "title": {
+            "english": "Develop Empathy",
+            "hindi": "सहानुभूति विकसित करें",
+            "marathi": "सहानुभूती विकसित करा"
+          },
+          "description": {
+            "english": "REBT emphasizes understanding that others, like yourself, are fallible human beings who make mistakes. Developing empathy reduces the tendency to demand perfection from others and decreases anger when people don't meet your expectations. Practice seeing situations from others' perspectives.",
+            "hindi": "REBT इस बात को समझने पर जोर देता है कि दूसरे लोग, आपकी तरह, त्रुटिपूर्ण इंसान हैं जो गलतियां करते हैं। सहानुभूति विकसित करना दूसरों से पूर्णता की मांग करने की प्रवृत्ति को कम करता है और जब लोग आपकी अपेक्षाओं को पूरा नहीं करते हैं तो गुस्से को कम करता है। दूसरों के दृष्टिकोण से स्थितियों को देखने का अभ्यास करें।",
+            "marathi": "REBT यावर भर देते की इतर, तुमच्याप्रमाणेच, त्रुटीपूर्ण मानव आहेत जे चुका करतात. सहानुभूती विकसित केल्याने इतरांकडून परिपूर्णतेची मागणी करण्याची प्रवृत्ती कमी होते आणि जेव्हा लोक तुमच्या अपेक्षा पूर्ण करत नाहीत तेव्हा राग कमी होतो. इतरांच्या दृष्टिकोनातून परिस्थिती पाहण्याचा सराव करा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 4,
+          "title": {
+            "english": "Practice Mindfulness",
+            "hindi": "सचेतना का अभ्यास करें",
+            "marathi": "सजगतेचा सराव करा"
+          },
+          "description": {
+            "english": "Incorporate mindfulness practices to become more aware of your thoughts, emotions, and reactions in the present moment. This awareness helps you catch irrational beliefs as they arise and gives you the opportunity to dispute them before they lead to aggressive behavior.",
+            "hindi": "वर्तमान क्षण में अपने विचारों, भावनाओं और प्रतिक्रियाओं के बारे में अधिक जागरूक होने के लिए सचेतना प्रथाओं को शामिल करें। यह जागरूकता आपको अतार्किक मान्यताओं को पकड़ने में मदद करती है जैसे ही वे उत्पन्न होती हैं और आपको आक्रामक व्यवहार का कारण बनने से पहले उनसे बहस करने का अवसर देती है।",
+            "marathi": "सध्याच्या क्षणातील तुमचे विचार, भावना आणि प्रतिक्रियांबद्दल अधिक जागरूक होण्यासाठी सजगतेच्या पद्धतींचा समावेश करा. ही जागरूकता तुम्हाला अतार्किक समजुती उद्भवताच पकडण्यास मदत करते आणि ते आक्रमक वर्तनास कारणीभूत होण्यापूर्वी त्यांचे खंडन करण्याची संधी देते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 4,
+          "title": {
+            "english": "Use Positive Affirmations",
+            "hindi": "सकारात्मक पुष्टि का उपयोग करें",
+            "marathi": "सकारात्मक पुष्टींचा वापर करा"
+          },
+          "description": {
+            "english": "Develop and use rational, positive affirmations to replace irrational beliefs. Examples include 'I can handle disappointment without becoming aggressive' or 'Others have the right to disagree with me'. Regular repetition of these affirmations helps reinforce rational thinking patterns.",
+            "hindi": "अतार्किक मान्यताओं को बदलने के लिए तर्कसंगत, सकारात्मक पुष्टि विकसित करें और उनका उपयोग करें। उदाहरणों में 'मैं आक्रामक हुए बिना निराशा को संभाल सकता हूं' या 'दूसरों को मुझसे असहमत होने का अधिकार है' शामिल हैं। इन पुष्टियों का नियमित दोहराव तर्कसंगत सोच पैटर्न को मजबूत करने में मदद करता है।",
+            "marathi": "अतार्किक समजुती बदलण्यासाठी तर्कसंगत, सकारात्मक पुष्टी विकसित करा आणि त्यांचा वापर करा. उदाहरणांमध्ये 'मी आक्रमक न होता निराशा हाताळू शकतो' किंवा 'इतरांना माझ्याशी असहमत होण्याचा अधिकार आहे' यांचा समावेश आहे. या पुष्टींची नियमित पुनरावृत्ती तर्कसंगत विचार पद्धती मजबूत करण्यास मदत करते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Set Realistic Goals",
+            "hindi": "यथार्थवादी लक्ष्य निर्धारित करें",
+            "marathi": "वास्तववादी लक्ष्ये ठेवा"
+          },
+          "description": {
+            "english": "Work on setting realistic and achievable goals for yourself and others. Unrealistic expectations often lead to frustration and aggressive behavior when goals are not met. Learn to distinguish between preferences ('I would like things to go my way') and demands ('Things must go my way').",
+            "hindi": "अपने और दूसरों के लिए यथार्थवादी और प्राप्त करने योग्य लक्ष्य निर्धारित करने पर काम करें। अवास्तविक अपेक्षाएं अक्सर निराशा और आक्रामक व्यवहार का कारण बनती हैं जब लक्ष्य पूरे नहीं होते। प्राथमिकताओं ('मैं चाहूंगा कि चीजें मेरे अनुसार चलें') और मांगों ('चीजों को मेरे अनुसार चलना चाहिए') के बीच अंतर करना सीखें।",
+            "marathi": "स्वतःसाठी आणि इतरांसाठी वास्तववादी आणि साध्य करता येणारी लक्ष्ये ठेवण्यावर काम करा. अवास्तविक अपेक्षांमुळे अनेकदा निराशा आणि आक्रमक वर्तन होते जेव्हा लक्ष्ये पूर्ण होत नाहीत. प्राधान्ये ('मला गोष्टी माझ्या मार्गाने व्हाव्यात असे वाटते') आणि मागण्या ('गोष्टी माझ्या मार्गाने व्हायलाच हव्यात') यांच्यातील फरक ओळखणे शिका."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 6,
+          "title": {
+            "english": "Practice Assertiveness",
+            "hindi": "दृढ़ता का अभ्यास करें",
+            "marathi": "दृढतेचा सराव करा"
+          },
+          "description": {
+            "english": "Learn to express your needs, feelings, and opinions in a clear, honest, and respectful way without being aggressive or passive. REBT teaches that you have the right to express yourself, but others also have the right to disagree. Practice stating your position without demanding that others must agree.",
+            "hindi": "आक्रामक या निष्क्रिय हुए बिना अपनी जरूरतों, भावनाओं और विचारों को स्पष्ट, ईमानदार और सम्मानजनक तरीके से व्यक्त करना सीखें। REBT सिखाता है कि आपको खुद को व्यक्त करने का अधिकार है, लेकिन दूसरों को भी असहमत होने का अधिकार है। दूसरों से सहमत होने की मांग किए बिना अपनी स्थिति बताने का अभ्यास करें।",
+            "marathi": "आक्रमक किंवा निष्क्रिय न होता तुमच्या गरजा, भावना आणि मतांना स्पष्ट, प्रामाणिक आणि आदरयुक्त पद्धतीने व्यक्त करणे शिका. REBT शिकवते की तुम्हाला स्वतःला व्यक्त करण्याचा अधिकार आहे, पण इतरांनाही असहमत होण्याचा अधिकार आहे. इतरांनी सहमत व्हावे अशी मागणी न करता तुमची भूमिका मांडण्याचा सराव करा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 4,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "पेशेवर सहायता लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "Consider working with a qualified REBT therapist who can guide you through the process of identifying and changing irrational beliefs. Professional help can provide personalized strategies and support for managing aggressive behavior more effectively.",
+            "hindi": "एक योग्य REBT चिकित्सक के साथ काम करने पर विचार करें जो अतार्किक मान्यताओं की पहचान करने और बदलने की प्रक्रिया के माध्यम से आपका मार्गदर्शन कर सके। पेशेवर सहायता आक्रामक व्यवहार को अधिक प्रभावी रूप से प्रबंधित करने के लिए व्यक्तिगत रणनीति और सहायता प्रदान कर सकती है।",
+            "marathi": "अतार्किक समजुती ओळखणे आणि बदलण्याच्या प्रक्रियेत तुमचे मार्गदर्शन करू शकणाऱ्या पात्र REBT थेरपिस्टसोबत काम करण्याचा विचार करा. व्यावसायिक मदत आक्रमक वर्तन अधिक प्रभावीपणे व्यवस्थापित करण्यासाठी वैयक्तिक रणनीती आणि समर्थन देऊ शकते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 3,
+          "title": {
+            "english": "Practice Self-Care",
+            "hindi": "स्व-देखभाल का अभ्यास करें",
+            "marathi": "स्व-काळजीचा सराव करा"
+          },
+          "description": {
+            "english": "Maintain your physical and emotional well-being through regular self-care practices. This includes getting adequate sleep, eating well, exercising, and engaging in activities you enjoy. When you take care of yourself, you're better equipped to handle stress and less likely to react aggressively.",
+            "hindi": "नियमित स्व-देखभाल प्रथाओं के माध्यम से अपनी शारीरिक और भावनात्मक भलाई बनाए रखें। इसमें पर्याप्त नींद लेना, अच्छा खाना, व्यायाम करना और उन गतिविधियों में संलग्न होना शामिल है जिनका आप आनंद लेते हैं। जब आप अपनी देखभाल करते हैं, तो आप तनाव को संभालने के लिए बेहतर रूप से सुसज्जित होते हैं और आक्रामक प्रतिक्रिया देने की संभावना कम होती है।",
+            "marathi": "नियमित स्व-काळजी पद्धतींद्वारे तुमचे शारीरिक आणि भावनिक कल्याण राखा. यामध्ये पुरेशी झोप घेणे, चांगले खाणे, व्यायाम करणे आणि तुम्हाला आवडणाऱ्या क्रियाकलापांमध्ये सहभागी होणे समाविष्ट आहे. जेव्हा तुम्ही स्वतःची काळजी घेता तेव्हा तुम्ही तणाव हाताळण्यासाठी अधिक सुसज्ज असता आणि आक्रमक प्रतिक्रिया देण्याची शक्यता कमी असते."
+          }
+        }
+      ]
+    },
+    "yogaAndMeditation": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Start with Breathing Exercises",
+            "hindi": "श्वास अभ्यास से शुरुआत करें",
+            "marathi": "श्वसन व्यायामापासून सुरुवात करा"
+          },
+          "description": {
+            "english": "Begin your yoga practice with simple breathing exercises like deep breathing or pranayama. This helps calm the nervous system and prepares your mind for meditation. Practice for 5-10 minutes daily, focusing on slow, controlled breaths to reduce feelings of anger and aggression.",
+            "hindi": "गहरी सांस या प्राणायाम जैसे सरल श्वास अभ्यास के साथ अपनी योग साधना शुरू करें। यह तंत्रिका तंत्र को शांत करने में मदद करता है और आपके मन को ध्यान के लिए तैयार करता है। गुस्से और आक्रामकता की भावनाओं को कम करने के लिए धीमी, नियंत्रित सांसों पर ध्यान देते हुए प्रतिदिन 5-10 मिनट अभ्यास करें।",
+            "marathi": "खोल श्वसन किंवा प्राणायाम यासारख्या साध्या श्वसन व्यायामांनी तुमचा योग सराव सुरू करा. हे मज्जासंस्था शांत करण्यास मदत करते आणि तुमचे मन ध्यानासाठी तयार करते. राग आणि आक्रमकतेच्या भावना कमी करण्यासाठी मंद, नियंत्रित श्वासावर लक्ष केंद्रित करून दररोज 5-10 मिनिटे सराव करा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Practice Yoga Asanas",
+            "hindi": "योग आसनों का अभ्यास करें",
+            "marathi": "योग आसनांचा सराव करा"
+          },
+          "description": {
+            "english": "Incorporate gentle yoga poses like Child's Pose, Cat-Cow, and Warrior poses into your routine. These physical movements help release physical tension and stress that can contribute to aggressive behavior. Focus on holding each pose for 30-60 seconds while maintaining steady breathing.",
+            "hindi": "अपनी दिनचर्या में बालासन, मार्जरी आसन और वीरभद्रासन जैसे कोमल योग आसनों को शामिल करें। ये शारीरिक गतिविधियां शारीरिक तनाव और तनाव को मुक्त करने में मदद करती हैं जो आक्रामक व्यवहार में योगदान दे सकती हैं। स्थिर सांस बनाए रखते हुए प्रत्येक आसन को 30-60 सेकंड तक पकड़ने पर ध्यान दें।",
+            "marathi": "तुमच्या दिनचर्येत बालासन, मार्जरी आसन आणि वीरभद्रासन यासारखे कोमल योग आसने समाविष्ट करा. या शारीरिक हालचालींमुळे शारीरिक तणाव आणि ताण मुक्त होण्यास मदत होते जे आक्रमक वर्तनास कारणीभूत ठरू शकते. स्थिर श्वसन राखत प्रत्येक आसन 30-60 सेकंद धरण्यावर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Meditation",
+            "hindi": "ध्यान",
+            "marathi": "ध्यान"
+          },
+          "description": {
+            "english": "After your yoga practice, transition into a meditation session. Sit comfortably, close your eyes, and focus on your breath. If your mind wanders, gently bring your attention back to your breathing. You can use a mantra like 'I am calm' or 'I am in control' to help focus your mind.",
+            "hindi": "योग अभ्यास के बाद, ध्यान सत्र में संक्रमण करें। आराम से बैठें, अपनी आंखें बंद करें और अपनी सांस पर ध्यान दें। यदि आपका मन भटकता है, तो धीरे से अपना ध्यान वापस अपनी सांस पर लाएं। आप अपने मन को केंद्रित करने में मदद के लिए 'मैं शांत हूं' या 'मैं नियंत्रण में हूं' जैसे मंत्र का उपयोग कर सकते हैं।",
+            "marathi": "योगाचा सराव केल्यानंतर ध्यान सत्रात संक्रमण करा. आरामात बसा, तुमचे डोळे बंद करा आणि तुमच्या श्वासावर लक्ष केंद्रित करा. जर तुमचे मन भटकू लागले तर हळूवारपणे तुमचे लक्ष परत तुमच्या श्वासावर आणा. तुमचे मन केंद्रित करण्यास मदत करण्यासाठी \"मी शांत आहे\" किंवा \"मी नियंत्रणात आहे\" यासारख्या मंत्राचा वापर करू शकता."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Mindfulness",
+            "hindi": "सचेतना",
+            "marathi": "सजगता"
+          },
+          "description": {
+            "english": "Mindfulness involves being fully present in the moment and accepting it without judgment. This can help to manage feelings of anger or aggression by allowing you to recognize these feelings without reacting to them. Practice mindfulness throughout the day, not just during yoga or meditation.",
+            "hindi": "सचेतना में पूरी तरह से वर्तमान क्षण में उपस्थित रहना और इसे बिना निर्णय के स्वीकार करना शामिल है। यह आपको इन भावनाओं पर प्रतिक्रिया किए बिना उन्हें पहचानने की अनुमति देकर गुस्से या आक्रामकता की भावनाओं को प्रबंधित करने में मदद कर सकता है। सचेतना का अभ्यास पूरे दिन करें, न केवल योग या ध्यान के दौरान।",
+            "marathi": "सजगतेमध्ये सध्याच्या क्षणात पूर्णपणे उपस्थित राहणे आणि न्याय न करता ते स्वीकारणे समाविष्ट आहे. हे तुम्हाला या भावनांवर प्रतिक्रिया न देता त्यांना ओळखण्याची परवानगी देऊन राग किंवा आक्रमकतेच्या भावनांना व्यवस्थापित करण्यास मदत करू शकते. केवळ योग किंवा ध्यानादरम्यान नव्हे तर दिवसभर सजगतेचा सराव करा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Consistency",
+            "hindi": "निरंतरता",
+            "marathi": "सुसंगतता"
+          },
+          "description": {
+            "english": "Make sure to practice yoga and meditation regularly. Consistency is key when it comes to managing violent or aggressive behavior.",
+            "hindi": "योग और ध्यान का नियमित अभ्यास करना सुनिश्चित करें। हिंसक या आक्रामक व्यवहार के प्रबंधन की बात आती है तो निरंतरता महत्वपूर्ण है।",
+            "marathi": "योग आणि ध्यानाचा नियमित सराव करणे सुनिश्चित करा. हिंसक किंवा आक्रमक वर्तन व्यवस्थापित करण्याच्या बाबतीत सुसंगतता महत्त्वाची आहे."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "पेशेवर सहायता लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "If violent or aggressive behavior continues to be a problem, it may be beneficial to seek help from a mental health professional. They can provide additional strategies and support. Remember, it's important to approach yoga and meditation with patience and kindness towards yourself. It may take time to see changes, but with consistent practice, you can develop healthier ways to manage your emotions.",
+            "hindi": "यदि हिंसक या आक्रामक व्यवहार एक समस्या बना रहता है, तो मानसिक स्वास्थ्य पेशेवर से सहायता लेना फायदेमंद हो सकता है। वे अतिरिक्त रणनीतियां और सहायता प्रदान कर सकते हैं। याद रखें, योग और ध्यान को धैर्य और अपने प्रति दयालुता के साथ अपनाना महत्वपूर्ण है। परिवर्तन देखने में समय लग सकता है, लेकिन निरंतर अभ्यास के साथ, आप अपनी भावनाओं को प्रबंधित करने के स्वस्थ तरीके विकसित कर सकते हैं।",
+            "marathi": "जर हिंसक किंवा आक्रमक वर्तन एक समस्या म्हणून राहिले तर मानसिक आरोग्य व्यावसायिकाकडून मदत घेणे फायदेशीर असू शकते. ते अतिरिक्त रणनीती आणि समर्थन देऊ शकतात. लक्षात ठेवा, योग आणि ध्यानाकडे धीर आणि स्वतःबद्दल दयाळूपणाने जाणे महत्त्वाचे आहे. बदल पाहण्यास वेळ लागू शकतो, परंतु सातत्यपूर्ण सरावाने तुम्ही तुमच्या भावनांना व्यवस्थापित करण्याचे निरोगी मार्ग विकसित करू शकता."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Deep Breathing",
+            "hindi": "गहरी सांस लेना",
+            "marathi": "खोल श्वसन"
+          },
+          "description": {
+            "english": "Deep, slow, and controlled breathing can help calm the mind and body. It can be done anywhere and anytime one feels the onset of aggressive feelings.",
+            "hindi": "गहरी, धीमी और नियंत्रित सांस लेना मन और शरीर को शांत करने में मदद कर सकता है। यह कहीं भी और कभी भी किया जा सकता है जब कोई आक्रामक भावनाओं की शुरुआत महसूस करता है।",
+            "marathi": "खोल, हळू आणि नियंत्रित श्वसन मन आणि शरीर शांत करण्यास मदत करू शकते. जेव्हा एखाद्याला आक्रमक भावनांची सुरुवात जाणवते तेव्हा हे कुठेही आणि कधीही केले जाऊ शकते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी विश्राम",
+            "marathi": "प्रगतिशील स्नायू शिथिलीकरण"
+          },
+          "description": {
+            "english": "This involves tensing and then releasing different muscle groups in the body. It helps to reduce physical tension that can contribute to aggressive behaviors.",
+            "hindi": "इसमें शरीर में विभिन्न मांसपेशी समूहों को तनाव देना और फिर छोड़ना शामिल है। यह शारीरिक तनाव को कम करने में मदद करता है जो आक्रामक व्यवहार में योगदान दे सकता है।",
+            "marathi": "यामध्ये शरीरातील विविध स्नायू गटांना ताण देणे आणि नंतर सोडणे समाविष्ट आहे. हे शारीरिक तणाव कमी करण्यास मदत करते जे आक्रमक वर्तनास कारणीभूत ठरू शकते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Mindfulness and Meditation",
+            "hindi": "सचेतना और ध्यान",
+            "marathi": "सजगता आणि ध्यान"
+          },
+          "description": {
+            "english": "Regular practice of mindfulness and meditation can help in managing aggressive behavior. It helps to focus on the present moment and reduces stress and anxiety.",
+            "hindi": "सचेतना और ध्यान का नियमित अभ्यास आक्रामक व्यवहार के प्रबंधन में मदद कर सकता है। यह वर्तमान क्षण पर ध्यान केंद्रित करने में मदद करता है और तनाव और चिंता को कम करता है।",
+            "marathi": "सजगता आणि ध्यानाचा नियमित सराव आक्रमक वर्तन व्यवस्थापित करण्यास मदत करू शकतो. हे सध्याच्या क्षणावर लक्ष केंद्रित करण्यास मदत करते आणि तणाव आणि चिंता कमी करते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Visualization",
+            "hindi": "दृश्यावलोकन",
+            "marathi": "कल्पना"
+          },
+          "description": {
+            "english": "Visualizing peaceful and calming scenarios can help reduce feelings of aggression. It can be a beach, a forest, or any place that brings peace to the mind.",
+            "hindi": "शांतिपूर्ण और शांत करने वाले दृश्यों की कल्पना करना आक्रामकता की भावनाओं को कम करने में मदद कर सकता है। यह एक समुद्र तट, एक जंगल, या कोई भी स्थान हो सकता है जो मन में शांति लाता है।",
+            "marathi": "शांततापूर्ण आणि शांत करणाऱ्या परिस्थितींची कल्पना करणे आक्रमकतेच्या भावना कमी करण्यास मदत करू शकते. हे समुद्रकिनारा, जंगल किंवा मनात शांतता आणणारे कोणतेही ठिकाण असू शकते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Yoga",
+            "hindi": "योग",
+            "marathi": "योग"
+          },
+          "description": {
+            "english": "Regular practice of yoga can help in managing aggressive behavior. Yoga combines physical postures, breathing exercises, and meditation that can help in reducing stress and promoting relaxation.",
+            "hindi": "योग का नियमित अभ्यास आक्रामक व्यवहार के प्रबंधन में मदद कर सकता है। योग शारीरिक मुद्राओं, श्वास अभ्यास और ध्यान को जोड़ता है जो तनाव कम करने और विश्राम को बढ़ावा देने में मदद कर सकता है।",
+            "marathi": "योगाचा नियमित सराव आक्रमक वर्तन व्यवस्थापित करण्यास मदत करू शकतो. योग शारीरिक मुद्रा, श्वसन व्यायाम आणि ध्यान एकत्र करतो जे तणाव कमी करण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Physical Exercise",
+            "hindi": "शारीरिक व्यायाम",
+            "marathi": "शारीरिक व्यायाम"
+          },
+          "description": {
+            "english": "Regular physical activity can help reduce aggressive behavior. Exercise releases endorphins, which are natural mood lifters.",
+            "hindi": "नियमित शारीरिक गतिविधि आक्रामक व्यवहार को कम करने में मदद कर सकती है। व्यायाम एंडोर्फिन रिलीज़ करता है, जो प्राकृतिक मूड लिफ्टर हैं।",
+            "marathi": "नियमित शारीरिक क्रियाकलाप आक्रमक वर्तन कमी करण्यास मदत करू शकतो. व्यायामामुळे एंडोर्फिन सोडले जातात जे नैसर्गिक मूड लिफ्टर आहेत."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Music Therapy",
+            "hindi": "संगीत चिकित्सा",
+            "marathi": "संगीत उपचार"
+          },
+          "description": {
+            "english": "Listening to calming music can help in reducing aggressive behavior. Music has a profound effect on our mood and emotions.",
+            "hindi": "शांत संगीत सुनना आक्रामक व्यवहार को कम करने में मदद कर सकता है। संगीत का हमारे मूड और भावनाओं पर गहरा प्रभाव होता है।",
+            "marathi": "शांत संगीत ऐकणे आक्रमक वर्तन कमी करण्यास मदत करू शकते. संगीताचा आपल्या मूड आणि भावनांवर खोल परिणाम होतो."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Aromatherapy",
+            "hindi": "अरोमा थेरेपी",
+            "marathi": "सुगंध चिकित्सा"
+          },
+          "description": {
+            "english": "Certain scents like lavender, chamomile, and sandalwood can have a calming effect and help in reducing aggression.",
+            "hindi": "लैवेंडर, कैमोमाइल और चंदन जैसी कुछ खुशबुओं का शांत करने वाला प्रभाव हो सकता है और आक्रामकता को कम करने में मदद कर सकता है।",
+            "marathi": "लॅव्हेंडर, कॅमोमाइल आणि चंदन यांसारख्या काही सुगंधांचा शांत करणारा प्रभाव असू शकतो आणि आक्रमकता कमी करण्यास मदत करू शकतो."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Art Therapy",
+            "hindi": "कला चिकित्सा",
+            "marathi": "कला उपचार"
+          },
+          "description": {
+            "english": "Engaging in creative activities like painting, drawing, or sculpting can help express emotions in a non-aggressive way.",
+            "hindi": "चित्रकारी, ड्राइंग या मूर्तिकला जैसी रचनात्मक गतिविधियों में संलग्न होना भावनाओं को गैर-आक्रामक तरीके से व्यक्त करने में मदद कर सकता है।",
+            "marathi": "चित्रकारी, रेखाचित्र किंवा शिल्पकारी यांसारख्या सर्जनशील क्रियाकलापांमध्ये गुंतणे भावना गैर-आक्रमक पद्धतीने व्यक्त करण्यास मदत करू शकते."
+          }
+        }
+      ]
+    }
+  }
+}

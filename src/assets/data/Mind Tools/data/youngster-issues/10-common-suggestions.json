@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "condition": "youngster-issues",
+    "intervention_type": "10 Common Suggestions",
+    "source_files": [
+      "thought_pro_filtered.json",
+      "thought_pro_with_extracted_final.json",
+      "Thought_pro_remaining.json"
+    ],
+    "created_from": "thought_pro_filtered.json, thought_pro_with_extracted_final.json, and Thought_pro_remaining.json",
+    "total_interventions": 10,
+    "creation_date": "2024-12-28"
+  },
+  "interventions": [
+    {
+      "title": "Peer Pressure",
+      "description": "- **Suggestion**: Encourage critical thinking and self-awareness.\n   - **Example**: If friends are pressuring you to try smoking, weigh the pros and cons, remember your values, and assertively say, \"I choose not to smoke because I care about my health.\"",
+      "xp": 2
+    },
+    {
+      "title": "Academic Stress",
+      "description": "- **Suggestion**: Practice time management and relaxation techniques.\n   - **Example**: Create a study schedule to break up tasks, and incorporate breaks to do things you enjoy, like playing a sport or reading a book.",
+      "xp": 2
+    },
+    {
+      "title": "Bullying",
+      "description": "- **Suggestion**: Build a supportive network and report incidents.\n   - **Example**: Confide in a trusted teacher or counselor about bullying and seek support from friends who value and respect you.",
+      "xp": 2
+    },
+    {
+      "title": "Identity and Self-Esteem",
+      "description": "- **Suggestion**: Explore interests and recognize personal strengths.\n   - **Example**: If you're feeling uncertain about your identity, try new activities like art or sports, and focus on achievements and positive qualities.",
+      "xp": 2
+    },
+    {
+      "title": "Body Image Issues",
+      "description": "- **Suggestion**: Embrace body positivity and focus on health.\n   - **Example**: Follow social media that promotes positive body image and practice gratitude for body functions, like being able to run or dance.",
+      "xp": 2
+    },
+    {
+      "title": "Relationship Challenges",
+      "description": "- **Suggestion**: Establish boundaries and communicate effectively.\n   - **Example**: In a romantic relationship, discuss what makes you comfortable or uncomfortable, saying, â€œI feel better when we talk about our feelings openly.â€",
+      "xp": 2
+    },
+    {
+      "title": "Digital Addiction",
+      "description": "- **Suggestion**: Set boundaries on screen time.\n   - **Example**: Use apps to monitor and limit time spent on social media, and designate \"tech-free\" times during meals or before bed.",
+      "xp": 2
+    },
+    {
+      "title": "Future Uncertainty",
+      "description": "- **Suggestion**: Focus on setting short-term goals.\n   - **Example**: Instead of worrying about long-term career choices, set goals like joining a club or improving a skill that can lead to new opportunities.",
+      "xp": 2
+    },
+    {
+      "title": "Family Conflicts",
+      "description": "- **Suggestion**: Practice active listening and empathy.\n   - **Example**: During arguments with parents, try to understand their perspective by saying, â€œI hear that youâ€™re concerned about my grades, let's find a solution together.â€",
+      "xp": 2
+    },
+    {
+      "title": "Financial Literacy",
+      "description": "- **Suggestion**: Learn basic budgeting and saving skills.\n    - **Example**: Create a simple budget by listing income sources like allowance and track expenses, then decide on savings goals like buying a new gadget or a gift for a friend.\n\nBy providing these specific examples, young people can better relate to and implement the suggestions in their daily lives, promoting resilience and growth.",
+      "xp": 2
+    }
+  ]
+}

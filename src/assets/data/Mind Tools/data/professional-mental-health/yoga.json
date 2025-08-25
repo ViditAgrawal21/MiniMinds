@@ -1,0 +1,83 @@
+{
+  "condition": "Professional Mental Health",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Set an Intention:",
+      "Card Description": "'- Begin each session by setting a personal intention or goal related to your mental well-being. This could be reducing stress, increasing clarity, or finding balance.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Breathing Exercises (Pranayama):",
+      "Card Description": "'- **Anulom Vilom (Alternate Nostril Breathing):**  \n     - Sit comfortably with your spine straight.   \n     - Close your right nostril with your thumb and inhale deeply through the left.  \n     - Close the left nostril with your ring finger and exhale through the right.  \n     - Reverse the process and continue for 5-10 minutes.  \n   - **Ujjayi Breath (Victorious Breath):**  \n     - Constrict the back of your throat slightly as you inhale and exhale, creating a gentle hissing sound.   \n     - Focus on the sound and duration of your breath for 5-10 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Asanas (Postures):",
+      "Card Description": "'- **Child’s Pose (Balasana):**   \n     - Kneel on the floor, sit back on your heels, and extend your arms forward, resting your forehead on the mat.  \n     - Hold for 1-3 minutes to promote relaxation and release tension.  \n   - **Cat-Cow Pose (Marjaryasana-Bitilasana):**  \n     - On all fours, alternate between arching your back (cow) and rounding it (cat).   \n     - Coordinate the movements with inhalation and exhalation, repeating for 5 minutes.  \n   - **Tree Pose (Vrksasana):**  \n     - Stand tall and focus your gaze.   \n     - Shift your weight onto one leg and place the foot of the opposite leg on the inner thigh or calf (avoid the knee).  \n     - Balance and breathe deeply for 1-3 minutes on each side.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Guided Relaxation (Savasana):",
+      "Card Description": "'- Lie on your back with arms at your sides.  \n   - Close your eyes and consciously relax each part of your body from toes to head.  \n   - Stay in this pose for 5-10 minutes to fully relax and integrate your practice.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Create a Quiet Space:",
+      "Card Description": "'- Find a quiet, comfortable place where you won’t be disturbed. This can be a corner of a room or a dedicated meditation area.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Choose a Technique:",
+      "Card Description": "'- **Mindfulness Meditation:**  \n     - Focus on your breath and the sensations in your body.   \n     - If your mind wanders, gently bring your focus back to your breath.  \n   - **Guided Meditation:**  \n     - Use a meditation app or recording that leads you through a meditative experience.  \n   - **Loving-Kindness Meditation:**  \n     - Begin by silently repeating phrases like “May I be happy, may I be healthy, may I be safe,” then extend these wishes to others.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Start Small:",
+      "Card Description": "'- Begin with 5-10 minutes per day and gradually increase as you become more comfortable with the practice.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Consistency is Key:",
+      "Card Description": "'- Make meditation a regular part of your routine, ideally at the same time every day to build a habit.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Reflect:",
+      "Card Description": "'- After each session, take a few moments to reflect on how you feel and note any changes in your mental state.",
+      "xp": 5
+    }
+  ],
+  "count": 9,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 9
+  }
+}

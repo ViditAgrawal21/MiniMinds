@@ -1,0 +1,75 @@
+{
+  "condition": "General Physical Fitness",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Warm-Up (5-10 minutes)",
+      "Card Description": "'- **Cat-Cow Stretch:** Start on all fours, arch your back on an inhale (cow), and round it on an exhale (cat). Repeat 5-10 times.  \n   - **Dynamic Sun Salutations:** Flow through a few rounds of Sun Salutations (Surya Namaskar) to warm up the body.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Main Yoga Poses (20-30 minutes)",
+      "Card Description": "'- **Warrior I (Virabhadrasana I):** Strengthens legs and increases stamina.  \n   - **Warrior II (Virabhadrasana II):** Enhances balance and stability.  \n   - **Triangle Pose (Trikonasana):** Stretches and strengthens legs and torso; improves balance.  \n   - **Plank Pose:** Builds core strength.  \n   - **Bridge Pose (Setu Bandhasana):** Strengthens the back and glutes.  \n   - **Chair Pose (Utkatasana):** Strengthens thighs and legs.  \n   - **Tree Pose (Vrksasana):** Improves balance and concentration.  \n   - **Seated Forward Bend (Paschimottanasana):** Stretches the spine, shoulders, and hamstrings.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Cool Down (5-10 minutes)",
+      "Card Description": "'- **Child’s Pose (Balasana):** A gentle stretch and rest.  \n   - **Supine Twist:** Lying on your back, bring knees to one side to stretch the spine.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Prepare (2-5 minutes)",
+      "Card Description": "'- Find a comfortable seated position, either on the floor with a cushion or in a chair with feet flat on the ground.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Breath Awareness (5-10 minutes)",
+      "Card Description": "'- Close your eyes and focus on your breath. Notice the natural rhythm without trying to change it. This is foundational for calming the mind.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan (5-10 minutes)",
+      "Card Description": "'- Slowly bring your awareness from the head to the toes, observing any sensations without judgment. This helps increase mindfulness and relaxation.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Loving-Kindness Meditation (5-10 minutes)",
+      "Card Description": "'- Cultivate positive emotions by silently repeating phrases like “May I be happy, may I be healthy,” and extending these wishes to loved ones, acquaintances, and even difficult people.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Gratitude Practice (2-5 minutes)",
+      "Card Description": "'- Conclude with a few moments of gratitude, thinking of people or experiences you're thankful for.",
+      "xp": 5
+    }
+  ],
+  "count": 8,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 8
+  }
+}

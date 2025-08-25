@@ -1,0 +1,109 @@
+import React, { useState } from "react";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+
+const IntervalSelector = () => {
+  const [selectedInterval, setSelectedInterval] = useState<string | null>(null);
+
+  const intervals = ["5 min", "15 min", "30 min", "Custom"];
+
+  const handleReset = () => {
+    setSelectedInterval(null); // Clear the selected interval
+  };
+
+  const handleSelect = (interval: string) => {
+    setSelectedInterval(interval); // Set the selected interval
+  };
+
+  return (
+    <View style={styles.container}>
+      {/* Header Section */}
+      <View style={styles.header}>
+        <Text style={styles.title}>Set your Intervals</Text>
+        <TouchableOpacity onPress={handleReset}>
+          <Text style={styles.reset}>Reset</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Options Section */}
+      <View style={styles.options}>
+        {intervals.map((item, index) => (
+          <TouchableOpacity
+            key={index}
+            style={[
+              styles.optionButton,
+              selectedInterval === item && styles.selectedButton, // Highlight if selected
+            ]}
+            onPress={() => handleSelect(item)}
+          >
+            <Text
+              style={[
+                styles.optionText,
+                selectedInterval === item && styles.selectedText, // Highlight text if selected
+              ]}
+            >
+              {item}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    marginBottom: 16,
+    backgroundColor: "#F9F9F9",
+    borderRadius: 12,
+    padding: 16,
+    shadowColor: "#000",
+    shadowOpacity: 0.05,
+    shadowRadius: 6,
+    elevation: 1, // For Android shadow
+  },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  title: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#8A56AC",
+  },
+  reset: {
+    fontSize: 12,
+    color: "#8A56AC",
+    textDecorationLine: "underline",
+  },
+  options: {
+    flexDirection: "row", // Ensures items are in a row
+    flexWrap: "nowrap", // Prevent wrapping
+    marginTop: 10,
+    justifyContent: "space-between", // Distribute space evenly
+  },
+  optionButton: {
+    paddingVertical: 8, // Reduce vertical padding
+    paddingHorizontal: 15, // Reduce horizontal padding to fit all buttons
+    borderRadius: 25,
+    backgroundColor: "#F5F5F5",
+    borderWidth: 1,
+    borderColor: "#E5E5E5",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  selectedButton: {
+    backgroundColor: "#8A56AC",
+    borderColor: "#8A56AC",
+  },
+  optionText: {
+    fontSize: 14,
+    color: "#6A6A6A",
+  },
+  selectedText: {
+    color: "#FFFFFF", // Highlight text when selected
+    fontWeight: "600",
+  },
+});
+
+export default IntervalSelector;

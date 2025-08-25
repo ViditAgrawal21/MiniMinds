@@ -1,0 +1,99 @@
+{
+  "condition": "Addictions",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mountain Pose (Tadasana)",
+      "Card Description": "'- Stand with feet together, arms at your sides.  \n   - Ground your feet into the floor and lengthen your spine.  \n   - Take deep breaths and focus on stability and presence.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Child’s Pose (Balasana)",
+      "Card Description": "'- Kneel on the mat, sit back on your heels, and stretch your arms forward.  \n   - Rest your forehead on the ground and breathe deeply.  \n   - Use this pose for relaxation and stress relief.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Cat-Cow Stretch (Marjaryasana-Bitilasana)",
+      "Card Description": "'- Start on hands and knees, aligning wrists under shoulders and knees under hips.  \n   - Inhale to arch your back (Cow), exhale to round your spine (Cat).  \n   - This flow helps release tension and improve mood.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Tree Pose (Vrksasana)",
+      "Card Description": "'- Stand on one leg, placing the sole of the other foot on the inner thigh or calf.  \n   - Bring hands together at the chest or overhead.  \n   - This pose enhances balance and concentration.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Bridge Pose (Setu Bandhasana)",
+      "Card Description": "'- Lie on your back with knees bent, feet hip-width apart.  \n   - Lift your hips, pressing down through your feet and shoulders.  \n   - Strengthens and energizes the body while opening the chest.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Savasana (Corpse Pose)",
+      "Card Description": "'- Lie flat on your back with arms at your sides.  \n   - Relax completely, and focus on your breath.  \n   - Promotes deep relaxation and integration after your practice.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindfulness Meditation",
+      "Card Description": "'- Sit comfortably with your back straight and hands resting on your knees.  \n   - Focus your attention on the breath, noticing the inhale and exhale.  \n   - When your mind wanders, gently bring your focus back to the breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Loving-Kindness Meditation (Metta)",
+      "Card Description": "'- Sit comfortably, close your eyes, and take a few deep breaths.  \n   - Silently repeat phrases like \"May I be happy, may I be healthy, may I be safe.\"  \n   - Gradually extend these wishes to others, including those who challenge you.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan Meditation",
+      "Card Description": "'- Lie down comfortably and close your eyes.  \n   - Bring attention to different parts of your body, starting from the toes and moving upwards.  \n   - Notice any sensations without judgment.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Guided Meditations",
+      "Card Description": "'- Use online resources or apps like Headspace or Calm for structured sessions.  \n   - Choose topics that focus on recovery, relaxation, or emotional balance.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Breath Awareness Meditation",
+      "Card Description": "'- Focus solely on the rhythm of your breathing.  \n   - Count breaths in cycles (inhale 1, exhale 2, and so on) to anchor your attention.",
+      "xp": 5
+    }
+  ],
+  "count": 11,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 11
+  }
+}

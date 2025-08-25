@@ -1,0 +1,67 @@
+{
+  "condition": "Common Psychological Issues",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Breath Awareness (Pranayama):",
+      "Card Description": "'- **Deep Breathing**: Sit or lie down comfortably. Inhale deeply through the nose, hold for a moment, and exhale slowly through the mouth. Repeat for at least 5 minutes.  \n   - **Alternate Nostril Breathing**: Close your right nostril with your thumb, inhale through the left nostril, then close the left nostril and exhale through the right. Alternate for 5-10 cycles.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Yoga Postures (Asanas):",
+      "Card Description": "'- **Child's Pose (Balasana)**: Kneel on the floor, sit back on your heels, and stretch your arms forward while lowering your forehead to the mat. This pose is calming and helps relieve stress.  \n   - **Cat-Cow Pose (Marjaryasana/Bitilasana)**: Move between these poses to alleviate tension in the spine and promote relaxation.  \n   - **Legs-Up-the-Wall Pose (Viparita Karani)**: Lie on your back with your legs extended up against a wall. This restorative pose can help reduce anxiety and fatigue.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindfulness and Body Awareness:",
+      "Card Description": "'- Focus on the sensations in your body during each pose. Be present in the moment, noticing how your body moves and responds.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindfulness Meditation:",
+      "Card Description": "'- Find a quiet place to sit comfortably. Close your eyes and pay attention to your breath. Notice each inhale and exhale. When your mind wanders, gently bring your focus back to your breath.  \n   - Practice for 10-20 minutes daily.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Guided Meditation:",
+      "Card Description": "'- Use a guided meditation app or audio track that focuses on relaxation or stress reduction. Allow the guidance to lead you through visualization and deep relaxation.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan Meditation:",
+      "Card Description": "'- Lie down comfortably. Focus on each part of your body, starting from the toes and moving up to the head. Notice any tension and consciously relax each area.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Loving-Kindness Meditation (Metta):",
+      "Card Description": "'- Sit quietly and bring your attention to your heart. Mentally repeat phrases like “May I be happy, may I be healthy, may I be at peace.” Extend these wishes to others in your life and to all living beings.",
+      "xp": 5
+    }
+  ],
+  "count": 7,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 7
+  }
+}

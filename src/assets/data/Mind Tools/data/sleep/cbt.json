@@ -1,0 +1,101 @@
+{
+  "condition": "Sleep",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Sleep Hygiene Improvement",
+      "Description": "'- **Why it Helps**: Establishing a healthy sleep environment and routine sets the foundation for good sleep.\n   - **What to Do**: Ensure your bedroom is conducive to sleep (quiet, dark, cool). Stick to a consistent sleep schedule.\n   - **Example**: Go to bed and wake up at the same time every day, even on weekends.",
+      "XP": 5,
+      "Journal Template": "{\n  \"question\": \"Why is maintaining a consistent sleep schedule important to you?\",\n  \"xp\": 5\n}",
+      "extracted_value": "Why is maintaining a consistent sleep schedule important to you?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Stimulus Control",
+      "Description": "'- **Why it Helps**: Associates the bed with sleep, rather than wakefulness, reducing anxiety around bedtime.\n   - **What to Do**: Use the bed only for sleep and intimacy; get out of bed if unable to sleep after 20 minutes.\n   - **Example**: If you can't fall asleep, go to another room and engage in a quiet activity like reading until you're sleepy.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"Why do you think stimulus control can help with insomnia?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Describe a situation where you used stimulus control. What did you do?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How do you plan to use your bed only for sleep and intimacy?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What quiet activity will you engage in if you can't fall asleep?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"How long will you stay out of bed if you can't fall asleep?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What are your goals for implementing stimulus control?\",\n    \"xp\": 6\n  }\n]",
+      "extracted_value": "Why do you think stimulus control can help with insomnia?\n\n\nDescribe a situation where you used stimulus control. What did you do?\n\n\nHow do you plan to use your bed only for sleep and intimacy?\n\n\nWhat quiet activity will you engage in if you can't fall asleep?\n\n\nHow long will you stay out of bed if you can't fall asleep?\n\n\nWhat are your goals for implementing stimulus control?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Sleep Restriction",
+      "Description": "'- **Why it Helps**: Increases sleep efficiency by limiting time in bed to actual sleep time.\n   - **What to Do**: Determine average sleep duration and limit time in bed to that amount, gradually increasing as sleep improves.\n   - **Example**: If you average 5 hours of sleep, only spend 5.5 hours in bed. Adjust as sleep quality improves.",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"How many hours did I sleep last night?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What time did I go to bed last night?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What time did I wake up this morning?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"Did I feel tired before my bedtime? If so, why?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Did I feel sleepy when I went to bed? If not, what was I doing?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How did I feel during the day? Were there any periods of excessive daytime sleepiness?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"Did I stick to my sleep window? If not, why?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What strategies can I use to improve my sleep efficiency?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"Are there any changes I need to make to my sleep window for the next night?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "How many hours did I sleep last night?\n\n\nWhat time did I go to bed last night?\n\n\nWhat time did I wake up this morning?\n\n\nDid I feel tired before my bedtime? If so, why?\n\n\nDid I feel sleepy when I went to bed? If not, what was I doing?\n\n\nHow did I feel during the day? Were there any periods of excessive daytime sleepiness?\n\n\nDid I stick to my sleep window? If not, why?\n\n\nWhat strategies can I use to improve my sleep efficiency?\n\n\nAre there any changes I need to make to my sleep window for the next night?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'- **Why it Helps**: Addresses and modifies negative thoughts that can interfere with sleep.\n   - **What to Do**: Identify and challenge negative or unrealistic thoughts about sleep and replace them with realistic ones.\n   - **Example**: Replace \"I'll never fall asleep\" with \"Even if it takes some time, I will eventually fall asleep.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"negativeThought\": \"\",\n  \"challengingQuestion\": [\n    \"Is this thought really true?\",\n    \"Is there another way to look at this situation?\",\n    \"What evidence do I have for this thought?\",\n    \"Would I say this to a friend?\"\n  ],\n  \"restructuredThought\": \"\",\n  \"emotionalOutcome\": \"\",\n  \"behavioralOutcome\": \"\"\n}",
+      "extracted_value": "Is this thought really true?\nIs there another way to look at this situation?\nWhat evidence do I have for this thought?\nWould I say this to a friend?"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Relaxation Techniques",
+      "Description": "'- **Why it Helps**: Reduces physiological and mental arousal that can hinder sleep onset.\n   - **What to Do**: Practice relaxation techniques such as deep breathing, progressive muscle relaxation, or meditation before bed.\n   - **Example**: Spend 10 minutes doing deep breathing exercises as you lie in bed.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"relaxationTechniqueUsed\": \"\",\n  \"timeSpent\": \"\",\n  \"howDidYouFeelBefore\": \"\",\n  \"howDidYouFeelAfter\": \"\",\n  \"whatDidYouNoticeDuringTheExercise\": \"\",\n  \"questionsToReflectOn\": [\n    {\n      \"question\": \"What relaxation technique did I use today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How long did I spend practicing relaxation techniques?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"How did I feel before starting the relaxation exercise?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did I feel after completing the relaxation exercise?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What did I notice during the relaxation exercise?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How can I incorporate relaxation techniques into my daily routine?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What challenges did I face during the relaxation exercise, and how did I overcome them?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How has my overall well-being changed since starting to practice relaxation techniques?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What relaxation technique did I use today?\n\n\nHow long did I spend practicing relaxation techniques?\n\n\nHow did I feel before starting the relaxation exercise?\n\n\nHow did I feel after completing the relaxation exercise?\n\n\nWhat did I notice during the relaxation exercise?\n\n\nHow can I incorporate relaxation techniques into my daily routine?\n\n\nWhat challenges did I face during the relaxation exercise, and how did I overcome them?\n\n\nHow has my overall well-being changed since starting to practice relaxation techniques?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Mindfulness Meditation",
+      "Description": "'- **Why it Helps**: Increases awareness of the present moment and reduces stress, which can improve sleep.\n   - **What to Do**: Incorporate mindfulness meditation into your nighttime routine.\n   - **Example**: Practice a guided body scan meditation before bedtime.",
+      "XP": 3,
+      "Journal Template": "{\n  \"question\": \"Date and Time of Meditation\",\n  \"xp\": 3\n}",
+      "extracted_value": "Date and Time of Meditation"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Thought Journaling",
+      "Description": "'- **Why it Helps**: Writing down worries can reduce nighttime rumination and anxiety.\n   - **What to Do**: Spend 10-15 minutes before bed writing down any worries and possible solutions.\n   - **Example**: Use a journal to note things on your mind and create a plan for addressing them the next day.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Time\": \"\",\n  \"Worries/Concerns\": [\n    {\n      \"Worry\": \"\",\n      \"Possible Solutions\": \"\"\n    }\n  ],\n  \"Questions to Reflect On\": [\n    {\n      \"Question\": \"What am I worried about?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"Is there a specific situation or event that triggered this worry?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"What are the potential consequences of this worry?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"What are some possible solutions or actions I can take to address this worry?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"How can I break down this worry into smaller, manageable tasks?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"What are some positive outcomes or benefits of addressing this worry?\",\n      \"Answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "What am I worried about?\n\n\nIs there a specific situation or event that triggered this worry?\n\n\nWhat are the potential consequences of this worry?\n\n\nWhat are some possible solutions or actions I can take to address this worry?\n\n\nHow can I break down this worry into smaller, manageable tasks?\n\n\nWhat are some positive outcomes or benefits of addressing this worry?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Paradoxical Intention",
+      "Description": "'- **Why it Helps**: Reduces pressure to fall asleep by instructing you to focus on staying awake.\n   - **What to Do**: Instead of trying to fall asleep, focus on staying awake, which can ironically lead to falling asleep.\n   - **Example**: Lie in bed and tell yourself to stay awake for as long as possible without using your phone or reading.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"sessionNumber\": \"\",\n  \"techniqueUsed\": \"Paradoxical Intention\",\n  \"questions\": [\n    {\n      \"question\": \"What is my primary goal for this session?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What specific anxiety-provoking behavior am I focusing on today?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How am I going to deliberately engage in this behavior today?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What are my thoughts and feelings before engaging in this behavior?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How did I feel during the exercise? Was it challenging or manageable?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"Did I notice any changes in my anxiety levels or sleep patterns? If so, describe them.\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"What insights or observations did I gain from this exercise?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "Paradoxical Intention\nWhat is my primary goal for this session?\n\n\nWhat specific anxiety-provoking behavior am I focusing on today?\n\n\nHow am I going to deliberately engage in this behavior today?\n\n\nWhat are my thoughts and feelings before engaging in this behavior?\n\n\nHow did I feel during the exercise? Was it challenging or manageable?\n\n\nDid I notice any changes in my anxiety levels or sleep patterns? If so, describe them.\n\n\nWhat insights or observations did I gain from this exercise?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Sleep Diary",
+      "Description": "'- **Why it Helps**: Tracks patterns and behaviors that affect sleep, providing insights into what changes may be helpful.\n   - **What to Do**: Record sleep patterns, including bedtime, wake time, and sleep quality each day.\n   - **Example**: Use a template to record when you go to bed, how long it takes to fall asleep, and any nighttime awakenings.",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What time did you go to bed?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What time did you start trying to go to sleep?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"How long did it take to fall asleep?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"Did you experience any nighttime awakenings? If so, how many times did you wake up?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What was your overall sleep quality today? (Scale: 1-10)\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"Did you consume any substances that might interfere with sleep (e.g., caffeine, alcohol)? If so, what and when?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"Were there any stressors or events that might have affected your sleep? If so, describe them.\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"Did you engage in any relaxation techniques before bed? If so, which ones and how long did you practice them?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"How did you feel when you woke up? (Scale: 1-10, where 1 is very tired and 10 is very refreshed)\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "What time did you go to bed?\n\n\nWhat time did you start trying to go to sleep?\n\n\nHow long did it take to fall asleep?\n\n\nDid you experience any nighttime awakenings? If so, how many times did you wake up?\n\n\nWhat was your overall sleep quality today? (Scale: 1-10)\n\n\nDid you consume any substances that might interfere with sleep (e.g., caffeine, alcohol)? If so, what and when?\n\n\nWere there any stressors or events that might have affected your sleep? If so, describe them.\n\n\nDid you engage in any relaxation techniques before bed? If so, which ones and how long did you practice them?\n\n\nHow did you feel when you woke up? (Scale: 1-10, where 1 is very tired and 10 is very refreshed)\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Limit Stimulant Intake",
+      "Description": "'- **Why it Helps**: Reducing caffeine and other stimulants decreases their impact on sleep quality and duration.\n    - **What to Do**: Avoid caffeine, nicotine, and other stimulants at least 6 hours before bedtime.\n    - **Example**: Switch to decaffeinated coffee or herbal tea in the afternoon and evening.\n\nThese CBT techniques aim to reframe thoughts about sleep and implement behavioral changes to facilitate better sleep patterns. By addressing both cognitive and behavioral factors, CBT for insomnia can effectively improve sleep quality and duration.",
+      "XP": 7,
+      "Journal Template": "{\n  \"situation\": {\n    \"question\": \"What time did I consume caffeine or other stimulants today?\",\n    \"answer\": \"\"\n  },\n  \"initialReaction\": {\n    \"question\": \"How did I feel immediately after consuming caffeine or other stimulants?\",\n    \"answer\": \"\"\n  },\n  \"negativeAutomaticThoughts\": {\n    \"question\": \"What negative thoughts did I have about my sleep after consuming caffeine or other stimulants?\",\n    \"answer\": \"\"\n  },\n  \"supportingEvidence\": {\n    \"question\": \"What evidence supports the idea that caffeine or other stimulants affect my sleep?\",\n    \"answer\": \"\"\n  },\n  \"opposingEvidence\": {\n    \"question\": \"What evidence suggests that caffeine or other stimulants do not affect my sleep?\",\n    \"answer\": \"\"\n  },\n  \"balancedAlternativeThought\": {\n    \"question\": \"What is a more balanced thought about how caffeine or other stimulants impact my sleep?\",\n    \"answer\": \"\"\n  },\n  \"outcomeLearning\": {\n    \"question\": \"What did I learn from this experience about limiting stimulant intake before bedtime?\",\n    \"answer\": \"\"\n  }\n}",
+      "extracted_value": "What time did I consume caffeine or other stimulants today?\n\n\nHow did I feel immediately after consuming caffeine or other stimulants?\n\n\nWhat negative thoughts did I have about my sleep after consuming caffeine or other stimulants?\n\n\nWhat evidence supports the idea that caffeine or other stimulants affect my sleep?\n\n\nWhat evidence suggests that caffeine or other stimulants do not affect my sleep?\n\n\nWhat is a more balanced thought about how caffeine or other stimulants impact my sleep?\n\n\nWhat did I learn from this experience about limiting stimulant intake before bedtime?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "condition": "General Physical Fitness",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Regular Exercise Routine:",
+      "Card Description": "'- **Example:** Engage in at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity per week. This can be broken down into 30-minute sessions, 5 days a week. A brisk walk, cycling, or swimming can be moderate activities, while running or jumping rope can be more vigorous.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Strength Training:",
+      "Card Description": "'- **Example:** Include strength training exercises for all major muscle groups at least two times a week. This can include weightlifting, bodyweight exercises like push-ups and squats, or using resistance bands.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Balanced Diet:",
+      "Card Description": "'- **Example:** Eat a variety of foods from all the food groups to get a range of nutrients. Incorporate lean proteins, whole grains, fruits, vegetables, and healthy fats into your meals. Limit processed foods and sugar.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Stay Hydrated:",
+      "Card Description": "'- **Example:** Aim to drink at least 8 cups (64 ounces) of water a day, though individual needs may vary. Increase water intake during hotter weather or when exercising a lot.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Get Enough Sleep:",
+      "Card Description": "'- **Example:** Aim for 7-9 hours of quality sleep per night. Maintain a consistent sleep schedule, even on weekends, and create a restful sleep environment by limiting screen time before bed.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Flexibility and Stretching:",
+      "Card Description": "'- **Example:** Incorporate stretching or flexibility exercises into your routine at least two to three times per week. Consider yoga or simple stretching exercises after workouts to improve flexibility and prevent injury.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Active Lifestyle:",
+      "Card Description": "'- **Example:** Incorporate more movement into your daily routine. Take the stairs instead of the elevator, walk or bike for short trips, and take frequent breaks to stand up and stretch while working.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Monitor Progress:",
+      "Card Description": "'- **Example:** Keep a fitness journal or use a fitness app to track your workouts, diet, and progress toward your goals. This can help keep you motivated and on track.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Rest and Recovery:",
+      "Card Description": "'- **Example:** Schedule regular rest days to allow your body to recover, especially after high-intensity workouts. Listen to your body and incorporate active rest, like light walking, on rest days.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Set Realistic Goals:",
+      "Card Description": "'- **Example:** Set Specific, Measurable, Achievable, Relevant, and Time-bound (SMART) goals. For instance, aim to run a 5k within a certain timeframe or increase your bench press by 10% over three months.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "condition": "Social Mental Health",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Foster Strong Social Connections:",
+      "Card Description": "'- **How It Works:** Building and maintaining strong relationships can provide emotional support, reduce feelings of isolation, and increase feelings of belonging.  \n   - **Example:** Join a local club or group that aligns with your interests, such as a book club or a sports team, to meet new people and form connections.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Encourage Open Communication:",
+      "Card Description": "'- **How It Works:** Open and honest communication helps individuals express their feelings, solve conflicts, and develop deeper bonds with others.  \n   - **Example:** Regularly schedule \"check-in\" meetings with close friends and family where everyone can share their thoughts and feelings freely.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Promote Community Engagement:",
+      "Card Description": "'- **How It Works:** Actively participating in community activities reduces social isolation and fosters a sense of community.  \n   - **Example:** Volunteer at a local charity or participate in community clean-up events to connect with others while contributing to a good cause.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Implement Social Skills Training:",
+      "Card Description": "'- **How It Works:** Teaching social skills can help individuals improve their interactions with others, which can reduce social anxiety and enhance self-esteem.  \n   - **Example:** Attend workshops that focus on communication skills, body language, and empathy training.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Encourage Shared Activities:",
+      "Card Description": "'- **How It Works:** Shared activities can strengthen bonds and help individuals feel a sense of belonging.  \n   - **Example:** Organize a weekly game night, potluck, or outdoor adventure with friends or neighbors.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Prioritize Mental Health Education:",
+      "Card Description": "'- **How It Works:** Educating people about mental health can reduce stigma and make it easier to seek help.  \n   - **Example:** Schools and workplaces can host seminars and workshops that teach about mental health awareness and how to support others.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Utilize Technology Positively:",
+      "Card Description": "'- **How It Works:** Technology can help people stay connected but should be used mindfully to enhance rather than replace real-world interactions.  \n   - **Example:** Use social media to organize real-life meetups and stay in touch with distant friends and family, but set limits to manage screen time.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Create Safe, Inclusive Spaces:",
+      "Card Description": "'- **How It Works:** Safe spaces allow individuals to express themselves without fear of judgment, fostering a sense of safety and acceptance.  \n   - **Example:** Establish support groups for different interests or demographics, such as LGBTQ+ support groups or parenting circles, to provide a forum for sharing experiences and advice.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Develop Programs for Marginalized Groups:",
+      "Card Description": "'- **How It Works:** Tailored programs can address the unique challenges faced by marginalized communities and promote inclusivity.  \n   - **Example:** Offer mentorship programs that pair members of marginalized communities with mentors who can provide guidance and support.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Implement Supportive Workplace Policies:",
+      "Card Description": "'- **How It Works:** Creating a supportive work environment can reduce stress and improve employee well-being and productivity.  \n    - **Example:** Companies can include mental health days, flexible working hours, and access to mental health resources and counseling.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

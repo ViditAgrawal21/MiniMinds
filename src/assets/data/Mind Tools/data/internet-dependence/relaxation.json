@@ -1,0 +1,59 @@
+{
+  "condition": "Internet Dependence",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindful Breathing (Pranayama):",
+      "Card Description": "'- **Nadi Shodhana (Alternate Nostril Breathing):** This helps balance the nervous system and calm the mind. Close your right nostril with your thumb, inhale deeply through your left nostril, and then close it with your ring finger. Release your thumb and exhale through the right nostril. Continue this pattern, alternating nostrils.  \n   - **Deep Belly Breathing:** Focus on slow, deep breaths to calm your mind. Inhale deeply into your belly, hold for a moment, and exhale slowly.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Grounding Poses:",
+      "Card Description": "'- **Mountain Pose (Tadasana):** Stand with feet hip-width apart, grounding through all four corners of the feet. Engage your thighs, lift your chest, and relax your shoulders. Focus on your breath and feel present in the moment.  \n   - **Tree Pose (Vrksasana):** This balancing pose can help improve concentration and stability. Stand on one leg, placing the sole of the other foot on your inner thigh or calf, then bring your hands to prayer position.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Restorative Poses:",
+      "Card Description": "'- **Child’s Pose (Balasana):** Kneel on the floor, sit back on your heels, and stretch your arms forward. Rest your forehead on the ground and breathe deeply. This pose is excellent for relaxation and letting go.  \n   - **Legs-Up-the-Wall Pose (Viparita Karani):** Lie on your back with your legs extended up against a wall. This pose helps to relax the mind and body.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindfulness Meditation:",
+      "Card Description": "'- Sit comfortably with your back straight and begin to focus on your breath. Notice the sensation of the breath entering and leaving your nostrils. When your mind wanders, gently bring your attention back to your breath. Practice for 5-10 minutes daily.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan Meditation:",
+      "Card Description": "'- Slowly direct your attention to different parts of your body, starting from your toes and working your way up. Notice any sensations, tension, or areas of relaxation. This practice helps increase awareness and reduces stress.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Guided Meditations:",
+      "Card Description": "'- Use apps or online resources to follow guided meditations that focus on reducing digital dependence and fostering a healthy relationship with technology.",
+      "xp": 5
+    }
+  ],
+  "count": 6,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 6
+  }
+}

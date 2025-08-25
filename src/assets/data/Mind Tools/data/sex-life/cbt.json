@@ -1,0 +1,97 @@
+{
+  "condition": "Sex Life",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'**Why It Helps:** Cognitive restructuring can combat irrational beliefs that affect sexual self-esteem or performance anxiety.  \n   **What to Do:** Identify negative thoughts about sex (e.g., \"I am not good enough\") and challenge them with evidence-based, more balanced thoughts.  \n   **Example:** Replace \"I will always disappoint my partner\" with \"Every couple has different preferences, and I can ask my partner what they enjoy.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"section1\": {\n    \"title\": \"Identify the Trigger\",\n    \"instructions\": \"Describe the situation that led to your negative emotions or thoughts.\",\n    \"questions\": [\n      {\n        \"question\": \"What happened?\",\n        \"xp\": 3\n      },\n      {\n        \"question\": \"Where were you?\",\n        \"xp\": 3\n      },\n      {\n        \"question\": \"Who was involved?\",\n        \"xp\": 3\n      },\n      {\n        \"question\": \"How did you feel in the moment?\",\n        \"xp\": 4\n      }\n    ]\n  },\n  \"section2\": {\n    \"title\": \"Record Your Automatic Thoughts\",\n    \"instructions\": \"Write down the immediate thoughts that came to mind when the situation occurred. These are often negative, irrational, or distorted.\",\n    \"questions\": [\n      {\n        \"question\": \"What were you thinking?\",\n        \"xp\": 5\n      },\n      {\n        \"question\": \"What meaning did you attach to the situation?\",\n        \"xp\": 5\n      }\n    ]\n  },\n  \"section3\": {\n    \"title\": \"Challenge Your Thoughts\",\n    \"instructions\": \"Examine the evidence for and against your negative thoughts, consider alternative perspectives, and develop more balanced or rational interpretations.\",\n    \"questions\": [\n      {\n        \"question\": \"Is there any evidence to support your negative thought?\",\n        \"xp\": 6\n      },\n      {\n        \"question\": \"Is there any evidence to contradict your negative thought?\",\n        \"xp\": 6\n      },\n      {\n        \"question\": \"What are some alternative perspectives on this situation?\",\n        \"xp\": 7\n      },\n      {\n        \"question\": \"Can you reframe your negative thought into a more balanced or rational interpretation?\",\n        \"xp\": 8\n      }\n    ]\n  }\n}",
+      "extracted_value": "Identify the Trigger\nDescribe the situation that led to your negative emotions or thoughts.\nWhat happened?\n\n\nWhere were you?\n\n\nWho was involved?\n\n\nHow did you feel in the moment?\n\n\nRecord Your Automatic Thoughts\nWrite down the immediate thoughts that came to mind when the situation occurred. These are often negative, irrational, or distorted.\nWhat were you thinking?\n\n\nWhat meaning did you attach to the situation?\n\n\nChallenge Your Thoughts\nExamine the evidence for and against your negative thoughts, consider alternative perspectives, and develop more balanced or rational interpretations.\nIs there any evidence to support your negative thought?\n\n\nIs there any evidence to contradict your negative thought?\n\n\nWhat are some alternative perspectives on this situation?\n\n\nCan you reframe your negative thought into a more balanced or rational interpretation?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Mindfulness Practices",
+      "Description": "'**Why It Helps:** Mindfulness can reduce anxiety and increase present-moment awareness, enhancing sexual experiences.  \n   **What to Do:** Practice focused breathing and pay attention to sensations without judgment during intimate moments.  \n   **Example:** Before intimacy, take a few minutes to breathe deeply and focus on the current moment rather than worries about performance.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"thoughts\": \"\",\n  \"emotions\": \"\",\n  \"sensations\": \"\",\n  \"actions\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What triggered my anxiety in this situation?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did I breathe before and during the intimate moment?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What sensations did I notice during the intimate moment?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"Were there any thoughts that distracted me from the present moment? If so, what were they?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How did focusing on my breath help me stay present?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What triggered my anxiety in this situation?\n\n\nHow did I breathe before and during the intimate moment?\n\n\nWhat sensations did I notice during the intimate moment?\n\n\nWere there any thoughts that distracted me from the present moment? If so, what were they?\n\n\nHow did focusing on my breath help me stay present?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Behavioral Experiments",
+      "Description": "'**Why It Helps:** Testing beliefs through action can provide new insights and reduce anxiety by disproving erroneous assumptions.  \n   **What to Do:** Set up small, low-pressure experiments to challenge beliefs.  \n   **Example:** If you believe trying something new will be embarrassing, plan a light-hearted date night where you and your partner try a new activity.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the irrational thought or belief you want to challenge?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Describe the situation or event that triggers this irrational thought.\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"Plan a small, low-pressure experiment to test this belief. What specific action will you take?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How did you feel before and during the experiment?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What happened during the experiment? Did your actions align with your original belief?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How did your original thought change after the experiment?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What insights did you gain from this experiment? How might this change your behavior in similar situations?\",\n    \"xp\": 8\n  }\n]",
+      "extracted_value": "What is the irrational thought or belief you want to challenge?\n\n\nDescribe the situation or event that triggers this irrational thought.\nPlan a small, low-pressure experiment to test this belief. What specific action will you take?\n\n\nHow did you feel before and during the experiment?\n\n\nWhat happened during the experiment? Did your actions align with your original belief?\n\n\nHow did your original thought change after the experiment?\n\n\nWhat insights did you gain from this experiment? How might this change your behavior in similar situations?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Graded Exposure",
+      "Description": "'**Why It Helps:** Gradual exposure to feared situations can reduce anxiety and improve comfort levels.  \n   **What to Do:** Start with less intimidating sexual activities, gradually moving towards more anxiety-provoking ones.  \n   **Example:** Begin with non-sexual physical intimacy, like cuddling, and move progressively towards more intimate activities.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"activity\": \"\",\n  \"suds_rating\": \"\",\n  \"fear_rating\": \"\",\n  \"description_of_experience\": \"\",\n  \"questions_to_answer\": [\n    {\n      \"question\": \"What was the activity you engaged in today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How did you feel before, during, and after the activity?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Did your SUDS rating change? If so, by how much?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What strategies did you use to manage your anxiety during the activity?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How comfortable did you feel after the activity? Rate from 0-10.\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"Are there any steps you need to take to progress to the next activity on your fear ladder?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What was the activity you engaged in today?\n\n\nHow did you feel before, during, and after the activity?\n\n\nDid your SUDS rating change? If so, by how much?\n\n\nWhat strategies did you use to manage your anxiety during the activity?\n\n\nHow comfortable did you feel after the activity? Rate from 0-10.\n\n\nAre there any steps you need to take to progress to the next activity on your fear ladder?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Thought Records",
+      "Description": "'**Why It Helps:** Keeping track of thoughts can help identify and change patterns that negatively affect sexual desire or performance.  \n   **What to Do:** Use a journal to note down situations, thoughts, emotions, and alternative thoughts.  \n   **Example:** Write down when and why you felt anxious about sex, then consider alternative, supportive thoughts you could adopt next time.",
+      "XP": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Communication Skills Training",
+      "Description": "'**Why It Helps:** Enhancing communication can improve emotional intimacy and reduce misunderstandings around sex.  \n   **What to Do:** Practice expressing needs and listening actively to your partner.  \n   **Example:** Have an open conversation with your partner about what you both enjoy and any changes you want to explore sexually.",
+      "XP": 6,
+      "Journal Template": "{\n  \"section1\": {\n    \"title\": \"Situation\",\n    \"questions\": [\n      \"What was the situation that led to this need for improved communication?\",\n      \"Who was involved in the situation?\"\n    ]\n  },\n  \"section2\": {\n    \"title\": \"Thoughts and Feelings\",\n    \"questions\": [\n      \"How did I explain the situation to myself?\",\n      \"What were my thoughts and feelings during the situation?\",\n      \"Were there any negative thoughts or feelings that arose?\"\n    ]\n  },\n  \"section3\": {\n    \"title\": \"Actions and Behaviors\",\n    \"questions\": [\n      \"What actions did I take during the situation?\",\n      \"How did I behave in response to the situation?\"\n    ]\n  },\n  \"section4\": {\n    \"title\": \"Outcome and Reflection\",\n    \"questions\": [\n      \"What was the outcome of the situation?\",\n      \"Did the outcome meet my expectations?\",\n      \"What did I learn from the experience?\"\n    ]\n  },\n  \"section5\": {\n    \"title\": \"Action Plan\",\n    \"questions\": [\n      \"What specific actions can I take to improve communication in similar situations in the future?\",\n      \"How can I practice expressing my needs more effectively?\",\n      \"How can I improve my active listening skills?\"\n    ]\n  }\n}",
+      "extracted_value": "Situation\nWhat was the situation that led to this need for improved communication?\nWho was involved in the situation?\nThoughts and Feelings\nHow did I explain the situation to myself?\nWhat were my thoughts and feelings during the situation?\nWere there any negative thoughts or feelings that arose?\nActions and Behaviors\nWhat actions did I take during the situation?\nHow did I behave in response to the situation?\nOutcome and Reflection\nWhat was the outcome of the situation?\nDid the outcome meet my expectations?\nWhat did I learn from the experience?\nAction Plan\nWhat specific actions can I take to improve communication in similar situations in the future?\nHow can I practice expressing my needs more effectively?\nHow can I improve my active listening skills?"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Relaxation Techniques",
+      "Description": "'**Why It Helps:** Relaxation can reduce tension and stress that interfere with sexual enjoyment.  \n   **What to Do:** Practice deep breathing, progressive muscle relaxation, or guided imagery exercises.  \n   **Example:** Before engaging in sexual activity, spend a few minutes doing deep breathing exercises to relax your mind and body.",
+      "XP": 1,
+      "Journal Template": "Section 1 Reflection on Current State\nQuestion 1 How do you currently feel when you think about engaging in sexual activity? (e.g. anxious stressed relaxed)\nXP 3\nQuestion 2 What specific thoughts or emotions are contributing to your current state? (e.g. fear of performance past experiences)\nXP 4\nQuestion 3 How do these thoughts and emotions affect your behavior during sexual activity? (e.g. avoiding intimacy rushing through activities)\nXP 5",
+      "extracted_value": "Section 1 Reflection on Current State\nQuestion 1 How do you currently feel when you think about engaging in sexual activity? (e.g. anxious stressed relaxed)\nXP 3\nQuestion 2 What specific thoughts or emotions are contributing to your current state? (e.g. fear of performance past experiences)\nXP 4\nQuestion 3 How do these thoughts and emotions affect your behavior during sexual activity? (e.g. avoiding intimacy rushing through activities)\nXP 5"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Positive Reframing",
+      "Description": "'**Why It Helps:** Viewing situations through a positive lens can enhance self-esteem and relationship satisfaction.  \n   **What to Do:** Identify negative spins and actively reframe them positively.  \n   **Example:** Instead of thinking \"We have less sex than before,\" reframe it as \"We have more quality time together in different ways.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Goal Setting",
+      "Description": "'**Why It Helps:** Setting realistic goals can provide motivation and track progress in improving sexual relationships.  \n   **What to Do:** Establish specific, achievable goals about sexual experiences or relationship improvements.  \n   **Example:** Set a goal to have a date night once a week to foster connection and intimacy.",
+      "XP": 5,
+      "Journal Template": "{\n  \"goalSettingWorksheet\": {\n    \"ultimateGoal\": {\n      \"question\": \"What is my ultimate goal for improving my sexual relationship?\",\n      \"xp\": 5\n    },\n    \"specificGoals\": {\n      \"question\": \"What specific, achievable goals can I set to improve my sexual relationship?\",\n      \"xp\": 7\n    },\n    \"actionsConsistentWithGoal\": {\n      \"question\": \"What actions can I take each day/week to move closer to my goal?\",\n      \"xp\": 8\n    },\n    \"progressTracking\": {\n      \"question\": \"How will I track my progress towards my goal?\",\n      \"xp\": 6\n    },\n    \"barriersAndSolutions\": {\n      \"question\": \"What potential barriers might I face in achieving my goal, and how can I overcome them?\",\n      \"xp\": 9\n    }\n  }\n}",
+      "extracted_value": "What is my ultimate goal for improving my sexual relationship?\n\n\nWhat specific, achievable goals can I set to improve my sexual relationship?\n\n\nWhat actions can I take each day/week to move closer to my goal?\n\n\nHow will I track my progress towards my goal?\n\n\nWhat potential barriers might I face in achieving my goal, and how can I overcome them?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Self-Compassion Techniques",
+      "Description": "'**Why It Helps:** Cultivating self-compassion can reduce shame and increase acceptance, promoting a healthier sex life.  \n    **What to Do:** Practice treating yourself with kindness when confronting sexual or relational setbacks.  \n    **Example:** If you encounter an unsatisfactory sexual experience, remind yourself that it's okay and normal, and focus on what can be learned instead of self-criticism.\n\nImplementing these CBT strategies can help individuals and couples work through obstacles in their sex lives, fostering greater satisfaction and intimacy. Each person may find some techniques more useful than others, and it's important to tailor them to personal needs and circumstances.",
+      "XP": 7,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"question\": \"What situation or event triggered my negative thoughts or feelings?\"\n  },\n  \"Initial Reaction\": {\n    \"question\": \"How did I initially react to the situation or event?\"\n  },\n  \"Self-Critical Thoughts\": {\n    \"question\": \"What self-critical thoughts came to mind?\"\n  },\n  \"Costs/Benefits\": {\n    \"question\": \"What are the costs (negative outcomes) and benefits (positive outcomes) of thinking this way?\"\n  },\n  \"Self-Compassionate Thoughts\": {\n    \"question\": \"What compassionate thoughts could help alleviate my suffering and promote well-being in this situation?\"\n  },\n  \"Altered Reaction\": {\n    \"question\": \"How would my feelings change if I were to adopt a more compassionate perspective?\"\n  },\n  \"Compassionate Conclusion\": {\n    \"question\": \"What is a more compassionate and helpful conclusion to replace the self-criticism?\"\n  },\n  \"Belief Level\": {\n    \"question\": \"How much do I believe the self-critical thoughts now (0-100%)?\"\n  },\n  \"Emotional Intensity\": {\n    \"question\": \"How intense is my initial main emotion now (0-100%)?\"\n  },\n  \"Action Plan\": {\n    \"question\": \"What can I do to cope and look after myself in this situation?\"\n  }\n}",
+      "extracted_value": "What situation or event triggered my negative thoughts or feelings?\n\n\nHow did I initially react to the situation or event?\n\n\nWhat self-critical thoughts came to mind?\n\n\nWhat are the costs (negative outcomes) and benefits (positive outcomes) of thinking this way?\n\n\nWhat compassionate thoughts could help alleviate my suffering and promote well-being in this situation?\n\n\nHow would my feelings change if I were to adopt a more compassionate perspective?\n\n\nWhat is a more compassionate and helpful conclusion to replace the self-criticism?\n\n\nHow much do I believe the self-critical thoughts now (0-100%)?\n\n\nHow intense is my initial main emotion now (0-100%)?\n\n\nWhat can I do to cope and look after myself in this situation?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

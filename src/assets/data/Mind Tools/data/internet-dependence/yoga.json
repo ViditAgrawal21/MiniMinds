@@ -1,0 +1,123 @@
+{
+  "condition": "Internet Dependence",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Set Your Intention (Sankalpa)",
+      "Card Description": "'- Begin by setting a clear intention for your practice, such as \"I will cultivate balance and mindfulness in my digital life.\"",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Focused Breathing (Pranayama)",
+      "Card Description": "'- Start with simple breathing exercises to center yourself. Try Nadi Shodhana (alternate nostril breathing) to calm the mind and improve focus.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Sun Salutations (Surya Namaskar)",
+      "Card Description": "'- Perform a series of sun salutations to increase energy and reduce stress. This flow helps to create a sense of discipline and structure.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Grounding Poses",
+      "Card Description": "'- Work on grounding poses such as Tree Pose (Vrksasana) or Mountain Pose (Tadasana). These poses help build stability and a sense of rootedness, counteracting the scattered feeling that can come with overuse of the internet.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Heart Opening Poses",
+      "Card Description": "'- Incorporate poses that open the heart, like Camel Pose (Ustrasana) or Cobra Pose (Bhujangasana), to release tension and improve emotional balance.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Twists and Forward Bends",
+      "Card Description": "'- Use twists (like Seated Spinal Twist) and forward bends (like Standing Forward Bend) to help detoxify the body and calm the nervous system.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Restorative Poses",
+      "Card Description": "'- Finish with restorative poses like Child’s Pose (Balasana) and Corpse Pose (Savasana) to fully relax and release tension.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Create a Conducive Environment",
+      "Card Description": "'- Find a quiet, comfortable space where you won’t be disturbed. Consider reducing digital distractions by turning off notifications and silencing your phone.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindful Breathing Meditation",
+      "Card Description": "'- Sit in a comfortable position, close your eyes, and focus on your breath. Notice the sensation of the breath entering and leaving your body. When your mind wanders, gently bring your focus back to your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan Meditation",
+      "Card Description": "'- Slowly bring attention to different parts of your body, starting from your toes and moving up to your head. Notice any sensations without judgment.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Loving-Kindness Meditation (Metta)",
+      "Card Description": "'- Generate positive emotions by silently repeating phrases such as “May I be happy, may I be healthy, may I be free from suffering,” gradually extending these wishes to others.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mantra Meditation",
+      "Card Description": "'- Use a simple mantra such as “peace” or “calm.” Repeat the mantra silently, allowing it to anchor your thoughts.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Reflection Meditation",
+      "Card Description": "'- Spend a few minutes reflecting on your relationship with the internet and digital devices. Consider how they affect your life and what boundaries you might implement for balance.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Gratitude Practice",
+      "Card Description": "'- End with a gratitude practice, acknowledging three things you are thankful for in your life. This shifts focus from digital dependence to appreciating real-world experiences.",
+      "xp": 5
+    }
+  ],
+  "count": 14,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 14
+  }
+}

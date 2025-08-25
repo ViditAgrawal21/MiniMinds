@@ -1,0 +1,91 @@
+{
+  "condition": "Professional Mental Health",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Therapy and Counseling",
+      "Card Description": "'- **Example:** Cognitive Behavioral Therapy (CBT) is widely used to treat issues like depression and anxiety. A therapist might help a client identify negative thought patterns and work to replace them with healthier beliefs.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Medication",
+      "Card Description": "'- **Example:** A psychiatrist may prescribe SSRIs (Selective Serotonin Reuptake Inhibitors) for depression. They'll monitor the patient's response to the medication and adjust dosages as necessary.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Mindfulness and Meditation",
+      "Card Description": "'- **Example:** Guided meditation sessions can help individuals focus on the present, reducing stress and improving concentration. Apps like Headspace or Calm can support this practice.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Exercise and Physical Activity",
+      "Card Description": "'- **Example:** Regular aerobic exercises, such as jogging or cycling, can boost mood by releasing endorphins. A mental health professional might encourage a client to integrate exercise into their routine as part of a holistic approach to treatment.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Healthy Eating",
+      "Card Description": "'- **Example:** A dietitian might work with individuals to ensure they are eating a balanced diet rich in omega-3s and complex carbohydrates, which have been associated with better mental health outcomes.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Sleep Hygiene",
+      "Card Description": "'- **Example:** A professional might suggest establishing a regular sleep schedule and creating a bedtime routine to help improve sleep quality, which is vital for mental health.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Stress Management Techniques",
+      "Card Description": "'- **Example:** Techniques like deep breathing, progressive muscle relaxation, or guided imagery can help reduce stress. A counselor might teach these methods during therapy sessions.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Building Support Networks",
+      "Card Description": "'- **Example:** Encouraging individuals to strengthen relationships with friends and family or join support groups to foster a sense of belonging and decrease isolation.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Time Management and Organizational Skills",
+      "Card Description": "'- **Example:** A professional might help a client learn to prioritize tasks, delegate responsibilities, and set realistic goals to reduce feelings of overwhelm.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Limiting Substance Use",
+      "Card Description": "'- **Example:** A counselor might work with someone to reduce or eliminate their alcohol or drug use, which can negatively impact mental health.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

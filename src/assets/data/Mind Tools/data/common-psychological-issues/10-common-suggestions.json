@@ -1,0 +1,91 @@
+{
+  "condition": "Common Psychological Issues",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Cognitive Behavioral Therapy (CBT):",
+      "Card Description": "'- **How it works:** CBT helps individuals identify and change negative thought patterns and behaviors.  \n   - **Example:** For anxiety, a person may learn to challenge the thought \"I will fail this presentation\" by replacing it with \"I have prepared well, and I will do my best.\"",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Mindfulness and Meditation:",
+      "Card Description": "'- **How it works:** These practices involve focusing on the present moment in a non-judgmental way, which can reduce stress and improve emotional regulation.  \n   - **Example:** Someone with depression might spend a few minutes each day practicing mindfulness meditation to improve mood and reduce negative thinking.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Exercise and Physical Activity:",
+      "Card Description": "'- **How it works:** Regular physical activity can increase the production of endorphins, boost mood, and improve overall mental health.  \n   - **Example:** A person with mild depression might incorporate a daily walk or jog into their routine to help elevate their mood.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Healthy Sleep Habits:",
+      "Card Description": "'- **How it works:** Good sleep is crucial for mental health, and establishing a consistent sleep routine can improve mood and cognitive function.  \n   - **Example:** Someone experiencing insomnia might implement a bedtime routine that avoids screens and includes relaxation techniques.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Social Support and Connection:",
+      "Card Description": "'- **How it works:** Building and maintaining positive relationships can provide emotional support, reduce feelings of isolation, and improve mental well-being.  \n   - **Example:** A person dealing with grief might find comfort in attending a support group or spending time with family and friends.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Structured Problem-Solving:",
+      "Card Description": "'- **How it works:** Breaking down problems into smaller, manageable parts can reduce overwhelm and help individuals cope with stressors.  \n   - **Example:** An individual facing work-related stress might list the specific issues causing stress and tackle them one at a time with actionable plans.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Relaxation Techniques:",
+      "Card Description": "'- **How it works:** Techniques like deep breathing, progressive muscle relaxation, and visualization can reduce stress and anxiety.  \n   - **Example:** Before a stressful event, such as an exam, a person might use deep breathing exercises to calm their nerves.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Nutrition and Hydration:",
+      "Card Description": "'- **How it works:** A balanced diet and proper hydration can affect brain chemistry and improve mood and energy levels.  \n   - **Example:** Someone experiencing fatigue and irritability might assess their diet and ensure they're consuming enough fruits, vegetables, and water.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Limiting Substance Use:",
+      "Card Description": "'- **How it works:** Reducing or eliminating alcohol, caffeine, and recreational drug use can lead to more stable moods and improved mental health.  \n   - **Example:** A person with anxiety might cut back on caffeine to reduce jitteriness and anxiety symptoms.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Seek Professional Help:",
+      "Card Description": "'- **How it works:** Professional therapists, psychologists, and psychiatrists can provide personalized strategies, therapy, and medication when necessary.  \n    - **Example:** Someone experiencing persistent symptoms of PTSD might work with a therapist to undergo EMDR (Eye Movement Desensitization and Reprocessing) therapy.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

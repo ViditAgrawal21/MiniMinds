@@ -1,0 +1,101 @@
+{
+  "condition": "Family and Relaitonship",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify and Dispute Irrational Beliefs",
+      "Description": "'- **Why it helps**: Identifying irrational beliefs helps reduce emotional distress and improves relationships.\n   - **What to do**: List your negative thoughts about family members, identify any cognitive distortions, and challenge them.\n   - **Example**: Belief: \"My partner must always understand my needs.\" Challenge: \"It’s unrealistic to expect anyone to always understand me without communication.\"",
+      "XP": 7,
+      "Journal Template": "{\n  \"Irrational Belief\": \"\",\n  \"Evidence For\": \"\",\n  \"Evidence Against\": \"\",\n  \"Disputing Questions\": [\n    {\n      \"Question\": \"Is there any evidence that this belief is true?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"Is it logical to think this way?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"What would be a more rational alternative?\",\n      \"Answer\": \"\"\n    }\n  ],\n  \"Reframed Thought\": \"\",\n  \"Rating (1-10) for Rationality\": \"\"\n}",
+      "extracted_value": "Is there any evidence that this belief is true?\n\n\nIs it logical to think this way?\n\n\nWhat would be a more rational alternative?\n\n"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Adopt a Flexible Mindset",
+      "Description": "'- **Why it helps**: Flexibility allows you to cope better with changes and differences in relationships.\n   - **What to do**: Practice accepting that people can change and may not always meet expectations.\n   - **Example**: Belief: \"My family should never upset me.\" Change to: \"It’s okay if they upset me at times; I can handle it.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Category I - Observation of Self and Others\": {\n    \"Questions\": [\n      {\n        \"Question\": \"Describe a recent situation where you felt upset by someone's behavior.\",\n        \"XP\": 6\n      },\n      {\n        \"Question\": \"Identify the belief that contributed to your upset (e.g., 'My family should never upset me').\",\n        \"XP\": 7\n      },\n      {\n        \"Question\": \"Reframe the belief into a more flexible mindset (e.g., 'It\\u2019s okay if they upset me at times; I can handle it').\",\n        \"XP\": 8\n      },\n      {\n        \"Question\": \"How did reframing the belief help you cope with the situation?\",\n        \"XP\": 9\n      }\n    ]\n  }\n}",
+      "extracted_value": "Describe a recent situation where you felt upset by someone's behavior.\nIdentify the belief that contributed to your upset (e.g., 'My family should never upset me').\nReframe the belief into a more flexible mindset (e.g., 'It’s okay if they upset me at times; I can handle it').\nHow did reframing the belief help you cope with the situation?\n\n"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Self-Acceptance",
+      "Description": "'- **Why it helps**: Accepting yourself reduces dependency on others for validation.\n   - **What to do**: Write positive affirmations about yourself and practice self-compassion.\n   - **Example**: Remind yourself: \"I am worthy of love and respect even if others don’t always show it.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"categories\": [\n    {\n      \"category\": \"Daily Reflection\",\n      \"questions\": [\n        {\n          \"question\": \"What am I grateful for today?\",\n          \"xp\": 5\n        },\n        {\n          \"question\": \"What positive affirmations can I write about myself today?\",\n          \"xp\": 7\n        }\n      ]\n    },\n    {\n      \"category\": \"Self-Compassion\",\n      \"questions\": [\n        {\n          \"question\": \"What self-critical thoughts am I having today?\",\n          \"xp\": 6\n        },\n        {\n          \"question\": \"How can I reframe these thoughts to be more compassionate?\",\n          \"xp\": 8\n        }\n      ]\n    },\n    {\n      \"category\": \"Self-Acceptance\",\n      \"questions\": [\n        {\n          \"question\": \"What are some things I do well?\",\n          \"xp\": 5\n        },\n        {\n          \"question\": \"How can I remind myself of my worthiness today?\",\n          \"xp\": 7\n        }\n      ]\n    }\n  ]\n}",
+      "extracted_value": "Daily Reflection\nWhat am I grateful for today?\n\n\nWhat positive affirmations can I write about myself today?\n\n\nSelf-Compassion\nWhat self-critical thoughts am I having today?\n\n\nHow can I reframe these thoughts to be more compassionate?\n\n\nSelf-Acceptance\nWhat are some things I do well?\n\n\nHow can I remind myself of my worthiness today?\n\n"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on Problem-Solving",
+      "Description": "'- **Why it helps**: Shifting focus from problems to solutions improves relationship dynamics.\n   - **What to do**: Brainstorm ways to resolve conflicts and improve interactions.\n   - **Example**: Instead of thinking, \"My sibling should be more helpful,\" ask, \"How can we work together to share responsibilities?\"",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the specific problem or conflict I am facing?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What are the negative thoughts or emotions associated with this problem?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What are some potential solutions to this problem?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How can I involve others in finding a solution?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What steps can I take to implement these solutions?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How will I measure the success of these solutions?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What are the potential challenges or obstacles to implementing these solutions?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"How can I adapt these solutions if they do not work as planned?\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "What is the specific problem or conflict I am facing?\n\n\nWhat are the negative thoughts or emotions associated with this problem?\n\n\nWhat are some potential solutions to this problem?\n\n\nHow can I involve others in finding a solution?\n\n\nWhat steps can I take to implement these solutions?\n\n\nHow will I measure the success of these solutions?\n\n\nWhat are the potential challenges or obstacles to implementing these solutions?\n\n\nHow can I adapt these solutions if they do not work as planned?\n\n"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Shun Absolute Thinking",
+      "Description": "'- **Why it helps**: Absolute thinking worsens disagreements by making issues black and white.\n   - **What to do**: Replace \"must\" and \"should\" with \"prefer\" or \"wish.\"\n   - **Example**: Instead of \"My parents must support my decisions,\" try \"I’d prefer my parents to support my decisions, but I can manage if they don’t.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"situation\": {\n    \"question\": \"Describe the situation where you noticed absolute thinking.\",\n    \"XP\": 3\n  },\n  \"initialThought\": {\n    \"question\": \"What was your initial thought in this situation? (e.g., 'My parents must support my decisions.')\",\n    \"XP\": 4\n  },\n  \"restructuredThought\": {\n    \"question\": \"How can you rephrase this thought to avoid absolute thinking? (e.g., 'I\\u2019d prefer my parents to support my decisions, but I can manage if they don\\u2019t.')\",\n    \"XP\": 5\n  },\n  \"consequencesOfAbsoluteThinking\": {\n    \"question\": \"What are the consequences of thinking in absolute terms in this situation? (e.g., increased stress, poor relationships)\",\n    \"XP\": 6\n  },\n  \"consequencesOfRestructuredThinking\": {\n    \"question\": \"What are the potential benefits of rephrasing your thoughts to avoid absolute thinking? (e.g., reduced stress, improved relationships)\",\n    \"XP\": 7\n  },\n  \"adaptiveResponse\": {\n    \"question\": \"How can you respond to this situation in a more adaptive way, considering your restructured thoughts?\",\n    \"XP\": 8\n  }\n}",
+      "extracted_value": "Describe the situation where you noticed absolute thinking.\nWhat was your initial thought in this situation? (e.g., 'My parents must support my decisions.')\n\n\nHow can you rephrase this thought to avoid absolute thinking? (e.g., 'I’d prefer my parents to support my decisions, but I can manage if they don’t.')\n\n\nWhat are the consequences of thinking in absolute terms in this situation? (e.g., increased stress, poor relationships)\n\n\nWhat are the potential benefits of rephrasing your thoughts to avoid absolute thinking? (e.g., reduced stress, improved relationships)\n\n\nHow can you respond to this situation in a more adaptive way, considering your restructured thoughts?\n\n"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Recognize and Accept Emotions",
+      "Description": "'- **Why it helps**: It’s important to acknowledge emotions to detoxify them and respond more rationally.\n   - **What to do**: Practice mindfulness and emotion labeling techniques.\n   - **Example**: \"I feel disappointed that my partner forgot our anniversary, but it doesn’t mean they don’t care about me.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Emotional Awareness\": {\n    \"Questions\": [\n      \"What am I feeling right now?\",\n      \"Why am I feeling this way?\",\n      \"Where do I feel this emotion in my body?\"\n    ]\n  },\n  \"Mindfulness and Emotion Labeling\": {\n    \"Questions\": [\n      \"Can I acknowledge this emotion without judgment?\",\n      \"How can I describe this emotion in a non-judgmental way?\",\n      \"What would happen if I allowed myself to fully experience this emotion?\"\n    ]\n  },\n  \"Acceptance\": {\n    \"Questions\": [\n      \"Is it okay to feel this way?\",\n      \"Can I make space for this emotion without trying to get rid of it?\",\n      \"How can I watch this emotion without getting caught up in it?\"\n    ]\n  },\n  \"Rational Response\": {\n    \"Questions\": [\n      \"Is there another way to look at this situation?\",\n      \"What evidence do I have that supports this rational perspective?\",\n      \"How can I respond more rationally to this situation?\"\n    ]\n  }\n}",
+      "extracted_value": "What am I feeling right now?\nWhy am I feeling this way?\nWhere do I feel this emotion in my body?\nCan I acknowledge this emotion without judgment?\nHow can I describe this emotion in a non-judgmental way?\nWhat would happen if I allowed myself to fully experience this emotion?\nIs it okay to feel this way?\nCan I make space for this emotion without trying to get rid of it?\nHow can I watch this emotion without getting caught up in it?\nIs there another way to look at this situation?\nWhat evidence do I have that supports this rational perspective?\nHow can I respond more rationally to this situation?"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Understand Others’ Perspectives",
+      "Description": "'- **Why it helps**: Empathy enhances communication and mutual understanding.\n   - **What to do**: Try to see the situation from the other person’s viewpoint.\n   - **Example**: Realize, \"Maybe my spouse is preoccupied with work and isn’t purposely ignoring me.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What might be the other person's perspective on this situation?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How does seeing the situation from the other person's viewpoint change my understanding of it?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What steps can I take to communicate more effectively with the other person?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How does empathy improve our relationship?\",\n    \"xp\": 8\n  }\n]",
+      "extracted_value": "What might be the other person's perspective on this situation?\n\n\nHow does seeing the situation from the other person's viewpoint change my understanding of it?\n\n\nWhat steps can I take to communicate more effectively with the other person?\n\n\nHow does empathy improve our relationship?\n\n"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Acknowledge Imperfection",
+      "Description": "'- **Why it helps**: Accepting imperfection reduces blame and frustration.\n   - **What to do**: Cultivate the belief that everyone makes mistakes, including yourself.\n   - **Example**: \"I can accept that my family isn’t perfect, and I am not either.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Trigger\": \"\",\n  \"Initial Reaction\": \"\",\n  \"Negative Thoughts\": \"\",\n  \"Supporting Evidence\": \"\",\n  \"Opposing Evidence\": \"\",\n  \"Balanced Alternative Thought\": \"\",\n  \"Outcome/Learning\": \"\",\n  \"Questions to Reflect On:\": [\n    \"Why did I react this way?\",\n    \"Is it realistic to expect perfection from myself or others?\",\n    \"What would happen if I accepted imperfection in this situation?\",\n    \"How does acknowledging imperfection affect my feelings and behaviors?\"\n  ]\n}",
+      "extracted_value": "Why did I react this way?\nIs it realistic to expect perfection from myself or others?\nWhat would happen if I accepted imperfection in this situation?\nHow does acknowledging imperfection affect my feelings and behaviors?"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on Present Relationships",
+      "Description": "'- **Why it helps**: Addressing current interactions prevents dwelling on past grievances.\n   - **What to do**: Channel energy into enhancing current relationships rather than replaying past conflicts.\n   - **Example**: Instead of \"Why did my friend betray me?\" focus on, \"What can I do now to improve our relationship?\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"currentRelationships\": [\n    {\n      \"relationshipName\": \"\",\n      \"currentFeelings\": \"\",\n      \"pastGrievances\": \"\",\n      \"actionsToImprove\": \"\",\n      \"questionsToReflectOn\": [\n        \"What specific interactions have I had with this person recently?\",\n        \"How have these interactions made me feel?\",\n        \"What past grievances am I holding onto, and how are they affecting my current feelings?\",\n        \"What small actions can I take today to improve this relationship?\"\n      ]\n    }\n  ],\n  \"reflections\": [\n    {\n      \"reflectionDate\": \"\",\n      \"reflectionText\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "What specific interactions have I had with this person recently?\nHow have these interactions made me feel?\nWhat past grievances am I holding onto, and how are they affecting my current feelings?\nWhat small actions can I take today to improve this relationship?"
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Embrace Change as Growth",
+      "Description": "'- **Why it helps**: Viewing change positively reduces resistance and fosters adaptability.\n    - **What to do**: Reflect on how changes (in roles, dynamics) can be opportunities for growth.\n    - **Example**: Instead of fearing, \"Our relationship isn’t what it used to be,\" consider, \"How can we grow and adapt together?\"\n\nThese REBT strategies empower individuals to approach family and relationship issues with a healthier, more balanced mindset, leading to better emotional regulation and relationship satisfaction.",
+      "XP": 5,
+      "Journal Template": "{\n  \"question\": \"What changes have I experienced recently in my relationships or roles?\",\n  \"xp\": 5\n}",
+      "extracted_value": "What changes have I experienced recently in my relationships or roles?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

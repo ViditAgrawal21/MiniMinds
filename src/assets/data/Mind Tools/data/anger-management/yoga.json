@@ -1,0 +1,82 @@
+{
+  "condition": "Anger Management",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Child's Pose (Balasana):",
+      "Card Description": "'- Kneel on the floor with your toes together and knees hip-width apart.  \n   - Sit back on your heels and bend forward, stretching your arms in front or alongside your body.  \n   - Rest your forehead on the mat. Hold for several breaths.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Cat-Cow Pose (Marjaryasana-Bitilasana):",
+      "Card Description": "'- Start on your hands and knees in a tabletop position.  \n   - As you inhale, move into Cow Pose by lifting your sitting bones and chest, and letting your belly sink.  \n   - On the exhale, move into Cat Pose by rounding your spine and tucking your chin to your chest.   \n   - Repeat several times with your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Forward Bend (Uttanasana):",
+      "Card Description": "'- Stand with feet hip-width apart.  \n   - Hinge at the hips to fold forward, letting your head hang heavy.  \n   - Hold your elbows or touch the floor and relax. Breathe deeply.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Legs Up the Wall Pose (Viparita Karani):",
+      "Card Description": "'- Sit with one side of your body against a wall, and then gently swing your legs up while lowering your back to the floor.  \n   - Adjust so your legs are straight up the wall and relax your arms to the sides."
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Corpse Pose (Savasana):",
+      "Card Description": "'- Lie flat on your back with arms at your sides, palms facing up.  \n   - Close your eyes and focus on your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindfulness Meditation:",
+      "Card Description": "'- Find a comfortable seated position.  \n   - Close your eyes and bring your attention to your breathing.  \n   - Observe your breath as it flows in and out.  \n   - When your mind wanders, gently bring your focus back to your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Loving-Kindness Meditation (Metta):",
+      "Card Description": "'- Sit comfortably and close your eyes.  \n   - Begin by silently repeating phrases like \"May I be happy, may I be healthy, may I be safe, may I live with ease” for yourself.  \n   - Gradually extend these wishes to others, including those you feel anger towards.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Guided Visualization:",
+      "Card Description": "'- Use a recorded meditation or guide yourself through a peaceful scene (such as a beach or forest).  \n   - Focus on the details, immerse yourself, and let go of angry thoughts.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan Meditation:",
+      "Card Description": "'- Lie down comfortably, close your eyes, and take a deep breath.  \n   - Slowly bring your attention to your body, starting from your toes and moving up to your head.  \n   - Notice areas of tension and consciously relax them.",
+      "xp": 5
+    }
+  ],
+  "count": 9,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 9
+  }
+}

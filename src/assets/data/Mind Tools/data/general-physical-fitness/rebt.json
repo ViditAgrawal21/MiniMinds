@@ -1,0 +1,95 @@
+{
+  "condition": "General Physical Fitness",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Challenge All-or-Nothing Thinking",
+      "Description": "'- **Why it Helps:** It prevents you from viewing fitness as an all-or-nothing endeavor.\n   - **What to Do:** Recognize when you're using extreme words like \"always\" or \"never\" concerning your fitness and challenge those thoughts.\n   - **Example:** Instead of thinking, \"I must exercise every day, or I will fail,\" reframe it to \"I’ll aim to exercise consistently, and any effort is better than no effort.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the extreme thought I am having about my fitness?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Is this thought always true? (e.g., 'I must exercise every day, or I will fail')\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What is a more balanced way to think about this situation?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can I reframe this thought to make it more realistic and helpful?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What would I say to a friend who is thinking this way?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What is the extreme thought I am having about my fitness?\n\n\nIs this thought always true? (e.g., 'I must exercise every day, or I will fail')\n\n\nWhat is a more balanced way to think about this situation?\n\n\nHow can I reframe this thought to make it more realistic and helpful?\n\n\nWhat would I say to a friend who is thinking this way?\n\n"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Avoid Catastrophizing",
+      "Description": "'- **Why it Helps:** It reduces anxiety that discourages fitness efforts.\n   - **What to Do:** Assess whether you are blowing setbacks out of proportion.\n   - **Example:** If you miss a workout, instead of thinking, \"Now I’ll never get fit,\" remind yourself, \"Missing one workout doesn’t ruin my progress.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"event\": \"Describe the situation where you felt like catastrophizing (e.g., missing a workout):\",\n  \"thoughts\": \"What were your initial thoughts in this situation? (e.g., \\\"I\\u2019ll never get fit\\\"):\",\n  \"restructuring\": \"How can you reframe these thoughts to avoid catastrophizing? (e.g., \\\"Missing one workout doesn\\u2019t ruin my progress\\\"):\",\n  \"questions\": [\n    {\n      \"question\": \"Am I blowing this setback out of proportion?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What is the worst-case scenario I\\u2019m imagining?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Is this thought based on facts or assumptions?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How can I focus on the present moment rather than the worst-case scenario?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What positive outcomes could come from this situation?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nDescribe the situation where you felt like catastrophizing (e.g., missing a workout):\nWhat were your initial thoughts in this situation? (e.g., \"I’ll never get fit\"):\n\n\nHow can you reframe these thoughts to avoid catastrophizing? (e.g., \"Missing one workout doesn’t ruin my progress\"):\n\n\nAm I blowing this setback out of proportion?\n\n\nWhat is the worst-case scenario I’m imagining?\n\n\nIs this thought based on facts or assumptions?\n\n\nHow can I focus on the present moment rather than the worst-case scenario?\n\n\nWhat positive outcomes could come from this situation?\n\n"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Confront Low Frustration Tolerance",
+      "Description": "'- **Why it Helps:** Increases your ability to withstand discomfort associated with exercise.\n   - **What to Do:** Acknowledge discomfort as part of the process and build tolerance.\n   - **Example:** Transform \"I can’t stand exercise being hard\" into \"Exercise can be challenging, and that’s okay.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reduce Demandingness",
+      "Description": "'- **Why it Helps:** Eases pressure that discourages effort.\n   - **What to Do:** Replace demanding statements with preferences.\n   - **Example:** Change \"I must have a perfect body\" to \"I’d prefer to be fit, but I accept myself regardless.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"demandingStatement\": \"\",\n  \"preferredStatement\": \"\",\n  \"whyDemanding\": \"\",\n  \"whyPreferred\": \"\",\n  \"impactOnEffort\": \"\",\n  \"impactOnSelfAcceptance\": \"\"\n}"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Embrace Flexibility",
+      "Description": "'- **Why it Helps:** Encourages ongoing motivation even when plans don't go perfectly.\n   - **What to Do:** Adapt your fitness routine to your life circumstances rather than rigidly sticking to one plan.\n   - **Example:** If you can’t follow your gym schedule, replace it with a home workout and see its value.",
+      "XP": 6,
+      "Journal Template": "{\n  \"section1\": {\n    \"title\": \"Current Situation\",\n    \"questions\": [\n      \"What is my current fitness routine?\",\n      \"What are the challenges I'm facing in sticking to this routine?\"\n    ]\n  },\n  \"section2\": {\n    \"title\": \"Adaptation Strategies\",\n    \"questions\": [\n      \"How can I adapt my fitness routine to better fit my current life circumstances?\",\n      \"What alternative activities or workouts can I do at home?\"\n    ]\n  },\n  \"section3\": {\n    \"title\": \"Action Plan\",\n    \"questions\": [\n      \"What specific changes will I make to my routine?\",\n      \"How will I ensure that these changes are sustainable?\"\n    ]\n  },\n  \"section4\": {\n    \"title\": \"Reflection and Motivation\",\n    \"questions\": [\n      \"How do I feel about adapting my routine?\",\n      \"What motivates me to continue with this new approach?\"\n    ]\n  }\n}",
+      "extracted_value": "Current Situation\nWhat is my current fitness routine?\nWhat are the challenges I'm facing in sticking to this routine?\nAdaptation Strategies\nHow can I adapt my fitness routine to better fit my current life circumstances?\nWhat alternative activities or workouts can I do at home?\nAction Plan\nWhat specific changes will I make to my routine?\nHow will I ensure that these changes are sustainable?\nReflection and Motivation\nHow do I feel about adapting my routine?\nWhat motivates me to continue with this new approach?"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Cultivate Self-Acceptance",
+      "Description": "'- **Why it Helps:** Boosts self-esteem, encouraging positive fitness behaviors.\n   - **What to Do:** Separate your value as a person from your fitness achievements.\n   - **Example:** Tell yourself, \"I am worthwhile regardless of my fitness level.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"category\": \"Self-Acceptance\",\n  \"questions\": [\n    {\n      \"question\": \"What are some negative thoughts about myself that I have noticed recently?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How do these negative thoughts affect my self-esteem?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Can I separate my value as a person from my fitness achievements?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What positive affirmations can I use to counteract these negative thoughts?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How can I practice self-acceptance in my daily life?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "Self-Acceptance\nWhat are some negative thoughts about myself that I have noticed recently?\n\n\nHow do these negative thoughts affect my self-esteem?\n\n\nCan I separate my value as a person from my fitness achievements?\n\n\nWhat positive affirmations can I use to counteract these negative thoughts?\n\n\nHow can I practice self-acceptance in my daily life?\n\n"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Disputation of Irrational Beliefs",
+      "Description": "'- **Why it Helps:** Clarifies irrational beliefs, making it easier to change them.\n   - **What to Do:** Challenge and dispute irrational beliefs about your abilities and fitness.\n   - **Example:** If you believe \"I’ll never be fit,\" ask yourself, \"What evidence do I have for that belief?\"",
+      "XP": 7,
+      "Journal Template": "{\n  \"Irrational Belief\": \"\",\n  \"Question 1: Is there any evidence that my belief is true?\": \"\",\n  \"Answer 1:\": \"\",\n  \"Question 2: What bad can happen to me if I keep that belief?\": \"\",\n  \"Answer 2:\": \"\",\n  \"Question 3: What good can happen to me if I keep my belief?\": \"\",\n  \"Answer 3:\": \"\",\n  \"Additional Thoughts or Insights:\": \"\"\n}"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Set Realistic Goals",
+      "Description": "'- **Why it Helps:** Creates achievable steps, leading to consistent progress.\n   - **What to Do:** Break down your fitness goals into small, realistic milestones.\n   - **Example:** Instead of \"I’ll run a marathon next month,\" aim for \"I’ll run 3 miles a few times a week.\"",
+      "XP": 1,
+      "Journal Template": "Section 1 Goal Setting\n1. What is my main goal? (e.g. running a marathon)\n2. Why is this goal important to me?\n3. What are the specific steps I need to take to achieve this goal?\nSection 2 Breaking Down Goals\n4. What are the small realistic milestones I can set for myself?\n5. How often can I realistically achieve these milestones?\n6. What obstacles might I face and how can I overcome them?\nSection 3 Tracking Progress\n7. How will I track my progress?\n8. What are my short-term and long-term goals?\n9. How will I adjust my plan if I encounter setbacks?\nXP 6",
+      "extracted_value": "Section 1 Goal Setting\n1. What is my main goal? (e.g. running a marathon)\n2. Why is this goal important to me?\n3. What are the specific steps I need to take to achieve this goal?\nSection 2 Breaking Down Goals\n4. What are the small realistic milestones I can set for myself?\n5. How often can I realistically achieve these milestones?\n6. What obstacles might I face and how can I overcome them?\nSection 3 Tracking Progress\n7. How will I track my progress?\n8. What are my short-term and long-term goals?\n9. How will I adjust my plan if I encounter setbacks?\nXP 6"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Acceptance of Discomfort",
+      "Description": "'- **Why it Helps:** Accepting discomfort as normal makes it easier to handle.\n   - **What to Do:** Recognize that discomfort is part of improving fitness.\n   - **Example:** Instead of thinking, \"I hate being out of breath,\" remind yourself, \"Breathing hard shows I’m challenging myself.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"discomfortExperience\": \"\",\n  \"initialThoughts\": \"\",\n  \"rationalAlternative\": \"\",\n  \"acceptanceStatement\": \"\",\n  \"reflection\": \"\"\n}"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reframe Setbacks as Learning Opportunities",
+      "Description": "'- **Why it Helps:** Maintains motivation and promotes a growth mindset.\n    - **What to Do:** Analyze setbacks and identify what you can learn from them.\n    - **Example:** If you struggle with a specific exercise, see it as \"an opportunity to explore new methods to improve\" instead of a failure.\n\nBy incorporating these REBT principles, individuals can develop a healthier mindset towards physical fitness, leading to sustainable habits and improved well-being.",
+      "XP": 1,
+      "Journal Template": "{\n  \"Setback Description\": \"\",\n  \"Initial Reaction\": \"\",\n  \"Negative Thoughts\": \"\",\n  \"Supporting Evidence\": \"\",\n  \"Opposing Evidence\": \"\",\n  \"Balanced Alternative Thought\": \"\",\n  \"Learning Opportunity\": \"\",\n  \"New Action Plan\": \"\",\n  \"XP Difficulty Level\": 6\n}"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

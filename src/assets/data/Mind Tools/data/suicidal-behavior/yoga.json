@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "condition": "suicidal-behavior",
+    "intervention_type": "Yoga",
+    "source_files": [
+      "thought_pro_filtered.json",
+      "thought_pro_with_extracted_final.json",
+      "Thought_pro_remaining.json"
+    ],
+    "created_from": "thought_pro_filtered.json, thought_pro_with_extracted_final.json, and Thought_pro_remaining.json",
+    "total_interventions": 8,
+    "creation_date": "2024-12-28"
+  },
+  "interventions": [
+    {
+      "title": "Start with Breathing Exercises",
+      "description": "- **Deep Breathing (Pranayama)**: Focus on slow, deep breaths. Inhale deeply through the nose, allowing your belly to expand, then exhale slowly through the mouth. This can help calm the nervous system.",
+      "xp": 5
+    },
+    {
+      "title": "Gentle Yoga Poses",
+      "description": "- **Childâ€™s Pose (Balasana)**: A resting pose that can help calm the mind and alleviate stress.\n   - **Cat-Cow Stretch (Marjaryasana-Bitilasana)**: This gentle movement can help release tension in the spine and promote relaxation.\n   - **Legs-Up-The-Wall Pose (Viparita Karani)**: This restorative pose can be very calming and is often used to reduce anxiety and stress.",
+      "xp": 5
+    },
+    {
+      "title": "Guided Meditation",
+      "description": "- Consider starting with short, guided meditations that focus on grounding and mindfulness. Apps like Headspace or Calm offer free resources.\n   - Focus on body awareness, feeling each part of the body as you relax.",
+      "xp": 5
+    },
+    {
+      "title": "Mindfulness Practices",
+      "description": "- Practice being present in the moment through mindful observation (e.g., noticing your surroundings, sounds, textures, etc.).",
+      "xp": 5
+    },
+    {
+      "title": "Gratitude Journaling",
+      "description": "- Write down a few things each day that you are grateful for, no matter how small. This can shift focus towards positive aspects of life.",
+      "xp": 5
+    },
+    {
+      "title": "Create a Safe Space",
+      "description": "- Practice yoga and meditation in a peaceful environment where you feel safe and comfortable.",
+      "xp": 5
+    },
+    {
+      "title": "Community Support",
+      "description": "- Join a local or online yoga class or meditation group to foster a sense of community and support.",
+      "xp": 5
+    },
+    {
+      "title": "Regular Practice",
+      "description": "- Consistency can be key. Even a few minutes each day can be beneficial.\n\nWhile these steps can aid in cultivating mindfulness and reducing stress, professional support is crucial for anyone dealing with suicidal behavior. If you or someone you know is in crisis, please reach out to a helpline or mental health professional immediately.",
+      "xp": 5
+    }
+  ]
+}

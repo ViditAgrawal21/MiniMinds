@@ -1,0 +1,554 @@
+{
+  "condition": "introvert-child",
+  "issueType": "Behavioural Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Encourage Solo Activities",
+            "hindi": "अकेली गतिविधियों को प्रोत्साहित करें",
+            "marathi": "एकट्या क्रियाकलापांना प्रोत्साहन द्या"
+          },
+          "description": {
+            "english": "'Introverted children often enjoy spending time alone. Encourage them to engage in activities such as reading, drawing, or playing a musical instrument. For example, you can set up a quiet reading corner in their room.",
+            "hindi": "'Introverted children often enjoy spending time alone. Encourage them to engage in activities such as reading, drawing, or playing a musical instrument. For example, you can set up a quiet reading corner in their room.",
+            "marathi": "'Introverted children often enjoy spending time alone. Encourage them to engage in activities such as reading, drawing, or playing a musical instrument. For example, you can set up a quiet reading corner in their room."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Respect Their Need for Privacy",
+            "hindi": "Respect Their Need for Privacy",
+            "marathi": "Respect Their Need for Privacy"
+          },
+          "description": {
+            "english": "'Introverted children need their own space. Make sure they have a private place where they can retreat and recharge. For instance, their bedroom should be a sanctuary where they can be alone when they want to.",
+            "hindi": "'Introverted children need their own space. Make sure they have a private place where they can retreat and recharge. For instance, their bedroom should be a sanctuary where they can be alone when they want to.",
+            "marathi": "'Introverted children need their own space. Make sure they have a private place where they can retreat and recharge. For instance, their bedroom should be a sanctuary where they can be alone when they want to."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Foster Deep Connections",
+            "hindi": "Foster Deep Connections",
+            "marathi": "Foster Deep Connections"
+          },
+          "description": {
+            "english": "'Introverted children often prefer having a few close friends rather than many acquaintances. Encourage them to invite a friend over for a playdate or sleepover. This can help them build strong, meaningful relationships.",
+            "hindi": "'Introverted children often prefer having a few close friends rather than many acquaintances. Encourage them to invite a friend over for a playdate or sleepover. This can help them build strong, meaningful relationships.",
+            "marathi": "'Introverted children often prefer having a few close friends rather than many acquaintances. Encourage them to invite a friend over for a playdate or sleepover. This can help them build strong, meaningful relationships."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Encourage Expression Through Art",
+            "hindi": "Encourage Expression Through Art",
+            "marathi": "Encourage Expression Through Art"
+          },
+          "description": {
+            "english": "'Introverted children may find it easier to express their feelings through art. Encourage them to draw, paint, or write about their feelings. For example, if they're upset, suggest they draw a picture of how they're feeling.",
+            "hindi": "'Introverted children may find it easier to express their feelings through art. Encourage them to draw, paint, or write about their feelings. For example, if they're upset, suggest they draw a picture of how they're feeling.",
+            "marathi": "'Introverted children may find it easier to express their feelings through art. Encourage them to draw, paint, or write about their feelings. For example, if they're upset, suggest they draw a picture of how they're feeling."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Limit Overstimulation",
+            "hindi": "Limit Overstimulation",
+            "marathi": "Limit Overstimulation"
+          },
+          "description": {
+            "english": "'Introverted children can easily become overwhelmed in noisy or crowded environments. Try to limit their exposure to such situations. For example, if you're planning a birthday party, consider having a small gathering at home instead of a large party at a busy venue.",
+            "hindi": "'Introverted children can easily become overwhelmed in noisy or crowded environments. Try to limit their exposure to such situations. For example, if you're planning a birthday party, consider having a small gathering at home instead of a large party at a busy venue.",
+            "marathi": "'Introverted children can easily become overwhelmed in noisy or crowded environments. Try to limit their exposure to such situations. For example, if you're planning a birthday party, consider having a small gathering at home instead of a large party at a busy venue."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Teach Them It's Okay to Say No",
+            "hindi": "Teach Them It's Okay to Say No",
+            "marathi": "Teach Them It's Okay to Say No"
+          },
+          "description": {
+            "english": "'Introverted children may feel pressured to participate in activities they're not comfortable with. Teach them that it's okay to say no. For example, if they're invited to a party but don't want to go, reassure them that it's okay to decline the invitation.",
+            "hindi": "'Introverted children may feel pressured to participate in activities they're not comfortable with. Teach them that it's okay to say no. For example, if they're invited to a party but don't want to go, reassure them that it's okay to decline the invitation.",
+            "marathi": "'Introverted children may feel pressured to participate in activities they're not comfortable with. Teach them that it's okay to say no. For example, if they're invited to a party but don't want to go, reassure them that it's okay to decline the invitation."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Promote Self-Acceptance",
+            "hindi": "Promote Self-Acceptance",
+            "marathi": "Promote Self-Acceptance"
+          },
+          "description": {
+            "english": "'It's important for introverted children to understand and accept their introversion. Teach them that it's okay to be quiet and reserved. For example, you can read them books about introverted characters and discuss how these characters are valuable in their own way.",
+            "hindi": "'It's important for introverted children to understand and accept their introversion. Teach them that it's okay to be quiet and reserved. For example, you can read them books about introverted characters and discuss how these characters are valuable in their own way.",
+            "marathi": "'It's important for introverted children to understand and accept their introversion. Teach them that it's okay to be quiet and reserved. For example, you can read them books about introverted characters and discuss how these characters are valuable in their own way."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Provide Gentle Encouragement",
+            "hindi": "Provide Gentle Encouragement",
+            "marathi": "Provide Gentle Encouragement"
+          },
+          "description": {
+            "english": "'Introverted children may need a little push to try new things. However, it's important to do this gently and respectfully. For example, if they're hesitant to join a club at school, you can discuss the benefits and offer to accompany them to the first meeting.",
+            "hindi": "'Introverted children may need a little push to try new things. However, it's important to do this gently and respectfully. For example, if they're hesitant to join a club at school, you can discuss the benefits and offer to accompany them to the first meeting.",
+            "marathi": "'Introverted children may need a little push to try new things. However, it's important to do this gently and respectfully. For example, if they're hesitant to join a club at school, you can discuss the benefits and offer to accompany them to the first meeting."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Practice Patience",
+            "hindi": "Practice Patience",
+            "marathi": "Practice Patience"
+          },
+          "description": {
+            "english": "'Introverted children may take longer to open up or make decisions. Be patient with them and give them the time they need. For example, if they're taking a long time to choose a toy at the store, don't rush them.",
+            "hindi": "'Introverted children may take longer to open up or make decisions. Be patient with them and give them the time they need. For example, if they're taking a long time to choose a toy at the store, don't rush them.",
+            "marathi": "'Introverted children may take longer to open up or make decisions. Be patient with them and give them the time they need. For example, if they're taking a long time to choose a toy at the store, don't rush them."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 2,
+          "title": {
+            "english": "Communicate Openly",
+            "hindi": "Communicate Openly",
+            "marathi": "Communicate Openly"
+          },
+          "description": {
+            "english": "'Talk to your introverted child about their feelings and thoughts. Encourage them to share their experiences with you. For example, if they had a tough day at school, ask them about it and listen attentively to their response.",
+            "hindi": "'Talk to your introverted child about their feelings and thoughts. Encourage them to share their experiences with you. For example, if they had a tough day at school, ask them about it and listen attentively to their response.",
+            "marathi": "'Talk to your introverted child about their feelings and thoughts. Encourage them to share their experiences with you. For example, if they had a tough day at school, ask them about it and listen attentively to their response."
+          }
+        }
+      ]
+    },
+    "yogaMeditation": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Start with Simple Poses",
+            "hindi": "Start with Simple Poses",
+            "marathi": "Start with Simple Poses"
+          },
+          "description": {
+            "english": "'Begin with simple yoga poses that are easy for the child to follow. Some of these include the Mountain Pose (Tadasana), Tree Pose (Vrikshasana), and Child's Pose (Balasana). Make sure to demonstrate each pose first and then guide the child through it.",
+            "hindi": "'Begin with simple yoga poses that are easy for the child to follow. Some of these include the Mountain Pose (Tadasana), Tree Pose (Vrikshasana), and Child's Pose (Balasana). Make sure to demonstrate each pose first and then guide the child through it.",
+            "marathi": "'Begin with simple yoga poses that are easy for the child to follow. Some of these include the Mountain Pose (Tadasana), Tree Pose (Vrikshasana), and Child's Pose (Balasana). Make sure to demonstrate each pose first and then guide the child through it."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Use Storytelling",
+            "hindi": "Use Storytelling",
+            "marathi": "Use Storytelling"
+          },
+          "description": {
+            "english": "'To make yoga more engaging for the child, incorporate storytelling. For example, while doing the Tree Pose, you can tell a story about a tree that stands tall and strong despite the wind.",
+            "hindi": "'To make yoga more engaging for the child, incorporate storytelling. For example, while doing the Tree Pose, you can tell a story about a tree that stands tall and strong despite the wind.",
+            "marathi": "'To make yoga more engaging for the child, incorporate storytelling. For example, while doing the Tree Pose, you can tell a story about a tree that stands tall and strong despite the wind."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Create a Safe Space",
+            "hindi": "Create a Safe Space",
+            "marathi": "Create a Safe Space"
+          },
+          "description": {
+            "english": "'Introverted children often need a quiet, calm space where they can retreat and recharge. This could be their bedroom, a reading nook, or a corner of the living room. Make sure this space is comfortable and filled with things they love.",
+            "hindi": "'Introverted children often need a quiet, calm space where they can retreat and recharge. This could be their bedroom, a reading nook, or a corner of the living room. Make sure this space is comfortable and filled with things they love.",
+            "marathi": "'Introverted children often need a quiet, calm space where they can retreat and recharge. This could be their bedroom, a reading nook, or a corner of the living room. Make sure this space is comfortable and filled with things they love."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Encourage Solo Activities",
+            "hindi": "अकेली गतिविधियों को प्रोत्साहित करें",
+            "marathi": "एकट्या क्रियाकलापांना प्रोत्साहन द्या"
+          },
+          "description": {
+            "english": "'Introverted children often enjoy activities that they can do alone or with a small group of friends. This could include reading, drawing, playing with toys, or doing puzzles. Encourage these activities and provide the necessary resources.",
+            "hindi": "'Introverted children often enjoy activities that they can do alone or with a small group of friends. This could include reading, drawing, playing with toys, or doing puzzles. Encourage these activities and provide the necessary resources.",
+            "marathi": "'Introverted children often enjoy activities that they can do alone or with a small group of friends. This could include reading, drawing, playing with toys, or doing puzzles. Encourage these activities and provide the necessary resources."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Teach Deep Breathing",
+            "hindi": "Teach Deep Breathing",
+            "marathi": "Teach Deep Breathing"
+          },
+          "description": {
+            "english": "'Deep breathing is a simple but effective relaxation technique. Teach your child to take slow, deep breaths in through their nose, hold for a few seconds, and then exhale through their mouth. This can help them calm down when they're feeling overwhelmed.",
+            "hindi": "'Deep breathing is a simple but effective relaxation technique. Teach your child to take slow, deep breaths in through their nose, hold for a few seconds, and then exhale through their mouth. This can help them calm down when they're feeling overwhelmed.",
+            "marathi": "'Deep breathing is a simple but effective relaxation technique. Teach your child to take slow, deep breaths in through their nose, hold for a few seconds, and then exhale through their mouth. This can help them calm down when they're feeling overwhelmed."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Practice Mindfulness",
+            "hindi": "सचेतता का अभ्यास करें",
+            "marathi": "जागरूकतेचा सराव करा"
+          },
+          "description": {
+            "english": "'Mindfulness can help introverted children become more aware of their feelings and learn to manage them better. This could involve simple exercises like focusing on their breath, noticing different sounds, or paying attention to how their body feels.",
+            "hindi": "'Mindfulness can help introverted children become more aware of their feelings and learn to manage them better. This could involve simple exercises like focusing on their breath, noticing different sounds, or paying attention to how their body feels.",
+            "marathi": "'Mindfulness can help introverted children become more aware of their feelings and learn to manage them better. This could involve simple exercises like focusing on their breath, noticing different sounds, or paying attention to how their body feels."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Use Progressive Muscle Relaxation",
+            "hindi": "Use Progressive Muscle Relaxation",
+            "marathi": "Use Progressive Muscle Relaxation"
+          },
+          "description": {
+            "english": "'This technique involves tensing and then relaxing each muscle group in the body. It can help reduce anxiety and promote relaxation.",
+            "hindi": "'This technique involves tensing and then relaxing each muscle group in the body. It can help reduce anxiety and promote relaxation.",
+            "marathi": "'This technique involves tensing and then relaxing each muscle group in the body. It can help reduce anxiety and promote relaxation."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Secondary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Encourage Self-Expression",
+            "hindi": "आत्म-अभिव्यक्ति को प्रोत्साहित करें",
+            "marathi": "स्व-अभिव्यक्तीला प्रोत्साहन द्या"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to express their thoughts and feelings, reducing anxiety and stress.\nWhat to Do: Encourage the child to express their thoughts and feelings through various mediums like writing, drawing, or talking.\nExample: If the child is good at drawing, encourage them to draw their feelings or thoughts.",
+            "hindi": "Why it Helps: This helps the child to express their thoughts and feelings, reducing anxiety and stress.\nWhat to Do: Encourage the child to express their thoughts and feelings through various mediums like writing, drawing, or talking.\nExample: If the child is good at drawing, encourage them to draw their feelings or thoughts.",
+            "marathi": "Why it Helps: This helps the child to express their thoughts and feelings, reducing anxiety and stress.\nWhat to Do: Encourage the child to express their thoughts and feelings through various mediums like writing, drawing, or talking.\nExample: If the child is good at drawing, encourage them to draw their feelings or thoughts."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Practice Mindfulness",
+            "hindi": "सचेतता का अभ्यास करें",
+            "marathi": "जागरूकतेचा सराव करा"
+          },
+          "description": {
+            "english": "Why it Helps: Mindfulness helps the child to focus on the present moment, reducing anxiety and stress.\nWhat to Do: Teach the child mindfulness techniques like deep breathing, meditation, or yoga.\nExample: Teach the child to take deep breaths when they feel anxious or stressed.",
+            "hindi": "Why it Helps: Mindfulness helps the child to focus on the present moment, reducing anxiety and stress.\nWhat to Do: Teach the child mindfulness techniques like deep breathing, meditation, or yoga.\nExample: Teach the child to take deep breaths when they feel anxious or stressed.",
+            "marathi": "Why it Helps: Mindfulness helps the child to focus on the present moment, reducing anxiety and stress.\nWhat to Do: Teach the child mindfulness techniques like deep breathing, meditation, or yoga.\nExample: Teach the child to take deep breaths when they feel anxious or stressed."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "संज्ञानात्मक पुनर्गठन",
+            "marathi": "संज्ञानात्मक पुनर्रचना"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to challenge and change negative thoughts, improving their mood and behavior.\nWhat to Do: Teach the child to identify negative thoughts and replace them with positive ones.\nExample: If the child thinks, \"I'm not good at making friends,\" encourage them to think, \"I can learn to make friends.\"",
+            "hindi": "Why it Helps: This helps the child to challenge and change negative thoughts, improving their mood and behavior.\nWhat to Do: Teach the child to identify negative thoughts and replace them with positive ones.\nExample: If the child thinks, \"I'm not good at making friends,\" encourage them to think, \"I can learn to make friends.\"",
+            "marathi": "Why it Helps: This helps the child to challenge and change negative thoughts, improving their mood and behavior.\nWhat to Do: Teach the child to identify negative thoughts and replace them with positive ones.\nExample: If the child thinks, \"I'm not good at making friends,\" encourage them to think, \"I can learn to make friends.\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 6,
+          "title": {
+            "english": "Social Skills Training",
+            "hindi": "सामाजिक कौशल प्रशिक्षण",
+            "marathi": "सामाजिक कौशल्य प्रशिक्षण"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to improve their social skills, increasing their confidence and reducing social anxiety.\nWhat to Do: Teach the child social skills like active listening, expressing empathy, and assertiveness.\nExample: Role-play social situations with the child and give them feedback on their social skills.",
+            "hindi": "Why it Helps: This helps the child to improve their social skills, increasing their confidence and reducing social anxiety.\nWhat to Do: Teach the child social skills like active listening, expressing empathy, and assertiveness.\nExample: Role-play social situations with the child and give them feedback on their social skills.",
+            "marathi": "Why it Helps: This helps the child to improve their social skills, increasing their confidence and reducing social anxiety.\nWhat to Do: Teach the child social skills like active listening, expressing empathy, and assertiveness.\nExample: Role-play social situations with the child and give them feedback on their social skills."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 8,
+          "title": {
+            "english": "Exposure Therapy",
+            "hindi": "एक्सपोजर चिकित्सा",
+            "marathi": "एक्सपोजर थेरपी"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to gradually face their fears, reducing their anxiety over time.\nWhat to Do: Gradually expose the child to social situations that they find scary.\nExample: If the child is scared of speaking in public, start by having them speak in front of a small group of friends.",
+            "hindi": "Why it Helps: This helps the child to gradually face their fears, reducing their anxiety over time.\nWhat to Do: Gradually expose the child to social situations that they find scary.\nExample: If the child is scared of speaking in public, start by having them speak in front of a small group of friends.",
+            "marathi": "Why it Helps: This helps the child to gradually face their fears, reducing their anxiety over time.\nWhat to Do: Gradually expose the child to social situations that they find scary.\nExample: If the child is scared of speaking in public, start by having them speak in front of a small group of friends."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Problem-Solving Skills",
+            "hindi": "समस्या समाधान कौशल",
+            "marathi": "समस्या सोडवण्याची कौशल्ये"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to solve problems effectively, reducing anxiety and stress.\nWhat to Do: Teach the child problem-solving skills like brainstorming, evaluating options, and making decisions.\nExample: If the child is worried about a school project, help them brainstorm solutions, evaluate their options, and make a decision.",
+            "hindi": "Why it Helps: This helps the child to solve problems effectively, reducing anxiety and stress.\nWhat to Do: Teach the child समस्या समाधान कौशल like brainstorming, evaluating options, and making decisions.\nExample: If the child is worried about a school project, help them brainstorm solutions, evaluate their options, and make a decision.",
+            "marathi": "Why it Helps: This helps the child to solve problems effectively, reducing anxiety and stress.\nWhat to Do: Teach the child समस्या सोडवण्याची कौशल्ये like brainstorming, evaluating options, and making decisions.\nExample: If the child is worried about a school project, help them brainstorm solutions, evaluate their options, and make a decision."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Self-Esteem Building",
+            "hindi": "आत्म-सम्मान निर्माण",
+            "marathi": "आत्म-सन्मान निर्माण"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to build their self-esteem, improving their confidence and mood.\nWhat to Do: Encourage the child to engage in activities that they are good at and enjoy.\nExample: If the child is good at playing the piano, encourage them to play in a school concert.",
+            "hindi": "Why it Helps: This helps the child to build their self-esteem, improving their confidence and mood.\nWhat to Do: Encourage the child to engage in activities that they are good at and enjoy.\nExample: If the child is good at playing the piano, encourage them to play in a school concert.",
+            "marathi": "Why it Helps: This helps the child to build their self-esteem, improving their confidence and mood.\nWhat to Do: Encourage the child to engage in activities that they are good at and enjoy.\nExample: If the child is good at playing the piano, encourage them to play in a school concert."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Relaxation Techniques",
+            "hindi": "आराम तकनीकें",
+            "marathi": "विश्रांती तंत्रे"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to relax and reduce stress.\nWhat to Do: Teach the child relaxation techniques like progressive muscle relaxation or guided imagery.\nExample: Teach the child to tense and relax their muscles, starting from their toes and working up to their head.",
+            "hindi": "Why it Helps: This helps the child to relax and reduce stress.\nWhat to Do: Teach the child आराम तकनीकें like progressive muscle relaxation or guided imagery.\nExample: Teach the child to tense and relax their muscles, starting from their toes and working up to their head.",
+            "marathi": "Why it Helps: This helps the child to relax and reduce stress.\nWhat to Do: Teach the child विश्रांती तंत्रे like progressive muscle relaxation or guided imagery.\nExample: Teach the child to tense and relax their muscles, starting from their toes and working up to their head."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Goal Setting",
+            "hindi": "लक्ष्य निर्धारण",
+            "marathi": "ध्येय निर्धारण"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to set and achieve goals, improving their confidence and motivation.\nWhat to Do: Help the child to set realistic and achievable goals, and encourage them to take steps towards achieving them.\nExample: If the child wants to make more friends, help them set a goal of talking to one new person each week.",
+            "hindi": "Why it Helps: This helps the child to set and achieve goals, improving their confidence and motivation.\nWhat to Do: Help the child to set realistic and achievable goals, and encourage them to take steps towards achieving them.\nExample: If the child wants to make more friends, help them set a goal of talking to one new person each week.",
+            "marathi": "Why it Helps: This helps the child to set and achieve goals, improving their confidence and motivation.\nWhat to Do: Help the child to set realistic and achievable goals, and encourage them to take steps towards achieving them.\nExample: If the child wants to make more friends, help them set a goal of talking to one new person each week."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 3,
+          "title": {
+            "english": "Positive Affirmations",
+            "hindi": "सकारात्मक पुष्टि",
+            "marathi": "सकारात्मक प्रतिज्ञा"
+          },
+          "description": {
+            "english": "Why it Helps: This helps the child to develop a positive mindset, improving their mood and confidence.\nWhat to Do: Encourage the child to say positive affirmations to themselves.\nExample: Encourage the child to say, \"I am capable and strong,\" when they feel anxious or stressed.",
+            "hindi": "Why it Helps: This helps the child to develop a positive mindset, improving their mood and confidence.\nWhat to Do: Encourage the child to say सकारात्मक पुष्टि to themselves.\nExample: Encourage the child to say, \"I am capable and strong,\" when they feel anxious or stressed.",
+            "marathi": "Why it Helps: This helps the child to develop a positive mindset, improving their mood and confidence.\nWhat to Do: Encourage the child to say सकारात्मक प्रतिज्ञा to themselves.\nExample: Encourage the child to say, \"I am capable and strong,\" when they feel anxious or stressed."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Secondary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 4,
+          "title": {
+            "english": "Encourage Social Interaction",
+            "hindi": "सामाजिक बातचीत को प्रोत्साहित करें",
+            "marathi": "सामाजिक संवाद प्रोत्साहित करा"
+          },
+          "description": {
+            "english": "Why it Helps: It helps the child to develop social skills and understand others' perspectives.\nWhat to Do: Encourage the child to participate in group activities or playdates.\nExample: Enroll the child in a hobby class where they can interact with other children of their age.",
+            "hindi": "Why it Helps: It helps the child to develop social skills and understand others' perspectives.\nWhat to Do: Encourage the child to participate in group activities or playdates.\nExample: Enroll the child in a hobby class where they can interact with other children of their age.",
+            "marathi": "Why it Helps: It helps the child to develop social skills and understand others' perspectives.\nWhat to Do: Encourage the child to participate in group activities or playdates.\nExample: Enroll the child in a hobby class where they can interact with other children of their age."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Respect Their Space",
+            "hindi": "उनके स्थान का सम्मान करें",
+            "marathi": "त्यांच्या जागेचा सन्मान करा"
+          },
+          "description": {
+            "english": "Why it Helps: Introverted children need their own space to recharge and process their thoughts.\nWhat to Do: Allow the child to have some alone time and respect their need for privacy.\nExample: Provide a quiet space in the house where the child can read, draw, or just relax.",
+            "hindi": "Why it Helps: Introverted children need their own space to recharge and process their thoughts.\nWhat to Do: Allow the child to have some alone time and respect their need for privacy.\nExample: Provide a quiet space in the house where the child can read, draw, or just relax.",
+            "marathi": "Why it Helps: Introverted children need their own space to recharge and process their thoughts.\nWhat to Do: Allow the child to have some alone time and respect their need for privacy.\nExample: Provide a quiet space in the house where the child can read, draw, or just relax."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Teach Them to Express Themselves",
+            "hindi": "उन्हें स्वयं को व्यक्त करना सिखाएं",
+            "marathi": "त्यांना स्वतःला व्यक्त करायला शिकवा"
+          },
+          "description": {
+            "english": "Why it Helps: It helps the child to communicate their thoughts and feelings effectively.\nWhat to Do: Encourage the child to express their feelings through words, art, or other creative outlets.\nExample: Ask the child to write a journal or draw a picture about their day.",
+            "hindi": "Why it Helps: It helps the child to communicate their thoughts and feelings effectively.\nWhat to Do: Encourage the child to express their feelings through words, art, or other creative outlets.\nExample: Ask the child to write a journal or draw a picture about their day.",
+            "marathi": "Why it Helps: It helps the child to communicate their thoughts and feelings effectively.\nWhat to Do: Encourage the child to express their feelings through words, art, or other creative outlets.\nExample: Ask the child to write a journal or draw a picture about their day."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Provide Positive Reinforcement",
+            "hindi": "सकारात्मक पुष्टि प्रदान करें",
+            "marathi": "सकारात्मक मजबुती प्रदान करा"
+          },
+          "description": {
+            "english": "Why it Helps: It boosts the child's self-esteem and motivates them to try new things.\nWhat to Do: Praise the child for their efforts and achievements, no matter how small.\nExample: Praise the child when they interact with others or try something new.",
+            "hindi": "Why it Helps: It boosts the child's self-esteem and motivates them to try new things.\nWhat to Do: Praise the child for their efforts and achievements, no matter how small.\nExample: Praise the child when they interact with others or try something new.",
+            "marathi": "Why it Helps: It boosts the child's self-esteem and motivates them to try new things.\nWhat to Do: Praise the child for their efforts and achievements, no matter how small.\nExample: Praise the child when they interact with others or try something new."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 4,
+          "title": {
+            "english": "Teach Them Coping Strategies",
+            "hindi": "उन्हें सामना करने की रणनीतियां सिखाएं",
+            "marathi": "त्यांना सामना करण्याच्या युक्त्या शिकवा"
+          },
+          "description": {
+            "english": "Why it Helps: It helps the child to manage stress and anxiety.\nWhat to Do: Teach the child relaxation techniques like deep breathing or mindfulness.\nExample: Practice deep breathing exercises with the child before they go to a social event.",
+            "hindi": "Why it Helps: It helps the child to manage stress and anxiety.\nWhat to Do: Teach the child आराम तकनीकें like deep breathing or mindfulness.\nExample: Practice deep breathing exercises with the child before they go to a social event.",
+            "marathi": "Why it Helps: It helps the child to manage stress and anxiety.\nWhat to Do: Teach the child विश्रांती तंत्रे like deep breathing or mindfulness.\nExample: Practice deep breathing exercises with the child before they go to a social event."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 4,
+          "title": {
+            "english": "Encourage Independent Thinking",
+            "hindi": "स्वतंत्र सोच को प्रोत्साहित करें",
+            "marathi": "स्वतंत्र विचारांना प्रोत्साहन द्या"
+          },
+          "description": {
+            "english": "Why it Helps: It promotes self-confidence and decision-making skills.\nWhat to Do: Allow the child to make some decisions on their own and respect their choices.\nExample: Let the child choose their own clothes or decide what to do on a free day.",
+            "hindi": "Why it Helps: It promotes self-confidence and decision-making skills.\nWhat to Do: Allow the child to make some decisions on their own and respect their choices.\nExample: Let the child choose their own clothes or decide what to do on a free day.",
+            "marathi": "Why it Helps: It promotes self-confidence and decision-making skills.\nWhat to Do: Allow the child to make some decisions on their own and respect their choices.\nExample: Let the child choose their own clothes or decide what to do on a free day."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Foster a Love for Learning",
+            "hindi": "सीखने के प्रेम को बढ़ावा दें",
+            "marathi": "शिकण्याच्या प्रेमाला वाढवा"
+          },
+          "description": {
+            "english": "Why it Helps: It stimulates the child's curiosity and encourages them to explore new things.\nWhat to Do: Provide the child with books, puzzles, and other educational materials.\nExample: Take the child to a museum or a library.",
+            "hindi": "Why it Helps: It stimulates the child's curiosity and encourages them to explore new things.\nWhat to Do: Provide the child with books, puzzles, and other educational materials.\nExample: Take the child to a museum or a library.",
+            "marathi": "Why it Helps: It stimulates the child's curiosity and encourages them to explore new things.\nWhat to Do: Provide the child with books, puzzles, and other educational materials.\nExample: Take the child to a museum or a library."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Encourage Physical Activity",
+            "hindi": "शारीरिक गतिविधि को प्रोत्साहित करें",
+            "marathi": "शारीरिक क्रियाकलापांना प्रोत्साहन द्या"
+          },
+          "description": {
+            "english": "Why it Helps: It helps the child to release energy and improve their mood.\nWhat to Do: Encourage the child to participate in physical activities like sports or dancing.\nExample: Play a game of catch or enroll the child in a dance class.",
+            "hindi": "Why it Helps: It helps the child to release energy and improve their mood.\nWhat to Do: Encourage the child to participate in physical activities like sports or dancing.\nExample: Play a game of catch or enroll the child in a dance class.",
+            "marathi": "Why it Helps: It helps the child to release energy and improve their mood.\nWhat to Do: Encourage the child to participate in physical activities like sports or dancing.\nExample: Play a game of catch or enroll the child in a dance class."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 3,
+          "title": {
+            "english": "Provide a Safe and Supportive Environment",
+            "hindi": "सुरक्षित और सहायक वातावरण प्रदान करें",
+            "marathi": "सुरक्षित आणि सहाय्यक वातावरण प्रदान करा"
+          },
+          "description": {
+            "english": "Why it Helps: It makes the child feel loved and accepted for who they are.\nWhat to Do: Show empathy and understanding towards the child's feelings and thoughts.\nExample: Listen to the child's concerns without judgment and reassure them of your love and support.",
+            "hindi": "Why it Helps: It makes the child feel loved and accepted for who they are.\nWhat to Do: Show empathy and understanding towards the child's feelings and thoughts.\nExample: Listen to the child's concerns without judgment and reassure them of your love and support.",
+            "marathi": "Why it Helps: It makes the child feel loved and accepted for who they are.\nWhat to Do: Show empathy and understanding towards the child's feelings and thoughts.\nExample: Listen to the child's concerns without judgment and reassure them of your love and support."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 4,
+          "title": {
+            "english": "Seek Professional Help if Needed",
+            "hindi": "आवश्यकता होने पर पेशेवर सहायता लें",
+            "marathi": "आवश्यक असल्यास व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "Why it Helps: A professional can provide guidance and support to help the child overcome their challenges.\nWhat to Do: If the child's introversion is causing significant distress or hindering their development, consider seeking help from a psychologist or counselor.\nExample: Consult a child psychologist if the child is showing signs of social anxiety or depression.",
+            "hindi": "Why it Helps: A professional can provide guidance and support to help the child overcome their challenges.\nWhat to Do: If the child's introversion is causing significant distress or hindering their development, consider seeking help from a psychologist or counselor.\nExample: Consult a child psychologist if the child is showing signs of social anxiety or depression.",
+            "marathi": "Why it Helps: A professional can provide guidance and support to help the child overcome their challenges.\nWhat to Do: If the child's introversion is causing significant distress or hindering their development, consider seeking help from a psychologist or counselor.\nExample: Consult a child psychologist if the child is showing signs of social anxiety or depression."
+          }
+        }
+      ]
+    }
+  }
+}

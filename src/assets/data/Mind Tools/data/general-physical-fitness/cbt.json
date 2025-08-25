@@ -1,0 +1,98 @@
+{
+  "condition": "General Physical Fitness",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Set Specific, Achievable Goals",
+      "Description": "'- **Why it Helps:** Specific goals provide clear direction and measurable outcomes, increasing motivation and satisfaction as progress is tracked.\n   - **What to Do:** Set SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) for your fitness routine.\n   - **Example:** Instead of saying \"I want to get fit,\" set a goal like \"I will jog for 20 minutes three times a week for the next month.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"goalSettingWorksheet\": {\n    \"ultimateGoal\": {\n      \"question\": \"What is my ultimate goal?\",\n      \"xp\": 5\n    },\n    \"specificGoals\": {\n      \"question\": \"What specific actions can I take to achieve my ultimate goal?\",\n      \"xp\": 7\n    },\n    \"measurableOutcomes\": {\n      \"question\": \"How will I measure my progress towards my goal?\",\n      \"xp\": 6\n    },\n    \"achievableActions\": {\n      \"question\": \"Are my actions realistic and achievable within the given timeframe?\",\n      \"xp\": 8\n    },\n    \"relevantGoals\": {\n      \"question\": \"Is my goal relevant to my overall well-being and priorities?\",\n      \"xp\": 5\n    },\n    \"timeBoundGoals\": {\n      \"question\": \"Is my goal time-bound, with a specific deadline or timeframe?\",\n      \"xp\": 6\n    },\n    \"actionsConsistentWithGoal\": {\n      \"question\": \"What actions am I taking each day/week/month to move closer to my goal?\",\n      \"xp\": 8\n    }\n  }\n}",
+      "extracted_value": "What is my ultimate goal?\n\n\nWhat specific actions can I take to achieve my ultimate goal?\n\n\nHow will I measure my progress towards my goal?\n\n\nAre my actions realistic and achievable within the given timeframe?\n\n\nIs my goal relevant to my overall well-being and priorities?\n\n\nIs my goal time-bound, with a specific deadline or timeframe?\n\n\nWhat actions am I taking each day/week/month to move closer to my goal?\n\n"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identify and Challenge Negative Thoughts",
+      "Description": "'- **Why it Helps:** Negative thoughts can create barriers to starting or maintaining a fitness routine. Challenging these thoughts can reduce anxiety and improve confidence.\n   - **What to Do:** Write down negative thoughts related to exercise, and then challenge them by asking questions like \"Is this thought realistic?\" or \"What evidence do I have that contradicts this thought?\"\n   - **Example:** If you think, \"I'll never be able to jog for 30 minutes,\" challenge it by reflecting on past successes in similar activities.",
+      "XP": 3,
+      "Journal Template": "{\n  \"Section 1: Negative Thoughts\": {\n    \"Questions\": [\n      \"What is the negative thought I am experiencing?\",\n      \"When did this thought first occur?\",\n      \"How often do I experience this thought?\"\n    ],\n    \"XP\": 3\n  },\n  \"Section 2: Challenge Negative Thoughts\": {\n    \"Questions\": [\n      \"Is this thought realistic?\",\n      \"What evidence do I have that contradicts this thought?\",\n      \"Have I ever successfully completed a similar task before?\",\n      \"What would I say to a friend if they had this thought?\"\n    ],\n    \"XP\": 6\n  },\n  \"Section 3: Alternative Perspectives\": {\n    \"Questions\": [\n      \"What is a more balanced or rational interpretation of this situation?\",\n      \"What would I say to myself if I were trying to be kind and realistic?\",\n      \"How might someone else view this situation differently?\"\n    ],\n    \"XP\": 7\n  },\n  \"Section 4: Reflection and Learning\": {\n    \"Questions\": [\n      \"What did I learn about my thoughts and behaviors during this exercise?\",\n      \"How might I apply this learning to future situations?\",\n      \"Are there any changes I can make to my thoughts or behaviors to improve my mental health?\"\n    ],\n    \"XP\": 8\n  }\n}",
+      "extracted_value": "What is the negative thought I am experiencing?\nWhen did this thought first occur?\nHow often do I experience this thought?\nIs this thought realistic?\nWhat evidence do I have that contradicts this thought?\nHave I ever successfully completed a similar task before?\nWhat would I say to a friend if they had this thought?\nWhat is a more balanced or rational interpretation of this situation?\nWhat would I say to myself if I were trying to be kind and realistic?\nHow might someone else view this situation differently?\nWhat did I learn about my thoughts and behaviors during this exercise?\nHow might I apply this learning to future situations?\nAre there any changes I can make to my thoughts or behaviors to improve my mental health?"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Use Positive Self-Talk",
+      "Description": "'- **Why it Helps:** Positive self-talk can enhance motivation and resilience, reducing the likelihood of giving up on fitness goals.\n   - **What to Do:** Replace negative self-talk with positive affirmations or encouraging statements before and during exercise.\n   - **Example:** Instead of saying, \"I'm too tired to work out,\" tell yourself, \"I feel energized after exercising.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Develop a Routine",
+      "Description": "'- **Why it Helps:** Establishing a regular schedule can help make exercise a habit, reducing the cognitive load of decision-making and increasing adherence.\n   - **What to Do:** Plan exercise sessions at the same time on specific days each week and integrate them into your daily routine.\n   - **Example:** Decide to do yoga every Monday, Wednesday, and Friday at 7 am.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"exerciseType\": \"\",\n  \"daysOfWeek\": [],\n  \"timeOfDay\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"Why do I want to establish a routine for my exercise?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What specific days of the week do I plan to exercise?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"At what time of day do I plan to exercise?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"How will I ensure that I stick to my routine?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What are the potential benefits of having a regular exercise routine?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What challenges might I face in sticking to my routine, and how will I overcome them?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "Why do I want to establish a routine for my exercise?\n\n\nWhat specific days of the week do I plan to exercise?\n\n\nAt what time of day do I plan to exercise?\n\n\nHow will I ensure that I stick to my routine?\n\n\nWhat are the potential benefits of having a regular exercise routine?\n\n\nWhat challenges might I face in sticking to my routine, and how will I overcome them?\n\n"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Visualize Success",
+      "Description": "'- **Why it Helps:** Visualization can enhance motivation and focus by reinforcing positive imagery associated with achieving fitness goals.\n   - **What to Do:** Spend a few minutes each day visualizing yourself completing your workout and achieving your fitness goals.\n   - **Example:** Picture yourself crossing the finish line of a 5K run with energy and feeling proud.",
+      "XP": 3,
+      "Journal Template": "{\n  \"question\": \"What is my fitness goal?\",\n  \"xp\": 3\n}",
+      "extracted_value": "What is my fitness goal?\n\n"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Monitor Progress",
+      "Description": "'- **Why it Helps:** Tracking progress provides feedback on performance, which can reinforce motivation and guide adjustments in your routine.\n   - **What to Do:** Keep a journal or use a fitness app to record workouts, monitor improvements, and identify any patterns.\n   - **Example:** Record the distance and time of each run and note how you felt afterward to see improvements over time.",
+      "XP": 4,
+      "Journal Template": "Questions to Answer\nWhy did I choose to do this activity today?\nHow did I feel during and after the activity?\nWhat improvements have I noticed in my performance over time?\nAre there any patterns in my performance that I should be aware of?\nWhat adjustments can I make to my routine to improve my performance further?",
+      "extracted_value": "Questions to Answer\nWhy did I choose to do this activity today?\nHow did I feel during and after the activity?\nWhat improvements have I noticed in my performance over time?\nAre there any patterns in my performance that I should be aware of?\nWhat adjustments can I make to my routine to improve my performance further?"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identify and Reward Milestones",
+      "Description": "'- **Why it Helps:** Celebrating achievements can boost motivation and reinforce positive behavior, maintaining momentum toward larger goals.\n   - **What to Do:** Set small milestones along the way to your larger goals and reward yourself for achieving them with something meaningful.\n   - **Example:** Treat yourself to a new piece of workout gear after completing a month of consistent exercise.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"milestone\": \"\",\n  \"reward\": \"\",\n  \"reflection\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What is the milestone I achieved today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How did I feel when I achieved this milestone?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Why is celebrating this milestone important to me?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What reward did I give myself for achieving this milestone?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"How does this reward make me feel about my progress toward my larger goal?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What can I do to maintain this positive momentum moving forward?\",\n      \"xp\": 7\n    }\n  ]\n}",
+      "extracted_value": "What is the milestone I achieved today?\n\n\nHow did I feel when I achieved this milestone?\n\n\nWhy is celebrating this milestone important to me?\n\n\nWhat reward did I give myself for achieving this milestone?\n\n\nHow does this reward make me feel about my progress toward my larger goal?\n\n\nWhat can I do to maintain this positive momentum moving forward?\n\n"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Problem-Solve Barriers",
+      "Description": "'- **Why it Helps:** Problem-solving equips you to handle challenges that could disrupt your exercise routine, maintaining consistency.\n   - **What to Do:** Identify potential barriers to exercise and brainstorm solutions to overcome them.\n   - **Example:** If bad weather prevents outdoor jogging, have a backup indoor workout routine at home.",
+      "XP": 6,
+      "Journal Template": "{\n  \"title\": \"Problem-Solve Barriers Journal\",\n  \"sections\": [\n    {\n      \"header\": \"Identify Potential Barriers\",\n      \"questions\": [\n        \"What are the common challenges that might disrupt my exercise routine?\",\n        \"How often do these barriers occur?\",\n        \"What are the specific situations or conditions that lead to these barriers?\"\n      ]\n    },\n    {\n      \"header\": \"Brainstorm Solutions\",\n      \"questions\": [\n        \"What are some potential solutions to overcome each identified barrier?\",\n        \"How can I prepare for these barriers in advance?\",\n        \"What are the pros and cons of each solution?\"\n      ]\n    },\n    {\n      \"header\": \"Evaluate and Refine Solutions\",\n      \"questions\": [\n        \"Which solutions seem most effective and practical?\",\n        \"How can I implement these solutions in my daily routine?\",\n        \"What potential obstacles might arise with each solution, and how can I address them?\"\n      ]\n    }\n  ]\n}",
+      "extracted_value": "Problem-Solve Barriers Journal\nIdentify Potential Barriers\nWhat are the common challenges that might disrupt my exercise routine?\nHow often do these barriers occur?\nWhat are the specific situations or conditions that lead to these barriers?\nBrainstorm Solutions\nWhat are some potential solutions to overcome each identified barrier?\nHow can I prepare for these barriers in advance?\nWhat are the pros and cons of each solution?\nEvaluate and Refine Solutions\nWhich solutions seem most effective and practical?\nHow can I implement these solutions in my daily routine?\nWhat potential obstacles might arise with each solution, and how can I address them?"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Incorporate Enjoyable Activities",
+      "Description": "'- **Why it Helps:** Engaging in enjoyable activities increases the likelihood of adherence to fitness routines since positive experiences reinforce behavior.\n   - **What to Do:** Experiment with different forms of exercise to find what you enjoy most and are more likely to stick with.\n   - **Example:** Try dance classes, cycling, or swimming to discover an activity you love.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"activity\": \"\",\n  \"enjoymentLevel\": \"\",\n  \"reasonsForEnjoyment\": \"\",\n  \"challenges\": \"\",\n  \"solutions\": \"\",\n  \"outcome\": \"\",\n  \"learning\": \"\"\n}"
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Build a Support System",
+      "Description": "'- **Why it Helps:** Social support can provide motivation, accountability, and companionship, making exercise more enjoyable and less burdensome.\n    - **What to Do:** Engage friends, family, or join a fitness group to work out together or support each other’s fitness goals.\n    - **Example:** Join a running club or enlist a friend to become your workout buddy, encouraging each other to stay active.\n\nBy integrating these CBT techniques into your approach to physical fitness, you can cultivate a more positive mindset, overcome obstacles, and maintain a consistent, rewarding fitness routine.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"exerciseType\": \"\",\n  \"supportSystemEngagement\": \"\",\n  \"motivationLevel\": \"\",\n  \"accountabilityLevel\": \"\",\n  \"companionshipLevel\": \"\",\n  \"challengesFaced\": \"\",\n  \"solutionsImplemented\": \"\",\n  \"progressMade\": \"\",\n  \"questionsToAnswer\": [\n    {\n      \"question\": \"Why do I want to engage in physical exercise?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"Who can I ask for support in my fitness journey?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"How can I stay motivated during my workouts?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What are the benefits of having a workout buddy?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How can I handle challenges while exercising with a support system?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What progress have I made in my fitness journey so far?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How can I continue to build and maintain my support system?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "Why do I want to engage in physical exercise?\n\n\nWho can I ask for support in my fitness journey?\n\n\nHow can I stay motivated during my workouts?\n\n\nWhat are the benefits of having a workout buddy?\n\n\nHow can I handle challenges while exercising with a support system?\n\n\nWhat progress have I made in my fitness journey so far?\n\n\nHow can I continue to build and maintain my support system?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

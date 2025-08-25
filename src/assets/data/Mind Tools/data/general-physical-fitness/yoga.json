@@ -1,0 +1,83 @@
+{
+  "condition": "General Physical Fitness",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Cat-Cow Stretch",
+      "Card Description": "'- Start on your hands and knees in a tabletop position.  \n   - Inhale, arch your back, and lift your head and tailbone (Cow Pose).  \n   - Exhale, round your spine, and tuck your chin to your chest (Cat Pose).  \n   - Repeat for 5-10 breaths to warm up your spine.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Sun Salutations (Surya Namaskar)",
+      "Card Description": "'- Stand at the front of your mat.  \n   - Inhale, raise your arms overhead, and gently arch back (Urdhva Hastasana).  \n   - Exhale, fold forward (Uttanasana).  \n   - Inhale, lift halfway up, flattening your back (Ardha Uttanasana).  \n   - Exhale, step or jump back into a plank, and lower down (Chaturanga Dandasana).  \n   - Inhale, lift into an upward-facing dog (Urdhva Mukha Svanasana).  \n   - Exhale, move back to a downward-facing dog (Adho Mukha Svanasana).  \n   - Hold for 5 breaths, then step forward and repeat the cycle 3-5 times.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Warrior I (Virabhadrasana I)",
+      "Card Description": "'- From downward dog, step your right foot forward between your hands.  \n   - Turn your left heel down, inhale, and raise your arms overhead.  \n   - Keep your right knee above your ankle, and hold for 5 breaths.  \n   - Repeat on the other side.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Triangle Pose (Trikonasana)",
+      "Card Description": "'- Stand with your feet about a leg's distance apart.  \n   - Turn your right foot to 90 degrees and your left foot slightly inwards.  \n   - Extend your arms to the sides, reach forward with your right hand, and lower it to your shin, ankle, or the floor.  \n   - Extend your left arm toward the sky, and gaze up.  \n   - Hold for 5 breaths and switch sides.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Chair Pose (Utkatasana)",
+      "Card Description": "'- Stand with your feet together.  \n   - Inhale, raise your arms, and bend your knees as if sitting back into a chair.  \n   - Keep your weight on your heels and hold for 5-10 breaths.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Bridge Pose (Setu Bandhasana)",
+      "Card Description": "'- Lie on your back with knees bent and feet flat on the floor, hip-width apart.  \n   - Inhale, lift your hips and chest, clasping your hands beneath your back.  \n   - Hold for 5-10 breaths, then release.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Seated Forward Bend (Paschimottanasana)",
+      "Card Description": "'- Sit with your legs extended.  \n   - Inhale, lengthen your spine, and exhale, fold forward over your legs.  \n   - Hold for 5-10 breaths.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Corpse Pose (Savasana)",
+      "Card Description": "'- Lie flat on your back with arms and legs relaxed.  \n   - Close your eyes and let your body relax completely.  \n   - Stay in this position for 5-10 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "General Physical Fitness",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindful Breathing",
+      "Card Description": "'- Sit comfortably with your spine straight.  \n   - Close your eyes and focus on your breath.  \n   - Inhale deeply through the nose, and exhale slowly through the mouth.  \n   - Continue for 5-10 minutes, bringing your attention back to your breath if your mind wanders.",
+      "xp": 5
+    }
+  ],
+  "count": 9,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 9
+  }
+}

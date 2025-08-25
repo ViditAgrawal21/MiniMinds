@@ -1,0 +1,107 @@
+{
+  "condition": "Sleep",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Child's Pose (Balasana):",
+      "Card Description": "'- Kneel on the floor and sit back on your heels.  \n   - Extend your arms forward and lower your torso between your thighs.  \n   - Rest your forehead on the mat and breathe deeply.  \n   - Stay in this pose for 1-3 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Cat-Cow Pose (Marjaryasana-Bitilasana):",
+      "Card Description": "'- Start on your hands and knees in a tabletop position.  \n   - Inhale as you drop your belly, lifting your head and tailbone toward the sky (Cow Pose).  \n   - Exhale as you tuck your chin to your chest and arch your back (Cat Pose).  \n   - Move through these poses slowly for 1-2 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Legs-Up-The-Wall Pose (Viparita Karani):",
+      "Card Description": "'- Sit close to a wall and lie back, extending your legs up the wall to form an L shape.  \n   - Your sit bones should be close to the wall, and your arms can rest by your sides.  \n   - Stay here for 5-10 minutes, focusing on your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Reclining Bound Angle Pose (Supta Baddha Konasana):",
+      "Card Description": "'- Lie on your back and bring the soles of your feet together, letting your knees fall open.  \n   - Place your arms by your sides or over your head.  \n   - Hold this pose for 5-10 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Corpse Pose (Savasana):",
+      "Card Description": "'- Lie flat on your back with your arms at your sides, palms up.  \n   - Let your feet fall open naturally.  \n   - Close your eyes and take slow, deep breaths, focusing on relaxation.  \n   - Stay in this pose for 5-10 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Find a Comfortable Position:",
+      "Card Description": "'- You can sit in a chair, cross-legged on the floor, or lie down (a good position if you want to transition to sleep).",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Focus on Your Breath:",
+      "Card Description": "'- Close your eyes and take a few deep breaths to settle in.  \n   - Focus on the sensation of your breath entering and leaving your body.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Progressive Muscle Relaxation:",
+      "Card Description": "'- Starting from your toes, gently tense and then release each muscle group, working your way up to your head.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Visualization:",
+      "Card Description": "'- Imagine a peaceful scene, such as a beach or a forest, and immerse yourself in the sensory details of that place.  \n   - You might visualize waves gently lapping at the shore or leaves rustling in the wind.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan:",
+      "Card Description": "'- Gently bring your attention to each part of your body from head to toe, acknowledging sensations without judgment.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Letting Go:",
+      "Card Description": "'- If you find your mind wandering, gently bring your focus back to your breath or your visualization.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Gratitude or Positive Affirmation:",
+      "Card Description": "'- End your session with a moment of gratitude or by repeating a calming affirmation such as \"I am at peace\" or \"I release the day.\"",
+      "xp": 5
+    }
+  ],
+  "count": 12,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 12
+  }
+}

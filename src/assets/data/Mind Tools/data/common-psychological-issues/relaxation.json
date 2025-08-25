@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "condition": "common-psychological-issues",
+    "intervention_type": "Relaxation",
+    "source_files": [
+      "thought_pro_filtered.json",
+      "thought_pro_with_extracted_final.json",
+      "Thought_pro_remaining.json"
+    ],
+    "created_from": "thought_pro_filtered.json, thought_pro_with_extracted_final.json, and Thought_pro_remaining.json",
+    "total_interventions": 6,
+    "creation_date": "2024-12-28"
+  },
+  "interventions": [
+    {
+      "title": "3. Mindful Movement and Stretching",
+      "description": "- Practice slow, mindful yoga flows such as a gentle Sun Salutation. Focus on synchronizing your breath with movement to increase mindfulness.\n\n### Meditation for Psychological Well-being",
+      "xp": 5
+    },
+    {
+      "title": "1. Guided Meditation",
+      "description": "- Use guided meditation apps or recordings. These often walk you through a calming visualization or relaxation sequence, which can be helpful for stress and anxiety.",
+      "xp": 5
+    },
+    {
+      "title": "2. Mindfulness Meditation",
+      "description": "- Sit in a comfortable position, close your eyes, and begin focusing your attention on the natural rhythm of your breath. When your mind wanders, gently bring it back to the sensation of breathing. Start with 5-10 minutes daily, gradually increasing the duration as you become more comfortable.",
+      "xp": 5
+    },
+    {
+      "title": "3. Loving-Kindness Meditation (Metta)",
+      "description": "- Sit comfortably and close your eyes. Begin by cultivating feelings of compassion and love for yourself, repeating phrases like \"May I be happy, may I be healthy.\" Gradually extend these wishes to others, including loved ones, acquaintances, and even those with whom you have difficulties.",
+      "xp": 5
+    },
+    {
+      "title": "4. Body Scan Meditation",
+      "description": "- Lie down comfortably and close your eyes. Slowly bring your attention to each part of your body, starting from the toes to the head, noticing any sensations without judgment. This practice can help release tension and increase body awareness.\n\n### Tips for Consistency and Effectiveness",
+      "xp": 5
+    },
+    {
+      "title": "Seek Support",
+      "description": "Yoga and meditation are complementary to, not replacements for, professional mental health treatment. If you are dealing with significant psychological issues, seek advice from a mental health professional.",
+      "xp": 5
+    }
+  ]
+}

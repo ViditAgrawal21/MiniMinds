@@ -1,0 +1,101 @@
+{
+  "condition": "Internet Dependence",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify and Challenge Irrational Beliefs",
+      "Description": "'- **Why it Helps:** Uncovering and questioning irrational beliefs that fuel internet dependence can reduce irrational thinking and emotional distress.\n   - **What to Do:** List beliefs such as \"I must always be online to stay connected,\" then dispute these by considering evidence against them.\n   - **Example:** Believe that missing online interactions will lead to losing friends. Challenge this by recalling friends who value personal interaction.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the irrational belief I am holding onto?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What evidence supports this belief?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What evidence contradicts this belief?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Is this belief based on facts or assumptions?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How would I feel if I let go of this belief?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What alternative, more rational belief can I adopt instead?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How can I apply this new belief in my daily life?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What is the irrational belief I am holding onto?\n\n\nWhat evidence supports this belief?\n\n\nWhat evidence contradicts this belief?\n\n\nIs this belief based on facts or assumptions?\n\n\nHow would I feel if I let go of this belief?\n\n\nWhat alternative, more rational belief can I adopt instead?\n\n\nHow can I apply this new belief in my daily life?\n\n"
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Replace \"Musts\" and \"Shoulds\"",
+      "Description": "'- **Why it Helps:** Reducing demand-oriented thinking can decrease pressure and anxiety.\n   - **What to Do:** Notice when you use words like \"must\" and \"should\" and replace them with preferences or wishes.\n   - **Example:** Change \"I must check my notifications immediately\" to \"I prefer to check them regularly, but it’s not essential.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"thoughts\": \"\",\n  \"emotions\": \"\",\n  \"actions\": \"\",\n  \"replacements\": {\n    \"extremeWords\": \"\",\n    \"replacementWords\": \"\"\n  },\n  \"questions\": [\n    {\n      \"question\": \"Did I use any 'must' or 'should' statements today?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"What were the situations where I used these statements?\",\n      \"XP\": 6\n    },\n    {\n      \"question\": \"How did I feel when I used these statements?\",\n      \"XP\": 7\n    },\n    {\n      \"question\": \"What are some healthier ways to express my thoughts and feelings in these situations?\",\n      \"XP\": 8\n    },\n    {\n      \"question\": \"Did replacing 'musts' and 'shoulds' with preferences or wishes help reduce my anxiety or pressure?\",\n      \"XP\": 9\n    }\n  ]\n}",
+      "extracted_value": "Did I use any 'must' or 'should' statements today?\n\n\nWhat were the situations where I used these statements?\n\n\nHow did I feel when I used these statements?\n\n\nWhat are some healthier ways to express my thoughts and feelings in these situations?\n\n\nDid replacing 'musts' and 'shoulds' with preferences or wishes help reduce my anxiety or pressure?\n\n"
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on Long-term Consequences",
+      "Description": "'- **Why it Helps:** Understanding the long-term impacts of internet dependence can motivate change.\n   - **What to Do:** Write down both immediate and long-term consequences of excessive internet use.\n   - **Example:** Realize that while staying online provides instant gratification, it might harm relationships or work productivity in the long run.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Situation\": \"\",\n  \"Immediate Consequences\": [\n    {\n      \"Question\": \"What immediate benefits do I get from excessive internet use?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"What immediate drawbacks do I experience from excessive internet use?\",\n      \"Answer\": \"\"\n    }\n  ],\n  \"Long-term Consequences\": [\n    {\n      \"Question\": \"What potential long-term benefits could I gain by reducing my internet use?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"What potential long-term drawbacks could I experience if I continue to excessively use the internet?\",\n      \"Answer\": \"\"\n    }\n  ],\n  \"Reflection Questions\": [\n    {\n      \"Question\": \"How do my immediate and long-term consequences impact my overall well-being?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"What steps can I take to balance my internet use and maintain a healthy lifestyle?\",\n      \"Answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "What immediate benefits do I get from excessive internet use?\n\n\nWhat immediate drawbacks do I experience from excessive internet use?\n\n\nWhat potential long-term benefits could I gain by reducing my internet use?\n\n\nWhat potential long-term drawbacks could I experience if I continue to excessively use the internet?\n\n\nHow do my immediate and long-term consequences impact my overall well-being?\n\n\nWhat steps can I take to balance my internet use and maintain a healthy lifestyle?\n\n"
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Mindfulness",
+      "Description": "'- **Why it Helps:** Being mindful can heighten awareness of when and why you’re compelled to go online, breaking automatic habits.\n   - **What to Do:** Implement short, regular mindfulness practices to notice urges and thoughts without acting on them.\n   - **Example:** Pause and breathe mindfully before opening a social media app to question if it’s a need or habit.",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What situation triggered the urge to go online?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What was the specific urge or thought that you noticed?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"Why did you feel compelled to act on this urge?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What mindfulness practice did you use to pause and reflect?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"Did you act on the urge or pause? What was the outcome?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"Reflect on what you learned about your habits and how you can improve mindfulness in the future.\",\n    \"xp\": 8\n  }\n]",
+      "extracted_value": "What situation triggered the urge to go online?\n\n\nWhat was the specific urge or thought that you noticed?\n\n\nWhy did you feel compelled to act on this urge?\n\n\nWhat mindfulness practice did you use to pause and reflect?\n\n\nDid you act on the urge or pause? What was the outcome?\n\n\nReflect on what you learned about your habits and how you can improve mindfulness in the future."
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Develop Alternative Coping Strategies",
+      "Description": "'- **Why it Helps:** Having strategies other than internet use to handle negative emotions can decrease reliance on digital platforms.\n   - **What to Do:** Identify activities or exercises that can replace internet use when feeling stressed or bored.\n   - **Example:** Opt for a walk, calling a friend, or engaging in a hobby when feeling the urge to browse the internet.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"trigger\": \"\",\n  \"initialReaction\": \"\",\n  \"negativeThoughts\": \"\",\n  \"alternativeStrategies\": \"\",\n  \"whyItHelps\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What activities or exercises can I use to replace internet use when feeling stressed or bored?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Why do these alternative strategies help me manage negative emotions?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How often do I use the internet as a coping mechanism, and what are the consequences?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What are some specific situations where I feel the urge to browse the internet, and how can I address them with alternative strategies?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What activities or exercises can I use to replace internet use when feeling stressed or bored?\n\n\nWhy do these alternative strategies help me manage negative emotions?\n\n\nHow often do I use the internet as a coping mechanism, and what are the consequences?\n\n\nWhat are some specific situations where I feel the urge to browse the internet, and how can I address them with alternative strategies?\n\n"
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Set Reasonable Time Limits",
+      "Description": "'- **Why it Helps:** Limiting time on the internet can help balance time online with other life commitments.\n   - **What to Do:** Use apps or self-imposed timers to restrict online time.\n   - **Example:** Set a rule to spend no more than 2 hours per day on leisure internet activities.",
+      "XP": 3,
+      "Journal Template": "{\n  \"columns\": [\n    {\n      \"label\": \"Date\",\n      \"description\": \"The date when the journal entry was made.\"\n    },\n    {\n      \"label\": \"Time Spent Online\",\n      \"description\": \"The amount of time spent online during the day.\"\n    },\n    {\n      \"label\": \"Activity Type\",\n      \"description\": \"The type of activity being done online (e.g., social media, work, leisure).\"\n    },\n    {\n      \"label\": \"Initial Feelings\",\n      \"description\": \"How you felt before setting the time limit.\"\n    },\n    {\n      \"label\": \"Thoughts About Time Limit\",\n      \"description\": \"Your thoughts about setting a time limit for online activities.\"\n    },\n    {\n      \"label\": \"Supporting Evidence\",\n      \"description\": \"Reasons why setting a time limit is helpful (e.g., more time for other activities, better focus).\"\n    },\n    {\n      \"label\": \"Opposing Evidence\",\n      \"description\": \"Reasons why setting a time limit might be difficult (e.g., feeling restricted, missing out on content).\"\n    },\n    {\n      \"label\": \"Balanced Alternative Thought\",\n      \"description\": \"A more balanced and realistic thought about setting time limits (e.g., 'I can still enjoy my favorite shows but need to prioritize other tasks').\"\n    },\n    {\n      \"label\": \"Outcome/Reflection\",\n      \"description\": \"How you felt after setting the time limit and any reflections on the experience.\"\n    }\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What was the trigger for setting a time limit today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How did you feel initially about setting a time limit?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What negative thoughts did you have about setting a time limit?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What evidence supports the idea that setting a time limit is helpful?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What evidence suggests that setting a time limit might be difficult?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Can you think of a more balanced way to view setting time limits?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How did you feel after setting the time limit?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What did you learn from this experience?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "Date\nThe date when the journal entry was made.\nTime Spent Online\nThe amount of time spent online during the day.\nActivity Type\nThe type of activity being done online (e.g., social media, work, leisure).\nInitial Feelings\nHow you felt before setting the time limit.\nThoughts About Time Limit\nYour thoughts about setting a time limit for online activities.\nSupporting Evidence\nReasons why setting a time limit is helpful (e.g., more time for other activities, better focus).\nOpposing Evidence\nReasons why setting a time limit might be difficult (e.g., feeling restricted, missing out on content).\nBalanced Alternative Thought\nA more balanced and realistic thought about setting time limits (e.g., 'I can still enjoy my favorite shows but need to prioritize other tasks').\nOutcome/Reflection\nHow you felt after setting the time limit and any reflections on the experience.\nWhat was the trigger for setting a time limit today?\n\n\nHow did you feel initially about setting a time limit?\n\n\nWhat negative thoughts did you have about setting a time limit?\n\n\nWhat evidence supports the idea that setting a time limit is helpful?\n\n\nWhat evidence suggests that setting a time limit might be difficult?\n\n\nCan you think of a more balanced way to view setting time limits?\n\n\nHow did you feel after setting the time limit?\n\n\nWhat did you learn from this experience?\n\n"
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Restructure Thinking About Online and Offline Interactions",
+      "Description": "'- **Why it Helps:** Balancing digital and in-person relationships promotes healthier social interactions.\n   - **What to Do:** Recognize the value of face-to-face interactions and schedule regular offline social activities.\n   - **Example:** Plan weekly meetups with friends rather than relying solely on online chats.",
+      "XP": 5,
+      "Journal Template": "{\n  \"question\": \"What are the benefits of face-to-face interactions?\",\n  \"xp\": 5\n}",
+      "extracted_value": "What are the benefits of face-to-face interactions?\n\n"
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Challenge Catastrophic Thinking",
+      "Description": "'- **Why it Helps:** Reducing catastrophic thoughts about the internet can decrease dependency by separating reality from exaggerated fears.\n   - **What to Do:** Identify worst-case scenarios you fear from not being online and rationalize them.\n   - **Example:** Challenge the thought \"If I’m not online, I’ll miss crucial news,\" by recognizing how infrequent this actually is.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"worst_case_scenario\": \"\",\n  \"rationalization_questions\": [\n    {\n      \"question\": \"What evidence do I have that supports this worst-case scenario?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What is the likelihood of this worst-case scenario actually happening?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How have I successfully handled similar situations in the past?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What are some alternative, more realistic outcomes?\",\n      \"xp\": 8\n    }\n  ],\n  \"thoughts_to_challenge\": [\n    {\n      \"thought\": \"\",\n      \"rationalization\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "What evidence do I have that supports this worst-case scenario?\n\n\nWhat is the likelihood of this worst-case scenario actually happening?\n\n\nHow have I successfully handled similar situations in the past?\n\n\nWhat are some alternative, more realistic outcomes?\n\n"
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Self-compassion",
+      "Description": "'- **Why it Helps:** Being compassionate toward oneself reduces guilt and shame associated with internet overuse, easing the path to change.\n   - **What to Do:** Treat yourself with kindness if you have setbacks in reducing internet use.\n   - **Example:** Remind yourself it’s okay to struggle with habits and commend efforts to change rather than focusing on failures.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situationTrigger\": \"\",\n  \"initialReaction\": \"\",\n  \"selfCriticalThoughts\": \"\",\n  \"costsBenefits\": \"\",\n  \"selfCompassionateThoughts\": \"\",\n  \"alteredReaction\": \"\",\n  \"whatHappenedToTriggerProblem\": \"\",\n  \"howDidYouFeelEmotionallyPhysically\": {\n    \"emotionRating\": 0,\n    \"physicalSensations\": \"\"\n  },\n  \"whatSelfCriticalThoughtsCameToMind\": \"\",\n  \"whatDidYouSayToYourself\": \"\",\n  \"whatIsHelpfulUnhelpfulAboutThinkingThisWay\": \"\",\n  \"whatCompassionateThoughtsCouldHelpAlleviateSufferingPromoteWellbeing\": \"\",\n  \"howWouldYourFeelingsChange\": \"\",\n  \"compassionateConclusion\": {\n    \"reReadCompassionateThoughts\": \"\",\n    \"moreCompassionateHelpfulConclusion\": \"\",\n    \"believeSelfCriticalThoughtsNow\": 0,\n    \"intensityInitialMainEmotionNow\": 0\n  },\n  \"additionalQuestions\": [\n    {\n      \"question\": \"What can I do to cope and look after myself now?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"How will I feel about this in 1 week, or 1 month, or 1 year?\",\n      \"answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "What can I do to cope and look after myself now?\n\n\nHow will I feel about this in 1 week, or 1 month, or 1 year?\n\n"
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify Underlying Needs",
+      "Description": "'- **Why it Helps:** Recognizing unmet needs that drive internet use allows for addressing them more directly and healthily.\n    - **What to Do:** Reflect on what needs are being fulfilled by excessive internet use and find other ways to meet those needs.\n    - **Example:** If using the internet for connection, seek out community groups or clubs that offer support and friendship offline.\n\nBy working through these REBT strategies, individuals with internet dependence can gain more control over their habits, improve emotional well-being, and foster a healthier relationship with technology. It is important, however, to be patient and kind with oneself as these changes take time and effort. Consider seeking support from a trained therapist if needed.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What specific needs am I trying to fulfill by using the internet excessively?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Are there other ways I can meet these needs without relying on the internet?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What are some alternative activities or communities that could help me fulfill these needs?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How have I been using the internet to cope with stress, boredom, or other emotions?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are some potential consequences of not addressing these underlying needs?\",\n    \"xp\": 8\n  }\n]",
+      "extracted_value": "What specific needs am I trying to fulfill by using the internet excessively?\n\n\nAre there other ways I can meet these needs without relying on the internet?\n\n\nWhat are some alternative activities or communities that could help me fulfill these needs?\n\n\nHow have I been using the internet to cope with stress, boredom, or other emotions?\n\n\nWhat are some potential consequences of not addressing these underlying needs?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

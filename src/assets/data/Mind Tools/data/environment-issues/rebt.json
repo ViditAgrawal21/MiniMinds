@@ -1,0 +1,97 @@
+{
+  "condition": "Environment Issues affecting mental wellbeing",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify Irrational Beliefs",
+      "Description": "'- **Why it helps:** Recognizing irrational beliefs helps reduce their negative impact on emotions, making it easier to deal with environmental concerns.  \n   - **What to do:** Reflect on beliefs like \"The environment must not be declining or else everything is catastrophic.\"  \n   - **Example:** Change \"This is the end of the world\" to \"Although the environmental situation is severe, there are actions we can take.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the irrational belief I am holding onto?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How does this belief affect my emotions and behaviors?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"Can I find evidence that supports the rationality of this belief?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What are some alternative, more rational ways to think about this situation?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How can I challenge and dispute this irrational belief?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What is the irrational belief I am holding onto?\n\n\nHow does this belief affect my emotions and behaviors?\n\n\nCan I find evidence that supports the rationality of this belief?\n\n\nWhat are some alternative, more rational ways to think about this situation?\n\n\nHow can I challenge and dispute this irrational belief?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Challenge Catastrophic Thinking",
+      "Description": "'- **Why it helps:** Moderating catastrophic thinking lowers anxiety and helplessness, improving mental resilience.  \n   - **What to do:** Ask yourself, \"Is this as awful as I'm imagining?\"  \n   - **Example:** \"Even if pollution is an issue, we have made progress before.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on What You Can Control",
+      "Description": "'- **Why it helps:** Concentrating on controllable aspects reduces feelings of powerlessness.  \n   - **What to do:** Identify actionable steps within your control, like recycling and reducing waste.  \n   - **Example:** \"I can help by choosing eco-friendly products and encouraging others to do the same.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"title\": \"Focus on What You Can Control\",\n  \"sections\": [\n    {\n      \"question\": \"What are the things in my life that I feel are outside of my control?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What are the things in my life that I can control?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What specific actions can I take today to focus on what I can control?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How do I feel when I focus on what I can control? (e.g., more empowered, less anxious)\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What are some small, achievable steps I can take this week to improve my sense of control?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"How can I encourage others to join me in focusing on what we can control?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "Focus on What You Can Control\nWhat are the things in my life that I feel are outside of my control?\n\n\nWhat are the things in my life that I can control?\n\n\nWhat specific actions can I take today to focus on what I can control?\n\n\nHow do I feel when I focus on what I can control? (e.g., more empowered, less anxious)\n\n\nWhat are some small, achievable steps I can take this week to improve my sense of control?\n\n\nHow can I encourage others to join me in focusing on what we can control?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Develop Realistic Optimism",
+      "Description": "'- **Why it helps:** Cultivating a balanced view of the future can boost motivation and emotional well-being.  \n   - **What to do:** Recognize progress in environmental efforts and innovations.  \n   - **Example:** \"While there are challenges, advancements in technology offer hope.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Situation/Trigger\": \"\",\n  \"Initial Reaction\": \"\",\n  \"Negative Automatic Thoughts\": \"\",\n  \"Supporting Evidence\": \"\",\n  \"Opposing Evidence\": \"\",\n  \"Balanced Alternative Thought\": \"\",\n  \"Outcome/Learning\": \"\",\n  \"Questions to Answer:\": [\n    {\n      \"Question\": \"What are the challenges I am currently facing?\",\n      \"XP\": 5\n    },\n    {\n      \"Question\": \"What progress have I made recently?\",\n      \"XP\": 5\n    },\n    {\n      \"Question\": \"How can I recognize and celebrate my progress?\",\n      \"XP\": 6\n    },\n    {\n      \"Question\": \"What advancements in technology or environmental efforts offer hope for the future?\",\n      \"XP\": 7\n    },\n    {\n      \"Question\": \"How can I cultivate a balanced view of the future?\",\n      \"XP\": 8\n    }\n  ]\n}",
+      "extracted_value": "What are the challenges I am currently facing?\n\n\nWhat progress have I made recently?\n\n\nHow can I recognize and celebrate my progress?\n\n\nWhat advancements in technology or environmental efforts offer hope for the future?\n\n\nHow can I cultivate a balanced view of the future?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Acceptance of Uncertainty",
+      "Description": "'- **Why it helps:** Accepting uncertainty reduces the stress caused by the unknown aspects of environmental changes.  \n   - **What to do:** Remind yourself that life is full of uncertainties that are impossible to control entirely.  \n   - **Example:** \"While I don't know what will happen, I can adapt to the changes.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What are the uncertainties in my life that I am currently worried about?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How do these uncertainties affect my daily life?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are some past experiences where I successfully adapted to uncertainty?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What are some steps I can take to prepare for the uncertainties in my life?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can I remind myself that uncertainty is a natural part of life?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What are some positive outcomes that could arise from these uncertainties?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What are the uncertainties in my life that I am currently worried about?\n\n\nHow do these uncertainties affect my daily life?\n\n\nWhat are some past experiences where I successfully adapted to uncertainty?\n\n\nWhat are some steps I can take to prepare for the uncertainties in my life?\n\n\nHow can I remind myself that uncertainty is a natural part of life?\n\n\nWhat are some positive outcomes that could arise from these uncertainties?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Separate Preferences from Needs",
+      "Description": "'- **Why it helps:** Differentiating between what we want and what we need reduces emotional disturbance.  \n   - **What to do:** Consider how demanding perfection (like zero pollution) is unnecessary and counterproductive.  \n   - **Example:** \"I would prefer a pollution-free city, but I know perfection is unrealistic.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What is one thing you prefer but know is unrealistic?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How does demanding perfection affect your emotional state?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"Can you think of a situation where accepting imperfection led to a positive outcome?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can you reframe your expectations to make them more realistic and flexible?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What are some benefits of accepting that things cannot always be perfect?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What is one thing you prefer but know is unrealistic?\n\n\nHow does demanding perfection affect your emotional state?\n\n\nCan you think of a situation where accepting imperfection led to a positive outcome?\n\n\nHow can you reframe your expectations to make them more realistic and flexible?\n\n\nWhat are some benefits of accepting that things cannot always be perfect?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reframe Global Beliefs",
+      "Description": "'- **Why it helps:** Reframing broad negative outlooks into specifics aids in reducing overwhelm.  \n   - **What to do:** Shift from \"The world is doomed\" to \"Certain areas need improvement.\"  \n   - **Example:** \"Global warming is serious but solvable with collective effort.\"",
+      "XP": 5
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Mindfulness",
+      "Description": "'- **Why it helps:** Mindfulness can reduce the negative mental impact of stress and anxiety.  \n   - **What to do:** Engage in mindfulness exercises to stay grounded in the present.  \n   - **Example:** \"I am focusing on what I can do today rather than ruminating on all possible future problems.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What triggered my stress or anxiety today?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How did I feel in that moment?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What negative thoughts did I have?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How did I react to those thoughts?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What mindfulness exercise can I practice to stay grounded in the present?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How did practicing mindfulness help me today?\",\n    \"xp\": 8\n  }\n]",
+      "extracted_value": "What triggered my stress or anxiety today?\n\n\nHow did I feel in that moment?\n\n\nWhat negative thoughts did I have?\n\n\nHow did I react to those thoughts?\n\n\nWhat mindfulness exercise can I practice to stay grounded in the present?\n\n\nHow did practicing mindfulness help me today?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Seek Social Support",
+      "Description": "'- **Why it helps:** Connecting with others can provide emotional relief and inspire action.  \n   - **What to do:** Join groups or communities that work toward environmental conservation.  \n   - **Example:** \"Participating in local clean-ups links me with like-minded people and renews my hope.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"initialReaction\": \"\",\n  \"negativeThoughts\": \"\",\n  \"supportingEvidence\": \"\",\n  \"opposingEvidence\": \"\",\n  \"balancedAlternativeThought\": \"\",\n  \"outcomeLearning\": \"\",\n  \"questionsToAnswer\": [\n    {\n      \"question\": \"What was the situation that triggered my negative thoughts?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How did I initially react to the situation?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What negative thoughts did I experience?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What evidence supports my negative thoughts?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What evidence opposes my negative thoughts?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Is there a more balanced and realistic way to think about the situation?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What did I learn from this experience?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How can I seek social support in this situation?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What are the benefits of seeking social support in this context?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"How can I apply this technique in the future?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "What was the situation that triggered my negative thoughts?\n\n\nHow did I initially react to the situation?\n\n\nWhat negative thoughts did I experience?\n\n\nWhat evidence supports my negative thoughts?\n\n\nWhat evidence opposes my negative thoughts?\n\n\nIs there a more balanced and realistic way to think about the situation?\n\n\nWhat did I learn from this experience?\n\n\nHow can I seek social support in this situation?\n\n\nWhat are the benefits of seeking social support in this context?\n\n\nHow can I apply this technique in the future?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Gratitude",
+      "Description": "'- **Why it helps:** Focusing on what is good helps in maintaining a positive outlook amidst environmental challenges.  \n    - **What to do:** Regularly list aspects of the environment you appreciate.  \n    - **Example:** \"I am thankful for the local park's beauty and remain motivated to preserve it.\"\n\nBy applying these REBT-based strategies, individuals can gain a healthier perspective on environmental issues, which can improve mental well-being and encourage proactive, sustainable behaviors.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"gratitudeList\": [\n    {\n      \"question\": \"What are three things you are grateful for today?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did these things make you feel?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Why are these things important to you?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How can you continue to appreciate these things in the future?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nWhat are three things you are grateful for today?\n\n\nHow did these things make you feel?\n\n\nWhy are these things important to you?\n\n\nHow can you continue to appreciate these things in the future?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "condition": "Internet and Social Media Issue",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify Irrational Beliefs",
+      "Description": "'- **Why it helps**: By identifying irrational beliefs, you can start questioning and challenging thoughts that lead to emotional distress.\n   - **What to do**: Reflect on your thoughts when using social media. Identify beliefs that are unrealistic or overly negative.\n   - **Example**: \"I must be liked by everyone online, or I'm worthless.\"",
+      "XP": 5,
+      "Journal Template": "YYYY-MM-DD\nDescribe the thoughts you had while using social media today.\nIdentify any irrational beliefs you noticed. For example 'I must be liked by everyone online or I'm worthless.'\nChallenge each irrational belief by asking yourself these questions\n1. Is this belief really true?\n2. Is there evidence to support this belief?\n3. What would happen if I didn't believe this?\n4. Is there a more balanced way to look at this situation?\nReflect on the consequences of holding onto these irrational beliefs. How have they affected your emotions and behaviors?",
+      "extracted_value": "YYYY-MM-DD\nDescribe the thoughts you had while using social media today.\nIdentify any irrational beliefs you noticed. For example 'I must be liked by everyone online or I'm worthless.'\nChallenge each irrational belief by asking yourself these questions\n1. Is this belief really true?\n2. Is there evidence to support this belief?\n3. What would happen if I didn't believe this?\n4. Is there a more balanced way to look at this situation?\nReflect on the consequences of holding onto these irrational beliefs. How have they affected your emotions and behaviors?"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Challenge the Need for Approval",
+      "Description": "'- **Why it helps**: Understanding that not everyone’s approval is necessary reduces anxiety and dependence on external validation.\n   - **What to do**: Start reframing thoughts. Ask yourself if not getting likes truly reflects your worth.\n   - **Example**: \"While getting likes is nice, my self-worth isn't determined by others' opinions.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Trigger\": \"\",\n  \"Initial Reaction\": \"\",\n  \"Negative Automatic Thoughts\": \"\",\n  \"Supporting Evidence\": \"\",\n  \"Opposing Evidence\": \"\",\n  \"Balanced Alternative Thought\": \"\",\n  \"Outcome/Learning\": \"\",\n  \"Questions to Reflect On\": [\n    {\n      \"Question\": \"Why do I feel the need for approval from others?\",\n      \"XP\": 5\n    },\n    {\n      \"Question\": \"Does not getting approval from everyone truly reflect my worth?\",\n      \"XP\": 6\n    },\n    {\n      \"Question\": \"Can I reframe my thoughts to focus on my own self-worth rather than external validation?\",\n      \"XP\": 7\n    },\n    {\n      \"Question\": \"How does seeking approval from others affect my anxiety levels?\",\n      \"XP\": 8\n    },\n    {\n      \"Question\": \"What are some alternative ways to boost my self-esteem that don't rely on external validation?\",\n      \"XP\": 9\n    }\n  ]\n}",
+      "extracted_value": "Why do I feel the need for approval from others?\n\n\nDoes not getting approval from everyone truly reflect my worth?\n\n\nCan I reframe my thoughts to focus on my own self-worth rather than external validation?\n\n\nHow does seeking approval from others affect my anxiety levels?\n\n\nWhat are some alternative ways to boost my self-esteem that don't rely on external validation?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Self-Acceptance",
+      "Description": "'- **Why it helps**: Accepting yourself unconditionally diminishes the impact of negative feedback or comparison.\n   - **What to do**: Regularly remind yourself of your inherent worth, regardless of social media feedback.\n   - **Example**: \"I am a valuable person regardless of how many likes my post gets.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"negativeThoughts\": \"\",\n  \"evidenceForThoughts\": \"\",\n  \"disputingThoughts\": \"\",\n  \"alternativeThoughts\": \"\",\n  \"whyItHelps\": \"\",\n  \"reminders\": \"\",\n  \"positiveAffirmations\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Dispute Catastrophic Thinking",
+      "Description": "'- **Why it helps**: Reducing catastrophic thinking lowers anxiety and distress.\n   - **What to do**: When you notice catastrophic thoughts, question their likelihood and impact.\n   - **Example**: \"Not getting any comments today might feel disappointing but it doesn’t mean my friends don’t care.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"prompt\": \"Describe the situation that triggered the catastrophic thought.\",\n    \"xp\": 3\n  },\n  \"InitialThought\": {\n    \"prompt\": \"What was your initial thought about the situation?\",\n    \"xp\": 4\n  },\n  \"CatastrophicThought\": {\n    \"prompt\": \"What is the catastrophic thought you had?\",\n    \"xp\": 5\n  },\n  \"QuestionLikelihood\": {\n    \"prompt\": \"How likely is it that this catastrophic thought will actually happen?\",\n    \"xp\": 6\n  },\n  \"QuestionImpact\": {\n    \"prompt\": \"What would be the worst possible outcome if this catastrophic thought were true?\",\n    \"xp\": 7\n  },\n  \"DisputeCatastrophicThought\": {\n    \"prompt\": \"Can you think of a more balanced and realistic way to look at this situation?\",\n    \"xp\": 8\n  },\n  \"Outcome\": {\n    \"prompt\": \"How do you feel now after disputing the catastrophic thought?\",\n    \"xp\": 9\n  },\n  \"Learning\": {\n    \"prompt\": \"What did you learn from this exercise?\",\n    \"xp\": 10\n  }\n}",
+      "extracted_value": "Describe the situation that triggered the catastrophic thought.\nWhat was your initial thought about the situation?\n\n\nWhat is the catastrophic thought you had?\n\n\nHow likely is it that this catastrophic thought will actually happen?\n\n\nWhat would be the worst possible outcome if this catastrophic thought were true?\n\n\nCan you think of a more balanced and realistic way to look at this situation?\n\n\nHow do you feel now after disputing the catastrophic thought?\n\n\nWhat did you learn from this exercise?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Develop a Healthy Perspective",
+      "Description": "'- **Why it helps**: A balanced view of social media can prevent over-attachment and anxiety.\n   - **What to do**: Balance the positives and negatives of social media. Understand it’s just one part of life.\n   - **Example**: \"Social media is a tool for connection, but it doesn't replace real-life interactions.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"behaviors\": \"\",\n  \"healthyPerspective\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What are the positive aspects of social media in my life?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"What are the negative aspects of social media in my life?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"How do I feel when I spend too much time on social media?\",\n      \"XP\": 6\n    },\n    {\n      \"question\": \"What are some real-life interactions I can engage in to balance my social media use?\",\n      \"XP\": 7\n    },\n    {\n      \"question\": \"How can I reframe my thoughts about social media to see it as a tool rather than a necessity?\",\n      \"XP\": 8\n    }\n  ]\n}",
+      "extracted_value": "What are the positive aspects of social media in my life?\n\n\nWhat are the negative aspects of social media in my life?\n\n\nHow do I feel when I spend too much time on social media?\n\n\nWhat are some real-life interactions I can engage in to balance my social media use?\n\n\nHow can I reframe my thoughts about social media to see it as a tool rather than a necessity?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Set Realistic Social Media Goals",
+      "Description": "'- **Why it helps**: Having attainable goals reduces pressure and improves experience.\n   - **What to do**: Define what you want from social media—such as staying informed or connecting with friends—and limit your activities to those goals.\n   - **Example**: \"I’m using social media to stay updated on news, so I’ll limit my time to 30 minutes daily.\"",
+      "XP": 5,
+      "Journal Template": "Section 1 Goal Setting\nQuestion 1 What do you want to achieve on social media? (e.g. stay informed connect with friends)\nAnswer ____________________\nQuestion 2 How will you measure success in achieving your goal? (e.g. time spent number of posts)\nAnswer ____________________\nQuestion 3 What specific actions will you take to stay focused on your goal? (e.g. set a timer use a specific app)\nAnswer ____________________",
+      "extracted_value": "Section 1 Goal Setting\nQuestion 1 What do you want to achieve on social media? (e.g. stay informed connect with friends)\nAnswer ____________________\nQuestion 2 How will you measure success in achieving your goal? (e.g. time spent number of posts)\nAnswer ____________________\nQuestion 3 What specific actions will you take to stay focused on your goal? (e.g. set a timer use a specific app)\nAnswer ____________________"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Limit Comparisons to Others",
+      "Description": "'- **Why it helps**: Reducing comparison prevents feelings of inadequacy and envy.\n   - **What to do**: Practice gratitude for your own life. Acknowledge that social media often shows curated highlights.\n   - **Example**: \"Their vacation pictures are beautiful, but I'm grateful for my own fun weekend.\"",
+      "XP": 5,
+      "Journal Template": "Section 1 Reflections on Comparisons\nQuestions\nWhen did I last feel the urge to compare myself to others?\nWhat triggered this urge to compare?\nHow did I feel after comparing myself to others?\nSection 2 Gratitude Practice\nQuestions\nWhat are three things I am grateful for in my life today?\nHow can I practice gratitude daily to reduce comparison?\nWhat are some common curated highlights on social media that I should be aware of?\nSection 3 Realistic Perspective\nQuestions\nWhat are some realistic reasons why people post certain things on social media?\nHow can I remind myself that social media often shows only a part of someone's life?\nWhat is one thing I can do today to focus on my own life and not compare to others?",
+      "extracted_value": "Section 1 Reflections on Comparisons\nQuestions\nWhen did I last feel the urge to compare myself to others?\nWhat triggered this urge to compare?\nHow did I feel after comparing myself to others?\nSection 2 Gratitude Practice\nQuestions\nWhat are three things I am grateful for in my life today?\nHow can I practice gratitude daily to reduce comparison?\nWhat are some common curated highlights on social media that I should be aware of?\nSection 3 Realistic Perspective\nQuestions\nWhat are some realistic reasons why people post certain things on social media?\nHow can I remind myself that social media often shows only a part of someone's life?\nWhat is one thing I can do today to focus on my own life and not compare to others?"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reframe the Importance of Social Media",
+      "Description": "'- **Why it helps**: De-emphasizing the role of social media reduces its impact on your emotions.\n   - **What to do**: Rephrase your thoughts to reflect that social media is a smaller part of your life.\n   - **Example**: \"Social media is a fun distraction but doesn't define my happiness.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"section_1\": {\n    \"prompt_1\": \"What are some thoughts that make me feel anxious or unhappy about social media?\",\n    \"prompt_2\": \"How often do these thoughts occur?\",\n    \"prompt_3\": \"What are the consequences of these thoughts on my daily life?\"\n  },\n  \"section_2\": {\n    \"prompt_1\": \"Reframe each of the thoughts from section 1. For example, if you think 'Social media is ruining my life,' rephrase it as 'Social media is a small part of my life.'\",\n    \"prompt_2\": \"How do these reframed thoughts make me feel?\",\n    \"prompt_3\": \"What actions can I take to reduce the impact of social media on my emotions?\"\n  },\n  \"section_3\": {\n    \"prompt_1\": \"Write down one specific situation where you felt negatively affected by social media. Then, reframe that situation using the new perspective.\",\n    \"prompt_2\": \"How did reframing the situation change your emotional response?\",\n    \"prompt_3\": \"What strategies can I use to maintain this new perspective in the future?\"\n  }\n}",
+      "extracted_value": "What are some thoughts that make me feel anxious or unhappy about social media?\n\n\nHow often do these thoughts occur?\n\n\nWhat are the consequences of these thoughts on my daily life?\n\n\nReframe each of the thoughts from section 1. For example, if you think 'Social media is ruining my life,' rephrase it as 'Social media is a small part of my life.'\nHow do these reframed thoughts make me feel?\n\n\nWhat actions can I take to reduce the impact of social media on my emotions?\n\n\nWrite down one specific situation where you felt negatively affected by social media. Then, reframe that situation using the new perspective.\nHow did reframing the situation change your emotional response?\n\n\nWhat strategies can I use to maintain this new perspective in the future?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Use Positive Self-Talk",
+      "Description": "'- **Why it helps**: Positive affirmations can combat negative self-talk and build confidence.\n   - **What to do**: Whenever you catch yourself doubting your worth based on social media, replace it with positive affirmations.\n   - **Example**: \"I am proud of who I am, regardless of the number of followers I have.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"negativeThought\": \"\",\n  \"positiveAffirmation\": \"\",\n  \"whyItHelps\": \"\",\n  \"reflection\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on Real-life Interactions",
+      "Description": "'- **Why it helps**: Real-life interactions provide meaningful connections and reduce dependency on virtual validation.\n    - **What to do**: Prioritize face-to-face interactions and activities that bring joy and fulfillment.\n    - **Example**: \"I'll spend more time with my family and friends in person, which brings real joy beyond social media.\"\n\nBy implementing these REBT strategies, individuals can improve their relationship with social media, fostering healthier mental and emotional states.",
+      "XP": 5,
+      "Journal Template": "{\n  \"section1\": {\n    \"title\": \"Reflection on Current Behavior\",\n    \"questions\": [\n      \"What are my current habits regarding social media usage?\",\n      \"How often do I engage in face-to-face interactions?\"\n    ]\n  },\n  \"section2\": {\n    \"title\": \"Identifying Goals\",\n    \"questions\": [\n      \"What are my goals for improving my relationship with social media?\",\n      \"How do I want to prioritize face-to-face interactions in my daily life?\"\n    ]\n  },\n  \"section3\": {\n    \"title\": \"Action Plan\",\n    \"questions\": [\n      \"What specific actions can I take to reduce my dependency on virtual validation?\",\n      \"How will I ensure that I spend more time with family and friends in person?\"\n    ]\n  },\n  \"section4\": {\n    \"title\": \"Tracking Progress\",\n    \"questions\": [\n      \"How will I track my progress in reducing social media usage and increasing face-to-face interactions?\",\n      \"What challenges might I face, and how will I overcome them?\"\n    ]\n  }\n}",
+      "extracted_value": "Reflection on Current Behavior\nWhat are my current habits regarding social media usage?\nHow often do I engage in face-to-face interactions?\nIdentifying Goals\nWhat are my goals for improving my relationship with social media?\nHow do I want to prioritize face-to-face interactions in my daily life?\nAction Plan\nWhat specific actions can I take to reduce my dependency on virtual validation?\nHow will I ensure that I spend more time with family and friends in person?\nTracking Progress\nHow will I track my progress in reducing social media usage and increasing face-to-face interactions?\nWhat challenges might I face, and how will I overcome them?"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

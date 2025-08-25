@@ -1,0 +1,91 @@
+{
+  "condition": "Addictions",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Acknowledgment and Acceptance:",
+      "Card Description": "'- **Example:** Recognizing and admitting you have an addiction can be the first step towards recovery. For instance, someone addicted to alcohol might start by attending an Alcoholics Anonymous (AA) meeting, where they admit they are an alcoholic.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Seeking Professional Help:",
+      "Card Description": "'- **Example:** A person addicted to opioids might consult a healthcare professional for medication-assisted treatment (MAT), such as methadone or buprenorphine, alongside counseling.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Behavioral Therapy:",
+      "Card Description": "'- **Example:** Cognitive Behavioral Therapy (CBT) can help an individual with a gambling addiction identify triggers and develop strategies to avoid addictive behaviors.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Support Groups:",
+      "Card Description": "'- **Example:** Joining a support group like Narcotics Anonymous (NA) for drug addiction can provide a community of people who share similar experiences and offer encouragement and advice.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Developing Coping Mechanisms:",
+      "Card Description": "'- **Example:** An individual may replace the routine of smoking with chewing gum or taking a walk, helping to break the habit cycle and manage cravings.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Mindfulness and Meditation:",
+      "Card Description": "'- **Example:** Practicing mindfulness meditation can help an individual with a food addiction by increasing awareness of eating habits and reducing compulsive eating.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Avoidance of Triggers:",
+      "Card Description": "'- **Example:** Someone recovering from a nicotine addiction might avoid places where they previously smoked, such as bars or cafes, and instead visit smoke-free environments.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Healthy Lifestyle Changes:",
+      "Card Description": "'- **Example:** Incorporating regular exercise and a balanced diet can help manage stress and reduce cravings for substances like caffeine or sugar.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Setting Goals and Monitoring Progress:",
+      "Card Description": "'- **Example:** Setting small, achievable goals like reducing alcohol intake week by week, and tracking progress in a journal, can motivate and provide a sense of accomplishment.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Building a Supportive Network:",
+      "Card Description": "'- **Example:** Relying on friends and family for support by openly discussing your addiction and involving them in your recovery process can create a strong support system that encourages accountability.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

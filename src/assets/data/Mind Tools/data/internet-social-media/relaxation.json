@@ -1,0 +1,107 @@
+{
+  "condition": "Internet and Social Media Issue",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Set Your Intention",
+      "Card Description": "'- Begin each session by setting an intention to create a healthy balance with technology. For example, \"I seek balance and calm in my digital life.\"",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Breathing Exercise (Pranayama)",
+      "Card Description": "'- **Deep Belly Breathing:** Sit comfortably or lie on your back. Inhale deeply through your nose, letting your belly expand fully. Exhale slowly through your mouth. Repeat for 5-10 minutes to center yourself.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Gentle Yoga Poses",
+      "Card Description": "'- **Cat-Cow Stretch:** Start on all fours with wrists under shoulders and knees under hips. Inhale to arch your back and look up (Cow), exhale to round your spine and tuck your chin (Cat). Repeat for 5-10 breaths.  \n   - **Child’s Pose:** Kneel and sit back onto your heels, stretching your arms forward or alongside your body, forehead resting on the mat. Hold for a few breaths to release tension.  \n   - **Downward Dog:** From all fours, lift your hips and straighten your legs to form an inverted V-shape. Hold for 5 breaths, focusing on your breath and the stretch in your body.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindful Movement",
+      "Card Description": "'- **Sun Salutations (Surya Namaskar):** A series of flowing postures that can help improve focus and flexibility, and release tension. Perform 3-5 rounds, moving with your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Ending Relaxation (Savasana)",
+      "Card Description": "'- Lie on your back with arms relaxed by your sides, eyes closed. Focus on your breath and let go of any tension. Stay here for 5-10 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Find a Quiet Space",
+      "Card Description": "'- Choose a quiet, comfortable spot where you won’t be disturbed.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Set a Time Limit",
+      "Card Description": "'- Start with just 5-10 minutes, especially if you’re new to meditation.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Focus on the Breath",
+      "Card Description": "'- Sit comfortably with your spine straight. Close your eyes and focus on your breathing. Notice the inhale and exhale, the rise and fall of your chest.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan",
+      "Card Description": "'- Gradually shift your attention from your head to your toes, noticing any areas of tension and consciously relaxing them.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mantra or Affirmation",
+      "Card Description": "'- Use a mantra or affirmation to center your mind. For instance, “I am present,” or “I find peace within.”",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindful Observation",
+      "Card Description": "'- Notice any thoughts or feelings about social media use without judgment. Acknowledge them and return to your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Gratitude Practice",
+      "Card Description": "'- End with a few moments of gratitude. Reflect on three things you’re grateful for, focusing on simplicity and mindfulness.",
+      "xp": 5
+    }
+  ],
+  "count": 12,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 12
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "commonSuggestions": {
+    "title": {
+      "en": "Internet Addiction: 10 Common Suggestions",
+      "hi": "इंटरनेट की लत: 10 सामान्य सुझाव",
+      "mr": "इंटरनेट व्यसन: 10 सामान्य सूचना"
+    },
+    "cards": [
+      {
+        "id": "internet_1",
+        "title": {
+          "en": "Set Digital Boundaries",
+          "hi": "डिजिटल सीमाएं निर्धारित करें",
+          "mr": "डिजिटल मर्यादा ठरवा"
+        },
+        "description": {
+          "en": "Create specific time limits for internet use and stick to them. Use apps or built-in screen time controls to monitor and limit your usage.",
+          "hi": "इंटरनेट उपयोग के लिए विशिष्ट समय सीमा बनाएं और उसका पालन करें। अपने उपयोग की निगरानी और सीमित करने के लिए ऐप्स या अंतर्निहित स्क्रीन टाइम नियंत्रण का उपयोग करें।",
+          "mr": "इंटरनेट वापराकरिता विशिष्ट वेळेची मर्यादा तयार करा आणि त्यांचे पालन करा. तुमच्या वापराचे निरीक्षण आणि मर्यादित करण्यासाठी अॅप्स किंवा अंगभूत स्क्रीन टाइम नियंत्रणे वापरा."
+        },
+        "category": "lifestyle",
+        "xp": 10
+      },
+      {
+        "id": "internet_2",
+        "title": {
+          "en": "Create Device-Free Zones",
+          "hi": "डिवाइस-मुक्त क्षेत्र बनाएं",
+          "mr": "डिव्हाइस-मुक्त क्षेत्रे तयार करा"
+        },
+        "description": {
+          "en": "Designate certain areas of your home as device-free, such as the bedroom or dining room. This helps reduce temptation and improves real-world connections.",
+          "hi": "अपने घर के कुछ क्षेत्रों को डिवाइस-मुक्त घोषित करें, जैसे शयनकक्ष या भोजन कक्ष। यह प्रलोभन को कम करने और वास्तविक दुनिया के कनेक्शन में सुधार करने में मदद करता है।",
+          "mr": "तुमच्या घरातील काही भाग डिव्हाइस-मुक्त म्हणून नियुक्त करा, जसे की शयनकक्ष किंवा जेवणाचे खोली. हे मोह कमी करण्यात आणि वास्तविक जगाच्या कनेक्शनमध्ये सुधारणा करण्यात मदत करते."
+        },
+        "category": "lifestyle",
+        "xp": 15
+      },
+      {
+        "id": "internet_3",
+        "title": {
+          "en": "Practice the 20-20-20 Rule",
+          "hi": "20-20-20 नियम का अभ्यास करें",
+          "mr": "20-20-20 नियमाचा सराव करा"
+        },
+        "description": {
+          "en": "Every 20 minutes, look away from your screen for 20 seconds at something 20 feet away. This helps reduce eye strain and creates natural breaks from digital engagement.",
+          "hi": "हर 20 मिनट में, अपनी स्क्रीन से 20 सेकंड के लिए 20 फीट दूर किसी चीज़ को देखें। यह आंखों के तनाव को कम करने और डिजिटल जुड़ाव से प्राकृतिक विराम बनाने में मदद करता है।",
+          "mr": "दर 20 मिनिटांनी, तुमच्या स्क्रीनपासून 20 सेकंदांसाठी 20 फूट दूर असलेल्या एखाद्या गोष्टीकडे पहा. हे डोळ्यांचा ताण कमी करण्यात आणि डिजिटल गुंतवणुकीपासून नैसर्गिक विराम तयार करण्यात मदत करते."
+        },
+        "category": "wellness",
+        "xp": 10
+      },
+      {
+        "id": "internet_4",
+        "title": {
+          "en": "Develop Offline Hobbies",
+          "hi": "ऑफ़लाइन शौक विकसित करें",
+          "mr": "ऑफलाइन छंद विकसित करा"
+        },
+        "description": {
+          "en": "Engage in activities that don't require internet connection like reading physical books, gardening, cooking, or exercising. This provides fulfilling alternatives to online activities.",
+          "hi": "ऐसी गतिविधियों में भाग लें जिनमें इंटरनेट कनेक्शन की आवश्यकता नहीं है जैसे भौतिक किताबें पढ़ना, बागवानी, खाना पकाना या व्यायाम करना। यह ऑनलाइन गतिविधियों के संतोषजनक विकल्प प्रदान करता है।",
+          "mr": "इंटरनेट कनेक्शनची गरज नसलेल्या कार्यांमध्ये गुंतवून घ्या जसे की भौतिक पुस्तके वाचणे, बागकाम, स्वयंपाक किंवा व्यायाम. हे ऑनलाइन कार्यांना समाधानकारक पर्याय प्रदान करते."
+        },
+        "category": "lifestyle",
+        "xp": 20
+      },
+      {
+        "id": "internet_5",
+        "title": {
+          "en": "Use Mindful Browsing",
+          "hi": "सचेत ब्राउज़िंग का उपयोग करें",
+          "mr": "जागरूक ब्राउझिंग वापरा"
+        },
+        "description": {
+          "en": "Before opening a website or app, pause and ask yourself why you're doing it. Set a specific purpose for each online session rather than mindless scrolling.",
+          "hi": "कोई वेबसाइट या ऐप खोलने से पहले, रुकें और अपने आप से पूछें कि आप ऐसा क्यों कर रहे हैं। बेमतलब स्क्रॉलिंग के बजाय प्रत्येक ऑनलाइन सत्र के लिए एक विशिष्ट उद्देश्य निर्धारित करें।",
+          "mr": "कोणतीही वेबसाइट किंवा अॅप उघडण्यापूर्वी, थांबा आणि स्वतःला विचारा की तुम्ही असे का करत आहात. निरर्थक स्क्रॉलिंगऐवजी प्रत्येक ऑनलाइन सत्रासाठी एक विशिष्ट उद्देश्य ठरवा."
+        },
+        "category": "mindfulness",
+        "xp": 15
+      },
+      {
+        "id": "internet_6",
+        "title": {
+          "en": "Schedule Regular Digital Detox",
+          "hi": "नियमित डिजिटल डिटॉक्स निर्धारित करें",
+          "mr": "नियमित डिजिटल डिटॉक्सची वेळ ठरवा"
+        },
+        "description": {
+          "en": "Plan regular periods (hours or days) where you completely disconnect from the internet. Start small with 1-2 hours and gradually increase the duration.",
+          "hi": "नियमित अवधि (घंटे या दिन) की योजना बनाएं जहां आप इंटरनेट से पूरी तरह डिस्कनेक्ट हो जाते हैं। 1-2 घंटे से छोटी शुरुआत करें और धीरे-धीरे अवधि बढ़ाएं।",
+          "mr": "नियमित कालावधी (तास किंवा दिवस) ची योजना करा जिथे तुम्ही इंटरनेटपासून पूर्णपणे डिस्कनेक्ट होता. 1-2 तासांपासून लहान सुरुवात करा आणि हळूहळू कालावधी वाढवा."
+        },
+        "category": "lifestyle",
+        "xp": 25
+      },
+      {
+        "id": "internet_7",
+        "title": {
+          "en": "Improve Sleep Hygiene",
+          "hi": "नींद की स्वच्छता में सुधार करें",
+          "mr": "झोपेची स्वच्छता सुधारा"
+        },
+        "description": {
+          "en": "Stop using devices at least 1 hour before bedtime. The blue light can disrupt sleep patterns and late-night browsing often leads to excessive usage.",
+          "hi": "सोने से कम से कम 1 घंटे पहले उपकरणों का उपयोग बंद कर दें। नीली रोशनी नींद के पैटर्न को बाधित कर सकती है और देर रात ब्राउज़िंग अक्सर अत्यधिक उपयोग की ओर ले जाती है।",
+          "mr": "झोपण्याच्या किमान 1 तासापूर्वी उपकरणे वापरणे बंद करा. निळा प्रकाश झोपेच्या नमुन्यांना बाधा आणू शकतो आणि रात्री उशिरापर्यंत ब्राउझिंग अनेकदा जास्त वापराकडे नेतो."
+        },
+        "category": "wellness",
+        "xp": 20
+      },
+      {
+        "id": "internet_8",
+        "title": {
+          "en": "Find Support Groups",
+          "hi": "सहायता समूह खोजें",
+          "mr": "सहाय्य गट शोधा"
+        },
+        "description": {
+          "en": "Connect with others who are also working on reducing internet addiction. Online support groups or local meetups can provide accountability and encouragement.",
+          "hi": "दूसरों से जुड़ें जो इंटरनेट की लत को कम करने पर भी काम कर रहे हैं। ऑनलाइन सहायता समूह या स्थानीय मीटअप जवाबदेही और प्रोत्साहन प्रदान कर सकते हैं।",
+          "mr": "इंटरनेट व्यसन कमी करण्यावर काम करणाऱ्या इतरांशी जुडा. ऑनलाइन सहाय्य गट किंवा स्थानिक भेटी उत्तरदायित्व आणि प्रोत्साहन देऊ शकतात."
+        },
+        "category": "social",
+        "xp": 15
+      },
+      {
+        "id": "internet_9",
+        "title": {
+          "en": "Track Your Usage Patterns",
+          "hi": "अपने उपयोग पैटर्न को ट्रैक करें",
+          "mr": "तुमच्या वापराच्या नमुन्यांचा मागोवा घ्या"
+        },
+        "description": {
+          "en": "Keep a log of when and why you use the internet. Understanding your triggers helps you develop better strategies to manage usage.",
+          "hi": "इस बात का लॉग रखें कि आप कब और क्यों इंटरनेट का उपयोग करते हैं। अपने ट्रिगर्स को समझना आपको उपयोग को प्रबंधित करने के लिए बेहतर रणनीति विकसित करने में मदद करता है।",
+          "mr": "तुम्ही कधी आणि का इंटरनेट वापरता याचा लॉग ठेवा. तुमच्या ट्रिगर्सना समजून घेणे तुम्हाला वापर व्यवस्थापित करण्यासाठी चांगल्या रणनीती विकसित करण्यात मदत करते."
+        },
+        "category": "awareness",
+        "xp": 10
+      },
+      {
+        "id": "internet_10",
+        "title": {
+          "en": "Seek Professional Help",
+          "hi": "पेशेवर मदद लें",
+          "mr": "व्यावसायिक मदत घ्या"
+        },
+        "description": {
+          "en": "If internet addiction is severely impacting your life, consider therapy with a specialist. Cognitive-behavioral therapy has shown effectiveness in treating internet addiction.",
+          "hi": "यदि इंटरनेट की लत आपके जीवन को गंभीर रूप से प्रभावित कर रही है, तो किसी विशेषज्ञ के साथ चिकित्सा पर विचार करें। संज्ञानात्मक-व्यवहार चिकित्सा ने इंटरनेट की लत के इलाज में प्रभावशीलता दिखाई है।",
+          "mr": "जर इंटरनेट व्यसन तुमच्या जीवनावर गंभीरपणे परिणाम करत असेल, तर तज्ञासोबत थेरपी विचारात घ्या. संज्ञानात्मक-वर्तणूक चिकित्सेने इंटरनेट व्यसनाच्या उपचारात प्रभावीता दाखवली आहे."
+        },
+        "category": "professional",
+        "xp": 30
+      }
+    ]
+  },
+  "yoga": {
+    "title": {
+      "en": "Yoga and Meditation for Internet Addiction",
+      "hi": "इंटरनेट की लत के लिए योग और ध्यान",
+      "mr": "इंटरनेट व्यसनासाठी योग आणि ध्यान"
+    },
+    "cards": [
+      {
+        "id": "yoga_internet_1",
+        "title": {
+          "en": "Digital Detox Meditation",
+          "hi": "डिजिटल डिटॉक्स ध्यान",
+          "mr": "डिजिटल डिटॉक्स ध्यान"
+        },
+        "description": {
+          "en": "Start with 5-10 minutes of focused breathing meditation when you feel the urge to check devices. This helps create space between impulse and action.",
+          "hi": "जब आपको उपकरणों की जांच करने की इच्छा हो तो 5-10 मिनट के केंद्रित श्वास ध्यान से शुरुआत करें। यह आवेग और कार्य के बीच स्थान बनाने में मदद करता है।",
+          "mr": "जेव्हा तुम्हाला उपकरणे तपासण्याची इच्छा वाटते तेव्हा 5-10 मिनिटांच्या केंद्रित श्वासोच्छवासाच्या ध्यानाने सुरुवात करा. हे आवेग आणि कृती यांच्यात अंतर निर्माण करण्यात मदत करते."
+        },
+        "category": "meditation",
+        "xp": 15
+      },
+      {
+        "id": "yoga_internet_2",
+        "title": {
+          "en": "Mindful Body Scan",
+          "hi": "सचेत शरीर स्कैन",
+          "mr": "सचेत शरीर स्कॅन"
+        },
+        "description": {
+          "en": "Practice body awareness to reconnect with physical sensations. This helps counter the disconnection that often accompanies excessive internet use.",
+          "hi": "शारीरिक संवेदनाओं से पुनः जुड़ने के लिए शरीर की जागरूकता का अभ्यास करें। यह उस डिस्कनेक्शन का मुकाबला करने में मदद करता है जो अक्सर अत्यधिक इंटरनेट उपयोग के साथ आता है।",
+          "mr": "शारीरिक संवेदनांशी पुन्हा जोडण्यासाठी शरीरातील जागरूकतेचा सराव करा. हे अनेकदा जास्त इंटरनेट वापरासोबत येणाऱ्या डिस्कनेक्शनचा सामना करण्यात मदत करते."
+        },
+        "category": "meditation",
+        "xp": 10
+      },
+      {
+        "id": "yoga_internet_3",
+        "title": {
+          "en": "Eye Movement Yoga",
+          "hi": "आंखों की गति योग",
+          "mr": "डोळ्यांच्या हालचालीचा योग"
+        },
+        "description": {
+          "en": "Practice eye exercises like palming, figure-8 movements, and focus shifts to relieve digital eye strain and restore natural vision patterns.",
+          "hi": "डिजिटल आंखों के तनाव को दूर करने और प्राकृतिक दृष्टि पैटर्न को बहाल करने के लिए हथेली रखना, फिगर-8 मूवमेंट और फोकस शिफ्ट जैसे आंखों के व्यायाम का अभ्यास करें।",
+          "mr": "डिजिटल डोळ्यांचा ताण दूर करण्यासाठी आणि नैसर्गिक दृष्टी नमुने पुनर्संचयित करण्यासाठी हस्तप्रकरण, फिगर-8 हालचाली आणि फोकस शिफ्ट यासारख्या डोळ्यांच्या व्यायामाचा सराव करा."
+        },
+        "category": "physical",
+        "xp": 10
+      },
+      {
+        "id": "yoga_internet_4",
+        "title": {
+          "en": "Grounding Poses",
+          "hi": "ग्राउंडिंग पोज़",
+          "mr": "ग्राउंडिंग पोझ"
+        },
+        "description": {
+          "en": "Practice standing poses like Mountain Pose and Tree Pose to reconnect with physical stability and presence, countering virtual disconnection.",
+          "hi": "शारीरिक स्थिरता और उपस्थिति से पुनः जुड़ने के लिए माउंटेन पोज़ और ट्री पोज़ जैसे खड़े होने वाले पोज़ का अभ्यास करें, आभासी डिस्कनेक्शन का मुकाबला करते हुए।",
+          "mr": "आभासी डिस्कनेक्शनचा सामना करत, शारीरिक स्थिरता आणि उपस्थितीशी पुन्हा जोडण्यासाठी माउंटन पोझ आणि ट्री पोझ यासारख्या उभे राहून करावयाच्या पोझांचा सराव करा."
+        },
+        "category": "physical",
+        "xp": 15
+      },
+      {
+        "id": "yoga_internet_5",
+        "title": {
+          "en": "Mindful Movement Flow",
+          "hi": "सचेत गति प्रवाह",
+          "mr": "सचेत गतीचा प्रवाह"
+        },
+        "description": {
+          "en": "Create a slow, mindful yoga sequence focusing on present-moment awareness rather than rushing through poses like scrolling through content.",
+          "hi": "सामग्री के माध्यम से स्क्रॉल करने की तरह पोज़ के माध्यम से जल्दबाजी करने के बजाय वर्तमान क्षण की जागरूकता पर ध्यान केंद्रित करते हुए एक धीमा, सचेत योग अनुक्रम बनाएं।",
+          "mr": "सामग्रीमधून स्क्रॉल करण्यासारख्या पोझांमधून घाई करण्याऐवजी सध्याच्या क्षणाच्या जागरूकतेवर लक्ष केंद्रित करून मंद, सचेत योग क्रम तयार करा."
+        },
+        "category": "movement",
+        "xp": 20
+      }
+    ]
+  },
+  "relaxation": {
+    "title": {
+      "en": "Relaxation Techniques for Internet Addiction",
+      "hi": "इंटरनेट की लत के लिए विश्राम तकनीकें",
+      "mr": "इंटरनेट व्यसनासाठी विश्रांती तंत्रे"
+    },
+    "cards": [
+      {
+        "id": "relax_internet_1",
+        "title": {
+          "en": "Progressive Muscle Relaxation",
+          "hi": "प्रगतिशील मांसपेशी शिथिलता",
+          "mr": "प्रगतीशील स्नायू शिथिलता"
+        },
+        "description": {
+          "en": "Systematically tense and release muscle groups to reduce physical tension accumulated from prolonged device use and digital stress.",
+          "hi": "लंबे समय तक उपकरण के उपयोग और डिजिटल तनाव से संचित शारीरिक तनाव को कम करने के लिए व्यवस्थित रूप से मांसपेशी समूहों को तनाव दें और छोड़ें।",
+          "mr": "दीर्घकाळ उपकरणे वापरण्यामुळे आणि डिजिटल तणावामुळे जमा झालेला शारीरिक तणाव कमी करण्यासाठी स्नायू गटांना व्यवस्थितपणे ताणून सोडा."
+        },
+        "category": "tension_relief",
+        "xp": 15
+      },
+      {
+        "id": "relax_internet_2",
+        "title": {
+          "en": "Digital Breathing Space",
+          "hi": "डिजिटल श्वास स्थान",
+          "mr": "डिजिटल श्वासोच्छवासाची जागा"
+        },
+        "description": {
+          "en": "Use breathing exercises as transitions between online and offline activities, creating mindful pauses instead of automatic scrolling.",
+          "hi": "ऑनलाइन और ऑफ़लाइन गतिविधियों के बीच संक्रमण के रूप में श्वास अभ्यास का उपयोग करें, स्वचालित स्क्रॉलिंग के बजाय सचेत विराम बनाते हुए।",
+          "mr": "ऑनलाइन आणि ऑफलाइन कार्यांमधील संक्रमण म्हणून श्वासोच्छवासाच्या व्यायामाचा वापर करा, स्वयंचलित स्क्रॉलिंगऐवजी सचेत विराम तयार करा."
+        },
+        "category": "breathing",
+        "xp": 10
+      },
+      {
+        "id": "relax_internet_3",
+        "title": {
+          "en": "Nature Sound Meditation",
+          "hi": "प्राकृतिक ध्वनि ध्यान",
+          "mr": "निसर्गाच्या आवाजाचे ध्यान"
+        },
+        "description": {
+          "en": "Listen to natural sounds like rain, ocean waves, or forest sounds to replace digital audio stimulation with calming natural rhythms.",
+          "hi": "डिजिटल ऑडियो उत्तेजना को शांत प्राकृतिक लय से बदलने के लिए बारिश, समुद्री लहरों या जंगल की आवाज़ जैसी प्राकृतिक आवाज़ें सुनें।",
+          "mr": "डिजिटल ऑडिओ उत्तेजनाला शांत नैसर्गिक लयीने बदलण्यासाठी पाऊस, समुद्राच्या लाटा किंवा जंगलाचे आवाज यासारखे नैसर्गिक आवाज ऐका."
+        },
+        "category": "meditation",
+        "xp": 10
+      },
+      {
+        "id": "relax_internet_4",
+        "title": {
+          "en": "Visualization for Digital Balance",
+          "hi": "डिजिटल संतुलन के लिए दृश्यावलोकन",
+          "mr": "डिजिटल संतुलनासाठी दृश्यमान कल्पना"
+        },
+        "description": {
+          "en": "Practice guided imagery where you visualize yourself having a healthy, balanced relationship with technology and enjoying offline activities.",
+          "hi": "निर्देशित कल्पना का अभ्यास करें जहां आप खुद को तकनीक के साथ एक स्वस्थ, संतुलित रिश्ता रखते हुए और ऑफ़लाइन गतिविधियों का आनंद लेते हुए देखते हैं।",
+          "mr": "मार्गदर्शित कल्पनेचा सराव करा जिथे तुम्ही स्वतःला तंत्रज्ञानाशी निरोगी, संतुलित नातेसंबंध ठेवताना आणि ऑफलाइन कार्यांचा आनंद घेताना पाहता."
+        },
+        "category": "visualization",
+        "xp": 15
+      },
+      {
+        "id": "relax_internet_5",
+        "title": {
+          "en": "Mindful Hand Exercises",
+          "hi": "सचेत हाथ व्यायाम",
+          "mr": "सचेत हात व्यायाम"
+        },
+        "description": {
+          "en": "Practice gentle hand and finger stretches to relieve tension from typing and scrolling while cultivating mindful awareness of physical sensations.",
+          "hi": "शारीरिक संवेदनाओं की सचेत जागरूकता विकसित करते हुए टाइपिंग और स्क्रॉलिंग से तनाव दूर करने के लिए कोमल हाथ और उंगली की स्ट्रेचिंग का अभ्यास करें।",
+          "mr": "शारीरिक संवेदनांची सचेत जागरूकता वाढवत टाइपिंग आणि स्क्रॉलिंगमुळे होणारा ताण दूर करण्यासाठी हळुवार हात आणि बोटांच्या ताणतणावाचा सराव करा."
+        },
+        "category": "physical",
+        "xp": 10
+      }
+    ]
+  },
+  "cbt": {
+    "title": {
+      "en": "CBT Strategies for Internet Addiction",
+      "hi": "इंटरनेट की लत के लिए CBT रणनीतियां",
+      "mr": "इंटरनेट व्यसनासाठी CBT रणनीती"
+    },
+    "cards": [
+      {
+        "id": "cbt_internet_1",
+        "title": {
+          "en": "Identify Usage Triggers",
+          "hi": "उपयोग ट्रिगर की पहचान करें",
+          "mr": "वापराचे ट्रिगर ओळखा"
+        },
+        "description": {
+          "en": "Keep a detailed log of when, where, and why you use the internet excessively. Identify emotional, environmental, and situational triggers.",
+          "hi": "इस बात का विस्तृत लॉग रखें कि आप कब, कहाँ और क्यों इंटरनेट का अत्यधिक उपयोग करते हैं। भावनात्मक, पर्यावरणीय और स्थितिजन्य ट्रिगर की पहचान करें।",
+          "mr": "तुम्ही कधी, कुठे आणि का जास्त इंटरनेट वापरता याचा तपशीलवार लॉग ठेवा. भावनिक, पर्यावरणीय आणि परिस्थितिजन्य ट्रिगर ओळखा."
+        },
+        "category": "awareness",
+        "xp": 15
+      },
+      {
+        "id": "cbt_internet_2",
+        "title": {
+          "en": "Challenge Automatic Thoughts",
+          "hi": "स्वचालित विचारों को चुनौती दें",
+          "mr": "स्वयंचलित विचारांना आव्हान द्या"
+        },
+        "description": {
+          "en": "Question thoughts like 'I need to check this now' or 'I can't function without being online.' Examine the evidence for and against these beliefs.",
+          "hi": "'मुझे अभी इसे जांचना होगा' या 'मैं ऑनलाइन रहे बिना काम नहीं कर सकता' जैसे विचारों पर सवाल उठाएं। इन मान्यताओं के पक्ष और विपक्ष में साक्ष्य की जांच करें।",
+          "mr": "'मला आता हे तपासावे लागेल' किंवा 'मी ऑनलाइन राहिल्याशिवाय काम करू शकत नाही' यासारख्या विचारांवर प्रश्न उपस्थित करा. या विश्वासांच्या बाजूने आणि विरुद्ध साक्ष्य तपासा."
+        },
+        "category": "cognitive",
+        "xp": 20
+      },
+      {
+        "id": "cbt_internet_3",
+        "title": {
+          "en": "Behavioral Experiments",
+          "hi": "व्यवहारिक प्रयोग",
+          "mr": "वर्तणूक प्रयोग"
+        },
+        "description": {
+          "en": "Test your assumptions by gradually reducing internet time and observing what actually happens versus what you feared would happen.",
+          "hi": "इंटरनेट का समय धीरे-धीरे कम करके और यह देखकर कि वास्तव में क्या होता है बनाम आपको डर था कि क्या होगा, अपनी धारणाओं का परीक्षण करें।",
+          "mr": "इंटरनेटचा वेळ हळूहळू कमी करून आणि जे डर वाटत होते त्याविरुद्ध प्रत्यक्षात काय होते ते पाहून तुमच्या गृहीतकांची चाचणी करा."
+        },
+        "category": "behavioral",
+        "xp": 25
+      },
+      {
+        "id": "cbt_internet_4",
+        "title": {
+          "en": "Develop Coping Strategies",
+          "hi": "सामना करने की रणनीति विकसित करें",
+          "mr": "सामना करण्याच्या रणनीती विकसित करा"
+        },
+        "description": {
+          "en": "Create alternative responses to internet cravings, such as physical exercise, calling a friend, or engaging in a hobby instead of automatically going online.",
+          "hi": "इंटरनेट की लालसा के लिए वैकल्पिक प्रतिक्रियाएं बनाएं, जैसे शारीरिक व्यायाम, किसी मित्र को कॉल करना, या स्वचालित रूप से ऑनलाइन जाने के बजाय किसी शौक में शामिल होना।",
+          "mr": "इंटरनेटच्या तळमळीसाठी पर्यायी प्रतिसाद तयार करा, जसे की शारीरिक व्यायाम, मित्राला कॉल करणे किंवा स्वयंचलितपणे ऑनलाइन जाण्याऐवजी छंदात गुंतणे."
+        },
+        "category": "coping",
+        "xp": 20
+      },
+      {
+        "id": "cbt_internet_5",
+        "title": {
+          "en": "Relapse Prevention Planning",
+          "hi": "पुनरावृत्ति रोकथाम योजना",
+          "mr": "पुनरावृत्ती प्रतिबंध योजना"
+        },
+        "description": {
+          "en": "Develop a specific plan for high-risk situations when you're most likely to overuse the internet, including emergency coping strategies.",
+          "hi": "उच्च जोखिम वाली स्थितियों के लिए एक विशिष्ट योजना विकसित करें जब आप इंटरनेट का अधिक उपयोग करने की सबसे अधिक संभावना रखते हैं, आपातकालीन मुकाबला रणनीतियों सहित।",
+          "mr": "आपत्कालीन सामना रणनीतींसह, जेव्हा तुम्ही इंटरनेटचा जास्त वापर करण्याची शक्यता असते अशा उच्च जोखमीच्या परिस्थितीसाठी विशिष्ट योजना तयार करा."
+        },
+        "category": "prevention",
+        "xp": 25
+      }
+    ]
+  },
+  "rebt": {
+    "title": {
+      "en": "REBT for Internet Addiction",
+      "hi": "इंटरनेट की लत के लिए REBT",
+      "mr": "इंटरनेट व्यसनासाठी REBT"
+    },
+    "cards": [
+      {
+        "id": "rebt_internet_1",
+        "title": {
+          "en": "Challenge 'Must' Beliefs",
+          "hi": "'चाहिए' विश्वासों को चुनौती दें",
+          "mr": "'पाहिजे' विश्वासांना आव्हान द्या"
+        },
+        "description": {
+          "en": "Identify and dispute irrational beliefs like 'I must always be connected' or 'I must respond immediately to messages.' Replace with flexible preferences.",
+          "hi": "'मुझे हमेशा जुड़ा रहना चाहिए' या 'मुझे संदेशों का तुरंत जवाब देना चाहिए' जैसी तर्कहीन मान्यताओं की पहचान करें और उन्हें चुनौती दें। लचीली प्राथमिकताओं से बदलें।",
+          "mr": "'मला नेहमी जोडलेले राहायला हवे' किंवा 'मला संदेशांना तत्काळ उत्तर द्यायला हवे' यासारख्या अतर्कसंगत विश्वासांची ओळख करा आणि त्यांना आव्हान द्या. लवचिक प्राधान्यांनी बदला."
+        },
+        "category": "rational_thinking",
+        "xp": 20
+      },
+      {
+        "id": "rebt_internet_2",
+        "title": {
+          "en": "Accept Discomfort of Disconnection",
+          "hi": "डिस्कनेक्शन की परेशानी स्वीकार करें",
+          "mr": "डिस्कनेक्शनची अस्वस्थता स्वीकारा"
+        },
+        "description": {
+          "en": "Practice tolerating the anxiety and discomfort that comes with being offline. Recognize that these feelings are temporary and manageable.",
+          "hi": "ऑफ़लाइन होने के साथ आने वाली चिंता और परेशानी को सहन करने का अभ्यास करें। पहचानें कि ये भावनाएं अस्थायी और प्रबंधनीय हैं।",
+          "mr": "ऑफलाइन असताना येणारी चिंता आणि अस्वस्थता सहन करण्याचा सराव करा. या भावना तात्पुरत्या आणि व्यवस्थापनयोग्य असल्याची ओळख करा."
+        },
+        "category": "emotional_tolerance",
+        "xp": 25
+      },
+      {
+        "id": "rebt_internet_3",
+        "title": {
+          "en": "Dispute Catastrophic Thinking",
+          "hi": "विनाशकारी सोच का विरोध करें",
+          "mr": "आपत्तिजनक विचारसरणीचा विरोध करा"
+        },
+        "description": {
+          "en": "Challenge thoughts like 'It would be terrible if I missed something online' by examining the actual consequences versus imagined catastrophes.",
+          "hi": "'अगर मैं ऑनलाइन कुछ चूक गया तो यह भयानक होगा' जैसे विचारों को वास्तविक परिणामों बनाम कल्पित तबाही की जांच करके चुनौती दें।",
+          "mr": "'जर मी ऑनलाइन काहीतरी चुकवले तर ते भयानक होईल' यासारख्या विचारांना वास्तविक परिणाम विरुद्ध कल्पित आपत्तीची तपासणी करून आव्हान द्या."
+        },
+        "category": "rational_thinking",
+        "xp": 20
+      },
+      {
+        "id": "rebt_internet_4",
+        "title": {
+          "en": "Develop Unconditional Self-Acceptance",
+          "hi": "बिना शर्त आत्म-स्वीकृति विकसित करें",
+          "mr": "बिनशर्त स्वयं-स्वीकृती विकसित करा"
+        },
+        "description": {
+          "en": "Separate your worth as a person from your online activity. Your value doesn't depend on likes, comments, or constant connectivity.",
+          "hi": "अपनी ऑनलाइन गतिविधि से एक व्यक्ति के रूप में अपने मूल्य को अलग करें। आपका मूल्य लाइक, कमेंट या निरंतर कनेक्टिविटी पर निर्भर नहीं है।",
+          "mr": "तुमच्या ऑनलाइन कार्यकलापापासून एक व्यक्ती म्हणून तुमचे मूल्य वेगळे करा. तुमचे मूल्य लाइक्स, टिप्पण्या किंवा सतत कनेक्टिव्हिटीवर अवलंबून नाही."
+        },
+        "category": "self_acceptance",
+        "xp": 25
+      },
+      {
+        "id": "rebt_internet_5",
+        "title": {
+          "en": "Practice Rational Emotive Imagery",
+          "hi": "तर्कसंगत भावनात्मक कल्पना का अभ्यास करें",
+          "mr": "तर्कसंगत भावनिक कल्पनेचा सराव करा"
+        },
+        "description": {
+          "en": "Visualize situations where you choose not to use the internet and practice feeling calm and confident rather than anxious or deprived.",
+          "hi": "उन स्थितियों की कल्पना करें जहां आप इंटरनेट का उपयोग न करने का विकल्प चुनते हैं और चिंतित या वंचित महसूस करने के बजाय शांत और आत्मविश्वासी महसूस करने का अभ्यास करें।",
+          "mr": "अशा परिस्थितीची कल्पना करा जिथे तुम्ही इंटरनेट न वापरण्याचे निवडता आणि चिंताग्रस्त किंवा वंचित वाटण्याऐवजी शांत आणि आत्मविश्वासाने वाटण्याचा सराव करा."
+        },
+        "category": "visualization",
+        "xp": 20
+      }
+    ]
+  }
+}

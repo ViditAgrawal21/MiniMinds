@@ -1,0 +1,99 @@
+{
+  "condition": "Anger Management",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'- **Why it Helps**: Cognitive restructuring helps identify and alter distorted thinking patterns that contribute to excessive anger.\n   - **What to Do**: Challenge and change negative thoughts by examining evidence, looking for alternative interpretations, and considering the consequences.\n   - **Example**: If you think, \"He cut me off because he’s disrespecting me,\" rethink it as, \"He might be having a bad day or didn’t see me.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Mindfulness and Relaxation Techniques",
+      "Description": "'- **Why it Helps**: These techniques help calm the mind and body, reducing the physiological symptoms of anger.\n   - **What to Do**: Practice deep breathing, progressive muscle relaxation, or mindfulness meditation regularly.\n   - **Example**: When feeling angry, take deep breaths, inhale for four counts, hold for four, and exhale for four.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Time\": \"\",\n  \"Emotion\": \"\",\n  \"Trigger\": \"\",\n  \"Thoughts\": \"\",\n  \"Physical Symptoms\": \"\",\n  \"Relaxation Techniques Used\": \"\",\n  \"Questions to Reflect On:\": [\n    \"What triggered my anger today?\",\n    \"How did my body feel when I was angry?\",\n    \"What thoughts were running through my mind when I felt angry?\",\n    \"Did practicing mindfulness and relaxation techniques help calm me down?\",\n    \"What specific relaxation technique worked best for me today?\",\n    \"How can I incorporate these techniques into my daily routine to reduce anger?\"\n  ]\n}",
+      "extracted_value": "What triggered my anger today?\nHow did my body feel when I was angry?\nWhat thoughts were running through my mind when I felt angry?\nDid practicing mindfulness and relaxation techniques help calm me down?\nWhat specific relaxation technique worked best for me today?\nHow can I incorporate these techniques into my daily routine to reduce anger?"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Problem-Solving Skills",
+      "Description": "'- **Why it Helps**: Helps individuals approach situations more logically and reduces feelings of helplessness that can lead to anger.\n   - **What to Do**: Identify the problem, brainstorm possible solutions, weigh pros and cons, and take action.\n   - **Example**: If a coworker’s habit annoys you, brainstorm respectful ways to address it or make a personal plan to cope.",
+      "XP": 3,
+      "Journal Template": "{\n  \"Problem Identification\": {\n    \"Question\": \"What is the specific problem I am facing?\",\n    \"XP\": 3\n  },\n  \"Brainstorming Solutions\": {\n    \"Question\": \"What are some possible solutions to this problem?\",\n    \"XP\": 5\n  },\n  \"Weighing Pros and Cons\": {\n    \"Question\": \"What are the pros and cons of each solution?\",\n    \"XP\": 6\n  },\n  \"Action Plan\": {\n    \"Question\": \"Which solution do I choose to implement? What are the steps I will take to achieve this solution?\",\n    \"XP\": 8\n  }\n}",
+      "extracted_value": "What is the specific problem I am facing?\n\n\nWhat are some possible solutions to this problem?\n\n\nWhat are the pros and cons of each solution?\n\n\nWhich solution do I choose to implement? What are the steps I will take to achieve this solution?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identifying Triggers",
+      "Description": "'- **Why it Helps**: Being aware of what triggers your anger can help you prepare and prevent an angry response.\n   - **What to Do**: Keep a journal of anger incidents and analyze patterns or common triggers.\n   - **Example**: Notice if particular times, like mornings, or events, like traffic, consistently trigger your anger.",
+      "XP": 6,
+      "Journal Template": "{\n  \"triggerDate\": \"Date of the incident\",\n  \"triggerTime\": \"Time of the incident\",\n  \"triggerEvent\": \"What happened immediately before the anger incident?\",\n  \"initialReaction\": \"How did you feel emotionally and physically? (Rate intensity 0-100%)\",\n  \"negativeThoughts\": \"What negative or unhelpful thoughts did you notice? (Hot thoughts)\",\n  \"supportingEvidence\": \"What evidence supports these negative thoughts?\",\n  \"opposingEvidence\": \"What evidence opposes these negative thoughts?\",\n  \"balancedAlternativeThought\": \"What is a more realistic and helpful assessment of the situation?\",\n  \"outcomeLearning\": \"What did you learn from this experience? How would you handle it differently next time?\"\n}",
+      "extracted_value": "Date of the incident\nTime of the incident\nWhat happened immediately before the anger incident?\n\n\nHow did you feel emotionally and physically? (Rate intensity 0-100%)\n\n\nWhat negative or unhelpful thoughts did you notice? (Hot thoughts)\n\n\nWhat evidence supports these negative thoughts?\n\n\nWhat evidence opposes these negative thoughts?\n\n\nWhat is a more realistic and helpful assessment of the situation?\n\n\nWhat did you learn from this experience? How would you handle it differently next time?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Thought Stopping",
+      "Description": "'- **Why it Helps**: Interrupts the escalation of thoughts that lead to anger.\n   - **What to Do**: When you notice anger-provoking thoughts, literally say “stop” to yourself to break the cycle.\n   - **Example**: If you start thinking about an annoying task, say “stop” and shift focus to problem-solving instead.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"time\": \"\",\n  \"situation\": \"Describe the situation that triggered the anger-provoking thoughts.\",\n  \"thoughts\": \"Record the negative thoughts that arose.\",\n  \"stopSignal\": \"What did you say to yourself to stop the thoughts? (e.g., 'stop')\",\n  \"positiveThought\": \"What positive thought or affirmation did you replace the negative thoughts with?\",\n  \"reflection\": [\n    {\n      \"question\": \"Did using the 'stop' signal help you manage your anger?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"How often do you need to use the 'stop' signal in this situation?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What strategies can you use to prevent these negative thoughts from arising in the future?\",\n      \"answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "Describe the situation that triggered the anger-provoking thoughts.\nRecord the negative thoughts that arose.\nWhat did you say to yourself to stop the thoughts? (e.g., 'stop')\n\n\nWhat positive thought or affirmation did you replace the negative thoughts with?\n\n\nDid using the 'stop' signal help you manage your anger?\n\n\nHow often do you need to use the 'stop' signal in this situation?\n\n\nWhat strategies can you use to prevent these negative thoughts from arising in the future?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Role Play and Rehearsal",
+      "Description": "'- **Why it Helps**: Practicing responses in a safe environment can help prepare for real-life situations.\n   - **What to Do**: Role-play anger-provoking scenarios and practice calm responses.\n   - **Example**: With a friend, role-play declining an offensive invite politely, instead of reacting with anger.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Scenario\": \"\",\n  \"Initial Reaction\": \"\",\n  \"Calm Response\": \"\",\n  \"Questions to Reflect On:\": [\n    \"What triggered my initial reaction?\",\n    \"How did I feel during the role-play?\",\n    \"What did I learn from practicing a calm response?\",\n    \"How can I apply this calm response in real-life situations?\"\n  ]\n}",
+      "extracted_value": "What triggered my initial reaction?\nHow did I feel during the role-play?\nWhat did I learn from practicing a calm response?\nHow can I apply this calm response in real-life situations?"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Developing Empathy",
+      "Description": "'- **Why it Helps**: Empathy reduces anger by allowing you to see situations from another’s perspective.\n   - **What to Do**: When angered, consciously think about the feelings and motives of others involved.\n   - **Example**: If a friend snaps at you, consider if they’re stressed and struggling with personal issues.",
+      "XP": 6,
+      "Journal Template": "Empathy Questions to Reflect On +\nWhat might be causing my friend's stress or frustration?\nHow might my friend be feeling in this moment?\nWhat are the underlying reasons for my friend's behavior?\nHow can I understand my friend's perspective better?\nAction Plan to Practice Empathy +\nTake a few deep breaths to calm down before reacting.\nAsk my friend if they're okay and if there's anything I can do to help.\nListen actively to what my friend is saying without interrupting.",
+      "extracted_value": "Empathy Questions to Reflect On +\nWhat might be causing my friend's stress or frustration?\nHow might my friend be feeling in this moment?\nWhat are the underlying reasons for my friend's behavior?\nHow can I understand my friend's perspective better?\nAction Plan to Practice Empathy +\nTake a few deep breaths to calm down before reacting.\nAsk my friend if they're okay and if there's anything I can do to help.\nListen actively to what my friend is saying without interrupting."
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Assertive Communication",
+      "Description": "'- **Why it Helps**: Assertive communication allows expressing feelings and needs calmly and directly, reducing frustration.\n   - **What to Do**: Use “I” statements to express feelings without blaming others.\n   - **Example**: Say, “I feel upset when you interrupt me because I value having my point heard,” instead of accusing.",
+      "XP": 3,
+      "Journal Template": "{\n  \"question\": \"What situation triggered the need for assertive communication?\",\n  \"xp\": 3\n}",
+      "extracted_value": "What situation triggered the need for assertive communication?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Time-Out",
+      "Description": "'- **Why it Helps**: Taking a time-out allows space to cool down, preventing immediate, regrettable reactions.\n   - **What to Do**: When anger rises, excuse yourself from the situation temporarily to regain composure.\n   - **Example**: If a family conversation heats up, step outside for a few minutes rather than escalating.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Triggering Situation\": \"\",\n  \"Emotions Experienced\": \"\",\n  \"Thoughts Before Time-Out\": \"\",\n  \"Actions Taken During Time-Out\": \"\",\n  \"Thoughts After Time-Out\": \"\",\n  \"Reflection Questions\": [\n    \"What triggered my anger in this situation?\",\n    \"How did I feel before taking the time-out?\",\n    \"What thoughts were running through my mind before I stepped away?\",\n    \"What did I do during the time-out to calm down?\",\n    \"How did I feel after the time-out?\",\n    \"Were my thoughts or feelings different after the time-out?\",\n    \"What can I do differently in similar situations in the future?\"\n  ]\n}",
+      "extracted_value": "What triggered my anger in this situation?\nHow did I feel before taking the time-out?\nWhat thoughts were running through my mind before I stepped away?\nWhat did I do during the time-out to calm down?\nHow did I feel after the time-out?\nWere my thoughts or feelings different after the time-out?\nWhat can I do differently in similar situations in the future?"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Setting Realistic Goals",
+      "Description": "'- **Why it Helps**: Unrealistic expectations can lead to frustration and anger, while realistic goals promote patience.\n    - **What to Do**: Set small, achievable goals and celebrate progress.\n    - **Example**: Instead of expecting never to get angry, aim to reduce frequency and intensity over time.\n\nEach of these strategies integrates thoughtful reflection and action, ultimately fostering a more balanced response to anger-provoking situations.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"goalSettingExercise\": {\n    \"question1\": \"What specific situation or behavior do I want to change?\",\n    \"question2\": \"Why is this goal important to me?\",\n    \"question3\": \"What small, achievable steps can I take to work towards this goal?\",\n    \"question4\": \"How will I celebrate my progress along the way?\"\n  },\n  \"SMARTCriteria\": {\n    \"question5\": \"Is my goal Specific? (Can I clearly define it?)\",\n    \"question6\": \"Is my goal Meaningful? (Does it align with my personal values?)\",\n    \"question7\": \"Is my goal Adaptive? (Is it relevant to the problem I'm trying to solve?)\",\n    \"question8\": \"Is my goal Realistic? (Is it proportionate and achievable?)\",\n    \"question9\": \"Is my goal Timebound? (Does it have clear timescales or frequency measures?)\"\n  },\n  \"reflectionSection\": {\n    \"question10\": \"What challenges might I face in achieving this goal?\",\n    \"question11\": \"How will I overcome these challenges?\",\n    \"question12\": \"What skills or resources do I need to achieve this goal?\"\n  }\n}",
+      "extracted_value": "What specific situation or behavior do I want to change?\n\n\nWhy is this goal important to me?\n\n\nWhat small, achievable steps can I take to work towards this goal?\n\n\nHow will I celebrate my progress along the way?\n\n\nIs my goal Specific? (Can I clearly define it?)\n\n\nIs my goal Meaningful? (Does it align with my personal values?)\n\n\nIs my goal Adaptive? (Is it relevant to the problem I'm trying to solve?)\n\n\nIs my goal Realistic? (Is it proportionate and achievable?)\n\n\nIs my goal Timebound? (Does it have clear timescales or frequency measures?)\n\n\nWhat challenges might I face in achieving this goal?\n\n\nHow will I overcome these challenges?\n\n\nWhat skills or resources do I need to achieve this goal?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

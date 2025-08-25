@@ -1,0 +1,736 @@
+{
+  "condition": "Dark Web and OnlyFans",
+  "issueType": "Internet & Social Media Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Use a VPN",
+            "hindi": "VPN का उपयोग करें",
+            "marathi": "VPN वापरा"
+          },
+          "description": {
+            "english": "Both the dark web and OnlyFans require privacy and anonymity. A Virtual Private Network (VPN) can provide this by masking your IP address. For example, when accessing the dark web, a VPN will hide your activities from your ISP.",
+            "hindi": "डार्क वेब और OnlyFans दोनों के लिए गोपनीयता और गुमनामी की आवश्यकता होती है। एक वर्चुअल प्राइवेट नेटवर्क (VPN) आपके IP पते को छुपाकर यह प्रदान कर सकता है। उदाहरण के लिए, डार्क वेब तक पहुंचते समय, VPN आपकी गतिविधियों को आपके ISP से छुपाएगा।",
+            "marathi": "डार्क वेब आणि OnlyFans दोन्हींसाठी गोपनीयता आणि अनामिकता आवश्यक आहे. व्हर्च्युअल प्रायव्हेट नेटवर्क (VPN) तुमचा IP पत्ता लपवून हे प्रदान करू शकते. उदाहरणार्थ, डार्क वेबवर प्रवेश करताना, VPN तुमच्या क्रियाकलाप तुमच्या ISP पासून लपवेल."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Secure Payment Methods",
+            "hindi": "सुरक्षित भुगतान विधियां",
+            "marathi": "सुरक्षित पेमेंट पद्धती"
+          },
+          "description": {
+            "english": "OnlyFans requires payment for certain content. Use secure payment methods like credit cards or PayPal. For the dark web, Bitcoin or other cryptocurrencies are often used due to their anonymous nature.",
+            "hindi": "OnlyFans कुछ सामग्री के लिए भुगतान की आवश्यकता होती है। क्रेडिट कार्ड या PayPal जैसी सुरक्षित भुगतान विधियों का उपयोग करें। डार्क वेब के लिए, Bitcoin या अन्य क्रिप्टोकरेंसी का उपयोग अक्सर उनकी गुमनाम प्रकृति के कारण किया जाता है।",
+            "marathi": "OnlyFans काही सामग्रीसाठी पेमेंट आवश्यक आहे. क्रेडिट कार्ड किंवा PayPal सारख्या सुरक्षित पेमेंट पद्धती वापरा. डार्क वेबसाठी, Bitcoin किंवा इतर क्रिप्टोकरन्सी त्यांच्या अनामिक स्वभावामुळे अनेकदा वापरल्या जातात."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Strong Passwords",
+            "hindi": "मजबूत पासवर्ड",
+            "marathi": "मजबूत पासवर्ड"
+          },
+          "description": {
+            "english": "Use strong, unique passwords for both platforms. For example, a strong password might be a random combination of letters, numbers, and symbols.",
+            "hindi": "दोनों प्लेटफॉर्म के लिए मजबूत, अनोखे पासवर्ड का उपयोग करें। उदाहरण के लिए, एक मजबूत पासवर्ड अक्षरों, संख्याओं और प्रतीकों का एक यादृच्छिक संयोजन हो सकता है।",
+            "marathi": "दोन्ही प्लॅटफॉर्मसाठी मजबूत, अनन्य पासवर्ड वापरा. उदाहरणार्थ, मजबूत पासवर्ड अक्षरे, संख्या आणि चिन्हांचे यादृच्छिक संयोजन असू शकते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Regular Updates",
+            "hindi": "नियमित अपडेट",
+            "marathi": "नियमित अपडेट"
+          },
+          "description": {
+            "english": "Keep your software, including your browser and any tools you use to access the dark web or OnlyFans, up to date. This helps protect against vulnerabilities that could be exploited by hackers.",
+            "hindi": "अपने सॉफ़्टवेयर को अप टू डेट रखें, जिसमें आपका ब्राउज़र और डार्क वेब या OnlyFans तक पहुंचने के लिए उपयोग किए जाने वाले किसी भी टूल शामिल हैं। यह उन कमजोरियों से बचाने में मदद करता है जिनका हैकर्स द्वारा दुरुपयोग किया जा सकता है।",
+            "marathi": "तुमचे सॉफ्टवेअर अप टू डेट ठेवा, ज्यात तुमचा ब्राउझर आणि डार्क वेब किंवा OnlyFans वर प्रवेश करण्यासाठी वापरत असलेली कोणतीही साधने समाविष्ट आहेत. हे हॅकर्सकडून गैरवापर होऊ शकणाऱ्या कमकुवतपणापासून संरक्षण करण्यास मदत करते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Be Careful What You Click",
+            "hindi": "सावधानी से क्लिक करें",
+            "marathi": "काय क्लिक करता याची काळजी घ्या"
+          },
+          "description": {
+            "english": "On the dark web, clicking on an unknown link can lead to illegal or harmful content. On OnlyFans, it could lead to scams or phishing attempts.",
+            "hindi": "डार्क वेब पर, अज्ञात लिंक पर क्लिक करने से अवैध या हानिकारक सामग्री मिल सकती है। OnlyFans पर, यह घोटाले या फ़िशिंग प्रयासों का कारण बन सकता है।",
+            "marathi": "डार्क वेबवर, अज्ञात लिंकवर क्लिक केल्याने बेकायदेशीर किंवा हानिकारक सामग्री मिळू शकते. OnlyFans वर, यामुळे घोटाळे किंवा फिशिंग प्रयत्न होऊ शकतात."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Use Trusted Sources",
+            "hindi": "विश्वसनीय स्रोतों का उपयोग करें",
+            "marathi": "विश्वसनीय स्रोत वापरा"
+          },
+          "description": {
+            "english": "Only use trusted sources when accessing the dark web or subscribing to creators on OnlyFans. For example, use the official Tor browser for the dark web and only subscribe to verified creators on OnlyFans.",
+            "hindi": "डार्क वेब तक पहुंचने या OnlyFans पर क्रिएटर्स को सब्सक्राइब करने के लिए केवल विश्वसनीय स्रोतों का उपयोग करें। उदाहरण के लिए, डार्क वेब के लिए आधिकारिक Tor ब्राउज़र का उपयोग करें और OnlyFans पर केवल सत्यापित क्रिएटर्स को सब्सक्राइब करें।",
+            "marathi": "डार्क वेबवर प्रवेश करताना किंवा OnlyFans वर निर्मात्यांना सब्सक्राइब करताना फक्त विश्वसनीय स्रोत वापरा. उदाहरणार्थ, डार्क वेबसाठी अधिकृत Tor ब्राउझर वापरा आणि OnlyFans वर फक्त सत्यापित निर्मात्यांना सब्सक्राइब करा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Be Aware of Legal Implications",
+            "hindi": "कानूनी निहितार्थों से अवगत रहें",
+            "marathi": "कायदेशीर परिणामांची जाणीव असा"
+          },
+          "description": {
+            "english": "Some activities on the dark web are illegal. Be aware of the laws in your country. On OnlyFans, ensure that any content you subscribe to or share is legal and adheres to the platform's guidelines.",
+            "hindi": "डार्क वेब पर कुछ गतिविधियां अवैध हैं। अपने देश के कानूनों से अवगत रहें। OnlyFans पर, सुनिश्चित करें कि आप जो भी सामग्री सब्सक्राइब करते हैं या साझा करते हैं वह कानूनी है और प्लेटफॉर्म के दिशानिर्देशों का पालन करती है।",
+            "marathi": "डार्क वेबवरील काही क्रियाकलाप बेकायदेशीर आहेत. तुमच्या देशातील कायद्यांची जाणीव ठेवा. OnlyFans वर, तुम्ही सब्सक्राइब किंवा शेअर करत असलेली कोणतीही सामग्री कायदेशीर आहे आणि प्लॅटफॉर्मच्या मार्गदर्शक तत्त्वांचे पालन करते याची खात्री करा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Use Incognito Mode",
+            "hindi": "गुप्त मोड का उपयोग करें",
+            "marathi": "गुप्त मोड वापरा"
+          },
+          "description": {
+            "english": "When accessing OnlyFans, using incognito mode can help maintain your privacy. The dark web, by its nature, is more private, but using a private browsing mode can add an extra layer of security.",
+            "hindi": "OnlyFans तक पहुंचते समय, गुप्त मोड का उपयोग आपकी गोपनीयता बनाए रखने में मदद कर सकता है। डार्क वेब, अपनी प्रकृति से, अधिक निजी है, लेकिन निजी ब्राउज़िंग मोड का उपयोग सुरक्षा की एक अतिरिक्त परत जोड़ सकता है।",
+            "marathi": "OnlyFans वर प्रवेश करताना, गुप्त मोड वापरणे तुमची गोपनीयता राखण्यास मदत करू शकते. डार्क वेब, त्याच्या स्वभावानुसार, अधिक खाजगी आहे, परंतु खाजगी ब्राउझिंग मोड वापरणे सुरक्षेचा अतिरिक्त स्तर जोडू शकते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Don't Share Personal Information",
+            "hindi": "व्यक्तिगत जानकारी साझा न करें",
+            "marathi": "वैयक्तिक माहिती शेअर करू नका"
+          },
+          "description": {
+            "english": "Both platforms can be targets for hackers or scammers. Don't share personal information unless absolutely necessary. For example, don't use your real name or share your address.",
+            "hindi": "दोनों प्लेटफॉर्म हैकर्स या स्कैमर्स के लिए लक्ष्य हो सकते हैं। व्यक्तिगत जानकारी साझा न करें जब तक कि बिल्कुल आवश्यक न हो। उदाहरण के लिए, अपना वास्तविक नाम उपयोग न करें या अपना पता साझा न करें।",
+            "marathi": "दोन्ही प्लॅटफॉर्म हॅकर किंवा स्कॅमरचे लक्ष्य असू शकतात. पूर्णपणे आवश्यक असल्याशिवाय वैयक्तिक माहिती शेअर करू नका. उदाहरणार्थ, तुमचे खरे नाव वापरू नका किंवा तुमचा पत्ता शेअर करू नका."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 2,
+          "title": {
+            "english": "Use Antivirus Software",
+            "hindi": "एंटीवायरस सॉफ़्टवेयर का उपयोग करें",
+            "marathi": "अँटीव्हायरस सॉफ्टवेअर वापरा"
+          },
+          "description": {
+            "english": "Ensure your device is protected by up-to-date antivirus software. This can help protect against malware or other threats that could be encountered on the dark web or when using OnlyFans.",
+            "hindi": "सुनिश्चित करें कि आपका डिवाइस अप-टू-डेट एंटीवायरस सॉफ़्टवेयर द्वारा सुरक्षित है। यह मैलवेयर या अन्य खतरों से बचाने में मदद कर सकता है जो डार्क वेब पर या OnlyFans का उपयोग करते समय मिल सकते हैं।",
+            "marathi": "तुमचे डिव्हाइस अप-टू-डेट अँटीव्हायरस सॉफ्टवेअरने संरक्षित असल्याची खात्री करा. हे मालवेअर किंवा इतर धोक्यांपासून संरक्षण करण्यास मदत करू शकते जे डार्क वेबवर किंवा OnlyFans वापरताना येऊ शकतात."
+          }
+        }
+      ]
+    },
+    "yoga": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Mountain Pose (Tadasana)",
+            "hindi": "पर्वत आसन (ताड़ासन)",
+            "marathi": "पर्वत आसन (ताडासन)"
+          },
+          "description": {
+            "english": "Stand straight, feet hip-width apart, hands by your side. Breathe in and out slowly, focusing on your breath. This basic pose helps establish foundation and focus.",
+            "hindi": "सीधे खड़े हों, पैर कूल्हे की चौड़ाई पर रखें, हाथ बगल में रखें। अपनी सांस पर ध्यान देते हुए धीरे-धीरे सांस अंदर और बाहर करें। यह बुनियादी आसन नींव और फोकस स्थापित करने में मदद करता है।",
+            "marathi": "सरळ उभे राहा, पाय नितंबाच्या रुंदीवर ठेवा, हात बाजूला ठेवा. तुमच्या श्वासावर लक्ष केंद्रित करत हळूहळू श्वास घ्या आणि सोडा. हे मूलभूत आसन पाया आणि फोकस स्थापित करण्यास मदत करते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Tree Pose (Vrikshasana)",
+            "hindi": "वृक्ष आसन (वृक्षासन)",
+            "marathi": "वृक्ष आसन (वृक्षासन)"
+          },
+          "description": {
+            "english": "Stand on one leg, bend the other knee and place the sole of your foot on the inner thigh of the standing leg. Maintain balance and breathe. This pose improves concentration and balance.",
+            "hindi": "एक पैर पर खड़े हों, दूसरे घुटने को मोड़ें और अपने पैर के तलवे को खड़े पैर की भीतरी जांघ पर रखें। संतुलन बनाए रखें और सांस लें। यह आसन एकाग्रता और संतुलन में सुधार करता है।",
+            "marathi": "एका पायावर उभे राहा, दुसरा गुडघा वाकवा आणि तुमच्या पायाचा तळवा उभ्या पायाच्या आतील मांडीवर ठेवा. संतुलन राखा आणि श्वास घ्या. हे आसन एकाग्रता आणि संतुलन सुधारते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Warrior Pose (Virabhadrasana)",
+            "hindi": "वीर आसन (वीरभद्रासन)",
+            "marathi": "वीर आसन (वीरभद्रासन)"
+          },
+          "description": {
+            "english": "Step one foot back, bend the front knee, and stretch your arms out, one in front and one behind you. Look forward and breathe. This pose builds strength and confidence.",
+            "hindi": "एक पैर पीछे करें, आगे के घुटने को मोड़ें, और अपनी बाजुओं को फैलाएं, एक आगे और एक पीछे। आगे देखें और सांस लें। यह आसन शक्ति और आत्मविश्वास बनाता है।",
+            "marathi": "एक पाय मागे टाका, पुढचा गुडघा वाकवा आणि तुमचे हात पसरवा, एक पुढे आणि एक मागे. पुढे पहा आणि श्वास घ्या. हे आसन शक्ती आणि आत्मविश्वास निर्माण करते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Corpse Pose (Savasana)",
+            "hindi": "शव आसन (शवासन)",
+            "marathi": "शव आसन (शवासन)"
+          },
+          "description": {
+            "english": "Lie flat on your back, arms and legs spread comfortably apart. Close your eyes and breathe deeply, letting your body relax completely. This pose promotes deep relaxation.",
+            "hindi": "अपनी पीठ के बल लेटें, बाजुओं और पैरों को आराम से फैलाएं। अपनी आंखें बंद करें और गहरी सांस लें, अपने शरीर को पूरी तरह से आराम करने दें। यह आसन गहरी विश्राम को बढ़ावा देता है।",
+            "marathi": "तुमच्या पाठीवर सपाट झोपा, हात आणि पाय आरामात पसरवा. तुमचे डोळे बंद करा आणि खोल श्वास घ्या, तुमच्या शरीराला पूर्णपणे आराम करू द्या. हे आसन खोल विश्रांतीला प्रोत्साहन देते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Basic Meditation",
+            "hindi": "बुनियादी ध्यान",
+            "marathi": "मूलभूत ध्यान"
+          },
+          "description": {
+            "english": "Find a quiet, comfortable place where you won't be disturbed. Sit in a comfortable position, keep your back straight, close your eyes and focus on your breath. Start with a few minutes daily.",
+            "hindi": "एक शांत, आरामदायक जगह ढूंढें जहां आपको परेशान नहीं किया जाएगा। आरामदायक स्थिति में बैठें, अपनी पीठ सीधी रखें, अपनी आंखें बंद करें और अपनी सांस पर ध्यान दें। प्रतिदिन कुछ मिनटों से शुरू करें।",
+            "marathi": "एक शांत, आरामदायी जागा शोधा जिथे तुम्हाला त्रास होणार नाही. आरामदायक स्थितीत बसा, तुमची पाठ सरळ ठेवा, डोळे बंद करा आणि तुमच्या श्वासावर लक्ष केंद्रित करा. दैनिक काही मिनिटांपासून सुरुवात करा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Deep Breathing",
+            "hindi": "गहरी सांस लेना",
+            "marathi": "खोल श्वास घेणे"
+          },
+          "description": {
+            "english": "This is a simple but effective method to calm your mind. Close your eyes, take a deep breath in through your nose, hold it for a few seconds, then exhale through your mouth. Repeat until you feel more relaxed.",
+            "hindi": "यह आपके मन को शांत करने का एक सरल लेकिन प्रभावी तरीका है। अपनी आंखें बंद करें, अपनी नाक से गहरी सांस लें, इसे कुछ सेकंड के लिए रोकें, फिर अपने मुंह से छोड़ें। तब तक दोहराएं जब तक आप अधिक आराम महसूस न करें।",
+            "marathi": "हे तुमचे मन शांत करण्यासाठी एक सोपी परंतु प्रभावी पद्धत आहे. तुमचे डोळे बंद करा, तुमच्या नाकातून खोल श्वास घ्या, काही सेकंदांसाठी धरून ठेवा, मग तुमच्या तोंडातून सोडा. तुम्हाला अधिक आराम वाटेपर्यंत पुनरावृत्ती करा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी विश्राम",
+            "marathi": "प्रगतिशील स्नायू विश्रांती"
+          },
+          "description": {
+            "english": "This involves tensing and then releasing each muscle group in your body, starting from your toes and working your way up to your head. It can help to relieve physical tension from stress.",
+            "hindi": "इसमें आपके शरीर के प्रत्येक मांसपेशी समूह को तनाव देना और फिर छोड़ना शामिल है, अपने पैर की उंगलियों से शुरू करके अपने सिर तक। यह तनाव से शारीरिक तनाव को दूर करने में मदत कर सकता है।",
+            "marathi": "यामध्ये तुमच्या शरीरातील प्रत्येक स्नायू गटाला ताण देणे आणि नंतर सोडणे समाविष्ट आहे, तुमच्या पायाच्या बोटांपासून सुरू करून तुमच्या डोक्यापर्यंत. हे तणावामुळे होणारा शारीरिक ताण दूर करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Mindfulness Meditation",
+            "hindi": "सचेतनता ध्यान",
+            "marathi": "सजगता ध्यान"
+          },
+          "description": {
+            "english": "This involves focusing on the present moment without judgment. You can do this by focusing on your breath, or by doing a body scan, where you pay attention to each part of your body in turn.",
+            "hindi": "इसमें बिना निर्णय के वर्तमान क्षण पर ध्यान देना शामिल है। आप अपनी सांस पर ध्यान देकर या शरीर स्कैन करके यह कर सकते हैं, जहां आप बारी-बारी से अपने शरीर के प्रत्येक हिस्से पर ध्यान देते हैं।",
+            "marathi": "यामध्ये निर्णय न घेता सध्याच्या क्षणावर लक्ष केंद्रित करणे समाविष्ट आहे. तुम्ही हे तुमच्या श्वासावर लक्ष केंद्रित करून किंवा शरीर स्कॅन करून करू शकता, जिथे तुम्ही तुमच्या शरीराच्या प्रत्येक भागावर वळावळा लक्ष देता."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Visualization",
+            "hindi": "दृश्यीकरण",
+            "marathi": "दृश्यीकरण"
+          },
+          "description": {
+            "english": "Imagine a peaceful place or situation. Try to use all your senses – what do you see, hear, smell, and feel in this calming place? This technique helps reduce stress and anxiety.",
+            "hindi": "एक शांतिपूर्ण स्थान या स्थिति की कल्पना करें। अपनी सभी इंद्रियों का उपयोग करने की कोशिश करें - आप इस शांत जगह में क्या देखते हैं, सुनते हैं, सूंघते हैं और महसूस करते हैं? यह तकनीक तनाव और चिंता को कम करने में मदद करती है।",
+            "marathi": "एका शांतिपूर्ण ठिकाणाची किंवा परिस्थितीची कल्पना करा. तुमच्या सर्व इंद्रियांचा वापर करण्याचा प्रयत्न करा - या शांत ठिकाणी तुम्ही काय पाहता, ऐकता, वास घेता आणि अनुभवता? हे तंत्र तणाव आणि चिंता कमी करण्यास मदत करते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Gentle Yoga or Tai Chi",
+            "hindi": "सौम्य योग या ताई ची",
+            "marathi": "सौम्य योग किंवा ताई ची"
+          },
+          "description": {
+            "english": "These are forms of exercise that involve a series of movements and poses, combined with deep breathing. They can help to reduce stress and improve your mood while promoting physical wellness.",
+            "hindi": "ये व्यायाम के ऐसे रूप हैं जिनमें गहरी सांस के साथ आंदोलनों और मुद्राओं की एक श्रृंखला शामिल है। वे तनाव कम करने और शारीरिक कल्याण को बढ़ावा देते हुए आपके मूड में सुधार करने में मदद कर सकते हैं।",
+            "marathi": "हे व्यायामाचे प्रकार आहेत ज्यात खोल श्वासासह हालचाली आणि आसनांची मालिका समाविष्ट आहे. ते तणाव कमी करण्यास आणि शारीरिक कल्याणाला प्रोत्साहन देताना तुमचा मूड सुधारण्यास मदत करू शकतात."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Deep Breathing",
+            "hindi": "गहरी सांस लेना",
+            "marathi": "खोल श्वास घेणे"
+          },
+          "description": {
+            "english": "This is a simple but effective method to calm your mind. Close your eyes, take a deep breath in through your nose, hold it for a few seconds, then exhale through your mouth. Repeat this process until you feel more relaxed.",
+            "hindi": "यह आपके मन को शांत करने का एक सरल लेकिन प्रभावी तरीका है। अपनी आंखें बंद करें, अपनी नाक से गहरी सांस लें, इसे कुछ सेकंड के लिए रोकें, फिर अपने मुंह से छोड़ें। तब तक दोहराएं जब तक आप अधिक आराम महसूस न करें।",
+            "marathi": "हे तुमचे मन शांत करण्यासाठी एक सोपी परंतु प्रभावी पद्धत आहे. तुमचे डोळे बंद करा, तुमच्या नाकातून खोल श्वास घ्या, काही सेकंदांसाठी धरून ठेवा, मग तुमच्या तोंडातून सोडा. तुम्हाला अधिक आराम वाटेपर्यंत पुनरावृत्ती करा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी विश्राम",
+            "marathi": "प्रगतिशील स्नायू विश्रांती"
+          },
+          "description": {
+            "english": "This involves tensing and then releasing each muscle group in your body, starting from your toes and working your way up to your head. It can help to relieve physical tension that you may be holding as a result of stress.",
+            "hindi": "इसमें आपके शरीर के प्रत्येक मांसपेशी समूह को तनाव देना और फिर छोड़ना शामिल है, अपने पैर की उंगलियों से शुरू करके अपने सिर तक। यह तनाव के परिणामस्वरूप आपके पास मौजूद शारीरिक तनाव को दूर करने में मदद कर सकता है।",
+            "marathi": "यामध्ये तुमच्या शरीरातील प्रत्येक स्नायू गटाला ताण देणे आणि नंतर सोडणे समाविष्ट आहे, तुमच्या पायाच्या बोटांपासून सुरू करून तुमच्या डोक्यापर्यंत. हे तणावामुळे तुमच्यात असलेला शारीरिक ताण दूर करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Mindfulness Meditation",
+            "hindi": "सचेतनता ध्यान",
+            "marathi": "सजगता ध्यान"
+          },
+          "description": {
+            "english": "This involves focusing on the present moment without judgment. You can do this by focusing on your breath, or by doing a body scan, where you pay attention to each part of your body in turn.",
+            "hindi": "इसमें बिना निर्णय के वर्तमान क्षण पर ध्यान देना शामिल है। आप अपनी सांस पर ध्यान देकर या शरीर स्कैन करके यह कर सकते हैं, जहां आप बारी-बारी से अपने शरीर के प्रत्येक हिस्से पर ध्यान देते हैं।",
+            "marathi": "यामध्ये निर्णय न घेता सध्याच्या क्षणावर लक्ष केंद्रित करणे समाविष्ट आहे. तुम्ही हे तुमच्या श्वासावर लक्ष केंद्रित करून किंवा शरीर स्कॅन करून करू शकता, जिथे तुम्ही तुमच्या शरीराच्या प्रत्येक भागावर वळावळा लक्ष देता."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Visualization",
+            "hindi": "दृश्यीकरण",
+            "marathi": "दृश्यीकरण"
+          },
+          "description": {
+            "english": "Imagine a peaceful place or situation. Try to use all your senses – what do you see, hear, smell, and feel in this calming place?",
+            "hindi": "एक शांतिपूर्ण स्थान या स्थिति की कल्पना करें। अपनी सभी इंद्रियों का उपयोग करने की कोशिश करें - आप इस शांत जगह में क्या देखते हैं, सुनते हैं, सूंघते हैं और महसूस करते हैं?",
+            "marathi": "एका शांतिपूर्ण ठिकाणाची किंवा परिस्थितीची कल्पना करा. तुमच्या सर्व इंद्रियांचा वापर करण्याचा प्रयत्न करा - या शांत ठिकाणी तुम्ही काय पाहता, ऐकता, वास घेता आणि अनुभवता?"
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Yoga or Tai Chi",
+            "hindi": "योग या ताई ची",
+            "marathi": "योग किंवा ताई ची"
+          },
+          "description": {
+            "english": "These are forms of exercise that involve a series of movements and poses, combined with deep breathing. They can help to reduce stress and improve your mood.",
+            "hindi": "ये व्यायाम के ऐसे रूप हैं जिनमें गहरी सांस के साथ आंदोलनों और मुद्राओं की एक श्रृंखला शामिल है। वे तनाव कम करने और आपके मूड में सुधार करने में मदद कर सकते हैं।",
+            "marathi": "हे व्यायामाचे प्रकार आहेत ज्यात खोल श्वासासह हालचाली आणि आसनांची मालिका समाविष्ट आहे. ते तणाव कमी करण्यास आणि तुमचा मूड सुधारण्यास मदत करू शकतात."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Regular Exercise",
+            "hindi": "नियमित व्यायाम",
+            "marathi": "नियमित व्यायाम"
+          },
+          "description": {
+            "english": "Physical activity can help to reduce stress and improve your mood. Try to find an activity that you enjoy, such as walking, running, swimming, or cycling.",
+            "hindi": "शारीरिक गतिविधि तनाव कम करने और आपके मूड में सुधार करने में मदद कर सकती है। ऐसी गतिविधि खोजने की कोशिश करें जिसका आप आनंद लेते हैं, जैसे चलना, दौड़ना, तैराकी या साइकिल चलाना।",
+            "marathi": "शारीरिक क्रियाकलाप तणाव कमी करण्यास आणि तुमचा मूड सुधारण्यास मदत करू शकतात. तुम्हाला आवडणारी क्रियाकलाप शोधण्याचा प्रयत्न करा, जसे चालणे, धावणे, पोहणे किंवा सायकलिंग."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Balanced Diet",
+            "hindi": "संतुलित आहार",
+            "marathi": "संतुलित आहार"
+          },
+          "description": {
+            "english": "Eating a healthy diet can also help to reduce stress. Try to eat plenty of fruits, vegetables, lean proteins, and whole grains.",
+            "hindi": "स्वस्थ आहार खाना भी तनाव कम करने में मदद कर सकता है। भरपूर फल, सब्जियां, लीन प्रोटीन और साबुत अनाज खाने की कोशिश करें।",
+            "marathi": "निरोगी आहार खाणे देखील तणाव कमी करण्यास मदत करू शकते. भरपूर फळे, भाज्या, दुबळे प्रथिने आणि संपूर्ण धान्य खाण्याचा प्रयत्न करा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Adequate Sleep",
+            "hindi": "पर्याप्त नींद",
+            "marathi": "पुरेशी झोप"
+          },
+          "description": {
+            "english": "Make sure you are getting enough sleep each night. Lack of sleep can increase feelings of stress and anxiety.",
+            "hindi": "सुनिश्चित करें कि आप हर रात पर्याप्त नींद ले रहे हैं। नींद की कमी तनाव और चिंता की भावनाओं को बढ़ा सकती है।",
+            "marathi": "तुम्ही दर रात्री पुरेशी झोप घेत आहात याची खात्री करा. झोपेची कमी तणाव आणि चिंतेची भावना वाढवू शकते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Digital Detox",
+            "hindi": "डिजिटल डिटॉक्स",
+            "marathi": "डिजिटल डिटॉक्स"
+          },
+          "description": {
+            "english": "If the issues related to the dark web and OnlyFans are causing you significant stress, it may be worth considering a digital detox. This involves taking a break from using digital devices, which can help to reduce stress and improve your mental health.",
+            "hindi": "यदि डार्क वेब और OnlyFans से संबंधित समस्याएं आपको महत्वपूर्ण तनाव दे रही हैं, तो डिजिटल डिटॉक्स पर विचार करना उचित हो सकता है। इसमें डिजिटल उपकरणों का उपयोग करने से ब्रेक लेना शामिल है, जो तनाव कम करने और आपके मानसिक स्वास्थ्य में सुधार करने में मदद कर सकता है।",
+            "marathi": "जर डार्क वेब आणि OnlyFans संबंधित समस्या तुम्हाला लक्षणीय तणाव देत असतील, तर डिजिटल डिटॉक्सचा विचार करणे योग्य ठरू शकते. यामध्ये डिजिटल उपकरणे वापरण्यापासून विश्रांती घेणे समाविष्ट आहे, जे तणाव कमी करण्यास आणि तुमच्या मानसिक आरोग्यात सुधारणा करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "पेशेवर सहायता लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "If your stress or anxiety becomes overwhelming, don't hesitate to seek professional help. A mental health professional can provide you with further strategies to manage your stress and can provide support and guidance. Remember, it's important to take care of your mental health and wellbeing.",
+            "hindi": "यदि आपका तनाव या चिंता अत्यधिक हो जाती है, तो पेशेवर सहायता लेने में संकोच न करें। एक मानसिक स्वास्थ्य पेशेवर आपको अपने तनाव को प्रबंधित करने के लिए और रणनीतियां प्रदान कर सकता है और सहायता और मार्गदर्शन प्रदान कर सकता है। याद रखें, अपने मानसिक स्वास्थ्य और कल्याण की देखभाल करना महत्वपूर्ण है।",
+            "marathi": "जर तुमचा तणाव किंवा चिंता जास्त झाली, तर व्यावसायिक मदत घेण्यास संकोच करू नका. मानसिक आरोग्य तज्ञ तुम्हाला तुमचा तणाव व्यवस्थापित करण्यासाठी आणखी धोरणे प्रदान करू शकतात आणि आधार व मार्गदर्शन देऊ शकतात. लक्षात ठेवा, तुमच्या मानसिक आरोग्याची आणि कल्याणाची काळजी घेणे महत्वाचे आहे."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Secondary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 4,
+          "title": {
+            "english": "Understanding the Problem",
+            "hindi": "समस्या को समझना",
+            "marathi": "समस्या समजून घेणे"
+          },
+          "description": {
+            "english": "Recognize that the use of the Dark Web and OnlyFans can lead to potential harm, such as exposure to illegal activities or explicit content. This understanding can help you make informed decisions about your internet usage.",
+            "hindi": "यह पहचानें कि डार्क वेब और OnlyFans का उपयोग संभावित नुकसान का कारण बन सकता है, जैसे अवैध गतिविधियों या स्पष्ट सामग्री के संपर्क में आना। यह समझ आपको अपने इंटरनेट उपयोग के बारे में सूचित निर्णय लेने में मदद कर सकती है।",
+            "marathi": "डार्क वेब आणि OnlyFans चा वापर संभाव्य हानीकारक परिणामांना कारणीभूत ठरू शकतो, जसे की बेकायदेशीर क्रियाकलाप किंवा स्पष्ट सामग्रीच्या संपर्कात येणे. ही समज तुम्हाला तुमच्या इंटरनेट वापराबद्दल माहितीपूर्ण निर्णय घेण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 7,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "संज्ञानात्मक पुनर्गठन",
+            "marathi": "संज्ञानात्मक पुनर्रचना"
+          },
+          "description": {
+            "english": "This involves identifying and challenging unhelpful thoughts. For instance, if you believe that you need to use the Dark Web or OnlyFans to feel satisfied or entertained, challenge this thought and find healthier alternatives.",
+            "hindi": "इसमें अनुपयोगी विचारों की पहचान करना और उन्हें चुनौती देना शामिल है। उदाहरण के लिए, यदि आप मानते हैं कि आपको संतुष्ट या मनोरंजन महसूस करने के लिए डार्क वेब या OnlyFans का उपयोग करने की आवश्यकता है, तो इस विचार को चुनौती दें और स्वस्थ विकल्प खोजें।",
+            "marathi": "यामध्ये अनुपयुक्त विचारांची ओळख करणे आणि त्यांना आव्हान देणे समाविष्ट आहे. उदाहरणार्थ, जर तुमचा असा विश्वास असेल की तुम्हाला समाधान किंवा मनोरंजन वाटण्यासाठी डार्क वेब किंवा OnlyFans वापरणे आवश्यक आहे, तर या विचाराला आव्हान द्या आणि निरोगी पर्याय शोधा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Mindfulness",
+            "hindi": "सचेतनता",
+            "marathi": "सजगता"
+          },
+          "description": {
+            "english": "This can help you stay focused on the present moment and not get carried away by the allure of these platforms. For example, practice mindfulness by focusing on your breath or surroundings when you feel the urge to visit these sites.",
+            "hindi": "यह आपको वर्तमान क्षण पर केंद्रित रहने और इन प्लेटफॉर्म के आकर्षण में बहने से रोकने में मदद कर सकता है। उदाहरण के लिए, जब आप इन साइटों पर जाने की इच्छा महसूस करते हैं तो अपनी सांस या परिवेश पर ध्यान देकर सचेतनता का अभ्यास करें।",
+            "marathi": "हे तुम्हाला सध्याच्या क्षणावर लक्ष केंद्रित करण्यास आणि या प्लॅटफॉर्मच्या आकर्षणात वाहून जाऊ न देण्यास मदत करू शकते. उदाहरणार्थ, जेव्हा तुम्हाला या साइट्सना भेट देण्याची इच्छा वाटते तेव्हा तुमच्या श्वासावर किंवा परिसरावर लक्ष केंद्रित करून सजगतेचा सराव करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 7,
+          "title": {
+            "english": "Exposure Therapy",
+            "hindi": "एक्सपोजर थेरेपी",
+            "marathi": "एक्सपोजर थेरपी"
+          },
+          "description": {
+            "english": "Gradually expose yourself to the fear of not using these platforms. Start by limiting your usage and gradually increase the time you spend away from these sites.",
+            "hindi": "धीरे-धीरे इन प्लेटफॉर्म का उपयोग न करने के डर के सामने अपने आप को उजागर करें। अपने उपयोग को सीमित करने से शुरू करें और धीरे-धीरे इन साइटों से दूर रहने का समय बढ़ाएं।",
+            "marathi": "या प्लॅटफॉर्मचा वापर न करण्याच्या भीतीला हळूहळू सामोरे जा. तुमचा वापर मर्यादित करून सुरुवात करा आणि हळूहळू या साइटपासून दूर घालवलेला वेळ वाढवा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 4,
+          "title": {
+            "english": "Self-Monitoring",
+            "hindi": "स्व-निगरानी",
+            "marathi": "स्व-निरीक्षण"
+          },
+          "description": {
+            "english": "Keep track of how much time you spend on these platforms. This can help you become more aware of your habits and identify patterns that need to be changed.",
+            "hindi": "इन प्लेटफॉर्म पर आप कितना समय बिताते हैं, इसका ट्रैक रखें। यह आपको अपनी आदतों के बारे में अधिक जागरूक बनने और उन पैटर्न की पहचान करने में मदद कर सकता है जिन्हें बदलने की आवश्यकता है।",
+            "marathi": "या प्लॅटफॉर्मवर तुम्ही किती वेळ घालवता याचा मागोवा ठेवा. हे तुम्हाला तुमच्या सवयींबद्दल अधिक जागरूक होण्यास आणि बदलण्याची गरज असलेल्या पॅटर्नची ओळख करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Problem-Solving",
+            "hindi": "समस्या निवारण",
+            "marathi": "समस्या सोडवणे"
+          },
+          "description": {
+            "english": "Identify the problems that lead you to use these platforms excessively and find solutions. For example, if you use them out of boredom, find other activities to keep yourself occupied.",
+            "hindi": "उन समस्याओं की पहचान करें जो आपको इन प्लेटफॉर्म का अत्यधिक उपयोग करने के लिए प्रेरित करती हैं और समाधान खोजें। उदाहरण के लिए, यदि आप उन्हें बोरियत के कारण उपयोग करते हैं, तो अपने आप को व्यस्त रखने के लिए अन्य गतिविधियां खोजें।",
+            "marathi": "या प्लॅटफॉर्मचा अत्याधिक वापर करण्यास प्रेरित करणाऱ्या समस्यांची ओळख करा आणि उपाय शोधा. उदाहरणार्थ, जर तुम्ही त्यांचा वापर कंटाळवाणेपणामुळे करता असाल, तर स्वतःला व्यस्त ठेवण्यासाठी इतर क्रियाकलाप शोधा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 7,
+          "title": {
+            "english": "Assertiveness Training",
+            "hindi": "दृढ़ता प्रशिक्षण",
+            "marathi": "निर्धारपणाचे प्रशिक्षण"
+          },
+          "description": {
+            "english": "Learn to say no to peer pressure or any other influences that might lead you to use the Dark Web or OnlyFans.",
+            "hindi": "साथियों के दबाव या किसी भी अन्य प्रभाव को ना कहना सीखें जो आपको डार्क वेब या OnlyFans का उपयोग करने के लिए प्रेरित कर सकते हैं।",
+            "marathi": "समवयस्कांच्या दबावाला किंवा इतर कोणत्याही प्रभावाला नाही म्हणायला शिका जे तुम्हाला डार्क वेब किंवा OnlyFans वापरण्यास प्रेरित करू शकतात."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Relaxation Techniques",
+            "hindi": "विश्राम तकनीकें",
+            "marathi": "विश्रांती तंत्रे"
+          },
+          "description": {
+            "english": "Use techniques like deep breathing, progressive muscle relaxation, or yoga to manage the anxiety or stress that might come from not using these platforms.",
+            "hindi": "इन प्लेटफॉर्म का उपयोग न करने से आने वाली चिंता या तनाव को प्रबंधित करने के लिए गहरी सांस, प्रगतिशील मांसपेशी विश्राम या योग जैसी तकनीकों का उपयोग करें।",
+            "marathi": "या प्लॅटफॉर्मचा वापर न करण्यामुळे येणारी चिंता किंवा तणाव व्यवस्थापित करण्यासाठी खोल श्वास, प्रगतिशील स्नायू विश्रांती किंवा योग यासारख्या तंत्रांचा वापर करा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 6,
+          "title": {
+            "english": "Social Skills Training",
+            "hindi": "सामाजिक कौशल प्रशिक्षण",
+            "marathi": "सामाजिक कौशल्य प्रशिक्षण"
+          },
+          "description": {
+            "english": "Improve your social skills to build healthier relationships and reduce reliance on these platforms for social interaction or validation.",
+            "hindi": "स्वस्थ रिश्ते बनाने और सामाजिक बातचीत या सत्यापन के लिए इन प्लेटफॉर्म पर निर्भरता कम करने के लिए अपने सामाजिक कौशल में सुधार करें।",
+            "marathi": "निरोगी नातेसंबंध निर्माण करण्यासाठी आणि सामाजिक संवाद किंवा प्रमाणीकरणासाठी या प्लॅटफॉर्मवरील अवलंबित्व कमी करण्यासाठी तुमची सामाजिक कौशल्ये सुधारा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 4,
+          "title": {
+            "english": "Goal Setting",
+            "hindi": "लक्ष्य निर्धारण",
+            "marathi": "ध्येय निर्धारण"
+          },
+          "description": {
+            "english": "Set realistic and achievable goals for reducing your usage of these platforms. For example, aim to reduce your usage by 10% each week.",
+            "hindi": "इन प्लेटफॉर्म के उपयोग को कम करने के लिए यथार्थवादी और प्राप्त करने योग्य लक्ष्य निर्धारित करें। उदाहरण के लिए, प्रत्येक सप्ताह अपने उपयोग को 10% कम करने का लक्ष्य रखें।",
+            "marathi": "या प्लॅटफॉर्मचा वापर कमी करण्यासाठी वास्तववादी आणि साध्य करण्यायोग्य ध्येये ठेवा. उदाहरणार्थ, दर आठवड्यात तुमचा वापर 10% कमी करण्याचे लक्ष्य ठेवा."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Secondary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Understanding the Risks",
+            "hindi": "जोखिमों को समझना",
+            "marathi": "धोके समजून घेणे"
+          },
+          "description": {
+            "english": "Recognizing the potential dangers of the Dark Web and OnlyFans can help you make informed decisions. For example, the Dark Web can expose you to illegal activities, while OnlyFans can lead to privacy issues.",
+            "hindi": "डार्क वेब और OnlyFans के संभावित खतरों को पहचानना आपको सूचित निर्णय लेने में मदद कर सकता है। उदाहरण के लिए, डार्क वेब आपको अवैध गतिविधियों के संपर्क में ला सकता है, जबकि OnlyFans गोपनीयता के मुद्दों का कारण बन सकता है।",
+            "marathi": "डार्क वेब आणि OnlyFans च्या संभाव्य धोक्यांची ओळख तुम्हाला माहितीपूर्ण निर्णय घेण्यास मदत करू शकते. उदाहरणार्थ, डार्क वेब तुम्हाला बेकायदेशीर क्रियाकलापांच्या संपर्कात आणू शकते, तर OnlyFans गोपनीयतेच्या समस्यांना कारणीभूत ठरू शकते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Avoiding Unnecessary Exposure",
+            "hindi": "अनावश्यक एक्सपोजर से बचना",
+            "marathi": "अनावश्यक एक्सपोजर टाळणे"
+          },
+          "description": {
+            "english": "Limiting your exposure to potentially harmful content can help protect your mental health. For example, if you find certain content on OnlyFans distressing, consider unsubscribing or limiting your usage.",
+            "hindi": "संभावित हानिकारक सामग्री के संपर्क को सीमित करना आपके मानसिक स्वास्थ्य की रक्षा करने में मदद कर सकता है। उदाहरण के लिए, यदि आपको OnlyFans पर कुछ सामग्री परेशान करने वाली लगती है, तो अनसब्स्क्राइब करने या अपने उपयोग को सीमित करने पर विचार करें।",
+            "marathi": "संभाव्य हानिकारक सामग्रीच्या संपर्कात येणे मर्यादित करणे तुमच्या मानसिक आरोग्याचे संरक्षण करण्यास मदत करू शकते. उदाहरणार्थ, जर तुम्हाला OnlyFans वरील काही सामग्री त्रासदायक वाटत असेल, तर अनसब्सक्राइब करणे किंवा तुमचा वापर मर्यादित करणे विचारात घ्या."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Establishing Boundaries",
+            "hindi": "सीमाएं स्थापित करना",
+            "marathi": "सीमा स्थापित करणे"
+          },
+          "description": {
+            "english": "Setting clear boundaries can help you maintain a healthy relationship with these platforms. For example, you might decide to only use OnlyFans for a certain amount of time each day.",
+            "hindi": "स्पष्ट सीमाएं निर्धारित करना आपको इन प्लेटफॉर्म के साथ एक स्वस्थ रिश्ता बनाए रखने में मदद कर सकता है। उदाहरण के लिए, आप निर्णय ले सकते हैं कि OnlyFans का उपयोग प्रतिदिन केवल एक निश्चित समय के लिए करें।",
+            "marathi": "स्पष्ट सीमा निर्धारित करणे तुम्हाला या प्लॅटफॉर्मशी निरोगी नाते राखण्यास मदत करू शकते. उदाहरणार्थ, तुम्ही निर्णय घेऊ शकता की OnlyFans दररोज फक्त ठराविक वेळेसाठी वापरायचे."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 6,
+          "title": {
+            "english": "Seeking Professional Help",
+            "hindi": "पेशेवर सहायता लेना",
+            "marathi": "व्यावसायिक मदत घेणे"
+          },
+          "description": {
+            "english": "If you're struggling with addiction or other issues related to these platforms, consider seeking help from a mental health professional. They can provide you with strategies and tools to manage your behavior.",
+            "hindi": "यदि आप इन प्लेटफॉर्म से संबंधित लत या अन्य समस्याओं से जूझ रहे हैं, तो मानसिक स्वास्थ्य पेशेवर से मदद लेने पर विचार करें। वे आपको अपने व्यवहार को प्रबंधित करने के लिए रणनीति और उपकरण प्रदान कर सकते हैं।",
+            "marathi": "जर तुम्ही या प्लॅटफॉर्मशी संबंधित व्यसन किंवा इतर समस्यांशी लढत असाल, तर मानसिक आरोग्य व्यावसायिकाकडून मदत घेण्याचा विचार करा. ते तुम्हाला तुमच्या वर्तनाचे व्यवस्थापन करण्यासाठी धोरणे आणि साधने प्रदान करू शकतात."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 4,
+          "title": {
+            "english": "Practicing Self-Care",
+            "hindi": "स्व-देखभाल का अभ्यास",
+            "marathi": "स्व-काळजीचा सराव"
+          },
+          "description": {
+            "english": "Taking care of your physical and mental health can help you cope with any negative effects of these platforms. This might include regular exercise, a healthy diet, and plenty of sleep.",
+            "hindi": "अपने शारीरिक और मानसिक स्वास्थ्य की देखभाल करना आपको इन प्लेटफॉर्म के किसी भी नकारात्मक प्रभाव से निपटने में मदद कर सकता है। इसमें नियमित व्यायाम, स्वस्थ आहार और पर्याप्त नींद शामिल हो सकती है।",
+            "marathi": "तुमच्या शारीरिक आणि मानसिक आरोग्याची काळजी घेणे तुम्हाला या प्लॅटफॉर्मच्या कोणत्याही नकारात्मक परिणामांना सामोरे जाण्यास मदत करू शकते. यामध्ये नियमित व्यायाम, निरोगी आहार आणि पुरेशी झोप समाविष्ट असू शकते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Focusing on Positive Content",
+            "hindi": "सकारात्मक सामग्री पर ध्यान देना",
+            "marathi": "सकारात्मक सामग्रीवर लक्ष केंद्रित करणे"
+          },
+          "description": {
+            "english": "Consuming positive and uplifting content can help counterbalance any negative effects of the Dark Web or OnlyFans. For example, you might choose to follow accounts that inspire or motivate you.",
+            "hindi": "सकारात्मक और उत्थानकारी सामग्री का सेवन डार्क वेब या OnlyFans के किसी भी नकारात्मक प्रभाव को संतुलित करने में मदद कर सकता है। उदाहरण के लिए, आप उन खातों को फॉलो करना चुन सकते हैं जो आपको प्रेरित या प्रोत्साहित करते हैं।",
+            "marathi": "सकारात्मक आणि उत्साहवर्धक सामग्रीचे सेवन डार्क वेब किंवा OnlyFans च्या कोणत्याही नकारात्मक परिणामांना संतुलित करण्यास मदत करू शकते. उदाहरणार्थ, तुम्ही अशी खाती फॉलो करणे निवडू शकता जी तुम्हाला प्रेरणा देतात किंवा प्रेरित करतात."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Practicing Mindfulness",
+            "hindi": "सचेतनता का अभ्यास",
+            "marathi": "सजगतेचा सराव"
+          },
+          "description": {
+            "english": "Mindfulness can help you stay present and avoid getting caught up in negative thoughts or feelings. For example, if you find yourself feeling anxious while using these platforms, take a moment to focus on your breath and ground yourself in the present moment.",
+            "hindi": "सचेतनता आपको वर्तमान में रहने और नकारात्मक विचारों या भावनाओं में फंसने से बचने में मदद कर सकती है। उदाहरण के लिए, यदि आप इन प्लेटफॉर्म का उपयोग करते समय चिंतित महसूस करते हैं, तो अपनी सांस पर ध्यान देने और वर्तमान क्षण में खुद को स्थापित करने के लिए एक क्षण लें।",
+            "marathi": "सजगता तुम्हाला वर्तमानात राहण्यास आणि नकारात्मक विचार किंवा भावनांमध्ये अडकून न राहण्यास मदत करू शकते. उदाहरणार्थ, जर तुम्हाला या प्लॅटफॉर्मचा वापर करताना चिंता वाटत असेल, तर तुमच्या श्वासावर लक्ष केंद्रित करण्यासाठी आणि सध्याच्या क्षणात स्वतःला स्थापित करण्यासाठी एक क्षण घ्या."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Developing Healthy Coping Strategies",
+            "hindi": "स्वस्थ सामना रणनीति विकसित करना",
+            "marathi": "निरोगी सामना धोरणे विकसित करणे"
+          },
+          "description": {
+            "english": "Instead of turning to the Dark Web or OnlyFans to cope with stress or negative emotions, consider healthier alternatives like exercise, meditation, or talking to a friend.",
+            "hindi": "तनाव या नकारात्मक भावनाओं से निपटने के लिए डार्क वेब या OnlyFans की ओर रुख करने के बजाय, व्यायाम, ध्यान या किसी दोस्त से बात करने जैसे स्वस्थ विकल्पों पर विचार करें।",
+            "marathi": "तणाव किंवा नकारात्मक भावनांना सामोरे जाण्यासाठी डार्क वेब किंवा OnlyFans कडे वळण्याऐवजी, व्यायाम, ध्यान किंवा मित्राशी बोलणे यासारख्या निरोगी पर्यायांचा विचार करा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 4,
+          "title": {
+            "english": "Educating Yourself",
+            "hindi": "स्वयं को शिक्षित करना",
+            "marathi": "स्वतःला शिक्षित करणे"
+          },
+          "description": {
+            "english": "Learning more about the potential risks and benefits of these platforms can help you make informed decisions. This might include researching the legality and ethics of the Dark Web, or understanding the privacy policies of OnlyFans.",
+            "hindi": "इन प्लेटफॉर्म के संभावित जोखिमों और लाभों के बारे में अधिक जानना आपको सूचित निर्णय लेने में मदद कर सकता है। इसमें डार्क वेब की वैधता और नैतिकता पर शोध करना या OnlyFans की गोपनीयता नीतियों को समझना शामिल हो सकता है।",
+            "marathi": "या प्लॅटफॉर्मच्या संभाव्य धोक्यांबद्दल आणि फायद्यांबद्दल अधिक जाणून घेणे तुम्हाला माहितीपूर्ण निर्णय घेण्यास मदत करू शकते. यामध्ये डार्क वेबच्या कायदेशीरतेचा आणि नैतिकतेचा संशोधन करणे किंवा OnlyFans च्या गोपनीयता धोरणा समजून घेणे समाविष्ट असू शकते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Reframing Negative Thoughts",
+            "hindi": "नकारात्मक विचारों को दोबारा तैयार करना",
+            "marathi": "नकारात्मक विचारांना पुन्हा आकार देणे"
+          },
+          "description": {
+            "english": "If you find yourself having negative thoughts about your use of these platforms, try to reframe them in a more positive light. For example, instead of thinking 'I'm addicted to OnlyFans,' you might think 'I'm working on developing healthier habits.'",
+            "hindi": "यदि आप इन प्लेटफॉर्म के उपयोग के बारे में नकारात्मक विचार रखते हैं, तो उन्हें अधिक सकारात्मक रूप में पेश करने की कोशिश करें। उदाहरण के लिए, 'मैं OnlyFans का आदी हूं' सोचने के बजाय, आप सोच सकते हैं 'मैं स्वस्थ आदतें विकसित करने पर काम कर रहा हूं।'",
+            "marathi": "जर तुम्हाला या प्लॅटफॉर्मच्या वापराबद्दल नकारात्मक विचार येत असतील, तर त्यांना अधिक सकारात्मक प्रकाशात मांडण्याचा प्रयत्न करा. उदाहरणार्थ, 'मी OnlyFans चा आदी आहे' असे विचारण्याऐवजी, तुम्ही 'मी निरोगी सवयी विकसित करण्यावर काम करत आहे' असे विचार करू शकता."
+          }
+        }
+      ]
+    }
+  }
+}

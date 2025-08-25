@@ -1,0 +1,552 @@
+{
+  "metadata": {
+    "condition": "Substance Addiction",
+    "intervention_types": ["Common Suggestions", "Yoga and Meditation", "Relaxation", "CBT Interventions", "REBT Interventions"],
+    "total_interventions": 41,
+    "created_date": "2025-08-01",
+    "translations_supported": ["en", "hi", "mr"]
+  },
+  "commonSuggestions": [
+    {
+      "title": {
+        "english": "Acknowledgment and Acceptance",
+        "hindi": "स्वीकृति और स्वीकार",
+        "marathi": "मान्यता आणि स्वीकार"
+      },
+      "description": {
+        "english": "Recognizing and admitting you have an addiction can be the first step towards recovery. For instance, someone addicted to alcohol might start by attending an Alcoholics Anonymous (AA) meeting, where they admit they are an alcoholic.",
+        "hindi": "यह स्वीकार करना और मानना कि आपको व्यसन है, यह रिकवरी की दिशा में पहला कदम हो सकता है। उदाहरण के लिए, शराब के आदी व्यक्ति को एल्कोहलिक्स एनॉनिमस (AA) मीटिंग में भाग लेना चाहिए।",
+        "marathi": "तुमचे व्यसन आहे हे ओळखणे आणि कबूल करणे ही पुनर्प्राप्तीच्या दिशेने पहिली पायरी असू शकते। उदाहरणार्थ, दारूच्या व्यसनी व्यक्तीने अल्कोहॉलिक्स अनॉनिमस (AA) मीटिंगला हजेरी लावून सुरुवात करावी."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Seeking Professional Help",
+        "hindi": "पेशेवर सहायता लेना",
+        "marathi": "व्यावसायिक मदत घेणे"
+      },
+      "description": {
+        "english": "A person addicted to opioids might consult a healthcare professional for medication-assisted treatment (MAT), such as methadone or buprenorphine, alongside counseling.",
+        "hindi": "ओपिओइड के आदी व्यक्ति को स्वास्थ्य सेवा प्रदाता से मेडिकेशन-असिस्टेड ट्रीटमेंट (MAT) के लिए सलाह लेनी चाहिए, जैसे मेथाडोन या बुप्रेनॉर्फिन, साथ में काउंसलिंग।",
+        "marathi": "ओपिओइडच्या व्यसनी व्यक्तीने आरोग्य सेवा तज्ञांकडून मेडिकेशन-असिस्टेड ट्रीटमेंट (MAT) साठी सल्ला घ्यावा, जसे मेथाडोन किंवा बुप्रेनॉर्फिन, सोबत काउंसलिंग."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Behavioral Therapy",
+        "hindi": "व्यवहारिक चिकित्सा",
+        "marathi": "वर्तनविषयक थेरपी"
+      },
+      "description": {
+        "english": "Cognitive Behavioral Therapy (CBT) can help an individual with a gambling addiction identify triggers and develop strategies to avoid addictive behaviors.",
+        "hindi": "संज्ञानात्मक व्यवहार चिकित्सा (CBT) जुआ की लत वाले व्यक्ति को ट्रिगर्स की पहचान करने और व्यसनी व्यवहारों से बचने की रणनीति विकसित करने में मदद कर सकती है।",
+        "marathi": "संज्ञानात्मक वर्तनविषयक थेरपी (CBT) जुगाराच्या व्यसनी व्यक्तीला ट्रिगर्स ओळखण्यात आणि व्यसनी वर्तन टाळण्याच्या धोरणा विकसित करण्यात मदत करू शकते."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Support Groups",
+        "hindi": "सहायता समूह",
+        "marathi": "सहाय्य गट"
+      },
+      "description": {
+        "english": "Joining a support group like Narcotics Anonymous (NA) for drug addiction can provide a community of people who share similar experiences and offer encouragement and advice.",
+        "hindi": "नशीली दवाओं की लत के लिए नार्कोटिक्स एनॉनिमस (NA) जैसे सहायता समूह में शामिल होना समान अनुभव वाले लोगों का समुदाय प्रदान कर सकता है।",
+        "marathi": "मादक द्रव्य व्यसनासाठी नार्कोटिक्स अनॉनिमस (NA) सारख्या सहाय्य गटात सामील होणे समान अनुभव असलेल्या लोकांचा समुदाय प्रदान करू शकते."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Developing Coping Mechanisms",
+        "hindi": "सामना करने की तकनीकें विकसित करना",
+        "marathi": "सामना करण्याच्या यंत्रणा विकसित करणे"
+      },
+      "description": {
+        "english": "An individual may replace the routine of smoking with chewing gum or taking a walk, helping to break the habit cycle and manage cravings.",
+        "hindi": "एक व्यक्ति धूम्रपान की आदत को च्यूइंग गम या टहलने से बदल सकता है, जो आदत के चक्र को तोड़ने और लालसा को नियंत्रित करने में मदद करता है।",
+        "marathi": "एखादी व्यक्ती धूम्रपानाची सवय च्यूइंग गम किंवा फिरायला जाणे यांनी बदलू शकते, ज्यामुळे सवयीचे चक्र मोडण्यात आणि तळमळ नियंत्रित करण्यात मदत होते."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Mindfulness and Meditation",
+        "hindi": "सजगता और ध्यान",
+        "marathi": "सजगता आणि ध्यान"
+      },
+      "description": {
+        "english": "Practicing mindfulness meditation can help an individual with a food addiction by increasing awareness of eating habits and reducing compulsive eating.",
+        "hindi": "सजगता ध्यान का अभ्यास भोजन की लत वाले व्यक्ति को खाने की आदतों के बारे में जागरूकता बढ़ाने और मजबूरी में खाने को कम करने में मदद कर सकता है।",
+        "marathi": "सजगता ध्यानाचा सराव अन्नाच्या व्यसनी व्यक्तीला खाण्याच्या सवयींबद्दल जागरूकता वाढवून आणि सक्तीचे खाणे कमी करण्यात मदत करू शकते."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Avoidance of Triggers",
+        "hindi": "ट्रिगर्स से बचना",
+        "marathi": "ट्रिगर्स टाळणे"
+      },
+      "description": {
+        "english": "Someone recovering from a nicotine addiction might avoid places where they previously smoked, such as bars or cafes, and instead visit smoke-free environments.",
+        "hindi": "निकोटीन की लत से ठीक हो रहा व्यक्ति उन जगहों से बच सकता है जहां वे पहले धूम्रपान करते थे, जैसे बार या कैफे, और धूम्रपान-मुक्त वातावरण में जा सकते हैं।",
+        "marathi": "निकोटीनच्या व्यसनातून बरे होत असलेली व्यक्ती त्यांनी आधी धूम्रपान केलेली ठिकाणे टाळू शकते, जसे बार किंवा कॅफे, आणि त्याऐवजी धूम्रपान-मुक्त वातावरणात जाऊ शकते."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Healthy Lifestyle Changes",
+        "hindi": "स्वस्थ जीवनशैली में बदलाव",
+        "marathi": "आरोग्यदायी जीवनशैलीतील बदल"
+      },
+      "description": {
+        "english": "Incorporating regular exercise and a balanced diet can help manage stress and reduce cravings for substances like caffeine or sugar.",
+        "hindi": "नियमित व्यायाम और संतुलित आहार को शामिल करना तनाव को प्रबंधित करने और कैफीन या चीनी जैसे पदार्थों की लालसा को कम करने में मदद कर सकता है।",
+        "marathi": "नियमित व्यायाम आणि संतुलित आहार समाविष्ट करणे तणाव व्यवस्थापित करण्यात आणि कॅफीन किंवा साखर यांसारख्या पदार्थांची तळमळ कमी करण्यात मदत करू शकते."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Setting Goals and Monitoring Progress",
+        "hindi": "लक्ष्य निर्धारण और प्रगति की निगरानी",
+        "marathi": "उद्दिष्टे ठरवणे आणि प्रगतीचे निरीक्षण"
+      },
+      "description": {
+        "english": "Setting small, achievable goals like reducing alcohol intake week by week, and tracking progress in a journal, can motivate and provide a sense of accomplishment.",
+        "hindi": "शराब का सेवन सप्ताह दर सप्ताह कम करने जैसे छोटे, प्राप्त करने योग्य लक्ष्य निर्धारित करना और एक डायरी में प्रगति को ट्रैक करना प्रेरणा दे सकता है।",
+        "marathi": "दारूचे सेवन आठवड्यातून आठवड्यात कमी करणे यासारखी छोटी, साध्य करण्यायोग्य उद्दिष्टे ठरवणे आणि डायरीत प्रगतीचा मागोवा घेणे प्रेरणा देऊ शकते."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Building a Supportive Network",
+        "hindi": "सहायक नेटवर्क बनाना",
+        "marathi": "सहाय्यक नेटवर्क तयार करणे"
+      },
+      "description": {
+        "english": "Relying on friends and family for support by openly discussing your addiction and involving them in your recovery process can create a strong support system that encourages accountability.",
+        "hindi": "अपनी लत के बारे में खुलकर चर्चा करके और अपनी रिकवरी प्रक्रिया में मित्रों और परिवार को शामिल करके एक मजबूत सहायता प्रणाली बना सकते हैं।",
+        "marathi": "आपल्या व्यसनाबद्दल उघडपणे चर्चा करून आणि आपल्या पुनर्प्राप्ती प्रक्रियेत मित्र आणि कुटुंबीयांना सामील करून एक मजबूत सहाय्य प्रणाली तयार करू शकता."
+      },
+      "xp": 4
+    }
+  ],
+  "yogaAndMeditation": [
+    {
+      "title": {
+        "english": "Breath Awareness (Pranayama)",
+        "hindi": "श्वास जागरूकता (प्राणायाम)",
+        "marathi": "श्वास जागरूकता (प्राणायाम)"
+      },
+      "description": {
+        "english": "Deep Breathing: Spend a few minutes each day focusing on your breath. Inhale deeply through the nose, hold briefly, and exhale slowly. Nadi Shodhana (Alternate Nostril Breathing): This technique balances the mind and reduces stress and anxiety.",
+        "hindi": "गहरी सांस: प्रतिदिन कुछ मिनट अपनी सांस पर ध्यान दें। नाक से गहरी सांस लें, थोड़ी देर रोकें, और धीरे-धीरे छोड़ें। नाड़ी शोधन: यह तकनीक मन को संतुलित करती है।",
+        "marathi": "खोल श्वास: दररोज काही मिनिटे आपल्या श्वासावर लक्ष केंद्रित करा. नाकातून खोल श्वास घ्या, थोडा वेळ धरून ठेवा आणि हळू हळू सोडा. नाडी शोधन: हे तंत्र मन संतुलित करते."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Restorative Yoga Poses",
+        "hindi": "पुनर्स्थापना योग आसन",
+        "marathi": "पुनर्स्थापनात्मक योग आसने"
+      },
+      "description": {
+        "english": "Legs-Up-The-Wall Pose (Viparita Karani): Promotes relaxation and reduces anxiety. Reclining Bound Angle Pose (Supta Baddha Konasana): Encourages opening of the hips and heart, fostering a sense of surrender.",
+        "hindi": "लेग्स-अप-द-वॉल पोज़: आराम को बढ़ावा देता है और चिंता को कम करता है। रेक्लाइनिंग बाउंड एंगल पोज़: कूल्हों और हृदय के खुलने को प्रोत्साहित करता है।",
+        "marathi": "लेग्स-अप-द-वॉल पोज: आराम वाढवते आणि चिंता कमी करते. रेक्लाइनिंग बाउंड एंगल पोज: नितंब आणि हृदय उघडण्यास प्रोत्साहन देते."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Child's Pose (Balasana)",
+        "hindi": "बाल आसन (बालासन)",
+        "marathi": "बाल आसन (बालासन)"
+      },
+      "description": {
+        "english": "A gentle pose that encourages relaxation and introspection. Kneel on the mat, sit back on your heels, and stretch your arms forward. Rest your forehead on the ground and breathe deeply.",
+        "hindi": "एक कोमल आसन जो आराम और आत्मनिरीक्षण को प्रोत्साहित करता है। चटाई पर घुटने टेकें, एड़ियों पर बैठें, और अपनी बाहों को आगे फैलाएं।",
+        "marathi": "एक सौम्य आसन जे आराम आणि आत्मनिरीक्षणाला प्रोत्साहन देते. चटईवर गुडघे टेकून, टाचेवर बसा आणि हात पुढे पसरवा."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Mindfulness Meditation",
+        "hindi": "सजगता ध्यान",
+        "marathi": "सजगता ध्यान"
+      },
+      "description": {
+        "english": "Focus on the present moment with acceptance. Use your breath as an anchor and gently bring your attention back whenever it wanders. This helps reduce cravings and addictive thoughts.",
+        "hindi": "स्वीकृति के साथ वर्तमान क्षण पर ध्यान दें। अपनी सांस को एंकर के रूप में उपयोग करें और जब भी मन भटके तो धीरे से ध्यान वापस लाएं।",
+        "marathi": "स्वीकारासह सध्याच्या क्षणावर लक्ष केंद्रित करा. आपल्या श्वासाचा आधार म्हणून वापर करा आणि मन भटकल्यावर हळूवारपणे लक्ष परत आणा."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Body Scan Meditation",
+        "hindi": "शरीर स्कैन ध्यान",
+        "marathi": "शरीर स्कॅन ध्यान"
+      },
+      "description": {
+        "english": "Check in with each part of your body, releasing tension and promoting awareness of physical sensations without judgment. This helps in recognizing stress patterns that may trigger substance use.",
+        "hindi": "अपने शरीर के हर हिस्से की जांच करें, तनाव को मुक्त करें और बिना निर्णय के शारीरिक संवेदनाओं की जागरूकता को बढ़ावा दें।",
+        "marathi": "आपल्या शरीराच्या प्रत्येक भागाची तपासणी करा, तणाव सोडा आणि निर्णय न घेता शारीरिक संवेदनांची जागरूकता वाढवा."
+      },
+      "xp": 4
+    }
+  ],
+  "relaxation": [
+    {
+      "title": {
+        "english": "Deep Progressive Muscle Relaxation",
+        "hindi": "गहरी प्रगतिशील मांसपेशी विश्राम",
+        "marathi": "खोल प्रगतीशील स्नायू विश्रांती"
+      },
+      "description": {
+        "english": "Systematically tense and relax different muscle groups throughout your body, starting from your toes and working up to your head. This helps reduce physical tension associated with withdrawal and cravings.",
+        "hindi": "अपने पैर की उंगलियों से शुरू करके सिर तक अपने शरीर के विभिन्न मांसपेशी समूहों को व्यवस्थित रूप से तनाव दें और आराम दें।",
+        "marathi": "आपल्या पायाच्या बोटांपासून सुरुवात करून डोक्यापर्यंत शरीराच्या विविध स्नायू गटांना पद्धतशीरपणे ताणून आणि शिथिल करा."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Guided Imagery for Recovery",
+        "hindi": "रिकवरी के लिए निर्देशित कल्पना",
+        "marathi": "पुनर्प्राप्तीसाठी मार्गदर्शित कल्पना"
+      },
+      "description": {
+        "english": "Envision a peaceful, safe place or a positive outcome that helps redirect thoughts away from addictive behaviors. Visualize yourself successfully overcoming cravings and living a substance-free life.",
+        "hindi": "एक शांतिपूर्ण, सुरक्षित स्थान या सकारात्मक परिणाम की कल्पना करें जो व्यसनी व्यवहारों से ध्यान हटाने में मदद करता है।",
+        "marathi": "एखाद्या शांत, सुरक्षित ठिकाणाची किंवा सकारात्मक परिणामाची कल्पना करा जी व्यसनी वर्तनापासून विचार वळवण्यास मदत करते."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Aromatherapy Relaxation",
+        "hindi": "अरोमाथेरेपी विश्राम",
+        "marathi": "अरोमाथेरपी विश्रांती"
+      },
+      "description": {
+        "english": "Use calming essential oils like lavender, chamomile, or bergamot during relaxation sessions. The soothing scents can help reduce anxiety and create positive associations with healthy coping mechanisms.",
+        "hindi": "विश्राम सत्रों के दौरान लैवेंडर, कैमोमाइल, या बर्गामोट जैसे शांत करने वाले आवश्यक तेलों का उपयोग करें।",
+        "marathi": "विश्रांती सत्रांदरम्यान लॅव्हेंडर, कॅमोमाइल किंवा बर्गामोट यांसारखी शांत करणारी आवश्यक तेले वापरा."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Warm Bath Meditation",
+        "hindi": "गर्म स्नान ध्यान",
+        "marathi": "उबदार स्नान ध्यान"
+      },
+      "description": {
+        "english": "Take a warm bath while practicing mindful breathing and gratitude. The warm water helps relax muscles while the meditative aspect calms the mind, providing a healthy alternative to substance use for stress relief.",
+        "hindi": "सजग सांस और कृतज्ञता का अभ्यास करते हुए गर्म स्नान करें। गर्म पानी मांसपेशियों को आराम देने में मदद करता है।",
+        "marathi": "सजग श्वास आणि कृतज्ञता सराव करताना उबदार पाण्यात स्नान करा. उबदार पाणी स्नायूंना आराम देण्यास मदत करते."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Nature Sound Relaxation",
+        "hindi": "प्राकृतिक ध्वनि विश्राम",
+        "marathi": "निसर्ग ध्वनी विश्रांती"
+      },
+      "description": {
+        "english": "Listen to calming nature sounds like ocean waves, rainfall, or forest ambiance while practicing deep breathing. This creates a peaceful environment that supports recovery and reduces urges.",
+        "hindi": "गहरी सांस का अभ्यास करते हुए समुद्री लहरों, बारिश, या जंगल के माहौल जैसी शांत प्राकृतिक आवाज़ें सुनें।",
+        "marathi": "खोल श्वास सराव करताना समुद्री लाटा, पाऊस किंवा वन वातावरण यांसारखे शांत निसर्ग आवाज ऐका."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Gentle Stretching Routine",
+        "hindi": "कोमल स्ट्रेचिंग रूटीन",
+        "marathi": "सौम्य स्ट्रेचिंग दिनचर्या"
+      },
+      "description": {
+        "english": "Perform gentle stretches focusing on areas that hold tension, such as neck, shoulders, and back. This physical release can help manage stress and provide a healthy outlet for restless energy.",
+        "hindi": "गर्दन, कंधे और पीठ जैसे तनाव वाले क्षेत्रों पर ध्यान देते हुए कोमल स्ट्रेच करें।",
+        "marathi": "मान, खांदे आणि पाठ यांसारख्या तणाव असलेल्या भागांवर लक्ष केंद्रित करून सौम्य स्ट्रेच करा."
+      },
+      "xp": 3
+    }
+  ],
+  "cbtInterventions": [
+    {
+      "title": {
+        "english": "Cognitive Restructuring",
+        "hindi": "संज्ञानात्मक पुनर्गठन",
+        "marathi": "संज्ञानात्मक पुनर्रचना"
+      },
+      "description": {
+        "english": "This helps by changing the negative thought patterns that lead to substance abuse. For example, a person might think, 'I need drugs to cope with stress.' This can be changed to, 'I can find healthy ways to cope with stress.'",
+        "hindi": "यह नकारात्मक विचार पैटर्न को बदलने में मदद करता है जो मादक द्रव्यों के सेवन का कारण बनते हैं। उदाहरण: 'मुझे तनाव से निपटने के लिए दवाओं की जरूरत है' को 'मैं तनाव से निपटने के स्वस्थ तरीके खोज सकता हूं' में बदला जा सकता है।",
+        "marathi": "हे मादक द्रव्य सेवनास कारणीभूत असलेले नकारात्मक विचार पद्धती बदलण्यास मदत करते. उदाहरण: 'तणावाला सामोरे जाण्यासाठी मला औषधांची गरज आहे' हे 'मी तणावाला तोंड देण्याचे आरोग्यदायी मार्ग शोधू शकतो' असे बदलले जाऊ शकते."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Self-Monitoring",
+        "hindi": "स्व-निगरानी",
+        "marathi": "स्व-निरीक्षण"
+      },
+      "description": {
+        "english": "This helps by making the person aware of their triggers and patterns of substance use. They can keep a journal of when they use substances, what triggers it, and how they feel afterwards.",
+        "hindi": "यह व्यक्ति को अपने ट्रिगर्स और मादक द्रव्यों के उपयोग के पैटर्न के बारे में जागरूक बनाने में मदद करता है। वे एक डायरी रख सकते हैं कि वे कब मादक द्रव्यों का उपयोग करते हैं।",
+        "marathi": "हे व्यक्तीला त्याच्या ट्रिगर्स आणि मादक द्रव्य वापराच्या पैटर्नबद्दल जागरूक करण्यास मदत करते. ते कधी मादक द्रव्य वापरतात याची डायरी ठेवू शकतात."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Mindfulness Training",
+        "hindi": "सजगता प्रशिक्षण",
+        "marathi": "सजगता प्रशिक्षण"
+      },
+      "description": {
+        "english": "This helps by keeping the person focused on the present moment, reducing cravings and the likelihood of substance use. They can practice mindfulness through meditation, yoga, or simply paying attention to their surroundings.",
+        "hindi": "यह व्यक्ति को वर्तमान क्षण पर केंद्रित रखने, लालसा को कम करने और मादक द्रव्यों के उपयोग की संभावना को कम करने में मदद करता है।",
+        "marathi": "हे व्यक्तीला सध्याच्या क्षणावर केंद्रित ठेवण्यास, तळमळ कमी करण्यास आणि मादक द्रव्य वापराची शक्यता कमी करण्यास मदत करते."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Problem-Solving Skills",
+        "hindi": "समस्या समाधान कौशल",
+        "marathi": "समस्या सोडवण्याची कौशल्ये"
+      },
+      "description": {
+        "english": "This helps by giving the person tools to deal with problems that might lead to substance use. For example, if stress at work leads to substance use, they can learn stress management techniques.",
+        "hindi": "यह व्यक्ति को उन समस्याओं से निपटने के उपकरण देने में मदद करता है जो मादक द्रव्यों के उपयोग का कारण बन सकती हैं। उदाहरण के लिए, यदि काम पर तनाव मादक द्रव्यों के उपयोग का कारण बनता है।",
+        "marathi": "हे व्यक्तीला मादक द्रव्य वापरास कारणीभूत ठरू शकणाऱ्या समस्यांना सामोरे जाण्याची साधने देण्यास मदत करते. उदाहरणार्थ, कामावरील तणाव मादक द्रव्य वापरास कारणीभूत ठरत असल्यास."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Exposure Therapy",
+        "hindi": "एक्सपोज़र थेरेपी",
+        "marathi": "एक्सपोजर थेरपी"
+      },
+      "description": {
+        "english": "This helps by gradually exposing the person to their triggers in a controlled environment, reducing their power. For example, they might visit a bar with a therapist and practice not drinking.",
+        "hindi": "यह व्यक्ति को नियंत्रित वातावरण में उनके ट्रिगर्स के लिए धीरे-धीरे उजागर करके, उनकी शक्ति को कम करने में मदद करता है।",
+        "marathi": "हे व्यक्तीला नियंत्रित वातावरणात त्यांच्या ट्रिगर्सना हळूहळू समोर आणून त्यांची शक्ती कमी करण्यास मदत करते."
+      },
+      "xp": 5
+    },
+    {
+      "title": {
+        "english": "Contingency Management",
+        "hindi": "आकस्मिकता प्रबंधन",
+        "marathi": "आकस्मिकता व्यवस्थापन"
+      },
+      "description": {
+        "english": "This helps by providing rewards for positive behavior, such as staying sober. The rewards can be anything from praise to tangible items that motivate continued recovery efforts.",
+        "hindi": "यह सकारात्मक व्यवहार के लिए पुरस्कार प्रदान करके मदद करता है, जैसे कि शांत रहना। पुरस्कार प्रशंसा से लेकर मूर्त वस्तुओं तक कुछ भी हो सकता है।",
+        "marathi": "हे शांत राहणे यांसारख्या सकारात्मक वर्तनासाठी पुरस्कार प्रदान करून मदत करते. पुरस्कार कौतुकापासून ते मूर्त वस्तूंपर्यंत काहीही असू शकतात."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Assertiveness Training",
+        "hindi": "दृढ़ता प्रशिक्षण",
+        "marathi": "दृढता प्रशिक्षण"
+      },
+      "description": {
+        "english": "This helps by teaching the person to say no to substances. They can practice assertiveness in role-play scenarios with a therapist, learning to refuse offers and set boundaries.",
+        "hindi": "यह व्यक्ति को मादक द्रव्यों को ना कहना सिखाने में मदद करता है। वे चिकित्सक के साथ रोल-प्ले परिदृश्यों में दृढ़ता का अभ्यास कर सकते हैं।",
+        "marathi": "हे व्यक्तीला मादक द्रव्यांना नाही म्हणायला शिकवण्यास मदत करते. ते थेरपिस्टसोबत रोल-प्ले परिस्थितींमध्ये दृढतेचा सराव करू शकतात."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Relapse Prevention",
+        "hindi": "पुनरावृत्ति रोकथाम",
+        "marathi": "पुनरावृत्ती प्रतिबंध"
+      },
+      "description": {
+        "english": "This helps by teaching the person strategies to prevent relapse, such as avoiding triggers and having a plan for dealing with cravings. Developing a comprehensive relapse prevention plan is crucial for long-term recovery.",
+        "hindi": "यह व्यक्ति को पुनरावृत्ति को रोकने की रणनीतियां सिखाने में मदद करता है, जैसे कि ट्रिगर्स से बचना और लालसा से निपटने की योजना बनाना।",
+        "marathi": "हे व्यक्तीला पुनरावृत्ती रोखण्याच्या धोरणा शिकवण्यास मदत करते, जसे की ट्रिगर्स टाळणे आणि तळमळीला सामोरे जाण्याची योजना बनवणे."
+      },
+      "xp": 5
+    },
+    {
+      "title": {
+        "english": "Behavioral Activation",
+        "hindi": "व्यवहारिक सक्रियकरण",
+        "marathi": "वर्तनविषयक सक्रियकरण"
+      },
+      "description": {
+        "english": "This helps by encouraging the person to engage in activities that they enjoy and that are incompatible with substance use. For example, they might take up a sport or hobby that provides fulfillment.",
+        "hindi": "यह व्यक्ति को उन गतिविधियों में संलग्न होने के लिए प्रोत्साहित करने में मदद करता है जिनका वे आनंद लेते हैं और जो मादक द्रव्यों के उपयोग के साथ असंगत हैं।",
+        "marathi": "हे व्यक्तीला त्यांना आवडणाऱ्या आणि मादक द्रव्य वापराशी विसंगत असलेल्या क्रियाकलापांमध्ये गुंतण्यास प्रोत्साहित करण्यास मदत करते."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Motivational Interviewing",
+        "hindi": "प्रेरणादायक साक्षात्कार",
+        "marathi": "प्रेरणादायक मुलाखत"
+      },
+      "description": {
+        "english": "This helps by increasing the person's motivation to change. The therapist can ask questions that help the person see the benefits of change and the costs of staying the same, fostering intrinsic motivation for recovery.",
+        "hindi": "यह व्यक्ति की बदलने की प्रेरणा बढ़ाने में मदत करता है। चिकित्सक ऐसे प्रश्न पूछ सकता है जो व्यक्ति को बदलाव के फायदे और समान रहने की लागत देखने में मदद करते हैं।",
+        "marathi": "हे व्यक्तीची बदलण्याची प्रेरणा वाढवण्यास मदत करते. थेरपिस्ट असे प्रश्न विचारू शकतो जे व्यक्तीला बदलाचे फायदे आणि सारखेच राहण्याची किंमत पाहण्यास मदत करतात."
+      },
+      "xp": 4
+    }
+  ],
+  "rebtInterventions": [
+    {
+      "title": {
+        "english": "Identify Irrational Beliefs",
+        "hindi": "तर्कहीन विश्वासों की पहचान",
+        "marathi": "तर्कहीन समजुती ओळखणे"
+      },
+      "description": {
+        "english": "This helps in understanding the underlying thoughts that lead to substance addiction. You can do this by journaling or discussing your thoughts with a therapist. For example, you might believe that you need substances to cope with stress.",
+        "hindi": "यह उन अंतर्निहित विचारों को समझने में मदद करता है जो मादक द्रव्यों की लत का कारण बनते हैं। आप इसे जर्नलिंग या चिकित्सक के साथ अपने विचारों पर चर्चा करके कर सकते हैं।",
+        "marathi": "हे मादक द्रव्य व्यसनास कारणीभूत असलेल्या अंतर्निहित विचारांना समजून घेण्यास मदत करते. तुम्ही हे जर्नलिंग करून किंवा थेरपिस्टशी तुमच्या विचारांवर चर्चा करून करू शकता."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Dispute Irrational Beliefs",
+        "hindi": "तर्कहीन विश्वासों का खंडन",
+        "marathi": "तर्कहीन समजुतींचे खंडन"
+      },
+      "description": {
+        "english": "Once you've identified your irrational beliefs, challenge them. This helps in breaking the cycle of addiction. For example, if you believe that you can't handle stress without substances, ask yourself, 'Is this really true?'",
+        "hindi": "एक बार जब आपने अपने तर्कहीन विश्वासों की पहचान कर ली है, तो उन्हें चुनौती दें। यह व्यसन के चक्र को तोड़ने में मदद करता है।",
+        "marathi": "एकदा तुम्ही तुमच्या तर्कहीन समजुती ओळखल्या की, त्यांना आव्हान द्या. हे व्यसनाचे चक्र मोडण्यास मदत करते."
+      },
+      "xp": 5
+    },
+    {
+      "title": {
+        "english": "Develop Rational Alternatives",
+        "hindi": "तर्कसंगत विकल्प विकसित करना",
+        "marathi": "तर्कसंगत पर्याय विकसित करणे"
+      },
+      "description": {
+        "english": "This helps in replacing irrational beliefs with healthier thoughts. You can do this by brainstorming alternatives. For example, instead of using substances to cope with stress, you could exercise, meditate, or talk to a friend.",
+        "hindi": "यह तर्कहीन विश्वासों को स्वस्थ विचारों से बदलने में मदद करता है। आप विकल्पों पर विचार करके ऐसा कर सकते हैं।",
+        "marathi": "हे तर्कहीन समजुती आरोग्यदायी विचारांनी बदलण्यास मदत करते. तुम्ही पर्यायांवर विचार करून हे करू शकता."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Practice Self-Acceptance",
+        "hindi": "स्व-स्वीकृति का अभ्यास",
+        "marathi": "स्व-स्वीकाराचा सराव"
+      },
+      "description": {
+        "english": "This helps in reducing feelings of guilt and shame that can fuel addiction. Practice self-compassion and remind yourself that everyone makes mistakes. For example, if you relapse, don't beat yourself up. Instead, accept it as a part of the recovery process.",
+        "hindi": "यह अपराधबोध और शर्म की भावनाओं को कम करने में मदद करता है जो व्यसन को बढ़ावा दे सकती हैं। स्व-करुणा का अभ्यास करें।",
+        "marathi": "हे अपराधीपणा आणि लाजेच्या भावना कमी करण्यास मदत करते जे व्यसनाला चालना देऊ शकतात. स्व-करुणेचा सराव करा."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Focus on the Present",
+        "hindi": "वर्तमान पर ध्यान देना",
+        "marathi": "वर्तमानावर लक्ष केंद्रित करणे"
+      },
+      "description": {
+        "english": "This helps in preventing feelings of regret and anxiety about the future that can trigger substance use. Practice mindfulness and stay in the present moment. For example, instead of worrying about staying sober in the future, focus on staying sober today.",
+        "hindi": "यह भविष्य के बारे में पछतावा और चिंता की भावनाओं को रोकने में मदद करता है जो मादक द्रव्यों के उपयोग को ट्रिगर कर सकती हैं।",
+        "marathi": "हे भविष्याबद्दल पश्चात्ताप आणि चिंतेच्या भावना रोखण्यास मदत करते जे मादक द्रव्य वापरास ट्रिगर करू शकतात."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Set Realistic Goals",
+        "hindi": "वास्तविक लक्ष्य निर्धारित करना",
+        "marathi": "वास्तविक उद्दिष्टे ठरवणे"
+      },
+      "description": {
+        "english": "This helps in providing a sense of direction and motivation. Set small, achievable goals for your recovery. For example, aim to stay sober for one day, then one week, then one month, and so on.",
+        "hindi": "यह दिशा और प्रेरणा की भावना प्रदान करने में मदद करता है। अपनी रिकवरी के लिए छोटे, प्राप्त करने योग्य लक्ष्य निर्धारित करें।",
+        "marathi": "हे दिशा आणि प्रेरणेची भावना प्रदान करण्यास मदत करते. तुमच्या पुनर्प्राप्तीसाठी छोटी, साध्य करण्यायोग्य उद्दिष्टे ठरवा."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Practice Healthy Coping Skills",
+        "hindi": "स्वस्थ सामना कौशल का अभ्यास",
+        "marathi": "आरोग्यदायी सामना कौशल्याचा सराव"
+      },
+      "description": {
+        "english": "This helps in managing stress and emotions without resorting to substances. Learn and practice skills like deep breathing, progressive muscle relaxation, and yoga. For example, when you feel the urge to use, try doing a deep breathing exercise instead.",
+        "hindi": "यह मादक द्रव्यों का सहारा लिए बिना तनाव और भावनाओं को प्रबंधित करने में मदद करता है। गहरी सांस, प्रगतिशील मांसपेशी विश्राम और योग जैसे कौशल सीखें।",
+        "marathi": "हे मादक द्रव्यांचा आधार न घेता तणाव आणि भावना व्यवस्थापित करण्यास मदत करते. खोल श्वास, प्रगतीशील स्नायू विश्रांती आणि योग यांसारखी कौशल्ये शिका."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Build a Support Network",
+        "hindi": "सहायता नेटवर्क बनाना",
+        "marathi": "सहाय्य नेटवर्क तयार करणे"
+      },
+      "description": {
+        "english": "This helps in providing emotional support and accountability. Reach out to friends, family, or support groups who understand your struggle. For example, attend a local Alcoholics Anonymous or Narcotics Anonymous meeting.",
+        "hindi": "यह भावनात्मक समर्थन और जवाबदेही प्रदान करने में मदद करता है। मित्रों, परिवार, या सहायता समूहों से संपर्क करें जो आपके संघर्ष को समझते हैं।",
+        "marathi": "हे भावनिक आधार आणि जबाबदारी प्रदान करण्यास मदत करते. मित्र, कुटुंब किंवा सहाय्य गटांशी संपर्क साधा जे तुमचा संघर्ष समजतात."
+      },
+      "xp": 4
+    },
+    {
+      "title": {
+        "english": "Maintain a Healthy Lifestyle",
+        "hindi": "स्वस्थ जीवनशैली बनाए रखना",
+        "marathi": "आरोग्यदायी जीवनशैली राखणे"
+      },
+      "description": {
+        "english": "This helps in improving physical health and reducing cravings. Eat a balanced diet, exercise regularly, and get enough sleep. For example, replace the time you used to spend using substances with time spent cooking a healthy meal or going for a walk.",
+        "hindi": "यह शारीरिक स्वास्थ्य में सुधार और लालसा को कम करने में मदद करता है। संतुलित आहार लें, नियमित व्यायाम करें, और पर्याप्त नींद लें।",
+        "marathi": "हे शारीरिक आरोग्य सुधारण्यास आणि तळमळ कमी करण्यास मदत करते. संतुलित आहार घ्या, नियमित व्यायाम करा आणि पुरेशी झोप घ्या."
+      },
+      "xp": 3
+    },
+    {
+      "title": {
+        "english": "Seek Professional Help",
+        "hindi": "पेशेवर सहायता लेना",
+        "marathi": "व्यावसायिक मदत घेणे"
+      },
+      "description": {
+        "english": "This helps in providing expert guidance and support. Consider seeing a therapist or counselor who specializes in addiction. For example, you might participate in cognitive-behavioral therapy to help change your thought patterns related to substance use.",
+        "hindi": "यह विशेषज्ञ मार्गदर्शन और सहायता प्रदान करने में मदद करता है। व्यसन में विशेषज्ञता रखने वाले चिकित्सक या परामर्शदाता से मिलने पर विचार करें।",
+        "marathi": "हे तज्ञ मार्गदर्शन आणि सहाय्य प्रदान करण्यास मदत करते. व्यसनामध्ये तज्ञ असलेल्या थेरपिस्ट किंवा सल्लागाराला भेटण्याचा विचार करा."
+      },
+      "xp": 4
+    }
+  ]
+}

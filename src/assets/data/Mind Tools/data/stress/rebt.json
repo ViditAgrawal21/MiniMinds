@@ -1,0 +1,95 @@
+{
+  "condition": "Stress",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify and Challenge Irrational Beliefs",
+      "Description": "'- **Why it helps**: Stress often arises from irrational beliefs about situations and our abilities to handle them. By identifying and challenging these beliefs, we can develop more rational and less distressing perspectives.\n   - **What to do**: Write down the thoughts that trigger stress and ask yourself if they are rational or exaggerated. Replace irrational thoughts with more balanced ones.\n   - **Example**: \"I must be perfect in everything I do.\" Challenge it by questioning its rationality and replace it with: \"It's okay to make mistakes; I can learn from them.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Section 1: Triggering Thoughts\": {\n    \"XP\": 5,\n    \"Questions\": [\n      \"What thoughts trigger my stress or anxiety?\",\n      \"When did these thoughts first appear?\",\n      \"How often do I experience these thoughts?\"\n    ]\n  },\n  \"Section 2: Rationality Check\": {\n    \"XP\": 6,\n    \"Questions\": [\n      \"Is this thought rational or exaggerated?\",\n      \"What evidence do I have for this thought?\",\n      \"Are there other ways to look at this situation?\"\n    ]\n  },\n  \"Section 3: Challenging and Replacing Thoughts\": {\n    \"XP\": 7,\n    \"Questions\": [\n      \"What is the evidence against this thought?\",\n      \"Is there a more balanced way to think about this situation?\",\n      \"How would I feel if I replaced this thought with a more balanced one?\"\n    ]\n  },\n  \"Section 4: Reflection and Action Plan\": {\n    \"XP\": 8,\n    \"Questions\": [\n      \"What did I learn about my thoughts and behaviors?\",\n      \"How can I apply this knowledge to future situations?\",\n      \"What steps can I take to challenge irrational thoughts in the future?\"\n    ]\n  }\n}",
+      "extracted_value": "What thoughts trigger my stress or anxiety?\nWhen did these thoughts first appear?\nHow often do I experience these thoughts?\nIs this thought rational or exaggerated?\nWhat evidence do I have for this thought?\nAre there other ways to look at this situation?\nWhat is the evidence against this thought?\nIs there a more balanced way to think about this situation?\nHow would I feel if I replaced this thought with a more balanced one?\nWhat did I learn about my thoughts and behaviors?\nHow can I apply this knowledge to future situations?\nWhat steps can I take to challenge irrational thoughts in the future?"
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Develop a Rational Perspective",
+      "Description": "'- **Why it helps**: Viewing situations more logically can reduce stress by minimizing catastrophizing and overgeneralization.\n   - **What to do**: Practice looking at situations more objectively, weighing evidence, and considering alternative explanations.\n   - **Example**: Instead of thinking, \"This presentation will ruin my career,\" consider: \"A bad presentation is just a setback, not the end of my career.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"question\": \"Describe the situation that triggered negative thoughts.\",\n  \"xp\": 3\n}",
+      "extracted_value": "Describe the situation that triggered negative thoughts."
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Use Rational Self-Talk",
+      "Description": "'- **Why it helps**: Positive self-talk can counteract negative thoughts and reduce stress.\n   - **What to do**: Replace negative thoughts with affirming statements that emphasize control and resilience.\n   - **Example**: Change \"I can't handle this\" to \"I can manage this step by step.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"question\": \"Identify a negative thought pattern that you often experience.\",\n  \"xp\": 5\n}",
+      "extracted_value": "Identify a negative thought pattern that you often experience."
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Accept Uncertainty",
+      "Description": "'- **Why it helps**: Stress often comes from fear of the unknown. Accepting uncertainty can reduce anxiety.\n   - **What to do**: Acknowledge that not everything can be controlled or predicted, and practice being comfortable with that.\n   - **Example**: \"I don't know how this will turn out, but I can handle whatever comes.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"uncertaintySituation\": \"\",\n  \"initialThoughts\": \"\",\n  \"challengingThoughts\": \"\",\n  \"acceptanceStatement\": \"\",\n  \"reflection\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Prioritize Self-Care",
+      "Description": "'- **Why it helps**: Taking care of physical and emotional needs can build resilience against stress.\n   - **What to do**: Establish and maintain healthy routines for sleep, exercise, and nutrition.\n   - **Example**: \"I will take time every day to relax and recharge.\"",
+      "XP": 6,
+      "Journal Template": "[\n  \"What are the physical and emotional benefits of prioritizing self-care?\",\n  \"How does self-care help me build resilience against stress?\"\n]",
+      "extracted_value": "What are the physical and emotional benefits of prioritizing self-care?\nHow does self-care help me build resilience against stress?"
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Mindfulness",
+      "Description": "'- **Why it helps**: Being present helps manage stress by reducing rumination and anticipation of negative outcomes.\n   - **What to do**: Engage in mindfulness meditation or focus on the present moment during stressful times.\n   - **Example**: \"I will focus on my breathing and the sensations around me for 5 minutes.\""
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reframe Challenges as Opportunities",
+      "Description": "'- **Why it helps**: Viewing stressful situations as opportunities for growth can reduce their negative impact.\n   - **What to do**: Reframe stress-inducing situations as chances to learn or gain experience.\n   - **Example**: \"This project is challenging, but it's an opportunity to develop new skills.\"",
+      "XP": 3
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Set Realistic Goals",
+      "Description": "'- **Why it helps**: Unrealistic goals can cause unnecessary stress. Setting achievable goals makes it easier to focus and succeed.\n   - **What to do**: Break down tasks into smaller, manageable steps, and accept that perfection is not necessary.\n   - **Example**: \"I will complete the first part of the task today and the rest over the week, rather than all at once.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"goalSetting\": {\n    \"title\": \"Goal Setting Template\",\n    \"sections\": [\n      {\n        \"title\": \"High-Level Goal\",\n        \"description\": \"What is the main goal you want to achieve?\",\n        \"questions\": [\n          \"What is my main goal?\",\n          \"Why is this goal important to me?\"\n        ]\n      },\n      {\n        \"title\": \"Small Practical Steps\",\n        \"description\": \"Break down the goal into smaller, manageable steps.\",\n        \"questions\": [\n          \"What are the first few steps I need to take to achieve my goal?\",\n          \"How can I make these steps more manageable?\"\n        ]\n      },\n      {\n        \"title\": \"New Skills and Learning\",\n        \"description\": \"Identify any new skills or knowledge needed to achieve the goal.\",\n        \"questions\": [\n          \"What new skills or knowledge do I need to acquire?\",\n          \"How can I learn these skills?\"\n        ]\n      },\n      {\n        \"title\": \"Acceptance of Imperfection\",\n        \"description\": \"Accept that perfection is not necessary.\",\n        \"questions\": [\n          \"What are the potential pitfalls of striving for perfection?\",\n          \"How can I accept that it's okay to make mistakes?\"\n        ]\n      }\n    ]\n  }\n}",
+      "extracted_value": "Goal Setting Template\nHigh-Level Goal\nWhat is the main goal you want to achieve?\n\n\nWhat is my main goal?\nWhy is this goal important to me?\nSmall Practical Steps\nBreak down the goal into smaller, manageable steps.\nWhat are the first few steps I need to take to achieve my goal?\nHow can I make these steps more manageable?\nNew Skills and Learning\nIdentify any new skills or knowledge needed to achieve the goal.\nWhat new skills or knowledge do I need to acquire?\nHow can I learn these skills?\nAcceptance of Imperfection\nAccept that perfection is not necessary.\nWhat are the potential pitfalls of striving for perfection?\nHow can I accept that it's okay to make mistakes?"
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Limit \"Must\" and \"Should\" Thinking",
+      "Description": "'- **Why it helps**: Rigid beliefs about what should be can increase stress. Flexibility reduces pressure.\n   - **What to do**: Replace \"must\" and \"should\" statements with preferences or choices.\n   - **Example**: Change \"I must finish this today\" to \"I would prefer to finish this today, but it's okay if I can't.\"",
+      "XP": 6,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the original statement I'm using?\",\n    \"answer\": \"\"\n  },\n  {\n    \"question\": \"Is this statement causing me stress or pressure?\",\n    \"answer\": \"\"\n  },\n  {\n    \"question\": \"Can I rephrase this statement to make it more flexible?\",\n    \"answer\": \"\"\n  },\n  {\n    \"question\": \"What is the revised statement that reflects my preference rather than a rigid requirement?\",\n    \"answer\": \"\"\n  },\n  {\n    \"question\": \"How does this revised statement make me feel compared to the original one?\",\n    \"answer\": \"\"\n  }\n]",
+      "extracted_value": "What is the original statement I'm using?\n\n\nIs this statement causing me stress or pressure?\n\n\nCan I rephrase this statement to make it more flexible?\n\n\nWhat is the revised statement that reflects my preference rather than a rigid requirement?\n\n\nHow does this revised statement make me feel compared to the original one?\n\n"
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Visualize Positive Outcomes",
+      "Description": "'- **Why it helps**: Positive visualization creates a less stressful mental environment.\n    - **What to do**: Imagine future success and how you will overcome challenges, focusing on positive emotions.\n    - **Example**: \"I will visualize giving a successful presentation that I am proud of.\"\n\nThese REBT techniques are effective in reducing stress because they encourage individuals to adopt more rational, flexible, and realistic thinking patterns, which allow for healthier emotional responses and better stress management.",
+      "XP": 6,
+      "Journal Template": "{\n  \"section\": \"Date\",\n  \"question\": \"What date is this entry for?\"\n}",
+      "extracted_value": "Date\nWhat date is this entry for?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

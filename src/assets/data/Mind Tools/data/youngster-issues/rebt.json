@@ -1,0 +1,100 @@
+{
+  "condition": "Youngster Issues",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Challenge Perfectionism",
+      "Description": "'- **Why it Helps:** Youngsters often feel pressured to be perfect, which can lead to stress and anxiety.\n   - **What to Do:** Identify and dispute the belief that you must always be perfect to be worthwhile.\n   - **Example:** \"I failed my math test, so I'm a total failure.\" Challenge this by thinking, \"Everyone makes mistakes, and failing one test doesn't define who I am.\"",
+      "XP": 7,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"activatingEvent\": \"\",\n  \"beliefs\": {\n    \"selfStatements\": [\n      {\n        \"question\": \"What was I saying to myself?\",\n        \"answer\": \"\"\n      },\n      {\n        \"question\": \"What was going through my head at the time?\",\n        \"answer\": \"\"\n      }\n    ],\n    \"hotThought\": {\n      \"question\": \"Underline the most distressing (HOT) thought.\",\n      \"answer\": \"\"\n    },\n    \"beliefRating\": {\n      \"question\": \"Rate how much you believe this HOT thought, between 0 and 100.\",\n      \"answer\": \"\"\n    }\n  },\n  \"consequences\": {\n    \"feelings\": [\n      {\n        \"question\": \"Write down words describing how you feel.\",\n        \"answer\": \"\"\n      },\n      {\n        \"question\": \"Underline the one that is most associated with the activating event.\",\n        \"answer\": \"\"\n      },\n      {\n        \"question\": \"Rate the intensity of this feeling, (0 to 100).\",\n        \"answer\": \"\"\n      },\n      {\n        \"question\": \"Jot down any physical sensations you experienced, or actions carried out.\",\n        \"answer\": \"\"\n      }\n    ]\n  },\n  \"unhelpfulThinkingStyles\": {\n    \"question\": \"Do you recognise any unhelpful thinking styles you might have been using? (Black and white thinking, \\u2018shoulding\\u2019 and \\u2018musting\\u2019, mental filter, catastrophising, labelling, jumping to conclusions, magnification & minimisation)\",\n    \"answer\": \"\"\n  },\n  \"detectiveWorkAndDisputation\": {\n    \"question\": \"Refer to the HOT thought. Ask yourself \\u201cwhat is the factual evidence for and against my HOT thought?\\u201d\",\n    \"answer\": \"\"\n  }\n}",
+      "extracted_value": "What was I saying to myself?\n\n\nWhat was going through my head at the time?\n\n\nUnderline the most distressing (HOT) thought.\nRate how much you believe this HOT thought, between 0 and 100.\nWrite down words describing how you feel.\nUnderline the one that is most associated with the activating event.\nRate the intensity of this feeling, (0 to 100).\nJot down any physical sensations you experienced, or actions carried out.\nDo you recognise any unhelpful thinking styles you might have been using? (Black and white thinking, ‘shoulding’ and ‘musting’, mental filter, catastrophising, labelling, jumping to conclusions, magnification & minimisation)\n\n\nRefer to the HOT thought. Ask yourself “what is the factual evidence for and against my HOT thought?”\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Address Fear of Rejection",
+      "Description": "'- **Why it Helps:** Fear of rejection can prevent young people from forming new relationships or trying new experiences.\n   - **What to Do:** Analyze the worst-case scenario and realize you can survive and grow from the experience.\n   - **Example:** \"If I ask them to hang out, they'll probably say no, and I'll be humiliated.\" Reframe to, \"Even if they say no, it’s not the end of the world. I can try again with someone else.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"Triggering Event\": {\n    \"question\": \"What is the specific situation that triggers my fear of rejection?\",\n    \"xp\": 3\n  },\n  \"Negative Thoughts\": {\n    \"question\": \"What negative thoughts come up when I think about this situation?\",\n    \"xp\": 5\n  },\n  \"Worst-Case Scenario\": {\n    \"question\": \"What is the worst-case scenario I imagine happening in this situation?\",\n    \"xp\": 6\n  },\n  \"Reframe Thoughts\": {\n    \"question\": \"How can I reframe these negative thoughts to make them more realistic and less distressing?\",\n    \"xp\": 8\n  },\n  \"Positive Outcome\": {\n    \"question\": \"What positive outcome could happen if I take action despite my fear of rejection?\",\n    \"xp\": 9\n  },\n  \"Action Plan\": {\n    \"question\": \"What specific actions can I take to address my fear of rejection in this situation?\",\n    \"xp\": 10\n  }\n}",
+      "extracted_value": "What is the specific situation that triggers my fear of rejection?\n\n\nWhat negative thoughts come up when I think about this situation?\n\n\nWhat is the worst-case scenario I imagine happening in this situation?\n\n\nHow can I reframe these negative thoughts to make them more realistic and less distressing?\n\n\nWhat positive outcome could happen if I take action despite my fear of rejection?\n\n\nWhat specific actions can I take to address my fear of rejection in this situation?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Overcome Low Self-Esteem",
+      "Description": "'- **Why it Helps:** Low self-esteem can lead to a negative self-image and poor decision-making.\n   - **What to Do:** Replace self-critical thoughts with positive affirmations based on reality.\n   - **Example:** \"I'm not as good as my friends.\" Challenge this by listing your strengths and accomplishments.",
+      "XP": 7,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"self_critical_thought\": \"\",\n  \"challenging_thought\": \"\",\n  \"strengths_and_accomplishments\": [\n    {\n      \"question\": \"What are some of your strengths?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What accomplishments are you proud of?\",\n      \"answer\": \"\"\n    }\n  ],\n  \"positive_affirmation\": \"\",\n  \"reflection\": \"\"\n}",
+      "extracted_value": "What are some of your strengths?\n\n\nWhat accomplishments are you proud of?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reduce Social Anxiety",
+      "Description": "'- **Why it Helps:** Social anxiety can hinder social interactions and personal growth.\n   - **What to Do:** Practice thinking realistic, non-catastrophic thoughts about social situations.\n   - **Example:** \"I'll embarrass myself if I talk to new people.\" Counter this with, \"Most people are too focused on themselves to notice minor mistakes.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"question\": \"The Situation - What happened?\",\n  \"xp\": 3\n}",
+      "extracted_value": "The Situation - What happened?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Deal with Academic Pressure",
+      "Description": "'- **Why it Helps:** Academic pressure can lead to burnout and mental health issues.\n   - **What to Do:** Reframe the belief that academic success and self-worth are the same.\n   - **Example:** \"If I don't get into a top college, I'm a failure.\" Reframe to, \"There are many paths to success, and I can find my own way.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"behaviors\": \"\",\n  \"reframedThoughts\": \"\",\n  \"questions\": [\n    \"What is the specific situation that is causing me academic pressure?\",\n    \"How am I currently thinking about this situation?\",\n    \"How am I feeling about this situation?\",\n    \"What behaviors am I exhibiting in response to this situation?\",\n    \"Is there a more balanced way to think about this situation?\",\n    \"How can I reframe my thoughts to reduce academic pressure and increase self-worth?\"\n  ],\n  \"reframingQuestions\": [\n    \"Is there another way to look at this situation?\",\n    \"What evidence do I have that supports my current thoughts?\",\n    \"What evidence do I have that contradicts my current thoughts?\",\n    \"How would I feel if I reframed my thoughts in a more balanced way?\"\n  ]\n}",
+      "extracted_value": "What is the specific situation that is causing me academic pressure?\nHow am I currently thinking about this situation?\nHow am I feeling about this situation?\nWhat behaviors am I exhibiting in response to this situation?\nIs there a more balanced way to think about this situation?\nHow can I reframe my thoughts to reduce academic pressure and increase self-worth?\nIs there another way to look at this situation?\nWhat evidence do I have that supports my current thoughts?\nWhat evidence do I have that contradicts my current thoughts?\nHow would I feel if I reframed my thoughts in a more balanced way?"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Handle Peer Pressure",
+      "Description": "'- **Why it Helps:** Peer pressure can push youngsters to make unwise choices.\n   - **What to Do:** Remind yourself of your values and the long-term consequences of giving in.\n   - **Example:** \"I have to smoke to fit in.\" Challenge this with, \"I don't need to compromise my health to belong. True friends respect my decisions.\"",
+      "XP": 7,
+      "Journal Template": "{\n  \"section1\": {\n    \"title\": \"Identify the Situation\",\n    \"questions\": [\n      \"What is the situation where I'm feeling pressured?\",\n      \"Who is exerting the pressure?\",\n      \"What are the specific actions or choices I'm being asked to make?\"\n    ]\n  },\n  \"section2\": {\n    \"title\": \"Assess My Beliefs\",\n    \"questions\": [\n      \"What are my initial thoughts and feelings about the situation?\",\n      \"Are these thoughts and feelings based on facts or assumptions?\",\n      \"Do these thoughts align with my values and long-term goals?\"\n    ]\n  },\n  \"section3\": {\n    \"title\": \"Challenge Negative Thoughts\",\n    \"questions\": [\n      \"What are the potential short-term and long-term consequences of giving in to peer pressure?\",\n      \"How might this choice affect my health, relationships, and overall well-being?\",\n      \"What are some alternative choices that align with my values and goals?\"\n    ]\n  },\n  \"section4\": {\n    \"title\": \"Develop a Plan\",\n    \"questions\": [\n      \"What specific actions can I take to resist peer pressure?\",\n      \"How can I communicate my decisions to others in a respectful manner?\",\n      \"What support systems (e.g., friends, family, professionals) can help me stay on track?\"\n    ]\n  },\n  \"section5\": {\n    \"title\": \"Reflect and Review\",\n    \"questions\": [\n      \"How did I handle the situation in the past?\",\n      \"What worked well, and what didn't?\",\n      \"What can I improve on next time?\"\n    ]\n  }\n}",
+      "extracted_value": "Identify the Situation\nWhat is the situation where I'm feeling pressured?\nWho is exerting the pressure?\nWhat are the specific actions or choices I'm being asked to make?\nAssess My Beliefs\nWhat are my initial thoughts and feelings about the situation?\nAre these thoughts and feelings based on facts or assumptions?\nDo these thoughts align with my values and long-term goals?\nChallenge Negative Thoughts\nWhat are the potential short-term and long-term consequences of giving in to peer pressure?\nHow might this choice affect my health, relationships, and overall well-being?\nWhat are some alternative choices that align with my values and goals?\nDevelop a Plan\nWhat specific actions can I take to resist peer pressure?\nHow can I communicate my decisions to others in a respectful manner?\nWhat support systems (e.g., friends, family, professionals) can help me stay on track?\nReflect and Review\nHow did I handle the situation in the past?\nWhat worked well, and what didn't?\nWhat can I improve on next time?"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Improve Body Image",
+      "Description": "'- **Why it Helps:** A poor body image can result in issues like eating disorders or depression.\n   - **What to Do:** Focus on what your body can do, rather than how it looks.\n   - **Example:** \"I hate my body because it's not like models I see online.\" Reframe to, \"My body enables me to play sports and enjoy activities I love.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"negativeThought\": \"\",\n  \"reframeThought\": \"\",\n  \"activitiesEnabledByBody\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What are some negative thoughts I have about my body today?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How can I reframe these negative thoughts into positive ones?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What activities or things can my body do that I am grateful for?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How does focusing on what my body can do rather than how it looks make me feel?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "What are some negative thoughts I have about my body today?\n\n\nHow can I reframe these negative thoughts into positive ones?\n\n\nWhat activities or things can my body do that I am grateful for?\n\n\nHow does focusing on what my body can do rather than how it looks make me feel?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Foster Independence",
+      "Description": "'- **Why it Helps:** Developing independence is crucial for young people transitioning into adulthood.\n   - **What to Do:** Set personal goals that reflect your own desires and not just parental or peer expectations.\n   - **Example:** \"I need to follow my parent’s footsteps.\" Challenge this with, \"I can chart my own path and still honor my family’s values.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"goal_setting\": {\n    \"question\": \"What are my personal goals that I want to achieve?\",\n    \"answer\": \"\"\n  },\n  \"challenging_expectations\": {\n    \"question\": \"Are there any expectations from others that I need to challenge?\",\n    \"answer\": \"\"\n  },\n  \"independence_statement\": {\n    \"question\": \"Can I create a statement that reflects my independence and personal desires?\",\n    \"answer\": \"\"\n  },\n  \"reflection\": {\n    \"question\": \"How does fostering independence make me feel about myself and my future?\",\n    \"answer\": \"\"\n  }\n}",
+      "extracted_value": "What are my personal goals that I want to achieve?\n\n\nAre there any expectations from others that I need to challenge?\n\n\nCan I create a statement that reflects my independence and personal desires?\n\n\nHow does fostering independence make me feel about myself and my future?\n\n"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Address Fear of Failure",
+      "Description": "'- **Why it Helps:** Fear of failure can prevent youngsters from trying new things.\n   - **What to Do:** Embrace failure as an opportunity to learn and grow, not a reflection of your worth.\n   - **Example:** \"If I fail, it means I'm no good.\" Counter this with, \"Failure is an opportunity to learn how to do better next time.\"",
+      "XP": 7,
+      "Journal Template": "Section 1 Identifying Irrational Thoughts\nQuestion 1 What is the negative thought that comes to mind when you think about failure? (e.g. 'I always fail at everything I try.')\nQuestion 2 What evidence do you have for this negative thought? (e.g. 'I failed my last test.')\nQuestion 3 Is there another way to look at this situation? (e.g. 'I didn't study enough for the test.')\nSection 2 Challenging Negative Thoughts\nQuestion 4 What would happen if you failed at this task? (e.g. 'I would feel disappointed.')\nQuestion 5 Is this outcome really as bad as you think it is? (e.g. 'No I can learn from it.')\nQuestion 6 What would you do if you failed? (e.g. 'I would try again with a different approach.')\nSection 3 Reframing Positive Thoughts\nQuestion 7 What is a more balanced and realistic view of failure? (e.g. 'Failure is an opportunity to learn and grow.')\nQuestion 8 How can you reframe your negative thoughts into positive ones? (e.g. 'Instead of thinking I'm no good I can think I'll try again and do better next time.)'\nQuestion 9 What are some positive outcomes that could come from trying and failing? (e.g. 'I might learn something new or gain confidence.')",
+      "extracted_value": "Section 1 Identifying Irrational Thoughts\nQuestion 1 What is the negative thought that comes to mind when you think about failure? (e.g. 'I always fail at everything I try.')\nQuestion 2 What evidence do you have for this negative thought? (e.g. 'I failed my last test.')\nQuestion 3 Is there another way to look at this situation? (e.g. 'I didn't study enough for the test.')\nSection 2 Challenging Negative Thoughts\nQuestion 4 What would happen if you failed at this task? (e.g. 'I would feel disappointed.')\nQuestion 5 Is this outcome really as bad as you think it is? (e.g. 'No I can learn from it.')\nQuestion 6 What would you do if you failed? (e.g. 'I would try again with a different approach.')\nSection 3 Reframing Positive Thoughts\nQuestion 7 What is a more balanced and realistic view of failure? (e.g. 'Failure is an opportunity to learn and grow.')\nQuestion 8 How can you reframe your negative thoughts into positive ones? (e.g. 'Instead of thinking I'm no good I can think I'll try again and do better next time.)'\nQuestion 9 What are some positive outcomes that could come from trying and failing? (e.g. 'I might learn something new or gain confidence.')"
+    },
+    {
+      "Issue Name": "Youngster Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Manage Anger and Frustration",
+      "Description": "'- **Why it Helps:** Anger can damage relationships and lead to self-destructive behavior.\n   - **What to Do:** Use rational thinking to assess situations calmly before reacting.\n   - **Example:** \"My teacher always picks on me, and it makes me furious.\" Challenge this with, \"I can calmly talk to my teacher or discuss this with a counselor for perspective.\"\n\nBy incorporating these REBT strategies, young individuals can learn to cope better with life’s challenges and cultivate a",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Trigger\": \"\",\n  \"Warning Signs\": \"\",\n  \"Thoughts\": \"\",\n  \"Feelings\": \"\",\n  \"Behavior\": \"\",\n  \"Consequences\": \"\",\n  \"Strategies Used\": \"\",\n  \"Rational Thinking Challenge\": \"\",\n  \"Outcome\": \"\"\n}"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

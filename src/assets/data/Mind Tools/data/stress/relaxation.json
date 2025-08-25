@@ -1,0 +1,75 @@
+{
+  "condition": "Stress",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Deep Breathing (Pranayama):",
+      "Card Description": "'- **Find a comfortable seated position.**  \n   - Inhale deeply through your nose, filling your lungs.  \n   - Hold for a few seconds.  \n   - Exhale slowly through your mouth.  \n   - Repeat for 5-10 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Cat-Cow Pose (Marjaryasana-Bitilasana):",
+      "Card Description": "'- Get on your hands and knees.  \n   - Inhale, arch your back and look up (Cow Pose).  \n   - Exhale, round your back and tuck your chin toward your chest (Cat Pose).  \n   - Repeat 10-15 times.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Child’s Pose (Balasana):",
+      "Card Description": "'- Kneel on the floor, sit back on your heels, and stretch your arms forward.  \n   - Rest your forehead on the mat.  \n   - Breathe deeply and relax for 5 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Downward-Facing Dog (Adho Mukha Svanasana):",
+      "Card Description": "'- From hands and knees, lift your hips and straighten your legs.  \n   - Press your heels toward the floor.  \n   - Hold the pose for 1-3 minutes, breathing deeply.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Legs-Up-the-Wall Pose (Viparita Karani):",
+      "Card Description": "'- Lie on your back with your legs up against a wall.  \n   - Relax your arms by your sides.  \n   - Stay in this pose for 5-10 minutes, focusing on your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindful Breathing:",
+      "Card Description": "'- Sit in a comfortable position with your back straight.  \n   - Close your eyes and bring your attention to your breath.  \n   - Notice the inhale and exhale, and the rising and falling of your chest.  \n   - When your mind wanders, gently bring it back to your breath.  \n   - Continue for 5-15 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan Meditation:",
+      "Card Description": "'- Lie down comfortably.  \n   - Bring your awareness to different parts of your body, starting from your toes and moving up to your head.  \n   - Notice any sensations, tension, or stress in each part, and consciously relax it.  \n   - Take at least 10 minutes to focus on relaxing each part of your body.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Loving-Kindness Meditation:",
+      "Card Description": "'- Sit comfortably with your eyes closed.  \n   - Begin by directing kind thoughts and wishes to yourself: \"May I be happy, may I be healthy, may I be peaceful.\"  \n   - Gradually extend these wishes to others — loved ones, acquaintances, and even those you have conflicts with.  \n   - Spend 10-20 minutes on this practice.",
+      "xp": 5
+    }
+  ],
+  "count": 8,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 8
+  }
+}

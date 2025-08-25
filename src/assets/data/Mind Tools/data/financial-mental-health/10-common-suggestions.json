@@ -1,0 +1,91 @@
+{
+  "condition": "Financial Mental Health",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Create a Budget:",
+      "Card Description": "'- **How it Works:** By outlining monthly income and expenses, you can make informed spending choices and prioritize financial goals.  \n   - **Example:** Using a budgeting app like Mint or YNAB to track spending allows you to adjust your habits and allocate money towards savings.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Build an Emergency Fund:",
+      "Card Description": "'- **How it Works:** An emergency fund provides a safety net for unexpected expenses, reducing stress from unforeseen financial challenges.  \n   - **Example:** Set aside a small amount each paycheck into a high-yield savings account, aiming for 3-6 months' worth of living expenses.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Set Realistic Financial Goals:",
+      "Card Description": "'- **How it Works:** Establishing clear, attainable goals helps focus financial planning and provides motivation.  \n   - **Example:** Set a goal to pay off a specific debt within a year by allocating additional monthly payments from decreased discretionary spending.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Automate Savings and Bill Payments:",
+      "Card Description": "'- **How it Works:** Automation ensures that savings and payments are consistent, reducing the risk of missed payments and stress.  \n   - **Example:** Automatically transfer a portion of your paycheck to savings and set up automatic bill payments to avoid late fees.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Educate Yourself About Finances:",
+      "Card Description": "'- **How it Works:** Increasing financial literacy can alleviate anxiety by empowering you with the knowledge to make better financial decisions.  \n   - **Example:** Take a free personal finance course online or read books like \"Rich Dad Poor Dad\" to understand financial management.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Limit Unnecessary Debt:",
+      "Card Description": "'- **How it Works:** Avoiding excessive debt reduces financial strain and interest payments.  \n   - **Example:** Use credit cards only for planned purchases and aim to pay the full balance each month to avoid interest charges.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Practice Mindful Spending:",
+      "Card Description": "'- **How it Works:** Being intentional with purchases helps align spending with your values and needs, reducing impulse buying and guilt.  \n   - **Example:** Before buying a non-essential item, wait 24 hours to consider if it truly adds value to your life.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Seek Professional Financial Advice:",
+      "Card Description": "'- **How it Works:** Financial advisors can help with tailored strategies to improve financial health and achieve long-term goals.  \n   - **Example:** Consult a financial planner for personalized investment strategies or debt repayment plans.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Address Money-Related Anxiety:",
+      "Card Description": "'- **How it Works:** Recognizing and managing anxiety related to finances can improve mental health and decision-making.  \n   - **Example:** Practice stress-reducing techniques such as mindfulness or meditation, especially when assessing financial situations.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Talk About Money Issues:",
+      "Card Description": "'- **How it Works:** Open conversations about money can lead to support and understanding, helping to alleviate stress.  \n    - **Example:** Discuss financial concerns and goals with a partner or family member to work towards joint solutions and support.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

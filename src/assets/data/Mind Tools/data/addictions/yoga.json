@@ -1,0 +1,99 @@
+{
+  "condition": "Addictions",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Breath Awareness (Pranayama)",
+      "Card Description": "'- **Deep Breathing:** Spend a few minutes each day focusing on your breath. Inhale deeply through the nose, hold briefly, and exhale slowly. This can help calm the nervous system and reduce stress.  \n   - **Nadi Shodhana (Alternate Nostril Breathing):** This technique balances the mind and reduces stress and anxiety.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Asanas (Postures)",
+      "Card Description": "'- **Child's Pose (Balasana):** A gentle pose that encourages relaxation and introspection.  \n   - **Cat-Cow Stretch (Marjaryasana-Bitilasana):** Helps in improving flexibility and relieving stress.  \n   - **Forward Bend (Uttanasana):** Calms the mind and relieves tension in the body.  \n   - **Warrior Pose (Virabhadrasana):** Builds strength and confidence.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Restorative Yoga Poses",
+      "Card Description": "'- **Legs-Up-The-Wall Pose (Viparita Karani):** Promotes relaxation and reduces anxiety.  \n   - **Reclining Bound Angle Pose (Supta Baddha Konasana):** Encourages opening of the hips and heart, fostering a sense of surrender.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindfulness Meditation",
+      "Card Description": "'- Focus on the present moment with acceptance. Use your breath as an anchor and gently bring your attention back whenever it wanders.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Loving-Kindness Meditation (Metta)",
+      "Card Description": "'- Cultivate feelings of compassion and forgiveness towards yourself and others, which can be particularly important during recovery.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan Meditation",
+      "Card Description": "'- Check in with each part of your body, releasing tension and promoting awareness of physical sensations without judgment.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Guided Imagery",
+      "Card Description": "'- Envision a peaceful, safe place or a positive outcome that helps redirect thoughts away from addictive behaviors.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mantra Meditation",
+      "Card Description": "'- Use a mantra, a word or phrase that provides focus and helps in breaking cyclical thought patterns associated with addiction.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Set Aside Regular Time",
+      "Card Description": "'- Practice yoga and meditation daily, starting with short sessions (10-15 minutes) and gradually increasing the duration as comfort and consistency grow.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Create a Dedicated Space",
+      "Card Description": "'- Establish a quiet environment where you can practice without distractions.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Journal Reflections",
+      "Card Description": "'- After your practices, spend a few minutes writing in a journal. Reflect on how you feel, any challenges you faced, and the progress you observe over time.",
+      "xp": 5
+    }
+  ],
+  "count": 11,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 11
+  }
+}

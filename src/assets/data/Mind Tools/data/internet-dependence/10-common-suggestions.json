@@ -1,0 +1,91 @@
+{
+  "condition": "Internet Dependence",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Set Clear Boundaries and Time Limits",
+      "Card Description": "'- **Example**: Use apps like \"Screen Time\" on iOS or \"Digital Wellbeing\" on Android to track and limit usage. Set specific hours for internet use, such as no internet after 9 PM.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Designate Tech-Free Zones",
+      "Card Description": "'- **Example**: Make areas such as the bedroom or dining room tech-free zones to encourage activities like reading before bed or having family meals without devices.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Create a Schedule for Internet Use",
+      "Card Description": "'- **Example**: Establish a schedule where internet use is allowed only after completing certain tasks to prioritize work and other activities over online browsing.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Engage in Offline Activities",
+      "Card Description": "'- **Example**: Commit to offline hobbies such as gardening, exercising, cooking, or attending local clubs or events to reduce reliance on the internet for entertainment.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Practice Mindfulness and Digital Detox",
+      "Card Description": "'- **Example**: Spend one day a week without using the internet, focusing on mindfulness practices like meditation or journaling.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Educate About the Risks of Internet Overuse",
+      "Card Description": "'- **Example**: Attend workshops or watch documentaries about the physical and mental health risks of excessive internet use to increase awareness and motivation to cut back.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Use Technology to Control Technology",
+      "Card Description": "'- **Example**: Implement software that blocks distracting websites during work hours, like \"Cold Turkey\" or the \"StayFocusd\" browser extension.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Get Support from Family and Friends",
+      "Card Description": "'- **Example**: Involve family members or friends in your efforts by planning shared activities that don’t involve screens and holding each other accountable for internet usage goals.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Seek Professional Help",
+      "Card Description": "'- **Example**: Consult with a therapist or counselor specializing in internet addiction to develop strategies tailored to your needs and challenges.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Internet Dependence",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Reflect on the Underlying Causes",
+      "Card Description": "'- **Example**: Spend time journaling or talking with a friend or counselor to understand what is driving excessive internet use, such as boredom, stress, or social pressures, and find healthier ways to address these issues.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

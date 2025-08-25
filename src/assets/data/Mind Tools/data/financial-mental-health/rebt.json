@@ -1,0 +1,96 @@
+{
+  "condition": "Financial Mental Health",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify and Challenge Irrational Beliefs",
+      "Description": "'- **Why it Helps:** Many financial stressors stem from irrational beliefs (e.g., \"I must have a lot of money to be happy\"). Identifying these beliefs is the first step in reducing anxiety and stress.\n   - **What to Do:** Write down stressful thoughts about finances and question their validity. Ask if they are logical or helpful.\n   - **Example:** \"I must be financially successful to be considered a worthwhile person.\" Challenge this by asking, \"What evidence do I have for this belief, and is it truly realistic?\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Stressful Thought\": \"\",\n  \"Question Validity\": \"\",\n  \"Is Logical\": \"\",\n  \"Is Helpful\": \"\",\n  \"Evidence for Belief\": \"\",\n  \"Is Realistic\": \"\",\n  \"Alternative Thought\": \"\",\n  \"Why Alternative Thought is Better\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Self-Compassion",
+      "Description": "'- **Why it Helps:** Financial problems often lead to self-criticism. Self-compassion can reduce negative emotions and promote a healthier outlook.\n   - **What to Do:** Replace self-critical thoughts with compassionate ones. Remind yourself that everyone struggles financially at times.\n   - **Example:** Instead of thinking, \"I'm a failure because of my debt,\" say, \"I'm facing a common challenge that many people work through.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"question\": \"What triggered the self-critical thought?\"\n  },\n  \"Self-Critical Thoughts\": {\n    \"question\": \"What are the self-critical thoughts that came to mind?\"\n  },\n  \"Emotional and Physical Sensations\": {\n    \"question\": \"How did you feel emotionally and physically? (Rate each feeling 0-100%)\"\n  },\n  \"Costs/Benefits of Self-Criticism\": {\n    \"question\": \"What are the costs of thinking this way? What benefits do you get from it?\"\n  },\n  \"Compassionate Thoughts\": {\n    \"question\": \"What compassionate thoughts could help alleviate your suffering and promote well-being in this situation?\"\n  },\n  \"Altered Reaction\": {\n    \"question\": \"How would your feelings change if you replaced the self-critical thoughts with compassionate ones?\"\n  },\n  \"Compassionate Conclusion\": {\n    \"question\": \"What is a more compassionate and helpful conclusion to replace the self-criticism?\"\n  },\n  \"Belief in Self-Critical Thoughts\": {\n    \"question\": \"How much do you believe the self-critical thoughts now (0-100%)?\"\n  },\n  \"Intensity of Initial Emotion\": {\n    \"question\": \"How intense is your initial main emotion now (0-100%)?\"\n  }\n}",
+      "extracted_value": "What triggered the self-critical thought?\n\n\nWhat are the self-critical thoughts that came to mind?\n\n\nHow did you feel emotionally and physically? (Rate each feeling 0-100%)\n\n\nWhat are the costs of thinking this way? What benefits do you get from it?\n\n\nWhat compassionate thoughts could help alleviate your suffering and promote well-being in this situation?\n\n\nHow would your feelings change if you replaced the self-critical thoughts with compassionate ones?\n\n\nWhat is a more compassionate and helpful conclusion to replace the self-criticism?\n\n\nHow much do you believe the self-critical thoughts now (0-100%)?\n\n\nHow intense is your initial main emotion now (0-100%)?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reframe 'Must' Statements",
+      "Description": "'- **Why it Helps:** 'Must' statements (e.g., \"I must earn more money\") can create unnecessary pressure and anxiety.\n   - **What to Do:** Transform 'must' statements into preferences or goals (e.g., \"I would like to earn more money, but it's not an absolute necessity for my self-worth\").\n   - **Example:** Change \"I must save more each month\" to \"I would like to save more each month, and I can explore ways to do that at my own pace.\""
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Set Realistic Financial Goals",
+      "Description": "'- **Why it Helps:** Unrealistic goals can lead to disappointment and stress. Setting achievable goals provides a sense of accomplishment.\n   - **What to Do:** Break down big financial goals into smaller, manageable steps and celebrate progress.\n   - **Example:** Instead of \"I need to pay off all my debt immediately,\" set a goal to pay off a certain amount each month.",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What is my current financial situation?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What are my long-term financial goals?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What are the specific steps I need to take to achieve my financial goals?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How can I break down my big financial goals into smaller, manageable steps?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What progress can I celebrate along the way to stay motivated?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How will I track my progress and stay on track with my financial goals?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What obstacles might arise, and how can I handle them?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"How will achieving these financial goals impact my overall well-being and stress levels?\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "What is my current financial situation?\n\n\nWhat are my long-term financial goals?\n\n\nWhat are the specific steps I need to take to achieve my financial goals?\n\n\nHow can I break down my big financial goals into smaller, manageable steps?\n\n\nWhat progress can I celebrate along the way to stay motivated?\n\n\nHow will I track my progress and stay on track with my financial goals?\n\n\nWhat obstacles might arise, and how can I handle them?\n\n\nHow will achieving these financial goals impact my overall well-being and stress levels?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on What You Can Control",
+      "Description": "'- **Why it Helps:** Worrying about things beyond your control can lead to feelings of helplessness and anxiety.\n   - **What to Do:** Concentrate on actionable steps you can take to improve your financial situation.\n   - **Example:** If there's uncertainty in the economy, focus on creating a budget rather than stressing over unpredictable economic trends.",
+      "XP": 6,
+      "Journal Template": "{\n  \"section1\": {\n    \"title\": \"Identify What You Can Control\",\n    \"questions\": [\n      \"What specific aspects of my financial situation am I currently worried about?\",\n      \"What are the factors that are beyond my control in this situation?\"\n    ]\n  },\n  \"section2\": {\n    \"title\": \"Actionable Steps\",\n    \"questions\": [\n      \"What are some concrete actions I can take to improve my financial situation?\",\n      \"What specific steps can I take today to address my concerns?\"\n    ]\n  },\n  \"section3\": {\n    \"title\": \"Reflect on Progress\",\n    \"questions\": [\n      \"How have I progressed in taking control of my financial situation?\",\n      \"What challenges have I faced, and how have I overcome them?\"\n    ]\n  }\n}",
+      "extracted_value": "Identify What You Can Control\nWhat specific aspects of my financial situation am I currently worried about?\nWhat are the factors that are beyond my control in this situation?\nActionable Steps\nWhat are some concrete actions I can take to improve my financial situation?\nWhat specific steps can I take today to address my concerns?\nReflect on Progress\nHow have I progressed in taking control of my financial situation?\nWhat challenges have I faced, and how have I overcome them?"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Recognize and Challenge Catastrophizing",
+      "Description": "'- **Why it Helps:** Catastrophizing (imagining the worst-case scenario) can escalate financial stress.\n   - **What to Do:** When you catch yourself imagining the worst, evaluate the likelihood and real impact of these scenarios.\n   - **Example:** Instead of thinking \"I'll lose everything if I can't pay my bills this month,\" challenge it by listing other potential solutions.",
+      "XP": 4,
+      "Journal Template": "{\n  \"Section 1: Identifying Catastrophic Thoughts\": {\n    \"Questions\": [\n      \"When did I start thinking about this situation?\",\n      \"What exactly am I thinking about?\",\n      \"How am I feeling right now?\"\n    ],\n    \"XP\": 4\n  },\n  \"Section 2: Evaluating Evidence\": {\n    \"Questions\": [\n      \"Is there any evidence that supports my catastrophic thoughts?\",\n      \"Are there any alternative explanations for this situation?\",\n      \"What are some potential positive outcomes that I might be overlooking?\"\n    ],\n    \"XP\": 5\n  },\n  \"Section 3: Reality Testing\": {\n    \"Questions\": [\n      \"How likely is it that my catastrophic thoughts will come true?\",\n      \"Have I experienced similar situations in the past? What happened then?\",\n      \"Is there any evidence that contradicts my catastrophic thinking?\"\n    ],\n    \"XP\": 6\n  },\n  \"Section 4: Creating Balanced Thoughts\": {\n    \"Questions\": [\n      \"What are some balanced and realistic thoughts I can have about this situation?\",\n      \"How can I consider both the potential negatives and positives of this situation?\",\n      \"What are some steps I can take to reduce the emotional intensity associated with my catastrophic thinking?\"\n    ],\n    \"XP\": 7\n  },\n  \"Section 5: Emotional Impact\": {\n    \"Questions\": [\n      \"How does my catastrophic thinking affect my emotions and behaviors?\",\n      \"What are some ways I can manage my anxiety and stress related to this situation?\",\n      \"How can I practice self-compassion and challenge negative self-talk?\"\n    ],\n    \"XP\": 8\n  },\n  \"Section 6: Action Plan\": {\n    \"Questions\": [\n      \"What specific actions can I take to manage future instances of catastrophic thinking?\",\n      \"Which mindfulness techniques or grounding exercises can help me stay present and focused?\",\n      \"How can I incorporate positive self-talk into my daily routine to counteract negative thoughts?\"\n    ],\n    \"XP\": 9\n  }\n}",
+      "extracted_value": "When did I start thinking about this situation?\nWhat exactly am I thinking about?\nHow am I feeling right now?\nIs there any evidence that supports my catastrophic thoughts?\nAre there any alternative explanations for this situation?\nWhat are some potential positive outcomes that I might be overlooking?\nHow likely is it that my catastrophic thoughts will come true?\nHave I experienced similar situations in the past? What happened then?\nIs there any evidence that contradicts my catastrophic thinking?\nWhat are some balanced and realistic thoughts I can have about this situation?\nHow can I consider both the potential negatives and positives of this situation?\nWhat are some steps I can take to reduce the emotional intensity associated with my catastrophic thinking?\nHow does my catastrophic thinking affect my emotions and behaviors?\nWhat are some ways I can manage my anxiety and stress related to this situation?\nHow can I practice self-compassion and challenge negative self-talk?\nWhat specific actions can I take to manage future instances of catastrophic thinking?\nWhich mindfulness techniques or grounding exercises can help me stay present and focused?\nHow can I incorporate positive self-talk into my daily routine to counteract negative thoughts?"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Embrace a Growth Mindset",
+      "Description": "'- **Why it Helps:** Believing that you can improve your financial skills over time fosters resilience and motivation.\n   - **What to Do:** Treat financial challenges as opportunities for learning rather than insurmountable obstacles.\n   - **Example:** If you make a financial mistake, think, \"This is a chance to learn and improve,\" instead of feeling defeated.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"financialChallenge\": \"\",\n  \"negativeThought\": \"\",\n  \"reframedThought\": \"\",\n  \"whyItHelps\": \"\",\n  \"opportunityForLearning\": \"\",\n  \"actionPlan\": \"\",\n  \"progress\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Distinguish Needs from Wants",
+      "Description": "'- **Why it Helps:** Clarifying essential expenses versus discretionary ones can reduce financial stress and help prioritize budgeting.\n   - **What to Do:** Review your spending habits and categorize expenditures.\n   - **Example:** Recognize that \"I need to pay my rent\" is a priority, while \"I want a new phone\" can wait.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"expenditureType\": {\n    \"needs\": [],\n    \"wants\": []\n  },\n  \"questions\": [\n    {\n      \"question\": \"What is the expenditure?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"Is this a need or a want?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"Why is this expenditure important to me?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Can I delay or reduce this expenditure without significant impact on my well-being?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How does categorizing this expenditure help me prioritize my budgeting?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "What is the expenditure?\n\n\nIs this a need or a want?\n\n\nWhy is this expenditure important to me?\n\n\nCan I delay or reduce this expenditure without significant impact on my well-being?\n\n\nHow does categorizing this expenditure help me prioritize my budgeting?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Gratitude for What You Have",
+      "Description": "'- **Why it Helps:** Shifting focus to appreciating existing assets and financial successes can reduce stress and increase satisfaction.\n   - **What to Do:** Regularly list things you are grateful for financially, no matter how small.\n   - **Example:** Writing down \"I am grateful for having a job that pays my bills\" helps focus on positives.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"thingsIGratitudeFor\": [\n    {\n      \"question\": \"What financial assets or successes am I grateful for today?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How has my job or current financial situation positively impacted my life?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Are there any small financial blessings or comforts that I often overlook but should appreciate?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How can focusing on these financial positives help reduce my stress levels?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What specific actions can I take to continue practicing gratitude for my financial situation?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What financial assets or successes am I grateful for today?\n\n\nHow has my job or current financial situation positively impacted my life?\n\n\nAre there any small financial blessings or comforts that I often overlook but should appreciate?\n\n\nHow can focusing on these financial positives help reduce my stress levels?\n\n\nWhat specific actions can I take to continue practicing gratitude for my financial situation?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Limit Social Comparisons",
+      "Description": "'- **Why it Helps:** Constantly comparing yourself to others financially can undermine self-esteem and satisfaction.\n    - **What to Do:** Recognize when you're comparing yourself to others and remind yourself that everyone’s financial journey is different.\n    - **Example:** Instead of lamenting, \"My friend bought a house, and I can’t afford one,\" focus on your",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"xp\": 5,\n    \"question\": \"When did you last compare your financial situation to someone else's?\"\n  },\n  {\n    \"xp\": 6,\n    \"question\": \"How did this comparison make you feel?\"\n  },\n  {\n    \"xp\": 7,\n    \"question\": \"What are some specific things you can do to remind yourself that everyone's financial journey is different?\"\n  },\n  {\n    \"xp\": 8,\n    \"question\": \"Can you think of a time when focusing on your own progress helped you feel better about your financial situation?\"\n  },\n  {\n    \"xp\": 9,\n    \"question\": \"What steps can you take today to limit social comparisons and focus on your own goals?\"\n  }\n]",
+      "extracted_value": "When did you last compare your financial situation to someone else's?\n\n\nHow did this comparison make you feel?\n\n\nWhat are some specific things you can do to remind yourself that everyone's financial journey is different?\n\n\nCan you think of a time when focusing on your own progress helped you feel better about your financial situation?\n\n\nWhat steps can you take today to limit social comparisons and focus on your own goals?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

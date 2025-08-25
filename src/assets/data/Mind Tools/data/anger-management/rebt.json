@@ -1,0 +1,101 @@
+{
+  "condition": "Anger Management",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify and Challenge Irrational Beliefs",
+      "Description": "'- **Why it Helps:** Anger often stems from rigid, irrational beliefs. Identifying and challenging these can reduce excessive anger.\n   - **What to Do:** Notice thoughts like \"Things must go my way\" or \"People should not upset me,\" and question their validity.\n   - **Example:** When upset by a colleague, instead of thinking \"They should not do this to me,\" challenge this by considering, \"It's frustrating, but people have their reasons, and I can manage my response.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the irrational belief I'm holding onto?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How is this belief causing me distress?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What evidence do I have for this belief?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"Is there an alternative, more balanced way to look at this situation?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How can I challenge this belief and replace it with a more realistic one?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What is the irrational belief I'm holding onto?\n\n\nHow is this belief causing me distress?\n\n\nWhat evidence do I have for this belief?\n\n\nIs there an alternative, more balanced way to look at this situation?\n\n\nHow can I challenge this belief and replace it with a more realistic one?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Adopt More Flexible Thinking",
+      "Description": "'- **Why it Helps:** Flexible thinking allows for greater emotional resilience and adaptability.\n   - **What to Do:** Replace \"musts\" and \"shoulds\" with preferences and desires.\n   - **Example:** Instead of \"They must be respectful,\" think, \"I prefer respect, but I can't control others.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"Identify a situation where you felt rigid in your thinking.\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What were the 'musts' or 'shoulds' you were thinking in that situation?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How did those thoughts affect you emotionally?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Can you rephrase those thoughts to reflect your preferences rather than rigid expectations?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How do you feel now after rephrasing those thoughts?\",\n    \"xp\": 7\n  }\n]",
+      "extracted_value": "Identify a situation where you felt rigid in your thinking.\nWhat were the 'musts' or 'shoulds' you were thinking in that situation?\n\n\nHow did those thoughts affect you emotionally?\n\n\nCan you rephrase those thoughts to reflect your preferences rather than rigid expectations?\n\n\nHow do you feel now after rephrasing those thoughts?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on Problem-Solving",
+      "Description": "'- **Why it Helps:** Directing attention to solutions can reduce feelings of helplessness and anger.\n   - **What to Do:** Identify specific actions you can take to address the issue.\n   - **Example:** If traffic makes you mad, plan to leave earlier or find alternative routes.",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the problem I am facing?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What are the specific actions I can take to address this problem?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are the potential benefits of taking these actions?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What are the potential challenges or obstacles I might face in taking these actions?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can I overcome these challenges or obstacles?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What steps will I take to implement my problem-solving plan?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"How will I monitor and evaluate the effectiveness of my problem-solving plan?\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "What is the problem I am facing?\n\n\nWhat are the specific actions I can take to address this problem?\n\n\nWhat are the potential benefits of taking these actions?\n\n\nWhat are the potential challenges or obstacles I might face in taking these actions?\n\n\nHow can I overcome these challenges or obstacles?\n\n\nWhat steps will I take to implement my problem-solving plan?\n\n\nHow will I monitor and evaluate the effectiveness of my problem-solving plan?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Accept Imperfection in Others",
+      "Description": "'- **Why it Helps:** Understanding that imperfection is part of human nature can reduce unrealistic expectations.\n   - **What to Do:** Remind yourself that everyone makes mistakes.\n   - **Example:** When someone is late, acknowledge “Everyone has off days,\" rather than getting upset.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"activatingEvent\": \"\",\n  \"irrationalBelief\": \"\",\n  \"consequence\": \"\",\n  \"disputation\": \"\",\n  \"newPhilosophy\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What was the activating event that triggered my negative reaction?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What was my irrational belief about the event?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"How did this belief lead to negative consequences?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Can I dispute this irrational belief using logical, empirical, or pragmatic arguments?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What would be a more rational belief to hold in this situation?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How can I practice accepting imperfection in others in this situation?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "What was the activating event that triggered my negative reaction?\n\n\nWhat was my irrational belief about the event?\n\n\nHow did this belief lead to negative consequences?\n\n\nCan I dispute this irrational belief using logical, empirical, or pragmatic arguments?\n\n\nWhat would be a more rational belief to hold in this situation?\n\n\nHow can I practice accepting imperfection in others in this situation?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Develop Empathy",
+      "Description": "'- **Why it Helps:** Empathy can reduce anger by fostering understanding and connection.\n   - **What to Do:** Try to see situations from others' perspectives.\n   - **Example:** If someone cuts you off in traffic, consider they may be rushing due to an emergency.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"situation\": \"Describe the situation where you felt angry or frustrated.\",\n  \"perspective\": \"Try to see this situation from the other person's perspective. What might they be going through?\",\n  \"empathyQuestions\": [\n    \"What could be causing the other person's behavior?\",\n    \"How might they be feeling in this moment?\",\n    \"Is there a possible reason for their actions that I haven't considered?\"\n  ],\n  \"reflection\": \"Reflect on how understanding the other person's perspective has changed your feelings about the situation.\",\n  \"xp\": 6\n}",
+      "extracted_value": "YYYY-MM-DD\nDescribe the situation where you felt angry or frustrated.\nTry to see this situation from the other person's perspective. What might they be going through?\n\n\nWhat could be causing the other person's behavior?\nHow might they be feeling in this moment?\nIs there a possible reason for their actions that I haven't considered?\nReflect on how understanding the other person's perspective has changed your feelings about the situation."
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Relaxation Techniques",
+      "Description": "'- **Why it Helps:** Physical relaxation can help soothe emotional turmoil.\n   - **What to Do:** Use deep breathing, meditation, or progressive muscle relaxation.\n   - **Example:** Take deep breaths and focus on breathing when you feel anger rising.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"sessionNumber\": \"1\",\n  \"questions\": [\n    {\n      \"question\": \"What triggered the need to practice relaxation techniques today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"Which relaxation technique did I use today (deep breathing, meditation, progressive muscle relaxation)?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"How did I feel before practicing relaxation techniques?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What specific steps did I take to practice relaxation techniques?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How did I feel after practicing relaxation techniques?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"Will I continue to practice relaxation techniques in the future? Why or why not?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"Are there any challenges I faced while practicing relaxation techniques? How did I overcome them?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"How can I incorporate relaxation techniques into my daily routine?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\n1\nWhat triggered the need to practice relaxation techniques today?\n\n\nWhich relaxation technique did I use today (deep breathing, meditation, progressive muscle relaxation)?\n\n\nHow did I feel before practicing relaxation techniques?\n\n\nWhat specific steps did I take to practice relaxation techniques?\n\n\nHow did I feel after practicing relaxation techniques?\n\n\nWill I continue to practice relaxation techniques in the future? Why or why not?\n\n\nAre there any challenges I faced while practicing relaxation techniques? How did I overcome them?\n\n\nHow can I incorporate relaxation techniques into my daily routine?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Use Humor to Diffuse Anger",
+      "Description": "'- **Why it Helps:** Humor shifts perspective and decreases the intensity of anger.\n   - **What to Do:** Find a non-deprecating way to see the lighter side of a situation.\n   - **Example:** Joke to yourself, “At least the printer jammed again in a record-breaking time” when it malfunctions.",
+      "XP": 5,
+      "Journal Template": "Questions to Reflect On\nWhat triggered my anger today?\nHow did I initially respond to the situation?\nCan I find a humorous way to look at this situation?\nHow did using humor affect my anger level?\nWhat can I do differently next time to diffuse my anger using humor?",
+      "extracted_value": "Questions to Reflect On\nWhat triggered my anger today?\nHow did I initially respond to the situation?\nCan I find a humorous way to look at this situation?\nHow did using humor affect my anger level?\nWhat can I do differently next time to diffuse my anger using humor?"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Assertive Communication",
+      "Description": "'- **Why it Helps:** Clear communication can prevent misunderstandings that lead to anger.\n   - **What to Do:** Clearly and calmly express your needs and feelings.\n   - **Example:** Tell a noisy neighbor, “I find it hard to concentrate with the noise, could we find a solution that works for both of us?”",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"feelings\": \"\",\n  \"needs\": \"\",\n  \"assertiveStatement\": \"\",\n  \"reflection\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What was the situation where I needed to practice assertive communication?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did I feel during the situation?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What were my needs in the situation?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Did I clearly express my needs and feelings? If not, what could I have done differently?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"Did the situation resolve positively? If so, what worked well. If not, what could be improved?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How can I apply this experience to future situations where I need to practice assertive communication?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What was the situation where I needed to practice assertive communication?\n\n\nHow did I feel during the situation?\n\n\nWhat were my needs in the situation?\n\n\nDid I clearly express my needs and feelings? If not, what could I have done differently?\n\n\nDid the situation resolve positively? If so, what worked well. If not, what could be improved?\n\n\nHow can I apply this experience to future situations where I need to practice assertive communication?\n\n"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Implement \"Cool Down\" Timeouts",
+      "Description": "'- **Why it Helps:** Stepping away from a situation allows time to recalibrate emotions.\n   - **What to Do:** When anger rises, take a break to calm down before reacting.\n   - **Example:** Walk away from a heated discussion and return when you feel calm.",
+      "XP": 6,
+      "Journal Template": "Questions to Reflect On\nWhat triggered my anger?\nHow did I feel emotionally and physically during the situation?\nWhat negative or unhelpful thoughts did I notice?\nWhat hard evidence supports my negative thoughts?\nWhat opposing evidence contradicts my negative thoughts?\nWhat is a more realistic and helpful assessment of the situation?\nHow would I objectively judge this if it was affecting somebody else?\nWill I see this differently in one day/week/month?",
+      "extracted_value": "Questions to Reflect On\nWhat triggered my anger?\nHow did I feel emotionally and physically during the situation?\nWhat negative or unhelpful thoughts did I notice?\nWhat hard evidence supports my negative thoughts?\nWhat opposing evidence contradicts my negative thoughts?\nWhat is a more realistic and helpful assessment of the situation?\nHow would I objectively judge this if it was affecting somebody else?\nWill I see this differently in one day/week/month?"
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reflect on and Learn from Anger",
+      "Description": "'- **Why it Helps:** Understanding triggers and patterns can prevent future anger outbursts.\n   - **What to Do:** After calming down, think about what triggered your anger and what you can do differently next time.\n   - **Example:** Realize that skipped meals often lead to irritability, and plan to have snacks available.\n\nBy following these REBT techniques, you can manage your anger more effectively, foster healthier relationships, and improve your overall well-being.",
+      "XP": 3,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"question\": \"What triggered my anger today?\",\n    \"xp\": 3\n  },\n  \"Warning Signs\": {\n    \"question\": \"Were there any warning signs that I could have recognized before the anger outburst?\",\n    \"xp\": 4\n  },\n  \"Thoughts\": {\n    \"question\": \"What thoughts were running through my mind during the anger outburst?\",\n    \"xp\": 5\n  },\n  \"Behavioral Response\": {\n    \"question\": \"How did I respond to the situation?\",\n    \"xp\": 5\n  },\n  \"Outcome\": {\n    \"question\": \"What was the outcome of the situation?\",\n    \"xp\": 5\n  },\n  \"Action Plan\": {\n    \"question\": \"What can I do differently next time to manage my anger?\",\n    \"xp\": 6\n  }\n}",
+      "extracted_value": "What triggered my anger today?\n\n\nWere there any warning signs that I could have recognized before the anger outburst?\n\n\nWhat thoughts were running through my mind during the anger outburst?\n\n\nHow did I respond to the situation?\n\n\nWhat was the outcome of the situation?\n\n\nWhat can I do differently next time to manage my anger?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

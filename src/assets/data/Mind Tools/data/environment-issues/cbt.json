@@ -1,0 +1,95 @@
+{
+  "condition": "Environment Issues affecting mental wellbeing",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Reframing Catastrophic Thinking",
+      "Description": "'- **Why it Helps**: Environmental issues can trigger catastrophic thoughts about the future, leading to anxiety and hopelessness. Reframing these thoughts helps reduce anxiety and fosters a more balanced perspective.\n   - **What to Do**: Identify catastrophic thoughts about the environment, challenge their validity, and replace them with more balanced alternatives.\n   - **Example**: Instead of thinking, \"The planet is doomed and there's nothing I can do,\" reframe it to, \"The situation is serious, but there are actions we can take to make a difference.\"",
+      "XP": 3
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Mindfulness and Present-Moment Awareness",
+      "Description": "'- **Why it Helps**: Focusing on the present can alleviate stress about the future and reduce feelings of being overwhelmed by environmental issues.\n   - **What to Do**: Practice mindfulness meditation or simple grounding exercises to stay present.\n   - **Example**: When feeling overwhelmed, take a few deep breaths and focus on the sounds around you, like birds or the wind.",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Behavioral Activation",
+      "Description": "'- **Why it Helps**: Engaging in positive activities can improve mood and provide a sense of agency or purpose.\n   - **What to Do**: Schedule regular activities that are meaningful and related to environmental action, such as nature walks or volunteering for local cleanup efforts.\n   - **Example**: Join a local environmental group and participate in monthly clean-up events to feel more connected and proactive.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"activityScheduled\": \"\",\n  \"activityType\": \"\",\n  \"meaningfulnessRating\": \"\",\n  \"environmentalActionRating\": \"\",\n  \"moodImprovement\": \"\",\n  \"senseOfAgency\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"Why did I choose this activity?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How does this activity make me feel?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Did I feel more connected or proactive after the activity?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How can I incorporate this activity into my weekly routine?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What other activities could I schedule that would be meaningful and related to environmental action?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How can I reflect on my experiences and identify patterns or successes?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What challenges did I face, and how did I overcome them?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"How can I continue to engage in activities that improve my mood and sense of agency?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "Why did I choose this activity?\n\n\nHow does this activity make me feel?\n\n\nDid I feel more connected or proactive after the activity?\n\n\nHow can I incorporate this activity into my weekly routine?\n\n\nWhat other activities could I schedule that would be meaningful and related to environmental action?\n\n\nHow can I reflect on my experiences and identify patterns or successes?\n\n\nWhat challenges did I face, and how did I overcome them?\n\n\nHow can I continue to engage in activities that improve my mood and sense of agency?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'- **Why it Helps**: Changing negative beliefs about personal efficacy regarding environmental issues can reduce feelings of helplessness.\n   - **What to Do**: Write down negative thoughts about your ability to affect change and then counter them with realistic, positive statements.\n   - **Example**: \"One person can't make a difference\" can be restructured as, \"Collective small actions can lead to big change, and I can contribute to that.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"question\": \"Describe the situation that led to your negative emotions or thoughts.\",\n    \"xp\": 5\n  },\n  \"Automatic Thoughts\": {\n    \"question\": \"Write down the immediate thoughts that came to mind when the situation occurred. These are often negative, irrational, or distorted.\",\n    \"xp\": 6\n  },\n  \"Negative Beliefs\": {\n    \"question\": \"Identify the negative beliefs or thoughts you have about your ability to affect change.\",\n    \"xp\": 7\n  },\n  \"Positive Alternatives\": {\n    \"question\": \"Write down realistic, positive statements to counter your negative beliefs.\",\n    \"xp\": 8\n  },\n  \"Affirmations\": {\n    \"question\": \"Create a list of affirmations or positive statements to reinforce your new, balanced thoughts.\",\n    \"xp\": 9\n  },\n  \"Action Plan\": {\n    \"question\": \"What action can you take to support your new thinking?\",\n    \"xp\": 5\n  },\n  \"Improvement\": {\n    \"question\": \"Do you feel slightly better or more optimistic after restructuring your thoughts? Explain.\",\n    \"xp\": 4\n  }\n}",
+      "extracted_value": "Describe the situation that led to your negative emotions or thoughts.\nWrite down the immediate thoughts that came to mind when the situation occurred. These are often negative, irrational, or distorted.\nIdentify the negative beliefs or thoughts you have about your ability to affect change.\nWrite down realistic, positive statements to counter your negative beliefs.\nCreate a list of affirmations or positive statements to reinforce your new, balanced thoughts.\nWhat action can you take to support your new thinking?\n\n\nDo you feel slightly better or more optimistic after restructuring your thoughts? Explain.\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Exposure Therapy",
+      "Description": "'- **Why it Helps**: Gradually confronting distressing information or situations can reduce fear and anxiety over time.\n   - **What to Do**: Gradually expose yourself to environmental news or documentaries in a controlled manner to build tolerance.\n   - **Example**: Start by reading an article about environmental efforts and progress once a week, increasing exposure as comfort grows.",
+      "XP": 1,
+      "Journal Template": "Section 1 Initial Assessment\nQuestion 1 What is the specific situation or topic that causes you distress? (XP 3)\nQuestion 2 On a scale of 0 to 100 how anxious do you feel when thinking about this situation? (SUDS Rating) (XP 3)\nQuestion 3 What are your safety behaviors when confronted with this situation? (e.g. avoidance distraction) (XP 4)\nSection 2 Exposure Plan\nQuestion 4 What is the first step you will take to expose yourself to this situation? (e.g. reading an article) (XP 4)\nQuestion 5 How often will you expose yourself to this situation initially? (e.g. once a week) (XP 4)\nQuestion 6 What will you do if you feel overwhelmed during exposure? (e.g. take a break seek support) (XP 5)\nSection 3 Progress Tracking\nQuestion 7 After each exposure session rate your anxiety level using the SUDS scale. (XP 5)\nQuestion 8 Describe any physical or emotional responses you experienced during the exposure session. (XP 6)\nQuestion 9 How did you feel after the exposure session? Did your anxiety decrease? (XP 6)\nSection 4 Reflection and Adjustment\nQuestion 10 What did you learn about yourself during this exposure session? (XP 7)\nQuestion 11 Are there any adjustments you need to make to your exposure plan? (XP 7)\nQuestion 12 How will you continue to build tolerance and reduce anxiety over time? (XP 8)",
+      "extracted_value": "Section 1 Initial Assessment\nQuestion 1 What is the specific situation or topic that causes you distress? (XP 3)\nQuestion 2 On a scale of 0 to 100 how anxious do you feel when thinking about this situation? (SUDS Rating) (XP 3)\nQuestion 3 What are your safety behaviors when confronted with this situation? (e.g. avoidance distraction) (XP 4)\nSection 2 Exposure Plan\nQuestion 4 What is the first step you will take to expose yourself to this situation? (e.g. reading an article) (XP 4)\nQuestion 5 How often will you expose yourself to this situation initially? (e.g. once a week) (XP 4)\nQuestion 6 What will you do if you feel overwhelmed during exposure? (e.g. take a break seek support) (XP 5)\nSection 3 Progress Tracking\nQuestion 7 After each exposure session rate your anxiety level using the SUDS scale. (XP 5)\nQuestion 8 Describe any physical or emotional responses you experienced during the exposure session. (XP 6)\nQuestion 9 How did you feel after the exposure session? Did your anxiety decrease? (XP 6)\nSection 4 Reflection and Adjustment\nQuestion 10 What did you learn about yourself during this exposure session? (XP 7)\nQuestion 11 Are there any adjustments you need to make to your exposure plan? (XP 7)\nQuestion 12 How will you continue to build tolerance and reduce anxiety over time? (XP 8)"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Problem-Solving Strategies",
+      "Description": "'- **Why it Helps**: Developing a sense of control over a problem can alleviate distress and enhance well-being.\n   - **What to Do**: Break down overwhelming environmental issues into smaller, manageable problems and brainstorm solutions.\n   - **Example**: Focus on reducing personal waste by researching and implementing one new sustainable practice each month.",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Social Support",
+      "Description": "'- **Why it Helps**: Engaging with a community of like-minded individuals can provide emotional support and shared motivation.\n   - **What to Do**: Connect with community groups that are actively involved in environmental causes.\n   - **Example**: Attend environmental workshops or online forums to share experiences and gather advice.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"communityEngagement\": {\n    \"activity\": \"What community group or activity did I participate in today?\",\n    \"supportReceived\": \"What kind of emotional support or advice did I receive from others?\",\n    \"motivationBoosted\": \"How did my participation boost my motivation for environmental causes?\"\n  },\n  \"reflectionQuestions\": [\n    {\n      \"question\": \"How did I feel before and after engaging with the community?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What specific moments or interactions made me feel supported?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How can I continue to engage with this community to maintain my motivation?\",\n      \"xp\": 7\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nWhat community group or activity did I participate in today?\n\n\nWhat kind of emotional support or advice did I receive from others?\n\n\nHow did my participation boost my motivation for environmental causes?\n\n\nHow did I feel before and after engaging with the community?\n\n\nWhat specific moments or interactions made me feel supported?\n\n\nHow can I continue to engage with this community to maintain my motivation?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Setting Goals",
+      "Description": "'- **Why it Helps**: Setting realistic goals can provide motivation and a sense of achievement, helping to combat feelings of helplessness.\n   - **What to Do**: Set specific, achievable environmental goals and track your progress.\n   - **Example**: Aim to reduce your plastic use by a certain percentage over a three-month period.",
+      "XP": 5,
+      "Journal Template": "{\n  \"goalSettingWorksheet\": {\n    \"questions\": [\n      {\n        \"question\": \"What specific goal do I want to achieve?\",\n        \"xp\": 5\n      },\n      {\n        \"question\": \"Why is this goal important to me?\",\n        \"xp\": 6\n      },\n      {\n        \"question\": \"What specific actions can I take to achieve this goal?\",\n        \"xp\": 7\n      },\n      {\n        \"question\": \"How will I track my progress towards this goal?\",\n        \"xp\": 8\n      },\n      {\n        \"question\": \"What potential obstacles might I face, and how will I overcome them?\",\n        \"xp\": 9\n      },\n      {\n        \"question\": \"How will achieving this goal make me feel?\",\n        \"xp\": 10\n      }\n    ]\n  }\n}",
+      "extracted_value": "What specific goal do I want to achieve?\n\n\nWhy is this goal important to me?\n\n\nWhat specific actions can I take to achieve this goal?\n\n\nHow will I track my progress towards this goal?\n\n\nWhat potential obstacles might I face, and how will I overcome them?\n\n\nHow will achieving this goal make me feel?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Positive Visualization",
+      "Description": "'- **Why it Helps**: Visualizing positive outcomes can reduce anxiety and increase motivation to engage in helpful behaviors.\n   - **What to Do**: Regularly visualize a future where environmental efforts have led to positive change.\n   - **Example**: Imagine planting trees and visualize a thriving forest, feeling the success of the collective effort.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"sessionType\": \"Positive Visualization\",\n  \"questions\": [\n    {\n      \"question\": \"What specific positive outcome do I want to visualize?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Why is this outcome important to me?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How can I describe the scene in detail?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What emotions am I feeling while visualizing this outcome?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How can I incorporate this visualization into my daily routine?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "Positive Visualization\nWhat specific positive outcome do I want to visualize?\n\n\nWhy is this outcome important to me?\n\n\nHow can I describe the scene in detail?\n\n\nWhat emotions am I feeling while visualizing this outcome?\n\n\nHow can I incorporate this visualization into my daily routine?\n\n"
+    },
+    {
+      "Issue Name": "Environment Issues affecting mental wellbeing",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Self-Compassion Exercises",
+      "Description": "'- **Why it Helps**: Practicing self-compassion can alleviate guilt or shame associated with feeling powerless against environmental issues.\n    - **What to Do**: Practice self-compassion exercises by acknowledging your feelings and redirecting judgment to aligned actions.\n    - **Example**: Write a compassionate letter to yourself recognizing your efforts and express kind encouragement to continue doing what you can within your means. \n\nBy incorporating these CBT strategies, you can proactively address the stress and anxiety associated with environmental issues and foster a more positive outlook and lifestyle.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"eventDescription\": \"\",\n  \"emotionsFelt\": \"\",\n  \"physicalSensations\": \"\",\n  \"commonHumanity\": \"\",\n  \"kindness\": \"\",\n  \"mindfulness\": \"\",\n  \"selfCompassionateThinking\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What am I feeling today?\",\n      \"XP\": 3\n    },\n    {\n      \"question\": \"Why am I feeling this way?\",\n      \"XP\": 4\n    },\n    {\n      \"question\": \"How would I treat a friend in this situation?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"What physical sensations am I experiencing?\",\n      \"XP\": 4\n    },\n    {\n      \"question\": \"How is this experience connected to the larger human experience?\",\n      \"XP\": 6\n    },\n    {\n      \"question\": \"What kind words can I say to myself right now?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"What self-critical thoughts am I having, and how can I reframe them?\",\n      \"XP\": 7\n    },\n    {\n      \"question\": \"How can I practice mindfulness in this moment?\",\n      \"XP\": 6\n    },\n    {\n      \"question\": \"What actions can I take to show kindness to myself today?\",\n      \"XP\": 7\n    }\n  ]\n}",
+      "extracted_value": "What am I feeling today?\n\n\nWhy am I feeling this way?\n\n\nHow would I treat a friend in this situation?\n\n\nWhat physical sensations am I experiencing?\n\n\nHow is this experience connected to the larger human experience?\n\n\nWhat kind words can I say to myself right now?\n\n\nWhat self-critical thoughts am I having, and how can I reframe them?\n\n\nHow can I practice mindfulness in this moment?\n\n\nWhat actions can I take to show kindness to myself today?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

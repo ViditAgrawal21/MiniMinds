@@ -10,9 +10,9 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'react-native';
 
-import { store, persistor } from './src/ReduxState';
+import { store, persistor } from './src/redux';
 import { ThemeProvider } from './src/context/themeContext';
-import AppNavigation from './src/navigator/AppNavigation';
+import AppNavigation from './src/navigation/AppNavigation';
 import { LoadingSpinner } from './src/components';
 
 function App() {

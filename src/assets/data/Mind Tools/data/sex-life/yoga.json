@@ -1,0 +1,75 @@
+{
+  "condition": "Sex Life",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Cat-Cow Stretch (Marjaryasana-Bitilasana)",
+      "Card Description": "'- Start on your hands and knees in a tabletop position.  \n   - Inhale as you drop your belly, lifting your head and tailbone toward the ceiling (Cow Pose).  \n   - Exhale as you arch your spine like a cat, tucking your chin to your chest (Cat Pose).  \n   - Repeat 10 times, synchronizing breath with movement.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Cobra Pose (Bhujangasana)",
+      "Card Description": "'- Lie face down with palms under shoulders.  \n   - Inhale as you press into your hands, lifting your chest off the ground.  \n   - Keep your elbows close to your body and look slightly upward.  \n   - Hold for 15-30 seconds and repeat 3 times.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Bridge Pose (Setu Bandhasana)",
+      "Card Description": "'- Lie on your back with knees bent and feet flat on the floor, hip-width apart.  \n   - Inhale as you lift your hips up, keeping your feet and arms on the floor.  \n   - Clasp your hands under your back and press your feet into the floor.  \n   - Hold for 30 seconds to 1 minute and then slowly roll your spine back down.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Bound Angle Pose (Baddha Konasana)",
+      "Card Description": "'- Sit on the floor with your spine straight.  \n   - Bring the soles of your feet together and hold your feet or ankles.  \n   - Let your knees drop toward the floor, opening your hips.  \n   - Hold for 1-3 minutes, breathing deeply.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Happy Baby Pose (Ananda Balasana)",
+      "Card Description": "'- Lie on your back and draw your knees toward your armpits.  \n   - Grab the outside edges of your feet with your hands, keeping your ankles above your knees.  \n   - Gently rock side to side, massaging your lower back.  \n   - Hold for 1-2 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindful Breathing",
+      "Card Description": "'- Find a comfortable seated position and close your eyes.  \n   - Focus on your breath, noticing the sensation of inhale and exhale.  \n   - If your mind wanders, gently bring your attention back to your breath.  \n   - Practice for 5-10 minutes daily.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Loving-Kindness Meditation (Metta)",
+      "Card Description": "'- Sit comfortably and close your eyes.  \n   - Begin by sending loving-kindness to yourself: “May I be happy, may I be healthy, may I be at peace.”  \n   - Gradually send loving-kindness to your partner, friends, and eventually all beings.  \n   - Practice for 10-15 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan",
+      "Card Description": "'- Lie down in a comfortable position.  \n   - Bring your attention to different parts of your body, starting from your toes and moving up to your head.  \n   - Notice any sensations, tensions, or areas of relaxation.  \n   - Spend 10-20 minutes scanning your body.",
+      "xp": 5
+    }
+  ],
+  "count": 8,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 8
+  }
+}

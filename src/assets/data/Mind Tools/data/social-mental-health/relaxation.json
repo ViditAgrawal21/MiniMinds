@@ -1,0 +1,83 @@
+{
+  "condition": "Social Mental Health",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Breath Awareness (Pranayama)",
+      "Card Description": "'- **Technique**: Sit comfortably with a straight back. Focus on your natural breath. Gradually slow it down and deepen it. Try the 4-4-4-4 (Box) breathing: inhale for 4 counts, hold for 4 counts, exhale for 4 counts, hold for 4 counts.  \n   - **Benefit**: Calms the nervous system, reduces anxiety and stress, and brings focus to the present moment.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Cat-Cow Stretch (Marjaryasana-Bitilasana)",
+      "Card Description": "'- **Technique**: On your hands and knees, alternate between arching your back and dropping your belly while moving your head up and down in sync with your breath.  \n   - **Benefit**: Relieves tension in the spine, promotes relaxation, and brings awareness to the body.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Child's Pose (Balasana)",
+      "Card Description": "'- **Technique**: Kneel on the floor and sit back on your heels, then stretch your arms forward and lower your torso and forehead to the ground.  \n   - **Benefit**: Offers a sense of safety and surrender, reduces stress and fatigue.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Downward-Facing Dog (Adho Mukha Svanasana)",
+      "Card Description": "'- **Technique**: From a plank position, raise your hips toward the sky, creating an inverted V-shape with your body.  \n   - **Benefit**: Energizes the body, increases concentration, and relieves stress.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Tree Pose (Vrksasana)",
+      "Card Description": "'- **Technique**: Stand on one leg, place the sole of the other foot on your inner thigh, and bring your hands together at your chest.  \n   - **Benefit**: Improves balance, focus, and grounding; fosters a sense of inner stability.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindfulness Meditation",
+      "Card Description": "'- **Technique**: Sit comfortably with your eyes closed, bring your attention to your breath, and acknowledge thoughts and emotions without judgment as they arise.  \n   - **Benefit**: Enhances present-moment awareness and reduces symptoms of anxiety and depression.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Loving-Kindness Meditation (Metta)",
+      "Card Description": "'- **Technique**: Silently repeat phrases like “May I be happy, may I be well” for yourself, then extend these sentiments incrementally outward to others and the world.  \n   - **Benefit**: Cultivates empathy, connection, and a positive outlook on social interactions.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan Meditation",
+      "Card Description": "'- **Technique**: Lie down comfortably, close your eyes, and bring your attention to each part of your body, moving from head to toe, noticing sensations without judgement.  \n   - **Benefit**: Enhances body awareness, relaxation, and can release physical tension associated with emotional stress.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Guided Imagery Meditation",
+      "Card Description": "'- **Technique**: Listen to an audio or self-guide through a calm and peaceful scene, visualizing details and experiences.  \n   - **Benefit**: Reduces stress, enhances creativity, and invokes a sense of peace and safety.",
+      "xp": 5
+    }
+  ],
+  "count": 9,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 9
+  }
+}

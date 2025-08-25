@@ -1,0 +1,553 @@
+{
+  "condition": "Gambling and Gaming Addiction",
+  "issueType": "Internet & Social Media Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Set Time Limits",
+            "hindi": "समय सीमा निर्धारित करें",
+            "marathi": "वेळेची मर्यादा ठरवा"
+          },
+          "description": {
+            "english": "Limit the amount of time spent on gambling or gaming each day. For example, set a timer for an hour and once it goes off, stop playing.",
+            "hindi": "प्रतिदिन जुआ या गेमिंग में बिताए जाने वाले समय को सीमित करें। उदाहरण के लिए, एक घंटे के लिए टाइमर सेट करें और जब यह बंद हो जाए, तो खेलना बंद कर दें।",
+            "marathi": "दररोज जुगार किंवा गेमिंगमध्ये घालवणारा वेळ मर्यादित करा. उदाहरणार्थ, एक तासासाठी टाइमर सेट करा आणि ते बंद झाल्यावर खेळणे थांबवा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Create a Balanced Lifestyle",
+            "hindi": "संतुलित जीवनशैली बनाएं",
+            "marathi": "संतुलित जीवनशैली तयार करा"
+          },
+          "description": {
+            "english": "Engage in other activities like sports, reading, or spending time with friends and family. For instance, instead of spending the whole weekend gaming, plan a hike or a movie night with friends.",
+            "hindi": "खेल, पढ़ना, या दोस्तों और परिवार के साथ समय बिताने जैसी अन्य गतिविधियों में भाग लें। उदाहरण के लिए, पूरे सप्ताहांत गेमिंग में बिताने के बजाय, दोस्तों के साथ ट्रेकिंग या मूवी नाइट की योजना बनाएं।",
+            "marathi": "खेळ, वाचन किंवा मित्र आणि कुटुंबासोबत वेळ घालवणे यासारख्या इतर क्रियाकलापांमध्ये गुंतून राहा. उदाहरणार्थ, संपूर्ण आठवडा गेमिंगमध्ये घालवण्याऐवजी, मित्रांसोबत ट्रेकिंग किंवा चित्रपट रात्रीची योजना करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "व्यावसायिक सहायता लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "Therapists and counselors can provide strategies to control the addiction. For example, cognitive behavioral therapy can help you understand why you gamble or play games excessively and teach you how to replace these habits with healthier ones.",
+            "hindi": "चिकित्सक और परामर्शदाता व्यसन को नियंत्रित करने की रणनीति प्रदान कर सकते हैं। उदाहरण के लिए, संज्ञानात्मक व्यवहार चिकित्सा आपको यह समझने में मदद कर सकती है कि आप अत्यधिक जुआ या गेम क्यों खेलते हैं और आपको सिखा सकती है कि इन आदतों को स्वस्थ आदतों से कैसे बदला जाए।",
+            "marathi": "चिकित्सक आणि सल्लागार व्यसन नियंत्रित करण्यासाठी रणनीती देऊ शकतात. उदाहरणार्थ, संज्ञानात्मक वर्तणूक चिकित्सा तुम्हाला हे समजण्यास मदत करू शकते की तुम्ही जास्त जुगार का खेळता किंवा गेम खेळता आणि या सवयी आरोग्यदायी सवयींनी कशा बदलायच्या हे शिकवू शकते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Self-exclusion",
+            "hindi": "स्व-बहिष्करण",
+            "marathi": "स्व-वगळणे"
+          },
+          "description": {
+            "english": "Many gambling sites offer a self-exclusion option, which blocks access to their services for a set period. For instance, you can choose to self-exclude for a month, six months, or even a year.",
+            "hindi": "कई जुआ साइटें स्व-बहिष्करण विकल्प प्रदान करती हैं, जो एक निर्धारित अवधि के लिए उनकी सेवाओं तक पहुंच को रोक देती है। उदाहरण के लिए, आप एक महीने, छह महीने या यहां तक कि एक साल के लिए स्व-बहिष्करण का विकल्प चुन सकते हैं।",
+            "marathi": "अनेक जुगाराच्या साइट्स स्व-वगळण्याचा पर्याय देतात, जे ठराविक कालावधीसाठी त्यांच्या सेवांमध्ये प्रवेश रोखतो. उदाहरणार्थ, तुम्ही एक महिना, सहा महिने किंवा अगदी एक वर्षासाठी स्व-वगळण्याचा पर्याय निवडू शकता."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Use Blocking Software",
+            "hindi": "ब्लॉकिंग सॉफ्टवेयर का उपयोग करें",
+            "marathi": "ब्लॉकिंग सॉफ्टवेअर वापरा"
+          },
+          "description": {
+            "english": "There are apps and software that can block access to gambling and gaming sites. For example, software like Gamban can be installed on your devices to block access to thousands of gambling websites.",
+            "hindi": "ऐसे ऐप्स और सॉफ्टवेयर हैं जो जुआ और गेमिंग साइटों तक पहुंच को रोक सकते हैं। उदाहरण के लिए, Gamban जैसे सॉफ्टवेयर को आपके डिवाइस पर इंस्टॉल किया जा सकता है ताकि हजारों जुआ वेबसाइटों तक पहुंच रोकी जा सके।",
+            "marathi": "असे अॅप्स आणि सॉफ्टवेअर आहेत जे जुगार आणि गेमिंग साइट्सवर प्रवेश रोखू शकतात. उदाहरणार्थ, Gamban सारखे सॉफ्टवेअर तुमच्या डिव्हाइसवर इन्स्टॉल करून हजारो जुगाराच्या वेबसाइट्सवर प्रवेश रोखू शकतात."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Financial Management",
+            "hindi": "वित्तीय प्रबंधन",
+            "marathi": "आर्थिक व्यवस्थापन"
+          },
+          "description": {
+            "english": "Limit access to money for gambling. For example, leave credit cards at home when going to a casino or set a strict budget for online gaming.",
+            "hindi": "जुआ के लिए पैसे की पहुंच को सीमित करें। उदाहरण के लिए, कैसीनो जाते समय क्रेडिट कार्ड घर पर छोड़ दें या ऑनलाइन गेमिंग के लिए सख्त बजट निर्धारित करें।",
+            "marathi": "जुगारासाठी पैशांचा प्रवेश मर्यादित करा. उदाहरणार्थ, कसीनोमध्ये जाताना क्रेडिट कार्ड घरी ठेवा किंवा ऑनलाइन गेमिंगसाठी कठोर बजेट ठरवा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Join a Support Group",
+            "hindi": "सहायता समूह में शामिल हों",
+            "marathi": "समर्थन गटात सहभागी व्हा"
+          },
+          "description": {
+            "english": "Groups like Gamblers Anonymous offer a supportive environment to share experiences and learn from others. For instance, attending regular meetings can provide a sense of community and understanding.",
+            "hindi": "Gamblers Anonymous जैसे समूह अनुभव साझा करने और दूसरों से सीखने के लिए एक सहायक वातावरण प्रदान करते हैं। उदाहरण के लिए, नियमित बैठकों में भाग लेने से समुदाय और समझ की भावना मिल सकती है।",
+            "marathi": "Gamblers Anonymous सारखे गट अनुभव सामायिक करण्यासाठी आणि इतरांकडून शिकण्यासाठी सहायक वातावरण देतात. उदाहरणार्थ, नियमित बैठकांमध्ये भाग घेतल्याने समुदाय आणि समजूतदारपणाची भावना मिळू शकते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Mindfulness and Meditation",
+            "hindi": "सचेतना और ध्यान",
+            "marathi": "जागरूकता आणि ध्यान"
+          },
+          "description": {
+            "english": "These practices can help manage stress and resist the urge to gamble or game. For example, a daily 10-minute meditation session can help improve focus and control impulses.",
+            "hindi": "ये अभ्यास तनाव को प्रबंधित करने और जुआ या गेम खेलने की इच्छा का विरोध करने में मदद कर सकते हैं। उदाहरण के लिए, दैनिक 10 मिनट का ध्यान सत्र फोकस में सुधार और आवेगों को नियंत्रित करने में मदद कर सकता है।",
+            "marathi": "या सराव तणाव व्यवस्थापित करण्यास आणि जुगार किंवा गेम खेळण्याच्या इच्छेचा प्रतिकार करण्यास मदत करू शकतात. उदाहरणार्थ, दैनंदिन 10 मिनिटांचे ध्यान सत्र लक्ष केंद्रित करण्यास आणि आवेगांवर नियंत्रण ठेवण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Regular Exercise",
+            "hindi": "नियमित व्यायाम",
+            "marathi": "नियमित व्यायाम"
+          },
+          "description": {
+            "english": "Physical activity can help distract from the urge to gamble or game and reduce stress. For example, instead of gaming after work, go for a run or hit the gym.",
+            "hindi": "शारीरिक गतिविधि जुआ या गेम खेलने की इच्छा से विचलित करने और तनाव कम करने में मदद कर सकती है। उदाहरण के लिए, काम के बाद गेमिंग के बजाय, दौड़ने जाएं या जिम जाएं।",
+            "marathi": "शारीरिक क्रियाकलाप जुगार किंवा गेम खेळण्याच्या इच्छेपासून लक्ष विचलित करण्यास आणि तणाव कमी करण्यास मदत करू शकतो. उदाहरणार्थ, कामानंतर गेमिंगऐवजी धावायला जा किंवा जिममध्ये जा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 2,
+          "title": {
+            "english": "Education",
+            "hindi": "शिक्षा",
+            "marathi": "शिक्षण"
+          },
+          "description": {
+            "english": "Understanding the risks and consequences of gambling and gaming addiction can be a deterrent. For example, reading about the negative impact of gambling addiction on personal relationships and financial stability can help motivate change.",
+            "hindi": "जुआ और गेमिंग व्यसन के जोखिमों और परिणामों को समझना एक निवारक हो सकता है। उदाहरण के लिए, व्यक्तिगत संबंधों और वित्तीय स्थिरता पर जुआ व्यसन के नकारात्मक प्रभाव के बारे में पढ़ना परिवर्तन को प्रेरित करने में मदद कर सकता है।",
+            "marathi": "जुगार आणि गेमिंग व्यसनाचे धोके आणि परिणाम समजून घेणे हे प्रतिबंधक असू शकते. उदाहरणार्थ, वैयक्तिक नातेसंबंध आणि आर्थिक स्थिरतेवर जुगाराच्या व्यसनाचे नकारात्मक परिणाम वाचल्याने बदलासाठी प्रेरणा मिळू शकते."
+          }
+        }
+      ]
+    },
+    "yoga": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Set a Routine",
+            "hindi": "दिनचर्या निर्धारित करें",
+            "marathi": "दिनक्रम ठरवा"
+          },
+          "description": {
+            "english": "Consistency is key in yoga and meditation. Set a daily routine for practicing yoga and meditation. It could be early in the morning or before going to bed, depending on what suits you best.",
+            "hindi": "योग और ध्यान में निरंतरता महत्वपूर्ण है। योग और ध्यान का अभ्यास करने के लिए दैनिक दिनचर्या निर्धारित करें। यह सुबह जल्दी या सोने से पहले हो सकता है, इस पर निर्भर करता है कि आपको क्या सबसे अच्छा लगता है।",
+            "marathi": "योग आणि ध्यानात सातत्य महत्त्वाचे आहे. योग आणि ध्यानाच्या अभ्यासासाठी दैनंदिन दिनक्रम ठरवा. हे सकाळी लवकर किंवा झोपण्यापूर्वी असू शकते, तुम्हाला काय योग्य वाटते यावर अवलंबून."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Start with Basic Yoga Poses",
+            "hindi": "बुनियादी योग आसनों से शुरुआत करें",
+            "marathi": "मूलभूत योगासनांपासून सुरुवात करा"
+          },
+          "description": {
+            "english": "Begin with basic yoga poses such as Tadasana (Mountain Pose), Vrikshasana (Tree Pose), Adho Mukha Svanasana (Downward-Facing Dog), and Savasana (Corpse Pose). These poses help to improve focus, balance, and physical strength.",
+            "hindi": "तड़ासन (पर्वत मुद्रा), वृक्षासन (वृक्ष मुद्रा), अधो मुख श्वानासन (नीचे की ओर मुंह करने वाला कुत्ता), और शवासन (शव मुद्रा) जैसे बुनियादी योग आसनों से शुरुआत करें। ये आसन फोकस, संतुलन और शारीरिक शक्ति में सुधार करने में मदद करते हैं।",
+            "marathi": "तडासन (पर्वत मुद्रा), वृक्षासन (वृक्ष मुद्रा), अधो मुख श्वानासन (खाली बघणारा कुत्रा), आणि शवासन (शव मुद्रा) यासारख्या मूलभूत योगासनांपासून सुरुवात करा. या आसनांमुळे लक्ष केंद्रित करणे, संतुलन आणि शारीरिक शक्ती सुधारण्यास मदत होते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Practice Pranayama",
+            "hindi": "प्राणायाम का अभ्यास करें",
+            "marathi": "प्राणायामाचा अभ्यास करा"
+          },
+          "description": {
+            "english": "Pranayama, or breath control, is an essential part of yoga that helps to calm the mind. Techniques such as Anulom Vilom (Alternate Nostril Breathing), Kapalbhati (Skull Shining Breath), and Bhramari (Bee Breath) can be beneficial.",
+            "hindi": "प्राणायाम, या श्वास नियंत्रण, योग का एक आवश्यक हिस्सा है जो मन को शांत करने में मदद करता है। अनुलोम विलोम (वैकल्पिक नासिका श्वास), कपालभाति (खोपड़ी चमकती सांस), और भ्रामरी (मधुमक्खी सांस) जैसी तकनीकें फायदेमंद हो सकती हैं।",
+            "marathi": "प्राणायाम, किंवा श्वास नियंत्रण, हा योगाचा एक आवश्यक भाग आहे जो मन शांत करण्यास मदत करतो. अनुलोम विलोम (वैकल्पिक नाकपुडी श्वास), कपालभाती (कवटी चमकणारा श्वास), आणि भ्रामरी (मधमाशी श्वास) यासारख्या तंत्रांचा फायदा होऊ शकतो."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Meditation",
+            "hindi": "ध्यान",
+            "marathi": "ध्यान"
+          },
+          "description": {
+            "english": "Start with mindfulness meditation, where you focus on your breath and try to keep your mind in the present moment. This can help to reduce the urge to gamble or play games as it helps to break the cycle of habitual thoughts.",
+            "hindi": "सचेतता ध्यान से शुरुआत करें, जहां आप अपनी सांस पर ध्यान केंद्रित करते हैं और अपने मन को वर्तमान क्षण में रखने की कोशिश करते हैं। यह जुआ या गेम खेलने की इच्छा को कम करने में मदद कर सकता है क्योंकि यह आदतन विचारों के चक्र को तोड़ने में मदद करता है।",
+            "marathi": "जागरूकता ध्यानापासून सुरुवात करा, जिथे तुम्ही तुमच्या श्वासावर लक्ष केंद्रित करता आणि तुमचे मन सध्याच्या क्षणात ठेवण्याचा प्रयत्न करता. हे जुगार किंवा गेम खेळण्याची इच्छा कमी करण्यास मदत करू शकते कारण हे सवयीच्या विचारांचे चक्र तोडण्यास मदत करते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Yoga Nidra",
+            "hindi": "योग निद्रा",
+            "marathi": "योग निद्रा"
+          },
+          "description": {
+            "english": "Also known as yogic sleep, Yoga Nidra is a state of conscious deep sleep that can help to heal and restore the body and mind. It can be particularly helpful in dealing with addiction as it helps to reprogram the subconscious mind.",
+            "hindi": "योगिक निद्रा के रूप में भी जाना जाता है, योग निद्रा चेतन गहरी नींद की एक अवस्था है जो शरीर और मन को ठीक करने और बहाल करने में मदद कर सकती है। यह व्यसन से निपटने में विशेष रूप से सहायक हो सकती है क्योंकि यह अवचेतन मन को पुन: प्रोग्राम करने में मदद करती है।",
+            "marathi": "योगिक निद्रा म्हणूनही ओळखली जाते, योग निद्रा ही जागरूक खोल झोपेची अवस्था आहे जी शरीर आणि मनाला बरे करण्यास आणि पुनर्संचयित करण्यास मदत करू शकते. व्यसनाशी निपटण्यामध्ये हे विशेषतः उपयुक्त ठरू शकते कारण हे अवचेतन मनाला पुन्हा प्रोग्राम करण्यास मदत करते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Incorporate Mantras",
+            "hindi": "मंत्रों को शामिल करें",
+            "marathi": "मंत्रांचा समावेश करा"
+          },
+          "description": {
+            "english": "Mantras can be a powerful tool in overcoming addiction. Choose a mantra that resonates with you and repeat it during your meditation. It could be something like 'I am in control' or 'I am free from my addiction'.",
+            "hindi": "मंत्र व्यसन पर काबू पाने में एक शक्तिशाली उपकरण हो सकते हैं। एक मंत्र चुनें जो आपके साथ गूंजता है और इसे अपने ध्यान के दौरान दोहराएं। यह 'मैं नियंत्रण में हूं' या 'मैं अपने व्यसन से मुक्त हूं' जैसा कुछ हो सकता है।",
+            "marathi": "मंत्रे व्यसनावर मात करण्यासाठी एक शक्तिशाली साधन असू शकतात. तुमच्याशी मेळ खाणारा मंत्र निवडा आणि तुमच्या ध्यानादरम्यान त्याची पुनरावृत्ती करा. हे 'मी नियंत्रणात आहे' किंवा 'मी माझ्या व्यसनापासून मुक्त आहे' असे काहीतरी असू शकते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Join a Supportive Community",
+            "hindi": "सहायक समुदाय में शामिल हों",
+            "marathi": "सहायक समुदायात सामील व्हा"
+          },
+          "description": {
+            "english": "Consider joining a yoga class or meditation group. Being part of a supportive community can provide motivation and accountability.",
+            "hindi": "योग कक्षा या ध्यान समूह में शामिल होने पर विचार करें। एक सहायक समुदाय का हिस्सा होना प्रेरणा और जवाबदेही प्रदान कर सकता है।",
+            "marathi": "योग वर्ग किंवा ध्यान गटात सामील होण्याचा विचार करा. सहायक समुदायाचा भाग असणे प्रेरणा आणि जबाबदारी देऊ शकते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "व्यावसायिक सहायता लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "While yoga and meditation can be a helpful part of recovery, they are not a substitute for professional help. Consider seeking help from a therapist or counselor who specializes in addiction. Remember, overcoming addiction is a journey that takes time, patience, and self-compassion. Be patient with yourself and celebrate your progress along the way.",
+            "hindi": "जबकि योग और ध्यान स्वास्थ्य लाभ का एक सहायक हिस्सा हो सकते हैं, वे व्यावसायिक सहायता का विकल्प नहीं हैं। व्यसन में विशेषज्ञता रखने वाले चिकित्सक या परामर्शदाता से सहायता लेने पर विचार करें। याद रखें, व्यसन पर काबू पाना एक यात्रा है जिसमें समय, धैर्य और आत्म-करुणा की आवश्यकता होती है। अपने साथ धैर्य रखें और रास्ते में अपनी प्रगति का जश्न मनाएं।",
+            "marathi": "योग आणि ध्यान हे पुनर्प्राप्तीचा उपयुक्त भाग असू शकतात, पण ते व्यावसायिक मदतीचा पर्याय नाहीत. व्यसनात तज्ञता असलेल्या चिकित्सक किंवा सल्लागाराकडून मदत घेण्याचा विचार करा. लक्षात ठेवा, व्यसनावर मात करणे हा एक प्रवास आहे ज्यासाठी वेळ, धीर आणि स्वयं-करुणा लागते. स्वतःशी धैर्य ठेवा आणि वाटेत तुमच्या प्रगतीचा आनंद घ्या."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Mindfulness Meditation",
+            "hindi": "सचेतना ध्यान",
+            "marathi": "जागरूकता ध्यान"
+          },
+          "description": {
+            "english": "This technique helps you focus on the present moment, reducing anxiety and stress. It can help you become more aware of your thoughts and feelings, making it easier to resist the urge to gamble or play games.",
+            "hindi": "यह तकनीक आपको वर्तमान क्षण पर ध्यान केंद्रित करने में मदद करती है, चिंता और तनाव को कम करती है। यह आपको अपने विचारों और भावनाओं के बारे में अधिक जागरूक बनने में मदद कर सकती है, जिससे जुआ या गेम खेलने की इच्छा का विरोध करना आसान हो जाता है।",
+            "marathi": "हे तंत्र तुम्हाला सध्याच्या क्षणावर लक्ष केंद्रित करण्यास मदत करते, चिंता आणि तणाव कमी करते. हे तुम्हाला तुमच्या विचार आणि भावनांबद्दल अधिक जागरूक होण्यास मदत करू शकते, ज्यामुळे जुगार किंवा गेम खेळण्याच्या इच्छेचा प्रतिकार करणे सोपे होते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Deep Breathing",
+            "hindi": "गहरी सांस लेना",
+            "marathi": "खोल श्वास घेणे"
+          },
+          "description": {
+            "english": "Deep breathing exercises can help reduce stress and anxiety, which are often triggers for gambling and gaming addiction. By focusing on your breath, you can calm your mind and body.",
+            "hindi": "गहरी सांस लेने के व्यायाम तनाव और चिंता को कम करने में मदद कर सकते हैं, जो अक्सर जुआ और गेमिंग व्यसन के लिए ट्रिगर होते हैं। अपनी सांस पर ध्यान केंद्रित करके, आप अपने मन और शरीर को शांत कर सकते हैं।",
+            "marathi": "खोल श्वासाचे व्यायाम तणाव आणि चिंता कमी करण्यास मदत करू शकतात, जे अनेकदा जुगार आणि गेमिंग व्यसनासाठी ट्रिगर असतात. तुमच्या श्वासावर लक्ष केंद्रित करून, तुम्ही तुमचे मन आणि शरीर शांत करू शकता."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी विश्राम",
+            "marathi": "प्रगतीशील स्नायू शिथिलीकरण"
+          },
+          "description": {
+            "english": "This technique involves tensing and then releasing each muscle group in your body, starting from your toes and working your way up to your head. It can help reduce the physical symptoms of stress and anxiety.",
+            "hindi": "इस तकनीक में आपके शरीर के प्रत्येक मांसपेशी समूह को तनाव देना और फिर छोड़ना शामिल है, अपने पैर की उंगलियों से शुरू करके अपने सिर तक काम करना। यह तनाव और चिंता के शारीरिक लक्षणों को कम करने में मदद कर सकता है।",
+            "marathi": "या तंत्रामध्ये तुमच्या शरीरातील प्रत्येक स्नायू गटाला ताण देणे आणि नंतर सोडणे समाविष्ट आहे, तुमच्या पायाच्या बोटांपासून सुरू करून तुमच्या डोक्यापर्यंत काम करणे. हे तणाव आणि चिंतेची शारीरिक लक्षणे कमी करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Yoga",
+            "hindi": "योग",
+            "marathi": "योग"
+          },
+          "description": {
+            "english": "Yoga combines physical postures, breathing exercises, and meditation. It can help reduce stress, improve mood, and increase self-awareness, making it easier to resist the urge to gamble or play games.",
+            "hindi": "योग शारीरिक मुद्राओं, सांस लेने के व्यायाम और ध्यान को जोड़ता है। यह तनाव कम करने, मूड में सुधार करने और आत्म-जागरूकता बढ़ाने में मदद कर सकता है, जिससे जुआ या गेम खेलने की इच्छा का विरोध करना आसान हो जाता है।",
+            "marathi": "योग शारीरिक मुद्रा, श्वासाचे व्यायाम आणि ध्यान एकत्र करतो. हे तणाव कमी करण्यास, मूड सुधारण्यास आणि स्वयं-जागरूकता वाढवण्यास मदत करू शकते, ज्यामुळे जुगार किंवा गेम खेळण्याच्या इच्छेचा प्रतिकार करणे सोपे होते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Guided Imagery",
+            "hindi": "निर्देशित कल्पना",
+            "marathi": "मार्गदर्शित कल्पना"
+          },
+          "description": {
+            "english": "This technique involves visualizing a peaceful place or situation to help you relax and reduce stress. It can be particularly helpful for people with gambling and gaming addiction, as it can provide a mental escape from the urge to gamble or play games.",
+            "hindi": "इस तकनीक में आराम करने और तनाव कम करने के लिए एक शांतिपूर्ण स्थान या स्थिति की कल्पना करना शामिल है। यह जुआ और गेमिंग व्यसन वाले लोगों के लिए विशेष रूप से सहायक हो सकता है, क्योंकि यह जुआ या गेम खेलने की इच्छा से मानसिक पलायन प्रदान कर सकता है।",
+            "marathi": "या तंत्रामध्ये आराम करण्यासाठी आणि तणाव कमी करण्यासाठी शांत ठिकाण किंवा परिस्थितीची कल्पना करणे समाविष्ट आहे. जुगार आणि गेमिंग व्यसन असलेल्या लोकांसाठी हे विशेषतः उपयुक्त असू शकते, कारण हे जुगार किंवा गेम खेळण्याच्या इच्छेपासून मानसिक सुटका देऊ शकते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Regular Exercise",
+            "hindi": "नियमित व्यायाम",
+            "marathi": "नियमित व्यायाम"
+          },
+          "description": {
+            "english": "Regular physical activity can help reduce stress and improve mood, making it easier to resist the urge to gamble or play games.",
+            "hindi": "नियमित शारीरिक गतिविधि तनाव कम करने और मूड में सुधार करने में मदद कर सकती है, जिससे जुआ या गेम खेलने की इच्छा का विरोध करना आसान हो जाता है।",
+            "marathi": "नियमित शारीरिक क्रियाकलाप तणाव कमी करण्यास आणि मूड सुधारण्यास मदत करू शकतो, ज्यामुळे जुगार किंवा गेम खेळण्याच्या इच्छेचा प्रतिकार करणे सोपे होते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Healthy Sleep Habits",
+            "hindi": "स्वस्थ नींद की आदतें",
+            "marathi": "आरोग्यदायी झोपेच्या सवयी"
+          },
+          "description": {
+            "english": "Lack of sleep can increase stress and make it harder to resist urges to gamble or play games. Establishing a regular sleep schedule and creating a relaxing bedtime routine can help improve sleep quality. Remember, it's important to seek professional help if you're struggling with gambling or gaming addiction. These techniques can be helpful, but they're most effective when used as part of a comprehensive treatment plan.",
+            "hindi": "नींद की कमी तनाव बढ़ा सकती है और जुआ या गेम खेलने की इच्छाओं का विरोध करना कठिन बना सकती है। नियमित नींद की अनुसूची स्थापित करना और आरामदायक सोने की दिनचर्या बनाना नींद की गुणवत्ता में सुधार करने में मदद कर सकता है। याद रखें, यदि आप जुआ या गेमिंग व्यसन से जूझ रहे हैं तो व्यावसायिक सहायता लेना महत्वपूर्ण है। ये तकनीकें सहायक हो सकती हैं, लेकिन ये तब सबसे प्रभावी होती हैं जब इन्हें एक व्यापक उपचार योजना के हिस्से के रूप में उपयोग किया जाता है।",
+            "marathi": "झोपेची कमतरता तणाव वाढवू शकते आणि जुगार किंवा गेम खेळण्याच्या इच्छांचा प्रतिकार करणे कठीण करू शकते. नियमित झोपेचे वेळापत्रक स्थापित करणे आणि आरामदायी झोपण्यापूर्वीची दिनचर्या तयार करणे झोपेची गुणवत्ता सुधारण्यास मदत करू शकते. लक्षात ठेवा, जर तुम्ही जुगार किंवा गेमिंग व्यसनाशी झुंजत आहात तर व्यावसायिक मदत घेणे महत्त्वाचे आहे. ही तंत्रे उपयुक्त असू शकतात, परंतु जेव्हा ती व्यापक उपचार योजनेचा भाग म्हणून वापरली जातात तेव्हा ती सर्वात प्रभावी असतात."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Primary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 26,
+          "xp": 6,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "संज्ञानात्मक पुनर्गठन",
+            "marathi": "संज्ञानात्मक पुनर्रचना"
+          },
+          "description": {
+            "english": "This helps by changing the thought patterns that lead to excessive gambling or gaming. Start by identifying the thoughts that trigger the urge to gamble or game, then challenge and replace them with healthier thoughts. For example, replace \"I must win this game\" with \"It's just a game, winning or losing doesn't define me.\"",
+            "hindi": "यह अत्यधिक जुआ या गेमिंग की ओर ले जाने वाले विचार पैटर्न को बदलकर मदद करता है। पहले उन विचारों की पहचान करें जो जुआ या गेम खेलने की इच्छा को ट्रिगर करते हैं, फिर उन्हें चुनौती दें और स्वस्थ विचारों से बदलें। उदाहरण के लिए, \"मुझे यह गेम जीतना ही होगा\" को \"यह सिर्फ एक गेम है, जीतना या हारना मुझे परिभाषित नहीं करता\" से बदलें।",
+            "marathi": "हे अत्यधिक जुगार किंवा गेमिंगकडे नेणाऱ्या विचार पद्धती बदलून मदत करते। प्रथम त्या विचारांची ओळख करा जे जुगार किंवा गेम खेळण्याची इच्छा ट्रिगर करतात, मग त्यांना आव्हान द्या आणि निरोगी विचारांनी बदला। उदाहरणार्थ, \"मला हा गेम जिंकायलाच हवा\" हे \"हा फक्त एक गेम आहे, जिंकणे किंवा हरणे माझी व्याख्या करत नाही\" याने बदला."
+          }
+        },
+        {
+          "id": 27,
+          "xp": 4,
+          "title": {
+            "english": "Mindfulness",
+            "hindi": "सचेतता",
+            "marathi": "जागरूकता"
+          },
+          "description": {
+            "english": "This helps by bringing attention to the present moment, reducing the urge to gamble or game. Practice mindfulness through meditation, focusing on your breath, or simply being aware of your surroundings. For example, when you feel the urge to gamble, take a moment to focus on your breath and let the urge pass.",
+            "hindi": "यह वर्तमान क्षण पर ध्यान केंद्रित करके, जुआ या गेम खेलने की इच्छा को कम करके मदद करता है। ध्यान के माध्यम से, सांस पर ध्यान केंद्रित करके, या बस अपने आसपास के वातावरण के प्रति जागरूक रहकर सचेतता का अभ्यास करें। उदाहरण के लिए, जब आप जुआ खेलने की इच्छा महसूस करें, तो एक क्षण रुककर अपनी सांस पर ध्यान दें और इच्छा को गुजर जाने दें।",
+            "marathi": "हे वर्तमान क्षणावर लक्ष केंद्रित करून, जुगार किंवा गेम खेळण्याची इच्छा कमी करून मदत करते। ध्यानाद्वारे, श्वासावर लक्ष केंद्रित करून, किंवा फक्त तुमच्या आजूबाजूच्या वातावरणाविषयी जाणीव ठेवून जागरूकतेचा सराव करा। उदाहरणार्थ, जेव्हा तुम्हाला जुगार खेळण्याची इच्छा वाटते तेव्हा क्षणभर थांबा, तुमच्या श्वासावर लक्ष केंद्रित करा आणि इच्छा निघून जाऊ द्या."
+          }
+        },
+        {
+          "id": 28,
+          "xp": 8,
+          "title": {
+            "english": "Exposure Therapy",
+            "hindi": "एक्सपोज़र थेरेपी",
+            "marathi": "एक्सपोजर थेरपी"
+          },
+          "description": {
+            "english": "This helps by gradually exposing you to the situation that triggers your addiction, reducing your reaction over time. Start by imagining the situation, then gradually expose yourself to it in a controlled environment. For example, visit a casino but don't gamble, or play a game without spending money.",
+            "hindi": "यह आपको धीरे-धीरे उस स्थिति के संपर्क में लाकर मदद करता है जो आपकी लत को ट्रिगर करती है, समय के साथ आपकी प्रतिक्रिया को कम करती है। स्थिति की कल्पना करके शुरुआत करें, फिर धीरे-धीरे नियंत्रित वातावरण में अपने आप को इसके संपर्क में लाएं। उदाहरण के लिए, कैसीनो जाएं लेकिन जुआ न खेलें, या पैसे खर्च किए बिना गेम खेलें।",
+            "marathi": "हे तुमच्या व्यसनाला ट्रिगर करणाऱ्या परिस्थितीत तुम्हाला हळूहळू उघड करून, कालांतराने तुमची प्रतिक्रिया कमी करून मदत करते। परिस्थितीची कल्पना करून सुरुवात करा, मग हळूहळू नियंत्रित वातावरणात स्वतःला त्यात उघड करा। उदाहरणार्थ, कसीनोला जा पण जुगार खेळू नका, किंवा पैसे खर्च न करता गेम खेळा."
+          }
+        },
+        {
+          "id": 29,
+          "xp": 4,
+          "title": {
+            "english": "Self-Monitoring",
+            "hindi": "स्व-निगरानी",
+            "marathi": "स्व-निरीक्षण"
+          },
+          "description": {
+            "english": "This helps to identify the triggers and patterns of your internet use. Start by keeping a log of your online activities. For example, note down the time spent online, the websites visited, and the emotions felt before, during, and after using the internet.",
+            "hindi": "यह आपके इंटरनेट उपयोग के ट्रिगर और पैटर्न की पहचान करने में मदद करता है। अपनी ऑनलाइन गतिविधियों का लॉग रखना शुरू करें। उदाहरण के लिए, ऑनलाइन बिताए गए समय, देखी गई वेबसाइटों, और इंटरनेट का उपयोग करने से पहले, दौरान और बाद में महसूस की गई भावनाओं को नोट करें।",
+            "marathi": "हे तुमच्या इंटरनेट वापराचे ट्रिगर आणि पॅटर्न ओळखण्यास मदत करते। तुमच्या ऑनलाइन क्रियाकलापांचा लॉग ठेवणे सुरू करा। उदाहरणार्थ, ऑनलाइन घालवलेला वेळ, भेट दिलेल्या वेबसाइट्स आणि इंटरनेट वापरण्यापूर्वी, दरम्यान आणि नंतर वाटलेल्या भावना नोंदवा."
+          }
+        },
+        {
+          "id": 30,
+          "xp": 4,
+          "title": {
+            "english": "Goal Setting",
+            "hindi": "लक्ष्य निर्धारण",
+            "marathi": "ध्येय निर्धारण"
+          },
+          "description": {
+            "english": "Set realistic and achievable goals to reduce gambling or gaming. For example, aim to reduce daily gaming time by 30 minutes each week, or set a monthly spending limit for online games.",
+            "hindi": "जुआ या गेमिंग को कम करने के लिए यथार्थवादी और प्राप्त करने योग्य लक्ष्य निर्धारित करें। उदाहरण के लिए, प्रत्येक सप्ताह दैनिक गेमिंग समय को 30 मिनट कम करने का लक्ष्य रखें, या ऑनलाइन गेम के लिए मासिक खर्च की सीमा निर्धारित करें।",
+            "marathi": "जुगार किंवा गेमिंग कमी करण्यासाठी वास्तववादी आणि साध्य करण्यायोग्य ध्येये ठरवा। उदाहरणार्थ, दर आठवड्याला दैनंदिन गेमिंग वेळ 30 मिनिटांनी कमी करण्याचे ध्येय ठेवा, किंवा ऑनलाइन गेमसाठी मासिक खर्चाची मर्यादा ठरवा."
+          }
+        },
+        {
+          "id": 31,
+          "xp": 6,
+          "title": {
+            "english": "Problem-Solving",
+            "hindi": "समस्या समाधान",
+            "marathi": "समस्या सोडवणे"
+          },
+          "description": {
+            "english": "Learn effective problem-solving techniques to address underlying issues that may contribute to addiction. Break down problems into manageable steps and brainstorm solutions. For example, if stress at work triggers gaming, explore stress management alternatives.",
+            "hindi": "व्यसन में योगदान देने वाली अंतर्निहित समस्याओं को संबोधित करने के लिए प्रभावी समस्या समाधान तकनीकों को सीखें। समस्याओं को प्रबंधनीय चरणों में तोड़ें और समाधानों पर विचार करें। उदाहरण के लिए, यदि काम पर तनाव गेमिंग को ट्रिगर करता है, तो तनाव प्रबंधन के विकल्पों का पता लगाएं।",
+            "marathi": "व्यसनास कारणीभूत असलेल्या मूलभूत समस्यांना तोंड देण्यासाठी प्रभावी समस्या सोडवण्याच्या तंत्रांचे शिक्षण घ्या। समस्यांना व्यवस्थापन करता येण्याजोग्या टप्प्यांमध्ये मोडा आणि उपायांवर विचारमंथन करा। उदाहरणार्थ, जर कामाचा ताण गेमिंगला चालना देत असेल तर तणाव व्यवस्थापनाचे पर्याय शोधा."
+          }
+        },
+        {
+          "id": 32,
+          "xp": 4,
+          "title": {
+            "english": "Stress Management",
+            "hindi": "तनाव प्रबंधन",
+            "marathi": "तणाव व्यवस्थापन"
+          },
+          "description": {
+            "english": "Develop healthy coping strategies to manage stress without turning to gambling or gaming. Practice relaxation techniques, exercise regularly, or engage in hobbies. For example, use deep breathing exercises when feeling overwhelmed instead of reaching for a game.",
+            "hindi": "जुआ या गेमिंग की ओर रुख किए बिना तनाव को प्रबंधित करने के लिए स्वस्थ सामना करने की रणनीति विकसित करें। विश्राम तकनीकों का अभ्यास करें, नियमित व्यायाम करें, या शौक में संलग्न रहें। उदाहरण के लिए, गेम की तरफ जाने के बजाय परेशान महसूस करने पर गहरी सांस लेने के व्यायाम का उपयोग करें।",
+            "marathi": "जुगार किंवा गेमिंगकडे न वळता तणाव व्यवस्थापित करण्यासाठी निरोगी सामना करण्याची रणनीति विकसित करा। विश्रांति तंत्रांचा सराव करा, नियमित व्यायाम करा किंवा छंदांमध्ये गुंतून राहा। उदाहरणार्थ, गेमकडे जाण्याऐवजी अस्वस्थ वाटल्यावर खोल श्वासोच्छवासाच्या व्यायामाचा वापर करा."
+          }
+        },
+        {
+          "id": 33,
+          "xp": 6,
+          "title": {
+            "english": "Assertiveness Training",
+            "hindi": "दृढ़ता प्रशिक्षण",
+            "marathi": "दृढता प्रशिक्षण"
+          },
+          "description": {
+            "english": "Learn to communicate your needs and boundaries effectively, especially in social situations involving gambling or gaming. Practice saying no to invitations to gamble and expressing your commitment to change.",
+            "hindi": "विशेष रूप से जुआ या गेमिंग से जुड़ी सामाजिक स्थितियों में अपनी आवश्यकताओं और सीमाओं को प्रभावी रूप से संवाद करना सीखें। जुआ खेलने के निमंत्रणों को ना कहने और बदलाव के प्रति अपनी प्रतिबद्धता व्यक्त करने का अभ्यास करें।",
+            "marathi": "विशेषतः जुगार किंवा गेमिंगशी संबंधित सामाजिक परिस्थितींमध्ये तुमच्या गरजा आणि मर्यादा प्रभावीपणे संप्रेषित करायला शिका। जुगार खेळण्याच्या आमंत्रणांना ना म्हणण्याचा आणि बदलाप्रती तुमची वचनबद्धता व्यक्त करण्याचा सराव करा."
+          }
+        },
+        {
+          "id": 34,
+          "xp": 4,
+          "title": {
+            "english": "Social Support",
+            "hindi": "सामाजिक सहायता",
+            "marathi": "सामाजिक समर्थन"
+          },
+          "description": {
+            "english": "Build and maintain healthy relationships that support your recovery. Share your goals with trusted friends and family, and seek out activities that don't involve gambling or excessive gaming.",
+            "hindi": "स्वस्थ रिश्ते बनाएं और बनाए रखें जो आपकी रिकवरी का समर्थन करते हैं। विश्वसनीय दोस्तों और परिवार के साथ अपने लक्ष्यों को साझा करें, और ऐसी गतिविधियों की तलाश करें जिनमें जुआ या अत्यधिक गेमिंग शामिल नहीं है।",
+            "marathi": "तुमच्या पुनर्प्राप्तीला समर्थन देणारे निरोगी नातेसंबंध निर्माण करा आणि राखा। विश्वासू मित्र आणि कुटुंबासोबत तुमची ध्येये सामायिक करा आणि जुगार किंवा अतिप्रमाणात गेमिंग समाविष्ट नसलेल्या क्रियाकलापांचा शोध घ्या."
+          }
+        },
+        {
+          "id": 35,
+          "xp": 5,
+          "title": {
+            "english": "Lifestyle Changes",
+            "hindi": "जीवनशैली में परिवर्तन",
+            "marathi": "जीवनशैलीतील बदल"
+          },
+          "description": {
+            "english": "This helps by creating a healthier environment that reduces the urge to gamble or game. Make changes like getting regular exercise, eating a healthy diet, and getting enough sleep. For example, start a new exercise routine or make a commitment to go to bed at a reasonable hour.",
+            "hindi": "यह एक स्वस्थ वातावरण बनाकर मदद करता है जो जुआ या गेम खेलने की इच्छा को कम करता है। नियमित व्यायाम करना, स्वस्थ आहार लेना, और पर्याप्त नींद लेना जैसे बदलाव करें। उदाहरण के लिए, एक नई व्यायाम दिनचर्या शुरू करें या उचित समय पर सोने की प्रतिबद्धता करें।",
+            "marathi": "हे निरोगी वातावरण तयार करून मदत करते जे जुगार किंवा गेम खेळण्याची इच्छा कमी करते। नियमित व्यायाम करणे, निरोगी आहार घेणे आणि पुरेशी झोप घेणे यासारखे बदल करा। उदाहरणार्थ, नवीन व्यायाम दिनचर्या सुरू करा किंवा योग्य वेळी झोपण्याची वचनबद्धता करा."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Primary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 36,
+          "xp": 8,
+          "title": {
+            "english": "REBT Comprehensive Approach",
+            "hindi": "REBT व्यापक दृष्टिकोण",
+            "marathi": "REBT व्यापक दृष्टिकोण"
+          },
+          "description": {
+            "english": "Apply Rational Emotive Behavior Therapy strategies to address gambling and gaming addiction. Focus on identifying and challenging irrational beliefs, developing rational thoughts, and changing emotional responses to triggers.",
+            "hindi": "जुआ और गेमिंग व्यसन से निपटने के लिए रैशनल इमोटिव बिहेवियर थेरेपी रणनीतियों को लागू करें। अतार्किक विश्वासों की पहचान और चुनौती देने, तर्कसंगत विचार विकसित करने, और ट्रिगर्स के प्रति भावनात्मक प्रतिक्रियाओं को बदलने पर ध्यान दें।",
+            "marathi": "जुगार आणि गेमिंग व्यसनाला तोंड देण्यासाठी रॅशनल इमोटिव्ह बिहेवियर थेरपी रणनीती लागू करा। अतार्किक समजुती ओळखणे आणि त्यांना आव्हान देणे, तर्कशुद्ध विचार विकसित करणे आणि ट्रिगर्सप्रती भावनिक प्रतिक्रिया बदलणे यावर लक्ष केंद्रित करा."
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2025-08-08",
+    "totalCards": 37,
+    "languages": ["english", "hindi", "marathi"],
+    "dataSource": "Miniminds_10Common_Yoga_Relax.json + Minimind_cbt_rebt_Output.json",
+    "extractedSections": [
+      "10 Common Suggestions",
+      "Yoga And Meditation Techniques", 
+      "Relaxation",
+      "CBT Interventions",
+      "REBT Interventions"
+    ]
+  }
+}

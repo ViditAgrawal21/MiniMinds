@@ -1,0 +1,976 @@
+[
+ {
+  "Issue Name": "Common Psychological Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "3. Mindful Movement and Stretching",
+  "Card Description": "'- Practice slow, mindful yoga flows such as a gentle Sun Salutation. Focus on synchronizing your breath with movement to increase mindfulness.\n\n### Meditation for Psychological Well-being",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Common Psychological Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "1. Guided Meditation",
+  "Card Description": "'- Use guided meditation apps or recordings. These often walk you through a calming visualization or relaxation sequence, which can be helpful for stress and anxiety.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Common Psychological Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "2. Mindfulness Meditation",
+  "Card Description": "'- Sit in a comfortable position, close your eyes, and begin focusing your attention on the natural rhythm of your breath. When your mind wanders, gently bring it back to the sensation of breathing. Start with 5-10 minutes daily, gradually increasing the duration as you become more comfortable.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Common Psychological Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "3. Loving-Kindness Meditation (Metta)",
+  "Card Description": "'- Sit comfortably and close your eyes. Begin by cultivating feelings of compassion and love for yourself, repeating phrases like \"May I be happy, may I be healthy.\" Gradually extend these wishes to others, including loved ones, acquaintances, and even those with whom you have difficulties.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Common Psychological Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "4. Body Scan Meditation",
+  "Card Description": "'- Lie down comfortably and close your eyes. Slowly bring your attention to each part of your body, starting from the toes to the head, noticing any sensations without judgment. This practice can help release tension and increase body awareness.\n\n### Tips for Consistency and Effectiveness",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Common Psychological Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Seek Support",
+  "Card Description": "'Yoga and meditation are complementary to, not replacements for, professional mental health treatment. If you are dealing with significant psychological issues, seek advice from a mental health professional.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Enhancing Green Spaces",
+  "Card Description": "'*Integrate more parks, gardens, and green rooftops into urban planning.*  \n   *Example*: A city invests in transforming vacant lots into community gardens, providing residents with a place to relax, exercise, and connect with nature.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Promoting Outdoor Activities",
+  "Card Description": "'*Encourage outdoor physical activities like hiking, biking, and community sports to improve mental health.*  \n   *Example*: Schools and local governments organize regular community hikes and walks in nature reserves, offering a healthy social outlet for all ages.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Encouraging Sustainable Practices",
+  "Card Description": "'*Support sustainable living practices to reduce environmental anxiety.*  \n   *Example*: Hosting workshops on recycling, composting, and sustainable consumption to empower individuals to contribute to environmental conservation.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Implementing Air Quality Improvements",
+  "Card Description": "'*Improve air quality through policy reforms and technology enhancements to reduce related stress and health issues.*  \n   *Example*: A city upgrades public transportation to electric buses, reducing air pollution and its detrimental effects on residents' mental health.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Promoting Community Resilience",
+  "Card Description": "'*Build resilient communities that can better withstand environmental stresses and shocks.*  \n   *Example*: Establish local support groups and emergency preparedness trainings, fostering a sense of community and readiness.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Supporting Access to Green Therapy",
+  "Card Description": "'*Provide therapies that incorporate nature, such as eco-therapy or animal-assisted therapy.*  \n   *Example*: Mental health clinics offer forest therapy sessions, where patients engage in guided walks through nature parks.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Raising Awareness and Education",
+  "Card Description": "'*Educate people about the links between the environment and mental health.*  \n   *Example*: Organize educational campaigns highlighting how pollution affects mental well-being, aiming to cultivate environmental stewardship.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Reducing Noise Pollution",
+  "Card Description": "'*Implement solutions to minimize noise pollution and its harmful effects on mental health.*  \n   *Example*: Regulations are enforced to reduce industrial noise at night, and soundproofing measures are subsidized for homes in noisy areas.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Facilitating Social Connections",
+  "Card Description": "'*Create environments that foster social interaction and community support.*  \n   *Example*: Initiatives to develop communal spaces like neighborhood centers where people can gather for events, reducing social isolation.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Incorporating Mindfulness and Meditation",
+  "Card Description": "'*Promote mindfulness techniques to help people reconnect with their environment and reduce stress.*  \n   *Example*: Community centers offer free outdoor yoga and mindfulness sessions, using natural surroundings to enhance therapeutic effects.\n\nThese strategies, when implemented, can help mitigate the impact of environmental issues on mental well-being by promoting healthier, more sustainable, and connected communities.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "**Grounding Poses**: These poses help create a sense of stability amidst environmental concerns.",
+  "Card Description": "'- **Mountain Pose (Tadasana)**: Stand tall with your feet hip-width apart. Engage your leg muscles, tuck your tailbone slightly, and lift through the crown of your head. Focus on your breath, feeling grounded and stable.\n   - **Tree Pose (Vrksasana)**: Stand on one leg, place the sole of your other foot on the inner thigh or calf, avoiding the knee. Find balance and focus on a point in front of you. Imagine yourself as a tree, strong and resilient.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "**Heart-Opening Poses**: To foster compassion and openness to environmental issues.",
+  "Card Description": "'- **Camel Pose (Ustrasana)**: Kneel on the floor with your knees hip-width apart, place your hands on your lower back or heels, and gently arch your back, lifting your heart.\n   - **Bridge Pose (Setu Bandhasana)**: Lie on your back, bend your knees, and place your feet on the floor. Lift your hips upwards, clasp your hands underneath you, and expand your chest.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "**Restorative Poses**: These poses help in reducing stress and fostering a sense of surrender and acceptance.",
+  "Card Description": "'- **Childâ€™s Pose (Balasana)**: Kneel on the floor, sit back on your heels, and stretch your arms forward, resting your forehead on the ground.\n   - **Legs-Up-the-Wall Pose (Viparita Karani)**: Lie on your back with your legs resting vertically on a wall. Close your eyes and relax with your arms by your sides.\n\n### Meditation Steps",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "**Mindful Breathing**: Begin with simple breath awareness.",
+  "Card Description": "'- Sit comfortably, close your eyes, and take deep breaths in and out. Focus on your breath as it enters and leaves your body. This can help calm the mind and reduce feelings of anxiety.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "**Nature Visualization**: Connect with nature mentally.",
+  "Card Description": "'- Imagine yourself in a natural setting, such as a forest or a beach. Visualize the sights, sounds, and smells, and imagine yourself being nourished by nature. This can evoke a sense of peace and connection to the environment.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "**Loving-Kindness Meditation (Metta)**: To cultivate compassion for yourself and the earth.",
+  "Card Description": "'- Begin by sending wishes of well-being to yourself, then gradually extend these wishes to the earth and all its inhabitants. Repeat phrases like â€œMay I be happy,â€ â€œMay the earth be at peace.â€",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "**Gratitude Practice**: Reflect on the positive aspects of the environment.",
+  "Card Description": "'- Spend a few moments thinking about natural elements you are grateful for, such as sunlight, clean air, or green spaces. This can help shift focus from stress to appreciation.\n\n### Integration into Daily Life\n- Start with short practices and gradually increase the duration as you become more comfortable.\n- Incorporate mindful walks in nature, allowing yourself to connect with your surroundings.\n- Create a sustainable environment around you, however small, to reinforce your commitment to environmental well-being.\n\nThese yoga and meditation practices can help cultivate mental resilience and a deeper connection to the environment, fostering both personal well-being and a conscious awareness of ecological issues.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Grounding Poses**: These can help you feel more connected and stable.",
+  "Card Description": "'- **Mountain Pose (Tadasana)**: Stand tall with your feet together or hip-width apart, grounding through your feet. Let your arms rest alongside your body. Focus on your breath.\n   - **Tree Pose (Vrksasana)**: Stand on one leg and place the opposite foot on the inner thigh or calf of the standing leg. Balance and reach your arms overhead.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Calming Poses**: To reduce anxiety and stress.",
+  "Card Description": "'- **Childâ€™s Pose (Balasana)**: Kneel on the floor, sit back on your heels, and bend forward, stretching your arms out in front of you.\n   - **Cat-Cow Stretch (Marjaryasana-Bitilasana)**: On all fours, alternate between arching your back (Cow) and rounding your back (Cat).\n   - **Legs-Up-the-Wall Pose (Viparita Karani)**: Lie on your back with your legs resting up a wall. This pose can help reverse the effects of gravity and promote relaxation.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Heart-Opening Poses**: Invite positivity and energy.",
+  "Card Description": "'- **Cobra Pose (Bhujangasana)**: Lie on your stomach and place your hands under your shoulders. Gently lift your head and chest off the ground.\n   - **Bridge Pose (Setu Bandhasana)**: Lie on your back with your knees bent and feet flat on the floor. Lift your hips upward, keeping your shoulders grounded.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Restorative Practices**: These can deeply relax the body and mind.",
+  "Card Description": "'- **Savasana (Corpse Pose)**: Lie on your back, legs extended, arms at your sides. Close your eyes and breathe naturally. Focus on releasing tension from each part of your body.\n\n### Meditation Practices for Environmental Anxiety",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Mindfulness Meditation**: Focus on the present moment.",
+  "Card Description": "'- Sit comfortably and bring your attention to your breath. Notice the sensation of inhaling and exhaling. When your mind wanders, gently bring your focus back to your breath.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Loving-Kindness Meditation (Metta Bhavana)**: Cultivate compassion.",
+  "Card Description": "'- Close your eyes, take deep breaths, and silently repeat phrases like \"May I be safe, may I be happy, may I be healthy, may I live with ease.\" Extend these wishes to others and the planet itself.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Visualization Meditation**: Positive visualization.",
+  "Card Description": "'- Imagine a healthy, thriving planet. Visualize clear skies, clean water, and vibrant ecosystems. Hold this positive image in your mind, reinforcing your hope and commitment to environmental wellness.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Environment Issues affecting mental wellbeing",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Nature Meditation**: Practice outdoors if possible.",
+  "Card Description": "'- Sit in a natural setting and engage all your senses. Listen to the sounds of nature, feel the breeze, observe the colors, and breathe in any natural scents.\n\n### General Tips\n\n- **Consistency**: Regular practice enhances benefits. Even a few minutes daily can be transformative.\n- **Integration**: Combine these practices with eco-friendly actions, which can provide a sense of empowerment and connection.\n- **Community**: Join like-minded groups or classes to share experiences and foster support.\n\nIncorporating these yoga and meditation practices can help manage mental wellbeing issues brought on by environmental concerns, fostering a sense of peace and resilience.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Savasana (Corpse Pose)",
+  "Card Description": "'### Meditation for Family and Relationships",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "1. Loving-Kindness Meditation (Metta)",
+  "Card Description": "'- This meditation promotes compassion and understanding. Start by focusing on yourself, and then extend feelings of love and kindness to family members, even those with whom you might have conflict.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Steps",
+  "Card Description": "'- Sit comfortably and close your eyes.\n   - Take a few deep breaths.\n   - Repeat silently: â€œMay I be happy, may I be well, may I be safe, may I be peaceful and at ease.â€\n   - Gradually extend these wishes to family members: â€œMay you be happy, may you be well...â€",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "2. Mindfulness Meditation",
+  "Card Description": "'- Focus on being present, which can help you respond more calmly and thoughtfully in family situations.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Steps",
+  "Card Description": "'- Sit comfortably and focus on your breath.\n   - When thoughts arise, observe them without judgment and let them pass.\n   - Bring your attention back to your breath.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "3. Gratitude Meditation",
+  "Card Description": "'- This practice helps cultivate an appreciation for your family and relationships, even during challenging times.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Steps",
+  "Card Description": "'- Sit quietly and think of things you are grateful for in your family.\n   - Visualize each person, thinking of positive interactions or qualities.\n   - Allow feelings of gratitude to fill your heart.\n\n### Practical Tips",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Group Practice",
+  "Card Description": "'Remember, change takes time and patience. Regular practice can lead to improved communication, empathy, and a more harmonious family dynamic.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Communication",
+  "Card Description": "'- **How it works**: Open, honest communication helps build trust and prevents misunderstandings.\n   - **Example**: A family sets aside time every week for a family meeting where everyone shares updates and discusses any concerns.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Quality Time",
+  "Card Description": "'- **How it works**: Spending meaningful time together strengthens bonds and creates lasting memories.\n   - **Example**: A couple decides to have a no-phone dinner every Saturday where they cook together and discuss their week.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Active Listening",
+  "Card Description": "'- **How it works**: Truly listening to others makes them feel valued and understood.\n   - **Example**: When a teenager wants to talk about their day, the parent puts away their phone and maintains eye contact, responding thoughtfully.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Respect for Boundaries",
+  "Card Description": "'- **How it works**: Honoring personal boundaries fosters respect and reduces conflict.\n   - **Example**: A family respects their teen's privacy by allowing them to spend time alone in their room after school.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Shared Responsibilities",
+  "Card Description": "'- **How it works**: Dividing chores and responsibilities helps everyone feel they are part of the team.\n   - **Example**: A family creates a rotating chores schedule so everyone contributes to household tasks.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Support and Encouragement",
+  "Card Description": "'- **How it works**: Offering support and cheering each other on promotes confidence and resilience.\n   - **Example**: A sibling attends their brotherâ€™s sports event, cheering him on regardless of the outcome.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Conflict Resolution Skills",
+  "Card Description": "'- **How it works**: Learning to resolve conflicts constructively keeps relationships healthy.\n   - **Example**: When a disagreement arises, a couple sits down to discuss their perspectives using \"I\" statements to express feelings without assigning blame.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Expressing Gratitude",
+  "Card Description": "'- **How it works**: Regularly expressing appreciation strengthens relationships and boosts morale.\n   - **Example**: A parent thanks their child for helping with dinner, emphasizing how much they value their effort and contribution.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Flexibility and Adaptability",
+  "Card Description": "'- **How it works**: Being open to change and compromising prevents rigidity and promotes joint problem-solving.\n   - **Example**: During a family road trip, plans change due to weather, and everyone cooperates to find alternative activities.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Family and Relaitonship",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Creating Traditions",
+  "Card Description": "'- **How it works**: Traditions provide stability and a sense of identity, bonding family members over shared experiences.\n   - **Example**: A family celebrates a movie night every Friday, taking turns choosing a film, making popcorn, and creating their own family cinema tradition.\n\nBy incorporating these suggestions into daily life, families and relationships can grow stronger, more resilient, and more fulfilling for everyone involved.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Set an Intention (Sankalpa)",
+  "Card Description": "'- Start by setting a positive intention related to your financial well-being. This could be something like \"I am calm and prudent with my financial decisions.\"",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Deep Breathing (Pranayama)",
+  "Card Description": "'- Practice deep belly breathing to calm your mind.\n   - Try alternate nostril breathing (Nadi Shodhana) to balance your energy.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Grounding Poses",
+  "Card Description": "'- **Tadasana (Mountain Pose)**: Stand tall and focus on stability and grounding, promoting confidence.\n   - **Vrksasana (Tree Pose)**: Balance on one foot to cultivate focus and mindfulness.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Stress-Relief Poses",
+  "Card Description": "'- **Balasana (Childâ€™s Pose)**: Restful pose that encourages surrender and relaxation.\n   - **Sukhasana (Easy Pose) with forward bend**: Encourages introspection and calm.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Heart-Opening Poses",
+  "Card Description": "'- **Ustrasana (Camel Pose)**: Stimulate the heart chakra and foster openness to change and abundance.\n   - **Setu Bandhasana (Bridge Pose)**: Opens the chest and reduces anxiety and stress.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Relaxation",
+  "Card Description": "'- **Savasana (Corpse Pose)**: End with a relaxation pose to integrate the benefits of the practice and promote deep relaxation.\n\n### Meditation Practices",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Mindfulness Meditation",
+  "Card Description": "'- Sit comfortably and focus on your breath. Allow thoughts related to money stress to come and go without judgment.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Guided Visualization",
+  "Card Description": "'- Visualize achieving your financial goals. Picture yourself managing your finances successfully and feeling secure.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Loving-Kindness Meditation (Metta)",
+  "Card Description": "'- Cultivate kindness towards yourself first, then extend it to others. Include financial worries and offer compassion to yourself.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Gratitude Practice",
+  "Card Description": "'- Spend a few minutes daily reflecting on what youâ€™re grateful for, including non-material wealth.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Body Scan",
+  "Card Description": "'- Check in with different parts of your body to release tension and cultivate deep relaxation and awareness.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Financial Mental Health",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Affirmations",
+  "Card Description": "'- Repeat affirmations related to financial abundance and safety to reinforce a positive mindset.\n\n### Additional Tips\n\n- **Consistency**: Make yoga and meditation a regular part of your routine to experience cumulative benefits.\n- **Environment**: Create a calming space for your practices to limit distractions.\n- **Journaling**: Combine these practices with journaling to reflect on your experiences and growth over time.\n- **Seek Guidance**: Consider attending classes or using apps to find guided sessions if youâ€™re new to yoga and meditation.\n\nRemember, the aim is to integrate these practices into your daily life to reduce stress, improve mental resilience, and foster a healthier relationship with your finances.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Privacy Settings Management",
+  "Card Description": "'- **Example**: Regularly check and update your privacy settings on platforms like Facebook or Instagram to control who can see your posts. This can prevent unwanted sharing of personal information.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Two-Factor Authentication (2FA)",
+  "Card Description": "'- **Example**: Enable 2FA on your accounts such as Google or Twitter. This adds an extra layer of security by requiring a verification code sent to your phone in addition to your password when logging in.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Awareness of Phishing Attacks",
+  "Card Description": "'- **Example**: Be cautious of emails or messages that ask for personal information or direct you to click on suspicious links. Legitimate companies typically do not ask for sensitive information this way.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Content Moderation and Reporting",
+  "Card Description": "'- **Example**: If you encounter harassment or inappropriate content on platforms like Reddit or YouTube, use the platform's tools to report it. This helps maintain a safe online environment.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Time Management and Screen Time",
+  "Card Description": "'- **Example**: Use apps or built-in smartphone features that monitor and limit social media usage to ensure a healthy balance. This can help prevent addiction and overuse.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Educating on Digital Literacy",
+  "Card Description": "'- **Example**: Attend webinars or read articles on digital literacy to understand how to discern credible sources from misinformation. This skill is crucial in navigating social media effectively.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Ad Personalization and Tracking Control",
+  "Card Description": "'- **Example**: Adjust your ad preferences on platforms like Google or Facebook to limit the amount of targeted advertising you receive. This can help protect your privacy.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Parental Controls and Supervision",
+  "Card Description": "'- **Example**: Utilize parental control settings on platforms like YouTube Kids to ensure children only access age-appropriate content, protecting them from harmful material.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Platform-Specific Communities and Support",
+  "Card Description": "'- **Example**: Join online forums or communities specific to social media platforms, such as Facebook groups or Reddit threads, for support and advice on platform-specific issues.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Internet and Social Media Issue",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Regular Software and Security Updates",
+  "Card Description": "'- **Example**: Keep your devices and applications up to date by installing the latest updates. Platforms like Zoom and WhatsApp frequently update to patch security vulnerabilities.\n\nBy implementing these suggestions, users can navigate internet and social media platforms more safely and effectively.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Enhance Communication",
+  "Card Description": "'- **Example**: Set aside time to discuss desires, boundaries, and preferences with your partner openly. This might include having a weekly \"relationship check-in\" where you both share what you enjoy and any new things you'd like to try.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Experiment and Try New Things",
+  "Card Description": "'- **Example**: Explore new positions, locations, or activities to keep the experience exciting. You might decide to try an online intimacy challenge or use a guide from a reputable source to learn about different techniques together.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Prioritize Intimacy",
+  "Card Description": "'- **Example**: Schedule regular date nights or intimate evenings without distractions. You might set a rule to switch off digital devices after a certain time to focus on each other.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Mindfulness and Being Present",
+  "Card Description": "'- **Example**: Practice being present during intimate moments by focusing on the sensations and emotions without letting your mind wander. You can incorporate mindfulness exercises or deep breathing before and during intimate times.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Healthy Lifestyle",
+  "Card Description": "'- **Example**: Maintain a healthy diet and regular exercise routine to boost energy levels and enhance mood. Activities like yoga or partner workouts can also increase physical and emotional connection.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Education and Knowledge",
+  "Card Description": "'- **Example**: Read books or attend workshops on sexual health and techniques to improve your understanding and skills. Consider resources like online courses or webinars dedicated to enhancing sexual health.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Manage Stress",
+  "Card Description": "'- **Example**: Incorporate stress-reducing activities like meditation, yoga, or couple massages. You might start a daily practice of meditating together or taking turns giving each other massages.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Seek Professional Help",
+  "Card Description": "'- **Example**: If there are persistent issues, consider couples therapy or seeing a sex therapist. Professionals can offer strategies to work through sexual concerns or communication barriers.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Focus on Emotional Connection",
+  "Card Description": "'- **Example**: Engage in activities that strengthen your emotional bond, such as sharing hobbies, or embarking on new adventures. This could involve taking a class together or planning regular weekend getaways.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Sex Life",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Maintain Self-Care",
+  "Card Description": "'- **Example**: Take time for individual self-care, ensuring that you both feel confident and fulfilled. Encourage each other to pursue personal interests or engage in relaxing activities that boost self-esteem.\n\nEach of these suggestions can be adapted to fit your relationship dynamics and personal needs. Remember that improvement takes time and effort from both partners, and open, honest communication is key.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Exercise Regularly",
+  "Card Description": "'- **How it works**: Physical activity increases the production of endorphins, brain chemicals that act as natural painkillers and mood elevators.\n   - **Example**: Taking a 30-minute brisk walk in a nearby park or participating in a yoga class three times a week.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Practice Mindfulness and Meditation",
+  "Card Description": "'- **How it works**: Mindfulness and meditation help focus the mind, reduce negative emotions, and improve concentration.\n   - **Example**: Spending 10 minutes daily on guided meditation using an app like Headspace or Calm.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Establish a Healthy Sleep Routine",
+  "Card Description": "'- **How it works**: Adequate sleep helps the body recover and improves mood and cognitive function.\n   - **Example**: Going to bed at the same time each night and engaging in a relaxing pre-sleep routine such as reading or taking a warm bath.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Eat a Balanced Diet",
+  "Card Description": "'- **How it works**: Proper nutrition supports energy levels and overall well-being, which can influence stress levels.\n   - **Example**: Incorporating more fruits, vegetables, lean proteins, and whole grains into meals, while reducing caffeine and sugary snacks.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Seek Social Support",
+  "Card Description": "'- **How it works**: Connecting with friends and family provides emotional support and can help alleviate stress.\n   - **Example**: Regularly scheduling video calls with loved ones or joining a local community group.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Manage Time Effectively",
+  "Card Description": "'- **How it works**: Better time management reduces the feeling of being overwhelmed and helps prioritize important tasks.\n   - **Example**: Using a planner or digital app to organize tasks and set realistic goals for each day.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Engage in Hobbies or Leisure Activities",
+  "Card Description": "'- **How it works**: Engaging in activities you enjoy can distract from stress and foster relaxation.\n   - **Example**: Dedicating time to gardening, painting, playing music, or other favorite pastimes.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Practice Deep Breathing and Relaxation Techniques",
+  "Card Description": "'- **How it works**: Deep breathing and progressive muscle relaxation can calm the nervous system.\n   - **Example**: Practicing the 4-7-8 breathing technique: inhale for 4 seconds, hold for 7 seconds, and exhale for 8 seconds, several times a day.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Limit Exposure to Stress Triggers",
+  "Card Description": "'- **How it works**: Identifying and reducing exposure to stressors can prevent stress before it starts.\n   - **Example**: Setting boundaries on work hours or limiting time spent on social media.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Stress",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Consider Professional Help When Needed",
+  "Card Description": "'- **How it works**: Therapists and counselors can provide strategies for managing stress and underlying issues.\n   - **Example**: Scheduling regular sessions with a licensed therapist to explore stress management techniques tailored to individual needs.\n\nImplementing these strategies can contribute to a healthier, more balanced lifestyle and reduce stress levels effectively.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "**Consult with a Professional**: Before starting any new practice, especially if mental health issues are a concern, consult with a healthcare provider or therapist to ensure it complements your current treatment plan.",
+  "Card Description": "'",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "Start with Breathing Exercises",
+  "Card Description": "'- **Deep Breathing (Pranayama)**: Focus on slow, deep breaths. Inhale deeply through the nose, allowing your belly to expand, then exhale slowly through the mouth. This can help calm the nervous system.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "Gentle Yoga Poses",
+  "Card Description": "'- **Childâ€™s Pose (Balasana)**: A resting pose that can help calm the mind and alleviate stress.\n   - **Cat-Cow Stretch (Marjaryasana-Bitilasana)**: This gentle movement can help release tension in the spine and promote relaxation.\n   - **Legs-Up-The-Wall Pose (Viparita Karani)**: This restorative pose can be very calming and is often used to reduce anxiety and stress.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "Guided Meditation",
+  "Card Description": "'- Consider starting with short, guided meditations that focus on grounding and mindfulness. Apps like Headspace or Calm offer free resources.\n   - Focus on body awareness, feeling each part of the body as you relax.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "Mindfulness Practices",
+  "Card Description": "'- Practice being present in the moment through mindful observation (e.g., noticing your surroundings, sounds, textures, etc.).",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "Gratitude Journaling",
+  "Card Description": "'- Write down a few things each day that you are grateful for, no matter how small. This can shift focus towards positive aspects of life.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "Create a Safe Space",
+  "Card Description": "'- Practice yoga and meditation in a peaceful environment where you feel safe and comfortable.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "Community Support",
+  "Card Description": "'- Join a local or online yoga class or meditation group to foster a sense of community and support.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Yoga And Meditation Techniques",
+  "Card Title": "Regular Practice",
+  "Card Description": "'- Consistency can be key. Even a few minutes each day can be beneficial.\n\nWhile these steps can aid in cultivating mindfulness and reducing stress, professional support is crucial for anyone dealing with suicidal behavior. If you or someone you know is in crisis, please reach out to a helpline or mental health professional immediately.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "suicidal behavior",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "chat_Relaxation",
+  "Card Description": "'I'm really sorry to hear that you are or someone you know is feeling this way. It's important to talk to someone who can provide support, like a mental health professional or a helpline.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Peer Pressure",
+  "Card Description": "'- **Suggestion**: Encourage critical thinking and self-awareness.\n   - **Example**: If friends are pressuring you to try smoking, weigh the pros and cons, remember your values, and assertively say, \"I choose not to smoke because I care about my health.\"",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Academic Stress",
+  "Card Description": "'- **Suggestion**: Practice time management and relaxation techniques.\n   - **Example**: Create a study schedule to break up tasks, and incorporate breaks to do things you enjoy, like playing a sport or reading a book.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Bullying",
+  "Card Description": "'- **Suggestion**: Build a supportive network and report incidents.\n   - **Example**: Confide in a trusted teacher or counselor about bullying and seek support from friends who value and respect you.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Identity and Self-Esteem",
+  "Card Description": "'- **Suggestion**: Explore interests and recognize personal strengths.\n   - **Example**: If you're feeling uncertain about your identity, try new activities like art or sports, and focus on achievements and positive qualities.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Body Image Issues",
+  "Card Description": "'- **Suggestion**: Embrace body positivity and focus on health.\n   - **Example**: Follow social media that promotes positive body image and practice gratitude for body functions, like being able to run or dance.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Relationship Challenges",
+  "Card Description": "'- **Suggestion**: Establish boundaries and communicate effectively.\n   - **Example**: In a romantic relationship, discuss what makes you comfortable or uncomfortable, saying, â€œI feel better when we talk about our feelings openly.â€",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Digital Addiction",
+  "Card Description": "'- **Suggestion**: Set boundaries on screen time.\n   - **Example**: Use apps to monitor and limit time spent on social media, and designate \"tech-free\" times during meals or before bed.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Future Uncertainty",
+  "Card Description": "'- **Suggestion**: Focus on setting short-term goals.\n   - **Example**: Instead of worrying about long-term career choices, set goals like joining a club or improving a skill that can lead to new opportunities.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Family Conflicts",
+  "Card Description": "'- **Suggestion**: Practice active listening and empathy.\n   - **Example**: During arguments with parents, try to understand their perspective by saying, â€œI hear that youâ€™re concerned about my grades, let's find a solution together.â€",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Primary",
+  "Intervention Sub Type": "10 Common Suggestions",
+  "Card Title": "Financial Literacy",
+  "Card Description": "'- **Suggestion**: Learn basic budgeting and saving skills.\n    - **Example**: Create a simple budget by listing income sources like allowance and track expenses, then decide on savings goals like buying a new gadget or a gift for a friend.\n\nBy providing these specific examples, young people can better relate to and implement the suggestions in their daily lives, promoting resilience and growth.",
+  "Xp": 2
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Warm-Up Routine",
+  "Card Description": "'- Start with gentle stretching to prepare the body.\n   - Perform neck rolls, shoulder rolls, and wrist rotations to release tension.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Sun Salutations (Surya Namaskar)",
+  "Card Description": "'- Perform a few rounds of Sun Salutations to energize the body and focus the mind.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Specific Asanas (Postures)",
+  "Card Description": "'- **Tree Pose (Vrksasana)**: Enhances balance and concentration.\n   - **Cat-Cow Stretch (Marjaryasana-Bitilasana)**: Flexes the spine and relieves tension.\n   - **Childâ€™s Pose (Balasana)**: Provides a sense of calm and relaxation.\n   - **Warrior I & II (Virabhadrasana I & II)**: Builds strength, endurance, and confidence.\n   - **Seated Forward Bend (Paschimottanasana)**: Calms the mind, stretches the spine and hamstrings.\n   - **Legs Up the Wall (Viparita Karani)**: Relieves stress and promotes circulation.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Cool Down",
+  "Card Description": "'- Perform simple relaxation postures like Savasana (Corpse Pose) to relax the body.\n\n### Meditation for Youngster Issues",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Breathing Exercises (Pranayama)",
+  "Card Description": "'- **Diaphragmatic Breathing**: Promotes relaxation by deepening and slowing down the breath.\n   - **Alternate Nostril Breathing (Nadi Shodhana)**: Balances the nervous system.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Mindfulness Meditation",
+  "Card Description": "'- Practice staying present by focusing on the breath or body sensations.\n   - Encourage youngsters to observe thoughts without judgment.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Guided Imagery",
+  "Card Description": "'- Use visualizations to create a sense of peace and security.\n   - Guide them to imagine a safe, happy place where they feel relaxed.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Loving-Kindness Meditation (Metta Bhavana)",
+  "Card Description": "'- Cultivate compassion by silently repeating phrases wishing well to oneself and others.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "Body Scan Meditation",
+  "Card Description": "'- Encourage awareness by mentally scanning the body for tension, releasing it through focus.",
+  "Xp": 5
+ },
+ {
+  "Issue Name": "Youngster Issues",
+  "Intervention Type": "Secondary",
+  "Intervention Sub Type": "Relaxation",
+  "Card Title": "**Gratitude Journaling** (complementary practice)",
+  "Card Description": "'- Encourage daily journaling of things they are grateful for, which can enhance positivity and well-being.\n\n### Additional Tips\n\n- **Consistency**: Encourage routine practice to gain lasting benefits.\n- **Environment**: Create a calming space for practice, free from distractions.\n- **Approach**: Be supportive and open, allowing youngsters to express feelings and thoughts.\n- **Professional Guidance**: If issues persist, consider consulting mental health professionals for additional support.\n\nImplementing these techniques can help address various issues that youngsters face, such as anxiety, stress, and difficulty focusing, by improving mental clarity, emotional resilience, and physical health.",
+  "Xp": 5
+ },
+ {
+  "Xp": 5
+ },
+ {
+  "Xp": 5
+ }
+]

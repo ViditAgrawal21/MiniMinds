@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "condition": "financial-mental-health",
+    "intervention_type": "Relaxation",
+    "source_files": [
+      "thought_pro_filtered.json",
+      "thought_pro_with_extracted_final.json",
+      "Thought_pro_remaining.json"
+    ],
+    "created_from": "thought_pro_filtered.json, thought_pro_with_extracted_final.json, and Thought_pro_remaining.json",
+    "total_interventions": 12,
+    "creation_date": "2024-12-28"
+  },
+  "interventions": [
+    {
+      "title": "Set an Intention (Sankalpa)",
+      "description": "- Start by setting a positive intention related to your financial well-being. This could be something like \"I am calm and prudent with my financial decisions.\"",
+      "xp": 5
+    },
+    {
+      "title": "Deep Breathing (Pranayama)",
+      "description": "- Practice deep belly breathing to calm your mind.\n   - Try alternate nostril breathing (Nadi Shodhana) to balance your energy.",
+      "xp": 5
+    },
+    {
+      "title": "Grounding Poses",
+      "description": "- **Tadasana (Mountain Pose)**: Stand tall and focus on stability and grounding, promoting confidence.\n   - **Vrksasana (Tree Pose)**: Balance on one foot to cultivate focus and mindfulness.",
+      "xp": 5
+    },
+    {
+      "title": "Stress-Relief Poses",
+      "description": "- **Balasana (Childâ€™s Pose)**: Restful pose that encourages surrender and relaxation.\n   - **Sukhasana (Easy Pose) with forward bend**: Encourages introspection and calm.",
+      "xp": 5
+    },
+    {
+      "title": "Heart-Opening Poses",
+      "description": "- **Ustrasana (Camel Pose)**: Stimulate the heart chakra and foster openness to change and abundance.\n   - **Setu Bandhasana (Bridge Pose)**: Opens the chest and reduces anxiety and stress.",
+      "xp": 5
+    },
+    {
+      "title": "Relaxation",
+      "description": "- **Savasana (Corpse Pose)**: End with a relaxation pose to integrate the benefits of the practice and promote deep relaxation.\n\n### Meditation Practices",
+      "xp": 5
+    },
+    {
+      "title": "Mindfulness Meditation",
+      "description": "- Sit comfortably and focus on your breath. Allow thoughts related to money stress to come and go without judgment.",
+      "xp": 5
+    },
+    {
+      "title": "Guided Visualization",
+      "description": "- Visualize achieving your financial goals. Picture yourself managing your finances successfully and feeling secure.",
+      "xp": 5
+    },
+    {
+      "title": "Loving-Kindness Meditation (Metta)",
+      "description": "- Cultivate kindness towards yourself first, then extend it to others. Include financial worries and offer compassion to yourself.",
+      "xp": 5
+    },
+    {
+      "title": "Gratitude Practice",
+      "description": "- Spend a few minutes daily reflecting on what youâ€™re grateful for, including non-material wealth.",
+      "xp": 5
+    },
+    {
+      "title": "Body Scan",
+      "description": "- Check in with different parts of your body to release tension and cultivate deep relaxation and awareness.",
+      "xp": 5
+    },
+    {
+      "title": "Affirmations",
+      "description": "- Repeat affirmations related to financial abundance and safety to reinforce a positive mindset.\n\n### Additional Tips\n\n- **Consistency**: Make yoga and meditation a regular part of your routine to experience cumulative benefits.\n- **Environment**: Create a calming space for your practices to limit distractions.\n- **Journaling**: Combine these practices with journaling to reflect on your experiences and growth over time.\n- **Seek Guidance**: Consider attending classes or using apps to find guided sessions if youâ€™re new to yoga and meditation.\n\nRemember, the aim is to integrate these practices into your daily life to reduce stress, improve mental resilience, and foster a healthier relationship with your finances.",
+      "xp": 5
+    }
+  ]
+}

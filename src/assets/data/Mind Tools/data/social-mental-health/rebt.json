@@ -1,0 +1,101 @@
+{
+  "condition": "Social Mental Health",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify and Challenge Catastrophic Thinking",
+      "Description": "'- **Why it helps:** Catastrophic thinking leads to heightened anxiety and stress, impairing social interactions.\n   - **What to do:** Recognize when you're predicting the worst-case scenario in social situations and ask yourself if it's a rational probability.\n   - **Example:** If you believe that everyone will judge you negatively at a party, challenge this belief by considering past experiences where people were friendly or indifferent.",
+      "XP": 7,
+      "Journal Template": "Questions to Answer\nQuestion 1 What is the worst-case scenario I'm predicting in this situation? (Automatic Thoughts/Predictions)\nQuestion 2 How likely is this worst-case scenario? (Belief 0-100%)\nQuestion 3 What evidence do I have that supports this thought? (Evidence That Supports the Thought)\nQuestion 4 What evidence do I have that does not support this thought? (Evidence That Does Not Support the Thought)\nQuestion 5 Is there a more balanced way to think about this situation? (Balanced Thought)\nQuestion 6 How does this balanced thought make me feel? (Mood 0-100%)",
+      "extracted_value": "Questions to Answer\nQuestion 1 What is the worst-case scenario I'm predicting in this situation? (Automatic Thoughts/Predictions)\nQuestion 2 How likely is this worst-case scenario? (Belief 0-100%)\nQuestion 3 What evidence do I have that supports this thought? (Evidence That Supports the Thought)\nQuestion 4 What evidence do I have that does not support this thought? (Evidence That Does Not Support the Thought)\nQuestion 5 Is there a more balanced way to think about this situation? (Balanced Thought)\nQuestion 6 How does this balanced thought make me feel? (Mood 0-100%)"
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reframe Your Internal Critics",
+      "Description": "'- **Why it helps:** Negative self-talk can lead to a lack of confidence and increased fear in social interactions.\n   - **What to do:** Counteract critical thoughts with positive affirmations and evidence that contradicts these negative beliefs.\n   - **Example:** Replace thoughts like \"I'm awkward\" with \"I can have interesting conversations and be myself.\"",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the negative thought I'm experiencing today?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What evidence do I have that contradicts this negative belief?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What positive affirmation can I use to replace this negative thought?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How does this positive affirmation make me feel?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"Can I think of a time when I successfully handled a similar situation?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How can I apply this positive affirmation to my daily life?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What is the negative thought I'm experiencing today?\n\n\nWhat evidence do I have that contradicts this negative belief?\n\n\nWhat positive affirmation can I use to replace this negative thought?\n\n\nHow does this positive affirmation make me feel?\n\n\nCan I think of a time when I successfully handled a similar situation?\n\n\nHow can I apply this positive affirmation to my daily life?\n\n"
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Dispute All-Or-Nothing Thinking",
+      "Description": "'- **Why it helps:** Viewing social interactions as black or white can limit your experiences and perceptions.\n   - **What to do:** Identify when you're engaging in all-or-nothing thinking and find the gray areas or the middle ground.\n   - **Example:** Instead of thinking \"If one person doesn’t like me, no one will,\" remind yourself that most social circles appreciate diversity in personalities.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"Did I engage in all-or-nothing thinking today?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What specific situation triggered this thinking?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"How did I feel when I was thinking in all-or-nothing terms?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What are some alternative perspectives or gray areas in this situation?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can I reframe my thoughts to include more nuance and balance?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What evidence do I have that supports my all-or-nothing thinking?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What evidence do I have that contradicts my all-or-nothing thinking?\",\n    \"xp\": 6\n  }\n]",
+      "extracted_value": "Did I engage in all-or-nothing thinking today?\n\n\nWhat specific situation triggered this thinking?\n\n\nHow did I feel when I was thinking in all-or-nothing terms?\n\n\nWhat are some alternative perspectives or gray areas in this situation?\n\n\nHow can I reframe my thoughts to include more nuance and balance?\n\n\nWhat evidence do I have that supports my all-or-nothing thinking?\n\n\nWhat evidence do I have that contradicts my all-or-nothing thinking?\n\n"
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Use Reality Testing",
+      "Description": "'- **Why it helps:** Helps distinguish between perceived threats and actual social dynamics.\n   - **What to do:** Gather evidence to support or disprove your beliefs about social interactions.\n   - **Example:** If you fear being ignored, encourage yourself to notice when others respond positively to your presence or initiation.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Situation\": \"\",\n  \"Thought\": \"\",\n  \"Emotion\": \"\",\n  \"Evidence\": \"\",\n  \"Reality Check\": \"\",\n  \"Conclusion\": \"\",\n  \"Questions to Answer:\": [\n    \"What is the specific situation that triggered this thought?\",\n    \"Is there any evidence to support this thought?\",\n    \"Is there any evidence to contradict this thought?\",\n    \"How might others perceive this situation differently?\",\n    \"What would happen if I acted on this thought?\"\n  ]\n}",
+      "extracted_value": "What is the specific situation that triggered this thought?\nIs there any evidence to support this thought?\nIs there any evidence to contradict this thought?\nHow might others perceive this situation differently?\nWhat would happen if I acted on this thought?"
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Address Should/Must Statements",
+      "Description": "'- **Why it helps:** These self-imposed demands can create unnecessary pressure and guilt.\n   - **What to do:** Convert should/must statements into preferences and desires.\n   - **Example:** Instead of \"I must make everyone happy,\" think \"I’d prefer to have positive interactions but it's okay if not everyone reacts positively.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"question\": \"Identify a recent situation where you used a 'should' or 'must' statement.\",\n  \"xp\": 5\n}",
+      "extracted_value": "Identify a recent situation where you used a 'should' or 'must' statement."
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Accept Imperfections",
+      "Description": "'- **Why it helps:** Perfectionism can hinder forming genuine connections, as it leads to self-consciousness.\n   - **What to do:** Acknowledge your flaws and mistakes as a natural part of being human.\n   - **Example:** If you make a conversational mistake, reframe it as a learning experience rather than a reason for shame.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"actions\": \"\",\n  \"reframedThoughts\": \"\",\n  \"reframedFeelings\": \"\",\n  \"questionsToAnswer\": [\n    {\n      \"question\": \"What was the situation where I felt the need to be perfect?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What were my thoughts about this situation?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did I feel in this situation?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What actions did I take in response to these thoughts and feelings?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How can I reframe these thoughts to accept imperfections?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How do I feel after reframing these thoughts?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "What was the situation where I felt the need to be perfect?\n\n\nWhat were my thoughts about this situation?\n\n\nHow did I feel in this situation?\n\n\nWhat actions did I take in response to these thoughts and feelings?\n\n\nHow can I reframe these thoughts to accept imperfections?\n\n\nHow do I feel after reframing these thoughts?\n\n"
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Develop Assertiveness Skills",
+      "Description": "'- **Why it helps:** Being assertive strengthens communication and establishes respectful boundaries.\n   - **What to do:** Practice expressing your thoughts and feelings honestly while respecting others.\n   - **Example:** If someone interrupts you, calmly say, \"I’d like to finish my point before we switch topics.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"event\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"actions\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What situation did I encounter today that required assertiveness?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How did I feel during the situation?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What did I do to address the situation assertively?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Were there any thoughts or feelings that made it difficult for me to be assertive?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What would I do differently next time to improve my assertiveness?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How did the other person respond to my assertive communication?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"Did expressing myself assertively lead to a positive outcome? If so, what was it?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"Are there any situations in the future where I need to practice assertiveness? If so, describe them.\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "What situation did I encounter today that required assertiveness?\n\n\nHow did I feel during the situation?\n\n\nWhat did I do to address the situation assertively?\n\n\nWere there any thoughts or feelings that made it difficult for me to be assertive?\n\n\nWhat would I do differently next time to improve my assertiveness?\n\n\nHow did the other person respond to my assertive communication?\n\n\nDid expressing myself assertively lead to a positive outcome? If so, what was it?\n\n\nAre there any situations in the future where I need to practice assertiveness? If so, describe them.\n\n"
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on Accepting Uncertainty",
+      "Description": "'- **Why it helps:** Reduces the anxiety of needing certainty in how every social encounter will unfold.\n   - **What to do:** Embrace uncertainty as an opportunity for new experiences and learning.\n   - **Example:** Before meeting new people, remind yourself that it’s okay not to control every interaction's outcome.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"uncertaintySituation\": \"\",\n  \"thoughts\": [\n    {\n      \"question\": \"What am I thinking about in this situation?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Is my thinking based on a need for certainty?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Can I reframe my thoughts to see uncertainty as an opportunity for new experiences and learning?\",\n      \"xp\": 7\n    }\n  ],\n  \"feelings\": [\n    {\n      \"question\": \"How am I feeling about this situation?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Is my anxiety related to needing certainty in this situation?\",\n      \"xp\": 6\n    }\n  ],\n  \"actions\": [\n    {\n      \"question\": \"What can I do to focus on the present moment and accept uncertainty in this situation?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"Can I remind myself that it\\u2019s okay not to control every interaction's outcome?\",\n      \"xp\": 9\n    }\n  ],\n  \"reflections\": [\n    {\n      \"question\": \"What did I learn about accepting uncertainty in this situation?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How can I apply this learning to future situations?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What am I thinking about in this situation?\n\n\nIs my thinking based on a need for certainty?\n\n\nCan I reframe my thoughts to see uncertainty as an opportunity for new experiences and learning?\n\n\nHow am I feeling about this situation?\n\n\nIs my anxiety related to needing certainty in this situation?\n\n\nWhat can I do to focus on the present moment and accept uncertainty in this situation?\n\n\nCan I remind myself that it’s okay not to control every interaction's outcome?\n\n\nWhat did I learn about accepting uncertainty in this situation?\n\n\nHow can I apply this learning to future situations?\n\n"
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Replace Mind Reading with Direct Communication",
+      "Description": "'- **Why it helps:** Assumptions about others' thoughts can cause misunderstandings and anxiety.\n   - **What to do:** Verify your assumptions through questions or observe actual behaviors instead of guessing.\n   - **Example:** Instead of assuming someone thinks poorly of you, ask for feedback or observe their direct actions toward you.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Section 1: Identifying Mind Reading Assumptions\": {\n    \"Questions:\": [\n      \"What am I assuming about someone's thoughts or feelings?\",\n      \"How did I come up with this assumption?\",\n      \"Is there any evidence to support my assumption?\"\n    ],\n    \"Space for Reflection:\": \"\"\n  },\n  \"Section 2: Verifying Assumptions\": {\n    \"Questions:\": [\n      \"What questions can I ask to clarify the situation?\",\n      \"How can I observe the person's actual behavior to get a clearer understanding?\",\n      \"What would be the outcome if I directly asked for feedback?\"\n    ],\n    \"Space for Reflection:\": \"\"\n  },\n  \"Section 3: Observing Actual Behavior\": {\n    \"Questions:\": [\n      \"What specific actions or behaviors can I look for to verify my assumption?\",\n      \"How might my assumption change if I observe different behavior?\",\n      \"What would be the impact on my anxiety if I stopped making assumptions?\"\n    ],\n    \"Space for Reflection:\": \"\"\n  },\n  \"Section 4: Action Plan\": {\n    \"Questions:\": [\n      \"What specific actions will I take to verify my assumption?\",\n      \"How will I communicate with the person to clarify their thoughts or feelings?\",\n      \"What steps will I take to manage my anxiety while waiting for clarification?\"\n    ],\n    \"Space for Reflection:\": \"\"\n  }\n}",
+      "extracted_value": "What am I assuming about someone's thoughts or feelings?\nHow did I come up with this assumption?\nIs there any evidence to support my assumption?\nWhat questions can I ask to clarify the situation?\nHow can I observe the person's actual behavior to get a clearer understanding?\nWhat would be the outcome if I directly asked for feedback?\nWhat specific actions or behaviors can I look for to verify my assumption?\nHow might my assumption change if I observe different behavior?\nWhat would be the impact on my anxiety if I stopped making assumptions?\nWhat specific actions will I take to verify my assumption?\nHow will I communicate with the person to clarify their thoughts or feelings?\nWhat steps will I take to manage my anxiety while waiting for clarification?"
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Cultivate Self-Compassion",
+      "Description": "'- **Why it helps:** Reduces the impact of negative social experiences by fostering a supportive inner voice.\n    - **What to do:** Treat yourself with the same kindness and understanding you would a friend.\n    - **Example:** If excluded from a social event, instead of berating yourself, acknowledge that everyone experiences exclusion and it doesn’t define your worth.\n\nIntegrating these REBT suggestions into daily life can significantly improve social mental health by reducing anxiety, building confidence, and fostering healthier social interactions.",
+      "XP": 7,
+      "Journal Template": "{\n  \"eventDescription\": \"Describe the situation that triggered negative self-talk or feelings.\",\n  \"initialReaction\": \"How did you initially react to the situation?\",\n  \"selfCriticalThoughts\": \"What negative thoughts came to mind?\",\n  \"emotionalIntensity\": \"Rate the intensity of your emotions (0-100%)\",\n  \"physicalSensations\": \"What physical sensations or behaviors accompanied these feelings?\",\n  \"selfCompassionateThinking\": {\n    \"compassionateImage\": \"What compassionate image or voice can you bring to mind?\",\n    \"adviceToFriend\": \"What advice would you give to a friend in this situation?\",\n    \"compassionateMessage\": \"What does the compassionate part of you want to say to the self-critical part?\",\n    \"alternativePerspective\": \"What other ways of viewing this situation might be more realistic, kinder, or more helpful?\"\n  },\n  \"copingMechanisms\": \"What can you do to cope and look after yourself now?\",\n  \"compassionateConclusion\": {\n    \"replacedSelfCriticism\": \"What is a more compassionate and helpful conclusion to replace the self-criticism?\",\n    \"reducedEmotionalIntensity\": \"How intense is your initial main emotion now (0-100%)\"\n  }\n}",
+      "extracted_value": "Describe the situation that triggered negative self-talk or feelings.\nHow did you initially react to the situation?\n\n\nWhat negative thoughts came to mind?\n\n\nRate the intensity of your emotions (0-100%)\nWhat physical sensations or behaviors accompanied these feelings?\n\n\nWhat compassionate image or voice can you bring to mind?\n\n\nWhat advice would you give to a friend in this situation?\n\n\nWhat does the compassionate part of you want to say to the self-critical part?\n\n\nWhat other ways of viewing this situation might be more realistic, kinder, or more helpful?\n\n\nWhat can you do to cope and look after yourself now?\n\n\nWhat is a more compassionate and helpful conclusion to replace the self-criticism?\n\n\nHow intense is your initial main emotion now (0-100%)"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

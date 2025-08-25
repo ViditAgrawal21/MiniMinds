@@ -1,0 +1,91 @@
+{
+  "condition": "Sleep",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Establish a Regular Sleep Schedule:",
+      "Card Description": "'- **How it works:** By going to bed and waking up at the same time every day, you help regulate your body's internal clock.  \n   - **Example:** If you decide to sleep at 10 p.m. and wake up at 6 a.m., try to stick with these times even on weekends to help maintain a consistent sleep pattern.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Create a Restful Environment:",
+      "Card Description": "'- **How it works:** A comfortable, quiet, and dark sleeping area can enhance sleep.  \n   - **Example:** Use blackout curtains and a white noise machine to minimize light and noise disturbances.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Limit Exposure to Light Before Bed:",
+      "Card Description": "'- **How it works:** Exposure to screens before bedtime can interfere with melatonin production.  \n   - **Example:** Avoid using phones, tablets, or computers at least an hour before bed to minimize exposure to blue light.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Watch Your Diet and Caffeine Intake:",
+      "Card Description": "'- **How it works:** Caffeine and heavy meals before bedtime can disrupt sleep.  \n   - **Example:** Avoid caffeine after 3 p.m. and try not to indulge in large, spicy, or rich meals at least 2-3 hours before sleep.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Exercise Regularly:",
+      "Card Description": "'- **How it works:** Regular physical activity can help you fall asleep faster and enjoy deeper sleep.  \n   - **Example:** Incorporate morning or afternoon workouts into your routine, such as a 30-minute walk or jog.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Manage Stress and Anxiety:",
+      "Card Description": "'- **How it works:** Stress and anxiety can keep your mind active at night, preventing restful sleep.  \n   - **Example:** Practice yoga, meditation, or deep-breathing exercises before bed to help calm your mind.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Establish a Relaxing Bedtime Routine:",
+      "Card Description": "'- **How it works:** A calming routine signals your body that it's time to wind down.  \n   - **Example:** Take a warm bath, read a book, or listen to soothing music before bed.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Avoid Naps Late in the Day:",
+      "Card Description": "'- **How it works:** Long or late naps can interfere with nighttime sleep.  \n   - **Example:** If you need to nap, limit it to 30 minutes and avoid napping past mid-afternoon.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Evaluate Your Mattress and Pillows:",
+      "Card Description": "'- **How it works:** A comfortable mattress and supportive pillows can improve sleep quality.  \n   - **Example:** Invest in a mattress that provides the right level of support and comfort for your body type, and choose pillows that align with your sleeping position.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Consider Professional Help for Sleep Disorders:",
+      "Card Description": "'- **How it works:** If insomnia or other sleep issues persist, consulting a healthcare provider can help.  \n    - **Example:** If lifestyle changes don't improve your sleep, a sleep specialist might recommend a sleep study to diagnose issues such as sleep apnea.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

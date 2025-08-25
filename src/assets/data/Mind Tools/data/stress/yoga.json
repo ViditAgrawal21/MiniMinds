@@ -1,0 +1,83 @@
+{
+  "condition": "Stress",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Child's Pose (Balasana)",
+      "Card Description": "'- Kneel on the floor, sit back on your heels, and fold your torso over your thighs.  \n   - Extend your arms forward or let them rest alongside your body.  \n   - Breathe deeply and hold for 1-3 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Cat-Cow Stretch (Marjaryasana-Bitilasana)",
+      "Card Description": "'- Start on your hands and knees in a tabletop position.  \n   - Inhale as you arch your back (cow pose), lifting your tailbone and head.  \n   - Exhale as you round your spine (cat pose), tucking your chin and pelvis.  \n   - Flow between these poses for 1-2 minutes, coordinating with your breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Standing Forward Bend (Uttanasana)",
+      "Card Description": "'- Stand with your feet hip-width apart and hinge forward from your hips.  \n   - Let your head hang and relax your neck.  \n   - Hold your elbows, sway gently, and breathe deeply for 1-2 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Legs Up the Wall Pose (Viparita Karani)",
+      "Card Description": "'- Sit with one hip against a wall, then swing your legs up the wall as you lie on your back.  \n   - Adjust your position so that your legs are comfortable and steady.  \n   - Close your eyes and breathe deeply, staying in the pose for 5-15 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Corpse Pose (Savasana)",
+      "Card Description": "'- Lie flat on your back with your arms and legs comfortably spread.  \n   - Close your eyes, focus on your breath, and relax each body part.  \n   - Remain in this pose for 5-10 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindfulness Meditation",
+      "Card Description": "'- Sit comfortably with your back straight.  \n   - Close your eyes and take a few deep breaths.  \n   - Focus your attention on your breath, noticing the rise and fall of your belly or the air moving in and out through your nostrils.  \n   - When your mind wanders, gently bring your focus back to your breath.  \n   - Practice this for 5-10 minutes.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan Meditation",
+      "Card Description": "'- Lie down comfortably or sit with your back straight.  \n   - Close your eyes and take a few deep breaths.  \n   - Slowly bring your attention to different parts of your body, starting from your toes and moving up to the top of your head.  \n   - Notice any sensations, tensions, or discomfort without judgment.  \n   - Spend 1-2 minutes on each body part.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Loving-Kindness Meditation (Metta)",
+      "Card Description": "'- Sit comfortably and close your eyes.  \n   - Think of a person you love and silently wish them happiness, health, and peace.  \n   - Gradually expand your focus to include yourself, friends, acquaintances, strangers, and even those with whom you have difficulties.  \n   - Spend 5-10 minutes cultivating feelings of love and kindness.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Stress",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Guided Imagery",
+      "Card Description": "'- Sit or lie in a comfortable position and close your eyes.  \n   - Imagine a peaceful scene, like a beach, forest, or mountain.  \n   - Engage all your senses, imagining the sights, sounds, smells, and sensations of being in your peaceful place.  \n   - Allow yourself to relax and enjoy this imagery for 5-10 minutes.",
+      "xp": 5
+    }
+  ],
+  "count": 9,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 9
+  }
+}

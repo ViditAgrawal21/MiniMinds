@@ -1,0 +1,98 @@
+{
+  "condition": "Common Psychological Issues",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Anxiety about Failure",
+      "Description": "'- **Why it Helps:** REBT addresses the irrational belief that failure is catastrophic. By reframing it as a learning opportunity, it reduces anxiety.\n   - **What to Do:** Identify and challenge your irrational belief about failure. Replace it with a rational belief that acknowledges the possibility of growth.\n   - **Example:** Instead of thinking, \"If I fail, I'm worthless,\" change it to, \"Failure is a part of learning, and it doesn't define my worth.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"irrationalBelief\": \"\",\n  \"rationalBelief\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"behaviors\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What is the irrational belief I have about failure?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How does this irrational belief make me feel?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What evidence do I have for this irrational belief?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Is there a more rational way to view failure?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What would I say to a friend who has this same irrational belief?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How can I reframe this irrational belief into a more rational one?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What is the irrational belief I have about failure?\n\n\nHow does this irrational belief make me feel?\n\n\nWhat evidence do I have for this irrational belief?\n\n\nIs there a more rational way to view failure?\n\n\nWhat would I say to a friend who has this same irrational belief?\n\n\nHow can I reframe this irrational belief into a more rational one?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Low Self-Esteem",
+      "Description": "'- **Why it Helps:** Changing self-efficacy beliefs improves confidence and self-worth.\n   - **What to Do:** Identify where your low self-esteem beliefs come from, and dispute their validity.\n   - **Example:** Replace \"I can't do anything right\" with \"I have strengths and weaknesses, and I can work on improving.\"",
+      "XP": 6,
+      "Journal Template": "[\n  {\n    \"question\": \"What are some negative thoughts or beliefs about myself that contribute to my low self-esteem?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"Can I find any evidence that contradicts these negative beliefs?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can I reframe these negative beliefs into more balanced and realistic ones?\",\n    \"xp\": 8\n  }\n]",
+      "extracted_value": "What are some negative thoughts or beliefs about myself that contribute to my low self-esteem?\n\n\nCan I find any evidence that contradicts these negative beliefs?\n\n\nHow can I reframe these negative beliefs into more balanced and realistic ones?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Perfectionism",
+      "Description": "'- **Why it Helps:** REBT diminishes the distress of seeking perfection by challenging the \"musts\" and \"shoulds.\"\n   - **What to Do:** Change the demand for perfection into a preference.\n   - **Example:** Change \"I must be perfect\" to \"I would prefer to do well, but it's okay to make mistakes.\"",
+      "XP": 7,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"activatingEvent\": {\n    \"event\": \"\",\n    \"thought\": \"\",\n    \"physicalTrigger\": \"\"\n  },\n  \"beliefs\": {\n    \"selfStatements\": [\n      {\n        \"statement\": \"\",\n        \"rating\": {\n          \"belief\": 0,\n          \"distress\": 0\n        }\n      }\n    ],\n    \"hotThought\": {\n      \"thought\": \"\",\n      \"rating\": {\n        \"belief\": 0,\n        \"distress\": 0\n      }\n    }\n  },\n  \"consequences\": {\n    \"feelings\": [\n      {\n        \"feeling\": \"\",\n        \"rating\": {\n          \"intensity\": 0\n        }\n      }\n    ],\n    \"physicalSensations\": [\n      {\n        \"sensation\": \"\",\n        \"actions\": \"\"\n      }\n    ]\n  },\n  \"detectiveWorkAndDisputation\": {\n    \"factualEvidence\": [\n      {\n        \"evidenceFor\": \"\",\n        \"evidenceAgainst\": \"\"\n      }\n    ],\n    \"disputation\": [\n      {\n        \"question\": \"Is this thought really true?\",\n        \"answer\": \"\"\n      },\n      {\n        \"question\": \"Is there another way to look at this situation?\",\n        \"answer\": \"\"\n      }\n    ]\n  },\n  \"questionsToAnswer\": [\n    {\n      \"question\": \"What is the factual evidence for and against my HOT thought?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"Is there any other way to interpret this situation?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"Can I change my demand for perfection into a preference?\",\n      \"answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "Is this thought really true?\n\n\nIs there another way to look at this situation?\n\n\nWhat is the factual evidence for and against my HOT thought?\n\n\nIs there any other way to interpret this situation?\n\n\nCan I change my demand for perfection into a preference?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Anger Management",
+      "Description": "'- **Why it Helps:** Recognizing and challenging irrational beliefs that lead to anger can help manage responses.\n   - **What to Do:** Examine the underlying beliefs that trigger anger and reframe them rationally.\n   - **Example:** Instead of thinking, \"People must treat me fairly,\" change it to \"I prefer people to treat me fairly, but sometimes they won't, and I can handle it.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"question\": \"What triggered my anger today?\",\n    \"XP\": 3\n  },\n  \"Warning Signs\": {\n    \"question\": \"Were there any warning signs that I could have recognized before my anger escalated?\",\n    \"XP\": 4\n  },\n  \"Thoughts\": {\n    \"question\": \"What were my thoughts leading up to the anger-inducing event?\",\n    \"XP\": 5\n  },\n  \"Rational Reframe\": {\n    \"question\": \"Can I reframe my thoughts in a more rational way? (e.g., from 'People must treat me fairly' to 'I prefer people to treat me fairly, but sometimes they won't, and I can handle it.')\",\n    \"XP\": 6\n  },\n  \"Response\": {\n    \"question\": \"How did I respond to the situation?\",\n    \"XP\": 5\n  },\n  \"Outcome\": {\n    \"question\": \"What was the outcome of the situation?\",\n    \"XP\": 4\n  },\n  \"Reflection\": {\n    \"question\": \"What did I learn from this experience? How can I improve my response next time?\",\n    \"XP\": 7\n  }\n}",
+      "extracted_value": "What triggered my anger today?\n\n\nWere there any warning signs that I could have recognized before my anger escalated?\n\n\nWhat were my thoughts leading up to the anger-inducing event?\n\n\nCan I reframe my thoughts in a more rational way? (e.g., from 'People must treat me fairly' to 'I prefer people to treat me fairly, but sometimes they won't, and I can handle it.')\n\n\nHow did I respond to the situation?\n\n\nWhat was the outcome of the situation?\n\n\nWhat did I learn from this experience? How can I improve my response next time?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Social Anxiety",
+      "Description": "'- **Why it Helps:** Addressing the fear of judgment can reduce social anxiety.\n   - **What to Do:** Re-evaluate and challenge thoughts about others' opinions of you.\n   - **Example:** Replace \"Everyone will think I'm awkward\" with \"Some might not notice me, and even if they do, it's not the end of the world.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"Section 1: Situation\": {\n    \"Question\": \"What happened?\",\n    \"XP\": 3\n  },\n  \"Section 2: Thoughts\": {\n    \"Question\": \"What were your thoughts during the situation?\",\n    \"XP\": 4\n  },\n  \"Section 3: Emotions\": {\n    \"Question\": \"How did you feel during the situation?\",\n    \"XP\": 4\n  },\n  \"Section 4: Physical Sensations\": {\n    \"Question\": \"Were there any physical sensations you experienced?\",\n    \"XP\": 5\n  },\n  \"Section 5: Challenge Thoughts\": {\n    \"Question\": \"Are these thoughts helpful or unhelpful? Why?\",\n    \"XP\": 6\n  },\n  \"Section 6: Alternative Thoughts\": {\n    \"Question\": \"Can you think of a more balanced or realistic way to view the situation?\",\n    \"XP\": 7\n  },\n  \"Section 7: Action Plan\": {\n    \"Question\": \"What can you do differently next time to manage your anxiety?\",\n    \"XP\": 8\n  },\n  \"Section 8: Reflection\": {\n    \"Question\": \"How do you feel now after completing this thought record?\",\n    \"XP\": 9\n  }\n}",
+      "extracted_value": "What happened?\n\n\nWhat were your thoughts during the situation?\n\n\nHow did you feel during the situation?\n\n\nWere there any physical sensations you experienced?\n\n\nAre these thoughts helpful or unhelpful? Why?\n\n\nCan you think of a more balanced or realistic way to view the situation?\n\n\nWhat can you do differently next time to manage your anxiety?\n\n\nHow do you feel now after completing this thought record?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Depression",
+      "Description": "'- **Why it Helps:** Challenging negative thought patterns can break the cycle of depression.\n   - **What to Do:** Identify negative beliefs and actively dispute them with evidence and logic.\n   - **Example:** Instead of \"I'll never be happy,\" try \"I have been happy before, and I can take steps to improve my mood.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"negativeThought\": \"\",\n  \"evidenceAgainstThought\": \"\",\n  \"alternativePerspective\": \"\",\n  \"actionsToImproveMood\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Fear of Rejection",
+      "Description": "'- **Why it Helps:** Rational beliefs foster resilience against rejection.\n   - **What to Do:** Transform rejection fears by challenging beliefs of needing universal acceptance.\n   - **Example:** Replace \"I need everyone to like me\" with \"Not everyone will like me, and that's okay.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Guilt",
+      "Description": "'- **Why it Helps:** REBT helps differentiate between healthy guilt and unhealthy regret.\n   - **What to Do:** Examine the rationality of your guilt and decide if change is necessary.\n   - **Example:** Instead of \"I am a terrible person for making mistakes,\" try \"Making mistakes is part of being human, and I can learn from them.\"",
+      "XP": 7,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"description\": \"Describe the situation or event that triggered your guilt.\",\n    \"questions\": [\n      \"What happened?\",\n      \"How did I feel emotionally and physically?\"\n    ]\n  },\n  \"Initial Reaction\": {\n    \"description\": \"Record your immediate emotional response.\",\n    \"questions\": [\n      \"How did I feel?\",\n      \"What were my initial thoughts?\"\n    ]\n  },\n  \"Negative Automatic Thoughts\": {\n    \"description\": \"Identify any negative or unhelpful thoughts.\",\n    \"questions\": [\n      \"What was my 'hot thought'?\",\n      \"Is this thought factually accurate, logical, and helpful?\"\n    ]\n  },\n  \"Supporting Evidence\": {\n    \"description\": \"List any evidence that supports your negative thoughts.\",\n    \"questions\": [\n      \"What facts support this thought?\",\n      \"Is there any hard evidence for this?\"\n    ]\n  },\n  \"Opposing Evidence\": {\n    \"description\": \"List any evidence that opposes your negative thoughts.\",\n    \"questions\": [\n      \"Are there any facts that contradict this thought?\",\n      \"Is there a more balanced or realistic perspective?\"\n    ]\n  },\n  \"Balanced Alternative Thought\": {\n    \"description\": \"Create a more balanced and realistic alternative thought.\",\n    \"questions\": [\n      \"What is a more realistic interpretation of the situation?\",\n      \"How would I judge this if it were affecting someone else?\"\n    ]\n  },\n  \"Outcome/Learning\": {\n    \"description\": \"Reflect on the outcome and what you learned.\",\n    \"questions\": [\n      \"How did I feel after reassessing my thoughts?\",\n      \"What did I learn about my guilt and how to manage it?\"\n    ]\n  }\n}",
+      "extracted_value": "Describe the situation or event that triggered your guilt.\nWhat happened?\nHow did I feel emotionally and physically?\nRecord your immediate emotional response.\nHow did I feel?\nWhat were my initial thoughts?\nIdentify any negative or unhelpful thoughts.\nWhat was my 'hot thought'?\nIs this thought factually accurate, logical, and helpful?\nList any evidence that supports your negative thoughts.\nWhat facts support this thought?\nIs there any hard evidence for this?\nList any evidence that opposes your negative thoughts.\nAre there any facts that contradict this thought?\nIs there a more balanced or realistic perspective?\nCreate a more balanced and realistic alternative thought.\nWhat is a more realistic interpretation of the situation?\nHow would I judge this if it were affecting someone else?\nReflect on the outcome and what you learned.\nHow did I feel after reassessing my thoughts?\nWhat did I learn about my guilt and how to manage it?"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Procrastination",
+      "Description": "'- **Why it Helps:** Tackling irrational beliefs about task aversion increases motivation.\n   - **What to Do:** Challenge the catastrophic thinking surrounding tasks and use rational thinking to motivate action.\n   - **Example:** Instead of \"This task is too hard, and I can't face it now,\" think \"This task is challenging, but I can start with a small part.\"",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the task I'm procrastinating on?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What is the irrational belief that's causing me to procrastinate?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What is a rational thought that challenges this belief?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How does this rational thought make me feel more motivated?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What small action can I take today to start working on this task?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What obstacles might I face, and how can I overcome them?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"How will I reward myself for taking this action?\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "What is the task I'm procrastinating on?\n\n\nWhat is the irrational belief that's causing me to procrastinate?\n\n\nWhat is a rational thought that challenges this belief?\n\n\nHow does this rational thought make me feel more motivated?\n\n\nWhat small action can I take today to start working on this task?\n\n\nWhat obstacles might I face, and how can I overcome them?\n\n\nHow will I reward myself for taking this action?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Issue: Relationship Problems",
+      "Description": "'- **Why it Helps:** It clarifies expectations and fosters healthier interactions.\n    - **What to Do:** Dispute irrational beliefs about partners and reframe expectations.\n    - **Example:** Replace \"My partner should always make me happy\" with \"Both of us are responsible for our own happiness, and we can support each other.\"\n\nREBT’s focus on identifying, disputing, and changing irrational beliefs can transform emotional responses and behaviors related to these common psychological issues, providing a pathway to healthier emotional and behavioral patterns.",
+      "XP": 6,
+      "Journal Template": "[\n  \"What are some irrational beliefs I have about my partner?\",\n  \"How do these beliefs affect my emotions and behaviors?\"\n]",
+      "extracted_value": "What are some irrational beliefs I have about my partner?\nHow do these beliefs affect my emotions and behaviors?"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "condition": "Financial Mental Health",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identify Negative Thought Patterns",
+      "Description": "'- **Why It Helps**: Recognizing and addressing negative thought patterns can reduce financial stress and anxiety.\n   - **What to Do**: Keep a journal to track thoughts that arise when dealing with finances. Identify those that are negative or unhelpful.\n   - **Example**: \"I will never be able to manage my money properly.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Triggering Event\": \"\",\n  \"Negative Thought\": \"\",\n  \"Evidence For Thought\": \"\",\n  \"Evidence Against Thought\": \"\",\n  \"Alternative Perspective\": \"\",\n  \"Action Plan\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Challenge Limiting Beliefs",
+      "Description": "'- **Why It Helps**: Challenging limiting beliefs helps build confidence and a more positive attitude towards financial management.\n   - **What to Do**: Once negative thoughts are identified, question their validity and think of counterarguments.\n   - **Example**: \"I’ve successfully budgeted before; I can do it again.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Section 1: Identify Negative Thoughts\": {\n    \"Question 1\": \"What are the negative thoughts that are holding me back?\",\n    \"Space for Writing\": \"\"\n  },\n  \"Section 2: Question Validity\": {\n    \"Question 2\": \"Is there any evidence to support these negative thoughts?\",\n    \"Space for Writing\": \"\"\n  },\n  \"Section 3: Counterarguments\": {\n    \"Question 3\": \"Can I think of any counterarguments to these negative thoughts?\",\n    \"Space for Writing\": \"\"\n  },\n  \"Section 4: Positive Affirmations\": {\n    \"Question 4\": \"What positive affirmations can I use to replace these negative thoughts?\",\n    \"Space for Writing\": \"\"\n  }\n}",
+      "extracted_value": "What are the negative thoughts that are holding me back?\n\n\nIs there any evidence to support these negative thoughts?\n\n\nCan I think of any counterarguments to these negative thoughts?\n\n\nWhat positive affirmations can I use to replace these negative thoughts?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Set Realistic Goals",
+      "Description": "'- **Why It Helps**: Breaking down overwhelming tasks into achievable goals makes financial management more manageable and less stressful.\n   - **What to Do**: Define specific, measurable, attainable, relevant, and time-bound (SMART) financial goals.\n   - **Example**: \"Save $50 per month for emergency savings.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"goal_setting\": {\n    \"ultimate_goal\": {\n      \"question\": \"What is my ultimate financial goal?\",\n      \"xp\": 5\n    },\n    \"specific_goal\": {\n      \"question\": \"How can I break down my ultimate goal into smaller, specific steps?\",\n      \"xp\": 6\n    },\n    \"measurable_goal\": {\n      \"question\": \"How will I measure my progress towards this goal?\",\n      \"xp\": 7\n    },\n    \"attainable_goal\": {\n      \"question\": \"Is my goal realistic and achievable given my current situation?\",\n      \"xp\": 8\n    },\n    \"relevant_goal\": {\n      \"question\": \"Is this goal relevant to my financial well-being?\",\n      \"xp\": 9\n    },\n    \"time_bound_goal\": {\n      \"question\": \"By when do I want to achieve this goal?\",\n      \"xp\": 10\n    }\n  }\n}",
+      "extracted_value": "What is my ultimate financial goal?\n\n\nHow can I break down my ultimate goal into smaller, specific steps?\n\n\nHow will I measure my progress towards this goal?\n\n\nIs my goal realistic and achievable given my current situation?\n\n\nIs this goal relevant to my financial well-being?\n\n\nBy when do I want to achieve this goal?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Develop a Budgeting Plan",
+      "Description": "'- **Why It Helps**: A clear structure for managing finances reduces anxiety and helps track progress toward goals.\n   - **What to Do**: Create a budget that accounts for income, fixed expenses, variable expenses, and savings.\n   - **Example**: \"Allocate 10% of monthly income to savings.\"",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What are my monthly income and fixed expenses?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What are my variable expenses (e.g., entertainment, travel)?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"How much can I realistically save each month?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are my short-term and long-term financial goals?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How will I track my expenses and stay on budget?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What adjustments can I make to my budget if I find it difficult to stick to it?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How will managing my finances impact my overall well-being and reduce anxiety?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What are my monthly income and fixed expenses?\n\n\nWhat are my variable expenses (e.g., entertainment, travel)?\n\n\nHow much can I realistically save each month?\n\n\nWhat are my short-term and long-term financial goals?\n\n\nHow will I track my expenses and stay on budget?\n\n\nWhat adjustments can I make to my budget if I find it difficult to stick to it?\n\n\nHow will managing my finances impact my overall well-being and reduce anxiety?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Use Positive Self-talk",
+      "Description": "'- **Why It Helps**: Encouraging self-statements can improve motivation and reduce feelings of financial inadequacy.\n   - **What to Do**: Replace negative thoughts with positive affirmations related to financial control and success.\n   - **Example**: \"I am capable of learning how to manage my finances.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Situation\": \"\",\n  \"Negative Thoughts\": \"\",\n  \"Positive Affirmations\": \"\",\n  \"Why It Helps\": \"\",\n  \"How I Feel Now\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Practice Mindfulness",
+      "Description": "'- **Why It Helps**: Mindfulness can reduce stress and improve the ability to make rational financial decisions.\n   - **What to Do**: Engage in mindfulness practices, such as meditation or deep breathing, especially when making financial decisions.\n   - **Example**: Take a few minutes to breathe deeply and clear your mind before reviewing your monthly expenses.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"thoughts\": \"\",\n  \"emotions\": \"\",\n  \"physical sensations\": \"\",\n  \"mindfulness practice\": \"\",\n  \"reflection\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What triggered my stress today?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did I feel before engaging in mindfulness practice?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What mindfulness practice did I use today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How did I feel after engaging in mindfulness practice?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What insights did I gain from this experience?\",\n      \"xp\": 6\n    }\n  ]\n}",
+      "extracted_value": "What triggered my stress today?\n\n\nHow did I feel before engaging in mindfulness practice?\n\n\nWhat mindfulness practice did I use today?\n\n\nHow did I feel after engaging in mindfulness practice?\n\n\nWhat insights did I gain from this experience?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Reframe Catastrophic Thinking",
+      "Description": "'- **Why It Helps**: Reduces anxiety by focusing on realistic outcomes rather than worst-case scenarios.\n   - **What to Do**: Whenever catastrophic thinking occurs, ask yourself, \"What is the most likely outcome?\"\n   - **Example**: Rather than thinking, \"I'll end up broke,\" consider, \"I can adjust my plan and try again.\"",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the situation that triggered my catastrophic thinking?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What are the catastrophic thoughts that arise in response to this situation?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What is the most likely outcome of this situation?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Can I think of any alternative explanations for this situation?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How does my catastrophic thinking impact my emotions?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"Can I create a positive and affirming statement to counteract my catastrophic thoughts?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What is my action plan for managing catastrophic thinking in the future?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"How can I practice reframing my thoughts to reduce anxiety?\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "What is the situation that triggered my catastrophic thinking?\n\n\nWhat are the catastrophic thoughts that arise in response to this situation?\n\n\nWhat is the most likely outcome of this situation?\n\n\nCan I think of any alternative explanations for this situation?\n\n\nHow does my catastrophic thinking impact my emotions?\n\n\nCan I create a positive and affirming statement to counteract my catastrophic thoughts?\n\n\nWhat is my action plan for managing catastrophic thinking in the future?\n\n\nHow can I practice reframing my thoughts to reduce anxiety?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Focus on Problem-solving",
+      "Description": "'- **Why It Helps**: Shifts focus from problems to solutions, making financial challenges feel more manageable.\n   - **What to Do**: Develop a step-by-step plan to tackle specific financial problems.\n   - **Example**: \"I will cut back on dining out expenses to manage my budget better.\"",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What is the specific financial problem you are facing?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"What are the immediate steps you can take to address this problem?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What are the long-term goals you want to achieve by solving this problem?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What potential obstacles might you encounter, and how will you overcome them?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How will you measure your progress and success in solving this problem?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What are the potential benefits of solving this financial problem?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How will you maintain your focus on solving this problem over time?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"What resources (e.g., books, experts, tools) can you use to help you solve this problem?\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "What is the specific financial problem you are facing?\n\n\nWhat are the immediate steps you can take to address this problem?\n\n\nWhat are the long-term goals you want to achieve by solving this problem?\n\n\nWhat potential obstacles might you encounter, and how will you overcome them?\n\n\nHow will you measure your progress and success in solving this problem?\n\n\nWhat are the potential benefits of solving this financial problem?\n\n\nHow will you maintain your focus on solving this problem over time?\n\n\nWhat resources (e.g., books, experts, tools) can you use to help you solve this problem?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Reward Progress",
+      "Description": "'- **Why It Helps**: Reinforcing positive behavior encourages continued effort and progress.\n   - **What to Do**: Set small rewards for meeting financial goals to enhance motivation.\n   - **Example**: Treat yourself to a movie night after saving an extra $100.",
+      "XP": 3,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Goal\": \"\",\n  \"Progress\": \"\",\n  \"Reward\": \"\",\n  \"Reflection Questions\": [\n    {\n      \"Question\": \"What specific financial goal did I set for myself today?\",\n      \"XP\": 3\n    },\n    {\n      \"Question\": \"How much progress have I made toward my goal?\",\n      \"XP\": 4\n    },\n    {\n      \"Question\": \"What reward will I give myself for meeting this goal?\",\n      \"XP\": 5\n    },\n    {\n      \"Question\": \"How does this reward motivate me to continue working toward my goal?\",\n      \"XP\": 6\n    },\n    {\n      \"Question\": \"What challenges did I face, and how did I overcome them?\",\n      \"XP\": 7\n    },\n    {\n      \"Question\": \"How can I adjust my strategy to better achieve my financial goals?\",\n      \"XP\": 8\n    },\n    {\n      \"Question\": \"What positive behaviors did I exhibit while working toward my goal?\",\n      \"XP\": 9\n    },\n    {\n      \"Question\": \"How can I celebrate my progress and stay motivated for future goals?\",\n      \"XP\": 10\n    }\n  ]\n}",
+      "extracted_value": "What specific financial goal did I set for myself today?\n\n\nHow much progress have I made toward my goal?\n\n\nWhat reward will I give myself for meeting this goal?\n\n\nHow does this reward motivate me to continue working toward my goal?\n\n\nWhat challenges did I face, and how did I overcome them?\n\n\nHow can I adjust my strategy to better achieve my financial goals?\n\n\nWhat positive behaviors did I exhibit while working toward my goal?\n\n\nHow can I celebrate my progress and stay motivated for future goals?\n\n"
+    },
+    {
+      "Issue Name": "Financial Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Seek Social Support",
+      "Description": "'- **Why It Helps**: Sharing concerns and successes with others can reduce feelings of isolation and provide motivation.\n    - **What to Do**: Join a financial support group or talk to a trusted friend about financial goals and challenges.\n    - **Example**: \"This month, I saved an additional $50, and it felt great to share this with my budget buddy.\"\n\nBy incorporating these CBT strategies, individuals can improve their financial mental health by fostering a more positive, proactive, and realistic approach to managing money-related stress and challenges.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"event\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"actions\": \"\",\n  \"supportReceived\": \"\",\n  \"reflection\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What financial goals am I currently working towards?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"Who can I talk to about my financial goals and challenges?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"How did sharing my financial successes with someone else make me feel?\",\n      \"XP\": 6\n    },\n    {\n      \"question\": \"What specific support did I receive from talking to someone about my finances?\",\n      \"XP\": 6\n    },\n    {\n      \"question\": \"How can I continue to seek social support in managing my finances?\",\n      \"XP\": 7\n    }\n  ]\n}",
+      "extracted_value": "What financial goals am I currently working towards?\n\n\nWho can I talk to about my financial goals and challenges?\n\n\nHow did sharing my financial successes with someone else make me feel?\n\n\nWhat specific support did I receive from talking to someone about my finances?\n\n\nHow can I continue to seek social support in managing my finances?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

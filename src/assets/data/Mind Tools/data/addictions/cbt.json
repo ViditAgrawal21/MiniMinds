@@ -1,0 +1,101 @@
+{
+  "condition": "Addictions",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identify and Challenge Negative Thoughts",
+      "Description": "'- **Why it Helps**: Negative thoughts can fuel addictive behaviors by making the individual feel hopeless or unworthy.\n   - **What to Do**: Keep a journal to track negative thoughts when cravings appear. Identify the patterns and challenge these thoughts by asking whether they are rational or based on assumptions.\n   - **Example**: If the thought \"I can't cope without drinking\" arises, counter it by listing times you have successfully coped without alcohol.",
+      "XP": 1,
+      "Journal Template": "[\n  \"What situation or event led to this thought?\",\n  \"When did this thought occur?\"\n]",
+      "extracted_value": "What situation or event led to this thought?\nWhen did this thought occur?"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Behavioral Activation",
+      "Description": "'- **Why it Helps**: Engaging in meaningful activities can reduce the urge to engage in addictive behaviors as a way to cope with boredom or stress.\n   - **What to Do**: Schedule daily activities that are fulfilling or enjoyable to decrease downtime that can lead to cravings.\n   - **Example**: Plan a daily walk, join a hobby group, or volunteer to replace time spent on addictive activities.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"activitiesScheduled\": [\n    {\n      \"activity\": \"\",\n      \"time\": \"\",\n      \"whyItMatters\": \"\"\n    }\n  ],\n  \"questionsToAnswer\": [\n    {\n      \"question\": \"What activities did I schedule today?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"How did these activities make me feel?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"Were there any challenges in sticking to my schedule?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"What can I do differently next time to make sure I stay on track?\",\n      \"answer\": \"\"\n    },\n    {\n      \"question\": \"How can I incorporate more meaningful activities into my daily routine?\",\n      \"answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nWhat activities did I schedule today?\n\n\nHow did these activities make me feel?\n\n\nWere there any challenges in sticking to my schedule?\n\n\nWhat can I do differently next time to make sure I stay on track?\n\n\nHow can I incorporate more meaningful activities into my daily routine?\n\n"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Craving Control Techniques",
+      "Description": "'- **Why it Helps**: Learning to manage cravings can prevent relapse.\n   - **What to Do**: Use techniques like deep breathing, visualization, or the \"urge surfing\" method to cope with cravings as they occur.\n   - **Example**: When cravings hit, take deep breaths, visualize the craving as a wave that will eventually pass, and ride it out.",
+      "XP": 4,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"cravingType\": \"\",\n  \"timeOfCraving\": \"\",\n  \"trigger\": \"\",\n  \"techniqueUsed\": \"\",\n  \"effectivenessRating\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What triggered the craving?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Which technique did you use to manage the craving?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How effective was the technique in reducing the craving?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What thoughts or emotions were you experiencing during the craving?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How did you feel after using the technique?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "What triggered the craving?\n\n\nWhich technique did you use to manage the craving?\n\n\nHow effective was the technique in reducing the craving?\n\n\nWhat thoughts or emotions were you experiencing during the craving?\n\n\nHow did you feel after using the technique?\n\n"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Thought Stopping",
+      "Description": "'- **Why it Helps**: It interrupts the cycle of obsessive thinking about substances or behaviors.\n   - **What to Do**: Use a mental command like \"Stop!\" or snap a rubber band against your wrist to interrupt harmful thoughts.\n   - **Example**: When starting to think about using, mentally shout \"Stop!\" to interrupt the thought process and focus on a positive affirmation.",
+      "XP": 5,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Triggering Situation\": \"\",\n  \"Negative Thought\": \"\",\n  \"Stop Command\": \"\",\n  \"Positive Affirmation\": \"\",\n  \"Reflection Questions\": [\n    {\n      \"Question\": \"What was the triggering situation that led to the negative thought?\",\n      \"XP\": 5\n    },\n    {\n      \"Question\": \"How did the negative thought make you feel?\",\n      \"XP\": 6\n    },\n    {\n      \"Question\": \"What was the stop command you used to interrupt the thought?\",\n      \"XP\": 4\n    },\n    {\n      \"Question\": \"What positive affirmation did you use to replace the negative thought?\",\n      \"XP\": 5\n    },\n    {\n      \"Question\": \"How did using the stop command and positive affirmation affect your emotions and thoughts?\",\n      \"XP\": 7\n    }\n  ]\n}",
+      "extracted_value": "What was the triggering situation that led to the negative thought?\n\n\nHow did the negative thought make you feel?\n\n\nWhat was the stop command you used to interrupt the thought?\n\n\nWhat positive affirmation did you use to replace the negative thought?\n\n\nHow did using the stop command and positive affirmation affect your emotions and thoughts?\n\n"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'- **Why it Helps**: Modifying distorted thinking can reduce the negative emotions that trigger addictive behavior.\n   - **What to Do**: Work with a therapist to identify cognitive distortions (like \"all-or-nothing thinking\") and replace them with balanced thoughts.\n   - **Example**: Replace \"I'll never be able to stay sober\" with \"I can take it one day at a time.\"",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What happened?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"Where were you?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"Who was involved?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"How did you feel in the moment?\",\n    \"xp\": 4\n  }\n]",
+      "extracted_value": "What happened?\n\n\nWhere were you?\n\n\nWho was involved?\n\n\nHow did you feel in the moment?\n\n"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Mindfulness and Grounding Techniques",
+      "Description": "'- **Why it Helps**: Being present and grounded can help manage stress and reduce the impulse to escape into addictive behaviors.\n   - **What to Do**: Practice mindfulness meditation or grounding exercises regularly.\n   - **Example**: Use the 5-4-3-2-1 technique, naming five things you can see, four you can touch, three you can hear, two you can smell, and one you can taste.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What are five things you can see right now?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are four things you can touch or feel right now?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are three things you can hear right now?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are two things you can smell right now?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What is one thing you can taste right now?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How did practicing this technique make you feel?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"Did you notice any changes in your stress levels or anxiety after using this technique?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What did you find most challenging about this exercise?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How can you incorporate this technique into your daily routine?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What are five things you can see right now?\n\n\nWhat are four things you can touch or feel right now?\n\n\nWhat are three things you can hear right now?\n\n\nWhat are two things you can smell right now?\n\n\nWhat is one thing you can taste right now?\n\n\nHow did practicing this technique make you feel?\n\n\nDid you notice any changes in your stress levels or anxiety after using this technique?\n\n\nWhat did you find most challenging about this exercise?\n\n\nHow can you incorporate this technique into your daily routine?\n\n"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Relapse Prevention Planning",
+      "Description": "'- **Why it Helps**: Anticipating and planning for potential triggers reduces the risk of relapse.\n   - **What to Do**: Develop a detailed plan for handling high-risk situations with alternate coping strategies.\n   - **Example**: If social gatherings trigger drinking, plan to attend with a sober friend or drink a non-alcoholic beverage.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What are the high-risk situations that could trigger a relapse?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are the key signs that indicate I am at risk of relapse?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What are the alternative coping strategies I can use in high-risk situations?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can I maintain momentum and build on my gains?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What specific actions will I take if I experience a relapse?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What are the high-risk situations that could trigger a relapse?\n\n\nWhat are the key signs that indicate I am at risk of relapse?\n\n\nWhat are the alternative coping strategies I can use in high-risk situations?\n\n\nHow can I maintain momentum and build on my gains?\n\n\nWhat specific actions will I take if I experience a relapse?\n\n"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Assertiveness Training",
+      "Description": "'- **Why it Helps**: Building assertiveness can enable individuals to refuse substances from others confidently.\n   - **What to Do**: Practice using \"I\" statements to express needs and boundaries.\n   - **Example**: \"I don't drink anymore, can I have something else?\" when offered alcohol.",
+      "XP": 7,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"situation\": \"Describe the situation where you felt the need to be more assertive.\",\n  \"thoughts\": {\n    \"unhelpful\": \"What unhelpful thoughts did you have in this situation?\",\n    \"helpful\": \"What helpful thoughts could you have had instead?\"\n  },\n  \"feelings\": {\n    \"unassertive\": \"How did you feel when you were not assertive?\",\n    \"assertive\": \"How do you feel when you are assertive?\"\n  },\n  \"actions\": {\n    \"unassertive\": \"What did you do when you were not assertive?\",\n    \"assertive\": \"What would you do if you were more assertive in this situation?\"\n  },\n  \"practice\": {\n    \"iStatement\": \"Write an 'I' statement expressing your need or boundary in this situation.\",\n    \"example\": \"Example: 'I don't drink anymore, can I have something else?'\"\n  },\n  \"reflection\": {\n    \"xp\": 7,\n    \"questions\": [\n      \"What did you learn from this experience?\",\n      \"How can you apply this to future situations?\",\n      \"What challenges might you face, and how will you overcome them?\"\n    ]\n  }\n}",
+      "extracted_value": "YYYY-MM-DD\nDescribe the situation where you felt the need to be more assertive.\nWhat unhelpful thoughts did you have in this situation?\n\n\nWhat helpful thoughts could you have had instead?\n\n\nHow did you feel when you were not assertive?\n\n\nHow do you feel when you are assertive?\n\n\nWhat did you do when you were not assertive?\n\n\nWhat would you do if you were more assertive in this situation?\n\n\nWrite an 'I' statement expressing your need or boundary in this situation.\nExample: 'I don't drink anymore, can I have something else?'\n\n\nWhat did you learn from this experience?\nHow can you apply this to future situations?\nWhat challenges might you face, and how will you overcome them?"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Goal Setting and Reward Systems",
+      "Description": "'- **Why it Helps**: Setting achievable goals and rewarding progress increases motivation and reinforces positive behavior.\n   - **What to Do**: Break long-term abstinence into smaller, manageable goals, and celebrate small victories.\n   - **Example**: Reward yourself with a small treat or activity for each week you stay clean, such as a new book or a favorite meal.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"goal_setting\": {\n    \"specific_goal\": \"What specific goal do I want to achieve today/this week?\",\n    \"achievable_goal\": \"Is my goal achievable? Why or why not?\",\n    \"aligned_with_values\": \"Is this goal aligned with my personal values and long-term aspirations?\",\n    \"small_steps\": \"How can I break this goal into smaller, manageable steps?\"\n  },\n  \"reward_system\": {\n    \"efforts\": \"What efforts will I make towards achieving my goal today/this week?\",\n    \"rewards\": \"What rewards will I give myself for achieving my goal today/this week?\",\n    \"celebrate_victories\": \"How will I celebrate my small victories?\"\n  },\n  \"reflection\": {\n    \"motivation\": \"Why am I motivated to achieve this goal?\",\n    \"challenges\": \"What challenges might I face in achieving this goal?\",\n    \"solutions\": \"What solutions can I use to overcome these challenges?\"\n  }\n}",
+      "extracted_value": "YYYY-MM-DD\nWhat specific goal do I want to achieve today/this week?\n\n\nIs my goal achievable? Why or why not?\n\n\nIs this goal aligned with my personal values and long-term aspirations?\n\n\nHow can I break this goal into smaller, manageable steps?\n\n\nWhat efforts will I make towards achieving my goal today/this week?\n\n\nWhat rewards will I give myself for achieving my goal today/this week?\n\n\nHow will I celebrate my small victories?\n\n\nWhy am I motivated to achieve this goal?\n\n\nWhat challenges might I face in achieving this goal?\n\n\nWhat solutions can I use to overcome these challenges?\n\n"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Building a Support Network",
+      "Description": "'- **Why it Helps**: Support from others can provide encouragement and accountability.\n    - **What to Do**: Join a support group or work with a sponsor.\n    - **Example**: Attend weekly meetings or check-in daily with a sober partner or group.\n   \nThese CBT strategies address both the cognitive and behavioral aspects of addiction, providing individuals with tools to manage their thoughts, emotions, and behaviors, supporting lasting change.",
+      "XP": 6,
+      "Journal Template": "[\n  \"What are the benefits of having a support network?\",\n  \"How has support from others helped me in the past?\",\n  \"What are my goals for building a support network?\"\n]",
+      "extracted_value": "What are the benefits of having a support network?\nHow has support from others helped me in the past?\nWhat are my goals for building a support network?"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

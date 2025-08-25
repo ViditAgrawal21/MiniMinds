@@ -1,0 +1,98 @@
+{
+  "condition": "Internet and Social Media Issue",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identify Negative Thought Patterns",
+      "Description": "'- **Why it Helps**: It allows individuals to recognize and understand the unrealistic or harmful thoughts that contribute to their internet and social media use.\n   - **What to Do**: Keep a thought diary to track the situations that lead to excessive use and the thoughts associated with them.\n   - **Example**: If you find yourself scrolling late at night, note thoughts like \"I need to stay updated\" and challenge their validity.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What situation led to excessive internet or social media use today?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What thoughts did you have during this situation?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Are these thoughts realistic? Why or why not?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What evidence do you have for these thoughts?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What alternative, more balanced perspective could you have on this situation?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How did these thoughts make you feel?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What actions can you take to avoid similar situations in the future?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What situation led to excessive internet or social media use today?\n\n\nWhat thoughts did you have during this situation?\n\n\nAre these thoughts realistic? Why or why not?\n\n\nWhat evidence do you have for these thoughts?\n\n\nWhat alternative, more balanced perspective could you have on this situation?\n\n\nHow did these thoughts make you feel?\n\n\nWhat actions can you take to avoid similar situations in the future?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Challenge Cognitive Distortions",
+      "Description": "'- **Why it Helps**: It encourages the evaluation and restructuring of distorted thoughts, reducing anxiety or compulsive behavior.\n   - **What to Do**: After identifying negative thoughts, question their truth and consider alternative interpretations.\n   - **Example**: Counter the belief \"I'm missing out\" with \"I can catch up later without missing important life moments.\"",
+      "XP": 7
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Develop Coping Strategies",
+      "Description": "'- **Why it Helps**: Equips individuals with tools to manage urges effectively and reduces dependency on social media for emotional regulation.\n   - **What to Do**: List healthy activities (e.g., reading, exercise) to replace screen time.\n   - **Example**: When feeling the urge to check social media, go for a 10-minute walk instead.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"urgeTrigger\": \"\",\n  \"healthyActivity\": \"\",\n  \"reflection\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What triggered the urge to check social media today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What healthy activity did you replace screen time with today?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"How did you feel after engaging in the healthy activity?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What challenges did you face in replacing screen time with a healthy activity?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How can you make this healthy activity a regular part of your routine?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What benefits did you experience from engaging in the healthy activity?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How can you apply this coping strategy to other areas of your life?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"What additional strategies can you use to manage urges in the future?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "What triggered the urge to check social media today?\n\n\nWhat healthy activity did you replace screen time with today?\n\n\nHow did you feel after engaging in the healthy activity?\n\n\nWhat challenges did you face in replacing screen time with a healthy activity?\n\n\nHow can you make this healthy activity a regular part of your routine?\n\n\nWhat benefits did you experience from engaging in the healthy activity?\n\n\nHow can you apply this coping strategy to other areas of your life?\n\n\nWhat additional strategies can you use to manage urges in the future?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Implement Goal Setting",
+      "Description": "'- **Why it Helps**: Provides direction and motivation to change behavior, improving time management and limiting internet overuse.\n   - **What to Do**: Set specific, achievable goals for reducing social media use.\n   - **Example**: Aim to decrease social media usage by 30 minutes a day over a month.",
+      "XP": 5,
+      "Journal Template": "{\n  \"goalSettingWorksheet\": {\n    \"ultimateGoal\": {\n      \"question\": \"What is my ultimate goal for reducing social media use?\",\n      \"XP\": 5\n    },\n    \"specificGoals\": {\n      \"question\": \"What specific actions can I take to achieve my ultimate goal?\",\n      \"XP\": 6\n    },\n    \"actionsConsistentWithGoal\": {\n      \"question\": \"What actions will I take each day to move closer to my goal?\",\n      \"XP\": 7\n    },\n    \"progressTracking\": {\n      \"question\": \"How will I track my progress and stay motivated?\",\n      \"XP\": 8\n    },\n    \"barriersAndSolutions\": {\n      \"question\": \"What potential barriers might I face, and how will I overcome them?\",\n      \"XP\": 9\n    }\n  }\n}",
+      "extracted_value": "What is my ultimate goal for reducing social media use?\n\n\nWhat specific actions can I take to achieve my ultimate goal?\n\n\nWhat actions will I take each day to move closer to my goal?\n\n\nHow will I track my progress and stay motivated?\n\n\nWhat potential barriers might I face, and how will I overcome them?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Practice Mindfulness",
+      "Description": "'- **Why it Helps**: Enhances awareness of present activities and reduces automatic habits of checking devices.\n   - **What to Do**: Practice mindfulness exercises focusing on being present without relying on gadgets.\n   - **Example**: Allocate specific times to be device-free and focus on deep breathing or body scans.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"time\": \"\",\n  \"activity\": \"\",\n  \"mindfulnessExercise\": \"\",\n  \"deviceUsage\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"actions\": \"\",\n  \"questions\": [\n    \"What was the activity I was doing before I noticed my device usage?\",\n    \"How did I feel when I realized I was checking my device?\",\n    \"What mindfulness exercise did I practice today?\",\n    \"Did I notice any improvements in my ability to stay present without relying on gadgets?\",\n    \"What challenges did I face in practicing mindfulness today?\"\n  ]\n}",
+      "extracted_value": "What was the activity I was doing before I noticed my device usage?\nHow did I feel when I realized I was checking my device?\nWhat mindfulness exercise did I practice today?\nDid I notice any improvements in my ability to stay present without relying on gadgets?\nWhat challenges did I face in practicing mindfulness today?"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Behavioral Activation",
+      "Description": "'- **Why it Helps**: Encourages engagement in meaningful activities, reducing the tendency to use digital platforms as a time filler.\n   - **What to Do**: Schedule pleasurable or productive activities throughout the week.\n   - **Example**: Plan a weekly outing with friends rather than socializing solely through social media.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What activities have I been avoiding due to lack of motivation or energy?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are some pleasurable activities that I used to enjoy but have stopped doing?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How can I schedule these activities into my daily or weekly routine?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What potential roadblocks might I face when trying to engage in these activities, and how can I overcome them?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How will I measure the success of my behavioral activation plan?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What activities have I been avoiding due to lack of motivation or energy?\n\n\nWhat are some pleasurable activities that I used to enjoy but have stopped doing?\n\n\nHow can I schedule these activities into my daily or weekly routine?\n\n\nWhat potential roadblocks might I face when trying to engage in these activities, and how can I overcome them?\n\n\nHow will I measure the success of my behavioral activation plan?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Set Boundaries with Technology",
+      "Description": "'- **Why it Helps**: Establishes a healthy relationship with technology and prevents it from interfering with daily functions.\n   - **What to Do**: Define clear rules for when and how long you engage with devices.\n   - **Example**: Turn off notifications after 8 PM to enhance relaxation time before sleep.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"Why is setting boundaries with technology important to me?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are the specific times of the day when I feel most tempted to use my devices?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How long do I typically spend on my devices during each session?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What are some specific rules I can set for my device usage (e.g., no screens before bed, limited social media use during meals)?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"How will I communicate these rules to others in my household?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"What are some potential challenges I might face in sticking to these rules, and how will I overcome them?\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "Why is setting boundaries with technology important to me?\n\n\nWhat are the specific times of the day when I feel most tempted to use my devices?\n\n\nHow long do I typically spend on my devices during each session?\n\n\nWhat are some specific rules I can set for my device usage (e.g., no screens before bed, limited social media use during meals)?\n\n\nHow will I communicate these rules to others in my household?\n\n\nWhat are some potential challenges I might face in sticking to these rules, and how will I overcome them?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Use Self-Monitoring Techniques",
+      "Description": "'- **Why it Helps**: Increases self-awareness and accountability in behavior change efforts.\n   - **What to Do**: Use apps that track screen time to visualize usage patterns.\n   - **Example**: Review weekly reports and set new targets based on data insights.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"timeSpentOnScreen\": \"\",\n  \"activitiesDoneOnScreen\": \"\",\n  \"emotionsDuringScreenTime\": \"\",\n  \"thoughtsAboutScreenTime\": \"\",\n  \"patternsObserved\": \"\",\n  \"newTargetsForNextWeek\": \"\",\n  \"insightsGained\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'- **Why it Helps**: Altering negative beliefs that fuel compulsive usage can reduce anxiety and improve mood.\n   - **What to Do**: Replace unhelpful thoughts with balanced, rational ones.\n   - **Example**: Change \"I must reply instantly\" to \"It's okay to respond later.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Triggering Event\": \"\",\n  \"Negative Thought\": \"\",\n  \"Emotion\": \"\",\n  \"Behavior\": \"\",\n  \"Balanced Thought\": \"\",\n  \"Rational Question 1\": \"Is this thought really true?\",\n  \"Rational Question 2\": \"Is there another way to look at this situation?\",\n  \"Rational Question 3\": \"How would I feel if I didn't believe this thought?\"\n}",
+      "extracted_value": "Is this thought really true?\n\n\nIs there another way to look at this situation?\n\n\nHow would I feel if I didn't believe this thought?\n\n"
+    },
+    {
+      "Issue Name": "Internet and Social Media Issue",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Engage in Problem-Solving",
+      "Description": "'- **Why it Helps**: Strengthens confidence and resourcefulness in managing social media-related challenges.\n   - **What to Do**: Identify specific issues (e.g., cyberbullying) and brainstorm solutions.\n   - **Example**: Develop a plan to address negative interactions, like blocking or reporting problematic users.\n\nUsing these CBT strategies, individuals can achieve a healthier balance with internet and social media use, enhancing both psychological well-being and quality of life.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What specific social media-related challenges am I facing?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"What are the negative impacts of these challenges on my mental health?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What are some potential solutions to address these challenges?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can I implement these solutions in my daily life?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What are the potential benefits of addressing these challenges?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "What specific social media-related challenges am I facing?\n\n\nWhat are the negative impacts of these challenges on my mental health?\n\n\nWhat are some potential solutions to address these challenges?\n\n\nHow can I implement these solutions in my daily life?\n\n\nWhat are the potential benefits of addressing these challenges?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "condition": "Family and Relaitonship",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Set an Intention:",
+      "Card Description": "'- Begin your practice by setting a positive intention such as \"I cultivate compassion and understanding\" or \"I embrace harmony in my relationships.\"",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Breathwork (Pranayama):",
+      "Card Description": "'- **Deep Breathing:** Helps calm the mind. Inhale deeply through the nose, fill the lungs, and exhale slowly through the mouth.  \n   - **Alternate Nostril Breathing (Nadi Shodhana):** Balances the nervous system. Close one nostril and inhale slowly, then switch nostrils to exhale.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Gentle Yoga Poses:",
+      "Card Description": "'- **Child's Pose (Balasana):** Encourages introspection and relaxation.  \n   - **Cat-Cow Pose (Marjaryasana/Bitilasana):** Releases tension and increases flexibility.  \n   - **Seated Forward Bend (Paschimottanasana):** Calms the mind and stretches the body.  \n   - **Reclining Bound Angle Pose (Supta Baddha Konasana):** Opens the heart and fosters relaxation.  \n   - **Legs-Up-The-Wall Pose (Viparita Karani):** Relieves stress and promotes tranquility.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindful Movement:",
+      "Card Description": "'- **Sun Salutations (Surya Namaskar):** Gently energizes the body and clears the mind, creating openness to new perspectives.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Focus on the Breath:",
+      "Card Description": "'- Sit comfortably and focus on your breath. Observe each inhalation and exhalation, noticing the natural rhythm.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Loving-Kindness Meditation (Metta):",
+      "Card Description": "'- Begin by cultivating loving-kindness towards yourself, then extend these feelings to family members, friends, and eventually all beings. Repeat phrases like \"May I be happy, may you be happy,\" etc.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Guided Visualization:",
+      "Card Description": "'- Visualize a serene place where you feel at peace. Imagine resolving conflict with loved ones through compassion and love in this safe space.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan:",
+      "Card Description": "'- Starting from the top of your head, mentally scan your body for tension. Acknowledge each sensation without judgment. This can enhance emotional awareness and release pent-up emotions.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Family and Relaitonship",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Gratitude Meditation:",
+      "Card Description": "'- Reflect on the aspects of your family and relationships for which you are grateful. Acknowledge small, positive interactions and express appreciation mentally.",
+      "xp": 5
+    }
+  ],
+  "count": 9,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 9
+  }
+}

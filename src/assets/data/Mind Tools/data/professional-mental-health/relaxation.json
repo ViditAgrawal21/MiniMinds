@@ -1,0 +1,99 @@
+{
+  "condition": "Professional Mental Health",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Start with Gentle Warm-Up",
+      "Card Description": "'- **Neck Rolls:** Gently roll your head in a slow, circular motion to release tension.  \n   - **Shoulder Shrugs:** Lift your shoulders up to your ears, then release them down.  \n   - **Cat-Cow Stretch:** On your hands and knees, alternate between arching your back (cat) and dipping your belly toward the floor (cow).",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Focus on Breathing",
+      "Card Description": "'- **Pranayama (Breathing Exercises):**   \n     - **Nadi Shodhana (Alternate Nostril Breathing):** Helps balance the mind and reduce stress.  \n     - **Belly Breathing:** Place one hand on your abdomen. Inhale deeply through your nose, feeling your belly rise, and exhale completely.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Incorporate Standing Poses",
+      "Card Description": "'- **Mountain Pose (Tadasana):** Stand tall with feet together, arms at your sides, and focus on grounding your feet.  \n   - **Warrior Poses (Virabhadrasana I and II):** Build confidence, focus, and strength.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Practice Balancing Poses",
+      "Card Description": "'- **Tree Pose (Vrksasana):** Enhances concentration and mindfulness.  \n   - **Eagle Pose (Garudasana):** Encourages focus and balance.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Include Forward Bends and Twists",
+      "Card Description": "'- **Seated Forward Bend (Paschimottanasana):** Calms the mind and stretches the back.  \n   - **Seated Spinal Twist (Ardha Matsyendrasana):** Releases tension in the spine and helps improve digestion.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "End with Relaxation",
+      "Card Description": "'- **Corpse Pose (Savasana):** Lie on your back with arms at your sides, palms up. Close your eyes and focus on deep, relaxing breaths.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindful Breathing",
+      "Card Description": "'- Sit comfortably with your back straight. Close your eyes and focus on your breath. Notice the sensation of the breath entering and leaving your nostrils.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan Meditation",
+      "Card Description": "'- Lie down and mentally scan your body from head to toe, acknowledging sensations without judgment. This helps increase body awareness and release tension.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Guided Meditation",
+      "Card Description": "'- Use apps or online resources that offer guided meditations specifically for stress reduction and mental clarity in a professional setting.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Loving-Kindness Meditation",
+      "Card Description": "'- Focus on cultivating compassion for yourself and others. Repeat phrases like “May I be well, may I be happy, may I live with ease,” and extend these thoughts to others.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Visualization",
+      "Card Description": "'- Imagine a place that feels safe and peaceful. Spend time visualizing this space in detail, which can help reduce anxiety and improve positive moods.",
+      "xp": 5
+    }
+  ],
+  "count": 11,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 11
+  }
+}

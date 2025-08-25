@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "condition": "internet-social-media",
+    "intervention_type": "10 Common Suggestions",
+    "source_files": [
+      "thought_pro_filtered.json",
+      "thought_pro_with_extracted_final.json",
+      "Thought_pro_remaining.json"
+    ],
+    "created_from": "thought_pro_filtered.json, thought_pro_with_extracted_final.json, and Thought_pro_remaining.json",
+    "total_interventions": 10,
+    "creation_date": "2024-12-28"
+  },
+  "interventions": [
+    {
+      "title": "Privacy Settings Management",
+      "description": "- **Example**: Regularly check and update your privacy settings on platforms like Facebook or Instagram to control who can see your posts. This can prevent unwanted sharing of personal information.",
+      "xp": 2
+    },
+    {
+      "title": "Two-Factor Authentication (2FA)",
+      "description": "- **Example**: Enable 2FA on your accounts such as Google or Twitter. This adds an extra layer of security by requiring a verification code sent to your phone in addition to your password when logging in.",
+      "xp": 2
+    },
+    {
+      "title": "Awareness of Phishing Attacks",
+      "description": "- **Example**: Be cautious of emails or messages that ask for personal information or direct you to click on suspicious links. Legitimate companies typically do not ask for sensitive information this way.",
+      "xp": 2
+    },
+    {
+      "title": "Content Moderation and Reporting",
+      "description": "- **Example**: If you encounter harassment or inappropriate content on platforms like Reddit or YouTube, use the platform's tools to report it. This helps maintain a safe online environment.",
+      "xp": 2
+    },
+    {
+      "title": "Time Management and Screen Time",
+      "description": "- **Example**: Use apps or built-in smartphone features that monitor and limit social media usage to ensure a healthy balance. This can help prevent addiction and overuse.",
+      "xp": 2
+    },
+    {
+      "title": "Educating on Digital Literacy",
+      "description": "- **Example**: Attend webinars or read articles on digital literacy to understand how to discern credible sources from misinformation. This skill is crucial in navigating social media effectively.",
+      "xp": 2
+    },
+    {
+      "title": "Ad Personalization and Tracking Control",
+      "description": "- **Example**: Adjust your ad preferences on platforms like Google or Facebook to limit the amount of targeted advertising you receive. This can help protect your privacy.",
+      "xp": 2
+    },
+    {
+      "title": "Parental Controls and Supervision",
+      "description": "- **Example**: Utilize parental control settings on platforms like YouTube Kids to ensure children only access age-appropriate content, protecting them from harmful material.",
+      "xp": 2
+    },
+    {
+      "title": "Platform-Specific Communities and Support",
+      "description": "- **Example**: Join online forums or communities specific to social media platforms, such as Facebook groups or Reddit threads, for support and advice on platform-specific issues.",
+      "xp": 2
+    },
+    {
+      "title": "Regular Software and Security Updates",
+      "description": "- **Example**: Keep your devices and applications up to date by installing the latest updates. Platforms like Zoom and WhatsApp frequently update to patch security vulnerabilities.\n\nBy implementing these suggestions, users can navigate internet and social media platforms more safely and effectively.",
+      "xp": 2
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "condition": "family-relationship",
+    "intervention_type": "Relaxation",
+    "source_files": [
+      "thought_pro_filtered.json",
+      "thought_pro_with_extracted_final.json",
+      "Thought_pro_remaining.json"
+    ],
+    "created_from": "thought_pro_filtered.json, thought_pro_with_extracted_final.json, and Thought_pro_remaining.json",
+    "total_interventions": 8,
+    "creation_date": "2024-12-28"
+  },
+  "interventions": [
+    {
+      "title": "Savasana (Corpse Pose)",
+      "description": "### Meditation for Family and Relationships",
+      "xp": 5
+    },
+    {
+      "title": "1. Loving-Kindness Meditation (Metta)",
+      "description": "- This meditation promotes compassion and understanding. Start by focusing on yourself, and then extend feelings of love and kindness to family members, even those with whom you might have conflict.",
+      "xp": 5
+    },
+    {
+      "title": "Steps",
+      "description": "- Sit comfortably and close your eyes.\n   - Take a few deep breaths.\n   - Repeat silently: â€œMay I be happy, may I be well, may I be safe, may I be peaceful and at ease.â€\n   - Gradually extend these wishes to family members: â€œMay you be happy, may you be well...â€",
+      "xp": 5
+    },
+    {
+      "title": "2. Mindfulness Meditation",
+      "description": "- Focus on being present, which can help you respond more calmly and thoughtfully in family situations.",
+      "xp": 5
+    },
+    {
+      "title": "Steps",
+      "description": "- Sit comfortably and focus on your breath.\n   - When thoughts arise, observe them without judgment and let them pass.\n   - Bring your attention back to your breath.",
+      "xp": 5
+    },
+    {
+      "title": "3. Gratitude Meditation",
+      "description": "- This practice helps cultivate an appreciation for your family and relationships, even during challenging times.",
+      "xp": 5
+    },
+    {
+      "title": "Steps",
+      "description": "- Sit quietly and think of things you are grateful for in your family.\n   - Visualize each person, thinking of positive interactions or qualities.\n   - Allow feelings of gratitude to fill your heart.\n\n### Practical Tips",
+      "xp": 5
+    },
+    {
+      "title": "Group Practice",
+      "description": "Remember, change takes time and patience. Regular practice can lead to improved communication, empathy, and a more harmonious family dynamic.",
+      "xp": 5
+    }
+  ]
+}

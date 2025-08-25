@@ -1,0 +1,97 @@
+{
+  "condition": "Sex Life",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Challenge the Belief of Perfectionism in Sex",
+      "Description": "'- **Why it Helps:** Perfectionist beliefs can create undue pressure and anxiety, making sexual experiences less enjoyable.\n   - **What to Do:** Recognize that there is no \"perfect\" sexual experience; each encounter is unique. Accept that mistakes or awkward moments are normal.\n   - **Example:** Instead of thinking, \"I must satisfy my partner every single time perfectly,\" reframe to, \"It's okay if things aren't perfect; we can enjoy each other and learn together.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"situation\": \"Describe the situation that triggered your perfectionist thoughts.\",\n  \"initialReaction\": \"How did you feel initially? (e.g., anxious, stressed, disappointed)\",\n  \"negativeAutomaticThoughts\": \"What negative thoughts did you have? (e.g., 'I must satisfy my partner perfectly.')\",\n  \"supportingEvidence\": \"What evidence supports your negative thoughts? (e.g., past experiences where you felt pressure to perform.)\",\n  \"opposingEvidence\": \"What evidence contradicts your negative thoughts? (e.g., every sexual experience is unique and mistakes are normal.)\",\n  \"balancedAlternativeThought\": \"Reframe your negative thoughts into a more balanced and realistic perspective. (e.g., 'It's okay if things aren't perfect; we can enjoy each other and learn together.')\",\n  \"outcomeLearning\": \"What did you learn from this experience? How will you apply this new perspective in future situations?\"\n}",
+      "extracted_value": "Describe the situation that triggered your perfectionist thoughts.\nHow did you feel initially? (e.g., anxious, stressed, disappointed)\n\n\nWhat negative thoughts did you have? (e.g., 'I must satisfy my partner perfectly.')\n\n\nWhat evidence supports your negative thoughts? (e.g., past experiences where you felt pressure to perform.)\n\n\nWhat evidence contradicts your negative thoughts? (e.g., every sexual experience is unique and mistakes are normal.)\n\n\nReframe your negative thoughts into a more balanced and realistic perspective. (e.g., 'It's okay if things aren't perfect; we can enjoy each other and learn together.')\nWhat did you learn from this experience? How will you apply this new perspective in future situations?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Dispute All-or-Nothing Thinking",
+      "Description": "'- **Why it Helps:** All-or-nothing thinking can result in unnecessary frustration and dissatisfaction.\n   - **What to Do:** Practice seeing the spectrum of sexual experiences as varied rather than just successful or unsuccessful.\n   - **Example:** \"If I'm not fully aroused the entire time, it's a disaster,\" can be reframed to, \"Sexual arousal can fluctuate, and that's normal.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reframe Unrealistic Expectations about Frequency",
+      "Description": "'- **Why it Helps:** Frequency doesn't equal quality, and pressuring oneself over it can lead to stress.\n   - **What to Do:** Focus on quality and connection rather than counting the number of times.\n   - **Example:** Replace, \"We must have sex every day to be a happy couple,\" with, \"The quality of our connection matters more than how often we have sex.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Address Guilt Around Sexual Desires",
+      "Description": "'- **Why it Helps:** Feeling guilt over natural desires can hinder one's sexual freedom and enjoyment.\n   - **What to Do:** Accept that having a range of sexual desires is natural and doesn't make you a bad person.\n   - **Example:** Change, \"I shouldn't have these kinds of desires,\" to, \"My desires are part of who I am, and I can explore them in a healthy way.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"question\": \"What situation triggered my feelings of guilt around sexual desires?\"\n  },\n  \"InitialReaction\": {\n    \"question\": \"How did I initially feel when I had these desires?\"\n  },\n  \"NegativeThoughts\": {\n    \"question\": \"What negative thoughts did I have about my sexual desires?\"\n  },\n  \"SupportingEvidence\": {\n    \"question\": \"Is there any evidence that supports the idea that having these desires is natural and not bad?\"\n  },\n  \"OpposingEvidence\": {\n    \"question\": \"Is there any evidence that contradicts the idea that having these desires is bad or wrong?\"\n  },\n  \"BalancedAlternativeThought\": {\n    \"question\": \"What is a more balanced and realistic way to think about my sexual desires?\"\n  },\n  \"OutcomeLearning\": {\n    \"question\": \"What did I learn from this experience, and how can I apply it to future situations?\"\n  }\n}",
+      "extracted_value": "What situation triggered my feelings of guilt around sexual desires?\n\n\nHow did I initially feel when I had these desires?\n\n\nWhat negative thoughts did I have about my sexual desires?\n\n\nIs there any evidence that supports the idea that having these desires is natural and not bad?\n\n\nIs there any evidence that contradicts the idea that having these desires is bad or wrong?\n\n\nWhat is a more balanced and realistic way to think about my sexual desires?\n\n\nWhat did I learn from this experience, and how can I apply it to future situations?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reduce Catastrophizing Over Sexual Performance",
+      "Description": "'- **Why it Helps:** Catastrophizing can lead to performance anxiety and reduce enjoyment.\n   - **What to Do:** Challenge thoughts that predict the worst-case scenarios and replace them with more balanced views.\n   - **Example:** Instead of, \"If I don't perform well, my partner will leave me,\" consider, \"One performance doesn't define me or our relationship.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"situation\": {\n    \"question\": \"Describe the situation that triggered your catastrophizing thoughts.\",\n    \"xp\": 3\n  },\n  \"initialReaction\": {\n    \"question\": \"How did you feel emotionally and physically in the moment?\",\n    \"xp\": 3\n  },\n  \"negativeThoughts\": {\n    \"question\": \"What were the negative or unhelpful thoughts that came up?\",\n    \"xp\": 4\n  },\n  \"supportingEvidence\": {\n    \"question\": \"What evidence supports your negative thoughts?\",\n    \"xp\": 4\n  },\n  \"opposingEvidence\": {\n    \"question\": \"What evidence contradicts your negative thoughts?\",\n    \"xp\": 5\n  },\n  \"balancedAlternativeThought\": {\n    \"question\": \"What is a more balanced and realistic way to think about the situation?\",\n    \"xp\": 6\n  },\n  \"outcomeLearning\": {\n    \"question\": \"What did you learn from this experience? How will you apply this to future situations?\",\n    \"xp\": 7\n  }\n}",
+      "extracted_value": "Describe the situation that triggered your catastrophizing thoughts.\nHow did you feel emotionally and physically in the moment?\n\n\nWhat were the negative or unhelpful thoughts that came up?\n\n\nWhat evidence supports your negative thoughts?\n\n\nWhat evidence contradicts your negative thoughts?\n\n\nWhat is a more balanced and realistic way to think about the situation?\n\n\nWhat did you learn from this experience? How will you apply this to future situations?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Clarify Distorted Beliefs on Physical Appearance",
+      "Description": "'- **Why it Helps:** Focusing excessively on flaws can reduce confidence and sexual satisfaction.\n   - **What to Do:** Recognize and appreciate your body for its capabilities rather than its perceived shortcomings.\n   - **Example:** \"I'm too unattractive to be good at sex,\" can be turned into, \"My worth and sexual abilities aren't solely based on appearance.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"distortedBelief\": \"\",\n  \"triggerEvent\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"physicalSensations\": \"\",\n  \"behaviors\": \"\",\n  \"questionsToAnswer\": [\n    {\n      \"question\": \"What is the distorted belief about my physical appearance?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What triggered this belief?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What thoughts am I having about my appearance right now?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How am I feeling in this moment?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Are there any physical sensations I'm experiencing?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What behaviors am I engaging in because of these thoughts?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Can I reframe this belief in a more positive or realistic way?\",\n      \"xp\": 6\n    }\n  ]\n}",
+      "extracted_value": "What is the distorted belief about my physical appearance?\n\n\nWhat triggered this belief?\n\n\nWhat thoughts am I having about my appearance right now?\n\n\nHow am I feeling in this moment?\n\n\nAre there any physical sensations I'm experiencing?\n\n\nWhat behaviors am I engaging in because of these thoughts?\n\n\nCan I reframe this belief in a more positive or realistic way?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Confront Shoulds and Musts about Sexual Roles",
+      "Description": "'- **Why it Helps:** Rigid beliefs about gender roles can create unnecessary pressure and limit sexual expression.\n   - **What to Do:** Adopt a flexible mindset regarding sexual roles and expectations.\n   - **Example:** \"I must always initiate sex to be seen as masculine/feminine enough,\" can be reframed to, \"Sharing initiation can strengthen our connection.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"sessionNumber\": \"1\",\n  \"techniqueUsed\": \"Confront Shoulds and Musts about Sexual Roles\",\n  \"questions\": [\n    {\n      \"question\": \"What are some rigid beliefs about gender roles that I hold?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How do these beliefs affect my sexual expression and relationships?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Can you provide an example of a 'should' or 'must' statement related to gender roles that you've noticed in yourself?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How can you reframe this statement to adopt a more flexible mindset?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What benefits do you think adopting this flexible mindset could bring to your relationships and sexual expression?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\n1\nConfront Shoulds and Musts about Sexual Roles\nWhat are some rigid beliefs about gender roles that I hold?\n\n\nHow do these beliefs affect my sexual expression and relationships?\n\n\nCan you provide an example of a 'should' or 'must' statement related to gender roles that you've noticed in yourself?\n\n\nHow can you reframe this statement to adopt a more flexible mindset?\n\n\nWhat benefits do you think adopting this flexible mindset could bring to your relationships and sexual expression?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Acceptance of Natural Variability in Desire",
+      "Description": "'- **Why it Helps:** Recognizing that libido can naturally fluctuate helps reduce anxiety.\n   - **What to Do:** Embrace the ebb and flow of sexual desire as a normal part of life.\n   - **Example:** Exchange, \"I should always want sex,\" for, \"Desire comes and goes, and that's okay.\"",
+      "XP": 3,
+      "Journal Template": "Questions to Answer",
+      "extracted_value": "Questions to Answer"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Address Fears of Rejection",
+      "Description": "'- **Why it Helps:** Fearing rejection can prevent open communication and lead to avoidance.\n   - **What to Do:** Recognize that rejection isn't a reflection of your overall worth.\n   - **Example:** Instead of, \"If my partner isn't interested, I'm a failure,\" try, \"Sometimes we're not in sync, and that’s not a reflection of my value.\"",
+      "XP": 3,
+      "Journal Template": "[\n  {\n    \"question\": \"What specific situations trigger my fear of rejection?\",\n    \"xp\": 3\n  },\n  {\n    \"question\": \"How do I typically react when I fear rejection?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What negative thoughts do I have about rejection?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How can I reframe these negative thoughts to be more helpful?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"What actions can I take to challenge my fear of rejection?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"How can I practice self-compassion when facing rejection?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"What are some positive affirmations I can use to counteract my fear of rejection?\",\n    \"xp\": 9\n  },\n  {\n    \"question\": \"How will I measure my progress in addressing my fear of rejection?\",\n    \"xp\": 10\n  }\n]",
+      "extracted_value": "What specific situations trigger my fear of rejection?\n\n\nHow do I typically react when I fear rejection?\n\n\nWhat negative thoughts do I have about rejection?\n\n\nHow can I reframe these negative thoughts to be more helpful?\n\n\nWhat actions can I take to challenge my fear of rejection?\n\n\nHow can I practice self-compassion when facing rejection?\n\n\nWhat are some positive affirmations I can use to counteract my fear of rejection?\n\n\nHow will I measure my progress in addressing my fear of rejection?\n\n"
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Cultivate a Mindset of Mutual Enjoyment",
+      "Description": "'- **Why it Helps:** Focusing on mutual enjoyment rather than individual performance enhances the sexual experience.\n    - **What to Do:** Prioritize connection and shared experiences with your partner.\n    - **Example:** Replace, \"I need to impress my partner every time,\" with, \"We're both in this to enjoy and connect with each other.\"\n\nBy applying these",
+      "XP": 6,
+      "Journal Template": "{\n  \"Section 1: Situation/Trigger\": {\n    \"Questions\": [\n      \"What is the situation or trigger that led to this moment?\",\n      \"How did I feel emotionally and physically in this moment?\"\n    ]\n  },\n  \"Section 2: Initial Reaction\": {\n    \"Questions\": [\n      \"What was my initial reaction to the situation?\",\n      \"How intense was my emotional response (rate 0-100%)?\"\n    ]\n  },\n  \"Section 3: Negative Automatic Thoughts\": {\n    \"Questions\": [\n      \"What negative or unhelpful thoughts did I notice (the 'hot thought')?\",\n      \"Is this thought factually accurate, logical, and helpful?\"\n    ]\n  },\n  \"Section 4: Supporting and Opposing Evidence\": {\n    \"Questions\": [\n      \"What evidence supports this negative thought?\",\n      \"What evidence opposes or contradicts this negative thought?\"\n    ]\n  },\n  \"Section 5: Balanced Alternative Thought\": {\n    \"Questions\": [\n      \"What is a more realistic and helpful assessment of the situation?\",\n      \"How would I objectively judge this if it were affecting someone else?\"\n    ]\n  },\n  \"Section 6: Outcome/Learning\": {\n    \"Questions\": [\n      \"How did I feel after reassessing my thoughts?\",\n      \"What did I learn from this experience?\",\n      \"Will I see this differently in one day/week/month?\"\n    ]\n  }\n}",
+      "extracted_value": "What is the situation or trigger that led to this moment?\nHow did I feel emotionally and physically in this moment?\nWhat was my initial reaction to the situation?\nHow intense was my emotional response (rate 0-100%)?\nWhat negative or unhelpful thoughts did I notice (the 'hot thought')?\nIs this thought factually accurate, logical, and helpful?\nWhat evidence supports this negative thought?\nWhat evidence opposes or contradicts this negative thought?\nWhat is a more realistic and helpful assessment of the situation?\nHow would I objectively judge this if it were affecting someone else?\nHow did I feel after reassessing my thoughts?\nWhat did I learn from this experience?\nWill I see this differently in one day/week/month?"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "condition": "Sleep",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify and Challenge Catastrophic Thinking",
+      "Description": "'- **Why it Helps:** Catastrophic thinking (e.g., \"If I don't sleep, I'll be a disaster\") can heighten anxiety, making it harder to relax and sleep.\n   - **What to do:** Keep a sleep journal to identify and question extreme thoughts. Ask yourself if the worst-case scenario is likely to happen.\n   - **Example:** \"If I don't sleep tonight, tomorrow might be tough, but I've handled tired days before.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"automaticThoughts\": \"\",\n  \"beliefPercentage\": \"\",\n  \"mood\": \"\",\n  \"negativeThinkingStyle\": \"\",\n  \"evidenceSupportingThought\": \"\",\n  \"evidenceAgainstThought\": \"\",\n  \"balancedThought\": \"\",\n  \"questionsToAnswer\": [\n    {\n      \"question\": \"What is the worst-case scenario I'm thinking about?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Is this worst-case scenario likely to happen?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Have I handled similar situations in the past?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What evidence do I have that supports my automatic thought?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What evidence do I have that contradicts my automatic thought?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"Can I think of a more balanced or realistic perspective on this situation?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "What is the worst-case scenario I'm thinking about?\n\n\nIs this worst-case scenario likely to happen?\n\n\nHave I handled similar situations in the past?\n\n\nWhat evidence do I have that supports my automatic thought?\n\n\nWhat evidence do I have that contradicts my automatic thought?\n\n\nCan I think of a more balanced or realistic perspective on this situation?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Replace Absolute Demands with Preferences",
+      "Description": "'- **Why it Helps:** Replacing \"should\" or \"must\" with \"prefer\" reduces stress and pressure around sleeping.\n   - **What to do:** Rephrase thoughts like \"I must get 8 hours of sleep\" to \"I would prefer to get 8 hours of sleep.\"\n   - **Example:** \"I would prefer to sleep well tonight, but if I don't, I'll manage.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Section 1: Current Thoughts\": {\n    \"Prompt\": \"Write down your current thoughts about sleep.\",\n    \"XP\": 5\n  },\n  \"Section 2: Absolute Demands\": {\n    \"Prompt\": \"Identify any thoughts that use 'should' or 'must' regarding sleep.\",\n    \"XP\": 6\n  },\n  \"Section 3: Rephrased Thoughts\": {\n    \"Prompt\": \"Rephrase each absolute demand using 'prefer' instead of 'should' or 'must'.\",\n    \"XP\": 7\n  },\n  \"Section 4: Reflection\": {\n    \"Prompt\": \"Reflect on how rephrasing your thoughts affects your stress levels. Do you feel more relaxed or less stressed?\",\n    \"XP\": 8\n  },\n  \"Section 5: Action Plan\": {\n    \"Prompt\": \"Create an action plan for managing sleep without feeling pressured by absolute demands. What steps will you take if you don't get enough sleep?\",\n    \"XP\": 9\n  }\n}",
+      "extracted_value": "Write down your current thoughts about sleep.\nIdentify any thoughts that use 'should' or 'must' regarding sleep.\nRephrase each absolute demand using 'prefer' instead of 'should' or 'must'.\nReflect on how rephrasing your thoughts affects your stress levels. Do you feel more relaxed or less stressed?\n\n\nCreate an action plan for managing sleep without feeling pressured by absolute demands. What steps will you take if you don't get enough sleep?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Focus on What Can be Controlled",
+      "Description": "'- **Why it Helps:** Stressing about things beyond control, like random awakenings, increases anxiety.\n   - **What to do:** Identify aspects of sleep you can influence, such as bedtime routine or sleep environment.\n   - **Example:** \"I can't control if I wake up, but I can control maintaining a calming bedtime routine.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"event\": \"What triggered my stress today?\",\n  \"beliefs\": {\n    \"irrational_beliefs\": {\n      \"question\": \"What am I thinking that's making me feel anxious about sleep?\",\n      \"answer\": \"\"\n    },\n    \"rational_alternatives\": {\n      \"question\": \"What are some rational thoughts I can replace my irrational ones with?\",\n      \"answer\": \"\"\n    }\n  },\n  \"control_aspects\": {\n    \"question\": \"What aspects of my sleep can I control?\",\n    \"answer\": \"\"\n  },\n  \"actions\": {\n    \"question\": \"What specific actions can I take to control these aspects?\",\n    \"answer\": \"\"\n  },\n  \"reflection\": {\n    \"question\": \"How did focusing on what I can control affect my anxiety today?\",\n    \"answer\": \"\"\n  }\n}",
+      "extracted_value": "YYYY-MM-DD\nWhat triggered my stress today?\n\n\nWhat am I thinking that's making me feel anxious about sleep?\n\n\nWhat are some rational thoughts I can replace my irrational ones with?\n\n\nWhat aspects of my sleep can I control?\n\n\nWhat specific actions can I take to control these aspects?\n\n\nHow did focusing on what I can control affect my anxiety today?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Adopt a Realistic View of Sleep",
+      "Description": "'- **Why it Helps:** Unrealistic expectations (e.g., needing perfect sleep every night) can create frustration.\n   - **What to do:** Educate yourself about normal sleep patterns and variability.\n   - **Example:** \"Some nights are better than others; it's completely normal.\"",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "De-catastrophize Poor Sleep Nights",
+      "Description": "'- **Why it Helps:** Realizing poor sleep isn't the end of the world reduces stress and allows rest.\n   - **What to do:** List times you had poor sleep and still managed your day successfully.\n   - **Example:** \"Even if I sleep poorly, I'll still get through tomorrow.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Section 1: Reflection on Poor Sleep Nights\": {\n    \"Question 1: Describe a recent night when you had poor sleep.\": \"\",\n    \"Question 2: How did you feel during that night?\": \"\",\n    \"Question 3: What were your thoughts about the poor sleep?\": \"\"\n  },\n  \"Section 2: Successful Days Despite Poor Sleep\": {\n    \"Question 4: Think of a time when you had poor sleep but still managed to get through the day successfully. Describe the situation.\": \"\",\n    \"Question 5: What did you do to manage your day despite the poor sleep?\": \"\",\n    \"Question 6: How did you feel about your ability to manage the day despite the poor sleep?\": \"\"\n  },\n  \"Section 3: Reassurance and Coping Mechanisms\": {\n    \"Question 7: Write down a reassuring thought about poor sleep, such as \\\"Even if I sleep poorly, I'll still get through tomorrow.\\\"\": \"\",\n    \"Question 8: What coping mechanisms can you use to reduce stress related to poor sleep?\": \"\",\n    \"Question 9: How can you remind yourself of these coping mechanisms when you're feeling stressed about sleep?\": \"\"\n  }\n}"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Modify Black-and-White Thinking",
+      "Description": "'- **Why it Helps:** Viewing sleep as either perfect or disastrous magnifies stress.\n   - **What to do:** Consider sleep quality on a spectrum rather than all-or-nothing.\n   - **Example:** \"Last night, I slept less than usual but still got enough rest to function.\"",
+      "XP": 6,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Event/Experience\": \"\",\n  \"Thoughts (Before Modification):\": \"\",\n  \"Emotions:\": \"\",\n  \"Behavior:\": \"\",\n  \"Questions to Answer:\": [\n    {\n      \"Question\": \"Did I view my sleep quality as all-or-nothing?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"How did this thinking affect my emotions and behavior?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"Can I reframe my thinking to consider sleep quality on a spectrum?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"What specific thoughts can I replace with more balanced ones?\",\n      \"Answer\": \"\"\n    },\n    {\n      \"Question\": \"How will this new perspective help reduce stress and improve my overall well-being?\",\n      \"Answer\": \"\"\n    }\n  ]\n}",
+      "extracted_value": "Did I view my sleep quality as all-or-nothing?\n\n\nHow did this thinking affect my emotions and behavior?\n\n\nCan I reframe my thinking to consider sleep quality on a spectrum?\n\n\nWhat specific thoughts can I replace with more balanced ones?\n\n\nHow will this new perspective help reduce stress and improve my overall well-being?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Relaxation without Pressure",
+      "Description": "'- **Why it Helps:** Pressuring oneself to relax can be counterproductive.\n   - **What to do:** Engage in calming activities with the mindset of enjoying them, not solely to induce sleep.\n   - **Example:** \"I'll do some light reading because I enjoy it, not just to force sleep.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"activating_event\": \"\",\n  \"beliefs\": \"\",\n  \"emotional_consequences\": \"\",\n  \"coping_techniques_used\": \"\",\n  \"questions_to_answer\": [\n    {\n      \"question\": \"What was the activating event that triggered my need to relax?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What were my initial beliefs about relaxation?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"How did I feel emotionally as a result of these beliefs?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"What coping techniques did I use to manage my emotions?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"Did I pressure myself to relax? If so, how did it affect me?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What calming activities did I engage in, and why did I choose them?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How did enjoying these activities affect my emotional state?\",\n      \"xp\": 9\n    },\n    {\n      \"question\": \"What did I learn from this experience about relaxation and pressure?\",\n      \"xp\": 10\n    }\n  ]\n}",
+      "extracted_value": "What was the activating event that triggered my need to relax?\n\n\nWhat were my initial beliefs about relaxation?\n\n\nHow did I feel emotionally as a result of these beliefs?\n\n\nWhat coping techniques did I use to manage my emotions?\n\n\nDid I pressure myself to relax? If so, how did it affect me?\n\n\nWhat calming activities did I engage in, and why did I choose them?\n\n\nHow did enjoying these activities affect my emotional state?\n\n\nWhat did I learn from this experience about relaxation and pressure?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Address Awfulizing Thoughts",
+      "Description": "'- **Why it Helps:** Believing that insomnia is the worst thing ever intensifies stress.\n   - **What to do:** Put sleep problems in perspective by recognizing they are uncomfortable but not end-of-the-world.\n   - **Example:** \"Not sleeping well is unpleasant, but it’s not the worst thing that could happen.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"event\": \"\",\n  \"thoughts\": \"\",\n  \"feelings\": \"\",\n  \"perspective\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What is the worst-case scenario in this situation?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Is this situation really as bad as I think it is?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How can I put this situation into perspective?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What are some other things that could be worse than this situation?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"How can I remind myself that this is just one aspect of my life?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What is the worst-case scenario in this situation?\n\n\nIs this situation really as bad as I think it is?\n\n\nHow can I put this situation into perspective?\n\n\nWhat are some other things that could be worse than this situation?\n\n\nHow can I remind myself that this is just one aspect of my life?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Shift from Self-Downing to Self-Compassion",
+      "Description": "'- **Why it Helps:** Self-blaming fuels negative emotions, making sleep harder.\n   - **What to do:** Treat yourself as you would a friend, with understanding and kindness.\n   - **Example:** \"I'm not sleeping well, but I'm doing my best and that's enough.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Trigger\": \"\",\n  \"Initial Reaction\": \"\",\n  \"Self-Critical Thoughts\": \"\",\n  \"Costs/Benefits\": \"\",\n  \"Self-Compassionate Thoughts\": \"\",\n  \"Altered Reaction\": \"\",\n  \"Compassionate Conclusion\": \"\",\n  \"Questions to Answer\": [\n    {\n      \"Question\": \"What triggered my self-critical thoughts today?\",\n      \"XP\": 5\n    },\n    {\n      \"Question\": \"How did I initially react to the situation?\",\n      \"XP\": 5\n    },\n    {\n      \"Question\": \"What self-critical thoughts came to mind?\",\n      \"XP\": 6\n    },\n    {\n      \"Question\": \"What are the costs of thinking this way?\",\n      \"XP\": 6\n    },\n    {\n      \"Question\": \"What self-compassionate thoughts could help alleviate my suffering?\",\n      \"XP\": 7\n    },\n    {\n      \"Question\": \"How would my feelings change if I treated myself with kindness?\",\n      \"XP\": 7\n    },\n    {\n      \"Question\": \"What is a more compassionate and helpful conclusion to replace the self-criticism?\",\n      \"XP\": 8\n    },\n    {\n      \"Question\": \"How much do I believe the self-critical thoughts now (0-100%)?\",\n      \"XP\": 8\n    },\n    {\n      \"Question\": \"How intense is my initial main emotion now (0-100%)?\",\n      \"XP\": 9\n    }\n  ]\n}",
+      "extracted_value": "What triggered my self-critical thoughts today?\n\n\nHow did I initially react to the situation?\n\n\nWhat self-critical thoughts came to mind?\n\n\nWhat are the costs of thinking this way?\n\n\nWhat self-compassionate thoughts could help alleviate my suffering?\n\n\nHow would my feelings change if I treated myself with kindness?\n\n\nWhat is a more compassionate and helpful conclusion to replace the self-criticism?\n\n\nHow much do I believe the self-critical thoughts now (0-100%)?\n\n\nHow intense is my initial main emotion now (0-100%)?\n\n"
+    },
+    {
+      "Issue Name": "Sleep",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Reframe the Importance of Sleep",
+      "Description": "'- **Why it Helps:** Placing too much importance on perfect sleep can create performance anxiety.\n    - **What to do:** Acknowledge that while sleep is important, occasional disruptions are manageable.\n    - **Example:** \"Although I value sleep, I can handle temporary setbacks.\"\n\nBy using these techniques, individuals can shift their perceptions and thoughts about sleep, thereby reducing anxiety and creating a healthier mindset that promotes better sleep habits.",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"What are the things that make me worry about my sleep?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"How do these worries affect my daily life?\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Can I think of any times when I've handled temporary setbacks in the past?\",\n    \"xp\": 4\n  },\n  {\n    \"question\": \"What would happen if I didn't achieve perfect sleep tonight?\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How can I reframe my thoughts about sleep to make it less stressful?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What positive affirmations can I use to remind myself that occasional disruptions are manageable?\",\n    \"xp\": 8\n  }\n]",
+      "extracted_value": "What are the things that make me worry about my sleep?\n\n\nHow do these worries affect my daily life?\n\n\nCan I think of any times when I've handled temporary setbacks in the past?\n\n\nWhat would happen if I didn't achieve perfect sleep tonight?\n\n\nHow can I reframe my thoughts about sleep to make it less stressful?\n\n\nWhat positive affirmations can I use to remind myself that occasional disruptions are manageable?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

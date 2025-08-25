@@ -1,0 +1,100 @@
+{
+  "condition": "Common Psychological Issues",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'- **Why it Helps**: Cognitive restructuring involves identifying and challenging negative thought patterns to reduce their impact on your mood and behavior.\n   - **What to Do**: Recognize negative or irrational thoughts, evaluate the evidence for and against them, and develop alternative, more balanced thinking.\n   - **Example**: For someone with anxiety, if the thought is \"I'm going to embarrass myself during the presentation,\" challenge it by asking, \"What evidence supports this? What evidence contradicts it?\" and then think, \"I have prepared well and can handle questions confidently.\"",
+      "XP": 7,
+      "Journal Template": "{\n  \"Trigger\": {\n    \"question\": \"Describe the situation that led to your negative emotions or thoughts.\",\n    \"instructions\": \"Be specific about the event or situation. Where were you? Who was involved? How did you feel in the moment?\"\n  },\n  \"Automatic Thoughts\": {\n    \"question\": \"Write down the immediate thoughts that came to mind when the situation occurred.\",\n    \"instructions\": \"These are often negative, irrational, or distorted. What were you thinking? What meaning did you attach to the situation?\"\n  },\n  \"Evidence for Thoughts\": {\n    \"question\": \"What evidence supports your negative thoughts?\",\n    \"instructions\": \"\"\n  },\n  \"Evidence Against Thoughts\": {\n    \"question\": \"What evidence contradicts your negative thoughts?\",\n    \"instructions\": \"\"\n  },\n  \"Alternative Thoughts\": {\n    \"question\": \"Develop a healthier way of thinking about the situation.\",\n    \"instructions\": \"\"\n  },\n  \"Affirmations\": {\n    \"question\": \"Create a list of affirmations or positive statements to reinforce your new, balanced thoughts.\",\n    \"instructions\": \"\"\n  },\n  \"Action Plan\": {\n    \"question\": \"What action can you take to support your new thinking?\",\n    \"instructions\": \"\"\n  },\n  \"Improvement\": {\n    \"question\": \"Do you feel slightly better or more optimistic after challenging your negative thoughts?\",\n    \"instructions\": \"\"\n  }\n}",
+      "extracted_value": "Describe the situation that led to your negative emotions or thoughts.\nBe specific about the event or situation. Where were you? Who was involved? How did you feel in the moment?\n\n\nWrite down the immediate thoughts that came to mind when the situation occurred.\nThese are often negative, irrational, or distorted. What were you thinking? What meaning did you attach to the situation?\n\n\nWhat evidence supports your negative thoughts?\n\n\nWhat evidence contradicts your negative thoughts?\n\n\nDevelop a healthier way of thinking about the situation.\nCreate a list of affirmations or positive statements to reinforce your new, balanced thoughts.\nWhat action can you take to support your new thinking?\n\n\nDo you feel slightly better or more optimistic after challenging your negative thoughts?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Behavioral Activation",
+      "Description": "'- **Why it Helps**: Helps break the cycle of depression by encouraging engagement in pleasurable or meaningful activities, boosting mood and motivation.\n   - **What to Do**: Schedule regular activities that you find enjoyable or fulfilling, even if you initially lack the desire to do them.\n   - **Example**: If feeling depressed, plan to go for a walk in the park every morning or engage in a hobby like painting, even if you don’t immediately feel like it.",
+      "XP": 7,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"activityScheduled\": \"What activity did I schedule today?\",\n  \"initialMotivation\": \"How motivated did I feel to do the activity initially?\",\n  \"actualEngagement\": \"Did I actually engage in the activity? If not, why?\",\n  \"enjoymentLevel\": \"How enjoyable did I find the activity?\",\n  \"moodBoost\": \"Did the activity boost my mood? If yes, how much?\",\n  \"reflection\": \"What did I learn from this experience? What would I do differently next time?\"\n}",
+      "extracted_value": "YYYY-MM-DD\nWhat activity did I schedule today?\n\n\nHow motivated did I feel to do the activity initially?\n\n\nDid I actually engage in the activity? If not, why?\n\n\nHow enjoyable did I find the activity?\n\n\nDid the activity boost my mood? If yes, how much?\n\n\nWhat did I learn from this experience? What would I do differently next time?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Exposure Therapy",
+      "Description": "'- **Why it Helps**: Helps reduce anxiety by gradually and systematically facing and becoming desensitized to feared objects or situations.\n   - **What to Do**: Create a hierarchy of feared situations and gradually expose yourself, starting from the least scary to the most.\n   - **Example**: For social anxiety, start by saying 'hi' to a coworker, then gradually work up to attending a large social event.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"sudsRating\": \"\",\n  \"safetyBehaviors\": \"\",\n  \"exerciseLength\": \"\",\n  \"notes\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Problem-Solving Skills",
+      "Description": "'- **Why it Helps**: Enhances a sense of control and reduces feelings of helplessness by systematically addressing life's problems.\n   - **What to Do**: Define the problem, brainstorm possible solutions, evaluate the pros and cons, choose a solution, and test it.\n   - **Example**: If stressed about managing work-life balance, list all tasks, delegate some, and schedule specific times for both work and relaxation.",
+      "XP": 3,
+      "Journal Template": "{\n  \"Problem Definition\": {\n    \"question\": \"What is the specific problem you are trying to solve?\",\n    \"XP\": 3\n  },\n  \"Achievable Goal\": {\n    \"question\": \"What is a realistic goal you want to achieve by solving this problem?\",\n    \"XP\": 4\n  },\n  \"Generate Solutions\": {\n    \"question\": \"List at least 3 possible solutions to the problem.\",\n    \"XP\": 5\n  },\n  \"Evaluate Pros and Cons\": {\n    \"question\": \"For each solution, list the pros and cons.\",\n    \"XP\": 6\n  },\n  \"Choose a Solution\": {\n    \"question\": \"Which solution do you choose to implement?\",\n    \"XP\": 7\n  },\n  \"Subtasks\": {\n    \"question\": \"Break down the chosen solution into smaller, manageable subtasks.\",\n    \"XP\": 8\n  },\n  \"Reflection\": {\n    \"question\": \"Reflect on your progress. What worked well? What didn't? What adjustments do you need to make?\",\n    \"XP\": 9\n  }\n}",
+      "extracted_value": "What is the specific problem you are trying to solve?\n\n\nWhat is a realistic goal you want to achieve by solving this problem?\n\n\nList at least 3 possible solutions to the problem.\nFor each solution, list the pros and cons.\nWhich solution do you choose to implement?\n\n\nBreak down the chosen solution into smaller, manageable subtasks.\nReflect on your progress. What worked well? What didn't? What adjustments do you need to make?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Mindfulness and Relaxation Techniques",
+      "Description": "'- **Why it Helps**: Reduces stress and anxiety by promoting awareness of the present moment and reducing over-engagement with distressing thoughts.\n   - **What to Do**: Practice mindfulness meditation or progressive muscle relaxation regularly.\n   - **Example**: Spend 10 minutes daily focusing on your breathing or use guided imagery to reduce feelings of anxiety.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"time\": \"\",\n  \"activity\": \"\",\n  \"thoughts\": {\n    \"distressingThoughts\": \"\",\n    \"rationalResponse\": \"\"\n  },\n  \"questions\": [\n    {\n      \"question\": \"What triggered my anxiety today?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"How did I feel before and after practicing mindfulness/relaxation?\",\n      \"XP\": 6\n    },\n    {\n      \"question\": \"What specific mindfulness/relaxation technique did I use today?\",\n      \"XP\": 4\n    },\n    {\n      \"question\": \"How can I incorporate this technique into my daily routine?\",\n      \"XP\": 7\n    },\n    {\n      \"question\": \"What are some common thoughts that come up during mindfulness/relaxation practice?\",\n      \"XP\": 8\n    }\n  ]\n}",
+      "extracted_value": "What triggered my anxiety today?\n\n\nHow did I feel before and after practicing mindfulness/relaxation?\n\n\nWhat specific mindfulness/relaxation technique did I use today?\n\n\nHow can I incorporate this technique into my daily routine?\n\n\nWhat are some common thoughts that come up during mindfulness/relaxation practice?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Thought Records",
+      "Description": "'- **Why it Helps**: Increases awareness of thoughts and their impact on emotions and behavior, aiding in cognitive restructuring.\n   - **What to Do**: Record situations, moods, automatic thoughts, evidence, and more balanced perspectives.\n   - **Example**: If experiencing intense anger, document the situation that triggered you and work through the thought record to see how perceptions may be skewed.",
+      "XP": 7,
+      "Journal Template": "{\n  \"columns\": [\n    {\n      \"name\": \"Situation / Trigger\",\n      \"questions\": [\n        \"What event (external or internal) is associated with the unpleasant emotion? Or what unhelpful behavior did you engage in?\"\n      ]\n    },\n    {\n      \"name\": \"Initial Reaction\",\n      \"questions\": [\n        \"How did you feel emotionally and physically \\u2013 what did you do in the moment? (Rate intensity 0-100%)\"\n      ]\n    },\n    {\n      \"name\": \"Negative Automatic Thoughts\",\n      \"questions\": [\n        \"What negative or unhelpful thoughts did you notice; what is the 'hot thought'?\"\n      ]\n    },\n    {\n      \"name\": \"Supporting Evidence\",\n      \"questions\": [\n        \"What hard evidence supports your negative thoughts?\"\n      ]\n    },\n    {\n      \"name\": \"Opposing Evidence\",\n      \"questions\": [\n        \"What evidence contradicts your negative thoughts?\"\n      ]\n    },\n    {\n      \"name\": \"Balanced Alternative Thought\",\n      \"questions\": [\n        \"What more realistic and helpful assessment of the situation could you have?\"\n      ]\n    },\n    {\n      \"name\": \"Outcome / Learning\",\n      \"questions\": [\n        \"What did you learn from this experience? Is the real problem the situation or the way that you are thinking about the situation?\"\n      ]\n    }\n  ]\n}",
+      "extracted_value": "Situation / Trigger\nWhat event (external or internal) is associated with the unpleasant emotion? Or what unhelpful behavior did you engage in?\nInitial Reaction\nHow did you feel emotionally and physically – what did you do in the moment? (Rate intensity 0-100%)\nNegative Automatic Thoughts\nWhat negative or unhelpful thoughts did you notice; what is the 'hot thought'?\nSupporting Evidence\nWhat hard evidence supports your negative thoughts?\nOpposing Evidence\nWhat evidence contradicts your negative thoughts?\nBalanced Alternative Thought\nWhat more realistic and helpful assessment of the situation could you have?\nOutcome / Learning\nWhat did you learn from this experience? Is the real problem the situation or the way that you are thinking about the situation?"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Role-playing",
+      "Description": "'- **Why it Helps**: Allows practice of new skills and behaviors in a safe environment, improving confidence and competence.\n   - **What to Do**: Simulate a challenging situation with a therapist or friend and practice different approaches.\n   - **Example**: For assertiveness, practice saying \"no\" to unreasonable requests in a role-play setting.",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"role-playingScenario\": \"\",\n  \"approach1\": \"\",\n  \"approach2\": \"\",\n  \"approach3\": \"\",\n  \"reflection\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What is the challenging situation I want to practice?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Who will I role-play with (therapist or friend)?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What specific skills or behaviors do I want to practice?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did I feel during the role-play?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What did I learn from this experience?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What would I do differently next time?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "What is the challenging situation I want to practice?\n\n\nWho will I role-play with (therapist or friend)?\n\n\nWhat specific skills or behaviors do I want to practice?\n\n\nHow did I feel during the role-play?\n\n\nWhat did I learn from this experience?\n\n\nWhat would I do differently next time?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Activity Scheduling",
+      "Description": "'- **Why it Helps**: Encourages engagement in routine activities, improving mood and reducing procrastination.\n   - **What to Do**: Use a planner to schedule daily activities, including self-care, social, and work tasks.\n   - **Example**: Create a daily planner that includes work tasks, exercise, and time with friends to combat feelings of isolation.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"activities\": [\n    {\n      \"activityType\": \"Work\",\n      \"task\": \"\",\n      \"start\": \"\",\n      \"end\": \"\",\n      \"XP\": 6\n    },\n    {\n      \"activityType\": \"Self-Care\",\n      \"task\": \"\",\n      \"start\": \"\",\n      \"end\": \"\",\n      \"XP\": 5\n    },\n    {\n      \"activityType\": \"Social\",\n      \"task\": \"\",\n      \"start\": \"\",\n      \"end\": \"\",\n      \"XP\": 7\n    },\n    {\n      \"activityType\": \"Exercise\",\n      \"task\": \"\",\n      \"start\": \"\",\n      \"end\": \"\",\n      \"XP\": 8\n    }\n  ],\n  \"questions\": [\n    {\n      \"question\": \"What activities did I complete today?\",\n      \"XP\": 3\n    },\n    {\n      \"question\": \"How did each activity make me feel?\",\n      \"XP\": 4\n    },\n    {\n      \"question\": \"Were there any challenges or obstacles during the day?\",\n      \"XP\": 5\n    },\n    {\n      \"question\": \"What can I do differently tomorrow to make my day more productive?\",\n      \"XP\": 6\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nWork\nSelf-Care\nSocial\nExercise\nWhat activities did I complete today?\n\n\nHow did each activity make me feel?\n\n\nWere there any challenges or obstacles during the day?\n\n\nWhat can I do differently tomorrow to make my day more productive?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identifying Cognitive Distortions",
+      "Description": "'- **Why it Helps**: Helps in recognizing and correcting distorted thinking patterns that contribute to negative emotions.\n   - **What to Do**: Learn common distortions like \"all-or-nothing thinking\" or \"catastrophizing,\" and practice spotting them in your thoughts.\n   - **Example**: If thinking \"I'll never succeed,\" identify it as a cognitive distortion and reframe it to, \"I can improve with effort and practice.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"automaticThoughts\": \"\",\n  \"cognitiveDistortions\": \"\",\n  \"adaptiveResponse\": \"\",\n  \"questions\": [\n    {\n      \"question\": \"What was the situation that triggered these thoughts?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"What were the automatic thoughts that came up in this situation?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Which cognitive distortions did you identify in your thoughts?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did these distortions affect your mood or behavior?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What is a more balanced or adaptive way to think about this situation?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How can you challenge or reframe these distorted thoughts?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"Did reframing your thoughts improve your mood or behavior? If so, how?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What was the situation that triggered these thoughts?\n\n\nWhat were the automatic thoughts that came up in this situation?\n\n\nWhich cognitive distortions did you identify in your thoughts?\n\n\nHow did these distortions affect your mood or behavior?\n\n\nWhat is a more balanced or adaptive way to think about this situation?\n\n\nHow can you challenge or reframe these distorted thoughts?\n\n\nDid reframing your thoughts improve your mood or behavior? If so, how?\n\n"
+    },
+    {
+      "Issue Name": "Common Psychological Issues",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Socratic Questioning",
+      "Description": "'- **Why it Helps**: Encourages deeper understanding and challenges assumptions by asking probing questions about thoughts and beliefs.\n    - **What to Do**: Question the evidence for your thoughts, alternatives, implications, and your perspective.\n    - **Example**: For depressive thoughts like \"I am worthless,\" ask, \"What evidence do I have that supports this? Is there evidence that contradicts it?\"\n\nEach of these strategies can be tailored to",
+      "XP": 3,
+      "Journal Template": "{\n  \"question\": \"What is the thought or belief that is causing me distress?\",\n  \"xp\": 3\n}",
+      "extracted_value": "What is the thought or belief that is causing me distress?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

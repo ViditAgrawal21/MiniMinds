@@ -1,0 +1,97 @@
+{
+  "condition": "Addictions",
+  "intervention_type": "REBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Identify and Dispute Irrational Beliefs",
+      "Description": "'- **Why it Helps**: Addictions often stem from irrational beliefs like \"I must escape reality\" or \"I can't cope without this substance.\" Recognizing and challenging these thoughts can reduce dependency.\n   \n   - **What to Do**: Write down your addictive urges and identify the underlying beliefs. Then, challenge these beliefs by asking if they are logical or based on evidence.\n   \n   - **Example**: Belief: \"I can’t handle stress without alcohol.\" Rational Response: \"I can learn healthier ways to manage stress without alcohol.\"",
+      "XP": 7,
+      "Journal Template": "Section 1 Identify Addictive Urges\n1. What are your current addictive urges? (e.g. craving a specific substance)\n2. When do these urges typically occur? (e.g. during stress boredom or social situations)\nSection 2 Identify Underlying Beliefs\n3. What beliefs are driving your addictive urges? (e.g. \\I must escape reality\\)\n4. Are these beliefs based on evidence or are they irrational? (e.g. \\Is it really true that I must escape reality?)\nSection 3 Challenge Irrational Beliefs\n5. Challenge each identified belief by asking if it is logical or based on evidence.\n6. Provide a rational response to each challenged belief. (e.g. \\I can learn healthier ways to manage stress without alcohol.\\)\nSection 4 Reflect and Plan\n7. Reflect on how challenging these beliefs has helped you understand your addiction better.\n8. Plan healthier alternatives to manage your addictive urges. (e.g. exercise meditation or talking to a friend)",
+      "extracted_value": "Section 1 Identify Addictive Urges\n1. What are your current addictive urges? (e.g. craving a specific substance)\n2. When do these urges typically occur? (e.g. during stress boredom or social situations)\nSection 2 Identify Underlying Beliefs\n3. What beliefs are driving your addictive urges? (e.g. \\I must escape reality\\)\n4. Are these beliefs based on evidence or are they irrational? (e.g. \\Is it really true that I must escape reality?)\nSection 3 Challenge Irrational Beliefs\n5. Challenge each identified belief by asking if it is logical or based on evidence.\n6. Provide a rational response to each challenged belief. (e.g. \\I can learn healthier ways to manage stress without alcohol.\\)\nSection 4 Reflect and Plan\n7. Reflect on how challenging these beliefs has helped you understand your addiction better.\n8. Plan healthier alternatives to manage your addictive urges. (e.g. exercise meditation or talking to a friend)"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Develop a Stronger Sense of Self-acceptance",
+      "Description": "'- **Why it Helps**: Many addictions are fueled by a lack of self-acceptance. Learning to accept yourself, flaws and all, can decrease the reliance on substances.\n   \n   - **What to Do**: Practice accepting yourself by acknowledging your strengths and weaknesses without judgment. Reframe your self-talk to be more compassionate.\n   \n   - **Example**: Instead of thinking, \"I’m worthless because I relapsed,\" reframe it as, \"I had a setback, but I’m still a valuable person working to recover.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"category\": \"Self-Acceptance Journal\",\n  \"sections\": [\n    {\n      \"title\": \"Self-Reflection\",\n      \"questions\": [\n        {\n          \"question\": \"What are my strengths and weaknesses today?\",\n          \"xp\": 5\n        },\n        {\n          \"question\": \"How do I judge myself? Are there any negative self-talk patterns?\",\n          \"xp\": 6\n        },\n        {\n          \"question\": \"What would I say to a friend in a similar situation?\",\n          \"xp\": 7\n        }\n      ]\n    },\n    {\n      \"title\": \"Reframing Thoughts\",\n      \"questions\": [\n        {\n          \"question\": \"Identify a negative thought about yourself.\",\n          \"xp\": 4\n        },\n        {\n          \"question\": \"Reframe the negative thought into a more compassionate one.\",\n          \"xp\": 8\n        },\n        {\n          \"question\": \"How does reframing my thoughts make me feel?\",\n          \"xp\": 9\n        }\n      ]\n    },\n    {\n      \"title\": \"Daily Affirmations\",\n      \"questions\": [\n        {\n          \"question\": \"Write down three daily affirmations that promote self-acceptance.\",\n          \"xp\": 10\n        }\n      ]\n    }\n  ]\n}",
+      "extracted_value": "Self-Acceptance Journal\nSelf-Reflection\nWhat are my strengths and weaknesses today?\n\n\nHow do I judge myself? Are there any negative self-talk patterns?\n\n\nWhat would I say to a friend in a similar situation?\n\n\nReframing Thoughts\nIdentify a negative thought about yourself.\nReframe the negative thought into a more compassionate one.\nHow does reframing my thoughts make me feel?\n\n\nDaily Affirmations\nWrite down three daily affirmations that promote self-acceptance."
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Change \"Musts\" to Preferences",
+      "Description": "'- **Why it Helps**: Using words like \"must\" or \"should\" creates pressure and emotional distress, which can trigger addictive behaviors. Changing these to preferences can reduce stress.\n   \n   - **What to Do**: Notice when you are using absolute language and rephrase it into desires or preferences.\n   \n   - **Example**: Instead of \"I must succeed or I’m a failure,\" think, \"I prefer to succeed, but failing doesn’t make me worthless.\"",
+      "XP": 5,
+      "Journal Template": "[\n  {\n    \"question\": \"Identify a situation where you used 'must' or 'should':\",\n    \"xp\": 5\n  },\n  {\n    \"question\": \"Rephrase the situation using preferences instead of 'must' or 'should':\",\n    \"xp\": 6\n  },\n  {\n    \"question\": \"How does changing your language affect your emotional response to the situation?\",\n    \"xp\": 7\n  },\n  {\n    \"question\": \"What are the benefits of using preferences over 'musts' or 'shoulds' in this situation?\",\n    \"xp\": 8\n  },\n  {\n    \"question\": \"Can you think of any other situations where using preferences might be helpful?\",\n    \"xp\": 9\n  }\n]",
+      "extracted_value": "Identify a situation where you used 'must' or 'should':\nRephrase the situation using preferences instead of 'must' or 'should':\nHow does changing your language affect your emotional response to the situation?\n\n\nWhat are the benefits of using preferences over 'musts' or 'shoulds' in this situation?\n\n\nCan you think of any other situations where using preferences might be helpful?\n\n"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Practice Emotional Responsibility",
+      "Description": "'- **Why it Helps**: Recognizing that we can control our reactions and emotions helps diminish the feeling that substances are needed to handle emotions.\n   \n   - **What to Do**: Take responsibility for your feelings by acknowledging them and choosing to respond in healthy ways.\n   \n   - **Example**: Rather than \"I drink because my boss stresses me out,\" say \"I feel stressed and I choose to calm myself down in healthier ways.\"",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"emotions\": \"\",\n  \"thoughts\": \"\",\n  \"healthyResponse\": \"\",\n  \"questions\": [\n    \"What triggered my emotions today?\",\n    \"How did I react to the situation?\",\n    \"What are some healthier ways I can respond to similar situations in the future?\",\n    \"What are the benefits of taking responsibility for my emotions?\"\n  ]\n}",
+      "extracted_value": "What triggered my emotions today?\nHow did I react to the situation?\nWhat are some healthier ways I can respond to similar situations in the future?\nWhat are the benefits of taking responsibility for my emotions?"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Visualize Long-term Consequences",
+      "Description": "'- **Why it Helps**: Visualizing the long-term negative consequences of addiction can provide a strong incentive to change behavior.\n   \n   - **What to Do**: Create a vivid mental picture of the future if the addiction continues, versus if you work towards recovery.\n   \n   - **Example**: Picture yourself healthy, with strong relationships and a fulfilling life, versus suffering health issues and damaged relationships.",
+      "XP": 6,
+      "Journal Template": "[\n  \"What are the current negative consequences of my addiction?\",\n  \"How do these consequences affect my daily life and relationships?\"\n]",
+      "extracted_value": "What are the current negative consequences of my addiction?\nHow do these consequences affect my daily life and relationships?"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Create a Rational Coping Plan",
+      "Description": "'- **Why it Helps**: Having a clear plan for coping with urges reduces the likelihood of relapse.\n   \n   - **What to Do**: Develop a step-by-step plan for what to do when you feel the urge to indulge in your addiction.\n   \n   - **Example**: When feeling an urge, plan to call a support person, go for a walk, and journal your feelings.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Day\": \"\",\n  \"Urges Experienced\": \"\",\n  \"Triggering Situations\": \"\",\n  \"Coping Plan Steps\": [\n    {\n      \"Step\": 1,\n      \"Action\": \"\",\n      \"Why It Helps\": \"\"\n    },\n    {\n      \"Step\": 2,\n      \"Action\": \"\",\n      \"Why It Helps\": \"\"\n    },\n    {\n      \"Step\": 3,\n      \"Action\": \"\",\n      \"Why It Helps\": \"\"\n    }\n  ],\n  \"Reflection Questions\": [\n    \"What triggered the urge today?\",\n    \"How did I feel during the urge?\",\n    \"Did I stick to my coping plan? If not, why not?\",\n    \"What could I do differently next time to better manage the urge?\"\n  ]\n}",
+      "extracted_value": "What triggered the urge today?\nHow did I feel during the urge?\nDid I stick to my coping plan? If not, why not?\nWhat could I do differently next time to better manage the urge?"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Develop Problem-solving Skills",
+      "Description": "'- **Why it Helps**: Many people turn to substances because they feel unable to solve problems. Building these skills provides non-addictive solutions.\n   \n   - **What to Do**: Practice breaking down problems into manageable parts and brainstorming potential solutions.\n   \n   - **Example**: If work stress triggers drinking, analyze the stressors and develop actionable solutions, such as better time management or discussing workload with your manager.",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Challenge Catastrophic Thinking",
+      "Description": "'- **Why it Helps**: Addictive behavior is often driven by the belief that certain situations are catastrophic or unbearable without substances.\n   \n   - **What to Do**: Identify catastrophic thoughts and dispute them with more balanced perspectives.\n   \n   - **Example**: Catastrophic thought: \"I can’t handle social situations without drugs.\" Balanced thought: \"I might feel awkward at first, but I can gradually become more comfortable.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"sections\": [\n    {\n      \"title\": \"Identifying Catastrophic Thoughts\",\n      \"questions\": [\n        \"What is the catastrophic thought that is causing me distress?\",\n        \"When and where do I typically experience this thought?\"\n      ],\n      \"xp\": 3\n    },\n    {\n      \"title\": \"Evaluating Evidence\",\n      \"questions\": [\n        \"Is there evidence to support my catastrophic thought?\",\n        \"Are there alternative explanations for the situation?\",\n        \"Have I experienced similar situations in the past without the catastrophic outcome?\"\n      ],\n      \"xp\": 5\n    },\n    {\n      \"title\": \"Reality Testing\",\n      \"questions\": [\n        \"How likely is it that my catastrophic thought will come true?\",\n        \"What evidence do I have that contradicts my catastrophic thinking?\",\n        \"Have I ever found a way to cope with similar situations in the past?\"\n      ],\n      \"xp\": 6\n    },\n    {\n      \"title\": \"Creating Balanced Thoughts\",\n      \"questions\": [\n        \"What is a more balanced and realistic thought about the situation?\",\n        \"How can I reframe my catastrophic thought to be less extreme?\",\n        \"What positive outcomes might occur in this situation?\"\n      ],\n      \"xp\": 7\n    },\n    {\n      \"title\": \"Emotional Impact\",\n      \"questions\": [\n        \"How does my catastrophic thinking affect my emotions and behaviors?\",\n        \"What are the consequences of continuing to think in this way?\",\n        \"How can I manage my anxiety and stress related to this thought?\"\n      ],\n      \"xp\": 8\n    },\n    {\n      \"title\": \"Action Plan\",\n      \"questions\": [\n        \"What steps can I take to manage future instances of catastrophic thinking?\",\n        \"What mindfulness techniques or grounding exercises can I use to reduce anxiety?\",\n        \"How can I practice positive self-talk to counteract negative thoughts?\"\n      ],\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "Identifying Catastrophic Thoughts\nWhat is the catastrophic thought that is causing me distress?\nWhen and where do I typically experience this thought?\nEvaluating Evidence\nIs there evidence to support my catastrophic thought?\nAre there alternative explanations for the situation?\nHave I experienced similar situations in the past without the catastrophic outcome?\nReality Testing\nHow likely is it that my catastrophic thought will come true?\nWhat evidence do I have that contradicts my catastrophic thinking?\nHave I ever found a way to cope with similar situations in the past?\nCreating Balanced Thoughts\nWhat is a more balanced and realistic thought about the situation?\nHow can I reframe my catastrophic thought to be less extreme?\nWhat positive outcomes might occur in this situation?\nEmotional Impact\nHow does my catastrophic thinking affect my emotions and behaviors?\nWhat are the consequences of continuing to think in this way?\nHow can I manage my anxiety and stress related to this thought?\nAction Plan\nWhat steps can I take to manage future instances of catastrophic thinking?\nWhat mindfulness techniques or grounding exercises can I use to reduce anxiety?\nHow can I practice positive self-talk to counteract negative thoughts?"
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Employ Mindfulness Techniques",
+      "Description": "'- **Why it Helps**: Mindfulness encourages awareness of thoughts and urges without judgment, reducing impulsivity.\n   \n   - **What to Do**: Practice mindfulness through meditation, deep breathing, or focused awareness exercises to better manage cravings.\n   \n   - **Example**: During a craving, focus on your breath for a few minutes, observing the urge without acting on it.",
+      "XP": 1
+    },
+    {
+      "Issue Name": "Addictions",
+      "Intervention Sub Type": "REBT Interventions",
+      "Title": "Seek Social Support",
+      "Description": "'- **Why it Helps**: Social support can provide encouragement and accountability, reducing the likelihood",
+      "XP": 5,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"event\": \"What happened today?\",\n  \"negative_thoughts\": \"What negative thoughts did I have today?\",\n  \"social_support_needed\": \"Who can I turn to for support?\",\n  \"action_taken\": \"What steps did I take to seek social support?\",\n  \"outcome\": \"How did seeking social support impact my thoughts and feelings?\",\n  \"reflection_questions\": [\n    {\n      \"question\": \"How often do I seek social support when I'm feeling overwhelmed?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Who are the people in my life that I can rely on for emotional support?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What are some specific ways I can ask for help from my support network?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"How can I make sure I'm not isolating myself when I'm feeling down?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"What are some potential barriers to seeking social support, and how can I overcome them?\",\n      \"xp\": 8\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nWhat happened today?\n\n\nWhat negative thoughts did I have today?\n\n\nWho can I turn to for support?\n\n\nWhat steps did I take to seek social support?\n\n\nHow did seeking social support impact my thoughts and feelings?\n\n\nHow often do I seek social support when I'm feeling overwhelmed?\n\n\nWho are the people in my life that I can rely on for emotional support?\n\n\nWhat are some specific ways I can ask for help from my support network?\n\n\nHow can I make sure I'm not isolating myself when I'm feeling down?\n\n\nWhat are some potential barriers to seeking social support, and how can I overcome them?\n\n"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

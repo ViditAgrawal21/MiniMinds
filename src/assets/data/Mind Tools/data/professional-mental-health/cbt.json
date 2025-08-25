@@ -1,0 +1,97 @@
+{
+  "condition": "Professional Mental Health",
+  "intervention_type": "CBT Interventions",
+  "interventions": [
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Identify Negative Thoughts",
+      "Description": "'- **Why it Helps:** Negative thoughts can distort how you perceive challenges and affect your behavior.\n   - **What to Do:** Keep a thought diary to track negative thoughts throughout the day.\n   - **Example:** If you think, \"I'll never meet this deadline,\" note it down, and analyze the evidence for and against this thought.",
+      "XP": 6
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Cognitive Restructuring",
+      "Description": "'- **Why it Helps:** It helps change distorted thinking and improves emotional regulation.\n   - **What to Do:** Challenge irrational thoughts by asking if they're based on facts or assumptions.\n   - **Example:** Replace \"I'm not good enough for this role\" with \"I have the skills needed, and I can improve further.\"",
+      "XP": 7,
+      "Journal Template": "{\n  \"Identify the Trigger\": {\n    \"Instructions\": \"Describe the situation that led to your negative emotions or thoughts.\",\n    \"Questions\": [\n      \"What happened?\",\n      \"Where were you?\",\n      \"Who was involved?\",\n      \"How did you feel in the moment?\"\n    ]\n  },\n  \"Record Your Automatic Thoughts\": {\n    \"Instructions\": \"Write down the immediate thoughts that came to mind when the situation occurred.\",\n    \"Questions\": [\n      \"What were you thinking?\",\n      \"What meaning did you attach to the situation?\"\n    ]\n  },\n  \"Challenge Your Thoughts\": {\n    \"Instructions\": \"Ask yourself if your thoughts are based on facts or assumptions.\",\n    \"Questions\": [\n      \"Is this thought based on facts or assumptions?\",\n      \"Are there other ways to look at this situation?\"\n    ]\n  },\n  \"Reframe Your Thoughts\": {\n    \"Instructions\": \"Replace negative thoughts with more balanced and rational alternatives.\",\n    \"Questions\": [\n      \"What is a more balanced way to think about this situation?\",\n      \"How can I reframe this thought to make it more realistic?\"\n    ]\n  },\n  \"Affirmations\": {\n    \"Instructions\": \"Create a list of affirmations or positive statements to reinforce your new thoughts.\",\n    \"Questions\": [\n      \"What positive statement can I use to counteract this negative thought?\",\n      \"How can I remind myself of this affirmation in challenging situations?\"\n    ]\n  },\n  \"Action Plan\": {\n    \"Instructions\": \"Identify actions you can take to support your new thinking.\",\n    \"Questions\": [\n      \"What action can I take to support my new thinking?\",\n      \"How can I implement this action plan in my daily life?\"\n    ]\n  }\n}",
+      "extracted_value": "Describe the situation that led to your negative emotions or thoughts.\nWhat happened?\nWhere were you?\nWho was involved?\nHow did you feel in the moment?\nWrite down the immediate thoughts that came to mind when the situation occurred.\nWhat were you thinking?\nWhat meaning did you attach to the situation?\nAsk yourself if your thoughts are based on facts or assumptions.\nIs this thought based on facts or assumptions?\nAre there other ways to look at this situation?\nReplace negative thoughts with more balanced and rational alternatives.\nWhat is a more balanced way to think about this situation?\nHow can I reframe this thought to make it more realistic?\nCreate a list of affirmations or positive statements to reinforce your new thoughts.\nWhat positive statement can I use to counteract this negative thought?\nHow can I remind myself of this affirmation in challenging situations?\nIdentify actions you can take to support your new thinking.\nWhat action can I take to support my new thinking?\nHow can I implement this action plan in my daily life?"
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Behavioral Activation",
+      "Description": "'- **Why it Helps:** Engaging in positive activities can boost mood and motivation.\n   - **What to Do:** Schedule enjoyable and meaningful activities into your day, even when you feel down.\n   - **Example:** If feeling stressed, plan a coffee break with a friend to decompress.",
+      "XP": 6,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"activityScheduled\": \"\",\n  \"whyScheduled\": \"\",\n  \"howDidItGo\": \"\",\n  \"whatDidILearn\": \"\",\n  \"whatWouldIDoDifferentlyNextTime\": \"\",\n  \"moodBeforeActivity\": \"\",\n  \"moodAfterActivity\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Mindfulness and Relaxation",
+      "Description": "'- **Why it Helps:** Reducing stress and enhancing focus improves productivity and overall well-being.\n   - **What to Do:** Practice mindful breathing or relaxation exercises to reduce stress.\n   - **Example:** Spend 5 minutes focusing on your breath before starting work to center yourself.",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"YYYY-MM-DD\",\n  \"exerciseType\": \"Mindfulness and Relaxation\",\n  \"questions\": [\n    {\n      \"question\": \"What triggered my stress today?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"How did I feel before practicing mindfulness?\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"What mindfulness exercise did I practice today?\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How did I feel after practicing mindfulness?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What specific steps can I take to incorporate mindfulness into my daily routine?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"Did I notice any improvements in my focus or productivity after practicing mindfulness? If so, describe.\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "YYYY-MM-DD\nMindfulness and Relaxation\nWhat triggered my stress today?\n\n\nHow did I feel before practicing mindfulness?\n\n\nWhat mindfulness exercise did I practice today?\n\n\nHow did I feel after practicing mindfulness?\n\n\nWhat specific steps can I take to incorporate mindfulness into my daily routine?\n\n\nDid I notice any improvements in my focus or productivity after practicing mindfulness? If so, describe.\n\n"
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Problem-Solving Skills",
+      "Description": "'- **Why it Helps:** Effective problem-solving reduces stress by providing action plans for dealing with challenges.\n   - **What to Do:** Use a step-by-step approach to identify the problem, brainstorm solutions, and decide on the best action.\n   - **Example:** If overwhelmed by tasks, break them down into smaller, manageable steps.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Step 1: Identify the Problem\": [\n    \"What is the specific problem I am facing?\",\n    \"How is this problem affecting me?\"\n  ],\n  \"Step 2: Brainstorm Solutions\": [\n    \"What are all the possible solutions to this problem?\",\n    \"Are there any constraints or limitations that need to be considered?\"\n  ],\n  \"Step 3: Evaluate Solutions\": [\n    \"Which solution seems most promising?\",\n    \"What are the potential benefits and drawbacks of each solution?\"\n  ],\n  \"Step 4: Choose an Action Plan\": [\n    \"Which solution will I choose to implement?\",\n    \"What specific steps will I take to implement this solution?\"\n  ],\n  \"Step 5: Monitor Progress\": [\n    \"How will I track my progress in solving this problem?\",\n    \"What adjustments might I need to make along the way?\"\n  ]\n}",
+      "extracted_value": "What is the specific problem I am facing?\nHow is this problem affecting me?\nWhat are all the possible solutions to this problem?\nAre there any constraints or limitations that need to be considered?\nWhich solution seems most promising?\nWhat are the potential benefits and drawbacks of each solution?\nWhich solution will I choose to implement?\nWhat specific steps will I take to implement this solution?\nHow will I track my progress in solving this problem?\nWhat adjustments might I need to make along the way?"
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Positive Self-Talk",
+      "Description": "'- **Why it Helps:** Encourages a growth mindset and resilience, fostering better emotional health.\n   - **What to Do:** Replace negative self-talk with affirming statements.\n   - **Example:** Change \"I can't handle this project\" to \"I will learn from this project.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"Date\": \"\",\n  \"Negative Thought\": \"\",\n  \"Affirming Statement\": \"\",\n  \"Why it Helps\": \"\",\n  \"How it Makes Me Feel\": \"\",\n  \"Action Plan\": \"\",\n  \"Progress Tracking\": \"\"\n}"
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Time Management",
+      "Description": "'- **Why it Helps:** Effective time management reduces stress and increases productivity.\n   - **What to Do:** Prioritize tasks and make a realistic schedule.\n   - **Example:** Use the Eisenhower Box to categorize tasks based on urgency and importance.",
+      "XP": 3,
+      "Journal Template": "{\n  \"section1\": {\n    \"title\": \"Daily Tasks\",\n    \"questions\": [\n      {\n        \"question\": \"What are the most important tasks I need to complete today?\",\n        \"xp\": 3\n      },\n      {\n        \"question\": \"Are there any tasks that can be delegated or postponed?\",\n        \"xp\": 4\n      }\n    ]\n  },\n  \"section2\": {\n    \"title\": \"Task Prioritization\",\n    \"questions\": [\n      {\n        \"question\": \"Which tasks are most urgent and important?\",\n        \"xp\": 5\n      },\n      {\n        \"question\": \"How can I allocate time for each task?\",\n        \"xp\": 6\n      }\n    ]\n  },\n  \"section3\": {\n    \"title\": \"Eisenhower Box\",\n    \"questions\": [\n      {\n        \"question\": \"Which tasks are both urgent and important (Do First)?\",\n        \"xp\": 7\n      },\n      {\n        \"question\": \"Which tasks are important but not urgent (Schedule)?\",\n        \"xp\": 8\n      },\n      {\n        \"question\": \"Which tasks are urgent but not important (Delegate)?\",\n        \"xp\": 9\n      },\n      {\n        \"question\": \"Which tasks are neither urgent nor important (Eliminate)?\",\n        \"xp\": 10\n      }\n    ]\n  }\n}",
+      "extracted_value": "Daily Tasks\nWhat are the most important tasks I need to complete today?\n\n\nAre there any tasks that can be delegated or postponed?\n\n\nTask Prioritization\nWhich tasks are most urgent and important?\n\n\nHow can I allocate time for each task?\n\n\nEisenhower Box\nWhich tasks are both urgent and important (Do First)?\n\n\nWhich tasks are important but not urgent (Schedule)?\n\n\nWhich tasks are urgent but not important (Delegate)?\n\n\nWhich tasks are neither urgent nor important (Eliminate)?\n\n"
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Set Realistic Goals",
+      "Description": "'- **Why it Helps:** Achievable goals increase motivation and satisfaction when achieved.\n   - **What to Do:** Use the SMART criteria (Specific, Measurable, Achievable, Relevant, Time-bound) to set professional goals.\n   - **Example:** Instead of \"I will get better at my job,\" set \"I will complete a course on advanced Excel by the end of the month.\"",
+      "XP": 3,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"goalDescription\": \"\",\n  \"SMARTCriteria\": {\n    \"specific\": \"\",\n    \"measurable\": \"\",\n    \"achievable\": \"\",\n    \"relevant\": \"\",\n    \"timebound\": \"\"\n  },\n  \"questions\": [\n    {\n      \"question\": \"What is my goal?\",\n      \"xp\": 3\n    },\n    {\n      \"question\": \"Is my goal specific? (e.g., 'I will complete a course on advanced Excel' instead of 'I will get better at my job')\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Is my goal measurable? (e.g., 'I will complete a course on advanced Excel' can be measured by completing the course)\",\n      \"xp\": 4\n    },\n    {\n      \"question\": \"Is my goal achievable? (e.g., 'I will complete a course on advanced Excel' is achievable if I have the time and resources)\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Is my goal relevant to my values and needs? (e.g., 'I will complete a course on advanced Excel' is relevant if it improves my job performance)\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"Is my goal time-bound? (e.g., 'I will complete a course on advanced Excel by the end of the month')\",\n      \"xp\": 5\n    },\n    {\n      \"question\": \"How will I track my progress towards this goal?\",\n      \"xp\": 6\n    },\n    {\n      \"question\": \"What potential obstacles might I face, and how will I overcome them?\",\n      \"xp\": 7\n    },\n    {\n      \"question\": \"How will achieving this goal make me feel, and what benefits will it bring?\",\n      \"xp\": 8\n    },\n    {\n      \"question\": \"What steps can I take today to move closer to achieving this goal?\",\n      \"xp\": 9\n    }\n  ]\n}",
+      "extracted_value": "What is my goal?\n\n\nIs my goal specific? (e.g., 'I will complete a course on advanced Excel' instead of 'I will get better at my job')\n\n\nIs my goal measurable? (e.g., 'I will complete a course on advanced Excel' can be measured by completing the course)\n\n\nIs my goal achievable? (e.g., 'I will complete a course on advanced Excel' is achievable if I have the time and resources)\n\n\nIs my goal relevant to my values and needs? (e.g., 'I will complete a course on advanced Excel' is relevant if it improves my job performance)\n\n\nIs my goal time-bound? (e.g., 'I will complete a course on advanced Excel by the end of the month')\n\n\nHow will I track my progress towards this goal?\n\n\nWhat potential obstacles might I face, and how will I overcome them?\n\n\nHow will achieving this goal make me feel, and what benefits will it bring?\n\n\nWhat steps can I take today to move closer to achieving this goal?\n\n"
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Exposure Therapy",
+      "Description": "'- **Why it Helps:** Gradually facing fears can reduce anxiety over time.\n   - **What to Do:** Gradually expose yourself to the situations that cause anxiety, increasing the exposure as you build confidence.\n   - **Example:** If public speaking is daunting, start by speaking in small meetings and gradually work up to larger audiences.",
+      "XP": 8,
+      "Journal Template": "{\n  \"date\": \"\",\n  \"situation\": \"\",\n  \"sudsRating\": \"\",\n  \"descriptionOfSituation\": \"\",\n  \"physiologicalSymptoms\": \"\",\n  \"emotionalResponse\": \"\",\n  \"actionsTaken\": \"\",\n  \"outcome\": \"\",\n  \"questionsToReflectOn\": [\n    \"What was the situation that caused anxiety?\",\n    \"How did I feel before and during the exposure?\",\n    \"What were my physiological symptoms (e.g., racing heart, sweating)?\",\n    \"How did I manage my anxiety during the exposure?\",\n    \"What was the outcome of this exposure? Did my anxiety decrease?\",\n    \"What did I learn from this experience?\"\n  ]\n}",
+      "extracted_value": "What was the situation that caused anxiety?\nHow did I feel before and during the exposure?\nWhat were my physiological symptoms (e.g., racing heart, sweating)?\nHow did I manage my anxiety during the exposure?\nWhat was the outcome of this exposure? Did my anxiety decrease?\nWhat did I learn from this experience?"
+    },
+    {
+      "Issue Name": "Professional Mental Health",
+      "Intervention Sub Type": "CBT Interventions",
+      "Title": "Social Support Networking",
+      "Description": "'- **Why it Helps:** Support from others can offer different perspectives and emotional relief.\n    - **What to Do:** Build and maintain a network of supportive colleagues and mentors.\n    - **Example:** Join a professional group where experiences are shared and support is given, which can provide new insights and reduce feelings of isolation.\n\nThese strategies utilize CBT's core principles of understanding and modifying thoughts and behaviors to improve mental health in a professional setting. Regular practice and reflection on these strategies are key to experiencing their benefits.",
+      "XP": 6,
+      "Journal Template": "{\n  \"Section 1: Situation and Feelings\": {\n    \"Questions\": [\n      \"Describe the situation where you felt isolated or unsupported.\",\n      \"How did you feel during this situation?\",\n      \"What thoughts were running through your mind?\"\n    ]\n  },\n  \"Section 2: Identifying Support Needs\": {\n    \"Questions\": [\n      \"What kind of support do you need right now?\",\n      \"Who could provide this support?\",\n      \"Why is this support important to you?\"\n    ]\n  },\n  \"Section 3: Building Support Network\": {\n    \"Questions\": [\n      \"What steps can you take to build a supportive network?\",\n      \"Who are some potential mentors or colleagues you could reach out to?\",\n      \"How can you maintain this network over time?\"\n    ]\n  },\n  \"Section 4: Reflecting on Progress\": {\n    \"Questions\": [\n      \"What progress have you made in building your support network?\",\n      \"How has this support impacted your feelings and thoughts?\",\n      \"What challenges have you faced, and how did you overcome them?\"\n    ]\n  }\n}",
+      "extracted_value": "Describe the situation where you felt isolated or unsupported.\nHow did you feel during this situation?\nWhat thoughts were running through your mind?\nWhat kind of support do you need right now?\nWho could provide this support?\nWhy is this support important to you?\nWhat steps can you take to build a supportive network?\nWho are some potential mentors or colleagues you could reach out to?\nHow can you maintain this network over time?\nWhat progress have you made in building your support network?\nHow has this support impacted your feelings and thoughts?\nWhat challenges have you faced, and how did you overcome them?"
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

@@ -1,0 +1,750 @@
+{
+  "condition": "ADHD",
+  "issueType": "Behavioural Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Create a Structured Environment",
+            "hindi": "संरचित वातावरण बनाएं",
+            "marathi": "संरचित वातावरण तयार करा"
+          },
+          "description": {
+            "english": "People with ADHD often thrive in structured environments. For example, having a consistent daily routine can help manage symptoms. This could include set times for meals, homework, relaxation, and bed.",
+            "hindi": "ADHD वाले लोग अक्सर संरचित वातावरण में अच्छा करते हैं। उदाहरण के लिए, एक निरंतर दैनिक दिनचर्या होना लक्षणों को नियंत्रित करने में मदद कर सकता है। इसमें भोजन, होमवर्क, आराम और बिस्तर के लिए निर्धारित समय शामिल हो सकते हैं।",
+            "marathi": "ADHD असलेले लोक अनेकदा संरचित वातावरणात चांगले काम करतात. उदाहरणार्थ, सातत्यपूर्ण दैनंदिन दिनचर्या असणे लक्षणे व्यवस्थापित करण्यास मदत करू शकते. यामध्ये जेवण, गृहपाठ, विश्रांती आणि झोपेसाठी निश्चित वेळा समाविष्ट असू शकतात."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Use Tools to Stay Organized",
+            "hindi": "व्यवस्थित रहने के लिए उपकरणों का उपयोग करें",
+            "marathi": "व्यवस्थित राहण्यासाठी साधनांचा वापर करा"
+          },
+          "description": {
+            "english": "Tools like calendars, planners, or apps can be very helpful. For example, using a digital calendar with reminders for important dates and tasks can help manage forgetfulness.",
+            "hindi": "कैलेंडर, प्लानर या ऐप्स जैसे उपकरण बहुत सहायक हो सकते हैं। उदाहरण के लिए, महत्वपूर्ण तारीखों और कार्यों के लिए रिमाइंडर के साथ डिजिटल कैलेंडर का उपयोग करना भूलने की समस्या को संभालने में मदद कर सकता है।",
+            "marathi": "कॅलेंडर, प्लॅनर किंवा अॅप्स सारखी साधने खूप उपयुक्त असू शकतात. उदाहरणार्थ, महत्वाच्या तारखा आणि कामांसाठी रिमाइंडर असलेले डिजिटल कॅलेंडर वापरणे विसरण्याची समस्या हाताळण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Break Tasks into Manageable Chunks",
+            "hindi": "कार्यों को प्रबंधनीय भागों में बांटें",
+            "marathi": "कामांना व्यवस्थापनयोग्य भागांमध्ये विभागित करा"
+          },
+          "description": {
+            "english": "Large tasks can be overwhelming. For example, instead of trying to clean an entire room at once, focus on one area at a time.",
+            "hindi": "बड़े कार्य भारी लग सकते हैं। उदाहरण के लिए, एक बार में पूरे कमरे को साफ करने की कोशिश करने के बजाय, एक समय में एक क्षेत्र पर ध्यान दें।",
+            "marathi": "मोठी कामे भारी वाटू शकतात. उदाहरणार्थ, एकाच वेळी संपूर्ण खोली साफ करण्याचा प्रयत्न करण्याऐवजी, एका वेळी एका भागावर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Incorporate Physical Activity",
+            "hindi": "शारीरिक गतिविधि शामिल करें",
+            "marathi": "शारीरिक क्रियाकलाप समाविष्ट करा"
+          },
+          "description": {
+            "english": "Regular exercise can help manage symptoms of ADHD. For example, taking a short walk or doing a few minutes of yoga can help improve focus and reduce impulsivity.",
+            "hindi": "नियमित व्यायाम ADHD के लक्षणों को नियंत्रित करने में मदद कर सकता है। उदाहरण के लिए, थोड़ी देर टहलना या कुछ मिनट योग करना फोकस बेहतर बनाने और आवेगशीलता कम करने में मदद कर सकता है।",
+            "marathi": "नियमित व्यायाम ADHD च्या लक्षणांना नियंत्रित करण्यास मदत करू शकतो. उदाहरणार्थ, थोडासा फिरणे किंवा काही मिनिटे योग करणे लक्ष सुधारण्यास आणि आवेगशीलता कमी करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Practice Mindfulness and Relaxation Techniques",
+            "hindi": "सचेतना और विश्राम तकनीकों का अभ्यास करें",
+            "marathi": "मनःपूर्णता आणि विश्रांती तंत्रांचा सराव करा"
+          },
+          "description": {
+            "english": "Techniques like deep breathing or meditation can help manage stress and improve focus. For example, taking a few minutes each day to practice deep breathing can help calm the mind.",
+            "hindi": "गहरी सांस लेना या ध्यान जैसी तकनीकें तनाव को संभालने और फोकस बेहतर बनाने में मदद कर सकती हैं। उदाहरण के लिए, हर दिन कुछ मिनट गहरी सांस लेने का अभ्यास करना मन को शांत करने में मदद कर सकता है।",
+            "marathi": "खोल श्वास घेणे किंवा ध्यान यासारखी तंत्रे तणाव हाताळण्यास आणि लक्ष सुधारण्यास मदत करू शकतात. उदाहरणार्थ, दररोज काही मिनिटे खोल श्वास घेण्याचा सराव करणे मन शांत करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Limit Distractions",
+            "hindi": "विकर्षणों को सीमित करें",
+            "marathi": "विकर्षणे मर्यादित करा"
+          },
+          "description": {
+            "english": "People with ADHD can be easily distracted. For example, studying or working in a quiet, clutter-free space can help improve focus.",
+            "hindi": "ADHD वाले लोग आसानी से विचलित हो सकते हैं। उदाहरण के लिए, शांत, अव्यवस्था-मुक्त स्थान में अध्ययन या काम करना फोकस बेहतर बनाने में मदद कर सकता है।",
+            "marathi": "ADHD असलेले लोक सहज विचलित होऊ शकतात. उदाहरणार्थ, शांत, अव्यवस्था-मुक्त जागेत अभ्यास किंवा काम करणे लक्ष सुधारण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Use Positive Reinforcement",
+            "hindi": "सकारात्मक सुदृढीकरण का उपयोग करें",
+            "marathi": "सकारात्मक मजबुतीकरण वापरा"
+          },
+          "description": {
+            "english": "Positive reinforcement can be very effective. For example, rewarding good behavior or completed tasks with praise or a small treat can help motivate and reinforce positive behaviors.",
+            "hindi": "सकारात्मक सुदृढीकरण बहुत प्रभावी हो सकता है। उदाहरण के लिए, अच्छे व्यवहार या पूरे किए गए कार्यों को प्रशंसा या छोटे इनाम से पुरस्कृत करना सकारात्मक व्यवहार को प्रेरित और मजबूत बनाने में मदद कर सकता है।",
+            "marathi": "सकारात्मक मजबुतीकरण खूप प्रभावी असू शकते. उदाहरणार्थ, चांगल्या वर्तनाला किंवा पूर्ण झालेल्या कामांना कौतुक किंवा छोट्या बक्षीसाने पुरस्कृत करणे सकारात्मक वर्तनांना प्रेरणा देण्यास आणि मजबूत करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Maintain a Healthy Diet",
+            "hindi": "स्वस्थ आहार बनाए रखें",
+            "marathi": "निरोगी आहार राखा"
+          },
+          "description": {
+            "english": "Certain foods may exacerbate ADHD symptoms. For example, a diet rich in fruits, vegetables, whole grains, and lean proteins can help manage symptoms.",
+            "hindi": "कुछ खाद्य पदार्थ ADHD के लक्षणों को बढ़ा सकते हैं। उदाहरण के लिए, फल, सब्जियां, साबुत अनाज और दुबले प्रोटीन से भरपूर आहार लक्षणों को नियंत्रित करने में मदद कर सकता है।",
+            "marathi": "काही अन्नपदार्थ ADHD च्या लक्षणांना वाढवू शकतात. उदाहरणार्थ, फळे, भाज्या, संपूर्ण धान्ये आणि कमी चरबीयुक्त प्रथिने यांनी समृद्ध आहार लक्षणांना नियंत्रित करण्यास मदत करू शकतो."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Ensure Adequate Sleep",
+            "hindi": "पर्याप्त नींद सुनिश्चित करें",
+            "marathi": "पुरेशी झोप सुनिश्चित करा"
+          },
+          "description": {
+            "english": "Lack of sleep can worsen ADHD symptoms. For example, maintaining a consistent sleep schedule and creating a relaxing bedtime routine can help improve sleep quality.",
+            "hindi": "नींद की कमी ADHD के लक्षणों को बिगाड़ सकती है। उदाहरण के लिए, निरंतर नींद की दिनचर्या बनाए रखना और आरामदायक सोने की दिनचर्या बनाना नींद की गुणवत्ता बेहतर बनाने में मदद कर सकता है।",
+            "marathi": "झोपेची कमी ADHD च्या लक्षणांना बिघडवू शकते. उदाहरणार्थ, सातत्यपूर्ण झोपेचे वेळापत्रक राखणे आणि आरामदायक झोपण्याची दिनचर्या तयार करणे झोपेची गुणवत्ता सुधारण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 2,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "पेशेवर सहायता लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "Therapists and counselors can provide strategies and techniques to manage ADHD. For example, cognitive-behavioral therapy can help individuals with ADHD develop coping strategies and improve their organizational skills.",
+            "hindi": "चिकित्सक और सलाहकार ADHD को नियंत्रित करने के लिए रणनीतियां और तकनीकें प्रदान कर सकते हैं। उदाहरण के लिए, संज्ञानात्मक-व्यवहारिक चिकित्सा ADHD वाले व्यक्तियों को सामना करने की रणनीतियां विकसित करने और उनकी संगठनात्मक कौशल में सुधार करने में मदद कर सकती है।",
+            "marathi": "चिकित्सक आणि सल्लागार ADHD व्यवस्थापित करण्यासाठी रणनीती आणि तंत्रे प्रदान करू शकतात. उदाहरणार्थ, संज्ञानात्मक-वर्तनात्मक चिकित्सा ADHD असलेल्या व्यक्तींना सामना करण्याच्या रणनीती विकसित करण्यास आणि त्यांची संघटनात्मक कौशल्ये सुधारण्यास मदत करू शकते."
+          }
+        }
+      ]
+    },
+    "yoga": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Start with a Warm-Up",
+            "hindi": "वार्म-अप से शुरुआत करें",
+            "marathi": "वॉर्म-अप पासून सुरुवात करा"
+          },
+          "description": {
+            "english": "Begin with simple stretches to loosen up your body. This could include neck rolls, shoulder shrugs, and gentle twists.",
+            "hindi": "अपने शरीर को ढीला करने के लिए सरल स्ट्रेच से शुरुआत करें। इसमें गर्दन घुमाना, कंधे उचकाना और हल्की मरोड़ शामिल हो सकती है।",
+            "marathi": "तुमचे शरीर शिथिल करण्यासाठी साध्या ताणतणावापासून सुरुवात करा. यामध्ये मान फिरवणे, खांदे उचकणे आणि हलके वळण समाविष्ट असू शकते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Sun Salutations",
+            "hindi": "सूर्य नमस्कार",
+            "marathi": "सूर्य नमस्कार"
+          },
+          "description": {
+            "english": "This sequence of poses helps to improve concentration and calm the mind. It includes poses like mountain pose, upward salute, forward fold, plank, and cobra.",
+            "hindi": "आसनों का यह अनुक्रम एकाग्रता सुधारने और मन को शांत करने में मदद करता है। इसमें पर्वत आसन, ऊर्ध्व नमस्कार, आगे झुकना, प्लांक और भुजंगासन जैसे आसन शामिल हैं।",
+            "marathi": "आसनांचा हा क्रम एकाग्रता सुधारण्यास आणि मन शांत करण्यास मदत करतो. यामध्ये पर्वत आसन, वरची नमस्कार, पुढे वाकणे, प्लँक आणि भुजंगासन यासारखे आसन समाविष्ट आहेत."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Balancing Poses",
+            "hindi": "संतुलन आसन",
+            "marathi": "संतुलन आसने"
+          },
+          "description": {
+            "english": "These poses require focus and can help improve attention. Try poses like tree pose, eagle pose, or warrior III.",
+            "hindi": "इन आसनों के लिए फोकस की आवश्यकता होती है और ये ध्यान सुधारने में मदद कर सकते हैं। वृक्षासन, गरुड़ासन या वीरभद्रासन III जैसे आसन आजमाएं।",
+            "marathi": "या आसनांना लक्ष केंद्रित करण्याची गरज असते आणि ते लक्ष सुधारण्यास मदत करू शकतात. वृक्षासन, गरुडासन किंवा वीरभद्रासन III सारखे आसन करून पहा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Restorative Poses",
+            "hindi": "पुनर्स्थापना आसन",
+            "marathi": "पुनर्संचयी आसने"
+          },
+          "description": {
+            "english": "These poses help to calm the nervous system. Try poses like child's pose, legs-up-the-wall pose, or corpse pose.",
+            "hindi": "ये आसन तंत्रिका तंत्र को शांत करने में मदद करते हैं। बालासन, विपरीत करनी या शवासन जैसे आसन आजमाएं।",
+            "marathi": "हे आसने मज्जासंस्था शांत करण्यास मदत करतात. बालासन, विपरीत करणी किंवा शवासन यासारखे आसन करून पहा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "End with Savasana",
+            "hindi": "शवासन के साथ समाप्त करें",
+            "marathi": "शवासनाने संपवा"
+          },
+          "description": {
+            "english": "This is a relaxation pose where you lie flat on your back with your arms and legs spread out. Close your eyes and focus on your breath.",
+            "hindi": "यह एक विश्राम आसन है जहां आप अपनी पीठ के बल सपाट लेटते हैं और अपने हाथ-पैर फैलाते हैं। अपनी आंखें बंद करें और अपनी सांस पर ध्यान दें।",
+            "marathi": "हे एक विश्रांती आसन आहे जिथे तुम्ही तुमच्या पाठीवर सपाट झोपता आणि तुमचे हात-पाय पसरवता. तुमचे डोळे बंद करा आणि तुमच्या श्वासावर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Find a Quiet Space",
+            "hindi": "एक शांत जगह खोजें",
+            "marathi": "शांत जागा शोधा"
+          },
+          "description": {
+            "english": "Choose a calm, quiet space where you won't be disturbed.",
+            "hindi": "एक शांत, निर्विघ्न स्थान चुनें जहां आपको परेशान न किया जाए।",
+            "marathi": "एक शांत, निर्विघ्न जागा निवडा जिथे तुम्हाला त्रास होणार नाही."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Choose a Comfortable Position",
+            "hindi": "आरामदायक स्थिति चुनें",
+            "marathi": "आरामदायक स्थिती निवडा"
+          },
+          "description": {
+            "english": "You can sit on a cushion, chair, or even lie down.",
+            "hindi": "आप कुशन, कुर्सी पर बैठ सकते हैं या फिर लेट भी सकते हैं।",
+            "marathi": "तुम्ही उशी, खुर्चीवर बसू शकता किंवा झोपूनही येऊ शकता."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Focus on Your Breath",
+            "hindi": "अपनी सांस पर ध्यान दें",
+            "marathi": "तुमच्या श्वासावर लक्ष केंद्रित करा"
+          },
+          "description": {
+            "english": "Close your eyes and take slow, deep breaths. Pay attention to the sensation of the breath entering and leaving your body.",
+            "hindi": "अपनी आंखें बंद करें और धीमी, गहरी सांसें लें। सांस के शरीर में आने और जाने की संवेदना पर ध्यान दें।",
+            "marathi": "तुमचे डोळे बंद करा आणि मंद, खोल श्वास घ्या. श्वास शरीरात येणे आणि जाणे याच्या संवेदनेकडे लक्ष द्या."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Mindfulness Meditation",
+            "hindi": "सचेतना ध्यान",
+            "marathi": "सजगता ध्यान"
+          },
+          "description": {
+            "english": "Try to stay present in the moment. If your mind wanders, gently bring it back to your breath.",
+            "hindi": "वर्तमान क्षण में रहने की कोशिश करें। अगर आपका मन भटके, तो धीरे से इसे वापस अपनी सांस पर ले आएं।",
+            "marathi": "सध्याच्या क्षणात राहण्याचा प्रयत्न करा. जर तुमचे मन भटकले तर ते हळूवारपणे परत तुमच्या श्वासावर आणा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Guided Meditation",
+            "hindi": "निर्देशित ध्यान",
+            "marathi": "मार्गदर्शित ध्यान"
+          },
+          "description": {
+            "english": "You can use a guided meditation app or video to help you focus.",
+            "hindi": "आप फोकस करने में मदद के लिए निर्देशित ध्यान ऐप या वीडियो का उपयोग कर सकते हैं।",
+            "marathi": "लक्ष केंद्रित करण्यास मदत करण्यासाठी तुम्ही मार्गदर्शित ध्यान अॅप किंवा व्हिडिओ वापरू शकता."
+          }
+        },
+        {
+          "id": 11,
+          "xp": 5,
+          "title": {
+            "english": "Practice Regularly",
+            "hindi": "नियमित अभ्यास करें",
+            "marathi": "नियमित सराव करा"
+          },
+          "description": {
+            "english": "Try to meditate for a few minutes each day, gradually increasing the time as you get more comfortable. Remember, it's important to be patient with yourself. It may take time to see improvements, but with consistent practice, yoga and meditation can help manage ADHD symptoms. Always consult with a healthcare professional before starting any new exercise or meditation routine.",
+            "hindi": "हर दिन कुछ मिनट ध्यान करने की कोशिश करें, जैसे-जैसे आप अधिक सहज होते जाएं, समय धीरे-धीरे बढ़ाते जाएं। याद रखें, अपने साथ धैर्य रखना महत्वपूर्ण है। सुधार देखने में समय लग सकता है, लेकिन निरंतर अभ्यास से योग और ध्यान ADHD के लक्षणों को नियंत्रित करने में मदद कर सकते हैं। कोई भी नया व्यायाम या ध्यान की दिनचर्या शुरू करने से पहले हमेशा स्वास्थ्य पेशेवर से सलाह लें।",
+            "marathi": "दररोज काही मिनिटे ध्यान करण्याचा प्रयत्न करा, जसजसे तुम्ही अधिक सहज होत जाल तसतसे वेळ हळूहळू वाढवत जा. लक्षात ठेवा, स्वतःबरोबर धैर्य ठेवणे महत्वाचे आहे. सुधारणा दिसण्यास वेळ लागू शकतो, परंतु सातत्यपूर्ण सरावाने योग आणि ध्यान ADHD च्या लक्षणांना नियंत्रित करण्यास मदत करू शकतात. कोणतीही नवीन व्यायाम किंवा ध्यान दिनचर्या सुरू करण्यापूर्वी नेहमी आरोग्य व्यावसायिकाचा सल्ला घ्या."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Deep Breathing",
+            "hindi": "गहरी सांस लेना",
+            "marathi": "खोल श्वसन"
+          },
+          "description": {
+            "english": "Deep breathing exercises can help calm the mind and body. Encourage the individual to take slow, deep breaths, hold for a few seconds, and then slowly exhale.",
+            "hindi": "गहरी सांस लेने के व्यायाम मन और शरीर को शांत करने में मदद कर सकते हैं। व्यक्ति को धीमी, गहरी सांसें लेने, कुछ सेकंड रोकने और फिर धीरे-धीरे छोड़ने के लिए प्रोत्साहित करें।",
+            "marathi": "खोल श्वसन व्यायाम मन आणि शरीर शांत करण्यास मदत करू शकतात. व्यक्तीला मंद, खोल श्वास घेण्यास, काही सेकंद रोखण्यास आणि नंतर हळूहळू सोडण्यास प्रोत्साहित करा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी शिथिलीकरण",
+            "marathi": "प्रगतिशील स्नायू शिथिलीकरण"
+          },
+          "description": {
+            "english": "This involves tensing and then relaxing each muscle group in the body. It can help reduce feelings of restlessness and promote relaxation.",
+            "hindi": "इसमें शरीर के प्रत्येक मांसपेशी समूह को तनाव देना और फिर आराम देना शामिल है। यह बेचैनी की भावनाओं को कम करने और विश्राम को बढ़ावा देने में मदद कर सकता है।",
+            "marathi": "यामध्ये शरीरातील प्रत्येक स्नायू गटाला ताण देणे आणि नंतर शिथिल करणे समाविष्ट आहे. हे अस्वस्थतेची भावना कमी करण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Mindfulness Meditation",
+            "hindi": "सचेतना ध्यान",
+            "marathi": "सजगता ध्यान"
+          },
+          "description": {
+            "english": "Mindfulness encourages individuals to focus on the present moment. This can help improve focus and reduce impulsivity.",
+            "hindi": "सचेतना व्यक्तियों को वर्तमान क्षण पर ध्यान केंद्रित करने के लिए प्रोत्साहित करती है। यह फोकस सुधारने और आवेगशीलता कम करने में मदद कर सकती है।",
+            "marathi": "सजगता व्यक्तींना सध्याच्या क्षणावर लक्ष केंद्रित करण्यास प्रोत्साहित करते. हे लक्ष सुधारण्यास आणि आवेगशीलता कमी करण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Yoga",
+            "hindi": "योग",
+            "marathi": "योग"
+          },
+          "description": {
+            "english": "Yoga combines physical postures, breathing exercises, and meditation. It can help improve focus, reduce hyperactivity, and promote relaxation.",
+            "hindi": "योग शारीरिक आसन, श्वास व्यायाम और ध्यान को जोड़ता है। यह फोकस सुधारने, अतिसक्रियता कम करने और विश्राम को बढ़ावा देने में मदद कर सकता है।",
+            "marathi": "योग शारीरिक आसने, श्वसन व्यायाम आणि ध्यान एकत्र करतो. हे लक्ष सुधारण्यास, अतिक्रियाशीलता कमी करण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Guided Imagery",
+            "hindi": "निर्देशित कल्पना",
+            "marathi": "मार्गदर्शित प्रतिमा"
+          },
+          "description": {
+            "english": "This involves visualizing a peaceful scene or situation. It can help distract from distracting thoughts and promote relaxation.",
+            "hindi": "इसमें एक शांतिपूर्ण दृश्य या स्थिति की कल्पना करना शामिल है। यह विचलित करने वाले विचारों से ध्यान हटाने और विश्राम को बढ़ावा देने में मदद कर सकता है।",
+            "marathi": "यामध्ये शांततापूर्ण दृश्य किंवा परिस्थितीची कल्पना करणे समाविष्ट आहे. हे विचलित करणाऱ्या विचारांपासून लक्ष हटवण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Biofeedback",
+            "hindi": "बायोफीडबैक",
+            "marathi": "बायोफीडबॅक"
+          },
+          "description": {
+            "english": "This technique uses sensors to monitor body functions like heart rate and muscle tension. It can help individuals learn to control these functions and promote relaxation.",
+            "hindi": "यह तकनीक हृदय गति और मांसपेशी तनाव जैसे शरीरिक कार्यों की निगरानी के लिए सेंसर का उपयोग करती है। यह व्यक्तियों को इन कार्यों को नियंत्रित करना सीखने और विश्राम को बढ़ावा देने में मदद कर सकती है।",
+            "marathi": "हे तंत्र हृदयगती आणि स्नायूंचा ताण यासारख्या शारीरिक कार्यांचे निरीक्षण करण्यासाठी सेन्सर वापरते. हे व्यक्तींना या कार्यांवर नियंत्रण ठेवायला शिकण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Exercise",
+            "hindi": "व्यायाम",
+            "marathi": "व्यायाम"
+          },
+          "description": {
+            "english": "Regular physical activity can help reduce hyperactivity and improve focus. It can also promote relaxation and improve mood.",
+            "hindi": "नियमित शारीरिक गतिविधि अतिसक्रियता कम करने और फोकस सुधारने में मदद कर सकती है। यह विश्राम को बढ़ावा देने और मूड सुधारने में भी मदद कर सकती है।",
+            "marathi": "नियमित शारीरिक क्रियाकलाप अतिक्रियाशीलता कमी करण्यास आणि लक्ष सुधारण्यास मदत करू शकतात. हे विश्रांतीला प्रोत्साहन देण्यास आणि मूड सुधारण्यास देखील मदत करू शकते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Music Therapy",
+            "hindi": "संगीत चिकित्सा",
+            "marathi": "संगीत चिकित्सा"
+          },
+          "description": {
+            "english": "Listening to calming music can help reduce feelings of restlessness and promote relaxation.",
+            "hindi": "शांत संगीत सुनना बेचैनी की भावनाओं को कम करने और विश्राम को बढ़ावा देने में मदद कर सकता है।",
+            "marathi": "शांत संगीत ऐकणे अस्वस्थतेची भावना कमी करण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Aromatherapy",
+            "hindi": "सुगंध चिकित्सा",
+            "marathi": "सुगंध चिकित्सा"
+          },
+          "description": {
+            "english": "Certain scents, like lavender and chamomile, can have a calming effect.",
+            "hindi": "लैवेंडर और कैमोमाइल जैसी कुछ सुगंधों का शांत प्रभाव हो सकता है।",
+            "marathi": "लैव्हेंडर आणि कॅमोमाइल यासारख्या काही सुगंधांचा शांत प्रभाव असू शकतो."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Massage Therapy",
+            "hindi": "मालिश चिकित्सा",
+            "marathi": "मसाज थेरपी"
+          },
+          "description": {
+            "english": "Regular massages can help reduce tension and promote relaxation. Remember, it's important to consult with a healthcare provider or a mental health professional before starting any new treatment or relaxation technique. They can provide guidance based on the individual's specific needs and symptoms.",
+            "hindi": "नियमित मालिश तनाव कम करने और विश्राम को बढ़ावा देने में मदद कर सकती है। याद रखें, कोई भी नया उपचार या विश्राम तकनीक शुरू करने से पहले स्वास्थ्य प्रदाता या मानसिक स्वास्थ्य पेशेवर से सलाह लेना महत्वपूर्ण है। वे व्यक्ति की विशिष्ट आवश्यकताओं और लक्षणों के आधार पर मार्गदर्शन प्रदान कर सकते हैं।",
+            "marathi": "नियमित मसाज तणाव कमी करण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकतात. लक्षात ठेवा, कोणतेही नवीन उपचार किंवा विश्रांती तंत्र सुरू करण्यापूर्वी आरोग्य प्रदाता किंवा मानसिक आरोग्य व्यावसायिकाचा सल्ला घेणे महत्वाचे आहे. ते व्यक्तीच्या विशिष्ट गरजा आणि लक्षणांच्या आधारावर मार्गदर्शन देऊ शकतात."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Tertiary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 4,
+          "title": {
+            "english": "Self-Monitoring",
+            "hindi": "स्व-निगरानी",
+            "marathi": "स्व-निरीक्षण"
+          },
+          "description": {
+            "english": "Helps to increase awareness of symptoms and triggers. Keep a journal to track your behavior, thoughts, and feelings. For example, note down when you feel most distracted and what might have caused it.",
+            "hindi": "लक्षणों और ट्रिगर्स की जागरूकता बढ़ाने में मदद करता है। अपने व्यवहार, विचारों और भावनाओं को ट्रैक करने के लिए एक जर्नल रखें। उदाहरण के लिए, नोट करें कि आप कब सबसे अधिक विचलित महसूस करते हैं और इसका कारण क्या हो सकता है।",
+            "marathi": "लक्षणे आणि ट्रिगर्सची जाणीव वाढवण्यास मदत करते. तुमचे वर्तन, विचार आणि भावना ट्रॅक करण्यासाठी जर्नल ठेवा. उदाहरणार्थ, तुम्हाला केव्हा सर्वात जास्त विचलित वाटते आणि त्याचे कारण काय असू शकते ते नोंद करा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Mindfulness and Relaxation Techniques",
+            "hindi": "सचेतना और विश्राम तकनीकें",
+            "marathi": "सजगता आणि विश्रांती तंत्रे"
+          },
+          "description": {
+            "english": "These can help manage impulsivity and hyperactivity. Practice mindfulness exercises like deep breathing or meditation. For example, take a few minutes each day to sit quietly and focus on your breath.",
+            "hindi": "ये आवेगशीलता और अतिसक्रियता को नियंत्रित करने में मदद कर सकती हैं। गहरी सांस लेने या ध्यान जैसे सचेतना अभ्यास करें। उदाहरण के लिए, हर दिन कुछ मिनट चुपचाप बैठकर अपनी सांस पर ध्यान दें।",
+            "marathi": "हे आवेगशीलता आणि अतिक्रियाशीलता नियंत्रित करण्यास मदत करू शकतात. खोल श्वसन किंवा ध्यान यासारखे सजगता व्यायाम करा. उदाहरणार्थ, दररोज काही मिनिटे शांतपणे बसून तुमच्या श्वासावर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Goal Setting",
+            "hindi": "लक्ष्य निर्धारण",
+            "marathi": "ध्येय निर्धारण"
+          },
+          "description": {
+            "english": "Helps to improve focus and organization. Set small, achievable goals for yourself and track your progress. For example, if you struggle with time management, set a goal to use a planner or digital tool to organize your tasks.",
+            "hindi": "फोकस और संगठन सुधारने में मदद करता है। अपने लिए छोटे, प्राप्त करने योग्य लक्ष्य निर्धारित करें और अपनी प्रगति को ट्रैक करें। उदाहरण के लिए, यदि आप समय प्रबंधन में संघर्ष करते हैं, तो अपने कार्यों को व्यवस्थित करने के लिए प्लानर या डिजिटल टूल का उपयोग करने का लक्ष्य निर्धारित करें।",
+            "marathi": "लक्ष आणि संघटना सुधारण्यास मदत करते. स्वतःसाठी लहान, साध्य करण्यायोग्य ध्येये ठेवा आणि तुमची प्रगती ट्रॅक करा. उदाहरणार्थ, जर तुम्हाला वेळ व्यवस्थापनात अडचण येत असेल तर तुमची कामे व्यवस्थित करण्यासाठी प्लॅनर किंवा डिजिटल टूल वापरण्याचे ध्येय ठेवा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 7,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "संज्ञानात्मक पुनर्गठन",
+            "marathi": "संज्ञानात्मक पुनर्रचना"
+          },
+          "description": {
+            "english": "Helps to challenge and change negative thought patterns. Identify negative thoughts and replace them with more positive or realistic ones. For example, if you often think 'I can't focus on anything,' try to reframe it as 'I struggle with focus sometimes, but I'm working on strategies to improve.'",
+            "hindi": "नकारात्मक विचार पैटर्न को चुनौती देने और बदलने में मदद करता है। नकारात्मक विचारों की पहचान करें और उन्हें अधिक सकारात्मक या यथार्थवादी विचारों से बदलें। उदाहरण के लिए, यदि आप अक्सर सोचते हैं 'मैं किसी भी चीज़ पर ध्यान केंद्रित नहीं कर सकता,' तो इसे 'मुझे कभी-कभी ध्यान केंद्रित करने में कठिनाई होती है, लेकिन मैं सुधार की रणनीतियों पर काम कर रहा हूं' के रूप में फिर से तैयार करने का प्रयास करें।",
+            "marathi": "नकारात्मक विचार पद्धतींना आव्हान देण्यास आणि बदलण्यास मदत करते. नकारात्मक विचारांची ओळख करा आणि त्यांना अधिक सकारात्मक किंवा वास्तववादी विचारांनी बदला. उदाहरणार्थ, जर तुम्ही अनेकदा विचार करता 'मी कोणत्याही गोष्टीवर लक्ष केंद्रित करू शकत नाही,' तर ते 'मला कधीकधी लक्ष केंद्रित करण्यात अडचण येते, परंतु मी सुधारणेच्या रणनीतींवर काम करत आहे' असे पुन्हा मांडण्याचा प्रयत्न करा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Behavioral Activation",
+            "hindi": "व्यवहारिक सक्रियता",
+            "marathi": "वर्तणूक सक्रियता"
+          },
+          "description": {
+            "english": "Helps to increase engagement in positive and rewarding activities. Plan and schedule activities that you enjoy and that require focus. For example, if you enjoy painting, schedule regular time to paint.",
+            "hindi": "सकारात्मक और पुरस्कृत गतिविधियों में सहयोग बढ़ाने में मदद करता है। उन गतिविधियों की योजना बनाएं और शेड्यूल करें जिनका आप आनंद लेते हैं और जिनमें फोकस की आवश्यकता होती है। उदाहरण के लिए, यदि आप पेंटिंग का आनंद लेते हैं, तो पेंटिंग के लिए नियमित समय निर्धारित करें।",
+            "marathi": "सकारात्मक आणि पुरस्कारप्रद क्रियाकलापांमध्ये सहभाग वाढवण्यास मदत करते. तुम्हाला आवडणाऱ्या आणि लक्ष आवश्यक असलेल्या क्रियाकलापांची योजना करा आणि शेड्यूल करा. उदाहरणार्थ, जर तुम्हाला चित्रकारी आवडत असेल तर चित्रकारीसाठी नियमित वेळ निर्धारित करा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Problem-Solving Skills",
+            "hindi": "समस्या समाधान कौशल",
+            "marathi": "समस्या सोडवण्याची कौशल्ये"
+          },
+          "description": {
+            "english": "Helps to manage daily challenges and improve decision-making. Practice problem-solving steps: identify the problem, generate solutions, evaluate and select a solution, and implement it. For example, if you struggle with forgetting tasks, brainstorm solutions like using reminders or a task management app.",
+            "hindi": "दैनिक चुनौतियों का प्रबंधन करने और निर्णय लेने में सुधार करने में मदद करता है। समस्या समाधान के चरणों का अभ्यास करें: समस्या की पहचान करें, समाधान उत्पन्न करें, समाधान का मूल्यांकन और चयन करें, और इसे लागू करें। उदाहरण के लिए, यदि आप कार्यों को भूलने में संघर्ष करते हैं, तो अनुस्मारक या कार्य प्रबंधन ऐप का उपयोग करने जैसे समाधानों पर विचार करें।",
+            "marathi": "दैनंदिन आव्हाने व्यवस्थापित करण्यास आणि निर्णय घेण्यात सुधारणा करण्यास मदत करते. समस्या सोडवण्याच्या चरणांचा सराव करा: समस्या ओळखा, उपाय तयार करा, उपायाचे मूल्यमापन करा आणि निवडा, आणि त्याची अंमलबजावणी करा. उदाहरणार्थ, जर तुम्हाला कामे विसरण्यात अडचण येत असेल तर रिमाइंडर किंवा टास्क मॅनेजमेंट अॅप वापरण्यासारख्या उपायांवर विचार करा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Time Management Techniques",
+            "hindi": "समय प्रबंधन तकनीकें",
+            "marathi": "वेळ व्यवस्थापन तंत्रे"
+          },
+          "description": {
+            "english": "Helps to improve punctuality and reduce procrastination. Use tools like calendars, timers, and alarms to manage your time. For example, set a timer for tasks to stay on track.",
+            "hindi": "समय की पाबंदी सुधारने और टालमटोल कम करने में मदद करता है। अपने समय का प्रबंधन करने के लिए कैलेंडर, टाइमर और अलार्म जैसे उपकरणों का उपयोग करें। उदाहरण के लिए, ट्रैक पर बने रहने के लिए कार्यों के लिए टाइमर सेट करें।",
+            "marathi": "वक्तशीरता सुधारण्यास आणि विलंब कमी करण्यास मदत करते. तुमच्या वेळेचे व्यवस्थापन करण्यासाठी कैलेंडर, टाइमर आणि अलार्म यासारखी साधने वापरा. उदाहरणार्थ, ट्रॅकवर राहण्यासाठी कामांसाठी टाइमर सेट करा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Organizational Skills Training",
+            "hindi": "संगठनात्मक कौशल प्रशिक्षण",
+            "marathi": "संघटनात्मक कौशल्य प्रशिक्षण"
+          },
+          "description": {
+            "english": "Helps to manage clutter and improve productivity. Develop a system to organize your workspace, home, and digital files. For example, designate specific places for your belongings and regularly declutter.",
+            "hindi": "अव्यवस्था को प्रबंधित करने और उत्पादकता सुधारने में मदद करता है। अपने कार्यक्षेत्र, घर और डिजिटल फाइलों को व्यवस्थित करने के लिए एक प्रणाली विकसित करें। उदाहरण के लिए, अपने सामान के लिए विशिष्ट स्थान निर्धारित करें और नियमित रूप से सफाई करें।",
+            "marathi": "गोंधळ व्यवस्थापित करण्यास आणि उत्पादकता सुधारण्यास मदत करते. तुमचे कार्यक्षेत्र, घर आणि डिजिटल फाइल्स व्यवस्थित करण्यासाठी प्रणाली विकसित करा. उदाहरणार्थ, तुमच्या वस्तूंसाठी विशिष्ट जागा निर्धारित करा आणि नियमितपणे साफसफाई करा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Impulse Control Strategies",
+            "hindi": "आवेग नियंत्रण रणनीतियां",
+            "marathi": "आवेग नियंत्रण रणनीती"
+          },
+          "description": {
+            "english": "Helps to manage impulsivity. Practice techniques like counting to ten before responding or making decisions. For example, if you feel the urge to interrupt someone, take a moment to pause and consider your response.",
+            "hindi": "आवेगशीलता को नियंत्रित करने में मदद करता है। जवाब देने या निर्णय लेने से पहले दस तक गिनती करने जैसी तकनीकों का अभ्यास करें। उदाहरण के लिए, यदि आप किसी को बाधित करने की इच्छा महसूस करते हैं, तो एक क्षण रुकें और अपने जवाब पर विचार करें।",
+            "marathi": "आवेगशीलता नियंत्रित करण्यास मदत करते. प्रतिसाद देण्यापूर्वी किंवा निर्णय घेण्यापूर्वी दहापर्यंत मोजण्यासारख्या तंत्रांचा सराव करा. उदाहरणार्थ, जर तुम्हाला कोणाला व्यत्यय आणण्याची इच्छा वाटत असेल तर क्षणभर थांबा आणि तुमच्या प्रतिसादाचा विचार करा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 6,
+          "title": {
+            "english": "Social Skills Training",
+            "hindi": "सामाजिक कौशल प्रशिक्षण",
+            "marathi": "सामाजिक कौशल्य प्रशिक्षण"
+          },
+          "description": {
+            "english": "Helps to improve relationships and communication. Practice active listening, expressing empathy, and assertiveness. For example, if you struggle with interrupting others, practice waiting until they finish speaking before you respond.",
+            "hindi": "रिश्तों और संचार को सुधारने में मदद करता है। सक्रिय सुनना, सहानुभूति व्यक्त करना और दृढ़ता का अभ्यास करें। उदाहरण के लिए, यदि आप दूसरों को बाधित करने में संघर्ष करते हैं, तो जवाब देने से पहले उनके बोलना समाप्त होने तक प्रतीक्षा करने का अभ्यास करें।",
+            "marathi": "नातेसंबंध आणि संवाद सुधारण्यास मदत करते. सक्रिय ऐकणे, सहानुभूती व्यक्त करणे आणि निश्चयता यांचा सराव करा. उदाहरणार्थ, जर तुम्हाला इतरांना व्यत्यय आणण्यात अडचण येत असेल तर प्रतिसाद देण्यापूर्वी ते बोलणे संपेपर्यंत वाट पाहण्याचा सराव करा."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Tertiary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 6,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "संज्ञानात्मक पुनर्गठन",
+            "marathi": "संज्ञानात्मक पुनर्रचना"
+          },
+          "description": {
+            "english": "Cognitive restructuring helps in identifying and challenging irrational beliefs that may contribute to ADHD symptoms. Identify negative thoughts and replace them with more positive, rational ones. Instead of thinking 'I can't focus on anything,' try 'I struggle with focus, but I can improve with practice and strategies.'",
+            "hindi": "संज्ञानात्मक पुनर्गठन उन अतार्किक विश्वासों की पहचान करने और उन्हें चुनौती देने में मदद करता है जो ADHD के लक्षणों में योगदान दे सकते हैं। नकारात्मक विचारों की पहचान करें और उन्हें अधिक सकारात्मक, तार्किक विचारों से बदलें। 'मैं किसी भी चीज़ पर ध्यान केंद्रित नहीं कर सकता' के बजाय 'मुझे ध्यान केंद्रित करने में कठिनाई होती है, लेकिन मैं अभ्यास और रणनीतियों से सुधार कर सकता हूं' सोचने का प्रयास करें।",
+            "marathi": "संज्ञानात्मक पुनर्रचना अशा अतार्किक विश्वासांची ओळख करण्यास आणि त्यांना आव्हान देण्यास मदत करते जे ADHD च्या लक्षणांमध्ये योगदान देऊ शकतात. नकारात्मक विचारांची ओळख करा आणि त्यांना अधिक सकारात्मक, तर्कसंगत विचारांनी बदला. 'मी कोणत्याही गोष्टीवर लक्ष केंद्रित करू शकत नाही' याऐवजी 'मला लक्ष केंद्रित करण्यात अडचण येते, परंतु मी सरावाने आणि रणनीतींनी सुधारू शकतो' असा विचार करण्याचा प्रयत्न करा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Mindfulness and Meditation",
+            "hindi": "सचेतना और ध्यान",
+            "marathi": "सजगता आणि ध्यान"
+          },
+          "description": {
+            "english": "Mindfulness helps in improving focus and attention, reducing impulsivity. Practice mindfulness exercises or meditation daily. Spend 10 minutes each day focusing on your breath, letting go of distracting thoughts.",
+            "hindi": "सचेतना फोकस और ध्यान सुधारने, आवेगशीलता कम करने में मदद करती है। दैनिक सचेतना अभ्यास या ध्यान करें। हर दिन 10 मिनट अपनी सांस पर ध्यान केंद्रित करें, विचलित करने वाले विचारों को जाने दें।",
+            "marathi": "सजगता लक्ष आणि एकाग्रता सुधारण्यास, आवेगशीलता कमी करण्यास मदत करते. दररोज सजगता व्यायाम किंवा ध्यान करा. दररोज 10 मिनिटे तुमच्या श्वासावर लक्ष केंद्रित करा, विचलित करणाऱ्या विचारांना जाऊ द्या."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Self-Acceptance",
+            "hindi": "स्व-स्वीकृति",
+            "marathi": "स्व-स्वीकार"
+          },
+          "description": {
+            "english": "Accepting oneself reduces feelings of frustration and inadequacy. Practice self-compassion and acceptance. Instead of being hard on yourself for forgetting things, remind yourself that everyone makes mistakes and it's okay.",
+            "hindi": "स्वयं को स्वीकार करना निराशा और अपर्याप्तता की भावनाओं को कम करता है। स्व-करुणा और स्वीकृति का अभ्यास करें। चीजें भूलने के लिए अपने आप पर कठोर होने के बजाय, अपने आप को याद दिलाएं कि हर कोई गलतियां करता है और यह ठीक है।",
+            "marathi": "स्वतःला स्वीकारणे निराशा आणि अपुरेपणाच्या भावना कमी करते. स्व-करुणा आणि स्वीकार यांचा सराव करा. गोष्टी विसरल्याबद्दल स्वतःवर कठोर होण्याऐवजी, स्वतःला आठवण करून द्या की प्रत्येकजण चुका करतो आणि ते ठीक आहे."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 4,
+          "title": {
+            "english": "Goal Setting",
+            "hindi": "लक्ष्य निर्धारण",
+            "marathi": "ध्येय निर्धारण"
+          },
+          "description": {
+            "english": "Setting realistic goals can help manage ADHD symptoms by providing structure. Set small, achievable goals and work towards them. If you struggle with organization, set a goal to clean one small area of your room each day.",
+            "hindi": "यथार्थवादी लक्ष्य निर्धारित करना संरचना प्रदान करके ADHD के लक्षणों को प्रबंधित करने में मदद कर सकता है। छोटे, प्राप्त करने योग्य लक्ष्य निर्धारित करें और उनकी दिशा में काम करें। यदि आप संगठन में संघर्ष करते हैं, तो हर दिन अपने कमरे के एक छोटे से क्षेत्र को साफ करने का लक्ष्य निर्धारित करें।",
+            "marathi": "वास्तववादी ध्येये ठेवणे संरचना देऊन ADHD च्या लक्षणांना व्यवस्थापित करण्यास मदत करू शकते. लहान, साध्य करण्यायोग्य ध्येये ठेवा आणि त्यांच्या दिशेने काम करा. जर तुम्हाला संघटनेत अडचण येत असेल तर दररोज तुमच्या खोलीतील एक लहान भाग साफ करण्याचे ध्येय ठेवा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 4,
+          "title": {
+            "english": "Time Management",
+            "hindi": "समय प्रबंधन",
+            "marathi": "वेळ व्यवस्थापन"
+          },
+          "description": {
+            "english": "Time management strategies can help manage ADHD symptoms by reducing procrastination and improving productivity. Use tools like planners, timers, and reminders. Set a timer for 20 minutes to focus on a task, then take a 5-minute break.",
+            "hindi": "समय प्रबंधन रणनीतियां टालमटोल कम करके और उत्पादकता सुधारकर ADHD के लक्षणों को प्रबंधित करने में मदद कर सकती हैं। प्लानर, टाइमर और रिमाइंडर जैसे उपकरणों का उपयोग करें। किसी कार्य पर ध्यान केंद्रित करने के लिए 20 मिनट का टाइमर सेट करें, फिर 5 मिनट का ब्रेक लें।",
+            "marathi": "वेळ व्यवस्थापन रणनीती विलंब कमी करून आणि उत्पादकता सुधारून ADHD च्या लक्षणांना व्यवस्थापित करण्यास मदत करू शकतात. प्लॅनर, टाइमर आणि रिमाइंडर यासारखी साधने वापरा. एखाद्या कामावर लक्ष केंद्रित करण्यासाठी 20 मिनिटांचा टाइमर सेट करा, नंतर 5 मिनिटांचा ब्रेक घ्या."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Disputing Irrational Beliefs",
+            "hindi": "अतार्किक विश्वासों पर विवाद",
+            "marathi": "अतार्किक विश्वासांवर तर्कवितर्क"
+          },
+          "description": {
+            "english": "Disputing irrational beliefs can reduce anxiety and improve self-esteem. Identify irrational beliefs and challenge them with evidence. If you believe you're incapable because of ADHD, list all the things you've accomplished despite your diagnosis.",
+            "hindi": "अतार्किक विश्वासों पर विवाद चिंता कम कर सकता है और आत्म-सम्मान सुधार सकता है। अतार्किक विश्वासों की पहचान करें और उन्हें सबूतों के साथ चुनौती दें। यदि आप मानते हैं कि ADHD के कारण आप असमर्थ हैं, तो अपने निदान के बावजूद आपने जो कुछ हासिल किया है उसकी सूची बनाएं।",
+            "marathi": "अतार्किक विश्वासांवर तर्कवितर्क चिंता कमी करू शकते आणि आत्मसन्मान सुधारू शकते. अतार्किक विश्वासांची ओळख करा आणि त्यांना पुराव्यांसह आव्हान द्या. जर तुमचा असा विश्वास असेल की ADHD मुळे तुम्ही असमर्थ आहात, तर तुमच्या निदानाअसूनही तुम्ही जे काही साध्य केले आहे त्याची यादी करा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Behavioral Activation",
+            "hindi": "व्यवहारिक सक्रियता",
+            "marathi": "वर्तणूक सक्रियता"
+          },
+          "description": {
+            "english": "Engaging in positive activities can improve mood and reduce ADHD symptoms. Plan and participate in enjoyable activities. Schedule time each day for a hobby you enjoy, like painting or playing an instrument.",
+            "hindi": "सकारात्मक गतिविधियों में भाग लेना मूड सुधार सकता है और ADHD के लक्षणों को कम कर सकता है। आनंददायक गतिविधियों की योजना बनाएं और उनमें भाग लें। हर दिन अपने पसंदीदा शौक के लिए समय निर्धारित करें, जैसे पेंटिंग या वाद्य यंत्र बजाना।",
+            "marathi": "सकारात्मक क्रियाकलापांमध्ये सहभाग घेणे मूड सुधारू शकते आणि ADHD च्या लक्षणांना कमी करू शकते. आनंददायक क्रियाकलापांची योजना करा आणि त्यामध्ये भाग घ्या. दररोज तुमच्या आवडत्या छंदासाठी वेळ निर्धारित करा, जसे चित्रकारी किंवा वाद्य वाजवणे."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 3,
+          "title": {
+            "english": "Exercise",
+            "hindi": "व्यायाम",
+            "marathi": "व्यायाम"
+          },
+          "description": {
+            "english": "Regular physical activity can improve focus and reduce hyperactivity. Incorporate regular exercise into your routine. Take a walk or do a short workout each morning.",
+            "hindi": "नियमित शारीरिक गतिविधि फोकस सुधार सकती है और अतिसक्रियता कम कर सकती है। अपनी दिनचर्या में नियमित व्यायाम शामिल करें। हर सुबह टहलने जाएं या छोटी कसरत करें।",
+            "marathi": "नियमित शारीरिक क्रियाकलाप लक्ष सुधारू शकतात आणि अतिक्रियाशीलता कमी करू शकतात. तुमच्या दिनचर्येत नियमित व्यायाम समाविष्ट करा. दर सकाळी फिरायला जा किंवा छोटा व्यायाम करा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 4,
+          "title": {
+            "english": "Healthy Eating",
+            "hindi": "स्वस्थ भोजन",
+            "marathi": "आरोग्यदायी आहार"
+          },
+          "description": {
+            "english": "A balanced diet can improve overall health and well-being, potentially reducing ADHD symptoms. Eat a diet rich in fruits, vegetables, lean proteins, and whole grains. Replace sugary snacks with healthier options like fruit or nuts.",
+            "hindi": "संतुलित आहार समग्र स्वास्थ्य और कल्याण सुधार सकता है, संभावित रूप से ADHD के लक्षणों को कम कर सकता है। फल, सब्जियां, दुबले प्रोटीन और साबुत अनाज से भरपूर आहार लें। चीनी युक्त स्नैक्स को फल या नट्स जैसे स्वस्थ विकल्पों से बदलें।",
+            "marathi": "संतुलित आहार एकूण आरोग्य आणि कल्याण सुधारू शकतो, संभाव्यतः ADHD च्या लक्षणांना कमी करू शकतो. फळे, भाज्या, कमी चरबीयुक्त प्रथिने आणि संपूर्ण धान्यांनी भरपूर आहार घ्या. साखरयुक्त स्नॅक्सना फळे किंवा नट्स यासारख्या आरोग्यदायी पर्यायांनी बदला."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 4,
+          "title": {
+            "english": "Sleep Hygiene",
+            "hindi": "नींद की स्वच्छता",
+            "marathi": "झोपेची स्वच्छता"
+          },
+          "description": {
+            "english": "Adequate sleep can improve focus and reduce impulsivity. Establish a regular sleep schedule and create a calming bedtime routine. Go to bed and wake up at the same time each day, and avoid screens for an hour before bed.",
+            "hindi": "पर्याप्त नींद फोकस सुधार सकती है और आवेगशीलता कम कर सकती है। नियमित नींद का कार्यक्रम स्थापित करें और शांत सोने का समय की दिनचर्या बनाएं। हर दिन एक ही समय पर सोएं और जागें, और सोने से एक घंटे पहले स्क्रीन से बचें।",
+            "marathi": "पुरेशी झोप लक्ष सुधारू शकते आणि आवेगशीलता कमी करू शकते. नियमित झोपेचे वेळापत्रक स्थापित करा आणि शांत झोपण्याची दिनचर्या तयार करा. दररोज एकाच वेळी झोपा आणि उठा, आणि झोपण्यापूर्वी एक तास स्क्रीन टाळा."
+          }
+        }
+      ]
+    }
+  }
+}

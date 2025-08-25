@@ -1,0 +1,107 @@
+{
+  "condition": "Social Mental Health",
+  "intervention_type": "Yoga And Meditation Techniques",
+  "interventions": [
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Setting the Intention",
+      "Card Description": "'- Begin by sitting comfortably and setting a positive intention for your practice. This could be a word or phrase that reflects your goals, such as \"peace\" or \"connection.\"",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Breath Awareness (Pranayama)",
+      "Card Description": "'- Practice deep breathing exercises like **Anulom Vilom (Alternate Nostril Breathing)** to calm the nervous system.  \n   - **Box Breathing**: Inhale for a count of four, hold for four, exhale for four, hold for four, and repeat.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Grounding Poses",
+      "Card Description": "'- **Mountain Pose (Tadasana)**: Stand tall, grounding your feet and focusing on stability and presence.  \n   - **Child's Pose (Balasana)**: Sit on your knees and stretch your arms forward, resting your forehead on the mat to promote relaxation.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Poses for Stress Relief",
+      "Card Description": "'- **Cat-Cow Stretch (Marjaryasana-Bitilasana)**: Alternate between arching and rounding your back on all fours to release tension.  \n   - **Forward Bend (Uttanasana)**: Bend forward from a standing position, letting your arms and head hang to release tension in the back and neck.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Heart-Opening Poses",
+      "Card Description": "'- **Bridge Pose (Setu Bandhasana)**: Lie on your back with knees bent and lift your hips to open your chest.  \n   - **Cobra Pose (Bhujangasana)**: Lie on your stomach and lift your chest with hands placed under your shoulders to release stress and open the heart.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Balancing Poses",
+      "Card Description": "'- **Tree Pose (Vrksasana)**: Stand on one leg with the opposite foot resting on your inner thigh to improve focus and balance.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Ending with Relaxation",
+      "Card Description": "'- **Corpse Pose (Savasana)**: Lie flat on your back, arms by your sides, and consciously relax every muscle. Focus on deep, slow breaths.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Mindfulness Meditation",
+      "Card Description": "'- Sit comfortably and focus your attention on your breath. Notice the sensations of breathing and gently bring your mind back when it wanders.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Loving-Kindness Meditation (Metta)",
+      "Card Description": "'- Start by cultivating compassion for yourself, saying phrases like, \"May I be happy. May I be well.\" Gradually extend these wishes to others.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Body Scan Meditation",
+      "Card Description": "'- Mentally scan your body from head to toe, noticing any tension or discomfort, and breathe into those areas to release stress.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Guided Imagery",
+      "Card Description": "'- Visualize a place where you feel peaceful and safe. Engage all your senses to immerse yourself fully in this calming imagination.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Social Mental Health",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Yoga And Meditation Techniques",
+      "Card Title": "Gratitude Meditation",
+      "Card Description": "'- Reflect on things you're grateful for, allowing this realization to fill you with a sense of joy and contentment.",
+      "xp": 5
+    }
+  ],
+  "count": 12,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 12
+  }
+}

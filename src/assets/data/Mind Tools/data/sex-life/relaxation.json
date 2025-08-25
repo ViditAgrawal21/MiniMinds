@@ -1,0 +1,83 @@
+{
+  "condition": "Sex Life",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Cat-Cow Stretch (Marjaryasana-Bitilasana):",
+      "Card Description": "'- **How to Do It:** Start on your hands and knees in a tabletop position. Inhale as you drop your belly towards the mat and lift your head and tailbone, creating a gentle arch in your back (Cow Pose). Exhale as you round your back, tucking your chin to your chest and drawing your navel inwards (Cat Pose).   \n   - **Benefits:** Improves flexibility, relieves stress, and enhances blood flow to your pelvic area.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Bridge Pose (Setu Bandhasana):",
+      "Card Description": "'- **How to Do It:** Lie on your back with your knees bent and feet flat on the floor, hip-width apart. Inhale and lift your hips towards the ceiling, keeping your shoulders and head on the mat.  \n   - **Benefits:** Strengthens the pelvic floor muscles and increases flexibility in the spine.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Happy Baby Pose (Ananda Balasana):",
+      "Card Description": "'- **How to Do It:** Lie on your back and bend your knees towards your chest. Grab the outside of your feet with your hands, keeping your ankles directly over your knees.  \n   - **Benefits:** Opens the hips, releases the lower back, and helps relieve stress.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Pigeon Pose (Eka Pada Rajakapotasana):",
+      "Card Description": "'- **How to Do It:** From downward-facing dog, bring your right knee forward and drop it behind your right hand. Extend your left leg back. Keep your hips square and fold forward if comfortable.  \n   - **Benefits:** Deep hip opener, helps release tension, and enhances flexibility.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Child’s Pose (Balasana):",
+      "Card Description": "'- **How to Do It:** Kneel on the floor, touch your big toes together, and sit on your heels. Separate your knees about hip-width apart, and lay your torso down between your thighs.  \n   - **Benefits:** Calms the mind, reduces stress, and gently stretches the lower back.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindful Breathing:",
+      "Card Description": "'- **How to Do It:** Sit comfortably with your back straight. Close your eyes and focus on your breath. Inhale deeply through your nose, hold for a moment, and exhale slowly through your mouth. Pay attention to the sensation of breathing.  \n   - **Benefits:** Reduces stress and anxiety, promoting relaxation.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan Meditation:",
+      "Card Description": "'- **How to Do It:** Lie down in a comfortable position. Starting from your toes, bring attention to each part of your body, noticing any sensations or tension. Work your way up to the top of your head.  \n   - **Benefits:** Increases body awareness and relaxation, which can enhance sexual pleasure.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Loving-Kindness Meditation:",
+      "Card Description": "'- **How to Do It:** Sit comfortably and close your eyes. Take deep breaths and focus on generating feelings of love and kindness towards yourself. Extend these feelings outward, to others in your life.  \n   - **Benefits:** Enhances emotional connection and empathy, which can improve intimacy.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Sex Life",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Visualization Meditation:",
+      "Card Description": "'- **How to Do It:** Close your eyes and imagine a peaceful, relaxing scene. As you delve deeper into this scene, focus on incorporating all your senses. Feel the peace and relaxation of the environment.  \n   - **Benefits:** Reduces performance anxiety and fosters a relaxed and mindful presence.",
+      "xp": 5
+    }
+  ],
+  "count": 9,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 9
+  }
+}

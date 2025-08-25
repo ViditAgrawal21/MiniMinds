@@ -1,0 +1,75 @@
+{
+  "condition": "Anger Management",
+  "intervention_type": "Relaxation",
+  "interventions": [
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindful Breathing (Pranayama):",
+      "Card Description": "'- **Ujjayi Breath (Victorious Breath):** Inhale deeply through the nose, and exhale through the nose, slightly constricting the back of the throat to create a sound similar to the ocean. Focus on lengthening the breath and making each inhale and exhale even.  \n   - **Nadi Shodhana (Alternate Nostril Breathing):** Helps balance the mind and body. Use your right thumb to close your right nostril and inhale through the left. Close the left nostril with your fingers, open the right nostril, and exhale. Inhale through the right, close it, and exhale through the left. Continue this pattern.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Yoga Poses (Asanas):",
+      "Card Description": "'- **Child’s Pose (Balasana):** This pose is calming and helps you focus inward.  \n   - **Cat-Cow Stretch (Marjaryasana-Bitilasana):** Helps to release tension and improve spinal flexibility.  \n   - **Forward Bend (Uttanasana):** Encourages relaxation and reduces stress.  \n   - **Legs-Up-the-Wall Pose (Viparita Karani):** This restorative pose helps calm the nervous system.  \n   - **Corpse Pose (Savasana):** End your practice with this relaxation pose to integrate the benefits.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindful Movement:",
+      "Card Description": "'- Flow through a gentle sequence, focusing on connecting each movement with your breath. This can be a basic sun salutation or any series of movements you find calming.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Mindfulness Meditation:",
+      "Card Description": "'- Sit comfortably with your back straight. Close your eyes and focus on your breath. Notice the sensation of your breath entering and leaving your nose. When thoughts or feelings arise, acknowledge them without judgment, then gently return your focus to the breath.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Loving-Kindness Meditation (Metta):",
+      "Card Description": "'- Begin by directing loving-kindness toward yourself. Use phrases such as “May I be happy. May I be healthy. May I be safe.” Gradually extend these wishes to others, including someone you are in conflict with, to foster compassion.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Body Scan Meditation:",
+      "Card Description": "'- Lie down or sit comfortably. Starting at your toes, slowly bring your attention to each part of your body, noticing any sensations without judgment. This can help you become more aware of where tension related to anger is stored.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Visualization:",
+      "Card Description": "'- Envision yourself in a peaceful place. Imagine letting go of anger like releasing a balloon into the sky. This technique can help reduce the intensity of your emotions.",
+      "xp": 5
+    },
+    {
+      "Issue Name": "Anger Management",
+      "Intervention Type": "Secondary",
+      "Intervention Sub Type": "Relaxation",
+      "Card Title": "Gratitude Practice:",
+      "Card Description": "'- Spend a few minutes at the end of your meditation focusing on things you are grateful for. This can shift your perspective away from anger and help cultivate positivity.",
+      "xp": 5
+    }
+  ],
+  "count": 8,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 8
+  }
+}

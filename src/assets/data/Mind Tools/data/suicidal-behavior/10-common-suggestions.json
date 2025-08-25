@@ -1,0 +1,91 @@
+{
+  "condition": "suicidal behavior",
+  "intervention_type": "10 Common Suggestions",
+  "interventions": [
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Reach Out for Help:",
+      "Card Description": "'- **Example:** Calling a crisis hotline or contacting a mental health professional can provide immediate support and help create a plan for safety. Hotlines often operate 24/7 and are staffed by trained counselors.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Develop a Safety Plan:",
+      "Card Description": "'- **Example:** Work with a mental health professional to create a written plan that includes coping strategies, contact information for supportive friends or family, and emergency services. Having a plan can provide a sense of structure and support during crises.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Connect with Supportive People:",
+      "Card Description": "'- **Example:** Sharing feelings with trusted friends or family members can provide emotional support. Joining a support group allows individuals to connect with others who have had similar experiences.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Avoid Alcohol and Drugs:",
+      "Card Description": "'- **Example:** Remaining sober can help prevent situations from escalating, as substances can impair judgment and make impulsive actions more likely.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Practice Stress-Reduction Techniques:",
+      "Card Description": "'- **Example:** Techniques like deep breathing, mindfulness, or yoga can reduce anxiety and improve emotional regulation.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Engage in Regular Physical Activity:",
+      "Card Description": "'- **Example:** Exercise can boost mood by increasing endorphins and other brain chemicals that help ease depression.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Address Underlying Issues:",
+      "Card Description": "'- **Example:** Therapy can help address underlying mental health issues such as depression, anxiety, or trauma, which are often associated with suicidal thoughts.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Establish a Routine:",
+      "Card Description": "'- **Example:** Keeping a regular daily schedule can provide structure and predictability, which can be comforting during difficult times.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Focus on Positive Relationships:",
+      "Card Description": "'- **Example:** Spending time with people who are supportive and understanding can help create a protective environment against negative thoughts.",
+      "xp": 2
+    },
+    {
+      "Issue Name": "suicidal behavior",
+      "Intervention Type": "Primary",
+      "Intervention Sub Type": "10 Common Suggestions",
+      "Card Title": "Limit Exposure to Negative Influences:",
+      "Card Description": "'- **Example:** Avoiding media or environments that trigger distressing feelings can be beneficial. Instead, engage in activities that foster a positive outlook.",
+      "xp": 2
+    }
+  ],
+  "count": 10,
+  "metadata": {
+    "created_from": "thought_pro_filtered.json and thought_pro_with_extracted_final.json",
+    "total_interventions": 10
+  }
+}

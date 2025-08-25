@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "condition": "family-relationship",
+    "intervention_type": "10 Common Suggestions",
+    "source_files": [
+      "thought_pro_filtered.json",
+      "thought_pro_with_extracted_final.json",
+      "Thought_pro_remaining.json"
+    ],
+    "created_from": "thought_pro_filtered.json, thought_pro_with_extracted_final.json, and Thought_pro_remaining.json",
+    "total_interventions": 10,
+    "creation_date": "2024-12-28"
+  },
+  "interventions": [
+    {
+      "title": "Communication",
+      "description": "- **How it works**: Open, honest communication helps build trust and prevents misunderstandings.\n   - **Example**: A family sets aside time every week for a family meeting where everyone shares updates and discusses any concerns.",
+      "xp": 2
+    },
+    {
+      "title": "Quality Time",
+      "description": "- **How it works**: Spending meaningful time together strengthens bonds and creates lasting memories.\n   - **Example**: A couple decides to have a no-phone dinner every Saturday where they cook together and discuss their week.",
+      "xp": 2
+    },
+    {
+      "title": "Active Listening",
+      "description": "- **How it works**: Truly listening to others makes them feel valued and understood.\n   - **Example**: When a teenager wants to talk about their day, the parent puts away their phone and maintains eye contact, responding thoughtfully.",
+      "xp": 2
+    },
+    {
+      "title": "Respect for Boundaries",
+      "description": "- **How it works**: Honoring personal boundaries fosters respect and reduces conflict.\n   - **Example**: A family respects their teen's privacy by allowing them to spend time alone in their room after school.",
+      "xp": 2
+    },
+    {
+      "title": "Shared Responsibilities",
+      "description": "- **How it works**: Dividing chores and responsibilities helps everyone feel they are part of the team.\n   - **Example**: A family creates a rotating chores schedule so everyone contributes to household tasks.",
+      "xp": 2
+    },
+    {
+      "title": "Support and Encouragement",
+      "description": "- **How it works**: Offering support and cheering each other on promotes confidence and resilience.\n   - **Example**: A sibling attends their brotherâ€™s sports event, cheering him on regardless of the outcome.",
+      "xp": 2
+    },
+    {
+      "title": "Conflict Resolution Skills",
+      "description": "- **How it works**: Learning to resolve conflicts constructively keeps relationships healthy.\n   - **Example**: When a disagreement arises, a couple sits down to discuss their perspectives using \"I\" statements to express feelings without assigning blame.",
+      "xp": 2
+    },
+    {
+      "title": "Expressing Gratitude",
+      "description": "- **How it works**: Regularly expressing appreciation strengthens relationships and boosts morale.\n   - **Example**: A parent thanks their child for helping with dinner, emphasizing how much they value their effort and contribution.",
+      "xp": 2
+    },
+    {
+      "title": "Flexibility and Adaptability",
+      "description": "- **How it works**: Being open to change and compromising prevents rigidity and promotes joint problem-solving.\n   - **Example**: During a family road trip, plans change due to weather, and everyone cooperates to find alternative activities.",
+      "xp": 2
+    },
+    {
+      "title": "Creating Traditions",
+      "description": "- **How it works**: Traditions provide stability and a sense of identity, bonding family members over shared experiences.\n   - **Example**: A family celebrates a movie night every Friday, taking turns choosing a film, making popcorn, and creating their own family cinema tradition.\n\nBy incorporating these suggestions into daily life, families and relationships can grow stronger, more resilient, and more fulfilling for everyone involved.",
+      "xp": 2
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "condition": "self-care-hygiene",
+  "issueType": "Behavioural Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Establish a Daily Hygiene Routine",
+            "hindi": "दैनिक स्वच्छता दिनचर्या स्थापित करें",
+            "marathi": "दैनंदिन स्वच्छता दिनचर्या स्थापित करा"
+          },
+          "description": {
+            "english": "Create a consistent daily routine that includes basic hygiene practices like brushing teeth, washing face, and combing hair. For example, set specific times for morning and evening routines to make them automatic habits.",
+            "hindi": "एक निरंतर दैनिक दिनचर्या बनाएं जिसमें दांत साफ करना, चेहरा धोना और बाल संवारना जैसी बुनियादी स्वच्छता प्रथाएं शामिल हों। उदाहरण के लिए, सुबह और शाम की दिनचर्या के लिए विशिष्ट समय निर्धारित करें ताकि वे स्वचालित आदतें बन जाएं।",
+            "marathi": "दात घासणे, चेहरा धुणे आणि केसांचे विंताळणे यासारख्या मूलभूत स्वच्छता पद्धतींचा समावेश असलेली सातत्यपूर्ण दैनंदिन दिनचर्या तयार करा. उदाहरणार्थ, सकाळ आणि संध्याकाळच्या दिनचर्येसाठी विशिष्ट वेळा निश्चित करा जेणेकरून त्या स्वयंचलित सवयी बनतील."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Practice Regular Handwashing",
+            "hindi": "नियमित हाथ धोने का अभ्यास करें",
+            "marathi": "नियमित हात धुण्याचा सराव करा"
+          },
+          "description": {
+            "english": "Wash your hands frequently with soap and water for at least 20 seconds, especially before eating, after using the bathroom, and after touching public surfaces. This simple practice prevents illness and promotes overall health.",
+            "hindi": "कम से कम 20 सेकंड तक साबुन और पानी से अपने हाथों को बार-बार धोएं, विशेष रूप से खाने से पहले, बाथरूम का उपयोग करने के बाद, और सार्वजनिक सतहों को छूने के बाद। यह सरल अभ्यास बीमारी को रोकता है और समग्र स्वास्थ्य को बढ़ावा देता है।",
+            "marathi": "विशेषतः जेवणापूर्वी, स्वच्छतागृह वापरल्यानंतर आणि सार्वजनिक पृष्ठभाग स्पर्श केल्यानंतर कमीत कमी 20 सेकंदांसाठी साबण आणि पाण्याने हात वारंवार धुवा. ही साधी प्रथा आजारपणाला प्रतिबंध करते आणि एकूण आरोग्याला प्रोत्साहन देते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Maintain Oral Health",
+            "hindi": "मौखिक स्वास्थ्य बनाए रखें",
+            "marathi": "तोंडाचे आरोग्य राखा"
+          },
+          "description": {
+            "english": "Brush your teeth twice daily with fluoride toothpaste and floss regularly. Consider using mouthwash for additional protection. Schedule regular dental check-ups to maintain optimal oral health.",
+            "hindi": "फ्लोराइड टूथपेस्ट से दिन में दो बार अपने दांत साफ करें और नियमित रूप से फ्लॉस करें। अतिरिक्त सुरक्षा के लिए माउथवॉश का उपयोग करने पर विचार करें। इष्टतम मौखिक स्वास्थ्य बनाए रखने के लिए नियमित दंत जांच का समय निर्धारित करें।",
+            "marathi": "फ्लोराइड टूथपेस्टने दिवसातून दोनदा दात घासा आणि नियमितपणे फ्लॉस करा. अतिरिक्त संरक्षणासाठी माउथवॉशचा वापर करण्याचा विचार करा. इष्टतम तोंडाचे आरोग्य राखण्यासाठी नियमित दंत तपासणीचे वेळापत्रक करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Take Regular Showers or Baths",
+            "hindi": "नियमित स्नान या नहाना",
+            "marathi": "नियमित आंघोळ किंवा स्नान करा"
+          },
+          "description": {
+            "english": "Bathe or shower regularly using mild soap and warm water. Pay attention to areas that tend to sweat more. This helps remove dirt, bacteria, and dead skin cells while leaving you feeling refreshed.",
+            "hindi": "हल्के साबुन और गर्म पानी का उपयोग करके नियमित रूप से नहाएं या स्नान करें। उन क्षेत्रों पर ध्यान दें जो अधिक पसीना आते हैं। यह गंदगी, बैक्टीरिया और मृत त्वचा कोशिकाओं को हटाने में मदद करता है जबकि आपको तरोताजा महसूस कराता है।",
+            "marathi": "हलका साबण आणि कोमट पाणी वापरून नियमितपणे आंघोळ किंवा स्नान करा. जास्त घाम येणाऱ्या भागांकडे लक्ष द्या. हे घाण, जीवाणू आणि मृत त्वचेच्या पेशी काढून टाकण्यास मदत करते आणि तुम्हाला ताजेतवाने वाटण्यास मदत करते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Keep Your Living Space Clean",
+            "hindi": "अपने रहने की जगह को साफ रखें",
+            "marathi": "तुमची राहण्याची जागा स्वच्छ ठेवा"
+          },
+          "description": {
+            "english": "Maintain a clean and organized living environment by making your bed daily, doing dishes regularly, and keeping surfaces clutter-free. A clean space promotes mental clarity and reduces stress.",
+            "hindi": "रोजाना अपना बिस्तर बनाकर, नियमित रूप से बर्तन धोकर, और सतहों को अव्यवस्था मुक्त रखकर एक साफ और व्यवस्थित रहने का माहौल बनाए रखें। एक साफ स्थान मानसिक स्पष्टता को बढ़ावा देता है और तनाव को कम करता है।",
+            "marathi": "दररोज अंथरूण नीटनेटके करून, नियमितपणे भांडी धुवून आणि पृष्ठभाग अव्यवस्था-मुक्त ठेवून स्वच्छ आणि व्यवस्थित राहण्याचे वातावरण राखा. स्वच्छ जागा मानसिक स्पष्टतेला प्रोत्साहन देते आणि तणाव कमी करते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Practice Mindful Eating",
+            "hindi": "सचेत भोजन का अभ्यास करें",
+            "marathi": "सजग आहाराचा सराव करा"
+          },
+          "description": {
+            "english": "Eat nutritious meals at regular intervals and stay hydrated throughout the day. Pay attention to what you eat and how it makes you feel. Proper nutrition supports both physical and mental well-being.",
+            "hindi": "नियमित अंतराल पर पौष्टिक भोजन करें और दिन भर हाइड्रेटेड रहें। इस बात पर ध्यान दें कि आप क्या खाते हैं और यह आपको कैसा महसूस कराता है। उचित पोषण शारीरिक और मानसिक दोनों कल्याण का समर्थन करता है।",
+            "marathi": "नियमित अंतराने पौष्टिक आहार घ्या आणि दिवसभर हायड्रेटेड राहा. तुम्ही काय खाता आणि त्यामुळे तुम्हाला कसे वाटते याकडे लक्ष द्या. योग्य पोषण शारीरिक आणि मानसिक दोन्ही कल्याणाला समर्थन देते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Get Adequate Sleep",
+            "hindi": "पर्याप्त नींद लें",
+            "marathi": "पुरेशी झोप घ्या"
+          },
+          "description": {
+            "english": "Aim for 7-9 hours of quality sleep each night. Create a bedtime routine that includes turning off screens, dimming lights, and engaging in relaxing activities. Good sleep hygiene is essential for physical and mental health.",
+            "hindi": "हर रात 7-9 घंटे की गुणवत्तापूर्ण नींद का लक्ष्य रखें। एक सोने का समय दिनचर्या बनाएं जिसमें स्क्रीन बंद करना, रोशनी कम करना, और आरामदायक गतिविधियों में शामिल होना शामिल है। अच्छी नींद की स्वच्छता शारीरिक और मानसिक स्वास्थ्य के लिए आवश्यक है।",
+            "marathi": "दर रात्री 7-9 तासांची दर्जेदार झोप घेण्याचे लक्ष्य ठेवा. स्क्रीन बंद करणे, दिवे मंद करणे आणि आरामदायक क्रियाकलापांमध्ये गुंतणे यांचा समावेश असलेली झोपण्याची दिनचर्या तयार करा. चांगली झोपेची स्वच्छता शारीरिक आणि मानसिक आरोग्यासाठी आवश्यक आहे."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Dress Appropriately and Comfortably",
+            "hindi": "उचित और आरामदायक कपड़े पहनें",
+            "marathi": "योग्य आणि आरामदायक कपडे घाला"
+          },
+          "description": {
+            "english": "Choose clean, well-fitting clothes appropriate for the weather and occasion. Dressing well can boost your confidence and make you feel better about yourself. Ensure clothes are washed regularly.",
+            "hindi": "मौसम और अवसर के लिए उपयुक्त साफ, अच्छी तरह से फिट होने वाले कपड़े चुनें। अच्छे कपड़े पहनना आपके आत्मविश्वास को बढ़ा सकता है और आपको अपने बारे में बेहतर महसूस करा सकता है। सुनिश्चित करें कि कपड़े नियमित रूप से धोए जाते हैं।",
+            "marathi": "हवामान आणि प्रसंगासाठी योग्य असे स्वच्छ, चांगल्या प्रकारे बसणारे कपडे निवडा. चांगले कपडे घालणे तुमचा आत्मविश्वास वाढवू शकते आणि तुम्हाला स्वतःबद्दल चांगले वाटू शकते. कपडे नियमितपणे धुतले जातात याची खात्री करा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Take Care of Your Mental Health",
+            "hindi": "अपने मानसिक स्वास्थ्य का ख्याल रखें",
+            "marathi": "तुमच्या मानसिक आरोग्याची काळजी घ्या"
+          },
+          "description": {
+            "english": "Practice stress management techniques like deep breathing, meditation, or journaling. Take breaks when needed and don't hesitate to seek support from friends, family, or professionals when feeling overwhelmed.",
+            "hindi": "गहरी सांस लेना, ध्यान, या जर्नलिंग जैसी तनाव प्रबंधन तकनीकों का अभ्यास करें। जरूरत पड़ने पर ब्रेक लें और जब आप अभिभूत महसूस करें तो दोस्तों, परिवार या पेशेवरों से सहायता लेने में संकोच न करें।",
+            "marathi": "खोल श्वास घेणे, ध्यान किंवा जर्नलिंग यासारख्या तणाव व्यवस्थापन तंत्रांचा सराव करा. गरज पडल्यावर विश्रांती घ्या आणि जेव्हा तुम्ही अभिभूत वाटता तेव्हा मित्र, कुटुंब किंवा व्यावसायिकांकडून सहाय्य घेण्यास अजिबात संकोच करू नका."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 2,
+          "title": {
+            "english": "Stay Physically Active",
+            "hindi": "शारीरिक रूप से सक्रिय रहें",
+            "marathi": "शारीरिकदृष्ट्या सक्रिय रहा"
+          },
+          "description": {
+            "english": "Incorporate regular physical activity into your routine, whether it's a daily walk, yoga, dancing, or sports. Exercise not only keeps your body healthy but also improves mood and mental clarity.",
+            "hindi": "अपनी दिनचर्या में नियमित शारीरिक गतिविधि शामिल करें, चाहे वह दैनिक सैर हो, योग हो, नृत्य हो, या खेल हो। व्यायाम न केवल आपके शरीर को स्वस्थ रखता है बल्कि मूड और मानसिक स्पष्टता में भी सुधार करता है।",
+            "marathi": "तुमच्या दिनचर्येत नियमित शारीरिक क्रियाकलाप समाविष्ट करा, मग ती दैनंदिन चालणे असो, योग असो, नृत्य असो किंवा खेळ असो. व्यायाम केवळ तुमचे शरीर निरोगी ठेवत नाही तर मूड आणि मानसिक स्पष्टता देखील सुधारतो."
+          }
+        }
+      ]
+    },
+    "yogaAndMeditation": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Morning Self-Care Yoga",
+            "hindi": "सुबह स्वयं देखभाल योग",
+            "marathi": "सकाळची स्वयं-काळजी योग"
+          },
+          "description": {
+            "english": "Start your day with gentle yoga poses that promote self-awareness and prepare your mind and body for the day ahead. Focus on poses that energize and center you.",
+            "hindi": "अपने दिन की शुरुआत कोमल योग आसनों से करें जो स्व-जागरूकता को बढ़ावा देते हैं और आने वाले दिन के लिए आपके मन और शरीर को तैयार करते हैं। उन आसनों पर ध्यान दें जो आपको ऊर्जावान और केंद्रित करते हैं।",
+            "marathi": "स्व-जागरूकतेला प्रोत्साहन देणाऱ्या आणि पुढील दिवसासाठी तुमचे मन आणि शरीर तयार करणाऱ्या सौम्य योगासनांसह तुमच्या दिवसाची सुरुवात करा. तुम्हाला स्फूर्ती देणाऱ्या आणि केंद्रित करणाऱ्या आसनांवर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Gentle Stretching Warm-Up",
+            "hindi": "कोमल खिंचाव वार्म-अप",
+            "marathi": "सौम्य स्ट्रेचिंग वार्म-अप"
+          },
+          "description": {
+            "english": "Begin with simple stretches to loosen up your body and prepare for self-care activities. Include neck rolls, shoulder shrugs, and gentle twists to release tension and promote body awareness.",
+            "hindi": "अपने शरीर को ढीला करने और स्वयं देखभाल गतिविधियों के लिए तैयार करने के लिए सरल खिंचाव से शुरुआत करें। तनाव मुक्त करने और शारीरिक जागरूकता को बढ़ावा देने के लिए गर्दन के घूर्णन, कंधे के झटके और कोमल मोड़ शामिल करें।",
+            "marathi": "तुमचे शरीर सैल करण्यासाठी आणि स्वयं-काळजी क्रियाकलापांसाठी तयार करण्यासाठी साध्या स्ट्रेचिंगपासून सुरुवात करा. तणाव मुक्त करण्यासाठी आणि शारीरिक जागरूकता वाढवण्यासाठी मानेची फिरवणे, खांद्याचे हलवणे आणि सौम्य वळणे समाविष्ट करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Self-Love Sun Salutations",
+            "hindi": "स्वयं प्रेम सूर्य नमस्कार",
+            "marathi": "स्वयं-प्रेम सूर्य नमस्कार"
+          },
+          "description": {
+            "english": "Practice sun salutations with intention and gratitude for your body. This sequence helps improve self-awareness and promotes appreciation for your physical self while building strength and flexibility.",
+            "hindi": "अपने शरीर के लिए इरादे और कृतज्ञता के साथ सूर्य नमस्कार का अभ्यास करें। यह अनुक्रम आत्म-जागरूकता में सुधार करने में मदद करता है और शक्ति और लचीलापन बनाते हुए आपके भौतिक स्व के लिए प्रशंसा को बढ़ावा देता है।",
+            "marathi": "तुमच्या शरीराबद्दल हेतू आणि कृतज्ञतेसह सूर्य नमस्काराचा सराव करा. हा क्रम आत्म-जागरूकता सुधारण्यास मदत करतो आणि शक्ती आणि लवचिकता निर्माण करताना तुमच्या शारीरिक स्वत्वाची प्रशंसा करण्यास प्रोत्साहन देतो."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Restorative Self-Care Poses",
+            "hindi": "पुनर्स्थापना स्वयं देखभाल आसन",
+            "marathi": "पुनर्संचयी स्वयं-काळजी आसने"
+          },
+          "description": {
+            "english": "Practice calming restorative poses like child's pose, legs-up-the-wall, or corpse pose. These poses help you reconnect with your body and promote inner peace and self-acceptance.",
+            "hindi": "बच्चे की मुद्रा, दीवार पर पैर, या शव आसन जैसे शांत करने वाले पुनर्स्थापना आसनों का अभ्यास करें। ये आसन आपको अपने शरीर से फिर से जुड़ने में मदद करते हैं और आंतरिक शांति और स्व-स्वीकृति को बढ़ावा देते हैं।",
+            "marathi": "बालासन, भिंतीवर पाय ठेवणे किंवा शवासन यासारख्या शांत करणाऱ्या पुनर्संचयी आसनांचा सराव करा. ही आसने तुम्हाला तुमच्या शरीराशी पुन्हा जोडण्यास मदत करतात आणि अंतर्गत शांती आणि स्व-स्वीकृतीला प्रोत्साहन देतात."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 3,
+          "title": {
+            "english": "Mindfulness Meditation for Self-Care",
+            "hindi": "स्वयं देखभाल के लिए माइंडफुलनेस मेडिटेशन",
+            "marathi": "स्वयं-काळजीसाठी माइंडफुलनेस मेडिटेशन"
+          },
+          "description": {
+            "english": "Practice mindfulness meditation focusing on self-compassion and body awareness. Sit comfortably, focus on your breath, and cultivate loving-kindness towards yourself and your personal care journey.",
+            "hindi": "आत्म-करुणा और शरीर जागरूकता पर ध्यान केंद्रित करते हुए माइंडफुलनेस मेडिटेशन का अभ्यास करें। आराम से बैठें, अपनी सांस पर ध्यान दें, और अपने और अपनी व्यक्तिगत देखभाल यात्रा के प्रति प्रेम-कृपा विकसित करें।",
+            "marathi": "स्वयं-करुणा आणि शरीर जागरूकतेवर लक्ष केंद्रित करून माइंडफुलनेस मेडिटेशनचा सराव करा. आरामात बसा, तुमच्या श्वासावर लक्ष केंद्रित करा आणि स्वतःबद्दल आणि तुमच्या वैयक्तिक काळजी प्रवासाबद्दल प्रेम-दयाळूपणा जोपासा."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Self-Care Breathing Exercise",
+            "hindi": "स्वयं देखभाल श्वास व्यायाम",
+            "marathi": "स्वयं-काळजी श्वास व्यायाम"
+          },
+          "description": {
+            "english": "Practice deep breathing exercises while focusing on gratitude for your body and mind. Take time to appreciate yourself and acknowledge your efforts in maintaining self-care routines.",
+            "hindi": "अपने शरीर और मन के लिए कृतज्ञता पर ध्यान केंद्रित करते हुए गहरी सांस लेने के व्यायाम का अभ्यास करें। अपनी सराहना करने और स्वयं देखभाल दिनचर्या बनाए रखने में अपने प्रयासों को स्वीकार करने के लिए समय निकालें।",
+            "marathi": "तुमच्या शरीर आणि मनाबद्दल कृतज्ञता केंद्रित करताना खोल श्वास व्यायामाचा सराव करा. स्वतःची प्रशंसा करण्यासाठी आणि स्वयं-काळजी दिनचर्या राखण्यातील तुमच्या प्रयत्नांना मान्यता देण्यासाठी वेळ काढा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी आराम",
+            "marathi": "प्रगतिशील स्नायू विश्रांती"
+          },
+          "description": {
+            "english": "Practice tensing and then relaxing each muscle group in your body. This technique helps reduce physical tension and promotes awareness of your body's needs for care and attention.",
+            "hindi": "अपने शरीर के प्रत्येक मांसपेशी समूह को तनाव देने और फिर आराम देने का अभ्यास करें। यह तकनीक शारीरिक तनाव को कम करने में मदद करती है और आपके शरीर की देखभाल और ध्यान की आवश्यकताओं के बारे में जागरूकता को बढ़ावा देती है।",
+            "marathi": "तुमच्या शरीरातील प्रत्येक स्नायू गटाला ताण देण्याचा आणि नंतर आराम देण्याचा सराव करा. हे तंत्र शारीरिक तणाव कमी करण्यास मदत करते आणि तुमच्या शरीराच्या काळजी आणि लक्षाच्या गरजांबद्दल जागरूकता वाढवते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Guided Self-Care Imagery",
+            "hindi": "निर्देशित स्वयं देखभाल कल्पना",
+            "marathi": "मार्गदर्शित स्वयं-काळजी कल्पना"
+          },
+          "description": {
+            "english": "Visualize yourself in a peaceful setting where you feel completely cared for and comfortable. Imagine taking time for self-care activities and feeling refreshed and renewed.",
+            "hindi": "अपने आप को एक शांतिपूर्ण वातावरण में देखें जहाँ आप पूरी तरह से देखभाल और आरामदायक महसूस करते हैं। स्वयं देखभाल गतिविधियों के लिए समय निकालने और तरोताजा और नवीकृत महसूस करने की कल्पना करें।",
+            "marathi": "स्वतःला एका शांत वातावरणात पाहा जिथे तुम्हाला पूर्ण काळजी आणि आराम वाटतो. स्वयं-काळजी क्रियाकलापांसाठी वेळ काढण्याची आणि ताजेतवाने आणि नवीन वाटण्याची कल्पना करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Music Therapy for Self-Care",
+            "hindi": "स्वयं देखभाल के लिए संगीत चिकित्सा",
+            "marathi": "स्वयं-काळजीसाठी संगीत थेरपी"
+          },
+          "description": {
+            "english": "Listen to calming, soothing music while engaging in self-care activities. Choose music that makes you feel peaceful and helps you connect with feelings of self-worth and self-love.",
+            "hindi": "स्वयं देखभाल गतिविधियों में संलग्न होते समय शांत, सुखदायक संगीत सुनें। ऐसा संगीत चुनें जो आपको शांतिपूर्ण महसूस कराए और आत्म-मूल्य और स्व-प्रेम की भावनाओं से जुड़ने में मदद करे।",
+            "marathi": "स्वयं-काळजी क्रियाकलापांमध्ये गुंतताना शांत, सुखदायक संगीत ऐका. असे संगीत निवडा जे तुम्हाला शांत वाटेल आणि स्वयं-मूल्य आणि स्वयं-प्रेमाच्या भावनांशी जोडण्यास मदत करेल."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 3,
+          "title": {
+            "english": "Aromatherapy Self-Care",
+            "hindi": "अरोमाथेरेपी स्वयं देखभाल",
+            "marathi": "अरोमाथेरपी स्वयं-काळजी"
+          },
+          "description": {
+            "english": "Use calming scents like lavender, chamomile, or vanilla during your self-care routines. Essential oils can enhance the relaxation experience and create positive associations with taking care of yourself.",
+            "hindi": "अपनी स्वयं देखभाल दिनचर्या के दौरान लैवेंडर, कैमोमाइल, या वेनिला जैसी शांत करने वाली सुगंधों का उपयोग करें। आवश्यक तेल आराम के अनुभव को बढ़ा सकते हैं और अपनी देखभाल करने के साथ सकारात्मक संबंध बना सकते हैं।",
+            "marathi": "तुमच्या स्वयं-काळजी दिनचर्येदरम्यान लॅव्हेंडर, कॅमोमाइल किंवा व्हॅनिला यासारख्या शांत करणाऱ्या सुगंधांचा वापर करा. अत्यावश्यक तेले विश्रांतीचा अनुभव वाढवू शकतात आणि स्वतःची काळजी घेण्याशी सकारात्मक संबंध निर्माण करू शकतात."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Self-Massage Techniques",
+            "hindi": "स्वयं मसाज तकनीक",
+            "marathi": "स्वयं-मसाज तंत्रे"
+          },
+          "description": {
+            "english": "Practice gentle self-massage techniques for your hands, face, and shoulders. This promotes relaxation, improves circulation, and helps you develop a loving, caring relationship with your body.",
+            "hindi": "अपने हाथों, चेहरे और कंधों के लिए कोमल स्वयं मसाज तकनीकों का अभ्यास करें। यह आराम को बढ़ावा देता है, रक्त संचार में सुधार करता है, और आपको अपने शरीर के साथ एक प्रेमपूर्ण, देखभाल करने वाला रिश्ता विकसित करने में मदद करता है।",
+            "marathi": "तुमच्या हातांसाठी, चेहऱ्यासाठी आणि खांद्यांसाठी सौम्य स्वयं-मसाज तंत्रांचा सराव करा. हे विश्रांतीला प्रोत्साहन देते, रक्तसंचार सुधारते आणि तुमच्या शरीराशी प्रेमळ, काळजी घेणारा संबंध विकसित करण्यास मदत करते."
+          }
+        }
+      ]
+    },
+    "cbtInterventions": {
+      "type": "Tertiary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 4,
+          "title": {
+            "english": "Challenging Self-Neglect Thoughts",
+            "hindi": "स्वयं उपेक्षा विचारों को चुनौती देना",
+            "marathi": "स्वयं-दुर्लक्ष विचारांना आव्हान देणे"
+          },
+          "description": {
+            "english": "Identify and challenge negative thoughts about self-care being selfish or unnecessary. Replace these with positive affirmations about deserving care and wellness.",
+            "hindi": "स्वयं देखभाल को स्वार्थी या अनावश्यक मानने वाले नकारात्मक विचारों की पहचान करें और उन्हें चुनौती दें। इन्हें देखभाल और कल्याण के हकदार होने के बारे में सकारात्मक पुष्टि से बदलें।",
+            "marathi": "स्वयं-काळजीला स्वार्थी किंवा अनावश्यक मानणाऱ्या नकारात्मक विचारांची ओळख करा आणि त्यांना आव्हान द्या. काळजी आणि कल्याणाचे पात्र असण्याबद्दल सकारात्मक पुष्टीकरणाने त्यांची जागा घ्या."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Establishing Self-Care Routines",
+            "hindi": "स्वयं देखभाल दिनचर्या स्थापित करना",
+            "marathi": "स्वयं-काळजी दिनचर्या स्थापित करणे"
+          },
+          "description": {
+            "english": "Create a structured routine for self-care activities like showering, brushing teeth, and washing hands. Set specific times and use reminders to make these habits automatic.",
+            "hindi": "नहाना, दांत साफ करना और हाथ धोने जैसी स्वयं देखभाल गतिविधियों के लिए एक संरचित दिनचर्या बनाएं। इन आदतों को स्वचालित बनाने के लिए विशिष्ट समय निर्धारित करें और अनुस्मारक का उपयोग करें।",
+            "marathi": "आंघोळ करणे, दात घासणे आणि हात धुणे यासारख्या स्वयं-काळजी क्रियाकलापांसाठी संरचित दिनचर्या तयार करा. या सवयी आपोआप होण्यासाठी विशिष्ट वेळा निश्चित करा आणि आठवणीचा वापर करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Using Positive Self-Affirmations",
+            "hindi": "सकारात्मक स्वयं पुष्टि का उपयोग",
+            "marathi": "सकारात्मक स्वयं-पुष्टीकरणाचा वापर"
+          },
+          "description": {
+            "english": "Practice positive affirmations like 'I deserve to take care of my body' or 'I am worth the time it takes to maintain good hygiene' to improve self-esteem and motivation.",
+            "hindi": "'मैं अपने शरीर की देखभाल के हकदार हूं' या 'अच्छी स्वच्छता बनाए रखने के लिए जो समय लगता है मैं उसके लायक हूं' जैसी सकारात्मक पुष्टि का अभ्यास करें।",
+            "marathi": "'मी माझ्या शरीराची काळजी घेण्यास पात्र आहे' किंवा 'चांगली स्वच्छता राखण्यासाठी लागणारा वेळ मी देण्यास योग्य आहे' यासारख्या सकारात्मक पुष्टीकरणांचा सराव करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 4,
+          "title": {
+            "english": "Mindful Self-Care Practice",
+            "hindi": "सचेत स्वयं देखभाल अभ्यास",
+            "marathi": "सजग स्वयं-काळजी सराव"
+          },
+          "description": {
+            "english": "Pay attention to the sensations during your hygiene routine - the warmth of water, the scent of soap, the feeling of cleanliness. This makes self-care more enjoyable and meaningful.",
+            "hindi": "अपनी स्वच्छता दिनचर्या के दौरान संवेदनाओं पर ध्यान दें - पानी की गर्माहट, साबुन की खुशबू, स्वच्छता की भावना। यह स्वयं देखभाल को अधिक सुखद और अर्थपूर्ण बनाता है।",
+            "marathi": "तुमच्या स्वच्छता दिनचर्येदरम्यान संवेदनांकडे लक्ष द्या - पाण्याची उबदारता, साबणाचा सुगंध, स्वच्छतेची भावना. यामुळे स्वयं-काळजी अधिक आनंददायी आणि अर्थपूर्ण होते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 4,
+          "title": {
+            "english": "Setting Realistic Hygiene Goals",
+            "hindi": "यथार्थवादी स्वच्छता लक्ष्य निर्धारण",
+            "marathi": "वास्तववादी स्वच्छता लक्ष्ये सेट करणे"
+          },
+          "description": {
+            "english": "Start with small, achievable goals like brushing teeth twice daily, then gradually add more self-care activities. Celebrate small victories to build motivation.",
+            "hindi": "दिन में दो बार दांत साफ करने जैसे छोटे, प्राप्त करने योग्य लक्ष्यों से शुरुआत करें, फिर धीरे-धीरे अधिक स्वयं देखभाल गतिविधियां जोड़ें। प्रेरणा बनाने के लिए छोटी जीत का जश्न मनाएं।",
+            "marathi": "दिवसातून दोनदा दात घासणे यासारख्या छोट्या, साध्य करण्यायोग्य लक्ष्यांपासून सुरुवात करा, नंतर हळूहळू अधिक स्वयं-काळजी क्रियाकलाप जोडा. प्रेरणा निर्माण करण्यासाठी छोट्या विजयाचा उत्सव साजरा करा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Visual Reminders for Self-Care",
+            "hindi": "स्वयं देखभाल के लिए दृश्य अनुस्मारक",
+            "marathi": "स्वयं-काळजीसाठी दृश्य आठवणी"
+          },
+          "description": {
+            "english": "Place sticky notes, set phone alarms, or use visual cues to remind yourself of self-care activities. Put reminders where you'll see them regularly.",
+            "hindi": "स्वयं देखभाल गतिविधियों की याद दिलाने के लिए चिपकने वाली टिप्पणियां लगाएं, फोन अलार्म सेट करें, या दृश्य संकेतों का उपयोग करें। अनुस्मारक वहां रखें जहां आप उन्हें नियमित रूप से देखेंगे।",
+            "marathi": "स्वयं-काळजी क्रियाकलापांची आठवण करून देण्यासाठी चिकट नोट्स लावा, फोन अलार्म सेट करा किंवा दृश्य संकेतांचा वापर करा. जिथे तुम्ही नियमितपणे पाहाल तिथे आठवणी ठेवा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Practicing Self-Compassion",
+            "hindi": "स्वयं करुणा का अभ्यास",
+            "marathi": "स्वयं-करुणेचा सराव"
+          },
+          "description": {
+            "english": "Be kind to yourself when you miss self-care routines. Replace self-criticism with understanding and gentle encouragement to get back on track.",
+            "hindi": "जब आप स्वयं देखभाल दिनचर्या से चूक जाएं तो अपने साथ दयालु बनें। स्वयं आलोचना को समझ और कोमल प्रोत्साहन से बदलें ताकि फिर से सही रास्ते पर आ सकें।",
+            "marathi": "जेव्हा तुम्ही स्वयं-काळजी दिनचर्या चुकवता तेव्हा स्वतःशी दयाळू व्हा. स्वयं-टीकेची जागा समजूतदारपणा आणि सौम्य प्रोत्साहनाने घ्या जेणेकरून पुन्हा योग्य मार्गावर येता येईल."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Seeking Self-Care Support",
+            "hindi": "स्वयं देखभाल सहायता प्राप्त करना",
+            "marathi": "स्वयं-काळजी समर्थन मिळवणे"
+          },
+          "description": {
+            "english": "Ask friends or family members to encourage your self-care routines. Having someone check in with you can provide accountability and motivation.",
+            "hindi": "मित्रों या परिवार के सदस्यों से अपनी स्वयं देखभाल दिनचर्या को प्रोत्साहित करने के लिए कहें। कोई व्यक्ति आपसे मिलने आना जवाबदेही और प्रेरणा प्रदान कर सकता है।",
+            "marathi": "मित्र किंवा कुटुंबातील सदस्यांना तुमच्या स्वयं-काळजी दिनचर्यांना प्रोत्साहन देण्यास सांगा. कोणीतरी तुमची विचारपूस करणे जबाबदारी आणि प्रेरणा देऊ शकते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 4,
+          "title": {
+            "english": "Self-Care Reward System",
+            "hindi": "स्वयं देखभाल पुरस्कार प्रणाली",
+            "marathi": "स्वयं-काळजी बक्षीस प्रणाली"
+          },
+          "description": {
+            "english": "Give yourself small rewards when you achieve your hygiene goals. This could be a favorite snack, watching a movie, or any activity you enjoy.",
+            "hindi": "जब आप अपने स्वच्छता लक्ष्य हासिल करें तो अपने आप को छोटे पुरस्कार दें। यह पसंदीदा नाश्ता, फिल्म देखना, या कोई भी गतिविधि हो सकती है जिसका आप आनंद लेते हैं।",
+            "marathi": "जेव्हा तुम्ही तुमची स्वच्छता लक्ष्ये साध्य करता तेव्हा स्वतःला छोटी बक्षिसे द्या. हे आवडते खाद्यपदार्थ, चित्रपट पाहणे किंवा तुम्हाला आवडणारी कोणतीही क्रियाकलाप असू शकते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 3,
+          "title": {
+            "english": "Self-Care Education and Awareness",
+            "hindi": "स्वयं देखभाल शिक्षा और जागरूकता",
+            "marathi": "स्वयं-काळजी शिक्षण आणि जागरूकता"
+          },
+          "description": {
+            "english": "Learn about the benefits of good hygiene and the health risks of poor hygiene. Understanding the 'why' behind self-care can increase motivation to maintain good habits.",
+            "hindi": "अच्छी स्वच्छता के फायदों और खराब स्वच्छता के स्वास्थ्य जोखिमों के बारे में जानें। स्वयं देखभाल के पीछे 'क्यों' को समझना अच्छी आदतों को बनाए रखने की प्रेरणा बढ़ा सकता है।",
+            "marathi": "चांगल्या स्वच्छतेचे फायदे आणि वाईट स्वच्छतेचे आरोग्य धोके याबद्दल जाणून घ्या. स्वयं-काळजीमागील 'का' समजून घेतल्याने चांगल्या सवयी राखण्याची प्रेरणा वाढू शकते."
+          }
+        }
+      ]
+    },
+    "rebtInterventions": {
+      "type": "Tertiary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 4,
+          "title": {
+            "english": "Rational Self-Worth Beliefs",
+            "hindi": "तर्कसंगत स्व-मूल्य विश्वास",
+            "marathi": "तर्कसंगत स्व-मूल्य समजुती"
+          },
+          "description": {
+            "english": "Examine and dispute irrational beliefs about not deserving care or being 'too busy' for self-care. Develop rational beliefs about your inherent worth and the importance of self-care.",
+            "hindi": "देखभाल के हकदार न होने या स्वयं देखभाल के लिए 'बहुत व्यस्त' होने के बारे में तर्कहीन विश्वासों की जांच करें और उन पर विवाद करें। अपने अंतर्निहित मूल्य और स्वयं देखभाल के महत्व के बारे में तर्कसंगत विश्वास विकसित करें।",
+            "marathi": "काळजीचे पात्र नसण्याबद्दल किंवा स्वयं-काळजीसाठी 'खूप व्यस्त' असण्याबद्दलच्या अतर्कसंगत समजुतींची तपासणी करा आणि त्यांचा विरोध करा. तुमच्या अंतर्निहित मूल्यबद्दल आणि स्वयं-काळजीच्या महत्त्वाबद्दल तर्कसंगत समजुती विकसित करा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Regular Handwashing Practice",
+            "hindi": "नियमित हाथ धोने का अभ्यास",
+            "marathi": "नियमित हात धुण्याचा सराव"
+          },
+          "description": {
+            "english": "Wash hands with soap and water for at least 20 seconds, especially after using the restroom, before eating, and after contact with public surfaces. Focus on the health benefits and disease prevention.",
+            "hindi": "विशेष रूप से शौचालय का उपयोग करने के बाद, खाने से पहले और सार्वजनिक सतहों के संपर्क के बाद कम से कम 20 सेकंड तक साबुन और पानी से हाथ धोएं। स्वास्थ्य लाभ और रोग रोकथाम पर ध्यान दें।",
+            "marathi": "विशेषतः स्वच्छतागृह वापरल्यानंतर, जेवणापूर्वी आणि सार्वजनिक पृष्ठभागाच्या संपर्कानंतर कमीत कमी 20 सेकंदांसाठी साबण आणि पाण्याने हात धुवा. आरोग्य फायदे आणि रोग प्रतिबंधावर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Oral Hygiene Maintenance",
+            "hindi": "मौखिक स्वच्छता रखरखाव",
+            "marathi": "तोंडाच्या स्वच्छतेची देखभाल"
+          },
+          "description": {
+            "english": "Brush teeth at least twice daily and floss regularly to prevent bad breath, tooth decay, and gum disease. Make it a non-negotiable part of your daily routine.",
+            "hindi": "सांसों की बदबू, दांतों की सड़न और मसूड़ों की बीमारी को रोकने के लिए दिन में कम से कम दो बार दांत साफ करें और नियमित रूप से फ्लॉस करें। इसे अपनी दैनिक दिनचर्या का एक अटल हिस्सा बनाएं।",
+            "marathi": "श्वासाची दुर्गंधी, दातांचा किडणे आणि हिरड्यांचे आजार टाळण्यासाठी दिवसातून किमान दोनदा दात घासा आणि नियमितपणे फ्लॉस करा. याला तुमच्या दैनंदिन दिनचर्येचा अपरिहार्य भाग बनवा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Regular Bathing Routine",
+            "hindi": "नियमित स्नान दिनचर्या",
+            "marathi": "नियमित आंघोळ दिनचर्या"
+          },
+          "description": {
+            "english": "Shower or bathe regularly using soap and warm water to remove dead skin cells, oils, and bacteria. Adjust frequency based on your activity level and personal needs.",
+            "hindi": "मृत त्वचा कोशिकाओं, तेल और बैक्टीरिया को हटाने के लिए साबुन और गर्म पानी का उपयोग करके नियमित रूप से नहाएं या स्नान करें। अपनी गतिविधि के स्तर और व्यक्तिगत आवश्यकताओं के आधार पर आवृत्ति को समायोजित करें।",
+            "marathi": "मृत त्वचेच्या पेशी, तेल आणि जंतू काढून टाकण्यासाठी साबण आणि कोमट पाणी वापरून नियमितपणे आंघोळ करा. तुमच्या क्रियाकलापाच्या पातळी आणि वैयक्तिक गरजांनुसार वारंवारता समायोजित करा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 3,
+          "title": {
+            "english": "Clean Clothing Habits",
+            "hindi": "स्वच्छ कपड़े की आदतें",
+            "marathi": "स्वच्छ कपड्यांच्या सवयी"
+          },
+          "description": {
+            "english": "Change and wash clothes regularly to prevent skin infections and body odor. Change underwear and socks daily, and don't wear outer garments too long without washing.",
+            "hindi": "त्वचा संक्रमण और शरीर की गंध को रोकने के लिए कपड़े नियमित रूप से बदलें और धोएं। अंडरवियर और मोजे रोजाना बदलें, और बाहरी कपड़ों को बिना धोए बहुत देर तक न पहनें।",
+            "marathi": "त्वचेचे संक्रमण आणि शरीराची दुर्गंधी टाळण्यासाठी कपडे नियमितपणे बदला आणि धुवा. अंतर्वस्त्रे आणि मोजे रोज बदला आणि बाहेरील कपडे न धुता जास्त काळ घालू नका."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Nail Care and Trimming",
+            "hindi": "नाखून की देखभाल और छंटाई",
+            "marathi": "नखांची काळजी आणि छाटणी"
+          },
+          "description": {
+            "english": "Regularly trim and clean nails to prevent accumulation of dirt and bacteria. Clean under nails with a brush and trim when they become too long.",
+            "hindi": "गंदगी और बैक्टीरिया के संचय को रोकने के लिए नाखूनों को नियमित रूप से काटें और साफ करें। ब्रश से नाखूनों के नीचे साफ करें और जब वे बहुत लंबे हो जाएं तो काटें।",
+            "marathi": "घाण आणि जंतूंचा साठा होऊ नये म्हणून नखे नियमितपणे छाटा आणि स्वच्छ करा. ब्रशने नखांच्या खाली स्वच्छ करा आणि ते खूप लांब झाल्यावर छाटा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Healthy Diet for Self-Care",
+            "hindi": "स्वयं देखभाल के लिए स्वस्थ आहार",
+            "marathi": "स्वयं-काळजीसाठी निरोगी आहार"
+          },
+          "description": {
+            "english": "Maintain a balanced diet rich in fruits, vegetables, lean proteins, and whole grains to support overall health and skin health. Good nutrition reflects in your appearance and energy.",
+            "hindi": "समग्र स्वास्थ्य और त्वचा स्वास्थ्य का समर्थन करने के लिए फल, सब्जियां, दुबला प्रोटीन और साबुत अनाज से भरपूर संतुलित आहार बनाए रखें। अच्छा पोषण आपकी उपस्थिति और ऊर्जा में दिखता है।",
+            "marathi": "एकूण आरोग्य आणि त्वचेच्या आरोग्याला समर्थन देण्यासाठी फळे, भाज्या, पातळ प्रथिने आणि साबुत धान्यांनी भरपूर संतुलित आहार राखा. चांगले पोषण तुमच्या देखाव्यात आणि उर्जेत दिसते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 3,
+          "title": {
+            "english": "Proper Hydration Practice",
+            "hindi": "उचित जलयोजन अभ्यास",
+            "marathi": "योग्य पाणी पिण्याचा सराव"
+          },
+          "description": {
+            "english": "Drink plenty of water throughout the day to support overall health and maintain skin moisture. Carry a water bottle and refill it regularly.",
+            "hindi": "समग्र स्वास्थ्य का समर्थन करने और त्वचा की नमी बनाए रखने के लिए दिन भर पर्याप्त पानी पिएं। पानी की बोतल साथ रखें और नियमित रूप से भरते रहें।",
+            "marathi": "एकूण आरोग्याला समर्थन देण्यासाठी आणि त्वचेची ओलावा राखण्यासाठी दिवसभर भरपूर पाणी प्या. पाण्याची बाटली सोबत ठेवा आणि नियमितपणे भरत रहा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 4,
+          "title": {
+            "english": "Regular Exercise for Well-being",
+            "hindi": "कल्याण के लिए नियमित व्यायाम",
+            "marathi": "कल्याणासाठी नियमित व्यायाम"
+          },
+          "description": {
+            "english": "Engage in regular physical activity to promote circulation and hormone regulation, which improves skin health and overall well-being. Find activities you enjoy.",
+            "hindi": "रक्त संचार और हार्मोन नियंत्रण को बढ़ावा देने के लिए नियमित शारीरिक गतिविधि में संलग्न रहें, जो त्वचा स्वास्थ्य और समग्र कल्याण में सुधार करता है। ऐसी गतिविधियां खोजें जिनका आप आनंद लेते हैं।",
+            "marathi": "रक्तसंचार आणि हार्मोन नियंत्रणाला प्रोत्साहन देण्यासाठी नियमित शारीरिक क्रियाकलापात गुंता, ज्यामुळे त्वचेचे आरोग्य आणि एकूण कल्याण सुधारते. तुम्हाला आवडणाऱ्या क्रियाकलाप शोधा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 4,
+          "title": {
+            "english": "Adequate Sleep for Recovery",
+            "hindi": "पुनर्प्राप्ति के लिए पर्याप्त नींद",
+            "marathi": "पुनर्प्राप्तीसाठी पुरेशी झोप"
+          },
+          "description": {
+            "english": "Aim for 7-9 hours of sleep per night to allow your body to repair and regenerate. Establish a regular sleep schedule and create a calming bedtime routine.",
+            "hindi": "अपने शरीर को मरम्मत और पुनर्जनन की अनुमति देने के लिए प्रति रात 7-9 घंटे की नींद का लक्ष्य रखें। नियमित नींद अनुसूची स्थापित करें और शांत सोने की दिनचर्या बनाएं।",
+            "marathi": "तुमच्या शरीराला दुरुस्ती आणि पुनर्जन्माची परवानगी देण्यासाठी रात्री 7-9 तास झोपेचे लक्ष्य ठेवा. नियमित झोपेचे वेळापत्रक स्थापित करा आणि शांत झोपण्याची दिनचर्या तयार करा."
+          }
+        }
+      ]
+    }
+  }
+}

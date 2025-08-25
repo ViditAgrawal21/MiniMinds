@@ -1,0 +1,554 @@
+{
+  "condition": "eating-habits",
+  "issueType": "Behavioural Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Eat a Balanced Diet",
+            "hindi": "संतुलित आहार लें",
+            "marathi": "संतुलित आहार घ्या"
+          },
+          "description": {
+            "english": "Consuming a variety of foods from all food groups can help ensure you get a range of nutrients. For example, for breakfast, you could have a bowl of whole-grain cereal with a banana and a glass of low-fat milk.",
+            "hindi": "सभी खाद्य समूहों से विभिन्न प्रकार के खाद्य पदार्थों का सेवन करने से यह सुनिश्चित करने में मदद मिल सकती है कि आपको पोषक तत्वों की एक श्रृंखला मिले। उदाहरण के लिए, नाश्ते के लिए, आप एक केले और कम वसा वाले दूध के गिलास के साथ साबुत अनाज अनाज का एक कटोरा ले सकते हैं।",
+            "marathi": "सर्व अन्न गटांमधील विविध प्रकारचे पदार्थ खाल्ल्याने तुम्हाला पोषक तत्वांची विस्तृत श्रेणी मिळण्यास मदत होऊ शकते. उदाहरणार्थ, न्याहारीसाठी, तुम्ही केळी आणि कमी चरबीचे दूध असलेले साबुत धान्याचे तांदूळ घेऊ शकता."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Portion Control",
+            "hindi": "भाग नियंत्रण",
+            "marathi": "भाग नियंत्रण"
+          },
+          "description": {
+            "english": "Be mindful of your portion sizes to avoid overeating. For instance, instead of eating a whole pizza, limit yourself to 1-2 slices and pair it with a side salad.",
+            "hindi": "अधिक खाने से बचने के लिए अपने भाग के आकार का ध्यान रखें। उदाहरण के लिए, पूरा पिज्जा खाने के बजाय, खुद को 1-2 स्लाइस तक सीमित करें और इसे साइड सलाद के साथ जोड़ें।",
+            "marathi": "जास्त खाणे टाळण्यासाठी तुमच्या वाट्याच्या आकाराची काळजी घ्या. उदाहरणार्थ, संपूर्ण पिझ्झा खाण्याऐवजी, स्वतःला 1-2 तुकड्यांपुरते मर्यादित ठेवा आणि त्यास बाजूच्या सॅलडसह जोडा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Regular Meals",
+            "hindi": "नियमित भोजन",
+            "marathi": "नियमित जेवण"
+          },
+          "description": {
+            "english": "Try to eat at regular intervals to maintain your metabolism. For example, have three meals a day with two healthy snacks in between.",
+            "hindi": "अपने चयापचय को बनाए रखने के लिए नियमित अंतराल पर खाने की कोशिश करें। उदाहरण के लिए, दिन में तीन भोजन के साथ बीच में दो स्वस्थ नाश्ते लें।",
+            "marathi": "तुमचा चयापचय राखण्यासाठी नियमित अंतराने खाण्याचा प्रयत्न करा. उदाहरणार्थ, दिवसभरात तीन जेवण घ्या आणि त्यामध्ये दोन आरोग्यदायी नाश्ता घ्या."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Limit Processed Foods",
+            "hindi": "प्रसंस्कृत खाद्य पदार्थों को सीमित करें",
+            "marathi": "प्रक्रिया केलेले पदार्थ मर्यादित करा"
+          },
+          "description": {
+            "english": "Try to eat fresh, whole foods as much as possible. Instead of a microwave meal, cook a piece of grilled chicken with steamed vegetables for dinner.",
+            "hindi": "यथासंभव ताजा, पूरे खाद्य पदार्थ खाने की कोशिश करें। माइक्रोवेव भोजन के बजाय, रात के खाने के लिए भुने हुए चिकन के टुकड़े के साथ भाप से पकी हुई सब्जियां पकाएं।",
+            "marathi": "शक्य तितके ताजे, संपूर्ण पदार्थ खाण्याचा प्रयत्न करा. मायक्रोवेव्ह जेवणाऐवजी, रात्रीच्या जेवणासाठी वाफवलेल्या भाज्यांसह ग्रिल केलेले चिकनचे तुकडे शिजवा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Stay Hydrated",
+            "hindi": "हाइड्रेटेड रहें",
+            "marathi": "हायड्रेटेड राहा"
+          },
+          "description": {
+            "english": "Drink plenty of water throughout the day. Carry a water bottle with you and refill it regularly.",
+            "hindi": "दिन भर भरपूर पानी पिएं। अपने साथ पानी की बोतल ले जाएं और इसे नियमित रूप से फिर से भरें।",
+            "marathi": "दिवसभर भरपूर पाणी प्या. तुमच्यासोबत पाण्याची बाटली घेऊन जा आणि नियमितपणे ती भरा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Limit Sugary Drinks",
+            "hindi": "मीठे पेय पदार्थों को सीमित करें",
+            "marathi": "गोड पेये मर्यादित करा"
+          },
+          "description": {
+            "english": "Instead of drinking soda or sugary juices, opt for water, unsweetened tea, or fruit-infused water. For example, you could add slices of lemon and cucumber to your water for a refreshing drink.",
+            "hindi": "सोडा या मीठे रस पीने के बजाय, पानी, बिना चीनी वाली चाय, या फल-मिश्रित पानी का विकल्प चुनें। उदाहरण के लिए, आप एक ताज़ा पेय के लिए अपने पानी में नींबू और खीरे के टुकड़े डाल सकते हैं।",
+            "marathi": "सोडा किंवा गोड रस पिण्याऐवजी, पाणी, न गोड केलेला चहा, किंवा फळांनी मिसळलेले पाणी निवडा. उदाहरणार्थ, ताजेतवाने पेयासाठी तुम्ही तुमच्या पाण्यात लिंबू आणि काकडीचे तुकडे घालू शकता."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Eat More Fruits and Vegetables",
+            "hindi": "अधिक फल और सब्जियां खाएं",
+            "marathi": "अधिक फळे आणि भाज्या खा"
+          },
+          "description": {
+            "english": "Aim to fill half your plate with fruits and vegetables. For lunch, you could have a large salad with a variety of colorful vegetables and a piece of fruit for dessert.",
+            "hindi": "अपनी प्लेट का आधा हिस्सा फलों और सब्जियों से भरने का लक्ष्य रखें। दोपहर के भोजन के लिए, आप विभिन्न रंगबिरंगी सब्जियों के साथ एक बड़ा सलाद और मिठाई के लिए एक फल का टुकड़ा ले सकते हैं।",
+            "marathi": "तुमच्या ताटाचा अर्धा भाग फळे आणि भाज्यांनी भरण्याचे लक्ष्य ठेवा. दुपारच्या जेवणासाठी, तुम्ही विविध रंगीबेरंगी भाज्यांसह मोठे सॅलड आणि मिष्टान्नासाठी एक फळ घेऊ शकता."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Choose Whole Grains",
+            "hindi": "साबुत अनाज चुनें",
+            "marathi": "संपूर्ण धान्य निवडा"
+          },
+          "description": {
+            "english": "Opt for whole-grain bread, pasta, and rice instead of their white, refined counterparts. For example, swap white bread for whole-grain bread when making a sandwich.",
+            "hindi": "सफेद, परिष्कृत समकक्षों के बजाय साबुत अनाज की रोटी, पास्ता और चावल का विकल्प चुनें। उदाहरण के लिए, सैंडविच बनाते समय सफेद रोटी के बजाय साबुत अनाज की रोटी का उपयोग करें।",
+            "marathi": "पांढर्या, परिष्कृत समकक्षांऐवजी संपूर्ण धान्याची भाकरी, पास्ता आणि भात निवडा. उदाहरणार्थ, सँडविच बनवताना पांढरी भाकरीऐवजी संपूर्ण धान्याची भाकरी वापरा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Limit Saturated and Trans Fats",
+            "hindi": "संतृप्त और ट्रांस वसा को सीमित करें",
+            "marathi": "संतृप्त आणि ट्रान्स फॅट्स मर्यादित करा"
+          },
+          "description": {
+            "english": "Choose lean meats, poultry, and low-fat dairy products. For example, instead of a high-fat cut of meat, choose a lean cut or skinless chicken.",
+            "hindi": "दुबला मांस, पोल्ट्री और कम वसा वाले डेयरी उत्पादों का चयन करें। उदाहरण के लिए, मांस के उच्च वसा वाले कट के बजाय, दुबला कट या त्वचा रहित चिकन चुनें।",
+            "marathi": "कमी चरबीचे मांस, पोल्ट्री आणि कमी चरबीचे दुग्धजन्य पदार्थ निवडा. उदाहरणार्थ, जास्त चरबी असलेल्या मांसाऐवजी, कमी चरबी असलेले मांस किंवा कातडी नसलेले चिकन निवडा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 2,
+          "title": {
+            "english": "Mindful Eating",
+            "hindi": "सचेत भोजन",
+            "marathi": "जागरूक भोजन"
+          },
+          "description": {
+            "english": "Pay attention to what you're eating and savor each bite. Avoid distractions like TV or work while eating. For example, sit at the dining table to eat your meals instead of eating in front of the TV.",
+            "hindi": "इस बात पर ध्यान दें कि आप क्या खा रहे हैं और हर निवाले का स्वाद लें। खाते समय टीवी या काम जैसे विकर्षणों से बचें। उदाहरण के लिए, टीवी के सामने खाने के बजाय खाना खाने के लिए डाइनिंग टेबल पर बैठें।",
+            "marathi": "तुम्ही काय खात आहात यावर लक्ष द्या आणि प्रत्येक चाव्याचा आस्वाद घ्या. खाताना टीव्ही किंवा कामासारखे विकर्षण टाळा. उदाहरणार्थ, टीव्हीसमोर खाण्याऐवजी जेवणासाठी डायनिंग टेबलवर बसा."
+          }
+        }
+      ]
+    },
+    "yogaMeditation": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Yoga",
+            "hindi": "योग",
+            "marathi": "योग"
+          },
+          "description": {
+            "english": "Sun Salutations (Surya Namaskar): This sequence of poses helps to improve digestion and eliminate toxins from the body.\nSeated Forward Bend (Paschimottanasana): This pose helps to soothe the digestive system and reduce stress, which can often lead to overeating.\nPlow Pose (Halasana): This pose stimulates the thyroid gland, which can help to regulate metabolism and control appetite.\nTwisting poses like Half Lord of the Fishes (Ardha Matsyendrasana) or Marichi's Pose (Marichyasana): These poses massage the abdominal organs, improving digestion and helping to control hunger.",
+            "hindi": "सूर्य नमस्कार: यह आसनों का क्रम पाचन में सुधार करने और शरीर से विषाक्त पदार्थों को निकालने में मदद करता है।\nबैठकर आगे की ओर झुकना (पश्चिमोत्तानासन): यह आसन पाचन तंत्र को शांत करने और तनाव कम करने में मदद करता है, जो अक्सर अधिक खाने का कारण बन सकता है।\nहल आसन (हलासन): यह आसन थायराइड ग्रंथि को उत्तेजित करता है, जो चयापचय को नियंत्रित करने और भूख को नियंत्रित करने में मदद कर सकता है।\nमत्स्येंद्रासन (अर्ध मत्स्येंद्रासन) या मरीची आसन (मरीच्यासन) जैसे मोड़ने वाले आसन: ये आसन पेट के अंगों की मालिश करते हैं, पाचन में सुधार करते हैं और भूख को नियंत्रित करने में मदद करते हैं।",
+            "marathi": "सूर्य नमस्कार: हे आसनांचे अनुक्रम पचन सुधारण्यास आणि शरीरातील विषारी द्रव्ये काढून टाकण्यास मदत करते.\nपुढे वाकून बसणे (पश्चिमोत्तानासन): हे आसन पचनसंस्था शांत करण्यास आणि तणाव कमी करण्यास मदत करते, जे अनेकदा जास्त खाण्यास कारणीभूत ठरू शकते.\nनांगरासन (हलासन): हे आसन थायरॉइड ग्रंथी उत्तेजित करते, जे चयापचय नियंत्रित करण्यास आणि भूक नियंत्रित करण्यास मदत करू शकते.\nअर्ध मत्स्येंद्रासन किंवा मरीची आसन यासारखे फिरवणारे आसन: ही आसने पोटातील अवयवांची मालिश करतात, पचन सुधारतात आणि भूक नियंत्रित करण्यास मदत करतात."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Meditation",
+            "hindi": "ध्यान",
+            "marathi": "ध्यान"
+          },
+          "description": {
+            "english": "Mindful Eating Meditation: Before you eat, take a few moments to sit quietly and focus on your breath. As you eat, pay attention to the taste, texture, and smell of the food. This can help you to eat more slowly and recognize when you are full.\nBody Scan Meditation: This involves focusing on different parts of your body and noticing any sensations you feel. This can help you to become more aware of your body's signals of hunger and fullness.\nLoving-Kindness Meditation: This type of meditation can help to reduce emotional eating. You focus on developing feelings of compassion and love for yourself and others.\n\nRemember, it's always best to learn yoga poses from a qualified instructor to ensure you're doing them correctly and safely. As for meditation, start with short sessions and gradually increase the time as you get more comfortable with the practice.\n\nAlso, while yoga and meditation can certainly aid in improving eating habits, they should be used as a complement to a balanced diet and regular exercise, not as a replacement. If you have serious concerns about your eating habits, it's important to seek help from a healthcare professional.",
+            "hindi": "सचेत भोजन ध्यान: खाने से पहले, कुछ पल चुपचाप बैठकर अपनी सांस पर ध्यान दें। जब आप खाते हैं, तो भोजन के स्वाद, बनावट और गंध पर ध्यान दें। यह आपको धीरे-धीरे खाने और यह पहचानने में मदद कर सकता है कि आप कब भरे हुए हैं।\nबॉडी स्कैन मेडिटेशन: इसमें आपके शरीर के विभिन्न हिस्सों पर ध्यान केंद्रित करना और आपको लगने वाली किसी भी संवेदना को नोटिस करना शामिल है। यह आपको अपने शरीर की भूख और पेट भरने के संकेतों के बारे में अधिक जागरूक बनने में मदद कर सकता है।\nप्रेम-दयालुता ध्यान: इस प्रकार का ध्यान भावनात्मक खाने को कम करने में मदद कर सकता है। आप अपने लिए और दूसरों के लिए करुणा और प्रेम की भावनाओं को विकसित करने पर ध्यान केंद्रित करते हैं।\n\nयाद रखें, योग आसनों को सही तरीके से और सुरक्षित रूप से करने के लिए एक योग्य प्रशिक्षक से सीखना हमेशा सबसे अच्छा होता है। ध्यान के लिए, छोटे सत्रों से शुरुआत करें और जैसे-जैसे आप अभ्यास के साथ अधिक सहज हों, समय को धीरे-धीरे बढ़ाएं।\n\nइसके अलावा, जबकि योग और ध्यान निश्चित रूप से खाने की आदतों को सुधारने में सहायता कर सकते हैं, उन्हें संतुलित आहार और नियमित व्यायाम के पूरक के रूप में उपयोग किया जाना चाहिए, प्रतिस्थापन के रूप में नहीं। यदि आपको अपनी खाने की आदतों के बारे में गंभीर चिंताएं हैं, तो स्वास्थ्य सेवा पेशेवर से मदद लेना महत्वपूर्ण है।",
+            "marathi": "जागरूक भोजन ध्यान: खाण्यापूर्वी, काही क्षण शांतपणे बसा आणि तुमच्या श्वासावर लक्ष केंद्रित करा. तुम्ही खाता तेव्हा, अन्नाच्या चव, पोत आणि वासावर लक्ष द्या. हे तुम्हाला हळूहळू खाण्यास आणि तुम्ही कधी भरलेले आहात हे ओळखण्यास मदत करू शकते.\nशरीर स्कॅन ध्यान: यामध्ये तुमच्या शरीराच्या वेगवेगळ्या भागांवर लक्ष केंद्रित करणे आणि तुम्हाला जाणवणाऱ्या कोणत्याही संवेदनांची नोंद घेणे समाविष्ट आहे. हे तुमच्या शरीराच्या भूक आणि तृप्तीच्या संकेतांबद्दल अधिक जागरूक होण्यास मदत करू शकते.\nप्रेम-दयाळूपणा ध्यान: या प्रकारचे ध्यान भावनिक खाणे कमी करण्यास मदत करू शकते. तुम्ही स्वतःसाठी आणि इतरांसाठी करुणा आणि प्रेमाच्या भावना विकसित करण्यावर लक्ष केंद्रित करता.\n\nलक्षात ठेवा, योगासने योग्य आणि सुरक्षितपणे करण्यासाठी पात्र प्रशिक्षकाकडून शिकणे नेहमीच सर्वोत्तम असते. ध्यानासाठी, लहान सत्रांपासून सुरुवात करा आणि अभ्यासात अधिक सहज होताना हळूहळू वेळ वाढवा.\n\nतसेच, योग आणि ध्यान निश्चितपणे खाण्याच्या सवयी सुधारण्यास मदत करू शकतात, ते संतुलित आहार आणि नियमित व्यायामाचे पूरक म्हणून वापरले पाहिजेत, बदल म्हणून नाही. तुमच्या खाण्याच्या सवयींबद्दल गंभीर चिंता असल्यास, आरोग्यसेवा व्यावसायिकाकडून मदत घेणे महत्वाचे आहे."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Mindful Eating",
+            "hindi": "सचेत भोजन",
+            "marathi": "जागरूक भोजन"
+          },
+          "description": {
+            "english": "This involves paying full attention to the experience of eating and drinking, both inside and outside the body. Notice the colors, smells, textures, flavors, temperatures, and even the sounds of your food. Pay attention to the experience of your body. Where in your body do you feel hunger? Where do you feel satisfaction?",
+            "hindi": "इसमें शरीर के अंदर और बाहर दोनों जगह खाने और पीने के अनुभव पर पूरा ध्यान देना शामिल है। अपने भोजन के रंग, गंध, बनावट, स्वाद, तापमान और यहां तक कि आवाज़ों को भी नोटिस करें। अपने शरीर के अनुभव पर ध्यान दें। आपके शरीर में कहां आपको भूख महसूस होती है? आपको संतुष्टि कहां महसूस होती है?",
+            "marathi": "यामध्ये शरीराच्या आत आणि बाहेर दोन्ही ठिकाणी खाणे आणि पिण्याच्या अनुभवावर पूर्ण लक्ष देणे समाविष्ट आहे. तुमच्या अन्नाचे रंग, वास, पोत, चव, तापमान आणि अगदी आवाजही लक्षात घ्या. तुमच्या शरीराच्या अनुभवावर लक्ष द्या. तुमच्या शरीरात कुठे तुम्हाला भूक जाणवते? तुम्हाला समाधान कुठे वाटते?"
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Deep Breathing",
+            "hindi": "गहरी सांस लेना",
+            "marathi": "खोल श्वास घेणे"
+          },
+          "description": {
+            "english": "Deep breathing can help reduce stress that might lead to emotional eating. Take a few moments before each meal to take deep, calming breaths. Close your eyes, breathe in deeply through your nose, hold for a few seconds, and exhale through your mouth.",
+            "hindi": "गहरी सांस लेना उस तनाव को कम करने में मदद कर सकती है जो भावनात्मक खाने का कारण बन सकता है। हर भोजन से पहले कुछ पल गहरी, शांत करने वाली सांसें लेने के लिए लें। अपनी आंखें बंद करें, अपनी नाक से गहरी सांस लें, कुछ सेकंड के लिए रोकें, और अपने मुंह से सांस छोड़ें।",
+            "marathi": "खोल श्वास घेणे तणाव कमी करण्यास मदत करू शकते जे भावनिक खाण्यास कारणीभूत ठरू शकते. प्रत्येक जेवणापूर्वी काही क्षण खोल, शांत करणारे श्वास घेण्यासाठी घ्या. तुमचे डोळे बंद करा, नाकातून खोल श्वास घ्या, काही सेकंद धरून ठेवा आणि तोंडातून श्वास सोडा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी शिथिलीकरण",
+            "marathi": "प्रगतीशील स्नायू शिथिलीकरण"
+          },
+          "description": {
+            "english": "This technique involves tensing and then releasing each muscle group in your body, starting from your toes and working your way up to your head. It can help you become more aware of physical sensations and achieve a state of deep relaxation.",
+            "hindi": "इस तकनीक में आपके शरीर की प्रत्येक मांसपेशी समूह को तनाव देना और फिर छोड़ना शामिल है, जो आपके पैर की उंगलियों से शुरू होकर आपके सिर तक जाता है। यह आपको शारीरिक संवेदनाओं के बारे में अधिक जागरूक बनने और गहरी शिथिलता की स्थिति प्राप्त करने में मदद कर सकता है।",
+            "marathi": "या तंत्रामध्ये तुमच्या शरीरातील प्रत्येक स्नायू गटात ताण निर्माण करणे आणि नंतर सोडणे समाविष्ट आहे, जे तुमच्या पायाच्या बोटांपासून सुरू होते आणि तुमच्या डोक्यापर्यंत वर जाते. हे तुम्हाला शारीरिक संवेदनांबद्दल अधिक जागरूक होण्यास आणि खोल शिथिलतेची स्थिती गाठण्यास मदत करू शकते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Yoga and Meditation",
+            "hindi": "योग और ध्यान",
+            "marathi": "योग आणि ध्यान"
+          },
+          "description": {
+            "english": "Both yoga and meditation can help reduce stress and increase body awareness. They can help you tune into your body's hunger and fullness cues and reduce emotional eating.",
+            "hindi": "योग और ध्यान दोनों तनाव कम करने और शरीर की जागरूकता बढ़ाने में मदद कर सकते हैं। वे आपके शरीर की भूख और पेट भरने के संकेतों में तालमेल बिठाने और भावनात्मक खाने को कम करने में आपकी मदद कर सकते हैं।",
+            "marathi": "योग आणि ध्यान दोन्ही तणाव कमी करण्यास आणि शरीराची जागरूकता वाढवण्यास मदत करू शकतात. ते तुमच्या शरीराच्या भूक आणि तृप्तीच्या संकेतांशी जुळवून घेण्यास आणि भावनिक खाणे कमी करण्यास मदत करू शकतात."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Visualization",
+            "hindi": "दृश्यावलोकन",
+            "marathi": "दृश्यीकरण"
+          },
+          "description": {
+            "english": "Imagine yourself eating healthily and enjoying your food. Visualization can help create a positive association with healthy food and make it easier to make healthier choices.",
+            "hindi": "कल्पना करें कि आप स्वस्थ खा रहे हैं और अपने भोजन का आनंद ले रहे हैं। दृश्यावलोकन स्वस्थ भोजन के साथ एक सकारात्मक जुड़ाव बनाने और स्वस्थ विकल्प बनाने को आसान बनाने में मदद कर सकता है।",
+            "marathi": "स्वतःला आरोग्यदायी खाताना आणि तुमच्या अन्नाचा आस्वाद घेताना कल्पना करा. दृश्यीकरण आरोग्यदायी अन्नाशी सकारात्मक संबंध निर्माण करण्यास आणि आरोग्यदायी निवडी करणे सोपे करण्यास मदत करू शकते."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Secondary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 4,
+          "title": {
+            "english": "Self-Monitoring",
+            "hindi": "स्व-निगरानी",
+            "marathi": "स्व-निरीक्षण"
+          },
+          "description": {
+            "english": "This helps to identify patterns and triggers in your eating habits. Keep a food diary noting what, when, and why you eat. For example, you might notice you tend to snack when you're stressed or bored.",
+            "hindi": "यह आपकी खाने की आदतों में पैटर्न और ट्रिगर्स की पहचान करने में मदद करता है। एक फूड डायरी रखें जिसमें आप क्या, कब और क्यों खाते हैं इसे नोट करें। उदाहरण के लिए, आप देख सकते हैं कि आप तनाव या बोरियत में स्नैक्स खाते हैं।",
+            "marathi": "हे तुमच्या खाण्याच्या सवयींमधील पैटर्न आणि ट्रिगर्स ओळखण्यास मदत करते. एक अन्न डायरी ठेवा ज्यामध्ये तुम्ही काय, केव्हा आणि का खाता याची नोंद करा. उदाहरणार्थ, तुम्ही लक्षात घेऊ शकता की तुम्ही तणाव किंवा कंटाळा येताना स्नॅक्स खाता."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Mindful Eating",
+            "hindi": "सचेत भोजन",
+            "marathi": "जागरूक भोजन"
+          },
+          "description": {
+            "english": "This helps to slow down and fully experience the act of eating, which can improve your relationship with food. Practice eating without distractions, savoring each bite. For instance, turn off the TV during meals and focus on the taste and texture of your food.",
+            "hindi": "यह धीमे खाने और खाने की क्रिया का पूरी तरह से अनुभव करने में मदद करता है, जो भोजन के साथ आपके रिश्ते को बेहतर बना सकता है। बिना ध्यान भटकाए खाने का अभ्यास करें, हर निवाले का स्वाद लें। उदाहरण के लिए, भोजन के दौरान टीवी बंद करें और अपने भोजन के स्वाद और बनावट पर ध्यान दें।",
+            "marathi": "हे हळूहळू खाण्यास आणि खाण्याच्या क्रियेचा पूर्ण अनुभव घेण्यास मदत करते, जे अन्नाशी तुमचे नाते सुधारू शकते. विकर्षण न करता खाण्याचा सराव करा, प्रत्येक चाव्याचा आस्वाद घ्या. उदाहरणार्थ, जेवणादरम्यान टीव्ही बंद करा आणि तुमच्या अन्नाच्या चव आणि पोतावर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 6,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "संज्ञानात्मक पुनर्गठन",
+            "marathi": "संज्ञानात्मक पुनर्रचना"
+          },
+          "description": {
+            "english": "This helps to challenge and change negative thoughts about food and body image. Identify negative thoughts and replace them with positive ones. For example, instead of thinking \"I'm a failure if I eat dessert,\" think \"It's okay to enjoy dessert in moderation.\"",
+            "hindi": "यह भोजन और शरीर की छवि के बारे में नकारात्मक विचारों को चुनौती देने और बदलने में मदद करता है। नकारात्मक विचारों की पहचान करें और उन्हें सकारात्मक विचारों से बदलें। उदाहरण के लिए, \"अगर मैं मिठाई खाता हूं तो मैं असफल हूं\" सोचने के बजाय, \"संयम से मिठाई का आनंद लेना ठीक है\" सोचें।",
+            "marathi": "हे अन्न आणि शरीराच्या प्रतिमेबद्दलच्या नकारात्मक विचारांना आव्हान देण्यास आणि बदलण्यास मदत करते. नकारात्मक विचारांची ओळख करा आणि त्यांना सकारात्मक विचारांनी बदला. उदाहरणार्थ, \"मी मिठाई खाल्ली तर मी अपयशी आहे\" असे विचारण्याऐवजी, \"संयमाने मिठाईचा आनंद घेणे योग्य आहे\" असे विचारा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Problem-Solving",
+            "hindi": "समस्या समाधान",
+            "marathi": "समस्या सोडवणे"
+          },
+          "description": {
+            "english": "This helps to identify barriers to healthy eating and find solutions. Identify a problem (like eating out of boredom) and brainstorm possible solutions (like finding a new hobby).",
+            "hindi": "यह स्वस्थ खाने में बाधाओं की पहचान करने और समाधान खोजने में मदद करता है। एक समस्या की पहचान करें (जैसे बोरियत से खाना) और संभावित समाधानों पर विचार करें (जैसे एक नया शौक खोजना)।",
+            "marathi": "हे आरोग्यदायी खाण्यातील अडथळे ओळखण्यास आणि त्यांचे निराकरण शोधण्यास मदत करते. एक समस्या ओळखा (जसे कंटाळ्याने खाणे) आणि संभाव्य उपायांवर विचार करा (जसे नवीन छंद शोधणे)."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 7,
+          "title": {
+            "english": "Exposure Therapy",
+            "hindi": "एक्सपोजर थेरेपी",
+            "marathi": "एक्सपोजर थेरपी"
+          },
+          "description": {
+            "english": "This helps to reduce fear and anxiety around certain foods. Gradually expose yourself to feared foods in a safe and controlled manner. For example, if you're afraid of eating carbs, start by introducing small amounts into your diet.",
+            "hindi": "यह कुछ खाद्य पदार्थों के आसपास डर और चिंता को कम करने में मदद करता है। सुरक्षित और नियंत्रित तरीके से डरे हुए खाद्य पदार्थों के संपर्क में धीरे-धीरे आएं। उदाहरण के लिए, यदि आप कार्ब्स खाने से डरते हैं, तो अपने आहार में थोड़ी मात्रा शुरू करके देखें।",
+            "marathi": "हे काही विशिष्ट अन्नपदार्थांभोवतीची भीती आणि चिंता कमी करण्यास मदत करते. भयभीत केलेल्या अन्नपदार्थांच्या संपर्कात हळूहळू सुरक्षित आणि नियंत्रित पद्धतीने या. उदाहरणार्थ, जर तुम्हाला कार्बोहायड्रेट खाण्याची भीती वाटत असेल, तर तुमच्या आहारात कमी प्रमाणात समाविष्ट करून सुरुवात करा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 4,
+          "title": {
+            "english": "Stress Management",
+            "hindi": "तनाव प्रबंधन",
+            "marathi": "तणाव व्यवस्थापन"
+          },
+          "description": {
+            "english": "This helps to reduce emotional eating. Practice relaxation techniques like deep breathing or yoga. For example, when you feel the urge to stress-eat, take a few minutes to meditate instead.",
+            "hindi": "यह भावनात्मक खाने को कम करने में मदद करता है। गहरी सांस लेने या योग जैसी आराम तकनीकों का अभ्यास करें। उदाहरण के लिए, जब आप तनाव में खाने की इच्छा महसूस करें, तो इसके बजाय कुछ मिनट ध्यान करें।",
+            "marathi": "हे भावनिक खाणे कमी करण्यास मदत करते. खोल श्वास घेणे किंवा योग यासारख्या विश्रांती तंत्रांचा सराव करा. उदाहरणार्थ, जेव्हा तुम्हाला तणावात खाण्याची इच्छा होते, तेव्हा त्याऐवजी काही मिनिटे ध्यान करा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Goal Setting",
+            "hindi": "लक्ष्य निर्धारण",
+            "marathi": "ध्येय निर्धारण"
+          },
+          "description": {
+            "english": "This helps to provide motivation and a clear path forward. Set SMART (Specific, Measurable, Achievable, Relevant, Time-bound) goals. For example, aim to eat five servings of vegetables a day for a week.",
+            "hindi": "यह प्रेरणा और आगे का स्पष्ट रास्ता प्रदान करने में मदद करता है। SMART (विशिष्ट, मापने योग्य, प्राप्त करने योग्य, प्रासंगिक, समयबद्ध) लक्ष्य निर्धारित करें। उदाहरण के लिए, एक सप्ताह के लिए दिन में पांच सर्विंग सब्जियां खाने का लक्ष्य रखें।",
+            "marathi": "हे प्रेरणा आणि पुढे जाण्याचा स्पष्ट मार्ग प्रदान करण्यास मदत करते. SMART (विशिष्ट, मोजमाप करण्यायोग्य, साध्य करण्यायोग्य, संबंधित, वेळेत बांधलेली) उद्दिष्टे ठरवा. उदाहरणार्थ, एका आठवड्यासाठी दिवसाला पाच सर्व्हिंग भाज्या खाण्याचे लक्ष्य ठेवा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Assertiveness Training",
+            "hindi": "दृढ़ता प्रशिक्षण",
+            "marathi": "दृढता प्रशिक्षण"
+          },
+          "description": {
+            "english": "This helps to improve communication and boundaries around food. Practice saying no to unwanted food without guilt. For example, if a coworker offers you a donut and you don't want it, politely decline.",
+            "hindi": "यह भोजन के आसपास संवाद और सीमाओं को बेहतर बनाने में मदद करता है। अवांछित भोजन को बिना अपराधबोध के ना कहने का अभ्यास करें। उदाहरण के लिए, यदि कोई सहकर्मी आपको डोनट ऑफर करता है और आप नहीं चाहते, तो विनम्रता से मना कर दें।",
+            "marathi": "हे अन्नाभोवतीचे संवाद आणि सीमा सुधारण्यास मदत करते. अवांछित अन्नास अपराधीपणाशिवाय नाकारण्याचा सराव करा. उदाहरणार्थ, जर कोणी सहकारी तुम्हाला डोनट देऊ करत असेल आणि तुम्हाला नको असेल, तर नम्रपणे नाकारा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Graded Task Assignment",
+            "hindi": "श्रेणीबद्ध कार्य असाइनमेंट",
+            "marathi": "श्रेणीबद्ध कार्य नियुक्ती"
+          },
+          "description": {
+            "english": "This helps to break down overwhelming tasks into manageable steps. If your goal is to cook more at home, start by cooking one meal a week.",
+            "hindi": "यह भारी कार्यों को प्रबंधनीय चरणों में तोड़ने में मदद करता है। यदि आपका लक्ष्य घर में अधिक खाना बनाना है, तो सप्ताह में एक बार खाना बनाने से शुरुआत करें।",
+            "marathi": "हे भारी कामांना व्यवस्थापनयोग्य पायऱ्यांमध्ये तोडण्यास मदत करते. जर तुमचे ध्येय घरी अधिक स्वयंपाक करणे असेल, तर आठवड्यातून एक जेवण शिजवण्यापासून सुरुवात करा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 7,
+          "title": {
+            "english": "Relapse Prevention",
+            "hindi": "पुनरावृत्ति रोकथाम",
+            "marathi": "पुन्हा होण्यापासून रोखणे"
+          },
+          "description": {
+            "english": "This helps to maintain progress and cope with setbacks. Develop a plan for what to do if you slip up. For example, if you overeat at a party, plan to get back on track with your next meal instead of beating yourself up.",
+            "hindi": "यह प्रगति बनाए रखने और असफलताओं से निपटने में मदद करता है। यदि आप गलती करते हैं तो क्या करना है, इसके लिए एक योजना बनाएं। उदाहरण के लिए, यदि आप किसी पार्टी में अधिक खाते हैं, तो खुद को कोसने के बजाय अपने अगले भोजन से वापस ट्रैक पर आने की योजना बनाएं।",
+            "marathi": "हे प्रगती राखण्यास आणि अडचणींना सामोरे जाण्यास मदत करते. जर तुम्ही चूक केली तर काय करावे याची योजना तयार करा. उदाहरणार्थ, जर तुम्ही एखाद्या पार्टीत जास्त खाल्ले, तर स्वतःला मारण्याऐवजी तुमच्या पुढील जेवणातून परत ट्रॅकवर येण्याची योजना करा."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Secondary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Identify Irrational Beliefs About Food",
+            "hindi": "भोजन के बारे में अतार्किक विश्वासों की पहचान करें",
+            "marathi": "अन्नाबद्दल अतार्किक समजुती ओळखा"
+          },
+          "description": {
+            "english": "Why it helps: Irrational beliefs can lead to unhealthy eating habits. Recognizing these beliefs is the first step to changing them. What to do: Write down any irrational beliefs you have about food, such as \"I must eat everything on my plate\" or \"I can't resist junk food.\" Example: If you believe you must always finish your plate, challenge this belief by reminding yourself that it's okay to stop eating when you're full.",
+            "hindi": "यह क्यों मदद करता है: अतार्किक विश्वास अस्वस्थ खाने की आदतों का कारण बन सकते हैं। इन विश्वासों को पहचानना उन्हें बदलने का पहला कदम है। क्या करें: भोजन के बारे में अपने किसी भी अतार्किक विश्वास को लिखें, जैसे \"मुझे अपनी प्लेट में सब कुछ खाना चाहिए\" या \"मैं जंक फूड का विरोध नहीं कर सकता।\" उदाहरण: यदि आपका मानना है कि आपको हमेशा अपनी प्लेट खत्म करनी चाहिए, तो खुद को याद दिलाकर इस विश्वास को चुनौती दें कि पेट भर जाने पर खाना बंद करना ठीक है।",
+            "marathi": "हे का मदत करते: अतार्किक समजुती अस्वस्थ खाण्याच्या सवयींना कारणीभूत ठरू शकतात. या समजुती ओळखणे त्यांना बदलण्याची पहिली पायरी आहे. काय करावे: अन्नाबद्दल तुमच्या कोणत्याही अतार्किक समजुती लिहा, जसे \"मला माझ्या ताटातील सर्व अन्न खावे लागेल\" किंवा \"मी जंक फूडचा प्रतिकार करू शकत नाही.\" उदाहरण: जर तुमचा असा विश्वास असेल की तुम्हाला नेहमी तुमची ताट संपवावी लागेल, तर स्वतःला आठवण करून देऊन या समजुतीला आव्हान द्या की पोट भरल्यावर खाणे थांबवणे योग्य आहे."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 5,
+          "title": {
+            "english": "Replace Irrational Beliefs with Rational Ones",
+            "hindi": "अतार्किक विश्वासों को तर्कसंगत विश्वासों से बदलें",
+            "marathi": "अतार्किक समजुती तार्किक समजुतींनी बदला"
+          },
+          "description": {
+            "english": "Why it helps: Rational beliefs can lead to healthier eating habits. What to do: Once you've identified your irrational beliefs, replace them with rational ones. For example, instead of thinking \"I can't resist junk food,\" tell yourself \"I can make healthy choices.\" Example: If you believe you can't resist sweets, replace this belief with \"I can enjoy sweets in moderation.\"",
+            "hindi": "यह क्यों मदद करता है: तर्कसंगत विश्वास स्वस्थ खाने की आदतों का कारण बन सकते हैं। क्या करें: एक बार जब आप अपने अतार्किक विश्वासों की पहचान कर लें, तो उन्हें तर्कसंगत विश्वासों से बदल दें। उदाहरण के लिए, \"मैं जंक फूड का विरोध नहीं कर सकता\" सोचने के बजाय, खुद से कहें \"मैं स्वस्थ विकल्प चुन सकता हूं।\" उदाहरण: यदि आपको लगता है कि आप मिठाई का विरोध नहीं कर सकते, तो इस विश्वास को \"मैं संयम से मिठाई का आनंद ले सकता हूं\" से बदलें।",
+            "marathi": "हे का मदत करते: तार्किक समजुती आरोग्यदायी खाण्याच्या सवयींना कारणीभूत ठरू शकतात. काय करावे: एकदा तुम्ही तुमच्या अतार्किक समजुती ओळखल्या की, त्यांना तार्किक समजुतींनी बदला. उदाहरणार्थ, \"मी जंक फूडचा प्रतिकार करू शकत नाही\" असे विचारण्याऐवजी, स्वतःला सांगा \"मी आरोग्यदायी निवडी करू शकतो.\" उदाहरण: जर तुमचा असा विश्वास असेल की तुम्ही गोड पदार्थांचा प्रतिकार करू शकत नाही, तर या समजुतीला \"मी संयमाने गोड पदार्थांचा आनंद घेऊ शकतो\" असे बदला."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Practice Mindful Eating",
+            "hindi": "सचेत भोजन का अभ्यास करें",
+            "marathi": "जागरूक भोजनाचा सराव करा"
+          },
+          "description": {
+            "english": "Why it helps: Mindful eating can help you enjoy your food more and prevent overeating. What to do: Pay attention to your food as you eat it. Notice its taste, texture, and smell. Take your time and savor each bite. Example: Instead of eating while watching TV, sit at the table and focus on your meal.",
+            "hindi": "यह क्यों मदद करता है: सचेत भोजन आपको अपने भोजन का अधिक आनंद लेने और अधिक खाने से रोकने में मदद कर सकता है। क्या करें: खाते समय अपने भोजन पर ध्यान दें। इसके स्वाद, बनावट और गंध को नोटिस करें। अपना समय लें और हर निवाले का स्वाद लें। उदाहरण: टीवी देखते समय खाने के बजाय, मेज पर बैठें और अपने भोजन पर ध्यान दें।",
+            "marathi": "हे का मदत करते: जागरूक भोजन तुम्हाला तुमच्या अन्नाचा अधिक आनंद घेण्यास आणि जास्त खाणे रोखण्यास मदत करू शकते. काय करावे: खाताना तुमच्या अन्नावर लक्ष द्या. त्याची चव, पोत आणि वास लक्षात घ्या. वेळ काढा आणि प्रत्येक चाव्याचा आस्वाद घ्या. उदाहरण: टीव्ही बघताना खाण्याऐवजी, टेबलावर बसा आणि तुमच्या जेवणावर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Challenge All-or-Nothing Thinking",
+            "hindi": "सब या कुछ भी नहीं सोच को चुनौती दें",
+            "marathi": "सर्व-काही-नाही विचारांना आव्हान द्या"
+          },
+          "description": {
+            "english": "Why it helps: This type of thinking can lead to binge eating or restrictive dieting. What to do: Remind yourself that it's okay to have a treat sometimes, and that one unhealthy meal doesn't ruin your diet. Example: If you eat a piece of cake at a party, don't think \"I've ruined my diet, I might as well eat whatever I want.\" Instead, tell yourself \"I can enjoy this cake and still make healthy choices at my next meal.\"",
+            "hindi": "यह क्यों मदद करता है: इस प्रकार की सोच बिंज ईटिंग या प्रतिबंधित डाइटिंग का कारण बन सकती है। क्या करें: खुद को याद दिलाएं कि कभी-कभी ट्रीट लेना ठीक है, और एक अस्वस्थ भोजन आपकी डाइट को बर्बाद नहीं करता। उदाहरण: यदि आप किसी पार्टी में केक का टुकड़ा खाते हैं, तो यह न सोचें \"मैंने अपनी डाइट बर्बाद कर दी है, अब मैं जो चाहूं खा सकता हूं।\" इसके बजाय, खुद से कहें \"मैं इस केक का आनंद ले सकता हूं और फिर भी अपने अगले भोजन में स्वस्थ विकल्प चुन सकता हूं।\"",
+            "marathi": "हे का मदत करते: या प्रकारचा विचार बिंज इटिंग किंवा प्रतिबंधित आहाराला कारणीभूत ठरू शकतो. काय करावे: स्वतःला आठवण करा की कधीकधी ट्रीट घेणे योग्य आहे, आणि एक अस्वस्थ जेवण तुमचा आहार खराब करत नाही. उदाहरण: जर तुम्ही एखाद्या पार्टीत केकचा तुकडा खाल्ला, तर असे विचारू नका \"मी माझा आहार खराब केला आहे, आता मी जे पाहिजे ते खाऊ शकतो.\" त्याऐवजी, स्वतःला सांगा \"मी या केकचा आनंद घेऊ शकतो आणि तरीही माझ्या पुढील जेवणात आरोग्यदायी निवडी करू शकतो.\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 3,
+          "title": {
+            "english": "Use Positive Affirmations",
+            "hindi": "सकारात्मक पुष्टि का उपयोग करें",
+            "marathi": "सकारात्मक प्रतिज्ञांचा वापर करा"
+          },
+          "description": {
+            "english": "Why it helps: Positive affirmations can boost your self-esteem and motivation to eat healthily. What to do: Repeat positive statements to yourself, such as \"I am capable of making healthy choices\" or \"I deserve to nourish my body with good food.\" Example: If you're tempted to skip a meal, remind yourself \"I need to eat to fuel my body and mind.\"",
+            "hindi": "यह क्यों मदद करता है: सकारात्मक पुष्टि आपके आत्म-सम्मान और स्वस्थ खाने की प्रेरणा को बढ़ा सकती है। क्या करें: खुद से सकारात्मक बातें दोहराएं, जैसे \"मैं स्वस्थ विकल्प चुनने में सक्षम हूं\" या \"मैं अच्छे भोजन से अपने शरीर को पोषित करने का हकदार हूं।\" उदाहरण: यदि आप भोजन छोड़ने के लिए प्रलोभित हैं, तो खुद को याद दिलाएं \"मुझे अपने शरीर और दिमाग को ईंधन देने के लिए खाने की जरूरत है।\"",
+            "marathi": "हे का मदत करते: सकारात्मक प्रतिज्ञा तुमचा आत्मसन्मान आणि आरोग्यदायी खाण्याची प्रेरणा वाढवू शकतात. काय करावे: स्वतःशी सकारात्मक गोष्टी म्हणा, जसे \"मी आरोग्यदायी निवडी करण्यास सक्षम आहे\" किंवा \"मी माझ्या शरीराला चांगल्या अन्नाने पोषण देण्यास पात्र आहे.\" उदाहरण: जर तुम्हाला जेवण वगळण्याचा मोह होत असेल, तर स्वतःला आठवण करा \"माझ्या शरीर आणि मनाला इंधन देण्यासाठी मला जेवण करावे लागेल.\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Practice Self-Compassion",
+            "hindi": "स्व-करुणा का अभ्यास करें",
+            "marathi": "स्व-करुणेचा सराव करा"
+          },
+          "description": {
+            "english": "Why it helps: Self-compassion can help you recover from setbacks and keep you motivated to maintain healthy eating habits. What to do: If you make a mistake, don't beat yourself up. Instead, treat yourself with kindness and understanding. Example: If you overeat at a meal, tell yourself \"It's okay, everyone makes mistakes. I can learn from this and do better next time.\"",
+            "hindi": "यह क्यों मदद करता है: स्व-करुणा आपको असफलताओं से उबरने और स्वस्थ खाने की आदतों को बनाए रखने की प्रेरणा देने में मदद कर सकती है। क्या करें: यदि आप गलती करते हैं, तो खुद को मत मारिए। इसके बजाय, खुद के साथ दयालुता और समझ के साथ व्यवहार करें। उदाहरण: यदि आप किसी भोजन में अधिक खाते हैं, तो खुद से कहें \"यह ठीक है, हर कोई गलतियां करता है। मैं इससे सीख सकता हूं और अगली बार बेहतर कर सकता हूं।\"",
+            "marathi": "हे का मदत करते: स्व-करुणा तुम्हाला अडचणींमधून सावरण्यास आणि आरोग्यदायी खाण्याच्या सवयी राखण्यासाठी प्रेरित राहण्यास मदत करू शकते. काय करावे: जर तुम्ही चूक केली तर स्वतःला मारहाण करू नका. त्याऐवजी, स्वतःशी दयाळूपणे आणि समजूतदारपणे वागा. उदाहरण: जर तुम्ही एखाद्या जेवणात जास्त खाल्ले, तर स्वतःला सांगा \"हे ठीक आहे, प्रत्येकजण चुका करतो. मी यातून शिकू शकतो आणि पुढच्या वेळी अधिक चांगले करू शकतो.\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Set Realistic Goals",
+            "hindi": "वास्तविक लक्ष्य निर्धारित करें",
+            "marathi": "वास्तविक ध्येये ठरवा"
+          },
+          "description": {
+            "english": "Why it helps: Setting achievable goals can increase your motivation and make it easier to stick to healthy eating habits. What to do: Instead of trying to make drastic changes overnight, set small, achievable goals, such as adding more vegetables to your meals or drinking more water. Example: If you're not used to eating vegetables, start by adding one serving of vegetables to one meal a day.",
+            "hindi": "यह क्यों मदद करता है: प्राप्त करने योग्य लक्ष्य निर्धारित करना आपकी प्रेरणा बढ़ा सकता है और स्वस्थ खाने की आदतों को बनाए रखना आसान बना सकता है। क्या करें: रातों-रात भारी बदलाव करने की कोशिश करने के बजाय, छोटे, प्राप्त करने योग्य लक्ष्य निर्धारित करें, जैसे अपने भोजन में अधिक सब्जियां जोड़ना या अधिक पानी पीना। उदाहरण: यदि आप सब्जियां खाने के आदी नहीं हैं, तो दिन में एक भोजन में एक सर्विंग सब्जी जोड़ने से शुरुआत करें।",
+            "marathi": "हे का मदत करते: साध्य करण्यायोग्य ध्येये ठरवणे तुमची प्रेरणा वाढवू शकते आणि आरोग्यदायी खाण्याच्या सवयी चालू ठेवणे सोपे करू शकते. काय करावे: रातोरात मोठे बदल करण्याचा प्रयत्न करण्याऐवजी, लहान, साध्य करण्यायोग्य ध्येये ठरवा, जसे तुमच्या जेवणात अधिक भाज्या जोडणे किंवा अधिक पाणी पिणे. उदाहरण: जर तुम्ही भाज्या खाण्याचे सवय नसेल, तर दिवसातून एका जेवणात एक सर्व्हिंग भाजी जोडण्यापासून सुरुवात करा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Seek Support",
+            "hindi": "सहायता मांगें",
+            "marathi": "मदत मागा"
+          },
+          "description": {
+            "english": "Why it helps: Having a support system can make it easier to maintain healthy eating habits. What to do: Share your goals with friends or family, or consider joining a support group. Example: If you're trying to eat less sugar, tell your friends and ask them to support you by not offering you sugary treats.",
+            "hindi": "यह क्यों मदद करता है: सहायता प्रणाली होना स्वस्थ खाने की आदतों को बनाए रखना आसान बना सकता है। क्या करें: अपने लक्ष्यों को दोस्तों या परिवार के साथ साझा करें, या सहायता समूह में शामिल होने पर विचार करें। उदाहरण: यदि आप कम चीनी खाने की कोशिश कर रहे हैं, तो अपने दोस्तों को बताएं और उनसे कहें कि वे आपको मिठाइयां न देकर आपका समर्थन करें।",
+            "marathi": "हे का मदत करते: आधार प्रणाली असणे आरोग्यदायी खाण्याच्या सवयी राखणे सोपे करू शकते. काय करावे: तुमची ध्येये मित्रांसोबत किंवा कुटुंबासोबत शेअर करा, किंवा सपोर्ट ग्रुपमध्ये सामील होण्याचा विचार करा. उदाहरण: जर तुम्ही कमी साखर खाण्याचा प्रयत्न करत असाल, तर तुमच्या मित्रांना सांगा आणि त्यांना विनंती करा की ते तुम्हाला गोड पदार्थ न देऊन तुमचे समर्थन करावेत."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 3,
+          "title": {
+            "english": "Practice Gratitude",
+            "hindi": "कृतज्ञता का अभ्यास करें",
+            "marathi": "कृतज्ञतेचा सराव करा"
+          },
+          "description": {
+            "english": "Why it helps: Being grateful for the food you have can help you appreciate it more and make healthier choices. What to do: Before each meal, take a moment to express gratitude for the food you're about to eat. Example: Before eating, say to yourself \"I'm grateful for this nourishing food that will fuel my body.\"",
+            "hindi": "यह क्यों मदद करता है: आपके पास जो भोजन है उसके लिए आभारी होना आपको इसकी अधिक सराहना करने और स्वस्थ विकल्प चुनने में मदद कर सकता है। क्या करें: हर भोजन से पहले, उस भोजन के लिए आभार व्यक्त करने के लिए एक क्षण निकालें जो आप खाने वाले हैं। उदाहरण: खाने से पहले, खुद से कहें \"मैं इस पोषक भोजन के लिए आभारी हूं जो मेरे शरीर को ऊर्जा देगा।\"",
+            "marathi": "हे का मदत करते: तुमच्याकडे असलेल्या अन्नाबद्दल कृतज्ञ असणे तुम्हाला त्याची अधिक कदर करण्यास आणि आरोग्यदायी निवडी करण्यास मदत करू शकते. काय करावे: प्रत्येक जेवणापूर्वी, तुम्ही खाणार असलेल्या अन्नाबद्दल कृतज्ञता व्यक्त करण्यासाठी क्षणभर वेळ काढा. उदाहरण: खाण्यापूर्वी, स्वतःशी म्हणा \"मी या पोषक अन्नाबद्दल कृतज्ञ आहे जे माझ्या शरीराला ऊर्जा देईल.\""
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Keep a Food Diary",
+            "hindi": "फूड डायरी रखें",
+            "marathi": "अन्न डायरी ठेवा"
+          },
+          "description": {
+            "english": "Why it helps: Keeping track of what and when you eat can help you identify patterns and make changes. What to do: Write down everything you eat and drink, and note how you feel before and after each meal or snack. Example: If you notice that you often snack when you're bored, you can find other ways to occupy your time instead of eating.",
+            "hindi": "यह क्यों मदद करता है: आप क्या और कब खाते हैं इसका ट्रैक रखना आपको पैटर्न की पहचान करने और बदलाव करने में मदद कर सकता है। क्या करें: आप जो कुछ भी खाते और पीते हैं उसे लिखें, और हर भोजन या नाश्ते से पहले और बाद में आप कैसा महसूस करते हैं इसे नोट करें। उदाहरण: यदि आप देखते हैं कि आप अक्सर बोर होने पर स्नैक करते हैं, तो आप खाने के बजाय अपना समय बिताने के अन्य तरीके खोज सकते हैं।",
+            "marathi": "हे का मदत करते: तुम्ही काय आणि केव्हा खाता याचा मागोवा ठेवणे तुम्हाला पॅटर्न ओळखण्यास आणि बदल करण्यास मदत करू शकते. काय करावे: तुम्ही जे काही खाता आणि पिता ते लिहा, आणि प्रत्येक जेवण किंवा स्नॅकच्या आधी आणि नंतर तुम्हाला कसे वाटते याची नोंद करा. उदाहरण: जर तुम्हाला असे दिसले की तुम्ही अनेकदा कंटाळा आल्यावर स्नॅक्स खाता, तर तुम्ही खाण्याऐवजी तुमचा वेळ घालवण्याचे इतर मार्ग शोधू शकता."
+          }
+        }
+      ]
+    }
+  }
+}
