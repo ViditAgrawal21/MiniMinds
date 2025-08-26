@@ -29,12 +29,12 @@ import { TextInput } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import i18n, { t } from "@/i18n/locales/i18n"; // Import the i18n and t function
-import { useLanguage } from "@/context/LanguageContext"; // Import useLanguage hook
+import { useLanguage } from "src/context/LanguageContext";
 import RecommendedInterventionsList, {
   ScanItem,
 } from "@/components/common/RecommendedInterventionsList";
 import interventionObject from "@/components/interventionScanDBCall";
+import { t } from "@/i18n/locales";
 // ---------------------------------------------------------------------------
 // Daily Mind‑Tools and EQ decks (round‑robin rotation)
 // ---------------------------------------------------------------------------

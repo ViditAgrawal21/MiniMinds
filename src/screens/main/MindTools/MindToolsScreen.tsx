@@ -9,10 +9,13 @@ import {
   Alert,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import CustomIcon from "@/components/CustomIcon";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "@/i18n/locales/i18n"; // Import the translation function
+import { t } from "../../i18n/i18n"; // Import the translation function
+// Premium access control imports
+import { Portal, Dialog, Paragraph, Button } from "react-native-paper";
+import { canAccessFeature } from "../../utils/premiumUtils";
 
 import MoodSelector from "../../../components/MoodSelector";
 //import Interventions from "../../../components/Interventions/Interventions";
@@ -22,6 +25,37 @@ export default function MindToolsScreen({ navigation }: any) {
   const [dailyTasksCount, setDailyTasksCount] = useState(0);
   const [interventionsCount, setInterventionsCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
+  // Premium access dialog state
+  const [dialogVisible, setDialogVisible] = useState(false);
+  const [blockedPlan, setBlockedPlan] = useState<"basic" | "premium" | null>(
+    null,
+  );
+
+  // Define category access requirements (same as condition scans)
+  const categoryAccessMap: Record<string, "free" | "basic" | "premium"> = {
+    // FREE categories
+    "Anger Management": "free",
+    Stress: "free",
+    "Internet & Social Media": "free",
+
+    // BASIC categories
+    "Family & Relationship": "basic",
+    Sleep: "basic",
+    "Suicidal Behaviour": "basic",
+    "Sex Life": "basic",
+
+    // PREMIUM categories
+    Addictions: "premium",
+    "Common Psychological": "premium",
+    "Environment Issues": "premium",
+    "Financial Mental Health": "premium",
+    "Physical Fitness": "premium",
+    "Internet Dependence": "premium",
+    "Professional Mental Health": "premium",
+    "Social Mental Health": "premium",
+    "Youngster Issues": "premium",
+    "Emotional Intelligence": "premium",
+  };
 
   const loadCounts = useCallback(async () => {
     setIsLoading(true);
@@ -93,62 +127,78 @@ export default function MindToolsScreen({ navigation }: any) {
     navigation.navigate("JournalHistoryScreen");
   };
 
-  const handleCategoryPress = (categoryName: string) => {
+  const handleCategoryPress = async (categoryName: string) => {
     console.log(`${categoryName} pressed`);
+    
+    // Check if category requires premium access
+    const requiredPlan = categoryAccessMap[categoryName];
+    if (!requiredPlan) {
+      console.warn(`No access plan defined for category: ${categoryName}`);
+      return;
+    }
+
+    // Check premium access
+    const canAccess = await canAccessFeature(requiredPlan);
+    
+    if (!canAccess) {
+      // Track which plan blocked access so we can show correct copy (basic -> needs premium, premium -> needs ultra)
+      setBlockedPlan(requiredPlan === "basic" ? "basic" : "premium");
+      setDialogVisible(true);
+      return;
+    }
+
+    // User has access, proceed with navigation
     switch (categoryName) {
-      case "ADHD":
-        navigation.navigate("ADHDScreen");
+      case "Anger Management":
+        navigation.navigate("AngerManagementScreen");
         break;
-      case "Aggressive Behaviour":
-        navigation.navigate("AggressiveBehaviourScreen");
+      case "Stress":
+        navigation.navigate("StressScreen");
         break;
-      case "Conduct Issues":
-        navigation.navigate("ConductIssueScreen");
+      case "Internet & Social Media":
+        navigation.navigate("InternetSocialMediaScreen");
         break;
-      case "Eating Habits":
-        navigation.navigate("EatingHabitScreen");
+      case "Family & Relationship":
+        navigation.navigate("FamilyRelationshipScreen");
         break;
-      case "Introvert Child":
-        navigation.navigate("IntrovertChildScreen");
+      case "Sleep":
+        navigation.navigate("SleepScreen");
         break;
-      case "Self-care hygiene":
-        navigation.navigate("SelfCareHygieneScreen");
+      case "Suicidal Behaviour":
+        navigation.navigate("SuicidalBehaviourScreen");
         break;
-      case "Substance Addiction":
-        navigation.navigate("SubstanceAddictionScreen");
+      case "Sex Life":
+        navigation.navigate("SexLifeScreen");
         break;
-      case "Dealing with trauma, loss, and dreams":
-        navigation.navigate("TraumaLossAndDreamsScreen");
+      case "Addictions":
+        navigation.navigate("AddictionsScreen");
         break;
-      case "Friendship and relationship":
-        navigation.navigate("FriendshipAndRelationshipScreen");
+      case "Common Psychological":
+        navigation.navigate("CommonPsychologicalScreen");
         break;
-      case "Self-esteem and self-identity":
-        navigation.navigate("SelfEsteemAndSelfIdentityScreen");
+      case "Environment Issues":
+        navigation.navigate("EnvironmentIssuesScreen");
         break;
-      case "Unrealistic beauty standards and obesity":
-        navigation.navigate("UnrealisticBeautyStandardsScreen");
+      case "Financial Mental Health":
+        navigation.navigate("FinancialMentalHealthScreen");
         break;
-      case "Dark Web and OnlyFans":
-        navigation.navigate("DarkWebAndOnlyFansScreen");
+      case "Physical Fitness":
+        navigation.navigate("PhysicalFitnessScreen");
         break;
-      case "Gambling and gaming addiction":
-        navigation.navigate("GamblingAndGamingAddictionScreen");
+      case "Internet Dependence":
+        navigation.navigate("InternetDependenceScreen");
         break;
-      case "Internet addiction":
-        navigation.navigate("InternetAddictionScreen");
+      case "Professional Mental Health":
+        navigation.navigate("ProfessionalMentalHealthScreen");
         break;
       case "Social Mental Health":
         navigation.navigate("SocialMentalHealthScreen");
         break;
-      case "Porn Addiction":
-        navigation.navigate("PornAddictionScreen");
+      case "Youngster Issues":
+        navigation.navigate("YoungsterIssuesScreen");
         break;
       case "Emotional Intelligence":
         navigation.navigate("EmotionalIntelligenceScreen");
-        break;
-      case "Breakup and rebound":
-        navigation.navigate("BreakupAndReboundScreen");
         break;
       default:
         Alert.alert(
@@ -180,12 +230,12 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="happy-outline" size={24} color="#1f2937" />
+                  <Ionicons name="happy-outline" size={24} color="#1f2937" />
                 </View>
                 <Text style={styles.taskNumber}>
                   {isLoading ? t("mindToolsScreen.loading") : dailyTasksCount}
                 </Text>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.taskTitle}>
                 {t("mindToolsScreen.dailyTasksTitle")}
@@ -210,14 +260,14 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="calendar-outline" size={24} color="#1f2937" />
+                  <Ionicons name="calendar-outline" size={24} color="#1f2937" />
                 </View>
                 <Text style={styles.taskNumber}>
                   {isLoading
                     ? t("mindToolsScreen.loading")
                     : interventionsCount}
                 </Text>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.taskTitle}>
                 {t("mindToolsScreen.totalInterventionsTitle")}
@@ -249,7 +299,7 @@ export default function MindToolsScreen({ navigation }: any) {
           <Pressable style={styles.journalCard} onPress={handleJournalPress}>
             <View style={styles.journalContent}>
               <View style={styles.journalIconContainer}>
-                <CustomIcon type="IO" name="journal-outline" size={28} color="#8b5cf6" />
+                <Ionicons name="journal-outline" size={28} color="#8b5cf6" />
               </View>
               <View style={styles.journalTextContainer}>
                 <Text style={styles.journalTitle}>
@@ -260,7 +310,7 @@ export default function MindToolsScreen({ navigation }: any) {
                 </Text>
               </View>
               <View style={styles.journalArrow}>
-                <CustomIcon type="IO" name="chevron-forward" size={20} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={20} color="#6b7280" />
               </View>
             </View>
           </Pressable>
@@ -276,308 +326,320 @@ export default function MindToolsScreen({ navigation }: any) {
             {/* Row 1 */}
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("ADHD")}
+              onPress={() => handleCategoryPress("Anger Management")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="flash-outline" size={24} color="#1f2937" />
+                  <Ionicons name="flame-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.adhd.title")}
+                {t("mindToolsScreen.categories.angerManagement.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.adhd.description")}
+                {t("mindToolsScreen.categories.angerManagement.description")}
               </Text>
             </Pressable>
 
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Aggressive Behaviour")}
+              onPress={() => handleCategoryPress("Stress")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="shield-outline" size={24} color="#1f2937" />
+                  <Ionicons name="pulse-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.aggressiveBehaviour.title")}
+                {t("mindToolsScreen.categories.stress.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.aggressiveBehaviour.description")}
+                {t("mindToolsScreen.categories.stress.description")}
               </Text>
             </Pressable>
 
             {/* Row 2 */}
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Conduct Issues")}
+              onPress={() => handleCategoryPress("Internet & Social Media")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO"
-                    name="library-outline"
+                  <Ionicons
+                    name="phone-portrait-outline"
                     size={24}
                     color="#1f2937"
                   />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.conductIssues.title")}
+                {t("mindToolsScreen.categories.internetSocialMedia.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.conductIssues.description")}
+                {t(
+                  "mindToolsScreen.categories.internetSocialMedia.description",
+                )}
               </Text>
             </Pressable>
 
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Eating Habits")}
+              onPress={() => handleCategoryPress("Family & Relationship")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="restaurant-outline" size={24} color="#1f2937" />
+                  <Ionicons name="people-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.eatingHabits.title")}
+                {t("mindToolsScreen.categories.familyRelationship.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.eatingHabits.description")}
+                {t("mindToolsScreen.categories.familyRelationship.description")}
               </Text>
             </Pressable>
 
             {/* Row 3 */}
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Introvert Child")}
+              onPress={() => handleCategoryPress("Sleep")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="person-outline" size={24} color="#1f2937" />
+                  <Ionicons name="moon-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.introvertChild.title")}
+                {t("mindToolsScreen.categories.sleep.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.introvertChild.description")}
+                {t("mindToolsScreen.categories.sleep.description")}
               </Text>
             </Pressable>
 
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Self-care hygiene")}
+              onPress={() => handleCategoryPress("Suicidal Behaviour")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="heart" size={24} color="#1f2937" />
+                  <Ionicons
+                    name="heart-dislike-outline"
+                    size={24}
+                    color="#1f2937"
+                  />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.selfCareHygiene.title")}
+                {t("mindToolsScreen.categories.suicidalBehaviour.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.selfCareHygiene.description")}
+                {t("mindToolsScreen.categories.suicidalBehaviour.description")}
               </Text>
             </Pressable>
 
             {/* Row 4 */}
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Substance Addiction")}
+              onPress={() => handleCategoryPress("Sex Life")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="shield-checkmark-outline" size={24} color="#1f2937" />
+                  <Ionicons name="heart-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.substanceAddiction.title")}
+                {t("mindToolsScreen.categories.sexLife.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.substanceAddiction.description")}
+                {t("mindToolsScreen.categories.sexLife.description")}
               </Text>
             </Pressable>
 
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Breakup and rebound")}
+              onPress={() => handleCategoryPress("Addictions")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="heart-dislike-outline" size={24} color="#1f2937" />
+                  <Ionicons name="ban-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.breakupAndRebound.title")}
+                {t("mindToolsScreen.categories.addictions.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.breakupAndRebound.description")}
+                {t("mindToolsScreen.categories.addictions.description")}
               </Text>
             </Pressable>
 
             {/* Row 5 */}
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Dealing with trauma, loss, and dreams")}
+              onPress={() => handleCategoryPress("Common Psychological")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="heart-half-outline" size={24} color="#1f2937" />
+                  <Ionicons name="medical-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.traumaLossAndDreams.title")}
+                {t("mindToolsScreen.categories.commonPsychological.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.traumaLossAndDreams.description")}
+                {t(
+                  "mindToolsScreen.categories.commonPsychological.description",
+                )}
               </Text>
             </Pressable>
 
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Friendship and relationship")}
+              onPress={() => handleCategoryPress("Environment Issues")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="people-outline" size={24} color="#1f2937" />
+                  <Ionicons name="leaf-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.friendshipAndRelationship.title")}
+                {t("mindToolsScreen.categories.environmentIssues.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.friendshipAndRelationship.description")}
+                {t("mindToolsScreen.categories.environmentIssues.description")}
               </Text>
             </Pressable>
 
             {/* Row 6 */}
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Self-esteem and self-identity")}
+              onPress={() => handleCategoryPress("Financial Mental Health")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="heart" size={24} color="#1f2937" />
+                  <Ionicons name="card-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.selfEsteemAndSelfIdentity.title")}
+                {t("mindToolsScreen.categories.financialMentalHealth.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.selfEsteemAndSelfIdentity.description")}
+                {t(
+                  "mindToolsScreen.categories.financialMentalHealth.description",
+                )}
               </Text>
             </Pressable>
 
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Unrealistic beauty standards and obesity")}
+              onPress={() => handleCategoryPress("Physical Fitness")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="body-outline" size={24} color="#1f2937" />
+                  <Ionicons name="fitness-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.unrealisticBeautyStandards.title")}
+                {t("mindToolsScreen.categories.physicalFitness.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.unrealisticBeautyStandards.description")}
+                {t("mindToolsScreen.categories.physicalFitness.description")}
               </Text>
             </Pressable>
 
             {/* Row 7 */}
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Dark Web and OnlyFans")}
+              onPress={() => handleCategoryPress("Internet Dependence")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="warning-outline" size={24} color="#1f2937" />
+                  <Ionicons name="wifi-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.darkWebAndOnlyFans.title")}
+                {t("mindToolsScreen.categories.internetDependence.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.darkWebAndOnlyFans.description")}
+                {t("mindToolsScreen.categories.internetDependence.description")}
               </Text>
             </Pressable>
 
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Gambling and gaming addiction")}
+              onPress={() => handleCategoryPress("Professional Mental Health")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO"
-                    name="game-controller-outline"
+                  <Ionicons
+                    name="briefcase-outline"
                     size={24}
                     color="#1f2937"
                   />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.gamblingAndGamingAddiction.title")}
+                {t("mindToolsScreen.categories.professionalMentalHealth.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.gamblingAndGamingAddiction.description")}
+                {t(
+                  "mindToolsScreen.categories.professionalMentalHealth.description",
+                )}
               </Text>
             </Pressable>
 
             {/* Row 8 */}
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Internet addiction")}
+              onPress={() => handleCategoryPress("Social Mental Health")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO"
-                    name="wifi-outline"
+                  <Ionicons
+                    name="chatbubbles-outline"
                     size={24}
                     color="#1f2937"
                   />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.internetAddiction.title")}
+                {t("mindToolsScreen.categories.socialMentalHealth.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.internetAddiction.description")}
+                {t("mindToolsScreen.categories.socialMentalHealth.description")}
               </Text>
             </Pressable>
 
             <Pressable
               style={styles.categoryCard}
-              onPress={() => handleCategoryPress("Porn Addiction")}
+              onPress={() => handleCategoryPress("Youngster Issues")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="warning-outline" size={24} color="#1f2937" />
+                  <Ionicons name="school-outline" size={24} color="#1f2937" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.pornAddiction.title")}
+                {t("mindToolsScreen.categories.youngsterIssues.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.pornAddiction.description")}
+                {t("mindToolsScreen.categories.youngsterIssues.description")}
               </Text>
             </Pressable>
 
@@ -588,18 +650,22 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.eqCardHeader}>
                 <View style={styles.eqIconContainer}>
-                  <CustomIcon type="IO" name="heart" size={32} color="#8b5cf6" />
+                  <Ionicons name="heart" size={32} color="#8b5cf6" />
                 </View>
                 <View style={styles.eqTextContainer}>
                   <Text style={styles.eqCardTitle}>
-                    {t("mindToolsScreen.categories.emotionalIntelligence.title")}
+                    {t(
+                      "mindToolsScreen.categories.emotionalIntelligence.title",
+                    )}
                   </Text>
                   <Text style={styles.eqCardDescription}>
-                    {t("mindToolsScreen.categories.emotionalIntelligence.description")}
+                    {t(
+                      "mindToolsScreen.categories.emotionalIntelligence.description",
+                    )}
                   </Text>
                 </View>
                 <View style={styles.eqArrowContainer}>
-                  <CustomIcon type="IO" name="chevron-forward" size={20} color="#6b7280" />
+                  <Ionicons name="chevron-forward" size={20} color="#6b7280" />
                 </View>
               </View>
             </Pressable>
@@ -608,6 +674,49 @@ export default function MindToolsScreen({ navigation }: any) {
 
         <MindfulPlaylist />
       </ScrollView>
+
+      {/* Upgrade dialog */}
+      <Portal>
+        <Dialog
+          visible={dialogVisible}
+          onDismiss={() => setDialogVisible(false)}
+          style={styles.dialog}
+        >
+          <Dialog.Title style={styles.dialogTitle}>
+            {blockedPlan
+              ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
+              : t("upgradeDialog.title")}
+          </Dialog.Title>
+          <Dialog.Content>
+            <Paragraph style={styles.dialogText}>
+              {blockedPlan
+                ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.message`)
+                : t("upgradeDialog.message")}
+            </Paragraph>
+          </Dialog.Content>
+          <Dialog.Actions style={styles.dialogActions}>
+            <Button onPress={() => setDialogVisible(false)}>
+              {blockedPlan
+                ? t("mindToolsScreen.upgradeDialog.cancelButton")
+                : t("upgradeDialog.cancelButton")}
+            </Button>
+            <Button
+              mode="contained"
+              onPress={() => {
+                setDialogVisible(false);
+                // Navigate to unified upgrade screen route name used elsewhere (ConditionScans uses "Upgrade")
+                navigation.navigate("Upgrade");
+              }}
+              style={styles.upgradeButton}
+              labelStyle={styles.upgradeButtonLabel}
+            >
+              {blockedPlan
+                ? t("mindToolsScreen.upgradeDialog.upgradeButton")
+                : t("upgradeDialog.upgradeButton")}
+            </Button>
+          </Dialog.Actions>
+        </Dialog>
+      </Portal>
     </SafeAreaView>
   );
 }
@@ -811,5 +920,33 @@ const styles = StyleSheet.create({
   eqArrowContainer: {
     marginLeft: 12,
     padding: 4,
+  },
+  // Dialog styles for upgrade popup
+  dialog: {
+    borderRadius: 16,
+  },
+  dialogTitle: {
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+  dialogText: {
+    textAlign: "center",
+    marginBottom: 8,
+  },
+  dialogActions: {
+    justifyContent: "space-between",
+    paddingHorizontal: 16,
+    paddingBottom: 16,
+  },
+  upgradeButton: {
+    backgroundColor: "#AB47BC",
+    borderRadius: 6,
+    paddingHorizontal: 16,
+    paddingVertical: 6,
+  },
+  upgradeButtonLabel: {
+    color: "white",
+    fontSize: 12,
+    fontWeight: "600",
   },
 });

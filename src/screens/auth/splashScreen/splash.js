@@ -15,35 +15,11 @@ const SplashScreen = ({ navigation }) => {
 
   useEffect(() => {
     // Check user state and navigate accordingly
-    const checkUserState = async () => {
-      try {
-        await new Promise(resolve => setTimeout(resolve, 2000)); // Show splash for 2 seconds
-        
-        const hasCompletedOnboarding = await AsyncStorage.getItem('hasCompletedOnboarding');
-        const isLoggedIn = await AsyncStorage.getItem('isLoggedIn');
-        const selectedLanguage = await AsyncStorage.getItem('selectedLanguage');
-        
-        if (!hasCompletedOnboarding) {
-          // First time user - go to onboarding
-          navigation.replace('OnBoarding');
-        } else if (!selectedLanguage) {
-          // User needs to select language
-          navigation.replace('MainApp', { screen: 'LanguageSelectScreen' });
-        } else if (!isLoggedIn) {
-          // User needs to login
-          navigation.replace('Login');
-        } else {
-          // User is logged in - go to main app
-          navigation.replace('MainApp');
-        }
-      } catch (error) {
-        console.error('Error checking user state:', error);
-        // On error, default to onboarding
-        navigation.replace('OnBoarding');
-      }
-    };
 
-    checkUserState();
+setTimeout(() => {
+  navigation.replace('Login');
+}, 1500);
+
   }, [navigation]);
 
   return (

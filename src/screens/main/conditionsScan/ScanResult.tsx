@@ -55,88 +55,88 @@ const defaultImages: InterventionImageSet = {
   tertiary: require("../../../assets/images/watchman.png"),
 };
 
-const interventionImages: InterventionImages = {
-  Addictions: {
-    primary: require("../../../assets/images/addiction/primaryinterventionaddictions.jpg"),
-    secondary: require("../../../assets/images/addiction/secondaryinterventionaddictions.jpg"),
-    tertiary: require("../../../assets/images/addiction/tertiaryinterventionaddictions.jpg"),
-  },
-  "Internet and Social Media Issue": {
-    primary: require("../../../assets/images/Mindfulness.png"),
-    secondary: require("../../../assets/images/Meditation.png"),
-    tertiary: require("../../../assets/images/Breathing.png"),
-  },
-  "Professional Mental Health": {
-    primary: require("../../../assets/images/Journaling.png"),
-    secondary: require("../../../assets/images/thought-pro-icon.png"),
-    tertiary: require("../../../assets/images/PFP.png"),
-  },
-  "Sex Life": {
-    primary: require("../../../assets/images/react-logo.png"),
-    secondary: require("../../../assets/images/partial-react-logo.png"),
-    tertiary: require("../../../assets/images/download.png"),
-  },
-  "Social Mental Health": {
-    primary: require("../../../assets/images/thought-pro-splash.png"),
-    secondary: require("../../../assets/images/adaptive-icon.png"),
-    tertiary: require("../../../assets/images/favicon.png"),
-  },
-  "Suicidal Behaviour": {
-    primary: require("../../../assets/images/EditIcon.png"),
-    secondary: require("../../../assets/images/DeleteIcon.png"),
-    tertiary: require("../../../assets/images/oldicon.png"),
-  },
-  "Youngster Issues": {
-    primary: require("../../../assets/images/react-logo@2x.png"),
-    secondary: require("../../../assets/images/react-logo@3x.png"),
-    tertiary: require("../../../assets/images/thought-pro-icon.png"),
-  },
-  Stress: {
-    primary: require("../../../assets/images/Meditation.png"),
-    secondary: require("../../../assets/images/Breathing.png"),
-    tertiary: require("../../../assets/images/Journaling.png"),
-  },
-  Sleep: {
-    primary: require("../../../assets/images/thought-pro-icon.png"),
-    secondary: require("../../../assets/images/PFP.png"),
-    tertiary: require("../../../assets/images/download.png"),
-  },
-  "Internet Dependence": {
-    primary: require("../../../assets/images/react-logo.png"),
-    secondary: require("../../../assets/images/partial-react-logo.png"),
-    tertiary: require("../../../assets/images/react-logo@2x.png"),
-  },
-  "General Physical Fitness": {
-    primary: require("../../../assets/images/adaptive-icon.png"),
-    secondary: require("../../../assets/images/favicon.png"),
-    tertiary: require("../../../assets/images/oldicon.png"),
-  },
-  "Financial Mental Health": {
-    primary: require("../../../assets/images/EditIcon.png"),
-    secondary: require("../../../assets/images/DeleteIcon.png"),
-    tertiary: require("../../../assets/images/Mindfulness.png"),
-  },
-  "Family and Relationship": {
-    primary: require("../../../assets/images/Meditation.png"),
-    secondary: require("../../../assets/images/Breathing.png"),
-    tertiary: require("../../../assets/images/Journaling.png"),
-  },
-  "Environment Issues": {
-    primary: require("../../../assets/images/thought-pro-splash.png"),
-    secondary: require("../../../assets/images/thought-pro-icon.png"),
-    tertiary: require("../../../assets/images/PFP.png"),
-  },
-  "Common Psychological Issues": {
-    primary: require("../../../assets/images/download.png"),
-    secondary: require("../../../assets/images/react-logo@3x.png"),
-    tertiary: require("../../../assets/images/adaptive-icon.png"),
-  },
-  "Anger Management": {
-    primary: require("../../../assets/images/favicon.png"),
-    secondary: require("../../../assets/images/oldicon.png"),
-    tertiary: require("../../../assets/images/watchman.png"),
-  },
-};
+// const interventionImages: InterventionImages = {
+//   Addictions: {
+//     primary: require("../../../assets/images/addiction/primaryinterventionaddictions.jpg"),
+//     secondary: require("../../../assets/images/addiction/secondaryinterventionaddictions.jpg"),
+//     tertiary: require("../../../assets/images/addiction/tertiaryinterventionaddictions.jpg"),
+//   },
+//   "Internet and Social Media Issue": {
+//     primary: require("../../../assets/images/Mindfulness.png"),
+//     secondary: require("../../../assets/images/Meditation.png"),
+//     tertiary: require("../../../assets/images/Breathing.png"),
+//   },
+//   "Professional Mental Health": {
+//     primary: require("../../../assets/images/Journaling.png"),
+//     secondary: require("../../../assets/images/thought-pro-icon.png"),
+//     tertiary: require("../../../assets/images/PFP.png"),
+//   },
+//   "Sex Life": {
+//     primary: require("../../../assets/images/react-logo.png"),
+//     secondary: require("../../../assets/images/partial-react-logo.png"),
+//     tertiary: require("../../../assets/images/download.png"),
+//   },
+//   "Social Mental Health": {
+//     primary: require("../../../assets/images/thought-pro-splash.png"),
+//     secondary: require("../../../assets/images/adaptive-icon.png"),
+//     tertiary: require("../../../assets/images/favicon.png"),
+//   },
+//   "Suicidal Behaviour": {
+//     primary: require("../../../assets/images/EditIcon.png"),
+//     secondary: require("../../../assets/images/DeleteIcon.png"),
+//     tertiary: require("../../../assets/images/oldicon.png"),
+//   },
+//   "Youngster Issues": {
+//     primary: require("../../../assets/images/react-logo@2x.png"),
+//     secondary: require("../../../assets/images/react-logo@3x.png"),
+//     tertiary: require("../../../assets/images/thought-pro-icon.png"),
+//   },
+//   Stress: {
+//     primary: require("../../../assets/images/Meditation.png"),
+//     secondary: require("../../../assets/images/Breathing.png"),
+//     tertiary: require("../../../assets/images/Journaling.png"),
+//   },
+//   Sleep: {
+//     primary: require("../../../assets/images/thought-pro-icon.png"),
+//     secondary: require("../../../assets/images/PFP.png"),
+//     tertiary: require("../../../assets/images/download.png"),
+//   },
+//   "Internet Dependence": {
+//     primary: require("../../../assets/images/react-logo.png"),
+//     secondary: require("../../../assets/images/partial-react-logo.png"),
+//     tertiary: require("../../../assets/images/react-logo@2x.png"),
+//   },
+//   "General Physical Fitness": {
+//     primary: require("../../../assets/images/adaptive-icon.png"),
+//     secondary: require("../../../assets/images/favicon.png"),
+//     tertiary: require("../../../assets/images/oldicon.png"),
+//   },
+//   "Financial Mental Health": {
+//     primary: require("../../../assets/images/EditIcon.png"),
+//     secondary: require("../../../assets/images/DeleteIcon.png"),
+//     tertiary: require("../../../assets/images/Mindfulness.png"),
+//   },
+//   "Family and Relationship": {
+//     primary: require("../../../assets/images/Meditation.png"),
+//     secondary: require("../../../assets/images/Breathing.png"),
+//     tertiary: require("../../../assets/images/Journaling.png"),
+//   },
+//   "Environment Issues": {
+//     primary: require("../../../assets/images/thought-pro-splash.png"),
+//     secondary: require("../../../assets/images/thought-pro-icon.png"),
+//     tertiary: require("../../../assets/images/PFP.png"),
+//   },
+//   "Common Psychological Issues": {
+//     primary: require("../../../assets/images/download.png"),
+//     secondary: require("../../../assets/images/react-logo@3x.png"),
+//     tertiary: require("../../../assets/images/adaptive-icon.png"),
+//   },
+//   "Anger Management": {
+//     primary: require("../../../assets/images/favicon.png"),
+//     secondary: require("../../../assets/images/oldicon.png"),
+//     tertiary: require("../../../assets/images/watchman.png"),
+//   },
+// };
 
 const getInterventionImages = (scanName: string): InterventionImageSet => {
   if (!scanName) return defaultImages;

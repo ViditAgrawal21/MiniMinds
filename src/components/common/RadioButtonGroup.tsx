@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Pressable, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Pressable, StyleSheet } from "react-native";
 import RadioButtonText from "./RadioButtonText";
 
 interface RadioButtonGroupProps {
@@ -14,25 +14,22 @@ const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
   onValueChange,
 }) => {
   return (
-    <View>
-      {options.map((option) => (
+    <View style={styles.container}>
+      {options.map((option, index) => (
         <Pressable
           key={option}
           onPress={() => onValueChange(option)}
           style={styles.radioItem}
         >
-          <View style={styles.radioItem}>
-            <TouchableOpacity
-              style={[
-                styles.radioButton,
-                selectedValue === option && styles.radioButtonSelected,
-              ]}
-              onPress={() => onValueChange(option)}
-            >
-              {selectedValue === option && <View style={styles.radioButtonInner} />}
-            </TouchableOpacity>
-            <RadioButtonText>{option}</RadioButtonText>
+          <View
+            style={[
+              styles.radioButton,
+              selectedValue === option && styles.radioButtonSelected,
+            ]}
+          >
+            {selectedValue === option && <View style={styles.radioButtonInner} />}
           </View>
+          <RadioButtonText>{option}</RadioButtonText>
         </Pressable>
       ))}
     </View>
@@ -40,11 +37,14 @@ const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
   radioItem: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: -7,
-    marginLeft: 3,
+    paddingVertical: 4,
+    paddingHorizontal: 4,
   },
   radioButton: {
     width: 20,
@@ -54,8 +54,7 @@ const styles = StyleSheet.create({
     borderColor: "#D27AD5",
     justifyContent: "center",
     alignItems: "center",
-    marginRight: 10,
-    marginLeft: 5,
+    marginRight: 12,
   },
   radioButtonSelected: {
     borderColor: "#AB47BC",

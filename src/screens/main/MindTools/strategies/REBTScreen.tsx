@@ -10,10 +10,13 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+import { BlurView } from "expo-blur";
+import { Ionicons } from "@expo/vector-icons";
+import { useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t } from "@/i18n/locales/i18n";
-import { getCurrentLanguage, getShortLanguageCode, getLanguageForAPI, changeLanguage } from "@/utils/i18nHelpers";
+import { t } from "../../../i18n/i18n";
+import i18n from "../../../i18n/i18n";
+import { getPremiumStatus } from "../../../utils/premiumUtils";
 
 interface REBTIntervention {
   // Format from translation files (rebtInterventions section)
@@ -84,13 +87,14 @@ export default function REBTScreen({ navigation, route }: any) {
     null,
   );
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
+  const [hasPremiumAccess, setHasPremiumAccess] = useState(false);
   
   const { condition } = route.params || {};
 
   // Language change detection with improved triggering (unified with InterventionsScreen)
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
+    const currentLocale = i18n.locale;
     if (currentLanguage !== currentLocale) {
       setCurrentLanguage(currentLocale);
       setConditionName(getConditionDisplayName(condition));
@@ -100,7 +104,7 @@ export default function REBTScreen({ navigation, route }: any) {
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
+      const currentLocale = i18n.locale;
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
         setConditionName(getConditionDisplayName(condition));
@@ -309,7 +313,7 @@ export default function REBTScreen({ navigation, route }: any) {
     rebt: REBTIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? getREBTTitle(rebt) : getREBTDescription(rebt);
     
@@ -331,16 +335,39 @@ export default function REBTScreen({ navigation, route }: any) {
       return translation[currentLocale];
     }
     
-    // DISABLED: Phrase replacement and word translation to prevent title/description truncation
-    // These features were causing issues where:
-    // - "Rational Thinking" could be truncated to just "rational"
-    // - "Belief Analysis" could be truncated to just "beliefs"
-    // - Descriptions were being cut down to single words or having unwanted replacements
-    // 
-    // If phrase translation is needed in the future, it should be implemented with:
-    // 1. Exact phrase matching only (not word-within-phrase)
-    // 2. Whitelist of specific phrases that are safe to translate
-    // 3. More sophisticated logic to avoid truncation
+    // For longer descriptions, try to translate individual words and phrases
+    if (field === "description" && originalText.length > 50) {
+      let translatedText = originalText;
+      
+      // Try to translate common phrases within the description
+      Object.entries(rebtTranslations).forEach(([englishText, translations]) => {
+        if (originalText.includes(englishText)) {
+          translatedText = translatedText.replace(
+            new RegExp(englishText, "gi"),
+            translations[currentLocale],
+          );
+        }
+      });
+      
+      // If we made any translations, return the processed text
+      if (translatedText !== originalText) {
+        return translatedText;
+      }
+    }
+    
+    // Simplified word translation - only for single words that are common terms
+    const trimmedText = originalText.trim();
+    if (!trimmedText.includes(" ") && trimmedText.length > 3) {
+      const lowerCaseWord = trimmedText.toLowerCase();
+      const wordMatch = Object.keys(rebtTranslations).find(
+        (key) => key.toLowerCase() === lowerCaseWord,
+      );
+      if (wordMatch) {
+        const translation =
+          rebtTranslations[wordMatch as keyof typeof rebtTranslations];
+        return translation[currentLocale];
+      }
+    }
     
     // Finally, fall back to original text (apply formatting for descriptions)
     return field === "description"
@@ -388,38 +415,8 @@ export default function REBTScreen({ navigation, route }: any) {
       sleep: "scanIntro.sleep.title",
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
-      adhd: "adhdScreen.headerTitle",
-      "aggressive-behaviour": "aggressiveBehaviourScreen.english.headerTitle",
-      "conduct-issues": "conductIssues.headerTitle",
-      "eating-habits": "eatingHabitsScreen.headerTitle",
-      "introvert-child": "introvertChildScreen.headerTitle",
-      "self-care-hygiene": "selfCareHygieneScreen.headerTitle",
-      "substance-addiction": "substanceAddictionScreen.headerTitle",
-      "breakupAndRebound": "breakupAndReboundScreen.title",
-      "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
-      "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
-      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
-      "dark-web-onlyfans": "Dark Web and OnlyFans",
-      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
-      "internet-addiction": "Internet Addiction",
-      "porn-addiction": "Porn Addiction",
     };
     const translationKey = conditionKeyMap[condition];
-    
-    // Return hardcoded strings directly without translation for new conditions
-    if (condition === "dark-web-onlyfans") {
-      return "Dark Web and OnlyFans";
-    }
-    if (condition === "gambling-and-gaming-addiction") {
-      return "Gambling and Gaming Addiction";
-    }
-    if (condition === "internet-addiction") {
-      return "Internet Addiction";
-    }
-    if (condition === "porn-addiction") {
-      return "Porn Addiction";
-    }
-    
     return translationKey ? t(translationKey) : condition;
   };
 
@@ -435,8 +432,6 @@ export default function REBTScreen({ navigation, route }: any) {
         "suicidal-behavior": "suicidalBehavior",
         "common-psychological-issues": "commonPsychologicalIssues",
         "family-relationship": "familyRelationship",
-        "friendship-and-relationship": "friendshipAndRelationship",
-        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
         "internet-dependence": "internetDependence",
         "environment-issues": "environmentIssues",
         "financial-mental-health": "financialMentalHealth",
@@ -446,617 +441,12 @@ export default function REBTScreen({ navigation, route }: any) {
         sleep: "sleep",
         "social-mental-health": "socialMentalHealth",
         "youngster-issues": "youngsterIssues",
-        adhd: "adhd",
-        "aggressive-behaviour": "aggressiveBehaviour",
-        "conduct-issues": "conductIssues",
-        "eating-habits": "eatingHabits",
-        "introvert-child": "introvertChild",
-        "self-care-hygiene": "selfCareHygiene",
-        "substance-addiction": "substanceAddiction",
-        "breakupAndRebound": "breakupAndRebound",
-        "trauma-loss-and-dreams": "traumaLossAndDreams",
-        "unrealistic-beauty-standards": "unrealisticBeautyStandards",
-        "dark-web-onlyfans": "darkWebAndOnlyFans",
-        "gambling-and-gaming-addiction": "gamblingAndGamingAddiction",
-        "internet-addiction": "internetAddiction",
-        "porn-addiction": "pornAddiction",
       };
       
       const translationKey = conditionKeyMap[condition];
-      
-      // Special handling for conditions with specific data files
-      if (condition === "self-care-hygiene" || condition === "introvert-child" || condition === "conduct-issues" || condition === "aggressive-behaviour" || condition === "substance-addiction" || condition === "adhd" || condition === "eating-habits" || condition === "friendship-and-relationship" || condition === "self-esteem-and-self-identity" || condition === "breakupAndRebound" || condition === "trauma-loss-and-dreams" || condition === "unrealistic-beauty-standards" || condition === "dark-web-onlyfans" || condition === "gambling-and-gaming-addiction" || condition === "internet-addiction" || condition === "porn-addiction") {
-        // Continue to special handling sections below
-      } else if (!translationKey) {
+      if (!translationKey) {
         console.error(`No translation key found for condition: ${condition}`);
         return null;
-      }
-      
-      // Special handling for Self-Care Hygiene comprehensive data
-      if (condition === "self-care-hygiene") {
-        try {
-          const selfCareHygieneData = require("../../../../assets/data/behaviour/SelfCareHygiene_comprehensive_data.json");
-          if (selfCareHygieneData?.interventions?.rebtInterventions?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const selfCareRebtCards = selfCareHygieneData.interventions.rebtInterventions.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.english || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: translationKey,
-              intervention_type: "REBT", 
-              interventions: selfCareRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Self-Care Hygiene comprehensive data:", error);
-        }
-      }
-      
-      // Special handling for Conduct Issues comprehensive data
-      if (condition === "conduct-issues") {
-        try {
-          const conductData = require("../../../../assets/data/behaviour/ConductIssues_Complete_comprehensive_data.json");
-          if (conductData?.interventions?.rebt?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const conductRebtCards = conductData.interventions.rebt.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.english || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: translationKey,
-              intervention_type: "REBT", 
-              interventions: conductRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Conduct Issues comprehensive data:", error);
-        }
-      }
-      
-      // Special handling for ADHD comprehensive data
-      if (condition === "adhd") {
-        try {
-          const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
-          if (adhdData?.interventions?.rebt?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const adhdRebtCards = adhdData.interventions.rebt.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.english || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: translationKey,
-              intervention_type: "REBT", 
-              interventions: adhdRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading ADHD comprehensive data:", error);
-        }
-      }
-
-      // Special handling for Aggressive Behaviour comprehensive data
-      if (condition === "aggressive-behaviour") {
-        try {
-          const aggressiveData = require("../../../../assets/data/behaviour/AggressiveBehaviour_comprehensive_data.json");
-          if (aggressiveData?.interventions?.rebt?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const aggressiveRebtCards = aggressiveData.interventions.rebt.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.english || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: "aggressiveBehaviour",
-              intervention_type: "REBT", 
-              interventions: aggressiveRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Aggressive Behaviour comprehensive data:", error);
-        }
-      }
-
-      // Special handling for Eating Habits comprehensive data
-      if (condition === "eating-habits") {
-        try {
-          const eatingHabitsData = require("../../../../assets/data/behaviour/EatingHabits_comprehensive_data.json");
-          if (eatingHabitsData?.interventions?.rebt?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const eatingHabitsRebtCards = eatingHabitsData.interventions.rebt.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.english || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: "eatingHabits",
-              intervention_type: "REBT", 
-              interventions: eatingHabitsRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Eating Habits comprehensive data:", error);
-        }
-      }
-
-      // Special handling for Introvert Child comprehensive data
-      if (condition === "introvert-child") {
-        try {
-          const introvertChildData = require("../../../../assets/data/behaviour/IntrovertChild_comprehensive_data.json");
-          if (introvertChildData?.interventions?.rebt?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const introvertChildRebtCards = introvertChildData.interventions.rebt.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.english || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: "introvertChild",
-              intervention_type: "REBT", 
-              interventions: introvertChildRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Introvert Child comprehensive data:", error);
-        }
-      }
-
-      // Special handling for Substance Addiction comprehensive data
-      if (condition === "substance-addiction") {
-        try {
-          const substanceAddictionData = require("../../../../assets/data/behaviour/SubstanceAddiction_comprehensive_data.json");
-          if (substanceAddictionData?.rebtInterventions) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const substanceAddictionRebtCards = substanceAddictionData.rebtInterventions.map((item: any) => ({
-              title: item.title?.[dataLanguage] || item.title?.english || "Untitled",
-              description: item.description?.[dataLanguage] || item.description?.english || "No description",
-              xp: item.xp || 0,
-            }));
-            
-            return {
-              condition: "substanceAddiction",
-              intervention_type: "REBT", 
-              interventions: substanceAddictionRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Substance Addiction comprehensive data:", error);
-        }
-      }
-
-      // Special handling for Breakup and Rebound comprehensive data
-      if (condition === "breakupAndRebound") {
-        try {
-          const breakupReboundData = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
-          if (breakupReboundData?.rebt) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const breakupReboundRebtCards = breakupReboundData.rebt.map((item: any) => ({
-              title: item.title?.[dataLanguage] || item.title?.english || "Untitled",
-              description: item.description?.[dataLanguage] || item.description?.english || "No description",
-              xp: item.xp || 0,
-            }));
-            
-            return {
-              condition: "breakupAndRebound",
-              intervention_type: "REBT",
-              interventions: breakupReboundRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Breakup and Rebound comprehensive data:", error);
-        }
-      }
-      
-      // Special handling for Trauma, Loss and Dreams - create appropriate REBT interventions
-      if (condition === "trauma-loss-and-dreams") {
-        try {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi",
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          // Create REBT interventions specifically for trauma, loss and dreams
-          const traumaRebtInterventions = [
-            {
-              title: {
-                english: "Disputing Trauma-Related Irrational Beliefs",
-                hindi: "आघात-संबंधी अतार्किक विश्वासों का खंडन",
-                marathi: "आघात-संबंधित अतार्किक समजुतींचे खंडन"
-              },
-              description: {
-                english: "Learn to identify and challenge irrational beliefs formed after trauma (e.g., 'I'm unsafe everywhere', 'It's my fault'), replacing them with rational, evidence-based thoughts.",
-                hindi: "आघात के बाद बनी अतार्किक मान्यताओं की पहचान करना और उन्हें चुनौती देना सीखें (जैसे 'मैं कहीं भी सुरक्षित नहीं हूं', 'यह मेरी गलती है'), उन्हें तर्कसंगत, साक्ष्य-आधारित विचारों से बदलें।",
-                marathi: "आघातानंतर निर्माण झालेल्या अतार्किक समजुतींची ओळख करून त्यांना आव्हान देणे शिका (जसे 'मी कुठेही सुरक्षित नाही', 'ही माझी चूक आहे'), त्यांना तर्कसंगत, पुरावा-आधारित विचारांनी बदला."
-              },
-              xp: 5
-            },
-            {
-              title: {
-                english: "Rational Thinking About Loss",
-                hindi: "हानि के बारे में तर्कसंगत सोच",
-                marathi: "नुकसानाबद्दल तर्कसंगत चिंतन"
-              },
-              description: {
-                english: "Challenge absolutistic thinking about loss (e.g., 'I'll never be happy again', 'I can't live without them') and develop more flexible, realistic perspectives on grief and recovery.",
-                hindi: "हानि के बारे में पूर्णतावादी सोच को चुनौती दें (जैसे 'मैं फिर कभी खुश नहीं रहूंगा', 'मैं उनके बिना नहीं रह सकता') और दुःख और वसूली पर अधिक लचीले, यथार्थवादी दृष्टिकोण विकसित करें।",
-                marathi: "नुकसानाबद्दल निरपेक्ष विचारसरणीला आव्हान द्या (जसे 'मी पुन्हा कधी आनंदी होणार नाही', 'मी त्यांच्याशिवाय जगू शकत नाही') आणि दुःख आणि पुनर्प्राप्तीवर अधिक लवचिक, वास्तववादी दृष्टिकोन विकसित करा."
-              },
-              xp: 4
-            },
-            {
-              title: {
-                english: "Self-Acceptance After Trauma",
-                hindi: "आघात के बाद स्व-स्वीकृति",
-                marathi: "आघातानंतर स्व-स्वीकृति"
-              },
-              description: {
-                english: "Practice unconditional self-acceptance despite experiencing trauma, recognizing that your worth as a person is not diminished by what happened to you.",
-                hindi: "आघात का अनुभव करने के बावजूद बिना शर्त स्व-स्वीकृति का अभ्यास करें, यह पहचानते हुए कि एक व्यक्ति के रूप में आपका मूल्य आपके साथ जो हुआ उससे कम नहीं हुआ है।",
-                marathi: "आघाताचा अनुभव झाल्यानंतरही बिनशर्त स्व-स्वीकृतीचा सराव करा, हे ओळखून की एक व्यक्ती म्हणून तुमची किंमत तुमच्यासोबत जे घडले त्यामुळे कमी झालेली नाही."
-              },
-              xp: 4
-            },
-            {
-              title: {
-                english: "Rational Emotive Dream Work",
-                hindi: "तर्कसंगत भावनात्मक स्वप्न कार्य",
-                marathi: "तर्कसंगत भावनात्मक स्वप्न कार्य"
-              },
-              description: {
-                english: "Apply REBT principles to understand and process disturbing dreams, identifying the irrational beliefs that contribute to nightmare distress and developing rational alternatives.",
-                hindi: "परेशान करने वाले स्वप्नों को समझने और संसाधित करने के लिए REBT सिद्धांतों का प्रयोग करें, दुःस्वप्न की परेशानी में योगदान देने वाली अतार्किक मान्यताओं की पहचान करें और तर्कसंगत विकल्प विकसित करें।",
-                marathi: "त्रासदायक स्वप्नांना समजून घेण्यासाठी आणि प्रक्रिया करण्यासाठी REBT तत्त्वांचा वापर करा, दुःस्वप्नांच्या त्रासात योगदान देणाऱ्या अतार्किक समजुतींची ओळख करा आणि तर्कसंगत पर्याय विकसित करा."
-              },
-              xp: 5
-            },
-            {
-              title: {
-                english: "Frustration Tolerance Building",
-                hindi: "निराशा सहनशीलता निर्माण",
-                marathi: "निराशा सहनशीलता निर्माण"
-              },
-              description: {
-                english: "Develop high frustration tolerance for the recovery process, accepting that healing from trauma and loss takes time and involves setbacks, without demanding immediate relief.",
-                hindi: "रिकवरी प्रक्रिया के लिए उच्च निराशा सहनशीलता विकसित करें, यह स्वीकार करते हुए कि आघात और हानि से उपचार में समय लगता है और इसमें असफलताएं शामिल हैं, तत्काल राहत की मांग के बिना।",
-                marathi: "पुनर्प्राप्ती प्रक्रियेसाठी उच्च निराशा सहनशीलता विकसित करा, हे स्वीकारून की आघात आणि नुकसानापासून बरे होण्यास वेळ लागतो आणि त्यात अडथळे येतात, तत्काळ आरामाची मागणी न करता."
-              },
-              xp: 4
-            }
-          ];
-          
-          const traumaRebtCards = traumaRebtInterventions.map((item: any) => ({
-            title: item.title?.[dataLanguage] || item.title?.english || "Untitled",
-            description: item.description?.[dataLanguage] || item.description?.english || "No description",
-            xp: item.xp || 0,
-          }));
-          
-          return {
-            condition: "traumaLossAndDreams",
-            intervention_type: "REBT",
-            interventions: traumaRebtCards,
-          };
-        } catch (error) {
-          console.error("Error creating Trauma, Loss and Dreams REBT data:", error);
-        }
-      }
-      
-      // Special handling for Gambling and Gaming Addiction - use the comprehensive data file
-      if (condition === "gambling-and-gaming-addiction") {
-        try {
-        const gamblingData = null // require commented due to space in path;
-          if (gamblingData?.interventions?.rebt?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "english",
-              hi: "hindi",
-              mr: "marathi",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "english";
-            
-            const gamblingRebtCards = gamblingData.interventions.rebt.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.english || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: "gamblingAndGamingAddiction",
-              intervention_type: "REBT", 
-              interventions: gamblingRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Gambling and Gaming Addiction comprehensive data:", error);
-        }
-      }
-      
-      // Special handling for Internet Addiction - use the comprehensive data file
-      if (condition === "internet-addiction") {
-        try {
-        const internetData = null // require commented due to space in path;
-          if (internetData?.rebt?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "en",
-              hi: "hi",
-              mr: "mr",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "en";
-            
-            const internetRebtCards = internetData.rebt.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.en || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.en || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: "internetAddiction",
-              intervention_type: "REBT", 
-              interventions: internetRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Internet Addiction comprehensive data:", error);
-        }
-      }
-      
-      // Special handling for Porn Addiction - use the comprehensive data file
-      if (condition === "porn-addiction") {
-        try {
-        const pornData = null // require commented due to space in path;
-          if (pornData?.rebt?.cards) {
-            const currentLanguage = getCurrentLanguage();
-            const languageMap: { [key: string]: string } = {
-              en: "en",
-              hi: "hi",
-              mr: "mr",
-            };
-            const dataLanguage = languageMap[currentLanguage] || "en";
-            
-            const pornRebtCards = pornData.rebt.cards.map((card: any) => ({
-              title: card.title?.[dataLanguage] || card.title?.en || "Untitled",
-              description: card.description?.[dataLanguage] || card.description?.en || "No description",
-              xp: card.xp || 0,
-            }));
-            
-            return {
-              condition: "pornAddiction",
-              intervention_type: "REBT", 
-              interventions: pornRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Porn Addiction comprehensive data:", error);
-          // Return fallback REBT techniques for porn addiction
-          return {
-            condition: "pornAddiction",
-            intervention_type: "REBT",
-            interventions: [
-              {
-                title: "Disputing Sexual Entitlement Beliefs",
-                description: "Challenge irrational beliefs like 'I deserve sexual gratification whenever I want it' or 'I can't control my urges'. Replace with rational thoughts about healthy sexuality and self-control.",
-                xp: 5
-              },
-              {
-                title: "ABC Model for Urge Management",
-                description: "Identify the Activating event (trigger), irrational Beliefs ('I must watch now'), and emotional Consequences (shame, compulsion). Develop rational responses to break the cycle.",
-                xp: 5
-              },
-              {
-                title: "Rational Self-Acceptance",
-                description: "Practice unconditional self-acceptance despite past behaviors. You are not defined by your addiction - you are a person working toward recovery.",
-                xp: 4
-              },
-              {
-                title: "Frustration Tolerance Building",
-                description: "Develop high frustration tolerance for urges and recovery setbacks. Accept that discomfort is temporary and manageable without acting on impulses.",
-                xp: 4
-              },
-              {
-                title: "Disputing Shame and Guilt",
-                description: "Challenge self-condemning beliefs that create shame spirals. Replace 'I'm disgusting/worthless' with 'I made mistakes but I'm working to change'.",
-                xp: 4
-              }
-            ]
-          };
-        }
-      }
-      
-      // Special handling for Friendship and Relationship interventions
-      if (condition === "friendship-and-relationship") {
-        try {
-          const friendshipData = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
-          if (friendshipData?.["10_common_suggestions"]) {
-            // Create REBT interventions based on common relationship patterns
-            const rebtInterventions = [
-              {
-                title: "Disputing Relationship 'Shoulds'",
-                description: "Challenge irrational beliefs like 'My friend should always be available' or 'My partner must read my mind.' Replace these demands with preferences and realistic expectations.",
-                xp: 6
-              },
-              {
-                title: "Rational Thinking About Rejection",
-                description: "Dispute catastrophic thoughts about relationship conflicts. Transform 'If they're upset with me, our friendship is ruined' into 'Disagreements are normal and can be resolved.'",
-                xp: 6
-              },
-              {
-                title: "Acceptance in Relationships",
-                description: "Practice unconditional self-acceptance regardless of relationship status. You are worthy of love whether single or partnered, whether conflicts arise or not.",
-                xp: 6
-              },
-              {
-                title: "Managing Relationship Anxiety",
-                description: "Use the ABC model to address relationship fears. Identify activating events (late text response), beliefs (they don't care), and emotional consequences (anxiety).",
-                xp: 6
-              },
-              {
-                title: "Rational Romance and Friendship",
-                description: "Develop healthy relationship philosophies based on mutual respect rather than neediness or possession. Practice giving love freely without demanding it in return.",
-                xp: 6
-              }
-            ];
-            
-            return {
-              condition: "friendshipAndRelationship", 
-              intervention_type: "REBT",
-              interventions: rebtInterventions,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Friendship and Relationship REBT data:", error);
-        }
-      }
-      
-      // Special handling for Self-esteem and Self-identity interventions
-      if (condition === "self-esteem-and-self-identity") {
-        try {
-          const selfEsteemData = require("../../../../assets/data/Emotion/self_esteem_self_identity_interventions.json");
-          if (selfEsteemData?.interventions) {
-            const currentLanguage = getCurrentLanguage();
-            const rebtInterventions = selfEsteemData.interventions.filter((item: any) => item.category === "REBT");
-            
-            const selfEsteemRebtCards = rebtInterventions.map((item: any) => ({
-              title: item.translations[currentLanguage]?.title || item.translations.en?.title || "Untitled",
-              description: item.translations[currentLanguage]?.description || item.translations.en?.description || "No description",
-              xp: item.xp || 4,
-              category: item.category || "REBT",
-              id: item.id || "",
-              journalTemplate: item.translations[currentLanguage]?.journalTemplate || item.translations.en?.journalTemplate || {}
-            }));
-            
-            return {
-              condition: "selfEsteemAndSelfIdentity",
-              intervention_type: "REBT",
-              interventions: selfEsteemRebtCards,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Self-esteem and Self-identity REBT data:", error);
-        }
-      }
-      
-      // Special handling for Unrealistic Beauty Standards - use our consolidated JSON file
-      if (condition === "unrealistic-beauty-standards") {
-        try {
-          const beautyStandardsData = require("../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json");
-          if (beautyStandardsData && beautyStandardsData.rebtTechniques) {
-            
-            // Get current language for proper translation
-            const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                              getCurrentLanguage() === "mr" ? "marathi" : "english";
-            
-            // Transform the beauty standards REBT data format to the expected format
-            const interventions = beautyStandardsData.rebtTechniques.techniques.map((item: any) => ({
-              title: item.title[currentLang],
-              description: item.description[currentLang],
-              xp: item.xp,
-            }));
-
-            return {
-              condition: "unrealistic-beauty-standards",
-              intervention_type: "REBT Interventions",
-              interventions: interventions,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Unrealistic Beauty Standards REBT data:", error);
-        }
-      }
-      
-      // Special handling for Dark Web and OnlyFans - use our comprehensive JSON file
-      if (condition === "dark-web-onlyfans") {
-        try {
-        const darkWebData = null // require commented due to space in path;
-          if (darkWebData && darkWebData.interventions && darkWebData.interventions.rebt) {
-            
-            // Get current language for proper translation
-            const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                              getCurrentLanguage() === "mr" ? "marathi" : "english";
-            
-            // Transform the dark web REBT data format to the expected format
-            const interventions = darkWebData.interventions.rebt.cards.map((item: any) => ({
-              title: item.title[currentLang],
-              description: item.description[currentLang],
-              xp: item.xp,
-            }));
-
-            return {
-              condition: "dark-web-onlyfans",
-              intervention_type: "REBT Interventions",
-              interventions: interventions,
-            };
-          }
-        } catch (error) {
-          console.error("Error loading Dark Web and OnlyFans REBT data:", error);
-        }
       }
       
       // Get the interventions from the translation file
@@ -1123,6 +513,23 @@ export default function REBTScreen({ navigation, route }: any) {
   useEffect(() => {
     loadREBTInterventions();
   }, [loadREBTInterventions]);
+
+  // Check premium status when component mounts and when screen is focused
+  useFocusEffect(
+    useCallback(() => {
+      const checkPremiumStatus = async () => {
+        try {
+          const premiumStatus = await getPremiumStatus();
+          setHasPremiumAccess(premiumStatus.isPremium);
+        } catch (error) {
+          console.error("Error checking premium status:", error);
+          setHasPremiumAccess(false);
+        }
+      };
+
+      checkPremiumStatus();
+    }, [])
+  );
 
   const handleBackPress = () => {
     navigation.goBack();
@@ -1191,9 +598,6 @@ export default function REBTScreen({ navigation, route }: any) {
         stress: "stress",
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
-        "eating-habits": "eatingHabits",
-        "introvert-child": "introvertChild",
-        "breakupAndRebound": "breakupAndRebound",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -1216,9 +620,6 @@ export default function REBTScreen({ navigation, route }: any) {
         sleep: "scanIntro.sleep.title",
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
-        "eating-habits": "eatingHabitsScreen.headerTitle",
-        "introvert-child": "introvertChildScreen.headerTitle",
-        "breakupAndRebound": "breakupAndReboundScreen.title",
       };
 
       const translationKey = translationKeyMap[condition];
@@ -1241,10 +642,10 @@ export default function REBTScreen({ navigation, route }: any) {
         if (originalTitleKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedTitle = t(originalTitleKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedTitle !== originalTitleKey
               ? translatedTitle
               : getLocalizedREBTText(selectedREBT, "title");
@@ -1268,10 +669,10 @@ export default function REBTScreen({ navigation, route }: any) {
         if (conditionDisplayKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedCondition = t(conditionDisplayKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedCondition !== conditionDisplayKey
               ? translatedCondition
               : conditionName;
@@ -1299,10 +700,10 @@ export default function REBTScreen({ navigation, route }: any) {
         if (originalDescriptionKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedDescription = t(originalDescriptionKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedDescription !== originalDescriptionKey
               ? translatedDescription
               : getLocalizedREBTText(selectedREBT, "description");
@@ -1409,7 +810,7 @@ export default function REBTScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("rebtScreen.header.title")}</Text>
       </View>
@@ -1421,27 +822,61 @@ export default function REBTScreen({ navigation, route }: any) {
         
         {/* REBT Interventions List */}
         <View style={styles.rebtContainer}>
-          {rebtInterventions.map((rebt, index) => (
-            <View key={index} style={styles.rebtCard}>
-              {/* XP Badge */}
-              <View style={styles.xpBadge}>
-                <CustomIcon type="IO" name="flash-outline" size={12} color="#FFFFFF" />
-                <Text style={styles.xpText}>{getREBTXP(rebt)} XP</Text>
+          {rebtInterventions.map((rebt, index) => {
+            const shouldBlur = index >= 5 && !hasPremiumAccess; // Show first 5 cards normally, blur the rest unless premium
+            
+            if (shouldBlur) {
+              return (
+                <BlurView key={index} intensity={100} style={styles.blurWrapper}>
+                  <View style={[styles.rebtCard, styles.completelyBlurredCard]}>
+                    {/* XP Badge */}
+                    <View style={[styles.xpBadge, styles.blurredXpBadge]}>
+                      <Ionicons name="flash-outline" size={12} color="#FFFFFF" />
+                      <Text style={styles.xpText}>{getREBTXP(rebt)} XP</Text>
+                    </View>
+                    
+                    <Text style={[styles.rebtTitle, styles.blurredText]}>
+                      {getLocalizedREBTText(rebt, "title")}
+                    </Text>
+                    <Text style={[styles.rebtDescription, styles.blurredText]}>
+                      {getLocalizedREBTText(rebt, "description")}
+                    </Text>
+                    <Pressable
+                      style={[styles.addButton, styles.completelyDisabledButton]}
+                      disabled={true}
+                    >
+                      <Text style={[styles.addButtonText, styles.completelyDisabledText]}>
+                        {t("rebtScreen.addToTherapyPlan")}
+                      </Text>
+                      <Ionicons name="add-circle" size={20} color="#E5E7EB" />
+                    </Pressable>
+                  </View>
+                </BlurView>
+              );
+            }
+            
+            return (
+              <View key={index} style={styles.rebtCard}>
+                {/* XP Badge */}
+                <View style={styles.xpBadge}>
+                  <Ionicons name="flash-outline" size={12} color="#FFFFFF" />
+                  <Text style={styles.xpText}>{getREBTXP(rebt)} XP</Text>
+                </View>
+                
+                <Text style={styles.rebtTitle}>{getLocalizedREBTText(rebt, "title")}</Text>
+                <Text style={styles.rebtDescription}>
+                  {getLocalizedREBTText(rebt, "description")}
+                </Text>
+                <Pressable
+                  style={styles.addButton}
+                  onPress={() => handleAddToTaskList(rebt)}
+                >
+                  <Text style={styles.addButtonText}>{t("rebtScreen.addToTherapyPlan")}</Text>
+                  <Ionicons name="add-circle" size={20} color="#7C3AED" />
+                </Pressable>
               </View>
-              
-              <Text style={styles.rebtTitle}>{getLocalizedREBTText(rebt, "title")}</Text>
-              <Text style={styles.rebtDescription}>
-                {getLocalizedREBTText(rebt, "description")}
-              </Text>
-              <Pressable
-                style={styles.addButton}
-                onPress={() => handleAddToTaskList(rebt)}
-              >
-                <Text style={styles.addButtonText}>{t("rebtScreen.addToTherapyPlan")}</Text>
-                <CustomIcon type="IO" name="add-circle" size={20} color="#7C3AED" />
-              </Pressable>
-            </View>
-          ))}
+            );
+          })}
         </View>
       </ScrollView>
 
@@ -1539,7 +974,7 @@ export default function REBTScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <CustomIcon type="IO"
+                        <Ionicons
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -1553,7 +988,7 @@ export default function REBTScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <CustomIcon type="IO"
+                      <Ionicons
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"
@@ -1812,5 +1247,40 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     color: "#6B7280",
+  },
+  // Blur effect styles
+  blurWrapper: {
+    borderRadius: 12,
+    overflow: "hidden",
+    marginBottom: 16,
+  },
+  blurredCard: {
+    opacity: 0.7,
+  },
+  completelyBlurredCard: {
+    opacity: 0.3,
+    backgroundColor: "#F9FAFB",
+  },
+  blurredXpBadge: {
+    backgroundColor: "#9CA3AF",
+  },
+  blurredText: {
+    color: "#D1D5DB",
+  },
+  disabledButton: {
+    opacity: 0.5,
+    backgroundColor: "#F3F4F6",
+    borderColor: "#E5E7EB",
+  },
+  completelyDisabledButton: {
+    opacity: 0.3,
+    backgroundColor: "#F9FAFB",
+    borderColor: "#E5E7EB",
+  },
+  disabledButtonText: {
+    color: "#9CA3AF",
+  },
+  completelyDisabledText: {
+    color: "#D1D5DB",
   },
 });

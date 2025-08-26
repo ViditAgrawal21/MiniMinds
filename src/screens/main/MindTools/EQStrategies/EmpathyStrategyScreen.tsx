@@ -10,8 +10,9 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import CustomIcon from "../../../../components/CustomIcon";
 
 interface Intervention {
   title: string;
@@ -427,7 +428,8 @@ export default function EmpathyStrategyScreen({ navigation }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <CustomIcon type="IO"
+                        <CustomIcon
+                          type="IO"
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -439,7 +441,8 @@ export default function EmpathyStrategyScreen({ navigation }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <CustomIcon type="IO"
+                      <CustomIcon
+                        type="IO"
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

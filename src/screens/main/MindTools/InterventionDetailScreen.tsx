@@ -8,26 +8,14 @@ import {
   SafeAreaView,
   BackHandler,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
-import { useFocusEffect, useRoute } from "@react-navigation/native";
-import { useNavigation } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RouteProp } from "@react-navigation/native";
-import { t } from "@/i18n/locales/i18n"; // Import the translation function
-import i18n from "@/i18n/locales/i18n"; // Import the i18n instance
-import { RootStackParamList, Intervention } from "@/navigation/types";
+import { Ionicons } from "@expo/vector-icons";
+import { useFocusEffect } from "@react-navigation/native";
+import { t } from "../../i18n/i18n"; // Import the translation function
+import i18n from "../../i18n/i18n"; // Import the i18n instance
 
-type InterventionDetailScreenRouteProp = RouteProp<RootStackParamList, "InterventionDetail">;
-type InterventionDetailScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, "InterventionDetail">;
-
-interface Props {
-  navigation: InterventionDetailScreenNavigationProp | any;
-  route: InterventionDetailScreenRouteProp | any;
-}
-
-export default function InterventionDetailScreen({ navigation, route }: Props) {
+export default function InterventionDetailScreen({ navigation, route }: any) {
   const { intervention, previousScreen, activeTab, sourceScreen } = route.params;
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
   const [forceUpdate, setForceUpdate] = useState(0); // Add force update state
 
   // Handle hardware back button for Android and navigation back button
@@ -59,7 +47,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
 
   // Language change detection with improved triggering (unified with InterventionsScreen)
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
+    const currentLocale = i18n.locale;
     if (currentLanguage !== currentLocale) {
       console.log(
         `[InterventionDetail] Language changed from ${currentLanguage} to ${currentLocale}`,
@@ -72,7 +60,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
+      const currentLocale = i18n.locale;
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
       }
@@ -321,7 +309,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
     intervention: any,
     field: "title" | "subtitle",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? intervention.title : intervention.subtitle;
     
@@ -472,7 +460,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
 
   // Helper function to get localized tag text
   const getLocalizedTag = (tag: string): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     
     // Try to find translation in the common mapping
     const tagTranslation =
@@ -500,7 +488,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
 
   // Helper function to get localized full description
   const getLocalizedDescription = (description: string): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     
     // If intervention has stored description translations, use them
     if (intervention.descriptionTranslations?.[currentLocale]) {
@@ -582,8 +570,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
         sourceScreen: sourceScreen || "MindTools",
       });
     } else if (previousScreen) {
-      // For other screens, use goBack instead of navigate with dynamic string
-      navigation.goBack();
+      navigation.navigate(previousScreen);
     } else {
       navigation.goBack();
     }
@@ -591,7 +578,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
 
   // Helper function to get localized intervention type
   const getLocalizedInterventionType = (type: string): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     
     // Define intervention type translations
     const typeTranslations: Record<
@@ -686,7 +673,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("interventionDetailScreen.title")}
@@ -708,7 +695,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
               },
             ]}
           >
-            <CustomIcon type="IO" name="star" size={14} color="#FFFFFF" />
+            <Ionicons name="star" size={14} color="#FFFFFF" />
             <Text style={styles.xpText}>
               {intervention.xp} {t("interventionDetailScreen.xpLabel")}
             </Text>
@@ -737,7 +724,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
                   },
                 ]}
               >
-                <CustomIcon type="IO"
+                <Ionicons
                   name={
                     getInterventionTypeIcon(
                       intervention.interventionType,
@@ -760,7 +747,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
                 {t("interventionDetailScreen.condition")}
               </Text>
               <View style={styles.conditionBadge}>
-                <CustomIcon type="IO" name="medical-outline" size={16} color="#059669" />
+                <Ionicons name="medical-outline" size={16} color="#059669" />
                 <Text style={styles.conditionText}>
                   {getLocalizedCondition(intervention.condition)}
                 </Text>
@@ -788,7 +775,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
               {t("interventionDetailScreen.dateAdded")}
             </Text>
             <View style={styles.dateContainer}>
-              <CustomIcon type="IO" name="calendar-outline" size={16} color="#6B7280" />
+              <Ionicons name="calendar-outline" size={16} color="#6B7280" />
               <Text style={styles.dateText}>{intervention.date}</Text>
             </View>
           </View>
@@ -798,7 +785,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
         {intervention.fullDescription && (
           <View style={styles.descriptionCard}>
             <View style={styles.descriptionHeader}>
-              <CustomIcon type="IO"
+              <Ionicons
                 name="document-text-outline"
                 size={20}
                 color="#374151"
@@ -830,7 +817,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
                   : styles.pendingBadge,
               ]}
             >
-              <CustomIcon type="IO"
+              <Ionicons
                 name={
                   intervention.isCompleted ? "checkmark-circle" : "time-outline"
                 }
@@ -857,7 +844,7 @@ export default function InterventionDetailScreen({ navigation, route }: Props) {
                 {t("interventionDetailScreen.taskStatus")}
               </Text>
               <View style={styles.selectedBadge}>
-                <CustomIcon type="IO" name="checkmark-circle" size={14} color="#8B5CF6" />
+                <Ionicons name="checkmark-circle" size={14} color="#8B5CF6" />
                 <Text style={styles.selectedText}>
                   {t("interventionDetailScreen.selectedForCompletion")}
                 </Text>

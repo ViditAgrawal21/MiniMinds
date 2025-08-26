@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
-import { t } from "@/i18n/locales/i18n"; // Import the translation function
+import { Ionicons } from "@expo/vector-icons";
+import { t } from "../../i18n/i18n"; // Import the translation function
 
 export default function AddictionsScreen({ navigation }: any) {
   const handleBackPress = () => {
@@ -45,7 +45,7 @@ export default function AddictionsScreen({ navigation }: any) {
     <View style={styles.container}>
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("addictionsScreen.headerTitle")}
@@ -56,7 +56,7 @@ export default function AddictionsScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="ban" size={48} color="#dc2626" />
+              <Ionicons name="ban" size={48} color="#dc2626" />
               <Text style={styles.imageLabel}>
                 {t("addictionsScreen.imageLabel")}
               </Text>
@@ -199,7 +199,7 @@ export default function AddictionsScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
+              <Ionicons name="warning" size={16} color="#f59e0b" />
             </View>
             <Text style={styles.alertTitle}>
               {t("addictionsScreen.alertTitle")}

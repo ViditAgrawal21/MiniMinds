@@ -6,8 +6,8 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
-      "@Components/*": ["src/components/*"]
+      "@Components/*": ["src/components/*"],
+      "@/*": ["src/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],

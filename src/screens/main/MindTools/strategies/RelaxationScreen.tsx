@@ -10,10 +10,10 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t } from "@/i18n/locales/i18n";
-import { getCurrentLanguage, getShortLanguageCode, getLanguageForAPI, changeLanguage } from "@/utils/i18nHelpers";
+import { t } from "../../../i18n/i18n";
+import i18n from "../../../i18n/i18n";
 
 interface RelaxationIntervention {
   // Format from translation files (relaxationInterventions section)
@@ -81,13 +81,13 @@ export default function RelaxationScreen({ navigation, route }: any) {
   const [selectedRelaxation, setSelectedRelaxation] =
     useState<RelaxationIntervention | null>(null);
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
   
   const { condition } = route.params || {};
 
   // Language change detection with improved triggering (unified with InterventionsScreen)
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
+    const currentLocale = i18n.locale;
     if (currentLanguage !== currentLocale) {
       console.log(
         `Language changed from ${currentLanguage} to ${currentLocale}`,
@@ -100,7 +100,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
+      const currentLocale = i18n.locale;
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
         setConditionName(getConditionDisplayName(condition));
@@ -248,19 +248,67 @@ export default function RelaxationScreen({ navigation, route }: any) {
       mr: "सजग जागरूकतेचा सराव करा",
     },
     
-    // DISABLED: Single-word translations that were causing title truncation issues
-    // These were converting proper titles like "Yoga" to "yoga", "Exercise" to "exercise", etc.
-    // The case-insensitive matching was problematic for ADHD data and other sources
-    // that use proper capitalization in their titles.
-    //
-    // If single-word translations are needed in the future, they should:
-    // 1. Preserve original capitalization when no translation is needed
-    // 2. Only apply when the exact context requires translation
-    // 3. Be more selective about which words need translation
-    //
-    // Commented out problematic translations:
-    // meditation, breathing, relaxation, mindfulness, yoga, pranayama, asana,
-    // visualization, therapy, technique, practice, exercise
+    // Common relaxation terms
+    meditation: {
+      en: "meditation",
+      hi: "ध्यान",
+      mr: "ध्यान",
+    },
+    breathing: {
+      en: "breathing",
+      hi: "श्वास",
+      mr: "श्वास",
+    },
+    relaxation: {
+      en: "relaxation",
+      hi: "आराम",
+      mr: "विश्रांती",
+    },
+    mindfulness: {
+      en: "mindfulness",
+      hi: "सचेतना",
+      mr: "सचेतता",
+    },
+    yoga: {
+      en: "yoga",
+      hi: "योग",
+      mr: "योग",
+    },
+    pranayama: {
+      en: "pranayama",
+      hi: "प्राणायाम",
+      mr: "प्राणायाम",
+    },
+    asana: {
+      en: "asana",
+      hi: "आसन",
+      mr: "आसन",
+    },
+    visualization: {
+      en: "visualization",
+      hi: "दृश्यीकरण",
+      mr: "दृश्यीकरण",
+    },
+    therapy: {
+      en: "therapy",
+      hi: "चिकित्सा",
+      mr: "चिकित्सा",
+    },
+    technique: {
+      en: "technique",
+      hi: "तकनीक",
+      mr: "तंत्र",
+    },
+    practice: {
+      en: "practice",
+      hi: "अभ्यास",
+      mr: "सराव",
+    },
+    exercise: {
+      en: "exercise",
+      hi: "व्यायाम",
+      mr: "व्यायाम",
+    },
   };
 
   const showModal = () => {
@@ -293,8 +341,6 @@ export default function RelaxationScreen({ navigation, route }: any) {
       "common-psychological-issues":
         "scanIntro.commonPsychologicalIssues.title",
       "family-relationship": "scanIntro.familyAndRelationship.title",
-      "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
-      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       "internet-dependence": "scanIntro.internetDependence.title",
       "environment-issues":
         "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
@@ -305,37 +351,8 @@ export default function RelaxationScreen({ navigation, route }: any) {
       sleep: "scanIntro.sleep.title",
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
-      adhd: "adhdScreen.headerTitle",
-      "aggressive-behaviour": "aggressiveBehaviourScreen.english.headerTitle",
-      "conduct-issues": "conductIssues.headerTitle",
-      "eating-habits": "eatingHabitsScreen.headerTitle",
-      "introvert-child": "introvertChildScreen.headerTitle",
-      "self-care-hygiene": "selfCareHygieneScreen.headerTitle",
-      "substance-addiction": "substanceAddictionScreen.headerTitle",
-      "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
-      "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
-      "breakupAndRebound": "breakupAndReboundScreen.title",
-      "dark-web-onlyfans": "Dark Web and OnlyFans",
-      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
-      "internet-addiction": "Internet Addiction",
-      "porn-addiction": "Porn Addiction",
     };
     const translationKey = conditionKeyMap[condition];
-    
-    // Return hardcoded strings directly without translation for new conditions
-    if (condition === "dark-web-onlyfans") {
-      return "Dark Web and OnlyFans";
-    }
-    if (condition === "gambling-and-gaming-addiction") {
-      return "Gambling and Gaming Addiction";
-    }
-    if (condition === "internet-addiction") {
-      return "Internet Addiction";
-    }
-    if (condition === "porn-addiction") {
-      return "Porn Addiction";
-    }
-    
     return translationKey ? t(translationKey) : condition;
   };
 
@@ -350,8 +367,6 @@ export default function RelaxationScreen({ navigation, route }: any) {
       "suicidal-behavior": "suicidalBehavior",
       "common-psychological-issues": "commonPsychologicalIssues",
       "family-relationship": "familyRelationship",
-      "friendship-and-relationship": "friendshipAndRelationship",
-      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
       "internet-dependence": "internetDependence",
       "environment-issues": "environmentIssues",
       "financial-mental-health": "financialMentalHealth",
@@ -361,566 +376,12 @@ export default function RelaxationScreen({ navigation, route }: any) {
       sleep: "sleep",
       "social-mental-health": "socialMentalHealth",
       "youngster-issues": "youngsterIssues",
-      adhd: "adhd",
-      "aggressive-behaviour": "aggressiveBehaviour",
-      "conduct-issues": "conductIssues",
-      "eating-habits": "eatingHabits",
-      "introvert-child": "introvertChild",
-      "self-care-hygiene": "selfCareHygiene",
-      "substance-addiction": "substanceAddiction",
-      "breakupAndRebound": "breakupAndRebound",
-      "trauma-loss-and-dreams": "traumaLossAndDreams",
-      "unrealistic-beauty-standards": "unrealisticBeautyStandards",
-      "dark-web-onlyfans": "darkWebAndOnlyFans",
-      "gambling-and-gaming-addiction": "gamblingAndGamingAddiction",
-      "internet-addiction": "internetAddiction",
-      "porn-addiction": "pornAddiction",
     };
     
     const translationKey = conditionKeyMap[condition];
-    
-    // Special handling for comprehensive data files (can proceed without translation key)
-    if (condition === "friendship-and-relationship" || condition === "self-esteem-and-self-identity" || condition === "self-care-hygiene" || condition === "eating-habits" || condition === "introvert-child" || condition === "conduct-issues" || condition === "adhd" || condition === "aggressive-behaviour" || condition === "substance-addiction" || condition === "breakupAndRebound" || condition === "trauma-loss-and-dreams" || condition === "unrealistic-beauty-standards" || condition === "dark-web-onlyfans" || condition === "gambling-and-gaming-addiction" || condition === "internet-addiction" || condition === "porn-addiction") {
-      // Continue to special handling sections below
-    } else if (!translationKey) {
+    if (!translationKey) {
       console.error(`No translation key found for condition: ${condition}`);
       return null;
-    }
-    
-    // Special handling for Friendship and Relationship interventions
-    if (condition === "friendship-and-relationship") {
-      try {
-        const friendshipData = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
-        if (friendshipData?.translations) {
-          const currentLanguage = getCurrentLanguage();
-          const languageData = friendshipData.translations[currentLanguage];
-          
-          if (languageData?.relaxation) {
-            const interventions = languageData.relaxation.map((item: any) => ({
-              title: item.title || "Untitled",
-              description: item.description || "No description",
-              xp: item.xp || 5,
-            }));
-
-            return {
-              condition: "friendship-and-relationship",
-              intervention_type: "Relaxation",
-              interventions: interventions,
-            };
-          }
-        }
-      } catch (error) {
-        console.error("Error loading Friendship and Relationship relaxation data:", error);
-      }
-    }
-    
-    // Special handling for Self-esteem and Self-identity interventions
-    if (condition === "self-esteem-and-self-identity") {
-      try {
-        const selfEsteemData = require("../../../../assets/data/Emotion/self_esteem_self_identity_interventions.json");
-        if (selfEsteemData?.interventions) {
-          const currentLanguage = getCurrentLanguage();
-          
-          // Filter interventions by category "Relaxation"
-          const relaxationInterventions = selfEsteemData.interventions
-            .filter((item: any) => item.category === "Relaxation")
-            .map((item: any) => ({
-              title: item.translations[currentLanguage]?.title || item.translations.en?.title || "Untitled",
-              description: item.translations[currentLanguage]?.description || item.translations.en?.description || "No description",
-              xp: item.xp || 5,
-            }));
-
-          return {
-            condition: "self-esteem-and-self-identity",
-            intervention_type: "Relaxation",
-            interventions: relaxationInterventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Self-esteem and Self-identity relaxation data:", error);
-      }
-    }
-    
-    // Special handling for Self-Care Hygiene comprehensive data
-    if (condition === "self-care-hygiene") {
-      try {
-        const selfCareHygieneData = require("../../../../assets/data/behaviour/SelfCareHygiene_comprehensive_data.json");
-        if (selfCareHygieneData?.interventions?.relaxation?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi",
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          const selfCareRelaxationCards = selfCareHygieneData.interventions.relaxation.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.english || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: translationKey || "self-care-hygiene",
-            intervention_type: "Relaxation", 
-            interventions: selfCareRelaxationCards,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Self-Care Hygiene comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Conduct Issues comprehensive data
-    if (condition === "conduct-issues") {
-      try {
-        const conductData = require("../../../../assets/data/behaviour/ConductIssues_Complete_comprehensive_data.json");
-        if (conductData?.interventions?.relaxation?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi",
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          const conductRelaxationCards = conductData.interventions.relaxation.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.english || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: translationKey,
-            intervention_type: "Relaxation", 
-            interventions: conductRelaxationCards,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Conduct Issues comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for ADHD comprehensive data
-    if (condition === "adhd") {
-      try {
-        const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
-        if (adhdData?.interventions?.relaxation?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi",
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          const adhdRelaxationCards = adhdData.interventions.relaxation.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.english || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: translationKey,
-            intervention_type: "Relaxation", 
-            interventions: adhdRelaxationCards,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading ADHD comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Aggressive Behaviour comprehensive data
-    if (condition === "aggressive-behaviour") {
-      try {
-        const aggressiveData = require("../../../../assets/data/behaviour/AggressiveBehaviour_comprehensive_data.json");
-        if (aggressiveData?.interventions?.relaxation?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi",
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          const aggressiveRelaxationCards = aggressiveData.interventions.relaxation.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.english || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: translationKey,
-            intervention_type: "Relaxation", 
-            interventions: aggressiveRelaxationCards,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Aggressive Behaviour comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Eating Habits - use the comprehensive data file
-    if (condition === "eating-habits") {
-      try {
-        const eatingHabitsData = require("../../../../assets/data/behaviour/EatingHabits_comprehensive_data.json");
-        if (eatingHabitsData && eatingHabitsData.interventions && eatingHabitsData.interventions.relaxation) {
-          const { cards } = eatingHabitsData.interventions.relaxation;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Eating Habits data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: translationKey || "eating-habits",
-            intervention_type: "Relaxation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Eating Habits comprehensive relaxation data:", error);
-      }
-    }
-    
-    // Special handling for Introvert Child comprehensive data
-    if (condition === "introvert-child") {
-      try {
-        const introvertChildData = require("../../../../assets/data/behaviour/IntrovertChild_comprehensive_data.json");
-        if (introvertChildData?.interventions?.relaxation?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi",
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          const introvertChildRelaxationCards = introvertChildData.interventions.relaxation.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.english || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: translationKey || "introvert-child",
-            intervention_type: "Relaxation", 
-            interventions: introvertChildRelaxationCards,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Introvert Child comprehensive data:", error);
-      }
-    }
-
-    // Special handling for Substance Addiction comprehensive data
-    if (condition === "substance-addiction") {
-      try {
-        const substanceAddictionData = require("../../../../assets/data/behaviour/SubstanceAddiction_comprehensive_data.json");
-        if (substanceAddictionData?.relaxation) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi",
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          const substanceAddictionRelaxationCards = substanceAddictionData.relaxation.map((item: any) => ({
-            title: item.title?.[dataLanguage] || item.title?.english || "Untitled",
-            description: item.description?.[dataLanguage] || item.description?.english || "No description",
-            xp: item.xp || 0,
-          }));
-          
-          return {
-            condition: translationKey || "substance-addiction",
-            intervention_type: "Relaxation", 
-            interventions: substanceAddictionRelaxationCards,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Substance Addiction comprehensive data:", error);
-      }
-    }
-
-    // Special handling for Breakup and Rebound comprehensive data
-    if (condition === "breakupAndRebound") {
-      try {
-        const breakupReboundData = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
-        if (breakupReboundData?.relaxationTechniques?.techniques) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi", 
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          const breakupReboundRelaxationCards = breakupReboundData.relaxationTechniques.techniques.map((item: any) => ({
-            title: item.title?.[dataLanguage] || item.title?.english || "Untitled",
-            description: item.description?.[dataLanguage] || item.description?.english || "No description",
-            xp: item.xp || 0,
-          }));
-          
-          return {
-            condition: translationKey || "breakupAndRebound",
-            intervention_type: "Relaxation",
-            interventions: breakupReboundRelaxationCards,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Breakup and Rebound comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Trauma, Loss and Dreams - create appropriate relaxation techniques
-    if (condition === "trauma-loss-and-dreams") {
-      try {
-        const currentLanguage = getCurrentLanguage();
-        const languageMap: { [key: string]: string } = {
-          en: "english",
-          hi: "hindi", 
-          mr: "marathi",
-        };
-        const dataLanguage = languageMap[currentLanguage] || "english";
-        
-        // Create relaxation techniques specifically for trauma, loss and dreams
-        const traumaRelaxationTechniques = [
-          {
-            title: {
-              english: "Progressive Muscle Relaxation for Trauma",
-              hindi: "आघात के लिए प्रगतिशील मांसपेशी शिथिलीकरण",
-              marathi: "आघातासाठी प्रगतीशील स्नायू शिथिलीकरण"
-            },
-            description: {
-              english: "A gentle body-based relaxation technique that helps release trauma-related tension stored in muscles, promoting safety and grounding.",
-              hindi: "एक कोमल शरीर-आधारित शिथिलीकरण तकनीक जो मांसपेशियों में संग्रहीत आघात-संबंधी तनाव को मुक्त करने में मदद करती है, सुरक्षा और ग्राउंडिंग को बढ़ावा देती है।",
-              marathi: "एक सौम्य शरीर-आधारित शिथिलीकरण तंत्र जे स्नायूंमध्ये साठवलेल्या आघात-संबंधित तणावाला मुक्त करण्यास मदत करते, सुरक्षा आणि ग्राउंडिंगला प्रोत्साहन देते."
-            },
-            xp: 4
-          },
-          {
-            title: {
-              english: "Safe Place Visualization",
-              hindi: "सुरक्षित स्थान दृश्यकरण",
-              marathi: "सुरक्षित स्थान दृश्यीकरण"
-            },
-            description: {
-              english: "A calming visualization exercise that creates an internal safe space, helping manage anxiety and provide comfort during difficult emotions.",
-              hindi: "एक शांत करने वाला दृश्यकरण अभ्यास जो एक आंतरिक सुरक्षित स्थान बनाता है, चिंता का प्रबंधन करने और कठिन भावनाओं के दौरान आराम प्रदान करने में मदत करता है।",
-              marathi: "एक शांत करणारा दृश्यीकरण अभ्यास जो अंतर्गत सुरक्षित जागा निर्माण करतो, चिंता व्यवस्थापित करण्यास आणि कठीण भावनांदरम्यान आराम प्रदान करण्यास मदत करतो."
-            },
-            xp: 3
-          },
-          {
-            title: {
-              english: "Grief and Loss Breathing Space",
-              hindi: "दुःख और हानि सांस स्थान",
-              marathi: "दुःख आणि नुकसान श्वसन जागा"
-            },
-            description: {
-              english: "A mindful breathing practice specifically designed to create space for grief, allowing natural healing while maintaining emotional stability.",
-              hindi: "दुःख के लिए स्थान बनाने के लिए विशेष रूप से डिज़ाइन किया गया एक सचेत सांस अभ्यास, भावनात्मक स्थिरता बनाए रखते हुए प्राकृतिक उपचार की अनुमति देता है।",
-              marathi: "दुःखासाठी जागा निर्माण करण्यासाठी खासून डिझाइन केलेली जागरूक श्वसन पद्धती, भावनिक स्थिरता राखून नैसर्गिक उपचाराला अनुमती देते."
-            },
-            xp: 3
-          },
-          {
-            title: {
-              english: "Body Scan for Trauma Recovery",
-              hindi: "आघात वसूली के लिए शरीर स्कैन",
-              marathi: "आघात पुनर्प्राप्तीसाठी शरीर स्कॅन"
-            },
-            description: {
-              english: "A gentle body awareness practice that helps reconnect with physical sensations safely, rebuilding trust and comfort in your body.",
-              hindi: "एक कोमल शरीर जागरूकता अभ्यास जो शारीरिक संवेदनाओं के साथ सुरक्षित रूप से पुन: जुड़ने में मदद करता है, आपके शरीर में विश्वास और आराम का पुनर्निर्माण करता है।",
-              marathi: "एक सौम्य शारीरिक जागरूकता सराव जो शारीरिक संवेदनांशी सुरक्षितपणे पुन्हा जोडण्यास मदत करतो, तुमच्या शरीरात विश्वास आणि आराम पुनर्निर्माण करतो."
-            },
-            xp: 4
-          },
-          {
-            title: {
-              english: "Dream Integration Relaxation",
-              hindi: "स्वप्न एकीकरण शिथिलीकरण",
-              marathi: "स्वप्न एकीकरण शिथिलीकरण"
-            },
-            description: {
-              english: "A relaxation technique designed to process and integrate dream content, transforming nightmares into healing imagery and peaceful sleep.",
-              hindi: "स्वप्न सामग्री को संसाधित और एकीकृत करने के लिए डिज़ाइन की गई एक शिथिलीकरण तकनीक, दुःस्वप्न को उपचार छवियों और शांतिपूर्ण नींद में बदलती है।",
-              marathi: "स्वप्न सामग्री प्रक्रिया करून एकत्रित करण्यासाठी डिझाइन केलेले शिथिलीकरण तंत्र, दुःस्वप्नांना उपचारात्मक प्रतिमा आणि शांत झोपेत रूपांतरित करते."
-            },
-            xp: 5
-          }
-        ];
-        
-        const traumaRelaxationCards = traumaRelaxationTechniques.map((item: any) => ({
-          title: item.title?.[dataLanguage] || item.title?.english || "Untitled",
-          description: item.description?.[dataLanguage] || item.description?.english || "No description",
-          xp: item.xp || 0,
-        }));
-        
-        return {
-          condition: translationKey || "trauma-loss-and-dreams",
-          intervention_type: "Relaxation",
-          interventions: traumaRelaxationCards,
-        };
-      } catch (error) {
-        console.error("Error creating Trauma, Loss and Dreams relaxation data:", error);
-      }
-    }
-    
-    // Special handling for Unrealistic Beauty Standards - use our consolidated JSON file
-    if (condition === "unrealistic-beauty-standards") {
-      try {
-        const beautyStandardsData = require("../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json");
-        if (beautyStandardsData && beautyStandardsData.relaxationTechniques) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the beauty standards relaxation data format to the expected format
-          const interventions = beautyStandardsData.relaxationTechniques.techniques.map((item: any) => ({
-            title: item.title[currentLang],
-            description: item.description[currentLang],
-            xp: item.xp,
-          }));
-
-          return {
-            condition: "unrealistic-beauty-standards",
-            intervention_type: "Relaxation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Unrealistic Beauty Standards relaxation data:", error);
-      }
-    }
-    
-    // Special handling for Gambling and Gaming Addiction - use the comprehensive data file
-    if (condition === "gambling-and-gaming-addiction") {
-      try {
-        const gamblingData = null // require commented due to space in path;
-        if (gamblingData && gamblingData.interventions && gamblingData.interventions.relaxation) {
-          const { cards } = gamblingData.interventions.relaxation;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Gambling and Gaming Addiction data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "gambling-and-gaming-addiction",
-            intervention_type: "Relaxation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Gambling and Gaming Addiction relaxation data:", error);
-      }
-    }
-    
-    // Special handling for Internet Addiction - use the comprehensive data file
-    if (condition === "internet-addiction") {
-      try {
-        const internetData = null // require commented due to space in path;
-        if (internetData?.relaxation?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "en",
-            hi: "hi",
-            mr: "mr",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "en";
-          
-          const interventions = internetData.relaxation.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.en || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.en || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: "internet-addiction",
-            intervention_type: "Relaxation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Internet Addiction relaxation data:", error);
-      }
-    }
-    
-    // Special handling for Porn Addiction - use the comprehensive data file
-    if (condition === "porn-addiction") {
-      try {
-        const pornData = null // require commented due to space in path;
-        if (pornData?.relaxation?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "en",
-            hi: "hi",
-            mr: "mr",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "en";
-          
-          const interventions = pornData.relaxation.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.en || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.en || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: "porn-addiction",
-            intervention_type: "Relaxation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Porn Addiction relaxation data:", error);
-      }
-    }
-    
-    // Special handling for Dark Web and OnlyFans comprehensive data
-    if (condition === "dark-web-onlyfans") {
-      try {
-        const darkWebData = null // require commented due to space in path;
-        if (darkWebOnlyFansData?.interventions?.relaxation?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "english",
-            hi: "hindi",
-            mr: "marathi",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "english";
-          
-          const darkWebRelaxationCards = darkWebOnlyFansData.interventions.relaxation.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.english || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.english || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: translationKey || "dark-web-onlyfans",
-            intervention_type: "Relaxation", 
-            interventions: darkWebRelaxationCards,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Dark Web and OnlyFans comprehensive data:", error);
-      }
     }
     
     // Get the interventions from the translation file
@@ -1066,18 +527,6 @@ export default function RelaxationScreen({ navigation, route }: any) {
         stress: "stress",
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
-        "friendship-and-relationship": "friendshipAndRelationship",
-        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
-        adhd: "adhd",
-        "aggressive-behaviour": "aggressiveBehaviour",
-        "conduct-issues": "conductIssues",
-        "eating-habits": "eatingHabits",
-        "introvert-child": "introvertChild",
-        "self-care-hygiene": "selfCareHygiene",
-        "substance-addiction": "substanceAddiction",
-        "trauma-loss-and-dreams": "traumaLossAndDreams",
-        "unrealistic-beauty-standards": "unrealisticBeautyStandards",
-        "breakupAndRebound": "breakupAndRebound",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -1100,18 +549,6 @@ export default function RelaxationScreen({ navigation, route }: any) {
         sleep: "scanIntro.sleep.title",
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
-        "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
-        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
-        adhd: "adhdScreen.headerTitle",
-        "aggressive-behaviour": "aggressiveBehaviourScreen.english.headerTitle",
-        "conduct-issues": "conductIssues.headerTitle",
-        "eating-habits": "eatingHabitsScreen.headerTitle",
-        "introvert-child": "introvertChildScreen.headerTitle",
-        "self-care-hygiene": "selfCareHygieneScreen.headerTitle",
-        "substance-addiction": "substanceAddictionScreen.headerTitle",
-        "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
-        "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
-        "breakupAndRebound": "breakupAndReboundScreen.title",
       };
 
       const translationKey = translationKeyMap[condition];
@@ -1134,10 +571,10 @@ export default function RelaxationScreen({ navigation, route }: any) {
         if (originalTitleKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedTitle = t(originalTitleKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedTitle !== originalTitleKey
               ? translatedTitle
               : getRelaxationTitle(selectedRelaxation);
@@ -1161,10 +598,10 @@ export default function RelaxationScreen({ navigation, route }: any) {
         if (conditionDisplayKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedCondition = t(conditionDisplayKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedCondition !== conditionDisplayKey
               ? translatedCondition
               : conditionName;
@@ -1192,10 +629,10 @@ export default function RelaxationScreen({ navigation, route }: any) {
         if (originalDescriptionKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedDescription = t(originalDescriptionKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedDescription !== originalDescriptionKey
               ? translatedDescription
               : getRelaxationDescription(selectedRelaxation);
@@ -1293,40 +730,13 @@ export default function RelaxationScreen({ navigation, route }: any) {
     relaxation: RelaxationIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     const originalText =
       field === "title"
         ? getRelaxationTitle(relaxation)
         : getRelaxationDescription(relaxation);
     
-    // If we have pre-translated content from comprehensive data files (Card Title/Card Description),
-    // return it directly without applying additional translation logic
-    if (relaxation["Card Title"] || relaxation["Card Description"]) {
-      return field === "description" ? formatDescription(originalText) : originalText;
-    }
-    
-    // Skip dynamic translation attempts for conditions that use comprehensive JSON data files
-    const comprehensiveDataConditions = [
-      "friendship-and-relationship",
-      "self-esteem-and-self-identity", 
-      "self-care-hygiene",
-      "eating-habits",
-      "introvert-child",
-      "conduct-issues",
-      "adhd",
-      "aggressive-behaviour",
-      "substance-addiction",
-      "breakupAndRebound",
-      "trauma-loss-and-dreams",
-      "unrealistic-beauty-standards"
-    ];
-    
-    // For comprehensive data conditions, return the original text directly (it's already translated)
-    if (comprehensiveDataConditions.includes(condition)) {
-      return field === "description" ? formatDescription(originalText) : originalText;
-    }
-    
-    // Only try dynamic translation for conditions that have translation keys
+    // First, try dynamic translation if we have stored keys (for saved interventions that have this data)
     const relaxationIndex = relaxationInterventions.findIndex(
       (r) => r === relaxation,
     );
@@ -1396,17 +806,36 @@ export default function RelaxationScreen({ navigation, route }: any) {
         : translated;
     }
     
-    // DISABLED: Partial matching and word translation to prevent title/description truncation
-    // These features were causing issues where:
-    // - "Progressive Muscle Relaxation" was truncated to just "relaxation"
-    // - "Breathing Exercise" was truncated to just "exercise"
-    // - "Meditation Practice" was truncated to just "meditation" or "practice"
-    // - Descriptions were being cut down to single words
-    // 
-    // If partial matching is needed in the future, it should be implemented with:
-    // 1. Exact phrase matching only (not word-within-phrase)
-    // 2. Whitelist of specific phrases that are safe to translate
-    // 3. More sophisticated logic to avoid truncation
+    // For partial matching, be conservative - only match if the text contains common terms
+    for (const [key, translation] of Object.entries(relaxationTranslations)) {
+      if (
+        originalText.toLowerCase().includes(key.toLowerCase()) &&
+        key.length > 5
+      ) {
+        console.log(
+          `Partial match found for "${originalText}" with key "${key}"`,
+        );
+        const translated = translation[currentLocale] || originalText;
+        return field === "description"
+          ? formatDescription(translated)
+          : translated;
+      }
+    }
+    
+    // Simplified word translation - only for single words that are common terms
+    const trimmedText = originalText.trim();
+    if (!trimmedText.includes(" ") && trimmedText.length > 3) {
+      const wordTranslation =
+        relaxationTranslations[
+          trimmedText.toLowerCase() as keyof typeof relaxationTranslations
+        ];
+      if (wordTranslation) {
+        const translated = wordTranslation[currentLocale] || originalText;
+        return field === "description"
+          ? formatDescription(translated)
+          : translated;
+      }
+    }
     
     // Finally, fall back to original text (apply formatting for descriptions)
     return field === "description"
@@ -1428,7 +857,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("relaxationScreen.header.title")}
@@ -1446,7 +875,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
             <View key={index} style={styles.relaxationCard}>
               {/* XP Badge */}
               <View style={styles.xpBadge}>
-                <CustomIcon type="IO" name="leaf-outline" size={12} color="#FFFFFF" />
+                <Ionicons name="leaf-outline" size={12} color="#FFFFFF" />
                 <Text style={styles.xpText}>{relaxation.xp} XP</Text>
               </View>
               
@@ -1463,7 +892,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                 <Text style={styles.addButtonText}>
                   {t("relaxationScreen.addToRoutine")}
                 </Text>
-                <CustomIcon type="IO" name="add-circle" size={20} color="#6366F1" />
+                <Ionicons name="add-circle" size={20} color="#6366F1" />
               </Pressable>
             </View>
           ))}
@@ -1566,7 +995,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <CustomIcon type="IO"
+                        <Ionicons
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -1580,7 +1009,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <CustomIcon type="IO"
+                      <Ionicons
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

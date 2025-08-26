@@ -1,5 +1,14 @@
 export type RootStackParamList = {
+  // Authentication and onboarding flow
+  Splash: undefined;
+  Login: undefined;
+  LanguageSelect: undefined;
+  SelfOnboarding: undefined;
+  SelfThankYou: undefined;
+  HomeTab: undefined;
+  
   // Main navigation
+  MainApp: { screen?: string } | undefined;
   Tab: { initialTab?: string; screen?: string } | undefined;
   MindTools: undefined;
   

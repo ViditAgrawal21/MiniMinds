@@ -140,7 +140,7 @@ export default function ProfilePage() {
 
     // If not 100%, handle navigation
     if (onboardingType === "self") {
-      navigation.navigate("Self1" as never);
+      navigation.navigate("SelfOnboarding" as never);
     } else if (onboardingType === "child") {
       navigation.navigate("Child1" as never);
     } else {

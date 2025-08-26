@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import { View, StyleSheet, ScrollView, Dimensions } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
-import { saveData, getData } from "@/utils/storageUtils";
-import { t } from "@/i18n/locales/i18n"; // Import translation function
-import PrimaryButton from "@/components/common/PrimaryButton";
-import SecondaryButton from "@/components/common/SecondaryButton";
-import TitleText from "@/components/common/TitleText";
-import LabelText from "@/components/common/LabelText";
-import InputField from "@/components/common/InputField";
-import DatePicker from "@/components/common/DatePicker";
-import RadioButtonGroup from "@/components/common/RadioButtonGroup";
+import { saveData, getData } from "../../../utils/storageUtils";
+import { t } from "../../../i18n/locales/i18n"; // Import translation function
+import PrimaryButton from "../../../components/common/PrimaryButton";
+import SecondaryButton from "../../../components/common/SecondaryButton";
+import TitleText from "../../../components/common/TitleText";
+import LabelText from "../../../components/common/LabelText";
+import InputField from "../../../components/common/InputField";
+import DatePicker from "../../../components/common/DatePicker";
+import RadioButtonGroup from "../../../components/common/RadioButtonGroup";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const { height: screenHeight } = Dimensions.get("window");

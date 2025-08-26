@@ -10,10 +10,10 @@ import {
   TextInput,
   StatusBar,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "@/i18n/locales/i18n";
+import { t } from "@/app/i18n/i18n";
 
 interface Condition {
   id: string;
@@ -252,7 +252,7 @@ export default function JournalHistoryScreen({ navigation }: any) {
         <StatusBar barStyle="dark-content" />
         <View style={styles.header}>
           <Pressable style={styles.backButton} onPress={handleBackPress}>
-            <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+            <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
           </Pressable>
           <Text style={styles.headerTitle}>{t("journal.history.title")}</Text>
         </View>
@@ -269,14 +269,14 @@ export default function JournalHistoryScreen({ navigation }: any) {
 
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("journal.history.title")}</Text>
         <Pressable
           style={styles.addButton}
           onPress={() => setIsCreateModalVisible(true)}
         >
-          <CustomIcon type="IO" name="add" size={24} color="#8b5cf6" />
+          <Ionicons name="add" size={24} color="#8b5cf6" />
           <Text style={styles.addButtonText}>
             {t("journal.history.newJournal")}
           </Text>
@@ -288,7 +288,7 @@ export default function JournalHistoryScreen({ navigation }: any) {
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         {conditions.length === 0 ? (
           <View style={styles.emptyState}>
-            <CustomIcon type="IO" name="journal-outline" size={64} color="#9ca3af" />
+            <Ionicons name="journal-outline" size={64} color="#9ca3af" />
             <Text style={styles.emptyTitle}>
               {t("journal.history.emptyState.title")}
             </Text>
@@ -335,7 +335,7 @@ export default function JournalHistoryScreen({ navigation }: any) {
                       handleDeleteCondition(condition.id, condition.name)
                     }
                   >
-                    <CustomIcon type="IO" name="trash-outline" size={18} color="#ef4444" />
+                    <Ionicons name="trash-outline" size={18} color="#ef4444" />
                   </Pressable>
 
                   {/* Entries Badge - Middle */}
@@ -349,7 +349,7 @@ export default function JournalHistoryScreen({ navigation }: any) {
 
                   {/* Arrow - Bottom */}
                   <View style={styles.chevronContainer}>
-                    <CustomIcon type="IO"
+                    <Ionicons
                       name="chevron-forward"
                       size={20}
                       color="#9ca3af"
@@ -379,7 +379,7 @@ export default function JournalHistoryScreen({ navigation }: any) {
                 style={styles.closeButton}
                 onPress={() => setIsCreateModalVisible(false)}
               >
-                <CustomIcon type="IO" name="close" size={24} color="#6b7280" />
+                <Ionicons name="close" size={24} color="#6b7280" />
               </Pressable>
             </View>
 

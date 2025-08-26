@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
-import { t } from "@/i18n/locales/i18n";
+import { Ionicons } from "@expo/vector-icons";
+import { t } from "../../i18n/i18n";
 
 export default function SocialMentalHealthScreen({ navigation }: any) {
   const handleBackPress = () => {
@@ -46,7 +46,7 @@ export default function SocialMentalHealthScreen({ navigation }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("socialMentalHealthScreen.headerTitle")}
@@ -58,7 +58,7 @@ export default function SocialMentalHealthScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="people" size={48} color="#3b82f6" />
+              <Ionicons name="people" size={48} color="#3b82f6" />
               <Text style={styles.imageLabel}>
                 {t("socialMentalHealthScreen.imageLabel")}
               </Text>
@@ -214,7 +214,7 @@ export default function SocialMentalHealthScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <CustomIcon type="IO" name="warning" size={16} color="#3b82f6" />
+              <Ionicons name="warning" size={16} color="#3b82f6" />
             </View>
             <Text style={styles.alertTitle}>
               {t("socialMentalHealthScreen.alertTitle")}

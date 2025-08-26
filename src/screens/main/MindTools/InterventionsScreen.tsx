@@ -15,25 +15,15 @@ import {
   Alert,
   Animated,
   BackHandler,
+  TextInput,
+  Modal,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useFocusEffect, useRoute } from "@react-navigation/native";
-import { useNavigation } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RouteProp } from "@react-navigation/native";
-import { t } from "@/i18n/locales/i18n"; // Import the translation function
-import i18n from "@/i18n/locales/i18n"; // Import the i18n instance
-import { RootStackParamList, Intervention as NavIntervention } from "@/navigation/types";
-import { getCurrentLanguage } from "@/i18n/locales";
-
-type InterventionsScreenRouteProp = RouteProp<RootStackParamList, "InterventionsScreen">;
-type InterventionsScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, "InterventionsScreen">;
-
-interface Props {
-  navigation: InterventionsScreenNavigationProp | any;
-  route: InterventionsScreenRouteProp | any;
-}
+import { useFocusEffect } from "@react-navigation/native";
+import { t } from "../../i18n/i18n"; // Import the translation function
+import i18n from "../../i18n/i18n"; // Import the i18n instance
+import { incrementWellnessScore } from "@/utils/wellnessScore";
 
 const { width } = Dimensions.get("window");
 
@@ -73,6 +63,12 @@ interface Intervention {
   fullDescription?: string;
   condition?: string;
   interventionType?: string;
+  isCustom?: boolean;
+  conditionName?: string;
+  customMeta?: {
+    createdAt: string;
+    locale: string;
+  };
 }
 
 // ConditionsManagement types
@@ -111,8 +107,8 @@ const mapTagsToConditionName = (tags: string[]): string | null => {
     stress: "Stress",
     addictions: "Addictions",
     sleep: "Sleep",
-    "self-care hygiene": "self-care hygiene", // Exact match from data
-    "selfcare hygiene": "self-care hygiene", // Alternative spelling
+    "suicidal behavior": "suicidal behavior", // Exact match from data
+    "suicidal behaviour": "suicidal behavior", // Alternative spelling
     "sex life": "Sex Life",
     "family and relaitonship": "Family and Relaitonship", // Exact match from data (note typo)
     "family relationship": "Family and Relaitonship", // Alternative mapping
@@ -161,39 +157,34 @@ const mapTagsToConditionName = (tags: string[]): string | null => {
       .replace(/[-_&]/g, " ") // Replace hyphens, underscores, and ampersands with spaces
       .replace(/\s+/g, " ") // Replace multiple spaces with single space
       .trim();
-    
-    if (tagToConditionMap[normalizedTag]) {
-      return tagToConditionMap[normalizedTag];
-    }
-  }
+    // Create a Title Case version for direct comparisons
+    const titleCaseTag = normalizedTag
+      .split(" ")
+      .filter(Boolean)
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
 
-  // Check for exact condition name matches (case-insensitive)
-  for (const tag of tags) {
-    const trimmedTag = tag.trim();
-    // Direct exact matches with the 16 condition names
-    if (trimmedTag === "Addictions") return "Addictions";
-    if (trimmedTag === "Anger Management") return "Anger Management";
-    if (trimmedTag === "Common Psychological Issues")
+    if (titleCaseTag === "Common Psychological Issues")
       return "Common Psychological Issues";
-    if (trimmedTag === "Environment Issues affecting mental wellbeing")
+    if (titleCaseTag === "Environment Issues affecting mental wellbeing")
       return "Environment Issues affecting mental wellbeing";
-    if (trimmedTag === "Family and Relaitonship")
+    if (titleCaseTag === "Family and Relaitonship")
       return "Family and Relaitonship";
-    if (trimmedTag === "Financial Mental Health")
+    if (titleCaseTag === "Financial Mental Health")
       return "Financial Mental Health";
-    if (trimmedTag === "General Physical Fitness")
+    if (titleCaseTag === "General Physical Fitness")
       return "General Physical Fitness";
-    if (trimmedTag === "Internet and Social Media Issue")
+    if (titleCaseTag === "Internet and Social Media Issue")
       return "Internet and Social Media Issue";
-    if (trimmedTag === "Internet Dependence") return "Internet Dependence";
-    if (trimmedTag === "Professional Mental Health")
+    if (titleCaseTag === "Internet Dependence") return "Internet Dependence";
+    if (titleCaseTag === "Professional Mental Health")
       return "Professional Mental Health";
-    if (trimmedTag === "Sex Life") return "Sex Life";
-    if (trimmedTag === "Sleep") return "Sleep";
-    if (trimmedTag === "Social Mental Health") return "Social Mental Health";
-    if (trimmedTag === "Stress") return "Stress";
-    if (trimmedTag === "suicidal behavior") return "suicidal behavior";
-    if (trimmedTag === "Youngster Issues") return "Youngster Issues";
+    if (titleCaseTag === "Sex Life") return "Sex Life";
+    if (titleCaseTag === "Sleep") return "Sleep";
+    if (titleCaseTag === "Social Mental Health") return "Social Mental Health";
+    if (titleCaseTag === "Stress") return "Stress";
+    if (titleCaseTag === "Suicidal behavior" || titleCaseTag === "Suicidal Behavior") return "suicidal behavior";
+    if (titleCaseTag === "Youngster Issues") return "Youngster Issues";
   }
 
   // Then check for partial matches but prioritize more specific ones
@@ -273,7 +264,8 @@ const syncInterventionToConditionsManagement = async (
   intervention: Intervention,
 ): Promise<void> => {
   try {
-    const conditionName = mapTagsToConditionName(intervention.tags);
+  // Prefer explicit conditionName for custom interventions
+  const conditionName = intervention.conditionName || mapTagsToConditionName(intervention.tags);
     if (!conditionName) {
       console.log("No condition mapping found for tags:", intervention.tags);
       return;
@@ -376,16 +368,16 @@ const addToConditionActivityLog = async (
 
     logs.unshift(newLog);
     await AsyncStorage.setItem(activityLogsKey, JSON.stringify(logs));
-    
+
     console.log(`Added to activity log for ${condition.name}:`, newLog.title);
   } catch (error) {
     console.error("Error adding to condition activity log:", error);
   }
 };
 
-export default function InterventionsScreen({ navigation, route }: Props) {
+export default function InterventionsScreen({ navigation, route }: any) {
   const [activeTab, setActiveTab] = useState<Tab>(
-    (route?.params?.activeTab as Tab) || "Daily",
+    route?.params?.activeTab || "Daily",
   );
   const scrollViewRef = useRef<ScrollView>(null);
 
@@ -411,13 +403,28 @@ export default function InterventionsScreen({ navigation, route }: Props) {
   });
 
   const [isLoading, setIsLoading] = useState(true);
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
 
   // XP Popup animation states
   const [showXpPopup, setShowXpPopup] = useState(false);
   const [xpGained, setXpGained] = useState(0);
   const xpPopupScale = useRef(new Animated.Value(0)).current;
   const xpPopupOpacity = useRef(new Animated.Value(0)).current;
+
+  // Add Intervention modal/state
+  const [isAddModalVisible, setIsAddModalVisible] = useState(false);
+  const [existingConditions, setExistingConditions] = useState<string[]>([]);
+  const [selectedCondition, setSelectedCondition] = useState<string | null>(null);
+  const [isCreatingNewCondition, setIsCreatingNewCondition] = useState(false);
+  const [newConditionName, setNewConditionName] = useState("");
+  const [newConditionDescription, setNewConditionDescription] = useState("");
+  const [newTitle, setNewTitle] = useState("");
+  const [newSubtitle, setNewSubtitle] = useState("");
+  const [newDescription, setNewDescription] = useState("");
+  const [newXp, setNewXp] = useState<number | null>(null);
+  const [newFrequency, setNewFrequency] = useState<Tab | null>(null);
+  const [isSaving, setIsSaving] = useState(false);
+  const [showConditionDropdown, setShowConditionDropdown] = useState(false);
 
   // Handle hardware back button for Android and navigation back button
   useFocusEffect(
@@ -449,7 +456,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
 
   // Language change detection with improved triggering
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
+    const currentLocale = i18n.locale;
     if (currentLanguage !== currentLocale) {
       console.log(
         `Language changed from ${currentLanguage} to ${currentLocale}`,
@@ -464,7 +471,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
+      const currentLocale = i18n.locale;
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
       }
@@ -718,9 +725,14 @@ export default function InterventionsScreen({ navigation, route }: Props) {
     intervention: Intervention,
     field: "title" | "subtitle",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? intervention.title : intervention.subtitle;
+
+    // For custom interventions always show the user-entered text unchanged across languages
+    if (intervention.isCustom) {
+      return originalText;
+    }
     
     // First, try dynamic translation using stored translation keys
     if (field === "title" && intervention.originalTitleKey) {
@@ -836,7 +848,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
 
   // Helper function to translate tags
   const getLocalizedTag = (tag: string): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     
     // Handle common suggestion tag
     if (tag === "common-suggestion") {
@@ -852,7 +864,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
       "Stress": "scanIntro.stress.title",
       "Addictions": "scanIntro.addictions.title",
       "General Physical Fitness": "scanIntro.generalPhysicalFitness.title",
-      "Self-care hygiene": "scanIntro.selfCareHygiene.title",
+      "Suicidal Behavior": "scanIntro.suicidalBehaviour.title",
       "Common Psychological Issues": "scanIntro.commonPsychologicalIssues.title",
       "Environment Issues Affecting Mental Wellbeing": "scanIntro.environmentIssues.title",
       "Family And Relaitonship": "scanIntro.familyRelationship.title",
@@ -982,6 +994,80 @@ export default function InterventionsScreen({ navigation, route }: Props) {
   useEffect(() => {
     loadInterventions();
   }, [loadInterventions]);
+
+  const loadConditionsList = useCallback(async () => {
+    try {
+      const stored = await AsyncStorage.getItem("conditions");
+      if (stored) {
+        const parsed: Condition[] = JSON.parse(stored);
+        setExistingConditions(Array.from(new Set(parsed.map(c=>c.name))).sort());
+      } else setExistingConditions([]);
+    } catch(e){
+      console.warn('Failed to load conditions list', e);
+      setExistingConditions([]);
+    }
+  }, []);
+
+  const openAddModal = () => { setIsAddModalVisible(true); loadConditionsList(); };
+  const closeAddModal = () => {
+    setIsAddModalVisible(false);
+    setSelectedCondition(null); setIsCreatingNewCondition(false);
+    setNewConditionName(""); setNewConditionDescription("");
+    setNewTitle(""); setNewSubtitle(""); setNewDescription("");
+    setNewXp(null); setNewFrequency(null); setIsSaving(false); setShowConditionDropdown(false);
+  };
+  const validateModal = () => {
+    if (isSaving) return false;
+    if (isCreatingNewCondition) return !!newConditionName.trim() && !!newTitle.trim() && newXp!==null && newFrequency!==null;
+    return !!selectedCondition && !!newTitle.trim() && newXp!==null && newFrequency!==null;
+  };
+  const getOrCreateCondition = async (name: string): Promise<Condition> => {
+    const stored = await AsyncStorage.getItem("conditions");
+    let conditions: Condition[] = stored? JSON.parse(stored): [];
+    let existing = conditions.find(c=>c.name===name);
+    if (existing) return existing;
+    const newCond: Condition = { id: Date.now().toString(), name, description: newConditionDescription.trim()||`Managing ${name}`, percentage:0, xp:0, color:'#8b5cf6', category:'Automatically Created', date: new Date().toLocaleDateString('en-US',{month:'numeric',day:'numeric',year:'numeric'}), interventions:[] };
+    conditions.push(newCond);
+    await AsyncStorage.setItem('conditions', JSON.stringify(conditions));
+    return newCond;
+  };
+  const handleCreateCustomIntervention = async () => {
+    if(!validateModal()) { Alert.alert(t('interventionsScreen.error'), t('interventionsScreen.modal.validationError')); return; }
+    try {
+      setIsSaving(true);
+      const locale = i18n.locale as 'en'|'hi'|'mr';
+      const conditionDisplay = isCreatingNewCondition ? newConditionName.trim(): (selectedCondition as string);
+      const finalCondition = await getOrCreateCondition(conditionDisplay);
+      const targetTab = newFrequency as Tab;
+      const intervention: Intervention = {
+        id: Date.now().toString(),
+        title: newTitle.trim(),
+        subtitle: newSubtitle.trim(),
+        titleTranslations: { en:'', hi:'', mr:'', [locale]: newTitle.trim() },
+        subtitleTranslations: { en:'', hi:'', mr:'', [locale]: newSubtitle.trim() },
+        descriptionTranslations: { en:'', hi:'', mr:'', [locale]: newDescription.trim() },
+        tags: [conditionDisplay.toLowerCase(), 'custom'],
+        xp: newXp as number,
+        date: new Date().toLocaleDateString('en-US',{month:'numeric',day:'numeric',year:'numeric'}),
+        isSelected:false,
+        isCompleted:false,
+        fullDescription: newDescription.trim(),
+        condition: finalCondition.name,
+        interventionType: determineInterventionType(newTitle, newSubtitle),
+        isCustom:true,
+        conditionName: finalCondition.name,
+        customMeta: { createdAt: new Date().toISOString(), locale }
+      };
+      setInterventions(prev => ({...prev, [targetTab]: [...prev[targetTab], intervention]}));
+      await saveInterventions(targetTab, [...interventions[targetTab], intervention]);
+      Alert.alert(t('interventionsScreen.success'), t('interventionsScreen.interventionCreated'));
+      closeAddModal();
+    } catch(e){
+      console.error('Failed to create custom intervention', e);
+      Alert.alert(t('interventionsScreen.error'), t('interventionsScreen.failedToCreate'));
+      setIsSaving(false);
+    }
+  };
 
   const saveInterventions = async (
     tab: Tab,
@@ -1133,6 +1219,13 @@ export default function InterventionsScreen({ navigation, route }: Props) {
 
       // Sync to ConditionsManagement
       await syncInterventionToConditionsManagement(completedIntervention);
+
+      // Increment wellness score by XP gained (capped at 100)
+      try {
+        await incrementWellnessScore(interventionToComplete.xp);
+      } catch (e) {
+        console.warn('Failed to increment wellness score', e);
+      }
 
       // Show XP gained popup
       showXpGainedPopup(interventionToComplete.xp);
@@ -1338,7 +1431,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
               ]}
             >
               {(intervention.isSelected || isCompleted) && (
-                <CustomIcon type="IO" name="checkmark" size={12} color="#ffffff" />
+                <Ionicons name="checkmark" size={12} color="#ffffff" />
               )}
             </View>
           </View>
@@ -1389,7 +1482,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
                       handleViewIntervention(intervention);
                     }}
                   >
-                    <CustomIcon type="IO" name="eye-outline" size={14} color="#8b5cf6" />
+                    <Ionicons name="eye-outline" size={14} color="#8b5cf6" />
                     <Text style={styles.viewButtonText}>
                       {t("interventionsScreen.view")}
                     </Text>
@@ -1402,7 +1495,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
                         handleJournalPress(intervention);
                       }}
                     >
-                      <CustomIcon type="IO"
+                      <Ionicons
                         name="journal-outline"
                         size={14}
                         color="#10b981"
@@ -1432,7 +1525,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
                     handleDeleteCard(tab, intervention.id);
                   }}
                 >
-                  <CustomIcon type="IO" name="trash-outline" size={18} color="#ef4444" />
+                  <Ionicons name="trash-outline" size={18} color="#ef4444" />
                 </Pressable>
               </View>
             )}
@@ -1467,7 +1560,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
             <View style={styles.celebratoryContainer}>
               <View style={styles.celebratorySquare}>
                 <View style={styles.celebratoryIcon}>
-                  <CustomIcon type="IO" name="checkmark-circle" size={80} color="#10b981" />
+                  <Ionicons name="checkmark-circle" size={80} color="#10b981" />
                 </View>
                 <Text style={styles.celebratoryTitle}>
                   {t("interventionsScreen.allTasksCompleted")}
@@ -1538,7 +1631,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("interventionsScreen.title")}</Text>
       </View>
@@ -1583,9 +1676,14 @@ export default function InterventionsScreen({ navigation, route }: Props) {
       {/* Action Buttons */}
       <View style={styles.actionButtons}>
         <Pressable style={styles.refreshButton} onPress={handleRefresh}>
-          <CustomIcon type="IO" name="refresh" size={24} color="#8b5cf6" />
+          <Ionicons name="refresh" size={24} color="#8b5cf6" />
+        </Pressable>
+        <Pressable style={styles.addButton} accessibilityLabel={t('interventionsScreen.addTooltip')} onPress={openAddModal}>
+          <Ionicons name="add" size={30} color="#ffffff" />
         </Pressable>
       </View>
+
+      
 
       {/* XP Gained Popup */}
       {showXpPopup && (
@@ -1600,7 +1698,7 @@ export default function InterventionsScreen({ navigation, route }: Props) {
             ]}
           >
             <View style={styles.xpPopupIconContainer}>
-              <CustomIcon type="IO" name="star" size={32} color="#fbbf24" />
+              <Ionicons name="star" size={32} color="#fbbf24" />
             </View>
             <Text style={styles.xpPopupText}>
               {t("interventionsScreen.xpGained", { xp: xpGained })}
@@ -1611,6 +1709,217 @@ export default function InterventionsScreen({ navigation, route }: Props) {
           </Animated.View>
         </View>
       )}
+      <Modal
+        visible={isAddModalVisible}
+        animationType="fade"
+        transparent
+        onRequestClose={closeAddModal}
+      >
+        <Pressable style={styles.modalOverlay} onPress={closeAddModal}>
+          <Pressable style={styles.modalContent} onPress={(e) => e.stopPropagation()}>
+            <View style={styles.modalHeader}>
+              <Text style={styles.modalTitle}>{t("interventionsScreen.modal.title")}</Text>
+              <Pressable style={styles.closeButton} onPress={closeAddModal}>
+                <Ionicons name="close" size={22} color="#1a1a1a" />
+              </Pressable>
+            </View>
+            <ScrollView keyboardShouldPersistTaps="handled" nestedScrollEnabled={true}>
+              <Text style={styles.fieldLabel}>{t("interventionsScreen.modal.conditionLabel")}</Text>
+              <View style={styles.dropdown}>
+                <Pressable
+                  style={[
+                    styles.dropdownButton,
+                    { borderColor: showConditionDropdown ? "#8b5cf6" : "#e5e7eb" },
+                  ]}
+                  onPress={() => {
+                    console.log("Dropdown button pressed, current state:", showConditionDropdown);
+                    setShowConditionDropdown((p) => !p);
+                  }}
+                >
+                  <Text style={[styles.dropdownText, !selectedCondition && !isCreatingNewCondition && styles.placeholderText]}>
+                    {isCreatingNewCondition
+                      ? t("interventionsScreen.modal.newConditionOption")
+                      : selectedCondition ||
+                        t(
+                          "interventionsScreen.modal.selectConditionPlaceholder",
+                        )}
+                  </Text>
+                  <Ionicons
+                    name={showConditionDropdown ? "chevron-up" : "chevron-down"}
+                    size={18}
+                    color="#6b7280"
+                  />
+                </Pressable>
+                {showConditionDropdown && (
+                  <View style={styles.dropdownMenu}>
+                    <ScrollView nestedScrollEnabled={true} keyboardShouldPersistTaps="handled">
+                      {existingConditions.length === 0 && (
+                        <View style={styles.dropdownOption}>
+                          <Text style={[styles.dropdownOptionText, { color: "#6b7280", fontStyle: "italic" }]}>
+                            {t("interventionsScreen.noConditions")}
+                          </Text>
+                        </View>
+                      )}
+                      {existingConditions.map((name) => (
+                        <Pressable
+                          key={name}
+                          style={[styles.dropdownOption, selectedCondition === name && { backgroundColor: "#f3f4f6" }]}
+                          onPress={() => {
+                            console.log("Selecting condition:", name);
+                            setSelectedCondition(name);
+                            setIsCreatingNewCondition(false);
+                            setShowConditionDropdown(false);
+                          }}
+                        >
+                          <Text style={styles.dropdownOptionText}>{name}</Text>
+                        </Pressable>
+                      ))}
+                      <Pressable
+                        style={[styles.dropdownOption, { borderBottomWidth: 0 }]}
+                        onPress={() => {
+                          console.log("Creating new condition");
+                          setIsCreatingNewCondition(true);
+                          setSelectedCondition(null);
+                          setShowConditionDropdown(false);
+                        }}
+                      >
+                        <Text
+                          style={[
+                            styles.dropdownOptionText,
+                            { fontWeight: "600", color: "#8b5cf6" },
+                          ]}
+                        >
+                          + {t("interventionsScreen.modal.newConditionOption")}
+                        </Text>
+                      </Pressable>
+                    </ScrollView>
+                  </View>
+                )}
+              </View>
+              {isCreatingNewCondition && (
+                <>
+                  <Text style={styles.fieldLabel}>
+                    {t("interventionsScreen.modal.newConditionNameLabel")}
+                  </Text>
+                  <TextInput
+                    style={styles.textInput}
+                    value={newConditionName}
+                    onChangeText={setNewConditionName}
+                    placeholder={t(
+                      "interventionsScreen.modal.newConditionNameLabel",
+                    )}
+                    placeholderTextColor="#9ca3af"
+                  />
+                  <Text style={styles.fieldLabel}>
+                    {t(
+                      "interventionsScreen.modal.newConditionDescriptionLabel",
+                    )}
+                  </Text>
+                  <TextInput
+                    style={[styles.textInput, styles.textArea]}
+                    value={newConditionDescription}
+                    onChangeText={setNewConditionDescription}
+                    multiline
+                    placeholder={t(
+                      "interventionsScreen.modal.newConditionDescriptionLabel",
+                    )}
+                    placeholderTextColor="#9ca3af"
+                  />
+                </>
+              )}
+              <Text style={styles.fieldLabel}>
+                {t("interventionsScreen.modal.titleLabel")} *
+              </Text>
+              <TextInput
+                style={styles.textInput}
+                value={newTitle}
+                onChangeText={setNewTitle}
+                placeholder={t("interventionsScreen.modal.titleLabel")}
+                placeholderTextColor="#9ca3af"
+              />
+              <Text style={styles.fieldLabel}>
+                {t("interventionsScreen.modal.subtitleLabel")}
+              </Text>
+              <TextInput
+                style={styles.textInput}
+                value={newSubtitle}
+                onChangeText={setNewSubtitle}
+                placeholder={t("interventionsScreen.modal.subtitleLabel")}
+                placeholderTextColor="#9ca3af"
+              />
+              <Text style={styles.fieldLabel}>
+                {t("interventionsScreen.modal.descriptionLabel")}
+              </Text>
+              <TextInput
+                style={[styles.textInput, styles.textArea]}
+                value={newDescription}
+                onChangeText={setNewDescription}
+                multiline
+                placeholder={t("interventionsScreen.modal.descriptionLabel")}
+                placeholderTextColor="#9ca3af"
+              />
+              <Text style={styles.fieldLabel}>
+                {t("interventionsScreen.modal.xpLabel")} *
+              </Text>
+              <View style={styles.xpContainer}>
+                {Array.from({ length: 10 }, (_, i) => i + 1).map((v) => {
+                  const selected = newXp === v;
+                  return (
+                    <Pressable
+                      key={v}
+                      style={[styles.xpButton, selected && styles.selectedXpButton]}
+                      onPress={() => setNewXp(v)}
+                    >
+                      <Text
+                        style={[
+                          styles.xpButtonText,
+                          selected && styles.selectedXpButtonText,
+                        ]}
+                      >
+                        {v}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+              <Text style={styles.fieldLabel}>
+                {t("interventionsScreen.modal.frequencyLabel")} *
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {tabs.map((tab) => {
+                  const active = newFrequency === tab;
+                  return (
+                    <Pressable
+                      key={tab}
+                      style={[styles.frequencyChip, active && styles.frequencyChipActive]}
+                      onPress={() => setNewFrequency(tab)}
+                    >
+                      <Text
+                        style={[
+                          styles.frequencyChipText,
+                          active && styles.frequencyChipTextActive,
+                        ]}
+                      >
+                        {t(`interventionsScreen.tabs.${tab.toLowerCase()}`)}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+              <Pressable
+                disabled={!validateModal()}
+                style={[styles.saveButton, !validateModal() && { opacity: 0.5 }]}
+                onPress={handleCreateCustomIntervention}
+              >
+                <Text style={styles.saveButtonText}>
+                  {isSaving ? "..." : t("interventionsScreen.modal.saveButton")}
+                </Text>
+              </Pressable>
+              <View style={{height:16}} />
+            </ScrollView>
+          </Pressable>
+        </Pressable>
+      </Modal>
     </View>
   );
 }
@@ -1877,6 +2186,39 @@ const styles = StyleSheet.create({
     elevation: 4,
     borderWidth: 1,
     borderColor: "#e5e7eb",
+  },
+  addButton: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: '#8b5cf6',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width:0, height:4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 6,
+    elevation: 6,
+  },
+  frequencyChip: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    backgroundColor: '#f3f4f6',
+    borderRadius: 20,
+    borderWidth:1,
+    borderColor:'#e5e7eb',
+  },
+  frequencyChipActive: {
+    backgroundColor:'#8b5cf6',
+    borderColor:'#8b5cf6',
+  },
+  frequencyChipText: {
+    fontSize:14,
+    fontWeight:'500',
+    color:'#374151'
+  },
+  frequencyChipTextActive: {
+    color:'#ffffff'
   },
   // Celebratory styles
   celebratoryContainer: {

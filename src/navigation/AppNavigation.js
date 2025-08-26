@@ -11,8 +11,16 @@ import HomeScreen from '../screens/home/home';
 import WelcomeScreen from '../screens/main/WelcomeScreen';
 import SelfOrChildScreen from '../screens/main/selforchild';
 
-// Import the main layout that contains tab navigation and all main screens
-import MainLayout from '../screens/main/_layout';
+// Import Language Screen
+import LanguageSelectScreen from '../screens/main/languageSelect/languageSelectScreen';
+
+// Import Self Assessment Screen
+import SelfOnboardingScreen from '../screens/main/self/SelfOnboarding';
+import SelfThankYouScreen from '../screens/main/self/selfthankyou';
+import { LanguageProvider } from 'src/context/LanguageContext';
+
+// Import the main tab navigator
+import MainTabNavigator from './MainTabNavigator';
 
 // Import other screens as you create them
 // import ProfileScreen from '../screens/main/profile-page/profile';
@@ -48,15 +56,23 @@ const AppNavigation = () => {
       try {
         const hasCompletedOnboarding = await AsyncStorage.getItem('hasCompletedOnboarding');
         const isLoggedIn = await AsyncStorage.getItem('isLoggedIn');
+        const hasCompletedSelfAssessment = await AsyncStorage.getItem('hasCompletedSelfAssessment');
+        const hasSelectedLanguage = await AsyncStorage.getItem('hasSelectedLanguage');
         
         if (!hasCompletedOnboarding) {
-          // First time user - go through full flow
+          // First time user - start with splash, then login
           setInitialRoute('Splash');
         } else if (!isLoggedIn) {
-          // Returning user but not logged in
+          // User has seen splash but not logged in
           setInitialRoute('Login');
+        } else if (!hasSelectedLanguage) {
+          // User is logged in but hasn't selected language
+          setInitialRoute('LanguageSelect');
+        } else if (!hasCompletedSelfAssessment) {
+          // User has selected language but hasn't completed self-assessment
+          setInitialRoute('SelfOnboarding');
         } else {
-          // Logged in user - go to main app
+          // User has completed everything - go to main app
           setInitialRoute('MainApp');
         }
       } catch (error) {
@@ -88,29 +104,32 @@ const AppNavigation = () => {
   }
 
   return (
-    <Stack.Navigator
-      initialRouteName={initialRoute}
-      screenOptions={{headerShown: false}}>
-      
-      {/* Authentication Flow */}
+    <LanguageProvider>
+      <Stack.Navigator
+        initialRouteName={initialRoute}
+        screenOptions={{headerShown: false}}>
+        
+        {/* Authentication Flow */}
       <Stack.Screen name="Splash" component={SplashScreen} />
-      <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
       
-      {/* Transition Screens */}
+      {/* Language Selection */}
+      <Stack.Screen name="LanguageSelect" component={LanguageSelectScreen} />
+      
+      {/* Self Assessment Flow */}
+      <Stack.Screen name="SelfOnboarding" component={SelfOnboardingScreen} />
+      <Stack.Screen name="SelfThankYou" component={SelfThankYouScreen} />
+      
+      {/* Main App - This contains the tab navigation and all main screens */}
+      <Stack.Screen name="MainApp" component={MainTabNavigator} />
+      
+      {/* Legacy/Optional Screens */}
+      <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
       <Stack.Screen name="Welcome" component={WelcomeScreen} />
       <Stack.Screen name="selforchild" component={SelfOrChildScreen} />
       
-      {/* Main App - This contains the tab navigation and all main screens */}
-      <Stack.Screen name="MainApp" component={MainLayout} />
-      
-      {/* Legacy Home Screen (can be removed once MainApp is fully integrated) */}
-      <Stack.Screen name="Home" component={HomeScreen} />
-      
-      {/* Add more screens as you create them */}
-      {/* <Stack.Screen name="Profile" component={ProfileScreen} /> */}
-      {/* <Stack.Screen name="Settings" component={SettingsScreen} /> */}
     </Stack.Navigator>
+    </LanguageProvider>
   );
 };
 

@@ -7,11 +7,10 @@ import {
   Animated,
   Dimensions,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+
 import { ActivityIndicator } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { createStackNavigator } from "@react-navigation/stack";
-import { RootStackParamList } from "@/navigation/types";
 import WelcomeScreen from "./WelcomeScreen";
 import SelfOrChildScreen from "./selforchild";
 import Home from "./homeTab";
@@ -77,7 +76,6 @@ import SelfThankYou from "./self/selfthankyou";
 import ConditionScanScreen from "./conditionsScan/ConditionScansScreen";
 import ScanIntro from "./conditionsScan/ScanIntro";
 import ScanQuestions from "./conditionsScan/ScanQuestions";
-import ScanResult from "./conditionsScan/ScanResult";
 import EQTestScreen from "./EQTest/index";
 import EQTestQuestions from "./EQTest/questions";
 import EQTestResult from "./EQTest/result";
@@ -89,15 +87,9 @@ import GiveMeABreakIntervention from "./watchman/GiveMeABreakIntervention";
 import RewardMeIntervention from "./watchman/RewardMeIntervention";
 import ColdBlockIntervention from "./watchman/ColdBlockIntervention";
 import MotivatingReelIntervention from "./watchman/MotivatingReelIntervention";
-import EditProfile from "@/components/EditProfile";
-import ProfileHeader from "@/components/ProfileHeader";
-import GeneralSettings from "@/components/GeneralSettings";
-import GuardianSettings from "@/components/GuardianSettings";
 import UpgradeToPremium from "./profile-page/UpgradeToPremium";
 import LanguageSelectScreen from "./languageSelect/languageSelectScreen";
 import PrivacyNoticeScreen from "./PrivacyNoticeScreen";
-import { LanguageProvider } from "@/context/LanguageContext"; // Import the LanguageProvider
-import { ScanProvider } from "@/context/ScanContext"; // Import the ScanProvider
 import MoodReflectIntervention from "./watchman/MoodReflectIntervention";
 import JournalReflectIntervention from "./watchman/JournalReflectIntervention.tsx";
 import ReportReflectIntervention from "./watchman/ReportReflectIntervention";
@@ -127,11 +119,17 @@ import RegisterAt7CupsIntervention from "./watchman/RegisterAt7CupsIntervention"
 import MakeYourHabiticaTeamIntervention from "./watchman/MakeYourHabiticaTeamIntervention";
 import PlayMusicIntervention from "./watchman/PlayMusicIntervention";
 import PlayPokemonGoIntervention from "./watchman/PlayPokemonGoIntervention";
-import { t } from "@/i18n/locales/i18n"; // Import translation function
-import GuardianList from "@/components/GuardianList";
-import EditGuardian from "@/components/EditGuardian";
-import AddGuardian from "@/components/AddGuardian";
 import MentalHealthAssessment from "./homeTab/MentalHealthAssessment";
+import CustomIcon from "@Components/CustomIcon.tsx";
+import { LanguageProvider } from "src/context/LanguageContext.tsx";
+import { ScanProvider } from "src/context/ScanContext.tsx";
+import ProfileHeader from "@Components/ProfileHeader.tsx";
+import EditProfile from "@Components/EditProfile.tsx";
+import GeneralSettings from "@Components/GeneralSettings.tsx";
+import GuardianSettings from "@Components/GuardianSettings.tsx";
+import GuardianListScreen from "@Components/GuardianList.tsx";
+import EditGuardian from "@Components/EditGuardian.tsx";
+import AddGuardian from "@Components/AddGuardian.tsx";
 
 interface TabItemProps {
   label: string;
@@ -242,7 +240,7 @@ function Tab({
             styles.fullScreen,
         ]}
       >
-        {renderScreen()}
+        {/* {renderScreen()} */}
       </View>
 
       {/* Custom Bottom Tab Navigation - Hidden when on ConditionsManagement or ConditionDetail */}
@@ -703,7 +701,7 @@ export default function Layout() {
             />
             <Stack.Screen
               name="GuardianList"
-              component={GuardianList}
+              component={GuardianListScreen}
               options={{ headerShown: false }}
             />
             <Stack.Screen
@@ -726,11 +724,7 @@ export default function Layout() {
               component={ScanIntro}
               options={{ headerShown: false }}
             />
-            <Stack.Screen
-              name="ScanResult"
-              component={ScanResult}
-              options={{ headerShown: false }}
-            />
+          
             <Stack.Screen
               name="EQTestScreen"
               component={EQTestScreen}

@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useLanguage } from "@/context/LanguageContext";
+import { useLanguage } from "src/context/LanguageContext";
 
 const LanguageSelectScreen: React.FC = (reset) => {
   const navigation = useNavigation();
@@ -59,10 +59,10 @@ const LanguageSelectScreen: React.FC = (reset) => {
 
       if (hasCompletedFirstLaunch === null) {
         // First time - go to privacy notice screen
-        navigation.navigate("PrivacyNoticeScreen" as never);
+        navigation.navigate("SelfOnboarding" as never);
       } else {
-        // Not first time - go directly to Tab
-        navigation.navigate("Tab" as never);
+        // Not first time - go directly to MainApp
+        navigation.navigate("MainApp" as never);
       }
     } catch (error) {
       console.error("Error saving language selection:", error);

@@ -10,7 +10,7 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 interface Intervention {
@@ -257,7 +257,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="arrow-back" size={24} color="#1a1a1a" />
+          <Ionicons name="arrow-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{strategyData.title}</Text>
       </View>
@@ -267,7 +267,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="settings" size={48} color="#8b5cf6" />
+              <Ionicons name="settings" size={48} color="#8b5cf6" />
               <Text style={styles.imageLabel}>Self-regulation</Text>
             </View>
           </View>
@@ -299,7 +299,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
                 onPress={() => handleAddToTaskList(intervention)}
               >
                 <Text style={styles.addButtonText}>Add to Task List</Text>
-                <CustomIcon type="IO" name="add-circle" size={20} color="#8B5CF6" />
+                <Ionicons name="add-circle" size={20} color="#8B5CF6" />
               </Pressable>
             </View>
           ))}
@@ -309,7 +309,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <CustomIcon type="IO" name="information-circle" size={16} color="#3b82f6" />
+              <Ionicons name="information-circle" size={16} color="#3b82f6" />
             </View>
             <Text style={styles.alertTitle}>Remember</Text>
           </View>
@@ -426,7 +426,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <CustomIcon type="IO"
+                        <Ionicons
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -438,7 +438,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <CustomIcon type="IO"
+                      <Ionicons
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

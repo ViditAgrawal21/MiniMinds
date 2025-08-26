@@ -2,7 +2,8 @@ import React from "react";
 import { View, Text, StyleSheet, Pressable, Dimensions } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t } from "@/i18n/locales/i18n"; // Import translation function
+import { useLanguage } from "src/context/LanguageContext";
+import { t } from "@/i18n/locales/i18n";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
@@ -13,11 +14,12 @@ export default function SelfThankYou() {
     try {
       // Mark first launch as completed
       await AsyncStorage.setItem('hasCompletedFirstLaunch', 'true');
-      // Navigate to Tab
-      navigation.navigate("Tab" as never);
+      await AsyncStorage.setItem('hasCompletedSelfAssessment', 'true');
+      // Navigate to MainApp (tab navigator)
+      navigation.navigate("MainApp" as never);
     } catch (error) {
       console.error("Error marking onboarding completion:", error);
-      navigation.navigate("Tab" as never);
+      navigation.navigate("MainApp" as never);
     }
   };
 

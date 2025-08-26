@@ -10,10 +10,10 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t } from "@/i18n/locales/i18n";
-import { getCurrentLanguage, getShortLanguageCode, getLanguageForAPI, changeLanguage } from "@/utils/i18nHelpers";
+import { t } from "../../../i18n/i18n";
+import i18n from "../../../i18n/i18n";
 
 interface YogaIntervention {
   // Format from translation files (yogaInterventions section)
@@ -82,13 +82,13 @@ export default function YogaScreen({ navigation, route }: any) {
     null,
   );
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
   
   const { condition } = route.params || {};
 
   // Language change detection with improved triggering (unified with InterventionsScreen)
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
+    const currentLocale = i18n.locale;
     if (currentLanguage !== currentLocale) {
       console.log(
         `Language changed from ${currentLanguage} to ${currentLocale}`,
@@ -101,7 +101,7 @@ export default function YogaScreen({ navigation, route }: any) {
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
+      const currentLocale = i18n.locale;
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
         setConditionName(getConditionDisplayName(condition));
@@ -285,8 +285,6 @@ export default function YogaScreen({ navigation, route }: any) {
       "common-psychological-issues":
         "scanIntro.commonPsychologicalIssues.title",
       "family-relationship": "scanIntro.familyAndRelationship.title",
-      "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
-      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       "internet-dependence": "scanIntro.internetDependence.title",
       "environment-issues":
         "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
@@ -297,34 +295,8 @@ export default function YogaScreen({ navigation, route }: any) {
       sleep: "scanIntro.sleep.title",
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
-      adhd: "adhdScreen.headerTitle",
-      "aggressive-behaviour": "aggressiveBehaviourScreen.english.headerTitle",
-      "conduct-issues": "conductIssues.headerTitle",
-      "introvert-child": "introvertChildScreen.headerTitle",
-      "self-care-hygiene": "selfCareHygieneScreen.headerTitle",
-      "substance-addiction": "substanceAddictionScreen.headerTitle",
-      "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
-      "dark-web-onlyfans": "Dark Web and OnlyFans",
-      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
-      "internet-addiction": "Internet Addiction",
-      "porn-addiction": "Porn Addiction",
     };
     const translationKey = conditionKeyMap[condition];
-    
-    // Return hardcoded strings directly without translation for new conditions
-    if (condition === "dark-web-onlyfans") {
-      return "Dark Web and OnlyFans";
-    }
-    if (condition === "gambling-and-gaming-addiction") {
-      return "Gambling and Gaming Addiction";
-    }
-    if (condition === "internet-addiction") {
-      return "Internet Addiction";
-    }
-    if (condition === "porn-addiction") {
-      return "Porn Addiction";
-    }
-    
     return translationKey ? t(translationKey) : condition;
   };
 
@@ -352,39 +324,11 @@ export default function YogaScreen({ navigation, route }: any) {
     yoga: YogaIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = i18n.locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? getYogaTitle(yoga) : getYogaDescription(yoga);
     
-    // If we have pre-translated content from comprehensive data files (Card Title/Card Description),
-    // return it directly without applying additional translation logic
-    if (yoga["Card Title"] || yoga["Card Description"]) {
-      return field === "description" ? formatDescription(originalText) : originalText;
-    }
-    
-    // Skip dynamic translation attempts for conditions that use comprehensive JSON data files
-    const comprehensiveDataConditions = [
-      "friendship-and-relationship",
-      "self-esteem-and-self-identity", 
-      "self-care-hygiene",
-      "eating-habits",
-      "introvert-child",
-      "conduct-issues",
-      "adhd",
-      "aggressive-behaviour",
-      "substance-addiction",
-      "breakupAndRebound",
-      "trauma-loss-and-dreams",
-      "unrealistic-beauty-standards",
-      "dark-web-onlyfans"
-    ];
-    
-    // For comprehensive data conditions, return the original text directly (it's already translated)
-    if (comprehensiveDataConditions.includes(condition)) {
-      return field === "description" ? formatDescription(originalText) : originalText;
-    }
-    
-    // Only try dynamic translation for conditions that have translation keys
+    // First, try dynamic translation if we have stored keys (for saved interventions that have this data)
     const yogaIndex = yogaInterventions.findIndex((r) => r === yoga);
     const translationKeyMap: { [key: string]: string } = {
       "anger-management": "angerManagement",
@@ -445,16 +389,36 @@ export default function YogaScreen({ navigation, route }: any) {
         : translated;
     }
     
-    // DISABLED: Partial matching and word translation to prevent title/description truncation
-    // These features were causing issues where:
-    // - "Guided Meditation" was truncated to just "meditation"
-    // - "Practice Regularly" was truncated to just "practice"
-    // - Descriptions were being cut down to single words
-    // 
-    // If partial matching is needed in the future, it should be implemented with:
-    // 1. Exact phrase matching only (not word-within-phrase)
-    // 2. Whitelist of specific phrases that are safe to translate
-    // 3. More sophisticated logic to avoid truncation
+    // For partial matching, be conservative - only match if the text contains common terms
+    for (const [key, translation] of Object.entries(yogaTranslations)) {
+      if (
+        originalText.toLowerCase().includes(key.toLowerCase()) &&
+        key.length > 5
+      ) {
+        console.log(
+          `Partial match found for "${originalText}" with key "${key}"`,
+        );
+        const translated = translation[currentLocale] || originalText;
+        return field === "description"
+          ? formatDescription(translated)
+          : translated;
+      }
+    }
+    
+    // Simplified word translation - only for single words that are common terms
+    const trimmedText = originalText.trim();
+    if (!trimmedText.includes(" ") && trimmedText.length > 3) {
+      const wordTranslation =
+        yogaTranslations[
+          trimmedText.toLowerCase() as keyof typeof yogaTranslations
+        ];
+      if (wordTranslation) {
+        const translated = wordTranslation[currentLocale] || originalText;
+        return field === "description"
+          ? formatDescription(translated)
+          : translated;
+      }
+    }
     
     // Finally, fall back to original text (apply formatting for descriptions)
     return field === "description"
@@ -471,8 +435,6 @@ export default function YogaScreen({ navigation, route }: any) {
       "common-psychological-issues": "commonPsychologicalIssues",
       "environment-issues": "environmentIssues",
       "family-relationship": "familyRelationship",
-      "friendship-and-relationship": "friendshipAndRelationship",
-      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
       "financial-mental-health": "financialMentalHealth",
       "general-physical-fitness": "generalPhysicalFitness",
       "internet-dependence": "internetDependence",
@@ -484,623 +446,9 @@ export default function YogaScreen({ navigation, route }: any) {
       stress: "stress",
       "suicidal-behavior": "suicidalBehavior",
       "youngster-issues": "youngsterIssues",
-      adhd: "adhd", // Add ADHD to translation mapping
-      "aggressive-behaviour": "aggressiveBehaviour", // Add aggressive behaviour to translation mapping
-      "conduct-issues": "conductIssues", // Add conduct issues to translation mapping
-      "introvert-child": "introvertChild", // Add introvert child to translation mapping
-      "substance-addiction": "substanceAddiction", // Add substance addiction to translation mapping
-      "breakupAndRebound": "breakupAndRebound", // Add breakup and rebound to translation mapping
-      "trauma-loss-and-dreams": "traumaLossAndDreams", // Add trauma, loss and dreams to translation mapping
-      "unrealistic-beauty-standards": "unrealisticBeautyStandards", // Add unrealistic beauty standards to translation mapping
-      "gambling-and-gaming-addiction": "gamblingAndGamingAddiction", // Add gambling and gaming addiction to translation mapping
-      "internet-addiction": "internetAddiction", // Add internet addiction to translation mapping
     };
 
     const translationKey = translationKeyMap[condition];
-    
-    // Special handling for Friendship and Relationship interventions
-    if (condition === "friendship-and-relationship") {
-      try {
-        const friendshipData = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
-        if (friendshipData?.translations) {
-          const currentLanguage = getCurrentLanguage();
-          const languageData = friendshipData.translations[currentLanguage];
-          
-          if (languageData?.yoga_meditation) {
-            const interventions = languageData.yoga_meditation.map((item: any) => ({
-              "Issue Name": "Friendship and Relationship",
-              "Intervention Type": "Secondary",
-              "Intervention Sub Type": "Yoga And Meditation Techniques",
-              "Card Title": item.title || "Untitled",
-              "Card Description": item.description || "No description",
-              xp: item.xp || 5,
-              title: item.title || "Untitled",
-              description: item.description || "No description",
-            }));
-
-            return {
-              condition: "friendship-and-relationship",
-              intervention_type: "Yoga & Meditation",
-              interventions: interventions,
-            };
-          }
-        }
-      } catch (error) {
-        console.error("Error loading Friendship and Relationship yoga data:", error);
-      }
-    }
-    
-    // Special handling for Self-esteem and Self-identity interventions
-    if (condition === "self-esteem-and-self-identity") {
-      try {
-        const selfEsteemData = require("../../../../assets/data/Emotion/self_esteem_self_identity_interventions.json");
-        if (selfEsteemData?.interventions) {
-          const currentLanguage = getCurrentLanguage();
-          
-          // Filter interventions by category "Yoga"
-          const yogaInterventions = selfEsteemData.interventions
-            .filter((item: any) => item.category === "Yoga")
-            .map((item: any) => ({
-              "Issue Name": "Self-esteem and Self-identity",
-              "Intervention Type": "Secondary",
-              "Intervention Sub Type": "Yoga And Meditation Techniques",
-              "Card Title": item.translations[currentLanguage]?.title || item.translations.en?.title || "Untitled",
-              "Card Description": item.translations[currentLanguage]?.description || item.translations.en?.description || "No description",
-              xp: item.xp || 5,
-              title: item.translations[currentLanguage]?.title || item.translations.en?.title || "Untitled",
-              description: item.translations[currentLanguage]?.description || item.translations.en?.description || "No description",
-            }));
-
-          return {
-            condition: "self-esteem-and-self-identity",
-            intervention_type: "Yoga & Meditation",
-            interventions: yogaInterventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Self-esteem and Self-identity yoga data:", error);
-      }
-    }
-    
-    // Special handling for Self-Care Hygiene - use the comprehensive data file
-    if (condition === "self-care-hygiene") {
-      try {
-        const selfCareHygieneData = require("../../../../assets/data/behaviour/SelfCareHygiene_comprehensive_data.json");
-        if (selfCareHygieneData && selfCareHygieneData.interventions && selfCareHygieneData.interventions.yogaAndMeditation) {
-          const { cards } = selfCareHygieneData.interventions.yogaAndMeditation;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Self-Care Hygiene data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            "Issue Name": "Self-Care Hygiene",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": card.title[currentLang],
-            "Card Description": card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "self-care-hygiene",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Self-Care Hygiene comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Introvert Child - use the comprehensive data file
-    if (condition === "introvert-child") {
-      try {
-        const introvertChildData = require("../../../../assets/data/behaviour/IntrovertChild_comprehensive_data.json");
-        if (introvertChildData && introvertChildData.interventions && introvertChildData.interventions.yogaMeditation) {
-          const { cards } = introvertChildData.interventions.yogaMeditation;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Introvert Child data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            "Issue Name": "Introvert Child",
-            "Intervention Type": "Primary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": card.title[currentLang],
-            "Card Description": card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "introvert-child",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Introvert Child comprehensive yoga data:", error);
-      }
-    }
-
-    // Special handling for Substance Addiction - use the comprehensive data file
-    if (condition === "substance-addiction") {
-      try {
-        const substanceAddictionData = require("../../../../assets/data/behaviour/SubstanceAddiction_comprehensive_data.json");
-        if (substanceAddictionData && substanceAddictionData.yogaAndMeditation) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Substance Addiction data format to the expected format
-          const interventions = substanceAddictionData.yogaAndMeditation.map((item: any) => ({
-            "Issue Name": "Substance Addiction",
-            "Intervention Type": "Primary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": item.title[currentLang],
-            "Card Description": item.description[currentLang],
-            xp: item.xp,
-          }));
-
-          return {
-            condition: "substance-addiction",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Substance Addiction comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for ADHD - use the comprehensive data file
-    if (condition === "adhd") {
-      try {
-        const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
-        if (adhdData && adhdData.interventions && adhdData.interventions.yoga) {
-          const { cards } = adhdData.interventions.yoga;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive ADHD data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            "Issue Name": "ADHD",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": card.title[currentLang],
-            "Card Description": card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "adhd",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading ADHD comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Conduct Issues - use the comprehensive data file
-    if (condition === "conduct-issues") {
-      try {
-        const conductData = require("../../../../assets/data/behaviour/ConductIssues_Complete_comprehensive_data.json");
-        if (conductData && conductData.interventions && conductData.interventions.yogaAndMeditation) {
-          const { cards } = conductData.interventions.yogaAndMeditation;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Conduct Issues data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            "Issue Name": "Conduct Issues",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": card.title[currentLang],
-            "Card Description": card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "conduct-issues",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Conduct Issues comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Dark Web and OnlyFans - use the comprehensive data file
-    if (condition === "dark-web-onlyfans") {
-      try {
-        const darkWebData = null // require commented due to space in path;
-        if (darkWebData && darkWebData.interventions && darkWebData.interventions.yoga) {
-          const { cards } = darkWebData.interventions.yoga;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Dark Web and OnlyFans data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            "Issue Name": "Dark Web and OnlyFans",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": card.title[currentLang],
-            "Card Description": card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "dark-web-onlyfans",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Dark Web and OnlyFans comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Aggressive Behaviour - use the comprehensive data file
-    if (condition === "aggressive-behaviour") {
-      try {
-        const aggressiveData = require("../../../../assets/data/behaviour/AggressiveBehaviour_comprehensive_data.json");
-        if (aggressiveData && aggressiveData.interventions && aggressiveData.interventions.yogaAndMeditation) {
-          const { cards } = aggressiveData.interventions.yogaAndMeditation;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Aggressive Behaviour data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            "Issue Name": "Aggressive Behaviour",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": card.title[currentLang],
-            "Card Description": card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "aggressive-behaviour",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Aggressive Behaviour comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Eating Habits - use the comprehensive data file
-    if (condition === "eating-habits") {
-      try {
-        const eatingHabitsData = require("../../../../assets/data/behaviour/EatingHabits_comprehensive_data.json");
-        if (eatingHabitsData && eatingHabitsData.interventions && eatingHabitsData.interventions.yogaMeditation) {
-          const { cards } = eatingHabitsData.interventions.yogaMeditation;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Eating Habits data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            "Issue Name": "Eating Habits",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": card.title[currentLang],
-            "Card Description": card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "eating-habits",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Eating Habits comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Gambling and Gaming Addiction - use the comprehensive data file
-    if (condition === "gambling-and-gaming-addiction") {
-      try {
-        const gamblingData = null // require commented due to space in path;
-        if (gamblingData && gamblingData.interventions && gamblingData.interventions.yoga) {
-          const { cards } = gamblingData.interventions.yoga;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Gambling and Gaming Addiction data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            "Issue Name": "Gambling and Gaming Addiction",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": card.title[currentLang],
-            "Card Description": card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            condition: "gambling-and-gaming-addiction",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Gambling and Gaming Addiction comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Internet Addiction - use the comprehensive data file
-    if (condition === "internet-addiction") {
-      try {
-        const internetData = null // require commented due to space in path;
-        if (internetData?.yoga?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "en",
-            hi: "hi",
-            mr: "mr",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "en";
-          
-          const interventions = internetData.yoga.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.en || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.en || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: "internet-addiction",
-            intervention_type: "Yoga",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Internet Addiction comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Porn Addiction - use the comprehensive data file
-    if (condition === "porn-addiction") {
-      try {
-        const pornData = null // require commented due to space in path;
-        if (pornData?.yoga?.cards) {
-          const currentLanguage = getCurrentLanguage();
-          const languageMap: { [key: string]: string } = {
-            en: "en",
-            hi: "hi",
-            mr: "mr",
-          };
-          const dataLanguage = languageMap[currentLanguage] || "en";
-          
-          const interventions = pornData.yoga.cards.map((card: any) => ({
-            title: card.title?.[dataLanguage] || card.title?.en || "Untitled",
-            description: card.description?.[dataLanguage] || card.description?.en || "No description",
-            xp: card.xp || 0,
-          }));
-          
-          return {
-            condition: "porn-addiction",
-            intervention_type: "Yoga",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Porn Addiction comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Breakup and Rebound - use the comprehensive data file
-    if (condition === "breakupAndRebound") {
-      try {
-        const breakupReboundData = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
-        if (breakupReboundData && breakupReboundData.yogaAndMeditation && breakupReboundData.yogaAndMeditation.techniques) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the breakup rebound yoga data format to the expected format
-          const interventions = breakupReboundData.yogaAndMeditation.techniques.map((item: any) => ({
-            "Issue Name": "Breakup and Rebound",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": item.title[currentLang],
-            "Card Description": item.description[currentLang],
-            xp: item.xp,
-          }));
-
-          return {
-            condition: "breakupAndRebound",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Breakup and Rebound comprehensive yoga data:", error);
-      }
-    }
-    
-    // Special handling for Trauma, Loss and Dreams - create appropriate yoga interventions
-    if (condition === "trauma-loss-and-dreams") {
-      try {
-        // Get current language for proper translation
-        const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                          getCurrentLanguage() === "mr" ? "marathi" : "english";
-        
-        // Create yoga interventions specifically for trauma, loss and dreams
-        const traumaYogaInterventions = [
-          {
-            title: {
-              english: "Grounding Breathing Technique",
-              hindi: "ग्राउंडिंग सांस तकनीक",
-              marathi: "ग्राउंडिंग श्वसन तंत्र"
-            },
-            description: {
-              english: "A calming breath practice that helps connect you to the present moment, reducing anxiety and trauma responses through deep, mindful breathing.",
-              hindi: "एक शांत करने वाली सांस अभ्यास जो आपको वर्तमान क्षण से जोड़ने में मदद करती है, गहरी, सचेत सांस के माध्यम से चिंता और आघात प्रतिक्रियाओं को कम करती है।",
-              marathi: "एक शांत करणारी श्वसन पद्धती जी तुम्हाला सध्याच्या क्षणाशी जोडण्यास मदत करते, खोल, जागरूक श्वासाद्वारे चिंता आणि आघात प्रतिक्रिया कमी करते."
-            },
-            xp: 3
-          },
-          {
-            title: {
-              english: "Trauma-Informed Yoga Poses",
-              hindi: "आघात-सूचित योग आसन",
-              marathi: "आघात-सूचित योग आसने"
-            },
-            description: {
-              english: "Gentle yoga postures designed specifically for trauma recovery, focusing on safety, choice, and rebuilding trust with your body.",
-              hindi: "आघात की वसूली के लिए विशेष रूप से डिज़ाइन किए गए कोमल योग आसन, सुरक्षा, पसंद, और अपने शरीर के साथ विश्वास पुनर्निर्माण पर ध्यान केंद्रित करते हैं।",
-              marathi: "आघात पुनर्प्राप्तीसाठी खासून डिझाइन केलेली सौम्य योग मुद्रा, सुरक्षा, निवड आणि तुमच्या शरीराशी विश्वास पुनर्निर्माण यावर लक्ष केंद्रित करते."
-            },
-            xp: 4
-          },
-          {
-            title: {
-              english: "Restorative Meditation for Loss",
-              hindi: "हानि के लिए पुनर्स्थापनात्मक ध्यान",
-              marathi: "नुकसानासाठी पुनर्संचयी ध्यान"
-            },
-            description: {
-              english: "A gentle meditation practice that helps process grief and loss, allowing emotions to flow while maintaining a sense of inner stability.",
-              hindi: "एक कोमल ध्यान अभ्यास जो दुःख और हानि को संसाधित करने में मदद करता है, आंतरिक स्थिरता की भावना बनाए रखते हुए भावनाओं को प्रवाहित होने देता है।",
-              marathi: "एक सौम्य ध्यान पद्धती जी दुःख आणि नुकसान प्रक्रिया करण्यास मदत करते, अंतर्गत स्थिरतेची भावना राखून भावनांना वाहू देते."
-            },
-            xp: 3
-          },
-          {
-            title: {
-              english: "Dream Processing Visualization",
-              hindi: "स्वप्न प्रसंस्करण दृश्यकरण",
-              marathi: "स्वप्न प्रक्रिया दृश्यीकरण"
-            },
-            description: {
-              english: "A guided visualization technique that helps process and understand dreams, transforming disturbing dream content into healing insights.",
-              hindi: "एक निर्देशित दृश्यकरण तकनीक जो स्वप्नों को संसाधित और समझने में मदद करती है, परेशान करने वाली स्वप्न सामग्री को उपचार अंतर्दृष्टि में बदलती है।",
-              marathi: "एक मार्गदर्शित दृश्यीकरण तंत्र जे स्वप्नांना प्रक्रिया करून समजून घेण्यास मदत करते, त्रासदायक स्वप्न सामग्रीला उपचारात्मक अंतर्दृष्टीत रूपांतरित करते."
-            },
-            xp: 4
-          },
-          {
-            title: {
-              english: "Heart Chakra Healing Practice",
-              hindi: "हृदय चक्र उपचार अभ्यास",
-              marathi: "हृदय चक्र उपचार सराव"
-            },
-            description: {
-              english: "A focused practice on opening and healing the heart chakra, helping to process emotional pain and restore capacity for love and connection.",
-              hindi: "हृदय चक्र को खोलने और ठीक करने पर केंद्रित अभ्यास, भावनात्मक दर्द को संसाधित करने और प्रेम और संबंध की क्षमता को बहाल करने में मदत करता है।",
-              marathi: "हृदय चक्र उघडण्यावर आणि बरे करण्यावर केंद्रित सराव, भावनिक वेदना प्रक्रिया करण्यास आणि प्रेम व जोडणीची क्षमता पुनर्संचयित करण्यास मदत करते."
-            },
-            xp: 5
-          }
-        ];
-        
-        // Transform to expected format
-        const interventions = traumaYogaInterventions.map((item: any) => ({
-          "Issue Name": "Trauma, Loss and Dreams",
-          "Intervention Type": "Primary",
-          "Intervention Sub Type": "Yoga And Meditation Techniques",
-          "Card Title": item.title[currentLang],
-          "Card Description": item.description[currentLang],
-          xp: item.xp,
-        }));
-
-        return {
-          condition: "trauma-loss-and-dreams",
-          intervention_type: "Yoga & Meditation",
-          interventions: interventions,
-        };
-      } catch (error) {
-        console.error("Error creating Trauma, Loss and Dreams yoga data:", error);
-      }
-    }
-    
-    // Special handling for Unrealistic Beauty Standards - use our consolidated JSON file
-    if (condition === "unrealistic-beauty-standards") {
-      try {
-        const beautyStandardsData = require("../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json");
-        if (beautyStandardsData && beautyStandardsData.yogaAndMeditation) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the beauty standards yoga data format to the expected format
-          const interventions = beautyStandardsData.yogaAndMeditation.techniques.map((item: any) => ({
-            "Issue Name": "Unrealistic Beauty Standards",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": item.title[currentLang],
-            "Card Description": item.description[currentLang],
-            xp: item.xp,
-            title: item.title[currentLang],
-            description: item.description[currentLang],
-          }));
-
-          return {
-            condition: "unrealistic-beauty-standards",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Unrealistic Beauty Standards yoga data:", error);
-      }
-    }
-    
-    // Special handling for Unrealistic Beauty Standards - use our consolidated JSON file
-    if (condition === "unrealistic-beauty-standards") {
-      try {
-        const beautyStandardsData = require("../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json");
-        if (beautyStandardsData && beautyStandardsData.yogaAndMeditation) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the beauty standards yoga data format to the expected format
-          const interventions = beautyStandardsData.yogaAndMeditation.techniques.map((item: any) => ({
-            "Issue Name": "Unrealistic Beauty Standards",
-            "Intervention Type": "Secondary",
-            "Intervention Sub Type": "Yoga And Meditation Techniques",
-            "Card Title": item.title[currentLang],
-            "Card Description": item.description[currentLang],
-            xp: item.xp,
-            title: item.title[currentLang],
-            description: item.description[currentLang],
-          }));
-
-          return {
-            condition: "unrealistic-beauty-standards",
-            intervention_type: "Yoga & Meditation",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Unrealistic Beauty Standards yoga data:", error);
-      }
-    }
     
     // If translations exist for this condition, use them
     if (translationKey) {
@@ -1138,22 +486,22 @@ export default function YogaScreen({ navigation, route }: any) {
 
     // Fall back to static JSON files for conditions without translations
     const dataMap: { [key: string]: YogaData } = {
-      "anger-management": { exercises: [] } as YogaData, // require commented due to space in path
-      stress: { exercises: [] } as YogaData, // require commented due to space in path
-      addictions: { exercises: [] } as YogaData, // require commented due to space in path
-      "general-physical-fitness": { exercises: [] } as YogaData, // require commented due to space in path
-      "suicidal-behavior": { exercises: [] } as YogaData, // require commented due to space in path
-      "common-psychological-issues": { exercises: [] } as YogaData, // require commented due to space in path
-      "family-relationship": { exercises: [] } as YogaData, // require commented due to space in path
-      "internet-dependence": { exercises: [] } as YogaData, // require commented due to space in path
-      "environment-issues": { exercises: [] } as YogaData, // require commented due to space in path
-      "financial-mental-health": { exercises: [] } as YogaData, // require commented due to space in path
-      "internet-social-media": { exercises: [] } as YogaData, // require commented due to space in path
-      "professional-mental-health": { exercises: [] } as YogaData, // require commented due to space in path
-      "sex-life": { exercises: [] } as YogaData, // require commented due to space in path
-      sleep: { exercises: [] } as YogaData, // require commented due to space in path
-      "social-mental-health": { exercises: [] } as YogaData, // require commented due to space in path
-      "youngster-issues": { exercises: [] } as YogaData, // require commented due to space in path
+      "anger-management": require("../../../../Mind Tools/data/anger-management/yoga.json"),
+      stress: require("../../../../Mind Tools/data/stress/yoga.json"),
+      addictions: require("../../../../Mind Tools/data/addictions/yoga.json"),
+      "general-physical-fitness": require("../../../../Mind Tools/data/general-physical-fitness/yoga.json"),
+      "suicidal-behavior": require("../../../../Mind Tools/data/suicidal-behavior/yoga.json"),
+      "common-psychological-issues": require("../../../../Mind Tools/data/common-psychological-issues/yoga.json"),
+      "family-relationship": require("../../../../Mind Tools/data/family-relationship/yoga.json"),
+      "internet-dependence": require("../../../../Mind Tools/data/internet-dependence/yoga.json"),
+      "environment-issues": require("../../../../Mind Tools/data/environment-issues/yoga.json"),
+      "financial-mental-health": require("../../../../Mind Tools/data/financial-mental-health/yoga.json"),
+      "internet-social-media": require("../../../../Mind Tools/data/internet-social-media/yoga.json"),
+      "professional-mental-health": require("../../../../Mind Tools/data/professional-mental-health/yoga.json"),
+      "sex-life": require("../../../../Mind Tools/data/sex-life/yoga.json"),
+      sleep: require("../../../../Mind Tools/data/sleep/yoga.json"),
+      "social-mental-health": require("../../../../Mind Tools/data/social-mental-health/yoga.json"),
+      "youngster-issues": require("../../../../Mind Tools/data/youngster-issues/yoga.json"),
     };
     
     return dataMap[condition] || null;
@@ -1248,8 +596,6 @@ export default function YogaScreen({ navigation, route }: any) {
         "common-psychological-issues": "commonPsychologicalIssues",
         "environment-issues": "environmentIssues",
         "family-relationship": "familyRelationship",
-        "friendship-and-relationship": "friendshipAndRelationship",
-        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
         "financial-mental-health": "financialMentalHealth",
         "general-physical-fitness": "generalPhysicalFitness",
         "internet-dependence": "internetDependence",
@@ -1261,13 +607,6 @@ export default function YogaScreen({ navigation, route }: any) {
         stress: "stress",
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
-        adhd: "adhd",
-        "aggressive-behaviour": "aggressiveBehaviour",
-        "conduct-issues": "conductIssues",
-        "introvert-child": "introvertChild",
-        "self-care-hygiene": "selfCareHygiene",
-        "substance-addiction": "substanceAddiction",
-        "trauma-loss-and-dreams": "traumaLossAndDreams",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -1281,8 +620,6 @@ export default function YogaScreen({ navigation, route }: any) {
         "environment-issues":
           "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
         "family-relationship": "scanIntro.familyAndRelationship.title",
-        "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
-        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
         "financial-mental-health": "scanIntro.financialMentalHealth.title",
         "internet-dependence": "scanIntro.internetDependence.title",
         "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
@@ -1292,13 +629,6 @@ export default function YogaScreen({ navigation, route }: any) {
         sleep: "scanIntro.sleep.title",
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
-        adhd: "adhdScreen.headerTitle",
-        "aggressive-behaviour": "aggressiveBehaviourScreen.english.headerTitle",
-        "conduct-issues": "conductIssues.headerTitle",
-        "introvert-child": "introvertChildScreen.headerTitle",
-        "self-care-hygiene": "selfCareHygieneScreen.headerTitle",
-        "substance-addiction": "substanceAddictionScreen.headerTitle",
-        "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
       };
 
       const translationKey = translationKeyMap[condition];
@@ -1321,10 +651,10 @@ export default function YogaScreen({ navigation, route }: any) {
         if (originalTitleKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedTitle = t(originalTitleKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedTitle !== originalTitleKey
               ? translatedTitle
               : getLocalizedYogaText(selectedYoga, "title");
@@ -1348,10 +678,10 @@ export default function YogaScreen({ navigation, route }: any) {
         if (conditionDisplayKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedCondition = t(conditionDisplayKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedCondition !== conditionDisplayKey
               ? translatedCondition
               : conditionName;
@@ -1379,10 +709,10 @@ export default function YogaScreen({ navigation, route }: any) {
         if (originalDescriptionKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedDescription = t(originalDescriptionKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedDescription !== originalDescriptionKey
               ? translatedDescription
               : getLocalizedYogaText(selectedYoga, "description");
@@ -1489,7 +819,7 @@ export default function YogaScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("yogaScreen.header.title")}</Text>
       </View>
@@ -1505,7 +835,7 @@ export default function YogaScreen({ navigation, route }: any) {
             <View key={index} style={styles.yogaCard}>
               {/* XP Badge */}
               <View style={styles.xpBadge}>
-                <CustomIcon type="IO" name="flower-outline" size={12} color="#FFFFFF" />
+                <Ionicons name="flower-outline" size={12} color="#FFFFFF" />
                 <Text style={styles.xpText}>
                   {yoga.xp || yoga["xp"] || 5} XP
                 </Text>
@@ -1524,7 +854,7 @@ export default function YogaScreen({ navigation, route }: any) {
                 <Text style={styles.addButtonText}>
                   {t("yogaScreen.addToPractice")}
                 </Text>
-                <CustomIcon type="IO" name="add-circle" size={20} color="#10B981" />
+                <Ionicons name="add-circle" size={20} color="#10B981" />
               </Pressable>
             </View>
           ))}
@@ -1627,7 +957,7 @@ export default function YogaScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <CustomIcon type="IO"
+                        <Ionicons
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -1641,7 +971,7 @@ export default function YogaScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <CustomIcon type="IO"
+                      <Ionicons
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

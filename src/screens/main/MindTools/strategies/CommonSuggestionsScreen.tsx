@@ -10,10 +10,10 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t } from "@/i18n/locales/i18n";
-import { getCurrentLanguage, getShortLanguageCode, getLanguageForAPI, changeLanguage } from "@/utils/i18nHelpers";
+import { t } from "../../../i18n/i18n";
+import i18n from "../../../i18n/i18n";
 
 interface Intervention {
   title?: string;
@@ -111,8 +111,6 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "common-psychological-issues":
         "scanIntro.commonPsychologicalIssues.title",
       "family-relationship": "scanIntro.familyAndRelationship.title",
-      "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
-      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       "internet-dependence": "scanIntro.internetDependence.title",
       "environment-issues":
         "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
@@ -123,32 +121,8 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       sleep: "scanIntro.sleep.title",
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
-      "introvert-child": "introvertChildScreen.headerTitle",
-      "substance-addiction": "substanceAddictionScreen.headerTitle",
-      "breakupAndRebound": "breakupAndReboundScreen.title",
-      "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
-      "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
-      "adhd": "adhdScreen.headerTitle",
-      "aggressive-behaviour": "aggressiveBehaviourScreen.english.headerTitle",
-      "eating-habits": "eatingHabitsScreen.headerTitle",
-      "conduct-issues": "conductIssues.headerTitle",
-      "dark-web-onlyfans": "Dark Web and OnlyFans",
-      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
-      "internet-addiction": "Internet Addiction",
     };
     const translationKey = conditionKeyMap[condition];
-    
-    // Return hardcoded strings directly without translation for new conditions
-    if (condition === "dark-web-onlyfans") {
-      return "Dark Web and OnlyFans";
-    }
-    if (condition === "gambling-and-gaming-addiction") {
-      return "Gambling and Gaming Addiction";
-    }
-    if (condition === "internet-addiction") {
-      return "Internet Addiction";
-    }
-    
     return translationKey ? t(translationKey) : condition;
   };
 
@@ -161,8 +135,6 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "common-psychological-issues": "commonPsychologicalIssues",
       "environment-issues": "environmentIssues",
       "family-relationship": "familyRelationship",
-      "friendship-and-relationship": "friendshipAndRelationship",
-      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
       "financial-mental-health": "financialMentalHealth",
       "general-physical-fitness": "generalPhysicalFitness",
       "internet-dependence": "internetDependence",
@@ -174,527 +146,9 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       stress: "stress",
       "suicidal-behavior": "suicidalBehavior",
       "youngster-issues": "youngsterIssues",
-      "introvert-child": "introvertChild",
-      "substance-addiction": "substanceAddiction",
-      "breakupAndRebound": "breakupAndRebound",
-      "trauma-loss-and-dreams": "traumaLossAndDreams",
-      "unrealistic-beauty-standards": "unrealisticBeautyStandards",
-      "adhd": "adhd",
-      "aggressive-behaviour": "aggressiveBehaviour",
-      "eating-habits": "eatingHabits",
-      "conduct-issues": "conductIssues",
-      "dark-web-onlyfans": "darkWebOnlyFans",
-      "gambling-and-gaming-addiction": "gamblingAndGamingAddiction",
-      "internet-addiction": "internetAddiction",
     };
 
     const translationKey = translationKeyMap[condition];
-    
-    // Special handling for Friendship and Relationship interventions
-    if (condition === "friendship-and-relationship") {
-      try {
-        const friendshipData = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
-        if (friendshipData?.translations) {
-          const currentLanguage = getCurrentLanguage();
-          const languageData = friendshipData.translations[currentLanguage];
-          
-          if (languageData?.["10_common_suggestions"]) {
-            const interventions = languageData["10_common_suggestions"].map((item: any) => ({
-              title: item.title || "Untitled",
-              description: item.description || "No description",
-              xp: item.xp || 2,
-            }));
-
-            return {
-              condition: "friendship-and-relationship",
-              intervention_type: "Common Suggestions",
-              interventions: interventions,
-            };
-          }
-        }
-      } catch (error) {
-        console.error("Error loading Friendship and Relationship common suggestions data:", error);
-      }
-    }
-    
-    // Special handling for Self-esteem and Self-identity interventions
-    if (condition === "self-esteem-and-self-identity") {
-      try {
-        const selfEsteemData = require("../../../../assets/data/Emotion/self_esteem_self_identity_interventions.json");
-        if (selfEsteemData?.interventions) {
-          const currentLanguage = getCurrentLanguage();
-          
-          // Filter interventions by category "Common Suggestions"
-          const commonSuggestionsInterventions = selfEsteemData.interventions
-            .filter((intervention: any) => intervention.category === "Common Suggestions");
-          
-          const interventions = commonSuggestionsInterventions.map((item: any) => {
-            const translation = item.translations[currentLanguage] || item.translations["en"];
-            return {
-              title: translation.title || "Untitled",
-              description: translation.description || "No description",
-              xp: item.xp || 2,
-            };
-          });
-
-          return {
-            condition: "self-esteem-and-self-identity",
-            intervention_type: "Common Suggestions",
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Self-esteem and Self-identity common suggestions data:", error);
-      }
-    }
-    
-    // Special handling for Self-Care Hygiene - use the comprehensive data file
-    if (condition === "self-care-hygiene") {
-      try {
-        const selfCareHygieneData = require("../../../../assets/data/behaviour/SelfCareHygiene_comprehensive_data.json");
-        if (selfCareHygieneData && selfCareHygieneData.interventions && selfCareHygieneData.interventions.commonSuggestions) {
-          const { cards } = selfCareHygieneData.interventions.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Self-Care Hygiene data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "self-care-hygiene",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Self-Care Hygiene comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Introvert Child - use the comprehensive data file
-    if (condition === "introvert-child") {
-      try {
-        const introvertChildData = require("../../../../assets/data/behaviour/IntrovertChild_comprehensive_data.json");
-        if (introvertChildData && introvertChildData.interventions && introvertChildData.interventions.commonSuggestions) {
-          const { cards } = introvertChildData.interventions.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Introvert Child data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "introvert-child",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Introvert Child comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Substance Addiction - use the comprehensive data file
-    if (condition === "substance-addiction") {
-      try {
-        const substanceAddictionData = require("../../../../assets/data/behaviour/SubstanceAddiction_comprehensive_data.json");
-        if (substanceAddictionData && substanceAddictionData.commonSuggestions) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Substance Addiction data format to the expected format
-          const interventions = substanceAddictionData.commonSuggestions.map((item: any) => ({
-            title: item.title[currentLang],
-            description: item.description[currentLang],
-            xp: item.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "substance-addiction",
-              intervention_type: "Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Substance Addiction comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for ADHD - use the comprehensive data file
-    if (condition === "adhd") {
-      try {
-        const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
-        
-        if (adhdData && adhdData.interventions && adhdData.interventions.commonSuggestions) {
-          const { cards } = adhdData.interventions.commonSuggestions;
-          
-          if (cards && Array.isArray(cards) && cards.length > 0) {
-            // Get current language for proper translation
-            const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                              getCurrentLanguage() === "mr" ? "marathi" : "english";
-            
-            // Transform the comprehensive ADHD data format to the expected format
-            const interventions = cards.map((card: any) => ({
-              title: card.title?.[currentLang] || card.title?.english || "Untitled",
-              description: card.description?.[currentLang] || card.description?.english || "No description",
-              xp: card.xp || 2,
-            }));
-
-            return {
-              metadata: {
-                condition: "adhd",
-                intervention_type: "10 Common Suggestions",
-                total_interventions: interventions.length,
-              },
-              interventions: interventions,
-            };
-          }
-        }
-      } catch (error) {
-        console.error("Error loading ADHD comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Breakup and Rebound - use the comprehensive data file
-    if (condition === "breakupAndRebound") {
-      try {
-        const breakupReboundData = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
-        if (breakupReboundData && breakupReboundData.suggestions) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the breakup rebound data format to the expected format
-          const interventions = breakupReboundData.suggestions.map((item: any) => ({
-            title: item.title[currentLang],
-            description: item.description[currentLang],
-            xp: item.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "breakupAndRebound",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Breakup and Rebound comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Trauma, Loss and Dreams - use our new JSON file
-    if (condition === "trauma-loss-and-dreams") {
-      try {
-        const traumaData = require("../../../../assets/data/Emotion/trauma_loss_dreams_10_common_suggestions.json");
-        if (traumaData && traumaData.interventions && traumaData.interventions["10CommonSuggestions"]) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hi" : 
-                            getCurrentLanguage() === "mr" ? "mr" : "en";
-          
-          // Transform the trauma data format to the expected format
-          const languageData = traumaData.interventions["10CommonSuggestions"].languages[currentLang];
-          const interventions = languageData.suggestions.map((item: any) => ({
-            title: item.title,
-            description: item.description,
-            xp: item.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "trauma-loss-and-dreams",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Trauma, Loss and Dreams data:", error);
-      }
-    }
-    
-    // Special handling for Unrealistic Beauty Standards - use our consolidated JSON file
-    if (condition === "unrealistic-beauty-standards") {
-      try {
-        const beautyStandardsData = require("../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json");
-        if (beautyStandardsData && beautyStandardsData.suggestions) {
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the beauty standards data format to the expected format
-          const interventions = beautyStandardsData.suggestions.map((item: any) => ({
-            title: item.title[currentLang],
-            description: item.description[currentLang],
-            xp: item.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "unrealistic-beauty-standards",
-              intervention_type: "Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Unrealistic Beauty Standards data:", error);
-      }
-    }
-    
-    // Special handling for Gambling and Gaming Addiction - use the comprehensive data file
-    if (condition === "gambling-and-gaming-addiction") {
-      try {
-        const gamblingData = null // require commented due to space in path;
-        if (gamblingData && gamblingData.interventions && gamblingData.interventions.commonSuggestions) {
-          const { cards } = gamblingData.interventions.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Gambling and Gaming Addiction data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "gambling-and-gaming-addiction",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Gambling and Gaming Addiction comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Aggressive Behaviour - use the comprehensive data file
-    if (condition === "aggressive-behaviour") {
-      try {
-        const aggressiveData = require("../../../../assets/data/behaviour/AggressiveBehaviour_comprehensive_data.json");
-        if (aggressiveData && aggressiveData.interventions && aggressiveData.interventions.commonSuggestions) {
-          const { cards } = aggressiveData.interventions.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Aggressive Behaviour data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "aggressive-behaviour",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Aggressive Behaviour comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Eating Habits - use the comprehensive data file
-    if (condition === "eating-habits") {
-      try {
-        const eatingHabitsData = require("../../../../assets/data/behaviour/EatingHabits_comprehensive_data.json");
-        if (eatingHabitsData && eatingHabitsData.interventions && eatingHabitsData.interventions.commonSuggestions) {
-          const { cards } = eatingHabitsData.interventions.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Eating Habits data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "eating-habits",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Eating Habits comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Conduct Issues - use the comprehensive data file
-    if (condition === "conduct-issues") {
-      try {
-        const conductData = require("../../../../assets/data/behaviour/ConductIssues_Complete_comprehensive_data.json");
-        if (conductData && conductData.interventions && conductData.interventions.commonSuggestions) {
-          const { cards } = conductData.interventions.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Conduct Issues data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "conduct-issues",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Conduct Issues comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Dark Web and OnlyFans - use the comprehensive data file
-    if (condition === "dark-web-onlyfans") {
-      try {
-        const darkWebData = null // require commented due to space in path;
-        if (darkWebData && darkWebData.interventions && darkWebData.interventions.commonSuggestions) {
-          const { cards } = darkWebData.interventions.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hindi" : 
-                            getCurrentLanguage() === "mr" ? "marathi" : "english";
-          
-          // Transform the comprehensive Dark Web and OnlyFans data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "dark-web-onlyfans",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Dark Web and OnlyFans comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Internet Addiction - use the comprehensive data file
-    if (condition === "internet-addiction") {
-      try {
-        const internetAddictionData = null // require commented due to space in path;
-        if (internetAddictionData && internetAddictionData.commonSuggestions) {
-          const { cards } = internetAddictionData.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hi" : 
-                            getCurrentLanguage() === "mr" ? "mr" : "en";
-          
-          // Transform the comprehensive Internet Addiction data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "internet-addiction",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Internet Addiction comprehensive data:", error);
-      }
-    }
-    
-    // Special handling for Porn Addiction - use the comprehensive data file
-    if (condition === "porn-addiction") {
-      try {
-        const pornAddictionData = null // require commented due to space in path;
-        if (pornAddictionData && pornAddictionData.commonSuggestions) {
-          const { cards } = pornAddictionData.commonSuggestions;
-          
-          // Get current language for proper translation
-          const currentLang = getCurrentLanguage() === "hi" ? "hi" : 
-                            getCurrentLanguage() === "mr" ? "mr" : "en";
-          
-          // Transform the comprehensive Porn Addiction data format to the expected format
-          const interventions = cards.map((card: any) => ({
-            title: card.title[currentLang],
-            description: card.description[currentLang],
-            xp: card.xp,
-          }));
-
-          return {
-            metadata: {
-              condition: "porn-addiction",
-              intervention_type: "10 Common Suggestions",
-              total_interventions: interventions.length,
-            },
-            interventions: interventions,
-          };
-        }
-      } catch (error) {
-        console.error("Error loading Porn Addiction comprehensive data:", error);
-      }
-    }
     
     // If translations exist for this condition, use them
     if (translationKey) {
@@ -735,22 +189,22 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
 
     // Fall back to static JSON files for conditions without translations
     const dataMap: { [key: string]: SuggestionsData } = {
-      "anger-management": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      stress: { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      addictions: { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "general-physical-fitness": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "suicidal-behavior": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "common-psychological-issues": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "family-relationship": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "internet-dependence": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "environment-issues": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "financial-mental-health": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "internet-social-media": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "professional-mental-health": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "sex-life": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      sleep: { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "social-mental-health": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
-      "youngster-issues": { suggestions: [], interventions: [] } as SuggestionsData, // require commented due to space in path
+      "anger-management": require("../../../../Mind Tools/data/anger-management/10-common-suggestions.json"),
+      stress: require("../../../../Mind Tools/data/stress/10-common-suggestions.json"),
+      addictions: require("../../../../Mind Tools/data/addictions/10-common-suggestions.json"),
+      "general-physical-fitness": require("../../../../Mind Tools/data/general-physical-fitness/10-common-suggestions.json"),
+      "suicidal-behavior": require("../../../../Mind Tools/data/suicidal-behavior/10-common-suggestions.json"),
+      "common-psychological-issues": require("../../../../Mind Tools/data/common-psychological-issues/10-common-suggestions.json"),
+      "family-relationship": require("../../../../Mind Tools/data/family-relationship/10-common-suggestions.json"),
+      "internet-dependence": require("../../../../Mind Tools/data/internet-dependence/10-common-suggestions.json"),
+      "environment-issues": require("../../../../Mind Tools/data/environment-issues/10-common-suggestions.json"),
+      "financial-mental-health": require("../../../../Mind Tools/data/financial-mental-health/10-common-suggestions.json"),
+      "internet-social-media": require("../../../../Mind Tools/data/internet-social-media/10-common-suggestions.json"),
+      "professional-mental-health": require("../../../../Mind Tools/data/professional-mental-health/10-common-suggestions.json"),
+      "sex-life": require("../../../../Mind Tools/data/sex-life/10-common-suggestions.json"),
+      sleep: require("../../../../Mind Tools/data/sleep/10-common-suggestions.json"),
+      "social-mental-health": require("../../../../Mind Tools/data/social-mental-health/10-common-suggestions.json"),
+      "youngster-issues": require("../../../../Mind Tools/data/youngster-issues/10-common-suggestions.json"),
     };
 
     return dataMap[condition] || null;
@@ -874,16 +328,6 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         stress: "stress",
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
-        "friendship-and-relationship": "friendshipAndRelationship",
-        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
-        "adhd": "adhd",
-        "aggressive-behaviour": "aggressiveBehaviour",
-        "eating-habits": "eatingHabits",
-        "conduct-issues": "conductIssues",
-        "introvert-child": "introvertChild",
-        "substance-addiction": "substanceAddiction",
-        "trauma-loss-and-dreams": "traumaLossAndDreams",
-        "unrealistic-beauty-standards": "unrealisticBeautyStandards",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -906,16 +350,6 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         sleep: "scanIntro.sleep.title",
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
-        "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
-        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
-        "adhd": "adhdScreen.headerTitle",
-        "aggressive-behaviour": "aggressiveBehaviourScreen.english.headerTitle",
-        "eating-habits": "eatingHabitsScreen.headerTitle",
-        "conduct-issues": "conductIssues.headerTitle",
-        "introvert-child": "introvertChildScreen.headerTitle",
-        "substance-addiction": "substanceAddictionScreen.headerTitle",
-        "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
-        "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
       };
 
       const translationKey = translationKeyMap[condition];
@@ -938,10 +372,10 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         if (originalTitleKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedTitle = t(originalTitleKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedTitle !== originalTitleKey
               ? translatedTitle
               : getSuggestionTitle(selectedSuggestion);
@@ -965,10 +399,10 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         if (conditionDisplayKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedCondition = t(conditionDisplayKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedCondition !== conditionDisplayKey
               ? translatedCondition
               : conditionName;
@@ -996,10 +430,10 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         if (originalDescriptionKey) {
           try {
             // Force language-specific translation
-            const oldLocale = getCurrentLanguage();
-            changeLanguage(lang);
+            const oldLocale = i18n.locale;
+            i18n.locale = lang;
             const translatedDescription = t(originalDescriptionKey);
-            changeLanguage(oldLocale); // Restore original locale
+            i18n.locale = oldLocale; // Restore original locale
             return translatedDescription !== originalDescriptionKey
               ? translatedDescription
               : getSuggestionDescription(selectedSuggestion);
@@ -1109,7 +543,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("commonSuggestionsScreen.header.title")}
@@ -1142,7 +576,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                 <Text style={styles.addButtonText}>
                   {t("commonSuggestionsScreen.addButton")}
                 </Text>
-                <CustomIcon type="IO" name="add-circle" size={20} color="#8B5CF6" />
+                <Ionicons name="add-circle" size={20} color="#8B5CF6" />
               </Pressable>
             </View>
           ))}
@@ -1257,7 +691,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <CustomIcon type="IO"
+                        <Ionicons
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -1271,7 +705,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                           {t(option.descriptionKey)}
                         </Text>
                       </View>
-                      <CustomIcon type="IO"
+                      <Ionicons
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

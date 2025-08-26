@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import CustomIcon from "@/components/CustomIcon";
-import { t } from "@/i18n/locales/i18n"; // Import the translation function
+import { Ionicons } from "@expo/vector-icons";
+import { t } from "../../i18n/i18n";
+import { Portal, Dialog, Paragraph, Button } from "react-native-paper";
+import { canAccessFeature } from "../../utils/premiumUtils";
+// (duplicate t import removed)
 
 export default function InternetSocialMediaScreen({ navigation }: any) {
+  const [dialogVisible, setDialogVisible] = useState(false);
+  const [blockedPlan, setBlockedPlan] = useState<"basic" | null>(null);
   const handleBackPress = () => {
     navigation.goBack();
   };
 
-  const handleViewStrategy = (strategyKey: string) => {
+  const handleViewStrategy = async (strategyKey: string) => {
     console.log(`${strategyKey} strategy pressed`);
+
+    if (strategyKey === "cbt" || strategyKey === "rebt") {
+      const canAccess = await canAccessFeature("basic");
+      if (!canAccess) {
+        setBlockedPlan("basic");
+        setDialogVisible(true);
+        return;
+      }
+    }
+
     switch (strategyKey) {
       case "commonSuggestions":
         navigation.navigate("CommonSuggestionsScreen", {
@@ -46,7 +61,7 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
+          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("internetSocialMedia.headerTitle")}
@@ -58,7 +73,7 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="phone-portrait" size={48} color="#3b82f6" />
+              <Ionicons name="phone-portrait" size={48} color="#3b82f6" />
               <Text style={styles.imageLabel}>
                 {t("internetSocialMedia.imageLabel")}
               </Text>
@@ -125,7 +140,9 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
               {t("internetSocialMedia.strategies.commonSuggestions.title")}
             </Text>
             <Text style={styles.strategyDescription}>
-              {t("internetSocialMedia.strategies.commonSuggestions.description")}
+              {t(
+                "internetSocialMedia.strategies.commonSuggestions.description",
+              )}
             </Text>
             <Pressable
               style={styles.viewStrategyButton}
@@ -210,7 +227,7 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
+              <Ionicons name="warning" size={16} color="#f59e0b" />
             </View>
             <Text style={styles.alertTitle}>
               {t("internetSocialMedia.alertTitle")}
@@ -223,6 +240,46 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
 
         <View style={styles.bottomSpacing} />
       </ScrollView>
+      <Portal>
+        <Dialog
+          visible={dialogVisible}
+          onDismiss={() => setDialogVisible(false)}
+          style={styles.dialog}
+        >
+          <Dialog.Title style={styles.dialogTitle}>
+            {blockedPlan
+              ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
+              : t("upgradeDialog.title")}
+          </Dialog.Title>
+          <Dialog.Content>
+            <Paragraph style={styles.dialogText}>
+              {blockedPlan
+                ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.message`)
+                : t("upgradeDialog.message")}
+            </Paragraph>
+          </Dialog.Content>
+          <Dialog.Actions style={styles.dialogActions}>
+            <Button onPress={() => setDialogVisible(false)}>
+              {blockedPlan
+                ? t("mindToolsScreen.upgradeDialog.cancelButton")
+                : t("upgradeDialog.cancelButton")}
+            </Button>
+            <Button
+              mode="contained"
+              onPress={() => {
+                setDialogVisible(false);
+                navigation.navigate("Upgrade");
+              }}
+              style={styles.upgradeButton}
+              labelStyle={styles.upgradeButtonLabel}
+            >
+              {blockedPlan
+                ? t("mindToolsScreen.upgradeDialog.upgradeButton")
+                : t("upgradeDialog.upgradeButton")}
+            </Button>
+          </Dialog.Actions>
+        </Dialog>
+      </Portal>
     </View>
   );
 }
@@ -395,4 +452,19 @@ const styles = StyleSheet.create({
   bottomSpacing: {
     height: 32,
   },
+  dialog: { borderRadius: 16 },
+  dialogTitle: { textAlign: "center", fontWeight: "bold" },
+  dialogText: { textAlign: "center", marginBottom: 8 },
+  dialogActions: {
+    justifyContent: "space-between",
+    paddingHorizontal: 16,
+    paddingBottom: 16,
+  },
+  upgradeButton: {
+    backgroundColor: "#AB47BC",
+    borderRadius: 6,
+    paddingHorizontal: 16,
+    paddingVertical: 6,
+  },
+  upgradeButtonLabel: { color: "white", fontSize: 12, fontWeight: "600" },
 });

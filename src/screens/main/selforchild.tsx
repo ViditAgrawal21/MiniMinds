@@ -36,12 +36,12 @@ const SelfOrChildScreen = () => {
       if (userType === "Child") {
         navigation.navigate("Child1");
       } else {
-        navigation.navigate("Self1");
+        navigation.navigate("SelfOnboarding");
       }
     } catch (error) {
       console.error("Error saving onboarding type:", error);
       // Navigate anyway in case of error
-      navigation.navigate(userType === "Child" ? "Child1" : "Self1");
+      navigation.navigate(userType === "Child" ? "Child1" : "SelfOnboarding");
     }
   };
 
