@@ -10,6 +10,13 @@
     "mindTools": "Mind Tools",
     "profile": "Profile"
   },
+  
+  "upgradeDialog": {
+    "title": "Ultra Access Required",
+    "message": "This feature requires ultra access. Upgrade now to unlock CBT and REBT therapeutic strategies along with other ultra features.",
+    "upgradeButton": "Upgrade to Ultra",
+    "cancelButton": "Cancel"
+  },
   "privacyNotice": {
     "title": "Privacy TLDR",
     "message": "All your personal data including mood entries, journal entries, assessment results, and app usage patterns are stored and processed locally on your device. We prioritize your privacy and data security by ensuring that sensitive information never leaves your phone. Only subscription details and basic account information are stored on our servers to manage your premium features. Your mental health data remains completely private and under your control.",
@@ -252,6 +259,14 @@
           "high": "At the expert level, social skills are refined and instinctive. These individuals excel at building rapport, inspiring trust, and leading diverse groups with ease. They are masterful communicators, able to handle even the most sensitive or complex interactions with tact and empathy. Their influence extends beyond their immediate circle, as they create networks, mentor others, and drive positive change in their communities or organizations. Their presence brings people together, and they are often recognized as natural leaders and connectors."
         }
       }
+    },
+    "upgradeDialog": {
+      "premium": {
+        "title": "Ultra Plan Required",
+        "message": "All EQ tests require a Premium plan. Upgrade now to access these features and enjoy our complete emotional intelligence assessment suite."
+      },
+      "upgradeButton": "Upgrade Now",
+      "cancelButton": "Cancel"
     },
     "statusModal": {
       "completed": {
@@ -668,6 +683,27 @@
       "bi-weekly": "Bi-weekly",
       "monthly": "Monthly"
     },
+    "add": "Add",
+    "addIntervention": "Add Intervention",
+    "addTooltip": "Add Intervention",
+    "modal": {
+      "title": "Add Intervention",
+      "conditionLabel": "Condition",
+      "selectConditionPlaceholder": "Select condition",
+      "newConditionOption": "+ New Condition",
+      "newConditionNameLabel": "New Condition Name",
+      "newConditionDescriptionLabel": "Description (optional)",
+      "titleLabel": "Title",
+      "subtitleLabel": "Subtitle (optional)",
+      "descriptionLabel": "Description (optional)",
+      "xpLabel": "Select XP",
+      "frequencyLabel": "Frequency",
+      "saveButton": "Save",
+      "cancelButton": "Cancel",
+      "validationError": "Please fill all required fields",
+      "createdSuccess": "Intervention created"
+    },
+  "noConditions": "No conditions yet",
     "loading": "Loading...",
     "allTasksCompleted": "All Tasks Completed!",
     "congratulationsMessage": "Great job! You've completed all your {{tab}} interventions.",
@@ -867,17 +903,35 @@
     "mindToolSettings": "Mind Tool Settings",
     "quoteTitle": "Quote of the Day",
     "quoteText": "Recharge yourself as often as you recharge your phone.",
-    "upgradeToPremium": "Upgrade to Premium"
+    "upgradeToPremium": "Upgrade to Premium",
+    "changeLanguage": "Change language"
+  },
+  "onboarding": {
+    "complete": "100% Complete",
+    "completeTitle": "Onboarding Complete! 🎉",
+    "childComplete": "Child's onboarding is completed! You're all set to help them on their journey.",
+    "selfComplete": "Self onboarding is completed! You're ready to begin your wellness journey."
+  },
+  "common": {
+    "ok": "OK"
   },
   "generalSettings": {
     "heading": "General Settings",
     "notifications": "Notifications",
+    "notificationToggle": "Would you like the notifications to be",
+    "accountSettings": "Account Settings",
+    "deleteAccount": "Delete account",
+    "deleteAccountSubText": "Permanently delete your account",
+    "deactivateAccount": "Deactivate account",
+    "deactivateAccountSubText": "Permanently deactivate your account",
+    "logOut": "Log out",
+    "support": "Support",
+    "help": "Help",
     "darkMode": "Dark Mode",
     "language": "Language",
     "units": "Units",
     "imperial": "Imperial",
     "metric": "Metric",
-    "help": "Help & Support",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "about": "About Us",
@@ -885,11 +939,32 @@
   },
   "guardianSettings": {
     "heading": "Guardian Settings",
+    "guardianControl": "Guardian Control",
+    "notificationToggle": "Would you like the notifications to be",
+    "guardianSettings": "Guardian Settings",
+    "addEditGuardian": "Add/Edit Guardian",
+    "addEditGuardianSubText": "Edit details of the existing guardian",
     "addGuardian": "Add Guardian",
     "editGuardian": "Edit Guardian",
     "removeGuardian": "Remove Guardian",
     "guardianPassword": "Guardian Password",
     "changePassword": "Change Password"
+  },
+  "guardianList": {
+    "title": "Guardian List",
+    "addGuardian": "Add Guardian",
+    "cancel": "Cancel",
+    "save": "Save",
+    "add": "Add",
+    "nameLabel": "Name",
+    "emailLabel": "E-mail", 
+    "phoneLabel": "Phone Number",
+    "relationLabel": "Relation with User",
+    "namePlaceholder": "Enter the Name of Guardian",
+    "emailPlaceholder": "Enter the Email address",
+    "phonePlaceholder": "Enter the Phone Number",
+    "relationPlaceholder": "Enter Your Relation with User",
+    "permissionRequired": "Permission to access photos is required!"
   },
   "homeTab": {
     "daily": "Daily",
@@ -908,6 +983,9 @@
     "selfCare": "Self-Care",
     "productivity": "Productivity",
     "eqTest": "EQ Test",
+    "example": "Example",
+    "tryThis": "Try this",
+    "gotIt": "Got it!",
     "greatJob": "Great job! Keep up the good work.",
     "youCanDoBetter": "Check out ",
     "mindTools": "MIND TOOLS",
@@ -920,10 +998,12 @@
     "activityAddedSuccess": "Activity Added Successfully!",
     "editActivityTimeLimit": "You can edit this activity for the next 24 hours.",
     "currentInterventions": "Current Interventions",
+    "recommendedInterventions": "Recommended Interventions",
     "dailyInterventions": "Daily",
     "weeklyInterventions": "Weekly",
     "biweeklyInterventions": "Bi-weekly",
-    "monthlyInterventions": "Monthly"
+  "monthlyInterventions": "Monthly",
+  "wellnessScoreInfo": "Score depends on onboarding questions and test result. Every XP you gain counts here."
   },
   "conditionScans": {
     "headerTitle": "Check your conditional wellness",
@@ -960,18 +1040,60 @@
     "youngsterIssuesQuestion": "Youngster Issues",
     "upgradeDialog": {
       "basic": {
-        "title": "Basic Plan Required",
-        "message": "This scan requires a Basic plan. Upgrade now to access this feature and unlock more wellness tools."
+        "title": "Premium Plan Required",
+        "message": "This scan requires a Premium plan. Upgrade now to access this feature and unlock more wellness tools."
       },
       "premium": {
-        "title": "Premium Plan Required",
-        "message": "This scan requires a Premium plan. Upgrade now to access this feature and enjoy our complete wellness experience."
+        "title": "Ultra Plan Required",
+        "message": "This scan requires a Ultra plan. Upgrade now to access this feature and enjoy our complete wellness experience."
       },
       "upgradeButton": "Upgrade Now",
       "cancelButton": "Cancel"
     }
   },
   "upgrade": {
+    "status": {
+      "free": "Free Plan",
+      "freeSubtitle": "Unlock Premium or Ultra features using your redeem code.",
+      "active": "Subscription Active",
+      "validUntil": "Valid until"
+    },
+    "screen": {
+      "title": "Thought Pro",
+      "earlyBirdOffer": "EARLY BIRD OFFER",
+      "earlyBirdSubtitle": "Buy Premium plans for a nominal price.",
+      "benefits": {
+        "header": "Benefits",
+        "freeAccess": "Self-monitor stress, productivity, & 10 other vital parameters",
+        "allInFreeAccess": "All-in free access",
+        "scans": "Scans",
+        "primarySecondaryInterventions": "Primary & Secondary Interventions",
+        "videoTertiaryContent": "Video Tertiary Content",
+        "professionalSessions": "1-on-1 session with professionals (₹500-800/session)",
+        "monthlyCost": "",
+        "yearlyCost": ""
+      },
+      "plans": {
+        "free": "Free",
+        "premium": "Premium",
+        "ultra": "Ultra",
+        "freeScans": "3 Scans",
+        "premiumScans": "10+ Scans",
+        "ultraScans": "100+ Scans"
+      },
+      "pricing": {
+        "premiumMonthly": "Premium Monthly Plan",
+        "premiumYearly": "Premium Yearly Plan",
+        "ultraMonthly": "Ultra Monthly Plan",
+        "ultraYearly": "Ultra Yearly Plan",
+        "premiumMonthlyPrice": "₹299",
+        "premiumYearlyPrice": "₹999",
+        "ultraMonthlyPrice": "₹599",
+        "ultraYearlyPrice": "₹2599",
+        "buyButton": "Buy",
+        "recommended": "(Recommended)"
+      }
+    },
     "redeemCode": {
       "title": "Redeem a Code",
       "placeholder": "Enter your code",
@@ -983,8 +1105,94 @@
       "errorMessage": "Invalid redeem code. Please check and try again.",
       "enterCode": "Please enter a redeem code",
       "unexpectedError": "An unexpected error occurred. Please try again.",
-      "ok": "OK"
+      "ok": "OK",
+      "alreadyUsedByYou": "Already Activated",
+      "assignedToOther": "Code Already Used",
+      "invalidCode": "Invalid Code",
+      "alreadyUsedMessage": "You have already used this license code and it is valid until {validUntil}.\n\n✅ Your {planType} plan is now active!",
+      "assignedToOtherMessage": "This license code has been assigned to a different email address and cannot be used again.",
+      "planActivated": "Plan Activated",
+      "validUntil": "Valid until {{date}}"
+    },
+    "choosePlan": {
+      "title": "Choose Your Plan",
+      "subtitle": "Get professional license with email verification"
     }
+  },
+  "planSelection": {
+    "title": "Choose Your Plan",
+    "subtitle": "Select the plan that best fits your mental wellness journey",
+    "navigation": {
+      "back": "← Back"
+    },
+    "plans": {
+      "premiumMonthly": "Premium Monthly",
+      "premiumYearly": "Premium Yearly",
+      "ultraMonthly": "Ultra Monthly",
+      "ultraYearly": "Ultra Yearly"
+    },
+    "duration": {
+      "monthly": "/month",
+      "yearly": "/year"
+    },
+    "badges": {
+      "mostPopular": "Most Popular",
+      "bestValue": "Best Value"
+    },
+    "buttons": {
+      "selected": "Selected",
+      "selectPlan": "Select Plan",
+      "continue": "Continue",
+      "redeemCode": "Have a redeem code? Tap here"
+    }
+  },
+  "emailCollection": {
+    "title": "Enter Your Email",
+    "subtitle": "We'll send you a verification code to activate your",
+    "plan": "plan",
+    "navigation": {
+      "back": "← Back"
+    },
+    "labels": {
+      "emailAddress": "Email Address"
+    },
+    "placeholders": {
+      "email": "Enter your email address"
+    },
+    "buttons": {
+      "continue": "Continue"
+    },
+    "error": "Error",
+    "enterEmail": "Please enter your email address",
+    "validEmail": "Please enter a valid email address",
+    "registrationFailed": "Failed to register. Please try again.",
+    "networkError": "Network error. Please check your connection and try again."
+  },
+  "otpVerification": {
+    "title": "Verify Your Email",
+    "subtitle": "We've sent a 6-digit verification code to",
+    "navigation": {
+      "back": "← Back"
+    },
+    "labels": {
+      "verificationCode": "Verification Code"
+    },
+    "placeholders": {
+      "code": "000000"
+    },
+    "buttons": {
+      "verify": "Verify Code",
+      "resend": "Resend Code"
+    },
+    "error": "Error",
+    "success": "Success",
+    "enterCode": "Please enter the 6-digit verification code",
+    "invalidCode": "Invalid verification code",
+    "verificationFailed": "Failed to verify code. Please try again.",
+    "codeSent": "Verification code sent successfully",
+    "resendFailed": "Failed to resend code",
+    "resendError": "Failed to resend code. Please try again.",
+    "resendInfo": "Didn't receive the code? You can resend in"
   },
   "interventionsContent": {
     "categories": {
@@ -1028,10 +1236,6 @@
     "addictions": {
       "title": "Addictions",
       "overview": "Addictions are complex conditions characterized by the compulsive engagement in rewarding stimuli, despite adverse consequences. They can manifest in various forms, including substance abuse (like drugs or alcohol) and behavioral addictions (such as gambling or internet usage). Rooted in both genetic and environmental factors, addictions alter brain chemistry, affecting areas related to reward, motivation, and memory. This rewiring of neural pathways makes overcoming addiction challenging, often requiring comprehensive treatment strategies like therapy, rehabilitation, and support groups. Understanding addiction as a chronic, relapsing disorder rather than a moral failing is crucial in promoting empathy and effective intervention for those affected."
-    },
-    "aggressiveBehaviour": {
-      "title": "Aggressive Behaviour",
-      "overview": "Aggressive behaviour encompasses patterns of actions that can be verbal, physical, or psychological, often resulting in harm to others or oneself. It may stem from various factors including stress, frustration, trauma, or underlying mental health conditions. While aggressive responses can sometimes serve as protective mechanisms, persistent aggressive behaviour can significantly damage relationships, career prospects, and overall well-being. Understanding the triggers and developing healthy coping strategies through anger management, communication skills, and stress reduction techniques are essential for managing aggressive tendencies. Professional support can provide valuable tools for transforming aggressive impulses into constructive responses, leading to better personal and social outcomes."
     },
     "angerManagement": {
       "title": "Anger Management",
@@ -7866,33 +8070,33 @@
     "navigation": "Navigation",
     "navigateTo": "Navigate to {{categoryName}}",
     "categories": {
-      "adhd": {
-        "title": "ADHD",
-        "description": "Tools and techniques for managing ADHD symptoms"
+      "angerManagement": {
+        "title": "Anger Management",
+        "description": "Tools and techniques for managing anger"
       },
-      "aggressiveBehaviour": {
-        "title": "Aggressive Behaviour",
-        "description": "Anger management and aggressive behaviour control techniques"
+      "stress": {
+        "title": "Stress",
+        "description": "Stress management and coping strategies"
       },
-      "conductIssues": {
-        "title": "Conduct Issues",
-        "description": "Behavioral management and conduct disorder support"
+      "internetSocialMedia": {
+        "title": "Internet & Social Media",
+        "description": "Digital wellness and screen time management"
       },
-      "eatingHabits": {
-        "title": "Eating Habits",
-        "description": "Nutritional awareness and healthy eating support"
+      "familyRelationship": {
+        "title": "Family & Relationship",
+        "description": "Relationship counseling and support"
       },
-      "introvertChild": {
-        "title": "Introvert Child",
-        "description": "Supporting introverted children's development"
+      "sleep": {
+        "title": "Sleep",
+        "description": "Sleep hygiene and insomnia support"
       },
-      "selfCareHygiene": {
-        "title": "Self-care hygiene",
-        "description": "Personal wellness and daily self-care practices"
+      "suicidalBehaviour": {
+        "title": "Suicidal Behaviour",
+        "description": "Crisis intervention and support resources"
       },
-      "substanceAddiction": {
-        "title": "Substance Addiction",
-        "description": "Addiction recovery and support programs"
+      "sexLife": {
+        "title": "Sex Life",
+        "description": "Sexual health and relationship guidance"
       },
       "addictions": {
         "title": "Addictions",
@@ -7902,17 +8106,17 @@
         "title": "Common Psychological",
         "description": "Common mental health concerns"
       },
-      "friendshipAndRelationship": {
-        "title": "Friendship and Relationship",
-        "description": "Social connections and relationship building support"
+      "environmentIssues": {
+        "title": "Environment Issues",
+        "description": "Environmental factors affecting wellness"
       },
       "financialMentalHealth": {
         "title": "Financial Mental Health",
         "description": "Financial stress and money management"
       },
-      "unrealisticBeautyStandards": {
-        "title": "Unrealistic Beauty Standards",
-        "description": "Addressing body image issues and promoting healthy self-perception"
+      "physicalFitness": {
+        "title": "Physical Fitness",
+        "description": "Exercise and physical health for mental wellness"
       },
       "internetDependence": {
         "title": "Internet Dependence",
@@ -7926,538 +8130,67 @@
         "title": "Social Mental Health",
         "description": "Social anxiety and community support"
       },
-      "pornAddiction": {
-        "title": "Porn Addiction",
-        "description": "Support for pornography addiction recovery and healthy sexuality"
-      },
-      "breakupAndRebound": {
-        "title": "Breakup and Rebound",
-        "description": "Emotional support and healing strategies for relationship endings"
-      },
-      "traumaLossAndDreams": {
-        "title": "Trauma, Loss & Dreams",
-        "description": "Support for processing trauma, grief, and exploring dreams"
-      },
-      "selfEsteemAndSelfIdentity": {
-        "title": "Self-esteem and Self-identity",
-        "description": "Building self-worth, confidence, and personal identity development"
-      },
-      "darkWebAndOnlyFans": {
-        "title": "Dark Web and OnlyFans",
-        "description": "Support for dark web and adult content platform addiction"
-      },
-      "gamblingAndGamingAddiction": {
-        "title": "Gambling and gaming addiction",
-        "description": "Support for gambling and gaming addiction recovery"
-      },
-      "internetAddiction": {
-        "title": "Internet addiction",
-        "description": "Support for internet and digital device addiction recovery"
+      "youngsterIssues": {
+        "title": "Youngster Issues",
+        "description": "Youth-specific mental health support"
       },
       "emotionalIntelligence": {
         "title": "Emotional Intelligence",
         "description": "Develop emotional awareness, regulation, and social skills through 5 key EQ dimensions"
       }
+    },
+    "upgradeDialog": {
+      "basic": {
+        "title": "Premium Plan Required",
+        "message": "This tool requires a Premium plan. Upgrade now to access this feature and unlock more wellness tools."
+      },
+      "premium": {
+        "title": "Ultra Plan Required",
+        "message": "This tool requires a Ultra plan. Upgrade now to access this feature and enjoy our complete wellness experience."
+      },
+      "upgradeButton": "Upgrade Now",
+      "cancelButton": "Cancel"
     }
   },
-  "gamblingAndGamingAddictionScreen": {
-    "headerTitle": "Gambling & Gaming Addiction",
-    "title": "Gambling & Gaming Addiction Recovery",
-    "description": "Break free from gambling and gaming addiction with evidence-based strategies and professional support for a healthier digital lifestyle.",
-    "benefitsTitle": "Benefits of Recovery",
-    "benefits": {
-      "financialStability": "Improved financial stability and debt reduction",
-      "betterSleep": "Better sleep patterns and physical health",
-      "strongerRelationships": "Stronger relationships and social connections",
-      "enhancedProductivity": "Enhanced productivity and focus",
-      "reducedAnxiety": "Reduced anxiety and depression symptoms",
-      "increasedSelfControl": "Increased self-control and decision-making skills"
-    },
-    "strategiesTitle": "Recovery Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "Common Recovery Suggestions",
-        "description": "Practical daily strategies and tips to help overcome gambling and gaming addiction, including trigger management and healthy alternatives."
-      },
-      "yoga": {
-        "title": "Yoga and meditation",
-        "description": "Use mindfulness practices and yoga to develop self-awareness, reduce impulsive behaviors, and manage cravings effectively."
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques",
-        "description": "Learn stress reduction and relaxation methods to cope with withdrawal symptoms and anxiety without turning to gambling or gaming."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Identify and change negative thought patterns and behaviors that contribute to gambling and gaming addiction."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Address irrational beliefs about luck, control, and self-worth that fuel addictive gambling and gaming behaviors."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "Seek Professional Help",
-    "alertText": "Gambling and gaming addiction can have serious financial, social, and psychological consequences. If you're struggling with addiction, consider reaching out to a mental health professional, support groups, or addiction helplines for specialized treatment and support."
-  },
-  "internetAddictionScreen": {
-    "headerTitle": "Internet Addiction",
-    "imageLabel": "Digital Wellness",
-    "title": "Internet Addiction Recovery",
-    "description": "Overcome internet and digital device addiction with evidence-based strategies and professional support for a healthier digital lifestyle.",
-    "symptomsTitle": "Common Signs & Concerns",
-    "symptoms": {
-      "excessiveTime": "Excessive time spent online affecting daily responsibilities",
-      "difficultyControlling": "Difficulty controlling internet usage despite negative consequences",
-      "withdrawalSymptoms": "Withdrawal symptoms when offline (anxiety, irritability)",
-      "neglectingRelationships": "Neglecting relationships and social activities for online engagement",
-      "sleepDisruption": "Sleep disruption due to late-night internet usage"
-    },
-    "strategiesTitle": "Recovery Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "10 Common Suggestions",
-        "description": "Practical daily strategies and lifestyle changes to help reduce internet dependency and build healthier digital habits."
-      },
-      "yoga": {
-        "title": "Yoga and meditation",
-        "description": "Use mindfulness practices and yoga to develop self-awareness, reduce impulsive browsing behaviors, and manage digital cravings effectively."
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques",
-        "description": "Learn relaxation methods to manage stress and anxiety that often lead to excessive internet use and digital escapism."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Challenge negative thought patterns and develop healthier coping mechanisms for managing internet addiction triggers."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Address irrational beliefs about internet use and develop rational thinking patterns for better digital wellness."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "Professional Support",
-    "alertText": "If internet addiction is significantly impacting your life, consider seeking help from a mental health professional who specializes in digital addiction."
-  },
-  "darkWebAndOnlyFansScreen": {
-    "headerTitle": "Dark Web and OnlyFans",
-    "imageLabel": "Digital Addiction Support",
-    "title": "Dark Web and Adult Content Platform Addiction",
-    "description": "Professional support for overcoming harmful digital behaviors including dark web exploration and adult content platform dependencies. Find healthy alternatives and recovery strategies.",
-    "symptomsTitle": "Common Concerns",
-    "symptoms": {
-      "compulsiveBrowsing": "Compulsive browsing of inappropriate content",
-      "financialSpending": "Financial spending on adult platforms",
-      "neglectingRelationships": "Neglecting real-world relationships",
-      "sleepDisruption": "Sleep disruption and time management issues",
-      "socialIsolation": "Social isolation and shame",
-      "exposureToHarmful": "Exposure to illegal or harmful content"
-    },
-    "strategiesTitle": "Support Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "Common Recovery Suggestions",
-        "description": "Evidence-based strategies for breaking digital addiction cycles and establishing healthy online habits."
-      },
-      "yoga": {
-        "title": "Mindful Yoga Practice",
-        "description": "Physical and mental exercises to redirect energy and improve self-control through mindful movement."
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques",
-        "description": "Stress reduction methods to manage urges and develop healthier coping mechanisms."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Identify and change thought patterns that lead to compulsive digital behaviors."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Challenge irrational beliefs and develop healthier emotional responses to triggers."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "Important Notice",
-    "alertText": "If you're struggling with these behaviors, please consider seeking professional help. Recovery is possible with the right support and treatment approach."
-  },
-  "aggressiveBehaviourScreen": {
-    "title": "Aggressive Behaviour",
-    "english": {
-      "headerTitle": "Aggressive Behaviour",
-      "imageLabel": "Anger Management",
-      "title": "Aggressive Behaviour Management",
-      "description": "Aggressive behaviour can manifest as verbal outbursts, physical actions, or hostile attitudes. Understanding triggers and developing healthy coping mechanisms are essential for managing aggressive tendencies and maintaining positive relationships.\n\nEffective management includes recognizing warning signs, practicing emotional regulation, communication skills, and implementing conflict resolution strategies.",
-      "symptomsTitle": "Signs & Symptoms",
-      "symptoms": {
-        "verbalAggression": "Frequent yelling, threats, or hostile verbal communication",
-        "physicalTension": "Clenched fists, muscle tension, or aggressive body language",
-        "impulsiveReactions": "Quick to anger and difficulty controlling immediate responses",
-        "irritability": "Easily annoyed or frustrated by minor inconveniences",
-        "conflictEscalation": "Tendency to escalate disagreements into arguments or fights"
-      },
-      "copingStrategiesTitle": "Management Strategies",
-      "strategies": {
-        "commonSuggestions": {
-          "title": "10 Common Suggestions",
-          "description": "Practical daily techniques for managing anger and aggressive impulses effectively."
-        },
-        "yoga": {
-          "title": "Yoga & Meditation",
-          "description": "Physical movements and mindfulness practices to promote calm and emotional regulation."
-        },
-        "relaxation": {
-          "title": "Relaxation Techniques",
-          "description": "Breathing exercises and stress reduction methods to manage anger triggers."
-        },
-        "cbt": {
-          "title": "Cognitive Behavioral Therapy (CBT)",
-          "description": "Helps identify thought patterns that lead to aggression and develop healthier responses."
-        },
-        "rebt": {
-          "title": "Rational Emotive Behavior Therapy (REBT)",
-          "description": "Focuses on changing irrational beliefs that contribute to aggressive behaviour."
-        }
-      },
-      "viewStrategyButton": "View Strategy",
-      "alertTitle": "When to seek help?",
-      "alertText": "Seek help for aggressive behaviour when it significantly impacts relationships, work, or daily life. If you experience frequent outbursts, difficulty controlling anger, or if others express concern about your behaviour, professional support can provide effective anger management strategies and therapeutic interventions."
-    }
-  },
-  "breakupAndReboundScreen": {
-    "title": "Breakup and Rebound",
-    "english": {
-      "headerTitle": "Breakup and Rebound Support",
-      "imageLabel": "Relationship Healing",
-      "title": "Breakup and Rebound Recovery",
-      "description": "Going through a breakup can be one of life's most challenging experiences, affecting emotional well-being, self-esteem, and daily functioning. Understanding healthy recovery processes and avoiding unhealthy rebound patterns is essential for emotional healing.\n\nEffective recovery includes processing emotions, rebuilding self-worth, establishing healthy boundaries, and taking time to heal before entering new relationships.",
-      "symptomsTitle": "Common Experiences",
-      "symptoms": {
-        "emotionalPain": "Intense feelings of sadness, loss, and emotional distress following relationship ending",
-        "lossOfAppetite": "Changes in eating patterns, loss of interest in food or overeating for comfort",
-        "sleepDisturbances": "Difficulty falling asleep, staying asleep, or sleeping too much",
-        "socialWithdrawal": "Avoiding friends, family, and social activities due to emotional pain",
-        "lowSelfEsteem": "Questioning self-worth and feeling inadequate or unlovable after breakup"
-      },
-      "copingStrategiesTitle": "Healing Strategies",
-      "strategies": {
-        "commonSuggestions": {
-          "title": "10 Common Suggestions",
-          "description": "Practical guidance for navigating breakup recovery and healthy relationship patterns."
-        },
-        "yoga": {
-          "title": "Yoga & Meditation",
-          "description": "Mindfulness practices and gentle movement to support emotional healing and self-care."
-        },
-        "relaxation": {
-          "title": "Relaxation Techniques",
-          "description": "Stress reduction methods and calming practices for emotional regulation during recovery."
-        },
-        "cbt": {
-          "title": "Cognitive Behavioral Therapy (CBT)",
-          "description": "Helps process relationship patterns and develop healthier thinking about love and loss."
-        },
-        "rebt": {
-          "title": "Rational Emotive Behavior Therapy (REBT)",
-          "description": "Addresses irrational beliefs about relationships and supports emotional healing."
-        }
-      },
-      "viewStrategyButton": "View Strategy",
-      "alertTitle": "When to seek help?",
-      "alertText": "Seek professional support if breakup grief persists for months, significantly impacts daily functioning, or if you experience thoughts of self-harm. A therapist can provide guidance for healthy relationship patterns and emotional recovery."
-    }
-  },
-  "eatingHabitsScreen": {
-    "headerTitle": "Eating Habits",
-    "title": "Eating Habits",
-    "english": {
-      "headerTitle": "Eating Habits",
-      "imageLabel": "Healthy Eating",
-      "title": "Healthy Eating Habits",
-      "description": "Developing healthy eating habits is crucial for both physical and mental well-being. Proper nutrition supports brain function, mood regulation, and energy levels throughout the day.\n\nEffective eating habit management includes mindful eating practices, balanced nutrition, regular meal patterns, and addressing emotional eating patterns through therapeutic interventions.",
-      "symptomsTitle": "Common Challenges",
-      "symptoms": {
-        "emotionalEating": "Eating in response to stress, boredom, or other emotions rather than hunger",
-        "irregularPatterns": "Skipping meals, eating at inconsistent times, or chaotic eating schedules",
-        "mindlessEating": "Eating while distracted, not paying attention to hunger/fullness cues",
-        "restrictivePatterns": "Severely limiting food intake or having rigid food rules",
-        "bingeEating": "Episodes of eating large amounts of food in short periods with loss of control",
-        "foodGuilt": "Feeling guilty or shameful about food choices and eating behaviors"
-      },
-      "strategiesTitle": "Available Strategies",
-      "strategies": {
-        "commonSuggestions": {
-          "title": "Common Suggestions",
-          "description": "Evidence-based recommendations for developing healthier eating patterns and relationships with food."
-        },
-        "yoga": {
-          "title": "Yoga & Meditation",
-          "description": "Mindfulness practices that support mindful eating and stress reduction."
-        },
-        "relaxation": {
-          "title": "Relaxation Techniques", 
-          "description": "Stress management techniques to address emotional eating and food anxiety."
-        },
-        "cbt": {
-          "title": "Cognitive Behavioral Therapy (CBT)",
-          "description": "Helps identify thought patterns and behaviors related to eating and develop healthier responses."
-        },
-        "rebt": {
-          "title": "Rational Emotive Behavior Therapy (REBT)",
-          "description": "Focuses on changing irrational beliefs about food, body image, and eating behaviors."
-        }
-      },
-      "viewStrategyButton": "View Strategy",
-      "alertTitle": "When to seek help?",
-      "alertText": "Seek professional help for eating habits when they significantly impact your physical health, mental well-being, or daily life. If you experience persistent emotional eating, extreme restriction, binge episodes, or distressing thoughts about food and body image, professional support can provide effective strategies and therapeutic interventions."
-    }
-  },
-  "introvertChildScreen": {
-    "headerTitle": "Introvert Child",
-    "english": {
-      "headerTitle": "Introvert Child",
-      "imageLabel": "Introvert Child Support",
-      "title": "Introvert Child",
-      "description": "Supporting introverted children involves understanding their unique needs for quiet time, deep connections, and thoughtful processing. Introverted children often thrive in calm environments and benefit from approaches that honor their reflective nature.\n\nEffective support includes respecting their need for solitude, encouraging self-expression through various mediums, and providing gentle guidance for social development while maintaining their authentic personality.",
-      "symptomsTitle": "Common Characteristics",
-      "symptoms": {
-        "socialWithdrawal": "Prefers quiet activities and smaller social groups",
-        "difficultyExpressing": "Takes time to process thoughts and express feelings",
-        "prefersSolitude": "Needs alone time to recharge and reflect",
-        "overwhelmInSocialSituations": "May feel overwhelmed in busy or loud environments",
-        "lowSelfConfidence": "May struggle with self-confidence in group settings"
-      },
-      "copingStrategiesTitle": "Support Strategies",
-      "strategies": {
-        "commonSuggestions": {
-          "title": "10 Common Suggestions",
-          "description": "Evidence-based recommendations for supporting introverted children in their daily activities and social development."
-        },
-        "yoga": {
-          "title": "Yoga & Meditation",
-          "description": "Mindfulness practices that help introverted children manage emotions and develop inner calm."
-        },
-        "relaxation": {
-          "title": "Relaxation Techniques", 
-          "description": "Calming techniques that support emotional regulation and stress management for sensitive children."
-        },
-        "cbt": {
-          "title": "Cognitive Behavioral Therapy (CBT)",
-          "description": "Helps introverted children develop social skills, self-confidence, and healthy thought patterns."
-        },
-        "rebt": {
-          "title": "Rational Emotive Behavior Therapy (REBT)",
-          "description": "Supports introverted children in building self-acceptance and managing social anxiety."
-        }
-      },
-      "viewStrategyButton": "View Strategy",
-      "alertTitle": "When to seek help?",
-      "alertText": "Seek professional help for an introverted child when their quiet nature significantly impacts their ability to form necessary social connections, participate in required activities, or when they show signs of anxiety, depression, or extreme social withdrawal that interferes with normal development."
-    },
-    "imageLabel": "Introvert Child Support",
-    "title": "Introvert Child",
-    "description": "Supporting introverted children involves understanding their unique needs for quiet time, deep connections, and thoughtful processing. Introverted children often thrive in calm environments and benefit from approaches that honor their reflective nature.\n\nEffective support includes respecting their need for solitude, encouraging self-expression through various mediums, and providing gentle guidance for social development while maintaining their authentic personality.",
-    "symptomsTitle": "Common Characteristics",
-    "symptoms": {
-      "socialWithdrawal": "Prefers quiet activities and smaller social groups",
-      "difficultyExpressing": "Takes time to process thoughts and express feelings",
-      "prefersSolitude": "Needs alone time to recharge and reflect",
-      "overwhelmInSocialSituations": "May feel overwhelmed in busy or loud environments",
-      "lowSelfConfidence": "May struggle with self-confidence in group settings"
-    },
-    "supportStrategiesTitle": "Support Strategies",
-    "strategiesTitle": "Available Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "Common Suggestions",
-        "description": "Evidence-based recommendations for supporting introverted children in their daily activities and social development."
-      },
-      "yoga": {
-        "title": "Yoga & Meditation",
-        "description": "Mindfulness practices that help introverted children manage emotions and develop inner calm."
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques", 
-        "description": "Calming techniques that support emotional regulation and stress management for sensitive children."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps introverted children develop social skills, self-confidence, and healthy thought patterns."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Supports introverted children in building self-acceptance and managing social anxiety."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "When to seek help?",
-    "alertText": "Seek professional help for an introverted child when their quiet nature significantly impacts their ability to form necessary social connections, participate in required activities, or when they show signs of anxiety, depression, or extreme social withdrawal that interferes with normal development."
-  },
-  "traumaLossAndDreamsScreen": {
-    "headerTitle": "Trauma, Loss & Dreams",
-    "imageLabel": "Healing and Recovery",
-    "title": "Dealing with Trauma, Loss, and Dreams",
-    "description": "Trauma and loss can deeply impact mental health, affecting daily functioning, relationships, and overall well-being. Dreams often reflect our processing of difficult experiences. Understanding healthy coping mechanisms and processing techniques is essential for healing and recovery.\n\nEffective healing includes acknowledging emotions, seeking support, developing resilience, and finding meaning through the recovery process.",
-    "benefitsTitle": "Benefits of Healing",
-    "benefits": {
-      "emotionalHealing": "Emotional processing and reduced trauma symptoms",
-      "improvedSleep": "Better sleep quality and fewer nightmares",
-      "betterCoping": "Enhanced coping skills for difficult emotions",
-      "increasedResilience": "Greater resilience and post-traumatic growth",
-      "restoredHope": "Renewed sense of purpose and hope for the future"
-    },
-    "strategiesTitle": "Healing Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "10 Common Suggestions",
-        "description": "Evidence-based recommendations for processing trauma, coping with loss, and understanding dreams in healing."
-      },
-      "yoga": {
-        "title": "Yoga & Meditation",
-        "description": "Mindful movement and meditation practices to support trauma recovery and emotional healing."
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques",
-        "description": "Grounding exercises and relaxation methods to manage trauma symptoms and promote healing."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps process traumatic experiences, manage grief, and develop healthy coping mechanisms."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Focuses on rebuilding rational thinking patterns after trauma and processing loss constructively."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "Healing Takes Time",
-    "alertText": "Recovery from trauma and loss is a personal journey that takes time. Be patient with yourself, seek professional help when needed, and remember that healing is not linear. Dreams and memories are part of the processing journey toward wholeness."
-  },
-  "selfEsteemAndSelfIdentityScreen": {
-    "headerTitle": "Self-esteem and Self-identity",
-    "imageLabel": "Self-Worth & Identity",
-    "title": "Self-esteem and Self-identity Development",
-    "description": "Self-esteem and personal identity are fundamental aspects of mental health that influence how we see ourselves, make decisions, and interact with others. Building healthy self-worth and a strong sense of identity are essential for overall well-being and personal growth.\n\nDeveloping positive self-esteem involves recognizing personal strengths, accepting limitations, setting healthy boundaries, and cultivating self-compassion through various therapeutic approaches.",
-    "concernsTitle": "Common Concerns",
-    "concerns": {
-      "lowSelfWorth": "Persistent feelings of inadequacy and low self-worth",
-      "negativeThoughts": "Constant self-criticism and negative self-talk",
-      "identityConfusion": "Uncertainty about personal values, goals, and identity",
-      "selfDoubt": "Chronic self-doubt and lack of confidence in decision-making",
-      "comparisons": "Frequent comparisons with others leading to feelings of inferiority"
-    },
-    "supportStrategiesTitle": "Support Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "10 Common Suggestions",
-        "description": "Evidence-based strategies for building self-esteem and developing a strong personal identity."
-      },
-      "yoga": {
-        "title": "Yoga & Meditation",
-        "description": "Mindful practices that promote self-awareness, body acceptance, and inner confidence."
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques",
-        "description": "Stress reduction methods that support emotional regulation and self-compassion development."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps identify and challenge negative self-beliefs while building realistic self-assessment skills."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Focuses on developing rational self-acceptance and challenging perfectionist beliefs."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "When to seek help?",
-    "alertText": "Seek professional support if low self-esteem significantly impacts daily functioning, relationships, or leads to depression, anxiety, or thoughts of self-harm. A therapist can help develop healthy self-perception and identity formation strategies."
-  },
-  "unrealisticBeautyStandardsScreen": {
-    "headerTitle": "Unrealistic Beauty Standards",
-    "imageLabel": "Body Positivity & Self-Acceptance",
-    "title": "Unrealistic Beauty Standards and Obesity",
-    "description": "Society's unrealistic beauty standards and weight stigma can severely impact mental health, leading to poor body image, eating disorders, and low self-esteem. Understanding the difference between health and appearance, developing body positivity, and challenging societal norms are essential for mental wellness.\n\nEffective support includes promoting body acceptance, challenging media influences, developing healthy relationships with food and exercise, and fostering self-compassion regardless of body size or appearance.",
-    "benefitsTitle": "Benefits of Body Acceptance",
-    "benefits": {
-      "improvedSelfImage": "Enhanced body image and reduced appearance-based anxiety",
-      "healthyHabits": "Development of sustainable, health-focused lifestyle habits",
-      "reducedAnxiety": "Decreased social anxiety and fear of judgment",
-      "betterSelfAcceptance": "Improved self-acceptance and reduced comparison with others",
-      "improvedMentalHealth": "Better overall mental health and emotional well-being"
-    },
-    "strategiesTitle": "Support Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "10 Common Suggestions",
-        "description": "Evidence-based approaches for challenging beauty standards and developing a healthy relationship with your body."
-      },
-      "yoga": {
-        "title": "Yoga & Meditation",
-        "description": "Body-positive movement practices that promote self-acceptance and mindful awareness of physical sensations."
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques",
-        "description": "Stress reduction methods to manage appearance anxiety and promote emotional regulation."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps identify and challenge negative body image thoughts while developing realistic self-perception."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Focuses on challenging irrational beliefs about appearance and developing unconditional self-acceptance."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "importantNote": {
-      "title": "Health vs. Appearance",
-      "text": "Remember that health comes in many sizes and shapes. Focus on nourishing your body with good food, movement, and self-care rather than pursuing unrealistic appearance goals. Your worth is not determined by your weight or appearance."
-    },
-    "safetyNote": {
-      "title": "When to Seek Help",
-      "text": "Seek professional support if body image concerns significantly impact daily life, lead to disordered eating behaviors, or cause severe emotional distress. A therapist specializing in body image and eating disorders can provide specialized support."
-    }
-  },
-  "adhdScreen": {
-    "headerTitle": "ADHD",
-    "imageLabel": "ADHD Support",
-    "title": "Attention Deficit Hyperactivity Disorder (ADHD)",
-    "description": "ADHD is a neurodevelopmental disorder that affects attention, hyperactivity, and impulsivity. People with ADHD often thrive in structured environments and benefit from specific strategies and support.\n\nEffective management includes therapy, organizational techniques, lifestyle changes, and sometimes medication to help improve daily functioning.",
+  "angerManagementScreen": {
+    "headerTitle": "Anger Management",
+    "imageLabel": "Anger Management",
+    "title": "Anger Management Disorder",
+    "description": "Anger management disorders involve persistent difficulty controlling anger responses that interfere with daily functioning. Common symptoms include frequent outbursts, irritability, and aggressive behavior.\n\nThese issues can be addressed through therapy, self-awareness techniques, and structured anger management programs.",
     "symptomsTitle": "Symptoms",
     "symptoms": {
-      "inattention": "Difficulty sustaining attention and frequent forgetfulness",
-      "hyperactivity": "Restlessness and difficulty sitting still",
-      "impulsivity": "Acting without thinking and difficulty waiting turns",
-      "disorganization": "Problems with organization and time management",
-      "timeManagement": "Procrastination and difficulty meeting deadlines"
+      "irritability": "Frequent irritability and quick temper",
+      "aggression": "Physical aggression or verbal outbursts",
+      "difficultyCalming": "Difficulty calming down after anger episodes",
+      "relationshipConflicts": "Relationship conflicts due to anger",
+      "regret": "Feeling regret after anger episodes"
     },
-    "copingStrategiesTitle": "Management Strategies",
+    "copingStrategiesTitle": "Coping Strategies",
     "strategies": {
       "commonSuggestions": {
         "title": "10 Common Suggestions",
-        "description": "Practical daily techniques and tips for managing ADHD symptoms and improving focus."
+        "description": "Practical daily techniques and tips for managing anger triggers and responses."
       },
       "yoga": {
-        "title": "Yoga & Meditation",
-        "description": "Physical postures and mindfulness exercises to improve focus and reduce hyperactivity."
+        "title": "Yoga",
+        "description": "Physical postures and breathing exercises to promote relaxation and emotional balance."
       },
       "relaxation": {
-        "title": "Relaxation Techniques",
-        "description": "Breathing exercises and relaxation methods to manage stress and improve concentration."
+        "title": "Relaxation",
+        "description": "Progressive muscle relaxation and breathing techniques to reduce stress and promote calm."
       },
       "cbt": {
         "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps develop organizational skills and coping strategies for ADHD challenges."
+        "description": "Helps identify and reframe negative thought patterns that contribute to anger."
       },
       "rebt": {
         "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Challenges negative beliefs about ADHD and builds self-acceptance and confidence."
+        "description": "Focuses on challenging irrational beliefs and replacing them with rational thoughts."
       }
     },
     "viewStrategyButton": "View Strategy",
     "alertTitle": "When to seek help?",
-    "alertText": "Seek help for ADHD when symptoms significantly interfere with work, school, or relationships. If you experience severe difficulties with attention, organization, or impulse control that impact daily functioning, professional evaluation and support can provide effective strategies and treatment options."
+    "alertText": "Seek help for anger management when it starts interfering with daily activities, work, or relationships. If outbursts become frequent or violent, professional support is recommended. Reach out immediately if anger leads to threats, property damage, or harm to yourself or others."
   },
   "addictionsScreen": {
     "headerTitle": "Addictions",
@@ -8578,86 +8311,6 @@
     "viewStrategyButton": "View Strategy",
     "alertTitle": "When to seek help?",
     "alertText": "Seek professional help when environmental concerns significantly impact your daily life, relationships, or overall well-being."
-  },
-  "friendshipAndRelationshipScreen": {
-    "headerTitle": "Friendship and Relationship",
-    "imageLabel": "Social Connections",
-    "title": "Friendship and Relationship Support",
-    "description": "Healthy relationships and friendships are fundamental to mental well-being. Building and maintaining meaningful connections requires communication skills, emotional intelligence, and healthy boundaries.\n\nProfessional support and evidence-based strategies can help improve relationship skills and address social concerns.",
-    "concernsTitle": "Common Concerns",
-    "concerns": {
-      "communicationIssues": "Difficulty expressing thoughts and feelings clearly",
-      "trustIssues": "Challenges with trusting others or being trusted",
-      "conflictResolution": "Struggling to resolve disagreements effectively",
-      "boundaryIssues": "Difficulty setting or maintaining healthy boundaries",
-      "socialAnxiety": "Anxiety in social situations or meeting new people"
-    },
-    "supportStrategiesTitle": "Support Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "10 Common Suggestions",
-        "description": "Practical techniques for building and maintaining healthy relationships."
-      },
-      "yoga": {
-        "title": "Yoga",
-        "description": "Mindfulness practices to improve emotional awareness and connection."
-      },
-      "relaxation": {
-        "title": "Relaxation",
-        "description": "Stress reduction techniques for social anxiety and relationship stress."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps identify and change negative thought patterns about relationships."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Challenges irrational beliefs about social interactions and relationships."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "When to seek help?",
-    "alertText": "Seek professional help when relationship difficulties significantly impact your daily life, mental health, or overall well-being."
-  },
-  "eatingHabitScreen": {
-    "headerTitle": "Eating Habits",
-    "imageLabel": "Nutrition",
-    "title": "Healthy Eating Habits Support",
-    "description": "Eating habits significantly impact both physical and mental health. Unhealthy relationships with food can affect mood, energy levels, and overall well-being.\n\nDeveloping mindful eating practices and a balanced relationship with food can improve both mental and physical health outcomes.",
-    "symptomsTitle": "Common Concerns",
-    "symptoms": {
-      "emotionalEating": "Eating in response to emotions rather than hunger",
-      "irregularMeals": "Irregular meal patterns or skipping meals",
-      "bingeEating": "Episodes of overeating or binge eating",
-      "foodCravings": "Intense cravings for specific foods",
-      "guiltAroundFood": "Feelings of guilt or shame around eating"
-    },
-    "supportStrategiesTitle": "Management Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "10 Common Suggestions",
-        "description": "Practical daily techniques for developing healthy eating habits and mindful eating practices."
-      },
-      "yoga": {
-        "title": "Yoga",
-        "description": "Physical practices and mindfulness techniques to develop body awareness and reduce stress-related eating."
-      },
-      "relaxation": {
-        "title": "Relaxation",
-        "description": "Stress reduction techniques to manage emotional eating triggers and food-related anxiety."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps identify and reframe negative thought patterns about food, body image, and eating behaviors."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Focuses on challenging irrational beliefs about food, weight, and body image that cause emotional distress."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "When to seek help?",
-    "alertText": "Seek professional help when eating patterns significantly impact your physical health, daily functioning, or if you're experiencing signs of an eating disorder. A nutritionist or therapist specializing in eating behaviors can provide comprehensive support."
   },
   "familyRelationshipScreen": {
     "headerTitle": "Family & Relationship",
@@ -8819,47 +8472,6 @@
     "viewStrategyButton": "View Strategy",
     "alertTitle": "When to seek help?",
     "alertText": "Seek professional help when physical fitness concerns significantly impact your daily life, relationships, or overall well-being."
-  },
-  "conductIssues": {
-    "title": "Conduct Issues",
-    "headerTitle": "Conduct Issues",
-    "imageLabel": "Behavioral Support",
-    "mainTitle": "Conduct Issue Management",
-    "description": "Conduct issues involve persistent patterns of behavior that violate social norms, rules, or the rights of others. These behaviors can significantly impact relationships, academic performance, and overall functioning.\n\nEffective management includes understanding triggers, developing impulse control, learning appropriate social skills, and implementing consistent behavioral strategies.",
-    "symptoms": "Symptoms",
-    "symptomsList": {
-      "aggressiveBehavior": "Aggressive behavior towards people or animals",
-      "defiance": "Defiant behavior towards authority figures",
-      "ruleBreaking": "Frequent breaking of rules and social norms",
-      "socialDifficulties": "Difficulties maintaining positive relationships",
-      "impulsivity": "Impulsive actions without considering consequences"
-    },
-    "copingStrategies": "Management Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "10 Common Suggestions",
-        "description": "Practical daily techniques for managing conduct issues and developing positive behavioral patterns."
-      },
-      "yoga": {
-        "title": "Yoga",
-        "description": "Physical postures and breathing exercises to promote self-regulation and emotional balance."
-      },
-      "relaxation": {
-        "title": "Relaxation",
-        "description": "Progressive muscle relaxation and breathing techniques to manage anger and impulsivity."
-      },
-      "cbt": {
-        "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps identify and change negative thought patterns that lead to problematic behaviors."
-      },
-      "rebt": {
-        "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Focuses on challenging irrational beliefs and developing healthier behavioral responses."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "When to seek help?",
-    "alertText": "Seek professional help when conduct issues significantly interfere with daily functioning, relationships, or safety. If behaviors are escalating, causing harm to self or others, or not responding to interventions, immediate professional support is recommended."
   },
   "internetSocialMedia": {
     "title": "Internet & Social Media",
@@ -9105,339 +8717,91 @@
     "alertTitle": "When to seek help?",
     "alertText": "Seek help for stress management when it starts affecting your sleep, work performance, or relationships. If stress leads to panic attacks, substance use, or thoughts of self-harm, professional support is essential. Don't wait - early intervention is most effective."
   },
-  "selfCareHygieneScreen": {
-    "headerTitle": "Self-care hygiene",
-    "imageLabel": "Self-care",
-    "mainTitle": "Self-care hygiene & Personal Wellness",
-    "description": "Self-care hygiene encompasses both physical cleanliness and mental wellness practices that contribute to overall health and well-being. Regular self-care routines help maintain physical health, boost self-esteem, and create a foundation for mental wellness.\n\nDeveloping consistent self-care habits promotes both physical and emotional well-being, leading to improved confidence and overall quality of life.",
-    "benefitsTitle": "Benefits of Self-care",
-    "benefits": {
-      "improvedMentalHealth": "Enhanced mood and reduced stress levels",
-      "betterPhysicalHealth": "Improved physical health and disease prevention",
-      "increasedSelfEsteem": "Boosted self-confidence and self-worth",
-      "reducedStress": "Lower stress levels and better emotional regulation",
-      "betterSocialConnections": "Improved social interactions and relationships"
+  "suicidalBehaviourScreen": {
+    "headerTitle": "Suicidal Behaviour",
+    "imageLabel": "Crisis Support",
+    "mainTitle": "Suicidal Behaviour Crisis Support",
+    "description": "Suicidal thoughts and behaviors are signs of extreme emotional pain and require immediate professional attention. These feelings are treatable with proper support and intervention.\n\nCrisis intervention and ongoing mental health support can help individuals work through difficult periods and develop healthier coping mechanisms.",
+    "warningSigns": "Warning Signs",
+    "signs": {
+      "talkingDeath": "Talking about wanting to die or end their life",
+      "makingPlans": "Making plans or researching ways to die",
+      "hopeless": "Feeling hopeless or having no reason to live",
+      "moodSwings": "Extreme mood swings or sudden calmness after depression",
+      "withdrawing": "Withdrawing from friends, family, or activities"
     },
-    "quickTipsTitle": "Daily Self-care Tips",
-    "quickTipsText": "Start with small, manageable habits that you can maintain consistently. Remember, self-care is not selfish - it's essential for your overall well-being and ability to care for others.",
-    "dailyHabits": {
-      "morning": "Morning Routine",
-      "morningTime": "15-30 min",
-      "evening": "Evening Routine",
-      "eveningTime": "10-20 min"
+    "immediateHelp": "Immediate Help",
+    "crisisText": "If you or someone you know is in immediate danger, call emergency services (100) or go to the nearest emergency room.\n\nTele-MANAS: 14416\nVandrevala Foundation: 9999 666 555",
+    "emergencyNumbers": {
+      "teleManas": "Tele-MANAS",
+      "vandrevala": "Vandrevala Foundation"
     },
-    "strategiesTitle": "Self-care Strategies",
+    "supportStrategies": "Support Strategies",
     "strategies": {
       "commonSuggestions": {
         "title": "10 Common Suggestions",
-        "description": "Essential daily self-care practices including hygiene habits, grooming routines, and personal wellness activities."
+        "description": "Practical safety planning and crisis management techniques for immediate support and long-term recovery."
       },
       "yoga": {
         "title": "Yoga",
-        "description": "Gentle movement practices and stretching routines that support both physical flexibility and mental clarity."
+        "description": "Gentle physical practices and breathing exercises to help ground the mind and body during emotional distress."
       },
       "relaxation": {
         "title": "Relaxation",
-        "description": "Relaxation techniques and mindfulness practices to create peaceful moments for self-care and rejuvenation."
+        "description": "Progressive muscle relaxation and breathing techniques to manage acute emotional pain and crisis moments."
       },
       "cbt": {
         "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Helps identify and change negative thought patterns about self-worth and develop healthy self-care habits and routines."
+        "description": "Helps identify and challenge negative thought patterns that contribute to suicidal ideation and develop protective factors."
       },
       "rebt": {
         "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Challenges beliefs about self-care being selfish or unnecessary, helping build a healthy relationship with personal wellness."
+        "description": "Focuses on challenging irrational beliefs about self-worth and hopelessness that contribute to suicidal thoughts."
       }
     },
     "viewStrategyButton": "View Strategy",
-    "motivationTitle": "Remember",
-    "motivationText": "Self-care is an investment in your future self. Small daily acts of self-care compound over time to create significant improvements in your overall quality of life and well-being."
+    "alertTitle": "Emergency Situations",
+    "alertText": "This is a mental health emergency. If you are having thoughts of suicide, please reach out for immediate professional help. You are not alone, and effective treatment is available. Contact emergency services, a crisis hotline, or go to your nearest emergency room."
   },
-  "substanceAddictionScreen": {
-    "headerTitle": "Substance Addiction",
-    "imageLabel": "Substance Addiction",
-    "mainTitle": "Substance Addiction",
-    "description": "Substance addiction recovery focuses on overcoming dependencies through evidence-based therapeutic approaches. This includes developing healthy coping mechanisms, building support systems, and creating sustainable lifestyle changes.\n\nRecovery is a journey that requires commitment, patience, and the right tools. These strategies provide structured pathways to sobriety and long-term wellness.",
-    "benefits": {
-      "title": "Benefits of Addiction Recovery",
-      "list": [
-        "Improved physical and mental health",
-        "Restored relationships and trust",
-        "Enhanced decision-making abilities",
-        "Increased self-esteem and confidence",
-        "Financial stability and responsibility",
-        "Better sleep and energy levels",
-        "Reduced legal and social problems",
-        "Greater life satisfaction and purpose"
-      ],
-      "improvedHealth": "Improved physical and mental health",
-      "betterRelationships": "Restored relationships and trust",
-      "financialStability": "Financial stability and responsibility",
-      "mentalClarity": "Enhanced decision-making abilities",
-      "increasedSelfEsteem": "Increased self-esteem and confidence"
+  "youngsterIssuesScreen": {
+    "headerTitle": "Youngster Issues",
+    "imageLabel": "Youngster Issues",
+    "mainTitle": "Youngster Issues",
+    "description": "Youth mental health addresses the unique challenges faced by young people, including academic pressure, identity formation, peer relationships, and transitional life phases. It focuses on developing coping skills and building resilience.\n\nThese skills help navigate the complexities of growing up in today's world and building healthy support systems.",
+    "commonChallenges": "Common Challenges",
+    "challenges": {
+      "academic": "Academic pressure and performance anxiety",
+      "identity": "Identity formation and self-discovery struggles",
+      "peer": "Peer pressure and social acceptance issues",
+      "family": "Family conflicts and independence struggles",
+      "future": "Future uncertainty and career anxiety"
     },
-    "strategies": {
-      "common": {
-        "title": "Common Recovery Strategies",
-        "strategies": [
-          {
-            "title": "Identify Triggers",
-            "description": "Recognize situations, emotions, or people that trigger cravings and develop healthy responses to them."
-          },
-          {
-            "title": "Build Support Network",
-            "description": "Surround yourself with supportive friends, family, and recovery groups who understand your journey."
-          },
-          {
-            "title": "Develop Healthy Routines",
-            "description": "Create structured daily routines that include self-care, exercise, and meaningful activities."
-          },
-          {
-            "title": "Practice Mindfulness",
-            "description": "Use mindfulness techniques to stay present and manage cravings when they arise."
-          },
-          {
-            "title": "Seek Professional Help",
-            "description": "Work with addiction counselors, therapists, or medical professionals for comprehensive support."
-          },
-          {
-            "title": "Replace Harmful Habits",
-            "description": "Substitute addictive behaviors with healthy activities that provide natural dopamine and fulfillment."
-          },
-          {
-            "title": "Create Accountability",
-            "description": "Have regular check-ins with sponsors, counselors, or trusted friends to maintain transparency."
-          },
-          {
-            "title": "Learn Stress Management",
-            "description": "Develop healthy coping strategies for stress without relying on substances."
-          },
-          {
-            "title": "Focus on Nutrition",
-            "description": "Maintain proper nutrition to support physical recovery and mental clarity."
-          },
-          {
-            "title": "Celebrate Small Wins",
-            "description": "Acknowledge and celebrate recovery milestones, no matter how small they may seem."
-          }
-        ]
-      },
-      "yoga": {
-        "title": "Yoga for Recovery",
-        "strategies": [
-          {
-            "title": "Gentle Hatha Yoga",
-            "description": "Practice slow, mindful movements to reconnect with your body and build inner strength."
-          },
-          {
-            "title": "Breathing Exercises",
-            "description": "Use pranayama techniques to manage anxiety, cravings, and emotional turbulence."
-          },
-          {
-            "title": "Meditation Poses",
-            "description": "Hold restorative poses while focusing on inner peace and mental clarity."
-          },
-          {
-            "title": "Sun Salutations",
-            "description": "Start each day with energizing flows to create positive momentum and routine."
-          },
-          {
-            "title": "Yin Yoga Practice",
-            "description": "Use long-held poses to process emotions and develop patience with recovery."
-          }
-        ]
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques",
-        "strategies": [
-          {
-            "title": "Progressive Muscle Relaxation",
-            "description": "Systematically tense and release muscle groups to reduce physical tension and stress."
-          },
-          {
-            "title": "Guided Imagery",
-            "description": "Visualize peaceful scenes and successful recovery outcomes to reinforce positive change."
-          },
-          {
-            "title": "Deep Breathing",
-            "description": "Practice diaphragmatic breathing to activate the body's natural relaxation response."
-          },
-          {
-            "title": "Body Scan Meditation",
-            "description": "Focus awareness on different parts of the body to develop mindfulness and self-awareness."
-          },
-          {
-            "title": "Nature Sounds",
-            "description": "Listen to calming natural sounds to reduce stress and create peaceful moments."
-          },
-          {
-            "title": "Aromatherapy",
-            "description": "Use essential oils like lavender or chamomile to promote relaxation and calm the mind."
-          }
-        ]
-      },
-      "cbt": {
-        "title": "CBT for Addiction Recovery",
-        "strategies": [
-          {
-            "title": "Thought Record",
-            "description": "Track triggers, thoughts, feelings, and behaviors to identify patterns in addiction cycles."
-          },
-          {
-            "title": "Cognitive Restructuring",
-            "description": "Challenge and replace addictive thinking patterns with rational, recovery-focused thoughts."
-          },
-          {
-            "title": "Behavioral Activation",
-            "description": "Engage in meaningful activities that provide natural rewards and reduce urges to use."
-          },
-          {
-            "title": "Relapse Prevention",
-            "description": "Develop specific plans for high-risk situations and early warning signs of relapse."
-          },
-          {
-            "title": "Coping Skills Training",
-            "description": "Learn and practice healthy coping strategies for stress, emotions, and social situations."
-          },
-          {
-            "title": "Exposure Therapy",
-            "description": "Gradually expose yourself to triggers while practicing new coping responses."
-          },
-          {
-            "title": "Problem-Solving Skills",
-            "description": "Develop systematic approaches to handle life challenges without using substances."
-          },
-          {
-            "title": "Social Skills Training",
-            "description": "Practice healthy communication and relationship skills for sober social interactions."
-          },
-          {
-            "title": "Motivation Enhancement",
-            "description": "Explore and strengthen personal motivations for recovery and sobriety."
-          },
-          {
-            "title": "Self-Monitoring",
-            "description": "Track mood, cravings, and recovery behaviors to maintain awareness and progress."
-          }
-        ]
-      },
-      "rebt": {
-        "title": "REBT for Addiction Recovery",
-        "strategies": [
-          {
-            "title": "Identify Irrational Beliefs",
-            "description": "Recognize absolute demands and catastrophic thinking that fuel addictive behaviors."
-          },
-          {
-            "title": "Dispute Demanding Thoughts",
-            "description": "Challenge beliefs like 'I must have this substance' with evidence-based questioning."
-          },
-          {
-            "title": "Develop Frustration Tolerance",
-            "description": "Practice accepting discomfort and cravings without immediately seeking substance relief."
-          },
-          {
-            "title": "Unconditional Self-Acceptance",
-            "description": "Accept yourself as a fallible human while working toward recovery goals."
-          },
-          {
-            "title": "Emotional Responsibility",
-            "description": "Understand that emotions come from thoughts, not external circumstances or substances."
-          },
-          {
-            "title": "Rational Self-Talk",
-            "description": "Replace addict thinking with rational preferences rather than absolute demands."
-          },
-          {
-            "title": "Shame-Attacking Exercises",
-            "description": "Deliberately face recovery challenges to build confidence and reduce shame about addiction."
-          },
-          {
-            "title": "Goal-Setting Rational Thinking",
-            "description": "Set realistic recovery goals while accepting that progress isn't always linear."
-          },
-          {
-            "title": "Anti-Awfulizing",
-            "description": "Practice seeing setbacks as unfortunate rather than catastrophic or unbearable."
-          },
-          {
-            "title": "Rational Recovery Mantras",
-            "description": "Develop flexible, realistic statements about recovery that reduce emotional disturbance."
-          }
-        ]
-      }
-    },
-    "strategySummaries": {
-      "commonSuggestions": {
-        "title": "Common Recovery Strategies", 
-        "description": "Evidence-based practical approaches and foundational strategies that form the cornerstone of addiction recovery, helping build healthy habits and coping mechanisms."
-      },
-      "yoga": {
-        "title": "Yoga for Recovery",
-        "description": "Mindful movement and breathing practices that help reconnect with your body, reduce stress, and develop inner strength and awareness."
-      },
-      "relaxation": {
-        "title": "Relaxation Techniques", 
-        "description": "Calming practices and stress-reduction methods that help manage anxiety, cravings, and emotional turbulence during recovery."
-      },
-      "cbt": {
-        "title": "CBT for Addiction Recovery",
-        "description": "Cognitive-behavioral strategies that help identify triggers, change thought patterns, and develop healthy coping skills for lasting recovery."
-      },
-      "rebt": {
-        "title": "REBT for Addiction Recovery",
-        "description": "Rational thinking approaches that challenge irrational beliefs, reduce emotional disturbance, and build resilience in recovery."
-      }
-    },
-    "viewStrategyButton": "View Strategy",
-    "motivationTitle": "Remember",
-    "motivationText": "Recovery is not a destination but a daily choice. Each moment of sobriety is a victory, and every day clean is a step toward the life you deserve. Your strength is greater than your addiction.",
-    "benefitsTitle": "Benefits of Addiction Recovery",
-    "strategiesTitle": "Recovery Strategies",
-    "importantNote": {
-      "title": "Important Note",
-      "description": "Recovery is a deeply personal journey that requires professional support. If you or someone you know is struggling with substance addiction, please reach out to healthcare professionals, addiction counselors, or support groups. Remember that seeking help is a sign of strength, not weakness."
-    }
-  },
-  "pornAddictionScreen": {
-    "headerTitle": "Porn Addiction",
-    "imageLabel": "Porn Addiction",
-    "mainTitle": "Porn Addiction Recovery",
-    "description": "Pornography addiction can significantly impact mental health, relationships, and daily functioning. Recovery involves understanding triggers, developing healthy coping mechanisms, and rebuilding authentic intimacy.\n\nWith proper support and strategies, it's possible to break free from compulsive pornography use and develop healthier relationships with sexuality and intimacy.",
-    "commonSymptoms": "Common Symptoms",
-    "symptoms": {
-      "compulsive": "Compulsive viewing despite negative consequences",
-      "relationships": "Difficulty with real-life intimacy and relationships", 
-      "guilt": "Persistent guilt, shame, and secrecy",
-      "isolation": "Social withdrawal and decreased productivity",
-      "productivity": "Interference with work, school, or daily responsibilities"
-    },
-    "recoveryStrategies": "Recovery Strategies",
+    "copingStrategies": "Coping Strategies",
     "strategies": {
       "commonSuggestions": {
         "title": "10 Common Suggestions",
-        "description": "Practical strategies for breaking the cycle of pornography addiction including trigger identification and healthy alternatives."
+        "description": "Essential strategies for young people including peer pressure management and academic stress relief."
       },
       "yoga": {
         "title": "Yoga",
-        "description": "Mindfulness practices and yoga to develop body awareness, reduce stress, and manage urges in a healthy way."
+        "description": "Age-appropriate mindfulness exercises to help young people build emotional regulation and reduce anxiety."
       },
       "relaxation": {
         "title": "Relaxation",
-        "description": "Stress reduction techniques and relaxation methods to cope with withdrawal symptoms and anxiety during recovery."
+        "description": "Simple breathing exercises and calming techniques designed for young people to manage stress and overwhelming emotions."
       },
       "cbt": {
         "title": "Cognitive Behavioral Therapy (CBT)",
-        "description": "Identify and change thought patterns and behaviors that contribute to compulsive pornography use."
+        "description": "Helps young people identify negative thought patterns and develop healthy coping strategies for academic and social challenges."
       },
       "rebt": {
         "title": "Rational Emotive Behavior Therapy (REBT)",
-        "description": "Address irrational beliefs about sexuality, shame, and self-worth that fuel addictive behaviors."
+        "description": "Teaches young people to identify irrational beliefs about perfectionism and peer acceptance while building emotional resilience."
       }
     },
     "viewStrategyButton": "View Strategy",
-    "alertTitle": "Seek Professional Support",
-    "alertText": "Porn addiction can significantly impact mental health and relationships. Consider reaching out to a mental health professional who specializes in sexual addiction or compulsive behaviors for personalized treatment and support."
+    "alertTitle": "When to seek help?",
+    "alertText": "Seek help for youth mental health when academic performance severely declines, social withdrawal becomes persistent, or risky behaviors develop. Professional support can help develop healthy coping strategies and build resilience for future challenges."
   },
   "commonSuggestionsScreen": {
     "loading": "Loading suggestions...",
@@ -9640,110 +9004,6 @@
       {
         "title": "Body Scan",
         "description": "- Lie down comfortably.\n   - Start at your toes and work your way up.\n   - Notice any tension and consciously relax each part.\n   - Take 10-15 minutes for the full scan.",
-        "xp": 5
-      }
-    ],
-    "friendshipAndRelationship": [
-      {
-        "title": "Progressive Muscle Relaxation for Relationship Stress",
-        "description": "- Start by tensing and then relaxing each muscle group in your body, beginning with your toes and working up to your head.\n   - As you release tension, imagine also releasing any relationship conflicts or social anxieties.\n   - Spend 15-20 minutes on this practice to help prepare for difficult conversations or social situations.",
-        "xp": 5
-      },
-      {
-        "title": "Breathing Exercise for Emotional Regulation",
-        "description": "- Practice the 4-7-8 breathing technique when feeling emotionally triggered in relationships.\n   - Inhale for 4 counts, hold for 7 counts, exhale for 8 counts.\n   - This helps activate the parasympathetic nervous system and promotes calm communication.",
-        "xp": 5
-      },
-      {
-        "title": "Visualization for Healthy Boundaries",
-        "description": "- Sit comfortably and imagine yourself surrounded by a protective, loving light.\n   - Visualize this light allowing positive energy in while keeping negativity out.\n   - Practice setting boundaries in your mind before having real conversations about limits in relationships.",
-        "xp": 5
-      },
-      {
-        "title": "Loving-Kindness Meditation for Difficult Relationships",
-        "description": "- Begin by sending loving thoughts to yourself, then to loved ones, neutral people, and finally to someone you're having difficulties with.\n   - Use phrases like 'May you be happy, may you be at peace, may you be free from suffering.'\n   - This practice helps reduce resentment and opens your heart to compassion.",
-        "xp": 5
-      },
-      {
-        "title": "Body Awareness for Social Anxiety",
-        "description": "- Practice a body scan meditation before social events to identify and release physical tension.\n   - Notice areas where you hold stress (shoulders, jaw, stomach) and consciously relax them.\n   - This helps you feel more grounded and confident in social situations.",
-        "xp": 5
-      },
-      {
-        "title": "Mindful Communication Practice",
-        "description": "- Before important conversations, spend 5 minutes in meditation focusing on your intention to listen with an open heart.\n   - Practice deep breathing and set the intention to respond rather than react.\n   - Visualize the conversation going well and both parties feeling heard and respected.",
-        "xp": 5
-      },
-      {
-        "title": "Gratitude Meditation for Relationships",
-        "description": "- Spend 10 minutes daily reflecting on the positive aspects of your relationships.\n   - Think about specific moments when friends or family members showed you kindness.\n   - This practice helps shift focus from relationship problems to appreciation and strengthens emotional bonds.",
-        "xp": 5
-      },
-      {
-        "title": "Tension Release for Social Stress",
-        "description": "- After social interactions that feel draining, practice gentle neck rolls, shoulder shrugs, and jaw releases.\n   - Take deep breaths and imagine releasing any negative energy you may have absorbed.\n   - End with a few minutes of quiet reflection or journaling about the experience.",
-        "xp": 5
-      },
-      {
-        "title": "Self-Compassion Break for Relationship Mistakes",
-        "description": "- When you've made a mistake in a relationship, place your hand on your heart and acknowledge your pain.\n   - Remind yourself that making mistakes in relationships is part of being human.\n   - Offer yourself the same kindness you would give a good friend in the same situation.",
-        "xp": 5
-      },
-      {
-        "title": "Grounding Exercise for Relationship Anxiety",
-        "description": "- Use the 5-4-3-2-1 technique: notice 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste.\n   - This helps bring you back to the present moment when relationship worries take over.\n   - Practice this before difficult conversations or when feeling overwhelmed by social situations.",
-        "xp": 5
-      }
-    ],
-    "selfEsteemAndSelfIdentity": [
-      {
-        "title": "Self-Compassion Meditation",
-        "description": "- Sit comfortably and place one hand on your heart, the other on your abdomen.\n   - Breathe deeply and notice any areas of tension or self-criticism.\n   - Speak to yourself with the same kindness you would offer a dear friend: \"May I be kind to myself. May I accept myself as I am.\"\n   - Practice for 10-15 minutes daily to build a healthier relationship with yourself.",
-        "xp": 5
-      },
-      {
-        "title": "Body Appreciation Scan",
-        "description": "- Lie down comfortably and close your eyes.\n   - Starting from your toes, mentally scan each part of your body with gratitude and acceptance.\n   - Thank each body part for its service: \"Thank you, feet, for carrying me through life.\"\n   - This practice helps develop body positivity and self-acceptance.",
-        "xp": 5
-      },
-      {
-        "title": "Positive Affirmation Breathing",
-        "description": "- Choose 3-5 positive affirmations about yourself: \"I am worthy,\" \"I am enough,\" \"I have unique gifts.\"\n   - With each inhale, silently repeat one affirmation.\n   - With each exhale, release any negative self-talk or doubt.\n   - Practice for 10 minutes to rewire negative thought patterns.",
-        "xp": 5
-      },
-      {
-        "title": "Inner Child Visualization",
-        "description": "- Sit quietly and imagine yourself as a young child.\n   - Visualize embracing this inner child with love and acceptance.\n   - Tell your inner child: \"You are loved exactly as you are. You don't need to be perfect to be worthy.\"\n   - This helps heal childhood wounds that affect self-esteem.",
-        "xp": 5
-      },
-      {
-        "title": "Progressive Muscle Relaxation for Self-Acceptance",
-        "description": "- Tense and then relax each muscle group while repeating: \"I accept this part of myself.\"\n   - Start with your toes and work up to your head.\n   - As you release physical tension, also release self-judgment and criticism.\n   - This combines physical relaxation with emotional healing.",
-        "xp": 5
-      },
-      {
-        "title": "Mindful Mirror Meditation",
-        "description": "- Sit in front of a mirror and make gentle eye contact with yourself.\n   - Breathe deeply and notice any judgmental thoughts that arise.\n   - Replace criticism with curiosity: \"What does this person need right now?\"\n   - End by saying: \"I see you, I accept you, I love you.\"",
-        "xp": 5
-      },
-      {
-        "title": "Strengths-Based Visualization",
-        "description": "- Close your eyes and recall a time when you felt proud of yourself.\n   - Visualize this moment in vivid detail, feeling the emotions of accomplishment.\n   - Breathe into this feeling of competence and self-worth.\n   - Carry this feeling with you throughout your day as an anchor of confidence.",
-        "xp": 5
-      },
-      {
-        "title": "Boundary Setting Meditation",
-        "description": "- Imagine yourself surrounded by a protective, golden light.\n   - This light represents your personal boundaries and self-worth.\n   - Practice saying \"no\" to things that don't serve you, and \"yes\" to what honors your authentic self.\n   - Breathe strength into your ability to maintain healthy boundaries.",
-        "xp": 5
-      },
-      {
-        "title": "Values Clarification Breathing",
-        "description": "- Identify your top 3-5 core values (e.g., kindness, creativity, honesty).\n   - With each breath, focus on one value and how it shows up in your life.\n   - Feel proud of living according to your values, regardless of others' opinions.\n   - This strengthens your sense of identity and self-worth.",
-        "xp": 5
-      },
-      {
-        "title": "Forgiveness and Release Meditation",
-        "description": "- Breathe deeply and bring to mind any mistakes or regrets you're holding onto.\n   - With each exhale, release self-blame and perfectionism.\n   - With each inhale, draw in self-forgiveness and the wisdom gained from experience.\n   - End by affirming: \"I am human, I am learning, I am worthy of love.\"",
         "xp": 5
       }
     ],
@@ -10530,18 +9790,6 @@
       {
         "title": "Journal Reflections",
         "description": "- After your practices, spend a few minutes writing in a journal. Reflect on how you feel, any challenges you faced, and the progress you observe over time.",
-        "xp": 5
-      }
-    ],
-    "friendshipAndRelationship": [
-      {
-        "title": "Heart-Opening Yoga Poses",
-        "description": "- Practice poses like Camel Pose (Ustrasana) or Bridge Pose (Setu Bandhasana) to open your heart chakra and cultivate compassion.\n   - These poses help release emotional blockages and promote feelings of love and connection.",
-        "xp": 5
-      },
-      {
-        "title": "Loving-Kindness Meditation for Relationships",
-        "description": "- Begin by sending loving thoughts to yourself, then extend them to loved ones, neutral people, difficult people, and finally all beings.\n   - Use phrases like 'May you be happy, may you be peaceful, may you be free from suffering' to cultivate compassion and improve relationship dynamics.",
         "xp": 5
       }
     ],
@@ -11861,48 +11109,6 @@
       {
         "title": "Consider Professional Help When Needed",
         "description": "- **How it works**: Therapists and counselors can provide strategies for managing stress and underlying issues.\n   - **Example**: Scheduling regular sessions with a licensed therapist to explore stress management techniques tailored to individual needs."
-      }
-    ],
-    "friendshipAndRelationship": [
-      {
-        "title": "Practice Active Listening",
-        "description": "- **How it works**: Active listening involves fully concentrating on what the other person is saying, which helps build trust and understanding.\n   - **Example**: When your friend is talking about their problems, put away your phone, make eye contact, and ask follow-up questions like 'How did that make you feel?' rather than immediately offering solutions."
-      },
-      {
-        "title": "Communicate Openly and Honestly",
-        "description": "- **How it works**: Clear communication prevents misunderstandings and builds stronger connections.\n   - **Example**: If you're feeling neglected in a friendship, say 'I've been feeling like we haven't spent much time together lately, and I miss our connection' instead of being passive-aggressive."
-      },
-      {
-        "title": "Set Healthy Boundaries",
-        "description": "- **How it works**: Boundaries protect your well-being and help maintain balanced relationships.\n   - **Example**: If a friend constantly calls you late at night when you need to sleep, kindly say 'I care about you, but I need to keep my phone off after 10 PM. Can we talk earlier in the day?'"
-      },
-      {
-        "title": "Show Appreciation and Gratitude",
-        "description": "- **How it works**: Expressing gratitude strengthens relationships and makes others feel valued.\n   - **Example**: Send a text message saying 'Thank you for listening to me yesterday. Your support really helped me feel better' or write a handwritten note appreciating someone's friendship."
-      },
-      {
-        "title": "Be Reliable and Trustworthy",
-        "description": "- **How it works**: Consistency in your words and actions builds trust, which is the foundation of strong relationships.\n   - **Example**: If you promise to help a friend move, follow through even if other plans come up. If you can't keep a commitment, communicate early and honestly."
-      },
-      {
-        "title": "Practice Empathy and Understanding",
-        "description": "- **How it works**: Trying to understand others' perspectives helps you respond with compassion rather than judgment.\n   - **Example**: When a friend makes a decision you don't agree with, try to understand their reasoning by asking 'What led you to this decision?' before offering your opinion."
-      },
-      {
-        "title": "Invest Time and Effort",
-        "description": "- **How it works**: Relationships require ongoing investment to grow and maintain strength.\n   - **Example**: Schedule regular coffee dates with friends, remember important events in their lives, or plan activities together like hiking or trying new restaurants."
-      },
-      {
-        "title": "Handle Conflicts Constructively",
-        "description": "- **How it works**: Learning to navigate disagreements respectfully can actually strengthen relationships.\n   - **Example**: When you have a disagreement, use 'I' statements like 'I felt hurt when...' instead of 'You always...' and focus on finding solutions rather than winning the argument."
-      },
-      {
-        "title": "Respect Differences and Independence",
-        "description": "- **How it works**: Accepting that people are different and have their own lives prevents resentment and clingy behavior.\n   - **Example**: If your friend has different political views, respect their right to their opinion and avoid trying to change them. Also, maintain your own interests and friendships outside of this relationship."
-      },
-      {
-        "title": "Seek Support When Needed",
-        "description": "- **How it works**: Sometimes professional guidance can help you develop better relationship skills or work through complex issues.\n   - **Example**: If you find yourself repeatedly having the same problems in relationships, consider couples therapy, family counseling, or individual therapy to develop better communication and relationship skills."
       }
     ],
     "suicidalBehavior": [
@@ -17295,6 +16501,128 @@
           }
         }
       }
+    }
+  },
+  "mindToolsTips": {
+    "emotionalAuditing": {
+      "title": "Emotional Auditing",
+      "description": "Emotional auditing is a systematic approach to understanding your emotional landscape by maintaining detailed logs of your feelings, triggers, and responses. This practice involves tracking not just what you feel, but when you feel it, what caused it, and how your body responds. Research shows that people who regularly audit their emotions develop greater emotional intelligence, improved stress management, and stronger relationships. The process helps identify patterns in your emotional responses, recognize early warning signs of stress or overwhelm, and create targeted strategies for emotional regulation. By documenting your emotional journey, you create a personal database of insights that can guide future decisions and help you understand your authentic needs and boundaries. This technique is particularly powerful for those who struggle with emotional overwhelm, unclear boundaries, or difficulty expressing their needs to others.",
+      "example": "Monday 3 PM: Felt intense frustration and tightness in chest during team meeting. Trigger: My project proposal was interrupted three times by colleagues who didn't let me finish explaining. Pattern noticed: I often feel unheard in group settings when multiple people speak over me. Physical response: Jaw clenched, hands gripped pen tightly. Need identified: To feel respected and heard when presenting ideas. Action taken: Scheduled one-on-one with manager to discuss meeting dynamics and communication preferences. Tuesday 7 AM: Experienced surge of anxiety while checking emails. Trigger: Saw urgent email from client that seemed negative in tone. Pattern: I catastrophize before reading full context. Reality check: Email was actually positive feedback with urgent questions. Learning: Practice reading full context before emotional reaction.",
+      "task": "Create a comprehensive 'Emotion Tracker' journal using a notebook or digital app. For the next 7 days, log at least 3 emotional moments daily. For each entry, include: (1) Time and situation, (2) Specific emotion and intensity (1-10 scale), (3) Physical sensations you noticed, (4) What triggered this emotion, (5) How you responded or what you did, (6) What you needed in that moment, (7) Any patterns you're starting to notice. At the end of the week, review your entries and identify your top 3 emotional triggers and your most effective coping strategies."
+    },
+    "reverseGratitude": {
+      "title": "Reverse Gratitude",
+      "description": "Reverse gratitude shifts the traditional gratitude practice by focusing on the positive impact you have on others rather than what you receive. This powerful technique combats feelings of worthlessness, imposter syndrome, and social isolation by helping you recognize your inherent value and contribution to the world. Unlike standard gratitude practices that can sometimes feel forced or superficial, reverse gratitude taps into your natural human need to feel useful and connected. Scientific studies indicate that people who regularly practice reverse gratitude experience increased self-esteem, stronger social connections, and reduced symptoms of depression. The practice works by activating the same neural pathways associated with purpose and meaning, while simultaneously building empathy and social awareness. It's particularly effective for caregivers, people in helping professions, parents, and anyone who tends to undervalue their contributions or struggles with feelings of inadequacy.",
+      "example": "Today I spent 20 minutes listening to my neighbor talk about her job stress. She seemed lighter afterward and thanked me for being such a good listener. My teenager might be grateful that I didn't lecture him about his messy room and instead just asked how his day was - he actually opened up about friendship drama at school. The barista at my coffee shop smiled when I remembered her name and asked about her college classes. My colleague might appreciate that I always respond to her questions promptly and never make her feel dumb for asking. My elderly mother is probably grateful that I call every Sunday, even when I'm busy, because I know it makes her feel less lonely. Even my dog is grateful for the daily walks I provide, the consistent feeding schedule, and the way I talk to him like he understands everything.",
+      "task": "For the next 14 days, write down 5 people who might be grateful for something you did, said, or provided that day. Include family members, friends, colleagues, strangers, and even pets. Be specific about what you did and why it might have mattered to them. Don't limit yourself to big gestures - include small acts like smiling at someone, holding a door, answering a question, or simply being present. Each week, choose one person from your list and tell them specifically how you think they might have been impacted by your actions. Notice how this makes you feel about your own worth and contribution to the world."
+    },
+    "fiveRule": {
+      "title": "The 5‑5‑5 Rule",
+      "description": "The 5‑5‑5 Rule is a powerful cognitive reframing technique that helps put current stressors and problems into proper perspective by examining their long-term significance. This mental tool works by interrupting the brain's tendency to catastrophize or over-focus on immediate concerns, helping you distinguish between genuine crises and temporary inconveniences. The technique is rooted in cognitive behavioral therapy principles and helps activate your prefrontal cortex - the brain region responsible for logical thinking and perspective-taking. Research shows that people who regularly practice perspective-taking techniques like the 5‑5‑5 Rule experience reduced anxiety, better decision-making under stress, and improved emotional regulation. The rule is particularly effective for perfectionists, overthinkers, and people prone to anxiety disorders. It works because it forces your brain to zoom out from the immediate emotional intensity and consider the broader context of your life, helping you allocate your mental energy more wisely.",
+      "example": "Situation: I sent an email to my boss with a typo in the subject line and I'm mortified. 5 days: My boss probably won't even remember this small mistake by next week, and it definitely won't affect my performance review. 5 months: This will be completely forgotten and will have zero impact on my career trajectory. 5 years: This won't even be a memory - I'll probably have had hundreds of interactions with my boss since then. Conclusion: I can let this go and focus my energy on the presentation I'm giving tomorrow. Another example: I had an awkward conversation with my neighbor and now I'm avoiding them. 5 days: The awkwardness will naturally fade as we both move on with our lives. 5 months: We'll have had many normal interactions since then. 5 years: This moment won't define our relationship at all. Conclusion: I can wave hello tomorrow and not let this affect my peace of mind.",
+      "task": "Identify your top 3 current stressors or worries that are consuming mental energy. Write each one at the top of a separate page. For each stressor, honestly answer: 'Will this matter in 5 days? How will I feel about this in 5 months? Will I even remember this in 5 years?' Write detailed responses explaining why or why not. Based on your answers, categorize each stressor as: (A) Deserves immediate attention and action, (B) Worth monitoring but not obsessing over, or (C) Not worth your mental energy. Create an action plan for Category A items, set a check-in date for Category B items, and practice letting go of Category C items. Use this rule daily for the next month whenever you notice yourself spiraling about something."
+    },
+    "microMeditation": {
+      "title": "Micro‑Meditation Bursts",
+      "description": "Micro-meditation bursts are brief, focused periods of mindfulness practice that can be seamlessly integrated into your daily routine. These mini-meditations are designed to help you quickly center yourself, reduce stress, and regain focus, no matter where you are or what you're doing. The beauty of micro-meditations lies in their accessibility and adaptability; they can be as short as 30 seconds or extend up to 5 minutes, making them perfect for busy schedules. Research indicates that even short bouts of mindfulness practice can significantly decrease stress levels, enhance emotional regulation, and improve overall well-being. Micro-meditations are particularly useful for individuals who find traditional meditation practices challenging due to time constraints or a busy mind. They serve as a mental reset button, allowing you to approach your tasks and interactions with renewed clarity and calm.",
+      "example": "Stuck in traffic? Instead of succumbing to road rage or stress, take a micro-meditation break. Close your eyes, take a deep breath, and focus on the sensation of your breath entering and leaving your body. Notice the sounds around you - the hum of the engine, the rustle of leaves, distant conversations. Allow yourself to be fully present in this moment. Another example: Before a big meeting, instead of rehearsing your presentation in your head and increasing your anxiety, take 2 minutes to sit quietly. Focus on your breath, inhale deeply through your nose, hold for a moment, and exhale slowly through your mouth. Visualize yourself entering the meeting room with confidence and clarity.",
+      "task": "For the next week, integrate micro-meditation bursts into your daily routine. Start with just one micro-meditation session each day, ideally at a time when you typically feel stressed or unfocused. Gradually increase to two or three sessions per day as you become more comfortable with the practice. Use a meditation app or timer to keep track of your sessions. After each micro-meditation, take a moment to notice any changes in your mood, stress levels, and ability to focus. At the end of the week, reflect on the overall impact of these micro-meditations on your daily life and consider making them a permanent part of your routine."
+    },
+    "jomo": {
+      "title": "JOMO (Joy of Missing Out)",
+      "description": "JOMO, or the Joy of Missing Out, is a mindful approach to social participation that emphasizes quality over quantity. It encourages individuals to engage deeply in the moments and activities that truly matter to them, rather than feeling pressured to be constantly available or involved in every social event. JOMO is about finding contentment and joy in your own company or in the company of a few close friends, without the distractions and noise of larger social gatherings. This concept is particularly relevant in today's hyper-connected world, where the fear of missing out (FOMO) can lead to anxiety, stress, and a diluted sense of self. By embracing JOMO, you can enhance your focus, deepen your relationships, and improve your overall well-being. It allows for a more intentional and meaningful engagement with the world around you.",
+      "example": "Instead of feeling anxious about missing a party that all your friends are attending, you choose to stay home and read that book you've been meaning to get to. You enjoy the story at your own pace, and find joy in the quiet and solitude. Another example: You decide not to check social media for a week. Initially, you might feel anxious or disconnected, but soon you start to enjoy the freedom from constant notifications and the pressure to respond immediately. You use this time to engage in activities that truly interest you, like painting, hiking, or learning a musical instrument.",
+      "task": "For the next 7 days, practice JOMO by consciously choosing to opt-out of at least one social obligation or digital distraction each day. Replace that time with an activity that brings you genuine joy or relaxation, whether it's a hobby, spending time in nature, or simply enjoying a quiet moment with a cup of tea. Notice how this impacts your mood, stress levels, and overall sense of well-being. At the end of the week, reflect on the experience and consider making JOMO a regular part of your life."
+    },
+    "brainDumpJournaling": {
+      "title": "Brain Dump Journaling",
+      "description": "Brain dump journaling is a free-writing technique that involves writing down all the thoughts, ideas, worries, and to-dos that are cluttering your mind. The goal is to transfer everything from your mind onto the paper (or screen), allowing you to declutter your brain and gain mental clarity. This technique is based on the principles of cognitive behavioral therapy and mindfulness, and it has been shown to reduce anxiety, improve focus, and enhance problem-solving abilities. Brain dump journaling is particularly useful for individuals who experience racing thoughts, have difficulty sleeping due to a busy mind, or feel overwhelmed by the demands of daily life. By regularly practicing brain dump journaling, you can train your mind to focus better, reduce stress, and approach challenges with a clearer, more organized mindset.",
+      "example": "Before starting your workday, you take 10 minutes to do a brain dump. You write down every task, idea, and worry that comes to mind, without filtering or organizing. This helps you clear your mind and prioritize your tasks for the day. Another example: You're feeling anxious and overwhelmed in the middle of the day. Instead of succumbing to stress, you take a break and do a brain dump. You write down everything that's bothering you, no matter how big or small. This act of externalizing your thoughts helps you see things more clearly and reduces your anxiety.",
+      "task": "Set aside 10-15 minutes at the beginning or end of each day for brain dump journaling. Find a quiet space where you can write without distractions. Use a notebook or digital app - whatever you prefer. The key is to write continuously without worrying about grammar, spelling, or structure. If you're stuck, try starting with 'I'm worried about...', 'I need to remember...', or 'I'm thinking about...'. Let your thoughts flow freely. After your brain dump, take a few minutes to review what you've written. Highlight or circle any action items or important thoughts. This will help you prioritize and organize your tasks and reduce the mental clutter."
+    },
+    "thirdStoryTechnique": {
+      "title": "The Third Story Technique",
+      "description": "The Third Story Technique is a conflict resolution and communication strategy that involves reframing a situation or disagreement by imagining how a neutral third party would perceive and describe it. This technique helps to reduce defensiveness, increase empathy, and facilitate more constructive conversations. It's based on the principles of narrative therapy and cognitive behavioral therapy, and it has been shown to be effective in improving communication skills, enhancing emotional intelligence, and resolving interpersonal conflicts. The Third Story Technique is particularly useful in personal and professional relationships where misunderstandings, miscommunications, or conflicts are common. By adopting the perspective of a neutral observer, you can gain valuable insights into the dynamics of the situation, identify unhelpful patterns, and discover new ways to respond more effectively.",
+      "example": "You're in a heated argument with a colleague about the direction of a project. Instead of focusing on winning the argument or proving your point, you take a step back and ask yourself: 'If someone else were observing this conversation, what would they see? How would they describe each of us? What might be some common ground or misunderstandings?' This helps you see the situation more objectively and reduces the emotional intensity of the conflict. Another example: You're feeling frustrated with a family member who doesn't seem to understand your perspective. You imagine that a neutral friend is watching the two of you interact. What would they notice? How would they describe your body language, tone of voice, and choice of words? This exercise helps you identify any unhelpful patterns in your communication and consider how you might express yourself more clearly and calmly.",
+      "task": "The next time you find yourself in a conflict or heated discussion, consciously apply the Third Story Technique. Before responding or reacting, take a deep breath and ask yourself the following questions: (1) What is my desired outcome in this situation? (2) How might the other person be feeling right now? (3) If I were to describe this situation to a neutral third party, what would I say? (4) What common goals or values do we share that could help resolve this conflict? (5) What is one small step I can take to move towards a resolution? Write down your answers and use them to guide your response. Practice this technique regularly to improve your conflict resolution skills and enhance your emotional intelligence."
+    },
+    "deliberateDaydreaming": {
+      "title": "Deliberate Daydreaming",
+      "description": "Deliberate daydreaming is a creative visualization technique that involves intentionally allowing your mind to wander and explore imaginative scenarios, ideas, and possibilities. Unlike regular daydreaming, which can be random and unstructured, deliberate daydreaming is a focused and purposeful practice that can enhance creativity, problem-solving, and emotional well-being. This technique is based on the principles of mindfulness, cognitive behavioral therapy, and creative visualization. Research shows that deliberate daydreaming can increase activity in the brain's default mode network, which is associated with creativity, imagination, and self-referential thought. By regularly engaging in deliberate daydreaming, you can improve your ability to generate new ideas, see connections between seemingly unrelated concepts, and approach challenges with a fresh perspective.",
+      "example": "You're working on a challenging problem and feeling stuck. Instead of forcing a solution, you take a break and allow yourself to daydream. You imagine different scenarios, possibilities, and solutions, no matter how outlandish they may seem. This helps you break free from conventional thinking and discover new approaches to the problem. Another example: You're feeling bored and uninspired. Instead of scrolling through social media or watching TV, you close your eyes and daydream about your ideal life, your dream job, or an exciting adventure. This boosts your mood, increases your motivation, and helps you reconnect with your passions and aspirations.",
+      "task": "Schedule 5-10 minutes of deliberate daydreaming time into your daily routine. Find a quiet, comfortable space where you can relax and let your mind wander. You can use guided visualization recordings, music, or simply your own imagination. The key is to allow your mind to explore freely without judgment or criticism. If you find it difficult to start, try focusing on a specific question or challenge you're facing, and ask your subconscious mind for creative solutions or insights. After each daydreaming session, take a few minutes to jot down any new ideas, insights, or solutions that emerged during the practice. Use these notes to inspire and guide your actions and decisions."
+    },
+    "failureCV": {
+      "title": "Failure CV",
+      "description": "The Failure CV is a reflective exercise that involves creating a curriculum vitae (CV) or resume that highlights your failures, setbacks, and challenges instead of your achievements and successes. This unconventional approach helps to reframe your relationship with failure, reduce the fear of failure, and build resilience and perseverance. The Failure CV exercise is based on the principles of narrative therapy, cognitive behavioral therapy, and positive psychology. Research shows that individuals who can reframe their failures as opportunities for growth and learning are more likely to develop a resilient mindset, maintain motivation in the face of challenges, and achieve long-term success. The Failure CV is particularly useful for individuals who struggle with perfectionism, fear of failure, or negative self-talk. By acknowledging and embracing your failures as valuable learning experiences, you can cultivate a more balanced, realistic, and positive self-image.",
+      "example": "Instead of feeling ashamed of your failures, you create a Failure CV that includes: (1) Academic setbacks: Not getting into your desired college, failing a course, or receiving a low grade on an important assignment. (2) Career challenges: Being passed over for a promotion, receiving negative feedback from a manager, or struggling to meet a deadline. (3) Personal struggles: Going through a difficult breakup, facing health issues, or dealing with financial difficulties. (4) Social challenges: Feeling left out of social events, having conflicts with friends or family, or struggling to make new connections. (5) Internal challenges: Dealing with self-doubt, negative thinking, or a lack of motivation. For each item on your Failure CV, you also include: (a) What you learned from the experience, (b) How you grew or changed as a result, (c) What you would do differently next time, (d) How you can apply these lessons to future challenges.",
+      "task": "Create your own Failure CV using the following steps: (1) Reflect on your past failures, setbacks, and challenges in different areas of your life (academic, career, personal, social, and internal). (2) For each failure, write a brief description of what happened, how you felt, and what you learned. (3) Identify any patterns or themes in your failures (e.g., common triggers, recurring challenges, or similar emotional responses). (4) Reframe each failure as a valuable learning experience that contributed to your growth and development. (5) Use your Failure CV as a tool for self-reflection, self-compassion, and resilience building. Review and update your Failure CV regularly as you encounter new challenges and learn from your experiences."
+    },
+    "fiveSecondRule": {
+      "title": "5‑Second Decision Rule",
+      "description": "The 5‑Second Decision Rule is a simple yet effective technique for overcoming procrastination, hesitation, and self-doubt when making decisions or taking action. This rule, popularized by Mel Robbins in her TEDx talk and book 'The 5 Second Rule', is based on the principle that you can change your life in just five seconds by taking immediate action toward your goals or desired outcomes. The 5‑Second Decision Rule works by interrupting the habit loop of overthinking, fear, and procrastination, and replacing it with a quick, decisive action. This technique is particularly useful for individuals who struggle with perfectionism, fear of failure, or anxiety. By consistently applying the 5‑Second Decision Rule, you can train your brain to become more comfortable with uncertainty, more resilient in the face of challenges, and more confident in your decision-making abilities.",
+      "example": "You're lying in bed, dreading the thought of getting up early to exercise. Instead of succumbing to the temptation to hit snooze and skip your workout, you count '5-4-3-2-1' and immediately get out of bed. This simple action interrupts your habitual pattern of procrastination and sets a positive tone for the rest of the day. Another example: You're about to make a difficult phone call that you've been avoiding. Instead of letting fear and self-doubt take over, you take a deep breath, count '5-4-3-2-1', and dial the number. By taking immediate action, you overcome your hesitation and increase your confidence.",
+      "task": "Identify one task or decision that you've been procrastinating or avoiding due to fear, self-doubt, or overthinking. It could be something related to your health, career, relationships, or personal development. Write down the specific thoughts, fears, or beliefs that are holding you back. Then, apply the 5‑Second Decision Rule by counting '5-4-3-2-1' and taking immediate action toward that task or decision. It could be as simple as making the phone call, sending the email, or starting the project. Notice how this impacts your mood, motivation, and sense of accomplishment. Repeat this process regularly to build your confidence and overcome procrastination."
+    },
+    "mirrorQuestions": {
+      "title": "Mirror Questions",
+      "description": "Mirror questions are a powerful communication and self-reflection tool that involves asking yourself or others reflective questions that encourage deeper thinking, self-awareness, and empathy. These questions are designed to 'mirror' back the underlying emotions, needs, and values that may not be immediately apparent in a conversation or situation. Mirror questions are based on the principles of active listening, empathy, and cognitive behavioral therapy. Research shows that using mirror questions can improve communication skills, enhance emotional intelligence, and strengthen interpersonal relationships. Mirror questions are particularly useful in conflict resolution, negotiation, and coaching situations, where understanding underlying motivations and emotions is crucial. By regularly practicing mirror questioning, you can develop greater self-awareness, improve your relationships, and become a more effective communicator and problem-solver.",
+      "example": "In a conversation with a friend, instead of jumping to conclusions or offering solutions, you ask: 'It sounds like you're feeling really overwhelmed right now. Is that accurate?' This helps your friend reflect on their emotions and provides you with valuable information to respond empathetically. Another example: During a team meeting, instead of assuming you know what your colleague means, you ask: 'When you say that, it makes me wonder if you're feeling unsupported. Is that what you meant?' This encourages open communication and helps clarify any misunderstandings.",
+      "task": "Practice using mirror questions in your daily conversations and interactions. Start by identifying one or two key emotions or needs that are often present in your interactions (e.g., feeling heard, understood, respected, or valued). Then, listen carefully to the other person's words, tone, and body language, and ask mirror questions that reflect back what you observe. For example: 'It sounds like you really value honesty and directness, is that right?' or 'I hear you saying that you feel overwhelmed and need some support, is that correct?' Notice how this impacts the quality of your conversations, your relationships, and your own self-awareness."
+    },
+    "randomActsKindness": {
+      "title": "Random Acts of Kindness (Anonymous)",
+      "description": "Engaging in random acts of kindness, especially anonymous ones, is a powerful way to boost your mood, increase feelings of social connection, and make a positive impact on others' lives. This practice involves performing small, unexpected acts of kindness for others without revealing your identity. The concept is rooted in the principles of positive psychology, which emphasizes strengths, virtues, and factors that contribute to a fulfilling life. Research shows that performing acts of kindness can lead to increased feelings of happiness, satisfaction, and well-being. It also helps reduce stress, anxiety, and depression. Anonymous acts of kindness are particularly impactful because they foster a sense of connection and empathy without the expectation of recognition or reward. By regularly engaging in random acts of kindness, you can cultivate a more positive, compassionate, and connected mindset.",
+      "example": "Leaving a positive, anonymous note in a library book for the next reader to find. Donating to a charity or cause you care about without revealing your identity. Paying for the coffee or meal of the person behind you in line. Leaving extra change in a vending machine for someone else to find. Writing an anonymous letter of appreciation to a colleague or friend. Donating blood or plasma anonymously. Leaving a generous tip for a service worker without providing your name. Sending an anonymous e-card or letter to someone who could use a pick-me-up.",
+      "task": "For the next week, commit to performing at least one random act of kindness each day. It can be as simple as holding the door for someone, paying a compliment, or leaving a positive note for a stranger. The key is to do it anonymously, without expecting anything in return. Notice how this impacts your mood, your perception of others, and your overall sense of well-being. At the end of the week, reflect on the experience and consider making random acts of kindness a regular part of your life."
+    },
+    "noComplaintConversations": {
+      "title": "No‑Complaint Conversations",
+      "description": "Committing to no-complaint conversations is a powerful way to shift your mindset, improve your mood, and enhance your relationships. This practice involves refraining from expressing complaints or negative remarks during conversations, and instead focusing on positive, constructive, and solution-oriented communication. The concept is rooted in the principles of positive psychology and cognitive behavioral therapy, which emphasize the impact of thoughts and language on emotions and behavior. Research shows that adopting a positive communication style can lead to improved relationships, increased feelings of happiness and satisfaction, and reduced symptoms of stress and anxiety. No-complaint conversations are particularly useful in personal and professional relationships where negativity, criticism, or blame can create conflict and dissatisfaction. By regularly practicing no-complaint conversations, you can cultivate a more positive, resilient, and solution-focused mindset.",
+      "example": "Instead of complaining about a difficult situation at work, you focus on discussing potential solutions and what you can learn from the experience. Rather than criticizing a friend for being late, you express understanding and suggest a positive activity to enjoy together. Instead of venting about a problem, you share it as a challenge you're working to overcome. Rather than discussing what's wrong, you focus on what you're grateful for and the positive aspects of your life.",
+      "task": "For the next 7 days, commit to having at least one no-complaint conversation each day. It can be with a friend, family member, colleague, or even yourself. The key is to focus on positive, constructive, and solution-oriented communication. If you catch yourself complaining or expressing negativity, pause and reframe your thoughts and words to align with a no-complaint approach. Notice how this impacts your mood, your relationships, and your overall sense of well-being. At the end of the week, reflect on the experience and consider making no-complaint conversations a regular part of your life."
+    },
+    "platinumRule": {
+      "title": "The Platinum Rule",
+      "description": "The Platinum Rule is a powerful interpersonal principle that involves treating others the way they want to be treated, rather than how you would like to be treated. This rule emphasizes empathy, understanding, and respect for individual differences in values, preferences, and needs. The Platinum Rule is based on the principles of emotional intelligence, social awareness, and effective communication. Research shows that individuals who practice the Platinum Rule experience improved relationships, increased trust and respect, and enhanced conflict resolution skills. This rule is particularly useful in diverse and multicultural settings, where understanding and respecting individual differences is crucial. By regularly applying the Platinum Rule, you can cultivate greater empathy, improve your interpersonal skills, and build stronger, more positive relationships.",
+      "example": "In a team meeting, instead of dominating the conversation with your ideas, you encourage others to share their perspectives and actively listen to their input. When giving feedback, you consider the other person's preferences and communication style, and tailor your feedback to be most helpful and respectful to them. Instead of assuming that everyone appreciates direct criticism, you offer constructive feedback in a way that aligns with the other person's values and preferences. When resolving a conflict, you seek to understand the other person's point of view and find a solution that respects both parties' needs and concerns.",
+      "task": "For the next week, practice the Platinum Rule in your daily interactions and conversations. Start by identifying one or two key preferences or values that are important to the people you interact with (e.g., respect, recognition, support, autonomy). Then, tailor your communication and actions to align with these preferences or values. For example, if someone values directness, be straightforward in your communication with them. If someone values recognition, make an effort to acknowledge their contributions and achievements. Notice how this impacts the quality of your relationships, your communication skills, and your overall sense of empathy and understanding."
+    },
+    "neurosnacking": {
+      "title": "Neurosnacking",
+      "description": "Neurosnacking is a term that refers to the practice of using small, manageable 'snacks' of positive, engaging, and mentally stimulating content or activities to boost your mood, increase your energy, and enhance your cognitive performance. These neuro snacks can take many forms, including short videos, articles, podcasts, music, or even brief physical activities. The concept is rooted in the principles of positive psychology, which emphasizes the importance of positive emotions, engagement, and meaning in enhancing well-being and performance. Research shows that taking regular neuro snack breaks can improve focus, creativity, and problem-solving skills, while also reducing stress and mental fatigue. Neurosnacking is particularly useful in today's fast-paced, information-overloaded world, where it's essential to maintain mental agility, emotional balance, and a positive mindset.",
+      "example": "Feeling sluggish and unfocused in the afternoon? Instead of reaching for another cup of coffee, you take a 5-minute break to listen to an inspiring podcast episode, watch a funny video, or do a quick physical workout. This boosts your energy, lifts your mood, and sharpens your focus. Another example: You're working on a challenging problem and feeling stuck. Instead of forcing yourself to push through, you take a neuro snack break. You watch a short video that teaches you a new problem-solving technique, listen to music that inspires you, or do a quick meditation. This helps you relax, recharge, and return to the problem with a fresh perspective.",
+      "task": "For the next week, experiment with neurosnacking by incorporating short, positive, and engaging content or activities into your daily routine. Aim for at least three neuro snack breaks each day, especially during times when you typically feel low on energy or focus. Pay attention to how these neuro snacks impact your mood, energy levels, and cognitive performance. At the end of the week, reflect on the experience and consider making neurosnacking a regular part of your self-care and productivity routine."
+    },
+    "coldExposure": {
+      "title": "Cold Exposure (5‑30 s)",
+      "description": "Cold exposure, also known as cold thermogenesis, is a practice that involves exposing your body to cold temperatures for short periods to stimulate various physiological and psychological benefits. This technique has been used for centuries in various cultures for its health benefits. The practice is based on the principles of stress adaptation, which suggests that exposing your body to controlled stressors (like cold) can enhance your resilience, improve your mood, and boost your overall well-being. Research shows that cold exposure can increase the production of norepinephrine, a neurotransmitter that plays a role in mood regulation, attention, and response actions. It can also improve circulation, boost the immune system, and increase metabolic rate. Cold exposure is particularly popularized by practitioners like Wim Hof, who advocate for its physical and mental health benefits. However, it's essential to approach this practice with caution and gradually increase exposure time to avoid adverse effects.",
+      "example": "After a workout, instead of taking a hot shower, you finish with a cold shower for 30 seconds. This helps reduce muscle soreness, improves recovery, and boosts your mood. Another example: You're feeling mentally fatigued and unfocused. Instead of reaching for a snack or caffeine, you step outside for a quick 5-minute cold exposure. This could be a splash of cold water on your face, a cold shower, or even a brief walk in the cold air. This helps increase your alertness, improve your mood, and enhance your mental clarity.",
+      "task": "For the next week, experiment with cold exposure as a part of your daily routine. Start with just 5-10 seconds of cold exposure at the end of your shower, or splash your face with cold water. Gradually increase the duration and intensity as you become more comfortable with the practice. Pay attention to how this impacts your mood, energy levels, and overall sense of well-being. At the end of the week, reflect on the experience and consider making cold exposure a regular part of your self-care routine."
+    },
+    "laughterYoga": {
+      "title": "Laughter Yoga",
+      "description": "Laughter yoga is a unique exercise routine that combines laughter exercises with yoga breathing techniques. This practice is based on the principle that voluntary laughter, when done in a group setting, can provide the same physiological and psychological benefits as spontaneous laughter. Laughter yoga is designed to promote physical, mental, and emotional well-being through the power of laughter. Research shows that laughter yoga can reduce stress, improve mood, boost immune function, and enhance overall well-being. It also helps increase pain tolerance, improve cardiovascular health, and promote relaxation. Laughter yoga is suitable for people of all ages and fitness levels, and it can be practiced in various settings, including community centers, workplaces, and online platforms. The practice typically involves a series of laughter exercises, breathing techniques, and playful activities, all done in a group setting to enhance the sense of connection and joy.",
+      "example": "Joining a laughter yoga class at your local community center. The class starts with simple laughter exercises, such as 'hee-hee, ha-ha, ho-ho,' combined with deep breathing. The instructor then leads the group in playful activities, like pretending to blow up a balloon while laughing. Everyone laughs together, creating a contagious and uplifting atmosphere. Another example: Practicing laughter yoga online with a virtual group. You follow along with a video or live session, doing laughter exercises and breathing techniques from the comfort of your home. You notice that even forced laughter starts to feel genuine and uplifting.",
+      "task": "For the next week, incorporate laughter yoga into your daily routine. Start with just 5 minutes of laughter exercises and deep breathing each day. You can do this alone or with others. The key is to engage in hearty, genuine laughter, not just polite or forced laughter. If you're doing this alone, you can use funny videos, jokes, or laughter yoga recordings to stimulate laughter. Notice how this impacts your mood, stress levels, and overall sense of well-being. At the end of the week, reflect on the experience and consider making laughter yoga a regular part of your self-care routine."
+    },
+    "deathMeditation": {
+      "title": "Death Meditation",
+      "description": "Death meditation, also known as memento mori meditation, is a reflective practice that involves contemplating your own mortality and the impermanence of life. This meditation technique is rooted in various spiritual and philosophical traditions, including Stoicism, Buddhism, and Christian mysticism. The practice is based on the principle that by acknowledging and accepting the inevitability of death, you can cultivate a deeper appreciation for life, clarify your values and priorities, and reduce fear and anxiety. Research shows that death meditation can increase psychological resilience, improve emotional regulation, and enhance overall well-being. It also helps individuals develop a greater sense of purpose, meaning, and connection with others. Death meditation is typically practiced in a quiet, comfortable space, where you can relax and focus inward. The practice may involve guided visualizations, contemplative reading, and silent reflection.",
+      "example": "Taking a few minutes each day to reflect on the transient nature of life and the importance of living in alignment with your values and priorities. Considering what truly matters to you in life and what you would like to accomplish or experience before you die. Reflecting on the legacy you want to leave behind and how you can start creating it today. Contemplating the impermanence of all things, including your thoughts, emotions, and experiences, and how this awareness can enhance your appreciation for the present moment.",
+      "task": "For the next week, practice death meditation for 5-10 minutes each day. Find a quiet, comfortable space where you can relax and focus inward. You can use guided recordings, contemplative readings, or simply your own thoughts and reflections. The key is to approach this practice with an open mind and heart, and to allow yourself to fully experience any emotions or insights that arise. After each meditation, take a few minutes to journal about your experience, any insights or realizations, and how you can apply these to your daily life. Use this meditation to cultivate a deeper appreciation for life, clarify your values and priorities, and reduce fear and anxiety."
+    },
+    "alterEgoExperiment": {
+      "title": "Alter Ego Experiment",
+      "description": "The Alter Ego Experiment is a creative visualization and role-playing technique that involves creating and embodying an alternative persona or 'alter ego' that possesses the qualities, traits, and abilities you aspire to develop or enhance in yourself. This technique is based on the principles of cognitive behavioral therapy, performance psychology, and creative visualization. Research shows that using an alter ego can help individuals overcome self-doubt, increase confidence, and improve performance in various areas of life, including work, sports, and personal relationships. The Alter Ego Experiment is particularly useful for individuals who struggle with perfectionism, fear of failure, or negative self-talk. By regularly practicing the Alter Ego Experiment, you can train your brain to adopt a more positive, resilient, and confident mindset.",
+      "example": "Before a big presentation or performance, you take on the persona of your alter ego - a confident, charismatic, and skilled speaker. You visualize yourself entering the room with poise, delivering your message with clarity and impact, and receiving positive feedback from your audience. Another example: When facing a challenging situation or decision, you consult your alter ego - a wise, courageous, and resourceful mentor. You visualize this mentor guiding you, offering valuable insights and perspectives, and helping you navigate the situation with confidence and skill.",
+      "task": "Create your own alter ego using the following steps: (1) Reflect on the qualities, traits, and abilities that you admire and aspire to develop in yourself. (2) Create a detailed profile of your alter ego, including their name, age, appearance, personality traits, strengths, and skills. (3) Visualize yourself embodying this alter ego in various situations and challenges you face. (4) Practice using your alter ego as a source of guidance, support, and inspiration. (5) Regularly review and update your alter ego profile as you grow and develop. Use the Alter Ego Experiment to enhance your self-confidence, overcome self-doubt, and improve your performance in all areas of your life."
+    },
+    "futureSelfLetters": {
+      "title": "Future Self Letters",
+      "description": "The Future Self Letters exercise is a powerful visualization and self-reflection technique that involves writing a letter from your future self to your present self. This letter typically includes reflections on your personal growth, achievements, lessons learned, and advice for overcoming current challenges or pursuing future goals. The exercise is based on the principles of narrative therapy, cognitive behavioral therapy, and positive psychology. Research shows that writing and reading future self letters can increase motivation, enhance goal clarity, and improve emotional regulation. This exercise is particularly useful for individuals who struggle with procrastination, lack of direction, or negative self-talk. By regularly practicing the Future Self Letters exercise, you can train your brain to adopt a more positive, resilient, and goal-oriented mindset.",
+      "example": "'Dear [Your Name], I'm writing to you from the future - a future where you've achieved all your goals and dreams. I want to remind you that every challenge you face now is an opportunity for growth and learning. Embrace them with courage and determination. Remember the importance of self-care, balance, and nurturing your passions. I'm proud of the person you are becoming, and I believe in your ability to create the life you desire. Keep pushing forward, stay positive, and never lose sight of your dreams. With love and encouragement, Your Future Self.'",
+      "task": "Write your own Future Self Letter using the following steps: (1) Find a quiet, comfortable space where you can relax and focus inward. (2) Close your eyes and take a few deep breaths to center yourself. (3) Visualize yourself 5, 10, or 20 years in the future - imagine the person you have become, the life you are living, and the goals you have achieved. (4) Open your eyes and write a letter from this future self to your present self. Include reflections on your personal growth, achievements, lessons learned, and advice for overcoming current challenges or pursuing future goals. (5) Read your Future Self Letter regularly to reinforce your motivation, goal clarity, and positive mindset. Consider writing new letters at regular intervals (e.g., annually) to update your future self vision and celebrate your progress."
     }
   }
 }

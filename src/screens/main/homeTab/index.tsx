@@ -568,7 +568,7 @@ const getWellnessAvatar = (
   }
 };
 
-export default function App() {
+export default function HomeTab() {
   // Move these hooks to the very top of the component
   const [selectedTip, setSelectedTip] = useState<SimpleTip | null>(null);
   const [tipModalVisible, setTipModalVisible] = useState(false);

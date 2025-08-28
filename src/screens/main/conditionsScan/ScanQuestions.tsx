@@ -11,6 +11,9 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import type { RouteProp } from '@react-navigation/native';
+import type { RootStackParamList } from '@/navigation/types';
 import CustomIcon from "@/components/CustomIcon";
 import {
   saveScanAnswers,
@@ -19,9 +22,64 @@ import {
 import ProgressBar from "@/components/common/ProgressBar";
 import PrimaryButton from "@/components/common/PrimaryButton";
 import SecondaryButton from "@/components/common/SecondaryButton";
+import TitleText from "@/components/common/TitleText";
+import LabelText from "@/components/common/LabelText";
+import RadioButtonGroup from "@/components/common/RadioButtonGroup";
 import { t } from "@/i18n/locales/i18n"; // Import the translation function
 import { useLanguage } from "@/context/LanguageContext"; // Import language context
 import { getTranslatedScanName } from "@/utils/scanNameTranslations"; // Import the shared translation utility
+
+// Local interface for complete scan data
+interface ScanAnswerFull {
+  user_id: string;
+  scan_name: string;
+  answer1_score: string;
+  question1: string;
+  answer2_score: string;
+  question2: string;
+  answer3_score: string;
+  question3: string;
+  answer4_score: string;
+  question4: string;
+  answer5_score: string;
+  question5: string;
+  answer6_score: string;
+  question6: string;
+  answer7_score: string;
+  question7: string;
+  answer8_score: string;
+  question8: string;
+  answer9_score: string;
+  question9: string;
+  answer10_score: string;
+  question10: string;
+  answer11_score: string;
+  question11: string;
+  answer12_score: string;
+  question12: string;
+  answer13_score: string;
+  question13: string;
+  answer14_score: string;
+  question14: string;
+  answer15_score: string;
+  question15: string;
+  answer16_score: string;
+  question16: string;
+  answer17_score: string;
+  question17: string;
+  answer18_score: string;
+  question18: string;
+  answer19_score: string;
+  question19: string;
+  answer20_score: string;
+  question20: string;
+  pair_index: number;
+  scan_date: string;
+  scan_time: string;
+  scan_title: string;
+  total_score: string;
+  result: string;
+}
 
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -45,14 +103,29 @@ interface QuestionSet {
   [scanType: string]: QuestionOption[][];
 }
 
+// Type definitions for navigation
+type ScanQuestionsNavigationProp = NativeStackNavigationProp<RootStackParamList, 'ScanQuestions'>;
+type ScanQuestionsRouteProp = RouteProp<RootStackParamList, 'ScanQuestions'>;
+
+export interface ScanQuestionsScreenProps {
+  navigation: ScanQuestionsNavigationProp;
+  route: ScanQuestionsRouteProp;
+}
+
 export default function ScanQuestions() {
-  const route = useRoute();
-  const { scanName, questionScreen }: any = route.params;
+  const navigation = useNavigation<ScanQuestionsNavigationProp>();
+  const route = useRoute<ScanQuestionsRouteProp>();
+  const { scanName, questionScreen } = route.params || {};
   const { locale } = useLanguage(); // Add language context to trigger re-renders
-  const navigation = useNavigation();
 
   console.log("ScanQuestions received params:", scanName, questionScreen);
   console.log("Current locale in ScanQuestions:", locale);
+
+  // Safety check for required parameters
+  if (!scanName) {
+    console.error("ScanQuestions: scanName is required but not provided");
+    return null;
+  }
 
   // Create ScreenQuestionData dynamically based on current locale
   const ScreenQuestionData = useMemo(
@@ -5734,6 +5807,10 @@ export default function ScanQuestions() {
   const [progress, setProgress] = useState(1 / 5);
   const [isLoading, setIsLoading] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
+  
+  // State to accumulate all answers as user progresses
+  const [allAnswers, setAllAnswers] = useState<Record<string, string>>({});
+  const [allQuestions, setAllQuestions] = useState<Record<string, string>>({});
 
   // Find question data using useMemo to ensure it updates when locale changes
   const questionData = useMemo(() => {
@@ -5834,54 +5911,45 @@ export default function ScanQuestions() {
     : getTranslatedScanName(scanName as string);
   const questions = questionData?.[title as keyof typeof questionData];
 
-  // Function to load answers for a specific question pair
+  // Function to load answers for a specific question pair (temporarily simplified)
   const loadAnswersForPair = useCallback(
     async (pairIdx: number) => {
       if (!questions) return false;
       try {
         setIsLoading(true);
-        const savedAnswers = await getScanAnswers(title, pairIdx);
-
-        if (savedAnswers) {
-          setAnswer1(savedAnswers.answer1Score);
-          setAnswer2(savedAnswers.answer2Score);
-          return true;
-        } else {
-          // Reset answers if no saved answers found
-          setAnswer1("");
-          setAnswer2("");
-          return false;
-        }
+        
+        // For now, since we're not saving individual pairs, just reset answers
+        // In the future, we could load from a completed scan if it exists
+        setAnswer1("");
+        setAnswer2("");
+        
+        return true;
       } catch (error) {
         console.error(`Error loading answers for pair ${pairIdx}:`, error);
+        // Reset answers on error
+        setAnswer1("");
+        setAnswer2("");
         return false;
       } finally {
         setIsLoading(false);
       }
     },
-    [questions, title]
+    [questions]
   );
 
-  // Function to find the furthest answered question pair
+  // Function to find the furthest answered question pair (temporarily simplified)
   const findFurthestAnsweredPair = useCallback(async (): Promise<number> => {
     if (!questions) return 0;
 
     try {
-      // Start from the last possible pair and work backwards
-      for (let i = questions.length - 1; i >= 0; i--) {
-        const savedAnswers = await getScanAnswers(title, i);
-        if (savedAnswers) {
-          // Found the furthest answered pair
-          return i;
-        }
-      }
-      // No answered pairs found, start from the beginning
+      // For now, always start from the beginning since we're not saving individual pairs
+      // In the future, we could check for a completed scan and resume from there
       return 0;
     } catch (error) {
       console.error("Error finding furthest answered pair:", error);
       return 0;
     }
-  }, [questions, title]);
+  }, [questions]);
 
   // Effect to update questions when pair index changes or when language changes
   useEffect(() => {
@@ -5942,27 +6010,34 @@ export default function ScanQuestions() {
       }
 
       const currentQuestions = questions[pairIndex];
-      const question1Id = currentQuestions[0].Q_id;
-      const question2Id = currentQuestions[1].Q_id;
-      const filename = currentQuestions[0].filename;
-
-      // Get current date and time
-      const currentDate = new Date();
-      const date = currentDate.toISOString().split("T")[0]; // Format: YYYY-MM-DD
-      const time = currentDate.toLocaleTimeString(); // Format: HH:MM:SS
-
-      // Save answers to the database
-      await saveScanAnswers(
-        title,
+      
+      // Store answers in accumulated state
+      const answer1Key = `answer${pairIndex * 2 + 1}_score`;
+      const answer2Key = `answer${pairIndex * 2 + 2}_score`;
+      const question1Key = `question${pairIndex * 2 + 1}`;
+      const question2Key = `question${pairIndex * 2 + 2}`;
+      
+      setAllAnswers(prev => ({
+        ...prev,
+        [answer1Key]: answer1,
+        [answer2Key]: answer2
+      }));
+      
+      setAllQuestions(prev => ({
+        ...prev,
+        [question1Key]: currentQuestions[0]["Name"],
+        [question2Key]: currentQuestions[1]["Name"]
+      }));
+      
+      console.log("Pair answers captured:", {
         pairIndex,
-        question1Id,
-        question2Id,
         answer1,
         answer2,
-        filename,
-        date,
-        time
-      );
+        questions: [
+          currentQuestions[0]["Name"],
+          currentQuestions[1]["Name"]
+        ]
+      });
 
       return true;
     } catch (error) {
@@ -6009,17 +6084,89 @@ export default function ScanQuestions() {
         let totalScore = 0;
         let allScores = [];
 
+        // Function to save complete scan data
+        const saveCompleteScan = async (finalScore: number) => {
+          try {
+            // Create complete scan data object
+            const scanData: ScanAnswerFull = {
+              user_id: 'default_user', // Use default user ID for now
+              scan_name: scanName,
+              answer1_score: allAnswers.answer1_score || '',
+              question1: allQuestions.question1 || '',
+              answer2_score: allAnswers.answer2_score || '',
+              question2: allQuestions.question2 || '',
+              answer3_score: allAnswers.answer3_score || '',
+              question3: allQuestions.question3 || '',
+              answer4_score: allAnswers.answer4_score || '',
+              question4: allQuestions.question4 || '',
+              answer5_score: allAnswers.answer5_score || '',
+              question5: allQuestions.question5 || '',
+              answer6_score: allAnswers.answer6_score || '',
+              question6: allQuestions.question6 || '',
+              answer7_score: allAnswers.answer7_score || '',
+              question7: allQuestions.question7 || '',
+              answer8_score: allAnswers.answer8_score || '',
+              question8: allQuestions.question8 || '',
+              answer9_score: allAnswers.answer9_score || '',
+              question9: allQuestions.question9 || '',
+              answer10_score: allAnswers.answer10_score || '',
+              question10: allQuestions.question10 || '',
+              answer11_score: allAnswers.answer11_score || '',
+              question11: allQuestions.question11 || '',
+              answer12_score: allAnswers.answer12_score || '',
+              question12: allQuestions.question12 || '',
+              answer13_score: allAnswers.answer13_score || '',
+              question13: allQuestions.question13 || '',
+              answer14_score: allAnswers.answer14_score || '',
+              question14: allQuestions.question14 || '',
+              answer15_score: allAnswers.answer15_score || '',
+              question15: allQuestions.question15 || '',
+              answer16_score: allAnswers.answer16_score || '',
+              question16: allQuestions.question16 || '',
+              answer17_score: allAnswers.answer17_score || '',
+              question17: allQuestions.question17 || '',
+              answer18_score: allAnswers.answer18_score || '',
+              question18: allQuestions.question18 || '',
+              answer19_score: allAnswers.answer19_score || '',
+              question19: allQuestions.question19 || '',
+              answer20_score: allAnswers.answer20_score || '',
+              question20: allQuestions.question20 || '',
+              pair_index: questions.length - 1,
+              scan_date: new Date().toLocaleDateString(),
+              scan_time: new Date().toLocaleTimeString(),
+              scan_title: title,
+              total_score: finalScore.toString(),
+              result: '', // Will be calculated based on score
+            };
+
+            await saveScanAnswers(scanData);
+            console.log('Complete scan saved successfully');
+          } catch (error) {
+            console.error('Error saving complete scan:', error);
+            throw error;
+          }
+        };
+
         // Function to get and process all scores
         const processAllScores = async () => {
           try {
             if (!questions) return;
+            
+            // Make sure we save the current answers first
+            await saveCurrentAnswers();
+            
+            // Process all accumulated answers
             for (let i = 0; i < questions.length; i++) {
-              const pairAnswers = await getScanAnswers(title, i);
+              const answer1Key = `answer${i * 2 + 1}_score`;
+              const answer2Key = `answer${i * 2 + 2}_score`;
+              
+              const answer1Value = allAnswers[answer1Key];
+              const answer2Value = allAnswers[answer2Key];
 
-              if (pairAnswers) {
+              if (answer1Value && answer2Value) {
                 // Convert string scores to numbers
-                const score1 = Number(pairAnswers.answer1Score);
-                const score2 = Number(pairAnswers.answer2Score);
+                const score1 = Number(answer1Value);
+                const score2 = Number(answer2Value);
 
                 // Apply the formula: multiply by 2 and divide by 10
                 const processedScore1 = score1 * 2;
@@ -6030,6 +6177,9 @@ export default function ScanQuestions() {
                 totalScore += processedScore1 + processedScore2;
               }
             }
+            
+            // Now save the complete scan to the database
+            await saveCompleteScan(totalScore);
 
             // Log the calculated score
 
@@ -6115,9 +6265,9 @@ export default function ScanQuestions() {
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.content}>
-          <Text style={styles.title}>
+          <TitleText>
             {!questionData ? "Question data not found" : "Loading questions..."}
-          </Text>
+          </TitleText>
         </View>
       </SafeAreaView>
     );
@@ -6125,198 +6275,92 @@ export default function ScanQuestions() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        {/* Progress bar */}
-        <View style={{ width: "70%", alignSelf: "center" }}>
-          <ProgressBar progress={progress} />
-          <Text style={styles.progressText}>{`Question Set ${
-            pairIndex + 1
-          } of ${questions.length}`}</Text>
+      {/* Progress bar */}
+      <View style={{ width: "70%", alignSelf: "center", marginBottom: 20, marginTop: 20 }}>
+        <ProgressBar progress={progress} />
+        <Text style={styles.progressText}>{`Question Set ${
+          pairIndex + 1
+        } of ${questions.length}`}</Text>
+      </View>
+
+      {/* Loading indicator */}
+      {isLoading && (
+        <View style={styles.loadingOverlay}>
+          <ActivityIndicator size="large" color="#AB47BC" />
         </View>
+      )}
 
-        {/* Loading indicator */}
-        {isLoading && (
-          <View style={styles.loadingOverlay}>
-            <ActivityIndicator size="large" color="#AB47BC" />
-          </View>
-        )}
-
-        <ScrollView
-          style={styles.scrollContainer}
-          showsVerticalScrollIndicator={false}
-        >
-          {/* Use the dynamic condition key */}
-          <Text style={styles.title}>{title}</Text>
+      <ScrollView
+        style={styles.scrollContainer}
+        contentContainerStyle={{ paddingBottom: 20 }}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Use TitleText component instead of basic Text */}
+        <TitleText>{title}</TitleText>
 
           {/* Render the first question from the pair */}
-          <Text style={styles.label}>{question1}</Text>
-          <View style={styles.radioGroup}>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer1(questions[pairIndex][0]["Option 1 Weight"])
+          <LabelText>{question1}</LabelText>
+          <RadioButtonGroup
+            options={[
+              questions[pairIndex][0]["Option 1"],
+              questions[pairIndex][0]["Option 2"],
+              questions[pairIndex][0]["Option 3"],
+              questions[pairIndex][0]["Option 4"],
+              questions[pairIndex][0]["Option 5"]
+            ]}
+            selectedValue={
+              answer1 === questions[pairIndex][0]["Option 1 Weight"] ? questions[pairIndex][0]["Option 1"] :
+              answer1 === questions[pairIndex][0]["Option 2 Weight"] ? questions[pairIndex][0]["Option 2"] :
+              answer1 === questions[pairIndex][0]["Option 3 Weight"] ? questions[pairIndex][0]["Option 3"] :
+              answer1 === questions[pairIndex][0]["Option 4 Weight"] ? questions[pairIndex][0]["Option 4"] :
+              answer1 === questions[pairIndex][0]["Option 5 Weight"] ? questions[pairIndex][0]["Option 5"] : ""
+            }
+            onValueChange={(value) => {
+              if (value === questions[pairIndex][0]["Option 1"]) {
+                setAnswer1(questions[pairIndex][0]["Option 1 Weight"]);
+              } else if (value === questions[pairIndex][0]["Option 2"]) {
+                setAnswer1(questions[pairIndex][0]["Option 2 Weight"]);
+              } else if (value === questions[pairIndex][0]["Option 3"]) {
+                setAnswer1(questions[pairIndex][0]["Option 3 Weight"]);
+              } else if (value === questions[pairIndex][0]["Option 4"]) {
+                setAnswer1(questions[pairIndex][0]["Option 4 Weight"]);
+              } else if (value === questions[pairIndex][0]["Option 5"]) {
+                setAnswer1(questions[pairIndex][0]["Option 5 Weight"]);
               }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer1 === questions[pairIndex][0]["Option 1 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][0]["Option 1"]}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer1(questions[pairIndex][0]["Option 2 Weight"])
-              }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer1 === questions[pairIndex][0]["Option 2 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][0]["Option 2"]}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer1(questions[pairIndex][0]["Option 3 Weight"])
-              }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer1 === questions[pairIndex][0]["Option 3 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][0]["Option 3"]}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer1(questions[pairIndex][0]["Option 4 Weight"])
-              }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer1 === questions[pairIndex][0]["Option 4 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][0]["Option 4"]}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer1(questions[pairIndex][0]["Option 5 Weight"])
-              }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer1 === questions[pairIndex][0]["Option 5 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][0]["Option 5"]}
-              </Text>
-            </Pressable>
-          </View>
+            }}
+          />
 
           {/* Render the second question from the pair */}
-          <Text style={styles.label}>{question2}</Text>
-          <View style={styles.radioGroup}>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer2(questions[pairIndex][1]["Option 1 Weight"])
+          <LabelText>{question2}</LabelText>
+          <RadioButtonGroup
+            options={[
+              questions[pairIndex][1]["Option 1"],
+              questions[pairIndex][1]["Option 2"],
+              questions[pairIndex][1]["Option 3"],
+              questions[pairIndex][1]["Option 4"],
+              questions[pairIndex][1]["Option 5"]
+            ]}
+            selectedValue={
+              answer2 === questions[pairIndex][1]["Option 1 Weight"] ? questions[pairIndex][1]["Option 1"] :
+              answer2 === questions[pairIndex][1]["Option 2 Weight"] ? questions[pairIndex][1]["Option 2"] :
+              answer2 === questions[pairIndex][1]["Option 3 Weight"] ? questions[pairIndex][1]["Option 3"] :
+              answer2 === questions[pairIndex][1]["Option 4 Weight"] ? questions[pairIndex][1]["Option 4"] :
+              answer2 === questions[pairIndex][1]["Option 5 Weight"] ? questions[pairIndex][1]["Option 5"] : ""
+            }
+            onValueChange={(value) => {
+              if (value === questions[pairIndex][1]["Option 1"]) {
+                setAnswer2(questions[pairIndex][1]["Option 1 Weight"]);
+              } else if (value === questions[pairIndex][1]["Option 2"]) {
+                setAnswer2(questions[pairIndex][1]["Option 2 Weight"]);
+              } else if (value === questions[pairIndex][1]["Option 3"]) {
+                setAnswer2(questions[pairIndex][1]["Option 3 Weight"]);
+              } else if (value === questions[pairIndex][1]["Option 4"]) {
+                setAnswer2(questions[pairIndex][1]["Option 4 Weight"]);
+              } else if (value === questions[pairIndex][1]["Option 5"]) {
+                setAnswer2(questions[pairIndex][1]["Option 5 Weight"]);
               }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer2 === questions[pairIndex][1]["Option 1 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][1]["Option 1"]}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer2(questions[pairIndex][1]["Option 2 Weight"])
-              }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer2 === questions[pairIndex][1]["Option 2 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][1]["Option 2"]}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer2(questions[pairIndex][1]["Option 3 Weight"])
-              }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer2 === questions[pairIndex][1]["Option 3 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][1]["Option 3"]}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer2(questions[pairIndex][1]["Option 4 Weight"])
-              }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer2 === questions[pairIndex][1]["Option 4 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][1]["Option 4"]}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={styles.radioItem}
-              onPress={() =>
-                setAnswer2(questions[pairIndex][1]["Option 5 Weight"])
-              }
-            >
-              <View style={styles.radioButtonWrapper}>
-                <View style={[
-                  styles.radioButton,
-                  answer2 === questions[pairIndex][1]["Option 5 Weight"] && styles.radioButtonSelected
-                ]} />
-              </View>
-              <Text style={styles.radioText}>
-                {questions[pairIndex][1]["Option 5"]}
-              </Text>
-            </Pressable>
-          </View>
+            }}
+          />
         </ScrollView>
 
         {/* Buttons */}
@@ -6331,7 +6375,6 @@ export default function ScanQuestions() {
             customStyle={styles.secondaryButton}
           />
         </View>
-      </View>
     </SafeAreaView>
   );
 }
@@ -6339,50 +6382,15 @@ export default function ScanQuestions() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f8f9fa", // Match SelfOnboarding background
   },
   content: {
     flex: 1,
+  },
+  scrollContainer: { 
     paddingHorizontal: 20,
     paddingVertical: Dimensions.get("window").height * 0.03,
-  },
-  scrollContainer: { flex: 1, marginBottom: 20 },
-  label: {
-    fontSize: 14,
-    fontFamily: "Poppins-Medium",
-    color: "#A63BAA",
-    fontWeight: "500",
-    marginBottom: -3,
-    marginTop: 25,
-    marginLeft: 15,
-  },
-  radioItem: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginBottom: -15,
-    marginLeft: 5,
-  },
-  radioText: {
-    fontSize: 12,
-    fontFamily: "Poppins-Regular",
-    fontWeight: "400",
-    color: "#545353",
-    marginLeft: -5,
-  },
-  radioButtonWrapper: { transform: [{ scale: 0.8 }] },
-  radioGroup: {
-    marginVertical: 10,
-  },
-  radioButton: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
-    borderWidth: 2,
-    borderColor: "#AB47BC",
-    backgroundColor: "transparent",
-  },
-  radioButtonSelected: {
-    backgroundColor: "#AB47BC",
+    paddingBottom: 20,
   },
   buttonContainer: {
     height: Dimensions.get("window").height * 0.15,
@@ -6390,8 +6398,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 20,
     marginBottom: 15,
+    paddingHorizontal: 20,
   },
-  secondaryButton: { width: "88%" },
+  secondaryButton: { 
+    width: "88%" 
+  },
   progressText: {
     textAlign: "center",
     fontSize: 12,
@@ -6410,12 +6421,8 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255, 255, 255, 0.7)",
     zIndex: 10,
   },
-  title: {
-    fontSize: 20,
-    fontFamily: "Poppins-Medium",
-    color: "#A63BAA",
-    textAlign: "center",
-    marginBottom: 10,
-    marginTop: 15,
-  },
+  // Remove custom styles that are now handled by components
+  // title: removed - using TitleText component
+  // label: removed - using LabelText component  
+  // radioItem, radioText, radioButtonWrapper, radioGroup, radioButton, radioButtonSelected: removed - using RadioButtonGroup component
 });

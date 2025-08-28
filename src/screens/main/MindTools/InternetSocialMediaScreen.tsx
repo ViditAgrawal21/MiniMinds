@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { t } from "../../i18n/i18n";
-import { Portal, Dialog, Paragraph, Button } from "react-native-paper";
-import { canAccessFeature } from "../../utils/premiumUtils";
-// (duplicate t import removed)
+import { View, Text, StyleSheet, ScrollView, Pressable, Modal } from "react-native";
+import CustomIcon from "../../../components/CustomIcon";
+import { t } from "../../../i18n/locales/i18n";
+import { canAccessFeature } from "../../../utils/premiumUtils";
 
 export default function InternetSocialMediaScreen({ navigation }: any) {
   const [dialogVisible, setDialogVisible] = useState(false);
@@ -61,7 +59,7 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("internetSocialMedia.headerTitle")}
@@ -73,7 +71,7 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <Ionicons name="phone-portrait" size={48} color="#3b82f6" />
+              <CustomIcon type="IO" name="phone-portrait" size={48} color="#3b82f6" />
               <Text style={styles.imageLabel}>
                 {t("internetSocialMedia.imageLabel")}
               </Text>
@@ -227,7 +225,7 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <Ionicons name="warning" size={16} color="#f59e0b" />
+              <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
             </View>
             <Text style={styles.alertTitle}>
               {t("internetSocialMedia.alertTitle")}
@@ -240,46 +238,57 @@ export default function InternetSocialMediaScreen({ navigation }: any) {
 
         <View style={styles.bottomSpacing} />
       </ScrollView>
-      <Portal>
-        <Dialog
-          visible={dialogVisible}
-          onDismiss={() => setDialogVisible(false)}
-          style={styles.dialog}
-        >
-          <Dialog.Title style={styles.dialogTitle}>
-            {blockedPlan
-              ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
-              : t("upgradeDialog.title")}
-          </Dialog.Title>
-          <Dialog.Content>
-            <Paragraph style={styles.dialogText}>
+      
+      {/* Upgrade Modal */}
+      <Modal
+        visible={dialogVisible}
+        transparent={true}
+        animationType="fade"
+        onRequestClose={() => setDialogVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContainer}>
+            <Text style={styles.dialogTitle}>
+              {blockedPlan
+                ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
+                : t("upgradeDialog.title")}
+            </Text>
+            
+            <Text style={styles.dialogText}>
               {blockedPlan
                 ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.message`)
                 : t("upgradeDialog.message")}
-            </Paragraph>
-          </Dialog.Content>
-          <Dialog.Actions style={styles.dialogActions}>
-            <Button onPress={() => setDialogVisible(false)}>
-              {blockedPlan
-                ? t("mindToolsScreen.upgradeDialog.cancelButton")
-                : t("upgradeDialog.cancelButton")}
-            </Button>
-            <Button
-              mode="contained"
-              onPress={() => {
-                setDialogVisible(false);
-                navigation.navigate("Upgrade");
-              }}
-              style={styles.upgradeButton}
-              labelStyle={styles.upgradeButtonLabel}
-            >
-              {blockedPlan
-                ? t("mindToolsScreen.upgradeDialog.upgradeButton")
-                : t("upgradeDialog.upgradeButton")}
-            </Button>
-          </Dialog.Actions>
-        </Dialog>
-      </Portal>
+            </Text>
+            
+            <View style={styles.dialogActions}>
+              <Pressable 
+                style={styles.cancelButton}
+                onPress={() => setDialogVisible(false)}
+              >
+                <Text style={styles.cancelButtonText}>
+                  {blockedPlan
+                    ? t("mindToolsScreen.upgradeDialog.cancelButton")
+                    : t("upgradeDialog.cancelButton")}
+                </Text>
+              </Pressable>
+              
+              <Pressable
+                style={styles.upgradeButton}
+                onPress={() => {
+                  setDialogVisible(false);
+                  navigation.navigate("Upgrade");
+                }}
+              >
+                <Text style={styles.upgradeButtonLabel}>
+                  {blockedPlan
+                    ? t("mindToolsScreen.upgradeDialog.upgradeButton")
+                    : t("upgradeDialog.upgradeButton")}
+                </Text>
+              </Pressable>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }
@@ -452,6 +461,30 @@ const styles = StyleSheet.create({
   bottomSpacing: {
     height: 32,
   },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalContainer: {
+    backgroundColor: "#ffffff",
+    borderRadius: 16,
+    padding: 24,
+    margin: 20,
+    maxWidth: 300,
+    width: "100%",
+  },
+  cancelButton: {
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    marginRight: 10,
+  },
+  cancelButtonText: {
+    color: "#6b7280",
+    fontSize: 14,
+    fontWeight: "500",
+  },
   dialog: { borderRadius: 16 },
   dialogTitle: { textAlign: "center", fontWeight: "bold" },
   dialogText: { textAlign: "center", marginBottom: 8 },
@@ -459,6 +492,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     paddingHorizontal: 16,
     paddingBottom: 16,
+    flexDirection: "row",
+    marginTop: 20,
   },
   upgradeButton: {
     backgroundColor: "#AB47BC",

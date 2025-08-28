@@ -25,6 +25,15 @@ import GeneralSettings from '@/screens/main/GeneralSettingsScreen/GeneralSetting
 import UpgradeToPremium from '@/screens/main/UpgradetoPremiumScreen/UpgradeToPremium';
 import EditProfile from '@/screens/main/EditProfileScreen/EditProfile';
 
+// Import HomeTab related screens
+import MentalHealthAssessment from '@/screens/main/homeTab/MentalHealthAssessment';
+
+// Import ConditionsScan related screens
+import ConditionScansScreen from '@/screens/main/conditionsScan/ConditionScansScreen';
+import ScanIntro from '@/screens/main/conditionsScan/ScanIntro';
+import ScanQuestions from '@/screens/main/conditionsScan/ScanQuestions';
+import ScanResult from '@/screens/main/conditionsScan/ScanResult';
+
 // Import other screens as you create them
 // import ProfileScreen from '../screens/main/profile-page/profile';
 // import SettingsScreen from '../screens/main/settingsScreen/settings';
@@ -125,7 +134,16 @@ const AppNavigation = () => {
       
       {/* Main App - This contains the tab navigation and all main screens */}
       <Stack.Screen name="MainApp" component={MainTabNavigator} />
-      
+
+      {/* HomeTab related screens */}
+      <Stack.Screen name="MentalHealthAssessment" component={MentalHealthAssessment} />
+
+      {/* ConditionsScan related screens */}
+      <Stack.Screen name="ConditionScansScreen" component={ConditionScansScreen} />
+      <Stack.Screen name="ScanIntro" component={ScanIntro} />
+      <Stack.Screen name="ScanQuestions" component={ScanQuestions} />
+      <Stack.Screen name="ScanResult" component={ScanResult} />
+
       {/* Legacy/Optional Screens */}
       <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
       <Stack.Screen name="Welcome" component={WelcomeScreen} />

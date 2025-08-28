@@ -10,13 +10,13 @@ import {
   StatusBar,
   Modal,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "@/app/i18n/i18n";
+import { t } from "../../../i18n/locales/i18n";
 
 // Import the intervention data
-import allInterventionsData from "../../data/interventions.json";
+import allInterventionsData from "../../../data/interventions.json";
 
 interface JournalEntry {
   id: string;
@@ -169,7 +169,7 @@ export default function JournalEntriesScreen({
         questionsObj &&
         typeof questionsObj === "object" &&
         !Array.isArray(questionsObj) &&
-        questionsObj !== questionsTranslationKey
+        String(questionsObj) !== questionsTranslationKey
       ) {
         // Convert object to array of questions
         const translatedQuestions = Object.values(questionsObj) as string[];
@@ -494,7 +494,7 @@ export default function JournalEntriesScreen({
         <StatusBar barStyle="dark-content" />
         <View style={styles.header}>
           <Pressable style={styles.backButton} onPress={handleBackPress}>
-            <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+            <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
           </Pressable>
           <Text style={styles.headerTitle}>{conditionName}</Text>
         </View>
@@ -512,11 +512,11 @@ export default function JournalEntriesScreen({
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <View style={styles.headerActions}>
           <Pressable style={styles.headerIcon} onPress={handleCreateEntry}>
-            <Ionicons name="save-outline" size={24} color="#6b7280" />
+            <CustomIcon type="IO" name="save-outline" size={24} color="#6b7280" />
           </Pressable>
           <Pressable
             style={styles.headerIcon}
@@ -525,7 +525,7 @@ export default function JournalEntriesScreen({
               handleDeleteEntry(journalEntries[0]?.id)
             }
           >
-            <Ionicons name="trash-outline" size={24} color="#6b7280" />
+            <CustomIcon type="IO" name="trash-outline" size={24} color="#6b7280" />
           </Pressable>
         </View>
       </View>
@@ -558,7 +558,7 @@ export default function JournalEntriesScreen({
                   ? t("journal.entries.guidedQuestions.hideButton")
                   : t("journal.entries.guidedQuestions.showButton")}
               </Text>
-              <Ionicons
+              <CustomIcon type="IO"
                 name={showStructuredEntry ? "chevron-up" : "chevron-down"}
                 size={20}
                 color="#8b5cf6"
@@ -636,7 +636,7 @@ export default function JournalEntriesScreen({
               >
                 <View style={styles.entryCardHeader}>
                   <Text style={styles.entryCardTitle}>{entry.title}</Text>
-                  <Ionicons name="eye-outline" size={16} color="#9ca3af" />
+                  <CustomIcon type="IO" name="eye-outline" size={16} color="#9ca3af" />
                 </View>
                 <Text style={styles.entryCardContent} numberOfLines={2}>
                   {entry.content}
@@ -653,15 +653,15 @@ export default function JournalEntriesScreen({
       {/* Bottom Bar */}
       <View style={styles.bottomBar}>
         <Pressable style={styles.bottomBarButton} onPress={handleCreateEntry}>
-          <Ionicons name="add" size={24} color="#6b7280" />
+          <CustomIcon type="IO" name="add" size={24} color="#6b7280" />
         </Pressable>
 
         <Pressable style={styles.bottomBarButton}>
-          <Ionicons name="happy-outline" size={24} color="#6b7280" />
+          <CustomIcon type="IO" name="happy-outline" size={24} color="#6b7280" />
         </Pressable>
 
         <Pressable style={styles.bottomBarButton}>
-          <Ionicons name="text" size={24} color="#6b7280" />
+          <CustomIcon type="IO" name="text" size={24} color="#6b7280" />
         </Pressable>
 
         <View style={styles.timestampContainer}>
@@ -671,7 +671,7 @@ export default function JournalEntriesScreen({
         </View>
 
         <Pressable style={styles.saveButton} onPress={handleCreateEntry}>
-          <Ionicons name="checkmark" size={24} color="#8b5cf6" />
+          <CustomIcon type="IO" name="checkmark" size={24} color="#8b5cf6" />
         </Pressable>
       </View>
 
@@ -693,13 +693,13 @@ export default function JournalEntriesScreen({
                   style={styles.deleteModalButton}
                   onPress={handleDeleteFromModal}
                 >
-                  <Ionicons name="trash-outline" size={20} color="#ef4444" />
+                  <CustomIcon type="IO" name="trash-outline" size={20} color="#ef4444" />
                 </Pressable>
                 <Pressable
                   style={styles.closeButton}
                   onPress={handleCloseModal}
                 >
-                  <Ionicons name="close" size={24} color="#6b7280" />
+                  <CustomIcon type="IO" name="close" size={24} color="#6b7280" />
                 </Pressable>
               </View>
             </View>

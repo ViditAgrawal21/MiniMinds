@@ -19,6 +19,8 @@ import {
   NavigationProp,
   useFocusEffect,
 } from "@react-navigation/native";
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import type { RootStackParamList } from '@/navigation/types';
 import RNHTMLtoPDF from "react-native-html-to-pdf";
 import Share from "react-native-share";
 import { t } from "@/i18n/locales/i18n"; // Import the translation function
@@ -160,18 +162,14 @@ const getInterventionImages = (scanName: string): InterventionImageSet => {
   return defaultImages;
 };
 
-type RootStackParamList = {
-  AddictionScanResult: {
-    answersSoFar?: Record<string, number>;
-    scanName?: string;
-    totalScore?: number;
-  };
-  Tab: { initialTab?: string } | undefined;
-};
-type ResultScreenRouteProp = RouteProp<
-  RootStackParamList,
-  "AddictionScanResult"
->;
+// Type definitions for navigation
+type ScanResultNavigationProp = NativeStackNavigationProp<RootStackParamList, 'ScanResult'>;
+type ScanResultRouteProp = RouteProp<RootStackParamList, 'ScanResult'>;
+
+export interface ScanResultScreenProps {
+  navigation: ScanResultNavigationProp;
+  route: ScanResultRouteProp;
+}
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
@@ -209,9 +207,15 @@ function getCategory(score: number, conditionName?: string) {
 }
 
 export default function AddictionScanResult() {
-  const route = useRoute<ResultScreenRouteProp>();
-  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+  const navigation = useNavigation<ScanResultNavigationProp>();
+  const route = useRoute<ScanResultRouteProp>();
   const { scanName, totalScore } = route.params || {};
+
+  // Safety check for required parameters
+  if (!scanName || totalScore === undefined) {
+    console.error("ScanResult: scanName and totalScore are required but not provided");
+    return null;
+  }
 
   //   if (!answersSoFar) {
   //     return (

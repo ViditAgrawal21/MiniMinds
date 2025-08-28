@@ -10,11 +10,11 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import Icon from "react-native-vector-icons/Ionicons";
+import CustomIcon from "../../../../components/CustomIcon";
 import { useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { t, getCurrentLanguage } from "../../../../i18n/locales";
-import { getPremiumStatus } from "../../../utils/premiumUtils";
+import { getPremiumStatus } from "../../../../utils/premiumUtils";
 
 interface REBTIntervention {
   // Format from translation files (rebtInterventions section)
@@ -795,7 +795,7 @@ export default function REBTScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Icon name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("rebtScreen.header.title")}</Text>
       </View>
@@ -816,7 +816,7 @@ export default function REBTScreen({ navigation, route }: any) {
                   <View style={[styles.rebtCard, styles.completelyBlurredCard]}>
                     {/* XP Badge */}
                     <View style={[styles.xpBadge, styles.blurredXpBadge]}>
-                      <Icon name="flash-outline" size={12} color="#FFFFFF" />
+                      <CustomIcon type="IO" name="flash-outline" size={12} color="#FFFFFF" />
                       <Text style={styles.xpText}>{getREBTXP(rebt)} XP</Text>
                     </View>
                     
@@ -833,7 +833,7 @@ export default function REBTScreen({ navigation, route }: any) {
                       <Text style={[styles.addButtonText, styles.completelyDisabledText]}>
                         {t("rebtScreen.addToTherapyPlan")}
                       </Text>
-                      <Icon name="add-circle" size={20} color="#E5E7EB" />
+                      <CustomIcon type="IO" name="add-circle" size={20} color="#E5E7EB" />
                     </Pressable>
                   </View>
                 </View>
@@ -844,7 +844,7 @@ export default function REBTScreen({ navigation, route }: any) {
                             <View key={index} style={styles.rebtCard}>
                 {/* XP Badge */}
                 <View style={styles.xpBadge}>
-                  <Icon name="flash-outline" size={12} color="#FFFFFF" />
+                  <CustomIcon type="IO" name="flash-outline" size={12} color="#FFFFFF" />
                   <Text style={styles.xpText}>{getREBTXP(rebt)} XP</Text>
                 </View>
                 
@@ -859,7 +859,7 @@ export default function REBTScreen({ navigation, route }: any) {
                   <Text style={styles.addButtonText}>
                     {t("rebtScreen.addToTherapyPlan")}
                   </Text>
-                  <Icon name="add-circle" size={20} color="#7C3AED" />
+                  <CustomIcon type="IO" name="add-circle" size={20} color="#7C3AED" />
                 </Pressable>
               </View>
             );
@@ -961,7 +961,7 @@ export default function REBTScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <Icon
+                        <CustomIcon type="IO"
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -975,7 +975,7 @@ export default function REBTScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <Icon
+                      <CustomIcon type="IO"
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

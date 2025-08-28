@@ -10,7 +10,7 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import Icon from "react-native-vector-icons/Ionicons";
+import CustomIcon from "../../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { t, getCurrentLanguage } from "../../../../i18n/locales";
 
@@ -843,7 +843,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Icon name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("relaxationScreen.header.title")}
@@ -861,7 +861,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
             <View key={index} style={styles.relaxationCard}>
               {/* XP Badge */}
               <View style={styles.xpBadge}>
-                <Icon name="leaf-outline" size={12} color="#FFFFFF" />
+                <CustomIcon type="IO" name="leaf-outline" size={12} color="#FFFFFF" />
                 <Text style={styles.xpText}>{relaxation.xp} XP</Text>
               </View>
               
@@ -878,7 +878,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                 <Text style={styles.addButtonText}>
                   {t("relaxationScreen.addToRoutine")}
                 </Text>
-                <Icon name="add-circle" size={20} color="#6366F1" />
+                <CustomIcon type="IO" name="add-circle" size={20} color="#6366F1" />
               </Pressable>
             </View>
           ))}
@@ -981,7 +981,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <Icon
+                        <CustomIcon type="IO"
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -995,7 +995,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <Icon
+                      <CustomIcon type="IO"
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

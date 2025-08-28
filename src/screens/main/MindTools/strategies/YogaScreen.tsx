@@ -10,7 +10,7 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import Icon from "react-native-vector-icons/Ionicons";
+import CustomIcon from "../../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { t, getCurrentLanguage } from "../../../../i18n/locales";
 
@@ -485,22 +485,22 @@ export default function YogaScreen({ navigation, route }: any) {
 
     // Fall back to static JSON files for conditions without translations
     const dataMap: { [key: string]: YogaData } = {
-      "anger-management": require("../../../../Mind Tools/data/anger-management/yoga.json"),
-      stress: require("../../../../Mind Tools/data/stress/yoga.json"),
-      addictions: require("../../../../Mind Tools/data/addictions/yoga.json"),
-      "general-physical-fitness": require("../../../../Mind Tools/data/general-physical-fitness/yoga.json"),
-      "suicidal-behavior": require("../../../../Mind Tools/data/suicidal-behavior/yoga.json"),
-      "common-psychological-issues": require("../../../../Mind Tools/data/common-psychological-issues/yoga.json"),
-      "family-relationship": require("../../../../Mind Tools/data/family-relationship/yoga.json"),
-      "internet-dependence": require("../../../../Mind Tools/data/internet-dependence/yoga.json"),
-      "environment-issues": require("../../../../Mind Tools/data/environment-issues/yoga.json"),
-      "financial-mental-health": require("../../../../Mind Tools/data/financial-mental-health/yoga.json"),
-      "internet-social-media": require("../../../../Mind Tools/data/internet-social-media/yoga.json"),
-      "professional-mental-health": require("../../../../Mind Tools/data/professional-mental-health/yoga.json"),
-      "sex-life": require("../../../../Mind Tools/data/sex-life/yoga.json"),
-      sleep: require("../../../../Mind Tools/data/sleep/yoga.json"),
-      "social-mental-health": require("../../../../Mind Tools/data/social-mental-health/yoga.json"),
-      "youngster-issues": require("../../../../Mind Tools/data/youngster-issues/yoga.json"),
+      "anger-management": require("../../../../assets/data/Mind Tools/data/anger-management/yoga.json"),
+      stress: require("../../../../assets/data/Mind Tools/data/stress/yoga.json"),
+      addictions: require("../../../../assets/data/Mind Tools/data/addictions/yoga.json"),
+      "general-physical-fitness": require("../../../../assets/data/Mind Tools/data/general-physical-fitness/yoga.json"),
+      "suicidal-behavior": require("../../../../assets/data/Mind Tools/data/suicidal-behavior/yoga.json"),
+      "common-psychological-issues": require("../../../../assets/data/Mind Tools/data/common-psychological-issues/yoga.json"),
+      "family-relationship": require("../../../../assets/data/Mind Tools/data/family-relationship/yoga.json"),
+      "internet-dependence": require("../../../../assets/data/Mind Tools/data/internet-dependence/yoga.json"),
+      "environment-issues": require("../../../../assets/data/Mind Tools/data/environment-issues/yoga.json"),
+      "financial-mental-health": require("../../../../assets/data/Mind Tools/data/financial-mental-health/yoga.json"),
+      "internet-social-media": require("../../../../assets/data/Mind Tools/data/internet-social-media/yoga.json"),
+      "professional-mental-health": require("../../../../assets/data/Mind Tools/data/professional-mental-health/yoga.json"),
+      "sex-life": require("../../../../assets/data/Mind Tools/data/sex-life/yoga.json"),
+      sleep: require("../../../../assets/data/Mind Tools/data/sleep/yoga.json"),
+      "social-mental-health": require("../../../../assets/data/Mind Tools/data/social-mental-health/yoga.json"),
+      "youngster-issues": require("../../../../assets/data/Mind Tools/data/youngster-issues/yoga.json"),
     };
     
     return dataMap[condition] || null;
@@ -806,7 +806,7 @@ export default function YogaScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Icon name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("yogaScreen.header.title")}</Text>
       </View>
@@ -822,7 +822,7 @@ export default function YogaScreen({ navigation, route }: any) {
             <View key={index} style={styles.yogaCard}>
               {/* XP Badge */}
               <View style={styles.xpBadge}>
-                <Icon name="flower-outline" size={12} color="#FFFFFF" />
+                <CustomIcon type="IO" name="flower-outline" size={12} color="#FFFFFF" />
                 <Text style={styles.xpText}>
                   {yoga.xp || yoga["xp"] || 5} XP
                 </Text>
@@ -841,7 +841,7 @@ export default function YogaScreen({ navigation, route }: any) {
                 <Text style={styles.addButtonText}>
                   {t("yogaScreen.addToPractice")}
                 </Text>
-                <Icon name="add-circle" size={20} color="#10B981" />
+                <CustomIcon type="IO" name="add-circle" size={20} color="#10B981" />
               </Pressable>
             </View>
           ))}
@@ -944,7 +944,7 @@ export default function YogaScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <Icon
+                        <CustomIcon type="IO"
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -958,7 +958,7 @@ export default function YogaScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <Icon
+                      <CustomIcon type="IO"
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

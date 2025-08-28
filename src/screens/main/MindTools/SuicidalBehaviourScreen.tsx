@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { t } from "../../i18n/i18n";
+import CustomIcon from "../../../components/CustomIcon";
+import { t } from "../../../i18n/locales/i18n";
 
 export default function SuicidalBehaviourScreen({ navigation }: any) {
   const handleBackPress = () => {
@@ -46,7 +46,7 @@ export default function SuicidalBehaviourScreen({ navigation }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("suicidalBehaviourScreen.headerTitle")}
@@ -58,7 +58,7 @@ export default function SuicidalBehaviourScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <Ionicons name="heart-dislike" size={48} color="#dc2626" />
+              <CustomIcon type="IO" name="heart-dislike" size={48} color="#dc2626" />
               <Text style={styles.imageLabel}>
                 {t("suicidalBehaviourScreen.imageLabel")}
               </Text>
@@ -120,7 +120,7 @@ export default function SuicidalBehaviourScreen({ navigation }: any) {
         <View style={styles.crisisBox}>
           <View style={styles.crisisHeader}>
             <View style={styles.crisisIconContainer}>
-              <Ionicons name="call" size={20} color="#dc2626" />
+              <CustomIcon type="IO" name="call" size={20} color="#dc2626" />
             </View>
             <Text style={styles.crisisTitle}>
               {t("suicidalBehaviourScreen.immediateHelp")}
@@ -245,7 +245,7 @@ export default function SuicidalBehaviourScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <Ionicons name="warning" size={16} color="#dc2626" />
+              <CustomIcon type="IO" name="warning" size={16} color="#dc2626" />
             </View>
             <Text style={styles.alertTitle}>
               {t("suicidalBehaviourScreen.alertTitle")}

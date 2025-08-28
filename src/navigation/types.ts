@@ -12,6 +12,37 @@ export type RootStackParamList = {
   Tab: { initialTab?: string; screen?: string } | undefined;
   MindTools: undefined;
   
+  // HomeTab related screens
+  MentalHealthAssessment: undefined;
+  
+  // ConditionsScan related screens
+  ConditionScansScreen: undefined;
+  
+  // Settings and premium screens
+  UpgradeToPremium: undefined;
+  
+  // MindTools category screens
+  AngerManagementScreen: undefined;
+  StressScreen: undefined;
+  InternetSocialMediaScreen: undefined;
+  FamilyRelationshipScreen: undefined;
+  SleepScreen: undefined;
+  SuicidalBehaviourScreen: undefined;
+  SexLifeScreen: undefined;
+  AddictionsScreen: undefined;
+  CommonPsychologicalScreen: undefined;
+  EnvironmentIssuesScreen: undefined;
+  FinancialMentalHealthScreen: undefined;
+  PhysicalFitnessScreen: undefined;
+  InternetDependenceScreen: undefined;
+  ProfessionalMentalHealthScreen: undefined;
+  SocialMentalHealthScreen: undefined;
+  YoungsterIssuesScreen: undefined;
+  EmotionalIntelligenceScreen: undefined;
+  
+  // Journal History screen
+  JournalHistoryScreen: undefined;
+  
   // Intervention related screens
   InterventionsScreen: {
     activeTab?: string;
@@ -19,6 +50,13 @@ export type RootStackParamList = {
   } | undefined;
   
   InterventionDetail: {
+    intervention: any; // You can replace with proper Intervention type
+    previousScreen?: string;
+    activeTab?: string;
+    sourceScreen?: string;
+  };
+  
+  InterventionDetailScreen: {
     intervention: any; // You can replace with proper Intervention type
     previousScreen?: string;
     activeTab?: string;
@@ -84,6 +122,13 @@ export type RootStackParamList = {
   RelaxationScreen: {
     condition?: string;
   } | undefined;
+  
+  // EQ Strategy screens
+  EmpathyStrategyScreen: undefined;
+  MotivationStrategyScreen: undefined;
+  SelfAwarenessStrategyScreen: undefined;
+  SelfRegulationStrategyScreen: undefined;
+  SocialSkillsStrategyScreen: undefined;
 };
 
 export type Intervention = {

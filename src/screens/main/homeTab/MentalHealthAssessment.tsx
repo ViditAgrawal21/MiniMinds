@@ -269,7 +269,7 @@ const MentalHealthAssessment: React.FC = () => {
           </Text>
           <TouchableOpacity
             style={styles.homeButton}
-            onPress={() => navigation.navigate("Tab", { initialTab: "Home" })}
+            onPress={() => navigation.navigate("MainApp", { screen: "Home" })}
           >
             <Text style={styles.homeButtonText}>
               {t("mentalHealthAssessment.results.backToHome")}

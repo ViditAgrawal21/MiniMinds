@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { t } from "../../i18n/i18n";
-import { Portal, Dialog, Paragraph, Button } from "react-native-paper";
-import { canAccessFeature } from "../../utils/premiumUtils";
+import { View, Text, StyleSheet, ScrollView, Pressable, Modal } from "react-native";
+import CustomIcon from "../../../components/CustomIcon";
+import { t } from "../../../i18n/locales/i18n";
+import { canAccessFeature } from "../../../utils/premiumUtils";
 
 export default function StressScreen({ navigation }: any) {
   const [dialogVisible, setDialogVisible] = useState(false);
@@ -60,7 +59,7 @@ export default function StressScreen({ navigation }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("stressScreen.headerTitle")}</Text>
       </View>
@@ -70,7 +69,7 @@ export default function StressScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <Ionicons name="pulse" size={48} color="#f59e0b" />
+              <CustomIcon type="IO" name="pulse" size={48} color="#f59e0b" />
               <Text style={styles.imageLabel}>
                 {t("stressScreen.imageLabel")}
               </Text>
@@ -218,7 +217,7 @@ export default function StressScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <Ionicons name="warning" size={16} color="#f59e0b" />
+              <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
             </View>
             <Text style={styles.alertTitle}>
               {t("stressScreen.alertTitle")}
@@ -229,46 +228,54 @@ export default function StressScreen({ navigation }: any) {
 
         <View style={styles.bottomSpacing} />
       </ScrollView>
-      <Portal>
-        <Dialog
-          visible={dialogVisible}
-          onDismiss={() => setDialogVisible(false)}
-          style={styles.dialog}
-        >
-          <Dialog.Title style={styles.dialogTitle}>
-            {blockedPlan
-              ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
-              : t("upgradeDialog.title")}
-          </Dialog.Title>
-          <Dialog.Content>
-            <Paragraph style={styles.dialogText}>
+      <Modal
+        visible={dialogVisible}
+        animationType="fade"
+        transparent={true}
+        onRequestClose={() => setDialogVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContent}>
+            <Text style={styles.dialogTitle}>
+              {blockedPlan
+                ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
+                : t("upgradeDialog.title")}
+            </Text>
+            
+            <Text style={styles.dialogText}>
               {blockedPlan
                 ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.message`)
                 : t("upgradeDialog.message")}
-            </Paragraph>
-          </Dialog.Content>
-          <Dialog.Actions style={styles.dialogActions}>
-            <Button onPress={() => setDialogVisible(false)}>
-              {blockedPlan
-                ? t("mindToolsScreen.upgradeDialog.cancelButton")
-                : t("upgradeDialog.cancelButton")}
-            </Button>
-            <Button
-              mode="contained"
-              onPress={() => {
-                setDialogVisible(false);
-                navigation.navigate("Upgrade");
-              }}
-              style={styles.upgradeButton}
-              labelStyle={styles.upgradeButtonLabel}
-            >
-              {blockedPlan
-                ? t("mindToolsScreen.upgradeDialog.upgradeButton")
-                : t("upgradeDialog.upgradeButton")}
-            </Button>
-          </Dialog.Actions>
-        </Dialog>
-      </Portal>
+            </Text>
+            
+            <View style={styles.dialogActions}>
+              <Pressable 
+                style={styles.cancelButton}
+                onPress={() => setDialogVisible(false)}
+              >
+                <Text style={styles.cancelButtonText}>
+                  {blockedPlan
+                    ? t("mindToolsScreen.upgradeDialog.cancelButton")
+                    : t("upgradeDialog.cancelButton")}
+                </Text>
+              </Pressable>
+              <Pressable
+                style={styles.upgradeButton}
+                onPress={() => {
+                  setDialogVisible(false);
+                  navigation.navigate("Upgrade");
+                }}
+              >
+                <Text style={styles.upgradeButtonLabel}>
+                  {blockedPlan
+                    ? t("mindToolsScreen.upgradeDialog.upgradeButton")
+                    : t("upgradeDialog.upgradeButton")}
+                </Text>
+              </Pressable>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }
@@ -446,15 +453,61 @@ const styles = StyleSheet.create({
   dialogTitle: { textAlign: "center", fontWeight: "bold" },
   dialogText: { textAlign: "center", marginBottom: 8 },
   dialogActions: {
-    justifyContent: "space-between",
-    paddingHorizontal: 16,
-    paddingBottom: 16,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingTop: 8,
+    gap: 12,
   },
   upgradeButton: {
+    flex: 1,
     backgroundColor: "#AB47BC",
-    borderRadius: 6,
+    borderRadius: 8,
+    paddingVertical: 12,
     paddingHorizontal: 16,
-    paddingVertical: 6,
+    marginLeft: 6,
   },
-  upgradeButtonLabel: { color: "white", fontSize: 12, fontWeight: "600" },
+  upgradeButtonLabel: { 
+    color: "white", 
+    fontSize: 14, 
+    fontWeight: "600",
+    textAlign: 'center',
+  },
+  // Modal styles for upgrade popup
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  modalContent: {
+    backgroundColor: '#ffffff',
+    borderRadius: 16,
+    padding: 20,
+    width: '100%',
+    maxWidth: 350,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 10,
+    elevation: 10,
+  },
+  cancelButton: {
+    flex: 1,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#d1d5db',
+    backgroundColor: '#f9fafb',
+    marginRight: 6,
+  },
+  cancelButtonText: {
+    color: '#6b7280',
+    fontWeight: '600',
+    textAlign: 'center',
+  },
 });

@@ -23,6 +23,9 @@ import HomeScreen from "@/screens/home/home";
 import InsightsScreen from "@/screens/main/Insights";
 import ProfilePage from "@/screens/main/profile-page";
 import { t } from "@/i18n/locales";
+import HomeTab from "@/screens/main/homeTab";
+import MindToolsScreen from "@/screens/main/MindTools/MindToolsScreen";
+import MindToolsNavigator from "@/navigation/MindToolsNavigator";
 
 /**
  * @typedef {Object} TabItemProps
@@ -87,7 +90,7 @@ function MainTabNavigator({
 
     switch (activeTab) {
       case "Home":
-        return <HomeScreen />;
+        return <HomeTab />;
       case "Insights":
         return (
           <InsightsScreen
@@ -104,11 +107,11 @@ function MainTabNavigator({
           />
         );
       case "MindTools":
-        return <ProfilePage />;
+        return <MindToolsNavigator />;
       case "Profile":
         return <ProfilePage />;
       default:
-        return <HomeScreen />;
+        return <HomeTab />;
     }
   };
 

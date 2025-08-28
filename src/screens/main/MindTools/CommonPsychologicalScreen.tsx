@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { t } from "../../i18n/i18n"; // Import the translation function
+import CustomIcon from "../../../components/CustomIcon";
+import { t } from "../../../i18n/locales/i18n"; // Import the translation function
 
 export default function CommonPsychologicalScreen({ navigation }: any) {
   const handleBackPress = () => {
@@ -45,7 +45,7 @@ export default function CommonPsychologicalScreen({ navigation }: any) {
     <View style={styles.container}>
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("commonPsychologicalScreen.headerTitle")}
@@ -56,7 +56,7 @@ export default function CommonPsychologicalScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <Ionicons name="medical" size={48} color="#3b82f6" />
+              <CustomIcon type="IO" name="medical" size={48} color="#3b82f6" />
               <Text style={styles.imageLabel}>
                 {t("commonPsychologicalScreen.imageLabel")}
               </Text>
@@ -203,7 +203,7 @@ export default function CommonPsychologicalScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <Ionicons name="warning" size={16} color="#f59e0b" />
+              <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
             </View>
             <Text style={styles.alertTitle}>
               {t("commonPsychologicalScreen.alertTitle")}

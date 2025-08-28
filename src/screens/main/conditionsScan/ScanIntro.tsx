@@ -2,11 +2,16 @@ import React from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation, useRoute } from "@react-navigation/native";
+import { NativeStackNavigationProp, NativeStackScreenProps } from "@react-navigation/native-stack";
 import PrimaryButton from "@/components/common/PrimaryButton";
 import { t } from "@/i18n/locales/i18n"; // Import the i18n and t function
 import { useLanguage } from "@/context/LanguageContext"; // Import language context
+import { RootStackParamList } from "@/navigation/types";
 
 const { height: screenHeight } = Dimensions.get("window");
+
+type ScanIntroScreenProps = NativeStackScreenProps<RootStackParamList, 'ScanIntro'>;
+type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 // Static data with scan names and question screens
 const scanData = [
@@ -49,9 +54,9 @@ const translationKeys: { [key: string]: string } = {
 };
 
 export default function ScanIntro() {
-  const navigation = useNavigation();
-  const route = useRoute();
-  const { scanName } = (route.params as { scanName?: string }) || {};
+  const navigation = useNavigation<NavigationProp>();
+  const route = useRoute<ScanIntroScreenProps['route']>();
+  const { scanName } = route.params || {};
   const { locale } = useLanguage(); // Get current locale from context
   
   console.log("ScanIntro scanName", scanName);

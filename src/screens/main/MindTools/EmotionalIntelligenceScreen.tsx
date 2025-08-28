@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import CustomIcon from "../../../components/CustomIcon";
 
 export default function EmotionalIntelligenceScreen({ navigation }: any) {
   const handleBackPress = () => {
@@ -30,7 +30,7 @@ export default function EmotionalIntelligenceScreen({ navigation }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>Emotional Intelligence</Text>
       </View>
@@ -40,7 +40,7 @@ export default function EmotionalIntelligenceScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <Ionicons name="heart" size={48} color="#8b5cf6" />
+              <CustomIcon type="IO" name="heart" size={48} color="#8b5cf6" />
               <Text style={styles.imageLabel}>Emotional Intelligence</Text>
             </View>
           </View>
@@ -177,7 +177,7 @@ export default function EmotionalIntelligenceScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <Ionicons name="information-circle" size={16} color="#3b82f6" />
+              <CustomIcon type="IO" name="information-circle" size={16} color="#3b82f6" />
             </View>
             <Text style={styles.alertTitle}>Remember</Text>
           </View>

@@ -7,15 +7,15 @@ import {
   StyleSheet,
   Pressable,
   Alert,
+  Modal,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Ionicons } from "@expo/vector-icons";
+import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "../../i18n/i18n"; // Import the translation function
+import { t } from "../../../i18n/locales/i18n"; // Import the translation function
 // Premium access control imports
-import { Portal, Dialog, Paragraph, Button } from "react-native-paper";
-import { canAccessFeature } from "../../utils/premiumUtils";
+import { canAccessFeature } from "../../../utils/premiumUtils";
 
 import MoodSelector from "../../../components/MoodSelector";
 //import Interventions from "../../../components/Interventions/Interventions";
@@ -230,12 +230,12 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="happy-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="happy-outline" size={24} color="#1f2937" />
                 </View>
                 <Text style={styles.taskNumber}>
                   {isLoading ? t("mindToolsScreen.loading") : dailyTasksCount}
                 </Text>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.taskTitle}>
                 {t("mindToolsScreen.dailyTasksTitle")}
@@ -260,14 +260,14 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="calendar-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="calendar-outline" size={24} color="#1f2937" />
                 </View>
                 <Text style={styles.taskNumber}>
                   {isLoading
                     ? t("mindToolsScreen.loading")
                     : interventionsCount}
                 </Text>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.taskTitle}>
                 {t("mindToolsScreen.totalInterventionsTitle")}
@@ -299,7 +299,7 @@ export default function MindToolsScreen({ navigation }: any) {
           <Pressable style={styles.journalCard} onPress={handleJournalPress}>
             <View style={styles.journalContent}>
               <View style={styles.journalIconContainer}>
-                <Ionicons name="journal-outline" size={28} color="#8b5cf6" />
+                <CustomIcon type="IO" name="journal-outline" size={28} color="#8b5cf6" />
               </View>
               <View style={styles.journalTextContainer}>
                 <Text style={styles.journalTitle}>
@@ -310,7 +310,7 @@ export default function MindToolsScreen({ navigation }: any) {
                 </Text>
               </View>
               <View style={styles.journalArrow}>
-                <Ionicons name="chevron-forward" size={20} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={20} color="#6b7280" />
               </View>
             </View>
           </Pressable>
@@ -330,9 +330,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="flame-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="flame-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.angerManagement.title")}
@@ -348,9 +348,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="pulse-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="pulse-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.stress.title")}
@@ -367,13 +367,13 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons
+                  <CustomIcon type="IO"
                     name="phone-portrait-outline"
                     size={24}
                     color="#1f2937"
                   />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.internetSocialMedia.title")}
@@ -391,9 +391,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="people-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="people-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.familyRelationship.title")}
@@ -410,9 +410,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="moon-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="moon-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.sleep.title")}
@@ -428,13 +428,13 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons
+                  <CustomIcon type="IO"
                     name="heart-dislike-outline"
                     size={24}
                     color="#1f2937"
                   />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.suicidalBehaviour.title")}
@@ -451,9 +451,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="heart-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="heart-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.sexLife.title")}
@@ -469,9 +469,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="ban-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="ban-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.addictions.title")}
@@ -488,9 +488,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="medical-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="medical-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.commonPsychological.title")}
@@ -508,9 +508,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="leaf-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="leaf-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.environmentIssues.title")}
@@ -527,9 +527,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="card-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="card-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.financialMentalHealth.title")}
@@ -547,9 +547,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="fitness-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="fitness-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.physicalFitness.title")}
@@ -566,9 +566,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="wifi-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="wifi-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.internetDependence.title")}
@@ -584,13 +584,13 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons
+                  <CustomIcon type="IO"
                     name="briefcase-outline"
                     size={24}
                     color="#1f2937"
                   />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.professionalMentalHealth.title")}
@@ -609,13 +609,13 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons
+                  <CustomIcon type="IO"
                     name="chatbubbles-outline"
                     size={24}
                     color="#1f2937"
                   />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.socialMentalHealth.title")}
@@ -631,9 +631,9 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <Ionicons name="school-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="school-outline" size={24} color="#1f2937" />
                 </View>
-                <Ionicons name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.youngsterIssues.title")}
@@ -650,7 +650,7 @@ export default function MindToolsScreen({ navigation }: any) {
             >
               <View style={styles.eqCardHeader}>
                 <View style={styles.eqIconContainer}>
-                  <Ionicons name="heart" size={32} color="#8b5cf6" />
+                  <CustomIcon type="IO" name="heart" size={32} color="#8b5cf6" />
                 </View>
                 <View style={styles.eqTextContainer}>
                   <Text style={styles.eqCardTitle}>
@@ -665,7 +665,7 @@ export default function MindToolsScreen({ navigation }: any) {
                   </Text>
                 </View>
                 <View style={styles.eqArrowContainer}>
-                  <Ionicons name="chevron-forward" size={20} color="#6b7280" />
+                  <CustomIcon type="IO" name="chevron-forward" size={20} color="#6b7280" />
                 </View>
               </View>
             </Pressable>
@@ -676,47 +676,55 @@ export default function MindToolsScreen({ navigation }: any) {
       </ScrollView>
 
       {/* Upgrade dialog */}
-      <Portal>
-        <Dialog
-          visible={dialogVisible}
-          onDismiss={() => setDialogVisible(false)}
-          style={styles.dialog}
-        >
-          <Dialog.Title style={styles.dialogTitle}>
-            {blockedPlan
-              ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
-              : t("upgradeDialog.title")}
-          </Dialog.Title>
-          <Dialog.Content>
-            <Paragraph style={styles.dialogText}>
+      <Modal
+        visible={dialogVisible}
+        animationType="fade"
+        transparent={true}
+        onRequestClose={() => setDialogVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContent}>
+            <Text style={styles.dialogTitle}>
+              {blockedPlan
+                ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
+                : t("upgradeDialog.title")}
+            </Text>
+            
+            <Text style={styles.dialogText}>
               {blockedPlan
                 ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.message`)
                 : t("upgradeDialog.message")}
-            </Paragraph>
-          </Dialog.Content>
-          <Dialog.Actions style={styles.dialogActions}>
-            <Button onPress={() => setDialogVisible(false)}>
-              {blockedPlan
-                ? t("mindToolsScreen.upgradeDialog.cancelButton")
-                : t("upgradeDialog.cancelButton")}
-            </Button>
-            <Button
-              mode="contained"
-              onPress={() => {
-                setDialogVisible(false);
-                // Navigate to unified upgrade screen route name used elsewhere (ConditionScans uses "Upgrade")
-                navigation.navigate("Upgrade");
-              }}
-              style={styles.upgradeButton}
-              labelStyle={styles.upgradeButtonLabel}
-            >
-              {blockedPlan
-                ? t("mindToolsScreen.upgradeDialog.upgradeButton")
-                : t("upgradeDialog.upgradeButton")}
-            </Button>
-          </Dialog.Actions>
-        </Dialog>
-      </Portal>
+            </Text>
+            
+            <View style={styles.dialogActions}>
+              <Pressable 
+                style={styles.cancelButton}
+                onPress={() => setDialogVisible(false)}
+              >
+                <Text style={styles.cancelButtonText}>
+                  {blockedPlan
+                    ? t("mindToolsScreen.upgradeDialog.cancelButton")
+                    : t("upgradeDialog.cancelButton")}
+                </Text>
+              </Pressable>
+              <Pressable
+                style={styles.upgradeButton}
+                onPress={() => {
+                  setDialogVisible(false);
+                  // Navigate to unified upgrade screen route name used elsewhere (ConditionScans uses "Upgrade")
+                  navigation.navigate("Upgrade");
+                }}
+              >
+                <Text style={styles.upgradeButtonLabel}>
+                  {blockedPlan
+                    ? t("mindToolsScreen.upgradeDialog.upgradeButton")
+                    : t("upgradeDialog.upgradeButton")}
+                </Text>
+              </Pressable>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -921,23 +929,6 @@ const styles = StyleSheet.create({
     marginLeft: 12,
     padding: 4,
   },
-  // Dialog styles for upgrade popup
-  dialog: {
-    borderRadius: 16,
-  },
-  dialogTitle: {
-    textAlign: "center",
-    fontWeight: "bold",
-  },
-  dialogText: {
-    textAlign: "center",
-    marginBottom: 8,
-  },
-  dialogActions: {
-    justifyContent: "space-between",
-    paddingHorizontal: 16,
-    paddingBottom: 16,
-  },
   upgradeButton: {
     backgroundColor: "#AB47BC",
     borderRadius: 6,
@@ -945,8 +936,65 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
   },
   upgradeButtonLabel: {
-    color: "white",
-    fontSize: 12,
+    color: "#ffffff",
     fontWeight: "600",
+    textAlign: 'center',
+  },
+  // Modal styles for upgrade popup
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  modalContent: {
+    backgroundColor: '#ffffff',
+    borderRadius: 16,
+    padding: 20,
+    width: '100%',
+    maxWidth: 350,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 10,
+    elevation: 10,
+  },
+  dialogTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 12,
+    color: '#1f2937',
+  },
+  dialogText: {
+    fontSize: 14,
+    textAlign: 'center',
+    marginBottom: 20,
+    color: '#6b7280',
+    lineHeight: 20,
+  },
+  dialogActions: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingTop: 8,
+    gap: 12,
+  },
+  cancelButton: {
+    flex: 1,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#d1d5db',
+    backgroundColor: '#f9fafb',
+  },
+  cancelButtonText: {
+    color: '#6b7280',
+    fontWeight: '600',
+    textAlign: 'center',
   },
 });

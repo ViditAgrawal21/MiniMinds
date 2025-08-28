@@ -10,7 +10,7 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import Icon from "react-native-vector-icons/Ionicons";
+import CustomIcon from "../../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { t, getCurrentLanguage } from "../../../../i18n/locales";
 
@@ -188,22 +188,22 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
 
     // Fall back to static JSON files for conditions without translations
     const dataMap: { [key: string]: SuggestionsData } = {
-      "anger-management": require("../../../../Mind Tools/data/anger-management/10-common-suggestions.json"),
-      stress: require("../../../../Mind Tools/data/stress/10-common-suggestions.json"),
-      addictions: require("../../../../Mind Tools/data/addictions/10-common-suggestions.json"),
-      "general-physical-fitness": require("../../../../Mind Tools/data/general-physical-fitness/10-common-suggestions.json"),
-      "suicidal-behavior": require("../../../../Mind Tools/data/suicidal-behavior/10-common-suggestions.json"),
-      "common-psychological-issues": require("../../../../Mind Tools/data/common-psychological-issues/10-common-suggestions.json"),
-      "family-relationship": require("../../../../Mind Tools/data/family-relationship/10-common-suggestions.json"),
-      "internet-dependence": require("../../../../Mind Tools/data/internet-dependence/10-common-suggestions.json"),
-      "environment-issues": require("../../../../Mind Tools/data/environment-issues/10-common-suggestions.json"),
-      "financial-mental-health": require("../../../../Mind Tools/data/financial-mental-health/10-common-suggestions.json"),
-      "internet-social-media": require("../../../../Mind Tools/data/internet-social-media/10-common-suggestions.json"),
-      "professional-mental-health": require("../../../../Mind Tools/data/professional-mental-health/10-common-suggestions.json"),
-      "sex-life": require("../../../../Mind Tools/data/sex-life/10-common-suggestions.json"),
-      sleep: require("../../../../Mind Tools/data/sleep/10-common-suggestions.json"),
-      "social-mental-health": require("../../../../Mind Tools/data/social-mental-health/10-common-suggestions.json"),
-      "youngster-issues": require("../../../../Mind Tools/data/youngster-issues/10-common-suggestions.json"),
+      "anger-management": require("../../../../assets/data/Mind Tools/data/anger-management/10-common-suggestions.json"),
+      stress: require("../../../../assets/data/Mind Tools/data/stress/10-common-suggestions.json"),
+      addictions: require("../../../../assets/data/Mind Tools/data/addictions/10-common-suggestions.json"),
+      "general-physical-fitness": require("../../../../assets/data/Mind Tools/data/general-physical-fitness/10-common-suggestions.json"),
+      "suicidal-behavior": require("../../../../assets/data/Mind Tools/data/suicidal-behavior/10-common-suggestions.json"),
+      "common-psychological-issues": require("../../../../assets/data/Mind Tools/data/common-psychological-issues/10-common-suggestions.json"),
+      "family-relationship": require("../../../../assets/data/Mind Tools/data/family-relationship/10-common-suggestions.json"),
+      "internet-dependence": require("../../../../assets/data/Mind Tools/data/internet-dependence/10-common-suggestions.json"),
+      "environment-issues": require("../../../../assets/data/Mind Tools/data/environment-issues/10-common-suggestions.json"),
+      "financial-mental-health": require("../../../../assets/data/Mind Tools/data/financial-mental-health/10-common-suggestions.json"),
+      "internet-social-media": require("../../../../assets/data/Mind Tools/data/internet-social-media/10-common-suggestions.json"),
+      "professional-mental-health": require("../../../../assets/data/Mind Tools/data/professional-mental-health/10-common-suggestions.json"),
+      "sex-life": require("../../../../assets/data/Mind Tools/data/sex-life/10-common-suggestions.json"),
+      sleep: require("../../../../assets/data/Mind Tools/data/sleep/10-common-suggestions.json"),
+      "social-mental-health": require("../../../../assets/data/Mind Tools/data/social-mental-health/10-common-suggestions.json"),
+      "youngster-issues": require("../../../../assets/data/Mind Tools/data/youngster-issues/10-common-suggestions.json"),
     };
 
     return dataMap[condition] || null;
@@ -530,7 +530,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Icon name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("commonSuggestionsScreen.header.title")}
@@ -563,7 +563,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                 <Text style={styles.addButtonText}>
                   {t("commonSuggestionsScreen.addButton")}
                 </Text>
-                <Icon name="add-circle" size={20} color="#8B5CF6" />
+                <CustomIcon type="IO" name="add-circle" size={20} color="#8B5CF6" />
               </Pressable>
             </View>
           ))}
@@ -678,7 +678,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <Icon
+                        <CustomIcon type="IO"
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -692,7 +692,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                           {t(option.descriptionKey)}
                         </Text>
                       </View>
-                      <Icon
+                      <CustomIcon type="IO"
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

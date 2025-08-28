@@ -9,13 +9,9 @@ import ConditionList from "../../../components/ConditionList";
 import SectionHeader from "../../../components/SectionHeader";
 import { t } from "@/i18n/locales/i18n";
 import { canAccessFeature } from "@/utils/premiumUtils";
+import { RootStackParamList } from "@/navigation/types";
 
 type Plan = "free" | "basic" | "premium";
-
-type RootStackParamList = {
-  ScanIntro: { scanName: string };
-  Upgrade: undefined;
-};
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -259,9 +255,9 @@ export default function ConditionScansScreen() {
               </TouchableOpacity>
               <TouchableOpacity
                 onPress={() => {
-                  setDialogVisible(false);
-                  navigation.navigate("Upgrade");
-                }}
+                    setDialogVisible(false);
+                    navigation.navigate("UpgradeToPremium");
+                  }}
                 style={styles.upgradeButton}
               >
                 <Text style={styles.upgradeButtonLabel}>

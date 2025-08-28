@@ -18,12 +18,10 @@ import {
   TextInput,
   Modal,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "../../i18n/i18n"; // Import the translation function
-import i18n from "../../i18n/i18n"; // Import the i18n instance
-import { incrementWellnessScore } from "@/utils/wellnessScore";
+import { t } from "../../../i18n/locales/i18n"; // Import the translation function
 
 const { width } = Dimensions.get("window");
 
@@ -403,7 +401,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
   });
 
   const [isLoading, setIsLoading] = useState(true);
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
+  const [currentLanguage, setCurrentLanguage] = useState("en");
 
   // XP Popup animation states
   const [showXpPopup, setShowXpPopup] = useState(false);
@@ -456,7 +454,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
 
   // Language change detection with improved triggering
   useEffect(() => {
-    const currentLocale = i18n.locale;
+    const currentLocale = "en";
     if (currentLanguage !== currentLocale) {
       console.log(
         `Language changed from ${currentLanguage} to ${currentLocale}`,
@@ -471,7 +469,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = i18n.locale;
+      const currentLocale = "en";
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
       }
@@ -725,7 +723,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
     intervention: Intervention,
     field: "title" | "subtitle",
   ): string => {
-    const currentLocale = i18n.locale as "en" | "hi" | "mr";
+    const currentLocale = "en" as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? intervention.title : intervention.subtitle;
 
@@ -848,7 +846,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
 
   // Helper function to translate tags
   const getLocalizedTag = (tag: string): string => {
-    const currentLocale = i18n.locale as "en" | "hi" | "mr";
+    const currentLocale = "en" as "en" | "hi" | "mr";
     
     // Handle common suggestion tag
     if (tag === "common-suggestion") {
@@ -1035,7 +1033,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
     if(!validateModal()) { Alert.alert(t('interventionsScreen.error'), t('interventionsScreen.modal.validationError')); return; }
     try {
       setIsSaving(true);
-      const locale = i18n.locale as 'en'|'hi'|'mr';
+      const locale = "en" as 'en'|'hi'|'mr';
       const conditionDisplay = isCreatingNewCondition ? newConditionName.trim(): (selectedCondition as string);
       const finalCondition = await getOrCreateCondition(conditionDisplay);
       const targetTab = newFrequency as Tab;
@@ -1222,7 +1220,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
 
       // Increment wellness score by XP gained (capped at 100)
       try {
-        await incrementWellnessScore(interventionToComplete.xp);
+        // await incrementWellnessScore(interventionToComplete.xp);
       } catch (e) {
         console.warn('Failed to increment wellness score', e);
       }
@@ -1431,7 +1429,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
               ]}
             >
               {(intervention.isSelected || isCompleted) && (
-                <Ionicons name="checkmark" size={12} color="#ffffff" />
+                <CustomIcon type="IO" name="checkmark" size={12} color="#ffffff" />
               )}
             </View>
           </View>
@@ -1482,7 +1480,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
                       handleViewIntervention(intervention);
                     }}
                   >
-                    <Ionicons name="eye-outline" size={14} color="#8b5cf6" />
+                    <CustomIcon type="IO" name="eye-outline" size={14} color="#8b5cf6" />
                     <Text style={styles.viewButtonText}>
                       {t("interventionsScreen.view")}
                     </Text>
@@ -1495,7 +1493,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
                         handleJournalPress(intervention);
                       }}
                     >
-                      <Ionicons
+                      <CustomIcon type="IO"
                         name="journal-outline"
                         size={14}
                         color="#10b981"
@@ -1525,7 +1523,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
                     handleDeleteCard(tab, intervention.id);
                   }}
                 >
-                  <Ionicons name="trash-outline" size={18} color="#ef4444" />
+                  <CustomIcon type="IO" name="trash-outline" size={18} color="#ef4444" />
                 </Pressable>
               </View>
             )}
@@ -1560,7 +1558,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
             <View style={styles.celebratoryContainer}>
               <View style={styles.celebratorySquare}>
                 <View style={styles.celebratoryIcon}>
-                  <Ionicons name="checkmark-circle" size={80} color="#10b981" />
+                  <CustomIcon type="IO" name="checkmark-circle" size={80} color="#10b981" />
                 </View>
                 <Text style={styles.celebratoryTitle}>
                   {t("interventionsScreen.allTasksCompleted")}
@@ -1631,7 +1629,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("interventionsScreen.title")}</Text>
       </View>
@@ -1676,10 +1674,10 @@ export default function InterventionsScreen({ navigation, route }: any) {
       {/* Action Buttons */}
       <View style={styles.actionButtons}>
         <Pressable style={styles.refreshButton} onPress={handleRefresh}>
-          <Ionicons name="refresh" size={24} color="#8b5cf6" />
+          <CustomIcon type="IO" name="refresh" size={24} color="#8b5cf6" />
         </Pressable>
         <Pressable style={styles.addButton} accessibilityLabel={t('interventionsScreen.addTooltip')} onPress={openAddModal}>
-          <Ionicons name="add" size={30} color="#ffffff" />
+          <CustomIcon type="IO" name="add" size={30} color="#ffffff" />
         </Pressable>
       </View>
 
@@ -1698,7 +1696,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
             ]}
           >
             <View style={styles.xpPopupIconContainer}>
-              <Ionicons name="star" size={32} color="#fbbf24" />
+              <CustomIcon type="IO" name="star" size={32} color="#fbbf24" />
             </View>
             <Text style={styles.xpPopupText}>
               {t("interventionsScreen.xpGained", { xp: xpGained })}
@@ -1720,7 +1718,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
             <View style={styles.modalHeader}>
               <Text style={styles.modalTitle}>{t("interventionsScreen.modal.title")}</Text>
               <Pressable style={styles.closeButton} onPress={closeAddModal}>
-                <Ionicons name="close" size={22} color="#1a1a1a" />
+                <CustomIcon type="IO" name="close" size={22} color="#1a1a1a" />
               </Pressable>
             </View>
             <ScrollView keyboardShouldPersistTaps="handled" nestedScrollEnabled={true}>
@@ -1744,7 +1742,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
                           "interventionsScreen.modal.selectConditionPlaceholder",
                         )}
                   </Text>
-                  <Ionicons
+                  <CustomIcon type="IO"
                     name={showConditionDropdown ? "chevron-up" : "chevron-down"}
                     size={18}
                     color="#6b7280"

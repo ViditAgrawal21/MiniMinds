@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { t } from "../../i18n/i18n"; // Import the translation function
+import CustomIcon from "../../../components/CustomIcon";
+import { t } from "../../../i18n/locales/i18n"; // Import the translation function
 
 export default function ProfessionalMentalHealthScreen({ navigation }: any) {
   const handleBackPress = () => navigation.goBack();
@@ -42,7 +42,7 @@ export default function ProfessionalMentalHealthScreen({ navigation }: any) {
     <View style={styles.container}>
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("professionalMentalHealth.headerTitle")}
@@ -52,7 +52,7 @@ export default function ProfessionalMentalHealthScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <Ionicons name="briefcase" size={48} color="#374151" />
+              <CustomIcon type="IO" name="briefcase" size={48} color="#374151" />
               <Text style={styles.imageLabel}>
                 {t("professionalMentalHealth.imageLabel")}
               </Text>
@@ -188,7 +188,7 @@ export default function ProfessionalMentalHealthScreen({ navigation }: any) {
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
-              <Ionicons name="warning" size={16} color="#f59e0b" />
+              <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
             </View>
             <Text style={styles.alertTitle}>
               {t("professionalMentalHealth.alertTitle")}
