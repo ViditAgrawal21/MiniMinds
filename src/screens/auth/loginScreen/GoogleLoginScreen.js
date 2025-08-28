@@ -3,23 +3,23 @@ import {
   View,
   Text,
   StyleSheet,
-  StatusBar,
-  Alert,
   TouchableOpacity,
   Image,
+  SafeAreaView,
+  StatusBar,
+  Alert,
   TextInput,
-  ActivityIndicator
+  ActivityIndicator,
 } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
-import { useTheme } from '../../../context/themeContext';
-import { CustomTextInput, Header } from '../../../components';
-import CustomButton from '../../../components/common/CustomButton';
-import { selectAuthLoading, selectAuthError } from '../../../redux/ReducerHelpers/selectors';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import GoogleAuthNative, {
-  GoogleUser,
-} from '../../../services/googleAuthNative';
+import {
+  useFonts,
+  Poppins_400Regular,
+  Poppins_500Medium,
+  Poppins_600SemiBold,
+  Poppins_700Bold,
+} from "@expo-google-fonts/poppins";
+import { useNavigation } from '@react-navigation/native';
+import GoogleAuthNative from '../../../services/googleAuthNative';
 import {
   initiateOtpForEmail,
   verifyOTP,
@@ -34,31 +34,29 @@ import {
   markCodeRequested,
 } from '../utils/verificationRateLimiter';
 
-const LoginScreen = ({ navigation }) => {
-  const { theme } = useTheme();
-  const dispatch = useDispatch();
-  
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [passwordError, setPasswordError] = useState('');
+export default function LoginScreen() {
+  const navigation = useNavigation();
+  const [isLoading, setIsLoading] = useState(false);
+  const [isGoogleSigningIn, setIsGoogleSigningIn] = useState(false);
   const [mode, setMode] = useState("choose");
   const [authMode, setAuthMode] = useState("signin");
+  const [email, setEmail] = useState("");
   const [sending, setSending] = useState(false);
   const [otp, setOtp] = useState(""); // verification code (6 digits)
   const [verifying, setVerifying] = useState(false);
   const [resending, setResending] = useState(false);
   const [timer, setTimer] = useState(60);
   const [canResend, setCanResend] = useState(false);
+  const [password, setPassword] = useState("");
   const [pwSigningIn, setPwSigningIn] = useState(false);
   const [codeRequestCooldown, setCodeRequestCooldown] = useState(0);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isGoogleSigningIn, setIsGoogleSigningIn] = useState(false);
-
-  const loading = useSelector(selectAuthLoading);
-  const error = useSelector(selectAuthError);
-
-  // No need for response handling effect with native Google Auth
+  
+  const [fontsLoaded] = useFonts({
+    Poppins_400Regular,
+    Poppins_500Medium,
+    Poppins_600SemiBold,
+    Poppins_700Bold,
+  });
 
   // OTP resend countdown
   useEffect(() => {
@@ -84,21 +82,11 @@ const LoginScreen = ({ navigation }) => {
     if (mode === "otp" && otp.length === 6 && !verifying) {
       handleVerifyOtp();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [otp, mode]);
-
-  // Email validation helper
-  const validateEmail = (val) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(val);
-  };
 
   const handleGoogleLogin = async () => {
     setIsGoogleSigningIn(true);
     try {
-      // Check if Google Play Services are available on Android
-      await GoogleAuthNative.isSignedIn(); // This will indirectly check for play services
-      
       // Use native Google Sign-In
       const userInfo = await GoogleAuthNative.signIn();
       
@@ -106,18 +94,12 @@ const LoginScreen = ({ navigation }) => {
         // Data is automatically saved by the native module
         // Navigate to language selection after successful sign-in
         navigation.navigate("LanguageSelect");
-      } else {
-        // Handle the case when userInfo is null but no error was thrown
-        Alert.alert(
-          "Sign In Failed",
-          "Could not retrieve user information from Google. Please try again."
-        );
       }
     } catch (error) {
       console.error("Google Auth Error:", error);
       
       // Don't show alert if user just cancelled the sign-in
-      if (error.code !== 12501 && error.code !== 'SIGN_IN_CANCELLED') { // Handle both numeric and string codes
+      if (error.code !== statusCodes.SIGN_IN_CANCELLED) {
         Alert.alert(
           "Authentication Error",
           "Failed to complete Google sign-in. Please try again.",
@@ -136,6 +118,10 @@ const LoginScreen = ({ navigation }) => {
       Alert.alert("Error", "Failed to proceed. Please try again.");
     }
   };
+
+  // Email validation helper
+  const validateEmail = (val) =>
+    /[^\s@]+@[^\s@]+\.[^\s@]+/.test(val.trim());
 
   const handleSendOtp = async () => {
     if (!email.trim()) {
@@ -288,6 +274,14 @@ const LoginScreen = ({ navigation }) => {
     return `${m}:${sec.toString().padStart(2, "0")}`;
   };
 
+  if (!fontsLoaded) {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="#8B5CF6" />
+      </View>
+    );
+  }
+
   const renderChoose = () => (
     <View style={styles.buttonSection}>
       <View style={styles.authModeToggleRow}>
@@ -330,10 +324,10 @@ const LoginScreen = ({ navigation }) => {
           : "Create a new account – choose a method to sign up."}
       </Text>
       <TouchableOpacity
-        style={[styles.googleButton, (isLoading || isGoogleSigningIn) && styles.disabledButton]}
+        style={[styles.googleButton, isGoogleSigningIn && styles.disabledButton]}
         onPress={handleGoogleLogin}
         activeOpacity={0.8}
-        disabled={isLoading || isGoogleSigningIn}
+        disabled={isGoogleSigningIn}
       >
         {isGoogleSigningIn ? (
           <ActivityIndicator size="small" color="#374151" />
@@ -367,9 +361,9 @@ const LoginScreen = ({ navigation }) => {
         style={styles.skipButton}
         onPress={handleSkipForNow}
         activeOpacity={0.7}
-        disabled={isLoading}
+        disabled={isLoading || isGoogleSigningIn}
       >
-        <Text style={[styles.skipButtonText, isLoading && styles.disabledText]}>
+        <Text style={[styles.skipButtonText, (isLoading || isGoogleSigningIn) && styles.disabledText]}>
           Skip for now
         </Text>
       </TouchableOpacity>
@@ -609,8 +603,6 @@ const LoginScreen = ({ navigation }) => {
     </>
   );
 }
-
-
 
 const styles = StyleSheet.create({
   loadingContainer: {
@@ -887,8 +879,3 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
 });
-
-
-
-
-export default LoginScreen;

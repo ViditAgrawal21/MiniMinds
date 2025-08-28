@@ -217,12 +217,12 @@ export default function ProfilePage() {
                   //   navigation.navigate("GuardianSettings" as never);
                   //   break;
                   case "language":
-                    navigation.navigate("LanguageSelectScreen", {
+                    navigation.navigate("LanguageSelect", {
                       reset: true,
                     });
                     break;
                   case "general":
-                    navigation.navigate("GeneralSettings" as never);
+                    navigation.navigate("generalsettings" as never);
                     break;
                   case "onboarding":
                     handleContinueOnboarding();

@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet, Switch, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import CustomIcon from "./CustomIcon";
+import CustomIcon from "@Components/CustomIcon";
+// import CustomIcon from "../../../components/CustomIcon";
 
 export default function GeneralSettings() {
   const [notifications, setNotifications] = React.useState(false);

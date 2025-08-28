@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "431774360335",
+    "project_id": "thought-pro",
+    "storage_bucket": "thought-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431774360335:android:abc123def456",
+        "android_client_info": {
+          "package_name": "com.thoughtpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431774360335-juu55516hl18uu1of74b0bl4h7l5o7ma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YOUR-ANDROID-API-KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431774360335-juu55516hl18uu1of74b0bl4h7l5o7ma.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "431774360335-juu55516hl18uu1of74b0bl4h7l5o7ma.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thoughtpro"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

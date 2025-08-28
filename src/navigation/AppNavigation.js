@@ -21,6 +21,9 @@ import { LanguageProvider } from 'src/context/LanguageContext';
 
 // Import the main tab navigator
 import MainTabNavigator from './MainTabNavigator';
+import GeneralSettings from '@/screens/main/GeneralSettingsScreen/GeneralSettings';
+import UpgradeToPremium from '@/screens/main/UpgradetoPremiumScreen/UpgradeToPremium';
+import EditProfile from '@/screens/main/EditProfileScreen/EditProfile';
 
 // Import other screens as you create them
 // import ProfileScreen from '../screens/main/profile-page/profile';
@@ -127,6 +130,10 @@ const AppNavigation = () => {
       <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
       <Stack.Screen name="Welcome" component={WelcomeScreen} />
       <Stack.Screen name="selforchild" component={SelfOrChildScreen} />
+      <Stack.Screen name="generalsettings" component={GeneralSettings} />
+            <Stack.Screen name="UpgradeToPremium" component={UpgradeToPremium} />
+            <Stack.Screen name="EditProfile" component={EditProfile} />
+
       
     </Stack.Navigator>
     </LanguageProvider>

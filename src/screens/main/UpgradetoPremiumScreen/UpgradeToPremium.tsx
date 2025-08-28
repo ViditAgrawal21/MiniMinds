@@ -4,7 +4,6 @@ import {
   ScrollView,
   Text,
   StyleSheet,
-  Pressable,
   TouchableOpacity,
   Animated,
   Dimensions,
@@ -13,10 +12,13 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
-import CustomIcon from "@/components/CustomIcon";
-import { t } from "@/i18n/locales/i18n"; // Import translation function
-import { redeemCode } from "@/utils/premiumUtils";
-// import { redeemCode } from "../../utils/premiumUtils";
+import CustomIcon from "../../../components/CustomIcon";
+import { t } from "../../../i18n/locales/i18n";
+import {
+  redeemCode,
+  getPremiumStatus,
+  type PremiumStatus,
+} from "../../../utils/premiumUtils";
 
 // Add this interface before the UpgradeToPremium component
 interface TabItemProps {
@@ -72,6 +74,20 @@ export default function UpgradeToPremium() {
   const [activeTab] = React.useState("Profile");
   const [redeemCodeInput, setRedeemCodeInput] = React.useState("");
   const [isRedeeming, setIsRedeeming] = React.useState(false);
+  const [premiumStatus, setPremiumStatusState] = React.useState<PremiumStatus | null>(null);
+
+  const loadStatus = React.useCallback(async () => {
+    try {
+      const status = await getPremiumStatus();
+      setPremiumStatusState(status);
+    } catch (e) {
+      console.warn("Failed to load premium status", e);
+    }
+  }, []);
+
+  React.useEffect(() => {
+    loadStatus();
+  }, [loadStatus]);
 
   const handleRedeemCode = async () => {
     if (!redeemCodeInput.trim()) {
@@ -81,24 +97,16 @@ export default function UpgradeToPremium() {
       );
       return;
     }
-
     setIsRedeeming(true);
     try {
       const result = await redeemCode(redeemCodeInput.trim());
       if (result.success) {
+        await loadStatus();
         Alert.alert(
           t("upgrade.redeemCode.success", "Success!"),
           t("upgrade.redeemCode.successMessage", result.message),
-          [
-            {
-              text: t("upgrade.redeemCode.ok", "OK"),
-              onPress: () => {
-                setRedeemCodeInput("");
-                navigation.goBack();
-              },
-            },
-          ],
         );
+        setRedeemCodeInput("");
       } else {
         Alert.alert(
           t("upgrade.redeemCode.error", "Error"),
@@ -118,6 +126,56 @@ export default function UpgradeToPremium() {
     }
   };
 
+  const renderStatusCard = () => {
+    if (!premiumStatus) return null;
+    if (!premiumStatus.isPremium) {
+      return (
+        <View style={styles.statusCardPending}>
+          <Text style={styles.statusTitle}>
+            {t("upgrade.status.free", "Free Plan")}
+          </Text>
+          <Text style={styles.statusSubtitle}>
+            {t(
+              "upgrade.status.freeSubtitle",
+              "Unlock Premium or Ultra features using your redeem code.",
+            )}
+          </Text>
+        </View>
+      );
+    }
+    
+    // Since our PremiumStatus type is simpler now, we'll use a default plan name
+    const plan = "premium";
+    
+    // For backward compatibility, we'll define an empty array for features
+    const feats: string[] = [];
+    
+    return (
+      <View style={styles.statusCardActive}>
+        <Text style={styles.statusTitle}>
+          {t("upgrade.status.active", "Subscription Active")}
+        </Text>
+        <Text style={styles.statusPlan}>
+          {plan.toString().replace(/_/g, " ")}
+        </Text>
+        {premiumStatus.redeemedAt && (
+          <Text style={styles.statusSubtitle}>
+            {t("upgrade.status.validUntil", "Valid since")}: {new Date(
+              premiumStatus.redeemedAt
+            ).toDateString()}
+          </Text>
+        )}
+        <View style={styles.featureChipRow}>
+          {feats.map((f: string) => (
+            <View key={f} style={styles.featureChip}>
+              <Text style={styles.featureChipText}>{f}</Text>
+            </View>
+          ))}
+        </View>
+      </View>
+    );
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       {/* Header with Back Arrow */}
@@ -131,34 +189,40 @@ export default function UpgradeToPremium() {
             <CustomIcon type="MI" name="arrow-back" size={24} color="#000000" />
           </TouchableOpacity>
         </View>
-        <Text style={styles.title}>Upgrade to Premium</Text>
-        <View style={styles.tableContainer}>
+        <Text style={styles.title}>
+          {t("upgrade.screen.title", "Thought Pro")}
+        </Text>
+  <View style={styles.tableContainer}>
           {/* Benefits Table */}
-          <View style={styles.row}>
-            <Text style={[styles.column, styles.benefitColumn]}>Benefits</Text>
-            <Text style={[styles.column, styles.smallColumn]}>Basic</Text>
-            <Text style={[styles.column, styles.smallColumn]}>Premium</Text>
+          <View style={[styles.row, styles.headerRow]}>
+            <Text
+              style={[styles.column, styles.benefitColumn, styles.headerText]}
+            >
+              {t("upgrade.screen.benefits.header", "Benefits")}
+            </Text>
+            <Text style={[styles.column, styles.smallColumn, styles.headerText]}>
+              {t("upgrade.screen.plans.free", "Free")}
+            </Text>
+            <Text style={[styles.column, styles.smallColumn, styles.headerText]}>
+              {t("upgrade.screen.plans.premium", "Premium")}
+            </Text>
+            <Text style={[styles.column, styles.smallColumn, styles.headerText]}>
+              {t("upgrade.screen.plans.ultra", "Ultra")}
+            </Text>
           </View>
           <View style={styles.row}>
             <Text
               style={[styles.cell, styles.benefitColumn]}
-              numberOfLines={1}
+              numberOfLines={2}
               ellipsizeMode="tail"
             >
-              Daily activity tracking
+              {t(
+                "upgrade.screen.benefits.freeAccess",
+                "Self-monitor stress, productivity, & 10 other vital parameters",
+              )}
             </Text>
             <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
             <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
-          </View>
-          <View style={styles.row}>
-            <Text
-              style={[styles.cell, styles.benefitColumn]}
-              numberOfLines={1}
-              ellipsizeMode="tail"
-            >
-              Wellness score tracking
-            </Text>
-            <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
             <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
           </View>
           <View style={styles.row}>
@@ -167,31 +231,13 @@ export default function UpgradeToPremium() {
               numberOfLines={1}
               ellipsizeMode="tail"
             >
-              Insights sharing
-            </Text>
-            <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
-            <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
-          </View>
-          <View style={styles.row}>
-            <Text
-              style={[styles.cell, styles.benefitColumn]}
-              numberOfLines={1}
-              ellipsizeMode="tail"
-            >
-              Tailored Interventions
+              {t(
+                "upgrade.screen.benefits.allInFreeAccess",
+                "All-in free access",
+              )}
             </Text>
             <Text style={[styles.cell, styles.smallColumn]}>—</Text>
             <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
-          </View>
-          <View style={styles.row}>
-            <Text
-              style={[styles.cell, styles.benefitColumn]}
-              numberOfLines={1}
-              ellipsizeMode="tail"
-            >
-              Tailored content
-            </Text>
-            <Text style={[styles.cell, styles.smallColumn]}>—</Text>
             <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
           </View>
           <View style={styles.row}>
@@ -200,98 +246,88 @@ export default function UpgradeToPremium() {
               numberOfLines={1}
               ellipsizeMode="tail"
             >
-              Detailed Insights
+              {t("upgrade.screen.benefits.scans", "Scans")}
+            </Text>
+            <Text style={[styles.cell, styles.smallColumn]}>3</Text>
+            <Text style={[styles.cell, styles.smallColumn]}>10+</Text>
+            <Text style={[styles.cell, styles.smallColumn]}>100+</Text>
+          </View>
+          <View style={styles.row}>
+            <Text
+              style={[styles.cell, styles.benefitColumn]}
+              numberOfLines={2}
+              ellipsizeMode="tail"
+            >
+              {t(
+                "upgrade.screen.benefits.primarySecondaryInterventions",
+                "Primary & Secondary Interventions",
+              )}
             </Text>
             <Text style={[styles.cell, styles.smallColumn]}>—</Text>
             <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
-          </View>
-          {/* Plan pricing row */}
-          <View style={styles.row}>
-            <Text style={[styles.cell, styles.benefitColumn]}>Basic</Text>
-            <Pressable
-              style={[styles.priceButton, styles.smallColumn]}
-              onPress={() => {
-                // TODO: handle purchase of Basic monthly
-              }}
-            >
-              <Text style={styles.priceButtonText}>299</Text>
-            </Pressable>
-            <Pressable
-              style={[styles.priceButton, styles.smallColumn, { marginLeft: 8 }]}
-              onPress={() => {
-                // TODO: handle purchase of Basic yearly
-              }}
-            >
-              <Text style={styles.priceButtonText}>999</Text>
-            </Pressable>
+            <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
           </View>
           <View style={styles.row}>
-            <Text style={[styles.cell, styles.benefitColumn]}>Premium</Text>
-            <Pressable
-              style={[styles.priceButton, styles.smallColumn]}
-              onPress={() => {
-                // TODO: handle purchase of Premium monthly
-              }}
+            <Text
+              style={[styles.cell, styles.benefitColumn]}
+              numberOfLines={2}
+              ellipsizeMode="tail"
             >
-              <Text style={styles.priceButtonText}>599</Text>
-            </Pressable>
-            <Pressable
-              style={[styles.priceButton, styles.smallColumn, { marginLeft: 8 }]}
-              onPress={() => {
-                // TODO: handle purchase of Premium yearly
-              }}
-            >
-              <Text style={styles.priceButtonText}>2800</Text>
-            </Pressable>
+              {t(
+                "upgrade.screen.benefits.videoTertiaryContent",
+                "Video Tertiary Content",
+              )}
+            </Text>
+            <Text style={[styles.cell, styles.smallColumn]}>—</Text>
+            <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
+            <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
           </View>
+          <View style={styles.row}>
+            <Text
+              style={[styles.cell, styles.benefitColumn]}
+              numberOfLines={2}
+              ellipsizeMode="tail"
+            >
+              {t(
+                "upgrade.screen.benefits.professionalSessions",
+                "1-on-1 session with professionals (₹500-800/session)",
+              )}
+            </Text>
+            <Text style={[styles.cell, styles.smallColumn]}>—</Text>
+            <Text style={[styles.cell, styles.smallColumn]}>—</Text>
+            <Text style={[styles.cell, styles.smallColumn]}>✔</Text>
+          </View>
+          {/* Pricing rows removed in simplified redeem-only flow */}
         </View>
-        {/* Conditions Info */}
+        {/* Conditions Info (optional marketing) */}
         <View style={styles.conditionsContainer}>
           <View style={styles.conditionBox}>
-            <Text style={styles.conditionPlan}>Free</Text>
-            <Text style={styles.conditionCount}>3 Conditions</Text>
+            <Text style={styles.conditionPlan}>
+              {t("upgrade.screen.plans.free", "Free")}
+            </Text>
+            <Text style={styles.conditionCount}>
+              {t("upgrade.screen.plans.freeScans", "3 Scans")}
+            </Text>
           </View>
           <View style={styles.conditionBox}>
-            <Text style={styles.conditionPlan}>Basic</Text>
-            <Text style={styles.conditionCount}>7 Conditions</Text>
+            <Text style={styles.conditionPlan}>
+              {t("upgrade.screen.plans.premium", "Premium")}
+            </Text>
+            <Text style={styles.conditionCount}>
+              {t("upgrade.screen.plans.premiumScans", "10+ Scans")}
+            </Text>
           </View>
           <View style={styles.conditionBox}>
-            <Text style={styles.conditionPlan}>Premium</Text>
-            <Text style={styles.conditionCount}>All Conditions</Text>
+            <Text style={styles.conditionPlan}>
+              {t("upgrade.screen.plans.ultra", "Ultra")}
+            </Text>
+            <Text style={styles.conditionCount}>
+              {t("upgrade.screen.plans.ultraScans", "100+ Scans")}
+            </Text>
           </View>
         </View>
-        <View style={styles.plan}>
-          <Text style={styles.label}>EARLY BIRD OFFER</Text>
-          <Text style={styles.sublabel}>
-            Buy Premium plans for a nominal price.
-          </Text>
-        </View>
-        {/* Pricing Section */}
-        <View style={styles.pricingContainer}>
-          {/* Monthly Plan */}
-          <View style={styles.planRow}>
-            <View>
-              <Text style={styles.planTitle}>Monthly Plan</Text>
-              <Text style={styles.planPrice}>Rs. 99/-</Text>
-            </View>
-            <Pressable style={styles.buyButton1}>
-              <Text style={styles.buyTextBuy}>Buy</Text>
-            </Pressable>
-          </View>
-          <View style={styles.planRow}>
-            <View>
-              <Text style={styles.planTitle}>Yearly Plan</Text>
-              <Text style={styles.planPrice}>Rs. 800/-</Text>
-            </View>
-
-            <Pressable style={styles.buyButton2}>
-              <Text style={styles.buyTextBuy}>Buy</Text>
-              <Text style={styles.buyTextRecommended}>
-                (Recommended)
-              </Text>
-            </Pressable>
-          </View>
-          {/* Redeem Section */}
+        {renderStatusCard()}
+        {!premiumStatus?.isPremium && (
           <View style={styles.redeemContainer}>
             <Text style={styles.redeemTitle}>
               {t("upgrade.redeemCode.title", "Redeem a Code")}
@@ -307,7 +343,7 @@ export default function UpgradeToPremium() {
                 onChangeText={setRedeemCodeInput}
                 editable={!isRedeeming}
               />
-              <Pressable
+              <TouchableOpacity
                 style={[styles.redeemButton, isRedeeming && { opacity: 0.6 }]}
                 onPress={handleRedeemCode}
                 disabled={isRedeeming}
@@ -317,10 +353,10 @@ export default function UpgradeToPremium() {
                     ? t("upgrade.redeemCode.redeeming", "Redeeming...")
                     : t("upgrade.redeemCode.redeem", "Redeem")}
                 </Text>
-              </Pressable>
+              </TouchableOpacity>
             </View>
           </View>
-        </View>
+        )}
       </ScrollView>
 
       {/* Custom Bottom Tab Navigation */}
@@ -328,7 +364,8 @@ export default function UpgradeToPremium() {
         <TabItem
           label={t("navigation.home", "Home")}
           icon={
-            <CustomIcon type="IO"
+            <CustomIcon
+              type="IO"
               name="home-outline"
               size={30}
               color={activeTab === "Home" ? "white" : "#888"}
@@ -343,7 +380,8 @@ export default function UpgradeToPremium() {
         <TabItem
           label={t("navigation.insights", "Insights")}
           icon={
-            <CustomIcon type="FA5"
+            <CustomIcon
+              type="FA5"
               name="chart-bar"
               size={30}
               color={activeTab === "Insights" ? "white" : "#888"}
@@ -358,7 +396,8 @@ export default function UpgradeToPremium() {
         <TabItem
           label={t("navigation.mindTools", "Mind Tools")}
           icon={
-            <CustomIcon type="IO"
+            <CustomIcon
+              type="IO"
               name="grid-outline"
               size={30}
               color={activeTab === "MindTools" ? "white" : "#888"}
@@ -373,7 +412,8 @@ export default function UpgradeToPremium() {
         <TabItem
           label={t("navigation.profile", "Profile")}
           icon={
-            <CustomIcon type="IO"
+            <CustomIcon
+              type="IO"
               name="person-outline"
               size={30}
               color={activeTab === "Profile" ? "white" : "#888"}
@@ -383,6 +423,8 @@ export default function UpgradeToPremium() {
           onPress={() => navigation.goBack()}
         />
       </View>
+
+  {/* Removed legacy plan selection & OTP modals */}
     </SafeAreaView>
   );
 }
@@ -406,12 +448,12 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 18,
-    fontFamily: "Poppins-Bold",
+    fontFamily: "Poppins_700Bold",
     marginLeft: 20,
   },
   title: {
     fontSize: 17,
-    fontFamily: "Poppins-Bold",
+    fontFamily: "Poppins_600SemiBold",
     marginBottom: 10,
     marginTop: 10,
     textAlign: "center",
@@ -420,36 +462,54 @@ const styles = StyleSheet.create({
   tableContainer: {
     marginBottom: 20,
     backgroundColor: "#FFFFFF",
+    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+    overflow: "hidden",
   },
   row: {
     flexDirection: "row",
     justifyContent: "space-between",
     padding: 12,
-    borderBottomColor: "#ddd",
+    borderBottomWidth: 1,
+    borderBottomColor: "#f0f0f0",
+  },
+  headerRow: {
+    backgroundColor: "#f8f8f8",
+    borderBottomWidth: 2,
+    borderBottomColor: "#e0e0e0",
   },
   column: {
     color: "#333",
     textAlign: "center",
   },
   benefitColumn: {
-    width: "50%",
+    width: "40%",
     textAlign: "left",
     fontSize: 14,
-    fontFamily: "Poppins-Regular",
+    fontFamily: "Poppins_400Regular",
   },
   smallColumn: {
-    width: "25%",
+    width: "20%",
     textAlign: "center",
     fontSize: 14,
-    fontFamily: "Poppins-Regular",
+    fontFamily: "Poppins_400Regular",
   },
   cell: {
     color: "#333",
   },
+  headerText: {
+    fontFamily: "Poppins_600SemiBold",
+    fontWeight: "600",
+    color: "#555",
+  },
   plan: {},
   label: {
     fontSize: 16,
-    fontFamily: "Poppins-Bold",
+    fontFamily: "Poppins_600SemiBold",
     color: "#00000",
     alignItems: "center",
     justifyContent: "center",
@@ -457,61 +517,11 @@ const styles = StyleSheet.create({
   },
   sublabel: {
     fontSize: 12,
-    fontFamily: "Poppins-Regular",
+    fontFamily: "Poppins_400Regular",
     color: "#000000",
     textAlign: "center",
   },
-  pricingContainer: {
-    marginTop: 10,
-  },
-  planRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    backgroundColor: "#f9f9f9",
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-    marginBottom: 10,
-  },
-  recommendedPlan: {
-    backgroundColor: "#D27AD5",
-    borderColor: "#D27AD5",
-  },
-  planTitle: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#333",
-  },
-  planPrice: {
-    fontSize: 14,
-    fontWeight: "bold",
-    color: "#555",
-    marginTop: 5,
-  },
-  buyButton1: {
-    backgroundColor: "#D27AD5",
-    paddingVertical: 20,
-    paddingHorizontal: 53,
-    borderRadius: 5,
-  },
-  buyButton2: {
-    backgroundColor: "#D27AD5",
-    paddingVertical: 10,
-    paddingHorizontal: 15,
-    borderRadius: 5,
-  },
-  buyTextBuy: {
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: 14,
-    textAlign: "center",
-  },
-  buyTextRecommended: {
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: 12,
-    textAlign: "center",
-  },
+  /* Removed pricing & purchase related styles */
   // Tab Bar Section styles
   tabBar: {
     flexDirection: "row",
@@ -550,25 +560,14 @@ const styles = StyleSheet.create({
     fontSize: 10,
     color: "#888",
     marginTop: 4,
-    fontFamily: "Poppins-Regular",
+    fontFamily: "Poppins_400Regular",
     textAlign: "center",
     minWidth: 80,
   },
   activeTabLabel: {
     color: "white",
   },
-  priceButton: {
-    backgroundColor: "#D27AD5",
-    paddingVertical: 6,
-    paddingHorizontal: 10,
-    borderRadius: 4,
-    alignItems: "center",
-  },
-  priceButtonText: {
-    color: "#FFFFFF",
-    fontSize: 14,
-    fontFamily: "Poppins-Bold",
-  },
+  /* Price button styles removed */
   conditionsContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -584,12 +583,12 @@ const styles = StyleSheet.create({
     marginHorizontal: 4,
   },
   conditionPlan: {
-    fontFamily: "Poppins-Bold",
+    fontFamily: "Poppins_600SemiBold",
     fontSize: 14,
     marginBottom: 4,
   },
   conditionCount: {
-    fontFamily: "Poppins-Regular",
+    fontFamily: "Poppins_400Regular",
     fontSize: 12,
     color: "#555",
   },
@@ -603,7 +602,7 @@ const styles = StyleSheet.create({
   },
   redeemTitle: {
     fontSize: 16,
-    fontFamily: "Poppins-Bold",
+    fontFamily: "Poppins_600SemiBold",
     marginBottom: 10,
     textAlign: "center",
   },
@@ -620,7 +619,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12,
     fontSize: 14,
-    fontFamily: "Poppins-Regular",
+    fontFamily: "Poppins_400Regular",
     marginRight: 10,
   },
   redeemButton: {
@@ -632,7 +631,60 @@ const styles = StyleSheet.create({
   redeemButtonText: {
     color: "#FFFFFF",
     fontSize: 14,
-    fontFamily: "Poppins-Bold",
+    fontFamily: "Poppins_600SemiBold",
     textAlign: "center",
+  },
+  /* Plan selection styles removed */
+  statusCardPending: {
+    backgroundColor: "#fffaf0",
+    borderWidth: 1,
+    borderColor: "#ffe0b2",
+    padding: 16,
+    borderRadius: 12,
+    marginTop: 10,
+  },
+  statusCardActive: {
+    backgroundColor: "#f0fff4",
+    borderWidth: 1,
+    borderColor: "#9ae6b4",
+    padding: 16,
+    borderRadius: 12,
+    marginTop: 10,
+  },
+  statusTitle: {
+    fontFamily: "Poppins_600SemiBold",
+    fontSize: 16,
+    marginBottom: 4,
+  },
+  statusPlan: {
+    fontFamily: "Poppins_700Bold",
+    fontSize: 14,
+    color: "#2f855a",
+    marginBottom: 4,
+    textTransform: "capitalize",
+  },
+  statusSubtitle: {
+    fontFamily: "Poppins_400Regular",
+    fontSize: 12,
+    color: "#555",
+  },
+  featureChipRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    marginTop: 8,
+    gap: 6,
+  },
+  featureChip: {
+    backgroundColor: "#e6fffa",
+    borderColor: "#81e6d9",
+    borderWidth: 1,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    borderRadius: 16,
+  },
+  featureChipText: {
+    fontSize: 10,
+    fontFamily: "Poppins_500Medium",
+    color: "#234e52",
   },
 });

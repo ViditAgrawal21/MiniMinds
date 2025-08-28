@@ -19,7 +19,7 @@ import { t } from "@/i18n/locales/i18n"; // Import the translation function
 import { getTotalXP } from "@/utils/xpSystem"; // Import XP utility
 
 import FilterDropdown from "../../../components/FilterDropdown";
-import { getAllScanResults, ScanResult } from "@/services/database";
+import { getAllScanResults } from "@/services/database";
 
 /* ---------- helpers ---------- */
 
@@ -155,13 +155,11 @@ export default function InsightsScreen({
       try {
         // Load insights data
         const rows = await getAllScanResults();
-        const mapped: Item[] = rows.map((r: ScanResult) => ({
+        const mapped: Item[] = rows.map((r) => ({
           scanTitle: r.scan_title,
           date: r.scan_date,
-          score: r.total_score,
-          tiers: r.interventions
-            ? r.interventions.split(",").map((t: string) => t.trim())
-            : [],
+          score: Number(r.total_score), // Convert string score to number
+          tiers: r.result ? r.result.split(",").map((t: string) => t.trim()) : [],
         }));
         mapped.sort(
           (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),

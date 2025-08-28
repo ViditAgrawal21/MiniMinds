@@ -1,4 +1,9 @@
 {
+  "common": {
+    "saveAndProceed": "Save & Proceed",
+    "back": "Back",
+    "skip": "Skip"
+  },
   "navigation": {
     "home": "Home",
     "insights": "Insights",

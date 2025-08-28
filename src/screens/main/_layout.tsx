@@ -125,7 +125,7 @@ import { LanguageProvider } from "src/context/LanguageContext.tsx";
 import { ScanProvider } from "src/context/ScanContext.tsx";
 import ProfileHeader from "@Components/ProfileHeader.tsx";
 import EditProfile from "@Components/EditProfile.tsx";
-import GeneralSettings from "@Components/GeneralSettings.tsx";
+import GeneralSettings from "@/screens/main/GeneralSettingsScreen/GeneralSettings.tsx";
 import GuardianSettings from "@Components/GuardianSettings.tsx";
 import GuardianListScreen from "@Components/GuardianList.tsx";
 import EditGuardian from "@Components/EditGuardian.tsx";
