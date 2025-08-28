@@ -954,7 +954,7 @@ export default function HomeTab() {
 
   const handleEQTestPress = () => {
     // @ts-ignore
-    navigation.navigate("EQTestScreen");
+    navigation.navigate("EQTest");
   };
 
   const TopMessage = ({

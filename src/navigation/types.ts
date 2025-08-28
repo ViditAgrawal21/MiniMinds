@@ -91,6 +91,7 @@ export type RootStackParamList = {
   };
   
   // EQ Test screens
+  EQTest: undefined;
   EQTestQuestions: {
     testId: number;
     testTitle: string;

@@ -34,6 +34,11 @@ import ScanIntro from '@/screens/main/conditionsScan/ScanIntro';
 import ScanQuestions from '@/screens/main/conditionsScan/ScanQuestions';
 import ScanResult from '@/screens/main/conditionsScan/ScanResult';
 
+// Import EQ Test related screens
+import EQTest from '@/screens/main/EQTest/index';
+import EQTestQuestions from '@/screens/main/EQTest/questions';
+import EQTestResult from '@/screens/main/EQTest/result';
+
 // Import other screens as you create them
 // import ProfileScreen from '../screens/main/profile-page/profile';
 // import SettingsScreen from '../screens/main/settingsScreen/settings';
@@ -143,6 +148,11 @@ const AppNavigation = () => {
       <Stack.Screen name="ScanIntro" component={ScanIntro} />
       <Stack.Screen name="ScanQuestions" component={ScanQuestions} />
       <Stack.Screen name="ScanResult" component={ScanResult} />
+
+      {/* EQ Test related screens */}
+      <Stack.Screen name="EQTest" component={EQTest} />
+      <Stack.Screen name="EQTestQuestions" component={EQTestQuestions} />
+      <Stack.Screen name="EQTestResult" component={EQTestResult} />
 
       {/* Legacy/Optional Screens */}
       <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
