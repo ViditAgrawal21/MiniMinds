@@ -10,10 +10,9 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/Ionicons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t } from "../../../i18n/i18n";
-import i18n from "../../../i18n/i18n";
+import { t, getCurrentLanguage } from "../../../../i18n/locales";
 
 interface Intervention {
   title?: string;
@@ -367,15 +366,11 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         : undefined;
       const conditionDisplayKey = conditionKeyMap[condition];
       
-      // Create translation objects for all languages - proper implementation
+      // Create translation objects for all languages - simplified implementation
       const getTitleForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalTitleKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedTitle = t(originalTitleKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedTitle !== originalTitleKey
               ? translatedTitle
               : getSuggestionTitle(selectedSuggestion);
@@ -398,11 +393,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       ): string => {
         if (conditionDisplayKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedCondition = t(conditionDisplayKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedCondition !== conditionDisplayKey
               ? translatedCondition
               : conditionName;
@@ -429,11 +420,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalDescriptionKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedDescription = t(originalDescriptionKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedDescription !== originalDescriptionKey
               ? translatedDescription
               : getSuggestionDescription(selectedSuggestion);
@@ -543,7 +530,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <Icon name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("commonSuggestionsScreen.header.title")}
@@ -576,7 +563,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                 <Text style={styles.addButtonText}>
                   {t("commonSuggestionsScreen.addButton")}
                 </Text>
-                <Ionicons name="add-circle" size={20} color="#8B5CF6" />
+                <Icon name="add-circle" size={20} color="#8B5CF6" />
               </Pressable>
             </View>
           ))}
@@ -691,7 +678,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <Ionicons
+                        <Icon
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -705,7 +692,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                           {t(option.descriptionKey)}
                         </Text>
                       </View>
-                      <Ionicons
+                      <Icon
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

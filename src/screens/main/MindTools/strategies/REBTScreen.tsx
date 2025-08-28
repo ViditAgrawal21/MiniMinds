@@ -10,12 +10,10 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import { BlurView } from "expo-blur";
-import { Ionicons } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/Ionicons";
 import { useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t } from "../../../i18n/i18n";
-import i18n from "../../../i18n/i18n";
+import { t, getCurrentLanguage } from "../../../../i18n/locales";
 import { getPremiumStatus } from "../../../utils/premiumUtils";
 
 interface REBTIntervention {
@@ -87,27 +85,26 @@ export default function REBTScreen({ navigation, route }: any) {
     null,
   );
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
+  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
   const [hasPremiumAccess, setHasPremiumAccess] = useState(false);
   
   const { condition } = route.params || {};
 
-  // Language change detection with improved triggering (unified with InterventionsScreen)
+    // Language change detection with improved triggering (unified with InterventionsScreen)
   useEffect(() => {
-    const currentLocale = i18n.locale;
+    const currentLocale = getCurrentLanguage();
     if (currentLanguage !== currentLocale) {
       setCurrentLanguage(currentLocale);
-      setConditionName(getConditionDisplayName(condition));
+      loadREBTInterventions(); // Reload interventions when language changes
     }
   }, [currentLanguage, condition]);
 
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = i18n.locale;
+      const currentLocale = getCurrentLanguage();
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
-        setConditionName(getConditionDisplayName(condition));
       }
     }, 1000); // Check every second
 
@@ -313,7 +310,7 @@ export default function REBTScreen({ navigation, route }: any) {
     rebt: REBTIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = i18n.locale as "en" | "hi" | "mr";
+    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? getREBTTitle(rebt) : getREBTDescription(rebt);
     
@@ -462,7 +459,7 @@ export default function REBTScreen({ navigation, route }: any) {
       return {
         condition: translationKey,
         intervention_type: "REBT",
-        interventions: interventions,
+        interventions: interventions as REBTIntervention[],
       };
     };
 
@@ -637,15 +634,11 @@ export default function REBTScreen({ navigation, route }: any) {
         : undefined;
       const conditionDisplayKey = conditionKeyMap[condition];
       
-      // Create translation objects for all languages - proper implementation
+      // Create translation objects for all languages - simplified implementation
       const getTitleForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalTitleKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedTitle = t(originalTitleKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedTitle !== originalTitleKey
               ? translatedTitle
               : getLocalizedREBTText(selectedREBT, "title");
@@ -668,11 +661,7 @@ export default function REBTScreen({ navigation, route }: any) {
       ): string => {
         if (conditionDisplayKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedCondition = t(conditionDisplayKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedCondition !== conditionDisplayKey
               ? translatedCondition
               : conditionName;
@@ -699,11 +688,7 @@ export default function REBTScreen({ navigation, route }: any) {
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalDescriptionKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedDescription = t(originalDescriptionKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedDescription !== originalDescriptionKey
               ? translatedDescription
               : getLocalizedREBTText(selectedREBT, "description");
@@ -810,7 +795,7 @@ export default function REBTScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <Icon name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("rebtScreen.header.title")}</Text>
       </View>
@@ -827,11 +812,11 @@ export default function REBTScreen({ navigation, route }: any) {
             
             if (shouldBlur) {
               return (
-                <BlurView key={index} intensity={100} style={styles.blurWrapper}>
+                <View key={index} style={styles.blurWrapper}>
                   <View style={[styles.rebtCard, styles.completelyBlurredCard]}>
                     {/* XP Badge */}
                     <View style={[styles.xpBadge, styles.blurredXpBadge]}>
-                      <Ionicons name="flash-outline" size={12} color="#FFFFFF" />
+                      <Icon name="flash-outline" size={12} color="#FFFFFF" />
                       <Text style={styles.xpText}>{getREBTXP(rebt)} XP</Text>
                     </View>
                     
@@ -848,18 +833,18 @@ export default function REBTScreen({ navigation, route }: any) {
                       <Text style={[styles.addButtonText, styles.completelyDisabledText]}>
                         {t("rebtScreen.addToTherapyPlan")}
                       </Text>
-                      <Ionicons name="add-circle" size={20} color="#E5E7EB" />
+                      <Icon name="add-circle" size={20} color="#E5E7EB" />
                     </Pressable>
                   </View>
-                </BlurView>
+                </View>
               );
             }
             
             return (
-              <View key={index} style={styles.rebtCard}>
+                            <View key={index} style={styles.rebtCard}>
                 {/* XP Badge */}
                 <View style={styles.xpBadge}>
-                  <Ionicons name="flash-outline" size={12} color="#FFFFFF" />
+                  <Icon name="flash-outline" size={12} color="#FFFFFF" />
                   <Text style={styles.xpText}>{getREBTXP(rebt)} XP</Text>
                 </View>
                 
@@ -871,8 +856,10 @@ export default function REBTScreen({ navigation, route }: any) {
                   style={styles.addButton}
                   onPress={() => handleAddToTaskList(rebt)}
                 >
-                  <Text style={styles.addButtonText}>{t("rebtScreen.addToTherapyPlan")}</Text>
-                  <Ionicons name="add-circle" size={20} color="#7C3AED" />
+                  <Text style={styles.addButtonText}>
+                    {t("rebtScreen.addToTherapyPlan")}
+                  </Text>
+                  <Icon name="add-circle" size={20} color="#7C3AED" />
                 </Pressable>
               </View>
             );
@@ -974,7 +961,7 @@ export default function REBTScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <Ionicons
+                        <Icon
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -988,7 +975,7 @@ export default function REBTScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <Ionicons
+                      <Icon
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

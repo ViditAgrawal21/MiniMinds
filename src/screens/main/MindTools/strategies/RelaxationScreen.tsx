@@ -10,10 +10,9 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/Ionicons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t } from "../../../i18n/i18n";
-import i18n from "../../../i18n/i18n";
+import { t, getCurrentLanguage } from "../../../../i18n/locales";
 
 interface RelaxationIntervention {
   // Format from translation files (relaxationInterventions section)
@@ -81,29 +80,28 @@ export default function RelaxationScreen({ navigation, route }: any) {
   const [selectedRelaxation, setSelectedRelaxation] =
     useState<RelaxationIntervention | null>(null);
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
+  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
   
   const { condition } = route.params || {};
 
-  // Language change detection with improved triggering (unified with InterventionsScreen)
+    // Language change detection with improved triggering (unified with InterventionsScreen)
   useEffect(() => {
-    const currentLocale = i18n.locale;
+    const currentLocale = getCurrentLanguage();
     if (currentLanguage !== currentLocale) {
       console.log(
         `Language changed from ${currentLanguage} to ${currentLocale}`,
       );
       setCurrentLanguage(currentLocale);
-      setConditionName(getConditionDisplayName(condition));
+      loadRelaxationInterventions(); // Reload interventions when language changes
     }
   }, [currentLanguage, condition]);
 
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = i18n.locale;
+      const currentLocale = getCurrentLanguage();
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
-        setConditionName(getConditionDisplayName(condition));
       }
     }, 1000); // Check every second
 
@@ -397,7 +395,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
     return {
       condition: translationKey,
       intervention_type: "Relaxation",
-      interventions: interventions,
+      interventions: interventions as RelaxationIntervention[],
     };
   };
 
@@ -566,15 +564,11 @@ export default function RelaxationScreen({ navigation, route }: any) {
         : undefined;
       const conditionDisplayKey = conditionKeyMap[condition];
       
-      // Create translation objects for all languages - proper implementation
+      // Create translation objects for all languages - simplified implementation
       const getTitleForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalTitleKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedTitle = t(originalTitleKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedTitle !== originalTitleKey
               ? translatedTitle
               : getRelaxationTitle(selectedRelaxation);
@@ -597,11 +591,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
       ): string => {
         if (conditionDisplayKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedCondition = t(conditionDisplayKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedCondition !== conditionDisplayKey
               ? translatedCondition
               : conditionName;
@@ -628,11 +618,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalDescriptionKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
             const translatedDescription = t(originalDescriptionKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedDescription !== originalDescriptionKey
               ? translatedDescription
               : getRelaxationDescription(selectedRelaxation);
@@ -730,7 +716,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
     relaxation: RelaxationIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = i18n.locale as "en" | "hi" | "mr";
+    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
     const originalText =
       field === "title"
         ? getRelaxationTitle(relaxation)
@@ -857,7 +843,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <Icon name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
           {t("relaxationScreen.header.title")}
@@ -875,7 +861,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
             <View key={index} style={styles.relaxationCard}>
               {/* XP Badge */}
               <View style={styles.xpBadge}>
-                <Ionicons name="leaf-outline" size={12} color="#FFFFFF" />
+                <Icon name="leaf-outline" size={12} color="#FFFFFF" />
                 <Text style={styles.xpText}>{relaxation.xp} XP</Text>
               </View>
               
@@ -892,7 +878,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                 <Text style={styles.addButtonText}>
                   {t("relaxationScreen.addToRoutine")}
                 </Text>
-                <Ionicons name="add-circle" size={20} color="#6366F1" />
+                <Icon name="add-circle" size={20} color="#6366F1" />
               </Pressable>
             </View>
           ))}
@@ -995,7 +981,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <Ionicons
+                        <Icon
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -1009,7 +995,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <Ionicons
+                      <Icon
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"

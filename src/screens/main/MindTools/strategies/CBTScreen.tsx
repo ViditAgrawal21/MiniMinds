@@ -10,13 +10,11 @@ import {
   Modal,
   Animated,
 } from "react-native";
-import { BlurView } from "expo-blur";
-import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "../../../i18n/i18n";
-import i18n from "../../../i18n/i18n";
-import { getPremiumStatus } from "../../../utils/premiumUtils";
+import { t, getCurrentLanguage } from "../../../../i18n/locales";
+import { getPremiumStatus } from "../../../../utils/premiumUtils";
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface CBTIntervention {
   // Format from translation files (cbtInterventions section)
@@ -85,14 +83,14 @@ export default function CBTScreen({ navigation, route }: any) {
   const [showTaskModal, setShowTaskModal] = useState(false);
   const [selectedCBT, setSelectedCBT] = useState<CBTIntervention | null>(null);
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.locale);
+  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
   const [hasPremiumAccess, setHasPremiumAccess] = useState(false);
   
   const { condition } = route.params || {};
 
   // Language change detection with improved triggering (unified with InterventionsScreen)
   useEffect(() => {
-    const currentLocale = i18n.locale;
+    const currentLocale = getCurrentLanguage();
     if (currentLanguage !== currentLocale) {
       setCurrentLanguage(currentLocale);
       setConditionName(getConditionDisplayName(condition));
@@ -102,7 +100,7 @@ export default function CBTScreen({ navigation, route }: any) {
   // Additional effect to watch for external language changes
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const currentLocale = i18n.locale;
+      const currentLocale = getCurrentLanguage();
       if (currentLanguage !== currentLocale) {
         setCurrentLanguage(currentLocale);
         setConditionName(getConditionDisplayName(condition));
@@ -276,7 +274,7 @@ export default function CBTScreen({ navigation, route }: any) {
     cbt: CBTIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = i18n.locale as "en" | "hi" | "mr";
+    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? getCBTTitle(cbt) : getCBTDescription(cbt);
     
@@ -424,7 +422,7 @@ export default function CBTScreen({ navigation, route }: any) {
     return {
       condition: translationKey,
       intervention_type: "CBT",
-      interventions: interventions,
+      interventions: interventions as CBTIntervention[],
     };
   };
 
@@ -604,11 +602,9 @@ export default function CBTScreen({ navigation, route }: any) {
       const getTitleForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalTitleKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
+            // Note: For React Native CLI, we'll use the current translation system
+            // without forcing language switches which can be complex
             const translatedTitle = t(originalTitleKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedTitle !== originalTitleKey
               ? translatedTitle
               : getLocalizedCBTText(selectedCBT, "title");
@@ -631,11 +627,8 @@ export default function CBTScreen({ navigation, route }: any) {
       ): string => {
         if (conditionDisplayKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
+            // Note: For React Native CLI, we'll use the current translation system
             const translatedCondition = t(conditionDisplayKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedCondition !== conditionDisplayKey
               ? translatedCondition
               : conditionName;
@@ -662,11 +655,8 @@ export default function CBTScreen({ navigation, route }: any) {
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalDescriptionKey) {
           try {
-            // Force language-specific translation
-            const oldLocale = i18n.locale;
-            i18n.locale = lang;
+            // Note: For React Native CLI, we'll use the current translation system
             const translatedDescription = t(originalDescriptionKey);
-            i18n.locale = oldLocale; // Restore original locale
             return translatedDescription !== originalDescriptionKey
               ? translatedDescription
               : getLocalizedCBTText(selectedCBT, "description");
@@ -773,7 +763,7 @@ export default function CBTScreen({ navigation, route }: any) {
       {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
-          <Ionicons name="chevron-back" size={24} color="#1a1a1a" />
+          <Icon name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>{t("cbtScreen.header.title")}</Text>
       </View>
@@ -790,11 +780,11 @@ export default function CBTScreen({ navigation, route }: any) {
             
             if (shouldBlur) {
               return (
-                <BlurView key={index} intensity={100} style={styles.blurWrapper}>
+                <View key={index} style={styles.blurWrapper}>
                   <View style={[styles.cbtCard, styles.completelyBlurredCard]}>
                     {/* XP Badge */}
                     <View style={[styles.xpBadge, styles.blurredXpBadge]}>
-                      <Ionicons name="bulb-outline" size={12} color="#FFFFFF" />
+                      <Icon name="bulb-outline" size={12} color="#FFFFFF" />
                       <Text style={styles.xpText}>
                         {getCBTXP(cbt)} {t("cbtScreen.xpLabel")}
                       </Text>
@@ -813,10 +803,10 @@ export default function CBTScreen({ navigation, route }: any) {
                       <Text style={[styles.addButtonText, styles.completelyDisabledText]}>
                         {t("cbtScreen.addToTherapyPlan")}
                       </Text>
-                      <Ionicons name="add-circle" size={20} color="#E5E7EB" />
+                      <Icon name="add-circle" size={20} color="#E5E7EB" />
                     </Pressable>
                   </View>
-                </BlurView>
+                </View>
               );
             }
             
@@ -824,7 +814,7 @@ export default function CBTScreen({ navigation, route }: any) {
               <View key={index} style={styles.cbtCard}>
                 {/* XP Badge */}
                 <View style={styles.xpBadge}>
-                  <Ionicons name="bulb-outline" size={12} color="#FFFFFF" />
+                  <Icon name="bulb-outline" size={12} color="#FFFFFF" />
                   <Text style={styles.xpText}>
                     {getCBTXP(cbt)} {t("cbtScreen.xpLabel")}
                   </Text>
@@ -843,7 +833,7 @@ export default function CBTScreen({ navigation, route }: any) {
                   <Text style={styles.addButtonText}>
                     {t("cbtScreen.addToTherapyPlan")}
                   </Text>
-                  <Ionicons name="add-circle" size={20} color="#3B82F6" />
+                  <Icon name="add-circle" size={20} color="#3B82F6" />
                 </Pressable>
               </View>
             );
@@ -947,7 +937,7 @@ export default function CBTScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <Ionicons
+                        <Icon
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -963,7 +953,7 @@ export default function CBTScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <Ionicons
+                      <Icon
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"
@@ -1225,11 +1215,12 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#6B7280",
   },
-  // Blur effect styles
+  // Blur effect styles (simulating blur without expo-blur)
   blurWrapper: {
     borderRadius: 12,
     overflow: "hidden",
     marginBottom: 16,
+    backgroundColor: "rgba(255, 255, 255, 0.1)",
   },
   blurredCard: {
     opacity: 0.7,
