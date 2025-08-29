@@ -1177,38 +1177,52 @@ export default function HomeTab() {
                   );
                   if (!selected) return;
 
-                  // Map scan_title to screen name
+                  // Map scan_title to screen name - making sure these match the exact names in MindToolsNavigator.js
                   const screenMapping = {
                     Addictions: "AddictionsScreen",
-                    "ADHD": "ADHDScreen",
+                    "ADHD": "CommonPsychologicalScreen", // Changed to match available screens
                     "Common Psychological Issues": "CommonPsychologicalScreen",
-                    "Environment Issues Affecting Mental Wellbeing":
-                      "EnvironmentIssuesScreen",
+                    "Environment Issues Affecting Mental Wellbeing": "EnvironmentIssuesScreen",
                     "Family and Relationship": "FamilyRelationshipScreen",
                     "Financial Mental Health": "FinancialMentalHealthScreen",
                     "General Physical Fitness": "PhysicalFitnessScreen",
                     "Internet Dependence": "InternetDependenceScreen",
                     Stress: "StressScreen",
-                    "Internet and Social Media Issue":
-                      "InternetSocialMediaScreen",
+                    "Internet and Social Media Issue": "InternetSocialMediaScreen",
                     Sleep: "SleepScreen",
                     "Suicidal Behaviour": "SuicidalBehaviourScreen",
-                    "Substance Addiction": "SubstanceAddictionScreen",
-                    "Professional Mental Health":
-                      "ProfessionalMentalHealthScreen",
+                    "Substance Addiction": "AddictionsScreen", // Changed to match available screens
+                    "Professional Mental Health": "ProfessionalMentalHealthScreen",
                     "Social Mental Health": "SocialMentalHealthScreen",
                     "Youngster Issues": "YoungsterIssuesScreen"
                   };
-                  const screen = screenMapping[selected.scan_title as keyof typeof screenMapping];
-                  if (screen) {
-                    // @ts-ignore
-                    navigation.navigate(screen);
-                  } else {
-                    // fallback: open MindToolsScreen with category param
-                    // @ts-ignore
-                    navigation.navigate("MindToolsScreen", {
-                      category: selected.scan_title,
+                  
+                  // Convert navigation object to any to bypass type checking
+                  const nav = navigation as any;
+                  console.log("Selected scan:", selected.scan_title);
+                  
+                  try {
+                    // The correct way to navigate to a nested navigator screen
+                    nav.navigate('MainApp', { 
+                      screen: 'MindTools',
+                      params: {
+                        screen: screenMapping[selected.scan_title as keyof typeof screenMapping] || 'MindToolsMain',
+                        params: { category: selected.scan_title }
+                      }
                     });
+                    
+                    console.log("Navigation completed to MindTools");
+                  } catch (error) {
+                    console.error("Navigation error:", error);
+                    
+                    // Fallback approach
+                    try {
+                      // If the main navigation fails, try just navigating to the MindTools tab
+                      nav.navigate('MainApp', { screen: 'MindTools' });
+                      console.log("Fallback navigation to MindTools tab");
+                    } catch (fallbackError) {
+                      console.error("Fallback navigation error:", fallbackError);
+                    }
                   }
                 }}
               />
