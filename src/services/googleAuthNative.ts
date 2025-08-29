@@ -13,7 +13,7 @@ export interface GoogleUser {
 
 // Initialize Google Sign-In
 GoogleSignin.configure({
-  webClientId: '431774360335-juu55516hl18uu1of74b0bl4h7l5o7ma.apps.googleusercontent.com', // Web client ID from Google Cloud Console
+  webClientId: '84660888907-eva43muss9bhk6v0j38cm92m87n84fs9.apps.googleusercontent.com', // Web client ID from Google Cloud Console
   offlineAccess: true,
   forceCodeForRefreshToken: true,
   iosClientId: '431774360335-juu55516hl18uu1of74b0bl4h7l5o7ma.apps.googleusercontent.com', // Using the same client ID for iOS

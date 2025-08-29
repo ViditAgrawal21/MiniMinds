@@ -1,41 +1,42 @@
 {
   "project_info": {
-    "project_number": "431774360335",
-    "project_id": "thought-pro",
-    "storage_bucket": "thought-pro.appspot.com"
+    "project_number": "84660888907",
+    "project_id": "thoughtpro-7c277",
+    "storage_bucket": "thoughtpro-7c277.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:431774360335:android:abc123def456",
+        "mobilesdk_app_id": "1:84660888907:android:3b5e3e33f6ce52a056b4ce",
         "android_client_info": {
           "package_name": "com.thoughtpro"
         }
       },
       "oauth_client": [
         {
-          "client_id": "431774360335-juu55516hl18uu1of74b0bl4h7l5o7ma.apps.googleusercontent.com",
+          "client_id": "84660888907-b998uqpq9lpeibcil3h5ql0c7bsvt2bf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thoughtpro",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "84660888907-eva43muss9bhk6v0j38cm92m87n84fs9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "YOUR-ANDROID-API-KEY"
+          "current_key": "AIzaSyCQrB54HWcmKM-3lyLeu-ChoWjsgFcf7k4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "431774360335-juu55516hl18uu1of74b0bl4h7l5o7ma.apps.googleusercontent.com",
+              "client_id": "84660888907-eva43muss9bhk6v0j38cm92m87n84fs9.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "431774360335-juu55516hl18uu1of74b0bl4h7l5o7ma.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.thoughtpro"
-              }
             }
           ]
         }

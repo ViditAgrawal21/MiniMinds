@@ -31,8 +31,7 @@ import { getTranslatedScanName } from "@/utils/scanNameTranslations"; // Import 
 
 // Local interface for complete scan data
 interface ScanAnswerFull {
-  user_id: string;
-  scan_name: string;
+  scan_title: string;
   answer1_score: string;
   question1: string;
   answer2_score: string;
@@ -53,32 +52,12 @@ interface ScanAnswerFull {
   question9: string;
   answer10_score: string;
   question10: string;
-  answer11_score: string;
-  question11: string;
-  answer12_score: string;
-  question12: string;
-  answer13_score: string;
-  question13: string;
-  answer14_score: string;
-  question14: string;
-  answer15_score: string;
-  question15: string;
-  answer16_score: string;
-  question16: string;
-  answer17_score: string;
-  question17: string;
-  answer18_score: string;
-  question18: string;
-  answer19_score: string;
-  question19: string;
-  answer20_score: string;
-  question20: string;
   pair_index: number;
   scan_date: string;
   scan_time: string;
-  scan_title: string;
   total_score: string;
   result: string;
+  interventions?: string | null;
 }
 
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -6089,8 +6068,7 @@ export default function ScanQuestions() {
           try {
             // Create complete scan data object
             const scanData: ScanAnswerFull = {
-              user_id: 'default_user', // Use default user ID for now
-              scan_name: scanName,
+              scan_title: title,
               answer1_score: allAnswers.answer1_score || '',
               question1: allQuestions.question1 || '',
               answer2_score: allAnswers.answer2_score || '',
@@ -6111,36 +6089,21 @@ export default function ScanQuestions() {
               question9: allQuestions.question9 || '',
               answer10_score: allAnswers.answer10_score || '',
               question10: allQuestions.question10 || '',
-              answer11_score: allAnswers.answer11_score || '',
-              question11: allQuestions.question11 || '',
-              answer12_score: allAnswers.answer12_score || '',
-              question12: allQuestions.question12 || '',
-              answer13_score: allAnswers.answer13_score || '',
-              question13: allQuestions.question13 || '',
-              answer14_score: allAnswers.answer14_score || '',
-              question14: allQuestions.question14 || '',
-              answer15_score: allAnswers.answer15_score || '',
-              question15: allQuestions.question15 || '',
-              answer16_score: allAnswers.answer16_score || '',
-              question16: allQuestions.question16 || '',
-              answer17_score: allAnswers.answer17_score || '',
-              question17: allQuestions.question17 || '',
-              answer18_score: allAnswers.answer18_score || '',
-              question18: allQuestions.question18 || '',
-              answer19_score: allAnswers.answer19_score || '',
-              question19: allQuestions.question19 || '',
-              answer20_score: allAnswers.answer20_score || '',
-              question20: allQuestions.question20 || '',
               pair_index: questions.length - 1,
               scan_date: new Date().toLocaleDateString(),
               scan_time: new Date().toLocaleTimeString(),
-              scan_title: title,
               total_score: finalScore.toString(),
               result: '', // Will be calculated based on score
+              interventions: null,
             };
 
+            console.log('=== ScanQuestions: Preparing to save complete scan ===');
+            console.log('Title:', title);
+            console.log('Final Score:', finalScore);
+            console.log('Questions Length:', questions.length);
+
             await saveScanAnswers(scanData);
-            console.log('Complete scan saved successfully');
+            console.log('=== ScanQuestions: Complete scan saved successfully ===');
           } catch (error) {
             console.error('Error saving complete scan:', error);
             throw error;

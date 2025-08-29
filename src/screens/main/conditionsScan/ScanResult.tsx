@@ -26,9 +26,10 @@ import Share from "react-native-share";
 import { t } from "@/i18n/locales/i18n"; // Import the translation function
 import { getTranslatedScanName } from "../../../utils/scanNameTranslations"; // Import the shared translation utility
 import {
-  saveScanResult,
+  saveScanResultBasic as saveScanResult,
   getScanResultsHistory,
 } from "@/services/database"; // Import the saveScanResult, and getScanResultsHistory functions
+import { testDatabaseSave, logDatabaseInfo } from "@/utils/databaseDebug";
 
 import RecommendedInterventions from "./../../../components/RecommendedInterventions";
 import PrimaryButton from "./../../../components/common/PrimaryButton";
@@ -721,9 +722,18 @@ export default function AddictionScanResult() {
     const saveResult = async () => {
       if (scanName && totalScore) {
         try {
+          console.log('=== ScanResult: Attempting to save result ===');
+          console.log('Scan Name:', scanName);
+          console.log('Total Score:', totalScore);
           await saveScanResult(scanName, totalScore);
+          console.log('=== ScanResult: Save successful ===');
         } catch (error) {
+          console.error('=== ScanResult: Save failed ===');
           console.error(t("scanResult.errors.savingResultError"), error);
+          
+          // Test database functionality
+          console.log('=== Running database test ===');
+          await testDatabaseSave();
         }
       }
     };
@@ -753,8 +763,8 @@ export default function AddictionScanResult() {
             })}`;
           });
 
-          // Get scores directly from the results
-          const scores = history.map((h) => h.total_score);
+          // Get scores directly from the results and convert to numbers
+          const scores = history.map((h) => Number(h.total_score) || 0);
 
           if (scores.length > 0) {
             setChartLabels(labels);

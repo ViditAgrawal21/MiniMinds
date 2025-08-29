@@ -112,9 +112,13 @@ const executeSql = async (sql: string, params: any[] = []): Promise<any[]> => {
         sql,
         params,
         (_, result) => {
+          console.log(`SQL executed successfully: ${sql.substring(0, 50)}...`);
           resolve(result.rows.raw());
         },
         (_, error) => {
+          console.error(`SQL execution failed: ${sql}`);
+          console.error(`Parameters:`, params);
+          console.error(`Error:`, error);
           reject(error);
           return false;
         }
@@ -375,6 +379,12 @@ export const getAllReports = async (): Promise<any[]> => {
 // Save scan answers
 export const saveScanAnswers = async (answers: ScanAnswerFull): Promise<void> => {
   try {
+    console.log('Attempting to save scan answers:', {
+      scan_title: answers.scan_title,
+      total_score: answers.total_score,
+      pair_index: answers.pair_index,
+    });
+    
     await executeSql(
       `INSERT INTO scan_answers (
         scan_title, answer1_score, answer2_score, answer3_score, answer4_score,
@@ -413,8 +423,11 @@ export const saveScanAnswers = async (answers: ScanAnswerFull): Promise<void> =>
         answers.interventions || null,
       ]
     );
+    
+    console.log('Successfully saved scan answers to database');
   } catch (error) {
     console.error("Error saving scan answers:", error);
+    console.error("Answers object:", JSON.stringify(answers, null, 2));
     throw error;
   }
 };
@@ -480,10 +493,105 @@ export const getAllScanAnswers = async (): Promise<ScanAnswerFull[]> => {
   }
 };
 
+// Helper function to save scan result with just basic info
+export const saveScanResultBasic = async (scanTitle: string, totalScore: number): Promise<void> => {
+  try {
+    console.log('Attempting to save basic scan result:', {
+      scanTitle,
+      totalScore,
+    });
+    
+    const currentDate = new Date();
+    const scanData: ScanAnswerFull = {
+      scan_title: scanTitle,
+      answer1_score: '',
+      answer2_score: '',
+      answer3_score: '',
+      answer4_score: '',
+      answer5_score: '',
+      answer6_score: '',
+      answer7_score: '',
+      answer8_score: '',
+      answer9_score: '',
+      answer10_score: '',
+      total_score: totalScore.toString(),
+      result: '',
+      question1: '',
+      question2: '',
+      question3: '',
+      question4: '',
+      question5: '',
+      question6: '',
+      question7: '',
+      question8: '',
+      question9: '',
+      question10: '',
+      pair_index: 0,
+      scan_date: currentDate.toLocaleDateString(),
+      scan_time: currentDate.toLocaleTimeString(),
+      interventions: null,
+    };
+    
+    await saveScanAnswers(scanData);
+    console.log('Successfully saved basic scan result');
+  } catch (error) {
+    console.error("Error saving basic scan result:", error);
+    console.error("Parameters:", { scanTitle, totalScore });
+    throw error;
+  }
+};
+
+// Helper function to get scan results history for a specific scan
+export const getScanResultsHistoryByTitle = async (scanTitle: string): Promise<ScanAnswerFull[]> => {
+  try {
+    const result = await executeSql(
+      "SELECT * FROM scan_answers WHERE scan_title = ? ORDER BY created_at DESC",
+      [scanTitle]
+    );
+    
+    if (!result || result.length === 0) {
+      return [];
+    }
+    
+    return result.map((item: any) => ({
+      answer1_score: item.answer1_score || '',
+      answer2_score: item.answer2_score || '',
+      answer3_score: item.answer3_score || '',
+      answer4_score: item.answer4_score || '',
+      answer5_score: item.answer5_score || '',
+      answer6_score: item.answer6_score || '',
+      answer7_score: item.answer7_score || '',
+      answer8_score: item.answer8_score || '',
+      answer9_score: item.answer9_score || '',
+      answer10_score: item.answer10_score || '',
+      scan_title: item.scan_title || '',
+      total_score: item.total_score || '0',
+      result: item.result || '',
+      question1: item.question1 || '',
+      question2: item.question2 || '',
+      question3: item.question3 || '',
+      question4: item.question4 || '',
+      question5: item.question5 || '',
+      question6: item.question6 || '',
+      question7: item.question7 || '',
+      question8: item.question8 || '',
+      question9: item.question9 || '',
+      question10: item.question10 || '',
+      pair_index: item.pair_index || 0,
+      scan_date: item.scan_date || '',
+      scan_time: item.scan_time || '',
+      interventions: item.interventions || null,
+    }));
+  } catch (error) {
+    console.error("Error getting scan results history by title:", error);
+    return [];
+  }
+};
+
 // Alias functions for backward compatibility
 export const getAllScanResults = getAllScanAnswers;
-export const saveScanResult = saveScanAnswers;
-export const getScanResultsHistory = getAllScanAnswers;
+export const saveScanResult = saveScanResultBasic; // Use the new basic save function
+export const getScanResultsHistory = getScanResultsHistoryByTitle; // Use the new title-specific function
 export const saveScanAnswer = saveScanAnswers;
 export const getScanProgress = getScanAnswers;
 export const createTables = initDB;
