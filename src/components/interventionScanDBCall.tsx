@@ -2543,13 +2543,28 @@ export const interventionsData = {
   },
 };
 
+// Make sure all components are correctly wrapped in proper React Native components
+
 async function interventionObject() {
   try {
-    const data = await getAllScanResults();
-    console.log("Scan results fetched successfully:", data.length);
+    // Safely try to fetch scan results
+    let data = [];
+    try {
+      data = await getAllScanResults();
+      console.log("Scan results fetched successfully:", data?.length || 0);
+    } catch (fetchError) {
+      console.error("Error fetching scan results:", fetchError);
+      return [];
+    }
 
-    if (data.length === 0) {
+    if (!data || data.length === 0) {
       console.warn("No scan results found in the database");
+      return [];
+    }
+    
+    // Ensure React Native environment is set up for component rendering
+    if (!React || !React.createElement) {
+      console.warn("React environment not properly set up");
       return [];
     }
 
@@ -2570,6 +2585,11 @@ async function interventionObject() {
       if (!scanTitle) {
         console.warn("Scan missing title:", scan);
         return { ...scan, interventionData: null };
+      }
+      
+      // Ensure scan has interventions property (even if it's empty)
+      if (!('interventions' in scan)) {
+        scan.interventions = null;
       }
 
       // Try exact match first
@@ -2641,9 +2661,9 @@ async function interventionObject() {
       }
 
       // Parse the interventions string into an array of intervention names
-      const interventionNames = scan.interventions
-        .split(",")
-        .map((name) => name.trim());
+      const interventionNames = scan.interventions 
+        ? scan.interventions.split(",").map((name: string) => name.trim())
+        : [];
 
       // Filter the interventions to only include those with matching names
       const filteredInterventions = interventionData.interventions.filter(

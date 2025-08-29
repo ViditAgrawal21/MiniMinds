@@ -147,64 +147,113 @@ const hashCode = (str: string): number => {
   return hash;
 };
 
+// Check database version and handle migrations
+export const upgradeDatabase = async (): Promise<void> => {
+  try {
+    // Get current version
+    const versionResult = await executeSql("PRAGMA user_version");
+    const currentVersion = versionResult[0]?.user_version || 0;
+    
+    // Version 1: Initial schema
+    if (currentVersion < 1) {
+      console.log('Upgrading database to version 1...');
+      
+      // Create the reports table with all required columns
+      await executeSql(
+        `CREATE TABLE IF NOT EXISTS reports (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          category TEXT NOT NULL,
+          duration TEXT NOT NULL,
+          avg_time_per_week REAL,
+          times_last_month INTEGER,
+          times_till_date INTEGER,
+          phone_off_time TEXT,
+          sleep_time REAL,
+          anxiety_score INTEGER,
+          stress_score INTEGER,
+          depression_score INTEGER,
+          app_list TEXT,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );`
+      );
+
+      // Create scan_answers table
+      await executeSql(
+        `CREATE TABLE IF NOT EXISTS scan_answers (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          scan_title TEXT NOT NULL,
+          answer1_score TEXT,
+          answer2_score TEXT,
+          answer3_score TEXT,
+          answer4_score TEXT,
+          answer5_score TEXT,
+          answer6_score TEXT,
+          answer7_score TEXT,
+          answer8_score TEXT,
+          answer9_score TEXT,
+          answer10_score TEXT,
+          total_score TEXT,
+          result TEXT,
+          question1 TEXT,
+          question2 TEXT,
+          question3 TEXT,
+          question4 TEXT,
+          question5 TEXT,
+          question6 TEXT,
+          question7 TEXT,
+          question8 TEXT,
+          question9 TEXT,
+          question10 TEXT,
+          pair_index INTEGER,
+          scan_date TEXT,
+          scan_time TEXT,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );`
+      );
+      
+      // Set database version to 1
+      await executeSql("PRAGMA user_version = 1");
+    }
+    
+    // Version 2: Add interventions column to scan_answers (for future upgrade)
+    if (currentVersion < 2) {
+      console.log('Upgrading database to version 2...');
+      
+      // Add interventions column if it doesn't exist
+      try {
+        await executeSql("ALTER TABLE scan_answers ADD COLUMN interventions TEXT");
+      } catch (error) {
+        // Column might already exist, continue
+        console.log("Column may already exist, continuing upgrade");
+      }
+      
+      // Set database version to 2
+      await executeSql("PRAGMA user_version = 2");
+    }
+    
+    console.log(`Database is now at version ${await getDatabaseVersion()}`);
+  } catch (error) {
+    console.error("Error upgrading database:", error);
+    throw error;
+  }
+};
+
+// Get the current database version
+export const getDatabaseVersion = async (): Promise<number> => {
+  try {
+    const versionResult = await executeSql("PRAGMA user_version");
+    return versionResult[0]?.user_version || 0;
+  } catch (error) {
+    console.error("Error getting database version:", error);
+    return 0;
+  }
+};
+
 // Initialize database tables
 export const initDB = async (): Promise<void> => {
   try {
-    // Drop the existing reports table to ensure the schema is fresh
-    await executeSql("DROP TABLE IF EXISTS reports;");
-
-    // Create the reports table with all required columns
-    await executeSql(
-      `CREATE TABLE IF NOT EXISTS reports (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        category TEXT NOT NULL,
-        duration TEXT NOT NULL,
-        avg_time_per_week REAL,
-        times_last_month INTEGER,
-        times_till_date INTEGER,
-        phone_off_time TEXT,
-        sleep_time REAL,
-        anxiety_score INTEGER,
-        stress_score INTEGER,
-        depression_score INTEGER,
-        app_list TEXT,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-      );`
-    );
-
-    // Create scan_answers table
-    await executeSql(
-      `CREATE TABLE IF NOT EXISTS scan_answers (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        scan_title TEXT NOT NULL,
-        answer1_score TEXT,
-        answer2_score TEXT,
-        answer3_score TEXT,
-        answer4_score TEXT,
-        answer5_score TEXT,
-        answer6_score TEXT,
-        answer7_score TEXT,
-        answer8_score TEXT,
-        answer9_score TEXT,
-        answer10_score TEXT,
-        total_score TEXT,
-        result TEXT,
-        question1 TEXT,
-        question2 TEXT,
-        question3 TEXT,
-        question4 TEXT,
-        question5 TEXT,
-        question6 TEXT,
-        question7 TEXT,
-        question8 TEXT,
-        question9 TEXT,
-        question10 TEXT,
-        pair_index INTEGER,
-        scan_date TEXT,
-        scan_time TEXT,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-      );`
-    );
+    // Use the versioned upgrade process instead of recreating tables
+    await upgradeDatabase();
   } catch (error) {
     console.error("Error initializing database:", error);
     throw error;
@@ -389,33 +438,38 @@ export const getAllScanAnswers = async (): Promise<ScanAnswerFull[]> => {
       "SELECT * FROM scan_answers ORDER BY created_at DESC"
     );
     
+    // Check if result is undefined or empty
+    if (!result || result.length === 0) {
+      return [];
+    }
+    
     return result.map((item: any) => ({
-      answer1_score: item.answer1_score,
-      answer2_score: item.answer2_score,
-      answer3_score: item.answer3_score,
-      answer4_score: item.answer4_score,
-      answer5_score: item.answer5_score,
-      answer6_score: item.answer6_score,
-      answer7_score: item.answer7_score,
-      answer8_score: item.answer8_score,
-      answer9_score: item.answer9_score,
-      answer10_score: item.answer10_score,
-      scan_title: item.scan_title,
-      total_score: item.total_score,
-      result: item.result,
-      question1: item.question1,
-      question2: item.question2,
-      question3: item.question3,
-      question4: item.question4,
-      question5: item.question5,
-      question6: item.question6,
-      question7: item.question7,
-      question8: item.question8,
-      question9: item.question9,
-      question10: item.question10,
-      pair_index: item.pair_index,
-      scan_date: item.scan_date,
-      scan_time: item.scan_time,
+      answer1_score: item.answer1_score || '',
+      answer2_score: item.answer2_score || '',
+      answer3_score: item.answer3_score || '',
+      answer4_score: item.answer4_score || '',
+      answer5_score: item.answer5_score || '',
+      answer6_score: item.answer6_score || '',
+      answer7_score: item.answer7_score || '',
+      answer8_score: item.answer8_score || '',
+      answer9_score: item.answer9_score || '',
+      answer10_score: item.answer10_score || '',
+      scan_title: item.scan_title || '',
+      total_score: item.total_score || '0',
+      result: item.result || '',
+      question1: item.question1 || '',
+      question2: item.question2 || '',
+      question3: item.question3 || '',
+      question4: item.question4 || '',
+      question5: item.question5 || '',
+      question6: item.question6 || '',
+      question7: item.question7 || '',
+      question8: item.question8 || '',
+      question9: item.question9 || '',
+      question10: item.question10 || '',
+      pair_index: item.pair_index || 0,
+      scan_date: item.scan_date || '',
+      scan_time: item.scan_time || '',
     }));
   } catch (error) {
     console.error("Error getting all scan answers:", error);

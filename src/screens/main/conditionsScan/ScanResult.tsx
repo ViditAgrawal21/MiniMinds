@@ -57,88 +57,88 @@ const defaultImages: InterventionImageSet = {
   tertiary: require("../../../assets/images/watchman.png"),
 };
 
-// const interventionImages: InterventionImages = {
-//   Addictions: {
-//     primary: require("../../../assets/images/addiction/primaryinterventionaddictions.jpg"),
-//     secondary: require("../../../assets/images/addiction/secondaryinterventionaddictions.jpg"),
-//     tertiary: require("../../../assets/images/addiction/tertiaryinterventionaddictions.jpg"),
-//   },
-//   "Internet and Social Media Issue": {
-//     primary: require("../../../assets/images/Mindfulness.png"),
-//     secondary: require("../../../assets/images/Meditation.png"),
-//     tertiary: require("../../../assets/images/Breathing.png"),
-//   },
-//   "Professional Mental Health": {
-//     primary: require("../../../assets/images/Journaling.png"),
-//     secondary: require("../../../assets/images/thought-pro-icon.png"),
-//     tertiary: require("../../../assets/images/PFP.png"),
-//   },
-//   "Sex Life": {
-//     primary: require("../../../assets/images/react-logo.png"),
-//     secondary: require("../../../assets/images/partial-react-logo.png"),
-//     tertiary: require("../../../assets/images/download.png"),
-//   },
-//   "Social Mental Health": {
-//     primary: require("../../../assets/images/thought-pro-splash.png"),
-//     secondary: require("../../../assets/images/adaptive-icon.png"),
-//     tertiary: require("../../../assets/images/favicon.png"),
-//   },
-//   "Suicidal Behaviour": {
-//     primary: require("../../../assets/images/EditIcon.png"),
-//     secondary: require("../../../assets/images/DeleteIcon.png"),
-//     tertiary: require("../../../assets/images/oldicon.png"),
-//   },
-//   "Youngster Issues": {
-//     primary: require("../../../assets/images/react-logo@2x.png"),
-//     secondary: require("../../../assets/images/react-logo@3x.png"),
-//     tertiary: require("../../../assets/images/thought-pro-icon.png"),
-//   },
-//   Stress: {
-//     primary: require("../../../assets/images/Meditation.png"),
-//     secondary: require("../../../assets/images/Breathing.png"),
-//     tertiary: require("../../../assets/images/Journaling.png"),
-//   },
-//   Sleep: {
-//     primary: require("../../../assets/images/thought-pro-icon.png"),
-//     secondary: require("../../../assets/images/PFP.png"),
-//     tertiary: require("../../../assets/images/download.png"),
-//   },
-//   "Internet Dependence": {
-//     primary: require("../../../assets/images/react-logo.png"),
-//     secondary: require("../../../assets/images/partial-react-logo.png"),
-//     tertiary: require("../../../assets/images/react-logo@2x.png"),
-//   },
-//   "General Physical Fitness": {
-//     primary: require("../../../assets/images/adaptive-icon.png"),
-//     secondary: require("../../../assets/images/favicon.png"),
-//     tertiary: require("../../../assets/images/oldicon.png"),
-//   },
-//   "Financial Mental Health": {
-//     primary: require("../../../assets/images/EditIcon.png"),
-//     secondary: require("../../../assets/images/DeleteIcon.png"),
-//     tertiary: require("../../../assets/images/Mindfulness.png"),
-//   },
-//   "Family and Relationship": {
-//     primary: require("../../../assets/images/Meditation.png"),
-//     secondary: require("../../../assets/images/Breathing.png"),
-//     tertiary: require("../../../assets/images/Journaling.png"),
-//   },
-//   "Environment Issues": {
-//     primary: require("../../../assets/images/thought-pro-splash.png"),
-//     secondary: require("../../../assets/images/thought-pro-icon.png"),
-//     tertiary: require("../../../assets/images/PFP.png"),
-//   },
-//   "Common Psychological Issues": {
-//     primary: require("../../../assets/images/download.png"),
-//     secondary: require("../../../assets/images/react-logo@3x.png"),
-//     tertiary: require("../../../assets/images/adaptive-icon.png"),
-//   },
-//   "Anger Management": {
-//     primary: require("../../../assets/images/favicon.png"),
-//     secondary: require("../../../assets/images/oldicon.png"),
-//     tertiary: require("../../../assets/images/watchman.png"),
-//   },
-// };
+const interventionImages: InterventionImages = {
+  Addictions: {
+    primary: require("../../../assets/images/interventionsimages/Addictions/50kb images/primaryinterventionaddictionsunderstandingaddictionaddictions.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/Addictions/50kb images/secondaryinterventionaddictions.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/Addictions/50kb images/tertiaryinterventionaddictions.jpg"),
+  },
+  "Internet and Social Media Issue": {
+    primary: require("../../../assets/images/interventionsimages/InternetandSocialMediaIssue/50kb images/primaryinterventioninternetandsocialmediaissuescyberbullyingdedruzinufbnslevugmlluuniilcouoaiallonletiginternetandsocialmediaissue.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/InternetandSocialMediaIssue/50kb images/secondaryinterventioninternetandsocialmediaissue.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/InternetandSocialMediaIssue/50kb images/tertiaryinterventioninternetandsocialmediaissue.jpg"),
+  },
+  "Professional Mental Health": {
+    primary: require("../../../assets/images/interventionsimages/ProfessionalMentalHealth/50kb images/primaryinterventionprofessionalmentalhealth.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/ProfessionalMentalHealth/50kb images/secondaryinterventionprofessionalmentalhealth.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/ProfessionalMentalHealth/50kb images/tertiaryinterventionprofessionalmentalhealth5professionalmentalhealth.jpg"),
+  },
+  "Sex Life": {
+    primary: require("../../../assets/images/interventionsimages/SexLife/50kb images/primaryinterventionsexlifecommunicationshaicenidconsentcontraceptioncomfortcomfortsexlife.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/SexLife/50kb images/secondaryinterventionsexlifevutevicicsexlife.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/SexLife/50kb images/tertiaryinterventionsexlife.jpg"),
+  },
+  "Social Mental Health": {
+    primary: require("../../../assets/images/interventionsimages/SocialMentalHealth/50kb images/primaryinterventionsocialmentalhealth.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/SocialMentalHealth/50kb images/secondaryinterventionhealthmentalsocialsocialmentalhealth.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/SocialMentalHealth/50kb images/tertiaryinterventionsocialmentalhealth.jpg"),
+  },
+  "Suicidal Behaviour": {
+    primary: require("../../../assets/images/interventionsimages/suicidalbehavior/50kb images/primaryinterventionsuicidalbehavior.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/suicidalbehavior/50kb images/secondaryinterventionsuicidalbehavior.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/suicidalbehavior/50kb images/tertiaryinterventionsuicidalbehavior1suicidalbehavior.jpg"),
+  },
+  "Youngster Issues": {
+    primary: require("../../../assets/images/interventionsimages/YoungsterIssues/50kb images/primaryiintervent710youngsterissues.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/YoungsterIssues/50kb images/secondaryinterventionyoungsterissues.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/YoungsterIssues/50kb images/tertiaryinterventionyoungsterissues.jpg"),
+  },
+  Stress: {
+    primary: require("../../../assets/images/interventionsimages/Stress/50kb images/primaryinterventioncareerrelatedstress.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/Stress/50kb images/secondaryinterventionstress.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/Stress/50kb images/tertiaryinterventioncareerrelatedstress.jpg"),
+  },
+  Sleep: {
+    primary: require("../../../assets/images/interventionsimages/Sleep/50kb images/primarvinterventionnonorganicsleepdisorderunspecified4cstcausesoftreatmentsisordersoptionscausesleep.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/Sleep/50kb images/secondaryinterventioasleepzzzsleep.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/Sleep/50kb images/tertiaryinterventionsleep.jpg"),
+  },
+  "Internet Dependence": {
+    primary: require("../../../assets/images/interventionsimages/InternetDependence/50kb images/primaryinterventioninternetdependence.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/InternetDependence/50kb images/secondaryinterventioninternetdependenceaguideforparentsandeducatorsgetyourfreecopynowinternetdependence.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/InternetDependence/50kb images/tertiaryinterventioninternetsocialmediadependencyinternetdependence.jpg"),
+  },
+  "General Physical Fitness": {
+    primary: require("../../../assets/images/interventionsimages/GeneralPhysicalFitness/50kb images/primaryinterventiongeneralphysicalfitness.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/GeneralPhysicalFitness/50kb images/secondaryinterventiongeneralphysicalfitness.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/GeneralPhysicalFitness/50kb images/tertiaryinterventiongeneralphysicalfitness.jpg"),
+  },
+  "Financial Mental Health": {
+    primary: require("../../../assets/images/interventionsimages/FinancialMentalHealth/50kb images/primaryinterventionfinancialinstabilitymentalhealthfinancialmentalhealth.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/FinancialMentalHealth/50kb images/secondaryinterventionfinancialinstabilitymentalhealthfinancialmentalhealth.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/FinancialMentalHealth/50kb images/tertiaryintervemtionfinancialinstabilitymentalhealthfinancialmentalhealth.jpg"),
+  },
+  "Family and Relationship": {
+    primary: require("../../../assets/images/interventionsimages/FamilyandRelaitonship/50kb images/primaryinterventionfamilyandrelationshifamilyandrelaitonship.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/FamilyandRelaitonship/50kb images/secondaryinterventionforfamilyandrelationshiptfamilyandrelaitonship.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/FamilyandRelaitonship/50kb images/tertiaryinterventionforfamilyandrelationshipripfamilyandrelaitonship.jpg"),
+  },
+  "Environment Issues": {
+    primary: require("../../../assets/images/interventionsimages/EnvironmentIssuesaffectingmentalwellbeing/50kb images/primaryinterventionenvironmentaffectingmentalwellbeienvironmentissuesaffectingmentalwellbeing.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/EnvironmentIssuesaffectingmentalwellbeing/50kb images/secondaryinterventionenvironmentissuesaffectingmentalwellbeingvenvironmentissuesaffectingmentalwellbeing.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/EnvironmentIssuesaffectingmentalwellbeing/50kb images/tertiaryinterventionenvironnnmentissuesaffectingmentalwellbeienvironmentissuesaffectingmentalwellbeing.jpg"),
+  },
+  "Common Psychological Issues": {
+    primary: require("../../../assets/images/interventionsimages/CommonPsychologicalIssues/50kb images/primaryinterventioncommonpsychologicalissuesakhdanxietyvihsdoreledepressioneejijojodptsdbodnoosderoccdbicommonpsychologicalissues.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/CommonPsychologicalIssues/50kb images/secondaryinterventioncommonpsychologicalissuesanxietydepressiontraumaphobiascommonpsychologicalissues.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/CommonPsychologicalIssues/50kb images/tertiaryinterventioncommonpsychologicalissues.jpg"),
+  },
+  "Anger Management": {
+    primary: require("../../../assets/images/interventionsimages/AngerManagement/50kb images/primaryinterventionangermanagement.jpg"),
+    secondary: require("../../../assets/images/interventionsimages/AngerManagement/50kb images/secondaryinterventionangermanagement.jpg"),
+    tertiary: require("../../../assets/images/interventionsimages/AngerManagement/50kb images/tertiaryinterventionangermanagement.jpg"),
+  },
+};
 
 const getInterventionImages = (scanName: string): InterventionImageSet => {
   if (!scanName) return defaultImages;
@@ -739,7 +739,7 @@ export default function AddictionScanResult() {
       try {
         setIsLoading(true);
         if (scanName) {
-          const history = await getScanResultsHistory(scanName);
+          const history = await getScanResultsHistory(scanName as string);
           if (history.length === 0) {
             return;
           }
@@ -1024,7 +1024,7 @@ export default function AddictionScanResult() {
         <View style={styles.buttonContainer}>
           <PrimaryButton
             label={t("scanResult.buttons.saveAndExit")}
-            callback={() => navigation.navigate("Tab", { initialTab: "Home" })}
+            callback={() => navigation.navigate("MainApp")}
           />
           <SecondaryButton
             label={t("scanResult.buttons.share")}
