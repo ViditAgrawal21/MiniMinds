@@ -8,15 +8,17 @@ import {
   TouchableOpacity,
   Image,
   TextInput,
-  ActivityIndicator
+  ActivityIndicator,
+  SafeAreaView,
 } from 'react-native';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { useTheme } from '../../../context/themeContext';
 import { CustomTextInput, Header } from '../../../components';
 import CustomButton from '../../../components/common/CustomButton';
+import CustomIcon from '../../../components/CustomIcon';
 import { selectAuthLoading, selectAuthError } from '../../../redux/ReducerHelpers/selectors';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import GoogleAuthNative, {
   GoogleUser,
 } from '../../../services/googleAuthNative';
@@ -28,11 +30,15 @@ import {
   finalizeVerificationLogin,
   loginUser,
   testNetworkConnection,
+  AuthService,
 } from '../services/authService';
 import {
   canRequestCode,
   markCodeRequested,
 } from '../utils/verificationRateLimiter';
+import {
+  setPremiumStatus,
+} from '../../../utils/premiumUtils';
 
 const LoginScreen = ({ navigation }) => {
   const { theme } = useTheme();
@@ -54,10 +60,12 @@ const LoginScreen = ({ navigation }) => {
   const [codeRequestCooldown, setCodeRequestCooldown] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [isGoogleSigningIn, setIsGoogleSigningIn] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const loading = useSelector(selectAuthLoading);
   const error = useSelector(selectAuthError);
 
+ 
   // No need for response handling effect with native Google Auth
 
   // OTP resend countdown
@@ -88,10 +96,8 @@ const LoginScreen = ({ navigation }) => {
   }, [otp, mode]);
 
   // Email validation helper
-  const validateEmail = (val) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(val);
-  };
+  const validateEmail = (val) => 
+    /[^\s@]+@[^\s@]+\.[^\s@]+/.test(val.trim());
 
   const handleGoogleLogin = async () => {
     setIsGoogleSigningIn(true);
@@ -288,47 +294,10 @@ const LoginScreen = ({ navigation }) => {
     return `${m}:${sec.toString().padStart(2, "0")}`;
   };
 
+  
+
   const renderChoose = () => (
     <View style={styles.buttonSection}>
-      <View style={styles.authModeToggleRow}>
-        <TouchableOpacity
-          style={[
-            styles.authModeToggle,
-            authMode === "signin" && styles.authModeToggleActive,
-          ]}
-          onPress={() => setAuthMode("signin")}
-        >
-          <Text
-            style={[
-              styles.authModeToggleText,
-              authMode === "signin" && styles.authModeToggleTextActive,
-            ]}
-          >
-            Sign In
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[
-            styles.authModeToggle,
-            authMode === "signup" && styles.authModeToggleActive,
-          ]}
-          onPress={() => setAuthMode("signup")}
-        >
-          <Text
-            style={[
-              styles.authModeToggleText,
-              authMode === "signup" && styles.authModeToggleTextActive,
-            ]}
-          >
-            Sign Up
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <Text style={styles.authModeCaption}>
-        {authMode === "signin"
-          ? "Welcome back – choose a method to sign in."
-          : "Create a new account – choose a method to sign up."}
-      </Text>
       <TouchableOpacity
         style={[styles.googleButton, (isLoading || isGoogleSigningIn) && styles.disabledButton]}
         onPress={handleGoogleLogin}
@@ -345,23 +314,19 @@ const LoginScreen = ({ navigation }) => {
               }}
               style={styles.googleIcon}
             />
-            <Text style={styles.googleButtonText}>
-              {authMode === "signin"
-                ? "Sign In with Google"
-                : "Sign Up with Google"}
-            </Text>
+            <Text style={styles.googleButtonText}>Sign In with Google</Text>
           </>
         )}
       </TouchableOpacity>
       <TouchableOpacity
         style={[styles.altAuthButton]}
-        onPress={() => setMode(authMode === "signup" ? "email" : "password")}
+        onPress={() => {
+          // Use React 18's automatic batching for smoother updates
+          setAuthMode("signin");
+          setMode("email");
+        }}
       >
-        <Text style={styles.altAuthText}>
-          {authMode === "signin"
-            ? "Use Email (Password / Code)"
-            : "Use Email (Verification Code)"}
-        </Text>
+        <Text style={styles.altAuthText}>Use Email (Password / Code)</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.skipButton}
@@ -384,6 +349,10 @@ const LoginScreen = ({ navigation }) => {
             setAuthMode("signin");
             setMode("password");
           }}
+          style={[
+            styles.inlineAuthSwitchButton,
+            authMode === "signin" && styles.inlineAuthSwitchButtonActive,
+          ]}
         >
           <Text
             style={[
@@ -394,8 +363,13 @@ const LoginScreen = ({ navigation }) => {
             Sign In
           </Text>
         </TouchableOpacity>
-        <Text style={styles.inlineDivider}>|</Text>
-        <TouchableOpacity onPress={() => setAuthMode("signup")}>
+        <TouchableOpacity
+          onPress={() => setAuthMode("signup")}
+          style={[
+            styles.inlineAuthSwitchButton,
+            authMode === "signup" && styles.inlineAuthSwitchButtonActive,
+          ]}
+        >
           <Text
             style={[
               styles.inlineAuthSwitchText,
@@ -456,7 +430,13 @@ const LoginScreen = ({ navigation }) => {
   const renderPassword = () => (
     <View style={styles.formBlock}>
       <View style={styles.inlineAuthSwitchRow}>
-        <TouchableOpacity onPress={() => setAuthMode("signin")}>
+        <TouchableOpacity
+          onPress={() => setAuthMode("signin")}
+          style={[
+            styles.inlineAuthSwitchButton,
+            authMode === "signin" && styles.inlineAuthSwitchButtonActive,
+          ]}
+        >
           <Text
             style={[
               styles.inlineAuthSwitchText,
@@ -466,12 +446,15 @@ const LoginScreen = ({ navigation }) => {
             Sign In
           </Text>
         </TouchableOpacity>
-        <Text style={styles.inlineDivider}>|</Text>
         <TouchableOpacity
           onPress={() => {
             setAuthMode("signup");
             setMode("email");
           }}
+          style={[
+            styles.inlineAuthSwitchButton,
+            authMode === "signup" && styles.inlineAuthSwitchButtonActive,
+          ]}
         >
           <Text
             style={[
@@ -483,7 +466,9 @@ const LoginScreen = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
       </View>
-      <Text style={styles.sectionTitle}>Password Sign In</Text>
+      <Text style={styles.sectionTitle}>
+        {authMode === "signin" ? "Password Sign In" : "Create Account"}
+      </Text>
       <Text style={styles.inputLabel}>Email</Text>
       <TextInput
         style={styles.textInput}
@@ -495,14 +480,27 @@ const LoginScreen = ({ navigation }) => {
         editable={!pwSigningIn}
       />
       <Text style={styles.inputLabel}>Password</Text>
-      <TextInput
-        style={styles.textInput}
-        placeholder="Your password"
-        secureTextEntry
-        value={password}
-        onChangeText={setPassword}
-        editable={!pwSigningIn}
-      />
+      <View style={styles.passwordContainer}>
+        <TextInput
+          style={[styles.textInput, styles.passwordInput]}
+          placeholder="Your password"
+          secureTextEntry={!showPassword}
+          value={password}
+          onChangeText={setPassword}
+          editable={!pwSigningIn}
+        />
+        <TouchableOpacity
+          style={styles.passwordToggle}
+          onPress={() => setShowPassword(!showPassword)}
+        >
+          <CustomIcon
+            type="IO"
+            name={showPassword ? "eye-off" : "eye"}
+            size={22}
+            color="#9ca3af"
+          />
+        </TouchableOpacity>
+      </View>
       <TouchableOpacity
         style={[styles.primaryButton, pwSigningIn && styles.disabledButton]}
         onPress={handlePasswordSignIn}
@@ -511,14 +509,16 @@ const LoginScreen = ({ navigation }) => {
         {pwSigningIn ? (
           <ActivityIndicator color="#fff" />
         ) : (
-          <Text style={styles.primaryButtonText}>Sign In</Text>
+          <Text style={styles.primaryButtonText}>
+            {authMode === "signin" ? "Sign In" : "Create Account"}
+          </Text>
         )}
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.switchMode}
-        onPress={() => setMode("email")}
+        onPress={() => setMode("choose")}
       >
-        <Text style={styles.switchModeText}>Use Verification Code Instead</Text>
+        <Text style={styles.switchModeText}>← Back</Text>
       </TouchableOpacity>
     </View>
   );
@@ -587,12 +587,14 @@ const LoginScreen = ({ navigation }) => {
           <Text style={styles.subtitle}>Your Mental Wellness Companion</Text>
         </View>
         <View style={styles.content}>
-          <View style={styles.welcomeSection}>
-            <Text style={styles.welcomeTitle}>Welcome</Text>
-            <Text style={styles.welcomeDescription}>
-              Sign in to access your personalized mental wellness journey
-            </Text>
-          </View>
+          {mode === "choose" && (
+            <View style={styles.welcomeSection}>
+              <Text style={styles.welcomeTitle}>Welcome</Text>
+              <Text style={styles.welcomeDescription}>
+                Sign in to access your personalized mental wellness journey
+              </Text>
+            </View>
+          )}
           {mode === "choose" && renderChoose()}
           {mode === "email" && renderEmail()}
           {mode === "password" && renderPassword()}
@@ -630,13 +632,25 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   logoContainer: {
-    width: 80,
-    height: 80,
+    width: 100,
+    height: 100,
     marginBottom: 20,
+    backgroundColor: "#f8fafc",
+    borderRadius: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 12,
+    elevation: 4,
   },
   logo: {
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
   title: {
     fontSize: 32,
@@ -674,7 +688,7 @@ const styles = StyleSheet.create({
     lineHeight: 24,
   },
   buttonSection: {
-    gap: 16,
+    gap: 20,
   },
   googleButton: {
     flexDirection: "row",
@@ -683,39 +697,41 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderWidth: 1.5,
     borderColor: "#e5e7eb",
-    borderRadius: 12,
-    paddingVertical: 16,
-    paddingHorizontal: 20,
+    borderRadius: 16,
+    paddingVertical: 18,
+    paddingHorizontal: 24,
     gap: 12,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 4,
     },
-    shadowOpacity: 0.05,
-    shadowRadius: 8,
-    elevation: 2,
+    shadowOpacity: 0.08,
+    shadowRadius: 12,
+    elevation: 4,
   },
   googleIcon: {
-    width: 20,
-    height: 20,
+    width: 24,
+    height: 24,
   },
   googleButtonText: {
     fontSize: 16,
-    fontFamily: "Poppins_500Medium",
+    fontFamily: "Poppins_600SemiBold",
     color: "#374151",
   },
   skipButton: {
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 16,
+    paddingVertical: 8,
     paddingHorizontal: 20,
-    borderRadius: 12,
+    borderRadius: 16,
+    marginTop: -10,
+    marginBottom: 0,
   },
   skipButtonText: {
     fontSize: 16,
-    fontFamily: "Poppins_500Medium",
-    color: "#8B5CF6",
+    fontFamily: "Poppins_600SemiBold",
+    color: "#6366f1",
   },
   footer: {
     paddingHorizontal: 20,
@@ -730,8 +746,8 @@ const styles = StyleSheet.create({
     lineHeight: 18,
   },
   linkText: {
-    fontFamily: "Poppins_500Medium",
-    color: "#8B5CF6",
+    fontFamily: "Poppins_600SemiBold",
+    color: "#6366f1",
   },
   disabledButton: {
     opacity: 0.6,
@@ -742,19 +758,21 @@ const styles = StyleSheet.create({
   /* New styles for email + OTP */
   formBlock: {
     backgroundColor: "#fff",
-    padding: 20,
+    padding: 16,
     borderRadius: 16,
+    marginHorizontal: 20,
+    marginTop: 8,
     shadowColor: "#000",
-    shadowOpacity: 0.05,
+    shadowOpacity: 0.06,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 2 },
-    gap: 12,
+    gap: 8,
   },
   sectionTitle: {
-    fontSize: 20,
+    fontSize: 18,
     fontFamily: "Poppins_600SemiBold",
     color: "#1a1a1a",
-    marginBottom: 4,
+    marginBottom: 2,
     textAlign: "center",
   },
   inputLabel: {
@@ -762,23 +780,45 @@ const styles = StyleSheet.create({
     fontFamily: "Poppins_500Medium",
     color: "#374151",
     marginTop: 8,
+    marginBottom: 6,
   },
   textInput: {
-    borderWidth: 1,
-    borderColor: "#e5e7eb",
-    borderRadius: 10,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
+    borderWidth: 1.5,
+    borderColor: "#e2e8f0",
+    borderRadius: 14,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
     fontSize: 16,
     fontFamily: "Poppins_500Medium",
-    color: "#111827",
-    backgroundColor: "#fff",
+    color: "#1e293b",
+    backgroundColor: "#f8fafc",
+  },
+  passwordContainer: {
+    position: "relative",
+  },
+  passwordInput: {
+    paddingRight: 50,
+  },
+  passwordToggle: {
+    position: "absolute",
+    right: 16,
+    top: 14,
+    padding: 4,
   },
   primaryButton: {
-    backgroundColor: "#007AFF",
+    backgroundColor: "#6366f1",
     paddingVertical: 14,
-    borderRadius: 10,
+    borderRadius: 14,
     alignItems: "center",
+    marginTop: 12,
+    shadowColor: "#6366f1",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 6,
+    elevation: 3,
   },
   primaryButtonText: {
     color: "#fff",
@@ -790,9 +830,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   switchModeText: {
-    color: "#007AFF",
-    fontSize: 14,
-    fontFamily: "Poppins_500Medium",
+    color: "#6366f1",
+    fontSize: 15,
+    fontFamily: "Poppins_600SemiBold",
   },
   otpSubtitle: {
     fontSize: 14,
@@ -816,9 +856,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   resendText: {
-    color: "#007AFF",
-    fontSize: 14,
-    fontFamily: "Poppins_500Medium",
+    color: "#6366f1",
+    fontSize: 15,
+    fontFamily: "Poppins_600SemiBold",
   },
   countdownText: {
     color: "#6b7280",
@@ -826,65 +866,58 @@ const styles = StyleSheet.create({
     fontFamily: "Poppins_400Regular",
   },
   altAuthButton: {
-    backgroundColor: "#f3f4f6",
-    paddingVertical: 14,
-    borderRadius: 10,
+    backgroundColor: "#f8fafc",
+    borderWidth: 1,
+    borderColor: "#e2e8f0",
+    paddingVertical: 16,
+    borderRadius: 16,
     alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.04,
+    shadowRadius: 8,
+    elevation: 2,
   },
   altAuthText: {
     fontSize: 16,
-    fontFamily: "Poppins_500Medium",
-    color: "#374151",
+    fontFamily: "Poppins_600SemiBold",
+    color: "#475569",
   },
   /* Auth mode toggle styles */
-  authModeToggleRow: {
-    flexDirection: "row",
-    justifyContent: "center",
-    gap: 12,
-    marginBottom: 8,
-  },
-  authModeToggle: {
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 20,
-    backgroundColor: "#f3f4f6",
-  },
-  authModeToggleActive: {
-    backgroundColor: "#007AFF",
-  },
-  authModeToggleText: {
-    fontFamily: "Poppins_500Medium",
-    color: "#374151",
-    fontSize: 14,
-  },
-  authModeToggleTextActive: {
-    color: "#fff",
-  },
-  authModeCaption: {
-    textAlign: "center",
-    fontSize: 14,
-    color: "#6b7280",
-    fontFamily: "Poppins_400Regular",
-    marginBottom: 16,
-  },
   inlineAuthSwitchRow: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    gap: 12,
-    marginBottom: 8,
+    backgroundColor: "#f1f5f9",
+    borderRadius: 16,
+    padding: 4,
+    marginBottom: 16,
+    alignSelf: "center",
+    width: 280,
+  },
+  inlineAuthSwitchButton: {
+    flex: 1,
+    borderRadius: 12,
+    margin: 2,
+    minHeight: 40,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  inlineAuthSwitchButtonActive: {
+    backgroundColor: "#ffffff",
   },
   inlineAuthSwitchText: {
-    fontSize: 14,
-    fontFamily: "Poppins_500Medium",
-    color: "#6b7280",
+    fontSize: 15,
+    fontFamily: "Poppins_600SemiBold",
+    color: "#64748b",
+    textAlign: "center",
+    lineHeight: 20,
   },
   inlineAuthSwitchTextActive: {
-    color: "#007AFF",
-  },
-  inlineDivider: {
-    color: "#d1d5db",
-    fontSize: 14,
+    color: "#1e293b",
   },
 });
 

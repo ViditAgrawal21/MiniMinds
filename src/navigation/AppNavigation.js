@@ -39,6 +39,48 @@ import EQTest from '@/screens/main/EQTest/index';
 import EQTestQuestions from '@/screens/main/EQTest/questions';
 import EQTestResult from '@/screens/main/EQTest/result';
 
+// Import MindTools main screen
+import MindToolsScreen from '@/screens/main/MindTools/MindToolsScreen';
+
+// Import all MindTools category screens
+import AngerManagementScreen from '@/screens/main/MindTools/AngerManagementScreen';
+import StressScreen from '@/screens/main/MindTools/StressScreen';
+import InternetSocialMediaScreen from '@/screens/main/MindTools/InternetSocialMediaScreen';
+import FamilyRelationshipScreen from '@/screens/main/MindTools/FamilyRelationshipScreen';
+import SleepScreen from '@/screens/main/MindTools/SleepScreen';
+import SuicidalBehaviourScreen from '@/screens/main/MindTools/SuicidalBehaviourScreen';
+import SexLifeScreen from '@/screens/main/MindTools/SexLifeScreen';
+import AddictionsScreen from '@/screens/main/MindTools/AddictionsScreen';
+import CommonPsychologicalScreen from '@/screens/main/MindTools/CommonPsychologicalScreen';
+import EnvironmentIssuesScreen from '@/screens/main/MindTools/EnvironmentIssuesScreen';
+import FinancialMentalHealthScreen from '@/screens/main/MindTools/FinancialMentalHealthScreen';
+import PhysicalFitnessScreen from '@/screens/main/MindTools/PhysicalFitnessScreen';
+import InternetDependenceScreen from '@/screens/main/MindTools/InternetDependenceScreen';
+import ProfessionalMentalHealthScreen from '@/screens/main/MindTools/ProfessionalMentalHealthScreen';
+import SocialMentalHealthScreen from '@/screens/main/MindTools/SocialMentalHealthScreen';
+import YoungsterIssuesScreen from '@/screens/main/MindTools/YoungsterIssuesScreen';
+import EmotionalIntelligenceScreen from '@/screens/main/MindTools/EmotionalIntelligenceScreen';
+
+// Import intervention-related screens
+import InterventionsScreen from '@/screens/main/MindTools/InterventionsScreen';
+import InterventionDetailScreen from '@/screens/main/MindTools/InterventionDetailScreen';
+import JournalEntriesScreen from '@/screens/main/MindTools/JournalEntriesScreen';
+import JournalHistoryScreen from '@/screens/main/MindTools/JournalHistoryScreen';
+
+// Import strategy screens
+import CBTScreen from '@/screens/main/MindTools/strategies/CBTScreen';
+import REBTScreen from '@/screens/main/MindTools/strategies/REBTScreen';
+import CommonSuggestionsScreen from '@/screens/main/MindTools/strategies/CommonSuggestionsScreen';
+import RelaxationScreen from '@/screens/main/MindTools/strategies/RelaxationScreen';
+import YogaScreen from '@/screens/main/MindTools/strategies/YogaScreen';
+
+// Import EQ strategy screens
+import EmpathyStrategyScreen from '@/screens/main/MindTools/EQStrategies/EmpathyStrategyScreen';
+import MotivationStrategyScreen from '@/screens/main/MindTools/EQStrategies/MotivationStrategyScreen';
+import SelfAwarenessStrategyScreen from '@/screens/main/MindTools/EQStrategies/SelfAwarenessStrategyScreen';
+import SelfRegulationStrategyScreen from '@/screens/main/MindTools/EQStrategies/SelfRegulationStrategyScreen';
+import SocialSkillsStrategyScreen from '@/screens/main/MindTools/EQStrategies/SocialSkillsStrategyScreen';
+
 // Import other screens as you create them
 // import ProfileScreen from '../screens/main/profile-page/profile';
 // import SettingsScreen from '../screens/main/settingsScreen/settings';
@@ -154,12 +196,55 @@ const AppNavigation = () => {
       <Stack.Screen name="EQTestQuestions" component={EQTestQuestions} />
       <Stack.Screen name="EQTestResult" component={EQTestResult} />
 
+      {/* MindTools main screen */}
+      <Stack.Screen name="MindToolsScreen" component={MindToolsScreen} />
+
+      {/* MindTools category screens */}
+      <Stack.Screen name="AngerManagementScreen" component={AngerManagementScreen} />
+      <Stack.Screen name="StressScreen" component={StressScreen} />
+      <Stack.Screen name="InternetSocialMediaScreen" component={InternetSocialMediaScreen} />
+      <Stack.Screen name="FamilyRelationshipScreen" component={FamilyRelationshipScreen} />
+      <Stack.Screen name="SleepScreen" component={SleepScreen} />
+      <Stack.Screen name="SuicidalBehaviourScreen" component={SuicidalBehaviourScreen} />
+      <Stack.Screen name="SexLifeScreen" component={SexLifeScreen} />
+      <Stack.Screen name="AddictionsScreen" component={AddictionsScreen} />
+      <Stack.Screen name="CommonPsychologicalScreen" component={CommonPsychologicalScreen} />
+      <Stack.Screen name="EnvironmentIssuesScreen" component={EnvironmentIssuesScreen} />
+      <Stack.Screen name="FinancialMentalHealthScreen" component={FinancialMentalHealthScreen} />
+      <Stack.Screen name="PhysicalFitnessScreen" component={PhysicalFitnessScreen} />
+      <Stack.Screen name="InternetDependenceScreen" component={InternetDependenceScreen} />
+      <Stack.Screen name="ProfessionalMentalHealthScreen" component={ProfessionalMentalHealthScreen} />
+      <Stack.Screen name="SocialMentalHealthScreen" component={SocialMentalHealthScreen} />
+      <Stack.Screen name="YoungsterIssuesScreen" component={YoungsterIssuesScreen} />
+      <Stack.Screen name="EmotionalIntelligenceScreen" component={EmotionalIntelligenceScreen} />
+
+      {/* MindTools intervention-related screens */}
+      <Stack.Screen name="InterventionsScreen" component={InterventionsScreen} />
+      <Stack.Screen name="InterventionDetailScreen" component={InterventionDetailScreen} />
+      <Stack.Screen name="JournalEntriesScreen" component={JournalEntriesScreen} />
+      <Stack.Screen name="JournalHistoryScreen" component={JournalHistoryScreen} />
+
+      {/* MindTools strategy screens */}
+      <Stack.Screen name="CBTScreen" component={CBTScreen} />
+      <Stack.Screen name="REBTScreen" component={REBTScreen} />
+      <Stack.Screen name="CommonSuggestionsScreen" component={CommonSuggestionsScreen} />
+      <Stack.Screen name="RelaxationScreen" component={RelaxationScreen} />
+      <Stack.Screen name="YogaScreen" component={YogaScreen} />
+
+      {/* MindTools EQ strategy screens */}
+      <Stack.Screen name="EmpathyStrategyScreen" component={EmpathyStrategyScreen} />
+      <Stack.Screen name="MotivationStrategyScreen" component={MotivationStrategyScreen} />
+      <Stack.Screen name="SelfAwarenessStrategyScreen" component={SelfAwarenessStrategyScreen} />
+      <Stack.Screen name="SelfRegulationStrategyScreen" component={SelfRegulationStrategyScreen} />
+      <Stack.Screen name="SocialSkillsStrategyScreen" component={SocialSkillsStrategyScreen} />
+
       {/* Legacy/Optional Screens */}
       <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
       <Stack.Screen name="Welcome" component={WelcomeScreen} />
       <Stack.Screen name="selforchild" component={SelfOrChildScreen} />
       <Stack.Screen name="generalsettings" component={GeneralSettings} />
             <Stack.Screen name="UpgradeToPremium" component={UpgradeToPremium} />
+            <Stack.Screen name="Upgrade" component={UpgradeToPremium} />
             <Stack.Screen name="EditProfile" component={EditProfile} />
 
       
