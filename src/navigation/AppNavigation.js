@@ -80,6 +80,7 @@ import MotivationStrategyScreen from '@/screens/main/MindTools/EQStrategies/Moti
 import SelfAwarenessStrategyScreen from '@/screens/main/MindTools/EQStrategies/SelfAwarenessStrategyScreen';
 import SelfRegulationStrategyScreen from '@/screens/main/MindTools/EQStrategies/SelfRegulationStrategyScreen';
 import SocialSkillsStrategyScreen from '@/screens/main/MindTools/EQStrategies/SocialSkillsStrategyScreen';
+import PrivacyNoticeScreen from '@/screens/main/PrivacyNoticeScreen';
 
 // Import other screens as you create them
 // import ProfileScreen from '../screens/main/profile-page/profile';
@@ -117,7 +118,12 @@ const AppNavigation = () => {
         const isLoggedIn = await AsyncStorage.getItem('isLoggedIn');
         const hasCompletedSelfAssessment = await AsyncStorage.getItem('hasCompletedSelfAssessment');
         const hasSelectedLanguage = await AsyncStorage.getItem('hasSelectedLanguage');
-        
+
+        console.log("hasCompletedOnboarding:", hasCompletedOnboarding);
+        console.log("isLoggedIn:", isLoggedIn);
+        console.log("hasCompletedSelfAssessment:", hasCompletedSelfAssessment);
+        console.log("hasSelectedLanguage:", hasSelectedLanguage);
+
         if (!hasCompletedOnboarding) {
           // First time user - start with splash, then login
           setInitialRoute('Splash');
@@ -244,8 +250,8 @@ const AppNavigation = () => {
       <Stack.Screen name="selforchild" component={SelfOrChildScreen} />
       <Stack.Screen name="generalsettings" component={GeneralSettings} />
             <Stack.Screen name="UpgradeToPremium" component={UpgradeToPremium} />
-            <Stack.Screen name="Upgrade" component={UpgradeToPremium} />
             <Stack.Screen name="EditProfile" component={EditProfile} />
+            <Stack.Screen name="PrivacyNoticeScreen" component={PrivacyNoticeScreen} />
 
       
     </Stack.Navigator>

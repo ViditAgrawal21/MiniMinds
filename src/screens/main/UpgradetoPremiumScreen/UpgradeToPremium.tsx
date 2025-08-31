@@ -28,46 +28,7 @@ interface TabItemProps {
   onPress: () => void;
 }
 
-const TabItem: React.FC<TabItemProps> = ({
-  label,
-  icon,
-  isActive,
-  onPress,
-}) => {
-  const positionValue = React.useRef(new Animated.Value(0)).current; // Initial position
 
-  React.useEffect(() => {
-    // Trigger animation when the tab becomes active/inactive
-    Animated.spring(positionValue, {
-      toValue: isActive ? -10 : 0,
-      useNativeDriver: true,
-    }).start();
-  }, [isActive, positionValue]);
-
-  return (
-    <Animated.View
-      style={[
-        {
-          transform: [{ translateY: positionValue }],
-          zIndex: isActive ? 1 : 0,
-        },
-      ]}
-    >
-      <TouchableOpacity
-        style={[styles.tabItem, isActive && styles.activeTabItem]}
-        onPress={onPress}
-      >
-        {icon}
-        <Text
-          style={[styles.tabLabel, isActive && styles.activeTabLabel]}
-          numberOfLines={1}
-        >
-          {label}
-        </Text>
-      </TouchableOpacity>
-    </Animated.View>
-  );
-};
 
 export default function UpgradeToPremium() {
   const navigation = useNavigation();
@@ -359,72 +320,8 @@ export default function UpgradeToPremium() {
         )}
       </ScrollView>
 
-      {/* Custom Bottom Tab Navigation */}
-      <View style={styles.tabBar}>
-        <TabItem
-          label={t("navigation.home", "Home")}
-          icon={
-            <CustomIcon
-              type="IO"
-              name="home-outline"
-              size={30}
-              color={activeTab === "Home" ? "white" : "#888"}
-            />
-          }
-          isActive={activeTab === "Home"}
-          onPress={() => {
-            // @ts-ignore - Adding params to navigate
-            navigation.navigate("Tab", { screen: "Home" });
-          }}
-        />
-        <TabItem
-          label={t("navigation.insights", "Insights")}
-          icon={
-            <CustomIcon
-              type="FA5"
-              name="chart-bar"
-              size={30}
-              color={activeTab === "Insights" ? "white" : "#888"}
-            />
-          }
-          isActive={activeTab === "Insights"}
-          onPress={() => {
-            // @ts-ignore - Adding params to navigate
-            navigation.navigate("Tab", { screen: "Insights" });
-          }}
-        />
-        <TabItem
-          label={t("navigation.mindTools", "Mind Tools")}
-          icon={
-            <CustomIcon
-              type="IO"
-              name="grid-outline"
-              size={30}
-              color={activeTab === "MindTools" ? "white" : "#888"}
-            />
-          }
-          isActive={activeTab === "MindTools"}
-          onPress={() => {
-            // @ts-ignore - Adding params to navigate
-            navigation.navigate("Tab", { screen: "MindTools" });
-          }}
-        />
-        <TabItem
-          label={t("navigation.profile", "Profile")}
-          icon={
-            <CustomIcon
-              type="IO"
-              name="person-outline"
-              size={30}
-              color={activeTab === "Profile" ? "white" : "#888"}
-            />
-          }
-          isActive={activeTab === "Profile"}
-          onPress={() => navigation.goBack()}
-        />
-      </View>
+   
 
-  {/* Removed legacy plan selection & OTP modals */}
     </SafeAreaView>
   );
 }

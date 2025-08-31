@@ -1202,14 +1202,15 @@ export default function HomeTab() {
                   console.log("Selected scan:", selected.scan_title);
                   
                   try {
+                    nav.navigate({
+                      screen: screenMapping[selected.scan_title as keyof typeof screenMapping] || 'MindToolsMain',
+                      params: { category: selected.scan_title }
+                    })
                     // The correct way to navigate to a nested navigator screen
-                    nav.navigate('MainApp', { 
-                      screen: 'MindTools',
-                      params: {
-                        screen: screenMapping[selected.scan_title as keyof typeof screenMapping] || 'MindToolsMain',
-                        params: { category: selected.scan_title }
-                      }
-                    });
+                  //   nav.navigate(
+                  //     screen: selected.scan_title || 'MindToolsMain',
+                  //       params: { category: selected.scan_title }
+                  // );
                     
                     console.log("Navigation completed to MindTools");
                   } catch (error) {

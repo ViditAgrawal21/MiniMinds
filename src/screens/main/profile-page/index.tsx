@@ -108,7 +108,7 @@ export default function ProfilePage() {
   }, []);
 
   const handlePremiumPress = () => {
-    navigation.navigate("UpgradeToPremium" as never);
+    navigation.navigate("UpgradeToPremium" );
   };
 
   const handleContinueOnboarding = () => {

@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Image,
   StatusBar,
+  useWindowDimensions,
 } from 'react-native';
 import { useTheme } from '../../../context/themeContext';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -22,15 +23,21 @@ setTimeout(() => {
 
   }, [navigation]);
 
+const {height,width} = useWindowDimensions()
+
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor={theme.colors.primary} />
-      
-      <View style={styles.logoContainer}>
-        {/* Add your logo here */}
+
+      <Image resizeMethod={"scale"} source={require('@/assets/images/thought-pro-splash.png')} style={{
+        height:height,
+        width:width
+      }} />
+
+      {/* <View style={styles.logoContainer}>
         <Text style={styles.logoText}>ThoughtPro</Text>
         <Text style={styles.tagline}>Think Better, Live Better</Text>
-      </View>
+      </View> */}
     </View>
   );
 };

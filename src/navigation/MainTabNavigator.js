@@ -25,7 +25,6 @@ import ProfilePage from "@/screens/main/profile-page";
 import { t } from "@/i18n/locales";
 import HomeTab from "@/screens/main/homeTab";
 import MindToolsScreen from "@/screens/main/MindTools/MindToolsScreen";
-import MindToolsNavigator from "@/navigation/MindToolsNavigator";
 
 /**
  * @typedef {Object} TabItemProps
@@ -107,7 +106,7 @@ function MainTabNavigator({
           />
         );
       case "MindTools":
-        return <MindToolsNavigator />;
+        return <MindToolsScreen />;
       case "Profile":
         return <ProfilePage />;
       default:

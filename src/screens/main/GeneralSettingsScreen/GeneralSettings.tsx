@@ -1,12 +1,112 @@
 import React from "react";
-import { View, Text, StyleSheet, Switch, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, Switch, TouchableOpacity, Modal } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import { useDispatch } from "react-redux";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomIcon from "@Components/CustomIcon";
-// import CustomIcon from "../../../components/CustomIcon";
+import { logout } from "../../../redux/Slices/authSlice";
+import { AuthService } from "../../../services/authService";
+import GoogleAuthNative from "../../../services/googleAuthNative";
+import { clearAllData } from "../../../utils/storageUtils";
 
 export default function GeneralSettings() {
   const [notifications, setNotifications] = React.useState(false);
+  const [showLogoutModal, setShowLogoutModal] = React.useState(false);
+  const [toastVisible, setToastVisible] = React.useState(false);
+  const [toastMessage, setToastMessage] = React.useState('');
+  const [toastType, setToastType] = React.useState<'success' | 'error' | 'info'>('info');
   const navigation = useNavigation();
+  const dispatch = useDispatch();
+
+  const showToast = (message: string, type: 'success' | 'error' | 'info' = 'info') => {
+    setToastMessage(message);
+    setToastType(type);
+    setToastVisible(true);
+  };
+
+  const handleLogoutPress = () => {
+    setShowLogoutModal(true);
+  };
+
+  const handleLogoutConfirm = async () => {
+    setShowLogoutModal(false);
+    
+    try {
+      // Clear all authentication data
+      await AuthService.clearAuth();
+      
+      // Clear Google auth data
+      try {
+        await GoogleAuthNative.signOut();
+      } catch (googleError) {
+        console.log("Google sign out error (might not be signed in):", googleError);
+      }
+
+      // Clear specific app data keys
+      const keysToRemove = [
+        // Authentication keys
+        'auth_token',
+        'user_data',
+        'user_email',
+        'auth_method',
+        'is_authenticated',
+        
+        // Onboarding and profile data
+        'onboardingResponses',
+        'profile_v1',
+        'hasCompletedOnboarding',
+        'hasCompletedSelfAssessment',
+        'hasCompletedFirstLaunch',
+        'selectedLanguage',
+        'hasSelectedLanguage',
+        'isLoggedIn',
+        
+        // Language settings
+        'language',
+        
+        // Any temporary passwords or OTP tracking
+      ];
+
+      // Get all keys first to find any dynamic keys like OTP requests
+      const allKeys = await AsyncStorage.getAllKeys();
+      const dynamicKeysToRemove = allKeys.filter(key => 
+        key.startsWith('reg_pw:') || 
+        key.startsWith('last_otp_request_') ||
+        key.startsWith('temp_')
+      );
+
+      // Combine all keys to remove
+      const allKeysToRemove = [...keysToRemove, ...dynamicKeysToRemove];
+
+      // Remove specific keys
+      await AsyncStorage.multiRemove(allKeysToRemove);
+
+      // Clear all remaining AsyncStorage data as a fallback
+      await clearAllData();
+
+      // Clear Redux state
+      dispatch(logout());
+
+      // Show success toast
+      showToast("You have been logged out successfully.", "success");
+
+      // Reset navigation stack and go to login after a short delay
+      setTimeout(() => {
+        (navigation as any).reset({
+          index: 0,
+          routes: [{ name: 'Login' }],
+        });
+      }, 2000);
+
+    } catch (error) {
+      console.error("Logout error:", error);
+      showToast("Failed to logout completely. Please try again.", "error");
+    }
+  };
+
+  const handleLogoutCancel = () => {
+    setShowLogoutModal(false);
+  };
 
   return (
     <View style={styles.container}>
@@ -36,7 +136,7 @@ export default function GeneralSettings() {
           Permanently deactivate your account
         </Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.option}>
+      <TouchableOpacity onPress={handleLogoutPress} style={styles.option}>
         <Text style={styles.optionText}>Log out</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.option}>

@@ -37,12 +37,12 @@ const PrivacyNoticeScreen: React.FC = () => {
         navigation.navigate("WelcomeScreen" as never);
       } else {
         // Not first time - go directly to Tab
-        navigation.navigate("Tab" as never);
+        navigation.navigate("PrivacyNoticeScreen" as never);
       }
     } catch (error) {
       console.error("Error in privacy notice navigation:", error);
       // Navigate to welcome screen as fallback
-      navigation.navigate("WelcomeScreen" as never);
+      navigation.navigate("PrivacyNoticeScreen" as never);
     }
   };
 

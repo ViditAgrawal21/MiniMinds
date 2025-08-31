@@ -23,6 +23,7 @@ import GoogleAuthNative, {
   GoogleUser,
 } from '../../../services/googleAuthNative';
 import {
+  AuthService,
   initiateOtpForEmail,
   verifyOTP,
   resendOTP,
@@ -30,26 +31,73 @@ import {
   finalizeVerificationLogin,
   loginUser,
   testNetworkConnection,
-  AuthService,
-} from '../services/authService';
+} from '../../../services/authService';
 import {
   canRequestCode,
   markCodeRequested,
 } from '../utils/verificationRateLimiter';
 import {
+  createPremiumStatusFromLicense,
   setPremiumStatus,
 } from '../../../utils/premiumUtils';
+import { LicenseService } from '@/services/licenseService';
+
+
+const checkAndActivateUserLicense = async (
+  token,
+  userEmail,
+) => {
+  console.log("🔍 Checking user's existing license after login");
+  
+  try {
+    const licenseStatus = await LicenseService.checkUserCurrentLicense(token);
+    
+    if (licenseStatus.hasActiveLicense) {
+      console.log("🎉 User has active license - activating premium status");
+      
+      const premiumStatus = createPremiumStatusFromLicense({
+        licenseType: licenseStatus.licenseType,
+        validUntil: licenseStatus.validUntil,
+        redeemedTime: licenseStatus.redeemedTime,
+        daysRemaining: licenseStatus.daysRemaining,
+      });
+      
+      await setPremiumStatus(premiumStatus);
+      
+      // Show welcome message with subscription details
+      const planName =
+        licenseStatus.licenseType === "ultra" ? "Ultra" : "Premium";
+      const daysText = licenseStatus.daysRemaining
+        ? `${licenseStatus.daysRemaining} days remaining`
+        : "Active subscription";
+
+      Alert.alert(
+        "Welcome Back! 🎉",
+        `Your ${planName} subscription is active.\n${daysText}`,
+        [{ text: "Continue", style: "default" }],
+      );
+      
+      return true;
+    } else {
+      console.log("ℹ️ No active license found for user");
+      return false;
+    }
+  } catch (error) {
+    console.error("💥 Error checking user license:", error);
+    // Don't block login on license check error
+    return false;
+  }
+};
 
 const LoginScreen = ({ navigation }) => {
   const { theme } = useTheme();
   const dispatch = useDispatch();
   
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [passwordError, setPasswordError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const [mode, setMode] = useState("choose");
   const [authMode, setAuthMode] = useState("signin");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [sending, setSending] = useState(false);
   const [otp, setOtp] = useState(""); // verification code (6 digits)
   const [verifying, setVerifying] = useState(false);
@@ -58,12 +106,33 @@ const LoginScreen = ({ navigation }) => {
   const [canResend, setCanResend] = useState(false);
   const [pwSigningIn, setPwSigningIn] = useState(false);
   const [codeRequestCooldown, setCodeRequestCooldown] = useState(0);
-  const [isLoading, setIsLoading] = useState(false);
   const [isGoogleSigningIn, setIsGoogleSigningIn] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   const loading = useSelector(selectAuthLoading);
   const error = useSelector(selectAuthError);
+
+  // Check if user is already authenticated on component mount
+  useEffect(() => {
+
+    const checkAuthStatus = async () => {
+      try {
+        const isAuthenticated = await AuthService.isAuthenticated();
+        if (isAuthenticated) {
+          const user = await AuthService.getStoredUser();
+          if (user) {
+            console.log("User already authenticated:", user.email);
+            navigation.navigate("MainApp");
+            return;
+          }
+        }
+      } catch (error) {
+        console.error("Error checking auth status:", error);
+      }
+    };  
+    
+    checkAuthStatus();
+  }, [navigation]);
 
  
   // No need for response handling effect with native Google Auth
@@ -110,6 +179,9 @@ const LoginScreen = ({ navigation }) => {
       
       if (userInfo) {
         // Data is automatically saved by the native module
+        // Also create a temporary AuthService session for consistency
+        await AuthService.createTempUserSession(userInfo.email);
+        
         // Navigate to language selection after successful sign-in
         navigation.navigate("LanguageSelect");
       } else {
@@ -136,10 +208,52 @@ const LoginScreen = ({ navigation }) => {
 
   const handleSkipForNow = async () => {
     try {
+      // Create a temporary user session for skip functionality
+      await AuthService.createTempUserSession("guest@thoughtpro.app");
       navigation.navigate("LanguageSelect");
     } catch (error) {
       console.error("Error skipping sign-in:", error);
       Alert.alert("Error", "Failed to proceed. Please try again.");
+    }
+  };
+
+  // Add logout functionality for testing purposes
+  const handleLogout = async () => {
+    try {
+      await AuthService.clearAuth();
+      Alert.alert("Success", "Logged out successfully");
+      setMode("choose");
+      setEmail("");
+      setPassword("");
+      setOtp("");
+    } catch (error) {
+      console.error("Error logging out:", error);
+      Alert.alert("Error", "Failed to logout. Please try again.");
+    }
+  };
+
+  // Check current user authentication status
+  const checkCurrentUser = async () => {
+    try {
+      const user = await AuthService.getStoredUser();
+      const isAuth = await AuthService.isAuthenticated();
+      const token = await AuthService.getStoredToken();
+      
+      console.log("Current User:", user);
+      console.log("Is Authenticated:", isAuth);
+      console.log("Has Token:", !!token);
+      
+      if (user && isAuth) {
+        Alert.alert(
+          "User Status", 
+          `Logged in as: ${user.email}\nUsername: ${user.username}\nRole: ${user.role}`
+        );
+      } else {
+        Alert.alert("User Status", "No authenticated user found");
+      }
+    } catch (error) {
+      console.error("Error checking user status:", error);
+      Alert.alert("Error", "Failed to check user status");
     }
   };
 
@@ -163,6 +277,7 @@ const LoginScreen = ({ navigation }) => {
     }
     setSending(true);
     try {
+      // Use the unified helper function that uses AuthService internally
       const res = await initiateOtpForEmail(email, "premium_monthly");
       if (res.success && res.status === "registered") {
         setMode("otp");
@@ -170,6 +285,9 @@ const LoginScreen = ({ navigation }) => {
         setCanResend(false);
         setOtp("");
         await markCodeRequested(email);
+        
+        console.log("✅ OTP initiated successfully via AuthService");
+        Alert.alert("Success", "Verification code sent to your email!");
       } else if (res.success && res.status === "existing") {
         // Existing user: registration endpoint signaled account presence.
         Alert.alert(
@@ -178,6 +296,7 @@ const LoginScreen = ({ navigation }) => {
         );
         setMode("otp"); // still allow code entry if user has one
       } else {
+        console.error("❌ OTP initiation failed:", res.message);
         Alert.alert("Error", res.message || "Failed to start verification");
       }
     } catch (e) {
@@ -195,17 +314,28 @@ const LoginScreen = ({ navigation }) => {
     }
     setVerifying(true);
     try {
-      const res = await verifyOTP(email, otp);
+      // Use AuthService.verifyOTP for proper verification
+      const res = await AuthService.verifyOTP(email, otp);
       if (res.success) {
         if (res.token) {
-          await storeToken(res.token);
+          // Store token using AuthService method
+          await AuthService.storeToken(res.token);
+          
+          // Check for premium license after successful verification
+          await checkAndActivateUserLicense(res.token, email);
+          
           navigation.navigate("LanguageSelect");
           return;
         }
         // If no token, attempt automatic login using stored temp password
         const auto = await finalizeVerificationLogin(email);
         if (auto.success && auto.token) {
-          await storeToken(auto.token);
+          // Store token using AuthService method
+          await AuthService.storeToken(auto.token);
+          
+          // Check for premium license after successful login
+          await checkAndActivateUserLicense(auto.token, email);
+          
           navigation.navigate("LanguageSelect");
         } else {
           Alert.alert(
@@ -239,12 +369,14 @@ const LoginScreen = ({ navigation }) => {
     }
     setResending(true);
     try {
-      const r = await resendOTP(email);
+      // Use AuthService.resendOTP for proper resend functionality
+      const r = await AuthService.resendOTP(email);
       if (r.success) {
         setTimer(60);
         setCanResend(false);
         setOtp("");
         await markCodeRequested(email);
+        Alert.alert("Success", "Verification code sent again!");
       } else {
         Alert.alert("Error", r.message || "Could not resend code");
       }
@@ -274,8 +406,15 @@ const LoginScreen = ({ navigation }) => {
     
     setPwSigningIn(true);
     try {
-      const res = await loginUser(email, password);
-      await storeToken(res.token);
+      // Use AuthService.loginUser directly for better error handling
+      const res = await AuthService.loginUser(email, password);
+      
+      // Store token using AuthService method
+      await AuthService.storeToken(res.token);
+      
+      // Check for premium license after successful login
+      await checkAndActivateUserLicense(res.token, email);
+      
       navigation.navigate("LanguageSelect");
     } catch (e) {
       console.log("🚨 Login failed in UI:", e);
@@ -298,6 +437,45 @@ const LoginScreen = ({ navigation }) => {
 
   const renderChoose = () => (
     <View style={styles.buttonSection}>
+      <View style={styles.authModeToggleRow}>
+        <TouchableOpacity
+          style={[
+            styles.authModeToggle,
+            authMode === "signin" && styles.authModeToggleActive,
+          ]}
+          onPress={() => setAuthMode("signin")}
+        >
+          <Text
+            style={[
+              styles.authModeToggleText,
+              authMode === "signin" && styles.authModeToggleTextActive,
+            ]}
+          >
+            Sign In
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[
+            styles.authModeToggle,
+            authMode === "signup" && styles.authModeToggleActive,
+          ]}
+          onPress={() => setAuthMode("signup")}
+        >
+          <Text
+            style={[
+              styles.authModeToggleText,
+              authMode === "signup" && styles.authModeToggleTextActive,
+            ]}
+          >
+            Sign Up
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.authModeCaption}>
+        {authMode === "signin"
+          ? "Welcome back – choose a method to sign in."
+          : "Create a new account – choose a method to sign up."}
+      </Text>
       <TouchableOpacity
         style={[styles.googleButton, (isLoading || isGoogleSigningIn) && styles.disabledButton]}
         onPress={handleGoogleLogin}
@@ -314,19 +492,23 @@ const LoginScreen = ({ navigation }) => {
               }}
               style={styles.googleIcon}
             />
-            <Text style={styles.googleButtonText}>Sign In with Google</Text>
+            <Text style={styles.googleButtonText}>
+              {authMode === "signin"
+                ? "Sign In with Google"
+                : "Sign Up with Google"}
+            </Text>
           </>
         )}
       </TouchableOpacity>
       <TouchableOpacity
         style={[styles.altAuthButton]}
-        onPress={() => {
-          // Use React 18's automatic batching for smoother updates
-          setAuthMode("signin");
-          setMode("email");
-        }}
+        onPress={() => setMode(authMode === "signup" ? "email" : "password")}
       >
-        <Text style={styles.altAuthText}>Use Email (Password / Code)</Text>
+        <Text style={styles.altAuthText}>
+          {authMode === "signin"
+            ? "Use Email (Password / Code)"
+            : "Use Email (Verification Code)"}
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.skipButton}
@@ -349,10 +531,6 @@ const LoginScreen = ({ navigation }) => {
             setAuthMode("signin");
             setMode("password");
           }}
-          style={[
-            styles.inlineAuthSwitchButton,
-            authMode === "signin" && styles.inlineAuthSwitchButtonActive,
-          ]}
         >
           <Text
             style={[
@@ -363,13 +541,8 @@ const LoginScreen = ({ navigation }) => {
             Sign In
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => setAuthMode("signup")}
-          style={[
-            styles.inlineAuthSwitchButton,
-            authMode === "signup" && styles.inlineAuthSwitchButtonActive,
-          ]}
-        >
+        <Text style={styles.inlineDivider}>|</Text>
+        <TouchableOpacity onPress={() => setAuthMode("signup")}>
           <Text
             style={[
               styles.inlineAuthSwitchText,
@@ -430,13 +603,7 @@ const LoginScreen = ({ navigation }) => {
   const renderPassword = () => (
     <View style={styles.formBlock}>
       <View style={styles.inlineAuthSwitchRow}>
-        <TouchableOpacity
-          onPress={() => setAuthMode("signin")}
-          style={[
-            styles.inlineAuthSwitchButton,
-            authMode === "signin" && styles.inlineAuthSwitchButtonActive,
-          ]}
-        >
+        <TouchableOpacity onPress={() => setAuthMode("signin")}>
           <Text
             style={[
               styles.inlineAuthSwitchText,
@@ -446,15 +613,12 @@ const LoginScreen = ({ navigation }) => {
             Sign In
           </Text>
         </TouchableOpacity>
+        <Text style={styles.inlineDivider}>|</Text>
         <TouchableOpacity
           onPress={() => {
             setAuthMode("signup");
             setMode("email");
           }}
-          style={[
-            styles.inlineAuthSwitchButton,
-            authMode === "signup" && styles.inlineAuthSwitchButtonActive,
-          ]}
         >
           <Text
             style={[
@@ -466,9 +630,7 @@ const LoginScreen = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
       </View>
-      <Text style={styles.sectionTitle}>
-        {authMode === "signin" ? "Password Sign In" : "Create Account"}
-      </Text>
+      <Text style={styles.sectionTitle}>Password Sign In</Text>
       <Text style={styles.inputLabel}>Email</Text>
       <TextInput
         style={styles.textInput}
@@ -480,27 +642,14 @@ const LoginScreen = ({ navigation }) => {
         editable={!pwSigningIn}
       />
       <Text style={styles.inputLabel}>Password</Text>
-      <View style={styles.passwordContainer}>
-        <TextInput
-          style={[styles.textInput, styles.passwordInput]}
-          placeholder="Your password"
-          secureTextEntry={!showPassword}
-          value={password}
-          onChangeText={setPassword}
-          editable={!pwSigningIn}
-        />
-        <TouchableOpacity
-          style={styles.passwordToggle}
-          onPress={() => setShowPassword(!showPassword)}
-        >
-          <CustomIcon
-            type="IO"
-            name={showPassword ? "eye-off" : "eye"}
-            size={22}
-            color="#9ca3af"
-          />
-        </TouchableOpacity>
-      </View>
+      <TextInput
+        style={styles.textInput}
+        placeholder="Your password"
+        secureTextEntry
+        value={password}
+        onChangeText={setPassword}
+        editable={!pwSigningIn}
+      />
       <TouchableOpacity
         style={[styles.primaryButton, pwSigningIn && styles.disabledButton]}
         onPress={handlePasswordSignIn}
@@ -509,16 +658,14 @@ const LoginScreen = ({ navigation }) => {
         {pwSigningIn ? (
           <ActivityIndicator color="#fff" />
         ) : (
-          <Text style={styles.primaryButtonText}>
-            {authMode === "signin" ? "Sign In" : "Create Account"}
-          </Text>
+          <Text style={styles.primaryButtonText}>Sign In</Text>
         )}
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.switchMode}
-        onPress={() => setMode("choose")}
+        onPress={() => setMode("email")}
       >
-        <Text style={styles.switchModeText}>← Back</Text>
+        <Text style={styles.switchModeText}>Use Verification Code Instead</Text>
       </TouchableOpacity>
     </View>
   );
@@ -587,20 +734,18 @@ const LoginScreen = ({ navigation }) => {
           <Text style={styles.subtitle}>Your Mental Wellness Companion</Text>
         </View>
         <View style={styles.content}>
-          {mode === "choose" && (
-            <View style={styles.welcomeSection}>
-              <Text style={styles.welcomeTitle}>Welcome</Text>
-              <Text style={styles.welcomeDescription}>
-                Sign in to access your personalized mental wellness journey
-              </Text>
-            </View>
-          )}
+          <View style={styles.welcomeSection}>
+            <Text style={styles.welcomeTitle}>Welcome</Text>
+            <Text style={styles.welcomeDescription}>
+              Sign in to access your personalized mental wellness journey
+            </Text>
+          </View>
           {mode === "choose" && renderChoose()}
           {mode === "email" && renderEmail()}
           {mode === "password" && renderPassword()}
           {mode === "otp" && renderOtp()}
         </View>
-        <View style={styles.footer}>
+                <View style={styles.footer}>
           <Text style={styles.footerText}>
             By continuing, you agree to our{" "}
             <Text style={styles.linkText}>Terms</Text> and{" "}
@@ -632,35 +777,23 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   logoContainer: {
-    width: 100,
-    height: 100,
+    width: 80,
+    height: 80,
     marginBottom: 20,
-    backgroundColor: "#f8fafc",
-    borderRadius: 20,
-    alignItems: "center",
-    justifyContent: "center",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 12,
-    elevation: 4,
   },
   logo: {
-    width: 70,
-    height: 70,
+    width: 80,
+    height: 80,
   },
   title: {
     fontSize: 32,
-    fontFamily: "Poppins_700Bold",
+    fontWeight: "700",
     color: "#1a1a1a",
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
-    fontFamily: "Poppins_400Regular",
+    fontWeight: "400",
     color: "#6b7280",
     textAlign: "center",
   },
@@ -675,20 +808,20 @@ const styles = StyleSheet.create({
   },
   welcomeTitle: {
     fontSize: 28,
-    fontFamily: "Poppins_600SemiBold",
+    fontWeight: "600",
     color: "#1a1a1a",
     marginBottom: 12,
     textAlign: "center",
   },
   welcomeDescription: {
     fontSize: 16,
-    fontFamily: "Poppins_400Regular",
+    fontWeight: "400",
     color: "#6b7280",
     textAlign: "center",
     lineHeight: 24,
   },
   buttonSection: {
-    gap: 20,
+    gap: 16,
   },
   googleButton: {
     flexDirection: "row",
@@ -697,41 +830,39 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderWidth: 1.5,
     borderColor: "#e5e7eb",
-    borderRadius: 16,
-    paddingVertical: 18,
-    paddingHorizontal: 24,
+    borderRadius: 12,
+    paddingVertical: 16,
+    paddingHorizontal: 20,
     gap: 12,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 4,
+      height: 2,
     },
-    shadowOpacity: 0.08,
-    shadowRadius: 12,
-    elevation: 4,
+    shadowOpacity: 0.05,
+    shadowRadius: 8,
+    elevation: 2,
   },
   googleIcon: {
-    width: 24,
-    height: 24,
+    width: 20,
+    height: 20,
   },
   googleButtonText: {
     fontSize: 16,
-    fontFamily: "Poppins_600SemiBold",
+    fontWeight: "500",
     color: "#374151",
   },
   skipButton: {
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 8,
+    paddingVertical: 16,
     paddingHorizontal: 20,
-    borderRadius: 16,
-    marginTop: -10,
-    marginBottom: 0,
+    borderRadius: 12,
   },
   skipButtonText: {
     fontSize: 16,
-    fontFamily: "Poppins_600SemiBold",
-    color: "#6366f1",
+    fontWeight: "500",
+    color: "#8B5CF6",
   },
   footer: {
     paddingHorizontal: 20,
@@ -740,14 +871,14 @@ const styles = StyleSheet.create({
   },
   footerText: {
     fontSize: 12,
-    fontFamily: "Poppins_400Regular",
+    fontWeight: "400",
     color: "#9ca3af",
     textAlign: "center",
     lineHeight: 18,
   },
   linkText: {
-    fontFamily: "Poppins_600SemiBold",
-    color: "#6366f1",
+    fontWeight: "500",
+    color: "#8B5CF6",
   },
   disabledButton: {
     opacity: 0.6,
@@ -758,40 +889,37 @@ const styles = StyleSheet.create({
   /* New styles for email + OTP */
   formBlock: {
     backgroundColor: "#fff",
-    padding: 16,
+    padding: 20,
     borderRadius: 16,
-    marginHorizontal: 20,
-    marginTop: 8,
     shadowColor: "#000",
-    shadowOpacity: 0.06,
+    shadowOpacity: 0.05,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 2 },
-    gap: 8,
+    gap: 12,
   },
   sectionTitle: {
-    fontSize: 18,
-    fontFamily: "Poppins_600SemiBold",
+    fontSize: 20,
+    fontWeight: "600",
     color: "#1a1a1a",
-    marginBottom: 2,
+    marginBottom: 4,
     textAlign: "center",
   },
   inputLabel: {
     fontSize: 14,
-    fontFamily: "Poppins_500Medium",
+    fontWeight: "500",
     color: "#374151",
     marginTop: 8,
-    marginBottom: 6,
   },
   textInput: {
-    borderWidth: 1.5,
-    borderColor: "#e2e8f0",
-    borderRadius: 14,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
+    borderWidth: 1,
+    borderColor: "#e5e7eb",
+    borderRadius: 10,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
     fontSize: 16,
-    fontFamily: "Poppins_500Medium",
-    color: "#1e293b",
-    backgroundColor: "#f8fafc",
+    fontWeight: "500",
+    color: "#111827",
+    backgroundColor: "#fff",
   },
   passwordContainer: {
     position: "relative",
@@ -806,33 +934,24 @@ const styles = StyleSheet.create({
     padding: 4,
   },
   primaryButton: {
-    backgroundColor: "#6366f1",
+    backgroundColor: "#007AFF",
     paddingVertical: 14,
-    borderRadius: 14,
+    borderRadius: 10,
     alignItems: "center",
-    marginTop: 12,
-    shadowColor: "#6366f1",
-    shadowOffset: {
-      width: 0,
-      height: 3,
-    },
-    shadowOpacity: 0.15,
-    shadowRadius: 6,
-    elevation: 3,
   },
   primaryButtonText: {
     color: "#fff",
     fontSize: 16,
-    fontFamily: "Poppins_600SemiBold",
+    fontWeight: "600",
   },
   switchMode: {
     paddingVertical: 4,
     alignItems: "center",
   },
   switchModeText: {
-    color: "#6366f1",
-    fontSize: 15,
-    fontFamily: "Poppins_600SemiBold",
+    color: "#007AFF",
+    fontSize: 14,
+    fontFamily: "Poppins_500Medium",
   },
   otpSubtitle: {
     fontSize: 14,
@@ -856,9 +975,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   resendText: {
-    color: "#6366f1",
-    fontSize: 15,
-    fontFamily: "Poppins_600SemiBold",
+    color: "#007AFF",
+    fontSize: 14,
+    fontFamily: "Poppins_500Medium",
   },
   countdownText: {
     color: "#6b7280",
@@ -866,58 +985,65 @@ const styles = StyleSheet.create({
     fontFamily: "Poppins_400Regular",
   },
   altAuthButton: {
-    backgroundColor: "#f8fafc",
-    borderWidth: 1,
-    borderColor: "#e2e8f0",
-    paddingVertical: 16,
-    borderRadius: 16,
+    backgroundColor: "#f3f4f6",
+    paddingVertical: 14,
+    borderRadius: 10,
     alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.04,
-    shadowRadius: 8,
-    elevation: 2,
   },
   altAuthText: {
     fontSize: 16,
-    fontFamily: "Poppins_600SemiBold",
-    color: "#475569",
+    fontFamily: "Poppins_500Medium",
+    color: "#374151",
   },
   /* Auth mode toggle styles */
+  authModeToggleRow: {
+    flexDirection: "row",
+    justifyContent: "center",
+    gap: 12,
+    marginBottom: 8,
+  },
+  authModeToggle: {
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 20,
+    backgroundColor: "#f3f4f6",
+  },
+  authModeToggleActive: {
+    backgroundColor: "#007AFF",
+  },
+  authModeToggleText: {
+    fontFamily: "Poppins_500Medium",
+    color: "#374151",
+    fontSize: 14,
+  },
+  authModeToggleTextActive: {
+    color: "#fff",
+  },
+  authModeCaption: {
+    textAlign: "center",
+    fontSize: 14,
+    color: "#6b7280",
+    fontFamily: "Poppins_400Regular",
+    marginBottom: 16,
+  },
   inlineAuthSwitchRow: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f1f5f9",
-    borderRadius: 16,
-    padding: 4,
-    marginBottom: 16,
-    alignSelf: "center",
-    width: 280,
-  },
-  inlineAuthSwitchButton: {
-    flex: 1,
-    borderRadius: 12,
-    margin: 2,
-    minHeight: 40,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  inlineAuthSwitchButtonActive: {
-    backgroundColor: "#ffffff",
+    gap: 12,
+    marginBottom: 8,
   },
   inlineAuthSwitchText: {
-    fontSize: 15,
-    fontFamily: "Poppins_600SemiBold",
-    color: "#64748b",
-    textAlign: "center",
-    lineHeight: 20,
+    fontSize: 14,
+    fontFamily: "Poppins_500Medium",
+    color: "#6b7280",
   },
   inlineAuthSwitchTextActive: {
-    color: "#1e293b",
+    color: "#007AFF",
+  },
+  inlineDivider: {
+    color: "#d1d5db",
+    fontSize: 14,
   },
 });
 
