@@ -69,5 +69,10 @@
 		<string>Poppins-Regular.ttf</string>
 		<string>SpaceMono-Regular.ttf</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>whatsapp</string>
+		<string>https</string>
+	</array>
 </dict>
 </plist>

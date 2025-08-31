@@ -13,7 +13,7 @@ import {
 import CustomIcon from "../../../../components/CustomIcon";
 import { useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t, getCurrentLanguage } from "../../../../i18n/locales";
+import { useLanguage } from "../../../../context/LanguageContext";
 import { getPremiumStatus } from "../../../../utils/premiumUtils";
 
 interface REBTIntervention {
@@ -75,6 +75,7 @@ interface REBTData {
 }
 
 export default function REBTScreen({ navigation, route }: any) {
+  const { locale, t } = useLanguage(); // Use language context
   const [rebtInterventions, setRebtInterventions] = useState<
     REBTIntervention[]
   >([]);
@@ -85,31 +86,14 @@ export default function REBTScreen({ navigation, route }: any) {
     null,
   );
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
   const [hasPremiumAccess, setHasPremiumAccess] = useState(false);
   
   const { condition } = route.params || {};
 
-    // Language change detection with improved triggering (unified with InterventionsScreen)
+  // Language change detection - update condition name when language changes
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
-    if (currentLanguage !== currentLocale) {
-      setCurrentLanguage(currentLocale);
-      loadREBTInterventions(); // Reload interventions when language changes
-    }
-  }, [currentLanguage, condition]);
-
-  // Additional effect to watch for external language changes
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
-      if (currentLanguage !== currentLocale) {
-        setCurrentLanguage(currentLocale);
-      }
-    }, 1000); // Check every second
-
-    return () => clearInterval(intervalId);
-  }, [currentLanguage, condition]);
+    setConditionName(getConditionDisplayName(condition));
+  }, [locale, condition]);
 
   // Comprehensive translation mapping for common REBT intervention terms
   const rebtTranslations = {
@@ -310,7 +294,7 @@ export default function REBTScreen({ navigation, route }: any) {
     rebt: REBTIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? getREBTTitle(rebt) : getREBTDescription(rebt);
     
@@ -686,16 +670,10 @@ export default function REBTScreen({ navigation, route }: any) {
 
       // Create description translations if we have an original description key
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
-        if (originalDescriptionKey) {
-          try {
-            const translatedDescription = t(originalDescriptionKey);
-            return translatedDescription !== originalDescriptionKey
-              ? translatedDescription
-              : getLocalizedREBTText(selectedREBT, "description");
-          } catch {
-            return getLocalizedREBTText(selectedREBT, "description"); // Fallback to original
-          }
+        if (lang === "en") {
+          return getREBTDescription(selectedREBT); // Always use original English text
         }
+        // For other languages, use dynamic translation
         return getLocalizedREBTText(selectedREBT, "description");
       };
 
@@ -730,7 +708,7 @@ export default function REBTScreen({ navigation, route }: any) {
         }),
         isSelected: false,
         isCompleted: false,
-        fullDescription: getLocalizedREBTText(selectedREBT, "description"),
+        fullDescription: selectedREBT.description || selectedREBT.Description || "", // Save original English description
         condition: conditionName,
         interventionType: "REBT",
       };

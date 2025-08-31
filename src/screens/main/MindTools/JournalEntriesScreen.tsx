@@ -13,7 +13,7 @@ import {
 import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "../../../i18n/locales/i18n";
+import { useLanguage } from "../../../context/LanguageContext";
 
 // Import the intervention data
 import allInterventionsData from "../../../data/interventions.json";
@@ -50,6 +50,7 @@ export default function JournalEntriesScreen({
   navigation,
   route,
 }: JournalEntriesScreenProps) {
+  const { locale, t } = useLanguage();
   const {
     conditionId = "",
     conditionName = "Journal",

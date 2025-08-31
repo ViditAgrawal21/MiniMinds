@@ -9,10 +9,11 @@ import {
   Alert,
   Modal,
   Animated,
+  TouchableWithoutFeedback,
 } from "react-native";
 import CustomIcon from "../../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t, getCurrentLanguage } from "../../../../i18n/locales";
+import { useLanguage } from "../../../../context/LanguageContext";
 
 interface Intervention {
   title?: string;
@@ -70,6 +71,7 @@ interface SuggestionsData {
 }
 
 export default function CommonSuggestionsScreen({ navigation, route }: any) {
+  const { locale, t } = useLanguage(); // Use language context
   const [suggestions, setSuggestions] = useState<Intervention[]>([]);
   const [loading, setLoading] = useState(true);
   const [conditionName, setConditionName] = useState("");
@@ -255,8 +257,9 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
   }, [condition, navigation]);
 
   useEffect(() => {
+    setConditionName(getConditionDisplayName(condition));
     loadSuggestions();
-  }, [loadSuggestions]);
+  }, [loadSuggestions, locale, condition]);
 
   const handleBackPress = () => {
     navigation.goBack();
@@ -418,16 +421,11 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
 
       // Create description translations if we have an original description key
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
-        if (originalDescriptionKey) {
-          try {
-            const translatedDescription = t(originalDescriptionKey);
-            return translatedDescription !== originalDescriptionKey
-              ? translatedDescription
-              : getSuggestionDescription(selectedSuggestion);
-          } catch {
-            return getSuggestionDescription(selectedSuggestion); // Fallback to original
-          }
+        if (lang === "en") {
+          return getSuggestionDescription(selectedSuggestion); // Always use original English text
         }
+        // For other languages, we could add dynamic translation here
+        // For now, return the original description
         return getSuggestionDescription(selectedSuggestion);
       };
 
@@ -463,7 +461,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         }),
         isSelected: false,
         isCompleted: false,
-        fullDescription: getSuggestionDescription(selectedSuggestion),
+        fullDescription: selectedSuggestion.description || "", // Save original English description
         condition: conditionName,
         interventionType: t("commonSuggestionsScreen.task.interventionType"),
       };
@@ -586,7 +584,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
             },
           ]}
         >
-          <Pressable style={styles.modalOverlayTouchable} onPress={hideModal}>
+          <TouchableWithoutFeedback style={styles.modalOverlayTouchable} onPress={hideModal}>
             <Animated.View
               style={[
                 styles.modalContainer,
@@ -718,7 +716,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                 </Pressable>
               </Pressable>
             </Animated.View>
-          </Pressable>
+          </TouchableWithoutFeedback>
         </Animated.View>
       </Modal>
     </View>

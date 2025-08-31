@@ -9,9 +9,12 @@ import {
   Button,
   Linking,
 } from "react-native";
-import { useFocusEffect } from "@react-navigation/native";
-import ProfessionalChatbot from "@/components/common/ProfessionalChatbot";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import type { RootStackParamList } from '@/navigation/types';
 import { t } from "@/i18n/locales/i18n"; // Import translation function
+
+type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 /**
  * --------------------------------------------------------------------------------
@@ -553,7 +556,7 @@ const recommendedItems = [
               <Button
                 title="Message on WhatsApp"
                 onPress={() =>
-                  Linking.openURL("whatsapp://send?phone=+1234567890")
+                  Linking.openURL("https://wa.me/917020037124")
                 }
                 color="#AB47BC"
               />
@@ -617,11 +620,22 @@ export default function RecommendedInterventions({
   recommendedInterventions,
   scanName,
   totalScore,
-  navigation,
+  navigation: propNavigation,
 }: RecommendedInterventionsProps) {
+  // Use navigation hook as fallback
+  const hookNavigation = useNavigation<NavigationProp>();
+  const navigation = propNavigation || hookNavigation;
+
+  console.log("RecommendedInterventions initialized with:", {
+    scanName,
+    totalScore,
+    hasNavigation: !!navigation,
+    hasPropNavigation: !!propNavigation,
+    hasHookNavigation: !!hookNavigation,
+  });
+
   const [selectedIntervention, setSelectedIntervention] = useState<any>(null);
   const [selectedSection, setSelectedSection] = useState<any>(null);
-  const [chatbotVisible, setChatbotVisible] = useState(false);
 
   // Reset all modal states when screen comes into focus
   useFocusEffect(
@@ -629,16 +643,8 @@ export default function RecommendedInterventions({
       console.log("Screen focused - resetting modal states");
       setSelectedIntervention(null);
       setSelectedSection(null);
-      setChatbotVisible(false);
     }, [])
   );
-
-  // Debug effect to monitor chatbot state
-  useEffect(() => {
-    console.log("Chatbot visible state changed:", chatbotVisible);
-    console.log("Selected intervention:", selectedIntervention ? "open" : "closed");
-    console.log("Selected section:", selectedSection ? "open" : "closed");
-  }, [chatbotVisible, selectedIntervention, selectedSection]);
 
   // Helper functions for better UI
   const getStrategyIcon = (index: number) => {
@@ -680,29 +686,29 @@ export default function RecommendedInterventions({
       // Map scan names to condition slugs used in strategy screens
       const conditionMappings: Record<string, string> = {
         "Anger Management": "anger-management",
-        "Stress": "stress",
-        "Internet & Social Media": "internet-social-media",
-        "Internet and Social Media Issue": "internet-social-media", // Fixed mapping
-        "Internet and Social Media": "internet-social-media", // Alternative mapping
+        "Stress": "stress", 
+        "Internet and Social Media Issue": "internet-social-media",
+        "Internet & Social Media": "internet-social-media", // Alternative form
         "Internet Social Media": "internet-social-media", // Short form
-        "Family & Relationship": "family-relationship",
-        "Family and Relationship": "family-relationship", // Full form
+        "Family and Relationship": "family-relationship",
+        "Family & Relationship": "family-relationship", // Alternative form
         "Sleep": "sleep",
-        "Self-care hygiene": "self-care-hygiene",
-        "Self-care Hygiene": "self-care-hygiene", // Alternative capitalization
+        "Suicidal Behaviour": "suicidal-behaviour",
         "Sex Life": "sex-life",
         "Addictions": "addictions",
         "Common Psychological Issues": "common-psychological-issues",
-        "Common Psychological": "common-psychological-issues",
-        "Environment Issues": "environment-issues",
-        "Environment Issues affecting mental wellbeing": "environment-issues",
+        "Environment Issues Affecting Mental Wellbeing": "environment-issues",
         "Financial Mental Health": "financial-mental-health",
         "General Physical Fitness": "general-physical-fitness",
-        "Physical Fitness": "general-physical-fitness",
-        "Internet Dependence": "internet-dependence",
+        "Internet Dependence": "internet-dependence", 
         "Professional Mental Health": "professional-mental-health",
         "Social Mental Health": "social-mental-health",
         "Youngster Issues": "youngster-issues",
+        // Additional mappings for alternative names
+        "Environment Issues": "environment-issues",
+        "Physical Fitness": "general-physical-fitness",
+        "Internet Addiction": "internet-dependence", // Alternative name
+        "Social Issues": "social-mental-health", // Alternative name
       };
       
       // Try exact match first
@@ -727,34 +733,41 @@ export default function RecommendedInterventions({
 
     // Helper function to navigate to specific strategy screen
     const navigateToStrategy = (strategyType: string) => {
-      if (!navigation) return;
+      if (!navigation) {
+        console.error("Navigation not available");
+        return;
+      }
       
       // Immediately close all modals and reset states
       setSelectedIntervention(null);
       setSelectedSection(null);
-      setChatbotVisible(false);
       
       const condition = getConditionSlug(scanName || "");
+      console.log(`Navigating to ${strategyType} with condition: ${condition}, scanName: ${scanName}`);
       
       // Navigate immediately without setTimeout to prevent UI lag
-      switch (strategyType) {
-        case "common":
-          navigation.navigate("CommonSuggestionsScreen", { condition });
-          break;
-        case "yoga":
-          navigation.navigate("YogaScreen", { condition });
-          break;
-        case "relaxation":
-          navigation.navigate("RelaxationScreen", { condition });
-          break;
-        case "cbt":
-          navigation.navigate("CBTScreen", { condition });
-          break;
-        case "rebt":
-          navigation.navigate("REBTScreen", { condition });
-          break;
-        default:
-          console.log(`Unknown strategy type: ${strategyType}`);
+      try {
+        switch (strategyType) {
+          case "common":
+            navigation.navigate("CommonSuggestionsScreen", { condition });
+            break;
+          case "yoga":
+            navigation.navigate("YogaScreen", { condition });
+            break;
+          case "relaxation":
+            navigation.navigate("RelaxationScreen", { condition });
+            break;
+          case "cbt":
+            navigation.navigate("CBTScreen", { condition });
+            break;
+          case "rebt":
+            navigation.navigate("REBTScreen", { condition });
+            break;
+          default:
+            console.log(`Unknown strategy type: ${strategyType}`);
+        }
+      } catch (error) {
+        console.error(`Navigation error for ${strategyType}:`, error);
       }
     };
 
@@ -942,13 +955,12 @@ export default function RecommendedInterventions({
                   <Button
                     title={t("scanResult.strategies.connectWithExpert")}
                     onPress={() => {
-                      console.log("Professional Help button pressed");
+                      console.log("Professional Help button pressed - Opening WhatsApp");
                       // Close any open strategy modal immediately
                       setSelectedIntervention(null);
                       setSelectedSection(null);
-                      // Open chatbot immediately - no timeout needed
-                      console.log("Opening chatbot immediately");
-                      setChatbotVisible(true);
+                      // Open WhatsApp directly instead of chatbot
+                      Linking.openURL("https://wa.me/917020037124");
                     }}
                     color="#AB47BC"
                   />
@@ -982,7 +994,6 @@ export default function RecommendedInterventions({
 
   const handlePress = (item: any) => {
     // Ensure any previous states are cleared immediately
-    setChatbotVisible(false);
     setSelectedSection(null);
     setSelectedIntervention(item);
   };
@@ -991,7 +1002,6 @@ export default function RecommendedInterventions({
     console.log("Closing modal - clearing all states");
     setSelectedIntervention(null);
     setSelectedSection(null);
-    setChatbotVisible(false);
   };
 
   const handleSectionPress = (section: any) => {
@@ -1146,16 +1156,6 @@ export default function RecommendedInterventions({
           </TouchableOpacity>
         </TouchableOpacity>
       </Modal>
-
-      <ProfessionalChatbot
-        visible={chatbotVisible}
-        onClose={() => {
-          console.log("Chatbot closing");
-          setChatbotVisible(false);
-        }}
-        scanName={scanName}
-        totalScore={totalScore || 0}
-      />
     </View>
   );
 }

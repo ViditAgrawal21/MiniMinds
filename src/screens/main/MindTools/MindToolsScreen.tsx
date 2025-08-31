@@ -1,5 +1,5 @@
 // app/screens/MindToolsScreen.tsx
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, use } from "react";
 import {
   View,
   Text,
@@ -12,16 +12,40 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useFocusEffect } from "@react-navigation/native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { t } from "../../../i18n/locales/i18n"; // Import the translation function
 // Premium access control imports
 import { canAccessFeature } from "../../../utils/premiumUtils";
-
 import MoodSelector from "../../../components/MoodSelector";
 //import Interventions from "../../../components/Interventions/Interventions";
 import MindfulPlaylist from "../../../components/MindfulPlaylist/MindfulPlaylist";
 
-export default function MindToolsScreen({ navigation }: any) {
+// Define your navigation stack param list
+type RootStackParamList = {
+  InterventionsScreen: undefined;
+  JournalHistoryScreen: undefined;
+  AngerManagementScreen: undefined;
+  StressScreen: undefined;
+  
+
+  SexLifeScreen: undefined;
+  AddictionsScreen: undefined;
+  CommonPsychologicalScreen: undefined;
+  EnvironmentIssuesScreen: undefined;
+  FinancialMentalHealthScreen: undefined;
+  PhysicalFitnessScreen: undefined;
+  InternetDependenceScreen: undefined;
+  ProfessionalMentalHealthScreen: undefined;
+  SocialMentalHealthScreen: undefined;
+  YoungsterIssuesScreen: undefined;
+  EmotionalIntelligenceScreen: undefined;
+  Upgrade: undefined;
+};
+
+type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
+
+export default function MindToolsScreen() {
   const [dailyTasksCount, setDailyTasksCount] = useState(0);
   const [interventionsCount, setInterventionsCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
@@ -30,6 +54,8 @@ export default function MindToolsScreen({ navigation }: any) {
   const [blockedPlan, setBlockedPlan] = useState<"basic" | "premium" | null>(
     null,
   );
+  const navigation = useNavigation();
+
 
   // Define category access requirements (same as condition scans)
   const categoryAccessMap: Record<string, "free" | "basic" | "premium"> = {
@@ -112,14 +138,8 @@ export default function MindToolsScreen({ navigation }: any) {
     console.log(`${taskType} task pressed`);
     console.log("Navigation object:", navigation);
     // Navigate to interventions screen
-    if (navigation) {
-      console.log("Attempting to navigate to InterventionsScreen");
-      navigation.navigate("InterventionsScreen", {
-        sourceScreen: "MindTools",
-      });
-    } else {
-      console.log("Navigation object is null/undefined");
-    }
+   console.log("Attempting to navigate to InterventionsScreen");
+      navigation.navigate("InterventionsScreen");
   };
 
   const handleJournalPress = () => {

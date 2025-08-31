@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import CustomIcon from "../../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t, getCurrentLanguage } from "../../../../i18n/locales";
+import { useLanguage } from "../../../../context/LanguageContext";
 
 interface YogaIntervention {
   // Format from translation files (yogaInterventions section)
@@ -71,6 +71,7 @@ interface YogaData {
 }
 
 export default function YogaScreen({ navigation, route }: any) {
+  const { locale, t } = useLanguage(); // Use language context
   const [yogaInterventions, setYogaInterventions] = useState<
     YogaIntervention[]
   >([]);
@@ -81,34 +82,13 @@ export default function YogaScreen({ navigation, route }: any) {
     null,
   );
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
   
   const { condition } = route.params || {};
 
-  // Language change detection with improved triggering (unified with InterventionsScreen)
+  // Language change detection - update condition name when language changes
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
-    if (currentLanguage !== currentLocale) {
-      console.log(
-        `Language changed from ${currentLanguage} to ${currentLocale}`,
-      );
-      setCurrentLanguage(currentLocale);
-      setConditionName(getConditionDisplayName(condition));
-    }
-  }, [currentLanguage, condition]);
-
-  // Additional effect to watch for external language changes
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
-      if (currentLanguage !== currentLocale) {
-        setCurrentLanguage(currentLocale);
-        setConditionName(getConditionDisplayName(condition));
-      }
-    }, 1000); // Check every second
-
-    return () => clearInterval(intervalId);
-  }, [currentLanguage, condition]);
+    setConditionName(getConditionDisplayName(condition));
+  }, [locale, condition]);
 
   // Comprehensive translation mapping for common yoga intervention terms
   const yogaTranslations = {
@@ -323,7 +303,7 @@ export default function YogaScreen({ navigation, route }: any) {
     yoga: YogaIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? getYogaTitle(yoga) : getYogaDescription(yoga);
     
@@ -697,16 +677,10 @@ export default function YogaScreen({ navigation, route }: any) {
 
       // Create description translations if we have an original description key
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
-        if (originalDescriptionKey) {
-          try {
-            const translatedDescription = t(originalDescriptionKey);
-            return translatedDescription !== originalDescriptionKey
-              ? translatedDescription
-              : getLocalizedYogaText(selectedYoga, "description");
-          } catch {
-            return getLocalizedYogaText(selectedYoga, "description"); // Fallback to original
-          }
+        if (lang === "en") {
+          return getYogaDescription(selectedYoga); // Always use original English text
         }
+        // For other languages, use dynamic translation
         return getLocalizedYogaText(selectedYoga, "description");
       };
 
@@ -741,7 +715,7 @@ export default function YogaScreen({ navigation, route }: any) {
         }),
         isSelected: false,
         isCompleted: false,
-        fullDescription: getLocalizedYogaText(selectedYoga, "description"),
+        fullDescription: selectedYoga.description || "", // Save original English description
         condition: conditionName,
         interventionType: t("yogaScreen.task.interventionType"),
       };

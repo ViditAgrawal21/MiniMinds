@@ -155,6 +155,9 @@ export default function InsightsScreen({
       try {
         // Load insights data
         const rows = await getAllScanResults();
+        console.log("Insights: Retrieved scan results:", rows.length, "items");
+        console.log("Insights: Sample result:", rows[0]);
+        
         const mapped: Item[] = rows.map((r) => ({
           scanTitle: r.scan_title,
           date: r.scan_date,
@@ -164,6 +167,7 @@ export default function InsightsScreen({
         mapped.sort(
           (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
         );
+        console.log("Insights: Mapped results:", mapped.length, "items");
         setAllResults(mapped);
         if (mapped.length) setScanF(mapped[mapped.length - 1].scanTitle);
 

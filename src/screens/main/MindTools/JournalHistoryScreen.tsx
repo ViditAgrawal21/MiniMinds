@@ -13,7 +13,7 @@ import {
 import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "../../../i18n/locales/i18n";
+import { useLanguage } from "../../../context/LanguageContext";
 
 interface Condition {
   id: string;
@@ -34,6 +34,7 @@ interface JournalEntry {
 }
 
 export default function JournalHistoryScreen({ navigation }: any) {
+  const { locale, t } = useLanguage();
   const [conditions, setConditions] = useState<Condition[]>([]);
   const [journalCounts, setJournalCounts] = useState<Record<string, number>>(
     {},

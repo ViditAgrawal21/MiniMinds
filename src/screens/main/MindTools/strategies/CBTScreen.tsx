@@ -9,10 +9,11 @@ import {
   Alert,
   Modal,
   Animated,
+  TouchableWithoutFeedback,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t, getCurrentLanguage } from "../../../../i18n/locales";
+import { useLanguage } from "../../../../context/LanguageContext";
 import { getPremiumStatus } from "../../../../utils/premiumUtils";
 import CustomIcon from "../../../../components/CustomIcon";
 
@@ -75,6 +76,7 @@ interface CBTData {
 }
 
 export default function CBTScreen({ navigation, route }: any) {
+  const { locale, t } = useLanguage(); // Use language context
   const [cbtInterventions, setCbtInterventions] = useState<CBTIntervention[]>(
     [],
   );
@@ -83,32 +85,14 @@ export default function CBTScreen({ navigation, route }: any) {
   const [showTaskModal, setShowTaskModal] = useState(false);
   const [selectedCBT, setSelectedCBT] = useState<CBTIntervention | null>(null);
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
   const [hasPremiumAccess, setHasPremiumAccess] = useState(false);
   
   const { condition } = route.params || {};
 
-  // Language change detection with improved triggering (unified with InterventionsScreen)
+    // Language change detection - update condition name when language changes
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
-    if (currentLanguage !== currentLocale) {
-      setCurrentLanguage(currentLocale);
-      setConditionName(getConditionDisplayName(condition));
-    }
-  }, [currentLanguage, condition]);
-
-  // Additional effect to watch for external language changes
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
-      if (currentLanguage !== currentLocale) {
-        setCurrentLanguage(currentLocale);
-        setConditionName(getConditionDisplayName(condition));
-      }
-    }, 1000); // Check every second
-
-    return () => clearInterval(intervalId);
-  }, [currentLanguage, condition]);
+    setConditionName(getConditionDisplayName(condition));
+  }, [locale, condition]);
 
   // Comprehensive translation mapping for common CBT intervention terms
   const cbtTranslations = {
@@ -274,7 +258,7 @@ export default function CBTScreen({ navigation, route }: any) {
     cbt: CBTIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? getCBTTitle(cbt) : getCBTDescription(cbt);
     
@@ -653,17 +637,10 @@ export default function CBTScreen({ navigation, route }: any) {
 
       // Create description translations if we have an original description key
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
-        if (originalDescriptionKey) {
-          try {
-            // Note: For React Native CLI, we'll use the current translation system
-            const translatedDescription = t(originalDescriptionKey);
-            return translatedDescription !== originalDescriptionKey
-              ? translatedDescription
-              : getLocalizedCBTText(selectedCBT, "description");
-          } catch {
-            return getLocalizedCBTText(selectedCBT, "description"); // Fallback to original
-          }
+        if (lang === "en") {
+          return getCBTDescription(selectedCBT); // Always use original English text
         }
+        // For other languages, use dynamic translation
         return getLocalizedCBTText(selectedCBT, "description");
       };
 
@@ -698,7 +675,7 @@ export default function CBTScreen({ navigation, route }: any) {
         }),
         isSelected: false,
         isCompleted: false,
-        fullDescription: getLocalizedCBTText(selectedCBT, "description"),
+        fullDescription: selectedCBT.description || selectedCBT.Description || "", // Save original English description
         condition: conditionName,
         interventionType: "CBT",
       };
@@ -857,7 +834,7 @@ export default function CBTScreen({ navigation, route }: any) {
             },
           ]}
         >
-          <Pressable style={styles.modalOverlayTouchable} onPress={hideModal}>
+          <TouchableWithoutFeedback style={styles.modalOverlayTouchable} onPress={hideModal}>
             <Animated.View
               style={[
                 styles.modalContainer,
@@ -979,7 +956,7 @@ export default function CBTScreen({ navigation, route }: any) {
                 </Pressable>
               </Pressable>
             </Animated.View>
-          </Pressable>
+          </TouchableWithoutFeedback>
         </Animated.View>
       </Modal>
     </View>

@@ -21,7 +21,7 @@ import {
 import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "../../../i18n/locales/i18n"; // Import the translation function
+import { useLanguage } from "../../../context/LanguageContext";
 
 const { width } = Dimensions.get("window");
 
@@ -374,6 +374,7 @@ const addToConditionActivityLog = async (
 };
 
 export default function InterventionsScreen({ navigation, route }: any) {
+  const { locale, t } = useLanguage(); // Use language context
   const [activeTab, setActiveTab] = useState<Tab>(
     route?.params?.activeTab || "Daily",
   );
@@ -401,7 +402,6 @@ export default function InterventionsScreen({ navigation, route }: any) {
   });
 
   const [isLoading, setIsLoading] = useState(true);
-  const [currentLanguage, setCurrentLanguage] = useState("en");
 
   // XP Popup animation states
   const [showXpPopup, setShowXpPopup] = useState(false);
@@ -452,31 +452,11 @@ export default function InterventionsScreen({ navigation, route }: any) {
     }, [navigation, sourceScreen]),
   );
 
-  // Language change detection with improved triggering
+  // Force re-render when language changes
   useEffect(() => {
-    const currentLocale = "en";
-    if (currentLanguage !== currentLocale) {
-      console.log(
-        `Language changed from ${currentLanguage} to ${currentLocale}`,
-      );
-      setCurrentLanguage(currentLocale);
-      // Force re-render when language changes by updating state
-      setInterventions((prev) => ({ ...prev }));
-      setCompletedInterventions((prev) => ({ ...prev }));
-    }
-  }, [currentLanguage]); // Watch current language state
-
-  // Additional effect to watch for external language changes
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentLocale = "en";
-      if (currentLanguage !== currentLocale) {
-        setCurrentLanguage(currentLocale);
-      }
-    }, 1000); // Check every second
-
-    return () => clearInterval(intervalId);
-  }, [currentLanguage]);
+    setInterventions((prev) => ({ ...prev }));
+    setCompletedInterventions((prev) => ({ ...prev }));
+  }, [locale]);
 
   const tabs = useMemo<Tab[]>(
     () => ["Daily", "Weekly", "Bi-weekly", "Monthly"],
@@ -723,7 +703,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
     intervention: Intervention,
     field: "title" | "subtitle",
   ): string => {
-    const currentLocale = "en" as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? intervention.title : intervention.subtitle;
 
@@ -846,7 +826,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
 
   // Helper function to translate tags
   const getLocalizedTag = (tag: string): string => {
-    const currentLocale = "en" as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     
     // Handle common suggestion tag
     if (tag === "common-suggestion") {
@@ -1160,11 +1140,11 @@ export default function InterventionsScreen({ navigation, route }: any) {
   const handleBackPress = () => {
     // Navigate back to the source screen with proper routing
     if (sourceScreen === "MindTools") {
-      navigation.navigate("Tab", { screen: "MindTools" });
+      navigation.navigate("MindTools");
     } else if (sourceScreen === "homeTab") {
-      navigation.navigate("Tab", { screen: "Home" });
+      navigation.navigate("Home");
     } else if (sourceScreen === "InsightsScreen") {
-      navigation.navigate("Tab", { screen: "Insights" });
+      navigation.navigate("Insights");
     } else {
       // Fallback to standard back navigation
       navigation.goBack();
@@ -1267,7 +1247,7 @@ export default function InterventionsScreen({ navigation, route }: any) {
 
   const handleViewIntervention = (intervention: Intervention) => {
     console.log("Viewing intervention:", JSON.stringify(intervention, null, 2));
-    navigation.navigate("InterventionDetail", {
+    navigation.navigate("InterventionDetailScreen", {
       intervention,
       previousScreen: "InterventionsScreen",
       activeTab: activeTab, // Pass the current active tab

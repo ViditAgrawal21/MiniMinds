@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import CustomIcon from "../../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { t, getCurrentLanguage } from "../../../../i18n/locales";
+import { useLanguage } from "../../../../context/LanguageContext";
 
 interface RelaxationIntervention {
   // Format from translation files (relaxationInterventions section)
@@ -71,6 +71,7 @@ interface RelaxationData {
 }
 
 export default function RelaxationScreen({ navigation, route }: any) {
+  const { locale, t } = useLanguage(); // Use language context
   const [relaxationInterventions, setRelaxationInterventions] = useState<
     RelaxationIntervention[]
   >([]);
@@ -80,33 +81,14 @@ export default function RelaxationScreen({ navigation, route }: any) {
   const [selectedRelaxation, setSelectedRelaxation] =
     useState<RelaxationIntervention | null>(null);
   const [modalAnimation] = useState(new Animated.Value(0));
-  const [currentLanguage, setCurrentLanguage] = useState(getCurrentLanguage());
   
   const { condition } = route.params || {};
 
-    // Language change detection with improved triggering (unified with InterventionsScreen)
+  // Language change detection - update condition name when language changes
   useEffect(() => {
-    const currentLocale = getCurrentLanguage();
-    if (currentLanguage !== currentLocale) {
-      console.log(
-        `Language changed from ${currentLanguage} to ${currentLocale}`,
-      );
-      setCurrentLanguage(currentLocale);
-      loadRelaxationInterventions(); // Reload interventions when language changes
-    }
-  }, [currentLanguage, condition]);
-
-  // Additional effect to watch for external language changes
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentLocale = getCurrentLanguage();
-      if (currentLanguage !== currentLocale) {
-        setCurrentLanguage(currentLocale);
-      }
-    }, 1000); // Check every second
-
-    return () => clearInterval(intervalId);
-  }, [currentLanguage, condition]);
+    setConditionName(getConditionDisplayName(condition));
+    loadRelaxationInterventions(); // Reload interventions when language changes
+  }, [locale, condition]);
 
   // Comprehensive translation mapping for common relaxation intervention terms
   const relaxationTranslations = {
@@ -616,17 +598,11 @@ export default function RelaxationScreen({ navigation, route }: any) {
 
       // Create description translations if we have an original description key
       const getDescriptionForLanguage = (lang: "en" | "hi" | "mr"): string => {
-        if (originalDescriptionKey) {
-          try {
-            const translatedDescription = t(originalDescriptionKey);
-            return translatedDescription !== originalDescriptionKey
-              ? translatedDescription
-              : getRelaxationDescription(selectedRelaxation);
-          } catch {
-            return getRelaxationDescription(selectedRelaxation); // Fallback to original
-          }
+        if (lang === "en") {
+          return getRelaxationDescription(selectedRelaxation); // Always use original English text
         }
-        return getRelaxationDescription(selectedRelaxation);
+        // For other languages, use dynamic translation
+        return getLocalizedRelaxationText(selectedRelaxation, "description");
       };
 
       const descriptionTranslations = {
@@ -660,7 +636,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
         }),
         isSelected: false,
         isCompleted: false,
-        fullDescription: getRelaxationDescription(selectedRelaxation),
+        fullDescription: selectedRelaxation.description || "", // Save original English description
         condition: conditionName,
         interventionType: t("relaxationScreen.task.interventionType"),
       };
@@ -716,7 +692,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
     relaxation: RelaxationIntervention,
     field: "title" | "description",
   ): string => {
-    const currentLocale = getCurrentLanguage() as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     const originalText =
       field === "title"
         ? getRelaxationTitle(relaxation)

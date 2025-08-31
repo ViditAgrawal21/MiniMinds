@@ -10,12 +10,12 @@ import {
 } from "react-native";
 import CustomIcon from "../../../components/CustomIcon";
 import { useFocusEffect } from "@react-navigation/native";
-import { t } from "../../../i18n/locales/i18n"; // Import the translation function
+import { useLanguage } from "../../../context/LanguageContext";
 
 export default function InterventionDetailScreen({ navigation, route }: any) {
   const { intervention, previousScreen, activeTab, sourceScreen } = route.params;
-  const [currentLanguage, setCurrentLanguage] = useState("en");
-  const [forceUpdate, setForceUpdate] = useState(0); // Add force update state
+  const { locale, t } = useLanguage(); // Use language context
+  const [forceUpdate, setForceUpdate] = useState(0);
 
   // Handle hardware back button for Android and navigation back button
   useFocusEffect(
@@ -44,29 +44,10 @@ export default function InterventionDetailScreen({ navigation, route }: any) {
     }, [navigation, previousScreen, activeTab, sourceScreen]),
   );
 
-  // Language change detection with improved triggering (unified with InterventionsScreen)
+  // Force re-render when language changes
   useEffect(() => {
-    const currentLocale = "en";
-    if (currentLanguage !== currentLocale) {
-      console.log(
-        `[InterventionDetail] Language changed from ${currentLanguage} to ${currentLocale}`,
-      );
-      setCurrentLanguage(currentLocale);
-      setForceUpdate((prev) => prev + 1); // Force re-render when language changes
-    }
-  }, [currentLanguage]); // Watch current language state
-
-  // Additional effect to watch for external language changes
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentLocale = "en";
-      if (currentLanguage !== currentLocale) {
-        setCurrentLanguage(currentLocale);
-      }
-    }, 1000); // Check every second
-
-    return () => clearInterval(intervalId);
-  }, [currentLanguage]);
+    setForceUpdate((prev) => prev + 1);
+  }, [locale]);
 
   // Comprehensive translation mapping for common intervention terms (unified with InterventionsScreen)
   const interventionTranslations = {
@@ -308,7 +289,7 @@ export default function InterventionDetailScreen({ navigation, route }: any) {
     intervention: any,
     field: "title" | "subtitle",
   ): string => {
-    const currentLocale = "en" as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? intervention.title : intervention.subtitle;
     
@@ -459,7 +440,7 @@ export default function InterventionDetailScreen({ navigation, route }: any) {
 
   // Helper function to get localized tag text
   const getLocalizedTag = (tag: string): string => {
-    const currentLocale = "en" as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     
     // Try to find translation in the common mapping
     const tagTranslation =
@@ -487,78 +468,64 @@ export default function InterventionDetailScreen({ navigation, route }: any) {
 
   // Helper function to get localized full description
   const getLocalizedDescription = (description: string): string => {
-    const currentLocale = "en" as "en" | "hi" | "mr";
+    if (!description) return "";
     
-    // If intervention has stored description translations, use them
-    if (intervention.descriptionTranslations?.[currentLocale]) {
-      const storedTranslation =
-        intervention.descriptionTranslations[currentLocale];
-      if (storedTranslation && storedTranslation.trim() !== "") {
-        return storedTranslation;
-      }
-    }
+    const currentLocale = locale as "en" | "hi" | "mr";
+    console.log(`[InterventionDetail] Translating description for locale "${currentLocale}":`, {
+      originalDescriptionKey: intervention.originalDescriptionKey,
+      interventionType: intervention.type,
+      hasDescription: !!description
+    });
     
-    // If intervention has original description key for dynamic translation
+    // If we have the original description key, use it for dynamic translation
     if (intervention.originalDescriptionKey) {
       try {
         const dynamicTranslation = t(intervention.originalDescriptionKey);
         console.log(
-          `[InterventionDetail] Description dynamic translation: key="${intervention.originalDescriptionKey}", result="${dynamicTranslation}"`,
+          `[InterventionDetail] Using translation key: "${intervention.originalDescriptionKey}" -> success: ${dynamicTranslation !== intervention.originalDescriptionKey}`
         );
-        if (
-          dynamicTranslation &&
-          dynamicTranslation !== intervention.originalDescriptionKey
-        ) {
-          return dynamicTranslation;
+        
+        // If we got a valid translation (not just the key back)
+        if (dynamicTranslation && dynamicTranslation !== intervention.originalDescriptionKey) {
+          // Apply the same formatting as the strategy screens
+          const formattedTranslation = dynamicTranslation
+            .replace(/\*\*(.*?)\*\*/g, "$1")  // Remove bold markdown
+            .replace(/^\s*-\s*/gm, "• ")      // Convert dashes to bullets
+            .replace(/'/g, "")                // Remove quotes
+            .trim();
+          return formattedTranslation;
         }
       } catch (error) {
-        console.log(
-          "[InterventionDetail] Error with description dynamic translation:",
-          error,
-        );
+        console.log("[InterventionDetail] Translation key failed:", error);
       }
     }
     
-    // Try to find translation in the common mapping for shorter descriptions
-    const descriptionTranslation =
-      interventionTranslations[
-        description as keyof typeof interventionTranslations
-      ];
-    if (descriptionTranslation) {
-      return descriptionTranslation[currentLocale];
+    // For existing interventions that might have stored translated descriptions,
+    // check if current locale is English - if so, return as-is
+    // If not English, try to find translation in our mapping
+    if (currentLocale !== "en") {
+      // Try to find in our intervention translations mapping
+      const exactMatch = interventionTranslations[description as keyof typeof interventionTranslations];
+      if (exactMatch) {
+        console.log(`[InterventionDetail] Found translation in mapping`);
+        return exactMatch[currentLocale] || description;
+      }
+      
+      // Try case-insensitive match for stored descriptions
+      const lowerDesc = description.toLowerCase();
+      const matchedKey = Object.keys(interventionTranslations).find(
+        key => key.toLowerCase() === lowerDesc
+      );
+      if (matchedKey) {
+        const translation = interventionTranslations[matchedKey as keyof typeof interventionTranslations];
+        console.log(`[InterventionDetail] Found case-insensitive match in mapping`);
+        return translation[currentLocale] || description;
+      }
     }
     
-    // Try case-insensitive match for shorter descriptions
-    const lowerCaseDescription = description.toLowerCase();
-    const caseInsensitiveMatch = Object.keys(interventionTranslations).find(
-      (key) => key.toLowerCase() === lowerCaseDescription,
-    );
-    if (caseInsensitiveMatch) {
-      const translation =
-        interventionTranslations[
-          caseInsensitiveMatch as keyof typeof interventionTranslations
-        ];
-      return translation[currentLocale];
-    }
-    
-    // For longer descriptions, try to translate individual sentences or phrases
-    // This is a basic implementation - you might want to enhance this further
-    let translatedDescription = description;
-    
-    // Try to translate common phrases within the description
-    Object.entries(interventionTranslations).forEach(
-      ([englishText, translations]) => {
-        if (description.includes(englishText)) {
-          translatedDescription = translatedDescription.replace(
-            new RegExp(englishText, "gi"),
-            translations[currentLocale],
-          );
-        }
-      },
-    );
-    
-    // Return the processed description (or original if no translations found)
-    return translatedDescription;
+    // If no translation available or we're in English, return the original description
+    console.log(`[InterventionDetail] Using original description (no translation needed or available)`);
+    return description;
   };
 
   const handleBackPress = () => {
@@ -577,7 +544,7 @@ export default function InterventionDetailScreen({ navigation, route }: any) {
 
   // Helper function to get localized intervention type
   const getLocalizedInterventionType = (type: string): string => {
-    const currentLocale = "en" as "en" | "hi" | "mr";
+    const currentLocale = locale as "en" | "hi" | "mr";
     
     // Define intervention type translations
     const typeTranslations: Record<

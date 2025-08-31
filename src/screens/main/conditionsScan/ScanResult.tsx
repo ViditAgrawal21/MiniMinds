@@ -28,7 +28,8 @@ import { getTranslatedScanName } from "../../../utils/scanNameTranslations"; // 
 import {
   saveScanResultBasic as saveScanResult,
   getScanResultsHistory,
-} from "@/services/database"; // Import the saveScanResult, and getScanResultsHistory functions
+  getAllScanResults,
+} from "@/services/database"; // Import the saveScanResult, getScanResultsHistory, and getAllScanResults functions
 import { testDatabaseSave, logDatabaseInfo } from "@/utils/databaseDebug";
 
 import RecommendedInterventions from "./../../../components/RecommendedInterventions";
@@ -212,9 +213,17 @@ export default function AddictionScanResult() {
   const route = useRoute<ScanResultRouteProp>();
   const { scanName, totalScore } = route.params || {};
 
+  // Debug logging to track component initialization
+  console.log("ScanResult: Component initialized");
+  console.log("ScanResult: Route params:", route.params);
+  console.log("ScanResult: scanName:", scanName);
+  console.log("ScanResult: totalScore:", totalScore);
+
   // Safety check for required parameters
   if (!scanName || totalScore === undefined) {
     console.error("ScanResult: scanName and totalScore are required but not provided");
+    console.error("ScanResult: scanName:", scanName);
+    console.error("ScanResult: totalScore:", totalScore);
     return null;
   }
 
@@ -749,13 +758,16 @@ export default function AddictionScanResult() {
       try {
         setIsLoading(true);
         if (scanName) {
-          const history = await getScanResultsHistory(scanName as string);
-          if (history.length === 0) {
+          // Get all scan results and filter by scanName
+          const history = await getAllScanResults();
+          const filteredHistory = history.filter((h) => h.scan_title === scanName);
+          
+          if (filteredHistory.length === 0) {
             return;
           }
 
           // Format dates for chart labels
-          const labels = history.map((h) => {
+          const labels = filteredHistory.map((h) => {
             const date = new Date(`${h.scan_date} ${h.scan_time}`);
             return `${date.toLocaleDateString("en-US", {
               month: "short",
