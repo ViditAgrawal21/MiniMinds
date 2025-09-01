@@ -40,6 +40,7 @@ export default function UpgradeToPremium() {
   const loadStatus = React.useCallback(async () => {
     try {
       const status = await getPremiumStatus();
+      console.log("status",status)
       setPremiumStatusState(status);
     } catch (e) {
       console.warn("Failed to load premium status", e);
@@ -106,7 +107,7 @@ export default function UpgradeToPremium() {
     }
     
     // Since our PremiumStatus type is simpler now, we'll use a default plan name
-    const plan = "premium";
+    const plan =  premiumStatus?.planType ||  "premium";
     
     // For backward compatibility, we'll define an empty array for features
     const feats: string[] = [];

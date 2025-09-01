@@ -131,7 +131,7 @@ const LoginScreen = ({ navigation }) => {
       }
     };  
     
-    checkAuthStatus();
+    // checkAuthStatus();
   }, [navigation]);
 
  
