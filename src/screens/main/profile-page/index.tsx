@@ -15,12 +15,13 @@ import ProfileMenuItem from "../../../components/ProfileMenuItem";
 import CustomIcon from "@/components/CustomIcon";
 import { useNavigation } from "@react-navigation/native";
 import { t } from "@/i18n/locales/i18n"; // Import translation function
+import { useExitConfirmation } from "@/hooks/useExitConfirmation";
 
 interface MenuItem {
   label: string;
   subLabel?: string;
   progress?: number;
-  type: "general" | "onboarding" | "guardian" | "mindtools" | "language";
+  type: "general" | "onboarding" | "guardian" | "mindtools" | "language" | "logout";
 }
 
 export default function ProfilePage() {
@@ -29,6 +30,9 @@ export default function ProfilePage() {
   const [onboardingType, setOnboardingType] = useState<"self" | "child" | null>(
     null,
   );
+
+  // Exit confirmation hook
+  const { ExitConfirmationModal } = useExitConfirmation();
 
   useEffect(() => {
     const fetchOnboardingProgress = async () => {
@@ -111,6 +115,49 @@ export default function ProfilePage() {
     navigation.navigate("UpgradeToPremium" );
   };
 
+  const handleLogout = () => {
+    Alert.alert(
+      t("profilePage.logoutTitle", "Logout"),
+      t("profilePage.logoutMessage", "Are you sure you want to logout?"),
+      [
+        {
+          text: t("common.cancel", "Cancel"),
+          style: "cancel",
+        },
+        {
+          text: t("common.logout", "Logout"),
+          style: "destructive",
+          onPress: async () => {
+            try {
+              // Clear all stored data
+              await AsyncStorage.multiRemove([
+                "onboardingResponses",
+                "userToken",
+                "userProfile",
+                "isLoggedIn",
+                "hasCompletedSelfAssessment",
+                "hasSelectedLanguage",
+                // Add any other keys you want to clear on logout
+              ]);
+              
+              // Navigate to login screen
+              navigation.reset({
+                index: 0,
+                routes: [{ name: "Login" as never }],
+              });
+            } catch (error) {
+              console.error("Error during logout:", error);
+              Alert.alert(
+                t("common.error", "Error"),
+                t("profilePage.logoutError", "An error occurred while logging out. Please try again."),
+              );
+            }
+          },
+        },
+      ],
+    );
+  };
+
   const handleContinueOnboarding = () => {
     if (onboardingProgress === 100) {
       // Show completion alert based on onboarding type
@@ -191,6 +238,11 @@ export default function ProfilePage() {
     //   label: t("profilePage.mindToolSettings", "Mind Tool Settings"),
     //   type: "mindtools",
     // },
+    {
+      label: t("profilePage.logout", "Logout"),
+      subLabel: t("profilePage.logoutSubLabel", "Sign out of your account"),
+      type: "logout",
+    },
   ];
 
   return (
@@ -226,6 +278,9 @@ export default function ProfilePage() {
                   case "mindtools":
                     // Handle mind tools navigation if needed
                     break;
+                  case "logout":
+                    handleLogout();
+                    break;
                 }
               }}
             />
@@ -248,6 +303,9 @@ export default function ProfilePage() {
           </Pressable>
         </View>
       </ScrollView>
+      
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmationModal />
     </SafeAreaView>
   );
 }

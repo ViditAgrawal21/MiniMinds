@@ -667,7 +667,11 @@
     "dailyInterventions": "दैनिक",
     "weeklyInterventions": "साप्ताहिक",
     "biweeklyInterventions": "द्विसाप्ताहिक",
-    "monthlyInterventions": "मासिक"
+    "monthlyInterventions": "मासिक",
+    "exitAppTitle": "ऐप से बाहर निकलें",
+    "exitAppMessage": "क्या आप वाकई ऐप से बाहर निकलना चाहते हैं?",
+    "cancel": "रद्द करें",
+    "exit": "बाहर निकलें"
   },
   "conditionScans": {
     "headerTitle": "अपनी सशर्त कल्याण की जाँच करें",

@@ -1302,8 +1302,12 @@
     "dailyInterventions": "Daily",
     "weeklyInterventions": "Weekly",
     "biweeklyInterventions": "Bi-weekly",
-    "monthlyInterventions": "Monthly",
-    "wellnessScoreInfo": "Score depends on onboarding questions and test result. Every XP you gain counts here."
+  "monthlyInterventions": "Monthly",
+  "wellnessScoreInfo": "Score depends on onboarding questions and test result. Every XP you gain counts here.",
+  "exitAppTitle": "Exit App",
+  "exitAppMessage": "Are you sure you want to exit the app?",
+  "cancel": "Cancel",
+  "exit": "Exit"
   },
   "conditionScans": {
     "headerTitle": "Check your conditional wellness",

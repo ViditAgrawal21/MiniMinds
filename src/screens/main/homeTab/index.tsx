@@ -17,6 +17,8 @@ import {
   Platform,
   Pressable,
   Modal,
+  BackHandler,
+  Alert,
 } from "react-native";
 import * as Progress from "react-native-progress";
 import Icon from "react-native-vector-icons/MaterialIcons";
@@ -36,6 +38,7 @@ import RecommendedInterventionsList, {
 import interventionObject from "@/components/interventionScanDBCall";
 import { t } from "@/i18n/locales/i18n"; // Import translation function directly
 import { getWellnessScore } from "@/utils/wellnessScore";
+import { useExitConfirmation } from "@/hooks/useExitConfirmation";
 // ---------------------------------------------------------------------------
 // Daily Mind‑Tools and EQ decks (round‑robin rotation)
 // ---------------------------------------------------------------------------
@@ -124,6 +127,7 @@ const eqTips: EqTip[] = [
     ],
   },
 ];
+
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
 // ---------------------------------------------------------------------------
@@ -432,6 +436,9 @@ const getWellnessAvatar = (
 export default function HomeTab() {
   // Language hook  
   const { locale } = useLanguage();
+  
+  // Exit confirmation hook
+  const { ExitConfirmationModal } = useExitConfirmation();
   
   // Move these hooks to the very top of the component
   const [selectedTip, setSelectedTip] = useState<SimpleTip | null>(null);
@@ -1360,6 +1367,9 @@ export default function HomeTab() {
               </View>
             </View>
           </Modal>
+
+          {/* Exit Confirmation Modal */}
+          <ExitConfirmationModal />
         </View>
       </SafeAreaView>
   );

@@ -20,6 +20,7 @@ import { canAccessFeature } from "../../../utils/premiumUtils";
 import MoodSelector from "../../../components/MoodSelector";
 //import Interventions from "../../../components/Interventions/Interventions";
 import MindfulPlaylist from "../../../components/MindfulPlaylist/MindfulPlaylist";
+import { useExitConfirmation } from "../../../hooks/useExitConfirmation";
 
 // Define your navigation stack param list
 type RootStackParamList = {
@@ -55,6 +56,9 @@ export default function MindToolsScreen() {
     null,
   );
   const navigation = useNavigation();
+
+  // Exit confirmation hook
+  const { ExitConfirmationModal } = useExitConfirmation();
 
 
   // Define category access requirements (same as condition scans)
@@ -745,6 +749,9 @@ export default function MindToolsScreen() {
           </View>
         </View>
       </Modal>
+
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmationModal />
     </SafeAreaView>
   );
 }

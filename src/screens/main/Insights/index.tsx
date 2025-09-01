@@ -20,6 +20,7 @@ import { getTotalXP } from "@/utils/xpSystem"; // Import XP utility
 
 import FilterDropdown from "../../../components/FilterDropdown";
 import { getAllScanResults } from "@/services/database";
+import { useExitConfirmation } from "@/hooks/useExitConfirmation";
 
 /* ---------- helpers ---------- */
 
@@ -82,6 +83,9 @@ export default function InsightsScreen({
   const [isLoading, setIsLoading] = useState(true);
   const [allResults, setAllResults] = useState<Item[]>([]);
   const [filtered, setFiltered] = useState<Item[]>([]);
+
+  // Exit confirmation hook
+  const { ExitConfirmationModal } = useExitConfirmation();
 
   // Dashboard state
   const [conditionsCount, setConditionsCount] = useState(0);
@@ -583,6 +587,9 @@ export default function InsightsScreen({
           )}
         </ScrollView>
       )}
+      
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmationModal />
     </SafeAreaView>
   );
 }

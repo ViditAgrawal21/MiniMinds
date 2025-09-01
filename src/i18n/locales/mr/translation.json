@@ -667,7 +667,11 @@
     "dailyInterventions": "दैनिक",
     "weeklyInterventions": "साप्ताहिक",
     "biweeklyInterventions": "द्विसाप्ताहिक",
-    "monthlyInterventions": "मासिक"
+    "monthlyInterventions": "मासिक",
+    "exitAppTitle": "अॅप बंद करा",
+    "exitAppMessage": "तुमची खात्री आहे की तुम्हाला अॅप बंद करायचे आहे?",
+    "cancel": "रद्द करा",
+    "exit": "बाहेर पडा"
   },
   "conditionScans": {
     "headerTitle": "तुमची सशर्त वेलनेस तपासा",
