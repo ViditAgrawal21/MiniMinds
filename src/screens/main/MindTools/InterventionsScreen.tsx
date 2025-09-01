@@ -430,11 +430,11 @@ export default function InterventionsScreen({ navigation, route }: any) {
       const onBackPress = () => {
         // Navigate back to the source screen
         if (sourceScreen === "MindTools") {
-          navigation.navigate("Tab", { screen: "MindTools" });
+          navigation.navigate("MainApp", { screen: "MindTools" });
         } else if (sourceScreen === "homeTab") {
-          navigation.navigate("Tab", { screen: "Home" });
+          navigation.navigate("MainApp", { screen: "Home" });
         } else if (sourceScreen === "Insights") {
-          navigation.navigate("Tab", { screen: "Insights" });
+          navigation.navigate("MainApp", { screen: "Insights" });
         } else {
           // Fallback to standard back navigation
           navigation.goBack();
@@ -1137,14 +1137,16 @@ export default function InterventionsScreen({ navigation, route }: any) {
     }, 1500);
   };
 
+  console.log("sourceScreen",sourceScreen,route?.params)
+
   const handleBackPress = () => {
     // Navigate back to the source screen with proper routing
     if (sourceScreen === "MindTools") {
-      navigation.navigate("MindTools");
+      navigation.navigate("MainApp", { screen: "MindTools" });
     } else if (sourceScreen === "homeTab") {
-      navigation.navigate("Home");
-    } else if (sourceScreen === "InsightsScreen") {
-      navigation.navigate("Insights");
+      navigation.navigate("MainApp", { screen: "Home" });
+    } else if (sourceScreen === "Insights") {
+      navigation.navigate("MainApp", { screen: "Insights" });
     } else {
       // Fallback to standard back navigation
       navigation.goBack();

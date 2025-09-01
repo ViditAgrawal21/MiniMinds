@@ -25,6 +25,8 @@ import ProfilePage from "@/screens/main/profile-page";
 import { t } from "@/i18n/locales";
 import HomeTab from "@/screens/main/homeTab";
 import MindToolsScreen from "@/screens/main/MindTools/MindToolsScreen";
+import ConditionsManagementScreen from "@/screens/main/ConditionsManagement";
+import ConditionDetailScreen from "@/screens/main/ConditionDetailScreen";
 
 /**
  * @typedef {Object} TabItemProps
@@ -95,11 +97,11 @@ function MainTabNavigator({
           <InsightsScreen
             navigation={{
               ...navigation,
-              navigate: (screen) => {
+              navigate: (screen, params) => {
                 if (screen === "ConditionsManagement") {
                   setCurrentScreen(screen);
                 } else {
-                  navigation.navigate(screen);
+                  navigation.navigate(screen, params);
                 }
               },
             }}

@@ -73,7 +73,7 @@ const translateScanType = (scanType: string): string => {
 export default function InsightsScreen({
   navigation,
 }: {
-  navigation?: { navigate: (screen: string) => void };
+  navigation?: { navigate: (screen: string, params?: any) => void };
 } = {}) {
   /* state */
   const [activeTab, setActiveTab] = useState<"Dashboard" | "Insights">(

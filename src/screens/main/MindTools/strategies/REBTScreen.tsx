@@ -849,42 +849,19 @@ export default function REBTScreen({ navigation, route }: any) {
       <Modal
         visible={showTaskModal}
         transparent={true}
-        animationType="none"
+        animationType="slide"
         onRequestClose={hideModal}
         statusBarTranslucent={true}
       >
-        <Animated.View
-          style={[
-            styles.modalOverlay,
-            {
-              opacity: modalAnimation,
-            },
-          ]}
-        >
+        <View style={styles.modalOverlay}>
           <Pressable style={styles.modalOverlayTouchable} onPress={hideModal}>
-            <Animated.View
-              style={[
-                styles.modalContainer,
-                {
-                  transform: [
-                    {
-                      scale: modalAnimation.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: [0.9, 1],
-                      }),
-                    },
-                    {
-                      translateY: modalAnimation.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: [50, 0],
-                      }),
-                    },
-                  ],
-                  opacity: modalAnimation,
-                },
-              ]}
-            >
-              <Pressable onPress={() => {}} style={styles.modalContent}>
+            <View style={styles.modalContainer}>
+              <Pressable 
+                onPress={(e) => e.stopPropagation()} 
+                style={styles.modalContent}
+                accessible={true}
+                accessibilityLabel={t("rebtScreen.modal.title")}
+              >
                 {/* Modal Header */}
                 <View style={styles.modalHeader}>
                   <Text style={styles.modalTitle}>{t("rebtScreen.modal.title")}</Text>
@@ -932,6 +909,10 @@ export default function REBTScreen({ navigation, route }: any) {
                         },
                       ]}
                       onPress={() => handleTaskFrequencySelect(option.key)}
+                      accessible={true}
+                      accessibilityRole="button"
+                      accessibilityLabel={t("rebtScreen.frequency.practice", { frequency: option.key })}
+                      accessibilityHint={option.description}
                     >
                       <View
                         style={[
@@ -939,7 +920,8 @@ export default function REBTScreen({ navigation, route }: any) {
                           { backgroundColor: option.color },
                         ]}
                       >
-                        <CustomIcon type="IO"
+                        <CustomIcon 
+                          type="IO"
                           name={option.icon as any}
                           size={24}
                           color="#FFFFFF"
@@ -953,7 +935,8 @@ export default function REBTScreen({ navigation, route }: any) {
                           {option.description}
                         </Text>
                       </View>
-                      <CustomIcon type="IO"
+                      <CustomIcon 
+                        type="IO"
                         name="chevron-forward"
                         size={20}
                         color="#9CA3AF"
@@ -972,13 +955,16 @@ export default function REBTScreen({ navigation, route }: any) {
                     },
                   ]}
                   onPress={hideModal}
+                  accessible={true}
+                  accessibilityRole="button"
+                  accessibilityLabel={t("rebtScreen.modal.cancel")}
                 >
                   <Text style={styles.cancelButtonText}>{t("rebtScreen.modal.cancel")}</Text>
                 </Pressable>
               </Pressable>
-            </Animated.View>
+            </View>
           </Pressable>
-        </Animated.View>
+        </View>
       </Modal>
     </View>
   );

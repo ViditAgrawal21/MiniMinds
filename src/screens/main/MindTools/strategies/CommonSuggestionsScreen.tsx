@@ -572,42 +572,19 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       <Modal
         visible={showTaskModal}
         transparent={true}
-        animationType="none"
+        animationType="slide"
         onRequestClose={hideModal}
         statusBarTranslucent={true}
       >
-        <Animated.View
-          style={[
-            styles.modalOverlay,
-            {
-              opacity: modalAnimation,
-            },
-          ]}
-        >
-          <TouchableWithoutFeedback style={styles.modalOverlayTouchable} onPress={hideModal}>
-            <Animated.View
-              style={[
-                styles.modalContainer,
-                {
-                  transform: [
-                    {
-                      scale: modalAnimation.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: [0.9, 1],
-                      }),
-                    },
-                    {
-                      translateY: modalAnimation.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: [50, 0],
-                      }),
-                    },
-                  ],
-                  opacity: modalAnimation,
-                },
-              ]}
-            >
-              <Pressable onPress={() => {}} style={styles.modalContent}>
+        <View style={styles.modalOverlay}>
+          <Pressable style={styles.modalOverlayTouchable} onPress={hideModal}>
+            <View style={styles.modalContainer}>
+              <Pressable 
+                onPress={(e) => e.stopPropagation()} 
+                style={styles.modalContent}
+                accessible={true}
+                accessibilityLabel={t("commonSuggestionsScreen.modal.title")}
+              >
                 {/* Modal Header */}
                 <View style={styles.modalHeader}>
                   <Text style={styles.modalTitle}>
@@ -669,6 +646,10 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                         },
                       ]}
                       onPress={() => handleTaskFrequencySelect(option.key)}
+                      accessible={true}
+                      accessibilityRole="button"
+                      accessibilityLabel={t(option.titleKey)}
+                      accessibilityHint={t(option.descriptionKey)}
                     >
                       <View
                         style={[
@@ -709,15 +690,18 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
                     },
                   ]}
                   onPress={hideModal}
+                  accessible={true}
+                  accessibilityRole="button"
+                  accessibilityLabel={t("commonSuggestionsScreen.modal.cancel")}
                 >
                   <Text style={styles.cancelButtonText}>
                     {t("commonSuggestionsScreen.modal.cancel")}
                   </Text>
                 </Pressable>
               </Pressable>
-            </Animated.View>
-          </TouchableWithoutFeedback>
-        </Animated.View>
+            </View>
+          </Pressable>
+        </View>
       </Modal>
     </View>
   );
