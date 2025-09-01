@@ -338,37 +338,9 @@ export default function EmpathyStrategyScreen({ navigation }: any) {
         onRequestClose={hideModal}
         statusBarTranslucent={true}
       >
-        <Animated.View
-          style={[
-            styles.modalOverlay,
-            {
-              opacity: modalAnimation,
-            },
-          ]}
-        >
+        <View style={styles.modalOverlay}>
           <Pressable style={styles.modalOverlayTouchable} onPress={hideModal}>
-            <Animated.View
-              style={[
-                styles.modalContainer,
-                {
-                  transform: [
-                    {
-                      scale: modalAnimation.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: [0.9, 1],
-                      }),
-                    },
-                    {
-                      translateY: modalAnimation.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: [50, 0],
-                      }),
-                    },
-                  ],
-                  opacity: modalAnimation,
-                },
-              ]}
-            >
+            <View style={styles.modalContainer}>
               <Pressable onPress={() => {}} style={styles.modalContent}>
                 {/* Modal Header */}
                 <View style={styles.modalHeader}>
@@ -465,9 +437,9 @@ export default function EmpathyStrategyScreen({ navigation }: any) {
                   <Text style={styles.cancelButtonText}>Cancel</Text>
                 </Pressable>
               </Pressable>
-            </Animated.View>
+            </View>
           </Pressable>
-        </Animated.View>
+        </View>
       </Modal>
     </View>
   );

@@ -878,7 +878,7 @@ export default function EQTestQuestionsScreen() {
         <Text style={styles.label}>{currentPair[0].question}</Text>
         <View>
           {currentPair[0].options.map((option, index) => (
-            <Pressable
+            <TouchableOpacity
               key={index}
               style={styles.radioItem}
               onPress={() => setAnswer1(option.value)}
@@ -894,7 +894,7 @@ export default function EQTestQuestionsScreen() {
                 </View>
               </View>
               <Text style={styles.radioText}>{option.label}</Text>
-            </Pressable>
+            </TouchableOpacity>
           ))}
         </View>
 
@@ -977,14 +977,14 @@ const styles = StyleSheet.create({
     fontFamily: "Poppins-Medium",
     color: "#A63BAA",
     fontWeight: "500",
-    marginBottom: -3,
+    marginBottom: 8,
     marginTop: 25,
     marginLeft: 15,
   },
   radioItem: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: -15,
+    // marginBottom: -15,
     marginLeft: 5,
   },
   radioText: {

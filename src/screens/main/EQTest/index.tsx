@@ -21,6 +21,7 @@ import {
   ComprehensiveReportData,
 } from "@/utils/eqTestUtils";
 import ComprehensiveReport from "@/components/EQTest/ComprehensiveReport";
+import { hasUltraTier } from "@/utils/premiumUtils";
 
 export default function EQTestScreen() {
   const navigation = useNavigation();
@@ -45,6 +46,7 @@ export default function EQTestScreen() {
   const [showComprehensiveReport, setShowComprehensiveReport] =
     React.useState(false);
   const [showIncompleteModal, setShowIncompleteModal] = React.useState(false);
+  const [showSubscriptionModal, setShowSubscriptionModal] = React.useState(false);
 
   // Load test statuses when screen comes into focus
   const loadTestStatuses = React.useCallback(async () => {
@@ -153,13 +155,27 @@ export default function EQTestScreen() {
     [t, handleComprehensiveReport],
   );
 
-  const handleTestSelect = (test: any) => {
-    // Navigate to the questions screen with the selected test data
-    // @ts-ignore
-    navigation.navigate("EQTestQuestions", {
-      testId: test.id,
-      testTitle: test.title,
-    });
+  const handleTestSelect = async (test: any) => {
+    try {
+      // Check if user has Ultra subscription
+      const hasUltra = await hasUltraTier();
+      
+      if (hasUltra) {
+        // User has Ultra subscription, proceed to test
+        // @ts-ignore
+        navigation.navigate("EQTestQuestions", {
+          testId: test.id,
+          testTitle: test.title,
+        });
+      } else {
+        // User doesn't have Ultra subscription, show modal
+        setShowSubscriptionModal(true);
+      }
+    } catch (error) {
+      console.error("Error checking subscription:", error);
+      // On error, show subscription modal as fallback
+      setShowSubscriptionModal(true);
+    }
   };
 
   const getStatusIconName = (testId: number): string => {
@@ -295,6 +311,47 @@ export default function EQTestScreen() {
               onClose={() => setShowComprehensiveReport(false)}
             />
           )}
+        </Modal>
+
+        {/* Subscription Required Modal */}
+        <Modal
+          visible={showSubscriptionModal}
+          transparent={true}
+          animationType="fade"
+          onRequestClose={() => setShowSubscriptionModal(false)}
+        >
+          <View style={styles.modalOverlay}>
+            <View style={styles.modalContent}>
+              <Text style={styles.modalTitle}>
+                {t("eqTest.subscriptionModal.title", "Ultra Subscription Required")}
+              </Text>
+              <Text style={styles.modalMessage}>
+                {t("eqTest.subscriptionModal.message", "EQ Test feature requires an Ultra subscription to access. Please upgrade to continue.")}
+              </Text>
+              <View style={styles.modalButtonContainer}>
+                <TouchableOpacity
+                  style={[styles.modalButton, styles.modalButtonSecondary]}
+                  onPress={() => setShowSubscriptionModal(false)}
+                >
+                  <Text style={[styles.modalButtonText, styles.modalButtonTextSecondary]}>
+                    {t("eqTest.subscriptionModal.cancelButton", "Cancel")}
+                  </Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.modalButton}
+                  onPress={() => {
+                    setShowSubscriptionModal(false);
+                    // @ts-ignore
+                    navigation.navigate("UpgradeToPremium");
+                  }}
+                >
+                  <Text style={styles.modalButtonText}>
+                    {t("eqTest.subscriptionModal.upgradeButton", "Upgrade Now")}
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>
         </Modal>
       </SafeAreaView>
   );
@@ -454,11 +511,24 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: 12,
     paddingHorizontal: 24,
-    alignSelf: "center",
+    flex: 1,
+    alignItems: "center",
   },
   modalButtonText: {
     fontSize: 14,
     fontFamily: "Poppins-Bold",
     color: "#FFFFFF",
+  },
+  modalButtonContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    gap: 12,
+  },
+  modalButtonSecondary: {
+    backgroundColor: "#E0E0E0",
+    flex: 1,
+  },
+  modalButtonTextSecondary: {
+    color: "#666666",
   },
 });
