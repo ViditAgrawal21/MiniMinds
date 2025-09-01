@@ -29,12 +29,12 @@ import { TextInput } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useLanguage } from "src/context/LanguageContext";
+import { useLanguage } from "@/context/LanguageContext";
 import RecommendedInterventionsList, {
   ScanItem,
 } from "@/components/common/RecommendedInterventionsList";
 import interventionObject from "@/components/interventionScanDBCall";
-import { t } from "@/i18n/locales";
+import { t } from "@/i18n/locales/i18n"; // Import translation function directly
 // ---------------------------------------------------------------------------
 // Daily Mind‑Tools and EQ decks (round‑robin rotation)
 // ---------------------------------------------------------------------------
@@ -48,167 +48,27 @@ type SimpleTip = {
 };
 type EqTip = { title: string; description: string[] };
 
-const mindToolsTips: SimpleTip[] = [
-  {
-    title: "Emotional Auditing",
-    description:
-      "Emotional auditing is a systematic approach to understanding your emotional landscape by maintaining detailed logs of your feelings, triggers, and responses. This practice involves tracking not just what you feel, but when you feel it, what caused it, and how your body responds. Research shows that people who regularly audit their emotions develop greater emotional intelligence, improved stress management, and stronger relationships. The process helps identify patterns in your emotional responses, recognize early warning signs of stress or overwhelm, and create targeted strategies for emotional regulation. By documenting your emotional journey, you create a personal database of insights that can guide future decisions and help you understand your authentic needs and boundaries. This technique is particularly powerful for those who struggle with emotional overwhelm, unclear boundaries, or difficulty expressing their needs to others.",
-    example:
-      "Monday 3 PM: Felt intense frustration and tightness in chest during team meeting. Trigger: My project proposal was interrupted three times by colleagues who didn't let me finish explaining. Pattern noticed: I often feel unheard in group settings when multiple people speak over me. Physical response: Jaw clenched, hands gripped pen tightly. Need identified: To feel respected and heard when presenting ideas. Action taken: Scheduled one-on-one with manager to discuss meeting dynamics and communication preferences. Tuesday 7 AM: Experienced surge of anxiety while checking emails. Trigger: Saw urgent email from client that seemed negative in tone. Pattern: I catastrophize before reading full context. Reality check: Email was actually positive feedback with urgent questions. Learning: Practice reading full context before emotional reaction.",
-    task: "Create a comprehensive 'Emotion Tracker' journal using a notebook or digital app. For the next 7 days, log at least 3 emotional moments daily. For each entry, include: (1) Time and situation, (2) Specific emotion and intensity (1-10 scale), (3) Physical sensations you noticed, (4) What triggered this emotion, (5) How you responded or what you did, (6) What you needed in that moment, (7) Any patterns you're starting to notice. At the end of the week, review your entries and identify your top 3 emotional triggers and your most effective coping strategies.",
-  },
-  {
-    title: "Reverse Gratitude",
-    description:
-      "Reverse gratitude shifts the traditional gratitude practice by focusing on the positive impact you have on others rather than what you receive. This powerful technique combats feelings of worthlessness, imposter syndrome, and social isolation by helping you recognize your inherent value and contribution to the world. Unlike standard gratitude practices that can sometimes feel forced or superficial, reverse gratitude taps into your natural human need to feel useful and connected. Scientific studies indicate that people who regularly practice reverse gratitude experience increased self-esteem, stronger social connections, and reduced symptoms of depression. The practice works by activating the same neural pathways associated with purpose and meaning, while simultaneously building empathy and social awareness. It's particularly effective for caregivers, people in helping professions, parents, and anyone who tends to undervalue their contributions or struggles with feelings of inadequacy.",
-    example:
-      "Today I spent 20 minutes listening to my neighbor talk about her job stress. She seemed lighter afterward and thanked me for being such a good listener. My teenager might be grateful that I didn't lecture him about his messy room and instead just asked how his day was - he actually opened up about friendship drama at school. The barista at my coffee shop smiled when I remembered her name and asked about her college classes. My colleague might appreciate that I always respond to her questions promptly and never make her feel dumb for asking. My elderly mother is probably grateful that I call every Sunday, even when I'm busy, because I know it makes her feel less lonely. Even my dog is grateful for the daily walks I provide, the consistent feeding schedule, and the way I talk to him like he understands everything.",
-    task: "For the next 14 days, write down 5 people who might be grateful for something you did, said, or provided that day. Include family members, friends, colleagues, strangers, and even pets. Be specific about what you did and why it might have mattered to them. Don't limit yourself to big gestures - include small acts like smiling at someone, holding a door, answering a question, or simply being present. Each week, choose one person from your list and tell them specifically how you think they might have been impacted by your actions. Notice how this makes you feel about your own worth and contribution to the world.",
-  },
-  {
-    title: "The 5‑5‑5 Rule",
-    description:
-      "The 5‑5‑5 Rule is a powerful cognitive reframing technique that helps put current stressors and problems into proper perspective by examining their long-term significance. This mental tool works by interrupting the brain's tendency to catastrophize or over-focus on immediate concerns, helping you distinguish between genuine crises and temporary inconveniences. The technique is rooted in cognitive behavioral therapy principles and helps activate your prefrontal cortex - the brain region responsible for logical thinking and perspective-taking. Research shows that people who regularly practice perspective-taking techniques like the 5‑5‑5 Rule experience reduced anxiety, better decision-making under stress, and improved emotional regulation. The rule is particularly effective for perfectionists, overthinkers, and people prone to anxiety disorders. It works because it forces your brain to zoom out from the immediate emotional intensity and consider the broader context of your life, helping you allocate your mental energy more wisely.",
-    example:
-      "Situation: I sent an email to my boss with a typo in the subject line and I'm mortified. 5 days: My boss probably won't even remember this small mistake by next week, and it definitely won't affect my performance review. 5 months: This will be completely forgotten and will have zero impact on my career trajectory. 5 years: This won't even be a memory - I'll probably have had hundreds of interactions with my boss since then. Conclusion: I can let this go and focus my energy on the presentation I'm giving tomorrow. Another example: I had an awkward conversation with my neighbor and now I'm avoiding them. 5 days: The awkwardness will naturally fade as we both move on with our lives. 5 months: We'll have had many normal interactions since then. 5 years: This moment won't define our relationship at all. Conclusion: I can wave hello tomorrow and not let this affect my peace of mind.",
-    task: "Identify your top 3 current stressors or worries that are consuming mental energy. Write each one at the top of a separate page. For each stressor, honestly answer: 'Will this matter in 5 days? How will I feel about this in 5 months? Will I even remember this in 5 years?' Write detailed responses explaining why or why not. Based on your answers, categorize each stressor as: (A) Deserves immediate attention and action, (B) Worth monitoring but not obsessing over, or (C) Not worth your mental energy. Create an action plan for Category A items, set a check-in date for Category B items, and practice letting go of Category C items. Use this rule daily for the next month whenever you notice yourself spiraling about something.",
-  },
-  {
-    title: "Micro‑Meditation Bursts",
-    description:
-      "Micro-meditation bursts are brief, focused periods of mindfulness practice that can be seamlessly integrated into your daily routine. These mini-meditations are designed to help you quickly center yourself, reduce stress, and regain focus, no matter where you are or what you're doing. The beauty of micro-meditations lies in their accessibility and adaptability; they can be as short as 30 seconds or extend up to 5 minutes, making them perfect for busy schedules. Research indicates that even short bouts of mindfulness practice can significantly decrease stress levels, enhance emotional regulation, and improve overall well-being. Micro-meditations are particularly useful for individuals who find traditional meditation practices challenging due to time constraints or a busy mind. They serve as a mental reset button, allowing you to approach your tasks and interactions with renewed clarity and calm.",
-    example:
-      "Stuck in traffic? Instead of succumbing to road rage or stress, take a micro-meditation break. Close your eyes, take a deep breath, and focus on the sensation of your breath entering and leaving your body. Notice the sounds around you - the hum of the engine, the rustle of leaves, distant conversations. Allow yourself to be fully present in this moment. Another example: Before a big meeting, instead of rehearsing your presentation in your head and increasing your anxiety, take 2 minutes to sit quietly. Focus on your breath, inhale deeply through your nose, hold for a moment, and exhale slowly through your mouth. Visualize yourself entering the meeting room with confidence and clarity.",
-    task: "For the next week, integrate micro-meditation bursts into your daily routine. Start with just one micro-meditation session each day, ideally at a time when you typically feel stressed or unfocused. Gradually increase to two or three sessions per day as you become more comfortable with the practice. Use a meditation app or timer to keep track of your sessions. After each micro-meditation, take a moment to notice any changes in your mood, stress levels, and ability to focus. At the end of the week, reflect on the overall impact of these micro-meditations on your daily life and consider making them a permanent part of your routine.",
-  },
-  {
-    title: "JOMO (Joy of Missing Out)",
-    description:
-      "JOMO, or the Joy of Missing Out, is a mindful approach to social participation that emphasizes quality over quantity. It encourages individuals to engage deeply in the moments and activities that truly matter to them, rather than feeling pressured to be constantly available or involved in every social event. JOMO is about finding contentment and joy in your own company or in the company of a few close friends, without the distractions and noise of larger social gatherings. This concept is particularly relevant in today's hyper-connected world, where the fear of missing out (FOMO) can lead to anxiety, stress, and a diluted sense of self. By embracing JOMO, you can enhance your focus, deepen your relationships, and improve your overall well-being. It allows for a more intentional and meaningful engagement with the world around you.",
-    example:
-      "Instead of feeling anxious about missing a party that all your friends are attending, you choose to stay home and read that book you've been meaning to get to. You enjoy the story at your own pace, and find joy in the quiet and solitude. Another example: You decide not to check social media for a week. Initially, you might feel anxious or disconnected, but soon you start to enjoy the freedom from constant notifications and the pressure to respond immediately. You use this time to engage in activities that truly interest you, like painting, hiking, or learning a musical instrument.",
-    task: "For the next 7 days, practice JOMO by consciously choosing to opt-out of at least one social obligation or digital distraction each day. Replace that time with an activity that brings you genuine joy or relaxation, whether it's a hobby, spending time in nature, or simply enjoying a quiet moment with a cup of tea. Notice how this impacts your mood, stress levels, and overall sense of well-being. At the end of the week, reflect on the experience and consider making JOMO a regular part of your life.",
-  },
-  {
-    title: "Brain Dump Journaling",
-    description:
-      "Brain dump journaling is a free-writing technique that involves writing down all the thoughts, ideas, worries, and to-dos that are cluttering your mind. The goal is to transfer everything from your mind onto the paper (or screen), allowing you to declutter your brain and gain mental clarity. This technique is based on the principles of cognitive behavioral therapy and mindfulness, and it has been shown to reduce anxiety, improve focus, and enhance problem-solving abilities. Brain dump journaling is particularly useful for individuals who experience racing thoughts, have difficulty sleeping due to a busy mind, or feel overwhelmed by the demands of daily life. By regularly practicing brain dump journaling, you can train your mind to focus better, reduce stress, and approach challenges with a clearer, more organized mindset.",
-    example:
-      "Before starting your workday, you take 10 minutes to do a brain dump. You write down every task, idea, and worry that comes to mind, without filtering or organizing. This helps you clear your mind and prioritize your tasks for the day. Another example: You're feeling anxious and overwhelmed in the middle of the day. Instead of succumbing to stress, you take a break and do a brain dump. You write down everything that's bothering you, no matter how big or small. This act of externalizing your thoughts helps you see things more clearly and reduces your anxiety.",
-    task: "Set aside 10-15 minutes at the beginning or end of each day for brain dump journaling. Find a quiet space where you can write without distractions. Use a notebook or digital app - whatever you prefer. The key is to write continuously without worrying about grammar, spelling, or structure. If you're stuck, try starting with 'I'm worried about...', 'I need to remember...', or 'I'm thinking about...'. Let your thoughts flow freely. After your brain dump, take a few minutes to review what you've written. Highlight or circle any action items or important thoughts. This will help you prioritize and organize your tasks and reduce the mental clutter.",
-  },
-  {
-    title: "The Third Story Technique",
-    description:
-      "The Third Story Technique is a conflict resolution and communication strategy that involves reframing a situation or disagreement by imagining how a neutral third party would perceive and describe it. This technique helps to reduce defensiveness, increase empathy, and facilitate more constructive conversations. It's based on the principles of narrative therapy and cognitive behavioral therapy, and it has been shown to be effective in improving communication skills, enhancing emotional intelligence, and resolving interpersonal conflicts. The Third Story Technique is particularly useful in personal and professional relationships where misunderstandings, miscommunications, or conflicts are common. By adopting the perspective of a neutral observer, you can gain valuable insights into the dynamics of the situation, identify unhelpful patterns, and discover new ways to respond more effectively.",
-    example:
-      "You're in a heated argument with a colleague about the direction of a project. Instead of focusing on winning the argument or proving your point, you take a step back and ask yourself: 'If someone else were observing this conversation, what would they see? How would they describe each of us? What might be some common ground or misunderstandings?' This helps you see the situation more objectively and reduces the emotional intensity of the conflict. Another example: You're feeling frustrated with a family member who doesn't seem to understand your perspective. You imagine that a neutral friend is watching the two of you interact. What would they notice? How would they describe your body language, tone of voice, and choice of words? This exercise helps you identify any unhelpful patterns in your communication and consider how you might express yourself more clearly and calmly.",
-    task: "The next time you find yourself in a conflict or heated discussion, consciously apply the Third Story Technique. Before responding or reacting, take a deep breath and ask yourself the following questions: (1) What is my desired outcome in this situation? (2) How might the other person be feeling right now? (3) If I were to describe this situation to a neutral third party, what would I say? (4) What common goals or values do we share that could help resolve this conflict? (5) What is one small step I can take to move towards a resolution? Write down your answers and use them to guide your response. Practice this technique regularly to improve your conflict resolution skills and enhance your emotional intelligence.",
-  },
-  {
-    title: "Deliberate Daydreaming",
-    description:
-      "Deliberate daydreaming is a creative visualization technique that involves intentionally allowing your mind to wander and explore imaginative scenarios, ideas, and possibilities. Unlike regular daydreaming, which can be random and unstructured, deliberate daydreaming is a focused and purposeful practice that can enhance creativity, problem-solving, and emotional well-being. This technique is based on the principles of mindfulness, cognitive behavioral therapy, and creative visualization. Research shows that deliberate daydreaming can increase activity in the brain's default mode network, which is associated with creativity, imagination, and self-referential thought. By regularly engaging in deliberate daydreaming, you can improve your ability to generate new ideas, see connections between seemingly unrelated concepts, and approach challenges with a fresh perspective.",
-    example:
-      "You're working on a challenging problem and feeling stuck. Instead of forcing a solution, you take a break and allow yourself to daydream. You imagine different scenarios, possibilities, and solutions, no matter how outlandish they may seem. This helps you break free from conventional thinking and discover new approaches to the problem. Another example: You're feeling bored and uninspired. Instead of scrolling through social media or watching TV, you close your eyes and daydream about your ideal life, your dream job, or an exciting adventure. This boosts your mood, increases your motivation, and helps you reconnect with your passions and aspirations.",
-    task: "Schedule 5-10 minutes of deliberate daydreaming time into your daily routine. Find a quiet, comfortable space where you can relax and let your mind wander. You can use guided visualization recordings, music, or simply your own imagination. The key is to allow your mind to explore freely without judgment or criticism. If you find it difficult to start, try focusing on a specific question or challenge you're facing, and ask your subconscious mind for creative solutions or insights. After each daydreaming session, take a few minutes to jot down any new ideas, insights, or solutions that emerged during the practice. Use these notes to inspire and guide your actions and decisions.",
-  },
-  {
-    title: "Failure CV",
-    description:
-      "The Failure CV is a reflective exercise that involves creating a curriculum vitae (CV) or resume that highlights your failures, setbacks, and challenges instead of your achievements and successes. This unconventional approach helps to reframe your relationship with failure, reduce the fear of failure, and build resilience and perseverance. The Failure CV exercise is based on the principles of narrative therapy, cognitive behavioral therapy, and positive psychology. Research shows that individuals who can reframe their failures as opportunities for growth and learning are more likely to develop a resilient mindset, maintain motivation in the face of challenges, and achieve long-term success. The Failure CV is particularly useful for individuals who struggle with perfectionism, fear of failure, or negative self-talk. By acknowledging and embracing your failures as valuable learning experiences, you can cultivate a more balanced, realistic, and positive self-image.",
-    example:
-      "Instead of feeling ashamed of your failures, you create a Failure CV that includes: (1) Academic setbacks: Not getting into your desired college, failing a course, or receiving a low grade on an important assignment. (2) Career challenges: Being passed over for a promotion, receiving negative feedback from a manager, or struggling to meet a deadline. (3) Personal struggles: Going through a difficult breakup, facing health issues, or dealing with financial difficulties. (4) Social challenges: Feeling left out of social events, having conflicts with friends or family, or struggling to make new connections. (5) Internal challenges: Dealing with self-doubt, negative thinking, or a lack of motivation. For each item on your Failure CV, you also include: (a) What you learned from the experience, (b) How you grew or changed as a result, (c) What you would do differently next time, (d) How you can apply these lessons to future challenges.",
-    task: "Create your own Failure CV using the following steps: (1) Reflect on your past failures, setbacks, and challenges in different areas of your life (academic, career, personal, social, and internal). (2) For each failure, write a brief description of what happened, how you felt, and what you learned. (3) Identify any patterns or themes in your failures (e.g., common triggers, recurring challenges, or similar emotional responses). (4) Reframe each failure as a valuable learning experience that contributed to your growth and development. (5) Use your Failure CV as a tool for self-reflection, self-compassion, and resilience building. Review and update your Failure CV regularly as you encounter new challenges and learn from your experiences.",
-  },
-  {
-    title: "5‑Second Decision Rule",
-    description:
-      "The 5‑Second Decision Rule is a simple yet effective technique for overcoming procrastination, hesitation, and self-doubt when making decisions or taking action. This rule, popularized by Mel Robbins in her TEDx talk and book 'The 5 Second Rule', is based on the principle that you can change your life in just five seconds by taking immediate action toward your goals or desired outcomes. The 5‑Second Decision Rule works by interrupting the habit loop of overthinking, fear, and procrastination, and replacing it with a quick, decisive action. This technique is particularly useful for individuals who struggle with perfectionism, fear of failure, or anxiety. By consistently applying the 5‑Second Decision Rule, you can train your brain to become more comfortable with uncertainty, more resilient in the face of challenges, and more confident in your decision-making abilities.",
-    example:
-      "You're lying in bed, dreading the thought of getting up early to exercise. Instead of succumbing to the temptation to hit snooze and skip your workout, you count '5-4-3-2-1' and immediately get out of bed. This simple action interrupts your habitual pattern of procrastination and sets a positive tone for the rest of the day. Another example: You're about to make a difficult phone call that you've been avoiding. Instead of letting fear and self-doubt take over, you take a deep breath, count '5-4-3-2-1', and dial the number. By taking immediate action, you overcome your hesitation and increase your confidence.",
-    task: "Identify one task or decision that you've been procrastinating or avoiding due to fear, self-doubt, or overthinking. It could be something related to your health, career, relationships, or personal development. Write down the specific thoughts, fears, or beliefs that are holding you back. Then, apply the 5‑Second Decision Rule by counting '5-4-3-2-1' and taking immediate action toward that task or decision. It could be as simple as making the phone call, sending the email, or starting the project. Notice how this impacts your mood, motivation, and sense of accomplishment. Repeat this process regularly to build your confidence and overcome procrastination.",
-  },
-  {
-    title: "Mirror Questions",
-    description:
-      "Mirror questions are a powerful communication and self-reflection tool that involves asking yourself or others reflective questions that encourage deeper thinking, self-awareness, and empathy. These questions are designed to 'mirror' back the underlying emotions, needs, and values that may not be immediately apparent in a conversation or situation. Mirror questions are based on the principles of active listening, empathy, and cognitive behavioral therapy. Research shows that using mirror questions can improve communication skills, enhance emotional intelligence, and strengthen interpersonal relationships. Mirror questions are particularly useful in conflict resolution, negotiation, and coaching situations, where understanding underlying motivations and emotions is crucial. By regularly practicing mirror questioning, you can develop greater self-awareness, improve your relationships, and become a more effective communicator and problem-solver.",
-    example:
-      "In a conversation with a friend, instead of jumping to conclusions or offering solutions, you ask: 'It sounds like you're feeling really overwhelmed right now. Is that accurate?' This helps your friend reflect on their emotions and provides you with valuable information to respond empathetically. Another example: During a team meeting, instead of assuming you know what your colleague means, you ask: 'When you say that, it makes me wonder if you're feeling unsupported. Is that what you meant?' This encourages open communication and helps clarify any misunderstandings.",
-    task: "Practice using mirror questions in your daily conversations and interactions. Start by identifying one or two key emotions or needs that are often present in your interactions (e.g., feeling heard, understood, respected, or valued). Then, listen carefully to the other person's words, tone, and body language, and ask mirror questions that reflect back what you observe. For example: 'It sounds like you really value honesty and directness, is that right?' or 'I hear you saying that you feel overwhelmed and need some support, is that correct?' Notice how this impacts the quality of your conversations, your relationships, and your own self-awareness.",
-  },
-  {
-    title: "Random Acts of Kindness (Anonymous)",
-    description:
-      "Engaging in random acts of kindness, especially anonymous ones, is a powerful way to boost your mood, increase feelings of social connection, and make a positive impact on others' lives. This practice involves performing small, unexpected acts of kindness for others without revealing your identity. The concept is rooted in the principles of positive psychology, which emphasizes strengths, virtues, and factors that contribute to a fulfilling life. Research shows that performing acts of kindness can lead to increased feelings of happiness, satisfaction, and well-being. It also helps reduce stress, anxiety, and depression. Anonymous acts of kindness are particularly impactful because they foster a sense of connection and empathy without the expectation of recognition or reward. By regularly engaging in random acts of kindness, you can cultivate a more positive, compassionate, and connected mindset.",
-    example:
-      "Leaving a positive, anonymous note in a library book for the next reader to find. Donating to a charity or cause you care about without revealing your identity. Paying for the coffee or meal of the person behind you in line. Leaving extra change in a vending machine for someone else to find. Writing an anonymous letter of appreciation to a colleague or friend. Donating blood or plasma anonymously. Leaving a generous tip for a service worker without providing your name. Sending an anonymous e-card or letter to someone who could use a pick-me-up.",
-    task: "For the next week, commit to performing at least one random act of kindness each day. It can be as simple as holding the door for someone, paying a compliment, or leaving a positive note for a stranger. The key is to do it anonymously, without expecting anything in return. Notice how this impacts your mood, your perception of others, and your overall sense of well-being. At the end of the week, reflect on the experience and consider making random acts of kindness a regular part of your life.",
-  },
-  {
-    title: "No‑Complaint Conversations",
-    description:
-      "Committing to no-complaint conversations is a powerful way to shift your mindset, improve your mood, and enhance your relationships. This practice involves refraining from expressing complaints or negative remarks during conversations, and instead focusing on positive, constructive, and solution-oriented communication. The concept is rooted in the principles of positive psychology and cognitive behavioral therapy, which emphasize the impact of thoughts and language on emotions and behavior. Research shows that adopting a positive communication style can lead to improved relationships, increased feelings of happiness and satisfaction, and reduced symptoms of stress and anxiety. No-complaint conversations are particularly useful in personal and professional relationships where negativity, criticism, or blame can create conflict and dissatisfaction. By regularly practicing no-complaint conversations, you can cultivate a more positive, resilient, and solution-focused mindset.",
-    example:
-      "Instead of complaining about a difficult situation at work, you focus on discussing potential solutions and what you can learn from the experience. Rather than criticizing a friend for being late, you express understanding and suggest a positive activity to enjoy together. Instead of venting about a problem, you share it as a challenge you're working to overcome. Rather than discussing what's wrong, you focus on what you're grateful for and the positive aspects of your life.",
-    task: "For the next 7 days, commit to having at least one no-complaint conversation each day. It can be with a friend, family member, colleague, or even yourself. The key is to focus on positive, constructive, and solution-oriented communication. If you catch yourself complaining or expressing negativity, pause and reframe your thoughts and words to align with a no-complaint approach. Notice how this impacts your mood, your relationships, and your overall sense of well-being. At the end of the week, reflect on the experience and consider making no-complaint conversations a regular part of your life.",
-  },
-  {
-    title: "The Platinum Rule",
-    description:
-      "The Platinum Rule is a powerful interpersonal principle that involves treating others the way they want to be treated, rather than how you would like to be treated. This rule emphasizes empathy, understanding, and respect for individual differences in values, preferences, and needs. The Platinum Rule is based on the principles of emotional intelligence, social awareness, and effective communication. Research shows that individuals who practice the Platinum Rule experience improved relationships, increased trust and respect, and enhanced conflict resolution skills. This rule is particularly useful in diverse and multicultural settings, where understanding and respecting individual differences is crucial. By regularly applying the Platinum Rule, you can cultivate greater empathy, improve your interpersonal skills, and build stronger, more positive relationships.",
-    example:
-      "In a team meeting, instead of dominating the conversation with your ideas, you encourage others to share their perspectives and actively listen to their input. When giving feedback, you consider the other person's preferences and communication style, and tailor your feedback to be most helpful and respectful to them. Instead of assuming that everyone appreciates direct criticism, you offer constructive feedback in a way that aligns with the other person's values and preferences. When resolving a conflict, you seek to understand the other person's point of view and find a solution that respects both parties' needs and concerns.",
-    task: "For the next week, practice the Platinum Rule in your daily interactions and conversations. Start by identifying one or two key preferences or values that are important to the people you interact with (e.g., respect, recognition, support, autonomy). Then, tailor your communication and actions to align with these preferences or values. For example, if someone values directness, be straightforward in your communication with them. If someone values recognition, make an effort to acknowledge their contributions and achievements. Notice how this impacts the quality of your relationships, your communication skills, and your overall sense of empathy and understanding.",
-  },
-  {
-    title: "Neurosnacking",
-    description:
-      "Neurosnacking is a term that refers to the practice of using small, manageable 'snacks' of positive, engaging, and mentally stimulating content or activities to boost your mood, increase your energy, and enhance your cognitive performance. These neuro snacks can take many forms, including short videos, articles, podcasts, music, or even brief physical activities. The concept is rooted in the principles of positive psychology, which emphasizes the importance of positive emotions, engagement, and meaning in enhancing well-being and performance. Research shows that taking regular neuro snack breaks can improve focus, creativity, and problem-solving skills, while also reducing stress and mental fatigue. Neurosnacking is particularly useful in today's fast-paced, information-overloaded world, where it's essential to maintain mental agility, emotional balance, and a positive mindset.",
-    example:
-      "Feeling sluggish and unfocused in the afternoon? Instead of reaching for another cup of coffee, you take a 5-minute break to listen to an inspiring podcast episode, watch a funny video, or do a quick physical workout. This boosts your energy, lifts your mood, and sharpens your focus. Another example: You're working on a challenging problem and feeling stuck. Instead of forcing yourself to push through, you take a neuro snack break. You watch a short video that teaches you a new problem-solving technique, listen to music that inspires you, or do a quick meditation. This helps you relax, recharge, and return to the problem with a fresh perspective.",
-    task: "For the next week, experiment with neurosnacking by incorporating short, positive, and engaging content or activities into your daily routine. Aim for at least three neuro snack breaks each day, especially during times when you typically feel low on energy or focus. Pay attention to how these neuro snacks impact your mood, energy levels, and cognitive performance. At the end of the week, reflect on the experience and consider making neurosnacking a regular part of your self-care and productivity routine.",
-  },
-  {
-    title: "Cold Exposure (5‑30 s)",
-    description:
-      "Cold exposure, also known as cold thermogenesis, is a practice that involves exposing your body to cold temperatures for short periods to stimulate various physiological and psychological benefits. This technique has been used for centuries in various cultures for its health benefits. The practice is based on the principles of stress adaptation, which suggests that exposing your body to controlled stressors (like cold) can enhance your resilience, improve your mood, and boost your overall well-being. Research shows that cold exposure can increase the production of norepinephrine, a neurotransmitter that plays a role in mood regulation, attention, and response actions. It can also improve circulation, boost the immune system, and increase metabolic rate. Cold exposure is particularly popularized by practitioners like Wim Hof, who advocate for its physical and mental health benefits. However, it's essential to approach this practice with caution and gradually increase exposure time to avoid adverse effects.",
-    example:
-      "After a workout, instead of taking a hot shower, you finish with a cold shower for 30 seconds. This helps reduce muscle soreness, improves recovery, and boosts your mood. Another example: You're feeling mentally fatigued and unfocused. Instead of reaching for a snack or caffeine, you step outside for a quick 5-minute cold exposure. This could be a splash of cold water on your face, a cold shower, or even a brief walk in the cold air. This helps increase your alertness, improve your mood, and enhance your mental clarity.",
-    task: "For the next week, experiment with cold exposure as a part of your daily routine. Start with just 5-10 seconds of cold exposure at the end of your shower, or splash your face with cold water. Gradually increase the duration and intensity as you become more comfortable with the practice. Pay attention to how this impacts your mood, energy levels, and overall sense of well-being. At the end of the week, reflect on the experience and consider making cold exposure a regular part of your self-care routine.",
-  },
-  {
-    title: "Laughter Yoga",
-    description:
-      "Laughter yoga is a unique exercise routine that combines laughter exercises with yoga breathing techniques. This practice is based on the principle that voluntary laughter, when done in a group setting, can provide the same physiological and psychological benefits as spontaneous laughter. Laughter yoga is designed to promote physical, mental, and emotional well-being through the power of laughter. Research shows that laughter yoga can reduce stress, improve mood, boost immune function, and enhance overall well-being. It also helps increase pain tolerance, improve cardiovascular health, and promote relaxation. Laughter yoga is suitable for people of all ages and fitness levels, and it can be practiced in various settings, including community centers, workplaces, and online platforms. The practice typically involves a series of laughter exercises, breathing techniques, and playful activities, all done in a group setting to enhance the sense of connection and joy.",
-    example:
-      "Joining a laughter yoga class at your local community center. The class starts with simple laughter exercises, such as 'hee-hee, ha-ha, ho-ho,' combined with deep breathing. The instructor then leads the group in playful activities, like pretending to blow up a balloon while laughing. Everyone laughs together, creating a contagious and uplifting atmosphere. Another example: Practicing laughter yoga online with a virtual group. You follow along with a video or live session, doing laughter exercises and breathing techniques from the comfort of your home. You notice that even forced laughter starts to feel genuine and uplifting.",
-    task: "For the next week, incorporate laughter yoga into your daily routine. Start with just 5 minutes of laughter exercises and deep breathing each day. You can do this alone or with others. The key is to engage in hearty, genuine laughter, not just polite or forced laughter. If you're doing this alone, you can use funny videos, jokes, or laughter yoga recordings to stimulate laughter. Notice how this impacts your mood, stress levels, and overall sense of well-being. At the end of the week, reflect on the experience and consider making laughter yoga a regular part of your self-care routine.",
-  },
-  {
-    title: "Death Meditation",
-    description:
-      "Death meditation, also known as memento mori meditation, is a reflective practice that involves contemplating your own mortality and the impermanence of life. This meditation technique is rooted in various spiritual and philosophical traditions, including Stoicism, Buddhism, and Christian mysticism. The practice is based on the principle that by acknowledging and accepting the inevitability of death, you can cultivate a deeper appreciation for life, clarify your values and priorities, and reduce fear and anxiety. Research shows that death meditation can increase psychological resilience, improve emotional regulation, and enhance overall well-being. It also helps individuals develop a greater sense of purpose, meaning, and connection with others. Death meditation is typically practiced in a quiet, comfortable space, where you can relax and focus inward. The practice may involve guided visualizations, contemplative reading, and silent reflection.",
-    example:
-      "Taking a few minutes each day to reflect on the transient nature of life and the importance of living in alignment with your values and priorities. Considering what truly matters to you in life and what you would like to accomplish or experience before you die. Reflecting on the legacy you want to leave behind and how you can start creating it today. Contemplating the impermanence of all things, including your thoughts, emotions, and experiences, and how this awareness can enhance your appreciation for the present moment.",
-    task: "For the next week, practice death meditation for 5-10 minutes each day. Find a quiet, comfortable space where you can relax and focus inward. You can use guided recordings, contemplative readings, or simply your own thoughts and reflections. The key is to approach this practice with an open mind and heart, and to allow yourself to fully experience any emotions or insights that arise. After each meditation, take a few minutes to journal about your experience, any insights or realizations, and how you can apply these to your daily life. Use this meditation to cultivate a deeper appreciation for life, clarify your values and priorities, and reduce fear and anxiety.",
-  },
-  {
-    title: "Alter Ego Experiment",
-    description:
-      "The Alter Ego Experiment is a creative visualization and role-playing technique that involves creating and embodying an alternative persona or 'alter ego' that possesses the qualities, traits, and abilities you aspire to develop or enhance in yourself. This technique is based on the principles of cognitive behavioral therapy, performance psychology, and creative visualization. Research shows that using an alter ego can help individuals overcome self-doubt, increase confidence, and improve performance in various areas of life, including work, sports, and personal relationships. The Alter Ego Experiment is particularly useful for individuals who struggle with perfectionism, fear of failure, or negative self-talk. By regularly practicing the Alter Ego Experiment, you can train your brain to adopt a more positive, resilient, and confident mindset.",
-    example:
-      "Before a big presentation or performance, you take on the persona of your alter ego - a confident, charismatic, and skilled speaker. You visualize yourself entering the room with poise, delivering your message with clarity and impact, and receiving positive feedback from your audience. Another example: When facing a challenging situation or decision, you consult your alter ego - a wise, courageous, and resourceful mentor. You visualize this mentor guiding you, offering valuable insights and perspectives, and helping you navigate the situation with confidence and skill.",
-    task: "Create your own alter ego using the following steps: (1) Reflect on the qualities, traits, and abilities that you admire and aspire to develop in yourself. (2) Create a detailed profile of your alter ego, including their name, age, appearance, personality traits, strengths, and skills. (3) Visualize yourself embodying this alter ego in various situations and challenges you face. (4) Practice using your alter ego as a source of guidance, support, and inspiration. (5) Regularly review and update your alter ego profile as you grow and develop. Use the Alter Ego Experiment to enhance your self-confidence, overcome self-doubt, and improve your performance in all areas of your life.",
-  },
-  {
-    title: "Future Self Letters",
-    description:
-      "The Future Self Letters exercise is a powerful visualization and self-reflection technique that involves writing a letter from your future self to your present self. This letter typically includes reflections on your personal growth, achievements, lessons learned, and advice for overcoming current challenges or pursuing future goals. The exercise is based on the principles of narrative therapy, cognitive behavioral therapy, and positive psychology. Research shows that writing and reading future self letters can increase motivation, enhance goal clarity, and improve emotional regulation. This exercise is particularly useful for individuals who struggle with procrastination, lack of direction, or negative self-talk. By regularly practicing the Future Self Letters exercise, you can train your brain to adopt a more positive, resilient, and goal-oriented mindset.",
-    example:
-      "'Dear [Your Name], I'm writing to you from the future - a future where you've achieved all your goals and dreams. I want to remind you that every challenge you face now is an opportunity for growth and learning. Embrace them with courage and determination. Remember the importance of self-care, balance, and nurturing your passions. I'm proud of the person you are becoming, and I believe in your ability to create the life you desire. Keep pushing forward, stay positive, and never lose sight of your dreams. With love and encouragement, Your Future Self.'",
-    task: "Write your own Future Self Letter using the following steps: (1) Find a quiet, comfortable space where you can relax and focus inward. (2) Close your eyes and take a few deep breaths to center yourself. (3) Visualize yourself 5, 10, or 20 years in the future - imagine the person you have become, the life you are living, and the goals you have achieved. (4) Open your eyes and write a letter from this future self to your present self. Include reflections on your personal growth, achievements, lessons learned, and advice for overcoming current challenges or pursuing future goals. (5) Read your Future Self Letter regularly to reinforce your motivation, goal clarity, and positive mindset. Consider writing new letters at regular intervals (e.g., annually) to update your future self vision and celebrate your progress.",
-  },
+const mindToolsKeys = [
+  "emotionalAuditing",
+  "reverseGratitude", 
+  "fiveRule",
+  "microMeditation",
+  "jomo",
+  "brainDumpJournaling",
+  "thirdStoryTechnique",
+  "deliberateDaydreaming",
+  "failureCV",
+  "fiveSecondRule",
+  "mirrorQuestions",
+  "randomActsKindness",
+  "noComplaintConversations",
+  "platinumRule",
+  "neurosnacking",
+  "coldExposure",
+  "laughterYoga",
+  "deathMeditation",
+  "alterEgoExperiment",
+  "futureSelfLetters"
 ];
 
 const eqTips: EqTip[] = [
@@ -392,7 +252,7 @@ const WellnessScore = ({ score, profileImage }: any) => {
           <View style={styles.infoModalContainer}>
             <View style={styles.infoModalContent}>
               <Text style={styles.infoModalText}>
-                Score depends on onboarding questions and test result
+                {t("homeTab.wellnessScoreInfo")}
               </Text>
               <TouchableOpacity
                 style={styles.closeButton}
@@ -569,6 +429,9 @@ const getWellnessAvatar = (
 };
 
 export default function HomeTab() {
+  // Language hook  
+  const { locale } = useLanguage();
+  
   // Move these hooks to the very top of the component
   const [selectedTip, setSelectedTip] = useState<SimpleTip | null>(null);
   const [tipModalVisible, setTipModalVisible] = useState(false);
@@ -583,7 +446,6 @@ export default function HomeTab() {
   const [isSuccessMessageVisible, setSuccessMessageVisible] = useState(false); // Track if success message is visible
   const [finalScore, setFinalScore] = useState<number | null>(null);
   const [selectedGender, setSelectedGender] = useState<string | null>(null);
-  const { locale } = useLanguage(); // Get current locale
 
   const [sheetVisible, setSheetVisible] = useState(false);
   const [detailVisible, setDetailVisible] = useState(false);
@@ -945,11 +807,24 @@ export default function HomeTab() {
     (today.getTime() - ANCHOR_DATE.getTime()) / (1000 * 60 * 60 * 24),
   );
 
-  // two Mind‑Tools tips
-  const mtIdx = daysElapsed % mindToolsTips.length;
+  // two Mind‑Tools tips using translation keys
+  const mtIdx = daysElapsed % mindToolsKeys.length;
+  const currentKey = mindToolsKeys[mtIdx];
+  const nextKey = mindToolsKeys[(mtIdx + 1) % mindToolsKeys.length];
+  
   const todaysMindTools = [
-    mindToolsTips[mtIdx],
-    mindToolsTips[(mtIdx + 1) % mindToolsTips.length],
+    {
+      title: t(`mindToolsTips.${currentKey}.title`),
+      description: t(`mindToolsTips.${currentKey}.description`),
+      example: t(`mindToolsTips.${currentKey}.example`),
+      task: t(`mindToolsTips.${currentKey}.task`)
+    },
+    {
+      title: t(`mindToolsTips.${nextKey}.title`),
+      description: t(`mindToolsTips.${nextKey}.description`),
+      example: t(`mindToolsTips.${nextKey}.example`),
+      task: t(`mindToolsTips.${nextKey}.task`)
+    }
   ];
 
   const handleEQTestPress = () => {
@@ -1311,7 +1186,7 @@ export default function HomeTab() {
                               color: "#2196F3",
                               marginBottom: 10 
                             }}>
-                              💡 Example
+                              💡 {t("homeTab.example")}
                             </Text>
                             <Text style={{ 
                               fontSize: 15, 
@@ -1334,7 +1209,7 @@ export default function HomeTab() {
                               color: "#2196F3",
                               marginBottom: 10 
                             }}>
-                              🎯 Try this
+                              🎯 {t("homeTab.tryThis")}
                             </Text>
                             <Text style={{ 
                               fontSize: 15, 
@@ -1357,7 +1232,7 @@ export default function HomeTab() {
                         onPress={() => setTipModalVisible(false)}
                         activeOpacity={0.8}
                       >
-                        <Text style={styles.tipModalCloseButtonText}>Got it!</Text>
+                        <Text style={styles.tipModalCloseButtonText}>{t("homeTab.gotIt")}</Text>
                       </TouchableOpacity>
                     </View>
                   </View>
