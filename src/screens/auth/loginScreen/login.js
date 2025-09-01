@@ -476,7 +476,7 @@ const LoginScreen = ({ navigation }) => {
           ? "Welcome back – choose a method to sign in."
           : "Create a new account – choose a method to sign up."}
       </Text>
-      <TouchableOpacity
+      {/* <TouchableOpacity
         style={[styles.googleButton, (isLoading || isGoogleSigningIn) && styles.disabledButton]}
         onPress={handleGoogleLogin}
         activeOpacity={0.8}
@@ -499,7 +499,7 @@ const LoginScreen = ({ navigation }) => {
             </Text>
           </>
         )}
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <TouchableOpacity
         style={[styles.altAuthButton]}
         onPress={() => setMode(authMode === "signup" ? "email" : "password")}

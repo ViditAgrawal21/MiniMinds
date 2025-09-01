@@ -862,7 +862,7 @@ export default function HomeTab() {
   return (
     <SafeAreaView style={styles.container} edges={["top"]}>
         <View style={{ flex: 1 }}>
-          <ScrollView contentContainerStyle={styles.container}>
+          <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.container}>
             <View style={styles.topMessageContainer}>
               <TopMessage
                 message={

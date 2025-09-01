@@ -597,7 +597,7 @@ export default function InsightsScreen({
 /* ---------- styles ---------- */
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#f0f0f0" },
+  container: { flex: 1, backgroundColor: "white" },
   scrollContent: { paddingBottom: 40 },
   title: {
     fontSize: 20,

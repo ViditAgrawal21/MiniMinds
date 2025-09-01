@@ -266,6 +266,7 @@ export default function EQTestScreen() {
         <FlatList
           key={locale} // Force re-render when locale changes
           data={eqTests}
+          showsVerticalScrollIndicator={false}
           renderItem={renderTestItem}
           keyExtractor={(item) => item.id.toString()}
           contentContainerStyle={styles.listContainer}
