@@ -249,7 +249,7 @@ const SelfOnboarding = () => {
                       (response2Key ? likelihoodWeights5[response2Key] : 5);
 
     const totalOnboardingScore = self2Score + self3Score + self4Score + self5Score;
-
+    console.log("total onboarding", self2Score,self3Score,self4Score,self5Score,totalOnboardingScore)
     return {
       self2Score,
       self3Score,
@@ -340,7 +340,7 @@ const SelfOnboarding = () => {
           },
           self5Score: scores.self5Score,
           self5RawScore: scores.self5Score,
-          overallScore: scores.totalOnboardingScore
+          overallOnboardingScore: scores.totalOnboardingScore // Fixed: use correct key
         };
         const storedResponses = await AsyncStorage.getItem("onboardingResponses");
         const parsedResponses = storedResponses ? JSON.parse(storedResponses) : {};

@@ -2,7 +2,9 @@ export type RootStackParamList = {
   // Authentication and onboarding flow
   Splash: undefined;
   Login: undefined;
-  LanguageSelect: undefined;
+  LanguageSelect: { reset?: boolean } | undefined;
+  PrivacyNoticeScreen: undefined;
+  WelcomeScreen: undefined;
   SelfOnboarding: undefined;
   SelfThankYou: undefined;
   HomeTab: undefined;

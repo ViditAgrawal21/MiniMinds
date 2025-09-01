@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomIcon from "../../../../components/CustomIcon";
+import { t } from "../../../../i18n/locales/i18n";
 
 interface Intervention {
   title: string;
@@ -84,22 +85,35 @@ export default function SelfAwarenessStrategyScreen({ navigation }: any) {
   };
 
   const strategyData = {
-    title: "Self-awareness EQ",
-    description:
-      "Assesses how well you recognize your own emotions and their impact.",
+    title: t("eqStrategies.selfAwareness.title"),
+    description: t("eqStrategies.selfAwareness.description"),
     interventions: [
       {
-        title: "Daily Emotional Journaling",
-        description:
-          "Write down your emotions and thoughts at the end of each day to identify patterns and triggers in your feelings and reactions.",
+        title: t("eqStrategies.selfAwareness.interventions.emotionalJournaling.title"),
+        description: t("eqStrategies.selfAwareness.interventions.emotionalJournaling.description"),
         xp: 5,
       },
       {
-        title: "Mindfulness Meditation",
-        description:
-          "Practice mindfulness or meditation regularly to become more present and attuned to your internal emotional state.",
+        title: t("eqStrategies.selfAwareness.interventions.mindfulnessMeditation.title"),
+        description: t("eqStrategies.selfAwareness.interventions.mindfulnessMeditation.description"),
         xp: 5,
       },
+      {
+        title: t("eqStrategies.selfAwareness.interventions.emotionalCheckins.title"),
+        description: t("eqStrategies.selfAwareness.interventions.emotionalCheckins.description"),
+        xp: 5,
+      },
+      {
+        title: t("eqStrategies.selfAwareness.interventions.bodyLanguageAwareness.title"),
+        description: t("eqStrategies.selfAwareness.interventions.bodyLanguageAwareness.description"),
+        xp: 5,
+      },
+      {
+        title: t("eqStrategies.selfAwareness.interventions.feedbackSeeking.title"),
+        description: t("eqStrategies.selfAwareness.interventions.feedbackSeeking.description"),
+        xp: 5,
+      },
+      // Additional interventions using original text for now (can be translated later)
       {
         title: "360-Degree Feedback",
         description:
@@ -172,7 +186,7 @@ export default function SelfAwarenessStrategyScreen({ navigation }: any) {
 
       const tab = tabMap[frequency];
       if (!tab) {
-        Alert.alert("Error", "Invalid frequency selected");
+        Alert.alert(t('eqStrategiesScreen.error.title'), t('eqStrategiesScreen.error.invalidFrequency'));
         return;
       }
 
@@ -248,7 +262,7 @@ export default function SelfAwarenessStrategyScreen({ navigation }: any) {
     } catch (error) {
       console.error("Error saving intervention:", error);
       setTimeout(() => {
-        Alert.alert("Error", "Failed to save intervention. Please try again.");
+        Alert.alert(t('eqStrategiesScreen.error.title'), t('eqStrategiesScreen.error.failedToSave'));
       }, 300);
     }
   };
@@ -299,7 +313,7 @@ export default function SelfAwarenessStrategyScreen({ navigation }: any) {
                 style={styles.addButton}
                 onPress={() => handleAddToTaskList(intervention)}
               >
-                <Text style={styles.addButtonText}>Add to Task List</Text>
+                <Text style={styles.addButtonText}>{t('eqStrategiesScreen.addButton')}</Text>
                 <CustomIcon type="IO" name="add-circle" size={20} color="#8B5CF6" />
               </Pressable>
             </View>
@@ -343,9 +357,9 @@ export default function SelfAwarenessStrategyScreen({ navigation }: any) {
               <Pressable onPress={() => {}} style={styles.modalContent}>
                 {/* Modal Header */}
                 <View style={styles.modalHeader}>
-                  <Text style={styles.modalTitle}>Select Task Frequency</Text>
+                  <Text style={styles.modalTitle}>{t('eqStrategiesScreen.modal.title')}</Text>
                   <Text style={styles.modalSubtitle}>
-                    Choose how often you'd like to practice this strategy
+                    {t('eqStrategiesScreen.modal.subtitle')}
                   </Text>
                 </View>
 
@@ -356,29 +370,29 @@ export default function SelfAwarenessStrategyScreen({ navigation }: any) {
                       key: "Daily",
                       icon: "today-outline",
                       color: "#10B981",
-                      title: "Daily",
-                      description: "Practice every day",
+                      title: t('eqStrategiesScreen.modal.frequencies.daily.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.daily.description'),
                     },
                     {
                       key: "Weekly",
                       icon: "calendar-outline",
                       color: "#3B82F6",
-                      title: "Weekly",
-                      description: "Practice once a week",
+                      title: t('eqStrategiesScreen.modal.frequencies.weekly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.weekly.description'),
                     },
                     {
                       key: "Bi-Weekly",
                       icon: "calendar-number-outline",
                       color: "#8B5CF6",
-                      title: "Bi-Weekly",
-                      description: "Practice every two weeks",
+                      title: t('eqStrategiesScreen.modal.frequencies.biWeekly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.biWeekly.description'),
                     },
                     {
                       key: "Monthly",
                       icon: "calendar-clear-outline",
                       color: "#F59E0B",
-                      title: "Monthly",
-                      description: "Practice once a month",
+                      title: t('eqStrategiesScreen.modal.frequencies.monthly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.monthly.description'),
                     },
                   ].map((option, index) => (
                     <Pressable
@@ -433,7 +447,7 @@ export default function SelfAwarenessStrategyScreen({ navigation }: any) {
                   ]}
                   onPress={hideModal}
                 >
-                  <Text style={styles.cancelButtonText}>Cancel</Text>
+                  <Text style={styles.cancelButtonText}>{t('eqStrategiesScreen.modal.cancel')}</Text>
                 </Pressable>
               </Pressable>
             </View>

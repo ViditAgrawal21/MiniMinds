@@ -35,7 +35,7 @@ type RootStackParamList = {
     testTitle: string;
     totalScore?: number;
   };
-  Tab: { initialTab?: string } | undefined;
+  MainApp: { screen?: string } | undefined;
 };
 
 type ResultScreenRouteProp = RouteProp<RootStackParamList, "EQTestResult">;
@@ -607,7 +607,7 @@ export default function EQTestResult() {
       <View style={styles.buttonContainer}>
         <PrimaryButton
           label={t("eqTest.results.actions.backToTests")}
-          callback={() => navigation.navigate("Tab", { initialTab: "Home" })}
+          callback={() => navigation.navigate("MainApp", { screen: "Home" })}
         />
         <SecondaryButton
           label={t("eqTest.results.actions.generateReport")}

@@ -35,6 +35,7 @@ import RecommendedInterventionsList, {
 } from "@/components/common/RecommendedInterventionsList";
 import interventionObject from "@/components/interventionScanDBCall";
 import { t } from "@/i18n/locales/i18n"; // Import translation function directly
+import { getWellnessScore } from "@/utils/wellnessScore";
 // ---------------------------------------------------------------------------
 // Daily Mind‑Tools and EQ decks (round‑robin rotation)
 // ---------------------------------------------------------------------------
@@ -617,20 +618,18 @@ export default function HomeTab() {
   const [activeTab, setActiveTab] = useState<"Daily" | "Weekly" | "Monthly">(
     "Daily",
   );
-  // Fetch final onboarding score from AsyncStorage
+  // Fetch final wellness score from AsyncStorage using the wellness score utility
   useEffect(() => {
-    const fetchOnboardingScore = async () => {
+    const fetchWellnessScore = async () => {
       try {
-        const stored = await AsyncStorage.getItem("onboardingResponses");
-        if (stored) {
-          const parsed = JSON.parse(stored);
-          setFinalScore(parsed.overallOnboardingScore || 0);
-        }
+        const score = await getWellnessScore();
+        setFinalScore(score);
       } catch (error) {
-        console.error("Error fetching onboarding score:", error);
+        console.error("Error fetching wellness score:", error);
+        setFinalScore(0);
       }
     };
-    fetchOnboardingScore();
+    fetchWellnessScore();
 
     // fetch stored profile picture and gender
     const fetchProfile = async () => {
@@ -671,6 +670,10 @@ export default function HomeTab() {
     React.useCallback(() => {
       const fetchProfile = async () => {
         try {
+          // Refresh wellness score from the utility (includes XP increments)
+          const score = await getWellnessScore();
+          setFinalScore(score);
+
           const profile = await AsyncStorage.getItem("profile_v1");
           if (profile) {
             const parsed = JSON.parse(profile);
@@ -679,19 +682,14 @@ export default function HomeTab() {
             if (parsed.imageUri) {
               setProfileImage({ uri: parsed.imageUri });
             } else {
-              // If no custom image, use wellness-based avatar
-              const stored = await AsyncStorage.getItem("onboardingResponses");
-              if (stored) {
-                const responses = JSON.parse(stored);
-                const score = responses.overallOnboardingScore || 0;
-                const wellnessAvatar = getWellnessAvatar(
-                  score,
-                  parsed.selectedGender,
-                  parsed.avatarGender,
-                  parsed.avatarIndex,
-                );
-                setProfileImage(wellnessAvatar);
-              }
+              // If no custom image, use wellness-based avatar with updated score
+              const wellnessAvatar = getWellnessAvatar(
+                score,
+                parsed.selectedGender,
+                parsed.avatarGender,
+                parsed.avatarIndex,
+              );
+              setProfileImage(wellnessAvatar);
             }
           }
         } catch (error) {

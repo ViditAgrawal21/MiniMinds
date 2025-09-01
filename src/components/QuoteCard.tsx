@@ -1,16 +1,19 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import { getDailyThought } from "../utils/dailyThoughts";
 
 interface QuoteCardProps {
   title: string;
-  quote: string;
 }
 
-const QuoteCard: React.FC<QuoteCardProps> = ({ title, quote }) => {
+const QuoteCard: React.FC<QuoteCardProps> = ({ title }) => {
+  // Get the daily thought based on current date
+  const dailyThought = getDailyThought();
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
-      <Text style={styles.quote}>{quote}</Text>
+      <Text style={styles.quote}>{dailyThought}</Text>
     </View>
   );
 };

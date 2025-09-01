@@ -117,12 +117,14 @@ const AppNavigation = () => {
         const hasCompletedOnboarding = await AsyncStorage.getItem('hasCompletedOnboarding');
         const isLoggedIn = await AsyncStorage.getItem('isLoggedIn');
         const hasCompletedSelfAssessment = await AsyncStorage.getItem('hasCompletedSelfAssessment');
-        const hasSelectedLanguage = await AsyncStorage.getItem('hasSelectedLanguage');
+        const hasSelectedLanguage = await AsyncStorage.getItem('selectedLanguage');
+        const hasCompletedFirstLaunch = await AsyncStorage.getItem('hasCompletedFirstLaunch');
 
         console.log("hasCompletedOnboarding:", hasCompletedOnboarding);
         console.log("isLoggedIn:", isLoggedIn);
         console.log("hasCompletedSelfAssessment:", hasCompletedSelfAssessment);
         console.log("hasSelectedLanguage:", hasSelectedLanguage);
+        console.log("hasCompletedFirstLaunch:", hasCompletedFirstLaunch);
 
         if (!hasCompletedOnboarding) {
           // First time user - start with splash, then login
@@ -133,8 +135,12 @@ const AppNavigation = () => {
         } else if (!hasSelectedLanguage) {
           // User is logged in but hasn't selected language
           setInitialRoute('LanguageSelect');
+        } else if (hasCompletedFirstLaunch === null && hasSelectedLanguage && !hasCompletedSelfAssessment) {
+          // User has selected language but is first launch and hasn't completed self-assessment
+          // This should go through: Privacy -> Welcome -> SelfOnboarding
+          setInitialRoute('PrivacyNoticeScreen');
         } else if (!hasCompletedSelfAssessment) {
-          // User has selected language but hasn't completed self-assessment
+          // User has completed everything except self-assessment (return user)
           setInitialRoute('SelfOnboarding');
         } else {
           // User has completed everything - go to main app
@@ -174,12 +180,18 @@ const AppNavigation = () => {
         initialRouteName={initialRoute}
         screenOptions={{headerShown: false}}>
         
-        {/* Authentication Flow */}
+      {/* Authentication Flow */}
       <Stack.Screen name="Splash" component={SplashScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
       
       {/* Language Selection */}
       <Stack.Screen name="LanguageSelect" component={LanguageSelectScreen} />
+      
+      {/* Privacy Notice Screen */}
+      <Stack.Screen name="PrivacyNoticeScreen" component={PrivacyNoticeScreen} />
+      
+      {/* Welcome Screen */}
+      <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
       
       {/* Self Assessment Flow */}
       <Stack.Screen name="SelfOnboarding" component={SelfOnboardingScreen} />
@@ -246,12 +258,10 @@ const AppNavigation = () => {
 
       {/* Legacy/Optional Screens */}
       <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
-      <Stack.Screen name="Welcome" component={WelcomeScreen} />
       <Stack.Screen name="selforchild" component={SelfOrChildScreen} />
       <Stack.Screen name="generalsettings" component={GeneralSettings} />
-            <Stack.Screen name="UpgradeToPremium" component={UpgradeToPremium} />
-            <Stack.Screen name="EditProfile" component={EditProfile} />
-            <Stack.Screen name="PrivacyNoticeScreen" component={PrivacyNoticeScreen} />
+      <Stack.Screen name="UpgradeToPremium" component={UpgradeToPremium} />
+      <Stack.Screen name="EditProfile" component={EditProfile} />
 
       
     </Stack.Navigator>

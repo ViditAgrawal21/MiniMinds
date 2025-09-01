@@ -22,6 +22,7 @@ import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
 import { useLanguage } from "../../../context/LanguageContext";
+import { incrementWellnessScore } from "../../../utils/wellnessScore";
 
 const { width } = Dimensions.get("window");
 
@@ -1202,7 +1203,10 @@ export default function InterventionsScreen({ navigation, route }: any) {
 
       // Increment wellness score by XP gained (capped at 100)
       try {
-        // await incrementWellnessScore(interventionToComplete.xp);
+        const result = await incrementWellnessScore(interventionToComplete.xp);
+        console.log(
+          `Wellness score updated: ${result.newScore} (gained +${result.appliedDelta} XP)`
+        );
       } catch (e) {
         console.warn('Failed to increment wellness score', e);
       }

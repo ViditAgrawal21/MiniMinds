@@ -8,7 +8,7 @@ export default function WelcomeScreen() {
   const navigation = useNavigation<any>();
 
   const navigateTo = () => {
-    return navigation.navigate("selforchild");
+    return navigation.navigate("SelfOnboarding");
   };
 
   return (

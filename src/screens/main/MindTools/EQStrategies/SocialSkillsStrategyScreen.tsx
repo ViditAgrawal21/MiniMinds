@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomIcon from "../../../../components/CustomIcon";
+import { t } from "../../../../i18n/locales/i18n";
 
 interface Intervention {
   title: string;
@@ -84,38 +85,32 @@ export default function SocialSkillsStrategyScreen({ navigation }: any) {
   };
 
   const strategyData = {
-    title: "Social skills EQ",
-    description:
-      "Evaluates your ability to build relationships and communicate effectively.",
+    title: t('eqStrategies.socialSkills.title'),
+    description: t('eqStrategies.socialSkills.description'),
     interventions: [
       {
-        title: "Building Rapport",
-        description:
-          "Practice finding common ground and showing genuine interest in others to establish trust and positive relationships.",
+        title: t('eqStrategies.socialSkills.interventions.effectiveCommunicationSkills.title'),
+        description: t('eqStrategies.socialSkills.interventions.effectiveCommunicationSkills.description'),
         xp: 5,
       },
       {
-        title: "Effective Communication Training",
-        description:
-          "Develop clear and assertive communication skills, including active listening, clear articulation, and respectful feedback.",
+        title: t('eqStrategies.socialSkills.interventions.conflictResolutionTechniques.title'),
+        description: t('eqStrategies.socialSkills.interventions.conflictResolutionTechniques.description'),
         xp: 5,
       },
       {
-        title: "Conflict Resolution Practice",
-        description:
-          "Learn and apply strategies for resolving disagreements constructively and maintaining positive relationships.",
+        title: t('eqStrategies.socialSkills.interventions.networkingSkillsDevelopment.title'),
+        description: t('eqStrategies.socialSkills.interventions.networkingSkillsDevelopment.description'),
         xp: 5,
       },
       {
-        title: "Networking Opportunities",
-        description:
-          "Attend events or join groups to expand your social network and practice engaging with new people.",
+        title: t('eqStrategies.socialSkills.interventions.teamworkCollaborationPractice.title'),
+        description: t('eqStrategies.socialSkills.interventions.teamworkCollaborationPractice.description'),
         xp: 5,
       },
       {
-        title: "Team Collaboration Exercises",
-        description:
-          "Participate in group projects or team-building activities to strengthen cooperation and group problem-solving skills.",
+        title: t('eqStrategies.socialSkills.interventions.leadershipSkillsBuilding.title'),
+        description: t('eqStrategies.socialSkills.interventions.leadershipSkillsBuilding.description'),
         xp: 5,
       },
       {
@@ -172,7 +167,7 @@ export default function SocialSkillsStrategyScreen({ navigation }: any) {
 
       const tab = tabMap[frequency];
       if (!tab) {
-        Alert.alert("Error", "Invalid frequency selected");
+        Alert.alert(t('eqStrategiesScreen.error.title'), t('eqStrategiesScreen.error.invalidFrequency'));
         return;
       }
 
@@ -248,7 +243,7 @@ export default function SocialSkillsStrategyScreen({ navigation }: any) {
     } catch (error) {
       console.error("Error saving intervention:", error);
       setTimeout(() => {
-        Alert.alert("Error", "Failed to save intervention. Please try again.");
+        Alert.alert(t('eqStrategiesScreen.error.title'), t('eqStrategiesScreen.error.failedToSave'));
       }, 300);
     }
   };
@@ -299,7 +294,7 @@ export default function SocialSkillsStrategyScreen({ navigation }: any) {
                 style={styles.addButton}
                 onPress={() => handleAddToTaskList(intervention)}
               >
-                <Text style={styles.addButtonText}>Add to Task List</Text>
+                <Text style={styles.addButtonText}>{t('eqStrategiesScreen.addButton')}</Text>
                 <CustomIcon type="IO" name="add-circle" size={20} color="#8B5CF6" />
               </Pressable>
             </View>
@@ -343,9 +338,9 @@ export default function SocialSkillsStrategyScreen({ navigation }: any) {
               <Pressable onPress={() => {}} style={styles.modalContent}>
                 {/* Modal Header */}
                 <View style={styles.modalHeader}>
-                  <Text style={styles.modalTitle}>Select Task Frequency</Text>
+                  <Text style={styles.modalTitle}>{t('eqStrategiesScreen.modal.title')}</Text>
                   <Text style={styles.modalSubtitle}>
-                    Choose how often you'd like to practice this strategy
+                    {t('eqStrategiesScreen.modal.subtitle')}
                   </Text>
                 </View>
 
@@ -356,29 +351,29 @@ export default function SocialSkillsStrategyScreen({ navigation }: any) {
                       key: "Daily",
                       icon: "today-outline",
                       color: "#10B981",
-                      title: "Daily",
-                      description: "Practice every day",
+                      title: t('eqStrategiesScreen.modal.frequencies.daily.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.daily.description'),
                     },
                     {
                       key: "Weekly",
                       icon: "calendar-outline",
                       color: "#3B82F6",
-                      title: "Weekly",
-                      description: "Practice once a week",
+                      title: t('eqStrategiesScreen.modal.frequencies.weekly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.weekly.description'),
                     },
                     {
                       key: "Bi-Weekly",
                       icon: "calendar-number-outline",
                       color: "#8B5CF6",
-                      title: "Bi-Weekly",
-                      description: "Practice every two weeks",
+                      title: t('eqStrategiesScreen.modal.frequencies.biWeekly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.biWeekly.description'),
                     },
                     {
                       key: "Monthly",
                       icon: "calendar-clear-outline",
                       color: "#F59E0B",
-                      title: "Monthly",
-                      description: "Practice once a month",
+                      title: t('eqStrategiesScreen.modal.frequencies.monthly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.monthly.description'),
                     },
                   ].map((option, index) => (
                     <Pressable
@@ -433,7 +428,7 @@ export default function SocialSkillsStrategyScreen({ navigation }: any) {
                   ]}
                   onPress={hideModal}
                 >
-                  <Text style={styles.cancelButtonText}>Cancel</Text>
+                  <Text style={styles.cancelButtonText}>{t('eqStrategiesScreen.modal.cancel')}</Text>
                 </Pressable>
               </Pressable>
             </View>

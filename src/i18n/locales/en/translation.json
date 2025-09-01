@@ -1,8 +1,6 @@
 {
   "common": {
-    "saveAndProceed": "Save & Proceed",
-    "back": "Back",
-    "skip": "Skip"
+    "ok": "OK"
   },
   "navigation": {
     "home": "Home",
@@ -10,7 +8,6 @@
     "mindTools": "Mind Tools",
     "profile": "Profile"
   },
-  
   "upgradeDialog": {
     "title": "Ultra Access Required",
     "message": "This feature requires ultra access. Upgrade now to unlock CBT and REBT therapeutic strategies along with other ultra features.",
@@ -361,6 +358,312 @@
       }
     }
   },
+  "eqStrategies": {
+    "selfAwareness": {
+      "title": "Self-awareness EQ",
+      "description": "Assesses how well you recognize your own emotions and their impact.",
+      "interventions": {
+        "emotionalJournaling": {
+          "title": "Daily Emotional Journaling",
+          "description": "Write down your emotions and thoughts at the end of each day to identify patterns and triggers in your feelings and reactions."
+        },
+        "mindfulnessMeditation": {
+          "title": "Mindfulness Meditation",
+          "description": "Practice mindfulness or meditation regularly to become more present and attuned to your internal emotional state."
+        },
+        "emotionalCheckins": {
+          "title": "Regular Emotional Check-ins",
+          "description": "Set reminders throughout the day to pause and ask yourself what you're feeling and why."
+        },
+        "bodyLanguageAwareness": {
+          "title": "Body Language Awareness",
+          "description": "Pay attention to your physical reactions and body language as indicators of your emotional state."
+        },
+        "feedbackSeeking": {
+          "title": "Seeking Feedback from Others",
+          "description": "Ask trusted friends or colleagues for honest feedback about your emotional responses and behavior patterns."
+        },
+        "emotionalTriggerIdentification": {
+          "title": "Emotional Trigger Identification",
+          "description": "Keep track of situations, people, or events that consistently trigger strong emotional responses in you."
+        },
+        "selfReflectionPractices": {
+          "title": "Self-Reflection Practices",
+          "description": "Dedicate time weekly to reflect on your emotional experiences and what they reveal about your values and needs."
+        },
+        "emotionalVocabularyExpansion": {
+          "title": "Expanding Emotional Vocabulary",
+          "description": "Learn to identify and name specific emotions beyond basic categories like 'good' or 'bad.'"
+        },
+        "valuesAndBeliefsExploration": {
+          "title": "Values and Beliefs Exploration",
+          "description": "Explore your core values and beliefs to understand why certain situations evoke particular emotional responses."
+        },
+        "emotionalIntensityTracking": {
+          "title": "Emotional Intensity Tracking",
+          "description": "Rate the intensity of your emotions on a scale to better understand your emotional patterns and thresholds."
+        }
+      }
+    },
+    "selfRegulation": {
+      "title": "Self-regulation EQ",
+      "description": "Measures your ability to manage and control your emotions.",
+      "interventions": {
+        "pauseAndBreathe": {
+          "title": "Pause and Breathe",
+          "description": "Before reacting to emotional triggers, take deep breaths to create space between stimulus and response."
+        },
+        "cognitiveReframing": {
+          "title": "Cognitive Reframing",
+          "description": "Challenge negative thought patterns by looking at situations from different, more balanced perspectives."
+        },
+        "emotionalRegulationTechniques": {
+          "title": "Emotional Regulation Techniques",
+          "description": "Learn and practice techniques like progressive muscle relaxation, visualization, or grounding exercises."
+        },
+        "impulsivityManagement": {
+          "title": "Impulsivity Management",
+          "description": "Develop strategies to pause and think before acting on immediate emotional impulses."
+        },
+        "stressMgmtPractices": {
+          "title": "Stress Management Practices",
+          "description": "Implement regular stress-reduction activities like exercise, yoga, or hobbies to maintain emotional balance."
+        },
+        "boundarySettingSkills": {
+          "title": "Boundary Setting Skills",
+          "description": "Learn to set healthy boundaries to protect your emotional well-being and prevent overwhelm."
+        },
+        "emotionalExpressionHealthy": {
+          "title": "Healthy Emotional Expression",
+          "description": "Practice expressing emotions in constructive ways through communication, art, or physical activity."
+        },
+        "adaptabilityPractice": {
+          "title": "Adaptability Practice",
+          "description": "Work on becoming more flexible and adaptable when facing unexpected changes or challenges."
+        },
+        "selfCompassionDevelopment": {
+          "title": "Self-Compassion Development",
+          "description": "Practice being kind and understanding toward yourself when experiencing difficult emotions or making mistakes."
+        },
+        "emotionalDistancingTechniques": {
+          "title": "Emotional Distancing Techniques",
+          "description": "Learn to step back emotionally from situations to gain perspective and respond more objectively."
+        }
+      }
+    },
+    "motivation": {
+      "title": "Motivation EQ",
+      "description": "Evaluates your drive to achieve goals and stay persistent.",
+      "interventions": {
+        "goalSettingSmartGoals": {
+          "title": "Goal Setting (SMART Goals)",
+          "description": "Set Specific, Measurable, Achievable, Relevant, and Time-bound goals to maintain clear direction and motivation."
+        },
+        "intrinsicMotivationFocus": {
+          "title": "Focus on Intrinsic Motivation",
+          "description": "Identify and connect with internal sources of motivation rather than relying solely on external rewards."
+        },
+        "progressTracking": {
+          "title": "Progress Tracking and Celebration",
+          "description": "Regularly track your progress toward goals and celebrate small wins to maintain momentum."
+        },
+        "visionBoardCreation": {
+          "title": "Vision Board Creation",
+          "description": "Create visual representations of your goals and dreams to keep yourself motivated and focused."
+        },
+        "challengeEmbrace": {
+          "title": "Embracing Challenges",
+          "description": "View obstacles and setbacks as opportunities to grow rather than reasons to give up."
+        },
+        "purposeAndMeaningConnection": {
+          "title": "Purpose and Meaning Connection",
+          "description": "Connect your daily activities and goals to your larger sense of purpose and values."
+        },
+        "positiveAffirmationsPractice": {
+          "title": "Positive Affirmations and Self-Talk",
+          "description": "Use positive self-talk and affirmations to maintain confidence and motivation during difficult times."
+        },
+        "roleModelStudy": {
+          "title": "Role Model Study",
+          "description": "Study and learn from people who embody the qualities and achievements you aspire to develop."
+        },
+        "resilienceBuildingActivities": {
+          "title": "Resilience Building Activities",
+          "description": "Engage in activities that build your ability to bounce back from failures and setbacks."
+        },
+        "routineAndHabitsEstablishment": {
+          "title": "Routine and Habits Establishment",
+          "description": "Establish daily routines and habits that support your long-term goals and maintain consistent progress."
+        }
+      }
+    },
+    "empathy": {
+      "title": "Empathy EQ",
+      "description": "Measures your ability to understand others' emotions and perspectives.",
+      "interventions": {
+        "activeListeningPractice": {
+          "title": "Active Listening Practice",
+          "description": "Focus completely on the speaker, avoid interrupting, and ask clarifying questions to truly understand their perspective."
+        },
+        "perspectiveTakingExercises": {
+          "title": "Perspective-Taking Exercises",
+          "description": "Deliberately put yourself in others' shoes to imagine how they might feel or think in a given situation."
+        },
+        "nonverbalCommunicationAwareness": {
+          "title": "Nonverbal Communication Awareness",
+          "description": "Pay close attention to body language, facial expressions, and tone of voice to better understand others' emotions."
+        },
+        "empathyMapping": {
+          "title": "Empathy Mapping",
+          "description": "Create empathy maps to visualize what others might be thinking, feeling, seeing, and hearing in specific scenarios."
+        },
+        "readingFictionBiographies": {
+          "title": "Reading Fiction or Biographies",
+          "description": "Read stories from diverse perspectives to expand your understanding of different emotional experiences."
+        },
+        "askingOpenEndedQuestions": {
+          "title": "Asking Open-Ended Questions",
+          "description": "Use open-ended questions in conversations to encourage others to share their feelings and viewpoints."
+        },
+        "compassionateResponses": {
+          "title": "Practicing Compassionate Responses",
+          "description": "Respond to others with kindness and understanding, even when you disagree or don't fully relate."
+        },
+        "culturalSensitivityTraining": {
+          "title": "Cultural Sensitivity Training",
+          "description": "Learn about different cultures and backgrounds to better appreciate and empathize with diverse perspectives."
+        },
+        "emotionalImpactReflection": {
+          "title": "Reflecting on Emotional Impact",
+          "description": "After interactions, reflect on how your words and actions may have affected others emotionally."
+        },
+        "volunteeringCommunityService": {
+          "title": "Volunteering or Community Service",
+          "description": "Engage in activities that expose you to people from different walks of life, fostering empathy through shared experiences."
+        }
+      }
+    },
+    "socialSkills": {
+      "title": "Social skills EQ",
+      "description": "Evaluates your ability to build relationships and communicate effectively.",
+      "interventions": {
+        "effectiveCommunicationSkills": {
+          "title": "Effective Communication Skills",
+          "description": "Practice clear, direct, and respectful communication in both verbal and written forms."
+        },
+        "conflictResolutionTechniques": {
+          "title": "Conflict Resolution Techniques",
+          "description": "Learn and practice methods for addressing disagreements constructively and finding mutually beneficial solutions."
+        },
+        "networkingSkillsDevelopment": {
+          "title": "Networking Skills Development",
+          "description": "Build your ability to form and maintain professional and personal relationships through genuine interest in others."
+        },
+        "teamworkCollaborationPractice": {
+          "title": "Teamwork and Collaboration Practice",
+          "description": "Engage in group projects and collaborative activities to improve your ability to work effectively with others."
+        },
+        "leadershipSkillsBuilding": {
+          "title": "Leadership Skills Building",
+          "description": "Develop leadership qualities by taking on leadership roles in small projects or volunteer activities."
+        },
+        "socialAnxietyManagement": {
+          "title": "Social Anxiety Management",
+          "description": "Learn techniques to manage social anxiety and feel more comfortable in social situations."
+        },
+        "bodyLanguageAndNonverbalSkills": {
+          "title": "Body Language and Nonverbal Communication Skills",
+          "description": "Become more aware of your own body language and learn to read others' nonverbal cues effectively."
+        },
+        "publicSpeakingConfidenceBuilding": {
+          "title": "Public Speaking and Confidence Building",
+          "description": "Practice speaking in front of others to build confidence and improve your ability to express ideas clearly."
+        },
+        "relationshipBuildingMaintenance": {
+          "title": "Relationship Building and Maintenance",
+          "description": "Learn strategies for building new relationships and maintaining existing ones through consistent, thoughtful engagement."
+        },
+        "persuasionInfluenceSkills": {
+          "title": "Persuasion and Influence Skills",
+          "description": "Develop the ability to influence others positively and persuade them through logical arguments and emotional appeal."
+        }
+      }
+    }
+  },
+  "eqStrategiesScreen": {
+    "addButton": "Add this to task list",
+    "modal": {
+      "title": "Add to Task List",
+      "subtitle": "How often would you like to do this task?",
+      "frequencies": {
+        "daily": {
+          "title": "Daily Task",
+          "description": "Complete every day"
+        },
+        "weekly": {
+          "title": "Weekly Task",
+          "description": "Complete once a week"
+        },
+        "biWeekly": {
+          "title": "Bi-Weekly Task",
+          "description": "Complete every two weeks"
+        },
+        "monthly": {
+          "title": "Monthly Task",
+          "description": "Complete once a month"
+        }
+      },
+      "cancel": "Cancel"
+    },
+    "task": {
+      "subtitleFrom": "From {{strategyName}}",
+      "interventionType": "EQ Strategy"
+    },
+    "error": {
+      "title": "Error",
+      "invalidFrequency": "Invalid frequency selected",
+      "failedToSave": "Failed to save task. Please try again.",
+      "ok": "OK"
+    }
+  },
+  "emotionalIntelligenceScreen": {
+    "title": "Emotional Intelligence",
+    "description": "Emotional Intelligence (EQ) is the ability to recognize, understand, and manage emotions effectively. It encompasses five key dimensions that help you navigate social complexities, lead more effectively, and achieve better personal and professional outcomes.",
+    "keyBenefits": "Key Benefits",
+    "benefits": {
+      "selfAwareness": "Better self-awareness and emotional control",
+      "relationships": "Improved relationships and communication",
+      "leadership": "Enhanced leadership and social skills",
+      "resilience": "Greater resilience and stress management",
+      "empathy": "Increased empathy and perspective-taking"
+    },
+    "developmentStrategies": "EQ Development Strategies",
+    "strategies": {
+      "selfAwareness": {
+        "title": "Self-awareness EQ",
+        "description": "Assesses how well you recognize your own emotions and their impact."
+      },
+      "selfRegulation": {
+        "title": "Self-regulation EQ",
+        "description": "Measures your ability to manage and control your emotions."
+      },
+      "motivation": {
+        "title": "Motivation EQ",
+        "description": "Evaluates your drive to achieve goals and stay persistent."
+      },
+      "empathy": {
+        "title": "Empathy EQ",
+        "description": "Measures your ability to understand others' emotions and perspectives."
+      },
+      "socialSkills": {
+        "title": "Social skills EQ",
+        "description": "Evaluates your ability to build relationships and communicate effectively."
+      }
+    },
+    "viewStrategies": "View Strategies",
+    "remember": "Remember",
+    "reminderText": "Developing emotional intelligence is a gradual process that requires consistent practice and self-reflection. Start with one dimension and gradually incorporate others as you build confidence."
+  },
   "examAnxietyScanIntro": {
     "header": "Exam Anxiety Scan",
     "description": "Take this quick scan to figure out your anxiety status and resolve them right away with appropriate interventions.",
@@ -703,7 +1006,7 @@
       "validationError": "Please fill all required fields",
       "createdSuccess": "Intervention created"
     },
-  "noConditions": "No conditions yet",
+    "noConditions": "No conditions yet",
     "loading": "Loading...",
     "allTasksCompleted": "All Tasks Completed!",
     "congratulationsMessage": "Great job! You've completed all your {{tab}} interventions.",
@@ -912,9 +1215,6 @@
     "childComplete": "Child's onboarding is completed! You're all set to help them on their journey.",
     "selfComplete": "Self onboarding is completed! You're ready to begin your wellness journey."
   },
-  "common": {
-    "ok": "OK"
-  },
   "generalSettings": {
     "heading": "General Settings",
     "notifications": "Notifications",
@@ -957,7 +1257,7 @@
     "save": "Save",
     "add": "Add",
     "nameLabel": "Name",
-    "emailLabel": "E-mail", 
+    "emailLabel": "E-mail",
     "phoneLabel": "Phone Number",
     "relationLabel": "Relation with User",
     "namePlaceholder": "Enter the Name of Guardian",
@@ -1002,8 +1302,8 @@
     "dailyInterventions": "Daily",
     "weeklyInterventions": "Weekly",
     "biweeklyInterventions": "Bi-weekly",
-  "monthlyInterventions": "Monthly",
-  "wellnessScoreInfo": "Score depends on onboarding questions and test result. Every XP you gain counts here."
+    "monthlyInterventions": "Monthly",
+    "wellnessScoreInfo": "Score depends on onboarding questions and test result. Every XP you gain counts here."
   },
   "conditionScans": {
     "headerTitle": "Check your conditional wellness",
@@ -16624,5 +16924,17 @@
       "example": "'Dear [Your Name], I'm writing to you from the future - a future where you've achieved all your goals and dreams. I want to remind you that every challenge you face now is an opportunity for growth and learning. Embrace them with courage and determination. Remember the importance of self-care, balance, and nurturing your passions. I'm proud of the person you are becoming, and I believe in your ability to create the life you desire. Keep pushing forward, stay positive, and never lose sight of your dreams. With love and encouragement, Your Future Self.'",
       "task": "Write your own Future Self Letter using the following steps: (1) Find a quiet, comfortable space where you can relax and focus inward. (2) Close your eyes and take a few deep breaths to center yourself. (3) Visualize yourself 5, 10, or 20 years in the future - imagine the person you have become, the life you are living, and the goals you have achieved. (4) Open your eyes and write a letter from this future self to your present self. Include reflections on your personal growth, achievements, lessons learned, and advice for overcoming current challenges or pursuing future goals. (5) Read your Future Self Letter regularly to reinforce your motivation, goal clarity, and positive mindset. Consider writing new letters at regular intervals (e.g., annually) to update your future self vision and celebrate your progress."
     }
+  },
+  "dailyThoughts": {
+    "thought1": "Recharge yourself as often as you recharge your phone.",
+    "thought2": "Your mental health matters more than your productivity.",
+    "thought3": "Small steps forward are still progress worth celebrating.",
+    "thought4": "It's okay to take breaks - they're necessary, not optional.",
+    "thought5": "You don't have to be positive all the time. Your feelings are valid.",
+    "thought6": "Self-compassion is not selfish - it's essential for growth.",
+    "thought7": "Every day is a new opportunity to practice kindness to yourself.",
+    "thought8": "Your worth is not determined by your achievements or failures.",
+    "thought9": "Breathing deeply is a simple act of self-care you can do right now.",
+    "thought10": "You are doing better than you think, even on difficult days."
   }
 }

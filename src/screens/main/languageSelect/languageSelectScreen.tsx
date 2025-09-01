@@ -59,7 +59,7 @@ const LanguageSelectScreen: React.FC = (reset) => {
 
       if (hasCompletedFirstLaunch === null) {
         // First time - go to privacy notice screen
-        navigation.navigate("SelfOnboarding" as never);
+        navigation.navigate("PrivacyNoticeScreen" as never);
       } else {
         // Not first time - go directly to MainApp
         navigation.navigate("MainApp" as never);

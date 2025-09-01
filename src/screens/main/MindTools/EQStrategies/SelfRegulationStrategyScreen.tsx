@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomIcon from "../../../../components/CustomIcon";
+import { t } from "../../../../i18n/locales/i18n";
 
 interface Intervention {
   title: string;
@@ -84,37 +85,32 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
   };
 
   const strategyData = {
-    title: "Self-regulation EQ",
-    description: "Measures your ability to manage and control your emotions.",
+    title: t("eqStrategies.selfRegulation.title"),
+    description: t("eqStrategies.selfRegulation.description"),
     interventions: [
       {
-        title: "Pause and Breathe Technique",
-        description:
-          "When you feel a strong emotion, pause and take deep breaths before responding to prevent impulsive reactions.",
+        title: t("eqStrategies.selfRegulation.interventions.pauseAndBreathe.title"),
+        description: t("eqStrategies.selfRegulation.interventions.pauseAndBreathe.description"),
         xp: 5,
       },
       {
-        title: "Cognitive Reframing",
-        description:
-          "Practice looking at challenging situations from different perspectives to reduce negative emotional responses.",
+        title: t("eqStrategies.selfRegulation.interventions.cognitiveReframing.title"),
+        description: t("eqStrategies.selfRegulation.interventions.cognitiveReframing.description"),
         xp: 5,
       },
       {
-        title: "Impulse Control Exercises",
-        description:
-          "Engage in activities that require you to delay gratification, such as waiting before making decisions or responding to messages.",
+        title: t("eqStrategies.selfRegulation.interventions.emotionalRegulationTechniques.title"),
+        description: t("eqStrategies.selfRegulation.interventions.emotionalRegulationTechniques.description"),
         xp: 5,
       },
       {
-        title: "Stress Management Training",
-        description:
-          "Learn and apply stress reduction techniques like progressive muscle relaxation, yoga, or guided imagery.",
+        title: t("eqStrategies.selfRegulation.interventions.impulsivityManagement.title"),
+        description: t("eqStrategies.selfRegulation.interventions.impulsivityManagement.description"),
         xp: 5,
       },
       {
-        title: "Setting Personal Boundaries",
-        description:
-          "Establish clear boundaries in your personal and professional life to protect your emotional well-being.",
+        title: t("eqStrategies.selfRegulation.interventions.stressMgmtPractices.title"),
+        description: t("eqStrategies.selfRegulation.interventions.stressMgmtPractices.description"),
         xp: 5,
       },
       {
@@ -171,7 +167,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
 
       const tab = tabMap[frequency];
       if (!tab) {
-        Alert.alert("Error", "Invalid frequency selected");
+        Alert.alert(t('eqStrategiesScreen.error.title'), t('eqStrategiesScreen.error.invalidFrequency'));
         return;
       }
 
@@ -247,7 +243,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
     } catch (error) {
       console.error("Error saving intervention:", error);
       setTimeout(() => {
-        Alert.alert("Error", "Failed to save intervention. Please try again.");
+        Alert.alert(t('eqStrategiesScreen.error.title'), t('eqStrategiesScreen.error.failedToSave'));
       }, 300);
     }
   };
@@ -298,7 +294,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
                 style={styles.addButton}
                 onPress={() => handleAddToTaskList(intervention)}
               >
-                <Text style={styles.addButtonText}>Add to Task List</Text>
+                <Text style={styles.addButtonText}>{t('eqStrategiesScreen.addButton')}</Text>
                 <CustomIcon type="IO" name="add-circle" size={20} color="#8B5CF6" />
               </Pressable>
             </View>
@@ -342,9 +338,9 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
               <Pressable onPress={() => {}} style={styles.modalContent}>
                 {/* Modal Header */}
                 <View style={styles.modalHeader}>
-                  <Text style={styles.modalTitle}>Select Task Frequency</Text>
+                  <Text style={styles.modalTitle}>{t('eqStrategiesScreen.modal.title')}</Text>
                   <Text style={styles.modalSubtitle}>
-                    Choose how often you'd like to practice this strategy
+                    {t('eqStrategiesScreen.modal.subtitle')}
                   </Text>
                 </View>
 
@@ -355,29 +351,29 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
                       key: "Daily",
                       icon: "today-outline",
                       color: "#10B981",
-                      title: "Daily",
-                      description: "Practice every day",
+                      title: t('eqStrategiesScreen.modal.frequencies.daily.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.daily.description'),
                     },
                     {
                       key: "Weekly",
                       icon: "calendar-outline",
                       color: "#3B82F6",
-                      title: "Weekly",
-                      description: "Practice once a week",
+                      title: t('eqStrategiesScreen.modal.frequencies.weekly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.weekly.description'),
                     },
                     {
                       key: "Bi-Weekly",
                       icon: "calendar-number-outline",
                       color: "#8B5CF6",
-                      title: "Bi-Weekly",
-                      description: "Practice every two weeks",
+                      title: t('eqStrategiesScreen.modal.frequencies.biWeekly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.biWeekly.description'),
                     },
                     {
                       key: "Monthly",
                       icon: "calendar-clear-outline",
                       color: "#F59E0B",
-                      title: "Monthly",
-                      description: "Practice once a month",
+                      title: t('eqStrategiesScreen.modal.frequencies.monthly.title'),
+                      description: t('eqStrategiesScreen.modal.frequencies.monthly.description'),
                     },
                   ].map((option, index) => (
                     <Pressable
@@ -432,7 +428,7 @@ export default function SelfRegulationStrategyScreen({ navigation }: any) {
                   ]}
                   onPress={hideModal}
                 >
-                  <Text style={styles.cancelButtonText}>Cancel</Text>
+                  <Text style={styles.cancelButtonText}>{t('eqStrategiesScreen.modal.cancel')}</Text>
                 </Pressable>
               </Pressable>
             </View>

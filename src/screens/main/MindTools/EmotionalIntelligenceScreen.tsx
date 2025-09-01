@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
 import CustomIcon from "../../../components/CustomIcon";
+import { t } from "../../../i18n/locales/i18n";
 
 export default function EmotionalIntelligenceScreen({ navigation }: any) {
   const handleBackPress = () => {
@@ -32,7 +33,7 @@ export default function EmotionalIntelligenceScreen({ navigation }: any) {
         <Pressable style={styles.backButton} onPress={handleBackPress}>
           <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
-        <Text style={styles.headerTitle}>Emotional Intelligence</Text>
+        <Text style={styles.headerTitle}>{t("emotionalIntelligenceScreen.title")}</Text>
       </View>
 
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
@@ -41,134 +42,128 @@ export default function EmotionalIntelligenceScreen({ navigation }: any) {
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
               <CustomIcon type="IO" name="heart" size={48} color="#8b5cf6" />
-              <Text style={styles.imageLabel}>Emotional Intelligence</Text>
+              <Text style={styles.imageLabel}>{t("emotionalIntelligenceScreen.title")}</Text>
             </View>
           </View>
         </View>
 
         {/* Title and Description */}
-        <Text style={styles.title}>Emotional Intelligence </Text>
+        <Text style={styles.title}>{t("emotionalIntelligenceScreen.title")}</Text>
         <Text style={styles.description}>
-          Emotional Intelligence (EQ) is the ability to recognize, understand,
-          and manage emotions effectively. It encompasses five key dimensions
-          that help you navigate social complexities, lead more effectively, and
-          achieve better personal and professional outcomes.
+          {t("emotionalIntelligenceScreen.description")}
         </Text>
 
         {/* Benefits Section */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Key Benefits</Text>
+          <Text style={styles.sectionTitle}>{t("emotionalIntelligenceScreen.keyBenefits")}</Text>
 
           <View style={styles.symptomItem}>
             <View style={styles.symptomDot} />
             <Text style={styles.symptomText}>
-              Better self-awareness and emotional control
+              {t("emotionalIntelligenceScreen.benefits.selfAwareness")}
             </Text>
           </View>
 
           <View style={styles.symptomItem}>
             <View style={styles.symptomDot} />
             <Text style={styles.symptomText}>
-              Improved relationships and communication
+              {t("emotionalIntelligenceScreen.benefits.relationships")}
             </Text>
           </View>
 
           <View style={styles.symptomItem}>
             <View style={styles.symptomDot} />
             <Text style={styles.symptomText}>
-              Enhanced leadership and social skills
+              {t("emotionalIntelligenceScreen.benefits.leadership")}
             </Text>
           </View>
 
           <View style={styles.symptomItem}>
             <View style={styles.symptomDot} />
             <Text style={styles.symptomText}>
-              Greater resilience and stress management
+              {t("emotionalIntelligenceScreen.benefits.resilience")}
             </Text>
           </View>
 
           <View style={styles.symptomItem}>
             <View style={styles.symptomDot} />
             <Text style={styles.symptomText}>
-              Increased empathy and perspective-taking
+              {t("emotionalIntelligenceScreen.benefits.empathy")}
             </Text>
           </View>
         </View>
 
         {/* EQ Dimensions Section */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>EQ Development Strategies</Text>
+          <Text style={styles.sectionTitle}>{t("emotionalIntelligenceScreen.developmentStrategies")}</Text>
 
           {/* Self-Awareness */}
           <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>Self-awareness EQ</Text>
+            <Text style={styles.strategyTitle}>{t("emotionalIntelligenceScreen.strategies.selfAwareness.title")}</Text>
             <Text style={styles.strategyDescription}>
-              Assesses how well you recognize your own emotions and their
-              impact.
+              {t("emotionalIntelligenceScreen.strategies.selfAwareness.description")}
             </Text>
             <Pressable
               style={styles.viewStrategyButton}
               onPress={() => handleViewStrategy("selfAwareness")}
             >
-              <Text style={styles.viewStrategyButtonText}>View Strategies</Text>
+              <Text style={styles.viewStrategyButtonText}>{t("emotionalIntelligenceScreen.viewStrategies")}</Text>
             </Pressable>
           </View>
 
           {/* Self-Regulation */}
           <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>Self-regulation EQ</Text>
+            <Text style={styles.strategyTitle}>{t("emotionalIntelligenceScreen.strategies.selfRegulation.title")}</Text>
             <Text style={styles.strategyDescription}>
-              Measures your ability to manage and control your emotions.
+              {t("emotionalIntelligenceScreen.strategies.selfRegulation.description")}
             </Text>
             <Pressable
               style={styles.viewStrategyButton}
               onPress={() => handleViewStrategy("selfRegulation")}
             >
-              <Text style={styles.viewStrategyButtonText}>View Strategies</Text>
+              <Text style={styles.viewStrategyButtonText}>{t("emotionalIntelligenceScreen.viewStrategies")}</Text>
             </Pressable>
           </View>
 
           {/* Motivation */}
           <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>Motivation EQ</Text>
+            <Text style={styles.strategyTitle}>{t("emotionalIntelligenceScreen.strategies.motivation.title")}</Text>
             <Text style={styles.strategyDescription}>
-              Evaluates your drive to achieve goals and stay persistent.
+              {t("emotionalIntelligenceScreen.strategies.motivation.description")}
             </Text>
             <Pressable
               style={styles.viewStrategyButton}
               onPress={() => handleViewStrategy("motivation")}
             >
-              <Text style={styles.viewStrategyButtonText}>View Strategies</Text>
+              <Text style={styles.viewStrategyButtonText}>{t("emotionalIntelligenceScreen.viewStrategies")}</Text>
             </Pressable>
           </View>
 
           {/* Empathy */}
           <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>Empathy EQ</Text>
+            <Text style={styles.strategyTitle}>{t("emotionalIntelligenceScreen.strategies.empathy.title")}</Text>
             <Text style={styles.strategyDescription}>
-              Measures your ability to understand others' emotions and
-              perspectives.
+              {t("emotionalIntelligenceScreen.strategies.empathy.description")}
             </Text>
             <Pressable
               style={styles.viewStrategyButton}
               onPress={() => handleViewStrategy("empathy")}
             >
-              <Text style={styles.viewStrategyButtonText}>View Strategies</Text>
+              <Text style={styles.viewStrategyButtonText}>{t("emotionalIntelligenceScreen.viewStrategies")}</Text>
             </Pressable>
           </View>
 
           {/* Social Skills */}
           <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>Social skills EQ</Text>
+            <Text style={styles.strategyTitle}>{t("emotionalIntelligenceScreen.strategies.socialSkills.title")}</Text>
             <Text style={styles.strategyDescription}>
-              Evaluates your ability to build relationships and communicate
-              effectively.
+              {t("emotionalIntelligenceScreen.strategies.socialSkills.description")}
             </Text>
             <Pressable
               style={styles.viewStrategyButton}
               onPress={() => handleViewStrategy("socialSkills")}
             >
-              <Text style={styles.viewStrategyButtonText}>View Strategies</Text>
+              <Text style={styles.viewStrategyButtonText}>{t("emotionalIntelligenceScreen.viewStrategies")}</Text>
             </Pressable>
           </View>
         </View>
@@ -179,12 +174,10 @@ export default function EmotionalIntelligenceScreen({ navigation }: any) {
             <View style={styles.alertIconContainer}>
               <CustomIcon type="IO" name="information-circle" size={16} color="#3b82f6" />
             </View>
-            <Text style={styles.alertTitle}>Remember</Text>
+            <Text style={styles.alertTitle}>{t("emotionalIntelligenceScreen.remember")}</Text>
           </View>
           <Text style={styles.alertText}>
-            Developing emotional intelligence is a gradual process that requires
-            consistent practice and self-reflection. Start with one dimension
-            and gradually incorporate others as you build confidence.
+            {t("emotionalIntelligenceScreen.reminderText")}
           </Text>
         </View>
 

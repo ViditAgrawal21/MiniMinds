@@ -84,10 +84,10 @@ export default function InsightsScreen({
   const [filtered, setFiltered] = useState<Item[]>([]);
 
   // Dashboard state
-  const [conditionsCount, setConditionsCount] = useState(4);
+  const [conditionsCount, setConditionsCount] = useState(0);
   const [interventionsCount, setInterventionsCount] = useState(0);
   const [totalXP, setTotalXP] = useState(0);
-  const [completedTasks, setCompletedTasks] = useState(6);
+  const [completedTasks, setCompletedTasks] = useState(0);
 
   const [scanF, setScanF] = useState<string | null>(null);
   const [scoreF, setScoreF] = useState<ScoreBand | null>(null);
@@ -103,6 +103,8 @@ export default function InsightsScreen({
       if (storedConditions) {
         const conditions = JSON.parse(storedConditions);
         setConditionsCount(conditions.length);
+      } else {
+        setConditionsCount(0);
       }
 
       // Calculate total XP using utility function

@@ -33,16 +33,16 @@ const PrivacyNoticeScreen: React.FC = () => {
       );
 
       if (hasCompletedFirstLaunch === null) {
-        // First time - go to onboarding
+        // First time - go to welcome screen
         navigation.navigate("WelcomeScreen" as never);
       } else {
-        // Not first time - go directly to Tab
-        navigation.navigate("PrivacyNoticeScreen" as never);
+        // Not first time - go directly to MainApp
+        navigation.navigate("MainApp" as never);
       }
     } catch (error) {
       console.error("Error in privacy notice navigation:", error);
       // Navigate to welcome screen as fallback
-      navigation.navigate("PrivacyNoticeScreen" as never);
+      navigation.navigate("WelcomeScreen" as never);
     }
   };
 

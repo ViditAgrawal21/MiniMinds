@@ -184,7 +184,7 @@ export default function ProfilePage() {
     //   type: "guardian"
     // },
     {
-      label: "Change language",
+      label: t("profilePage.changeLanguage", "Change language"),
       type: "language",
     },
     // {
@@ -199,10 +199,6 @@ export default function ProfilePage() {
         <ProfileHeader />
         <QuoteCard
           title={t("profilePage.quoteTitle", "Quote of the Day")}
-          quote={t(
-            "profilePage.quoteText",
-            "Recharge yourself as often as you recharge your phone.",
-          )}
         />
         <View style={styles.menuContainer}>
           {menuItems.map((item, index) => (
