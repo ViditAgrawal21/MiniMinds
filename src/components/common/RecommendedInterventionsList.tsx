@@ -12,6 +12,7 @@ import {
   HeartCrack,
   Facebook,
 } from "lucide-react-native";
+import { t } from "@/i18n/locales/i18n"; // Import translation function
 export interface ScanItem {
   id: string;
   scan_title: string;
@@ -30,6 +31,12 @@ const icons: { [key: string]: React.ReactElement } = {
   "Internet Dependence": <MessageCircleMore color="red" size={38} />,
   Stress: <HeartCrack color="red" size={38} />,
   "Internet and Social Media Issue": <Facebook color="red" size={38} />,
+  "Sleep": <Clock3 color="red" size={38} />,
+  "Suicidal Behaviour": <HeartCrack color="red" size={38} />,
+  "Sex Life": <HeartCrack color="red" size={38} />,
+  "Professional Mental Health": <PillBottle color="red" size={38} />,
+  "Social Mental Health": <Handshake color="red" size={38} />,
+  "Youngster Issues": <Angry color="red" size={38} />,
 };
 
 export type RecommendedInterventionsListProps = {
@@ -43,7 +50,7 @@ export type RecommendedInterventionsListProps = {
    * Should return the content (your existing "condition name + interventions" block).
    */
   renderScanContent?: (scanId: string) => React.ReactNode;
-  /** Section header – defaults to "Recommended Interventions" */
+  /** Section header – defaults to translated "Recommended Interventions" */
   heading?: string;
   /** New callback fired when a scan button is tapped */
   onScanSelect?: (scanId: string) => void;
@@ -53,11 +60,27 @@ const MAX_INTERVENTIONS = 10;
 
 export default function RecommendedInterventionsList({
   scans,
-  heading = "Recommended Interventions",
+  heading = t("homeTab.recommendedInterventions"),
   onScanSelect,
 }: RecommendedInterventionsListProps) {
   const [selectedScan, setSelectedScan] = useState<string | null>(null);
   const [displayedScans, setDisplayedScans] = useState<ScanItem[]>([]);
+
+  // Function to get translated scan title
+  const getTranslatedScanTitle = (scanTitle: string) => {
+    try {
+      const translationKey = `insights.scanTypes.${scanTitle}`;
+      const translatedTitle = t(translationKey);
+      
+      // If the translation key is returned as-is, it means the translation doesn't exist
+      // In that case, return the original scan title
+      return translatedTitle === translationKey ? scanTitle : translatedTitle;
+    } catch (error) {
+      // Fallback to original title if translation fails
+      console.warn(`Translation failed for scan title: ${scanTitle}`, error);
+      return scanTitle;
+    }
+  };
 
   // Update displayed scans whenever the input scans change
   useEffect(() => {
@@ -94,14 +117,14 @@ export default function RecommendedInterventionsList({
               if (onScanSelect) onScanSelect(scan.id);
             }}
           >
-            {icons[scan.scan_title]}
+            {icons[scan.scan_title] || <PillBottle color="red" size={38} />}
             <Text
               style={[
                 styles.scanTitle,
                 selectedScan === scan.id && styles.activeScanTitle,
               ]}
             >
-              {scan.scan_title}
+              {getTranslatedScanTitle(scan.scan_title)}
             </Text>
           </Pressable>
         ))}

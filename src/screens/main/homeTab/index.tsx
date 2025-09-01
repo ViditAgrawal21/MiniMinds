@@ -1057,21 +1057,21 @@ export default function HomeTab() {
                   );
                   if (!selected) return;
 
-                  // Map scan_title to screen name - making sure these match the exact names in MindToolsNavigator.js
+                  // Map scan_title to screen name - making sure these match the exact names in AppNavigation.js
                   const screenMapping = {
-                    Addictions: "AddictionsScreen",
-                    "ADHD": "CommonPsychologicalScreen", // Changed to match available screens
+                    "Addictions": "AddictionsScreen",
+                    "Anger Management": "AngerManagementScreen", 
                     "Common Psychological Issues": "CommonPsychologicalScreen",
                     "Environment Issues Affecting Mental Wellbeing": "EnvironmentIssuesScreen",
                     "Family and Relationship": "FamilyRelationshipScreen",
                     "Financial Mental Health": "FinancialMentalHealthScreen",
                     "General Physical Fitness": "PhysicalFitnessScreen",
                     "Internet Dependence": "InternetDependenceScreen",
-                    Stress: "StressScreen",
                     "Internet and Social Media Issue": "InternetSocialMediaScreen",
-                    Sleep: "SleepScreen",
-                    "Suicidal Behaviour": "SuicidalBehaviourScreen",
-                    "Substance Addiction": "AddictionsScreen", // Changed to match available screens
+                    "Sleep": "SleepScreen",
+                    "Stress": "StressScreen",
+                    "Suicidal Behaviour": "SuicidalBehaviourScreen", 
+                    "Sex Life": "SexLifeScreen",
                     "Professional Mental Health": "ProfessionalMentalHealthScreen",
                     "Social Mental Health": "SocialMentalHealthScreen",
                     "Youngster Issues": "YoungsterIssuesScreen"
@@ -1513,12 +1513,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     justifyContent: "center",
     alignItems: "center",
+    textAlign: "center",
   },
   serviceTitle: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: "400",
     color: "#555555",
-    textAlign: "left",
+    textAlign: "center",
     fontFamily: "Poppins-Regular",
   },
   titleContainer: {

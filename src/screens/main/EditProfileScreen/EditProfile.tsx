@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { t } from '../../../i18n/locales/i18n';
 
 const STORAGE_KEY = 'profile_v1';
 
@@ -57,36 +58,36 @@ const EditProfile = () => {
       
       {/* Input Fields */}
       <View style={styles.form}>
-        <Text style={styles.label}>Name</Text>
+        <Text style={styles.label}>{t('editProfile.name')}</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter the Name of Guardian"
+          placeholder={t('editProfile.namePlaceholder')}
           value={name}
           onChangeText={setName}
         />
 
-        <Text style={styles.label}>E-mail</Text>
+        <Text style={styles.label}>{t('editProfile.email')}</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter the Email address"
+          placeholder={t('editProfile.emailPlaceholder')}
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
         />
 
-        <Text style={styles.label}>Phone Number</Text>
+        <Text style={styles.label}>{t('editProfile.phoneNumber')}</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter the Phone Number"
+          placeholder={t('editProfile.phonePlaceholder')}
           value={phoneNumber}
           onChangeText={setPhoneNumber}
           keyboardType="phone-pad"
         />
 
-        <Text style={styles.label}>Relation with User</Text>
+        <Text style={styles.label}>{t('editProfile.relation')}</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter Your Relation with User"
+          placeholder={t('editProfile.relationPlaceholder')}
           value={relation}
           onChangeText={setRelation}
         />
@@ -98,7 +99,7 @@ const EditProfile = () => {
           style={styles.cancelButton}
         onPress={() => navigation.goBack()} // Redirect to main page
         >
-          <Text style={styles.cancelButtonText}>Cancel</Text>
+          <Text style={styles.cancelButtonText}>{t('editProfile.cancel')}</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.addButton}
@@ -109,11 +110,11 @@ const EditProfile = () => {
               phoneNumber,
               relation,
             });
-            Alert.alert('Success', 'Profile Updated!');
+            Alert.alert(t('editProfile.success'), t('editProfile.profileUpdated'));
             navigation.goBack();
           }}
         >
-          <Text style={styles.addButtonText}>Save</Text>
+          <Text style={styles.addButtonText}>{t('editProfile.save')}</Text>
         </TouchableOpacity>
       </View>
     </View>

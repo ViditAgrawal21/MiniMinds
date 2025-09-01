@@ -13,6 +13,7 @@ import {
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomIcon from "./CustomIcon";
+import { t } from "../i18n/locales/i18n";
 
 
 const STORAGE_KEY = "profile_v1";
@@ -322,7 +323,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
           style={styles.editButton}
           onPress={() => navigation.navigate("EditProfile" as never)}
         >
-          <Text style={styles.editButtonText}>Edit Profile</Text>
+          <Text style={styles.editButtonText}>{t('editProfile.editProfileButton')}</Text>
         </TouchableOpacity>
       </View>
 

@@ -1,6 +1,9 @@
 {
   "common": {
-    "ok": "OK"
+    "ok": "OK",
+    "cancel": "Cancel",
+    "logout": "Logout",
+    "error": "Error"
   },
   "navigation": {
     "home": "Home",
@@ -1207,7 +1210,12 @@
     "quoteTitle": "Quote of the Day",
     "quoteText": "Recharge yourself as often as you recharge your phone.",
     "upgradeToPremium": "Upgrade to Premium",
-    "changeLanguage": "Change language"
+    "changeLanguage": "Change language",
+    "logout": "Logout",
+    "logoutSubLabel": "Sign out of your account",
+    "logoutTitle": "Logout",
+    "logoutMessage": "Are you sure you want to logout?",
+    "logoutError": "An error occurred while logging out. Please try again."
   },
   "onboarding": {
     "complete": "100% Complete",
@@ -1235,7 +1243,9 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "about": "About Us",
-    "contactSupport": "Contact Support"
+    "contactSupport": "Contact Support",
+    "logoutSuccess": "You have been logged out successfully.",
+    "logoutError": "Failed to logout completely. Please try again."
   },
   "guardianSettings": {
     "heading": "Guardian Settings",
@@ -1265,6 +1275,22 @@
     "phonePlaceholder": "Enter the Phone Number",
     "relationPlaceholder": "Enter Your Relation with User",
     "permissionRequired": "Permission to access photos is required!"
+  },
+  "editProfile": {
+    "title": "Edit Profile",
+    "name": "Name",
+    "email": "E-mail",
+    "phoneNumber": "Phone Number",
+    "relation": "Relation with User",
+    "namePlaceholder": "Enter the Name of Guardian",
+    "emailPlaceholder": "Enter the Email address",
+    "phonePlaceholder": "Enter the Phone Number",
+    "relationPlaceholder": "Enter Your Relation with User",
+    "cancel": "Cancel",
+    "save": "Save",
+    "success": "Success",
+    "profileUpdated": "Profile Updated!",
+    "editProfileButton": "Edit Profile"
   },
   "homeTab": {
     "daily": "Daily",

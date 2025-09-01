@@ -8,6 +8,7 @@ import { logout } from "../../../redux/Slices/authSlice";
 import { AuthService } from "../../../services/authService";
 import GoogleAuthNative from "../../../services/googleAuthNative";
 import { clearAllData } from "../../../utils/storageUtils";
+import { t } from "../../../i18n/locales/i18n";
 
 export default function GeneralSettings() {
   const [notifications, setNotifications] = React.useState(false);
@@ -88,7 +89,7 @@ export default function GeneralSettings() {
       dispatch(logout());
 
       // Show success toast
-      showToast("You have been logged out successfully.", "success");
+      showToast(t("generalSettings.logoutSuccess", "You have been logged out successfully."), "success");
 
       // Reset navigation stack and go to login after a short delay
       setTimeout(() => {
@@ -100,7 +101,7 @@ export default function GeneralSettings() {
 
     } catch (error) {
       console.error("Logout error:", error);
-      showToast("Failed to logout completely. Please try again.", "error");
+      showToast(t("generalSettings.logoutError", "Failed to logout completely. Please try again."), "error");
     }
   };
 
@@ -116,32 +117,32 @@ export default function GeneralSettings() {
           <CustomIcon type="MI" name="arrow-back" size={24} color={"#000000"}/>
         </TouchableOpacity>
       </View>
-      <Text style={styles.sectionTitle}>Notifications</Text>
+      <Text style={styles.sectionTitle}>{t('generalSettings.notifications')}</Text>
       <View style={styles.settingRow}>
-        <Text style={styles.settingRowText}>Would you like the notifications to be</Text>
+        <Text style={styles.settingRowText}>{t('generalSettings.notificationToggle')}</Text>
         <Switch
           value={notifications}
           onValueChange={(value) => setNotifications(value)}
         />
       </View>
 
-      <Text style={styles.sectionTitle}>Account Settings</Text>
+      <Text style={styles.sectionTitle}>{t('generalSettings.accountSettings')}</Text>
       <TouchableOpacity style={styles.option}>
-        <Text style={styles.optionText}>Delete account</Text>
-        <Text style={styles.optionSubText}>Permanently delete your account</Text>
+        <Text style={styles.optionText}>{t('generalSettings.deleteAccount')}</Text>
+        <Text style={styles.optionSubText}>{t('generalSettings.deleteAccountSubText')}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.option}>
-        <Text style={styles.optionText}>Deactivate account</Text>
+        <Text style={styles.optionText}>{t('generalSettings.deactivateAccount')}</Text>
         <Text style={styles.optionSubText}>
-          Permanently deactivate your account
+          {t('generalSettings.deactivateAccountSubText')}
         </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={handleLogoutPress} style={styles.option}>
-        <Text style={styles.optionText}>Log out</Text>
+        <Text style={styles.optionText}>{t('generalSettings.logOut')}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.option}>
-      <Text style={styles.sectionTitle}>Support</Text>
-      <Text style={styles.optionSubText}>Help</Text>
+      <Text style={styles.sectionTitle}>{t('generalSettings.support')}</Text>
+      <Text style={styles.optionSubText}>{t('generalSettings.help')}</Text>
       </TouchableOpacity>
     </View>
   );

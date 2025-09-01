@@ -566,7 +566,12 @@
     "quoteTitle": "आजचे सुविचार",
     "quoteText": "आपल्या फोनला रिचार्ज करता तसेच स्वतःला देखील रिचार्ज करा.",
     "upgradeToPremium": "प्रीमियम करिता अपग्रेड करा",
-    "changeLanguage": "भाषा बदला"
+    "changeLanguage": "भाषा बदला",
+    "logout": "लॉग आउट",
+    "logoutSubLabel": "तुमच्या खात्यातून साइन आउट करा",
+    "logoutTitle": "लॉग आउट",
+    "logoutMessage": "तुम्हाला खरोखर लॉग आउट करायचे आहे का?",
+    "logoutError": "लॉग आउट करताना त्रुटी आली. कृपया पुन्हा प्रयत्न करा."
   },
   "onboarding": {
     "complete": "100% पूर्ण",
@@ -575,7 +580,10 @@
     "selfComplete": "स्व-ऑनबोर्डिंग पूर्ण झाले! तुम्ही तुमचा कल्याण प्रवास सुरू करण्यासाठी तयार आहात."
   },
   "common": {
-    "ok": "ठीक आहे"
+    "ok": "ठीक आहे",
+    "cancel": "रद्द करा",
+    "logout": "लॉग आउट",
+    "error": "त्रुटी"
   },
   "generalSettings": {
     "heading": "सामान्य सेटिंग्ज",
@@ -597,7 +605,9 @@
     "privacy": "गोपनीयता धोरण",
     "terms": "सेवा अटी",
     "about": "आमच्याबद्दल",
-    "contactSupport": "सपोर्टशी संपर्क साधा"
+    "contactSupport": "सपोर्टशी संपर्क साधा",
+    "logoutSuccess": "तुम्ही यशस्वीरित्या लॉग आउट झाला आहात.",
+    "logoutError": "पूर्णपणे लॉग आउट करण्यात अयशस्वी. कृपया पुन्हा प्रयत्न करा."
   },
   "guardianSettings": {
     "heading": "पालक सेटिंग्ज",
@@ -627,6 +637,22 @@
     "phonePlaceholder": "फोन नंबर टाका",
     "relationPlaceholder": "वापरकर्त्याशी तुमचा संबंध टाका",
     "permissionRequired": "फोटोमध्ये प्रवेशाची परवानगी आवश्यक आहे!"
+  },
+  "editProfile": {
+    "title": "प्रोफाइल संपादित करा",
+    "name": "नाव",
+    "email": "ई-मेल",
+    "phoneNumber": "फोन नंबर",
+    "relation": "वापरकर्त्याशी संबंध",
+    "namePlaceholder": "पालकाचे नाव टाका",
+    "emailPlaceholder": "ईमेल पत्ता टाका",
+    "phonePlaceholder": "फोन नंबर टाका",
+    "relationPlaceholder": "वापरकर्त्याशी तुमचा संबंध टाका",
+    "cancel": "रद्द करा",
+    "save": "जतन करा",
+    "success": "यशस्वी",
+    "profileUpdated": "प्रोफाइल अपडेट झाले!",
+    "editProfileButton": "प्रोफाइल संपादित करा"
   },
   "homeTab": {
     "yourWellnessScore": "तुमचा वेलनेस स्कोअर",

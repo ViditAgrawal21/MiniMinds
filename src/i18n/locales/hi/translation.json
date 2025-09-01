@@ -566,7 +566,12 @@
     "quoteTitle": "आज का विचार",
     "quoteText": "अपने फोन को रिचार्ज करने की तरह ही खुद को भी रिचार्ज करें।",
     "upgradeToPremium": "प्रीमियम में अपग्रेड करें",
-    "changeLanguage": "भाषा बदलें"
+    "changeLanguage": "भाषा बदलें",
+    "logout": "लॉग आउट",
+    "logoutSubLabel": "अपने खाते से साइन आउट करें",
+    "logoutTitle": "लॉग आउट",
+    "logoutMessage": "क्या आप वाकई लॉग आउट करना चाहते हैं?",
+    "logoutError": "लॉग आउट करते समय एक त्रुटि हुई है। कृपया पुनः प्रयास करें।"
   },
   "onboarding": {
     "complete": "100% पूर्ण",
@@ -575,7 +580,10 @@
     "selfComplete": "स्व-ऑनबोर्डिंग पूर्ण हो गई है! आप अपनी कल्याण यात्रा शुरू करने के लिए तैयार हैं।"
   },
   "common": {
-    "ok": "ठीक है"
+    "ok": "ठीक है",
+    "cancel": "रद्द करें",
+    "logout": "लॉग आउट",
+    "error": "त्रुटि"
   },
   "generalSettings": {
     "heading": "सामान्य सेटिंग्स",
@@ -597,7 +605,9 @@
     "privacy": "गोपनीयता नीति",
     "terms": "सेवा की शर्तें",
     "about": "हमारे बारे में",
-    "contactSupport": "सपोर्ट से संपर्क करें"
+    "contactSupport": "सपोर्ट से संपर्क करें",
+    "logoutSuccess": "आप सफलतापूर्वक लॉग आउट हो गए हैं।",
+    "logoutError": "पूरी तरह से लॉग आउट करने में विफल। कृपया पुनः प्रयास करें।"
   },
   "guardianSettings": {
     "heading": "अभिभावक सेटिंग्स",
@@ -627,6 +637,22 @@
     "phonePlaceholder": "फोन नंबर दर्ज करें",
     "relationPlaceholder": "उपयोगकर्ता के साथ अपना संबंध दर्ज करें",
     "permissionRequired": "फोटो तक पहुंच की अनुमति आवश्यक है!"
+  },
+  "editProfile": {
+    "title": "प्रोफ़ाइल संपादित करें",
+    "name": "नाम",
+    "email": "ई-मेल",
+    "phoneNumber": "फोन नंबर",
+    "relation": "उपयोगकर्ता के साथ संबंध",
+    "namePlaceholder": "अभिभावक का नाम दर्ज करें",
+    "emailPlaceholder": "ईमेल पता दर्ज करें",
+    "phonePlaceholder": "फोन नंबर दर्ज करें",
+    "relationPlaceholder": "उपयोगकर्ता के साथ अपना संबंध दर्ज करें",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "success": "सफलता",
+    "profileUpdated": "प्रोफ़ाइल अपडेट हो गई!",
+    "editProfileButton": "प्रोफ़ाइल संपादित करें"
   },
   "homeTab": {
     "yourWellnessScore": "आपका वेलनेस स्कोर",
