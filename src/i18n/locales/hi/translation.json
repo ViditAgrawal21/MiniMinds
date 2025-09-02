@@ -135,6 +135,19 @@
       "conditionsTrackedSingular": "{{count}} स्थिति ट्रैक की गई",
       "conditionsTrackedPlural": "{{count}} स्थितियां ट्रैक की गईं"
     },
+    "sleepTracking": {
+      "title": "नींद ट्रैकिंग",
+      "subtitle": "अपने नींद के पैटर्न और गुणवत्ता की निगरानी करें",
+      "description": "नींद के पैटर्न, गुणवत्ता और मानसिक स्वास्थ्य पर उनके प्रभाव को ट्रैक करें",
+      "viewDetails": "विवरण देखें",
+      "enabled": "सक्षम",
+      "disabled": "अक्षम",
+      "status": "स्थिति",
+      "lastUpdate": "अंतिम अपडेट",
+      "noData": "कोई नींद डेटा उपलब्ध नहीं",
+      "permissions": "अनुमतियां आवश्यक",
+      "permissionsDescription": "बेहतर अंतर्दृष्टि के लिए अपने नींद पैटर्न और ऐप उपयोग को ट्रैक करने की अनुमति दें"
+    },
     "filters": {
       "scanType": "स्कैन प्रकार",
       "conditionScore": "स्थिति स्कोर",

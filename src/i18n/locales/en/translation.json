@@ -778,6 +778,19 @@
       "conditionsTrackedSingular": "{{count}} condition tracked",
       "conditionsTrackedPlural": "{{count}} conditions tracked"
     },
+    "sleepTracking": {
+      "title": "Sleep Tracking",
+      "subtitle": "Monitor your sleep patterns and quality",
+      "description": "Track sleep patterns, quality, and their impact on your mental health",
+      "viewDetails": "View Details",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "status": "Status",
+      "lastUpdate": "Last updated",
+      "noData": "No sleep data available",
+      "permissions": "Permissions Required",
+      "permissionsDescription": "Allow access to track your sleep patterns and app usage for better insights"
+    },
     "filters": {
       "scanType": "Scan Type",
       "conditionScore": "Condition Score",

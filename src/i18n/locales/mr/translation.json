@@ -135,6 +135,19 @@
       "conditionsTrackedSingular": "{{count}} स्थिती ट्रॅक केली",
       "conditionsTrackedPlural": "{{count}} स्थिती ट्रॅक केल्या"
     },
+    "sleepTracking": {
+      "title": "झोप ट्रॅकिंग",
+      "subtitle": "आपल्या झोपेच्या पद्धती आणि गुणवत्तेचे निरीक्षण करा",
+      "description": "झोपेच्या पद्धती, गुणवत्ता आणि मानसिक आरोग्यावर त्यांच्या प्रभावाचा मागोवा घ्या",
+      "viewDetails": "तपशील पहा",
+      "enabled": "सक्षम",
+      "disabled": "अक्षम",
+      "status": "स्थिती",
+      "lastUpdate": "शेवटचे अपडेट",
+      "noData": "कोणताही झोप डेटा उपलब्ध नाही",
+      "permissions": "परवानग्या आवश्यक",
+      "permissionsDescription": "चांगल्या अंतर्दृष्टीसाठी आपल्या झोपेच्या पद्धती आणि अॅप वापराचा मागोवा घेण्याची परवानगी द्या"
+    },
     "filters": {
       "scanType": "स्कॅन प्रकार",
       "conditionScore": "स्थिती स्कोअर",

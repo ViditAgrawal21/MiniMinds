@@ -49,6 +49,9 @@ import InternetSocialMediaScreen from '@/screens/main/MindTools/InternetSocialMe
 import FamilyRelationshipScreen from '@/screens/main/MindTools/FamilyRelationshipScreen';
 import SleepScreen from '@/screens/main/MindTools/SleepScreen';
 import SuicidalBehaviourScreen from '@/screens/main/MindTools/SuicidalBehaviourScreen';
+
+// Import Insights Sleep Tracking Screen
+import SleepTrackingScreen from '@/screens/main/Insights/sleepScreen';
 import SexLifeScreen from '@/screens/main/MindTools/SexLifeScreen';
 import AddictionsScreen from '@/screens/main/MindTools/AddictionsScreen';
 import CommonPsychologicalScreen from '@/screens/main/MindTools/CommonPsychologicalScreen';
@@ -224,6 +227,9 @@ const AppNavigation = () => {
       <Stack.Screen name="FamilyRelationshipScreen" component={FamilyRelationshipScreen} />
       <Stack.Screen name="SleepScreen" component={SleepScreen} />
       <Stack.Screen name="SuicidalBehaviourScreen" component={SuicidalBehaviourScreen} />
+      
+      {/* Insights Sleep Tracking Screen */}
+      <Stack.Screen name="SleepTrackingScreen" component={SleepTrackingScreen} />
       <Stack.Screen name="SexLifeScreen" component={SexLifeScreen} />
       <Stack.Screen name="AddictionsScreen" component={AddictionsScreen} />
       <Stack.Screen name="CommonPsychologicalScreen" component={CommonPsychologicalScreen} />

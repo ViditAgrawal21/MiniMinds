@@ -386,6 +386,69 @@ export default function InsightsScreen({
                 </Text>
               </Pressable>
             </View>
+
+            {/* Row 3 - Sleep Tracking Card */}
+            <View style={styles.row}>
+              <Pressable
+                style={[styles.sleepTrackingCard, styles.fullWidthCard]}
+                onPress={() => navigation?.navigate("SleepTrackingScreen")}
+              >
+                <View style={styles.sleepCardHeader}>
+                  <View style={styles.sleepIconContainer}>
+                    <CustomIcon 
+                      type="IO" 
+                      name="moon" 
+                      size={20} 
+                      color="#8b5cf6" 
+                    />
+                  </View>
+                  <View style={styles.sleepTextContainer}>
+                    <Text style={styles.sleepTitle}>
+                      {t("insights.sleepTracking.title")}
+                    </Text>
+                    <Text style={styles.sleepSubtitle}>
+                      {t("insights.sleepTracking.subtitle")}
+                    </Text>
+                  </View>
+                  <View style={styles.viewIconContainer}>
+                    <CustomIcon type="IO" name="eye-outline" size={12} color="#8b5cf6" />
+                    <Text style={styles.viewText}>
+                      {t("insights.dashboard.view")}
+                    </Text>
+                  </View>
+                </View>
+                
+                <View style={styles.sleepFeatures}>
+                  <View style={styles.featureItem}>
+                    <CustomIcon 
+                      type="IO" 
+                      name="analytics-outline" 
+                      size={14} 
+                      color="#6b7280" 
+                    />
+                    <Text style={styles.featureText}>Sleep Patterns</Text>
+                  </View>
+                  <View style={styles.featureItem}>
+                    <CustomIcon 
+                      type="IO" 
+                      name="heart-outline" 
+                      size={14} 
+                      color="#6b7280" 
+                    />
+                    <Text style={styles.featureText}>Quality Tracking</Text>
+                  </View>
+                  <View style={styles.featureItem}>
+                    <CustomIcon 
+                      type="IO" 
+                      name="phone-portrait-outline" 
+                      size={14} 
+                      color="#6b7280" 
+                    />
+                    <Text style={styles.featureText}>App Usage Impact</Text>
+                  </View>
+                </View>
+              </Pressable>
+            </View>
           </View>
         </ScrollView>
       ) : (
@@ -858,5 +921,83 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     marginBottom: 5,
     textAlign: "center",
+  },
+
+  /* Sleep Tracking Card Styles */
+  sleepTrackingCard: {
+    backgroundColor: "white",
+    borderRadius: 12,
+    padding: 16,
+    minHeight: 140,
+    justifyContent: "space-between",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  fullWidthCard: {
+    flex: 1,
+  },
+  sleepGradient: {
+    flex: 1,
+    padding: 20,
+  },
+  sleepCardContent: {
+    flex: 1,
+    justifyContent: "space-between",
+  },
+  sleepCardHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 12,
+  },
+  sleepHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 16,
+  },
+  sleepIconContainer: {
+    width: 40,
+    height: 40,
+    borderRadius: 8,
+    backgroundColor: "#f3f4f6",
+    justifyContent: "center",
+    alignItems: "center",
+    marginRight: 12,
+  },
+  sleepTextContainer: {
+    flex: 1,
+  },
+  sleepTitle: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#333",
+    marginBottom: 2,
+  },
+  sleepSubtitle: {
+    fontSize: 12,
+    color: "#666",
+    fontWeight: "500",
+  },
+  sleepFeatures: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 8,
+  },
+  featureItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    flex: 1,
+  },
+  featureText: {
+    fontSize: 11,
+    color: "#6b7280",
+    marginLeft: 4,
+    fontWeight: "500",
   },
 });
