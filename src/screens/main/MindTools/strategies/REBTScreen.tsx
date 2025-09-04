@@ -396,6 +396,7 @@ export default function REBTScreen({ navigation, route }: any) {
       sleep: "scanIntro.sleep.title",
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
+      "job-insecurity": "scanIntro.jobInsecurity.title",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -422,6 +423,7 @@ export default function REBTScreen({ navigation, route }: any) {
         sleep: "sleep",
         "social-mental-health": "socialMentalHealth",
         "youngster-issues": "youngsterIssues",
+        "job-insecurity": "jobInsecurity",
       };
       
       const translationKey = conditionKeyMap[condition];
@@ -579,6 +581,7 @@ export default function REBTScreen({ navigation, route }: any) {
         stress: "stress",
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
+        "job-insecurity": "jobInsecurity",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -601,6 +604,7 @@ export default function REBTScreen({ navigation, route }: any) {
         sleep: "scanIntro.sleep.title",
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
+        "job-insecurity": "scanIntro.jobInsecurity.title",
       };
 
       const translationKey = translationKeyMap[condition];

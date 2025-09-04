@@ -122,6 +122,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       sleep: "scanIntro.sleep.title",
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
+      "job-insecurity": "scanIntro.jobInsecurity.title",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -140,6 +141,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "general-physical-fitness": "generalPhysicalFitness",
       "internet-dependence": "internetDependence",
       "internet-social-media": "internetSocialMedia",
+      "job-insecurity": "jobInsecurity",
       "professional-mental-health": "professionalMentalHealth",
       "sex-life": "sexLife",
       sleep: "sleep",
@@ -346,6 +348,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
           "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
         "financial-mental-health": "scanIntro.financialMentalHealth.title",
         "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+        "job-insecurity": "scanIntro.jobInsecurity.title",
         "professional-mental-health":
           "scanIntro.professionalMentalHealth.title",
         "sex-life": "scanIntro.sexLife.title",

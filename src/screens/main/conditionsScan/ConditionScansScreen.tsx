@@ -183,6 +183,14 @@ export default function ConditionScansScreen() {
       category: "Peer to Peer Interaction",
       requiredPlan: "premium" as Plan,
     },
+    {
+      id: 17,
+      nameKey: t("conditionScans.jobInsecurityQuestion", "Job Insecurity"),
+      name: "Job Insecurity",
+      categoryKey: t("conditionScans.peerInteraction"),
+      category: "Peer to Peer Interaction",
+      requiredPlan: "premium" as Plan,
+    },
   ];
 
   const tabs = [
@@ -192,11 +200,21 @@ export default function ConditionScansScreen() {
     t("conditionScans.familyBonding", "Family Bonding"),
   ];
 
-  // Filter scans
+  // Map of translated tab to English tab for filtering
+  const tabMapping: { [key: string]: string } = {
+    [t("conditionScans.all", "All")]: "All",
+    [t("conditionScans.education", "Education")]: "Education", 
+    [t("conditionScans.peerInteraction", "Peer to Peer Interaction")]: "Peer to Peer Interaction",
+    [t("conditionScans.familyBonding", "Family Bonding")]: "Family Bonding",
+  };
+
+  // Filter scans using English category names
   const filteredScans = allScans.filter(
-    (scan) =>
-      (selectedTab === "All" || scan.category === selectedTab) &&
-      scan.name.toLowerCase().includes(searchText.toLowerCase()),
+    (scan) => {
+      const englishTab = tabMapping[selectedTab] || selectedTab;
+      return (englishTab === "All" || scan.category === englishTab) &&
+        scan.name.toLowerCase().includes(searchText.toLowerCase());
+    }
   );
 
   const handleItemPress = async ({

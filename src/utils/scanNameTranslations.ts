@@ -41,6 +41,8 @@ export const getTranslatedScanName = (scanName: string): string => {
       return t("conditionScans.suicidalBehaviorQuestion");
     case "Youngster Issues":
       return t("conditionScans.youngsterIssuesQuestion");
+    case "Job Insecurity":
+      return t("conditionScans.jobInsecurityQuestion");
     default:
       return scanName; // Return original name if no translation found
   }

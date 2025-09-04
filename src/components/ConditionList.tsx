@@ -45,11 +45,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff", // White background for the entire container
     padding: 20,
-    maxHeight: SCREEN_HEIGHT * 0.7,
+    flex: 1, // Allow it to take full available space
     justifyContent: "space-between",
   },
   scrollContent: {
-    paddingBottom: 40,
+    paddingBottom: 40, // Increased padding to ensure last item is fully visible
   },
   item: {
     paddingVertical: 12,

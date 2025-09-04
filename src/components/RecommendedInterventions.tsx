@@ -704,6 +704,7 @@ export default function RecommendedInterventions({
         "Professional Mental Health": "professional-mental-health",
         "Social Mental Health": "social-mental-health",
         "Youngster Issues": "youngster-issues",
+        "Job Insecurity": "job-insecurity",
         // Additional mappings for alternative names
         "Environment Issues": "environment-issues",
         "Physical Fitness": "general-physical-fitness",

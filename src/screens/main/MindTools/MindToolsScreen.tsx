@@ -40,6 +40,7 @@ type RootStackParamList = {
   ProfessionalMentalHealthScreen: undefined;
   SocialMentalHealthScreen: undefined;
   YoungsterIssuesScreen: undefined;
+  JobInsecurityScreen: undefined;
   EmotionalIntelligenceScreen: undefined;
   Upgrade: undefined;
 };
@@ -83,6 +84,7 @@ export default function MindToolsScreen() {
     "Internet Dependence": "premium",
     "Professional Mental Health": "premium",
     "Social Mental Health": "premium",
+    "Job Insecurity": "premium",
     "Youngster Issues": "premium",
     "Emotional Intelligence": "premium",
   };
@@ -217,6 +219,9 @@ export default function MindToolsScreen() {
         break;
       case "Social Mental Health":
         navigation.navigate("SocialMentalHealthScreen");
+        break;
+      case "Job Insecurity":
+        navigation.navigate("JobInsecurityScreen");
         break;
       case "Youngster Issues":
         navigation.navigate("YoungsterIssuesScreen");
@@ -667,6 +672,25 @@ export default function MindToolsScreen() {
               </Text>
             </Pressable>
 
+            {/* Job Insecurity - Full Width Card with Regular Design */}
+            <Pressable
+              style={styles.jobInsecurityCard}
+              onPress={() => handleCategoryPress("Job Insecurity")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="briefcase-outline" size={24} color="#1f2937" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.jobInsecurity.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.jobInsecurity.description")}
+              </Text>
+            </Pressable>
+
             {/* Row 9 - Full Width Emotional Intelligence Card */}
             <Pressable
               style={styles.emotionalIntelligenceCard}
@@ -955,6 +979,24 @@ const styles = StyleSheet.create({
   eqArrowContainer: {
     marginLeft: 12,
     padding: 4,
+  },
+  // Job Insecurity Full-width Card Styles (Regular card design but rectangular)
+  jobInsecurityCard: {
+    width: "100%",
+    backgroundColor: "#ffffff",
+    borderRadius: 12,
+    padding: 16,
+    marginTop: 8,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 3,
+    borderWidth: 1,
+    borderColor: "#f1f5f9",
   },
   upgradeButton: {
     backgroundColor: "#AB47BC",

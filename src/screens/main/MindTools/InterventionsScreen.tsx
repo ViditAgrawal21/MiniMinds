@@ -123,6 +123,7 @@ const mapTagsToConditionName = (tags: string[]): string | null => {
     "environment issues": "Environment Issues affecting mental wellbeing", // Short form
     "youngster issues": "Youngster Issues",
     "general physical fitness": "General Physical Fitness",
+    "job insecurity": "Job Insecurity", // Direct match for Job Insecurity condition
     
     // Alternative mappings for common terms
     anger: "Anger Management",
@@ -137,6 +138,9 @@ const mapTagsToConditionName = (tags: string[]): string | null => {
     financial: "Financial Mental Health",
     relationship: "Family and Relaitonship",
     family: "Family and Relaitonship",
+    "job security": "Job Insecurity",
+    "employment security": "Job Insecurity",
+    "career insecurity": "Job Insecurity",
     // Note: Removed standalone "internet" mapping to avoid conflicts
     "social media": "Internet and Social Media Issue",
     environment: "Environment Issues affecting mental wellbeing",
@@ -176,6 +180,7 @@ const mapTagsToConditionName = (tags: string[]): string | null => {
     if (titleCaseTag === "Internet and Social Media Issue")
       return "Internet and Social Media Issue";
     if (titleCaseTag === "Internet Dependence") return "Internet Dependence";
+    if (titleCaseTag === "Job Insecurity") return "Job Insecurity";
     if (titleCaseTag === "Professional Mental Health")
       return "Professional Mental Health";
     if (titleCaseTag === "Sex Life") return "Sex Life";

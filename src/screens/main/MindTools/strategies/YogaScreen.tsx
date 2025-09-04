@@ -269,6 +269,7 @@ export default function YogaScreen({ navigation, route }: any) {
         "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
       "financial-mental-health": "scanIntro.financialMentalHealth.title",
       "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+      "job-insecurity": "scanIntro.jobInsecurity.title",
       "professional-mental-health": "scanIntro.professionalMentalHealth.title",
       "sex-life": "scanIntro.sexLife.title",
       sleep: "scanIntro.sleep.title",
@@ -418,6 +419,7 @@ export default function YogaScreen({ navigation, route }: any) {
       "general-physical-fitness": "generalPhysicalFitness",
       "internet-dependence": "internetDependence",
       "internet-social-media": "internetSocialMedia",
+      "job-insecurity": "jobInsecurity",
       "professional-mental-health": "professionalMentalHealth",
       "sex-life": "sexLife",
       sleep: "sleep",
@@ -602,6 +604,7 @@ export default function YogaScreen({ navigation, route }: any) {
         "financial-mental-health": "scanIntro.financialMentalHealth.title",
         "internet-dependence": "scanIntro.internetDependence.title",
         "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+        "job-insecurity": "scanIntro.jobInsecurity.title",
         "professional-mental-health":
           "scanIntro.professionalMentalHealth.title",
         "sex-life": "scanIntro.sexLife.title",

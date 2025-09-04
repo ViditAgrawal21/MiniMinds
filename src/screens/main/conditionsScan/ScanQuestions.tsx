@@ -5773,6 +5773,350 @@ export default function ScanQuestions() {
           ],
         ],
       },
+      {
+        [t("scanQuestions.jobInsecurity.title", "Job Insecurity")]: [
+          [
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "1",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.1",
+                "My job is likely to exist in its current form in the next year."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "5",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "4",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "2",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "1",
+            },
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "2",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.2",
+                "I am concerned about the possibility of being laid off or downsized in the near future."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "1",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "2",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "4",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "5",
+            },
+          ],
+          [
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "3",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.3",
+                "I feel confident that my employer will continue to need my skills and expertise."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "5",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "4",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "2",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "1",
+            },
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "4",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.4",
+                "I worry that my job could be outsourced or replaced by technology."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "1",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "2",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "4",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "5",
+            },
+          ],
+          [
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "5",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.5",
+                "I am certain that I could find a comparable job quickly if I were to lose my current one."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "5",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "4",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "2",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "1",
+            },
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "6",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.6",
+                "I frequently hear rumors or discussions at work about potential organizational changes that could affect my job."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "1",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "2",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "4",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "5",
+            },
+          ],
+          [
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "7",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.7",
+                "I feel my current job situation is impacting my family harmony and environment."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "1",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "2",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "4",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "5",
+            },
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "8",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.8",
+                "I feel that my current job depends on my ability to consistently outperform my colleagues."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "1",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "2",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "4",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "5",
+            },
+          ],
+          [
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "9",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.9",
+                "I fear losing my job now will severely affect my current financial conditions."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "1",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "2",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "4",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "5",
+            },
+            {
+              filename: t("scanQuestions.jobInsecurity.title", "Job Insecurity"),
+              Q_id: "10",
+              Name: t(
+                "scanQuestions.jobInsecurity.questions.10",
+                "My job situation and current market conditions are severely affecting my mental health."
+              ),
+              "Option 1": t(
+                "scanQuestions.jobInsecurity.options.stronglyDisagree",
+                "Strongly Disagree"
+              ),
+              "Option 1 Weight": "1",
+              "Option 2": t(
+                "scanQuestions.jobInsecurity.options.disagree",
+                "Disagree"
+              ),
+              "Option 2 Weight": "2",
+              "Option 3": t(
+                "scanQuestions.jobInsecurity.options.neutral",
+                "Neither Agree nor Disagree"
+              ),
+              "Option 3 Weight": "3",
+              "Option 4": t(
+                "scanQuestions.jobInsecurity.options.agree",
+                "Agree"
+              ),
+              "Option 4 Weight": "4",
+              "Option 5": t(
+                "scanQuestions.jobInsecurity.options.stronglyAgree",
+                "Strongly Agree"
+              ),
+              "Option 5 Weight": "5",
+            },
+          ],
+        ],
+      },
     ],
     [] // Removed unnecessary locale dependency
   ); // Dependency on locale to recreate when language changes
@@ -5851,6 +6195,10 @@ export default function ScanQuestions() {
           "Internet Dependence": t(
             "scanQuestions.internetDependence.title",
             "Internet Dependence"
+          ),
+          "Job Insecurity": t(
+            "scanQuestions.jobInsecurity.title",
+            "Job Insecurity"
           ),
           "Professional Mental Health": t(
             "scanQuestions.professionalMentalHealth.title",

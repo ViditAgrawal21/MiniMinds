@@ -31,6 +31,7 @@ const scanData = [
   { name: "Stress", questionScreen: "stressQuestion" },
   { name: "Suicidal Behaviour", questionScreen: "suicidalBehaviorQuestion" },
   { name: "Youngster Issues", questionScreen: "youngsterIssuesQuestion" },
+  { name: "Job Insecurity", questionScreen: "jobInsecurityQuestion" },
 ];
 
 // Translation key mappings
@@ -50,7 +51,8 @@ const translationKeys: { [key: string]: string } = {
   "Social Mental Health": "socialMentalHealth", 
   "Stress": "stress",
   "Suicidal Behaviour": "suicidalBehaviour",
-  "Youngster Issues": "youngsterIssues"
+  "Youngster Issues": "youngsterIssues",
+  "Job Insecurity": "jobInsecurity"
 };
 
 export default function ScanIntro() {

@@ -63,6 +63,7 @@ import ProfessionalMentalHealthScreen from '@/screens/main/MindTools/Professiona
 import SocialMentalHealthScreen from '@/screens/main/MindTools/SocialMentalHealthScreen';
 import YoungsterIssuesScreen from '@/screens/main/MindTools/YoungsterIssuesScreen';
 import EmotionalIntelligenceScreen from '@/screens/main/MindTools/EmotionalIntelligenceScreen';
+import JobInsecurityScreen from '@/screens/main/MindTools/JobInsecurityScreen';
 
 // Import intervention-related screens
 import InterventionsScreen from '@/screens/main/MindTools/InterventionsScreen';
@@ -241,6 +242,7 @@ const AppNavigation = () => {
       <Stack.Screen name="SocialMentalHealthScreen" component={SocialMentalHealthScreen} />
       <Stack.Screen name="YoungsterIssuesScreen" component={YoungsterIssuesScreen} />
       <Stack.Screen name="EmotionalIntelligenceScreen" component={EmotionalIntelligenceScreen} />
+      <Stack.Screen name="JobInsecurityScreen" component={JobInsecurityScreen} />
 
       {/* MindTools intervention-related screens */}
       <Stack.Screen name="InterventionsScreen" component={InterventionsScreen} />

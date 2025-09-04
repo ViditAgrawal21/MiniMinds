@@ -1382,6 +1382,7 @@
     "stressQuestion": "Stress",
     "suicidalBehaviorQuestion": "Suicidal Behaviour",
     "youngsterIssuesQuestion": "Youngster Issues",
+    "jobInsecurityQuestion": "Job Insecurity",
     "upgradeDialog": {
       "basic": {
         "title": "Premium Plan Required",
@@ -1641,6 +1642,10 @@
       "title": "Youngster Issues",
       "overview": "Youngster issues encompass a wide range of challenges faced by today's youth, including mental health struggles like anxiety and depression, academic pressures, and societal expectations. With the rise of social media, youngsters often experience cyberbullying and the stress of maintaining online personas. Peer pressure can lead to risky behaviors such as substance abuse and early sexual activity. Additionally, many young people grapple with identity issues and self-esteem concerns during this formative stage of life. Navigating the transition to adulthood in a rapidly changing world requires support from families, schools, and communities to foster resilience and help youth develop healthy coping strategies."
     },
+    "jobInsecurity": {
+      "title": "Job Insecurity",
+      "overview": "Job insecurity refers to the psychological and emotional stress experienced when individuals feel uncertain about the stability, continuity, or future prospects of their employment. This condition has become increasingly prevalent in today's volatile job market, characterized by economic uncertainties, technological disruptions, and changing business landscapes. Job insecurity can manifest as constant worry about layoffs, concern over contract renewals, anxiety about career advancement, or fear of being replaced by automation or younger workers. The psychological impact extends beyond the workplace, affecting personal relationships, financial planning, sleep patterns, and overall mental health. Individuals experiencing job insecurity often report symptoms of anxiety, depression, decreased job satisfaction, and reduced organizational commitment, creating a cycle that can further impact job performance and career prospects."
+    },
     "ui": {
       "questionsCount": "10",
       "questionsLabel": "Questions",
@@ -1649,6 +1654,44 @@
       "timeLabel": "Approximate Time",
       "overviewTitle": "Overview",
       "takeTestButton": "Take Test"
+    }
+  },
+  "jobInsecurityScreen": {
+    "headerTitle": "Job Insecurity",
+    "imageLabel": "Job Insecurity",
+    "title": "Understanding Job Insecurity",
+    "description": "Job insecurity refers to the psychological and emotional stress experienced when individuals feel uncertain about the stability, continuity, or future prospects of their employment. It can significantly impact mental health, productivity, and overall well-being.",
+    "symptomsTitle": "Common Symptoms",
+    "symptoms": {
+      "constantWorry": "Constant worry about job loss or career future",
+      "sleepProblems": "Sleep disturbances and insomnia",
+      "decreasedProductivity": "Decreased work performance and concentration",
+      "physicalSymptoms": "Physical symptoms like headaches and fatigue",
+      "socialWithdrawal": "Social withdrawal and relationship strain"
+    },
+    "copingStrategiesTitle": "Coping Strategies",
+    "viewStrategyButton": "View Strategy",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Practical techniques to manage job insecurity, improve workplace confidence, and develop career resilience through proven methods."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Practice specific yoga poses and breathing techniques designed to reduce workplace stress and anxiety about job security."
+      },
+      "relaxation": {
+        "title": "Relaxation",
+        "description": "Discover mindfulness and relaxation methods to calm work-related anxiety and maintain emotional balance during uncertain times."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Address negative thought patterns about job security using evidence-based CBT techniques to reduce anxiety and build confidence."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Challenge irrational beliefs about work and career using REBT principles to develop a more balanced perspective on job security."
+      }
     }
   },
   "addictionsSection": {
@@ -7515,6 +7558,28 @@
         "10": "I often wake up feeling unrefreshed or unrested."
       }
     },
+    "jobInsecurity": {
+      "title": "Job Insecurity",
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neither Agree nor Disagree",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      },
+      "questions": {
+        "1": "My job is likely to exist in its current form in the next year.",
+        "2": "I am concerned about the possibility of being laid off or downsized in the near future.",
+        "3": "I feel confident that my employer will continue to need my skills and expertise.",
+        "4": "I worry that my job could be outsourced or replaced by technology.",
+        "5": "I am certain that I could find a comparable job quickly if I were to lose my current one.",
+        "6": "I frequently hear rumors or discussions at work about potential organizational changes that could affect my job.",
+        "7": "I feel my current job situation is impacting my family harmony and environment.",
+        "8": "I feel that my current job depends on my ability to consistently outperform my colleagues.",
+        "9": "I fear losing my job now will severely affect my current financial conditions.",
+        "10": "My job situation and current market conditions are severely affecting my mental health."
+      }
+    },
     "questionNumber": {
       "label": "Question",
       "of": "of"
@@ -8477,6 +8542,10 @@
       "youngsterIssues": {
         "title": "Youngster Issues",
         "description": "Youth-specific mental health support"
+      },
+      "jobInsecurity": {
+        "title": "Job Insecurity",
+        "description": "Workplace anxiety and employment stability concerns"
       },
       "emotionalIntelligence": {
         "title": "Emotional Intelligence",
@@ -9983,6 +10052,58 @@
         "description": "- **Mindful Walking:** Take a 10-15 minute walk without any devices. Focus on the sensation of your feet touching the ground, the rhythm of your breath, and the sights and sounds around you. This practice helps you reconnect with the physical world and your immediate environment.",
         "xp": 5
       }
+    ],
+    "jobInsecurity": [
+      {
+        "title": "Deep Breathing Exercise",
+        "description": "Step: Inhale deeply through the nose for 4 counts, exhale slowly for 6 counts. Benefit: Calms anxiety when worrying about job future.",
+        "xp": 5
+      },
+      {
+        "title": "Progressive Muscle Relaxation",
+        "description": "Step: Tense and release each muscle group from toes to head. Benefit: Releases stress stored in the body during uncertainty.",
+        "xp": 7
+      },
+      {
+        "title": "Visualization of Career Success",
+        "description": "Step: Close eyes and imagine performing confidently at work. Benefit: Builds hope and reduces fear of job loss.",
+        "xp": 8
+      },
+      {
+        "title": "Listening to Calming Music",
+        "description": "Step: Play soft instrumental music or nature sounds for 10 minutes. Benefit: Shifts focus away from negative thoughts.",
+        "xp": 6
+      },
+      {
+        "title": "Body Scan Meditation",
+        "description": "Step: Lie down, notice sensations from head to toe, relax each part. Benefit: Reduces tension and grounds the mind.",
+        "xp": 9
+      },
+      {
+        "title": "Aromatherapy Relaxation",
+        "description": "Step: Use scents like lavender or sandalwood with supervision. Benefit: Creates calmness and lifts mood.",
+        "xp": 6
+      },
+      {
+        "title": "Guided Relaxation Audio",
+        "description": "Step: Listen to guided recordings that encourage peace. Benefit: Replaces intrusive fears with calm focus.",
+        "xp": 8
+      },
+      {
+        "title": "Warm Bath or Foot Soak",
+        "description": "Step: Soak in warm water for 15–20 minutes. Benefit: Relieves tension and refreshes mind after work stress.",
+        "xp": 5
+      },
+      {
+        "title": "Grounding 5-4-3-2-1",
+        "description": "Step: Identify 5 things you see, 4 touch, 3 hear, 2 smell, 1 taste. Benefit: Anchors attention to the present moment.",
+        "xp": 8
+      },
+      {
+        "title": "Journaling with Gratitude",
+        "description": "Step: Write down 3 things you are grateful for daily. Benefit: Shifts focus from fear of loss to positive stability.",
+        "xp": 7
+      }
     ]
   },
   "yogaInterventions": {
@@ -10777,6 +10898,58 @@
         "description": "- Cultivate feelings of love and kindness towards yourself and others.\n   - Silently repeat phrases like \"May I be happy, may I be healthy.\"",
         "xp": 5
       }
+    ],
+    "jobInsecurity": [
+      {
+        "title": "Anulom Vilom (Alternate Nostril Breathing)",
+        "description": "Balances both sides of the brain and reduces anxiety. Example: practicing for 10 minutes before work calms fear of uncertainty.",
+        "xp": 6
+      },
+      {
+        "title": "Surya Namaskar (Sun Salutation)",
+        "description": "Full-body yoga sequence that energizes and improves confidence. Example: 5 rounds in the morning create positivity before heading to office.",
+        "xp": 7
+      },
+      {
+        "title": "Guided Visualization Meditation",
+        "description": "Imagining a safe and successful future reduces insecurity. Example: visualizing yourself thriving in interviews helps build resilience.",
+        "xp": 8
+      },
+      {
+        "title": "Shavasana (Corpse Pose)",
+        "description": "Deep relaxation posture to release workplace stress. Example: lying in Shavasana for 10 minutes after work eases insecurity-driven tension.",
+        "xp": 5
+      },
+      {
+        "title": "Chanting Om",
+        "description": "Vibrational chanting helps calm fear and stabilize emotions. Example: chanting Om 21 times at night improves emotional balance against insecurity.",
+        "xp": 6
+      },
+      {
+        "title": "Trataka (Candle Gazing)",
+        "description": "Improves concentration and reduces restless thoughts about job loss. Example: gazing at a candle flame for 5 minutes strengthens focus.",
+        "xp": 7
+      },
+      {
+        "title": "Loving-Kindness Meditation",
+        "description": "Fosters self-compassion and positive outlook. Example: repeating phrases like 'May I be safe and strong' builds inner security.",
+        "xp": 8
+      },
+      {
+        "title": "Setu Bandhasana (Bridge Pose)",
+        "description": "Opens the chest and improves energy flow, reducing feelings of helplessness. Example: holding pose for 30 seconds daily boosts confidence.",
+        "xp": 6
+      },
+      {
+        "title": "Body Scan Meditation",
+        "description": "Promotes awareness and helps release hidden tension caused by insecurity. Example: mentally scanning from head to toe for 15 minutes before sleep eases stress.",
+        "xp": 9
+      },
+      {
+        "title": "Bhramari Pranayama (Bee Breath)",
+        "description": "Soothes the nervous system and reduces negative thoughts. Example: 7 rounds before an interview calm insecurity and boost clarity.",
+        "xp": 7
+      }
     ]
   },
   "journal": {
@@ -11537,6 +11710,48 @@
       {
         "title": "Financial Literacy",
         "description": "- **Suggestion**: Learn basic budgeting and saving skills.\n   - **Example**: Create a simple budget by listing income sources like allowance and track expenses, then decide on savings goals like buying a new gadget or a gift for a friend."
+      }
+    ],
+    "jobInsecurity": [
+      {
+        "title": "Update your resume and LinkedIn profile",
+        "description": "- **How it works**: A well-crafted resume and professional online presence increases your visibility to potential employers and builds confidence in your marketability.\n   - **Example**: Update your resume monthly with new achievements, skills, or projects. Optimize your LinkedIn profile with relevant keywords and engage with industry content to expand your network."
+      },
+      {
+        "title": "Develop new skills relevant to your industry",
+        "description": "- **How it works**: Continuous learning makes you more valuable and adaptable in the job market, reducing vulnerability to layoffs or industry changes.\n   - **Example**: Take online courses in emerging technologies relevant to your field, obtain certifications, or learn complementary skills that make you indispensable."
+      },
+      {
+        "title": "Build and maintain professional networks",
+        "description": "- **How it works**: Strong professional relationships provide job leads, references, and support during career transitions, often leading to opportunities before they're publicly advertised.\n   - **Example**: Attend industry meetups, join professional associations, schedule quarterly coffee meetings with former colleagues, and actively participate in LinkedIn discussions."
+      },
+      {
+        "title": "Create multiple income streams",
+        "description": "- **How it works**: Diversifying your income sources reduces dependency on a single employer and provides financial cushioning during job transitions.\n   - **Example**: Develop freelance work in your expertise area, create passive income through investments, start a side business, or offer consulting services in your spare time."
+      },
+      {
+        "title": "Maintain an emergency fund",
+        "description": "- **How it works**: Having 3-6 months of expenses saved provides financial security and reduces anxiety about job loss, allowing you to make better career decisions without desperation.\n   - **Example**: Set up automatic transfers to a high-yield savings account, reduce unnecessary expenses, and treat your emergency fund as a non-negotiable monthly expense."
+      },
+      {
+        "title": "Stay informed about industry trends",
+        "description": "- **How it works**: Understanding market changes and industry direction helps you anticipate opportunities and threats, positioning yourself strategically for career growth.\n   - **Example**: Subscribe to industry publications, follow thought leaders on social media, attend webinars, and join professional forums to stay current with trends."
+      },
+      {
+        "title": "Practice mindfulness and stress reduction",
+        "description": "- **How it works**: Regular mindfulness practice reduces anxiety about future uncertainties and improves decision-making by keeping you grounded in the present moment.\n   - **Example**: Practice 10 minutes of daily meditation, use breathing exercises during stressful moments, and engage in mindful activities like walking or journaling."
+      },
+      {
+        "title": "Seek support from career counselors or mentors",
+        "description": "- **How it works**: Professional guidance provides objective perspectives, strategic advice, and emotional support during career challenges and transitions.\n   - **Example**: Schedule regular sessions with a career coach, find mentors in your industry, join professional mentorship programs, or seek guidance from trusted colleagues."
+      },
+      {
+        "title": "Focus on performance and visibility at work",
+        "description": "- **How it works**: Demonstrating value and maintaining high visibility makes you less likely to be considered for layoffs and more likely to be recommended for opportunities.\n   - **Example**: Document your achievements, volunteer for high-visibility projects, communicate regularly with supervisors about your contributions, and seek feedback for improvement."
+      },
+      {
+        "title": "Have a backup plan and continuously job search",
+        "description": "- **How it works**: Maintaining awareness of available opportunities and having alternative plans reduces anxiety and ensures you're prepared for unexpected changes.\n   - **Example**: Set aside time weekly to browse job boards, keep your interview skills sharp through practice, maintain relationships with recruiters, and always have a Plan B ready."
       }
     ]
   },
@@ -12448,6 +12663,58 @@
         "description": "- **Why it Helps:** Setting and achieving goals provides motivation and direction.\n    - **What to Do:** Set SMART (Specific, Measurable, Achievable, Relevant, Time-bound) goals.\n    - **Example:** Instead of \"I want to do better in school,\" a teen sets a goal to \"study math for 30 minutes every weekday.\"\n\nBy incorporating these CBT techniques, young people can better manage their thoughts, emotions, and behaviors, improving their ability to cope with life's challenges.",
         "xp": 3
       }
+    ],
+    "jobInsecurity": [
+      {
+        "title": "Identify Negative Thoughts",
+        "description": "- **Why it helps:** Makes hidden fears visible.\n   - **What to do:** Write down insecure thoughts like 'I might lose my job anytime.'\n   - **Example:** Helps separate fact from assumption.",
+        "xp": 6
+      },
+      {
+        "title": "Cognitive Reframing",
+        "description": "- **Why it helps:** Changes fearful thinking into balanced views.\n   - **What to do:** Replace 'I will definitely be fired' with 'I can improve my skills and add value.'\n   - **Example:** Builds confidence.",
+        "xp": 7
+      },
+      {
+        "title": "Thought Records",
+        "description": "- **Why it helps:** Tracks events, feelings, and beliefs.\n   - **What to do:** Note when insecurity rises and how you reacted.\n   - **Example:** 'Boss looked serious → I thought I'd be fired → Felt anxious.'",
+        "xp": 8
+      },
+      {
+        "title": "Challenge Irrational Beliefs",
+        "description": "- **Why it helps:** Reduces exaggerated fears.\n   - **What to do:** Ask 'Is there real evidence I'll lose my job?'\n   - **Example:** Often realize fear is assumption, not fact.",
+        "xp": 9
+      },
+      {
+        "title": "Positive Self-Talk",
+        "description": "- **Why it helps:** Boosts resilience during uncertainty.\n   - **What to do:** Repeat affirmations like 'I am capable and adaptable.'\n   - **Example:** Use before important meetings.",
+        "xp": 5
+      },
+      {
+        "title": "Set Realistic Goals",
+        "description": "- **Why it helps:** Builds focus and progress.\n   - **What to do:** Break tasks into achievable goals.\n   - **Example:** Instead of 'I must be perfect,' aim for 'I will finish today's report.'",
+        "xp": 6
+      },
+      {
+        "title": "Behavioral Experiments",
+        "description": "- **Why it helps:** Tests fears with action.\n   - **What to do:** Try asking for feedback instead of assuming job loss.\n   - **Example:** Learn that boss gives constructive advice, not threats.",
+        "xp": 10
+      },
+      {
+        "title": "Problem-Solving Practice",
+        "description": "- **Why it helps:** Creates a plan instead of panic.\n   - **What to do:** List possible issues and solutions.\n   - **Example:** If fear is 'company downsizing,' solution is 'update resume and network.'",
+        "xp": 8
+      },
+      {
+        "title": "Gratitude Journaling",
+        "description": "- **Why it helps:** Shifts focus from fear to positives.\n   - **What to do:** Write daily things you appreciate about work.\n   - **Example:** 'I have supportive teammates.'",
+        "xp": 5
+      },
+      {
+        "title": "Role-Playing Scenarios",
+        "description": "- **Why it helps:** Prepares for tough situations calmly.\n   - **What to do:** Practice how to respond if boss criticizes performance.\n   - **Example:** Respond politely instead of panicking.",
+        "xp": 9
+      }
     ]
   },
   "rebtInterventions": {
@@ -13281,6 +13548,58 @@
         "title": "Manage Anger and Frustration",
         "description": "- **Why it Helps:** Learn to assess situations calmly and respond thoughtfully rather than reacting impulsively.\n   - **What to Do:** Use rational thinking to evaluate situations before reacting emotionally.\n   - **Example:** \"My teacher always picks on me and it makes me furious\" becomes \"I can calmly discuss this with my teacher or seek guidance from a counselor.\"",
         "xp": 6
+      }
+    ],
+    "jobInsecurity": [
+      {
+        "title": "Rational Emotive Restructuring",
+        "description": "- **Why it helps:** Job security concerns often stem from irrational beliefs that create unnecessary anxiety and fear. Challenging these beliefs helps develop a more balanced perspective.\n   - **What to do:** Identify irrational beliefs like 'I must have complete job security' and challenge them with evidence.\n   - **Example:** Replace 'I must have job security or I'm worthless' with 'Job security is preferable, but I can handle uncertainty and have skills that make me valuable.'",
+        "xp": 6
+      },
+      {
+        "title": "ABC Model",
+        "description": "- **Why it helps:** Understanding the connection between events (A), beliefs (B), and consequences (C) helps identify how thoughts about job security affect emotions and behaviors.\n   - **What to do:** When feeling insecure about work, identify the activating event, examine your beliefs about it, and notice the emotional consequences.\n   - **Example:** A: Boss seemed distant today, B: 'This means I'll be fired', C: Anxiety and worry. Challenge B with 'Boss might just be busy or stressed about other things.'",
+        "xp": 7
+      },
+      {
+        "title": "Disputing Irrational Beliefs",
+        "description": "- **Why it helps:** Actively challenging irrational beliefs about job security helps develop more realistic and helpful perspectives.\n   - **What to do:** Question beliefs by asking 'Is this belief logical?', 'What evidence supports it?', and 'How does this belief help or hurt me?'\n   - **Example:** Challenge 'If I lose this job, it will be a complete disaster' with 'Job loss would be difficult, but I can find new opportunities and cope with the challenge.'",
+        "xp": 8
+      },
+      {
+        "title": "Rational Coping Statements",
+        "description": "- **Why it helps:** Positive, realistic statements provide emotional stability during uncertain times and help counter irrational fears.\n   - **What to do:** Develop powerful coping statements and repeat them regularly during stressful moments.\n   - **Example:** 'I can handle job uncertainty. I have skills and resilience.' or 'Challenges are temporary, and I can adapt.'",
+        "xp": 6
+      },
+      {
+        "title": "Challenging Catastrophic Thinking",
+        "description": "- **Why it helps:** Challenging worst-case scenario thinking reduces anxiety and improves problem-solving abilities.\n   - **What to do:** Examine actual probabilities versus imagined fears and consider more balanced outcomes.\n   - **Example:** Replace 'If I lose my job, I'll become homeless' with 'If I lose my job, I have savings, skills, and a support network to help me through.'",
+        "xp": 7
+      },
+      {
+        "title": "Addressing 'Musturbation'",
+        "description": "- **Why it helps:** Softening rigid 'must' and 'should' statements increases emotional flexibility and reduces unnecessary pressure.\n   - **What to do:** Replace 'I must' and 'should' with 'I would prefer' or 'it would be better if'.\n   - **Example:** Change 'I must have complete job security' to 'I would prefer job security, but I can live with uncertainty.'",
+        "xp": 8
+      },
+      {
+        "title": "Building Frustration Tolerance",
+        "description": "- **Why it helps:** Increasing tolerance for uncertainty and discomfort improves emotional stability and resilience.\n   - **What to do:** Practice tolerating small discomforts and gradually increase your tolerance for uncertainty.\n   - **Example:** Practice tolerating delays or rejections in job searching, knowing these are temporary inconveniences.'",
+        "xp": 9
+      },
+      {
+        "title": "Rational Emotive Imagery",
+        "description": "- **Why it helps:** Mentally rehearsing successful coping with challenges builds confidence and preparedness.\n   - **What to do:** Visualize yourself handling job challenges with calmness and confidence.\n   - **Example:** See yourself performing confidently in job interviews or successfully adapting to a new role.'",
+        "xp": 7
+      },
+      {
+        "title": "Unconditional Self-Acceptance",
+        "description": "- **Why it helps:** Separating your worth as a person from job status increases self-esteem and resilience.\n   - **What to do:** Remember that your value doesn't depend on career success or failure.\n   - **Example:** 'I am a worthwhile person regardless of my job status. My job doesn't define my identity.'",
+        "xp": 10
+      },
+      {
+        "title": "Forceful Coping Statements",
+        "description": "- **Why it helps:** Practicing rational beliefs with emotional energy makes them more effective and convincing.\n   - **What to do:** State your rational beliefs with force and conviction.\n   - **Example:** Say forcefully: 'I can handle job challenges! I am resilient and capable!'",
+        "xp": 8
       }
     ]
   },
@@ -16842,6 +17161,148 @@
             "question3": "What actions am I taking each day/week to move closer to my goal?",
             "question4": "What obstacles might prevent me from achieving my goal? How can I overcome them?",
             "question5": "How will I track my progress towards my goal? What milestones should I set?"
+          }
+        }
+      }
+    },
+    "jobInsecurity": {
+      "cbt": {
+        "identifyNegativeThoughts": {
+          "title": "Identify Negative Thoughts",
+          "questions": {
+            "question1": "What negative thoughts do I have about my job security?",
+            "question2": "Are these based on facts or fears?"
+          }
+        },
+        "cognitiveReframing": {
+          "title": "Cognitive Reframing",
+          "questions": {
+            "question1": "How can I reframe my fears into opportunities?",
+            "question2": "What strengths can I remind myself of?"
+          }
+        },
+        "thoughtRecords": {
+          "title": "Thought Records",
+          "questions": {
+            "question1": "What event triggered my insecurity today?",
+            "question2": "What did I think, feel, and do in response?"
+          }
+        },
+        "challengeIrrationalBeliefs": {
+          "title": "Challenge Irrational Beliefs",
+          "questions": {
+            "question1": "What evidence supports my fear of losing my job?",
+            "question2": "What evidence goes against it?"
+          }
+        },
+        "positiveSelfTalk": {
+          "title": "Positive Self-Talk",
+          "questions": {
+            "question1": "What encouraging words can I tell myself when I feel insecure at work?"
+          }
+        },
+        "setRealisticGoals": {
+          "title": "Set Realistic Goals",
+          "questions": {
+            "question1": "What small, realistic goals can I set this week to feel more in control at work?"
+          }
+        },
+        "behavioralExperiments": {
+          "title": "Behavioral Experiments",
+          "questions": {
+            "question1": "What action can I take to test whether my fear is true or not?",
+            "question2": "What did I learn from it?"
+          }
+        },
+        "problemSolvingPractice": {
+          "title": "Problem-Solving Practice",
+          "questions": {
+            "question1": "What is the specific problem making me insecure?",
+            "question2": "What are 3 possible solutions I can try?"
+          }
+        },
+        "gratitudeJournaling": {
+          "title": "Gratitude Journaling",
+          "questions": {
+            "question1": "What 3 things am I grateful for in my current job, despite insecurities?"
+          }
+        },
+        "rolePlayingScenarios": {
+          "title": "Role-Playing Scenarios",
+          "questions": {
+            "question1": "If I face a difficult situation at work, how can I respond calmly and constructively?"
+          }
+        }
+      },
+      "rebt": {
+        "rationalEmotiveRestructuring": {
+          "title": "Rational Emotive Restructuring",
+          "questions": {
+            "question1": "What irrational belief about job security am I holding? How can I challenge it?",
+            "question2": "What evidence supports and contradicts my fear of losing my job?"
+          }
+        },
+        "abcModel": {
+          "title": "ABC Model",
+          "questions": {
+            "question1": "What activating event triggered my job insecurity? What beliefs am I having? What consequences am I experiencing?",
+            "question2": "How can I develop more rational beliefs about this situation?"
+          }
+        },
+        "disputingIrrationalBeliefs": {
+          "title": "Disputing Irrational Beliefs",
+          "questions": {
+            "question1": "What's the worst that could realistically happen if I lost my job?",
+            "question2": "How would I cope if that worst-case scenario occurred?"
+          }
+        },
+        "rationalCopingStatements": {
+          "title": "Rational Coping Statements",
+          "questions": {
+            "question1": "What rational coping statement can I use when feeling insecure about my job?",
+            "question2": "How can I remind myself of my strengths and capabilities during uncertain times?"
+          }
+        },
+        "challengingCatastrophicThinking": {
+          "title": "Challenging Catastrophic Thinking",
+          "questions": {
+            "question1": "Am I catastrophizing about my job situation? What's a more balanced perspective?",
+            "question2": "What skills and resources do I have that make me valuable in the job market?"
+          }
+        },
+        "addressingMusturbation": {
+          "title": "Addressing 'Musturbation'",
+          "questions": {
+            "question1": "What 'must' or 'should' statements am I making about job security? How can I soften these?",
+            "question2": "How can I accept uncertainty while still taking practical steps to improve my situation?"
+          }
+        },
+        "buildingFrustrationTolerance": {
+          "title": "Building Frustration Tolerance",
+          "questions": {
+            "question1": "How can I increase my tolerance for job-related uncertainty and discomfort?",
+            "question2": "What strategies help me stay calm when facing workplace challenges?"
+          }
+        },
+        "rationalEmotiveImagery": {
+          "title": "Rational Emotive Imagery",
+          "questions": {
+            "question1": "How do I visualize myself handling job insecurity with confidence and rationality?",
+            "question2": "What does a successful, adaptable version of myself look like in challenging work situations?"
+          }
+        },
+        "unconditionalSelfacceptance": {
+          "title": "Unconditional Self-Acceptance",
+          "questions": {
+            "question1": "How can I separate my worth as a person from my job status or performance?",
+            "question2": "What aspects of myself do I value that exist independently of my career?"
+          }
+        },
+        "forcefulCopingStatements": {
+          "title": "Forceful Coping Statements",
+          "questions": {
+            "question1": "What forceful, energetic statement can I use to counter job insecurity thoughts?",
+            "question2": "How can I practice saying my rational beliefs with conviction and emotion?"
           }
         }
       }
