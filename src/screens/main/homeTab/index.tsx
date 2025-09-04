@@ -19,6 +19,7 @@ import {
   Modal,
   BackHandler,
   Alert,
+  AppState,
 } from "react-native";
 import * as Progress from "react-native-progress";
 import Icon from "react-native-vector-icons/MaterialIcons";
@@ -39,6 +40,8 @@ import interventionObject from "@/components/interventionScanDBCall";
 import { t } from "@/i18n/locales/i18n"; // Import translation function directly
 import { getWellnessScore } from "@/utils/wellnessScore";
 import { useExitConfirmation } from "@/hooks/useExitConfirmation";
+import { UsageMonitorHelper } from "@/services/UsageMonitorHelper";
+import MonitoringSettings from "@/components/common/MonitoringSettings";
 // ---------------------------------------------------------------------------
 // Daily Mind‑Tools and EQ decks (round‑robin rotation)
 // ---------------------------------------------------------------------------
@@ -474,6 +477,16 @@ export default function HomeTab() {
     Monthly: 0,
   });
 
+  // Usage Monitoring State
+  const [monitoringPermissions, setMonitoringPermissions] = useState<{
+    usageStats: boolean;
+    overlay: boolean;
+    allGranted: boolean;
+  } | null>(null);
+  const [isMonitoringActive, setIsMonitoringActive] = useState(false);
+  const [permissionCheckComplete, setPermissionCheckComplete] = useState(false);
+  const [showMonitoringSettings, setShowMonitoringSettings] = useState(false);
+
   // Function to load intervention counts from AsyncStorage
   const loadInterventionCounts = async () => {
     try {
@@ -511,14 +524,246 @@ export default function HomeTab() {
     }
   };
 
+  // Usage Monitoring Functions
+  const checkMonitoringPermissions = async () => {
+    try {
+      console.log("Checking monitoring permissions...");
+      const permissions = await UsageMonitorHelper.checkPermissions();
+      setMonitoringPermissions(permissions);
+      console.log("Monitoring permissions:", permissions);
+      return permissions;
+    } catch (error) {
+      console.error("Error checking monitoring permissions:", error);
+      setMonitoringPermissions({ usageStats: false, overlay: false, allGranted: false });
+      return { usageStats: false, overlay: false, allGranted: false };
+    }
+  };
+
+  const requestPermissionsIfNeeded = async () => {
+    try {
+      if (Platform.OS !== 'android') {
+        return;
+      }
+      const permissions = await checkMonitoringPermissions();
+      
+      if (!permissions.allGranted) {
+        // Check if user has declined before to show appropriate message
+        const hasDeclinedBefore = await AsyncStorage.getItem('hasDeclinedMonitoringPermissions');
+        
+        const title = hasDeclinedBefore ? "Complete Setup for Digital Wellness" : "Digital Wellness Monitoring";
+        const message = hasDeclinedBefore 
+          ? "To use ThoughtPro's digital wellness features, please enable the required permissions:\n\n• Usage Access: To track app usage time\n• Display over other apps: To show mindful break reminders\n\nThese features help you maintain healthy digital habits."
+          : "ThoughtPro can help you monitor your app usage for better digital wellness. This requires two permissions:\n\n• Usage Access: To track app usage time\n• Display over other apps: To show mindful break reminders\n\nWould you like to enable these features?";
+        
+        Alert.alert(
+          title,
+          message,
+          [
+            {
+              text: "Not Now",
+              style: "cancel",
+              onPress: async () => {
+                console.log("User declined monitoring permissions");
+                await AsyncStorage.setItem('hasDeclinedMonitoringPermissions', 'true');
+                setPermissionCheckComplete(true);
+              }
+            },
+            {
+              text: hasDeclinedBefore ? "Enable Now" : "Enable",
+              onPress: async () => {
+                try {
+                  if (!permissions.usageStats) {
+                    console.log("Requesting usage stats permission...");
+                    await UsageMonitorHelper.openUsageStatsSettings();
+                    
+                    // Show instruction alert for usage stats
+                    setTimeout(() => {
+                      Alert.alert(
+                        "Enable Usage Access",
+                        "Please find 'ThoughtPro' in the list and enable 'Permit usage access'. Then return to the app.",
+                        [{ text: "OK" }]
+                      );
+                    }, 500);
+                  } else if (!permissions.overlay) {
+                    console.log("Requesting overlay permission...");
+                    await UsageMonitorHelper.openOverlaySettings();
+                    
+                    // Show instruction alert for overlay
+                    setTimeout(() => {
+                      Alert.alert(
+                        "Enable Display Over Other Apps",
+                        "Please enable 'Display over other apps' for ThoughtPro, then return to the app.",
+                        [{ text: "OK" }]
+                      );
+                    }, 500);
+                  }
+                  
+                  // Check again after user potentially granted permissions
+                  setTimeout(async () => {
+                    const updatedPermissions = await checkMonitoringPermissions();
+                    if (updatedPermissions.allGranted) {
+                      // Remove declined flag since user has now granted permissions
+                      await AsyncStorage.removeItem('hasDeclinedMonitoringPermissions');
+                    }
+                    setPermissionCheckComplete(true);
+                  }, 3000);
+                } catch (error) {
+                  console.error("Error requesting permissions:", error);
+                  setPermissionCheckComplete(true);
+                }
+              }
+            }
+          ]
+        );
+      } else {
+        setPermissionCheckComplete(true);
+        // Remove declined flag since permissions are now granted
+        await AsyncStorage.removeItem('hasDeclinedMonitoringPermissions');
+        console.log("All monitoring permissions granted");
+      }
+    } catch (error) {
+      console.error("Error requesting permissions:", error);
+      setPermissionCheckComplete(true);
+    }
+  };
+
+  const initializeMonitoring = async () => {
+    try {
+      if (!monitoringPermissions?.allGranted) {
+        console.log("Monitoring permissions not granted, skipping initialization");
+        return;
+      }
+
+      // You can customize which apps to monitor and for how long
+      // For example, monitor popular social media and entertainment apps
+      const appsToMonitor = [
+        { packageName: "com.google.android.youtube", name: "YouTube", limitMinutes: 30 },
+        { packageName: "com.instagram.android", name: "Instagram", limitMinutes: 20 },
+        { packageName: "com.facebook.katana", name: "Facebook", limitMinutes: 20 },
+        { packageName: "com.twitter.android", name: "Twitter", limitMinutes: 15 },
+        { packageName: "com.tiktok.android", name: "TikTok", limitMinutes: 15 },
+      ];
+
+      // For demo, let's start with YouTube monitoring
+      const defaultApp = appsToMonitor[0];
+      
+      console.log(`Starting monitoring for ${defaultApp.name}...`);
+      await UsageMonitorHelper.startMonitoring(defaultApp.packageName, defaultApp.limitMinutes);
+      setIsMonitoringActive(true);
+      console.log(`Monitoring started for ${defaultApp.name} (${defaultApp.limitMinutes} minutes)`);
+      
+      // Store monitoring state in AsyncStorage for persistence
+      await AsyncStorage.setItem('monitoringActive', 'true');
+      await AsyncStorage.setItem('monitoringApp', JSON.stringify(defaultApp));
+      
+    } catch (error) {
+      console.error("Error initializing monitoring:", error);
+      // Don't show error to user as this is a background feature
+    }
+  };
+
   // Load intervention counts on component mount
   useEffect(() => {
     loadInterventionCounts();
   }, []);
 
+  // Initialize monitoring system on component mount
+  useEffect(() => {
+    const initializeApp = async () => {
+      try {
+        // Check if monitoring was previously enabled
+        const wasMonitoringActive = await AsyncStorage.getItem('monitoringActive');
+        
+        if (wasMonitoringActive === 'true') {
+          // Check if monitoring is still active and permissions are still granted
+          const permissions = await checkMonitoringPermissions();
+          if (permissions.allGranted) {
+            setIsMonitoringActive(true);
+            console.log("Monitoring was previously active and permissions are still granted");
+          } else {
+            // Permissions were revoked, clean up
+            await AsyncStorage.removeItem('monitoringActive');
+            await AsyncStorage.removeItem('monitoringApp');
+          }
+        }
+
+        // Always check and request permissions on every home screen visit
+        // Small delay to ensure home screen is fully loaded before showing permission dialog
+        setTimeout(() => {
+          requestPermissionsIfNeeded();
+        }, 2000);
+        
+      } catch (error) {
+        console.error("Error initializing monitoring:", error);
+        setPermissionCheckComplete(true);
+      }
+    };
+
+    initializeApp();
+  }, []);
+
+  // Start monitoring when permissions are granted
+  useEffect(() => {
+    if (monitoringPermissions?.allGranted && permissionCheckComplete && !isMonitoringActive) {
+      initializeMonitoring();
+    }
+  }, [monitoringPermissions, permissionCheckComplete, isMonitoringActive]);
+
+  // Listen for app state changes to check permissions when returning from settings
+  useEffect(() => {
+    const handleAppStateChange = (nextAppState: string) => {
+      if (nextAppState === 'active') {
+        console.log("App became active - checking permissions...");
+        // Small delay to ensure the app is fully active
+        setTimeout(async () => {
+          const permissions = await checkMonitoringPermissions();
+          if (permissions.allGranted && !isMonitoringActive) {
+            // User may have granted permissions, try to start monitoring
+            initializeMonitoring();
+          }
+        }, 1000);
+      }
+    };
+
+    const subscription = AppState.addEventListener('change', handleAppStateChange);
+    
+    return () => {
+      subscription?.remove();
+    };
+  }, [isMonitoringActive]);
+
   useFocusEffect(
     React.useCallback(() => {
       loadInterventionCounts();
+    }, []),
+  );
+
+  // Check permissions every time user comes to home tab
+  useFocusEffect(
+    React.useCallback(() => {
+      const checkPermissionsOnFocus = async () => {
+        try {
+          console.log("Home tab focused - checking permissions...");
+          const permissions = await checkMonitoringPermissions();
+          
+          // If permissions are not granted, request them
+          if (!permissions.allGranted) {
+            console.log("Permissions not granted - requesting...");
+            // Small delay to ensure screen transition is complete
+            setTimeout(() => {
+              requestPermissionsIfNeeded();
+            }, 1000);
+          } else {
+            setPermissionCheckComplete(true);
+            console.log("All permissions granted");
+          }
+        } catch (error) {
+          console.error("Error checking permissions on focus:", error);
+          setPermissionCheckComplete(true);
+        }
+      };
+
+      checkPermissionsOnFocus();
     }, []),
   );
 
@@ -697,6 +942,19 @@ export default function HomeTab() {
                 parsed.avatarIndex,
               );
               setProfileImage(wellnessAvatar);
+            }
+          }
+          
+          // Also check monitoring status when coming back to home
+          const monitoringActive = await AsyncStorage.getItem('monitoringActive');
+          if (monitoringActive === 'true') {
+            const permissions = await checkMonitoringPermissions();
+            if (permissions.allGranted) {
+              setIsMonitoringActive(true);
+            } else {
+              // Permissions were revoked, stop monitoring
+              setIsMonitoringActive(false);
+              await AsyncStorage.setItem('monitoringActive', 'false');
             }
           }
         } catch (error) {
@@ -893,6 +1151,48 @@ export default function HomeTab() {
               score={finalScore !== null ? finalScore : 0}
               profileImage={profileImage}
             />
+
+            {/* Monitoring Status Indicator */}
+            {(isMonitoringActive || monitoringPermissions && Platform.OS === 'android') && (
+              <View style={styles.monitoringStatusContainer}>
+                <View style={[
+                  styles.monitoringStatusBadge,
+                  !monitoringPermissions?.allGranted && styles.monitoringStatusBadgeWarning
+                ]}>
+                  <View style={[
+                    styles.monitoringStatusDot,
+                    { backgroundColor: isMonitoringActive ? "#4CAF50" : !monitoringPermissions?.allGranted ? "#FF9800" : "#FFC107" }
+                  ]} />
+                  <Text style={[
+                    styles.monitoringStatusText,
+                    !monitoringPermissions?.allGranted && styles.monitoringStatusTextWarning
+                  ]}>
+                    {isMonitoringActive 
+                      ? t("homeTab.digitalWellnessActive", "Digital Wellness Monitoring Active")
+                      : !monitoringPermissions?.allGranted 
+                        ? "Digital Wellness - Setup Required"
+                        : "Digital Wellness Available"
+                    }
+                  </Text>
+                  <TouchableOpacity 
+                    onPress={() => {
+                      if (!monitoringPermissions?.allGranted) {
+                        requestPermissionsIfNeeded();
+                      } else {
+                        setShowMonitoringSettings(true);
+                      }
+                    }}
+                    style={styles.monitoringSettingsButton}
+                  >
+                    <Icon 
+                      name={!monitoringPermissions?.allGranted ? "warning" : "settings"} 
+                      size={16} 
+                      color={!monitoringPermissions?.allGranted ? "#F57C00" : "#2E7D32"} 
+                    />
+                  </TouchableOpacity>
+                </View>
+              </View>
+            )}
 
             <View style={styles.tabContainer}>
               {["Daily", "Weekly", "Monthly"].map((tab) => (
@@ -1370,6 +1670,23 @@ export default function HomeTab() {
 
           {/* Exit Confirmation Modal */}
           <ExitConfirmationModal />
+
+          {/* Monitoring Settings Modal */}
+          <Modal
+            visible={showMonitoringSettings}
+            animationType="slide"
+            onRequestClose={() => setShowMonitoringSettings(false)}
+          >
+            <MonitoringSettings 
+              onClose={() => {
+                setShowMonitoringSettings(false);
+                // Refresh monitoring status after settings change
+                setTimeout(() => {
+                  checkMonitoringPermissions();
+                }, 1000);
+              }} 
+            />
+          </Modal>
         </View>
       </SafeAreaView>
   );
@@ -2207,5 +2524,47 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "600",
     fontFamily: "Poppins-Bold",
+  },
+  // Monitoring Status Styles
+  monitoringStatusContainer: {
+    width: "100%",
+    paddingHorizontal: 16,
+    marginBottom: 10,
+  },
+  monitoringStatusBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#E8F5E8",
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 20,
+    alignSelf: "center",
+    borderWidth: 1,
+    borderColor: "#C8E6C9",
+  },
+  monitoringStatusBadgeWarning: {
+    backgroundColor: "#FFF3E0",
+    borderColor: "#FFE0B2",
+  },
+  monitoringStatusDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: "#4CAF50",
+    marginRight: 8,
+  },
+  monitoringStatusText: {
+    fontSize: 12,
+    color: "#2E7D32",
+    fontWeight: "500",
+    fontFamily: "Poppins-Medium",
+    flex: 1,
+  },
+  monitoringStatusTextWarning: {
+    color: "#F57C00",
+  },
+  monitoringSettingsButton: {
+    marginLeft: 8,
+    padding: 4,
   },
 });

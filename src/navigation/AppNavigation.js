@@ -51,7 +51,7 @@ import SleepScreen from '@/screens/main/MindTools/SleepScreen';
 import SuicidalBehaviourScreen from '@/screens/main/MindTools/SuicidalBehaviourScreen';
 
 // Import Insights Sleep Tracking Screen
-import SleepTrackingScreen from '@/screens/main/Insights/sleepScreen';
+import SleepTrackingScreen from '@/screens/main/sleepScreen';
 import SexLifeScreen from '@/screens/main/MindTools/SexLifeScreen';
 import AddictionsScreen from '@/screens/main/MindTools/AddictionsScreen';
 import CommonPsychologicalScreen from '@/screens/main/MindTools/CommonPsychologicalScreen';

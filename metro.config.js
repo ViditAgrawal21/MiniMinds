@@ -9,10 +9,20 @@ const path = require('path');
  */
 const projectRoot = __dirname;
 const config = {
+	watchFolders: [projectRoot],
 	resolver: {
 		extraNodeModules: {
 			'@Components': path.resolve(projectRoot, 'src/components'),
 		},
+		blacklistRE: /(ios\/.*|android\/.*)/,
+	},
+	transformer: {
+		getTransformOptions: async () => ({
+			transform: {
+				experimentalImportSupport: false,
+				inlineRequires: true,
+			},
+		}),
 	},
 };
 

@@ -5,6 +5,9 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "ios:release": "npm run bundle:ios && react-native run-ios --configuration Release",
+    "bundle:ios": "./scripts/prebundle-ios.sh Release",
+    "bundle:ios:dev": "./scripts/prebundle-ios.sh Debug",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"

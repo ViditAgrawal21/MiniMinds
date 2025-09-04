@@ -10,11 +10,15 @@ import {
   Pressable,
   Alert,
   Platform,
+  NativeModules,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CustomIcon from "@/components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { t } from "@/i18n/locales/i18n";
+import UsageMonitorHelper from "@/services/UsageMonitorHelper";
+
+const { UsageStats } = NativeModules;
 
 // Interfaces for sleep tracking data
 interface AppUsageData {
@@ -23,6 +27,11 @@ interface AppUsageData {
   lastUsed: number;
   totalTimeInForeground: number;
   firstTimeStamp: number;
+}
+
+interface InstalledApp {
+  packageName: string;
+  appName: string;
 }
 
 interface SleepSession {
@@ -53,34 +62,8 @@ export default function SleepTrackingScreen({ navigation }: any) {
   const [activeSection, setActiveSection] = useState<"Sleep" | "Apps">("Sleep");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [appUsageData, setAppUsageData] = useState<AppUsageData[]>([]);
-
-  // Enhanced app categories with comprehensive app lists
-  const appCategories: Record<string, string[]> = {
-    "Social Media": [
-      "Facebook", "Instagram", "Twitter", "Snapchat", "WhatsApp", "Telegram", 
-      "TikTok", "LinkedIn", "Reddit", "Pinterest", "X (Twitter)", "Discord",
-      "YouTube Shorts", "Clubhouse", "BeReal", "Mastodon"
-    ],
-    "Content": [
-      "YouTube", "Netflix", "Spotify", "Amazon Prime Video", "Audible", "Disney+", 
-      "Kindle", "Hulu", "Hotstar", "Twitch", "MX Player", "Google Podcasts",
-      "Apple Music", "Pandora", "HBO Max", "Paramount+", "Crunchyroll"
-    ],
-    "Productivity": [
-      "Gmail", "Outlook", "Google Calendar", "Microsoft Teams", "Notion", "Evernote", 
-      "Todoist", "Google Drive", "OneDrive", "Slack", "Docs", "Sheets", "Meet", "Zoom",
-      "Trello", "Asana", "OneNote", "Dropbox", "Box"
-    ],
-    "Gaming": [
-      "PUBG Mobile", "Candy Crush", "Clash of Clans", "Free Fire", "Call of Duty", 
-      "Minecraft", "Among Us", "Pokemon Go", "Roblox", "Ludo King", "Chess.com",
-      "Fortnite", "Genshin Impact", "Mobile Legends", "Clash Royale"
-    ],
-    "Gambling": [
-      "Bet365", "PokerStars", "DraftKings", "Betway", "Dream11", "1xBet",
-      "FanDuel", "Caesars", "BetMGM", "WinZO", "MPL", "Parimatch"
-    ]
-  };
+  const [installedApps, setInstalledApps] = useState<InstalledApp[]>([]);
+  const [useRealData, setUseRealData] = useState(true); // Always use real data
 
   // Check if app usage is problematic based on business rules
   const isAppUsageProblematic = (appName: string, usageHours: number, weeklyDays: number): boolean => {
@@ -175,95 +158,92 @@ export default function SleepTrackingScreen({ navigation }: any) {
     }
   }, []);
 
+  // Function to get installed apps from device
+  const getInstalledAppsFromDevice = useCallback(async (): Promise<InstalledApp[]> => {
+    if (Platform.OS !== "android") {
+      // For iOS, return an empty array as iOS doesn't provide installed apps list
+      return [];
+    }
+
+    try {
+      const apps = await UsageMonitorHelper.getInstalledApps();
+      console.log("Fetched installed apps:", apps.length);
+      return apps.map((app) => ({
+        packageName: app.packageName,
+        appName: app.appName || app.packageName.split('.').pop() || 'Unknown App',
+      }));
+    } catch (error) {
+      console.error("Error getting installed apps:", error);
+      return [];
+    }
+  }, []);
+
   // Enhanced realistic app usage data simulation with sophisticated patterns
   const getAppUsageData = useCallback(
     async (startTime: number, endTime: number): Promise<AppUsageData[]> => {
       try {
-        // Comprehensive app database with categories and behavioral patterns
-        const appDatabase = [
-          // Social Media - High engagement, often used late
-          { packageName: "com.instagram.android", appName: "Instagram", category: "social", stimulating: true },
-          { packageName: "com.facebook.katana", appName: "Facebook", category: "social", stimulating: true },
-          { packageName: "com.twitter.android", appName: "Twitter", category: "social", stimulating: true },
-          { packageName: "com.tiktok.musically", appName: "TikTok", category: "social", stimulating: true },
-          { packageName: "com.snapchat.android", appName: "Snapchat", category: "social", stimulating: true },
-          { packageName: "com.linkedin.android", appName: "LinkedIn", category: "social", stimulating: false },
-          { packageName: "com.pinterest", appName: "Pinterest", category: "social", stimulating: false },
-          { packageName: "com.reddit.frontpage", appName: "Reddit", category: "social", stimulating: true },
-          
-          // Entertainment - Evening usage patterns
-          { packageName: "com.youtube.android", appName: "YouTube", category: "entertainment", stimulating: true },
-          { packageName: "com.netflix.mediaclient", appName: "Netflix", category: "entertainment", stimulating: false },
-          { packageName: "com.hulu.plus", appName: "Hulu", category: "entertainment", stimulating: false },
-          { packageName: "com.disney.disneyplus", appName: "Disney+", category: "entertainment", stimulating: false },
-          { packageName: "com.amazon.avod.thirdpartyclient", appName: "Prime Video", category: "entertainment", stimulating: false },
-          { packageName: "com.spotify.music", appName: "Spotify", category: "entertainment", stimulating: false },
-          { packageName: "com.pandora.android", appName: "Pandora", category: "entertainment", stimulating: false },
-          { packageName: "com.twitch.android.app", appName: "Twitch", category: "entertainment", stimulating: true },
-          
-          // Communication - Throughout day
-          { packageName: "com.whatsapp", appName: "WhatsApp", category: "communication", stimulating: false },
-          { packageName: "com.google.android.gm", appName: "Gmail", category: "communication", stimulating: false },
-          { packageName: "com.microsoft.teams", appName: "Teams", category: "communication", stimulating: false },
-          { packageName: "com.slack", appName: "Slack", category: "communication", stimulating: false },
-          { packageName: "com.zoom.us", appName: "Zoom", category: "communication", stimulating: false },
-          { packageName: "com.skype.raider", appName: "Skype", category: "communication", stimulating: false },
-          { packageName: "com.discord", appName: "Discord", category: "communication", stimulating: true },
-          { packageName: "com.telegram.messenger", appName: "Telegram", category: "communication", stimulating: false },
-          
-          // Reading & Learning - Calming, often bedtime
-          { packageName: "com.amazon.kindle", appName: "Kindle", category: "reading", stimulating: false },
-          { packageName: "com.google.android.apps.books", appName: "Google Books", category: "reading", stimulating: false },
-          { packageName: "com.audible.application", appName: "Audible", category: "reading", stimulating: false },
-          { packageName: "com.medium.reader", appName: "Medium", category: "reading", stimulating: false },
-          { packageName: "com.duolingo", appName: "Duolingo", category: "education", stimulating: false },
-          { packageName: "com.khanacademy.android", appName: "Khan Academy", category: "education", stimulating: false },
-          
-          // Gaming - Variable patterns
-          { packageName: "com.king.candycrushsaga", appName: "Candy Crush", category: "gaming", stimulating: true },
-          { packageName: "com.supercell.clashofclans", appName: "Clash of Clans", category: "gaming", stimulating: true },
-          { packageName: "com.mojang.minecraftpe", appName: "Minecraft", category: "gaming", stimulating: false },
-          { packageName: "com.epicgames.fortnite", appName: "Fortnite", category: "gaming", stimulating: true },
-          { packageName: "com.roblox.client", appName: "Roblox", category: "gaming", stimulating: true },
-          { packageName: "com.wordscapes", appName: "Wordscapes", category: "gaming", stimulating: false },
-          
-          // Health & Wellness - Morning/evening
-          { packageName: "com.headspace.meditation", appName: "Headspace", category: "wellness", stimulating: false },
-          { packageName: "com.calm.android", appName: "Calm", category: "wellness", stimulating: false },
-          { packageName: "com.nike.ntc", appName: "Nike Training", category: "fitness", stimulating: false },
-          { packageName: "com.fitbit.FitbitMobile", appName: "Fitbit", category: "fitness", stimulating: false },
-          { packageName: "com.myfitnesspal.android", appName: "MyFitnessPal", category: "fitness", stimulating: false },
-          
-          // News & Information - Morning patterns
-          { packageName: "com.cnn.mobile.android.phone", appName: "CNN", category: "news", stimulating: true },
-          { packageName: "com.bbc.news", appName: "BBC News", category: "news", stimulating: true },
-          { packageName: "com.nytimes.android", appName: "NY Times", category: "news", stimulating: true },
-          { packageName: "com.flipboard.app", appName: "Flipboard", category: "news", stimulating: false },
-          
-          // Shopping - Midday patterns
-          { packageName: "com.amazon.mShop.android.shopping", appName: "Amazon", category: "shopping", stimulating: false },
-          { packageName: "com.ebay.mobile", appName: "eBay", category: "shopping", stimulating: false },
-          { packageName: "com.etsy.android", appName: "Etsy", category: "shopping", stimulating: false },
-          { packageName: "com.target.ui", appName: "Target", category: "shopping", stimulating: false },
-          
-          // Food & Delivery - Meal times
-          { packageName: "com.ubercab.eats", appName: "Uber Eats", category: "food", stimulating: false },
-          { packageName: "com.dd.doordash", appName: "DoorDash", category: "food", stimulating: false },
-          { packageName: "com.grubhub.android", appName: "Grubhub", category: "food", stimulating: false },
-          { packageName: "com.postmates.android", appName: "Postmates", category: "food", stimulating: false },
-          
-          // Productivity - Work hours
-          { packageName: "com.google.android.calendar", appName: "Calendar", category: "productivity", stimulating: false },
-          { packageName: "com.todoist", appName: "Todoist", category: "productivity", stimulating: false },
-          { packageName: "com.evernote", appName: "Evernote", category: "productivity", stimulating: false },
-          { packageName: "com.microsoft.office.outlook", appName: "Outlook", category: "productivity", stimulating: false },
-          
-          // Finance - Morning/evening checks
-          { packageName: "com.chase.sig.android", appName: "Chase", category: "finance", stimulating: false },
-          { packageName: "com.paypal.android.p2pmobile", appName: "PayPal", category: "finance", stimulating: false },
-          { packageName: "com.robinhood.android", appName: "Robinhood", category: "finance", stimulating: true },
-          { packageName: "com.coinbase.android", appName: "Coinbase", category: "finance", stimulating: true },
-        ];
+        let selectedApps: { packageName: string; appName: string; category: string; stimulating: boolean }[] = [];
+
+        if (installedApps.length > 0) {
+          // Use real installed apps
+          console.log("Using real installed apps data:", installedApps.length);
+          selectedApps = installedApps.slice(0, Math.min(35, installedApps.length)).map((app) => {
+            // Categorize apps based on package name patterns
+            let category = "other";
+            let stimulating = false;
+
+            const packageLower = app.packageName.toLowerCase();
+            const appNameLower = app.appName.toLowerCase();
+
+            // Social Media apps
+            if (packageLower.includes("facebook") || packageLower.includes("instagram") || 
+                packageLower.includes("twitter") || packageLower.includes("tiktok") ||
+                packageLower.includes("snapchat") || packageLower.includes("whatsapp") ||
+                appNameLower.includes("facebook") || appNameLower.includes("instagram") ||
+                appNameLower.includes("twitter") || appNameLower.includes("tiktok")) {
+              category = "social";
+              stimulating = true;
+            } 
+            // Entertainment apps
+            else if (packageLower.includes("youtube") || packageLower.includes("netflix") ||
+                     packageLower.includes("spotify") || packageLower.includes("amazon") ||
+                     appNameLower.includes("youtube") || appNameLower.includes("netflix") ||
+                     appNameLower.includes("spotify")) {
+              category = "entertainment";
+              stimulating = packageLower.includes("youtube") || appNameLower.includes("youtube");
+            }
+            // Communication apps
+            else if (packageLower.includes("gmail") || packageLower.includes("outlook") ||
+                     packageLower.includes("calendar") || packageLower.includes("docs") ||
+                     packageLower.includes("whatsapp") || packageLower.includes("telegram")) {
+              category = "communication";
+              stimulating = false;
+            }
+            // Reading apps
+            else if (packageLower.includes("kindle") || packageLower.includes("book") ||
+                     appNameLower.includes("kindle") || appNameLower.includes("book")) {
+              category = "reading";
+              stimulating = false;
+            }
+            // Gaming apps
+            else if (packageLower.includes("game") || packageLower.includes("play") ||
+                     appNameLower.includes("game") || appNameLower.includes("play")) {
+              category = "gaming";
+              stimulating = true;
+            }
+
+            return {
+              packageName: app.packageName,
+              appName: app.appName,
+              category,
+              stimulating,
+            };
+          });
+        } else {
+          // No installed apps found, return empty array
+          console.log("No installed apps available");
+          return [];
+        }
 
         // Generate realistic usage patterns based on time of day and app category
         const currentDate = new Date(startTime);
@@ -275,9 +255,6 @@ export default function SleepTrackingScreen({ navigation }: any) {
         
         // Generate usage for different times of day
         const usageData: AppUsageData[] = [];
-        
-        // Select apps based on realistic user behavior patterns
-        const selectedApps = appDatabase.slice(0, Math.floor(Math.random() * 15) + 20); // 20-35 apps used per day
         
         selectedApps.forEach((app) => {
           // Generate realistic usage times based on app category and time patterns
@@ -412,13 +389,26 @@ export default function SleepTrackingScreen({ navigation }: any) {
         return [];
       }
     },
-    [],
+    [installedApps],
   );
 
   // Load sleep data
   const loadSleepData = useCallback(async () => {
     try {
       setIsLoading(true);
+      
+      // Load installed apps for dynamic data
+      try {
+        const apps = await getInstalledAppsFromDevice();
+        setInstalledApps(apps);
+        if (apps.length > 0) {
+          console.log("Installed apps loaded successfully:", apps.length, "apps");
+        } else {
+          console.log("No installed apps found");
+        }
+      } catch (error) {
+        console.error("Failed to load installed apps:", error);
+      }
       
       // Use static dummy data instead of generating
       const dummySessions: SleepSession[] = [
@@ -495,7 +485,7 @@ export default function SleepTrackingScreen({ navigation }: any) {
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [getInstalledAppsFromDevice]);
 
   // Helper functions for the new interface
   const getSleepQualityColor = (quality: number): string => {
@@ -558,6 +548,60 @@ export default function SleepTrackingScreen({ navigation }: any) {
     // This could open system settings or show a confirmation dialog
   };
 
+  // Get dynamic app categories based on installed apps
+  const getDynamicAppCategories = useCallback((): Record<string, string[]> => {
+    if (installedApps.length === 0) {
+      // Return empty categories if no apps installed
+      return {};
+    }
+
+    const dynamicCategories: Record<string, string[]> = {
+      "Social Media": [],
+      "Content": [],
+      "Productivity": [],
+      "Gaming": [],
+      "Communication": [],
+      "Other": []
+    };
+
+    installedApps.forEach((app) => {
+      const packageLower = app.packageName.toLowerCase();
+      const appNameLower = app.appName.toLowerCase();
+
+      if (packageLower.includes("facebook") || packageLower.includes("instagram") || 
+          packageLower.includes("twitter") || packageLower.includes("tiktok") ||
+          packageLower.includes("snapchat") || appNameLower.includes("facebook") ||
+          appNameLower.includes("instagram") || appNameLower.includes("twitter")) {
+        dynamicCategories["Social Media"].push(app.appName);
+      } else if (packageLower.includes("youtube") || packageLower.includes("netflix") ||
+                 packageLower.includes("spotify") || appNameLower.includes("youtube") ||
+                 appNameLower.includes("netflix") || appNameLower.includes("spotify")) {
+        dynamicCategories["Content"].push(app.appName);
+      } else if (packageLower.includes("gmail") || packageLower.includes("outlook") ||
+                 packageLower.includes("calendar") || packageLower.includes("docs") ||
+                 appNameLower.includes("office") || appNameLower.includes("docs")) {
+        dynamicCategories["Productivity"].push(app.appName);
+      } else if (packageLower.includes("game") || appNameLower.includes("game") ||
+                 appNameLower.includes("play")) {
+        dynamicCategories["Gaming"].push(app.appName);
+      } else if (packageLower.includes("whatsapp") || packageLower.includes("telegram") ||
+                 packageLower.includes("messenger") || appNameLower.includes("chat")) {
+        dynamicCategories["Communication"].push(app.appName);
+      } else {
+        dynamicCategories["Other"].push(app.appName);
+      }
+    });
+
+    // Remove empty categories
+    Object.keys(dynamicCategories).forEach(key => {
+      if (dynamicCategories[key].length === 0) {
+        delete dynamicCategories[key];
+      }
+    });
+
+    return dynamicCategories;
+  }, [installedApps]);
+
   // Initialize component
   useEffect(() => {
     const initialize = async () => {
@@ -588,7 +632,7 @@ export default function SleepTrackingScreen({ navigation }: any) {
 
   if (!hasPermissions) {
     return (
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <View style={styles.centerContainer}>
           <CustomIcon type="IO" name="shield-outline" size={64} color="#8B5CF6" />
           <Text style={styles.permissionTitle}>Usage Access Required</Text>
@@ -600,18 +644,41 @@ export default function SleepTrackingScreen({ navigation }: any) {
             <Text style={styles.permissionButtonText}>Grant Permission</Text>
           </Pressable>
         </View>
-      </SafeAreaView>
+      </View>
     );
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.header}>
         <Pressable onPress={() => navigation?.goBack()} style={styles.backButton}>
           <CustomIcon type="IO" name="arrow-back" size={24} color="#333" />
         </Pressable>
         <Text style={styles.title}>Digital Wellbeing</Text>
-        <View style={styles.placeholder} />
+        <View style={styles.headerActions}>
+          <Pressable 
+            style={styles.refreshButton} 
+            onPress={async () => {
+              setIsLoading(true);
+              try {
+                const apps = await getInstalledAppsFromDevice();
+                setInstalledApps(apps);
+                console.log("Apps refreshed:", apps.length);
+              } catch (error) {
+                console.error("Failed to refresh apps:", error);
+              } finally {
+                setIsLoading(false);
+              }
+            }}
+          >
+            <CustomIcon 
+              type="IO" 
+              name="refresh" 
+              size={20} 
+              color="#6B7280" 
+            />
+          </Pressable>
+        </View>
       </View>
 
       {/* Section Slider Navigation */}
@@ -633,6 +700,24 @@ export default function SleepTrackingScreen({ navigation }: any) {
             </Text>
           </Pressable>
         ))}
+      </View>
+
+      {/* Data Status Indicator */}
+      <View style={styles.dataIndicatorContainer}>
+        <View style={styles.dataIndicator}>
+          <CustomIcon 
+            type="IO" 
+            name="phone-portrait" 
+            size={16} 
+            color={installedApps.length > 0 ? "#10B981" : "#F59E0B"} 
+          />
+          <Text style={[styles.dataIndicatorText, { color: installedApps.length > 0 ? "#10B981" : "#F59E0B" }]}>
+            {installedApps.length > 0 
+              ? `Device Apps (${installedApps.length} installed)` 
+              : "Loading device apps..."
+            }
+          </Text>
+        </View>
       </View>
 
       <ScrollView style={styles.scrollContainer} contentContainerStyle={styles.scrollContent}>
@@ -1028,35 +1113,66 @@ export default function SleepTrackingScreen({ navigation }: any) {
 
         {activeSection === "Apps" && (
           <View style={styles.appsContainer}>
-            {selectedCategory === null ? (
+            {installedApps.length === 0 ? (
+              // Empty State when no apps are found
+              <View style={styles.emptyStateContainer}>
+                <CustomIcon type="IO" name="apps-outline" size={64} color="#9CA3AF" />
+                <Text style={styles.emptyStateTitle}>No Apps Found</Text>
+                <Text style={styles.emptyStateText}>
+                  Unable to load installed apps. Make sure you have granted the necessary permissions.
+                </Text>
+                <Pressable 
+                  style={styles.retryButton} 
+                  onPress={async () => {
+                    setIsLoading(true);
+                    try {
+                      const apps = await getInstalledAppsFromDevice();
+                      setInstalledApps(apps);
+                    } catch (error) {
+                      console.error("Failed to retry loading apps:", error);
+                    } finally {
+                      setIsLoading(false);
+                    }
+                  }}
+                >
+                  <CustomIcon type="IO" name="refresh" size={20} color="white" />
+                  <Text style={styles.retryButtonText}>Try Again</Text>
+                </Pressable>
+              </View>
+            ) : selectedCategory === null ? (
               // App Categories Grid
               <View style={styles.categoriesGrid}>
                 <Text style={styles.sectionTitle}>App Categories</Text>
-                <Text style={styles.sectionSubtitle}>Select a category to view your usage patterns</Text>
+                <Text style={styles.sectionSubtitle}>
+                  Showing your installed apps ({installedApps.length} total)
+                </Text>
                 
-                {Object.keys(appCategories).map((category) => (
-                  <Pressable
-                    key={category}
-                    style={[styles.categoryCard, getCategoryCardStyle(category)]}
-                    onPress={() => setSelectedCategory(category)}
-                  >
-                    <View style={styles.categoryHeader}>
-                      <CustomIcon 
-                        type="IO"
-                        name={getCategoryIcon(category)} 
-                        size={28} 
-                        color={getCategoryColor(category)} 
-                      />
-                      <Text style={styles.categoryTitle}>{category}</Text>
-                    </View>
-                    <Text style={styles.categoryAppCount}>
-                      {appCategories[category].length} apps tracked
-                    </Text>
-                    <View style={styles.categoryArrow}>
-                      <CustomIcon type="IO" name="chevron-forward" size={20} color="#6B7280" />
-                    </View>
-                  </Pressable>
-                ))}
+                {Object.keys(getDynamicAppCategories()).map((category) => {
+                  const categoryApps = getDynamicAppCategories()[category];
+                  return (
+                    <Pressable
+                      key={category}
+                      style={[styles.categoryCard, getCategoryCardStyle(category)]}
+                      onPress={() => setSelectedCategory(category)}
+                    >
+                      <View style={styles.categoryHeader}>
+                        <CustomIcon 
+                          type="IO"
+                          name={getCategoryIcon(category)} 
+                          size={28} 
+                          color={getCategoryColor(category)} 
+                        />
+                        <Text style={styles.categoryTitle}>{category}</Text>
+                      </View>
+                      <Text style={styles.categoryAppCount}>
+                        {categoryApps.length} apps installed
+                      </Text>
+                      <View style={styles.categoryArrow}>
+                        <CustomIcon type="IO" name="chevron-forward" size={20} color="#6B7280" />
+                      </View>
+                    </Pressable>
+                  );
+                })}
               </View>
             ) : (
               // Individual Category View
@@ -1081,7 +1197,7 @@ export default function SleepTrackingScreen({ navigation }: any) {
 
                 {/* Apps List */}
                 <View style={styles.appsListContainer}>
-                  {appCategories[selectedCategory]?.map((appName: string) => {
+                  {getDynamicAppCategories()[selectedCategory]?.map((appName: string) => {
                     const appUsage = appUsageData.find(app => app.appName === appName);
                     const usageHours = appUsage ? appUsage.totalTimeInForeground / (1000 * 60 * 60) : Math.random() * 4;
                     const weeklyDays = Math.floor(Math.random() * 7) + 1;
@@ -1118,7 +1234,7 @@ export default function SleepTrackingScreen({ navigation }: any) {
           </View>
         )}
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -1179,8 +1295,19 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#E5E7EB",
   },
+  headerActions: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
   backButton: {
     padding: 8,
+  },
+  refreshButton: {
+    padding: 8,
+    borderRadius: 8,
+    backgroundColor: "#F3F4F6",
+    borderWidth: 1,
+    borderColor: "#E5E7EB",
   },
   title: {
     fontSize: 20,
@@ -1666,6 +1793,31 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   
+  // Data Indicator Styles
+  dataIndicatorContainer: {
+    paddingHorizontal: 20,
+    paddingVertical: 8,
+  },
+  dataIndicator: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "white",
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 8,
+    alignSelf: "flex-start",
+    elevation: 1,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 1,
+  },
+  dataIndicatorText: {
+    fontSize: 12,
+    fontWeight: "500",
+    marginLeft: 6,
+  },
+  
   // Sleep Section Styles
   sleepContainer: {
     paddingBottom: 20,
@@ -1824,6 +1976,42 @@ const styles = StyleSheet.create({
   // Apps Section Styles
   appsContainer: {
     paddingBottom: 20,
+  },
+  emptyStateContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 40,
+    paddingVertical: 60,
+  },
+  emptyStateTitle: {
+    fontSize: 20,
+    fontWeight: "600",
+    color: "#374151",
+    marginTop: 16,
+    marginBottom: 8,
+    textAlign: "center",
+  },
+  emptyStateText: {
+    fontSize: 14,
+    color: "#6B7280",
+    textAlign: "center",
+    lineHeight: 20,
+    marginBottom: 24,
+  },
+  retryButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#8B5CF6",
+    paddingHorizontal: 20,
+    paddingVertical: 12,
+    borderRadius: 8,
+  },
+  retryButtonText: {
+    color: "white",
+    fontSize: 14,
+    fontWeight: "600",
+    marginLeft: 8,
   },
   categoriesGrid: {
     paddingHorizontal: 20,

@@ -388,7 +388,7 @@ export default function InsightsScreen({
             </View>
 
             {/* Row 3 - Sleep Tracking Card */}
-            <View style={styles.row}>
+            {/* <View style={styles.row}>
               <Pressable
                 style={[styles.sleepTrackingCard, styles.fullWidthCard]}
                 onPress={() => navigation?.navigate("SleepTrackingScreen")}
@@ -448,7 +448,7 @@ export default function InsightsScreen({
                   </View>
                 </View>
               </Pressable>
-            </View>
+            </View> */}
           </View>
         </ScrollView>
       ) : (
