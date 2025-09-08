@@ -85,6 +85,7 @@ import SelfAwarenessStrategyScreen from '@/screens/main/MindTools/EQStrategies/S
 import SelfRegulationStrategyScreen from '@/screens/main/MindTools/EQStrategies/SelfRegulationStrategyScreen';
 import SocialSkillsStrategyScreen from '@/screens/main/MindTools/EQStrategies/SocialSkillsStrategyScreen';
 import PrivacyNoticeScreen from '@/screens/main/PrivacyNoticeScreen';
+import PremiumScreen from '@/screens/PremiumScreen';
 
 // Import other screens as you create them
 // import ProfileScreen from '../screens/main/profile-page/profile';
@@ -268,7 +269,7 @@ const AppNavigation = () => {
       <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
       <Stack.Screen name="selforchild" component={SelfOrChildScreen} />
       <Stack.Screen name="generalsettings" component={GeneralSettings} />
-      <Stack.Screen name="UpgradeToPremium" component={UpgradeToPremium} />
+      <Stack.Screen name="UpgradeToPremium" component={PremiumScreen} />
       <Stack.Screen name="EditProfile" component={EditProfile} />
 
       

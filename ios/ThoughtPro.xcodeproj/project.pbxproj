@@ -15,6 +15,7 @@
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		960AF5BE6F63E40AB28306B2 /* libPods-ThoughtPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD98F2529CC0E2793CC66B6 /* libPods-ThoughtPro.a */; };
+		BEBF70662E69B37C00F0CAE6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF70652E69B37C00F0CAE6 /* StoreKit.framework */; };
 		BF27DD3E52274A6D92414C27 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B110A97478DA46C3A4140D91 /* Poppins-Bold.ttf */; };
 		C5B7362EF2E6471E93C42111 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B32B1F925474DF98A4237A3 /* Poppins-ExtraBold.ttf */; };
 		E8B6BA9F6EC679422891A253 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
@@ -36,6 +37,7 @@
 		AB0903693736485A99F6EE1D /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		B110A97478DA46C3A4140D91 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		B734DB02F4EF84E3A9915E90 /* Pods-ThoughtPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtPro.release.xcconfig"; path = "Target Support Files/Pods-ThoughtPro/Pods-ThoughtPro.release.xcconfig"; sourceTree = "<group>"; };
+		BEBF70652E69B37C00F0CAE6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -45,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				960AF5BE6F63E40AB28306B2 /* libPods-ThoughtPro.a in Frameworks */,
+				BEBF70662E69B37C00F0CAE6 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEBF70652E69B37C00F0CAE6 /* StoreKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				1CD98F2529CC0E2793CC66B6 /* libPods-ThoughtPro.a */,
 			);
