@@ -1,0 +1,326 @@
+{
+  "en": {
+    "commonSuggestions": [
+      {
+        "title": "Set Clear and Consistent Boundaries",
+        "description": "Works by providing children with structure and security. Example: Establish clear rules about screen time and consistently enforce them across all situations.",
+        "xp": 4
+      },
+      {
+        "title": "Practice Active Listening",
+        "description": "Works by making children feel heard and valued. Example: Put away devices, make eye contact, and repeat back what your child said to show understanding.",
+        "xp": 3
+      },
+      {
+        "title": "Use Positive Reinforcement",
+        "description": "Works by encouraging good behavior naturally. Example: Praise specific actions like 'I noticed you shared your toys with your sister - that was very kind.'",
+        "xp": 2
+      },
+      {
+        "title": "Model the Behavior You Want",
+        "description": "Works because children learn more from what they see than what they hear. Example: Demonstrate patience, kindness, and respect in your own interactions.",
+        "xp": 3
+      },
+      {
+        "title": "Create Quality One-on-One Time",
+        "description": "Works by strengthening the parent-child bond. Example: Spend 15 minutes daily doing an activity your child chooses, giving them your full attention.",
+        "xp": 2
+      },
+      {
+        "title": "Validate Their Emotions",
+        "description": "Works by teaching emotional intelligence and building trust. Example: Say 'I can see you're really frustrated about this' before addressing the behavior.",
+        "xp": 4
+      },
+      {
+        "title": "Establish Predictable Routines",
+        "description": "Works by reducing anxiety and power struggles. Example: Create consistent bedtime, mealtime, and homework routines that everyone can follow.",
+        "xp": 3
+      },
+      {
+        "title": "Choose Your Battles Wisely",
+        "description": "Works by focusing energy on what matters most. Example: Address safety and respect issues immediately, but let minor preferences slide.",
+        "xp": 5
+      },
+      {
+        "title": "Take Care of Yourself First",
+        "description": "Works because you can't pour from an empty cup. Example: Ensure you get adequate sleep, exercise, and personal time to maintain patience and energy.",
+        "xp": 4
+      },
+      {
+        "title": "Communicate Age-Appropriately",
+        "description": "Works by ensuring understanding and cooperation. Example: Use simple words for young children, explain reasoning to older kids, and adjust expectations by developmental stage.",
+        "xp": 3
+      }
+    ],
+    "yogaMeditation": [
+      {
+        "title": "Morning Mindfulness for Parents",
+        "description": "Start each day with 5 minutes of deep breathing and intention setting before the family wakes up.",
+        "xp": 2
+      },
+      {
+        "title": "Family Yoga Time",
+        "description": "Practice simple yoga poses together with your children, making it fun and bonding.",
+        "xp": 3
+      },
+      {
+        "title": "Bedtime Meditation Routine",
+        "description": "Guide your children through a calming meditation or breathing exercise before sleep.",
+        "xp": 2
+      },
+      {
+        "title": "Stress-Relief Breathing",
+        "description": "Use the 4-7-8 breathing technique during challenging parenting moments.",
+        "xp": 1
+      },
+      {
+        "title": "Walking Meditation with Kids",
+        "description": "Take mindful walks together, focusing on nature sounds and surroundings.",
+        "xp": 2
+      }
+    ],
+    "relaxationTechniques": [
+      {
+        "title": "Progressive Muscle Relaxation for Parents",
+        "description": "Practice tensing and relaxing muscle groups to release physical stress after difficult days.",
+        "xp": 3
+      },
+      {
+        "title": "Calming Music Environment",
+        "description": "Create a peaceful home atmosphere with soft background music during stressful times.",
+        "xp": 1
+      },
+      {
+        "title": "Nature Connection Time",
+        "description": "Spend time outdoors with your children, allowing natural environments to reduce stress.",
+        "xp": 2
+      },
+      {
+        "title": "Warm Bath Routine",
+        "description": "Establish calming bath time routines for both you and your children.",
+        "xp": 2
+      },
+      {
+        "title": "Digital Detox Hours",
+        "description": "Create device-free family time to reduce overstimulation and promote connection.",
+        "xp": 3
+      }
+    ]
+  },
+  "hi": {
+    "commonSuggestions": [
+      {
+        "title": "स्पष्ट और निरंतर सीमाएं निर्धारित करें",
+        "description": "बच्चों को संरचना और सुरक्षा प्रदान करके काम करता है। उदाहरण: स्क्रीन टाइम के बारे में स्पष्ट नियम बनाएं और सभी स्थितियों में लगातार उन्हें लागू करें।",
+        "xp": 4
+      },
+      {
+        "title": "सक्रिय श्रवण का अभ्यास करें",
+        "description": "बच्चों को सुना और महत्व दिया गया महसूस कराकर काम करता है। उदाहरण: डिवाइस अलग रखें, आंखों से संपर्क बनाएं, और समझ दिखाने के लिए अपने बच्चे की बात दोहराएं।",
+        "xp": 3
+      },
+      {
+        "title": "सकारात्मक प्रोत्साहन का उपयोग करें",
+        "description": "अच्छे व्यवहार को स्वाभाविक रूप से प्रोत्साहित करके काम करता है। उदाहरण: विशिष्ट कार्यों की प्रशंसा करें जैसे 'मैंने देखा कि तुमने अपनी बहन के साथ खिलौने साझा किए - यह बहुत दयालु था।'",
+        "xp": 2
+      },
+      {
+        "title": "जो व्यवहार आप चाहते हैं उसका उदाहरण दें",
+        "description": "काम करता है क्योंकि बच्चे जो सुनते हैं उससे ज्यादा जो देखते हैं उससे सीखते हैं। उदाहरण: अपनी बातचीत में धैर्य, दयालुता और सम्मान का प्रदर्शन करें।",
+        "xp": 3
+      },
+      {
+        "title": "गुणवत्तापूर्ण एक-से-एक समय बनाएं",
+        "description": "माता-पिता-बच्चे के बंधन को मजबूत बनाकर काम करता है। उदाहरण: प्रतिदिन 15 मिनट अपने बच्चे के चुने गए काम में बिताएं, उन्हें अपना पूरा ध्यान दें।",
+        "xp": 2
+      },
+      {
+        "title": "उनकी भावनाओं को मान्य करें",
+        "description": "भावनात्मक बुद्धिमत्ता सिखाकर और विश्वास निर्माण करके काम करता है। उदाहरण: व्यवहार को संबोधित करने से पहले कहें 'मैं देख सकता हूं कि तुम इसे लेकर वास्तव में निराश हो।'",
+        "xp": 4
+      },
+      {
+        "title": "अनुमानित दिनचर्या स्थापित करें",
+        "description": "चिंता और शक्ति संघर्ष को कम करके काम करता है। उदाहरण: सुसंगत सोने का समय, भोजन का समय और होमवर्क की दिनचर्या बनाएं जिसका सभी पालन कर सकें।",
+        "xp": 3
+      },
+      {
+        "title": "अपनी लड़ाइयों को समझदारी से चुनें",
+        "description": "सबसे महत्वपूर्ण चीजों पर ऊर्जा केंद्रित करके काम करता है। उदाहरण: सुरक्षा और सम्मान के मुद्दों को तुरंत संबोधित करें, लेकिन छोटी प्राथमिकताओं को जाने दें।",
+        "xp": 5
+      },
+      {
+        "title": "पहले अपना ध्यान रखें",
+        "description": "काम करता है क्योंकि आप खाली कप से नहीं डाल सकते। उदाहरण: धैर्य और ऊर्जा बनाए रखने के लिए पर्याप्त नींद, व्यायाम और व्यक्तिगत समय सुनिश्चित करें।",
+        "xp": 4
+      },
+      {
+        "title": "उम्र के अनुकूल संवाद करें",
+        "description": "समझ और सहयोग सुनिश्चित करके काम करता है। उदाहरण: छोटे बच्चों के लिए सरल शब्दों का उपयोग करें, बड़े बच्चों को तर्क समझाएं, और विकासात्मक चरण के अनुसार अपेक्षाओं को समायोजित करें।",
+        "xp": 3
+      }
+    ],
+    "yogaMeditation": [
+      {
+        "title": "माता-पिता के लिए सुबह की सचेतना",
+        "description": "परिवार के जागने से पहले 5 मिनट की गहरी सांस और इरादा निर्धारण के साथ हर दिन शुरू करें।",
+        "xp": 2
+      },
+      {
+        "title": "पारिवारिक योग समय",
+        "description": "अपने बच्चों के साथ सरल योग आसनों का अभ्यास करें, इसे मजेदार और बंधन बनाएं।",
+        "xp": 3
+      },
+      {
+        "title": "सोने से पहले ध्यान की दिनचर्या",
+        "description": "सोने से पहले अपने बच्चों को शांत ध्यान या सांस की व्यायाम के माध्यम से मार्गदर्शन करें।",
+        "xp": 2
+      },
+      {
+        "title": "तनाव-राहत सांस लेना",
+        "description": "चुनौतीपूर्ण पालन-पोषण के क्षणों के दौरान 4-7-8 सांस लेने की तकनीक का उपयोग करें।",
+        "xp": 1
+      },
+      {
+        "title": "बच्चों के साथ चलने का ध्यान",
+        "description": "एक साथ सचेत चलना, प्रकृति की आवाज़ों और परिवेश पर ध्यान केंद्रित करना।",
+        "xp": 2
+      }
+    ],
+    "relaxationTechniques": [
+      {
+        "title": "माता-पिता के लिए प्रगतिशील मांसपेशी विश्राम",
+        "description": "कठिन दिनों के बाद शारीरिक तनाव छोड़ने के लिए मांसपेशी समूहों को तनाव और आराम देने का अभ्यास करें।",
+        "xp": 3
+      },
+      {
+        "title": "शांत संगीत वातावरण",
+        "description": "तनावपूर्ण समय के दौरान नरम पृष्ठभूमि संगीत के साथ शांतिपूर्ण घरेलू वातावरण बनाएं।",
+        "xp": 1
+      },
+      {
+        "title": "प्रकृति संपर्क समय",
+        "description": "अपने बच्चों के साथ बाहर समय बिताएं, प्राकृतिक वातावरण को तनाव कम करने दें।",
+        "xp": 2
+      },
+      {
+        "title": "गर्म स्नान की दिनचर्या",
+        "description": "अपने और अपने बच्चों दोनों के लिए शांत स्नान समय की दिनचर्या स्थापित करें।",
+        "xp": 2
+      },
+      {
+        "title": "डिजिटल डिटॉक्स घंटे",
+        "description": "अति-उत्तेजना को कम करने और कनेक्शन को बढ़ावा देने के लिए डिवाइस-मुक्त पारिवारिक समय बनाएं।",
+        "xp": 3
+      }
+    ]
+  },
+  "mr": {
+    "commonSuggestions": [
+      {
+        "title": "स्पष्ट आणि सातत्यपूर्ण सीमा निश्चित करा",
+        "description": "मुलांना संरचना आणि सुरक्षा प्रदान करून कार्य करते. उदाहरण: स्क्रीन टाइमबद्दल स्पष्ट नियम बनवा आणि सर्व परिस्थितींमध्ये सातत्याने त्यांची अंमलबजावणी करा.",
+        "xp": 4
+      },
+      {
+        "title": "सक्रिय ऐकण्याचा सराव करा",
+        "description": "मुलांना ऐकले गेले आणि मूल्यवान वाटले यामुळे कार्य करते. उदाहरण: डिव्हाइसेस बाजूला ठेवा, डोळ्यांचा संपर्क साधा, आणि समजून घेतल्याचे दाखवण्यासाठी तुमच्या मुलाने म्हटलेले पुन्हा सांगा.",
+        "xp": 3
+      },
+      {
+        "title": "सकारात्मक प्रोत्साहनाचा वापर करा",
+        "description": "चांगल्या वर्तनाला नैसर्गिकरित्या प्रोत्साहन देऊन कार्य करते. उदाहरण: विशिष्ट कृतींची प्रशंसा करा जसे 'मी पाहिले की तू तुझ्या बहिणीसोबत खेळणी शेअर केलीस - ते खूप दयाळू होते.'",
+        "xp": 2
+      },
+      {
+        "title": "तुम्हाला हवे असलेल्या वर्तनाचे उदाहरण द्या",
+        "description": "कार्य करते कारण मुले जे ऐकतात त्यापेक्षा जे पाहतात त्यावरून जास्त शिकतात. उदाहरण: तुमच्या स्वतःच्या संवादात धैर्य, दयाळूपणा आणि आदराचे प्रदर्शन करा.",
+        "xp": 3
+      },
+      {
+        "title": "गुणवत्तापूर्ण एकट्याने एक वेळ तयार करा",
+        "description": "पालक-मुल बंध मजबूत करून कार्य करते. उदाहरण: दररोज 15 मिनिटे तुमच्या मुलाने निवडलेल्या क्रियाकलापात घालवा, त्यांना तुमचे पूर्ण लक्ष द्या.",
+        "xp": 2
+      },
+      {
+        "title": "त्यांच्या भावना वैध करा",
+        "description": "भावनिक बुद्धिमत्ता शिकवून आणि विश्वास निर्माण करून कार्य करते. उदाहरण: वर्तनाला संबोधित करण्यापूर्वी म्हणा 'मी पाहू शकतो की तू याबद्दल खरोखर निराश आहेस.'",
+        "xp": 4
+      },
+      {
+        "title": "अंदाजित दिनचर्या स्थापित करा",
+        "description": "चिंता आणि शक्ती संघर्ष कमी करून कार्य करते. उदाहरण: सुसंगत झोपण्याची वेळ, जेवणाची वेळ आणि गृहपाठाची दिनचर्या तयार करा ज्याचे सर्वजण पालन करू शकतात.",
+        "xp": 3
+      },
+      {
+        "title": "तुमच्या लढाया हुशारीने निवडा",
+        "description": "सर्वात महत्वाच्या गोष्टींवर ऊर्जा केंद्रित करून कार्य करते. उदाहरण: सुरक्षा आणि आदराच्या मुद्द्यांना तात्काळ संबोधित करा, परंतु लहान प्राधान्ये सोडून द्या.",
+        "xp": 5
+      },
+      {
+        "title": "प्रथम स्वतःची काळजी घ्या",
+        "description": "कार्य करते कारण तुम्ही रिकाम्या कपातून ओतू शकत नाही. उदाहरण: धैर्य आणि ऊर्जा राखण्यासाठी पुरेशी झोप, व्यायाम आणि वैयक्तिक वेळ सुनिश्चित करा.",
+        "xp": 4
+      },
+      {
+        "title": "वयाप्रमाणे संवाद साधा",
+        "description": "समज आणि सहकार्य सुनिश्चित करून कार्य करते. उदाहरण: लहान मुलांसाठी सोप्या शब्दांचा वापर करा, मोठ्या मुलांना तर्क समजावून सांगा, आणि विकासाच्या टप्प्यानुसार अपेक्षा समायोजित करा.",
+        "xp": 3
+      }
+    ],
+    "yogaMeditation": [
+      {
+        "title": "पालकांसाठी सकाळची जागरूकता",
+        "description": "कुटुंब जागे होण्यापूर्वी 5 मिनिटांचा खोल श्वास आणि हेतू निश्चित करून दररोजची सुरुवात करा.",
+        "xp": 2
+      },
+      {
+        "title": "कौटुंबिक योग वेळ",
+        "description": "तुमच्या मुलांसोबत सोप्या योगासनांचा सराव करा, ते मजेदार आणि बंधनकारक बनवा.",
+        "xp": 3
+      },
+      {
+        "title": "झोपण्यापूर्वी ध्यानाची दिनचर्या",
+        "description": "झोपण्यापूर्वी तुमच्या मुलांना शांत ध्यान किंवा श्वासोच्छवासाच्या व्यायामाद्वारे मार्गदर्शन करा.",
+        "xp": 2
+      },
+      {
+        "title": "तणाव-निवारण श्वास",
+        "description": "आव्हानात्मक पालकत्वाच्या क्षणांमध्ये 4-7-8 श्वास तंत्राचा वापर करा.",
+        "xp": 1
+      },
+      {
+        "title": "मुलांसोबत चालण्याचे ध्यान",
+        "description": "एकत्र जागरूक चालणे, निसर्गाचे आवाज आणि परिसरावर लक्ष केंद्रित करणे.",
+        "xp": 2
+      }
+    ],
+    "relaxationTechniques": [
+      {
+        "title": "पालकांसाठी प्रगतीशील स्नायू शिथिलीकरण",
+        "description": "कठीण दिवसांनंतर शारीरिक तणाव सोडण्यासाठी स्नायू गटांना ताणणे आणि शिथिल करण्याचा सराव करा.",
+        "xp": 3
+      },
+      {
+        "title": "शांत संगीत वातावरण",
+        "description": "तणावपूर्ण वेळेत मऊ पार्श्वभूमी संगीतासह शांत घरगुती वातावरण तयार करा.",
+        "xp": 1
+      },
+      {
+        "title": "निसर्ग संपर्क वेळ",
+        "description": "तुमच्या मुलांसोबत बाहेर वेळ घालवा, नैसर्गिक वातावरणाला तणाव कमी करू द्या.",
+        "xp": 2
+      },
+      {
+        "title": "उबदार आंघोळीची दिनचर्या",
+        "description": "तुमच्या आणि तुमच्या मुलांसाठी शांत आंघोळीच्या वेळेची दिनचर्या स्थापित करा.",
+        "xp": 2
+      },
+      {
+        "title": "डिजिटल डिटॉक्स तास",
+        "description": "अति-उत्तेजना कमी करण्यासाठी आणि कनेक्शनला प्रोत्साहन देण्यासाठी डिव्हाइस-मुक्त कौटुंबिक वेळ तयार करा.",
+        "xp": 3
+      }
+    ]
+  }
+}

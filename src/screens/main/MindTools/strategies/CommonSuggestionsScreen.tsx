@@ -123,6 +123,19 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
       "job-insecurity": "scanIntro.jobInsecurity.title",
+      "adhd": "adhdScreen.title",
+      "aggressive-behaviour": "aggressiveBehaviourScreen.title",
+      "conduct-issues": "conductIssues.headerTitle",
+      // Miniminds conditions
+      "abusive-language-back-answering":
+        "mindToolsScreen.categories.abusivelanguagebackansweringscreen.title",
+     "exam-stress-fear-of-failure": "examStressScreen.headerTitle",
+     "dark-web-onlyfans": "Dark Web and OnlyFans",
+     "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
+     "dating-sites-and-complications":"datingsitesandcomplicationsScreen.headerTitle",
+     "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
+      "internet-addiction": "Internet Addiction",
+      "self-care-hygiene": "Self-care Hygiene",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -130,11 +143,471 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
 
   // Get translated suggestions data or fall back to static JSON files
   const getSuggestionsData = (condition: string): SuggestionsData | null => {
+    // Handle Eating Habits data from comprehensive data file
+    if (condition === "eating-habits") {
+      try {
+        const eatingData = require("../../../../assets/data/behaviour/EatingHabits_comprehensive_data.json");
+        const commonSuggestionsCards = eatingData.interventions?.commonSuggestions?.cards;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Eating Habits data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi",
+          "mr": "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "No title",
+          description:
+            card.description?.[localeField] || card.description?.english ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "eating-habits",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Eating Habits common suggestions data:", error);
+        return null;
+      }
+    }
+    if (condition === "exam-stress-fear-of-failure") {
+      try {
+        const data = require("../../../../assets/data/Parenting/ExamStressFearOfFailure_comprehensive_data.json");
+        const localeField = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeField] || data["en"];
+        const commonSuggestionsCards = dataset?.commonSuggestions;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Exam Stress data");
+          return null;
+        }
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title || "No title",
+          description: card.description || "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "exam-stress-fear-of-failure",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error(
+          "Error loading Exam Stess data:",
+          error,
+        );
+        return null;
+      }
+    }
+    // Handle Dark Web & OnlyFans data from comprehensive data file
+    if (condition === "dark-web-onlyfans") {
+      try {
+        const darkData = require("../../../../assets/data/Internet & Social Media Issues/DarkWebAndOnlyFans_comprehensive_data.json");
+        const commonSuggestionsCards = darkData.interventions?.commonSuggestions?.cards;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Dark Web & OnlyFans data");
+          return null;
+        }
+
+        const localeMap: { [key: string]: string } = {
+          en: "english",
+          hi: "hindi",
+          mr: "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "No title",
+          description:
+            card.description?.[localeField] || card.description?.english ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "dark-web-onlyfans",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Dark Web & OnlyFans data:", error);
+        return null;
+      }
+    }
+
+     // Handle Gambling and Gaming Addiction data from comprehensive data file
+     if (condition === "gambling-and-gaming-addiction") {
+      try {
+        const darkData = require("../../../../assets/data/Internet & Social Media Issues/GamblingAndGamingAddiction_comprehensive_data.json");
+        const commonSuggestionsCards = darkData.interventions?.commonSuggestions?.cards;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Gambling and Gaming Addiction data");
+          return null;
+        }
+
+        const localeMap: { [key: string]: string } = {
+          en: "english",
+          hi: "hindi",
+          mr: "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "No title",
+          description:
+            card.description?.[localeField] || card.description?.english ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "gambling-and-gaming-addiction",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Gambling and Gaming Addiction data:", error);
+        return null;
+      }
+    }
+
+    // Handle Internet Addiction data from comprehensive data file
+    if (condition === "internet-addiction") {
+      try {
+        const InternetData = require("../../../../assets/data/Internet & Social Media Issues/InternetAddiction_comprehensive_data.json");
+        const commonSuggestionsCards = InternetData.commonSuggestions?.cards;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Internet Addiction data");
+          return null;
+        }
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[locale] || card.title?.en || "No title",
+          description:
+            card.description?.[locale] || card.description?.en ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "internet-addiction",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Internet Addiction data:", error);
+        return null;
+      }
+    }
+    // Handle Friendship & Relationship data file (custom structure)
+    if (condition === "friendship-and-relationship") {
+      try {
+        const frData = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
+        const common = frData["10_common_suggestions"];
+
+        if (!common || !Array.isArray(common)) {
+          console.error(
+            "No common suggestions found in Friendship & Relationship data",
+          );
+          return null;
+        }
+
+        const interventions = common.map((item: any) => ({
+          title: item.title || "No title",
+          description: item.description || "No description",
+          xp: item.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "friendship-and-relationship",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Friendship & Relationship data:", error);
+        return null;
+      }
+    }
+
+    // Handle Dating Sites and Complications data file (localized en/hi/mr)
+    if (condition === "dating-sites-and-complications") {
+      try {
+        const data = require("../../../../assets/data/Emotion/dating_sites_complications_comprehensive_data.json");
+        const commonCards = data?.commonSuggestions?.cards;
+
+        if (!commonCards || !Array.isArray(commonCards)) {
+          console.error(
+            "No common suggestions found in Dating Sites and Complications data",
+          );
+          return null;
+        }
+
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+
+        const interventions = commonCards.map((card: any) => ({
+          title: card.title?.[localeKey] || card.title?.en || "No title",
+          description:
+            card.description?.[localeKey] || card.description?.en ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "dating-sites-and-complications",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error(
+          "Error loading Dating Sites and Complications data:",
+          error,
+        );
+        return null;
+      }
+    }
+// Handle Self care & hygine comprehensive Data file
+    if (condition === "self-care-hygiene") {
+      try {
+        const data = require("../../../../assets/data/behaviour/SelfCareHygiene_comprehensive_data.json");
+        const commonSuggestionsCards = data.interventions?.commonSuggestions?.cards;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error(
+            "No common suggestions found in Self Care & Hygine data",
+          );
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          en: "english",
+          hi: "hindi",
+          mr: "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "No title",
+          description:
+            card.description?.[localeField] ||
+            card.description?.english ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "self-care-hygiene",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self Care & Hygine data:", error);
+        return null;
+      }
+    }
+    //Handle Eating Habits data file
+
+    // Handle Abusive Language & Back Answering from comprehensive data file
+    if (condition === "abusive-language-back-answering") {
+      try {
+        const data = require("../../../../assets/data/Parenting/AbusiveLanguageBackAnswering_comprehensive_data.json");
+        const localeField = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeField] || data["en"];
+        const commonSuggestionsCards = dataset?.commonSuggestions;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Abusive Language data");
+          return null;
+        }
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title || "No title",
+          description: card.description || "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "abusive-language-back-answering",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error(
+          "Error loading Abusive Language & Back Answering data:",
+          error,
+        );
+        return null;
+      }
+    }
+    
+    
+    
+    // Handle Conduct Issues data from comprehensive data file
+    if (condition === "conduct-issues") {
+      try {
+        const conductData = require("../../../../assets/data/behaviour/ConductIssues_Complete_comprehensive_data.json");
+        const commonSuggestionsCards = conductData.interventions?.commonSuggestions?.cards;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Conduct Issues data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi",
+          "mr": "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "No title",
+          description:
+            card.description?.[localeField] || card.description?.english ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "conduct-issues",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Conduct Issues common suggestions data:", error);
+        return null;
+      }
+    }
+    // Handle ADHD data from ADHD comprehensive data file
+    if (condition === "adhd") {
+      try {
+        const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
+        const commonSuggestionsCards = adhdData.interventions?.commonSuggestions?.cards;
+        
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in ADHD data");
+          return null;
+        }
+
+        // Map locale codes to ADHD data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi", 
+          "mr": "marathi"
+        };
+        const adhdLocaleField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[adhdLocaleField] || card.title?.english || "No title",
+          description: card.description?.[adhdLocaleField] || card.description?.english || "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "adhd",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading ADHD common suggestions data:", error);
+        return null;
+      }
+    }
+
+    // Handle Aggressive Behaviour data from comprehensive data file
+    if (condition === "aggressive-behaviour") {
+      try {
+        const aggressiveData = require("../../../../assets/data/behaviour/AggressiveBehaviour_comprehensive_data.json");
+        const commonSuggestionsCards = aggressiveData.interventions?.commonSuggestions?.cards;
+        
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Aggressive Behaviour data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi", 
+          "mr": "marathi"
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "No title",
+          description: card.description?.[localeField] || card.description?.english || "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "aggressive-behaviour",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Aggressive Behaviour common suggestions data:", error);
+        return null;
+      }
+    }
+
     // Check if we have translations for this condition
     const translationKeyMap: { [key: string]: string } = {
       "anger-management": "angerManagement",
       addictions: "addictions",
       "common-psychological-issues": "commonPsychologicalIssues",
+      "conduct-issues": "conductIssues",
       "environment-issues": "environmentIssues",
       "family-relationship": "familyRelationship",
       "financial-mental-health": "financialMentalHealth",

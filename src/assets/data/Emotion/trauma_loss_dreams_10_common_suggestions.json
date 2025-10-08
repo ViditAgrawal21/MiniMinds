@@ -1,0 +1,208 @@
+{
+  "condition": "trauma-loss-and-dreams",
+  "interventions": {
+    "10CommonSuggestions": {
+      "interventionType": "10CommonSuggestions",
+      "languages": {
+    "en": {
+      "title": "10 Common Suggestions for Dealing with Trauma, Loss, and Dreams",
+      "description": "Evidence-based recommendations for processing trauma, coping with loss, and understanding dreams in healing.",
+      "suggestions": [
+        {
+          "id": 1,
+          "title": "Seek Professional Help",
+          "description": "If you're dealing with trauma or loss, it's essential to seek professional help. Therapists, counselors, and psychiatrists are trained to help you navigate through your feelings and emotions. For example, a therapist can guide you through cognitive-behavioral therapy to help you understand and change thought patterns that lead to harmful behaviors or feelings.",
+          "xp": 2
+        },
+        {
+          "id": 2,
+          "title": "Join a Support Group",
+          "description": "Connecting with others who have experienced similar situations can provide comfort, reduce feelings of isolation, and help you cope. For instance, if you've lost a loved one, joining a grief support group can provide a safe space to share your feelings and learn coping strategies.",
+          "xp": 2
+        },
+        {
+          "id": 3,
+          "title": "Practice Mindfulness and Meditation",
+          "description": "These techniques can help you stay grounded in the present moment and reduce anxiety. For example, you might start each day with a 10-minute mindfulness meditation focusing on your breath and bodily sensations.",
+          "xp": 2
+        },
+        {
+          "id": 4,
+          "title": "Regular Exercise",
+          "description": "Physical activity can boost your mood and act as a natural stress reliever. For instance, a daily 30-minute walk or yoga session can help clear your mind and reduce anxiety.",
+          "xp": 2
+        },
+        {
+          "id": 5,
+          "title": "Healthy Eating",
+          "description": "Nutritious food can boost your mood and energy, helping you cope with trauma or loss. For example, incorporating fruits, vegetables, lean proteins, and whole grains into your diet can improve your overall well-being.",
+          "xp": 2
+        },
+        {
+          "id": 6,
+          "title": "Adequate Sleep",
+          "description": "Good sleep is essential for emotional health. If you're having nightmares or trouble sleeping, seek professional help. For example, a sleep specialist can provide strategies to improve your sleep hygiene and quality.",
+          "xp": 2
+        },
+        {
+          "id": 7,
+          "title": "Journaling",
+          "description": "Writing about your feelings can provide an emotional outlet and help you process your experiences. For example, you might write about your dreams or memories of a loved one you've lost.",
+          "xp": 2
+        },
+        {
+          "id": 8,
+          "title": "Art Therapy",
+          "description": "Expressing yourself creatively can be a therapeutic way to deal with trauma or loss. For instance, painting, drawing, or making music can help you express feelings that might be hard to put into words.",
+          "xp": 2
+        },
+        {
+          "id": 9,
+          "title": "Limit Alcohol and Avoid Drugs",
+          "description": "These substances can worsen your emotional health and can delay the healing process. For example, while it might be tempting to use alcohol to numb your feelings, it can lead to more harm than good in the long run.",
+          "xp": 2
+        },
+        {
+          "id": 10,
+          "title": "Practice Self-Care",
+          "description": "Make time for activities that you enjoy and that relax you. This could be reading a book, taking a bath, or spending time in nature. For example, if you love gardening, spending time each day tending to your plants can provide a sense of peace and normalcy.",
+          "xp": 2
+        }
+      ]
+    },
+    "hi": {
+      "title": "आघात, हानि और सपनों से निपटने के लिए 10 सामान्य सुझाव",
+      "description": "आघात को संसाधित करने, हानि से निपटने और उपचार में सपनों को समझने के लिए साक्ष्य-आधारित सिफारिशें।",
+      "suggestions": [
+        {
+          "id": 1,
+          "title": "पेशेवर सहायता लें",
+          "description": "यदि आप आघात या हानि से निपट रहे हैं, तो पेशेवर सहायता लेना आवश्यक है। चिकित्सक, परामर्शदाता और मनोचिकित्सक आपकी भावनाओं और संवेगों के माध्यम से नेविगेट करने में आपकी मदद करने के लिए प्रशिक्षित हैं। उदाहरण के लिए, एक चिकित्सक संज्ञानात्मक-व्यवहार चिकित्सा के माध्यम से आपका मार्गदर्शन कर सकता है ताकि आप उन विचार पैटर्न को समझ और बदल सकें जो हानिकारक व्यवहार या भावनाओं की ओर ले जाते हैं।",
+          "xp": 2
+        },
+        {
+          "id": 2,
+          "title": "सहायता समूह में शामिल हों",
+          "description": "समान स्थितियों का अनुभव करने वाले अन्य लोगों से जुड़ना आराम प्रदान कर सकता है, अलगाव की भावनाओं को कम कर सकता है और आपको सामना करने में मदद कर सकता है। उदाहरण के लिए, यदि आपने किसी प्रियजन को खो दिया है, तो शोक सहायता समूह में शामिल होना आपकी भावनाओं को साझा करने और मुकाबला रणनीतियों को सीखने के लिए एक सुरक्षित स्थान प्रदान कर सकता है।",
+          "xp": 2
+        },
+        {
+          "id": 3,
+          "title": "सचेतता और ध्यान का अभ्यास करें",
+          "description": "ये तकनीकें आपको वर्तमान क्षण में स्थिर रहने और चिंता को कम करने में मदद कर सकती हैं। उदाहरण के लिए, आप अपनी सांस और शारीरिक संवेदनाओं पर ध्यान केंद्रित करते हुए 10 मिनट के सचेतता ध्यान के साथ प्रत्येक दिन की शुरुआत कर सकते हैं।",
+          "xp": 2
+        },
+        {
+          "id": 4,
+          "title": "नियमित व्यायाम",
+          "description": "शारीरिक गतिविधि आपके मूड को बढ़ा सकती है और प्राकृतिक तनाव निवारक के रूप में कार्य कर सकती है। उदाहरण के लिए, दैनिक 30 मिनट की सैर या योग सत्र आपके मन को साफ करने और चिंता को कम करने में मदद कर सकता है।",
+          "xp": 2
+        },
+        {
+          "id": 5,
+          "title": "स्वस्थ भोजन",
+          "description": "पौष्टिक भोजन आपके मूड और ऊर्जा को बढ़ा सकता है, आघात या हानि से निपटने में मदद करता है। उदाहरण के लिए, अपने आहार में फल, सब्जियां, दुबला प्रोटीन और साबुत अनाज शामिल करना आपकी समग्र भलाई में सुधार कर सकता है।",
+          "xp": 2
+        },
+        {
+          "id": 6,
+          "title": "पर्याप्त नींद",
+          "description": "भावनात्मक स्वास्थ्य के लिए अच्छी नींद आवश्यक है। यदि आपको बुरे सपने आ रहे हैं या नींद की समस्या है, तो पेशेवर सहायता लें। उदाहरण के लिए, एक नींद विशेषज्ञ आपकी नींद की स्वच्छता और गुणवत्ता में सुधार के लिए रणनीतियां प्रदान कर सकता है।",
+          "xp": 2
+        },
+        {
+          "id": 7,
+          "title": "पत्रिका लेखन",
+          "description": "अपनी भावनाओं के बारे में लिखना एक भावनात्मक आउटलेट प्रदान कर सकता है और आपके अनुभवों को संसाधित करने में मदद कर सकता है। उदाहरण के लिए, आप अपने सपनों या खोए हुए प्रियजन की यादों के बारे में लिख सकते हैं।",
+          "xp": 2
+        },
+        {
+          "id": 8,
+          "title": "कला चिकित्सा",
+          "description": "रचनात्मक रूप से खुद को अभिव्यक्त करना आघात या हानि से निपटने का एक चिकित्सीय तरीका हो सकता है। उदाहरण के लिए, चित्रकारी, ड्राइंग, या संगीत बनाना उन भावनाओं को अभिव्यक्त करने में मदद कर सकता है जिन्हें शब्दों में डालना कठिन हो सकता है।",
+          "xp": 2
+        },
+        {
+          "id": 9,
+          "title": "शराब सीमित करें और ड्रग्स से बचें",
+          "description": "ये पदार्थ आपके भावनात्मक स्वास्थ्य को खराब कर सकते हैं और उपचार प्रक्रिया में देरी कर सकते हैं। उदाहरण के लिए, भले ही अपनी भावनाओं को सुन्न करने के लिए शराब का उपयोग करना लुभावना हो सकता है, लेकिन लंबे समय में यह अच्छे से अधिक नुकसान कर सकता है।",
+          "xp": 2
+        },
+        {
+          "id": 10,
+          "title": "स्व-देखभाल का अभ्यास करें",
+          "description": "उन गतिविधियों के लिए समय निकालें जिनका आप आनंद लेते हैं और जो आपको आराम देती हैं। यह एक किताब पढ़ना, स्नान करना, या प्रकृति में समय बिताना हो सकता है। उदाहरण के लिए, यदि आपको बागवानी पसंद है, तो प्रतिदिन अपने पौधों की देखभाल में समय बिताना शांति और सामान्यता की भावना प्रदान कर सकता है।",
+          "xp": 2
+        }
+      ]
+    },
+    "mr": {
+      "title": "आघात, हानी आणि स्वप्नांना सामोरे जाण्यासाठी 10 सामान्य सूचना",
+      "description": "आघातावर प्रक्रिया करणे, हानीला सामोरे जाणे आणि उपचारामध्ये स्वप्नांना समजून घेण्यासाठी साक्ष्य-आधारित शिफारसी.",
+      "suggestions": [
+        {
+          "id": 1,
+          "title": "व्यावसायिक मदत घ्या",
+          "description": "जर तुम्ही आघात किंवा हानीला सामोरे जात असाल, तर व्यावसायिक मदत घेणे आवश्यक आहे. थेरपिस्ट, समुपदेशक आणि मानसशास्त्रज्ञ तुमच्या भावना आणि संवेगांमधून मार्गक्रमण करण्यात तुमची मदत करण्यासाठी प्रशिक्षित आहेत. उदाहरणार्थ, एक थेरपिस्ट संज्ञानात्मक-वर्तन चिकित्सेद्वारे तुमचे मार्गदर्शन करू शकतो ज्यामुळे तुम्ही त्या विचार पद्धती समजून घेऊ शकता आणि बदलू शकता ज्या हानिकारक वर्तन किंवा भावनांकडे नेतात.",
+          "xp": 2
+        },
+        {
+          "id": 2,
+          "title": "सहाय्यता गटात सामील व्हा",
+          "description": "समान परिस्थितींचा अनुभव घेतलेल्या इतरांशी जुळवून घेणे आराम देऊ शकते, अलगावाची भावना कमी करू शकते आणि तुम्हाला सामना करण्यात मदत करू शकते. उदाहरणार्थ, जर तुम्ही एखाद्या प्रियजनाला गमावले असेल, तर शोक सहाय्यता गटात सामील होणे तुमच्या भावना सामायिक करण्यासाठी आणि सामना करण्याची रणनीती शिकण्यासाठी एक सुरक्षित जागा प्रदान करू शकते.",
+          "xp": 2
+        },
+        {
+          "id": 3,
+          "title": "जागरूकता आणि ध्यानाचा सराव करा",
+          "description": "या तंत्रांमुळे तुम्हाला सध्याच्या क्षणात स्थिर राहण्यास आणि चिंता कमी करण्यास मदत होऊ शकते. उदाहरणार्थ, तुम्ही तुमच्या श्वास आणि शारीरिक संवेदनांवर लक्ष केंद्रित करत 10 मिनिटांच्या जागरूकता ध्यानाने प्रत्येक दिवसाची सुरुवात करू शकता.",
+          "xp": 2
+        },
+        {
+          "id": 4,
+          "title": "नियमित व्यायाम",
+          "description": "शारीरिक क्रियाकलाप तुमचा मूड वाढवू शकतो आणि नैसर्गिक तणाव निवारक म्हणून काम करू शकतो. उदाहरणार्थ, दैनिक 30 मिनिटांची चालणे किंवा योग सत्र तुमचे मन स्वच्छ करण्यास आणि चिंता कमी करण्यास मदत करू शकते.",
+          "xp": 2
+        },
+        {
+          "id": 5,
+          "title": "निरोगी खाणे",
+          "description": "पौष्टिक अन्न तुमचा मूड आणि ऊर्जा वाढवू शकते, आघात किंवा हानीला सामोरे जाण्यास मदत करते. उदाहरणार्थ, तुमच्या आहारात फळे, भाज्या, कमी चरबीचे प्रथिने आणि संपूर्ण धान्य समाविष्ट करणे तुमच्या एकूण कल्याणात सुधारणा करू शकते.",
+          "xp": 2
+        },
+        {
+          "id": 6,
+          "title": "पुरेशी झोप",
+          "description": "भावनिक आरोग्यासाठी चांगली झोप आवश्यक आहे. जर तुम्हाला वाईट स्वप्ने येत असतील किंवा झोपेची अडचण असेल तर व्यावसायिक मदत घ्या. उदाहरणार्थ, एक झोप तज्ञ तुमच्या झोपेच्या स्वच्छता आणि गुणवत्तेत सुधारणा करण्यासाठी रणनीती प्रदान करू शकतो.",
+          "xp": 2
+        },
+        {
+          "id": 7,
+          "title": "दैनिकी लेखन",
+          "description": "तुमच्या भावनांबद्दल लिहिणे भावनिक आउटलेट प्रदान करू शकते आणि तुमच्या अनुभवांवर प्रक्रिया करण्यास मदत करू शकते. उदाहरणार्थ, तुम्ही तुमच्या स्वप्नांबद्दल किंवा गमावलेल्या प्रियजनाच्या आठवणींबद्दल लिहू शकता.",
+          "xp": 2
+        },
+        {
+          "id": 8,
+          "title": "कला चिकित्सा",
+          "description": "स्वतःला सर्जनशीलपणे अभिव्यक्त करणे आघात किंवा हानीला सामोरे जाण्याचा एक उपचारात्मक मार्ग असू शकतो. उदाहरणार्थ, चित्रकारी, चित्र काढणे, किंवा संगीत तयार करणे अशा भावना व्यक्त करण्यास मदत करू शकते ज्या शब्दात मांडणे कठीण असू शकते.",
+          "xp": 2
+        },
+        {
+          "id": 9,
+          "title": "दारू मर्यादित करा आणि औषधांपासून दूर राहा",
+          "description": "ही पदार्थे तुमच्या भावनिक आरोग्याला बिघडवू शकतात आणि उपचार प्रक्रियेत विलंब करू शकतात. उदाहरणार्थ, तुमच्या भावना भोथट करण्यासाठी दारूचा वापर करणे मोहक असू शकते, परंतु दीर्घकालीन तो चांगल्यापेक्षा जास्त नुकसान करू शकतो.",
+          "xp": 2
+        },
+        {
+          "id": 10,
+          "title": "स्व-काळजीचा सराव करा",
+          "description": "तुम्हाला आवडणार्‍या आणि तुम्हाला आराम देणार्‍या क्रियाकलापांसाठी वेळ काढा. हे पुस्तक वाचणे, आंघोळ करणे, किंवा निसर्गात वेळ घालवणे असू शकते. उदाहरणार्थ, जर तुम्हाला बागकाम आवडत असेल, तर दररोज तुमच्या वनस्पतींची काळजी घेण्यात वेळ घालवणे शांती आणि सामान्यतेची भावना देऊ शकते.",
+          "xp": 2
+        }
+      ]
+    }
+      }
+    }
+  }
+}

@@ -154,30 +154,82 @@
       "cards": [
         {
           "id": 1,
-          "xp": 5,
-          "title": {
-            "english": "Yoga",
-            "hindi": "योग",
-            "marathi": "योग"
-          },
+          "xp": 7,
+          "title": { "english": "Mindful Eating Meditation" },
           "description": {
-            "english": "Sun Salutations (Surya Namaskar): This sequence of poses helps to improve digestion and eliminate toxins from the body.\nSeated Forward Bend (Paschimottanasana): This pose helps to soothe the digestive system and reduce stress, which can often lead to overeating.\nPlow Pose (Halasana): This pose stimulates the thyroid gland, which can help to regulate metabolism and control appetite.\nTwisting poses like Half Lord of the Fishes (Ardha Matsyendrasana) or Marichi's Pose (Marichyasana): These poses massage the abdominal organs, improving digestion and helping to control hunger.",
-            "hindi": "सूर्य नमस्कार: यह आसनों का क्रम पाचन में सुधार करने और शरीर से विषाक्त पदार्थों को निकालने में मदद करता है।\nबैठकर आगे की ओर झुकना (पश्चिमोत्तानासन): यह आसन पाचन तंत्र को शांत करने और तनाव कम करने में मदद करता है, जो अक्सर अधिक खाने का कारण बन सकता है।\nहल आसन (हलासन): यह आसन थायराइड ग्रंथि को उत्तेजित करता है, जो चयापचय को नियंत्रित करने और भूख को नियंत्रित करने में मदद कर सकता है।\nमत्स्येंद्रासन (अर्ध मत्स्येंद्रासन) या मरीची आसन (मरीच्यासन) जैसे मोड़ने वाले आसन: ये आसन पेट के अंगों की मालिश करते हैं, पाचन में सुधार करते हैं और भूख को नियंत्रित करने में मदद करते हैं।",
-            "marathi": "सूर्य नमस्कार: हे आसनांचे अनुक्रम पचन सुधारण्यास आणि शरीरातील विषारी द्रव्ये काढून टाकण्यास मदत करते.\nपुढे वाकून बसणे (पश्चिमोत्तानासन): हे आसन पचनसंस्था शांत करण्यास आणि तणाव कमी करण्यास मदत करते, जे अनेकदा जास्त खाण्यास कारणीभूत ठरू शकते.\nनांगरासन (हलासन): हे आसन थायरॉइड ग्रंथी उत्तेजित करते, जे चयापचय नियंत्रित करण्यास आणि भूक नियंत्रित करण्यास मदत करू शकते.\nअर्ध मत्स्येंद्रासन किंवा मरीची आसन यासारखे फिरवणारे आसन: ही आसने पोटातील अवयवांची मालिश करतात, पचन सुधारतात आणि भूक नियंत्रित करण्यास मदत करतात."
+            "english": "Why it helps: Increases awareness of hunger and fullness. What to do: Eat slowly, noticing taste and texture. Example: Child eats apple slices mindfully instead of rushing."
           }
         },
         {
           "id": 2,
-          "xp": 5,
-          "title": {
-            "english": "Meditation",
-            "hindi": "ध्यान",
-            "marathi": "ध्यान"
-          },
+          "xp": 8,
+          "title": { "english": "Seated Forward Bend (Paschimottanasana)" },
           "description": {
-            "english": "Mindful Eating Meditation: Before you eat, take a few moments to sit quietly and focus on your breath. As you eat, pay attention to the taste, texture, and smell of the food. This can help you to eat more slowly and recognize when you are full.\nBody Scan Meditation: This involves focusing on different parts of your body and noticing any sensations you feel. This can help you to become more aware of your body's signals of hunger and fullness.\nLoving-Kindness Meditation: This type of meditation can help to reduce emotional eating. You focus on developing feelings of compassion and love for yourself and others.\n\nRemember, it's always best to learn yoga poses from a qualified instructor to ensure you're doing them correctly and safely. As for meditation, start with short sessions and gradually increase the time as you get more comfortable with the practice.\n\nAlso, while yoga and meditation can certainly aid in improving eating habits, they should be used as a complement to a balanced diet and regular exercise, not as a replacement. If you have serious concerns about your eating habits, it's important to seek help from a healthcare professional.",
-            "hindi": "सचेत भोजन ध्यान: खाने से पहले, कुछ पल चुपचाप बैठकर अपनी सांस पर ध्यान दें। जब आप खाते हैं, तो भोजन के स्वाद, बनावट और गंध पर ध्यान दें। यह आपको धीरे-धीरे खाने और यह पहचानने में मदद कर सकता है कि आप कब भरे हुए हैं।\nबॉडी स्कैन मेडिटेशन: इसमें आपके शरीर के विभिन्न हिस्सों पर ध्यान केंद्रित करना और आपको लगने वाली किसी भी संवेदना को नोटिस करना शामिल है। यह आपको अपने शरीर की भूख और पेट भरने के संकेतों के बारे में अधिक जागरूक बनने में मदद कर सकता है।\nप्रेम-दयालुता ध्यान: इस प्रकार का ध्यान भावनात्मक खाने को कम करने में मदद कर सकता है। आप अपने लिए और दूसरों के लिए करुणा और प्रेम की भावनाओं को विकसित करने पर ध्यान केंद्रित करते हैं।\n\nयाद रखें, योग आसनों को सही तरीके से और सुरक्षित रूप से करने के लिए एक योग्य प्रशिक्षक से सीखना हमेशा सबसे अच्छा होता है। ध्यान के लिए, छोटे सत्रों से शुरुआत करें और जैसे-जैसे आप अभ्यास के साथ अधिक सहज हों, समय को धीरे-धीरे बढ़ाएं।\n\nइसके अलावा, जबकि योग और ध्यान निश्चित रूप से खाने की आदतों को सुधारने में सहायता कर सकते हैं, उन्हें संतुलित आहार और नियमित व्यायाम के पूरक के रूप में उपयोग किया जाना चाहिए, प्रतिस्थापन के रूप में नहीं। यदि आपको अपनी खाने की आदतों के बारे में गंभीर चिंताएं हैं, तो स्वास्थ्य सेवा पेशेवर से मदद लेना महत्वपूर्ण है।",
-            "marathi": "जागरूक भोजन ध्यान: खाण्यापूर्वी, काही क्षण शांतपणे बसा आणि तुमच्या श्वासावर लक्ष केंद्रित करा. तुम्ही खाता तेव्हा, अन्नाच्या चव, पोत आणि वासावर लक्ष द्या. हे तुम्हाला हळूहळू खाण्यास आणि तुम्ही कधी भरलेले आहात हे ओळखण्यास मदत करू शकते.\nशरीर स्कॅन ध्यान: यामध्ये तुमच्या शरीराच्या वेगवेगळ्या भागांवर लक्ष केंद्रित करणे आणि तुम्हाला जाणवणाऱ्या कोणत्याही संवेदनांची नोंद घेणे समाविष्ट आहे. हे तुमच्या शरीराच्या भूक आणि तृप्तीच्या संकेतांबद्दल अधिक जागरूक होण्यास मदत करू शकते.\nप्रेम-दयाळूपणा ध्यान: या प्रकारचे ध्यान भावनिक खाणे कमी करण्यास मदत करू शकते. तुम्ही स्वतःसाठी आणि इतरांसाठी करुणा आणि प्रेमाच्या भावना विकसित करण्यावर लक्ष केंद्रित करता.\n\nलक्षात ठेवा, योगासने योग्य आणि सुरक्षितपणे करण्यासाठी पात्र प्रशिक्षकाकडून शिकणे नेहमीच सर्वोत्तम असते. ध्यानासाठी, लहान सत्रांपासून सुरुवात करा आणि अभ्यासात अधिक सहज होताना हळूहळू वेळ वाढवा.\n\nतसेच, योग आणि ध्यान निश्चितपणे खाण्याच्या सवयी सुधारण्यास मदत करू शकतात, ते संतुलित आहार आणि नियमित व्यायामाचे पूरक म्हणून वापरले पाहिजेत, बदल म्हणून नाही. तुमच्या खाण्याच्या सवयींबद्दल गंभीर चिंता असल्यास, आरोग्यसेवा व्यावसायिकाकडून मदत घेणे महत्वाचे आहे."
+            "english": "Why it helps: Improves digestion and calms mind. What to do: Sit with legs stretched, bend forward gently. Example: Done after meals to support healthy digestion."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": { "english": "Alternate Nostril Breathing (Nadi Shodhana)" },
+          "description": {
+            "english": "Why it helps: Balances appetite and reduces cravings. What to do: Inhale through one nostril, exhale through the other. Example: Practice before meals to avoid overeating."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 8,
+          "title": { "english": "Spinal Twist (Ardha Matsyendrasana)" },
+          "description": {
+            "english": "Why it helps: Stimulates digestion and detoxification. What to do: Sit, twist spine gently to each side. Example: Practice before bedtime to reduce bloating."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 9,
+          "title": { "english": "Sun Salutation (Surya Namaskar)" },
+          "description": {
+            "english": "Why it helps: Regulates metabolism and energy. What to do: Perform 5–10 rounds in the morning. Example: Builds appetite control and reduces sluggishness."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 7,
+          "title": { "english": "Bhramari Pranayama (Bee Breath)" },
+          "description": {
+            "english": "Why it helps: Reduces stress-related overeating. What to do: Inhale deeply, hum on exhale. Example: Practice when craving junk food due to stress."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 6,
+          "title": { "english": "Child’s Pose (Balasana)" },
+          "description": {
+            "english": "Why it helps: Relieves digestive discomfort. What to do: Kneel, stretch arms forward, rest forehead on floor. Example: Practice after heavy meals to soothe stomach."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 6,
+          "title": { "english": "Mindful Breathing Before Meals" },
+          "description": {
+            "english": "Why it helps: Prepares body for mindful eating. What to do: Take 5 slow deep breaths before eating. Example: Child feels calmer and eats more slowly."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 8,
+          "title": { "english": "Corpse Pose (Shavasana) with Belly Breathing" },
+          "description": {
+            "english": "Why it helps: Improves digestion and relaxation. What to do: Lie flat, hands on belly, breathe deeply. Example: Reduces overeating urges."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 7,
+          "title": { "english": "Guided Visualization of Healthy Eating" },
+          "description": {
+            "english": "Why it helps: Builds positive food choices. What to do: Imagine eating colorful fruits and veggies. Example: Encourages child to try salad willingly."
           }
         }
       ]
@@ -188,72 +240,82 @@
       "cards": [
         {
           "id": 1,
-          "xp": 5,
-          "title": {
-            "english": "Mindful Eating",
-            "hindi": "सचेत भोजन",
-            "marathi": "जागरूक भोजन"
-          },
+          "xp": 6,
+          "title": { "english": "Progressive Muscle Relaxation" },
           "description": {
-            "english": "This involves paying full attention to the experience of eating and drinking, both inside and outside the body. Notice the colors, smells, textures, flavors, temperatures, and even the sounds of your food. Pay attention to the experience of your body. Where in your body do you feel hunger? Where do you feel satisfaction?",
-            "hindi": "इसमें शरीर के अंदर और बाहर दोनों जगह खाने और पीने के अनुभव पर पूरा ध्यान देना शामिल है। अपने भोजन के रंग, गंध, बनावट, स्वाद, तापमान और यहां तक कि आवाज़ों को भी नोटिस करें। अपने शरीर के अनुभव पर ध्यान दें। आपके शरीर में कहां आपको भूख महसूस होती है? आपको संतुष्टि कहां महसूस होती है?",
-            "marathi": "यामध्ये शरीराच्या आत आणि बाहेर दोन्ही ठिकाणी खाणे आणि पिण्याच्या अनुभवावर पूर्ण लक्ष देणे समाविष्ट आहे. तुमच्या अन्नाचे रंग, वास, पोत, चव, तापमान आणि अगदी आवाजही लक्षात घ्या. तुमच्या शरीराच्या अनुभवावर लक्ष द्या. तुमच्या शरीरात कुठे तुम्हाला भूक जाणवते? तुम्हाला समाधान कुठे वाटते?"
+            "english": "Why it helps: Reduces stress eating by releasing body tension. What to do: Tense and relax muscles from head to toe. Example: Practice before meals to avoid overeating."
           }
         },
         {
           "id": 2,
           "xp": 5,
-          "title": {
-            "english": "Deep Breathing",
-            "hindi": "गहरी सांस लेना",
-            "marathi": "खोल श्वास घेणे"
-          },
+          "title": { "english": "Deep Belly Breathing" },
           "description": {
-            "english": "Deep breathing can help reduce stress that might lead to emotional eating. Take a few moments before each meal to take deep, calming breaths. Close your eyes, breathe in deeply through your nose, hold for a few seconds, and exhale through your mouth.",
-            "hindi": "गहरी सांस लेना उस तनाव को कम करने में मदद कर सकती है जो भावनात्मक खाने का कारण बन सकता है। हर भोजन से पहले कुछ पल गहरी, शांत करने वाली सांसें लेने के लिए लें। अपनी आंखें बंद करें, अपनी नाक से गहरी सांस लें, कुछ सेकंड के लिए रोकें, और अपने मुंह से सांस छोड़ें।",
-            "marathi": "खोल श्वास घेणे तणाव कमी करण्यास मदत करू शकते जे भावनिक खाण्यास कारणीभूत ठरू शकते. प्रत्येक जेवणापूर्वी काही क्षण खोल, शांत करणारे श्वास घेण्यासाठी घ्या. तुमचे डोळे बंद करा, नाकातून खोल श्वास घ्या, काही सेकंद धरून ठेवा आणि तोंडातून श्वास सोडा."
+            "english": "Why it helps: Calms urges to eat quickly. What to do: Inhale deeply, exhale slowly for 5 minutes. Example: Helps child slow down before dinner."
           }
         },
         {
           "id": 3,
-          "xp": 5,
-          "title": {
-            "english": "Progressive Muscle Relaxation",
-            "hindi": "प्रगतिशील मांसपेशी शिथिलीकरण",
-            "marathi": "प्रगतीशील स्नायू शिथिलीकरण"
-          },
+          "xp": 7,
+          "title": { "english": "Visualization of Healthy Eating" },
           "description": {
-            "english": "This technique involves tensing and then releasing each muscle group in your body, starting from your toes and working your way up to your head. It can help you become more aware of physical sensations and achieve a state of deep relaxation.",
-            "hindi": "इस तकनीक में आपके शरीर की प्रत्येक मांसपेशी समूह को तनाव देना और फिर छोड़ना शामिल है, जो आपके पैर की उंगलियों से शुरू होकर आपके सिर तक जाता है। यह आपको शारीरिक संवेदनाओं के बारे में अधिक जागरूक बनने और गहरी शिथिलता की स्थिति प्राप्त करने में मदद कर सकता है।",
-            "marathi": "या तंत्रामध्ये तुमच्या शरीरातील प्रत्येक स्नायू गटात ताण निर्माण करणे आणि नंतर सोडणे समाविष्ट आहे, जे तुमच्या पायाच्या बोटांपासून सुरू होते आणि तुमच्या डोक्यापर्यंत वर जाते. हे तुम्हाला शारीरिक संवेदनांबद्दल अधिक जागरूक होण्यास आणि खोल शिथिलतेची स्थिती गाठण्यास मदत करू शकते."
+            "english": "Why it helps: Encourages positive food choices. What to do: Imagine eating colorful, fresh foods. Example: Child imagines enjoying fruits instead of candy."
           }
         },
         {
           "id": 4,
-          "xp": 5,
-          "title": {
-            "english": "Yoga and Meditation",
-            "hindi": "योग और ध्यान",
-            "marathi": "योग आणि ध्यान"
-          },
+          "xp": 7,
+          "title": { "english": "Body Scan Relaxation" },
           "description": {
-            "english": "Both yoga and meditation can help reduce stress and increase body awareness. They can help you tune into your body's hunger and fullness cues and reduce emotional eating.",
-            "hindi": "योग और ध्यान दोनों तनाव कम करने और शरीर की जागरूकता बढ़ाने में मदद कर सकते हैं। वे आपके शरीर की भूख और पेट भरने के संकेतों में तालमेल बिठाने और भावनात्मक खाने को कम करने में आपकी मदद कर सकते हैं।",
-            "marathi": "योग आणि ध्यान दोन्ही तणाव कमी करण्यास आणि शरीराची जागरूकता वाढवण्यास मदत करू शकतात. ते तुमच्या शरीराच्या भूक आणि तृप्तीच्या संकेतांशी जुळवून घेण्यास आणि भावनिक खाणे कमी करण्यास मदत करू शकतात."
+            "english": "Why it helps: Builds awareness of hunger vs. stress. What to do: Scan body for tension or signals. Example: Child notices they’re bored, not hungry."
           }
         },
         {
           "id": 5,
-          "xp": 5,
-          "title": {
-            "english": "Visualization",
-            "hindi": "दृश्यावलोकन",
-            "marathi": "दृश्यीकरण"
-          },
+          "xp": 6,
+          "title": { "english": "Listening to Calming Music" },
           "description": {
-            "english": "Imagine yourself eating healthily and enjoying your food. Visualization can help create a positive association with healthy food and make it easier to make healthier choices.",
-            "hindi": "कल्पना करें कि आप स्वस्थ खा रहे हैं और अपने भोजन का आनंद ले रहे हैं। दृश्यावलोकन स्वस्थ भोजन के साथ एक सकारात्मक जुड़ाव बनाने और स्वस्थ विकल्प बनाने को आसान बनाने में मदद कर सकता है।",
-            "marathi": "स्वतःला आरोग्यदायी खाताना आणि तुमच्या अन्नाचा आस्वाद घेताना कल्पना करा. दृश्यीकरण आरोग्यदायी अन्नाशी सकारात्मक संबंध निर्माण करण्यास आणि आरोग्यदायी निवडी करणे सोपे करण्यास मदत करू शकते."
+            "english": "Why it helps: Prevents mindless eating. What to do: Play soft instrumental music during meals. Example: Encourages slower chewing and smaller bites."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 7,
+          "title": { "english": "Aromatherapy" },
+          "description": {
+            "english": "Why it helps: Reduces stress-linked snacking. What to do: Use lavender or citrus essential oils. Example: Helps child relax in evening instead of craving sweets."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 7,
+          "title": { "english": "Mindful Hand-to-Mouth Awareness" },
+          "description": {
+            "english": "Why it helps: Increases mindfulness while eating. What to do: Pay attention to each bite from hand to mouth. Example: Reduces overeating chips or snacks."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 8,
+          "title": { "english": "Nature Breaks" },
+          "description": {
+            "english": "Why it helps: Replaces emotional eating with calm activity. What to do: Spend 10 minutes outdoors noticing surroundings. Example: Child goes for a walk instead of snacking."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 8,
+          "title": { "english": "Warm Bath Relaxation" },
+          "description": {
+            "english": "Why it helps: Relieves cravings linked to stress. What to do: Take a 15-minute warm bath focusing on slow breaths. Example: Prevents nighttime junk food cravings."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 8,
+          "title": { "english": "5-4-3-2-1 Grounding Technique" },
+          "description": {
+            "english": "Why it helps: Distracts from impulsive eating. What to do: Identify 5 things you see, 4 touch, 3 hear, 2 smell, 1 taste. Example: Used when craving chocolate out of boredom."
           }
         }
       ]

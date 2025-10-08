@@ -1,0 +1,517 @@
+{
+  "issueType": "Emotional Issues",
+  "issueName": "Breakup and rebound",
+  "interventionType": "Primary",
+  "interventionSubType": "10 Common Suggestions",
+  "totalSuggestions": 10,
+  "suggestions": [
+    {
+      "id": 1,
+      "xp": 2,
+      "title": {
+        "english": "Allow Yourself to Grieve",
+        "hindi": "अपने आप को दुख मनाने दें",
+        "marathi": "स्वतःला दुःख करण्याची परवानगी द्या"
+      },
+      "description": {
+        "english": "It's important to give yourself time to feel the pain and sadness that comes with a breakup. For example, you might spend a few days or weeks crying, journaling about your feelings, or talking to friends about what happened.",
+        "hindi": "ब्रेकअप के साथ आने वाले दर्द और उदासी को महसूस करने के लिए खुद को समय देना महत्वपूर्ण है। उदाहरण के लिए, आप कुछ दिन या सप्ताह रोने, अपनी भावनाओं के बारे में लिखने, या दोस्तों से बात करने में बिता सकते हैं।",
+        "marathi": "ब्रेकअपसोबत येणाऱ्या वेदना आणि दुःखाची जाणीव होण्यासाठी स्वतःला वेळ देणे महत्त्वाचे आहे. उदाहरणार्थ, तुम्ही काही दिवस किंवा आठवडे रडण्यात, तुमच्या भावनांबद्दल लिहिण्यात किंवा मित्रांशी बोलण्यात घालवू शकता."
+      }
+    },
+    {
+      "id": 2,
+      "xp": 2,
+      "title": {
+        "english": "Seek Support",
+        "hindi": "सहायता लें",
+        "marathi": "मदत घ्या"
+      },
+      "description": {
+        "english": "Reach out to friends, family, or a mental health professional to help you navigate through your feelings. For example, you could schedule regular check-ins with a trusted friend or start seeing a therapist.",
+        "hindi": "अपनी भावनाओं से निपटने में मदद के लिए दोस्तों, परिवार या मानसिक स्वास्थ्य पेशेवर से संपर्क करें। उदाहरण के लिए, आप किसी विश्वसनीय मित्र के साथ नियमित मुलाकात शेड्यूल कर सकते हैं या थेरेपिस्ट से मिलना शुरू कर सकते हैं।",
+        "marathi": "तुमच्या भावनांमधून मार्ग काढण्यात मदत करण्यासाठी मित्र, कुटुंब किंवा मानसिक आरोग्य तज्ञांशी संपर्क साधा. उदाहरणार्थ, तुम्ही विश्वासू मित्राशी नियमित भेटी ठरवू शकता किंवा थेरपिस्टला भेटणे सुरू करू शकता."
+      }
+    },
+    {
+      "id": 3,
+      "xp": 2,
+      "title": {
+        "english": "Practice Self-Care",
+        "hindi": "स्व-देखभाल का अभ्यास करें",
+        "marathi": "स्व-काळजीचा सराव करा"
+      },
+      "description": {
+        "english": "Make sure you're taking care of your physical, emotional, and mental health. This could mean going for a run, taking a bath, or meditating.",
+        "hindi": "सुनिश्चित करें कि आप अपने शारीरिक, भावनात्मक और मानसिक स्वास्थ्य का ख्याल रख रहे हैं। इसका मतलब दौड़ने जाना, स्नान करना या ध्यान करना हो सकता है।",
+        "marathi": "तुम्ही तुमच्या शारीरिक, भावनिक आणि मानसिक आरोग्याची काळजी घेत आहात याची खात्री करा. याचा अर्थ धावणे, आंघोळ करणे किंवा ध्यान करणे असू शकते."
+      }
+    },
+    {
+      "id": 4,
+      "xp": 2,
+      "title": {
+        "english": "Avoid Contact with Your Ex",
+        "hindi": "अपने पूर्व साथी से संपर्क से बचें",
+        "marathi": "तुमच्या माजी प्रियकराशी संपर्क टाळा"
+      },
+      "description": {
+        "english": "This can help you heal and move on. For example, you might delete their number or unfollow them on social media.",
+        "hindi": "यह आपको ठीक होने और आगे बढ़ने में मदद कर सकता है। उदाहरण के लिए, आप उनका नंबर डिलीट कर सकते हैं या सोशल मीडिया पर उन्हें अनफॉलो कर सकते हैं।",
+        "marathi": "हे तुम्हाला बरे होण्यासाठी आणि पुढे जाण्यासाठी मदत करू शकते. उदाहरणार्थ, तुम्ही त्यांचा नंबर डिलीट करू शकता किंवा सोशल मीडियावर त्यांना अनफॉलो करू शकता."
+      }
+    },
+    {
+      "id": 5,
+      "xp": 2,
+      "title": {
+        "english": "Rebound Responsibly",
+        "hindi": "जिम्मेदारी से रिबाउंड करें",
+        "marathi": "जबाबदारीने रिबाउंड करा"
+      },
+      "description": {
+        "english": "If you choose to start dating again quickly, make sure it's for the right reasons and not just to fill a void. For example, you might go on a casual date with someone new, but be upfront about your recent breakup and your current emotional state.",
+        "hindi": "यदि आप जल्दी फिर से डेटिंग शुरू करना चुनते हैं, तो सुनिश्चित करें कि यह सही कारणों से है और केवल खालीपन भरने के लिए नहीं। उदाहरण के लिए, आप किसी नए व्यक्ति के साथ कैजुअल डेट पर जा सकते हैं, लेकिन अपने हाल के ब्रेकअप और वर्तमान भावनात्मक स्थिति के बारे में स्पष्ट रहें।",
+        "marathi": "जर तुम्ही पुन्हा लवकर डेटिंग सुरू करण्याचे निवडले तर, ते योग्य कारणांसाठी आहे आणि फक्त रिकामेपणा भरण्यासाठी नाही याची खात्री करा. उदाहरणार्थ, तुम्ही एखाद्या नवीन व्यक्तीसोबत कॅज्युअल डेटवर जाऊ शकता, पण तुमच्या अलीकडील ब्रेकअप आणि सध्याच्या भावनिक स्थितीबद्दल स्पष्ट रहा."
+      }
+    },
+    {
+      "id": 6,
+      "xp": 2,
+      "title": {
+        "english": "Use the Experience to Grow",
+        "hindi": "अनुभव का उपयोग बढ़ने के लिए करें",
+        "marathi": "वाढण्यासाठी अनुभवाचा वापर करा"
+      },
+      "description": {
+        "english": "Learn from the breakup and use it to better understand your needs and wants in a relationship. For example, you might realize that you need a partner who communicates better or who shares more of your interests.",
+        "hindi": "ब्रेकअप से सीखें और इसका उपयोग रिश्ते में अपनी जरूरतों और इच्छाओं को बेहतर ढंग से समझने के लिए करें। उदाहरण के लिए, आप महसूस कर सकते हैं कि आपको एक ऐसे साथी की जरूरत है जो बेहतर संवाद करता हो या जो आपकी अधिक रुचियों को साझा करता हो।",
+        "marathi": "ब्रेकअपपासून शिका आणि नातेसंबंधातील तुमच्या गरजा आणि इच्छा चांगल्या प्रकारे समजून घेण्यासाठी त्याचा वापर करा. उदाहरणार्थ, तुम्हाला असे वाटू शकते की तुम्हाला अशा जोडीदाराची गरज आहे जो चांगला संवाद साधतो किंवा तुमच्या अधिक स्वारस्यांची वाटणी करतो."
+      }
+    },
+    {
+      "id": 7,
+      "xp": 2,
+      "title": {
+        "english": "Stay Busy",
+        "hindi": "व्यस्त रहें",
+        "marathi": "व्यस्त रहा"
+      },
+      "description": {
+        "english": "Keep yourself occupied with hobbies, work, or social events to help distract from the pain. For example, you might join a book club or start a new project at work.",
+        "hindi": "दर्द से ध्यान भटकाने के लिए खुद को शौक, काम या सामाजिक कार्यक्रमों में व्यस्त रखें। उदाहरण के लिए, आप बुक क्लब जॉइन कर सकते हैं या काम पर कोई नया प्रोजेक्ट शुरू कर सकते हैं।",
+        "marathi": "वेदनांपासून लक्ष विचलित करण्यासाठी स्वतःला छंद, काम किंवा सामाजिक कार्यक्रमांमध्ये व्यस्त ठेवा. उदाहरणार्थ, तुम्ही बुक क्लबमध्ये सामील होऊ शकता किंवा कामावर नवीन प्रकल्प सुरू करू शकता."
+      }
+    },
+    {
+      "id": 8,
+      "xp": 2,
+      "title": {
+        "english": "Don't Rush Into a New Relationship",
+        "hindi": "नए रिश्ते में जल्दबाजी न करें",
+        "marathi": "नवीन नातेसंबंधात घाई करू नका"
+      },
+      "description": {
+        "english": "Give yourself time to heal before jumping into something new. For example, you might decide to stay single for a few months before starting to date again.",
+        "hindi": "कुछ नया शुरू करने से पहले खुद को ठीक होने का समय दें। उदाहरण के लिए, आप फिर से डेटिंग शुरू करने से पहले कुछ महीने अकेले रहने का फैसला कर सकते हैं।",
+        "marathi": "काहीतरी नवीन सुरू करण्यापूर्वी स्वतःला बरे होण्यासाठी वेळ द्या. उदाहरणार्थ, तुम्ही पुन्हा डेटिंग सुरू करण्यापूर्वी काही महिने एकटे राहण्याचा निर्णय घेऊ शकता."
+      }
+    },
+    {
+      "id": 9,
+      "xp": 2,
+      "title": {
+        "english": "Be Honest with Yourself",
+        "hindi": "अपने साथ ईमानदार रहें",
+        "marathi": "स्वतःशी प्रामाणिक रहा"
+      },
+      "description": {
+        "english": "Acknowledge your feelings and don't try to suppress them. For example, if you're feeling sad, allow yourself to cry instead of pretending everything is fine.",
+        "hindi": "अपनी भावनाओं को स्वीकार करें और उन्हें दबाने की कोशिश न करें। उदाहरण के लिए, यदि आप उदास महसूस कर रहे हैं, तो सब कुछ ठीक होने का दिखावा करने के बजाय खुद को रोने दें।",
+        "marathi": "तुमच्या भावनांना स्वीकारा आणि त्यांना दडपण्याचा प्रयत्न करू नका. उदाहरणार्थ, जर तुम्हाला दुःख वाटत असेल तर सर्व काही ठीक आहे असे दिखविण्याऐवजी स्वतःला रडण्याची परवानगी द्या."
+      }
+    },
+    {
+      "id": 10,
+      "xp": 2,
+      "title": {
+        "english": "Forgive and Let Go",
+        "hindi": "क्षमा करें और जाने दें",
+        "marathi": "क्षमा करा आणि सोडून द्या"
+      },
+      "description": {
+        "english": "Holding onto anger or resentment can prevent you from moving on. For example, you might write a letter to your ex expressing your feelings, then burn it as a symbolic act of letting go.",
+        "hindi": "गुस्से या नाराजगी को पकड़े रखना आपको आगे बढ़ने से रोक सकता है। उदाहरण के लिए, आप अपने पूर्व को अपनी भावनाएं व्यक्त करते हुए एक पत्र लिख सकते हैं, फिर इसे जाने देने के प्रतीकात्मक कार्य के रूप में जला सकते हैं।",
+        "marathi": "राग किंवा संताप धरून ठेवणे तुम्हाला पुढे जाण्यापासून रोखू शकते. उदाहरणार्थ, तुम्ही तुमच्या माजी प्रियकराला तुमच्या भावना व्यक्त करणारे पत्र लिहू शकता, नंतर सोडून देण्याच्या प्रतीकात्मक कृती म्हणून ते जाळू शकता."
+      }
+    }
+  ],
+  "yogaAndMeditation": {
+    "interventionType": "Secondary",
+    "interventionSubType": "Yoga And Meditation Techniques",
+    "totalTechniques": 6,
+    "techniques": [
+      {
+        "id": 1,
+        "xp": 5,
+        "title": {
+          "english": "Child's Pose (Balasana)",
+          "hindi": "बालासन (बच्चे की मुद्रा)",
+          "marathi": "बालासन (मुलाची मुद्रा)"
+        },
+        "description": {
+          "english": "This pose is a calming pose that helps to relieve stress and anxiety. Sit on your heels, bend forward with your torso resting between your thighs and your forehead on the floor. Extend your arms in front of you. Hold for a few minutes.",
+          "hindi": "यह मुद्रा एक शांत करने वाली मुद्रा है जो तनाव और चिंता को कम करने में मदद करती है। अपनी एड़ियों पर बैठें, आगे झुकें और अपने धड़ को अपनी जांघों के बीच आराम दें और अपना माथा फर्श पर रखें। अपनी बाहों को अपने सामने फैलाएं। कुछ मिनट तक रोकें।",
+          "marathi": "ही मुद्रा एक शांत करणारी मुद्रा आहे जी तणाव आणि चिंता कमी करण्यास मदत करते. तुमच्या टाचांवर बसा, पुढे वाकून तुमचे धड तुमच्या मांड्यांमध्ये आराम करा आणि तुमचे कपाळ जमिनीवर ठेवा. तुमचे हात तुमच्या समोर पसरवा. काही मिनिटे धरा."
+        }
+      },
+      {
+        "id": 2,
+        "xp": 5,
+        "title": {
+          "english": "Cat-Cow Pose (Marjaryasana-Bitilasana)",
+          "hindi": "मार्जरासन-बितिलासन (बिल्ली-गाय मुद्रा)",
+          "marathi": "मार्जरासन-बितिलासन (मांजर-गाय मुद्रा)"
+        },
+        "description": {
+          "english": "This pose helps to relieve tension in the spine. Start on all fours, inhale and drop your belly towards the mat, lift your chin and chest (cow pose). Exhale and draw your belly to your spine and round your back toward the ceiling (cat pose). Repeat for a few minutes.",
+          "hindi": "यह मुद्रा रीढ़ की हड्डी में तनाव को कम करने में मदद करती है। चारों पैरों पर शुरू करें, सांस लें और अपने पेट को चटाई की ओर गिराएं, अपनी ठुड्डी और छाती को उठाएं (गाय मुद्रा)। सांस छोड़ें और अपने पेट को अपनी रीढ़ की हड्डी से खींचें और अपनी पीठ को छत की ओर गोल करें (बिल्ली मुद्रा)। कुछ मिनट के लिए दोहराएं।",
+          "marathi": "ही मुद्रा पाठीच्या कण्यामधील तणाव कमी करण्यास मदत करते. चारही हात-पायांवर सुरुवात करा, श्वास घ्या आणि तुमचे पोट चटईकडे खाली करा, तुमची हनुवटी आणि छाती वर करा (गाय मुद्रा). श्वास सोडा आणि तुमचे पोट तुमच्या पाठीच्या कण्याकडे खेचा आणि तुमची पाठ छताकडे गोल करा (मांजर मुद्रा). काही मिनिटे पुनरावृत्ती करा."
+        }
+      },
+      {
+        "id": 3,
+        "xp": 5,
+        "title": {
+          "english": "Legs-Up-The-Wall Pose (Viparita Karani)",
+          "hindi": "विपरीत करणी (पैर-दीवार पर मुद्रा)",
+          "marathi": "विपरीत करणी (पाय-भिंतीवर मुद्रा)"
+        },
+        "description": {
+          "english": "This pose helps to calm the mind. Lie on your back and place your legs up against a wall. Extend your arms out to the sides. Hold for 5-10 minutes.",
+          "hindi": "यह मुद्रा मन को शांत करने में मदद करती है। अपनी पीठ के बल लेट जाएं और अपने पैरों को दीवार के सहारे रखें। अपनी बाहों को बाजू में फैलाएं। 5-10 मिनट तक रोकें।",
+          "marathi": "ही मुद्रा मन शांत करण्यास मदत करते. तुमच्या पाठीवर झोपा आणि तुमचे पाय भिंतीच्या विरुद्ध ठेवा. तुमचे हात बाजूला पसरवा. 5-10 मिनिटे धरा."
+        }
+      },
+      {
+        "id": 4,
+        "xp": 5,
+        "title": {
+          "english": "Mindfulness Meditation",
+          "hindi": "माइंडफुलनेस मेडिटेशन (सचेतता ध्यान)",
+          "marathi": "मायंडफुलनेस मेडिटेशन (जागरूकता ध्यान)"
+        },
+        "description": {
+          "english": "Sit comfortably, close your eyes and focus on your breath. If your mind wanders, gently bring it back to the breath. Start with 5 minutes and gradually increase the time.",
+          "hindi": "आराम से बैठें, अपनी आंखें बंद करें और अपनी सांस पर ध्यान दें। यदि आपका मन भटकता है, तो धीरे-धीरे इसे वापस सांस पर ले आएं। 5 मिनट से शुरू करें और धीरे-धीरे समय बढ़ाएं।",
+          "marathi": "आरामात बसा, तुमचे डोळे बंद करा आणि तुमच्या श्वासावर लक्ष केंद्रित करा. जर तुमचे मन भटकत असेल तर हळूवारपणे ते परत श्वासाकडे आणा. 5 मिनिटांनी सुरुवात करा आणि हळूहळू वेळ वाढवा."
+        }
+      },
+      {
+        "id": 5,
+        "xp": 5,
+        "title": {
+          "english": "Loving-Kindness Meditation",
+          "hindi": "प्रेम-दया ध्यान",
+          "marathi": "प्रेम-करुणा ध्यान"
+        },
+        "description": {
+          "english": "This can help you to cultivate compassion for yourself and others. Close your eyes, imagine yourself and others who you care about, and repeat phrases like 'May I/you be happy. May I/you be healthy. May I/you be safe. May I/you live with ease.'",
+          "hindi": "यह आपको अपने और दूसरों के लिए करुणा विकसित करने में मदद कर सकता है। अपनी आंखें बंद करें, अपने और अपने प्रियजनों की कल्पना करें, और इस तरह के वाक्यों को दोहराएं 'मैं/आप खुश रहूं। मैं/आप स्वस्थ रहूं। मैं/आप सुरक्षित रहूं। मैं/आप आसानी से जीऊं।'",
+          "marathi": "हे तुम्हाला स्वतःसाठी आणि इतरांसाठी करुणा विकसित करण्यास मदत करू शकते. तुमचे डोळे बंद करा, स्वतःची आणि तुमच्या प्रियजनांची कल्पना करा, आणि अशी वाक्ये पुनरावृत्त करा 'मी/तुम्ही आनंदी राहो. मी/तुम्ही निरोगी राहो. मी/तुम्ही सुरक्षित राहो. मी/तुम्ही सहजतेने जगो.'"
+        }
+      },
+      {
+        "id": 6,
+        "xp": 5,
+        "title": {
+          "english": "Guided Imagery",
+          "hindi": "निर्देशित कल्पना",
+          "marathi": "मार्गदर्शित कल्पना"
+        },
+        "description": {
+          "english": "Imagine a peaceful place or situation. Try to use all your senses – what do you see, hear, smell, and feel in this calming place?",
+          "hindi": "एक शांतिपूर्ण स्थान या परिस्थिति की कल्पना करें। अपनी सभी इंद्रियों का उपयोग करने की कोशिश करें - इस शांत जगह में आप क्या देखते, सुनते, सूंघते और महसूस करते हैं?",
+          "marathi": "एका शांत ठिकाणाची किंवा परिस्थितीची कल्पना करा. तुमच्या सर्व इंद्रियांचा वापर करण्याचा प्रयत्न करा - या शांत ठिकाणी तुम्ही काय पाहता, ऐकता, वास घेता आणि जाणवते?"
+        }
+      }
+    ]
+  },
+  "relaxationTechniques": {
+    "interventionType": "Secondary",
+    "interventionSubType": "Relaxation",
+    "totalTechniques": 8,
+    "techniques": [
+      {
+        "id": 1,
+        "xp": 5,
+        "title": {
+          "english": "Deep Breathing",
+          "hindi": "गहरी सांस लेना",
+          "marathi": "खोल श्वास घेणे"
+        },
+        "description": {
+          "english": "Deep breathing can help to reduce stress and promote relaxation. Sit comfortably, close your eyes, and take a deep breath in through your nose. Hold it for a few seconds and then exhale slowly through your mouth. Repeat this process for several minutes.",
+          "hindi": "गहरी सांस लेना तनाव को कम करने और विश्राम को बढ़ावा देने में मदद कर सकता है। आराम से बैठें, अपनी आंखें बंद करें, और अपनी नाक के माध्यम से गहरी सांस लें। इसे कुछ सेकंड के लिए रोकें और फिर अपने मुंह के माध्यम से धीरे-धीरे सांस छोड़ें। इस प्रक्रिया को कई मिनट तक दोहराएं।",
+          "marathi": "खोल श्वास घेणे तणाव कमी करण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकते. आरामात बसा, तुमचे डोळे बंद करा, आणि तुमच्या नाकातून खोल श्वास घ्या. काही सेकंदासाठी धरा आणि नंतर तुमच्या तोंडातून हळूहळू श्वास सोडा. ही प्रक्रिया कित्येक मिनिटांसाठी पुनरावृत्त करा."
+        }
+      },
+      {
+        "id": 2,
+        "xp": 5,
+        "title": {
+          "english": "Progressive Muscle Relaxation",
+          "hindi": "प्रगतिशील मांसपेशी शिथिलता",
+          "marathi": "प्रगतिशील स्नायू शिथिलीकरण"
+        },
+        "description": {
+          "english": "This technique involves tensing and then releasing each muscle group in your body. Start with your toes and work your way up to your head. As you release the tension from each muscle, you should start to feel more relaxed.",
+          "hindi": "इस तकनीक में आपके शरीर के प्रत्येक मांसपेशी समूह को तनाव देना और फिर छोड़ना शामिल है। अपने पैर की उंगलियों से शुरू करें और अपने सिर तक काम करें। जैसे ही आप प्रत्येक मांसपेशी से तनाव छोड़ते हैं, आपको अधिक आराम महसूस होना चाहिए।",
+          "marathi": "या तंत्रामध्ये तुमच्या शरीरातील प्रत्येक स्नायू गटावर ताण आणून नंतर सोडणे समाविष्ट आहे. तुमच्या पायाच्या बोटांपासून सुरुवात करा आणि तुमच्या डोक्यापर्यंत जा. तुम्ही प्रत्येक स्नायूमधून ताण सोडता तसे तुम्हाला अधिक आराम वाटू लागावा."
+        }
+      },
+      {
+        "id": 3,
+        "xp": 5,
+        "title": {
+          "english": "Meditation",
+          "hindi": "ध्यान",
+          "marathi": "ध्यान"
+        },
+        "description": {
+          "english": "Meditation can help to clear your mind and reduce anxiety. Find a quiet place, sit comfortably, and focus on your breath. Try to let go of any thoughts about your breakup and just be in the moment.",
+          "hindi": "ध्यान आपके मन को साफ करने और चिंता को कम करने में मदद कर सकता है। एक शांत जगह खोजें, आराम से बैठें, और अपनी सांस पर ध्यान दें। अपने ब्रेकअप के बारे में किसी भी विचार को जाने देने की कोशिश करें और बस इस क्षण में रहें।",
+          "marathi": "ध्यान तुमचे मन स्वच्छ करण्यास आणि चिंता कमी करण्यास मदत करू शकते. एक शांत ठिकाण शोधा, आरामात बसा, आणि तुमच्या श्वासावर लक्ष केंद्रित करा. तुमच्या ब्रेकअपविषयीचे कोणतेही विचार सोडून देण्याचा प्रयत्न करा आणि फक्त या क्षणात रहा."
+        }
+      },
+      {
+        "id": 4,
+        "xp": 5,
+        "title": {
+          "english": "Yoga",
+          "hindi": "योग",
+          "marathi": "योग"
+        },
+        "description": {
+          "english": "Yoga combines physical poses with deep breathing and meditation. It can help to reduce stress and promote a sense of wellbeing.",
+          "hindi": "योग शारीरिक आसनों को गहरी सांस और ध्यान के साथ जोड़ता है। यह तनाव को कम करने और कल्याण की भावना को बढ़ावा देने में मदद कर सकता है।",
+          "marathi": "योग शारीरिक आसने खोल श्वास आणि ध्यानासह एकत्र करतो. हे तणाव कमी करण्यास आणि कल्याणाची भावना वाढविण्यास मदत करू शकते."
+        }
+      },
+      {
+        "id": 5,
+        "xp": 5,
+        "title": {
+          "english": "Visualization",
+          "hindi": "दृश्यीकरण",
+          "marathi": "दृश्यीकरण"
+        },
+        "description": {
+          "english": "Visualization involves imagining a peaceful place or situation. Close your eyes and try to picture every detail of this place or situation. This can help to distract you from your feelings about the breakup and promote relaxation.",
+          "hindi": "दृश्यीकरण में एक शांतिपूर्ण स्थान या परिस्थिति की कल्पना करना शामिल है। अपनी आंखें बंद करें और इस स्थान या परिस्थिति के हर विवरण की तस्वीर बनाने की कोशिश करें। यह आपको ब्रेकअप के बारे में अपनी भावनाओं से विचलित करने और विश्राम को बढ़ावा देने में मदद कर सकता है।",
+          "marathi": "दृश्यीकरणामध्ये शांत ठिकाण किंवा परिस्थितीची कल्पना करणे समाविष्ट आहे. तुमचे डोळे बंद करा आणि या ठिकाणाचा किंवा परिस्थितीचा प्रत्येक तपशील चित्रित करण्याचा प्रयत्न करा. हे तुम्हाला ब्रेकअपविषयीच्या भावनांपासून लक्ष विचलित करण्यास आणि विश्रांतीला प्रोत्साहन देण्यास मदत करू शकते."
+        }
+      },
+      {
+        "id": 6,
+        "xp": 5,
+        "title": {
+          "english": "Self-Care",
+          "hindi": "स्व-देखभाल",
+          "marathi": "स्व-काळजी"
+        },
+        "description": {
+          "english": "Make sure to take care of your physical health. Eat a balanced diet, get plenty of sleep, and exercise regularly. These things can help to boost your mood and energy levels.",
+          "hindi": "अपने शारीरिक स्वास्थ्य का ख्याल रखना सुनिश्चित करें। संतुलित आहार लें, पर्याप्त नींद लें, और नियमित रूप से व्यायाम करें। ये चीजें आपके मूड और ऊर्जा के स्तर को बढ़ाने में मदद कर सकती हैं।",
+          "marathi": "तुमच्या शारीरिक आरोग्याची काळजी घेणे सुनिश्चित करा. संतुलित आहार घ्या, पुरेशी झोप घ्या आणि नियमित व्यायाम करा. या गोष्टी तुमचा मूड आणि ऊर्जेची पातळी वाढविण्यास मदत करू शकतात."
+        }
+      },
+      {
+        "id": 7,
+        "xp": 5,
+        "title": {
+          "english": "Seek Support",
+          "hindi": "सहायता लें",
+          "marathi": "मदत घ्या"
+        },
+        "description": {
+          "english": "Don't hesitate to seek support from friends, family, or a mental health professional. Talking about your feelings can be very therapeutic and can help you to process your emotions.",
+          "hindi": "दोस्तों, परिवार या मानसिक स्वास्थ्य पेशेवर से सहायता मांगने में संकोच न करें। अपनी भावनाओं के बारे में बात करना बहुत चिकित्सीय हो सकता है और आपकी भावनाओं को संसाधित करने में आपकी मदद कर सकता है।",
+          "marathi": "मित्र, कुटुंब किंवा मानसिक आरोग्य तज्ञांकडून मदत घेण्यास संकोच करू नका. तुमच्या भावनांबद्दल बोलणे खूप उपचारात्मक असू शकते आणि तुमच्या भावनांवर प्रक्रिया करण्यास मदत करू शकते."
+        }
+      },
+      {
+        "id": 8,
+        "xp": 5,
+        "title": {
+          "english": "Journaling",
+          "hindi": "जर्नलिंग",
+          "marathi": "जर्नलिंग"
+        },
+        "description": {
+          "english": "Writing about your feelings can be a great way to vent and process your emotions. It can also help you to gain a better understanding of your feelings and how you can move forward.",
+          "hindi": "अपनी भावनाओं के बारे में लिखना अपनी भावनाओं को व्यक्त करने और संसाधित करने का एक शानदार तरीका हो सकता है। यह आपको अपनी भावनाओं की बेहतर समझ प्राप्त करने और आप कैसे आगे बढ़ सकते हैं, इसमें भी मदद कर सकता है।",
+          "marathi": "तुमच्या भावनांबद्दल लिहिणे तुमच्या भावना व्यक्त करण्याचा आणि त्यावर प्रक्रिया करण्याचा एक उत्तम मार्ग असू शकतो. हे तुम्हाला तुमच्या भावनांची चांगली समज मिळविण्यास आणि तुम्ही कसे पुढे जाऊ शकता याविषयी मदत करू शकते."
+        }
+      }
+    ]
+  },
+  "cbt": [
+    {
+      "id": 1,
+      "xp": 8,
+      "title": {
+        "english": "Cognitive Restructuring Journal",
+        "hindi": "संज्ञानात्मक पुनर्गठन डायरी",
+        "marathi": "संज्ञानात्मक पुनर्रचना नोंदणी"
+      },
+      "description": {
+        "english": "Practice cognitive restructuring using a structured journal approach. When experiencing negative thoughts about your breakup, document: the triggering situation, your negative thought, emotions felt (with intensity 1-10), evidence supporting the thought, evidence against it, and finally develop a more balanced realistic perspective. This systematic approach helps reframe 'I'm worthless without them' into 'I feel sad about the loss, but my worth isn't determined by one relationship.'",
+        "hindi": "संरचित डायरी दृष्टिकोण का उपयोग करके संज्ञानात्मक पुनर्गठन का अभ्यास करें। अपने ब्रेकअप के बारे में नकारात्मक विचार अनुभव करते समय, दस्तावेज़ करें: ट्रिगरिंग स्थिति, आपका नकारात्मक विचार, महसूस की गई भावनाएं (1-10 तीव्रता के साथ), विचार का समर्थन करने वाले सबूत, इसके विरुद्ध सबूत, और अंत में एक अधिक संतुलित यथार्थवादी दृष्टिकोण विकसित करें। यह व्यवस्थित दृष्टिकोण 'मैं उनके बिना बेकार हूं' को 'मुझे नुकसान के बारे में दुख है, लेकिन मेरी कीमत एक रिश्ते से निर्धारित नहीं होती' में बदलने में मदद करता है।",
+        "marathi": "संरचित डायरी पद्धती वापरून संज्ञानात्मक पुनर्रचनेचा सराव करा. तुमच्या ब्रेकअपबद्दल नकारात्मक विचार अनुभवताना नोंद करा: चालना देणारी परिस्थिती, तुमचा नकारात्मक विचार, अनुभवलेल्या भावना (1-10 तीव्रतेसह), विचाराचे समर्थन करणारे पुरावे, त्याच्या विरुद्ध पुरावे, आणि शेवटी अधिक संतुलित वास्तववादी दृष्टिकोन विकसित करा. ही पद्धतशीर पद्धत 'मी त्यांच्याशिवाय निरुपयोगी आहे' हे 'मला नुकसानाची दुःखे वाटते, पण माझे मूल्य एका नातेसंबंधावर अवलंबून नाही' असे बदलण्यास मदत करते."
+      }
+    },
+    {
+      "id": 2,
+      "xp": 8,
+      "title": {
+        "english": "Mindfulness-Based CBT Practice",
+        "hindi": "सचेतन आधारित सीबीटी अभ्यास",
+        "marathi": "सचेतन-आधारित सीबीटी सराव"
+      },
+      "description": {
+        "english": "Combine mindfulness with cognitive techniques for breakup recovery. Practice mindful observation of thoughts without judgment - notice when you think 'I'll never love again' but don't fight the thought. Instead, observe it like a cloud passing through the sky. Journal about your mindfulness sessions: what thoughts arose, how you responded, what physical sensations you noticed, and how your relationship with these thoughts changed through non-judgmental awareness.",
+        "hindi": "ब्रेकअप रिकवरी के लिए सचेतनता को संज्ञानात्मक तकनीकों के साथ मिलाएं। बिना निर्णय के विचारों का सचेत अवलोकन का अभ्यास करें - जब आप सोचते हैं 'मैं फिर कभी प्यार नहीं करूंगा' तो ध्यान दें लेकिन विचार से न लड़ें। इसके बजाय, इसे आकाश से गुजरने वाले बादल की तरह देखें। अपने सचेतनता सत्रों के बारे में लिखें: कौन से विचार आए, आपने कैसे प्रतिक्रिया दी, आपने कौन सी शारीरिक संवेदनाएं देखीं, और गैर-निर्णयात्मक जागरूकता के माध्यम से इन विचारों के साथ आपका रिश्ता कैसे बदला।",
+        "marathi": "ब्रेकअप पुनर्प्राप्तीसाठी सचेतनता संज्ञानात्मक तंत्रांसह एकत्रित करा. निर्णयाशिवाय विचारांचे सचेत निरीक्षण करा - जेव्हा तुम्ही 'मी पुन्हा कधीच प्रेम करणार नाही' असे विचार करता तेव्हा लक्षात घ्या पण विचाराशी लढा नका. त्याऐवजी आकाशातून जाणाऱ्या ढगाप्रमाणे त्याचे निरीक्षण करा. तुमच्या सचेतनता सत्रांबद्दल नोंद करा: कोणते विचार आले, तुम्ही कशी प्रतिक्रिया दिली, कोणत्या शारीरिक संवेदना लक्षात आल्या, आणि निर्णयरहित जागरूकतेमुळे या विचारांशी तुमचे नाते कसे बदलले."
+      }
+    },
+    {
+      "id": 3,
+      "xp": 8,
+      "title": {
+        "english": "Behavioral Activation Scheduling",
+        "hindi": "व्यवहारिक सक्रियता योजना",
+        "marathi": "वर्तणुकीशी सक्रियता नियोजन"
+      },
+      "description": {
+        "english": "Combat post-breakup depression and isolation through structured activity planning. Each day, schedule three types of activities: necessary tasks (paying bills, grocery shopping), achievement activities (exercise, learning new skills), and pleasurable activities (watching movies, calling friends). Rate your mood and energy before and after each activity (1-10 scale). Track which activities most improve your mood and gradually increase those. This helps counter the tendency to withdraw and proves you can find joy independently.",
+        "hindi": "संरचित गतिविधि योजना के माध्यम से ब्रेकअप के बाद के अवसाद और अलगाव से लड़ें। हर दिन, तीन प्रकार की गतिविधियों को शेड्यूल करें: आवश्यक कार्य (बिल भुगतान, किराने की खरीदारी), उपलब्धि गतिविधियां (व्यायाम, नए कौशल सीखना), और आनंददायक गतिविधियां (फिल्में देखना, दोस्तों को कॉल करना)। प्रत्येक गतिविधि से पहले और बाद में अपने मूड और ऊर्जा को रेट करें (1-10 स्केल)। ट्रैक करें कि कौन सी गतिविधियां आपके मूड में सबसे अधिक सुधार करती हैं और धीरे-धीरे उन्हें बढ़ाएं। यह वापस लेने की प्रवृत्ति का मुकाबला करने में मदद करता है और साबित करता है कि आप स्वतंत्र रूप से खुशी पा सकते हैं।",
+        "marathi": "संरचित क्रियाकलाप नियोजनाद्वारे ब्रेकअप नंतरच्या नैराश्या आणि एकटेपणाचा सामना करा. दररोज तीन प्रकारच्या क्रियाकलापांचे नियोजन करा: आवश्यक कामे (बिले भरणे, किराणा खरेदी), साध्य क्रियाकलाप (व्यायाम, नवीन कौशल्ये शिकणे), आणि आनंददायी क्रियाकलाप (चित्रपट पाहणे, मित्रांना कॉल करणे). प्रत्येक क्रियाकलापापूर्वी आणि नंतर तुमचा मूड आणि ऊर्जा रेट करा (1-10 स्केल). कोणत्या क्रियाकलापांमुळे तुमचा मूड सर्वाधिक सुधारतो ते ट्रॅक करा आणि हळूहळू ते वाढवा. हे माघार घेण्याच्या प्रवृत्तीचा सामना करण्यास मदत करते आणि सिद्ध करते की तुम्ही स्वतंत्रपणे आनंद शोधू शकता."
+      }
+    },
+    {
+      "id": 4,
+      "xp": 8,
+      "title": {
+        "english": "Thought Record Analysis",
+        "hindi": "विचार रिकॉर्ड विश्लेषण",
+        "marathi": "विचार नोंद विश्लेषण"
+      },
+      "description": {
+        "english": "Master the 7-step thought record technique for processing breakup emotions. When distressed, systematically record: 1) Triggering situation, 2) Automatic thoughts, 3) Emotions and intensity (0-100%), 4) Identify cognitive distortions (catastrophizing, all-or-nothing thinking), 5) Evidence supporting the thought, 6) Evidence contradicting it, 7) Develop balanced alternative thoughts. Practice this daily to transform patterns like 'This proves I'm unlovable' into 'This relationship ended, but it doesn't define my worth or future possibilities.'",
+        "hindi": "ब्रेकअप भावनाओं को संसाधित करने के लिए 7-चरणीय विचार रिकॉर्ड तकनीक में महारत हासिल करें। परेशान होने पर, व्यवस्थित रूप से रिकॉर्ड करें: 1) ट्रिगरिंग स्थिति, 2) स्वचालित विचार, 3) भावनाएं और तीव्रता (0-100%), 4) संज्ञानात्मक विकृतियों की पहचान करें (आपदाजनक सोच, सब या कुछ नहीं सोच), 5) विचार का समर्थन करने वाले सबूत, 6) इसका खंडन करने वाले सबूत, 7) संतुलित वैकल्पिक विचार विकसित करें। 'यह साबित करता है कि मैं प्यार के लायक नहीं हूं' जैसे पैटर्न को 'यह रिश्ता समाप्त हो गया, लेकिन यह मेरी कीमत या भविष्य की संभावनाओं को परिभाषित नहीं करता' में बदलने के लिए इसका दैनिक अभ्यास करें।",
+        "marathi": "ब्रेकअप भावनांवर प्रक्रिया करण्यासाठी 7-चरणीय विचार नोंद तंत्रात प्रभुत्व मिळवा. व्याकुळ झाल्यावर व्यवस्थितपणे नोंद करा: 1) चालना देणारी परिस्थिती, 2) स्वयंचलित विचार, 3) भावना आणि तीव्रता (0-100%), 4) संज्ञानात्मक विकृती ओळखा (आपत्तीकरण, सर्व-किंवा-काहीही नाही विचारसरणी), 5) विचाराचे समर्थन करणारे पुरावे, 6) त्याचे खंडन करणारे पुरावे, 7) संतुलित पर्यायी विचार विकसित करा. 'हे सिद्ध करते की मी प्रेमाला अपात्र आहे' सारखे नमुने 'हे नाते संपले, पण ते माझे मूल्य किंवा भविष्यातील शक्यता परिभाषित करत नाही' असे बदलण्यासाठी दैनिक सराव करा."
+      }
+    },
+    {
+      "id": 5,
+      "xp": 8,
+      "title": {
+        "english": "Structured Problem Solving",
+        "hindi": "संरचित समस्या समाधान",
+        "marathi": "संरचित समस्या निराकरण"
+      },
+      "description": {
+        "english": "Apply systematic problem-solving to post-breakup challenges using an 8-step approach. For each problem you face, journal through: 1) Define the specific problem clearly, 2) Set a measurable, achievable goal, 3) Brainstorm at least three potential solutions without judgment, 4) Evaluate pros and cons of each solution realistically, 5) Choose the best solution and explain your reasoning, 6) Break down implementation into actionable steps, 7) After trying the solution, reflect on outcomes, 8) Learn from the process and adjust approach. This builds confidence in your ability to handle post-breakup life challenges independently.",
+        "hindi": "8-चरणीय दृष्टिकोण का उपयोग करके ब्रेकअप के बाद की चुनौतियों के लिए व्यवस्थित समस्या-समाधान लागू करें। आपके सामने आने वाली प्रत्येक समस्या के लिए, डायरी के माध्यम से: 1) विशिष्ट समस्या को स्पष्ट रूप से परिभाषित करें, 2) एक मापने योग्य, प्राप्त करने योग्य लक्ष्य निर्धारित करें, 3) बिना निर्णय के कम से कम तीन संभावित समाधानों पर विचार करें, 4) प्रत्येक समाधान के फायदे और नुकसान का यथार्थवादी मूल्यांकन करें, 5) सबसे अच्छा समाधान चुनें और अपने तर्क की व्याख्या करें, 6) कार्यान्वयन को कार्यात्मक चरणों में तोड़ें, 7) समाधान आज़माने के बाद, परिणामों पर विचार करें, 8) प्रक्रिया से सीखें और दृष्टिकोण को समायोजित करें। यह ब्रेकअप के बाद के जीवन की चुनौतियों को स्वतंत्र रूप से संभालने की आपकी क्षमता में विश्वास बनाता है।",
+        "marathi": "8-चरणीय पद्धती वापरून ब्रेकअप नंतरच्या आव्हानांसाठी पद्धतशीर समस्या-निराकरण लागू करा. तुमच्या समोरील प्रत्येक समस्येसाठी डायरीतून जा: 1) विशिष्ट समस्या स्पष्टपणे परिभाषित करा, 2) मोजण्यायोग्य, साध्य करण्यायोग्य ध्येय ठेवा, 3) निर्णयाशिवाय किमान तीन संभाव्य उपायांवर विचार करा, 4) प्रत्येक उपायाचे फायदे आणि तोटे वास्तववादीपणे मूल्यांकन करा, 5) सर्वोत्तम उपाय निवडा आणि तुमचे तर्क स्पष्ट करा, 6) अंमलबजावणीला कृती करण्यायोग्य चरणांमध्ये विभागा, 7) उपाय वापरल्यानंतर परिणामांवर विचार करा, 8) प्रक्रियेतून शिका आणि पद्धत समायोजित करा. हे ब्रेकअप नंतरच्या जीवनातील आव्हाने स्वतंत्रपणे हाताळण्याच्या तुमच्या क्षमतेवर आत्मविश्वास निर्माण करते."
+      }
+    }
+  ],
+  "rebt": [
+    {
+      "id": 1,
+      "xp": 5,
+      "title": {
+        "english": "Identify Irrational Beliefs",
+        "hindi": "अतार्किक विश्वासों की पहचान करें",
+        "marathi": "अतार्किक समजुती ओळखा"
+      },
+      "description": {
+        "english": "Look for 'must,' 'should,' 'need,' and 'have to' statements that create emotional disturbance. Common post-breakup irrational beliefs: 'I MUST have their love,' 'I SHOULD be able to make anyone love me,' 'I CAN'T stand being alone,' 'This breakup PROVES I'm unlovable.' Recognize these as demands rather than preferences.",
+        "hindi": "भावनात्मक विक्षोभ पैदा करने वाले 'चाहिए', 'होना चाहिए', 'जरूरत', और 'करना होगा' जैसे कथनों की तलाश करें। ब्रेकअप के बाद के सामान्य अतार्किक विश्वास: 'मुझे उनका प्यार चाहिए', 'मुझे किसी को भी प्यार करने के लिए सक्षम होना चाहिए', 'मैं अकेले होने को बर्दाश्त नहीं कर सकता', 'यह ब्रेकअप साबित करता है कि मैं प्यार के लायक नहीं हूं।' इन्हें मांगों के रूप में पहचानें न कि प्राथमिकताओं के रूप में।",
+        "marathi": "भावनिक गडबड निर्माण करणाऱ्या 'पाहिजे', 'असावे', 'गरज', आणि 'करावे लागेल' अशी विधाने शोधा. ब्रेकअप नंतरच्या सामान्य अतार्किक समजुती: 'मला त्यांचे प्रेम पाहिजे', 'मी कोणालाही प्रेम करायला लावू शकत असावे', 'मी एकटे राहणे सहन करू शकत नाही', 'हे ब्रेकअप सिद्ध करते की मी प्रेमाला पात्र नाही.' यांना पसंतीऐवजी मागण्या म्हणून ओळखा."
+      }
+    },
+    {
+      "id": 2,
+      "xp": 5,
+      "title": {
+        "english": "Dispute Irrational Beliefs",
+        "hindi": "अतार्किक विश्वासों का विरोध करें",
+        "marathi": "अतार्किक समजुतींचा विरोध करा"
+      },
+      "description": {
+        "english": "Challenge irrational beliefs with three key questions: 1) Is this belief realistic? (Where is the evidence that you MUST have their love?), 2) Is this belief logical? (How does their rejection prove you're completely unlovable?), 3) Is this belief helpful? (How does believing this help you move forward?). Replace demands with preferences.",
+        "hindi": "तीन मुख्य प्रश्नों के साथ अतार्किक विश्वासों को चुनौती दें: 1) क्या यह विश्वास यथार्थवादी है? (इस बात का क्या प्रमाण है कि आपको उनका प्यार चाहिए?), 2) क्या यह विश्वास तार्किक है? (उनकी अस्वीकृति कैसे साबित करती है कि आप पूरी तरह से प्यार के लायक नहीं हैं?), 3) क्या यह विश्वास उपयोगी है? (इस पर विश्वास करना आपको आगे बढ़ने में कैसे मदद करता है?)। मांगों को प्राथमिकताओं से बदलें।",
+        "marathi": "तीन मुख्य प्रश्नांसह अतार्किक समजुतींना आव्हान द्या: 1) ही समजूत वास्तववादी आहे का? (तुम्हाला त्यांचे प्रेम पाहिजे असा पुरावा कुठे आहे?), 2) ही समजूत तर्कसंगत आहे का? (त्यांच्या नाकारणेवरून तुम्ही पूर्णपणे प्रेमाला अपात्र आहात हे कसे सिद्ध होते?), 3) ही समजूत उपयुक्त आहे का? (यावर विश्वास ठेवणे तुम्हाला पुढे जाण्यास कशी मदत करते?). मागण्यांना पसंतींनी बदला."
+      }
+    },
+    {
+      "id": 3,
+      "xp": 5,
+      "title": {
+        "english": "Develop Rational Beliefs",
+        "hindi": "तार्किक विश्वास विकसित करें",
+        "marathi": "तर्कसंगत समजुती विकसित करा"
+      },
+      "description": {
+        "english": "Replace irrational beliefs with rational alternatives: 'I PREFER to be loved, but I don't NEED it to survive,' 'It would be NICE if relationships always worked out, but there's no law that says they MUST,' 'Being rejected is disappointing, but it doesn't make me a reject as a person,' 'I CAN handle being alone, even though I'd prefer not to be.'",
+        "hindi": "अतार्किक विश्वासों को तार्किक विकल्पों से बदलें: 'मैं प्यार पसंद करता हूं, लेकिन जीवित रहने के लिए मुझे इसकी जरूरत नहीं है', 'यह अच्छा होगा यदि रिश्ते हमेशा काम करें, लेकिन कोई कानून नहीं है जो कहता है कि वे काम करना चाहिए', 'अस्वीकार किया जाना निराशाजनक है, लेकिन यह मुझे एक व्यक्ति के रूप में अस्वीकृत नहीं बनाता', 'मैं अकेले होने को संभाल सकता हूं, भले ही मैं न होना पसंद करूं।'",
+        "marathi": "अतार्किक समजुती तर्कसंगत पर्यायांनी बदला: 'मला प्रेम आवडते, पण जगण्यासाठी माझी गरज नाही', 'नातेसंबंध नेहमी यशस्वी होतील तर चांगले, पण ते होणे गरजेचे आहे असा कोणता नियम नाही', 'नाकारले जाणे निराशाजनक आहे, पण त्यामुळे मी एक व्यक्ती म्हणून नाकारलेला होत नाही', 'मी एकटे राहणे सांभाळू शकतो, जरी मला ते आवडत नसले तरी.'"
+      }
+    },
+    {
+      "id": 4,
+      "xp": 5,
+      "title": {
+        "english": "Emotional Re-Rating",
+        "hindi": "भावनात्मक पुनर्मूल्यांकन",
+        "marathi": "भावनिक पुनर्मूल्यांकन"
+      },
+      "description": {
+        "english": "Practice distinguishing between healthy negative emotions and unhealthy ones. Healthy: Sadness (not depression), Concern (not anxiety), Disappointment (not devastation), Regret (not guilt/shame). When you feel devastated, ask: 'What am I demanding?' Then work to feel disappointed instead, which is more manageable and motivating.",
+        "hindi": "स्वस्थ नकारात्मक भावनाओं और अस्वस्थ भावनाओं के बीच अंतर करने का अभ्यास करें। स्वस्थ: उदासी (अवसाद नहीं), चिंता (चिंता नहीं), निराशा (तबाही नहीं), पछतावा (अपराध/शर्म नहीं)। जब आप तबाह महसूस करते हैं, तो पूछें: 'मैं क्या मांग रहा हूं?' फिर इसके बजाय निराश महसूस करने का काम करें, जो अधिक प्रबंधनीय और प्रेरक है।",
+        "marathi": "निरोगी नकारात्मक भावना आणि अनिरोगी भावनांमध्ये फरक करण्याचा सराव करा. निरोगी: दुःख (नैराश्य नाही), चिंता (काळजी नाही), निराशा (नाश नाही), पश्चाताप (अपराधीपणा/लाज नाही). जेव्हा तुम्हाला नष्ट झाल्याचे वाटते तेव्हा विचारा: 'मी काय मागत आहे?' मग त्याऐवजी निराश वाटण्याचे काम करा, जे अधिक व्यवस्थापन करण्यायोग्य आणि प्रेरणादायक आहे."
+      }
+    },
+    {
+      "id": 5,
+      "xp": 5,
+      "title": {
+        "english": "Acceptance and Moving Forward",
+        "hindi": "स्वीकृति और आगे बढ़ना",
+        "marathi": "स्वीकृती आणि पुढे जाणे"
+      },
+      "description": {
+        "english": "Practice radical acceptance: 'This breakup happened, and while I don't like it, I can accept reality and work with it.' Focus on what you can control (your thoughts, actions, future choices) rather than what you can't (their feelings, the past, guarantees about future relationships). Acceptance doesn't mean resignation; it means working with reality effectively.",
+        "hindi": "कट्टरपंथी स्वीकृति का अभ्यास करें: 'यह ब्रेकअप हुआ है, और जबकि मुझे यह पसंद नहीं है, मैं वास्तविकता को स्वीकार कर सकता हूं और इसके साथ काम कर सकता हूं।' उस पर ध्यान दें जिसे आप नियंत्रित कर सकते हैं (आपके विचार, कार्य, भविष्य की पसंद) न कि उस पर जो आप नहीं कर सकते (उनकी भावनाएं, अतीत, भविष्य के रिश्तों की गारंटी)। स्वीकृति का मतलब इस्तीफा नहीं है; इसका मतलब वास्तविकता के साथ प्रभावी रूप से काम करना है।",
+        "marathi": "मूलगामी स्वीकृतीचा सराव करा: 'हे ब्रेकअप झाले आहे, आणि मला ते आवडत नसले तरी मी वास्तव स्वीकारू शकतो आणि त्यासोबत काम करू शकतो.' तुम्ही नियंत्रित करू शकता त्यावर लक्ष केंद्रित करा (तुमचे विचार, कृती, भविष्यातील निवडी) त्याऐवजी जे तुम्ही करू शकत नाही (त्यांच्या भावना, भूतकाळ, भविष्यातील नातेसंबंधांची हमी). स्वीकृतीचा अर्थ राजीनामा नाही; याचा अर्थ वास्तवासोबत प्रभावीपणे काम करणे आहे."
+      }
+    }
+  ],
+  "metadata": {
+    "createdDate": "2025-01-04",
+    "sourceFile": "Miniminds_10Common_Yoga_Relax.json",
+    "languages": ["english", "hindi", "marathi"],
+    "category": "Emotional Issues",
+    "targetCondition": "Breakup and rebound",
+    "interventionTypes": ["10 Common Suggestions", "Yoga And Meditation Techniques", "Relaxation", "CBT", "REBT"],
+    "totalSuggestions": 10,
+    "totalYogaTechniques": 6,
+    "totalRelaxationTechniques": 8,
+    "totalCBTTechniques": 5,
+    "totalREBTTechniques": 5,
+    "totalXP": 140
+  }
+}

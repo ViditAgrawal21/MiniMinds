@@ -174,37 +174,129 @@
         "description": "Yoga and meditation practices for emotional regulation and behavioral control"
       },
       "cards": [
+        
         {
-          "id": "ci_yoga_001",
+          "id": "ci_yoga_003",
           "title": {
-            "english": "Therapeutic Yoga Practice",
-            "hindi": "चिकित्सीय योग अभ्यास",
-            "marathi": "उपचारात्मक योग सराव"
+            "english": "Mountain Pose (Tadasana)",
+            "hindi": "ताड़ासन (पर्वत आसन)",
+            "marathi": "ताडासन (पर्वत आसन)"
           },
           "description": {
-            "english": "A structured yoga practice combining physical postures, breathing exercises, and mindful movement to improve emotional regulation, reduce aggressive impulses, and enhance self-control. This practice helps individuals develop body awareness and inner calm.",
-            "hindi": "भावनात्मक नियंत्रण में सुधार, आक्रामक आवेगों को कम करने और आत्म-नियंत्रण बढ़ाने के लिए शारीरिक आसन, श्वास व्यायाम और सचेत आंदोलन को मिलाकर एक संरचित योग अभ्यास। यह अभ्यास व्यक्तियों को शरीर की जागरूकता और आंतरिक शांति विकसित करने में मदद करता है।",
-            "marathi": "भावनिक नियंत्रण सुधारण्यासाठी, आक्रमक आवेग कमी करण्यासाठी आणि स्वयं-नियंत्रण वाढवण्यासाठी शारीरिक आसने, श्वासोच्छवासाचे व्यायाम आणि सजग हालचाली एकत्र करणारा संरचित योग सराव। हा सराव व्यक्तींना शरीर जागरूकता आणि अंतर्गत शांती विकसित करण्यात मदत करतो।"
+            "english": "Step: Stand tall, feet together, arms at sides, breathe slowly. Benefit: Improves focus and stability, reduces restlessness.",
+            "hindi": "स्टेप: सीधे खड़े हों, पैर साथ, हाथ बगल में, धीरे-धीरे सांस लें। लाभ: फोकस और स्थिरता बढ़ाता है, बेचैनी कम करता है।",
+            "marathi": "पायरी: सरळ उभे रहा, पाय एकत्र, हात बाजूला, हळू श्वास घ्या. फायदा: लक्ष आणि स्थिरता वाढते, अस्वस्थता कमी होते."
           },
-          "category": "Mind-Body Practice",
-          "xp": 15
+          "category": "Yoga Pose",
+          "xp": 6
         },
         {
-          "id": "ci_meditation_001",
+          "id": "ci_yoga_004",
           "title": {
-            "english": "Mindfulness Meditation for Behavioral Regulation",
-            "hindi": "व्यवहारिक नियंत्रण के लिए माइंडफुलनेस मेडिटेशन",
-            "marathi": "वर्तणुकीच्या नियंत्रणासाठी माइंडफुलनेस मेडिटेशन"
+            "english": "Tree Pose (Vrikshasana)",
+            "hindi": "वृक्षासन (वृक्ष आसन)",
+            "marathi": "वृक्षासन (वृक्ष आसन)"
           },
           "description": {
-            "english": "A structured mindfulness meditation practice designed to develop emotional awareness, improve impulse control, and cultivate inner calm. This practice helps individuals observe their thoughts and emotions without reactive behavior.",
-            "hindi": "भावनात्मक जागरूकता विकसित करने, आवेग नियंत्रण में सुधार करने और आंतरिक शांति विकसित करने के लिए डिज़ाइन किया गया एक संरचित माइंडफुलनेस मेडिटेशन अभ्यास। यह अभ्यास व्यक्तियों को प्रतिक्रियाशील व्यवहार के बिना अपने विचारों और भावनाओं का अवलोकन करने में मदद करता है।",
-            "marathi": "भावनिक जागरूकता विकसित करण्यासाठी, आवेग नियंत्रण सुधारण्यासाठी आणि अंतर्गत शांती निर्माण करण्यासाठी डिझाइन केलेला संरचित माइंडफुलनेस मेडिटेशन सराव। हा सराव व्यक्तींना प्रतिक्रियाशील वर्तणुकीशिवाय त्यांच्या विचारांचे आणि भावनांचे निरीक्षण करण्यात मदत करतो।"
+            "english": "Step: Balance on one leg, place the other foot on thigh, palms together. Benefit: Builds patience and concentration.",
+            "hindi": "स्टेप: एक पैर पर संतुलन बनाएं, दूसरा पैर जांघ पर रखें, हथेलियाँ जोड़ें। लाभ: धैर्य और एकाग्रता विकसित करता है।",
+            "marathi": "पायरी: एका पायावर संतुलन ठेवा, दुसरा पाय मांडीवर, हात जोडून. फायदा: संयम आणि एकाग्रता वाढते."
+          },
+          "category": "Yoga Pose",
+          "xp": 7
+        },
+        {
+          "id": "ci_yoga_005",
+          "title": {
+            "english": "Child's Pose (Balasana)",
+            "hindi": "बालासन (बच्चे की मुद्रा)",
+            "marathi": "बालासन (मुलाचे आसन)"
+          },
+          "description": {
+            "english": "A calming resting posture that relaxes the body and mind. Step: Kneel, sit back on heels, stretch arms forward on the floor. Benefit: Calms mind, reduces aggression and stress.",
+            "hindi": "एक शांत करने वाली आराम की मुद्रा जो शरीर और मन को रिलैक्स करती है। स्टेप: घुटनों के बल बैठें, एड़ियों पर बैठें, हाथ फर्श पर आगे की ओर फैलाएं। लाभ: मन शांत करता है, आक्रामकता और तनाव कम करता है।",
+            "marathi": "शरीर आणि मन शांत करणारी आरामदायी स्थिती. पायरी: गुडघ्यांवर बसा, टाचांवर बसा, हात पुढे जमिनीवर लांबवा. फायदा: मन शांत होते, आक्रमकता आणि ताण कमी होतो."
+          },
+          "category": "Yoga Pose",
+          "xp": 5
+        },
+        {
+          "id": "ci_yoga_006",
+          "title": {
+            "english": "Cat-Cow Stretch",
+            "hindi": "बिल्ली-गाय स्ट्रेच",
+            "marathi": "कॅट-काऊ स्ट्रेच"
+          },
+          "description": {
+            "english": "Step: On hands and knees, alternate arching and rounding the back with breath. Benefit: Releases tension, enhances emotional regulation.",
+            "hindi": "स्टेप: हाथ और घुटनों पर, सांस के साथ पीठ को मोड़ना और गोल करना बारी-बारी से करें। लाभ: तनाव कम करता है, भावनात्मक नियंत्रण बढ़ाता है।",
+            "marathi": "पायरी: हात आणि गुडघ्यांवर, श्वासासह पाठीला वाकवणे आणि गोल करणे आलटून पालटून करा. फायदा: ताण कमी होतो, भावनिक नियंत्रण सुधारते."
+          },
+          "category": "Yoga Pose",
+          "xp": 6
+        },
+        {
+          "id": "ci_yoga_007",
+          "title": {
+            "english": "Lion's Breath",
+            "hindi": "सिंह श्वास",
+            "marathi": "सिंह श्वास"
+          },
+          "description": {
+            "english": "Step: Sit cross-legged, inhale deeply, exhale with tongue out and roar. Benefit: Releases pent-up frustration playfully.",
+            "hindi": "स्टेप: पद्मासन/आराम से बैठें, गहरी सांस लें, जीभ बाहर निकालकर जोर से श्वास छोड़ें। लाभ: दबी हुई झुंझलाहट को खेल-खेल में छोड़ता है।",
+            "marathi": "पायरी: पाय क्रॉस करून बसा, खोल श्वास घ्या, जीभ बाहेर काढून श्वास सोडा. फायदा: साचलेली निराशा खेळकरपणे मोकळी होते."
+          },
+          "category": "Breathing",
+          "xp": 7
+        },
+        {
+          "id": "ci_yoga_008",
+          "title": {
+            "english": "Guided Visualization",
+            "hindi": "निर्देशित कल्पना",
+            "marathi": "मार्गदर्शित दृश्यीकरण"
+          },
+          "description": {
+            "english": "Step: Close eyes, imagine a safe and happy place guided by parent/teacher. Benefit: Reduces irritability, promotes relaxation.",
+            "hindi": "स्टेप: आँखें बंद करें, माता-पिता/शिक्षक के मार्गदर्शन में सुरक्षित और खुश जगह की कल्पना करें। लाभ: चिड़चिड़ापन कम करता है, विश्रांति को बढ़ावा देता है।",
+            "marathi": "पायरी: डोळे बंद करा, पालक/शिक्षकांच्या मार्गदर्शनाखाली सुरक्षित आणि आनंदी जागेची कल्पना करा. फायदा: चिडचिड कमी होते, विश्रांती वाढते."
+          },
+          "category": "Visualization",
+          "xp": 8
+        },
+        {
+          "id": "ci_yoga_009",
+          "title": {
+            "english": "Om Chanting",
+            "hindi": "ॐ जप",
+            "marathi": "ॐ जप"
+          },
+          "description": {
+            "english": "Step: Sit comfortably, take a deep breath, chant 'Om' slowly. Benefit: Creates calmness and reduces impulsive urges.",
+            "hindi": "स्टेप: आराम से बैठें, गहरी सांस लें, धीरे-धीरे 'ॐ' जप करें। लाभ: शांति पैदा करता है और आवेगशीलता कम करता है।",
+            "marathi": "पायरी: आरामात बसा, खोल श्वास घ्या, हळूवार 'ॐ' जपा. फायदा: शांतता निर्माण होते आणि आवेग कमी होतात."
           },
           "category": "Meditation Practice",
-          "xp": 15
+          "xp": 6
+        },
+        {
+          "id": "ci_yoga_010",
+          "title": {
+            "english": "Mindful Walking",
+            "hindi": "सचेत चलना",
+            "marathi": "सजग चालणे"
+          },
+          "description": {
+            "english": "Step: Walk slowly, paying attention to each step and breath. Benefit: Channels excess energy into mindful movement.",
+            "hindi": "स्टेप: धीरे-धीरे चलें, हर कदम और सांस पर ध्यान दें। लाभ: अतिरिक्त ऊर्जा को सजग गतिशीलता में बदलता है।",
+            "marathi": "पायरी: सावकाश चला, प्रत्येक पाऊल आणि श्वासाकडे लक्ष द्या. फायदा: जादा ऊर्जा सजग हालचालीत वापरते."
+          },
+          "category": "Mindfulness Practice",
+          "xp": 7
         }
       ]
+      
     },
     "relaxation": {
       "metadata": {

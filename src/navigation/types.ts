@@ -40,8 +40,16 @@ export type RootStackParamList = {
   ProfessionalMentalHealthScreen: undefined;
   SocialMentalHealthScreen: undefined;
   YoungsterIssuesScreen: undefined;
+  ADHDScreen: undefined;
+  AggressiveBehaviourScreen: undefined;
+  ConductIssueScreen: undefined;
   JobInsecurityScreen: undefined;
   EmotionalIntelligenceScreen: undefined;
+  // Miniminds screens
+  IntrovertChildScreen: undefined;
+  EatingHabitScreen: undefined;
+  BreakupAndReboundScreen: undefined;
+  AbusiveLanguageBackAnsweringScreen: undefined;
   
   // Journal History screen
   JournalHistoryScreen: undefined;

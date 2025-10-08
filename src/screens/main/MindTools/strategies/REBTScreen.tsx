@@ -397,6 +397,9 @@ export default function REBTScreen({ navigation, route }: any) {
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
       "job-insecurity": "scanIntro.jobInsecurity.title",
+      "adhd": "adhdScreen.title",
+      "aggressive-behaviour": "aggressiveBehaviourScreen.title",
+      "conduct-issues": "conductIssues.headerTitle",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -405,6 +408,236 @@ export default function REBTScreen({ navigation, route }: any) {
   const loadREBTInterventions = useCallback(async () => {
     // Get REBT data from translation files instead of static JSON files
     const getREBTData = (condition: string): REBTData | null => {
+      // Handle Eating Habits data from comprehensive data file
+      if (condition === "eating-habits") {
+        try {
+          const eatingData = require("../../../../assets/data/behaviour/EatingHabits_comprehensive_data.json");
+          const rebtCards = eatingData.interventions?.rebt?.cards;
+
+          if (!rebtCards || !Array.isArray(rebtCards)) {
+            console.error("No REBT interventions found in Eating Habits data");
+            return null;
+          }
+
+          // Map locale codes to data field names
+          const localeMap: { [key: string]: string } = {
+            "en": "english",
+            "hi": "hindi",
+            "mr": "marathi",
+          };
+          const localeField = localeMap[locale] || "english";
+
+          const interventions = rebtCards.map((card: any) => ({
+            title: card.title?.[localeField] || card.title?.english || "",
+            description:
+              card.description?.[localeField] || card.description?.english ||
+              "",
+            xp: card.xp || 0,
+          }));
+
+          return {
+            condition: "eating-habits",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Eating Habits REBT data:", error);
+          return null;
+        }
+      }
+      // Handle Conduct Issues data from comprehensive data file
+      if (condition === "conduct-issues") {
+        try {
+          const conductData = require("../../../../assets/data/behaviour/ConductIssues_Complete_comprehensive_data.json");
+          const rebtCards = conductData.interventions?.rebt?.cards;
+
+          if (!rebtCards || !Array.isArray(rebtCards)) {
+            console.error("No REBT interventions found in Conduct Issues data");
+            return null;
+          }
+
+          // Map locale codes to data field names
+          const localeMap: { [key: string]: string } = {
+            "en": "english",
+            "hi": "hindi",
+            "mr": "marathi",
+          };
+          const localeField = localeMap[locale] || "english";
+
+          const interventions = rebtCards.map((card: any) => ({
+            title: card.title?.[localeField] || card.title?.english || "",
+            description:
+              card.description?.[localeField] || card.description?.english ||
+              "",
+            xp: card.xp || 0,
+          }));
+
+          return {
+            condition: "conduct-issues",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Conduct Issues REBT data:", error);
+          return null;
+        }
+      }
+      // Handle ADHD data from ADHD comprehensive data file
+      if (condition === "adhd") {
+        try {
+          const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
+          const rebtCards = adhdData.interventions?.rebt?.cards;
+          
+          if (!rebtCards || !Array.isArray(rebtCards)) {
+            console.error("No REBT interventions found in ADHD data");
+            return null;
+          }
+          
+        // Map locale codes to ADHD data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi", 
+          "mr": "marathi"
+        };
+        const adhdLocaleField = localeMap[locale] || "english";
+
+        const interventions = rebtCards.map((card: any) => ({
+          title: card.title?.[adhdLocaleField] || card.title?.english || "",
+          description: card.description?.[adhdLocaleField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+        
+        return {
+          condition: "adhd",
+          intervention_type: "REBT",
+          interventions,
+        };
+        } catch (error) {
+          console.error("Error loading ADHD REBT data:", error);
+          return null;
+        }
+      }
+
+      // Handle Porn Addiction REBT data (localized en/hi/mr)
+      if (condition === "porn-addiction") {
+        try {
+          const data = require("../../../../assets/data/Internet & Social Media Issues/PornAddiction_comprehensive_data.json");
+          const cards = data?.rebt?.cards;
+
+          if (!cards || !Array.isArray(cards)) {
+            console.error("No REBT interventions found in Porn Addiction data");
+            return null;
+          }
+
+          const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+          const interventions = cards.map((card: any) => ({
+            title: card.title?.[localeKey] || card.title?.en || "",
+            description: card.description?.[localeKey] || card.description?.en || "",
+            xp: card.xp || 0,
+          }));
+
+          return {
+            condition: "porn-addiction",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Porn Addiction REBT data:", error);
+          return null;
+        }
+      }
+
+      // Handle Parenting from Child's View REBT data (top-level locale)
+      if (condition === "parenting-from-child-view") {
+        try {
+          const data = require("../../../../assets/data/Parenting/ChildPointOfView_comprehensive_data.json");
+          const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+          const dataset = data[localeKey] || data["en"];
+          const list = dataset?.commonSuggestions; // fallback if no dedicated REBT
+
+          if (!list || !Array.isArray(list)) {
+            return null;
+          }
+
+          const interventions = list.map((item: any) => ({
+            title: item.title || "",
+            description: item.description || "",
+            xp: item.xp || 0,
+          }));
+
+          return {
+            condition: "parenting-from-child-view",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          return null;
+        }
+      }
+
+      // Handle Parenting from Parents' View REBT data (top-level locale)
+      if (condition === "parenting-from-parents-view") {
+        try {
+          const data = require("../../../../assets/data/Parenting/ParentsPointOfView_comprehensive_data.json");
+          const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+          const dataset = data[localeKey] || data["en"];
+          const list = dataset?.commonSuggestions; // fallback if no dedicated REBT
+
+          if (!list || !Array.isArray(list)) {
+            return null;
+          }
+
+          const interventions = list.map((item: any) => ({
+            title: item.title || "",
+            description: item.description || "",
+            xp: item.xp || 0,
+          }));
+
+          return {
+            condition: "parenting-from-parents-view",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          return null;
+        }
+      }
+      // Handle Aggressive Behaviour data from comprehensive data file
+      if (condition === "aggressive-behaviour") {
+        try {
+          const aggressiveData = require("../../../../assets/data/behaviour/AggressiveBehaviour_comprehensive_data.json");
+          const rebtCards = aggressiveData.interventions?.rebt?.cards;
+          
+          if (!rebtCards || !Array.isArray(rebtCards)) {
+            console.error("No REBT interventions found in Aggressive Behaviour data");
+            return null;
+          }
+          
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi", 
+          "mr": "marathi"
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = rebtCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "",
+          description: card.description?.[localeField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+        
+        return {
+          condition: "aggressive-behaviour",
+          intervention_type: "REBT",
+          interventions,
+        };
+        } catch (error) {
+          console.error("Error loading Aggressive Behaviour REBT data:", error);
+          return null;
+        }
+      }
+
       // Map URL-style condition names to camelCase keys used in translation files
       const conditionKeyMap: { [key: string]: string } = {
         "anger-management": "angerManagement",
@@ -568,6 +801,7 @@ export default function REBTScreen({ navigation, route }: any) {
         "anger-management": "angerManagement",
         addictions: "addictions",
         "common-psychological-issues": "commonPsychologicalIssues",
+        "conduct-issues": "conductIssues",
         "environment-issues": "environmentIssues",
         "family-relationship": "familyRelationship",
         "financial-mental-health": "financialMentalHealth",

@@ -1,0 +1,488 @@
+{
+  "en": {
+    "commonSuggestions": [
+      {
+        "title": "Create a Study Schedule",
+        "description": "How it works: Organizing time reduces last-minute pressure. Example: Plan 2 subjects daily instead of cramming everything at once.",
+        "xp": 3
+      },
+      {
+        "title": "Practice Past Papers",
+        "description": "How it works: Familiarity lowers exam anxiety. Example: Solve previous year's question paper under timed conditions.",
+        "xp": 4
+      },
+      {
+        "title": "Healthy Sleep Routine",
+        "description": "How it works: Rest improves focus and memory. Example: Sleep 7-8 hours before exams instead of staying up late.",
+        "xp": 2
+      },
+      {
+        "title": "Break Study into Chunks",
+        "description": "How it works: Small sessions improve concentration. Example: Study 25 minutes with 5-minute breaks (Pomodoro technique).",
+        "xp": 3
+      },
+      {
+        "title": "Positive Affirmations",
+        "description": "How it works: Builds confidence and reduces fear. Example: Repeat 'I am prepared and capable.' before studying.",
+        "xp": 2
+      },
+      {
+        "title": "Seek Teacher Guidance",
+        "description": "How it works: Clarifies doubts and reduces uncertainty. Example: Ask teacher for explanation on tough math problems.",
+        "xp": 4
+      },
+      {
+        "title": "Group Study with Friends",
+        "description": "How it works: Sharing knowledge increases confidence. Example: Each friend explains one chapter to the group.",
+        "xp": 3
+      },
+      {
+        "title": "Stay Physically Active",
+        "description": "How it works: Exercise lowers stress hormones. Example: Go for a 20-minute walk before revising.",
+        "xp": 2
+      },
+      {
+        "title": "Limit Social Media",
+        "description": "How it works: Reduces distractions during preparation. Example: Keep phone in another room during study hours.",
+        "xp": 4
+      },
+      {
+        "title": "Reward Progress",
+        "description": "How it works: Encourages consistent effort. Example: Give yourself a small treat after completing a chapter.",
+        "xp": 3
+      }
+    ],
+    "yoga": [
+      {
+        "title": "Alternate Nostril Breathing (Nadi Shodhana)",
+        "description": "Step: Close right nostril, inhale through left, switch and exhale. How it helps: Balances emotions and reduces anxiety before exams. Example: 5 minutes practice before revision.",
+        "xp": 7
+      },
+      {
+        "title": "Child's Pose (Balasana)",
+        "description": "Step: Kneel, fold forward, arms stretched. How it helps: Calms the mind and relieves nervous tension. Example: Hold for 2-3 minutes before sleep.",
+        "xp": 6
+      },
+      {
+        "title": "Sun Salutations (Surya Namaskar)",
+        "description": "Step: Perform 12 posture sequence with breath awareness. How it helps: Energizes body and improves focus for study sessions. Example: 3-5 rounds in the morning.",
+        "xp": 8
+      },
+      {
+        "title": "Guided Visualization Meditation",
+        "description": "Step: Close eyes and imagine entering the exam hall confidently. How it helps: Builds positive mental rehearsal for exams. Example: 10 minutes daily before bedtime.",
+        "xp": 9
+      },
+      {
+        "title": "Tree Pose (Vrikshasana)",
+        "description": "Step: Stand on one leg, place other on thigh, palms together. How it helps: Improves balance, focus, and calmness. Example: Hold 30 seconds each side before study.",
+        "xp": 7
+      }
+    ],
+    "relaxation": [
+      {
+        "title": "Progressive Muscle Relaxation",
+        "description": "Step: Tense and relax each muscle group from toes to head. How it helps: Releases exam-related physical stress. Example: Practice for 10 minutes the night before exams.",
+        "xp": 7
+      },
+      {
+        "title": "Visualization of Success",
+        "description": "Step: Close eyes and imagine confidently writing the exam. How it helps: Creates positive mindset and reduces fear. Example: Visualize finishing paper calmly.",
+        "xp": 8
+      },
+      {
+        "title": "Listening to Calming Music",
+        "description": "Step: Play soft instrumental or nature sounds. How it helps: Soothes nerves and boosts concentration. Example: 15 minutes before study sessions.",
+        "xp": 5
+      },
+      {
+        "title": "5-4-3-2-1 Grounding",
+        "description": "Step: Name 5 things you see, 4 you feel, 3 you hear, 2 you smell, 1 you taste. How it helps: Brings focus back to present and reduces anxiety. Example: Use in exam hall before paper starts.",
+        "xp": 6
+      },
+      {
+        "title": "Breath Focus Exercise",
+        "description": "Step: Inhale deeply for 4 counts, exhale for 6 counts. How it helps: Slows heart rate and induces calmness. Example: 10 rounds before entering exam room.",
+        "xp": 5
+      }
+    ],
+    "cbt": [
+      {
+        "title": "Identify Negative Thoughts",
+        "description": "Why it helps: Recognizing anxious thoughts reduces their power. What to do: Ask child to write down exam worries. Example: Replace 'I will fail' with 'I have studied and can try my best.'",
+        "xp": 6
+      },
+      {
+        "title": "Cognitive Reframing",
+        "description": "Why it helps: Shifts perspective from fear to growth. What to do: Reframe 'If I fail, my life is ruined' to 'One exam does not decide my future.' Example: Use before big tests.",
+        "xp": 7
+      },
+      {
+        "title": "Use Thought Records",
+        "description": "Why it helps: Tracks situations, thoughts, and emotional responses. What to do: Create a log of exam-related worries. Example: 'Exam → Nervous → Studied → Still anxious.'",
+        "xp": 8
+      },
+      {
+        "title": "Challenge Catastrophic Thinking",
+        "description": "Why it helps: Stops exaggerating outcomes. What to do: Ask 'What's the worst, best, and most realistic outcome?' Example: Realize failing once doesn't mean permanent failure.",
+        "xp": 9
+      },
+      {
+        "title": "Positive Self-Talk",
+        "description": "Why it helps: Builds exam confidence. What to do: Replace negative self-talk with affirmations. Example: Say 'I am prepared and capable.' before writing exam.",
+        "xp": 5
+      }
+    ],
+    "rebt": [
+      {
+        "title": "Disputing Irrational Beliefs",
+        "description": "Why it helps: Challenges extreme exam fears. What to do: Ask 'Is it true failing one test means I'm a failure?' Example: Realize one exam doesn't define worth.",
+        "xp": 7
+      },
+      {
+        "title": "ABC Model Practice",
+        "description": "Why it helps: Connects events, beliefs, and outcomes. What to do: A=Exam, B='I must be perfect,' C=Anxiety. Replace belief with 'I prefer to do well but mistakes are okay.'",
+        "xp": 8
+      },
+      {
+        "title": "Unconditional Self-Acceptance",
+        "description": "Why it helps: Builds self-worth beyond grades. What to do: Teach 'I am valuable regardless of marks.' Example: Student repeats after tough subjects.",
+        "xp": 6
+      },
+      {
+        "title": "Rational Coping Statements",
+        "description": "Why it helps: Creates balanced thinking. What to do: Write down calming statements. Example: 'Even if I don't top, I can still succeed in life.'",
+        "xp": 7
+      },
+      {
+        "title": "Reframe Failure",
+        "description": "Why it helps: Stops linking mistakes to identity. What to do: Teach 'Failing once means I can try again.' Example: Encourage after a mock test goes poorly.",
+        "xp": 10
+      }
+    ]
+  },
+  "hi": {
+    "commonSuggestions": [
+      {
+        "title": "अध्ययन अनुसूची बनाएं",
+        "description": "एक यथार्थवादी अध्ययन समय सारणी विकसित करें जो विषयों को प्रबंधनीय भागों में बांटे, ब्रेक और रिवीजन सत्रों के लिए समय आवंटित करे।",
+        "xp": 3
+      },
+      {
+        "title": "पुराने प्रश्न पत्रों का अभ्यास करें",
+        "description": "समयबद्ध परिस्थितियों में पिछले वर्षों के प्रश्नों पर काम करके परीक्षा प्रारूप से परिचित हों।",
+        "xp": 4
+      },
+      {
+        "title": "सक्रिय शिक्षण तकनीकें",
+        "description": "समझ और याददाश्त बढ़ाने के लिए सारांश, मन मैपिंग, और दूसरों को अवधारणाएं सिखाने जैसी विधियों का उपयोग करें।",
+        "xp": 3
+      },
+      {
+        "title": "स्वस्थ नींद की दिनचर्या",
+        "description": "रात में 7-8 घंटे की नींद बनाए रखें और रात भर जागने से बचें, क्योंकि उचित आराम स्मृति समेकन के लिए महत्वपूर्ण है।",
+        "xp": 3
+      },
+      {
+        "title": "नियमित व्यायाम",
+        "description": "तनाव हार्मोन कम करने और संज्ञानात्मक कार्यप्रणाली सुधारने के लिए अपनी दैनिक दिनचर्या में शारीरिक गतिविधि शामिल करें।",
+        "xp": 3
+      },
+      {
+        "title": "संतुलित पोषण",
+        "description": "अत्यधिक कैफीन और चीनी से बचते हुए ओमेगा-3, विटामिन और खनिज से भरपूर मस्तिष्क-स्वस्थ खाद्य पदार्थ खाएं।",
+        "xp": 2
+      },
+      {
+        "title": "सकारात्मक आत्म-चर्चा",
+        "description": "नकारात्मक विचारों को प्रोत्साहनजनक पुष्टिकरण और परीक्षा परिणामों के बारे में यथार्थवादी दृष्टिकोण से बदलें।",
+        "xp": 4
+      },
+      {
+        "title": "अध्ययन समूह गठन",
+        "description": "ज्ञान साझा करने, संदेह स्पष्ट करने, और साथियों के समर्थन के माध्यम से प्रेरणा बनाए रखने के लिए अध्ययन समूह में शामिल हों या बनाएं।",
+        "xp": 3
+      },
+      {
+        "title": "तनाव प्रबंधन विराम",
+        "description": "गहरी सांस, छोटी सैर, या संक्षिप्त ध्यान जैसी तकनीकों का उपयोग करके अध्ययन सत्रों के दौरान नियमित ब्रेक लें।",
+        "xp": 3
+      },
+      {
+        "title": "शैक्षणिक सहायता लें",
+        "description": "विशिष्ट विषयों या अवधारणाओं के साथ संघर्ष करते समय शिक्षकों, ट्यूटर्स, या सहपाठियों से मदद मांगने में संकोच न करें।",
+        "xp": 3
+      }
+    ],
+    "yoga": [
+      {
+        "title": "बाल मुद्रा (बालासन)",
+        "description": "एक शांत करने वाली मुद्रा जो चिंता और मानसिक थकान को कम करने में मदद करती है जबकि आराम और फोकस को बढ़ावा देती है।",
+        "xp": 2
+      },
+      {
+        "title": "बिल्ली-गाय खिंचाव",
+        "description": "रीढ़ की हड्डी की कोमल गतिविधियां जो लंबे अध्ययन सत्रों से तनाव मुक्त करती हैं और सचेत गतिविधि के माध्यम से फोकस में सुधार करती हैं।",
+        "xp": 2
+      },
+      {
+        "title": "आगे की ओर झुकना (उत्तानासन)",
+        "description": "मस्तिष्क में रक्त प्रवाह को उलट देता है, जिससे तंत्रिका तंत्र को शांत करने और परीक्षा संबंधी तनाव को कम करने में मदद मिलती है।",
+        "xp": 3
+      },
+      {
+        "title": "दीवार पर पैर ऊपर मुद्रा",
+        "description": "पुनर्स्थापनात्मक मुद्रा जो आराम को बढ़ावा देती है, बैठने से पैरों की थकान कम करती है, और परीक्षा की चिंता को शांत करती है।",
+        "xp": 3
+      },
+      {
+        "title": "बैठी रीढ़ की हड्डी का मोड़",
+        "description": "लंबे समय तक अध्ययन से पीठ के तनाव को राहत देता है जबकि मानसिक स्पष्टता बढ़ाता है और तनाव कम करता है।",
+        "xp": 2
+      }
+    ],
+    "relaxation": [
+      {
+        "title": "प्रगतिशील मांसपेशी शिथिलीकरण",
+        "description": "परीक्षा से पहले शारीरिक तनाव और चिंता को कम करने के लिए व्यवस्थित रूप से मांसपेशी समूहों को तनावग्रस्त करें और छोड़ें।",
+        "xp": 4
+      },
+      {
+        "title": "निर्देशित दृश्यीकरण",
+        "description": "आत्मविश्वास बनाने और डर कम करने के लिए सफल परीक्षा प्रदर्शन और सकारात्मक परिणामों की कल्पना करें।",
+        "xp": 3
+      },
+      {
+        "title": "बॉक्स श्वास तकनीक",
+        "description": "अध्ययन और परीक्षा अवधि के दौरान तंत्रिका तंत्र को शांत करने और फोकस सुधारने के लिए 4-4-4-4 श्वास पैटर्न।",
+        "xp": 3
+      },
+      {
+        "title": "शरीर स्कैन ध्यान",
+        "description": "तनाव संबंधी तनाव की पहचान और मुक्ति के लिए शारीरिक संवेदनाओं की सचेत जागरूकता।",
+        "xp": 3
+      },
+      {
+        "title": "शांत संगीत चिकित्सा",
+        "description": "शांतिपूर्ण अध्ययन वातावरण बनाने और चिंता कम करने के लिए वाद्य या प्राकृतिक ध्वनियों को सुनें।",
+        "xp": 2
+      }
+    ],
+    "cbt": [
+      {
+        "title": "विचार चुनौती",
+        "description": "परीक्षा की असफलता के बारे में विनाशकारी विचारों की पहचान और प्रश्न करें, उन्हें संतुलित दृष्टिकोण से बदलें।",
+        "xp": 4
+      },
+      {
+        "title": "व्यवहारिक प्रयोग",
+        "description": "आत्मविश्वास बनाने और बचने वाले व्यवहार को कम करने के लिए छोटे कदमों में डरे हुए परिणामों का परीक्षण करें।",
+        "xp": 4
+      },
+      {
+        "title": "श्रेणीबद्ध एक्सपोज़र",
+        "description": "व्यवस्थित असंवेदनीकरण के माध्यम से चिंता कम करने के लिए धीरे-धीरे खुद को परीक्षा जैसी स्थितियों के सामने लाएं।",
+        "xp": 4
+      },
+      {
+        "title": "समस्या समाधान तकनीकें",
+        "description": "अध्ययन चुनौतियों को प्रबंधनीय चरणों में तोड़ें और विशिष्ट कार्य योजनाएं विकसित करें।",
+        "xp": 3
+      },
+      {
+        "title": "गतिविधि निर्धारण",
+        "description": "कल्याण बनाए रखने के लिए अध्ययन, आराम, और आनंददायक गतिविधियों सहित संतुलित दैनिक गतिविधियों की योजना बनाएं।",
+        "xp": 3
+      }
+    ],
+    "rebt": [
+      {
+        "title": "पूर्णतावाद का विरोध",
+        "description": "इस अतार्किक विश्वास को चुनौती दें कि आपको सार्थक होने के लिए परफेक्ट होना चाहिए या सबसे अच्छे ग्रेड प्राप्त करने चाहिए।",
+        "xp": 4
+      },
+      {
+        "title": "विनाशकारी चुनौती",
+        "description": "इस विश्वास पर सवाल उठाएं कि परीक्षा में असफल होना बिल्कुल भयानक या जीवन समाप्त करने वाला होगा।",
+        "xp": 4
+      },
+      {
+        "title": "आत्म-मूल्य अलगाव",
+        "description": "अपने व्यक्तिगत मूल्य को अपने शैक्षणिक प्रदर्शन और परीक्षा परिणामों से अलग करना सीखें।",
+        "xp": 5
+      },
+      {
+        "title": "मांग बनाम प्राथमिकता",
+        "description": "दबाव और चिंता कम करने के लिए 'मुझे सफल होना चाहिए' को 'मैं सफल होना पसंद करता हूं' से बदलें।",
+        "xp": 4
+      },
+      {
+        "title": "तर्कसंगत मुकाबला बयान",
+        "description": "यथार्थवादी पुष्टिकरण विकसित करें जो परिणामों के बारे में अनिश्चितता को स्वीकार करते हुए प्रयास को स्वीकार करें।",
+        "xp": 3
+      }
+    ]
+  },
+  "mr": {
+    "commonSuggestions": [
+      {
+        "title": "अभ्यास वेळापत्रक तयार करा",
+        "description": "विषयांना व्यवस्थापनीय भागांमध्ये विभागणारे वास्तववादी अभ्यास वेळापत्रक विकसित करा, विश्रांती आणि पुनरावलोकन सत्रांसाठी वेळ वाटप करा.",
+        "xp": 3
+      },
+      {
+        "title": "मागील प्रश्नपत्रिकांचा सराव करा",
+        "description": "वेळेच्या मर्यादेत मागील वर्षांच्या प्रश्नांवर काम करून परीक्षा प्रारूपांशी परिचित व्हा.",
+        "xp": 4
+      },
+      {
+        "title": "सक्रिय शिक्षण तंत्रे",
+        "description": "समज आणि स्मृती वाढवण्यासाठी सारांश, मन मॅपिंग आणि इतरांना संकल्पना शिकवणे यासारख्या पद्धतींचा वापर करा.",
+        "xp": 3
+      },
+      {
+        "title": "आरोग्यदायी झोपेची दिनचर्या",
+        "description": "रात्री 7-8 तास झोप राखा आणि रात्रभर जागणे टाळा, कारण योग्य विश्रांती स्मृती एकत्रीकरणासाठी महत्त्वाची आहे.",
+        "xp": 3
+      },
+      {
+        "title": "नियमित व्यायाम",
+        "description": "तणाव संप्रेरक कमी करण्यासाठी आणि संज्ञानात्मक कार्यप्रणाली सुधारण्यासाठी तुमच्या दैनंदिन दिनचर्येत शारीरिक क्रियाकलाप समाविष्ट करा.",
+        "xp": 3
+      },
+      {
+        "title": "संतुलित पोषण",
+        "description": "जास्त कॅफिन आणि साखर टाळून ओमेगा-3, जीवनसत्त्वे आणि खनिजांनी भरपूर मेंदू-आरोग्यदायी पदार्थ खा.",
+        "xp": 2
+      },
+      {
+        "title": "सकारात्मक स्वयं-संभाषण",
+        "description": "नकारात्मक विचारांना उत्साहवर्धक पुष्टीकरण आणि परीक्षा परिणामांबद्दल वास्तववादी दृष्टिकोनाने बदला.",
+        "xp": 4
+      },
+      {
+        "title": "अभ्यास गट निर्मिती",
+        "description": "ज्ञान सामायिक करण्यासाठी, शंका स्पष्ट करण्यासाठी आणि समवयस्कांच्या समर्थनाद्वारे प्रेरणा राखण्यासाठी अभ्यास गटात सामील व्हा किंवा तयार करा.",
+        "xp": 3
+      },
+      {
+        "title": "तणाव व्यवस्थापन विश्रांती",
+        "description": "खोल श्वसन, छोट्या फिरणे किंवा संक्षिप्त ध्यान यासारख्या तंत्रांचा वापर करून अभ्यास सत्रांदरम्यान नियमित विश्रांती घ्या.",
+        "xp": 3
+      },
+      {
+        "title": "शैक्षणिक सहाय्य घ्या",
+        "description": "विशिष्ट विषयांवर किंवा संकल्पनांसह संघर्ष करताना शिक्षक, शिक्षक किंवा वर्गमित्रांकडून मदत मागण्यास संकोच करू नका.",
+        "xp": 3
+      }
+    ],
+    "yoga": [
+      {
+        "title": "बालकाची मुद्रा (बालासन)",
+        "description": "एक शांत करणारी मुद्रा जी चिंता आणि मानसिक थकवा कमी करण्यात मदत करते आणि शिथिलता आणि लक्ष केंद्रित करण्यास प्रोत्साहन देते.",
+        "xp": 2
+      },
+      {
+        "title": "मांजर-गाय ताण",
+        "description": "पाठीच्या कण्याची सौम्य हालचाली जी दीर्घ अभ्यास सत्रांपासून तणाव मुक्त करतात आणि जागरूक हालचालीद्वारे लक्ष सुधारतात.",
+        "xp": 2
+      },
+      {
+        "title": "पुढे वाकणे (उत्तानासन)",
+        "description": "मेंदूकडे रक्त प्रवाह उलटवते, मज्जासंस्था शांत करण्यास आणि परीक्षा संबंधित तणाव कमी करण्यास मदत करते.",
+        "xp": 3
+      },
+      {
+        "title": "भिंतीवर पाय वर मुद्रा",
+        "description": "पुनर्संचयी मुद्रा जी शिथिलतेला प्रोत्साहन देते, बसण्यापासून पायांचा थकवा कमी करते आणि परीक्षेची चिंता शांत करते.",
+        "xp": 3
+      },
+      {
+        "title": "बसलेली पाठीचा कणा वळवणे",
+        "description": "दीर्घकाळ अभ्यासापासून पाठीचा तणाव दूर करते आणि मानसिक स्पष्टता वाढवते आणि तणाव कमी करते.",
+        "xp": 2
+      }
+    ],
+    "relaxation": [
+      {
+        "title": "प्रगतीशील स्नायू शिथिलीकरण",
+        "description": "परीक्षेपूर्वी शारीरिक तणाव आणि चिंता कमी करण्यासाठी पद्धतशीरपणे स्नायू गटांना ताणतणावग्रस्त करा आणि सोडा.",
+        "xp": 4
+      },
+      {
+        "title": "निर्देशित दृश्यीकरण",
+        "description": "आत्मविश्वास निर्माण करण्यासाठी आणि भीती कमी करण्यासाठी यशस्वी परीक्षा कामगिरी आणि सकारात्मक परिणामांची कल्पना करा.",
+        "xp": 3
+      },
+      {
+        "title": "बॉक्स श्वसन तंत्र",
+        "description": "अभ्यास आणि परीक्षा कालावधीत मज्जासंस्था शांत करण्यासाठी आणि लक्ष सुधारण्यासाठी 4-4-4-4 श्वसन पद्धती.",
+        "xp": 3
+      },
+      {
+        "title": "शरीर स्कॅन ध्यान",
+        "description": "तणाव संबंधित तणाव ओळखण्यासाठी आणि मुक्त करण्यासाठी शारीरिक संवेदनांची जागरूक जागरूकता.",
+        "xp": 3
+      },
+      {
+        "title": "शांत संगीत चिकित्सा",
+        "description": "शांततापूर्ण अभ्यास वातावरण तयार करण्यासाठी आणि चिंता कमी करण्यासाठी वाद्य किंवा निसर्ग आवाज ऐका.",
+        "xp": 2
+      }
+    ],
+    "cbt": [
+      {
+        "title": "विचार आव्हान",
+        "description": "परीक्षेच्या अपयशाबद्दल विनाशकारी विचारांची ओळख करा आणि प्रश्न करा, त्यांना संतुलित दृष्टिकोनांसह बदला.",
+        "xp": 4
+      },
+      {
+        "title": "वर्तणूक प्रयोग",
+        "description": "आत्मविश्वास निर्माण करण्यासाठी आणि टाळणारे वर्तन कमी करण्यासाठी छोट्या पायऱ्यांत भीती परिणामांची चाचणी करा.",
+        "xp": 4
+      },
+      {
+        "title": "श्रेणीबद्ध एक्सपोजर",
+        "description": "पद्धतशीर असंवेदनीकरणाद्वारे चिंता कमी करण्यासाठी हळूहळू स्वतःला परीक्षेसारख्या परिस्थितींसमोर आणा.",
+        "xp": 4
+      },
+      {
+        "title": "समस्या सोडवण्याची तंत्रे",
+        "description": "अभ्यास आव्हाने व्यवस्थापनीय पायऱ्यांमध्ये मोडा आणि विशिष्ट कृती योजना विकसित करा.",
+        "xp": 3
+      },
+      {
+        "title": "क्रियाकलाप नियोजन",
+        "description": "कल्याण राखण्यासाठी अभ्यास, विश्रांती आणि आनंददायी क्रियाकलापांसह संतुलित दैनंदिन क्रियाकलापांची योजना करा.",
+        "xp": 3
+      }
+    ],
+    "rebt": [
+      {
+        "title": "परिपूर्णतावादाचा विरोध",
+        "description": "तुम्ही अर्थपूर्ण होण्यासाठी परिपूर्ण असावे किंवा सर्वोच्च ग्रेड मिळवावेत या अतार्किक विश्वासाला आव्हान द्या.",
+        "xp": 4
+      },
+      {
+        "title": "आपत्तीजनक आव्हान",
+        "description": "परीक्षेत अपयशी होणे हे अगदी भयानक किंवा जीवन संपवणारे असेल या विश्वासावर प्रश्न उपस्थित करा.",
+        "xp": 4
+      },
+      {
+        "title": "स्व-मूल्य विभक्तीकरण",
+        "description": "तुमचे वैयक्तिक मूल्य तुमच्या शैक्षणिक कामगिरी आणि परीक्षा परिणामांपासून वेगळे करायला शिका.",
+        "xp": 5
+      },
+      {
+        "title": "मागणी विरुद्ध प्राधान्य",
+        "description": "दबाव आणि चिंता कमी करण्यासाठी 'मला यशस्वी व्हायला हवे' ऐवजी 'मी यशस्वी होण्यास प्राधान्य देतो' असे बदला.",
+        "xp": 4
+      },
+      {
+        "title": "तर्कसंगत सामना विधाने",
+        "description": "परिणामांबद्दल अनिश्चितता स्वीकारताना प्रयत्नांना मान्यता देणारी वास्तववादी पुष्टी विकसित करा.",
+        "xp": 3
+      }
+    ]
+  }
+}

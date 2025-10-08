@@ -8550,6 +8550,98 @@
       "emotionalIntelligence": {
         "title": "Emotional Intelligence",
         "description": "Develop emotional awareness, regulation, and social skills through 5 key EQ dimensions"
+      },
+      "adhd": {
+        "title": "ADHD",
+        "description": "Attention Deficit Hyperactivity Disorder support and management"
+      },
+      "aggressiveBehaviour": {
+        "title": "Aggressive Behaviour",
+        "description": "Tools and techniques for managing aggressive behaviour and anger"
+      },
+      "conductIssues": {
+        "title": "Conduct Issues", 
+        "description": "Address behavioral problems and develop better social skills"
+      },
+      "eatingHabits": {
+        "title": "Eating Habits",
+        "description": "Build mindful eating routines and healthier choices"
+      },
+      "introvertChild": {
+        "title": "Introvert Child",
+        "description": "Support quiet kids with gentle, confidence‑building strategies"
+      },
+      "breakupandrebound": {
+        "title": "Breakup & Rebound",
+        "description": "Heal from heartbreak and rebuild with healthy coping strategies"
+      },
+      "abusiveLanguageBackAnswering": {
+        "title": "Abusive Language & Back Answering",
+        "description": "Respond to disrespect calmly and set healthy boundaries"
+      },
+      "examstressscreen": {
+        "title": "Exam Stress",
+        "description": "Stay calm, plan smart, and perform with confidence"
+      },
+      "darkwebandonlyfansscreen": {
+        "title": "Dark Web & OnlyFans",
+        "description": "Stay safe online and understand digital risks"
+      },
+      "friendshipandrelationshipscreen": {
+        "title": "Friendship & Relationships",
+        "description": "Build healthy bonds and resolve conflicts constructively"
+      },
+      "datingsitesandcomplicationsscreen": {
+        "title": "Dating Sites & Complications",
+        "description": "Navigate online dating safely and thoughtfully"
+      },
+      "gamblingandgamingaddictionscreen": {
+        "title": "Gambling & Gaming Addiction",
+        "description": "Reduce compulsive use and regain control"
+      },
+      "internetaddictionscreen": {
+        "title": "Internet Addiction",
+        "description": "Create balanced screen-time habits"
+      },
+      "parentingfromchildviewscreen": {
+        "title": "Parenting (Child's View)",
+        "description": "Understand children's needs and emotions better"
+      },
+      "parentingfromparentsviewscreen": {
+        "title": "Parenting (Parents' View)",
+        "description": "Practical strategies to support children's growth"
+      },
+      "pornaddictionscreen": {
+        "title": "Porn Addiction",
+        "description": "Manage urges and build healthy habits"
+      },
+      "selfcarehygienescreen": {
+        "title": "Self‑Care & Hygiene",
+        "description": "Build consistent self‑care routines"
+      },
+      "selfesteemandselfidentityscreen": {
+        "title": "Self‑Esteem & Identity",
+        "description": "Strengthen self‑worth and personal identity"
+      },
+      "socialmediaissuesscreen": {
+        "title": "Social Media Issues",
+        "description": "Reduce comparison, manage FOMO, and use mindfully"
+      },
+      "substanceaddictionscreen": {
+        "title": "Substance Addiction",
+        "description": "Seek support and practice relapse‑prevention skills"
+      },
+      "traumalossanddreamsscreen": {
+        "title": "Trauma, Loss & Dreams",
+        "description": "Process trauma and grief with gentle guidance"
+      },
+      "unrealisticbeautystandardsscreen": {
+        "title": "Unrealistic Beauty Standards",
+        "description": "Build body neutrality and media literacy"
+      },
+      "breakupandreboundscreen": {
+        "title": "Breakup & Rebound",
+        "description": "Heal from heartbreak and rebuild with healthy coping strategies"
       }
     },
     "upgradeDialog": {
@@ -8564,6 +8656,84 @@
       "upgradeButton": "Upgrade Now",
       "cancelButton": "Cancel"
     }
+  },
+  "introvertChildScreen": {
+    "headerTitle": "Introvert Child",
+    "imageLabel": "Quiet strength",
+    "title": "Support for introverted children",
+    "description": "Practical ways to honor quiet temperament while building skills for expression and connection.",
+    "symptomsTitle": "Common signs",
+    "symptoms": {
+      "socialWithdrawal": "Prefers limited social interaction",
+      "difficultyExpressing": "Finds it hard to express feelings",
+      "prefersSolitude": "Enjoys time alone to recharge",
+      "overwhelmInSocialSituations": "Feels overwhelmed in groups",
+      "lowSelfConfidence": "Lower self‑confidence in public settings"
+    },
+    "copingStrategiesTitle": "Support strategies",
+    "viewStrategyButton": "View strategy",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Quick, gentle tips to help daily routines and confidence."
+      },
+      "yoga": {
+        "title": "Yoga & Meditation",
+        "description": "Simple poses and calming practices to self‑regulate."
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Calming activities to reduce overwhelm."
+      },
+      "cbt": {
+        "title": "CBT Interventions",
+        "description": "Build flexible thoughts and communication."
+      },
+      "rebt": {
+        "title": "REBT Interventions",
+        "description": "Challenge unhelpful beliefs and encourage self‑acceptance."
+      }
+    }
+  },
+  "eatingHabitScreen": {
+    "headerTitle": "Eating Habits",
+    "imageLabel": "Mindful Eating",
+    "title": "Support for healthy eating patterns",
+    "description": "Learn strategies to manage cravings, emotional eating and build consistent routines.",
+    "symptomsTitle": "Common Signs",
+    "symptoms": {
+      "emotionalEating": "Eating in response to emotions",
+      "irregularMeals": "Skipping or irregular meal timing",
+      "bingeEating": "Episodes of overeating",
+      "foodCravings": "Strong cravings for certain foods",
+      "guiltAroundFood": "Guilt or shame related to eating"
+    },
+    "supportStrategiesTitle": "Helpful Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Practical suggestions to build sustainable habits"
+      },
+      "yoga": {
+        "title": "Yoga & Meditation",
+        "description": "Gentle practices to reduce stress and improve awareness"
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Calming methods to manage urges and tension"
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Skills to reframe thoughts and change patterns"
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Identify beliefs and build rational responses"
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Note",
+    "alertText": "This content is for educational purposes and not a substitute for professional care."
   },
   "angerManagementScreen": {
     "headerTitle": "Anger Management",
@@ -8645,6 +8815,210 @@
     "alertTitle": "When to seek help?",
     "alertText": "Seek professional help for addiction when you cannot control your substance use, experience withdrawal symptoms, or when addiction affects your health, relationships, or responsibilities. Medical supervision may be necessary for safe detoxification."
   },
+  "adhdScreen": {
+    "headerTitle": "ADHD Information",
+    "imageLabel": "ADHD",
+    "title": "Attention Deficit Hyperactivity Disorder (ADHD)",
+    "description": "ADHD is a neurodevelopmental disorder characterized by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning or development.\n\nWhile challenging, ADHD can be effectively managed with proper strategies, therapy, and sometimes medication.",
+    "symptomsTitle": "Common Symptoms",
+    "symptoms": {
+      "inattention": "Difficulty focusing, easily distracted, forgetful",
+      "hyperactivity": "Restlessness, fidgeting, difficulty sitting still",
+      "impulsivity": "Acting without thinking, interrupting others",
+      "disorganization": "Poor organizational skills, losing items",
+      "timeManagement": "Difficulty with time management and deadlines"
+    },
+    "copingStrategiesTitle": "Coping Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Practical daily techniques and organizational strategies for managing ADHD symptoms."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Mindful movement and breathing exercises to improve focus and reduce hyperactivity."
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Calming exercises and mindfulness practices to manage impulsivity and anxiety."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Helps develop organizational skills and coping strategies for ADHD challenges."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Addresses negative self-beliefs and emotional regulation difficulties."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Important Note",
+    "alertText": "ADHD is a medical condition that requires professional diagnosis. If you suspect you have ADHD, consult with a qualified healthcare provider or mental health professional for proper evaluation and treatment."
+  },
+  "aggressiveBehaviourScreen": {
+    "headerTitle": "Aggressive Behaviour Information",
+    "imageLabel": "Aggressive Behaviour",
+    "title": "Aggressive Behaviour Management",
+    "description": "Aggressive behaviour involves hostile or violent actions that can harm oneself or others. It often stems from unresolved anger, frustration, or underlying emotional issues.\n\nWith proper strategies and support, aggressive behaviours can be managed and replaced with healthier ways of expressing emotions.",
+    "symptomsTitle": "Common Symptoms",
+    "symptoms": {
+      "verbalAggression": "Yelling, shouting, or using abusive language",
+      "physicalTension": "Physical tension, clenched fists, or threatening gestures",
+      "impulsiveReactions": "Quick to anger with little provocation",
+      "irritability": "Persistent irritability and short temper",
+      "conflictEscalation": "Tendency to escalate minor conflicts"
+    },
+    
+    "copingStrategiesTitle": "Coping Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Practical techniques for managing anger and preventing aggressive outbursts."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Calming movements and breathing exercises to reduce physical tension and aggression."
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Stress-reduction methods to help maintain emotional control and inner peace."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Helps identify triggers and develop healthy coping mechanisms for anger management."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Addresses irrational beliefs that contribute to aggressive responses and emotional dysregulation."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Seek Help",
+    "alertText": "If aggressive behaviour is affecting your relationships or daily life, consider seeking professional help. A mental health professional can provide personalized strategies and support."
+  },
+  "breakupAndReboundScreen": {
+    "headerTitle": "Breakup & Rebound",
+    "imageLabel": "Heartbreak Support",
+    "title": "Healing After a Breakup",
+    "description": "Breakups can be painful and confusing. This guide offers gentle, practical strategies to process emotions, rebuild routines, and move forward with self‑compassion.",
+    "symptomsTitle": "Common feelings",
+    "symptoms": {
+      "emotionalPain": "Intense sadness or emotional pain",
+      "lossOfAppetite": "Changes in appetite or motivation",
+      "sleepDisturbances": "Trouble falling or staying asleep",
+      "socialWithdrawal": "Pulling away from friends and activities",
+      "lowSelfEsteem": "Questioning self‑worth or identity"
+    },
+    "copingStrategiesTitle": "Coping strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Grounding, journaling, routine resets, and small actions that help you regain stability."
+      },
+      "yoga": {
+        "title": "Yoga & Breath",
+        "description": "Gentle movement and breathing to release tension and settle the nervous system."
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Body scan, progressive relaxation, and paced breathing to soothe overwhelm."
+      },
+      "cbt": {
+        "title": "CBT Interventions",
+        "description": "Reframe unhelpful thoughts and build balanced, supportive self‑talk."
+      },
+      "rebt": {
+        "title": "REBT Interventions",
+        "description": "Challenge rigid beliefs about relationships and strengthen self‑acceptance."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Note",
+    "alertText": "This content is for educational support and is not a substitute for professional care. Reach out to a qualified professional if pain feels unmanageable."
+  },
+  "examStressScreen": {
+    "headerTitle": "Exam Stress/Fear of Failure",
+    "imageLabel": "Academic Wellness",
+    "mainTitle": "Managing Exam Stress & Fear of Failure",
+    "description": "Overcome exam anxiety and fear of failure with proven strategies to improve academic performance and mental well-being.",
+    "commonSymptoms": "Common Signs & Symptoms",
+    "symptoms": {
+      "anxiety": "Feeling overwhelmed, nervous, or panicked before or during exams",
+      "sleepProblems": "Difficulty sleeping due to worries about academic performance",
+      "procrastination": "Avoiding study sessions or delaying exam preparation",
+      "physicalSymptoms": "Headaches, stomach aches, or other stress-related physical symptoms",
+      "negativeThoughts": "Catastrophic thinking about failure and its consequences",
+      "avoidance": "Avoiding exam situations or educational environments altogether",
+      "perfectionism": "Setting unrealistic standards and feeling overwhelmed by the pressure to be perfect"
+    },
+    "copingStrategies": "Coping Strategies",
+    "interventionStrategies": "Intervention Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "Study & Stress Management",
+        "description": "Practical study techniques, time management strategies, and stress reduction methods to improve exam preparation and performance."
+      },
+      "yoga": {
+        "title": "Mindful Movement",
+        "description": "Yoga poses and breathing exercises to reduce physical tension, calm the mind, and improve focus during study sessions."
+      },
+      "relaxation": {
+        "title": "Anxiety Relief",
+        "description": "Relaxation techniques and mindfulness practices to manage exam anxiety, reduce stress hormones, and promote better sleep."
+      },
+      "cbt": {
+        "title": "Cognitive Restructuring",
+        "description": "Cognitive-behavioral strategies to challenge negative thoughts, reframe perfectionist thinking, and build confidence in academic abilities."
+      },
+      "rebt": {
+        "title": "Rational Thinking",
+        "description": "Rational emotive techniques to address irrational fears about failure, develop realistic expectations, and build resilience for academic challenges."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Academic Support Available",
+    "alertText": "If exam stress significantly impacts your daily life or academic performance, consider speaking with a counselor, academic advisor, or mental health professional for additional support and resources."
+  },
+  "conductIssues": {
+    "headerTitle": "Conduct Issues Information",
+    "imageLabel": "Conduct Issues",
+    "mainTitle": "Conduct Issues Management",
+    "description": "Conduct issues involve patterns of disruptive, defiant, or antisocial behavior that violate social norms and the rights of others. These behaviors often emerge in childhood or adolescence and can significantly impact relationships, school performance, and daily functioning.\n\nWith appropriate intervention and support, conduct issues can be managed and improved through structured behavioral strategies and therapeutic approaches.",
+    "symptoms": "Common Signs",
+    "symptomsList": {
+      "aggressiveBehavior": "Aggressive behavior toward people or animals",
+      "defiance": "Persistent defiance and rule-breaking behavior",
+      "ruleBreaking": "Destruction of property or serious rule violations",
+      "socialDifficulties": "Difficulties with social relationships and empathy",
+      "impulsivity": "Impulsive actions without considering consequences"
+    },
+    "copingStrategies": "Management Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Evidence-based techniques for managing conduct issues and improving behavioral control."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Mindful movement and breathing exercises to promote self-regulation and emotional balance."
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Calming strategies to reduce stress and improve emotional regulation."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Structured approach to identify negative thought patterns and develop healthier behavioral responses."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Addresses irrational beliefs and helps develop more rational thinking patterns for better behavior."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Professional Support",
+    "alertText": "Conduct issues often require professional intervention. Consider consulting with a mental health professional, behavioral specialist, or counselor for comprehensive assessment and treatment planning."
+  },
   "commonPsychologicalScreen": {
     "headerTitle": "Common Psychological",
     "imageLabel": "Mental Health",
@@ -8684,6 +9058,375 @@
     "viewStrategyButton": "View Strategy",
     "alertTitle": "When to seek help?",
     "alertText": "Seek professional help when psychological symptoms significantly impact your daily life, relationships, or work performance. Early intervention can prevent symptoms from worsening and provide effective treatment strategies."
+  },
+  "abusiveLanguageBackAnswering": {
+    "headerTitle": "Abusive Language & Back Answering",
+    "imageLabel": "Communication Challenge",
+    "mainTitle": "Managing Disrespectful Communication",
+    "description": "Address abusive language and back-talking behaviors with effective strategies to improve family communication and establish respectful boundaries.",
+    "commonSigns": "Common Signs & Behaviors",
+    "signs": {
+      "disrespectfulLanguage": "Using profanity, insults, or inappropriate language toward family members",
+      "argumentative": "Constantly arguing and challenging every request or rule",
+      "defiantBehavior": "Refusing to follow instructions and showing open defiance",
+      "raisingVoice": "Shouting, yelling, or speaking in an aggressive tone",
+      "nameCallingInsults": "Calling parents or siblings hurtful names and making personal attacks"
+    },
+    "interventionStrategies": "Intervention Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "Communication Boundaries",
+        "description": "Practical strategies for setting clear communication rules, implementing consequences, and modeling respectful language in daily interactions."
+      },
+      "yoga": {
+        "title": "Emotional Regulation Practice",
+        "description": "Mindfulness and breathing exercises to help manage anger, develop self-control, and promote calm communication for both parents and children."
+      },
+      "relaxation": {
+        "title": "Conflict De-escalation",
+        "description": "Relaxation techniques to reduce tension during conflicts, create cooling-off periods, and restore peaceful family dynamics."
+      },
+      "cbt": {
+        "title": "Behavioral Modification",
+        "description": "Cognitive-behavioral strategies to identify triggers, change thought patterns, and develop healthier communication habits through structured approaches."
+      },
+      "rebt": {
+        "title": "Rational Communication",
+        "description": "Rational emotive behavioral techniques to address unrealistic expectations, manage emotional reactions, and build tolerance for difficult conversations."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Professional Support Available",
+    "alertText": "If disrespectful communication persists or escalates to verbal abuse, consider family therapy or counseling. Professional support can help address underlying issues and restore healthy family dynamics."
+  },
+  "darkWebAndOnlyFansScreen": {
+    "headerTitle": "Dark Web and OnlyFans",
+    "imageLabel": "Digital Addiction Support",
+    "title": "Dark Web and Adult Content Platform Addiction",
+    "description": "Professional support to overcome harmful digital behaviors, including **Dark Web exploration** and **adult content platform dependency**. Discover healthy alternatives and recovery strategies.",
+    "symptomsTitle": "Common Concerns",
+    "symptoms": {
+      "compulsiveBrowsing": "Compulsive browsing of inappropriate content",
+      "financialSpending": "Financial spending on adult platforms",
+      "neglectingRelationships": "Neglecting real-world relationships",
+      "sleepDisruption": "Sleep disruption and time management issues",
+      "socialIsolation": "Social isolation and shame",
+      "exposureToHarmful": "Exposure to illegal or harmful content"
+    },
+    "strategiesTitle": "Support Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "General Recovery Suggestions",
+        "description": "Evidence-based strategies to break the digital addiction cycle and establish healthy online habits."
+      },
+      "yoga": {
+        "title": "Mindful Yoga Practice",
+        "description": "Physical and mental exercise to redirect energy and improve self-control through mindful movement."
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Stress-reduction methods to manage cravings and develop healthy coping mechanisms."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Identify and change thought patterns that lead to compulsive digital behavior."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Challenge irrational beliefs and develop healthy emotional responses to triggers."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Important Notice",
+    "alertText": "If you are struggling with these behaviors, please consider seeking professional help. Recovery is possible with the right support and treatment approach."
+  },
+  "friendshipAndRelationshipScreen": {
+    "headerTitle": "Friendship and Relationship",
+    "imageLabel": "Social Connections",
+    "title": "Friendship and Relationship Support",
+    "description": "Healthy relationships and friendships are fundamental to mental well-being. Building and maintaining meaningful connections requires communication skills, emotional intelligence, and healthy boundaries.\n\nProfessional support and evidence-based strategies can help improve relationship skills and address social concerns.",
+    "concernsTitle": "Common Concerns",
+    "concerns": {
+      "communicationIssues": "Difficulty expressing thoughts and feelings clearly",
+      "trustIssues": "Challenges with trusting others or being trusted",
+      "conflictResolution": "Struggling to resolve disagreements effectively",
+      "boundaryIssues": "Difficulty setting or maintaining healthy boundaries",
+      "socialAnxiety": "Anxiety in social situations or meeting new people"
+    },
+    "supportStrategiesTitle": "Support Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Practical techniques for building and maintaining healthy relationships."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Mindfulness practices to improve emotional awareness and connection."
+      },
+      "relaxation": {
+        "title": "Relaxation",
+        "description": "Stress reduction techniques for social anxiety and relationship stress."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Helps identify and change negative thought patterns about relationships."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Challenges irrational beliefs about social interactions and relationships."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "When to seek help?",
+    "alertText": "Seek professional help when relationship difficulties significantly impact your daily life, mental health, or overall well-being."
+  },
+  "gamblingAndGamingAddictionScreen": {
+    "headerTitle": "Gambling & Gaming Addiction",
+    "title": "Gambling & Gaming Addiction Recovery",
+    "description": "Break free from gambling and gaming addiction with evidence-based strategies and professional support for a healthier digital lifestyle.",
+    "benefitsTitle": "Benefits of Recovery",
+    "benefits": {
+      "financialStability": "Improved financial stability and debt reduction",
+      "betterSleep": "Better sleep patterns and physical health",
+      "strongerRelationships": "Stronger relationships and social connections",
+      "enhancedProductivity": "Enhanced productivity and focus",
+      "reducedAnxiety": "Reduced anxiety and depression symptoms",
+      "increasedSelfControl": "Increased self-control and decision-making skills"
+    },
+    "strategiesTitle": "Recovery Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "Common Recovery Suggestions",
+        "description": "Practical daily strategies and tips to help overcome gambling and gaming addiction, including trigger management and healthy alternatives."
+      },
+      "yoga": {
+        "title": "Yoga and meditation",
+        "description": "Use mindfulness practices and yoga to develop self-awareness, reduce impulsive behaviors, and manage cravings effectively."
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Learn stress reduction and relaxation methods to cope with withdrawal symptoms and anxiety without turning to gambling or gaming."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Identify and change negative thought patterns and behaviors that contribute to gambling and gaming addiction."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Address irrational beliefs about luck, control, and self-worth that fuel addictive gambling and gaming behaviors."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Seek Professional Help",
+    "alertText": "Gambling and gaming addiction can have serious financial, social, and psychological consequences. If you're struggling with addiction, consider reaching out to a mental health professional, support groups, or addiction helplines for specialized treatment and support."
+  },
+  "internetAddictionScreen": {
+    "headerTitle": "Internet Addiction",
+    "imageLabel": "Digital Wellness",
+    "title": "Internet Addiction Recovery",
+    "description": "Overcome internet and digital device addiction with evidence-based strategies and professional support for a healthier digital lifestyle.",
+    "symptomsTitle": "Common Signs & Concerns",
+    "symptoms": {
+      "excessiveTime": "Excessive time spent online affecting daily responsibilities",
+      "difficultyControlling": "Difficulty controlling internet usage despite negative consequences",
+      "withdrawalSymptoms": "Withdrawal symptoms when offline (anxiety, irritability)",
+      "neglectingRelationships": "Neglecting relationships and social activities for online engagement",
+      "sleepDisruption": "Sleep disruption due to late-night internet usage"
+    },
+    "strategiesTitle": "Recovery Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Practical daily strategies and lifestyle changes to help reduce internet dependency and build healthier digital habits."
+      },
+      "yoga": {
+        "title": "Yoga and meditation",
+        "description": "Use mindfulness practices and yoga to develop self-awareness, reduce impulsive browsing behaviors, and manage digital cravings effectively."
+      },
+      "relaxation": {
+        "title": "Relaxation Techniques",
+        "description": "Learn relaxation methods to manage stress and anxiety that often lead to excessive internet use and digital escapism."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Challenge negative thought patterns and develop healthier coping mechanisms for managing internet addiction triggers."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Address irrational beliefs about internet use and develop rational thinking patterns for better digital wellness."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Professional Support",
+    "alertText": "If internet addiction is significantly impacting your life, consider seeking help from a mental health professional who specializes in digital addiction."
+  },
+  "parentingFromChildView": {
+    "headerTitle": "Parenting from Child's View",
+    "imageLabel": "Family Connection",
+    "mainTitle": "Understanding Your Child's Perspective",
+    "description": "Develop empathy and strengthen your parent-child relationship by seeing the world through your child's eyes and understanding their emotional needs.",
+    "commonChallenges": "Common Parenting Challenges",
+    "challenges": {
+      "communication": "Difficulty communicating with children effectively",
+      "understanding": "Struggling to understand child's emotional needs",
+      "boundaries": "Setting appropriate boundaries while maintaining connection",
+      "emotions": "Managing both parent and child emotional responses",
+      "connection": "Building trust and maintaining strong relationships"
+    },
+    "parentingStrategies": "Evidence-Based Parenting Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "Child-Centered Communication",
+        "description": "Learn active listening techniques and empathetic communication strategies that validate your child's feelings and foster open dialogue."
+      },
+      "yoga": {
+        "title": "Family Mindfulness & Yoga",
+        "description": "Practice mindfulness and gentle yoga exercises together to build emotional regulation skills and strengthen your bond."
+      },
+      "relaxation": {
+        "title": "Calming Techniques for Families",
+        "description": "Discover relaxation methods that help both you and your child manage stress and create peaceful family moments."
+      },
+      "cbt": {
+        "title": "Positive Parenting Approaches",
+        "description": "Apply cognitive-behavioral techniques to understand and reshape both your parenting patterns and your child's behavioral responses."
+      },
+      "rebt": {
+        "title": "Rational Parenting Methods",
+        "description": "Use rational emotive approaches to manage parenting expectations and help children develop healthy thinking patterns."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Remember: Every Child is Unique",
+    "alertText": "Parenting strategies should be adapted to your child's individual temperament, developmental stage, and unique needs. Consider professional family counseling for persistent challenges."
+  },
+  "parentingFromParentsView": {
+    "headerTitle": "Parenting from Parents' View",
+    "imageLabel": "Parental Perspective",
+    "mainTitle": "Effective Parenting Strategies",
+    "description": "Develop practical parenting skills and strategies to build stronger relationships with your children while managing the challenges of modern parenting.",
+    "commonChallenges": "Common Parenting Challenges",
+    "challenges": {
+      "discipline": "Setting boundaries and effective discipline strategies",
+      "communication": "Communicating effectively with children of different ages",
+      "balance": "Balancing work, personal life, and parenting responsibilities",
+      "consistency": "Maintaining consistency in parenting approaches",
+      "stress": "Managing parental stress and emotional regulation"
+    },
+    "parentingStrategies": "Evidence-Based Parenting Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "Practical Parenting Tips",
+        "description": "Essential daily strategies and proven techniques for effective parenting, including boundary setting, positive reinforcement, and communication skills."
+      },
+      "yoga": {
+        "title": "Mindful Parenting & Self-Care",
+        "description": "Practice mindfulness and self-care techniques to manage parental stress, stay present with your children, and model emotional regulation."
+      },
+      "relaxation": {
+        "title": "Stress Management for Parents",
+        "description": "Learn relaxation techniques to manage the daily stresses of parenting and maintain your emotional well-being while caring for your family."
+      },
+      "cbt": {
+        "title": "Cognitive Parenting Strategies",
+        "description": "Apply cognitive-behavioral approaches to understand your parenting patterns, manage difficult behaviors, and create positive family dynamics."
+      },
+      "rebt": {
+        "title": "Rational Parenting Approaches",
+        "description": "Develop rational thinking patterns about parenting expectations, manage perfectionism, and build resilience in your parenting journey."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Self-Care is Essential",
+    "alertText": "Remember that taking care of yourself is not selfish—it's essential for effective parenting. Seek support when needed and prioritize your mental health for the benefit of your entire family."
+  },
+  "pornAddictionScreen": {
+    "headerTitle": "Porn Addiction",
+    "imageLabel": "Porn Addiction",
+    "mainTitle": "Porn Addiction Recovery",
+    "description": "Pornography addiction can significantly impact mental health, relationships, and daily functioning. Recovery involves understanding triggers, developing healthy coping mechanisms, and rebuilding authentic intimacy.\n\nWith proper support and strategies, it's possible to break free from compulsive pornography use and develop healthier relationships with sexuality and intimacy.",
+    "commonSymptoms": "Common Symptoms",
+    "symptoms": {
+      "compulsive": "Compulsive viewing despite negative consequences",
+      "relationships": "Difficulty with real-life intimacy and relationships", 
+      "guilt": "Persistent guilt, shame, and secrecy",
+      "isolation": "Social withdrawal and decreased productivity",
+      "productivity": "Interference with work, school, or daily responsibilities"
+    },
+    "recoveryStrategies": "Recovery Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Practical strategies for breaking the cycle of pornography addiction including trigger identification and healthy alternatives."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Mindfulness practices and yoga to develop body awareness, reduce stress, and manage urges in a healthy way."
+      },
+      "relaxation": {
+        "title": "Relaxation",
+        "description": "Stress reduction techniques and relaxation methods to cope with withdrawal symptoms and anxiety during recovery."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Identify and change thought patterns and behaviors that contribute to compulsive pornography use."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Address irrational beliefs about sexuality, shame, and self-worth that fuel addictive behaviors."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Seek Professional Support",
+    "alertText": "Porn addiction can significantly impact mental health and relationships. Consider reaching out to a mental health professional who specializes in sexual addiction or compulsive behaviors for personalized treatment and support."
+  },
+  "selfCareHygieneScreen": {
+    "headerTitle": "Self-care hygiene",
+    "imageLabel": "Self-care",
+    "mainTitle": "Self-care hygiene & Personal Wellness",
+    "description": "Self-care hygiene encompasses both physical cleanliness and mental wellness practices that contribute to overall health and well-being. Regular self-care routines help maintain physical health, boost self-esteem, and create a foundation for mental wellness.\n\nDeveloping consistent self-care habits promotes both physical and emotional well-being, leading to improved confidence and overall quality of life.",
+    "benefitsTitle": "Benefits of Self-care",
+    "benefits": {
+      "improvedMentalHealth": "Enhanced mood and reduced stress levels",
+      "betterPhysicalHealth": "Improved physical health and disease prevention",
+      "increasedSelfEsteem": "Boosted self-confidence and self-worth",
+      "reducedStress": "Lower stress levels and better emotional regulation",
+      "betterSocialConnections": "Improved social interactions and relationships"
+    },
+    "quickTipsTitle": "Daily Self-care Tips",
+    "quickTipsText": "Start with small, manageable habits that you can maintain consistently. Remember, self-care is not selfish - it's essential for your overall well-being and ability to care for others.",
+    "dailyHabits": {
+      "morning": "Morning Routine",
+      "morningTime": "15-30 min",
+      "evening": "Evening Routine",
+      "eveningTime": "10-20 min"
+    },
+    "strategiesTitle": "Self-care Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Essential daily self-care practices including hygiene habits, grooming routines, and personal wellness activities."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Gentle movement practices and stretching routines that support both physical flexibility and mental clarity."
+      },
+      "relaxation": {
+        "title": "Relaxation",
+        "description": "Relaxation techniques and mindfulness practices to create peaceful moments for self-care and rejuvenation."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioral Therapy (CBT)",
+        "description": "Helps identify and change negative thought patterns about self-worth and develop healthy self-care habits and routines."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behavior Therapy (REBT)",
+        "description": "Challenges beliefs about self-care being selfish or unnecessary, helping build a healthy relationship with personal wellness."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "motivationTitle": "Remember",
+    "motivationText": "Self-care is an investment in your future self. Small daily acts of self-care compound over time to create significant improvements in your overall quality of life and well-being."
   },
   "environmentIssuesScreen": {
     "headerTitle": "Environment Issues",

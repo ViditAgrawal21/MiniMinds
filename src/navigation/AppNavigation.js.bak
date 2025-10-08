@@ -2,23 +2,6 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React, { useEffect, useState } from 'react';
 import { Linking } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import BreakupAndReboundScreen from '@/screens/main/MindTools/Miniminds Screen/BreakupAndReboundScreen';
-import DarkWebAndOnlyFansScreen from '@/screens/main/MindTools/Miniminds Screen/DarkWebAndOnlyFansScreen';
-import DatingSitesAndComplicationsScreen from '@/screens/main/MindTools/Miniminds Screen/DatingSitesAndComplicationsScreen';
-import ExamStressScreen from '@/screens/main/MindTools/Miniminds Screen/ExamStressScreen';
-import FriendshipAndRelationshipScreen from '@/screens/main/MindTools/Miniminds Screen/FriendshipAndRelationshipScreen';
-import GamblingAndGamingAddictionScreen from '@/screens/main/MindTools/Miniminds Screen/GamblingAndGamingAddictionScreen';
-import InternetAddictionScreen from '@/screens/main/MindTools/Miniminds Screen/InternetAddictionScreen';
-import ParentingFromChildViewScreen from '@/screens/main/MindTools/Miniminds Screen/ParentingFromChildViewScreen';
-import ParentingFromParentsViewScreen from '@/screens/main/MindTools/Miniminds Screen/ParentingFromParentsViewScreen';
-import PornAddictionScreen from '@/screens/main/MindTools/Miniminds Screen/PornAddictionScreen';
-import SelfCareHygieneScreen from '@/screens/main/MindTools/Miniminds Screen/SelfCareHygieneScreen';
-import SelfEsteemAndSelfIdentityScreen from '@/screens/main/MindTools/Miniminds Screen/SelfEsteemAndSelfIdentityScreen';
-import SocialMediaIssuesScreen from '@/screens/main/MindTools/Miniminds Screen/SocialMediaIssuesScreen';
-import SubstanceAddictionScreen from '@/screens/main/MindTools/Miniminds Screen/SubstanceAddictionScreen';
-import TraumaLossAndDreamsScreen from '@/screens/main/MindTools/Miniminds Screen/TraumaLossAndDreamsScreen';
-import UnrealisticBeautyStandardsScreen from '@/screens/main/MindTools/Miniminds Screen/UnrealisticBeautyStandardsScreen';
-import AbusiveLanguageBackAnsweringScreen from '@/screens/main/MindTools/Miniminds Screen/AbusiveLanguageBackAnsweringScreen';
 
 // Import your screens here
 import SplashScreen from '../screens/auth/splashScreen/splash';
@@ -297,24 +280,7 @@ const AppNavigation = () => {
       <Stack.Screen name="EditProfile" component={EditProfile} />
 
       
-          <Stack.Screen name="BreakupAndReboundScreen" component={BreakupAndReboundScreen} />
-      <Stack.Screen name="DarkWebAndOnlyFansScreen" component={DarkWebAndOnlyFansScreen} />
-      <Stack.Screen name="DatingSitesAndComplicationsScreen" component={DatingSitesAndComplicationsScreen} />
-      <Stack.Screen name="ExamStressScreen" component={ExamStressScreen} />
-      <Stack.Screen name="FriendshipAndRelationshipScreen" component={FriendshipAndRelationshipScreen} />
-      <Stack.Screen name="GamblingAndGamingAddictionScreen" component={GamblingAndGamingAddictionScreen} />
-      <Stack.Screen name="InternetAddictionScreen" component={InternetAddictionScreen} />
-      <Stack.Screen name="ParentingFromChildViewScreen" component={ParentingFromChildViewScreen} />
-      <Stack.Screen name="ParentingFromParentsViewScreen" component={ParentingFromParentsViewScreen} />
-      <Stack.Screen name="PornAddictionScreen" component={PornAddictionScreen} />
-      <Stack.Screen name="SelfCareHygieneScreen" component={SelfCareHygieneScreen} />
-      <Stack.Screen name="SelfEsteemAndSelfIdentityScreen" component={SelfEsteemAndSelfIdentityScreen} />
-      <Stack.Screen name="SocialMediaIssuesScreen" component={SocialMediaIssuesScreen} />
-      <Stack.Screen name="SubstanceAddictionScreen" component={SubstanceAddictionScreen} />
-      <Stack.Screen name="TraumaLossAndDreamsScreen" component={TraumaLossAndDreamsScreen} />
-      <Stack.Screen name="UnrealisticBeautyStandardsScreen" component={UnrealisticBeautyStandardsScreen} />
-      <Stack.Screen name="AbusiveLanguageBackAnsweringScreen" component={AbusiveLanguageBackAnsweringScreen} />
-</Stack.Navigator>
+    </Stack.Navigator>
     </LanguageProvider>
   );
 };

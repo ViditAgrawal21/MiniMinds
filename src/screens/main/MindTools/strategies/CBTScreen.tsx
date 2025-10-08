@@ -361,6 +361,9 @@ export default function CBTScreen({ navigation, route }: any) {
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
       "job-insecurity": "scanIntro.jobInsecurity.title",
+      "adhd": "adhdScreen.title",
+      "aggressive-behaviour": "aggressiveBehaviourScreen.title",
+      "conduct-issues": "conductIssues.headerTitle",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -368,6 +371,234 @@ export default function CBTScreen({ navigation, route }: any) {
 
   // Get CBT data from translation files instead of static JSON files
   const getCBTData = (condition: string): CBTData | null => {
+    // Handle Eating Habits data from comprehensive data file
+    if (condition === "eating-habits") {
+      try {
+        const eatingData = require("../../../../assets/data/behaviour/EatingHabits_comprehensive_data.json");
+        const cbtCards = eatingData.interventions?.cbt?.cards;
+
+        if (!cbtCards || !Array.isArray(cbtCards)) {
+          console.error("No CBT interventions found in Eating Habits data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi",
+          "mr": "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = cbtCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "",
+          description:
+            card.description?.[localeField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+
+        return {
+          condition: "eating-habits",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Eating Habits CBT data:", error);
+        return null;
+      }
+    }
+    // Handle Conduct Issues data from comprehensive data file
+    if (condition === "conduct-issues") {
+      try {
+        const conductData = require("../../../../assets/data/behaviour/ConductIssues_Complete_comprehensive_data.json");
+        const cbtCards = conductData.interventions?.cbt?.cards;
+
+        if (!cbtCards || !Array.isArray(cbtCards)) {
+          console.error("No CBT interventions found in Conduct Issues data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi",
+          "mr": "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = cbtCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "",
+          description:
+            card.description?.[localeField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+
+        return {
+          condition: "conduct-issues",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Conduct Issues CBT data:", error);
+        return null;
+      }
+    }
+    // Handle ADHD data from ADHD comprehensive data file
+    if (condition === "adhd") {
+      try {
+        const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
+        const cbtCards = adhdData.interventions?.cbt?.cards;
+        
+        if (!cbtCards || !Array.isArray(cbtCards)) {
+          console.error("No CBT interventions found in ADHD data");
+          return null;
+        }
+        
+        // Map locale codes to ADHD data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi", 
+          "mr": "marathi"
+        };
+        const adhdLocaleField = localeMap[locale] || "english";
+
+        const interventions = cbtCards.map((card: any) => ({
+          title: card.title?.[adhdLocaleField] || card.title?.english || "",
+          description: card.description?.[adhdLocaleField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+        
+        return {
+          condition: "adhd",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading ADHD CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Porn Addiction CBT data (localized en/hi/mr)
+    if (condition === "porn-addiction") {
+      try {
+        const data = require("../../../../assets/data/Internet & Social Media Issues/PornAddiction_comprehensive_data.json");
+        const cards = data?.cbt?.cards;
+
+        if (!cards || !Array.isArray(cards)) {
+          console.error("No CBT interventions found in Porn Addiction data");
+          return null;
+        }
+
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const interventions = cards.map((card: any) => ({
+          title: card.title?.[localeKey] || card.title?.en || "",
+          description: card.description?.[localeKey] || card.description?.en || "",
+          xp: card.xp || 0,
+        }));
+
+        return {
+          condition: "porn-addiction",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Porn Addiction CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Parenting from Child's View CBT data (top-level locale)
+    if (condition === "parenting-from-child-view") {
+      try {
+        const data = require("../../../../assets/data/Parenting/ChildPointOfView_comprehensive_data.json");
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeKey] || data["en"];
+        const list = dataset?.commonSuggestions; // CBT not provided separately; fallback to commonSuggestions-like CBT
+
+        if (!list || !Array.isArray(list)) {
+          return null;
+        }
+
+        const interventions = list.map((item: any) => ({
+          title: item.title || "",
+          description: item.description || "",
+          xp: item.xp || 0,
+        }));
+
+        return {
+          condition: "parenting-from-child-view",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        return null;
+      }
+    }
+
+    // Handle Parenting from Parents' View CBT data (top-level locale)
+    if (condition === "parenting-from-parents-view") {
+      try {
+        const data = require("../../../../assets/data/Parenting/ParentsPointOfView_comprehensive_data.json");
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeKey] || data["en"];
+        const list = dataset?.commonSuggestions; // same fallback strategy
+
+        if (!list || !Array.isArray(list)) {
+          return null;
+        }
+
+        const interventions = list.map((item: any) => ({
+          title: item.title || "",
+          description: item.description || "",
+          xp: item.xp || 0,
+        }));
+
+        return {
+          condition: "parenting-from-parents-view",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        return null;
+      }
+    }
+    // Handle Aggressive Behaviour data from comprehensive data file
+    if (condition === "aggressive-behaviour") {
+      try {
+        const aggressiveData = require("../../../../assets/data/behaviour/AggressiveBehaviour_comprehensive_data.json");
+        const cbtCards = aggressiveData.interventions?.cbt?.cards;
+        
+        if (!cbtCards || !Array.isArray(cbtCards)) {
+          console.error("No CBT interventions found in Aggressive Behaviour data");
+          return null;
+        }
+        
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi", 
+          "mr": "marathi"
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = cbtCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "",
+          description: card.description?.[localeField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+        
+        return {
+          condition: "aggressive-behaviour",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Aggressive Behaviour CBT data:", error);
+        return null;
+      }
+    }
+
     // Map URL-style condition names to camelCase keys used in translation files
     const conditionKeyMap: { [key: string]: string } = {
       "anger-management": "angerManagement",
@@ -532,6 +763,7 @@ export default function CBTScreen({ navigation, route }: any) {
         "anger-management": "angerManagement",
         addictions: "addictions",
         "common-psychological-issues": "commonPsychologicalIssues",
+        "conduct-issues": "conductIssues",
         "environment-issues": "environmentIssues",
         "family-relationship": "familyRelationship",
         "financial-mental-health": "financialMentalHealth",

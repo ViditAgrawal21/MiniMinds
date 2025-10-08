@@ -1,0 +1,488 @@
+{
+  "en": {
+    "commonSuggestions": [
+      {
+        "title": "Set Clear Communication Boundaries",
+        "description": "Works by establishing respectful communication standards. Example: Create family rules about speaking respectfully and consistently enforce consequences for disrespectful language.",
+        "xp": 4
+      },
+      {
+        "title": "Model Respectful Communication",
+        "description": "Works by demonstrating appropriate language use. Example: Use calm, respectful tone even during conflicts and avoid name-calling or sarcasm when addressing issues.",
+        "xp": 3
+      },
+      {
+        "title": "Implement Natural Consequences",
+        "description": "Works by connecting behavior to outcomes. Example: If disrespectful language is used, remove privileges like screen time or social activities until an apology is made.",
+        "xp": 4
+      },
+      {
+        "title": "Practice Active Listening",
+        "description": "Works by addressing underlying frustrations. Example: When a child is being disrespectful, ask 'It sounds like you're upset. Can you tell me what's bothering you?'",
+        "xp": 3
+      },
+      {
+        "title": "Use Positive Reinforcement",
+        "description": "Works by encouraging good communication. Example: Praise respectful communication: 'I really appreciate how you expressed your feelings calmly just now.'",
+        "xp": 2
+      },
+      {
+        "title": "Create Cooling-Off Periods",
+        "description": "Works by preventing escalation. Example: When conversations become heated, call for a 10-minute break: 'Let's take a breather and come back to this.'",
+        "xp": 3
+      },
+      {
+        "title": "Address Underlying Issues",
+        "description": "Works by tackling root causes. Example: If back-talking increases during stress, help develop healthy coping strategies and emotional regulation skills.",
+        "xp": 4
+      },
+      {
+        "title": "Establish Family Meeting Time",
+        "description": "Works by providing structured communication opportunities. Example: Hold weekly family meetings where everyone can voice concerns respectfully and work on solutions together.",
+        "xp": 3
+      },
+      {
+        "title": "Teach Emotional Vocabulary",
+        "description": "Works by improving emotional expression. Example: Help children identify feelings: 'Instead of saying that's stupid, try saying I feel frustrated because...'",
+        "xp": 3
+      },
+      {
+        "title": "Stay Calm and Consistent",
+        "description": "Works by maintaining emotional regulation. Example: Take deep breaths, lower your voice, and respond with: 'I won't continue this conversation until we can speak respectfully.'",
+        "xp": 4
+      }
+    ],
+    "yoga": [
+      {
+        "title": "Breath Awareness Practice",
+        "description": "Helps regulate emotions and reduce reactivity. Practice: Teach 4-7-8 breathing (inhale 4, hold 7, exhale 8) when feeling angry or defensive.",
+        "xp": 3
+      },
+      {
+        "title": "Warrior Pose for Confidence",
+        "description": "Builds inner strength and self-control. Practice: Hold Warrior I pose while focusing on respectful communication and personal boundaries.",
+        "xp": 3
+      },
+      {
+        "title": "Child's Pose for Calm",
+        "description": "Promotes humility and emotional regulation. Practice: Use this pose during cooling-off periods to center yourself and approach conflicts peacefully.",
+        "xp": 2
+      },
+      {
+        "title": "Mountain Pose for Grounding",
+        "description": "Develops stability and patience. Practice: Stand tall and breathe deeply, visualizing yourself remaining calm during difficult conversations.",
+        "xp": 2
+      },
+      {
+        "title": "Seated Meditation",
+        "description": "Enhances mindful communication. Practice: Sit quietly for 5-10 minutes, focusing on speaking with kindness and listening with compassion.",
+        "xp": 3
+      }
+    ],
+    "relaxation": [
+      {
+        "title": "Progressive Muscle Relaxation",
+        "description": "Reduces physical tension from conflict. Practice: Tense and release muscle groups while thinking about peaceful family interactions.",
+        "xp": 3
+      },
+      {
+        "title": "Guided Imagery for Harmony",
+        "description": "Visualizes positive family communication. Practice: Imagine respectful conversations and positive interactions with family members.",
+        "xp": 3
+      },
+      {
+        "title": "Calming Music Therapy",
+        "description": "Creates peaceful atmosphere. Practice: Play soft, calming music during family time to promote relaxed and respectful communication.",
+        "xp": 2
+      },
+      {
+        "title": "Nature Sound Meditation",
+        "description": "Promotes inner peace and patience. Practice: Listen to ocean or forest sounds while reflecting on compassionate communication strategies.",
+        "xp": 2
+      },
+      {
+        "title": "Mindful Walking",
+        "description": "Processes emotions through movement. Practice: Take a quiet walk while thinking about positive ways to address communication challenges.",
+        "xp": 3
+      }
+    ],
+    "cbt": [
+      {
+        "title": "Thought Record for Reactions",
+        "description": "Identifies triggers and thought patterns. Practice: When upset by disrespectful language, write down: situation, thoughts, feelings, and alternative responses.",
+        "xp": 4
+      },
+      {
+        "title": "Behavioral Experiment",
+        "description": "Tests new communication approaches. Practice: Try responding to back-talk with curiosity instead of anger, then evaluate the outcomes.",
+        "xp": 4
+      },
+      {
+        "title": "Cognitive Restructuring",
+        "description": "Challenges negative thinking patterns. Practice: Instead of 'They're being disrespectful on purpose,' try 'They might be stressed or need help expressing feelings.'",
+        "xp": 4
+      },
+      {
+        "title": "Problem-Solving Framework",
+        "description": "Develops systematic conflict resolution. Practice: Define the problem, brainstorm solutions, evaluate options, implement, and review results together.",
+        "xp": 4
+      },
+      {
+        "title": "Communication Skills Training",
+        "description": "Improves family interaction patterns. Practice: Use 'I' statements, active listening, and validation techniques during family discussions.",
+        "xp": 4
+      }
+    ],
+    "rebt": [
+      {
+        "title": "Disputing Irrational Beliefs",
+        "description": "Challenges unrealistic expectations. Practice: Question beliefs like 'Children should never be disrespectful' and replace with 'Children are learning appropriate communication.'",
+        "xp": 4
+      },
+      {
+        "title": "Rational Self-Talk",
+        "description": "Develops balanced perspective. Practice: Use statements like 'This behavior is challenging but manageable' instead of 'This is unbearable.'",
+        "xp": 4
+      },
+      {
+        "title": "Acceptance and Tolerance",
+        "description": "Builds emotional resilience. Practice: Accept that learning respectful communication takes time and practice, without personalizing setbacks.",
+        "xp": 4
+      },
+      {
+        "title": "Preference vs. Demand",
+        "description": "Reduces emotional intensity. Practice: Change 'My child must always be respectful' to 'I prefer respectful communication and will work toward it.'",
+        "xp": 4
+      },
+      {
+        "title": "Emotional Regulation Techniques",
+        "description": "Manages reactions to disrespectful behavior. Practice: Use rational thinking to maintain calm: 'This behavior is unpleasant but not catastrophic.'",
+        "xp": 4
+      }
+    ]
+  },
+  "hi": {
+    "commonSuggestions": [
+      {
+        "title": "स्पष्ट संवाद सीमाएं निर्धारित करें",
+        "description": "सम्मानजनक संवाद मानक स्थापित करके काम करता है। उदाहरण: सम्मानपूर्वक बोलने के बारे में पारिवारिक नियम बनाएं और अनादरपूर्ण भाषा के लिए लगातार परिणाम लागू करें।",
+        "xp": 4
+      },
+      {
+        "title": "सम्मानजनक संवाद का मॉडल बनाएं",
+        "description": "उचित भाषा उपयोग का प्रदर्शन करके काम करता है। उदाहरण: संघर्ष के दौरान भी शांत, सम्मानजनक स्वर का उपयोग करें और मुद्दों को संबोधित करते समय नाम-पुकार या व्यंग्य से बचें।",
+        "xp": 3
+      },
+      {
+        "title": "प्राकृतिक परिणामों को लागू करें",
+        "description": "व्यवहार को परिणामों से जोड़कर काम करता है। उदाहरण: यदि अनादरपूर्ण भाषा का उपयोग किया जाता है, तो माफी मांगने तक स्क्रीन टाइम या सामाजिक गतिविधियों जैसे विशेषाधिकार हटा दें।",
+        "xp": 4
+      },
+      {
+        "title": "सक्रिय सुनने का अभ्यास करें",
+        "description": "अंतर्निहित निराशाओं को संबोधित करके काम करता है। उदाहरण: जब कोई बच्चा अनादरपूर्ण हो रहा हो, तो पूछें 'ऐसा लगता है कि आप परेशान हैं। क्या आप मुझे बता सकते हैं कि आपको क्या परेशान कर रहा है?'",
+        "xp": 3
+      },
+      {
+        "title": "सकारात्मक सुदृढीकरण का उपयोग करें",
+        "description": "अच्छे संवाद को प्रोत्साहित करके काम करता है। उदाहरण: सम्मानजनक संवाद की प्रशंसा करें: 'मैं वास्तव में इस बात की सराहना करता हूं कि आपने अभी-अभी अपनी भावनाओं को शांति से व्यक्त किया।'",
+        "xp": 2
+      },
+      {
+        "title": "शीतलन अवधि बनाएं",
+        "description": "वृद्धि को रोकने से काम करता है। उदाहरण: जब बातचीत गर्म हो जाए, तो 10 मिनट के ब्रेक की मांग करें: 'आइए एक सांस लें और इस पर वापस आएं।'",
+        "xp": 3
+      },
+      {
+        "title": "अंतर्निहित मुद्दों को संबोधित करें",
+        "description": "मूल कारणों से निपटने से काम करता है। उदाहरण: यदि तनाव के दौरान जवाब देना बढ़ जाता है, तो स्वस्थ मुकाबला रणनीति और भावनात्मक नियंत्रण कौशल विकसित करने में मदद करें।",
+        "xp": 4
+      },
+      {
+        "title": "पारिवारिक बैठक का समय स्थापित करें",
+        "description": "संरचित संवाद अवसर प्रदान करके काम करता है। उदाहरण: साप्ताहिक पारिवारिक बैठकें आयोजित करें जहां हर कोई सम्मानपूर्वक चिंताओं को व्यक्त कर सकता है और एक साथ समाधान पर काम कर सकता है।",
+        "xp": 3
+      },
+      {
+        "title": "भावनात्मक शब्दावली सिखाएं",
+        "description": "भावनात्मक अभिव्यक्ति में सुधार करके काम करता है। उदाहरण: बच्चों को भावनाओं की पहचान करने में मदद करें: 'यह कहने के बजाय कि यह बेवकूफी है, कहने की कोशिश करें कि मुझे निराशा होती है क्योंकि...'",
+        "xp": 3
+      },
+      {
+        "title": "शांत और निरंतर रहें",
+        "description": "भावनात्मक नियंत्रण बनाए रखने से काम करता है। उदाहरण: गहरी सांस लें, अपनी आवाज कम करें, और जवाब दें: 'मैं इस बातचीत को तब तक जारी नहीं रखूंगा जब तक हम सम्मानपूर्वक बात नहीं कर सकते।'",
+        "xp": 4
+      }
+    ],
+    "yoga": [
+      {
+        "title": "सांस जागरूकता अभ्यास",
+        "description": "भावनाओं को नियंत्रित करने और प्रतिक्रिया को कम करने में मदद करता है। अभ्यास: गुस्से या रक्षात्मक महसूस करने पर 4-7-8 सांस लेना सिखाएं (4 सांस लें, 7 रोकें, 8 छोड़ें)।",
+        "xp": 3
+      },
+      {
+        "title": "आत्मविश्वास के लिए योद्धा मुद्रा",
+        "description": "आंतरिक शक्ति और आत्म-नियंत्रण का निर्माण करता है। अभ्यास: सम्मानजनक संवाद और व्यक्तिगत सीमाओं पर ध्यान केंद्रित करते हुए योद्धा I मुद्रा को पकड़ें।",
+        "xp": 3
+      },
+      {
+        "title": "शांति के लिए बाल मुद्रा",
+        "description": "विनम्रता और भावनात्मक नियंत्रण को बढ़ावा देता है। अभ्यास: अपने आप को केंद्रित करने और संघर्षों को शांति से संबोधित करने के लिए शीतलन अवधि के दौरान इस मुद्रा का उपयोग करें।",
+        "xp": 2
+      },
+      {
+        "title": "आधार के लिए पर्वत मुद्रा",
+        "description": "स्थिरता और धैर्य विकसित करता है। अभ्यास: खड़े होकर गहरी सांस लें, कठिन बातचीत के दौरान शांत रहने की कल्पना करें।",
+        "xp": 2
+      },
+      {
+        "title": "बैठक ध्यान",
+        "description": "सचेत संवाद को बढ़ाता है। अभ्यास: 5-10 मिनट शांति से बैठें, दयालुता से बोलने और करुणा से सुनने पर ध्यान केंद्रित करें।",
+        "xp": 3
+      }
+    ],
+    "relaxation": [
+      {
+        "title": "प्रगतिशील मांसपेशी विश्राम",
+        "description": "संघर्ष से शारीरिक तनाव कम करता है। अभ्यास: शांतिपूर्ण पारिवारिक बातचीत के बारे में सोचते हुए मांसपेशी समूहों को तनाव दें और छोड़ें।",
+        "xp": 3
+      },
+      {
+        "title": "सामंजस्य के लिए निर्देशित कल्पना",
+        "description": "सकारात्मक पारिवारिक संवाद की कल्पना करता है। अभ्यास: पारिवारिक सदस्यों के साथ सम्मानजनक बातचीत और सकारात्मक बातचीत की कल्पना करें।",
+        "xp": 3
+      },
+      {
+        "title": "शांत संगीत चिकित्सा",
+        "description": "शांतिपूर्ण वातावरण बनाता है। अभ्यास: आरामदायक और सम्मानजनक संवाद को बढ़ावा देने के लिए पारिवारिक समय के दौरान नरम, शांत संगीत बजाएं।",
+        "xp": 2
+      },
+      {
+        "title": "प्रकृति ध्वनि ध्यान",
+        "description": "आंतरिक शांति और धैर्य को बढ़ावा देता है। अभ्यास: करुणामय संवाद रणनीतियों पर चिंतन करते हुए समुद्र या जंगल की आवाज़ें सुनें।",
+        "xp": 2
+      },
+      {
+        "title": "सचेत चलना",
+        "description": "गति के माध्यम से भावनाओं को संसाधित करता है। अभ्यास: संवाद चुनौतियों को संबोधित करने के सकारात्मक तरीकों के बारे में सोचते हुए शांत सैर करें।",
+        "xp": 3
+      }
+    ],
+    "cbt": [
+      {
+        "title": "प्रतिक्रियाओं के लिए विचार रिकॉर्ड",
+        "description": "ट्रिगर और विचार पैटर्न की पहचान करता है। अभ्यास: अनादरपूर्ण भाषा से परेशान होने पर लिखें: स्थिति, विचार, भावनाएं, और वैकल्पिक प्रतिक्रियाएं।",
+        "xp": 4
+      },
+      {
+        "title": "व्यवहारिक प्रयोग",
+        "description": "नए संवाद दृष्टिकोणों का परीक्षण करता है। अभ्यास: गुस्से के बजाय जिज्ञासा के साथ जवाब देने की कोशिश करें, फिर परिणामों का मूल्यांकन करें।",
+        "xp": 4
+      },
+      {
+        "title": "संज्ञानात्मक पुनर्गठन",
+        "description": "नकारात्मक सोच पैटर्न को चुनौती देता है। अभ्यास: 'वे जानबूझकर अनादरपूर्ण हो रहे हैं' के बजाय 'वे तनावग्रस्त हो सकते हैं या भावनाओं को व्यक्त करने में मदद की जरूरत है' कोशिश करें।",
+        "xp": 4
+      },
+      {
+        "title": "समस्या-समाधान ढांचा",
+        "description": "व्यवस्थित संघर्ष समाधान विकसित करता है। अभ्यास: समस्या को परिभाषित करें, समाधान पर विचार करें, विकल्पों का मूल्यांकन करें, लागू करें, और एक साथ परिणामों की समीक्षा करें।",
+        "xp": 4
+      },
+      {
+        "title": "संवाद कौशल प्रशिक्षण",
+        "description": "पारिवारिक बातचीत पैटर्न में सुधार करता है। अभ्यास: पारिवारिक चर्चा के दौरान 'मैं' बयान, सक्रिय सुनना, और सत्यापन तकनीकों का उपयोग करें।",
+        "xp": 4
+      }
+    ],
+    "rebt": [
+      {
+        "title": "अतार्किक मान्यताओं पर विवाद",
+        "description": "अवास्तविक अपेक्षाओं को चुनौती देता है। अभ्यास: 'बच्चों को कभी अनादरपूर्ण नहीं होना चाहिए' जैसी मान्यताओं पर सवाल उठाएं और 'बच्चे उचित संवाद सीख रहे हैं' के साथ बदलें।",
+        "xp": 4
+      },
+      {
+        "title": "तर्कसंगत आत्म-चर्चा",
+        "description": "संतुलित दृष्टिकोण विकसित करता है। अभ्यास: 'यह असहनीय है' के बजाय 'यह व्यवहार चुनौतीपूर्ण लेकिन प्रबंधनीय है' जैसे बयानों का उपयोग करें।",
+        "xp": 4
+      },
+      {
+        "title": "स्वीकृति और सहनशीलता",
+        "description": "भावनात्मक लचीलापन बनाता है। अभ्यास: स्वीकार करें कि सम्मानजनक संवाद सीखने में समय और अभ्यास लगता है, असफलताओं को व्यक्तिगत बनाए बिना।",
+        "xp": 4
+      },
+      {
+        "title": "प्राथमिकता बनाम मांग",
+        "description": "भावनात्मक तीव्रता कम करता है। अभ्यास: 'मेरे बच्चे को हमेशा सम्मानजनक होना चाहिए' को 'मैं सम्मानजनक संवाद पसंद करता हूं और इसकी दिशा में काम करूंगा' में बदलें।",
+        "xp": 4
+      },
+      {
+        "title": "भावनात्मक नियंत्रण तकनीकें",
+        "description": "अनादरपूर्ण व्यवहार के प्रति प्रतिक्रियाओं का प्रबंधन करता है। अभ्यास: शांत रहने के लिए तर्कसंगत सोच का उपयोग करें: 'यह व्यवहार अप्रिय है लेकिन विनाशकारी नहीं।'",
+        "xp": 4
+      }
+    ]
+  },
+  "mr": {
+    "commonSuggestions": [
+      {
+        "title": "स्पष्ट संवाद सीमा स्थापित करा",
+        "description": "आदरणीय संवाद मानके स्थापित करून कार्य करते. उदाहरण: आदरपूर्वक बोलण्याबद्दल कौटुंबिक नियम तयार करा आणि अनादरपूर्ण भाषेसाठी सातत्याने परिणाम लागू करा.",
+        "xp": 4
+      },
+      {
+        "title": "आदरणीय संवादाचे मॉडेल तयार करा",
+        "description": "योग्य भाषा वापर दाखवून कार्य करते. उदाहरण: संघर्षादरम्यानही शांत, आदरणीय स्वर वापरा आणि मुद्द्यांना संबोधित करताना नावे घेणे किंवा टोमणे टाकणे टाळा.",
+        "xp": 3
+      },
+      {
+        "title": "नैसर्गिक परिणाम लागू करा",
+        "description": "वर्तनाला परिणामांशी जोडून कार्य करते. उदाहरण: जर अनादरपूर्ण भाषा वापरली तर माफी मागेपर्यंत स्क्रीन टाइम किंवा सामाजिक क्रियाकलाप यांसारखे विशेषाधिकार काढून टाका.",
+        "xp": 4
+      },
+      {
+        "title": "सक्रिय ऐकण्याचा सराव करा",
+        "description": "अंतर्निहित निराशांना संबोधित करून कार्य करते. उदाहरण: मूल अनादरपूर्ण वागत असताना विचारा 'असे वाटते की तुम्ही अस्वस्थ आहात. तुम्हाला काय त्रास देत आहे ते सांगू शकाल का?'",
+        "xp": 3
+      },
+      {
+        "title": "सकारात्मक मजबुतीकरणाचा वापर करा",
+        "description": "चांगल्या संवादाला प्रोत्साहन देऊन कार्य करते. उदाहरण: आदरणीय संवादाची प्रशंसा करा: 'तुम्ही नुकतेच तुमच्या भावना शांतपणे व्यक्त केल्याचे मला खरोखर आवडले.'",
+        "xp": 2
+      },
+      {
+        "title": "थंड होण्याचा कालावधी तयार करा",
+        "description": "वाढ रोखून कार्य करते. उदाहरण: जेव्हा संभाषण गरम होते तेव्हा 10 मिनिटांच्या विश्रांतीची मागणी करा: 'चला एक श्वास घेऊ आणि यावर परत येऊ.'",
+        "xp": 3
+      },
+      {
+        "title": "अंतर्निहित समस्यांना संबोधित करा",
+        "description": "मूळ कारणांना हाताळून कार्य करते. उदाहरण: जर तणावाच्या वेळी उत्तर देणे वाढते तर निरोगी सामना करण्याच्या रणनीती आणि भावनिक नियंत्रण कौशल्ये विकसित करण्यास मदत करा.",
+        "xp": 4
+      },
+      {
+        "title": "कौटुंबिक सभेचा वेळ स्थापित करा",
+        "description": "संरचित संवाद संधी प्रदान करून कार्य करते. उदाहरण: साप्ताहिक कौटुंबिक सभा आयोजित करा जिथे प्रत्येकजण आदरपूर्वक चिंता व्यक्त करू शकतो आणि एकत्र उपायांवर काम करू शकतो.",
+        "xp": 3
+      },
+      {
+        "title": "भावनिक शब्दसंग्रह शिकवा",
+        "description": "भावनिक अभिव्यक्ती सुधारून कार्य करते. उदाहरण: मुलांना भावनांची ओळख करण्यास मदत करा: 'ते मूर्ख आहे असे म्हणण्याऐवजी मला निराशा वाटते कारण... असे म्हणण्याचा प्रयत्न करा.'",
+        "xp": 3
+      },
+      {
+        "title": "शांत आणि सातत्यपूर्ण राहा",
+        "description": "भावनिक नियंत्रण राखून कार्य करते. उदाहरण: दीर्घ श्वास घ्या, आवाज कमी करा आणि उत्तर द्या: 'जोपर्यंत आम्ही आदरपूर्वक बोलू शकत नाही तोपर्यंत मी हे संभाषण चालू ठेवणार नाही.'",
+        "xp": 4
+      }
+    ],
+    "yoga": [
+      {
+        "title": "श्वास जागरूकता सराव",
+        "description": "भावना नियंत्रित करण्यास आणि प्रतिक्रिया कमी करण्यास मदत करते. सराव: राग किंवा बचावात्मक वाटत असताना 4-7-8 श्वास शिकवा (4 श्वास घ्या, 7 धरा, 8 सोडा).",
+        "xp": 3
+      },
+      {
+        "title": "आत्मविश्वासासाठी योद्धा पोझ",
+        "description": "अंतर्गत शक्ती आणि आत्म-नियंत्रण निर्माण करते. सराव: आदरणीय संवाद आणि वैयक्तिक सीमांवर लक्ष केंद्रित करताना योद्धा I पोझ धरा.",
+        "xp": 3
+      },
+      {
+        "title": "शांततेसाठी बाल पोझ",
+        "description": "नम्रता आणि भावनिक नियंत्रणाला प्रोत्साहन देते. सराव: स्वतःला केंद्रित करण्यासाठी आणि संघर्षांना शांततेने संबोधित करण्यासाठी थंड होण्याच्या कालावधीत या पोझचा वापर करा.",
+        "xp": 2
+      },
+      {
+        "title": "आधारासाठी पर्वत पोझ",
+        "description": "स्थिरता आणि धैर्य विकसित करते. सराव: उभे राहा आणि दीर्घ श्वास घ्या, कठीण संभाषणादरम्यान शांत राहण्याची कल्पना करा.",
+        "xp": 2
+      },
+      {
+        "title": "बैठक ध्यान",
+        "description": "सजग संवाद वाढवते. सराव: 5-10 मिनिटे शांतपणे बसा, दयाळूपणाने बोलणे आणि करुणेने ऐकण्यावर लक्ष केंद्रित करा.",
+        "xp": 3
+      }
+    ],
+    "relaxation": [
+      {
+        "title": "प्रगतीशील स्नायू विश्रांती",
+        "description": "संघर्षामुळे शारीरिक तणाव कमी करते. सराव: शांत कौटुंबिक संवादाबद्दल विचार करताना स्नायू गट ताणून सोडा.",
+        "xp": 3
+      },
+      {
+        "title": "सामंजस्यासाठी मार्गदर्शित कल्पना",
+        "description": "सकारात्मक कौटुंबिक संवादाची कल्पना करते. सराव: कुटुंबातील सदस्यांसोबत आदरणीय संभाषण आणि सकारात्मक संवादाची कल्पना करा.",
+        "xp": 3
+      },
+      {
+        "title": "शांत संगीत चिकित्सा",
+        "description": "शांत वातावरण निर्माण करते. सराव: आरामदायक आणि आदरणीय संवादाला प्रोत्साहन देण्यासाठी कौटुंबिक वेळेत मऊ, शांत संगीत वाजवा.",
+        "xp": 2
+      },
+      {
+        "title": "निसर्ग ध्वनी ध्यान",
+        "description": "अंतर्गत शांती आणि धैर्याला प्रोत्साहन देते. सराव: दयाळू संवाद रणनीतींवर विचार करताना समुद्र किंवा जंगलाचे आवाज ऐका.",
+        "xp": 2
+      },
+      {
+        "title": "सजग चालणे",
+        "description": "हालचालीतून भावना प्रक्रिया करते. सराव: संवाद आव्हानांना संबोधित करण्याच्या सकारात्मक मार्गांबद्दल विचार करताना शांत फेरी मारा.",
+        "xp": 3
+      }
+    ],
+    "cbt": [
+      {
+        "title": "प्रतिक्रियांसाठी विचार रेकॉर्ड",
+        "description": "ट्रिगर आणि विचार पॅटर्न ओळखते. सराव: अनादरपूर्ण भाषेमुळे अस्वस्थ झाल्यावर लिहा: परिस्थिती, विचार, भावना आणि पर्यायी प्रतिक्रिया.",
+        "xp": 4
+      },
+      {
+        "title": "वर्तणूक प्रयोग",
+        "description": "नवीन संवाद दृष्टिकोनांची चाचणी करते. सराव: रागाऐवजी कुतूहलाने उत्तर देण्याचा प्रयत्न करा, नंतर परिणामांचे मूल्यांकन करा.",
+        "xp": 4
+      },
+      {
+        "title": "संज्ञानात्मक पुनर्रचना",
+        "description": "नकारात्मक विचार पॅटर्नला आव्हान देते. सराव: 'ते जाणूनबुजून अनादरपूर्ण आहेत' ऐवजी 'ते तणावग्रस्त असू शकतात किंवा भावना व्यक्त करण्यास मदतीची गरज असू शकते' प्रयत्न करा.",
+        "xp": 4
+      },
+      {
+        "title": "समस्या-समाधान चौकट",
+        "description": "पद्धतशीर संघर्ष निराकरण विकसित करते. सराव: समस्या परिभाषित करा, उपायांवर विचार मंथन करा, पर्यायांचे मूल्यांकन करा, अंमलबजावणी करा आणि एकत्र परिणामांचे पुनरावलोकन करा.",
+        "xp": 4
+      },
+      {
+        "title": "संवाद कौशल्य प्रशिक्षण",
+        "description": "कौटुंबिक संवाद पॅटर्न सुधारते. सराव: कौटुंबिक चर्चेदरम्यान 'मी' विधाने, सक्रिय ऐकणे आणि प्रमाणीकरण तंत्रे वापरा.",
+        "xp": 4
+      }
+    ],
+    "rebt": [
+      {
+        "title": "अतार्किक श्रद्धांवर वाद",
+        "description": "अवास्तव अपेक्षांना आव्हान देते. सराव: 'मुलांनी कधीच अनादरपूर्ण नसावे' यासारख्या श्रद्धांवर प्रश्न विचारा आणि 'मुले योग्य संवाद शिकत आहेत' सह बदला.",
+        "xp": 4
+      },
+      {
+        "title": "तर्कसंगत स्वत:शी बोलणे",
+        "description": "संतुलित दृष्टिकोन विकसित करते. सराव: 'हे असह्य आहे' ऐवजी 'हे वर्तन आव्हानात्मक पण व्यवस्थापन करण्यायोग्य आहे' यासारखी विधाने वापरा.",
+        "xp": 4
+      },
+      {
+        "title": "स्वीकार आणि सहनशीलता",
+        "description": "भावनिक लवचिकता निर्माण करते. सराव: स्वीकारा की आदरणीय संवाद शिकण्यास वेळ आणि सराव लागतो, अपयशांना वैयक्तिक न बनवता.",
+        "xp": 4
+      },
+      {
+        "title": "प्राधान्य विरुद्ध मागणी",
+        "description": "भावनिक तीव्रता कमी करते. सराव: 'माझ्या मुलाने नेहमी आदरणीय असावे' ते 'मला आदरणीय संवाद आवडतो आणि मी त्या दिशेने काम करेन' मध्ये बदला.",
+        "xp": 4
+      },
+      {
+        "title": "भावनिक नियंत्रण तंत्रे",
+        "description": "अनादरपूर्ण वर्तनाकडे प्रतिक्रिया व्यवस्थापित करते. सराव: शांत राहण्यासाठी तर्कसंगत विचाराचा वापर करा: 'हे वर्तन अप्रिय आहे पण विनाशकारी नाही.'",
+        "xp": 4
+      }
+    ]
+  }
+}

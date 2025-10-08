@@ -1,0 +1,1253 @@
+{
+  "metadata": {
+    "name": "Self-esteem and Self-identity Interventions",
+    "description": "Comprehensive collection of therapeutic interventions for building self-esteem, confidence, and personal identity",
+    "version": "1.0",
+    "totalInterventions": 40,
+    "lastUpdated": "2025-08-05",
+    "categories": ["Common Suggestions", "Yoga", "Relaxation", "CBT", "REBT"],
+    "languages": ["en", "hi", "mr"]
+  },
+  "interventions": [
+    {
+      "id": "se_common_001",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Practice Daily Positive Affirmations",
+          "description": "Start each day by looking in the mirror and stating three positive things about yourself. For example, 'I am capable', 'I am worthy of love', or 'I have unique strengths that contribute to the world'.",
+          "journalTemplate": {
+            "prompt": "What three positive affirmations did you practice today?",
+            "reflection": "How did repeating these affirmations make you feel about yourself?"
+          }
+        },
+        "hi": {
+          "title": "दैनिक सकारात्मक पुष्टि का अभ्यास करें",
+          "description": "हर दिन की शुरुआत आईने में देखकर अपने बारे में तीन सकारात्मक बातें कहकर करें। उदाहरण के लिए, 'मैं सक्षम हूं', 'मैं प्रेम के योग्य हूं', या 'मेरे पास अनोखी शक्तियां हैं जो दुनिया में योगदान देती हैं'।",
+          "journalTemplate": {
+            "prompt": "आज आपने कौन सी तीन सकारात्मक पुष्टि का अभ्यास किया?",
+            "reflection": "इन पुष्टियों को दोहराने से आप अपने बारे में कैसा महसूस करते हैं?"
+          }
+        },
+        "mr": {
+          "title": "दैनंदिन सकारात्मक पुष्टी करा",
+          "description": "दररोज सुरुवात आरशात पाहून स्वतःबद्दल तीन सकारात्मक गोष्टी सांगून करा. उदाहरणार्थ, 'मी सक्षम आहे', 'मी प्रेमाला पात्र आहे', किंवा 'माझ्याकडे अनोख्या शक्ती आहेत ज्या जगाला योगदान देतात'।",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणत्या तीन सकारात्मक पुष्टीचा सराव केला?",
+            "reflection": "या पुष्टी पुन्हा सांगल्याने तुम्हाला स्वतःबद्दल कसे वाटले?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_002",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Create a Personal Achievement Journal",
+          "description": "Keep a daily record of your accomplishments, no matter how small. Include compliments received, tasks completed, and moments when you felt proud of yourself.",
+          "journalTemplate": {
+            "prompt": "What achievement, big or small, are you proud of today?",
+            "reflection": "How does acknowledging this achievement affect your self-perception?"
+          }
+        },
+        "hi": {
+          "title": "व्यक्तिगत उपलब्धि पत्रिका बनाएं",
+          "description": "अपनी उपलब्धियों का दैनिक रिकॉर्ड रखें, चाहे वे कितनी भी छोटी हों। प्राप्त तारीफें, पूरे किए गए कार्य, और वे क्षण शामिल करें जब आपने अपने पर गर्व महसूस किया।",
+          "journalTemplate": {
+            "prompt": "आज आप किस उपलब्धि पर गर्व महसूस करते हैं, चाहे वह बड़ी हो या छोटी?",
+            "reflection": "इस उपलब्धि को स्वीकार करने से आपकी स्व-धारणा पर क्या प्रभाव पड़ता है?"
+          }
+        },
+        "mr": {
+          "title": "वैयक्तिक यशाची नोंदवही तयार करा",
+          "description": "तुमच्या यशाची दैनंदिन नोंद ठेवा, ती कितीही लहान असली तरी. मिळालेली प्रशंसा, पूर्ण झालेली कामे आणि ज्या क्षणी तुम्हाला स्वतःचा अभिमान वाटला ते समाविष्ट करा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्हाला कोणत्या यशाचा अभिमान आहे, ते मोठे असो वा लहान?",
+            "reflection": "या यशाला मान्यता देल्याने तुमच्या स्व-समजुतीवर काय परिणाम होतो?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_003",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Set and Celebrate Small Goals",
+          "description": "Break larger objectives into smaller, achievable goals. Celebrate each milestone to build confidence and momentum. For example, if learning a new skill, celebrate completing each lesson or chapter.",
+          "journalTemplate": {
+            "prompt": "What small goal did you achieve today, and how did you celebrate it?",
+            "reflection": "How does celebrating small wins impact your motivation and self-worth?"
+          }
+        },
+        "hi": {
+          "title": "छोटे लक्ष्य निर्धारित करें और उनका जश्न मनाएं",
+          "description": "बड़े उद्देश्यों को छोटे, प्राप्त करने योग्य लक्ष्यों में बांटें। आत्मविश्वास और गति बनाने के लिए हर मील का पत्थर मनाएं। उदाहरण के लिए, यदि कोई नया कौशल सीख रहे हैं, तो हर पाठ या अध्याय पूरा करने का जश्न मनाएं।",
+          "journalTemplate": {
+            "prompt": "आज आपने कौन सा छोटा लक्ष्य हासिल किया, और आपने इसका जश्न कैसे मनाया?",
+            "reflection": "छोटी जीत का जश्न मनाने से आपकी प्रेरणा और स्वयं की कीमत पर क्या प्रभाव पड़ता है?"
+          }
+        },
+        "mr": {
+          "title": "लहान ध्येये ठेवा आणि त्यांचा उत्सव साजरा करा",
+          "description": "मोठी उद्दिष्टे लहान, साध्य करण्यायोग्य ध्येयांमध्ये विभागून करा. आत्मविश्वास आणि गती निर्माण करण्यासाठी प्रत्येक टप्प्याचा उत्सव साजरा करा. उदाहरणार्थ, नवीन कौशल्य शिकत असल्यास, प्रत्येक धडा किंवा प्रकरण पूर्ण केल्याचा उत्सव साजरा करा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणते लहान ध्येय साध्य केले आणि त्याचा उत्सव कसा साजरा केला?",
+            "reflection": "लहान विजयाचा उत्सव साजरा केल्याने तुमच्या प्रेरणा आणि स्वमूल्यावर काय परिणाम होतो?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_004",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Practice Self-Compassion",
+          "description": "Treat yourself with the same kindness you would show a good friend. When you make mistakes, respond with understanding rather than harsh self-criticism. Remember that imperfection is part of being human.",
+          "journalTemplate": {
+            "prompt": "Describe a moment today when you practiced self-compassion instead of self-criticism.",
+            "reflection": "How did showing yourself kindness change your emotional state?"
+          }
+        },
+        "hi": {
+          "title": "स्व-करुणा का अभ्यास करें",
+          "description": "अपने साथ वैसी ही दयालुता का व्यवहार करें जैसा आप एक अच्छे मित्र के साथ करते हैं। जब आप गलतियां करें, तो कठोर आत्म-आलोचना के बजाय समझदारी से जवाब दें। याद रखें कि अपूर्णता इंसान होने का हिस्सा है।",
+          "journalTemplate": {
+            "prompt": "आज के एक ऐसे क्षण का वर्णन करें जब आपने आत्म-आलोचना के बजाय स्व-करुणा का अभ्यास किया।",
+            "reflection": "अपने साथ दयालुता दिखाने से आपकी भावनात्मक स्थिति कैसे बदली?"
+          }
+        },
+        "mr": {
+          "title": "आत्म-करुणेचा सराव करा",
+          "description": "स्वतःशी तसाच दयाळूपणाचा वागणूक करा जसा तुम्ही चांगल्या मित्राशी करता. चुका केल्यावर कठोर आत्म-टीकेऐवजी समजूतदारपणाने प्रतिसाद द्या. लक्षात ठेवा की अपूर्णता ही मानव असण्याचा भाग आहे.",
+          "journalTemplate": {
+            "prompt": "आज अशा क्षणाचे वर्णन करा जेव्हा तुम्ही आत्म-टीकेऐवजी आत्म-करुणेचा सराव केला.",
+            "reflection": "स्वतःशी दयाळूपणा दाखवल्याने तुमची भावनिक स्थिती कशी बदलली?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_005",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Identify and Challenge Negative Self-Talk",
+          "description": "Pay attention to your inner critic and actively challenge negative thoughts about yourself. Replace 'I always fail' with 'I'm learning and improving.' Create a list of realistic, positive affirmations.",
+          "journalTemplate": {
+            "prompt": "What negative thought about yourself did you challenge today, and what positive replacement did you use?",
+            "reflection": "How did changing your self-talk affect your confidence and actions?"
+          }
+        },
+        "hi": {
+          "title": "नकारात्मक स्व-बातचीत की पहचान करें और उसे चुनौती दें",
+          "description": "अपने आंतरिक आलोचक पर ध्यान दें और अपने बारे में नकारात्मक विचारों को सक्रिय रूप से चुनौती दें। 'मैं हमेशा असफल होता हूं' को 'मैं सीख रहा हूं और सुधार रहा हूं' से बदलें। यथार्थवादी, सकारात्मक पुष्टिकरणों की एक सूची बनाएं।",
+          "journalTemplate": {
+            "prompt": "आज आपने अपने बारे में किस नकारात्मक विचार को चुनौती दी, और आपने कौन सा सकारात्मक विकल्प इस्तेमाल किया?",
+            "reflection": "अपनी स्व-बातचीत बदलने से आपके आत्मविश्वास और कार्यों पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "नकारात्मक आत्म-संवादाची ओळख करा आणि त्याला आव्हान द्या",
+          "description": "तुमच्या अंतर्गत टीकाकाराकडे लक्ष द्या आणि स्वतःबद्दलच्या नकारात्मक विचारांना सक्रियपणे आव्हान द्या. 'मी नेहमी अपयशी होतो' याला 'मी शिकत आहे आणि सुधारत आहे' मध्ये बदला. वास्तववादी, सकारात्मक पुष्टीकरणांची यादी तयार करा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही स्वतःबद्दलच्या कोणत्या नकारात्मक विचाराला आव्हान दिले आणि त्याऐवजी कोणता सकारात्मक पर्याय वापरला?",
+            "reflection": "तुमचा आत्म-संवाद बदलल्याने तुमच्या आत्मविश्वास आणि कृतींवर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_006",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Develop Personal Boundaries",
+          "description": "Learn to say 'no' to requests that drain your energy or compromise your values. Setting healthy boundaries protects your time, energy, and self-worth. Practice assertive communication.",
+          "journalTemplate": {
+            "prompt": "What boundary did you set or maintain today, and how did it make you feel?",
+            "reflection": "How does having clear boundaries impact your sense of self-worth?"
+          }
+        },
+        "hi": {
+          "title": "व्यक्तिगत सीमाओं का विकास करें",
+          "description": "उन अनुरोधों को 'न' कहना सीखें जो आपकी ऊर्जा को समाप्त करते हैं या आपके मूल्यों से समझौता करते हैं। स्वस्थ सीमाएं निर्धारित करना आपके समय, ऊर्जा और स्वयं की कीमत की रक्षा करता है। मुखर संवाद का अभ्यास करें।",
+          "journalTemplate": {
+            "prompt": "आज आपने कौन सी सीमा निर्धारित की या बनाए रखी, और इससे आपको कैसा लगा?",
+            "reflection": "स्पष्ट सीमाएं होने से आपकी स्वयं की कीमत की भावना पर क्या प्रभाव पड़ता है?"
+          }
+        },
+        "mr": {
+          "title": "वैयक्तिक सीमांचा विकास करा",
+          "description": "तुमची ऊर्जा कमी करणाऱ्या किंवा तुमच्या मूल्यांशी तडजोड करणाऱ्या विनंत्यांना 'नाही' म्हणायला शिका. निरोगी सीमा निश्चित करणे तुमचा वेळ, ऊर्जा आणि स्वमूल्याचे संरक्षण करते. ठामपणे संवाद साधण्याचा सराव करा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणती सीमा निश्चित केली किंवा कायम ठेवली आणि त्यामुळे तुम्हाला कसे वाटले?",
+            "reflection": "स्पष्ट सीमा असल्याने तुमच्या स्वमूल्याच्या भावनेवर काय परिणाम होतो?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_007",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Engage in Activities You Enjoy",
+          "description": "Make time for hobbies, interests, and activities that bring you joy and fulfillment. Whether it's reading, gardening, painting, or playing music, engaging in enjoyable activities boosts self-esteem.",
+          "journalTemplate": {
+            "prompt": "What activity brought you joy today, and how did it make you feel about yourself?",
+            "reflection": "How do enjoyable activities contribute to your sense of identity and self-worth?"
+          }
+        },
+        "hi": {
+          "title": "उन गतिविधियों में संलग्न हों जिनका आप आनंद लेते हैं",
+          "description": "शौक, रुचियों और गतिविधियों के लिए समय निकालें जो आपको खुशी और संतुष्टि देती हैं। चाहे वह पढ़ना हो, बागवानी हो, चित्रकारी हो, या संगीत बजाना हो, आनंददायक गतिविधियों में संलग्न होना आत्म-सम्मान बढ़ाता है।",
+          "journalTemplate": {
+            "prompt": "आज कौन सी गतिविधि ने आपको खुशी दी, और इससे आपको अपने बारे में कैसा लगा?",
+            "reflection": "आनंददायक गतिविधियां आपकी पहचान और स्वयं की कीमत की भावना में कैसे योगदान देती हैं?"
+          }
+        },
+        "mr": {
+          "title": "ज्या कामांचा तुम्हाला आनंद होतो त्यात भाग घ्या",
+          "description": "छंद, आवडी आणि अशा कामांसाठी वेळ काढा ज्यामुळे तुम्हाला आनंद आणि समाधान मिळते. वाचन, बागकाम, चित्रकला किंवा संगीत वाजवणे यासारख्या आनंददायी कामांत गुंतणे आत्मसन्मान वाढवते.",
+          "journalTemplate": {
+            "prompt": "आज कोणत्या कामाने तुम्हाला आनंद दिला आणि त्यामुळे स्वतःबद्दल तुम्हाला कसे वाटले?",
+            "reflection": "आनंददायी कामे तुमच्या ओळख आणि स्वमूल्याच्या भावनेत कसे योगदान देतात?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_008",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Surround Yourself with Positive People",
+          "description": "Seek out relationships with people who support, encourage, and believe in you. Limit time with those who consistently criticize or undermine your confidence. Choose your social circle wisely.",
+          "journalTemplate": {
+            "prompt": "Who in your life made you feel valued and supported today?",
+            "reflection": "How do positive relationships influence your self-perception and confidence?"
+          }
+        },
+        "hi": {
+          "title": "अपने आप को सकारात्मक लोगों से घेरें",
+          "description": "उन लोगों के साथ रिश्ते बनाएं जो आपका समर्थन करते हैं, प्रोत्साहित करते हैं, और आप पर विश्वास करते हैं। उन लोगों के साथ समय सीमित करें जो लगातार आपकी आलोचना करते हैं या आपके आत्मविश्वास को कमजोर करते हैं। अपने सामाजिक दायरे को बुद्धिमानी से चुनें।",
+          "journalTemplate": {
+            "prompt": "आज आपके जीवन में किसने आपको मूल्यवान और समर्थित महसूस कराया?",
+            "reflection": "सकारात्मक रिश्ते आपकी स्व-धारणा और आत्मविश्वास को कैसे प्रभावित करते हैं?"
+          }
+        },
+        "mr": {
+          "title": "स्वतःला सकारात्मक लोकांनी वेढून घ्या",
+          "description": "अशा लोकांशी नातेसंबंध शोधा जे तुमचे समर्थन करतात, प्रोत्साहन देतात आणि तुमच्यावर विश्वास ठेवतात. जे लोक सातत्याने टीका करतात किंवा तुमचा आत्मविश्वास कमी करतात त्यांच्यासोबतचा वेळ मर्यादित करा. तुमचे सामाजिक वर्तुळ हुशारीने निवडा.",
+          "journalTemplate": {
+            "prompt": "आज तुमच्या आयुष्यातील कोणी तुम्हाला मूल्यवान आणि समर्थित वाटू दिले?",
+            "reflection": "सकारात्मक नातेसंबंध तुमच्या स्व-समजुती आणि आत्मविश्वासावर कसा प्रभाव टाकतात?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_009",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Learn New Skills",
+          "description": "Challenge yourself to acquire new abilities or improve existing ones. Whether it's learning a language, developing a talent, or mastering a hobby, growth builds confidence and expands your sense of identity.",
+          "journalTemplate": {
+            "prompt": "What new skill or improvement did you work on today?",
+            "reflection": "How does learning and growing impact your confidence and self-image?"
+          }
+        },
+        "hi": {
+          "title": "नए कौशल सीखें",
+          "description": "नई क्षमताओं को हासिल करने या मौजूदा को बेहतर बनाने के लिए खुद को चुनौती दें। चाहे वह भाषा सीखना हो, किसी प्रतिभा का विकास करना हो, या किसी शौक में महारत हासिल करना हो, विकास आत्मविश्वास बनाता है और आपकी पहचान की भावना का विस्तार करता है।",
+          "journalTemplate": {
+            "prompt": "आज आपने किस नए कौशल या सुधार पर काम किया?",
+            "reflection": "सीखना और बढ़ना आपके आत्मविश्वास और स्व-छवि पर कैसे प्रभाव डालता है?"
+          }
+        },
+        "mr": {
+          "title": "नवीन कौशल्ये शिका",
+          "description": "नवीन क्षमता मिळवण्यासाठी किंवा विद्यमान सुधारण्यासाठी स्वतःला आव्हान द्या. भाषा शिकणे, प्रतिभा विकसित करणे किंवा छंदात प्राविण्य मिळवणे, वाढ आत्मविश्वास निर्माण करते आणि तुमच्या ओळखीची भावना वाढवते.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणत्या नवीन कौशल्या किंवा सुधारणेवर काम केले?",
+            "reflection": "शिकणे आणि वाढणे तुमच्या आत्मविश्वास आणि स्व-प्रतिमेवर कसा प्रभाव टाकते?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_common_010",
+      "category": "Common Suggestions",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Practice Gratitude for Yourself",
+          "description": "Take time to appreciate your own qualities, efforts, and progress. Write down three things you're grateful for about yourself each day - your kindness, resilience, creativity, or any positive trait.",
+          "journalTemplate": {
+            "prompt": "What three qualities or actions of yours are you grateful for today?",
+            "reflection": "How does practicing self-gratitude change your relationship with yourself?"
+          }
+        },
+        "hi": {
+          "title": "अपने लिए कृतज्ञता का अभ्यास करें",
+          "description": "अपने गुणों, प्रयासों और प्रगति की सराहना करने के लिए समय निकालें। हर दिन अपने बारे में तीन चीजें लिखें जिनके लिए आप आभारी हैं - आपकी दयालुता, लचीलापन, रचनात्मकता, या कोई भी सकारात्मक गुण।",
+          "journalTemplate": {
+            "prompt": "आज आप अपने किन तीन गुणों या कार्यों के लिए आभारी हैं?",
+            "reflection": "स्व-कृतज्ञता का अभ्यास करने से अपने साथ आपका रिश्ता कैसे बदलता है?"
+          }
+        },
+        "mr": {
+          "title": "स्वतःसाठी कृतज्ञता व्यक्त करा",
+          "description": "तुमच्या गुणांची, प्रयत्नांची आणि प्रगतीची प्रशंसा करण्यासाठी वेळ काढा. दररोज स्वतःबद्दल तीन गोष्टी लिहा ज्यांसाठी तुम्ही कृतज्ञ आहात - तुमची दयाळूता, लवचिकता, सर्जनशीलता किंवा कोणताही सकारात्मक गुण.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही तुमच्या कोणत्या तीन गुणांसाठी किंवा कृतींसाठी कृतज्ञ आहात?",
+            "reflection": "स्व-कृतज्ञता व्यक्त केल्याने स्वतःशी तुमचे नाते कसे बदलते?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_001",
+      "category": "CBT",
+      "xp": 4,
+      "translations": {
+        "en": {
+          "title": "Positive Self-Talk",
+          "description": "This helps to counteract negative thoughts and beliefs about oneself. Practice replacing negative thoughts with positive ones. For example, instead of thinking 'I'm a failure,' think 'I can learn from my mistakes.'",
+          "journalTemplate": {
+            "prompt": "What negative thought did you replace with positive self-talk today?",
+            "reflection": "How did changing your inner dialogue affect your mood and confidence?"
+          }
+        },
+        "hi": {
+          "title": "सकारात्मक आत्म-चर्चा",
+          "description": "यह अपने बारे में नकारात्मक विचारों और मान्यताओं का मुकाबला करने में मदद करता है। नकारात्मक विचारों को सकारात्मक विचारों से बदलने का अभ्यास करें। उदाहरण के लिए, 'मैं असफल हूं' सोचने के बजाय, 'मैं अपनी गलतियों से सीख सकता हूं' सोचें।",
+          "journalTemplate": {
+            "prompt": "आज आपने किस नकारात्मक विचार को सकारात्मक आत्म-चर्चा से बदला?",
+            "reflection": "अपने आंतरिक संवाद को बदलने से आपके मूड और आत्मविश्वास पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "सकारात्मक आत्म-चर्चा",
+          "description": "हे स्वतःबद्दलच्या नकारात्मक विचार आणि समजुतींचा सामना करण्यास मदत करते. नकारात्मक विचारांना सकारात्मक विचारांनी बदलण्याचा सराव करा. उदाहरणार्थ, 'मी अपयशी आहे' विचारण्याऐवजी 'मी माझ्या चुकांमधून शिकू शकतो' विचारा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणता नकारात्मक विचार सकारात्मक आत्म-चर्चेने बदलला?",
+            "reflection": "तुमच्या अंतर्गत संवादात बदल केल्याने तुमच्या मूड आणि आत्मविश्वासावर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_002",
+      "category": "CBT",
+      "xp": 7,
+      "translations": {
+        "en": {
+          "title": "Cognitive Restructuring",
+          "description": "This helps to challenge and change irrational beliefs. Identify irrational beliefs about yourself and replace them with more rational ones. For example, if you believe you're worthless because you made a mistake, challenge this belief and replace it with the understanding that everyone makes mistakes and it doesn't define your worth.",
+          "journalTemplate": {
+            "prompt": "What irrational belief about yourself did you challenge today?",
+            "reflection": "How did restructuring your thoughts affect your emotional state and self-perception?"
+          }
+        },
+        "hi": {
+          "title": "संज्ञानात्मक पुनर्गठन",
+          "description": "यह तर्कहीन मान्यताओं को चुनौती देने और बदलने में मदत करता है। अपने बारे में तर्कहीन मान्यताओं को पहचानें और उन्हें अधिक तर्कसंगत विचारों से बदलें। उदाहरण के लिए, यदि आप मानते हैं कि आप बेकार हैं क्योंकि आपने गलती की है, तो इस विश्वास को चुनौती दें और इसे इस समझ से बदलें कि हर कोई गलतियां करता है और यह आपकी कीमत को परिभाषित नहीं करता।",
+          "journalTemplate": {
+            "prompt": "आज आपने अपने बारे में कौन सी तर्कहीन मान्यता को चुनौती दी?",
+            "reflection": "अपने विचारों को पुनर्गठित करने से आपकी भावनात्मक स्थिति और स्व-धारणा पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "संज्ञानात्मक पुनर्रचना",
+          "description": "हे तर्कहीन समजुतींना आव्हान देण्यास आणि बदलण्यास मदत करते. स्वतःबद्दलच्या तर्कहीन समजुती ओळखा आणि त्यांना अधिक तर्कसंगत विचारांनी बदला. उदाहरणार्थ, जर तुम्हाला वाटते की तुम्ही निरुपयोगी आहात कारण तुम्ही चूक केली आहे, तर या समजुतीला आव्हान द्या आणि त्याऐवजी हे समजून घ्या की प्रत्येकजण चुका करतो आणि त्यामुळे तुमचे मूल्य ठरवले जात नाही.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही स्वतःबद्दलच्या कोणत्या तर्कहीन समजुतीला आव्हान दिले?",
+            "reflection": "तुमच्या विचारांची पुनर्रचना केल्याने तुमच्या भावनिक स्थिती आणि स्व-समजुतीवर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_rebt_001",
+      "category": "REBT",
+      "xp": 6,
+      "translations": {
+        "en": {
+          "title": "Acceptance of Self",
+          "description": "Accepting oneself, including flaws and strengths, is a crucial step towards building self-esteem and self-identity. It helps in reducing self-criticism and promotes self-love. Practice self-acceptance by acknowledging your strengths and weaknesses.",
+          "journalTemplate": {
+            "prompt": "List three strengths and three areas for growth you recognize in yourself today.",
+            "reflection": "How does accepting both your strengths and weaknesses affect your self-relationship?"
+          }
+        },
+        "hi": {
+          "title": "स्व-स्वीकृति",
+          "description": "दोषों और शक्तियों सहित अपने आप को स्वीकार करना आत्मसम्मान और स्व-पहचान निर्माण की दिशा में एक महत्वपूर्ण कदम है। यह आत्म-आलोचना को कम करने और आत्म-प्रेम को बढ़ावा देने में मदद करता है। अपनी शक्तियों और कमजोरियों को स्वीकार करके स्व-स्वीकृति का अभ्यास करें।",
+          "journalTemplate": {
+            "prompt": "आज आप अपने में तीन शक्तियां और तीन सुधार के क्षेत्र सूचीबद्ध करें।",
+            "reflection": "अपनी शक्तियों और कमजोरियों दोनों को स्वीकार करने से आपके स्व-संबंध पर क्या प्रभाव पड़ता है?"
+          }
+        },
+        "mr": {
+          "title": "स्व-स्वीकार",
+          "description": "दोष आणि शक्तींसह स्वतःला स्वीकारणे हे स्वाभिमान आणि स्व-ओळख निर्माण करण्याच्या दिशेने एक महत्त्वाचे पाऊल आहे. यामुळे आत्म-टीका कमी होण्यास आणि आत्म-प्रेमाला चालना मिळण्यास मदत होते. तुमच्या शक्ती आणि कमकुवतपणा मान्य करून स्व-स्वीकाराचा सराव करा.",
+          "journalTemplate": {
+            "prompt": "आज तुमच्यामध्ये तीन शक्ती आणि तीन सुधारणेची क्षेत्रे यादी करा.",
+            "reflection": "तुमच्या शक्ती आणि कमकुवतपणा दोन्हींना स्वीकारल्याने तुमच्या स्व-नात्यावर काय परिणाम होतो?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_003",
+      "category": "CBT",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Self-Compassion Practice",
+          "description": "This helps to treat yourself with kindness and understanding. Practice self-compassion by speaking to yourself as you would a friend. For example, if you're feeling down, tell yourself 'It's okay to feel this way, everyone has bad days.'",
+          "journalTemplate": {
+            "prompt": "How did you practice self-compassion instead of self-criticism today?",
+            "reflection": "What difference did you notice in your emotional well-being when you treated yourself with kindness?"
+          }
+        },
+        "hi": {
+          "title": "स्व-करुणा अभ्यास",
+          "description": "यह अपने साथ दयालुता और समझदारी का व्यवहार करने में मदद करता है। अपने साथ वैसे ही बात करके स्व-करुणा का अभ्यास करें जैसे आप एक मित्र से करते हैं। उदाहरण के लिए, यदि आप उदास महसूस कर रहे हैं, तो अपने आप से कहें 'इस तरह महसूस करना ठीक है, सभी के बुरे दिन होते हैं।'",
+          "journalTemplate": {
+            "prompt": "आज आपने आत्म-आलोचना के बजाय स्व-करुणा का अभ्यास कैसे किया?",
+            "reflection": "जब आपने अपने साथ दयालुता का व्यवहार किया तो आपकी भावनात्मक खुशहाली में क्या अंतर देखा?"
+          }
+        },
+        "mr": {
+          "title": "आत्म-करुणेचा सराव",
+          "description": "हे स्वतःशी दयाळूपणा आणि समजूतदारपणाने वागण्यास मदत करते. मित्राशी बोलतात तसेच स्वतःशी बोलून आत्म-करुणेचा सराव करा. उदाहरणार्थ, जर तुम्ही उदास आहात तर स्वतःला सांगा 'असे वाटणे ठीक आहे, प्रत्येकाचे वाईट दिवस असतात.'",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही आत्म-टीकेऐवजी आत्म-करुणेचा सराव कसा केला?",
+            "reflection": "जेव्हा तुम्ही स्वतःशी दयाळूपणाने वागलात तेव्हा तुमच्या भावनिक कल्याणात कोणता फरक लक्षात आला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_004",
+      "category": "CBT",
+      "xp": 4,
+      "translations": {
+        "en": {
+          "title": "Mindfulness Practice",
+          "description": "This helps to focus on the present moment without judgment. Practice mindfulness through meditation or mindful activities like walking or eating. For example, spend a few minutes each day focusing on your breath or the sensations of eating a piece of fruit.",
+          "journalTemplate": {
+            "prompt": "What mindfulness practice did you engage in today, and what did you observe?",
+            "reflection": "How did staying present and non-judgmental affect your relationship with yourself?"
+          }
+        },
+        "hi": {
+          "title": "सचेतन अभ्यास",
+          "description": "यह बिना निर्णय के वर्तमान क्षण पर ध्यान केंद्रित करने में मदद करता है। ध्यान या चलना या खाना जैसी सचेत गतिविधियों के माध्यम से सचेतन का अभ्यास करें। उदाहरण के लिए, हर दिन कुछ मिनट अपनी सांस पर या फल खाने की संवेदनाओं पर ध्यान दें।",
+          "journalTemplate": {
+            "prompt": "आज आपने कौन सा सचेतन अभ्यास किया, और आपने क्या देखा?",
+            "reflection": "वर्तमान में रहने और निर्णय न करने से आपके साथ आपके रिश्ते पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "सजगता सराव",
+          "description": "हे निर्णयाशिवाय सध्याच्या क्षणावर लक्ष केंद्रित करण्यास मदत करते. ध्यान किंवा चालणे किंवा खाणे यासारख्या सजग क्रियाकलापांद्वारे सजगतेचा सराव करा. उदाहरणार्थ, दररोज काही मिनिटे श्वासावर किंवा फळ खाण्याच्या संवेदनांवर लक्ष केंद्रित करा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणता सजगता सराव केला आणि तुम्हाला काय लक्षात आले?",
+            "reflection": "वर्तमानात राहिल्याने आणि निर्णय न घेतल्याने स्वतःशी असलेल्या तुमच्या नात्यावर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_005",
+      "category": "CBT",
+      "xp": 6,
+      "translations": {
+        "en": {
+          "title": "Assertiveness Training",
+          "description": "This helps to express your needs and wants effectively. Practice assertiveness by expressing your feelings and needs in a respectful way. For example, if someone is treating you poorly, tell them how it makes you feel and ask them to treat you with respect.",
+          "journalTemplate": {
+            "prompt": "Describe a situation where you practiced assertiveness today.",
+            "reflection": "How did being assertive affect your self-confidence and relationships?"
+          }
+        },
+        "hi": {
+          "title": "दृढ़ता प्रशिक्षण",
+          "description": "यह आपकी जरूरतों और इच्छाओं को प्रभावी रूप से व्यक्त करने में मदद करता है। सम्मानजनक तरीके से अपनी भावनाओं और जरूरतों को व्यक्त करके दृढ़ता का अभ्यास करें। उदाहरण के लिए, यदि कोई आपके साथ बुरा व्यवहार कर रहा है, तो उन्हें बताएं कि इससे आप कैसा महसूस करते हैं और उनसे कहें कि वे आपके साथ सम्मान से पेश आएं।",
+          "journalTemplate": {
+            "prompt": "आज आपने किस स्थिति में दृढ़ता का अभ्यास किया इसका वर्णन करें।",
+            "reflection": "दृढ़ रहने से आपके आत्मविश्वास और रिश्तों पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "ठामपणाचे प्रशिक्षण",
+          "description": "हे तुमच्या गरजा आणि इच्छा प्रभावीपणे व्यक्त करण्यास मदत करते. आदरपूर्वक तुमच्या भावना आणि गरजा व्यक्त करून ठामपणाचा सराव करा. उदाहरणार्थ, जर कोणी तुमच्याशी वाईट वागणूक देत असेल तर त्यामुळे तुम्हाला कसे वाटते ते सांगा आणि त्यांना आदराने वागण्यास सांगा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणत्या परिस्थितीत ठामपणाचा सराव केला त्याचे वर्णन करा.",
+            "reflection": "ठाम राहिल्याने तुमच्या आत्मविश्वास आणि नातेसंबंधांवर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_006",
+      "category": "CBT",
+      "xp": 3,
+      "translations": {
+        "en": {
+          "title": "Self-Affirmations",
+          "description": "This helps to reinforce positive beliefs about yourself. Write down positive affirmations and repeat them to yourself daily. For example, 'I am capable,' 'I am worthy of love and respect,' or 'I am strong.'",
+          "journalTemplate": {
+            "prompt": "What positive affirmations did you practice today?",
+            "reflection": "How did repeating these affirmations affect your self-perception and mood?"
+          }
+        },
+        "hi": {
+          "title": "स्व-पुष्टि",
+          "description": "यह अपने बारे में सकारात्मक मान्यताओं को मजबूत करने में मदद करता है। सकारात्मक पुष्टि लिखें और उन्हें रोजाना अपने आप से दोहराएं। उदाहरण के लिए, 'मैं सक्षम हूं,' 'मैं प्रेम और सम्मान के योग्य हूं,' या 'मैं मजबूत हूं।'",
+          "journalTemplate": {
+            "prompt": "आज आपने कौन सी सकारात्मक पुष्टि का अभ्यास किया?",
+            "reflection": "इन पुष्टियों को दोहराने से आपकी स्व-धारणा और मूड पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "स्व-पुष्टी",
+          "description": "हे स्वतःबद्दलच्या सकारात्मक समजुती मजबूत करण्यास मदत करते. सकारात्मक पुष्टी लिहा आणि दररोज स्वतःला म्हणा. उदाहरणार्थ, 'मी सक्षम आहे,' 'मी प्रेम आणि आदराला पात्र आहे,' किंवा 'मी मजबूत आहे.'",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणत्या सकारात्मक पुष्टीचा सराव केला?",
+            "reflection": "या पुष्टी पुन्हा सांगल्याने तुमच्या स्व-समजुती आणि मूडवर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_007",
+      "category": "CBT",
+      "xp": 4,
+      "translations": {
+        "en": {
+          "title": "Goal Setting",
+          "description": "This helps to build confidence and a sense of achievement. Set realistic and achievable goals for yourself and work towards them. For example, if you want to improve your fitness, set a goal to exercise for 30 minutes a day.",
+          "journalTemplate": {
+            "prompt": "What specific goal did you work on today?",
+            "reflection": "How does working towards your goals affect your sense of self-worth and confidence?"
+          }
+        },
+        "hi": {
+          "title": "लक्ष्य निर्धारण",
+          "description": "यह आत्मविश्वास और उपलब्धि की भावना बनाने में मदद करता है। अपने लिए यथार्थवादी और प्राप्त करने योग्य लक्ष्य निर्धारित करें और उनकी दिशा में काम करें। उदाहरण के लिए, यदि आप अपनी फिटनेस सुधारना चाहते हैं, तो दिन में 30 मिनट व्यायाम करने का लक्ष्य रखें।",
+          "journalTemplate": {
+            "prompt": "आज आपने किस विशिष्ट लक्ष्य पर काम किया?",
+            "reflection": "अपने लक्ष्यों की दिशा में काम करने से आपकी स्व-कीमत और आत्मविश्वास की भावना पर क्या प्रभाव पड़ता है?"
+          }
+        },
+        "mr": {
+          "title": "ध्येय निर्धारण",
+          "description": "हे आत्मविश्वास आणि यशाची भावना निर्माण करण्यास मदत करते. स्वतःसाठी वास्तववादी आणि साध्य करण्यायोग्य ध्येये ठेवा आणि त्यांच्या दिशेने काम करा. उदाहरणार्थ, जर तुम्हाला तुमची तंदुरुस्ती सुधारायची असेल तर दिवसाला 30 मिनिटे व्यायाम करण्याचे ध्येय ठेवा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणत्या विशिष्ट ध्येयावर काम केले?",
+            "reflection": "तुमच्या ध्येयांच्या दिशेने काम केल्याने तुमच्या स्वमूल्य आणि आत्मविश्वासाच्या भावनेवर काय परिणाम होतो?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_008",
+      "category": "CBT",
+      "xp": 8,
+      "translations": {
+        "en": {
+          "title": "Exposure Therapy",
+          "description": "This helps to face and overcome fears and insecurities. Gradually expose yourself to situations that make you feel insecure and practice coping strategies. For example, if you're insecure about public speaking, start by speaking in front of a small group and gradually increase the size.",
+          "journalTemplate": {
+            "prompt": "What fear or insecurity did you expose yourself to today?",
+            "reflection": "How did facing your fear affect your confidence and self-perception?"
+          }
+        },
+        "hi": {
+          "title": "एक्सपोज़र थेरेपी",
+          "description": "यह डर और असुरक्षा का सामना करने और उन पर काबू पाने में मदद करता है। धीरे-धीरे उन स्थितियों में खुद को डालें जो आपको असुरक्षित महसूस कराती हैं और मुकाबला रणनीतियों का अभ्यास करें। उदाहरण के लिए, यदि आप सार्वजनिक बोलने को लेकर असुरक्षित हैं, तो छोटे समूह के सामने बोलना शुरू करें और धीरे-धीरे समूह का आकार बढ़ाएं।",
+          "journalTemplate": {
+            "prompt": "आज आपने किस डर या असुरक्षा का सामना किया?",
+            "reflection": "अपने डर का सामना करने से आपके आत्मविश्वास और स्व-धारणा पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "एक्सपोझर थेरपी",
+          "description": "हे भीती आणि असुरक्षिततेचा सामना करण्यास आणि त्यावर मात करण्यास मदत करते. हळूहळू अशा परिस्थितींमध्ये स्वतःला घालवा ज्यामुळे तुम्हाला असुरक्षित वाटते आणि सामना करण्याच्या धोरणांचा सराव करा. उदाहरणार्थ, जर तुम्हाला सार्वजनिक भाषणाबद्दल असुरक्षितता वाटत असेल तर लहान गटासमोर बोलण्यापासून सुरुवात करा आणि हळूहळू गटाचा आकार वाढवा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणत्या भीती किंवा असुरक्षिततेचा सामना केला?",
+            "reflection": "तुमच्या भीतीचा सामना केल्याने तुमच्या आत्मविश्वास आणि स्व-समजुतीवर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_cbt_009",
+      "category": "CBT",
+      "xp": 6,
+      "translations": {
+        "en": {
+          "title": "Social Skills Training",
+          "description": "This helps to improve interactions with others. Practice social skills like active listening, empathy, and effective communication. For example, practice active listening by focusing on what the other person is saying and responding appropriately.",
+          "journalTemplate": {
+            "prompt": "What social skill did you practice today?",
+            "reflection": "How did improving your social skills affect your confidence in relationships?"
+          }
+        },
+        "hi": {
+          "title": "सामाजिक कौशल प्रशिक्षण",
+          "description": "यह दूसरों के साथ बातचीत को बेहतर बनाने में मदद करता है। सक्रिय सुनना, सहानुभूति और प्रभावी संचार जैसे सामाजिक कौशल का अभ्यास करें। उदाहरण के लिए, दूसरे व्यक्ति की बात पर ध्यान देकर और उचित जवाब देकर सक्रिय सुनने का अभ्यास करें।",
+          "journalTemplate": {
+            "prompt": "आज आपने कौन सा सामाजिक कौशल का अभ्यास किया?",
+            "reflection": "अपने सामाजिक कौशल में सुधार करने से रिश्तों में आपके आत्मविश्वास पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "सामाजिक कौशल्य प्रशिक्षण",
+          "description": "हे इतरांशी संवाद सुधारण्यास मदत करते. सक्रिय ऐकणे, सहानुभूती आणि प्रभावी संवाद यासारख्या सामाजिक कौशल्यांचा सराव करा. उदाहरणार्थ, दुसऱ्या व्यक्तीचे बोलणे लक्षपूर्वक ऐकून आणि योग्य प्रतिसाद देऊन सक्रिय ऐकण्याचा सराव करा.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणत्या सामाजिक कौशल्याचा सराव केला?",
+            "reflection": "तुमच्या सामाजिक कौशल्यात सुधारणा केल्याने नातेसंबंधांमधील तुमच्या आत्मविश्वासावर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_rebt_002",
+      "category": "REBT",
+      "xp": 4,
+      "translations": {
+        "en": {
+          "title": "Positive Self-Talk",
+          "description": "Positive self-talk helps in boosting self-esteem and creating a positive self-identity. It helps in combating negative thoughts and beliefs about oneself. Replace negative thoughts with positive affirmations.",
+          "journalTemplate": {
+            "prompt": "What negative thought did you replace with positive self-talk today?",
+            "reflection": "How did changing your internal dialogue affect your emotions and self-view?"
+          }
+        },
+        "hi": {
+          "title": "सकारात्मक आत्म-चर्चा",
+          "description": "सकारात्मक आत्म-चर्चा आत्मसम्मान बढ़ाने और सकारात्मक स्व-पहचान बनाने में मदद करती है। यह अपने बारे में नकारात्मक विचारों और मान्यताओं से लड़ने में मदद करती है। नकारात्मक विचारों को सकारात्मक पुष्टि से बदलें।",
+          "journalTemplate": {
+            "prompt": "आज आपने किस नकारात्मक विचार को सकारात्मक आत्म-चर्चा से बदला?",
+            "reflection": "अपने आंतरिक संवाद को बदलने से आपकी भावनाओं और स्व-दृष्टि पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "सकारात्मक आत्म-चर्चा",
+          "description": "सकारात्मक आत्म-चर्चा स्वाभिमान वाढवण्यास आणि सकारात्मक स्व-ओळख निर्माण करण्यास मदत करते. यामुळे स्वतःबद्दलच्या नकारात्मक विचार आणि समजुतींचा सामना करण्यास मदत होते. नकारात्मक विचारांना सकारात्मक पुष्टीने बदला.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणता नकारात्मक विचार सकारात्मक आत्म-चर्चेने बदलला?",
+            "reflection": "तुमच्या अंतर्गत संवादात बदल केल्याने तुमच्या भावना आणि स्व-दृष्टिकोनावर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_rebt_003",
+      "category": "REBT",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Self-Compassion",
+          "description": "Being compassionate towards oneself helps in reducing self-criticism and promotes self-love and acceptance. Treat yourself with kindness and understanding, especially during times of failure or difficulty.",
+          "journalTemplate": {
+            "prompt": "How did you show yourself compassion during a difficult moment today?",
+            "reflection": "What difference does self-compassion make in how you handle challenges?"
+          }
+        },
+        "hi": {
+          "title": "स्व-करुणा",
+          "description": "अपने प्रति दयालु होना आत्म-आलोचना को कम करने और आत्म-प्रेम और स्वीकृति को बढ़ावा देने में मदद करता है। विशेष रूप से असफलता या कठिनाई के समय अपने साथ दयालुता और समझदारी का व्यवहार करें।",
+          "journalTemplate": {
+            "prompt": "आज एक कठिन क्षण में आपने अपने प्रति कैसे करुणा दिखाई?",
+            "reflection": "चुनौतियों से निपटने में स्व-करुणा क्या अंतर लाती है?"
+          }
+        },
+        "mr": {
+          "title": "आत्म-करुणा",
+          "description": "स्वतःप्रती दयाळू असणे आत्म-टीका कमी करण्यास आणि आत्म-प्रेम आणि स्वीकाराला चालना देण्यास मदत करते. विशेषतः अपयश किंवा अडचणीच्या वेळी स्वतःशी दयाळूपणा आणि समजूतदारपणाने वागा.",
+          "journalTemplate": {
+            "prompt": "आज एका कठीण क्षणी तुम्ही स्वतःप्रती कशी करुणा दाखवली?",
+            "reflection": "आव्हानांना सामोरे जाण्यात आत्म-करुणा कोणता फरक करते?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_rebt_004",
+      "category": "REBT",
+      "xp": 6,
+      "translations": {
+        "en": {
+          "title": "Challenge Negative Beliefs",
+          "description": "Challenging and changing negative beliefs about oneself can help in improving self-esteem and self-identity. Identify your negative beliefs and challenge them with evidence and positive affirmations.",
+          "journalTemplate": {
+            "prompt": "What negative belief about yourself did you challenge today?",
+            "reflection": "How did questioning this belief change your perspective about yourself?"
+          }
+        },
+        "hi": {
+          "title": "नकारात्मक मान्यताओं को चुनौती दें",
+          "description": "अपने बारे में नकारात्मक मान्यताओं को चुनौती देना और बदलना आत्मसम्मान और स्व-पहचान में सुधार करने में मदद कर सकता है। अपनी नकारात्मक मान्यताओं को पहचानें और उन्हें प्रमाण और सकारात्मक पुष्टि से चुनौती दें।",
+          "journalTemplate": {
+            "prompt": "आज आपने अपने बारे में कौन सी नकारात्मक मान्यता को चुनौती दी?",
+            "reflection": "इस मान्यता पर सवाल उठाने से आपके बारे में आपका नजरिया कैसे बदला?"
+          }
+        },
+        "mr": {
+          "title": "नकारात्मक समजुतींना आव्हान द्या",
+          "description": "स्वतःबद्दलच्या नकारात्मक समजुतींना आव्हान देणे आणि बदलणे स्वाभिमान आणि स्व-ओळख सुधारण्यास मदत करू शकते. तुमच्या नकारात्मक समजुती ओळखा आणि त्यांना पुरावे आणि सकारात्मक पुष्टीने आव्हान द्या.",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही स्वतःबद्दलच्या कोणत्या नकारात्मक समजुतीला आव्हान दिले?",
+            "reflection": "या समजुतीवर प्रश्न विचारल्याने स्वतःबद्दलचा तुमचा दृष्टिकोन कसा बदलला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_rebt_005",
+      "category": "REBT",
+      "xp": 4,
+      "translations": {
+        "en": {
+          "title": "Unconditional Self-Acceptance",
+          "description": "Practice accepting yourself as a fallible human being who has worth regardless of performance, approval from others, or achievements. Use the phrase: 'I accept myself completely, with all my strengths and weaknesses, simply because I exist.'",
+          "journalTemplate": {
+            "prompt": "In what situation today did you practice unconditional self-acceptance?",
+            "reflection": "How does accepting yourself unconditionally feel different from conditional self-acceptance?"
+          }
+        },
+        "hi": {
+          "title": "बिना शर्त स्व-स्वीकृति",
+          "description": "अपने आप को एक त्रुटिपूर्ण इंसान के रूप में स्वीकार करने का अभ्यास करें जिसका मूल्य प्रदर्शन, दूसरों की स्वीकृति, या उपलब्धियों की परवाह किए बिना है। इस वाक्य का उपयोग करें: 'मैं अपनी सभी शक्तियों और कमजोरियों के साथ खुद को पूरी तरह स्वीकार करता हूं, सिर्फ इसलिए कि मैं मौजूद हूं।'",
+          "journalTemplate": {
+            "prompt": "आज किस स्थिति में आपने बिना शर्त स्व-स्वीकृति का अभ्यास किया?",
+            "reflection": "अपने आप को बिना शर्त स्वीकार करना शर्तों के साथ स्व-स्वीकृति से कैसे अलग लगता है?"
+          }
+        },
+        "mr": {
+          "title": "बिनशर्त स्व-स्वीकार",
+          "description": "स्वतःला एक चुकीचा मनुष्य म्हणून स्वीकारण्याचा सराव करा ज्याचे मूल्य कामगिरी, इतरांची मान्यता किंवा यशांची पर्वा न करता आहे. हे वाक्य वापरा: 'मी माझ्या सर्व शक्ती आणि कमकुवतपणांसह स्वतःला पूर्णपणे स्वीकारतो, फक्त कारण मी अस्तित्वात आहे.'",
+          "journalTemplate": {
+            "prompt": "आज कोणत्या परिस्थितीत तुम्ही बिनशर्त स्व-स्वीकाराचा सराव केला?",
+            "reflection": "स्वतःला बिनशर्त स्वीकारणे हे अटींसह स्व-स्वीकारापेक्षा वेगळे कसे वाटते?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_rebt_006",
+      "category": "REBT",
+      "xp": 4,
+      "translations": {
+        "en": {
+          "title": "Disputing Perfectionist Beliefs",
+          "description": "Identify perfectionist thoughts like 'I must be perfect' or 'I can't make mistakes.' Challenge these with: 'Where is it written that I must be perfect? What evidence proves that making mistakes makes me worthless? How does this belief help or harm me?'",
+          "journalTemplate": {
+            "prompt": "What perfectionist belief did you challenge today?",
+            "reflection": "How did letting go of perfectionist expectations affect your stress levels and self-relationship?"
+          }
+        },
+        "hi": {
+          "title": "पूर्णतावादी मान्यताओं का खंडन",
+          "description": "'मुझे परफेक्ट होना चाहिए' या 'मैं गलतियां नहीं कर सकता' जैसे पूर्णतावादी विचारों की पहचान करें। इन्हें इससे चुनौती दें: 'कहां लिखा है कि मुझे परफेक्ट होना चाहिए? कौन सा प्रमाण साबित करता है कि गलतियां करना मुझे बेकार बनाता है? यह विश्वास मुझे कैसे मदद या नुकसान पहुंचाता है?'",
+          "journalTemplate": {
+            "prompt": "आज आपने किस पूर्णतावादी विश्वास को चुनौती दी?",
+            "reflection": "पूर्णतावादी अपेक्षाओं को छोड़ने से आपके तनाव के स्तर और स्वयं के साथ रिश्ते पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "परिपूर्णतावादी समजुतींचे खंडन",
+          "description": "'मी परिपूर्ण असले पाहिजे' किंवा 'मी चुका करू शकत नाही' यासारख्या परिपूर्णतावादी विचारांची ओळख करा. यांना यासह आव्हान द्या: 'कुठे लिहिले आहे की मी परिपूर्ण असले पाहिजे? कोणता पुरावा सिद्ध करतो की चुका केल्याने मी निरुपयोगी होतो? ही समजूत मला कशी मदत करते किंवा हानी पोहोचवते?'",
+          "journalTemplate": {
+            "prompt": "आज तुम्ही कोणत्या परिपूर्णतावादी समजुतीला आव्हान दिले?",
+            "reflection": "परिपूर्णतावादी अपेक्षा सोडल्याने तुमच्या तणावाच्या पातळी आणि स्वतःशी असलेल्या नात्यावर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_yoga_001",
+      "category": "Yoga",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Mountain Pose (Tadasana)",
+          "description": "Stand tall with your feet hip-width apart, grounding your feet into the earth. Lift your chest and roll your shoulders back. This pose promotes confidence and inner strength.",
+          "journalTemplate": {
+            "prompt": "How did practicing Mountain Pose make you feel about your posture and confidence?",
+            "reflection": "What connection do you notice between your physical stance and your inner confidence?"
+          }
+        },
+        "hi": {
+          "title": "पर्वत मुद्रा (ताड़ासन)",
+          "description": "अपने पैरों को कूल्हे की चौड़ाई के बराबर रखकर सीधे खड़े हों, अपने पैरों को पृथ्वी में जमाकर रखें। अपनी छाती को ऊपर उठाएं और अपने कंधों को पीछे की ओर घुमाएं। यह मुद्रा आत्मविश्वास और आंतरिक शक्ति को बढ़ावा देती है।",
+          "journalTemplate": {
+            "prompt": "पर्वत मुद्रा का अभ्यास करने से आपको अपनी मुद्रा और आत्मविश्वास के बारे में कैसा लगा?",
+            "reflection": "आप अपने शारीरिक रुख और आंतरिक आत्मविश्वास के बीच क्या संबंध देखते हैं?"
+          }
+        },
+        "mr": {
+          "title": "पर्वत मुद्रा (ताडासन)",
+          "description": "पाय नितंबाच्या रुंदीइतके अंतरावर ठेवून सरळ उभे राहा, पाय पृथ्वीवर दृढपणे टेकवा. छाती वर करा आणि खांदे मागे घ्या. ही मुद्रा आत्मविश्वास आणि अंतर्गत शक्ती वाढवते.",
+          "journalTemplate": {
+            "prompt": "पर्वत मुद्रेचा सराव केल्याने तुमच्या शरीरयष्टी आणि आत्मविश्वासाबद्दल कसे वाटले?",
+            "reflection": "तुमची शारीरिक मुद्रा आणि अंतर्गत आत्मविश्वास यांच्यातील काय संबंध तुम्हाला दिसतो?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_yoga_002",
+      "category": "Yoga",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Warrior II (Virabhadrasana II)",
+          "description": "This pose helps to build self-esteem as it requires strength and focus. Stand with your feet wide apart, turn your right foot out and bend your right knee. Extend your arms to the sides, gaze over your right hand.",
+          "journalTemplate": {
+            "prompt": "What did you notice about your strength and focus while holding Warrior II?",
+            "reflection": "How did embodying the warrior spirit affect your sense of personal power?"
+          }
+        },
+        "hi": {
+          "title": "योद्धा II (वीरभद्रासन II)",
+          "description": "यह मुद्रा आत्म-सम्मान बनाने में मदद करती है क्योंकि इसमें शक्ति और फोकस की आवश्यकता होती है। अपने पैरों को चौड़ा करके खड़े हों, अपने दाहिने पैर को बाहर की ओर मोड़ें और अपने दाहिने घुटने को मोड़ें। अपनी बाहों को साइड में फैलाएं, अपने दाहिने हाथ के ऊपर देखें।",
+          "journalTemplate": {
+            "prompt": "योद्धा II को पकड़ते समय आपने अपनी शक्ति और फोकस के बारे में क्या महसूस किया?",
+            "reflection": "योद्धा की भावना को अपनाने से आपकी व्यक्तिगत शक्ति की भावना पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "योद्धा II (वीरभद्रासन II)",
+          "description": "ही मुद्रा आत्मसन्मान निर्माण करण्यास मदत करते कारण यासाठी शक्ती आणि लक्ष केंद्रित करणे आवश्यक आहे. पाय रुंद करून उभे राहा, उजवा पाय बाहेर वळवा आणि उजवा गुडघा वाकवा. हात बाजूला पसरवा, उजव्या हाताकडे पहा.",
+          "journalTemplate": {
+            "prompt": "योद्धा II मुद्रा धरताना तुमच्या शक्ती आणि लक्ष केंद्रीकरणाबद्दल काय लक्षात आले?",
+            "reflection": "योद्धा भावना अंगीकार केल्याने तुमच्या वैयक्तिक शक्तीच्या भावनेवर कसा परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_yoga_003",
+      "category": "Yoga",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Tree Pose (Vrikshasana)",
+          "description": "This pose helps to improve balance and focus, promoting a sense of self-awareness and inner peace. Stand tall, shift your weight onto your right foot, bend your left knee and place the sole of your left foot on your inner right thigh. Bring your hands to your heart or extend them above your head.",
+          "journalTemplate": {
+            "prompt": "How did working on balance in Tree Pose reflect your journey toward inner stability?",
+            "reflection": "What did this pose teach you about finding your center and staying grounded?"
+          }
+        },
+        "hi": {
+          "title": "वृक्ष मुद्रा (वृक्षासन)",
+          "description": "यह मुद्रा संतुलन और फोकस में सुधार करने में मदद करती है, आत्म-जागरूकता और आंतरिक शांति की भावना को बढ़ावा देती है। सीधे खड़े हों, अपना वजन दाहिने पैर पर डालें, बाएं घुटने को मोड़ें और बाएं पैर के तलवे को दाहिनी जांघ के अंदरूनी हिस्से पर रखें। अपने हाथों को दिल के पास लाएं या उन्हें सिर के ऊपर फैलाएं।",
+          "journalTemplate": {
+            "prompt": "वृक्ष मुद्रा में संतुलन पर काम करने से आंतरिक स्थिरता की आपकी यात्रा कैसे दिखी?",
+            "reflection": "इस मुद्रा ने आपको अपना केंद्र खोजने और स्थिर रहने के बारे में क्या सिखाया?"
+          }
+        },
+        "mr": {
+          "title": "वृक्ष मुद्रा (वृक्षासन)",
+          "description": "ही मुद्रा समतोल आणि लक्ष सुधारण्यास मदत करते, स्व-जागरूकता आणि अंतर्गत शांतीची भावना वाढवते. सरळ उभे राहा, वजन उजव्या पायावर टाका, डावा गुडघा वाकवा आणि डाव्या पायाचे तळवे उजव्या मांडीच्या आतील बाजूस ठेवा. हात हृदयाजवळ आणा किंवा डोक्यावर पसरवा.",
+          "journalTemplate": {
+            "prompt": "वृक्ष मुद्रेत समतोल साधण्याचे काम तुमच्या अंतर्गत स्थैर्याच्या प्रवासाला कसे प्रतिबिंबित करते?",
+            "reflection": "या मुद्रेने तुम्हाला तुमचे केंद्र शोधणे आणि स्थिर राहणे याबद्दल काय शिकवले?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_yoga_004",
+      "category": "Yoga",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Child's Pose (Balasana)",
+          "description": "This pose promotes a sense of security and grounding. Kneel on the floor, touch your big toes together and sit on your heels. Separate your knees about as wide as your hips, exhale and lay your torso down between your thighs.",
+          "journalTemplate": {
+            "prompt": "What feelings of safety and comfort did you experience in Child's Pose?",
+            "reflection": "How can this sense of grounding support you in daily life challenges?"
+          }
+        },
+        "hi": {
+          "title": "बाल मुद्रा (बालासन)",
+          "description": "यह मुद्रा सुरक्षा और स्थिरता की भावना को बढ़ावा देती है। फर्श पर घुटने टेकें, अपने पैर के अंगूठों को एक साथ स्पर्श करें और अपनी एड़ियों पर बैठें। अपने घुटनों को अपने कूल्हों जितना चौड़ा अलग करें, सांस छोड़ें और अपने धड़ को अपनी जांघों के बीच नीचे रखें।",
+          "journalTemplate": {
+            "prompt": "बाल मुद्रा में आपने सुरक्षा और आराम की कौन सी भावनाओं का अनुभव किया?",
+            "reflection": "यह स्थिरता की भावना दैनिक जीवन की चुनौतियों में आपका समर्थन कैसे कर सकती है?"
+          }
+        },
+        "mr": {
+          "title": "बाल मुद्रा (बालासन)",
+          "description": "ही मुद्रा सुरक्षितता आणि स्थिरतेची भावना वाढवते. जमिनीवर गुडघे टेकवा, पायाची अंगठी एकत्र स्पर्श करा आणि टाचांवर बसा. गुडघे नितंबाइतके रुंद वेगळे करा, श्वास सोडा आणि धड मांड्यांच्या मध्ये खाली ठेवा.",
+          "journalTemplate": {
+            "prompt": "बाल मुद्रेत तुम्हाला सुरक्षितता आणि आरामाच्या कोणत्या भावना अनुभवल्या?",
+            "reflection": "ही स्थिरतेची भावना दैनंदिन जीवनातील आव्हानांमध्ये तुमचे कसे समर्थन करू शकते?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_yoga_005",
+      "category": "Yoga",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Mindfulness Meditation",
+          "description": "Sit comfortably, close your eyes, and focus on your breath. Allow thoughts to come and go without judgment. This practice helps to cultivate self-awareness and acceptance.",
+          "journalTemplate": {
+            "prompt": "What thoughts or emotions arose during your mindfulness practice today?",
+            "reflection": "How did observing without judgment change your relationship with your thoughts?"
+          }
+        },
+        "hi": {
+          "title": "सचेतन ध्यान",
+          "description": "आराम से बैठें, अपनी आंखें बंद करें, और अपनी सांस पर ध्यान दें। विचारों को बिना जजमेंट के आने-जाने दें। यह अभ्यास आत्म-जागरूकता और स्वीकृति विकसित करने में मदद करता है।",
+          "journalTemplate": {
+            "prompt": "आज आपके सचेतन अभ्यास के दौरान कौन से विचार या भावनाएं उत्पन्न हुईं?",
+            "reflection": "बिना जजमेंट के देखने से आपके विचारों के साथ आपका रिश्ता कैसे बदला?"
+          }
+        },
+        "mr": {
+          "title": "जागरूकता ध्यान",
+          "description": "आरामात बसा, डोळे बंद करा आणि श्वासावर लक्ष केंद्रित करा. विचारांना न्याय न करता येऊ-जाऊ द्या. हा सराव स्व-जागरूकता आणि स्वीकार विकसित करण्यास मदत करतो.",
+          "journalTemplate": {
+            "prompt": "आज तुमच्या जागरूकता सरावादरम्यान कोणते विचार किंवा भावना निर्माण झाल्या?",
+            "reflection": "न्याय न करता निरीक्षण केल्याने तुमच्या विचारांशी तुमचे नाते कसे बदलले?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_yoga_006",
+      "category": "Yoga",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Loving-Kindness Meditation",
+          "description": "This practice involves focusing on developing feelings of compassion and love for yourself and others. Repeat phrases like \"May I be happy. May I be well. May I be safe. May I be peaceful and at ease.\"",
+          "journalTemplate": {
+            "prompt": "How did sending loving-kindness to yourself feel during the practice?",
+            "reflection": "What shifts in self-compassion did you notice after this meditation?"
+          }
+        },
+        "hi": {
+          "title": "प्रेम-दयालुता ध्यान",
+          "description": "इस अभ्यास में अपने और दूसरों के लिए करुणा और प्रेम की भावनाओं को विकसित करने पर ध्यान देना शामिल है। इस तरह के वाक्यों को दोहराएं \"मैं खुश रहूं। मैं स्वस्थ रहूं। मैं सुरक्षित रहूं। मैं शांत और सहज रहूं।\"",
+          "journalTemplate": {
+            "prompt": "अभ्यास के दौरान अपने लिए प्रेम-दयालुता भेजना कैसा लगा?",
+            "reflection": "इस ध्यान के बाद आपने स्व-करुणा में क्या बदलाव देखे?"
+          }
+        },
+        "mr": {
+          "title": "प्रेम-दयाळूता ध्यान",
+          "description": "या सरावामध्ये स्वतःसाठी आणि इतरांसाठी करुणा आणि प्रेमाच्या भावना विकसित करण्यावर लक्ष केंद्रित करणे समाविष्ट आहे. अशी वाक्ये पुन्हा पुन्हा म्हणा \"मी आनंदी राहो. मी निरोगी राहो. मी सुरक्षित राहो. मी शांत आणि सहज राहो.\"",
+          "journalTemplate": {
+            "prompt": "सरावादरम्यान स्वतःसाठी प्रेम-दयाळूता पाठवणे कसे वाटले?",
+            "reflection": "या ध्यानानंतर स्व-करुणेमध्ये तुम्हाला कोणते बदल दिसले?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_yoga_007",
+      "category": "Yoga",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Self-Inquiry Meditation",
+          "description": "Ask yourself \"Who am I?\" and allow any feelings, thoughts, or images to arise without judgment. This practice can help you explore and understand your self-identity.",
+          "journalTemplate": {
+            "prompt": "What insights about your identity emerged during the self-inquiry practice?",
+            "reflection": "How did questioning \"Who am I?\" deepen your self-understanding?"
+          }
+        },
+        "hi": {
+          "title": "स्व-जांच ध्यान",
+          "description": "अपने आप से पूछें \"मैं कौन हूं?\" और किसी भी भावना, विचार, या छवि को बिना जजमेंट के उत्पन्न होने दें। यह अभ्यास आपकी स्व-पहचान को समझने और अन्वेषण करने में मदद कर सकता है।",
+          "journalTemplate": {
+            "prompt": "स्व-जांच अभ्यास के दौरान आपकी पहचान के बारे में कौन सी अंतर्दृष्टि सामने आई?",
+            "reflection": "\"मैं कौन हूं?\" का सवाल पूछने से आपकी स्व-समझ कैसे गहरी हुई?"
+          }
+        },
+        "mr": {
+          "title": "स्व-तपासणी ध्यान",
+          "description": "स्वतःला विचारा \"मी कोण आहे?\" आणि कोणत्याही भावना, विचार किंवा प्रतिमा न्याय न करता उत्पन्न होऊ द्या. हा सराव तुमची स्व-ओळख समजून घेण्यास आणि शोधण्यास मदत करू शकतो.",
+          "journalTemplate": {
+            "prompt": "स्व-तपासणी सरावादरम्यान तुमच्या ओळखीबद्दल कोणत्या अंतर्दृष्टी उदयास आल्या?",
+            "reflection": "\"मी कोण आहे?\" हा प्रश्न विचारल्याने तुमची स्व-समज कशी खोलवली?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_yoga_008",
+      "category": "Yoga",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Visualization Meditation",
+          "description": "Imagine a place where you feel completely at ease. This could be a real or imaginary place. Visualize every detail of this place, the more vivid the visualization, the more you'll benefit. Remember, consistency is key in yoga and meditation.",
+          "journalTemplate": {
+            "prompt": "Describe the peaceful place you visualized and how it made you feel.",
+            "reflection": "How can you carry this sense of peace and ease into your daily life?"
+          }
+        },
+        "hi": {
+          "title": "दृश्यावलोकन ध्यान",
+          "description": "एक ऐसी जगह की कल्पना करें जहां आप पूरी तरह से सहज महसूस करते हैं। यह कोई वास्तविक या काल्पनिक जगह हो सकती है। इस जगह के हर विवरण की कल्पना करें, जितना जीवंत दृश्यावलोकन होगा, उतना ही आपको फायदा होगा। याद रखें, योग और ध्यान में निरंतरता महत्वपूर्ण है।",
+          "journalTemplate": {
+            "prompt": "उस शांतिपूर्ण जगह का वर्णन करें जिसकी आपने कल्पना की और इससे आपको कैसा लगा।",
+            "reflection": "आप इस शांति और सहजता की भावना को अपने दैनिक जीवन में कैसे ले जा सकते हैं?"
+          }
+        },
+        "mr": {
+          "title": "दृश्यावलोकन ध्यान",
+          "description": "अशा ठिकाणाची कल्पना करा जिथे तुम्हाला पूर्णपणे आराम वाटतो. हे वास्तविक किंवा काल्पनिक ठिकाण असू शकते. या ठिकाणाच्या प्रत्येक तपशीलाची कल्पना करा, जितके जीवंत दृश्यावलोकन तितका अधिक फायदा. लक्षात ठेवा, योग आणि ध्यानात सातत्य महत्वाचे आहे.",
+          "journalTemplate": {
+            "prompt": "तुम्ही कल्पना केलेल्या शांत ठिकाणाचे वर्णन करा आणि त्यामुळे तुम्हाला कसे वाटले.",
+            "reflection": "या शांती आणि सहजतेची भावना तुम्ही दैनंदिन जीवनात कशी घेऊन जाऊ शकता?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_relax_001",
+      "category": "Relaxation",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Self-Compassion Breathing",
+          "description": "This involves focusing on your thoughts, feelings, and sensations in the present moment without judgment. It can help you become more aware of negative self-talk and challenge these thoughts.",
+          "journalTemplate": {
+            "prompt": "What negative self-talk did you notice during your mindfulness practice today?",
+            "reflection": "How did observing these thoughts without judgment help you relate to them differently?"
+          }
+        },
+        "hi": {
+          "title": "स्व-करुणा श्वास",
+          "description": "इसमें बिना जजमेंट के वर्तमान क्षण में अपने विचारों, भावनाओं और संवेदनाओं पर ध्यान देना शामिल है। यह आपको नकारात्मक स्व-बातचीत के बारे में अधिक जागरूक होने और इन विचारों को चुनौती देने में मदद कर सकता है।",
+          "journalTemplate": {
+            "prompt": "आज आपकी सचेतन अभ्यास के दौरान आपने कौन सी नकारात्मक स्व-बातचीत देखी?",
+            "reflection": "इन विचारों को बिना जजमेंट के देखने से आपको उनसे अलग तरीके से जुड़ने में कैसे मदद मिली?"
+          }
+        },
+        "mr": {
+          "title": "स्व-करुणा श्वास",
+          "description": "यामध्ये सध्याच्या क्षणी तुमच्या विचार, भावना आणि संवेदनांवर न्याय न करता लक्ष केंद्रित करणे समाविष्ट आहे. हे तुम्हाला नकारात्मक स्व-संवादाबद्दल अधिक जागरूक होण्यास आणि या विचारांना आव्हान देण्यास मदत करू शकते.",
+          "journalTemplate": {
+            "prompt": "आज तुमच्या जागरूकता सरावादरम्यान तुम्हाला कोणता नकारात्मक स्व-संवाद दिसला?",
+            "reflection": "या विचारांना न्याय न करता पाहिल्याने त्यांच्याशी वेगळ्या पद्धतीने संबंध ठेवण्यास कशी मदत झाली?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_relax_002",
+      "category": "Relaxation",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Body Appreciation Scan",
+          "description": "This technique involves tensing and then releasing different muscle groups in your body. It can help reduce feelings of anxiety and improve your overall sense of well-being, which can in turn boost your self-esteem.",
+          "journalTemplate": {
+            "prompt": "Which parts of your body felt most tense before the progressive muscle relaxation?",
+            "reflection": "How did releasing tension affect your mental state and self-perception?"
+          }
+        },
+        "hi": {
+          "title": "शरीर प्रशंसा स्कैन",
+          "description": "इस तकनीक में आपके शरीर के विभिन्न मांसपेशी समूहों को पहले तनाव देना और फिर छोड़ना शामिल है। यह चिंता की भावनाओं को कम करने और आपके समग्र कल्याण की भावना में सुधार करने में मदद कर सकता है, जो बदले में आपके आत्म-सम्मान को बढ़ा सकता है।",
+          "journalTemplate": {
+            "prompt": "प्रगतिशील मांसपेशी विश्राम से पहले आपके शरीर के कौन से हिस्से सबसे तनावग्रस्त महसूस हुए?",
+            "reflection": "तनाव मुक्त करने से आपकी मानसिक स्थिति और स्व-धारणा पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "शरीर कौतुक स्कॅन",
+          "description": "या तंत्रामध्ये तुमच्या शरीरातील विविध स्नायू गटांना आधी ताण देणे आणि नंतर सोडणे समाविष्ट आहे. हे चिंतेच्या भावना कमी करण्यास आणि तुमच्या एकूण कल्याणाची भावना सुधारण्यास मदत करू शकते, ज्यामुळे तुमचा आत्मसन्मान वाढू शकतो.",
+          "journalTemplate": {
+            "prompt": "प्रगतीशील स्नायू विश्रांतीपूर्वी तुमच्या शरीराचे कोणते भाग सर्वात तणावग्रस्त वाटले?",
+            "reflection": "ताण मुक्त केल्याने तुमच्या मानसिक स्थिती आणि स्व-समजुतीवर काय परिणाम झाला?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_relax_003",
+      "category": "Relaxation",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Progressive Muscle Relaxation",
+          "description": "This technique involves tensing and then releasing different muscle groups in your body. It can help reduce feelings of anxiety and improve your overall sense of well-being, which can in turn boost your self-esteem.",
+          "journalTemplate": {
+            "prompt": "How did your body feel before and after the progressive muscle relaxation session?",
+            "reflection": "What connection do you notice between physical relaxation and emotional well-being?"
+          }
+        },
+        "hi": {
+          "title": "प्रगतिशील मांसपेशी विश्राम",
+          "description": "इस तकनीक में आपके शरीर के विभिन्न मांसपेशी समूहों को पहले तनाव देना और फिर छोड़ना शामिल है। यह चिंता की भावनाओं को कम करने और आपके समग्र कल्याण की भावना में सुधार करने में मदत कर सकता है, जो बदले में आपके आत्म-सम्मान को बढ़ा सकता है।",
+          "journalTemplate": {
+            "prompt": "प्रगतिशील मांसपेशी विश्राम सत्र से पहले और बाद में आपका शरीर कैसा महसूस हुआ?",
+            "reflection": "शारीरिक विश्राम और भावनात्मक कल्याण के बीच आप क्या संबंध देखते हैं?"
+          }
+        },
+        "mr": {
+          "title": "प्रगतीशील स्नायू विश्रांती",
+          "description": "या तंत्रामध्ये तुमच्या शरीरातील विविध स्नायू गटांना आधी ताण देणे आणि नंतर सोडणे समाविष्ट आहे. हे चिंतेच्या भावना कमी करण्यास आणि तुमच्या एकूण कल्याणाची भावना सुधारण्यास मदत करू शकते, ज्यामुळे तुमचा आत्मसन्मान वाढू शकतो.",
+          "journalTemplate": {
+            "prompt": "प्रगतीशील स्नायू विश्रांती सत्रापूर्वी आणि नंतर तुमचे शरीर कसे वाटले?",
+            "reflection": "शारीरिक विश्रांती आणि भावनिक कल्याण यांच्यातील तुम्हाला कोणता संबंध दिसतो?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_relax_004",
+      "category": "Relaxation",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Visualization for Self-Confidence",
+          "description": "This involves imagining a peaceful place or situation to help you relax and reduce stress. You can also visualize yourself achieving your goals or being confident, which can help improve your self-esteem and self-identity.",
+          "journalTemplate": {
+            "prompt": "What did you visualize yourself achieving, and how did it make you feel?",
+            "reflection": "How can visualization help you build confidence in real-life situations?"
+          }
+        },
+        "hi": {
+          "title": "आत्मविश्वास के लिए दृश्यावलोकन",
+          "description": "इसमें आराम करने और तनाव कम करने में मदद के लिए किसी शांतिपूर्ण जगह या स्थिति की कल्पना करना शामिल है। आप अपने आप को अपने लक्ष्यों को प्राप्त करते हुए या आत्मविश्वासी होते हुए भी देख सकते हैं, जो आपके आत्म-सम्मान और स्व-पहचान में सुधार करने में मदद कर सकता है।",
+          "journalTemplate": {
+            "prompt": "आपने अपने आप को क्या हासिल करते हुए देखा, और इससे आपको कैसा लगा?",
+            "reflection": "दृश्यावलोकन वास्तविक जीवन की स्थितियों में आत्मविश्वास बनाने में कैसे मदद कर सकता है?"
+          }
+        },
+        "mr": {
+          "title": "आत्मविश्वासासाठी दृश्यावलोकन",
+          "description": "यामध्ये आराम करण्यास आणि ताण कमी करण्यास मदत करण्यासाठी शांत ठिकाण किंवा परिस्थितीची कल्पना करणे समाविष्ट आहे. तुम्ही स्वतःला तुमची उद्दिष्टे साध्य करताना किंवा आत्मविश्वासी असताना देखील पाहू शकता, जे तुमचा आत्मसन्मान आणि स्व-ओळख सुधारण्यास मदत करू शकते.",
+          "journalTemplate": {
+            "prompt": "तुम्ही स्वतःला काय साध्य करताना पाहिले आणि त्यामुळे तुम्हाला कसे वाटले?",
+            "reflection": "दृश्यावलोकन वास्तविक जीवनातील परिस्थितींमध्ये आत्मविश्वास निर्माण करण्यास कशी मदत करू शकते?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_relax_005",
+      "category": "Relaxation",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Deep Breathing for Self-Worth",
+          "description": "This simple technique can help you relax and reduce stress. It involves taking slow, deep breaths and focusing on your breath as you inhale and exhale.",
+          "journalTemplate": {
+            "prompt": "How did focusing on your breath affect your stress levels and sense of calm?",
+            "reflection": "What did you learn about the connection between breathing and emotional regulation?"
+          }
+        },
+        "hi": {
+          "title": "स्वयं की कीमत के लिए गहरी सांस",
+          "description": "यह सरल तकनीक आपको आराम करने और तनाव कम करने में मदद कर सकती है। इसमें धीमी, गहरी सांस लेना और सांस लेते और छोड़ते समय अपनी सांस पर ध्यान देना शामिल है।",
+          "journalTemplate": {
+            "prompt": "अपनी सांस पर ध्यान देने से आपके तनाव के स्तर और शांति की भावना पर क्या प्रभाव पड़ा?",
+            "reflection": "आपने सांस लेने और भावनात्मक नियंत्रण के बीच संबंध के बारे में क्या सीखा?"
+          }
+        },
+        "mr": {
+          "title": "स्वमूल्यासाठी खोल श्वास",
+          "description": "हे साधे तंत्र तुम्हाला आराम करण्यास आणि ताण कमी करण्यास मदत करू शकते. यामध्ये धीमा, खोल श्वास घेणे आणि श्वास घेताना आणि सोडताना तुमच्या श्वासावर लक्ष केंद्रित करणे समाविष्ट आहे.",
+          "journalTemplate": {
+            "prompt": "तुमच्या श्वासावर लक्ष केंद्रित केल्याने तुमच्या तणावाच्या पातळीवर आणि शांततेच्या भावनेवर काय परिणाम झाला?",
+            "reflection": "श्वास आणि भावनिक नियंत्रण यांच्यातील संबंधाबद्दल तुम्ही काय शिकलात?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_relax_006",
+      "category": "Relaxation",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Mindful Yoga Practice",
+          "description": "Yoga combines physical postures, breathing exercises, and meditation. It can help reduce stress, improve your mood, and boost your self-esteem.",
+          "journalTemplate": {
+            "prompt": "Which yoga postures made you feel most connected to your body today?",
+            "reflection": "How does mindful movement contribute to your sense of self-acceptance?"
+          }
+        },
+        "hi": {
+          "title": "सचेत योग अभ्यास",
+          "description": "योग शारीरिक मुद्राओं, सांस की कसरत, और ध्यान को जोड़ता है। यह तनाव कम करने, आपके मूड में सुधार करने, और आपके आत्म-सम्मान को बढ़ाने में मदद कर सकता है।",
+          "journalTemplate": {
+            "prompt": "आज कौन सी योग मुद्राओं ने आपको अपने शरीर से सबसे अधिक जुड़ाव महसूस कराया?",
+            "reflection": "सचेत गति आपकी स्व-स्वीकृति की भावना में कैसे योगदान देती है?"
+          }
+        },
+        "mr": {
+          "title": "जागरूक योग सराव",
+          "description": "योग शारीरिक मुद्रा, श्वास व्यायाम आणि ध्यान एकत्र करते. हे ताण कमी करण्यास, तुमची मनःस्थिती सुधारण्यास आणि तुमचा आत्मसन्मान वाढवण्यास मदत करू शकते.",
+          "journalTemplate": {
+            "prompt": "आज कोणत्या योग मुद्रांनी तुम्हाला तुमच्या शरीराशी सर्वात जास्त जोडलेले वाटवले?",
+            "reflection": "जागरूक हालचाली तुमच्या स्व-स्वीकाराच्या भावनेत कशी योगदान देतात?"
+          }
+        }
+      }
+    },
+    {
+      "id": "se_relax_007",
+      "category": "Relaxation",
+      "xp": 5,
+      "translations": {
+        "en": {
+          "title": "Positive Affirmations Practice",
+          "description": "These are positive statements that you repeat to yourself to challenge negative thoughts and boost your self-esteem. For example, you might say to yourself, \"I am worthy of love and respect,\" or \"I am confident and capable.\"",
+          "journalTemplate": {
+            "prompt": "Which positive affirmations resonated most with you today?",
+            "reflection": "How did repeating these affirmations impact your inner dialogue and self-perception?"
+          }
+        },
+        "hi": {
+          "title": "सकारात्मक पुष्टिकरण अभ्यास",
+          "description": "ये सकारात्मक कथन हैं जिन्हें आप नकारात्मक विचारों को चुनौती देने और अपने आत्म-सम्मान को बढ़ाने के लिए अपने आप से दोहराते हैं। उदाहरण के लिए, आप अपने आप से कह सकते हैं, \"मैं प्रेम और सम्मान का हकदार हूं,\" या \"मैं आत्मविश्वासी और सक्षम हूं।\"",
+          "journalTemplate": {
+            "prompt": "आज कौन से सकारात्मक पुष्टिकरण आपको सबसे अधिक प्रभावित लगे?",
+            "reflection": "इन पुष्टिकरणों को दोहराने से आपके आंतरिक संवाद और स्व-धारणा पर क्या प्रभाव पड़ा?"
+          }
+        },
+        "mr": {
+          "title": "सकारात्मक पुष्टीकरण सराव",
+          "description": "ही सकारात्मक विधाने आहेत जी तुम्ही नकारात्मक विचारांना आव्हान देण्यासाठी आणि तुमचा आत्मसन्मान वाढवण्यासाठी स्वतःला पुन्हा पुन्हा सांगता. उदाहरणार्थ, तुम्ही स्वतःला म्हणू शकता, \"मी प्रेम आणि आदराचा पात्र आहे,\" किंवा \"मी आत्मविश्वासी आणि सक्षम आहे.\"",
+          "journalTemplate": {
+            "prompt": "आज कोणती सकारात्मक पुष्टीकरणे तुम्हाला सर्वात जास्त प्रभावी वाटली?",
+            "reflection": "या पुष्टीकरणांची पुनरावृत्ती केल्याने तुमच्या अंतर्गत संवाद आणि स्व-समजुतीवर काय परिणाम झाला?"
+          }
+        }
+      }
+    }
+  ]
+}

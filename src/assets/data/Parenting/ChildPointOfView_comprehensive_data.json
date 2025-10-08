@@ -1,0 +1,476 @@
+{
+  "en": {
+    "commonSuggestions": [
+      {
+        "title": "Express Feelings Openly",
+        "description": "Works by helping children communicate better with parents. Example: Tell parents 'I feel sad when you don't listen to me.'",
+        "xp": 3
+      },
+      {
+        "title": "Ask for Quality Time",
+        "description": "Works by strengthening bonds and trust. Example: Request 'Can we play together for 15 minutes today?'",
+        "xp": 2
+      },
+      {
+        "title": "Be Honest but Respectful",
+        "description": "Works by building mutual understanding. Example: Instead of hiding grades, explain 'I tried but I need more help in math.'",
+        "xp": 4
+      },
+      {
+        "title": "Help in Small Chores",
+        "description": "Works by showing responsibility and cooperation. Example: Set the dinner table without being asked.",
+        "xp": 2
+      },
+      {
+        "title": "Share Interests",
+        "description": "Works by creating connection points. Example: Show parents a favorite drawing or new song you like.",
+        "xp": 1
+      },
+      {
+        "title": "Listen Actively",
+        "description": "Works by improving communication both ways. Example: Pay attention when parents explain rules without interrupting.",
+        "xp": 3
+      },
+      {
+        "title": "Respect Boundaries",
+        "description": "Works by reducing conflicts. Example: Knock before entering parents' room.",
+        "xp": 2
+      },
+      {
+        "title": "Practice Gratitude",
+        "description": "Works by creating positive relationships. Example: Say 'Thank you for helping me with homework.'",
+        "xp": 1
+      },
+      {
+        "title": "Stay Calm During Disagreements",
+        "description": "Works by avoiding escalation. Example: Take deep breaths instead of shouting when parents say no.",
+        "xp": 5
+      },
+      {
+        "title": "Seek Guidance",
+        "description": "Works by building trust and problem-solving skills. Example: Ask 'Can you teach me how to handle bullies at school?'",
+        "xp": 4
+      }
+    ],
+    "yogaAndMeditation": [
+      {
+        "title": "Child's Pose (Balasana)",
+        "description": "Step: Kneel, sit on heels, stretch arms forward. Benefit: Helps children calm down after conflicts with parents.",
+        "xp": 5
+      },
+      {
+        "title": "Tree Pose (Vrikshasana)",
+        "description": "Step: Stand on one leg, place other foot on thigh, palms together. Benefit: Builds focus and patience when children feel misunderstood.",
+        "xp": 6
+      },
+      {
+        "title": "Seated Forward Bend (Paschimottanasana)",
+        "description": "Step: Sit with legs stretched, bend forward to hold toes. Benefit: Releases frustration and teaches self-control.",
+        "xp": 7
+      },
+      {
+        "title": "Bridge Pose (Setu Bandhasana)",
+        "description": "Step: Lie on back, bend knees, lift hips upward. Benefit: Boosts energy and reduces sadness after disagreements.",
+        "xp": 6
+      },
+      {
+        "title": "Alternate Nostril Breathing (Nadi Shodhana)",
+        "description": "Step: Inhale through one nostril, exhale through the other. Benefit: Balances emotions and reduces anger at parents.",
+        "xp": 8
+      },
+      {
+        "title": "Lion's Breath",
+        "description": "Step: Inhale deeply, exhale forcefully with tongue out. Benefit: Releases pent-up frustration in a safe and playful way.",
+        "xp": 7
+      },
+      {
+        "title": "Guided Visualization",
+        "description": "Step: Imagine a happy moment with parents, guided by voice. Benefit: Strengthens positive bonding and reduces resentment.",
+        "xp": 9
+      },
+      {
+        "title": "Om Chanting",
+        "description": "Step: Sit cross-legged, chant 'Om' slowly with deep breaths. Benefit: Creates inner peace and reduces anxiety about parental expectations.",
+        "xp": 6
+      },
+      {
+        "title": "Mindful Walking",
+        "description": "Step: Walk slowly, noticing steps and breathing. Benefit: Helps children release stress and approach parents calmly.",
+        "xp": 7
+      },
+      {
+        "title": "Loving-Kindness Meditation",
+        "description": "Step: Close eyes, repeat 'May I be calm, may my parents be calm.' Benefit: Improves compassion and understanding toward parents.",
+        "xp": 10
+      }
+    ],
+    "relaxationStrategies": [
+      {
+        "title": "Deep Breathing Exercise",
+        "description": "Step: Inhale deeply through nose, exhale slowly through mouth. Benefit: Helps children stay calm when parents correct them.",
+        "xp": 5
+      },
+      {
+        "title": "Progressive Muscle Relaxation",
+        "description": "Step: Tense and release muscles from feet to head. Benefit: Reduces stress after arguments with parents.",
+        "xp": 7
+      },
+      {
+        "title": "Visualization of Happy Moments",
+        "description": "Step: Close eyes and imagine a joyful memory with parents. Benefit: Strengthens emotional bond and reduces resentment.",
+        "xp": 8
+      },
+      {
+        "title": "Listening to Calm Music",
+        "description": "Step: Play soft instrumental or nature sounds for 10 minutes. Benefit: Improves mood after stressful interactions.",
+        "xp": 6
+      },
+      {
+        "title": "Body Scan Relaxation",
+        "description": "Step: Lie down, focus on each body part, relax tension. Benefit: Brings awareness to emotions stored in the body.",
+        "xp": 9
+      },
+      {
+        "title": "Aromatherapy Relaxation",
+        "description": "Step: Use mild scents like lavender or orange in a calm space. Benefit: Helps children release worry and relax.",
+        "xp": 6
+      },
+      {
+        "title": "Guided Relaxation Story",
+        "description": "Step: Listen to a short relaxation story before bed. Benefit: Promotes peace and reduces bedtime stress from conflicts.",
+        "xp": 7
+      },
+      {
+        "title": "Warm Bath Relaxation",
+        "description": "Step: Take a warm bath or foot soak for 15 minutes. Benefit: Relieves tension and helps children feel comforted.",
+        "xp": 5
+      },
+      {
+        "title": "Grounding 5-4-3-2-1",
+        "description": "Step: Name 5 things you see, 4 touch, 3 hear, 2 smell, 1 taste. Benefit: Brings focus back to present during stress.",
+        "xp": 8
+      },
+      {
+        "title": "Art and Coloring Relaxation",
+        "description": "Step: Spend time coloring or drawing quietly. Benefit: Redirects negative emotions into creativity and calm.",
+        "xp": 6
+      }
+    ]
+  },
+  "hi": {
+    "commonSuggestions": [
+      {
+        "title": "भावनाओं को खुले तौर पर व्यक्त करें",
+        "description": "बच्चों को माता-पिता के साथ बेहतर संवाद करने में मदद करता है। उदाहरण: माता-पिता से कहें 'मुझे दुख होता है जब आप मेरी बात नहीं सुनते।'",
+        "xp": 3
+      },
+      {
+        "title": "गुणवत्तापूर्ण समय मांगें",
+        "description": "रिश्तों और विश्वास को मजबूत बनाने में काम करता है। उदाहरण: 'क्या हम आज 15 मिनट एक साथ खेल सकते हैं?' का अनुरोध करें।",
+        "xp": 2
+      },
+      {
+        "title": "ईमानदार लेकिन सम्मानजनक बनें",
+        "description": "आपसी समझ बनाने में काम करता है। उदाहरण: ग्रेड छुपाने के बजाय समझाएं 'मैंने कोशिश की लेकिन मुझे गणित में और मदद चाहिए।'",
+        "xp": 4
+      },
+      {
+        "title": "छोटे काम-काज में मदद करें",
+        "description": "जिम्मेदारी और सहयोग दिखाने में काम करता है। उदाहरण: बिना कहे डिनर टेबल लगाएं।",
+        "xp": 2
+      },
+      {
+        "title": "रुचियां साझा करें",
+        "description": "कनेक्शन बिंदु बनाने में काम करता है। उदाहरण: माता-पिता को अपनी पसंदीदा ड्राइंग या नया गाना दिखाएं।",
+        "xp": 1
+      },
+      {
+        "title": "सक्रिय रूप से सुनें",
+        "description": "दोनों तरफ से संवाद में सुधार करता है। उदाहरण: माता-पिता जब नियम समझाते हैं तो बिना बाधा के ध्यान दें।",
+        "xp": 3
+      },
+      {
+        "title": "सीमाओं का सम्मान करें",
+        "description": "संघर्ष कम करने में काम करता है। उदाहरण: माता-पिता के कमरे में जाने से पहले दस्तक दें।",
+        "xp": 2
+      },
+      {
+        "title": "कृतज्ञता का अभ्यास करें",
+        "description": "सकारात्मक रिश्ते बनाने में काम करता है। उदाहरण: 'होमवर्क में मदद करने के लिए धन्यवाद' कहें।",
+        "xp": 1
+      },
+      {
+        "title": "असहमति के दौरान शांत रहें",
+        "description": "स्थिति को बढ़ने से रोकने में काम करता है। उदाहरण: माता-पिता ना कहने पर चिल्लाने के बजाय गहरी सांस लें।",
+        "xp": 5
+      },
+      {
+        "title": "मार्गदर्शन मांगें",
+        "description": "विश्वास और समस्या सुलझाने के कौशल बनाने में काम करता है। उदाहरण: पूछें 'क्या आप मुझे स्कूल में धमकाने वालों से निपटना सिखा सकते हैं?'",
+        "xp": 4
+      }
+    ],
+    "yogaAndMeditation": [
+      {
+        "title": "बाल आसन (बालासन)",
+        "description": "चरण: घुटने टेकें, एड़ियों पर बैठें, हाथों को आगे फैलाएं। लाभ: माता-पिता के साथ संघर्ष के बाद बच्चों को शांत करने में मदद करता है।",
+        "xp": 5
+      },
+      {
+        "title": "वृक्ष आसन (वृक्षासन)",
+        "description": "चरण: एक पैर पर खड़े हों, दूसरे पैर को जांघ पर रखें, हथेलियां मिलाएं। लाभ: जब बच्चे गलत समझा जाना महसूस करते हैं तो फोकस और धैर्य बनाता है।",
+        "xp": 6
+      },
+      {
+        "title": "बैठा हुआ आगे झुकना (पश्चिमोत्तानासन)",
+        "description": "चरण: पैर फैलाकर बैठें, आगे झुकें और पैर की उंगलियों को पकड़ें। लाभ: निराशा को मुक्त करता है और आत्म-नियंत्रण सिखाता है।",
+        "xp": 7
+      },
+      {
+        "title": "सेतु आसन (सेतु बंधासन)",
+        "description": "चरण: पीठ के बल लेटें, घुटने मोड़ें, कूल्हों को ऊपर उठाएं। लाभ: ऊर्जा बढ़ाता है और असहमति के बाद उदासी कम करता है।",
+        "xp": 6
+      },
+      {
+        "title": "नाड़ी शोधन प्राणायाम",
+        "description": "चरण: एक नासिका से सांस लें, दूसरे से छोड़ें। लाभ: भावनाओं को संतुलित करता है और माता-पिता पर गुस्सा कम करता है।",
+        "xp": 8
+      },
+      {
+        "title": "सिंह प्राणायाम",
+        "description": "चरण: गहरी सांस लें, जीभ निकालकर जोर से सांस छोड़ें। लाभ: सुरक्षित और मजेदार तरीके से दबी हुई निराशा को मुक्त करता है।",
+        "xp": 7
+      },
+      {
+        "title": "निर्देशित कल्पना",
+        "description": "चरण: माता-पिता के साथ खुशी के पल की कल्पना करें। लाभ: सकारात्मक बंधन मजबूत करता है और नाराजगी कम करता है।",
+        "xp": 9
+      },
+      {
+        "title": "ओम जाप",
+        "description": "चरण: पालथी मारकर बैठें, गहरी सांस के साथ धीरे-धीरे 'ओम' का जाप करें। लाभ: आंतरिक शांति बनाता है और पारिवारिक अपेक्षाओं की चिंता कम करता है।",
+        "xp": 6
+      },
+      {
+        "title": "सचेत चलना",
+        "description": "चरण: धीरे-धीरे चलें, कदमों और सांस पर ध्यान दें। लाभ: बच्चों को तनाव मुक्त करने और माता-पिता के पास शांति से जाने में मदद करता है।",
+        "xp": 7
+      },
+      {
+        "title": "प्रेम-कृपा ध्यान",
+        "description": "चरण: आंखें बंद करें, 'मैं शांत रहूं, मेरे माता-पिता शांत रहें' दोहराएं। लाभ: माता-पिता के प्रति करुणा और समझ बढ़ाता है।",
+        "xp": 10
+      }
+    ],
+    "relaxationStrategies": [
+      {
+        "title": "गहरी सांस का अभ्यास",
+        "description": "चरण: नाक से गहरी सांस लें, मुंह से धीरे-धीरे छोड़ें। लाभ: माता-पिता द्वारा सुधार करने पर बच्चों को शांत रहने में मदद करता है।",
+        "xp": 5
+      },
+      {
+        "title": "प्रगतिशील मांसपेशी शिथिलता",
+        "description": "चरण: पैर से सिर तक मांसपेशियों को तानें और छोड़ें। लाभ: माता-पिता के साथ बहस के बाद तनाव कम करता है।",
+        "xp": 7
+      },
+      {
+        "title": "खुशी के पलों की कल्पना",
+        "description": "चरण: आंखें बंद करें और माता-पिता के साथ खुशी की याद की कल्पना करें। लाभ: भावनात्मक बंधन मजबूत करता है और नाराजगी कम करता है।",
+        "xp": 8
+      },
+      {
+        "title": "शांत संगीत सुनना",
+        "description": "चरण: 10 मिनट तक मधुर वाद्य या प्राकृतिक आवाजें सुनें। लाभ: तनावपूर्ण बातचीत के बाद मूड सुधारता है।",
+        "xp": 6
+      },
+      {
+        "title": "शरीर स्कैन शिथिलता",
+        "description": "चरण: लेट जाएं, हर शरीर के हिस्से पर ध्यान दें, तनाव छोड़ें। लाभ: शरीर में संग्रहीत भावनाओं के बारे में जागरूकता लाता है।",
+        "xp": 9
+      },
+      {
+        "title": "अरोमा थेरेपी शिथिलता",
+        "description": "चरण: शांत स्थान में लैवेंडर या संतरे जैसी हल्की खुशबू का उपयोग करें। लाभ: बच्चों को चिंता छोड़ने और आराम करने में मदद करता है।",
+        "xp": 6
+      },
+      {
+        "title": "निर्देशित शिथिलता कहानी",
+        "description": "चरण: सोने से पहले छोटी शिथिलता कहानी सुनें। लाभ: शांति को बढ़ावा देता है और संघर्ष से सोने के समय के तनाव को कम करता है।",
+        "xp": 7
+      },
+      {
+        "title": "गर्म स्नान शिथिलता",
+        "description": "चरण: 15 मिनट तक गर्म स्नान या पैर भिगोएं। लाभ: तनाव कम करता है और बच्चों को आराम महसूस कराता है।",
+        "xp": 5
+      },
+      {
+        "title": "ग्राउंडिंग 5-4-3-2-1",
+        "description": "चरण: 5 चीजें जो आप देखते हैं, 4 स्पर्श, 3 सुनते हैं, 2 सूंघते हैं, 1 स्वाद का नाम लें। लाभ: तनाव के दौरान वर्तमान में फोकस वापस लाता है।",
+        "xp": 8
+      },
+      {
+        "title": "कला और रंगभरने की शिथिलता",
+        "description": "चरण: चुपचाप रंगभरने या चित्र बनाने में समय बिताएं। लाभ: नकारात्मक भावनाओं को रचनात्मकता और शांति में बदलता है।",
+        "xp": 6
+      }
+    ]
+  },
+  "mr": {
+    "commonSuggestions": [
+      {
+        "title": "भावना उघडपणे व्यक्त करा",
+        "description": "मुलांना पालकांशी चांगला संवाद साधण्यात मदत करते. उदाहरण: पालकांना सांगा 'तुम्ही माझे ऐकत नाही तेव्हा मला वाईट वाटते.'",
+        "xp": 3
+      },
+      {
+        "title": "दर्जेदार वेळेची मागणी करा",
+        "description": "नाते आणि विश्वास मजबूत करण्यात काम करते. उदाहरण: 'आपण आज 15 मिनिटे एकत्र खेळू शकतो का?' अशी विनंती करा.",
+        "xp": 2
+      },
+      {
+        "title": "प्रामाणिक पण आदरयुक्त असा",
+        "description": "परस्पर समजूतदारपणा निर्माण करण्यात काम करते. उदाहरण: गुण लपवण्याऐवजी समजावून सांगा 'मी प्रयत्न केला पण मला गणितात अधिक मदत हवी.'",
+        "xp": 4
+      },
+      {
+        "title": "छोट्या कामांत मदत करा",
+        "description": "जबाबदारी आणि सहकार्य दाखवण्यात काम करते. उदाहरण: न सांगता रात्रीच्या जेवणाचे टेबल लावा.",
+        "xp": 2
+      },
+      {
+        "title": "आवडी सामायिक करा",
+        "description": "कनेक्शन पॉइंट तयार करण्यात काम करते. उदाहरण: पालकांना आवडते चित्र किंवा नवीन गाणे दाखवा.",
+        "xp": 1
+      },
+      {
+        "title": "सक्रियपणे ऐका",
+        "description": "दोन्ही बाजूंनी संवाद सुधारण्यात काम करते. उदाहरण: पालक नियम समजावत असताना व्यत्यय न आणता लक्ष द्या.",
+        "xp": 3
+      },
+      {
+        "title": "सीमांचा आदर करा",
+        "description": "संघर्ष कमी करण्यात काम करते. उदाहरण: पालकांच्या खोलीत जाण्यापूर्वी दार ठोका.",
+        "xp": 2
+      },
+      {
+        "title": "कृतज्ञतेचा सराव करा",
+        "description": "सकारात्मक नातेसंबंध निर्माण करण्यात काम करते. उदाहरण: 'गृहपाठात मदत केल्याबद्दल धन्यवाद' म्हणा.",
+        "xp": 1
+      },
+      {
+        "title": "मतभेदाच्या वेळी शांत राहा",
+        "description": "परिस्थिती वाढण्यापासून टाळण्यात काम करते. उदाहरण: पालक नाही म्हणाल्यावर ओरडण्याऐवजी खोल श्वास घ्या.",
+        "xp": 5
+      },
+      {
+        "title": "मार्गदर्शन मागा",
+        "description": "विश्वास आणि समस्या सोडवण्याची कौशल्ये बांधण्यात काम करते. उदाहरण: विचारा 'तुम्ही मला शाळेतील गुंडांना कसे हाताळायचे ते शिकवू शकता का?'",
+        "xp": 4
+      }
+    ],
+    "yogaAndMeditation": [
+      {
+        "title": "बालासन",
+        "description": "पायरी: गुडघे टेका, टाचांवर बसा, हात पुढे पसरा. फायदा: पालकांशी संघर्षानंतर मुलांना शांत करण्यात मदत करते.",
+        "xp": 5
+      },
+      {
+        "title": "वृक्षासन",
+        "description": "पायरी: एका पायावर उभे राहा, दुसरा पाय मांडीवर ठेवा, तळहात जोडा. फायदा: मुले गैरसमज वाटल्यावर लक्ष आणि धीर वाढवते.",
+        "xp": 6
+      },
+      {
+        "title": "पश्चिमोत्तानासन",
+        "description": "पायरी: पाय पसरून बसा, पुढे वाकून पायाची बोटे धरा. फायदा: निराशा मुक्त करते आणि आत्मनियंत्रण शिकवते.",
+        "xp": 7
+      },
+      {
+        "title": "सेतु बंधासन",
+        "description": "पायरी: पाठीवर झोपा, गुडघे वाकवा, नितंब वर उचला. फायदा: उर्जा वाढवते आणि मतभेदानंतर उदासीनता कमी करते.",
+        "xp": 6
+      },
+      {
+        "title": "नाडी शोधन प्राणायाम",
+        "description": "पायरी: एका नाकपुडीतून श्वास घ्या, दुसऱ्यातून सोडा. फायदा: भावना संतुलित करते आणि पालकांवरील राग कमी करते.",
+        "xp": 8
+      },
+      {
+        "title": "सिंहासन प्राणायाम",
+        "description": "पायरी: खोल श्वास घ्या, जीभ बाहेर काढून जोरात श्वास सोडा. फायदा: दाबलेली निराशा सुरक्षित आणि मजेदार पद्धतीने मुक्त करते.",
+        "xp": 7
+      },
+      {
+        "title": "निर्देशित कल्पना",
+        "description": "पायरी: पालकांसोबतच्या आनंदाच्या क्षणाची कल्पना करा. फायदा: सकारात्मक बंध मजबूत करते आणि राग कमी करते.",
+        "xp": 9
+      },
+      {
+        "title": "ओम जप",
+        "description": "पायरी: पदमासनात बसा, खोल श्वासासोबत हळूहळू 'ओम' चा जप करा. फायदा: अंतर्गत शांती निर्माण करते आणि पारिवारिक अपेक्षांची चिंता कमी करते.",
+        "xp": 6
+      },
+      {
+        "title": "चैतन्य चालणे",
+        "description": "पायरी: हळूहळू चाला, पावले आणि श्वासावर लक्ष द्या. फायदा: मुलांना तणाव मुक्त करण्यात आणि पालकांकडे शांतपणे जाण्यात मदत करते.",
+        "xp": 7
+      },
+      {
+        "title": "प्रेम-कृपा ध्यान",
+        "description": "पायरी: डोळे बंद करा, 'मी शांत राहो, माझे पालक शांत राहो' पुनरावृत्ती करा. फायदा: पालकांबद्दल करुणा आणि समजूतदारपणा वाढवते.",
+        "xp": 10
+      }
+    ],
+    "relaxationStrategies": [
+      {
+        "title": "खोल श्वासाचा सराव",
+        "description": "पायरी: नाकातून खोल श्वास घ्या, तोंडातून हळूहळू सोडा. फायदा: पालक सुधारणा करतात तेव्हा मुलांना शांत राहण्यात मदत करते.",
+        "xp": 5
+      },
+      {
+        "title": "प्रगतीशील स्नायू शिथिलीकरण",
+        "description": "पायरी: पायापासून डोक्यापर्यंत स्नायू ताणा आणि सोडा. फायदा: पालकांशी वादानंतर तणाव कमी करते.",
+        "xp": 7
+      },
+      {
+        "title": "आनंदाच्या क्षणांची कल्पना",
+        "description": "पायरी: डोळे बंद करा आणि पालकांसोबतच्या आनंदाच्या आठवणीची कल्पना करा. फायदा: भावनिक बंध मजबूत करते आणि राग कमी करते.",
+        "xp": 8
+      },
+      {
+        "title": "शांत संगीत ऐकणे",
+        "description": "पायरी: 10 मिनिटे मधुर वाद्य किंवा नैसर्गिक आवाज ऐका. फायदा: तणावपूर्ण संवादानंतर मूड सुधारते.",
+        "xp": 6
+      },
+      {
+        "title": "शरीर स्कॅन शिथिलीकरण",
+        "description": "पायरी: झोपा, प्रत्येक शरीराच्या भागावर लक्ष द्या, तणाव सोडा. फायदा: शरीरात साठलेल्या भावनांची जागरूकता आणते.",
+        "xp": 9
+      },
+      {
+        "title": "सुगंध चिकित्सा शिथिलीकरण",
+        "description": "पायरी: शांत जागेत लॅव्हेंडर किंवा संत्र्यासारख्या हलक्या सुगंधाचा वापर करा. फायदा: मुलांना चिंता सोडण्यात आणि आराम करण्यात मदत करते.",
+        "xp": 6
+      },
+      {
+        "title": "निर्देशित शिथिलीकरण कथा",
+        "description": "पायरी: झोपण्यापूर्वी छोटी शिथिलीकरण कथा ऐका. फायदा: शांती वाढवते आणि संघर्षामुळे झोपेच्या वेळेचा तणाव कमी करते.",
+        "xp": 7
+      },
+      {
+        "title": "उबदार स्नान शिथिलीकरण",
+        "description": "पायरी: 15 मिनिटे उबदार स्नान किंवा पाय भिजवा. फायदा: तणाव कमी करते आणि मुलांना आरामदायक वाटण्यात मदत करते.",
+        "xp": 5
+      },
+      {
+        "title": "ग्राउंडिंग 5-4-3-2-1",
+        "description": "पायरी: 5 गोष्टी जे तुम्ही पाहता, 4 स्पर्श, 3 ऐकता, 2 वास, 1 चव यांची नावे सांगा. फायदा: तणावाच्या वेळी वर्तमानात लक्ष परत आणते.",
+        "xp": 8
+      },
+      {
+        "title": "कला आणि रंगभरणे शिथिलीकरण",
+        "description": "पायरी: शांतपणे रंगभरणे किंवा चित्र काढण्यात वेळ घालवा. फायदा: नकारात्मक भावना सर्जनशीलता आणि शांततेत बदलते.",
+        "xp": 6
+      }
+    ]
+  }
+}

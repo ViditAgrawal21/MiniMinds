@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "condition": "friendship-and-relationship",
+    "intervention_types": ["10 Common Suggestions", "Yoga And Meditation Techniques", "Relaxation"],
+    "total_interventions": 22,
+    "created_date": "2025-01-05",
+    "description": "Mental health interventions specifically designed for friendship and relationship support"
+  },
+  "10_common_suggestions": [
+    {
+      "id": "fr_common_1",
+      "title": "Open Communication",
+      "description": "In any relationship, whether it's a friendship or a romantic relationship, open communication is key. For example, if you're upset with your friend for canceling plans last minute, instead of holding it in, express your feelings and discuss it openly.",
+      "xp": 2,
+      "category": "communication"
+    },
+    {
+      "id": "fr_common_2", 
+      "title": "Honesty",
+      "description": "Honesty builds trust in any relationship. For instance, if your partner asks about your past relationships, it's better to be honest rather than hiding the truth which could lead to misunderstandings later.",
+      "xp": 2,
+      "category": "trust"
+    },
+    {
+      "id": "fr_common_3",
+      "title": "Respect",
+      "description": "Respecting each other's boundaries, feelings, and opinions is crucial. For example, if your friend doesn't want to discuss a particular topic, respect their decision and don't push them.",
+      "xp": 2,
+      "category": "boundaries"
+    },
+    {
+      "id": "fr_common_4",
+      "title": "Quality Time",
+      "description": "Spending quality time together strengthens the bond. For instance, planning a movie night or a dinner date can help you understand each other better.",
+      "xp": 2,
+      "category": "bonding"
+    },
+    {
+      "id": "fr_common_5",
+      "title": "Support",
+      "description": "Be there for each other in times of need. If your partner is going through a tough time at work, offer your support and help them navigate through the situation.",
+      "xp": 2,
+      "category": "emotional_support"
+    },
+    {
+      "id": "fr_common_6",
+      "title": "Patience",
+      "description": "Patience is important in maintaining a healthy relationship. For example, if your friend is late for a meet-up, instead of getting angry, be patient and understanding.",
+      "xp": 2,
+      "category": "emotional_regulation"
+    },
+    {
+      "id": "fr_common_7",
+      "title": "Forgiveness",
+      "description": "Everyone makes mistakes. Forgive your friend or partner when they mess up. For instance, if your partner forgets your anniversary, instead of holding a grudge, forgive them and move on.",
+      "xp": 2,
+      "category": "conflict_resolution"
+    },
+    {
+      "id": "fr_common_8",
+      "title": "Shared Interests",
+      "description": "Having common interests can bring you closer. For example, if both you and your friend enjoy hiking, plan a hiking trip together.",
+      "xp": 2,
+      "category": "bonding"
+    },
+    {
+      "id": "fr_common_9",
+      "title": "Independence",
+      "description": "While it's important to spend time together, it's equally important to give each other space. For instance, if your partner wants to spend an evening alone or with their friends, respect their decision.",
+      "xp": 2,
+      "category": "boundaries"
+    },
+    {
+      "id": "fr_common_10",
+      "title": "Love and Affection",
+      "description": "Show your love and affection regularly. A simple hug, a kind word, or a thoughtful gesture can go a long way in maintaining a healthy relationship. For example, surprising your friend with their favorite dessert can show them how much you care.",
+      "xp": 2,
+      "category": "emotional_expression"
+    }
+  ],
+  "yoga_meditation": [
+    {
+      "id": "fr_yoga_1",
+      "title": "Yoga for Friendship and Relationship",
+      "description": "a. Partner Yoga: This is a great way to build trust and communication. You can try poses like double tree, double downward dog, or partner twist.\n\nb. Heart-Opening Poses: These poses can help you open up emotionally. Poses like the camel pose, cobra pose, or bridge pose can be beneficial.\n\nc. Breathing Exercises: Pranayama, or breathing exercises, can help you stay calm and patient. Try exercises like alternate nostril breathing or the bee breath.",
+      "xp": 5,
+      "category": "physical_practice",
+      "techniques": ["partner_yoga", "heart_opening", "breathing_exercises"]
+    },
+    {
+      "id": "fr_yoga_2",
+      "title": "Meditation for Friendship and Relationship", 
+      "description": "a. Loving-Kindness Meditation: This is a form of meditation where you focus on developing feelings of goodwill, kindness, and warmth towards others. You start by developing these feelings for yourself, then for a good friend, then for a neutral person, then for a difficult person, and finally for all beings.\n\nb. Mindfulness Meditation: This form of meditation can help you stay present and attentive in your interactions with others. It involves focusing on your breath and observing your thoughts and feelings without judgment.\n\nc. Forgiveness Meditation: If you're holding onto resentment or anger towards someone, this form of meditation can be beneficial. It involves focusing on the person you're having difficulty with and repeating phrases like \"I forgive you, I release you, I let go of my anger.\"\n\nRemember, it's important to approach these practices with patience and consistency. It might take some time to see changes, but with regular practice, you can improve your relationships and friendships.",
+      "xp": 5,
+      "category": "meditation_practice",
+      "techniques": ["loving_kindness", "mindfulness", "forgiveness"]
+    }
+  ],
+  "relaxation": [
+    {
+      "id": "fr_relax_1",
+      "title": "Mindfulness Meditation",
+      "description": "This technique helps you to stay present and focused. It can help you to manage your emotions better and improve your communication skills, which are essential for maintaining healthy relationships.",
+      "xp": 5,
+      "category": "mindfulness"
+    },
+    {
+      "id": "fr_relax_2",
+      "title": "Deep Breathing",
+      "description": "Deep breathing can help to reduce stress and anxiety. It can help you to stay calm during difficult conversations or situations.",
+      "xp": 5,
+      "category": "breathing"
+    },
+    {
+      "id": "fr_relax_3",
+      "title": "Progressive Muscle Relaxation",
+      "description": "This technique involves tensing and then releasing each muscle group in your body. It can help to reduce physical tension and promote relaxation.",
+      "xp": 5,
+      "category": "muscle_relaxation"
+    },
+    {
+      "id": "fr_relax_4",
+      "title": "Yoga",
+      "description": "Yoga combines physical postures, breathing exercises, and meditation. It can help to reduce stress, improve mood, and enhance overall well-being.",
+      "xp": 5,
+      "category": "physical_practice"
+    },
+    {
+      "id": "fr_relax_5",
+      "title": "Guided Imagery",
+      "description": "This technique involves visualizing a peaceful place or situation to promote relaxation. It can help to reduce stress and anxiety.",
+      "xp": 5,
+      "category": "visualization"
+    },
+    {
+      "id": "fr_relax_6",
+      "title": "Journaling",
+      "description": "Writing about your thoughts and feelings can help to reduce stress and improve your understanding of your relationships.",
+      "xp": 5,
+      "category": "self_reflection"
+    },
+    {
+      "id": "fr_relax_7",
+      "title": "Regular Exercise",
+      "description": "Physical activity can help to reduce stress and improve mood. It can also boost your self-esteem and confidence, which can improve your relationships.",
+      "xp": 5,
+      "category": "physical_activity"
+    },
+    {
+      "id": "fr_relax_8",
+      "title": "Healthy Eating",
+      "description": "Eating a balanced diet can help to support your physical health and mood. It can also give you the energy you need to maintain your relationships.",
+      "xp": 5,
+      "category": "nutrition"
+    },
+    {
+      "id": "fr_relax_9",
+      "title": "Adequate Sleep",
+      "description": "Getting enough sleep can help to reduce stress and improve your mood. It can also enhance your ability to communicate effectively and manage your relationships.",
+      "xp": 5,
+      "category": "sleep_hygiene"
+    },
+    {
+      "id": "fr_relax_10",
+      "title": "Socializing",
+      "description": "Spending time with friends and loved ones can help to reduce stress and improve your mood. It can also strengthen your relationships.\n\nRemember, it's important to take care of your own mental and physical health first. If you're feeling overwhelmed, it may be helpful to seek support from a mental health professional.",
+      "xp": 5,
+      "category": "social_connection"
+    }
+  ]
+}

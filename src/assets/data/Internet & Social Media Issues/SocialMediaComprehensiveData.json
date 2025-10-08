@@ -1,0 +1,403 @@
+{
+  "socialMediaIssuesScreen": {
+    "headerTitle": "Social Media Issues",
+    "mainTitle": "Social Media Issue Recovery",
+    "description": "Overcome social media issues with evidence-based strategies and professional support for a healthier digital lifestyle.",
+    "commonSymptoms": "Common Symptoms",
+    "symptoms": {
+      "compulsive": "Compulsive checking of social media apps",
+      "relationships": "Negative impact on relationships",
+      "guilt": "Feelings of guilt or anxiety",
+      "isolation": "Social isolation",
+      "productivity": "Reduced productivity"
+    },
+    "recoveryStrategies": "Recovery Strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "Common Suggestions",
+        "description": "Tips for managing social media use and improving well-being."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Yoga practices to reduce stress and improve focus.",
+        "yogaSuggestionsList": [
+          {
+            "title": {
+              "en": "Breathing Exercises (Pranayama)",
+              "hi": "श्वास व्यायाम (प्राणायाम)",
+              "mr": "श्वसन व्यायाम (प्राणायाम)"
+            },
+            "description": {
+              "en": "Practice deep breathing to reduce stress and improve focus before and after social media use.",
+              "hi": "सोशल मीडिया उपयोग से पहले और बाद में तनाव कम करने और ध्यान केंद्रित करने के लिए गहरी सांस लें।",
+              "mr": "सोशल मीडिया वापरापूर्वी आणि नंतर तणाव कमी करण्यासाठी आणि लक्ष केंद्रित करण्यासाठी खोल श्वास घ्या."
+            }
+          },
+          {
+            "title": {
+              "en": "Child's Pose (Balasana)",
+              "hi": "बालासन",
+              "mr": "बालासन"
+            },
+            "description": {
+              "en": "Use Child's Pose to relax your mind and body after long periods of screen time.",
+              "hi": "लंबे समय तक स्क्रीन देखने के बाद मन और शरीर को आराम देने के लिए बालासन करें।",
+              "mr": "लांब वेळ स्क्रीन पाहिल्यानंतर मन आणि शरीर शांत करण्यासाठी बालासन करा."
+            }
+          },
+          {
+            "title": {
+              "en": "Mountain Pose (Tadasana)",
+              "hi": "ताड़ासन",
+              "mr": "ताडासन"
+            },
+            "description": {
+              "en": "Improve posture and awareness during device use with Mountain Pose.",
+              "hi": "डिवाइस उपयोग के दौरान ताड़ासन से मुद्रा और जागरूकता सुधारें।",
+              "mr": "डिव्हाइस वापरताना ताडासनने स्थिती आणि जागरूकता सुधारावी."
+            }
+          }
+        ]
+      },
+      "relaxation": {
+        "title": "Relaxation",
+        "description": "Relaxation techniques for better mental health.",
+        "relaxationSuggestionsList": [
+          {
+            "title": {
+              "en": "Set Your Intention",
+              "hi": "अपना इरादा निर्धारित करें",
+              "mr": "तुमचा हेतू ठरवा"
+            },
+            "description": {
+              "en": "Begin each session by setting an intention to create a healthy balance with technology. For example, \"I will be present and mindful during this practice, letting go of digital distractions.\"",
+              "hi": "प्रत्येक सत्र की शुरुआत में तकनीक के साथ एक स्वस्थ संतुलन बनाने का इरादा निर्धारित करें। उदाहरण के लिए, \"मैं इस अभ्यास के दौरान उपस्थित और सचेत रहूंगा, डिजिटल विकर्षणों को छोड़ूंगा।\"",
+              "mr": "प्रत्येक सत्राच्या सुरुवातीला तंत्रज्ञानाशी निरोगी संतुलन निर्माण करण्याचा हेतू ठरवा. उदाहरणार्थ, \"मी या सरावादरम्यान उपस्थित आणि सजग राहीन, डिजिटल विकर्षणे सोडून देईन.\""
+            },
+            "xp": 5
+          },
+          {
+            "title": {
+              "en": "Breathing Exercise (Pranayama)",
+              "hi": "श्वास व्यायाम (प्राणायाम)",
+              "mr": "श्वसन व्यायाम (प्राणायाम)"
+            },
+            "description": {
+              "en": "Deep Belly Breathing: Sit comfortably or lie on your back. Inhale deeply through your nose, letting your belly rise. Exhale slowly through your mouth. This helps calm the nervous system and reduce the urge for constant digital stimulation. 4-7-8 Breathing: Inhale for 4 counts, hold for 7 counts, and exhale for 8 counts. This technique helps reduce anxiety often associated with social media use.",
+              "hi": "गहरी पेट की सांस: आराम से बैठें या अपनी पीठ के बल लेटें। अपनी नाक से गहरी सांस लें, अपने पेट को उठने दें। धीरे-धीरे अपने मुंह से सांस छोड़ें। यह तंत्रिका तंत्र को शांत करने और निरंतर डिजिटल उत्तेजना की इच्छा को कम करने में मदद करता है। 4-7-8 सांस: 4 गिनती के लिए सांस लें, 7 गिनती के लिए रोकें, और 8 गिनती के लिए सांस छोड़ें।",
+              "mr": "खोल पोटाचा श्वास: आरामात बसा किंवा पाठीवर झोपा. नाकातून खोल श्वास घ्या, पोट वर येऊ द्या. तोंडातून हळू हळू श्वास सोडा. हे मज्जासंस्था शांत करण्यास आणि सततच्या डिजिटल उत्तेजनेची इच्छा कमी करण्यास मदत करते. 4-7-8 श्वास: 4 मोजणीसाठी श्वास घ्या, 7 मोजणीसाठी धरा आणि 8 मोजणीसाठी श्वास सोडा."
+            },
+            "xp": 5
+          },
+          {
+            "title": {
+              "en": "Grounding Poses",
+              "hi": "ग्राउंडिंग पोज़",
+              "mr": "ग्राउंडिंग आसने"
+            },
+            "description": {
+              "en": "Mountain Pose (Tadasana): Stand tall with feet hip-width apart, feeling grounded and present. Focus on the physical sensations of standing rather than mental distractions. Tree Pose (Vrikshasana): Balance on one foot to cultivate focus and presence, training your mind to concentrate on the here and now.",
+              "hi": "पर्वत आसन (ताड़ासन): कूल्हे की चौड़ाई के बराबर पैरों के साथ लंबे खड़े हों, जमीन से जुड़ाव और उपस्थिति महसूस करें। मानसिक विकर्षणों के बजाय खड़े होने की शारीरिक संवेदनाओं पर ध्यान दें। वृक्ष आसन (वृक्षासन): फोकस और उपस्थिति विकसित करने के लिए एक पैर पर संतुलन बनाएं।",
+              "mr": "पर्वत आसन (ताडासन): नितंबाच्या रुंदीइतके पाय घेऊन उंच उभे राहा, स्थिर आणि उपस्थित वाटत. मानसिक विकर्षणांऐवजी उभे राहण्याच्या शारीरिक संवेदनांवर लक्ष केंद्रित करा. वृक्ष आसन (वृक्षासन): लक्ष आणि उपस्थिती वाढवण्यासाठी एका पायावर संतुलन साधा."
+            },
+            "xp": 5
+          },
+          {
+            "title": {
+              "en": "Eye and Mind Rest Poses",
+              "hi": "आंख और मन आराम आसन",
+              "mr": "डोळे आणि मन विश्रांती आसने"
+            },
+            "description": {
+              "en": "Child's Pose (Balasana): Rest your forehead on the mat, giving your eyes a break from screens and your mind a chance to turn inward. Palming: Sit comfortably, rub your palms together to create warmth, and gently place them over your closed eyes for 30 seconds to 1 minute.",
+              "hi": "बालासन: अपना माथा चटाई पर टिकाएं, अपनी आंखों को स्क्रीन से ब्रेक दें और अपने मन को अंतर्मुखी होने का मौका दें। हथेली: आराम से बैठें, गर्मी पैदा करने के लिए अपनी हथेलियों को रगड़ें, और धीरे से उन्हें 30 सेकंड से 1 मिनट तक अपनी बंद आंखों पर रखें।",
+              "mr": "बालासन: तुमचे कपाळ चटईवर टेकवा, तुमच्या डोळ्यांना स्क्रीनपासून विश्रांती द्या आणि तुमच्या मनाला आतून वळण्याची संधी द्या. तळहात: आरामात बसा, उष्णता निर्माण करण्यासाठी तुमचे तळहात घासा आणि 30 सेकंदांपासून 1 मिनिटापर्यंत तुमच्या बंद डोळ्यांवर हळूवारपणे ठेवा."
+            },
+            "xp": 5
+          },
+          {
+            "title": {
+              "en": "Mindfulness Meditation",
+              "hi": "माइंडफुलनेस मेडिटेशन",
+              "mr": "सजगता ध्यान"
+            },
+            "description": {
+              "en": "Present Moment Awareness: Sit comfortably and focus your attention on your breath. Notice the sensations of breathing and gently bring your mind back when it wanders to social media or online interactions. Digital Detox Meditation: Set aside 15-20 minutes daily for meditation without any devices nearby.",
+              "hi": "वर्तमान क्षण जागरूकता: आराम से बैठें और अपना ध्यान अपनी सांस पर केंद्रित करें। सांस लेने की संवेदनाओं को नोटिस करें और जब आपका मन सोशल मीडिया या ऑनलाइन बातचीत की ओर भटके तो धीरे से इसे वापस लाएं। डिजिटल डिटॉक्स मध्यध्यान: प्रतिदिन 15-20 मिनट बिना किसी डिवाइस के ध्यान के लिए अलग रखें।",
+              "mr": "सध्याच्या क्षणाची जागरूकता: आरामात बसा आणि तुमचे लक्ष तुमच्या श्वासावर केंद्रित करा. श्वास घेण्याच्या संवेदना लक्षात घ्या आणि जेव्हा तुमचे मन सोशल मीडिया किंवा ऑनलाइन संवादाकडे भटकते तेव्हा हळूवारपणे ते परत आणा. डिजिटल डिटॉक्स ध्यान: दररोज 15-20 मिनिटे कोणत्याही उपकरणाशिवाय ध्यानासाठी अलग ठेवा."
+            },
+            "xp": 5
+          }
+        ]
+      },
+      "cbt": {
+        "title": "CBT",
+        "description": "Cognitive Behavioral Therapy strategies for social media issues.",
+        "cbtSuggestionsList": [
+          {
+            "title": {
+              "en": "Identify Negative Thought Patterns",
+              "hi": "नकारात्मक विचार पैटर्न की पहचान करें",
+              "mr": "नकारात्मक विचार पद्धती ओळखा"
+            },
+            "description": {
+              "en": "It allows individuals to recognize and understand the unrealistic or harmful thoughts that contribute to their internet and social media use. Keep a thought diary to track the situations that lead to excessive use and the thoughts associated with them. Example: If you find yourself scrolling late at night, note thoughts like \"I need to stay updated\" and challenge their validity.",
+              "hi": "यह व्यक्तियों को उन अवास्तविक या हानिकारक विचारों को पहचानने और समझने की अनुमति देता है जो उनके इंटरनेट और सोशल मीडिया उपयोग में योगदान करते हैं। अत्यधिक उपयोग की स्थितियों और उनसे जुड़े विचारों को ट्रैक करने के लिए एक विचार डायरी रखें। उदाहरण: यदि आप रात में देर तक स्क्रॉल करते हुए पाते हैं, तो \"मुझे अपडेट रहना चाहिए\" जैसे विचारों को नोट करें।",
+              "mr": "हे व्यक्तींना त्यांच्या इंटरनेट आणि सोशल मीडिया वापरात योगदान देणारे अवास्तविक किंवा हानिकारक विचार ओळखण्यास आणि समजून घेण्यास अनुमती देते. अत्यधिक वापराकडे नेणाऱ्या परिस्थिती आणि त्यांच्याशी संबंधित विचारांचा मागोवा घेण्यासाठी विचार डायरी ठेवा. उदाहरण: जर तुम्ही रात्री उशिरापर्यंत स्क्रॉल करताना आढळता, तर \"मला अपडेट राहणे आवश्यक आहे\" अशा विचारांची नोंद घ्या."
+            },
+            "xp": 5
+          },
+          {
+            "title": {
+              "en": "Challenge Cognitive Distortions",
+              "hi": "संज्ञानात्मक विकृतियों को चुनौती दें",
+              "mr": "संज्ञानात्मक विकृतींना आव्हान द्या"
+            },
+            "description": {
+              "en": "It encourages the evaluation and restructuring of distorted thoughts, reducing anxiety or compulsive behavior. After identifying negative thoughts, question their truth and consider alternative interpretations. Example: Counter the belief \"I'm missing out\" with \"I can catch up later without missing important life moments.\"",
+              "hi": "यह विकृत विचारों के मूल्यांकन और पुनर्गठन को प्रोत्साहित करता है, चिंता या बाध्यकारी व्यवहार को कम करता है। नकारात्मक विचारों की पहचान के बाद, उनकी सत्यता पर सवाल उठाएं और वैकल्पिक व्याख्याओं पर विचार करें। उदाहरण: \"मैं चूक रहा हूं\" की मान्यता का मुकाबला \"मैं बाद में पकड़ सकता हूं\" से करें।",
+              "mr": "हे विकृत विचारांचे मूल्यमापन आणि पुनर्रचना प्रोत्साहित करते, चिंता किंवा सक्तीचे वर्तन कमी करते. नकारात्मक विचारांची ओळख केल्यानंतर, त्यांच्या सत्यतेवर प्रश्न विचारा आणि पर्यायी स्पष्टीकरणांचा विचार करा. उदाहरण: \"मी चुकवत आहे\" या समजुतीचा प्रतिकार \"मी नंतर पकडू शकतो\" असे करा."
+            },
+            "xp": 7
+          },
+          {
+            "title": {
+              "en": "Develop Coping Strategies",
+              "hi": "मुकाबला रणनीति विकसित करें",
+              "mr": "सामना करण्याच्या रणनीती विकसित करा"
+            },
+            "description": {
+              "en": "Equips individuals with tools to manage urges effectively and reduces dependency on social media for emotional regulation. List healthy activities (e.g., reading, exercise) to replace screen time. Example: When feeling the urge to check social media, go for a 10-minute walk instead.",
+              "hi": "व्यक्तियों को प्रभावी रूप से इच्छाओं को प्रबंधित करने के लिए उपकरणों से लैस करता है और भावनात्मक नियंत्रण के लिए सोशल मीडिया पर निर्भरता कम करता है। स्क्रीन समय को बदलने के लिए स्वस्थ गतिविधियों (जैसे पढ़ना, व्यायाम) की सूची बनाएं। उदाहरण: सोशल मीडिया देखने की इच्छा महसूस करने पर, इसके बजाय 10 मिनट की सैर करें।",
+              "mr": "व्यक्तींना प्रभावीपणे इच्छा व्यवस्थापित करण्यासाठी साधनांनी सुसज्ज करते आणि भावनिक नियंत्रणासाठी सोशल मीडियावरील अवलंबित्व कमी करते. स्क्रीन वेळ बदलण्यासाठी निरोगी क्रियाकलाप (जसे वाचन, व्यायाम) यादी करा. उदाहरण: सोशल मीडिया तपासण्याची इच्छा वाटल्यास, त्याऐवजी 10 मिनिटांची चालणे करा."
+            },
+            "xp": 3
+          },
+          {
+            "title": {
+              "en": "Practice Mindfulness",
+              "hi": "माइंडफुलनेस का अभ्यास करें",
+              "mr": "सजगतेचा सराव करा"
+            },
+            "description": {
+              "en": "Enhances awareness of present activities and reduces automatic habits of checking devices. Practice mindfulness exercises focusing on being present without relying on gadgets. Example: Allocate specific times to be device-free and focus on deep breathing or body scans.",
+              "hi": "वर्तमान गतिविधियों की जागरूकता बढ़ाता है और डिवाइस चेक करने की स्वचालित आदतों को कम करता है। गैजेट्स पर निर्भर हुए बिना उपस्थित रहने पर ध्यान केंद्रित करने वाले माइंडफुलनेस अभ्यास करें। उदाहरण: डिवाइस-फ्री रहने के लिए विशिष्ट समय आवंटित करें और गहरी सांस या बॉडी स्कैन पर ध्यान दें।",
+              "mr": "सध्याच्या क्रियाकलापांची जागरूकता वाढवते आणि उपकरणे तपासण्याच्या स्वयंचलित सवयी कमी करते. गॅजेट्सवर अवलंबून न राहता उपस्थित राहण्यावर लक्ष केंद्रित करणारे सजगता अभ्यास करा. उदाहरण: उपकरण-मुक्त राहण्यासाठी विशिष्ट वेळा वाटप करा आणि खोल श्वास किंवा शरीर स्कॅनवर लक्ष केंद्रित करा."
+            },
+            "xp": 5
+          },
+          {
+            "title": {
+              "en": "Set Boundaries with Technology",
+              "hi": "तकनीक के साथ सीमाएं निर्धारित करें",
+              "mr": "तंत्रज्ञानासह सीमा निर्धारित करा"
+            },
+            "description": {
+              "en": "Establishes a healthy relationship with technology and prevents it from interfering with daily functions. Define clear rules for when and how long you engage with devices. Example: Turn off notifications after 8 PM to enhance relaxation time before sleep.",
+              "hi": "तकनीक के साथ एक स्वस्थ संबंध स्थापित करता है और इसे दैनिक कार्यों में हस्तक्षेप करने से रोकता है। स्पष्ट नियम निर्धारित करें कि आप कब और कितनी देर तक डिवाइस के साथ जुड़ते हैं। उदाहरण: नींद से पहले आराम के समय को बढ़ाने के लिए रात 8 बजे के बाद सूचनाएं बंद कर दें।",
+              "mr": "तंत्रज्ञानाशी निरोगी संबंध स्थापित करते आणि दैनंदिन कार्यांमध्ये हस्तक्षेप करण्यापासून प्रतिबंधित करते. तुम्ही केव्हा आणि किती वेळ उपकरणांशी संलग्न होता याचे स्पष्ट नियम निश्चित करा. उदाहरण: झोपण्यापूर्वी विश्रांतीचा वेळ वाढवण्यासाठी रात्री 8 नंतर सूचना बंद करा."
+            },
+            "xp": 5
+          }
+        ]
+      },
+      "rebt": {
+        "title": "REBT",
+        "description": "Rational Emotive Behavior Therapy strategies for healthy habits.",
+        "rebtSuggestionsList": [
+          {
+            "title": {
+              "en": "Identify Irrational Beliefs",
+              "hi": "अतर्कसंगत मान्यताओं की पहचान करें",
+              "mr": "अतर्कसंगत समजुती ओळखा"
+            },
+            "description": {
+              "en": "By identifying irrational beliefs, you can start questioning and challenging thoughts that lead to emotional distress. Reflect on your thoughts when using social media. Identify beliefs that are unrealistic or overly negative. Example: \"I must be liked by everyone online, or I'm worthless.\"",
+              "hi": "अतर्कसंगत मान्यताओं की पहचान करके, आप उन विचारों पर सवाल उठाना और चुनौती देना शुरू कर सकते हैं जो भावनात्मक संकट का कारण बनते हैं। सोशल मीडिया का उपयोग करते समय अपने विचारों पर विचार करें। अवास्तविक या अत्यधिक नकारात्मक मान्यताओं की पहचान करें। उदाहरण: \"मुझे ऑनलाइन सभी लोगों द्वारा पसंद किया जाना चाहिए, अन्यथा मैं बेकार हूं।\"",
+              "mr": "अतर्कसंगत समजुती ओळखून, तुम्ही भावनिक त्रासाकडे नेणाऱ्या विचारांवर प्रश्न विचारणे आणि आव्हान देणे सुरू करू शकता. सोशल मीडिया वापरताना तुमच्या विचारांवर विचार करा. अवास्तविक किंवा अति नकारात्मक समजुती ओळखा. उदाहरण: \"मला ऑनलाइन प्रत्येकाने आवडले पाहिजे, नाहीतर मी निरुपयोगी आहे.\""
+            },
+            "xp": 5
+          },
+          {
+            "title": {
+              "en": "Challenge the Need for Approval",
+              "hi": "अनुमोदन की आवश्यकता को चुनौती दें",
+              "mr": "मान्यतेच्या गरजेला आव्हान द्या"
+            },
+            "description": {
+              "en": "Understanding that not everyone's approval is necessary reduces anxiety and dependence on external validation. Start reframing thoughts. Ask yourself if not getting likes truly reflects your worth. Example: \"While getting likes is nice, my self-worth isn't determined by others' opinions.\"",
+              "hi": "यह समझना कि हर किसी की अनुमति आवश्यक नहीं है, चिंता और बाहरी सत्यापन पर निर्भरता को कम करता है। विचारों को फिर से तैयार करना शुरू करें। खुद से पूछें कि क्या लाइक न मिलना वास्तव में आपकी योग्यता को दर्शाता है। उदाहरण: \"जबकि लाइक मिलना अच्छा है, मेरी आत्म-योग्यता दूसरों की राय से निर्धारित नहीं होती।\"",
+              "mr": "प्रत्येकाची मान्यता आवश्यक नाही हे समजून घेतल्याने चिंता आणि बाह्य प्रमाणीकरणावरील अवलंबित्व कमी होते. विचारांची पुनर्रचना करणे सुरू करा. स्वतःला विचारा की लाइक न मिळणे खरोखर तुमची योग्यता दर्शवते का. उदाहरण: \"लाइक मिळणे छान आहे, पण माझी आत्म-योग्यता इतरांच्या मतानुसार ठरत नाही.\""
+            },
+            "xp": 5
+          },
+          {
+            "title": {
+              "en": "Practice Self-Acceptance",
+              "hi": "आत्म-स्वीकृति का अभ्यास करें",
+              "mr": "आत्म-स्वीकाराचा सराव करा"
+            },
+            "description": {
+              "en": "Accepting yourself unconditionally diminishes the impact of negative feedback or comparison. Regularly remind yourself of your inherent worth, regardless of social media feedback. Example: \"I am a valuable person regardless of how many likes my post gets.\"",
+              "hi": "बिना शर्त खुद को स्वीकार करना नकारात्मक फीडबैक या तुलना के प्रभाव को कम करता है। सोशल मीडिया फीडबैक की परवाह किए बिना नियमित रूप से अपनी अंतर्निहित योग्यता की याद दिलाएं। उदाहरण: \"मैं एक मूल्यवान व्यक्ति हूं, भले ही मेरी पोस्ट को कितने भी लाइक मिलें।\"",
+              "mr": "बिनशर्त स्वतःला स्वीकारणे नकारात्मक प्रतिक्रिया किंवा तुलनेचा प्रभाव कमी करते. सोशल मीडिया प्रतिक्रियेची पर्वा न करता नियमितपणे तुमच्या अंतर्निहित योग्यतेची आठवण करून द्या. उदाहरण: \"माझ्या पोस्टला कितीही लाइक मिळाले तरी मी एक मूल्यवान व्यक्ती आहे.\""
+            },
+            "xp": 3
+          },
+          {
+            "title": {
+              "en": "Dispute Catastrophic Thinking",
+              "hi": "आपत्तिजनक सोच का विरोध करें",
+              "mr": "आपत्तिजनक विचारसरणीचा विरोध करा"
+            },
+            "description": {
+              "en": "Reducing catastrophic thinking lowers anxiety and distress. When you notice catastrophic thoughts, question their likelihood and impact. Example: \"Not getting any comments today might feel disappointing but it doesn't mean my friends don't care.\"",
+              "hi": "आपत्तिजनक सोच को कम करना चिंता और संकट को कम करता है। जब आप आपत्तिजनक विचारों को नोटिस करें, तो उनकी संभावना और प्रभाव पर सवाल उठाएं। उदाहरण: \"आज कोई टिप्पणी न मिलना निराशाजनक लग सकता है लेकिन इसका मतलब यह नहीं है कि मेरे दोस्त परवाह नहीं करते।\"",
+              "mr": "आपत्तिजनक विचारसरणी कमी केल्याने चिंता आणि त्रास कमी होतो. जेव्हा तुम्ही आपत्तिजनक विचार लक्षात घेता, तेव्हा त्यांच्या शक्यता आणि प्रभावावर प्रश्न विचारा. उदाहरण: \"आज कोणत्याही टिप्पण्या न मिळणे निराशाजनक वाटू शकते पण याचा अर्थ असा नाही की माझे मित्र काळजी घेत नाहीत.\""
+            },
+            "xp": 3
+          },
+          {
+            "title": {
+              "en": "Focus on Real-life Interactions",
+              "hi": "वास्तविक जीवन की बातचीत पर ध्यान दें",
+              "mr": "वास्तविक जीवनातील संवादावर लक्ष केंद्रित करा"
+            },
+            "description": {
+              "en": "Real-life interactions provide meaningful connections and reduce dependency on virtual validation. Prioritize face-to-face interactions and activities that bring joy and fulfillment. Example: \"I'll spend more time with my family and friends in person, which brings real joy beyond social media.\"",
+              "hi": "वास्तविक जीवन की बातचीत अर्थपूर्ण कनेक्शन प्रदान करती है और आभासी सत्यापन पर निर्भरता कम करती है। आमने-सामने की बातचीत और उन गतिविधियों को प्राथमिकता दें जो खुशी और संतुष्टि लाती हैं। उदाहरण: \"मैं अपने परिवार और दोस्तों के साथ व्यक्तिगत रूप से अधिक समय बिताऊंगा, जो सोशल मीडिया से कहीं अधिक वास्तविक खुशी लाता है।\"",
+              "mr": "वास्तविक जीवनातील संवाद अर्थपूर्ण कनेक्शन प्रदान करतात आणि आभासी प्रमाणीकरणावरील अवलंबित्व कमी करतात. समोरासमोरच्या संवादांना आणि आनंद व पूर्णता आणणाऱ्या क्रियाकलापांना प्राधान्य द्या. उदाहरण: \"मी माझ्या कुटुंबीयांसह आणि मित्रांसोबत व्यक्तिशः जास्त वेळ घालवेन, जे सोशल मीडियापेक्षा खरा आनंद देते.\""
+            },
+            "xp": 5
+          }
+        ]
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Important",
+    "alertText": "Excessive social media use can impact mental health. Seek professional help if needed.",
+    "imageLabel": "Digital Wellbeing",
+    "commonSuggestionsList": [
+      {
+        "title": {
+          "en": "Limit Screen Time",
+          "hi": "स्क्रीन समय सीमित करें",
+          "mr": "स्क्रीन वेळ मर्यादित ठेवा"
+        },
+        "description": {
+          "en": "Set daily limits for social media use to avoid overuse and improve focus.",
+          "hi": "अत्यधिक उपयोग से बचने और ध्यान केंद्रित करने के लिए सोशल मीडिया के लिए दैनिक सीमा निर्धारित करें।",
+          "mr": "अति वापर टाळण्यासाठी आणि लक्ष केंद्रित करण्यासाठी सोशल मीडिया वापरासाठी दररोजची मर्यादा ठेवा."
+        }
+      },
+      {
+        "title": {
+          "en": "Turn Off Notifications",
+          "hi": "सूचनाएँ बंद करें",
+          "mr": "सूचना बंद करा"
+        },
+        "description": {
+          "en": "Disable unnecessary notifications to reduce distractions and anxiety.",
+          "hi": "अनावश्यक सूचनाएँ बंद करें ताकि ध्यान भंग और चिंता कम हो सके।",
+          "mr": "अनावश्यक सूचना बंद करा जेणेकरून विचलन आणि चिंता कमी होईल."
+        }
+      },
+      {
+        "title": {
+          "en": "Unfollow Negative Accounts",
+          "hi": "नकारात्मक खातों को अनफॉलो करें",
+          "mr": "नकारात्मक खात्यांना अनफॉलो करा"
+        },
+        "description": {
+          "en": "Remove or mute accounts that spread negativity or stress.",
+          "hi": "नकारात्मकता या तनाव फैलाने वाले खातों को हटाएँ या म्यूट करें।",
+          "mr": "नकारात्मकता किंवा तणाव पसरवणारे खाते हटवा किंवा म्यूट करा."
+        }
+      },
+      {
+        "title": {
+          "en": "Schedule Social Media Breaks",
+          "hi": "सोशल मीडिया ब्रेक निर्धारित करें",
+          "mr": "सोशल मीडिया ब्रेक ठरवा"
+        },
+        "description": {
+          "en": "Take regular breaks from social media to refresh your mind.",
+          "hi": "मन को ताज़ा करने के लिए सोशल मीडिया से नियमित ब्रेक लें।",
+          "mr": "मन ताजेतवाने करण्यासाठी सोशल मीडिया पासून नियमित ब्रेक घ्या."
+        }
+      },
+      {
+        "title": {
+          "en": "Avoid Social Media Before Bed",
+          "hi": "सोने से पहले सोशल मीडिया से बचें",
+          "mr": "झोपण्यापूर्वी सोशल मीडिया टाळा"
+        },
+        "description": {
+          "en": "Stop using social media at least 1 hour before sleep to improve sleep quality.",
+          "hi": "नींद की गुणवत्ता सुधारने के लिए कम से कम 1 घंटे पहले सोशल मीडिया का उपयोग बंद करें।",
+          "mr": "झोपेच्या किमान 1 तास आधी सोशल मीडिया वापरणे बंद करा जेणेकरून झोपेची गुणवत्ता सुधारेल."
+        }
+      },
+      {
+        "title": {
+          "en": "Engage in Offline Activities",
+          "hi": "ऑफलाइन गतिविधियों में भाग लें",
+          "mr": "ऑफलाइन क्रियाकलापात सहभागी व्हा"
+        },
+        "description": {
+          "en": "Spend time on hobbies, sports, or with family and friends away from screens.",
+          "hi": "स्क्रीन से दूर शौक, खेल या परिवार और दोस्तों के साथ समय बिताएँ।",
+          "mr": "स्क्रीनपासून दूर छंद, खेळ किंवा कुटुंब आणि मित्रांसोबत वेळ घालवा."
+        }
+      },
+      {
+        "title": {
+          "en": "Be Mindful of What You Share",
+          "hi": "जो साझा करें उसके प्रति सतर्क रहें",
+          "mr": "जे शेअर करता त्याबद्दल जागरूक रहा"
+        },
+        "description": {
+          "en": "Think before posting and avoid sharing personal information publicly.",
+          "hi": "पोस्ट करने से पहले सोचें और व्यक्तिगत जानकारी सार्वजनिक रूप से साझा करने से बचें।",
+          "mr": "पोस्ट करण्यापूर्वी विचार करा आणि वैयक्तिक माहिती सार्वजनिकपणे शेअर करणे टाळा."
+        }
+      },
+      {
+        "title": {
+          "en": "Practice Digital Detox",
+          "hi": "डिजिटल डिटॉक्स का अभ्यास करें",
+          "mr": "डिजिटल डिटॉक्सचा सराव करा"
+        },
+        "description": {
+          "en": "Take a day off from all social media platforms to relax and recharge.",
+          "hi": "आराम और पुनः ऊर्जा पाने के लिए सभी सोशल मीडिया प्लेटफार्म से एक दिन का ब्रेक लें।",
+          "mr": "आराम आणि पुनरुज्जीवनासाठी सर्व सोशल मीडिया प्लॅटफॉर्मपासून एक दिवस ब्रेक घ्या."
+        }
+      },
+      {
+        "title": {
+          "en": "Talk About Your Feelings",
+          "hi": "अपनी भावनाओं के बारे में बात करें",
+          "mr": "तुमच्या भावना बोलून दाखवा"
+        },
+        "description": {
+          "en": "Share your social media experiences and feelings with someone you trust.",
+          "hi": "अपने सोशल मीडिया अनुभव और भावनाएँ किसी विश्वसनीय व्यक्ति से साझा करें।",
+          "mr": "तुमचे सोशल मीडिया अनुभव आणि भावना विश्वासू व्यक्तीसोबत शेअर करा."
+        }
+      },
+      {
+        "title": {
+          "en": "Seek Help If Needed",
+          "hi": "आवश्यकता होने पर मदद लें",
+          "mr": "गरज असल्यास मदत घ्या"
+        },
+        "description": {
+          "en": "If social media is affecting your mental health, consult a professional.",
+          "hi": "अगर सोशल मीडिया आपके मानसिक स्वास्थ्य को प्रभावित कर रहा है, तो किसी विशेषज्ञ से सलाह लें।",
+          "mr": "जर सोशल मीडिया तुमच्या मानसिक आरोग्यावर परिणाम करत असेल, तर तज्ञाचा सल्ला घ्या."
+        }
+      }
+    ]
+  }
+}

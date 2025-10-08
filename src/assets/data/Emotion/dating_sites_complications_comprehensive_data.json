@@ -1,0 +1,437 @@
+{
+  "commonSuggestions": {
+    "title": {
+      "en": "10 Common Suggestions for Dating Sites & Complications",
+      "hi": "डेटिंग साइट्स और जटिलताओं के लिए 10 सामान्य सुझाव",
+      "mr": "डेटिंग साइट्स आणि गुंतागुंतांसाठी 10 सामान्य सुचवणे"
+    },
+    "cards": [
+      {
+        "title": {
+          "en": "Set Healthy Boundaries",
+          "hi": "स्वस्थ सीमाएं निर्धारित करें",
+          "mr": "आरोग्यदायी सीमा निश्चित करा"
+        },
+        "description": {
+          "en": "Establish clear limits on time spent on dating apps. Set specific hours for swiping and stick to them to prevent endless scrolling.",
+          "hi": "डेटिंग ऐप्स पर बिताए गए समय की स्पष्ट सीमा निर्धारित करें। स्वाइपिंग के लिए विशिष्ट घंटे निर्धारित करें और अंतहीन स्क्रॉलिंग को रोकने के लिए उनका पालन करें।",
+          "mr": "डेटिंग अॅप्सवर घालवलेल्या वेळेची स्पष्ट मर्यादा निश्चित करा. स्वाइपिंगसाठी विशिष्ट तास ठरवा आणि अंतहीन स्क्रॉलिंग टाळण्यासाठी त्यांचे पालन करा."
+        },
+        "xp": 2
+      },
+      {
+        "title": {
+          "en": "Practice Mindful Swiping",
+          "hi": "सचेत स्वाइपिंग का अभ्यास करें",
+          "mr": "सजग स्वाइपिंगचा सराव करा"
+        },
+        "description": {
+          "en": "Take time to read profiles thoroughly instead of making quick judgments based on photos alone. Focus on quality connections over quantity.",
+          "hi": "केवल तस्वीरों के आधार पर त्वरित निर्णय लेने के बजाय प्रोफाइल को अच्छी तरह से पढ़ने के लिए समय निकालें। मात्रा के बजाय गुणवत्तापूर्ण कनेक्शन पर ध्यान दें।",
+          "mr": "केवळ फोटोंच्या आधारे त्वरित निर्णय घेण्याऐवजी प्रोफाइल नीट वाचण्यासाठी वेळ काढा. प्रमाणाऐवजी गुणवत्तापूर्ण कनेक्शनवर लक्ष केंद्रित करा."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Build Self-Worth Beyond Apps",
+          "hi": "ऐप्स से परे आत्म-मूल्य का निर्माण करें",
+          "mr": "अॅप्सच्या पलीकडे स्व-मूल्य निर्माण करा"
+        },
+        "description": {
+          "en": "Remember that your worth isn't determined by matches, likes, or responses. Engage in activities that boost your confidence and self-esteem offline.",
+          "hi": "याद रखें कि आपका मूल्य मैचों, लाइक्स या प्रतिक्रियाओं से निर्धारित नहीं होता। ऐसी गतिविधियों में शामिल हों जो ऑफलाइन आपके आत्मविश्वास और आत्म-सम्मान को बढ़ाती हैं।",
+          "mr": "लक्षात ठेवा की तुमचे मूल्य मॅचेस, लाइक्स किंवा प्रतिसादांनी ठरवले जात नाही. ऑफलाइन तुमचा आत्मविश्वास आणि स्वाभिमान वाढवणाऱ्या क्रियाकलापांमध्ये सहभागी व्हा."
+        },
+        "xp": 4
+      },
+      {
+        "title": {
+          "en": "Take Regular Breaks",
+          "hi": "नियमित ब्रेक लें",
+          "mr": "नियमित विश्रांती घ्या"
+        },
+        "description": {
+          "en": "Schedule regular breaks from dating apps to prevent burnout and maintain emotional balance. Use this time for self-care and personal interests.",
+          "hi": "बर्नआउट को रोकने और भावनात्मक संतुलन बनाए रखने के लिए डेटिंग ऐप्स से नियमित ब्रेक शेड्यूल करें। इस समय का उपयोग स्व-देखभाल और व्यक्तिगत रुचियों के लिए करें।",
+          "mr": "बर्नआउट टाळण्यासाठी आणि भावनिक संतुलन राखण्यासाठी डेटिंग अॅप्समधून नियमित विश्रांती नियोजित करा. हा वेळ स्व-काळजी आणि वैयक्तिक आवडींसाठी वापरा."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Manage Rejection Gracefully",
+          "hi": "अस्वीकरण को सुंदरता से संभालें",
+          "mr": "नकाराला सुंदरतेने हाताळा"
+        },
+        "description": {
+          "en": "Understand that rejection is normal in online dating and doesn't reflect your personal worth. Practice self-compassion when matches don't work out.",
+          "hi": "समझें कि ऑनलाइन डेटिंग में अस्वीकरण सामान्य है और यह आपके व्यक्तिगत मूल्य को नहीं दर्शाता। जब मैच काम नहीं करते तो आत्म-करुणा का अभ्यास करें।",
+          "mr": "समजून घ्या की ऑनलाइन डेटिंगमध्ये नकार सामान्य आहे आणि ते तुमच्या वैयक्तिक मूल्याचे प्रतिबिंब नाही. मॅचेस यशस्वी होत नसल्यावर स्व-करुणेचा सराव करा."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Be Authentic in Your Profile",
+          "hi": "अपनी प्रोफ़ाइल में प्रामाणिक रहें",
+          "mr": "तुमच्या प्रोफाइलमध्ये प्रामाणिक रहा"
+        },
+        "description": {
+          "en": "Present your genuine self in your profile rather than trying to be what you think others want. Authenticity attracts better matches.",
+          "hi": "दूसरे क्या चाहते हैं यह सोचने के बजाय अपनी प्रोफ़ाइल में अपना वास्तविक स्व प्रस्तुत करें। प्रामाणिकता बेहतर मैच आकर्षित करती है।",
+          "mr": "इतरांना काय हवे आहे याचा विचार न करता तुमच्या प्रोफाइलमध्ये तुमचे खरे स्वरूप मांडा. प्रामाणिकता चांगले मॅचेस आकर्षित करते."
+        },
+        "xp": 2
+      },
+      {
+        "title": {
+          "en": "Meet in Safe Public Places",
+          "hi": "सुरक्षित सार्वजनिक स्थानों पर मिलें",
+          "mr": "सुरक्षित सार्वजनिक ठिकाणी भेटा"
+        },
+        "description": {
+          "en": "Always arrange first dates in public places during daytime hours. Trust your instincts and prioritize your safety above all else.",
+          "hi": "हमेशा दिन के समय में सार्वजनिक स्थानों पर पहली डेट की व्यवस्था करें। अपनी प्रवृत्ति पर भरोसा करें और सबसे पहले अपनी सुरक्षा को प्राथमिकता दें।",
+          "mr": "नेहमी दिवसाच्या वेळेत सार्वजनिक ठिकाणी पहिली डेटची व्यवस्था करा. तुमच्या अंतर्प्रेरणेवर विश्वास ठेवा आणि सर्वात महत्त्वाचे म्हणजे तुमच्या सुरक्षेला प्राधान्य द्या."
+        },
+        "xp": 2
+      },
+      {
+        "title": {
+          "en": "Communicate Your Intentions",
+          "hi": "अपने इरादे संप्रेषित करें",
+          "mr": "तुमचे हेतू स्पष्ट करा"
+        },
+        "description": {
+          "en": "Be clear about what you're looking for - whether it's casual dating, serious relationships, or just meeting new people. This prevents misunderstandings.",
+          "hi": "स्पष्ट रहें कि आप क्या खोज रहे हैं - चाहे वह आकस्मिक डेटिंग हो, गंभीर रिश्ते हों, या केवल नए लोगों से मिलना हो। यह गलतफहमियों को रोकता है।",
+          "mr": "तुम्ही काय शोधत आहात ते स्पष्ट करा - मग ते अनौपचारिक डेटिंग असो, गंभीर नातेसंबंध असोत किंवा फक्त नवीन लोकांना भेटणे असो. हे गैरसमज टाळते."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Don't Ghost or Be Ghosted",
+          "hi": "घोस्ट न करें या घोस्ट न बनें",
+          "mr": "घोस्ट करू नका किंवा घोस्ट होऊ नका"
+        },
+        "description": {
+          "en": "Practice respectful communication by being honest about your lack of interest rather than suddenly disappearing. If someone ghosts you, focus on moving forward.",
+          "hi": "अचानक गायब होने के बजाय अपनी रुचि की कमी के बारे में ईमानदार होकर सम्मानजनक संचार का अभ्यास करें। यदि कोई आपको घोस्ट करता है, तो आगे बढ़ने पर ध्यान दें।",
+          "mr": "अचानक गायब होण्याऐवजी तुमच्या आवडीच्या कमतरतेबद्दल प्रामाणिक राहून आदरयुक्त संवादाचा सराव करा. जर कोणी तुम्हाला घोस्ट करत असेल तर पुढे जाण्यावर लक्ष केंद्रित करा."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Maintain Offline Social Life",
+          "hi": "ऑफलाइन सामाजिक जीवन बनाए रखें",
+          "mr": "ऑफलाइन सामाजिक जीवन राखा"
+        },
+        "description": {
+          "en": "Don't let dating apps become your only way to meet people. Continue nurturing friendships and participating in real-world social activities.",
+          "hi": "डेटिंग ऐप्स को लोगों से मिलने का एकमात्र तरीका न बनने दें। दोस्ती का पोषण करना और वास्तविक दुनिया की सामाजिक गतिविधियों में भाग लेना जारी रखें।",
+          "mr": "डेटिंग अॅप्सना लोकांशी भेटण्याचा एकमेव मार्ग बनू देऊ नका. मैत्रीचे संवर्धन करणे आणि वास्तविक जगातील सामाजिक क्रियाकलापांमध्ये सहभागी होणे सुरू ठेवा."
+        },
+        "xp": 2
+      }
+    ]
+  },
+  "yoga": {
+    "title": {
+      "en": "Yoga and Meditation for Dating Anxiety",
+      "hi": "डेटिंग चिंता के लिए योग और ध्यान",
+      "mr": "डेटिंग चिंतेसाठी योग आणि ध्यान"
+    },
+    "cards": [
+      {
+        "title": {
+          "en": "Confidence Building Asanas",
+          "hi": "आत्मविश्वास निर्माण आसन",
+          "mr": "आत्मविश्वास निर्माण आसने"
+        },
+        "description": {
+          "en": "Practice warrior poses, mountain pose, and heart-opening asanas to build confidence and self-assurance before dating interactions.",
+          "hi": "डेटिंग इंटरैक्शन से पहले आत्मविश्वास और आत्म-आश्वासन बनाने के लिए योद्धा आसन, पर्वत आसन और हृदय खोलने वाले आसनों का अभ्यास करें।",
+          "mr": "डेटिंग संवादापूर्वी आत्मविश्वास आणि स्व-विश्वास निर्माण करण्यासाठी योद्धा आसने, पर्वत आसन आणि हृदय उघडणारे आसनांचा सराव करा."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Pre-Date Anxiety Relief",
+          "hi": "डेट पूर्व चिंता राहत",
+          "mr": "डेट पूर्व चिंता निवारण"
+        },
+        "description": {
+          "en": "Use calming breathwork like alternate nostril breathing and gentle stretches to reduce nervousness before first dates.",
+          "hi": "पहली डेट से पहले घबराहट को कम करने के लिए वैकल्पिक नासिका श्वास और कोमल स्ट्रेच जैसे शांत करने वाले श्वास कार्य का उपयोग करें।",
+          "mr": "पहिल्या डेटपूर्वी चिंता कमी करण्यासाठी पर्यायी नासिका श्वास आणि सौम्य स्ट्रेच सारख्या शांत करणाऱ्या श्वासकार्याचा वापर करा."
+        },
+        "xp": 2
+      },
+      {
+        "title": {
+          "en": "Self-Love Meditation",
+          "hi": "स्व-प्रेम ध्यान",
+          "mr": "स्व-प्रेम ध्यान"
+        },
+        "description": {
+          "en": "Practice loving-kindness meditation focusing on self-acceptance and worthiness, independent of dating outcomes or others' approval.",
+          "hi": "डेटिंग परिणामों या दूसरों की स्वीकृति से स्वतंत्र, आत्म-स्वीकृति और योग्यता पर ध्यान केंद्रित करते हुए प्रेम-दया ध्यान का अभ्यास करें।",
+          "mr": "डेटिंग परिणाम किंवा इतरांच्या मान्यतेपासून स्वतंत्रपणे स्व-स्वीकृती आणि योग्यतेवर लक्ष केंद्रित करून प्रेम-दया ध्यानाचा सराव करा."
+        },
+        "xp": 4
+      },
+      {
+        "title": {
+          "en": "Mindful Communication Practice",
+          "hi": "सचेत संचार अभ्यास",
+          "mr": "सजग संवाद सराव"
+        },
+        "description": {
+          "en": "Use mindfulness techniques to stay present during conversations, listen actively, and respond authentically rather than trying to impress.",
+          "hi": "बातचीत के दौरान उपस्थित रहने, सक्रिय रूप से सुनने और प्रभावित करने की कोशिश के बजाय प्रामाणिक रूप से जवाब देने के लिए माइंडफुलनेस तकनीकों का उपयोग करें।",
+          "mr": "संभाषणांदरम्यान उपस्थित राहण्यासाठी, सक्रियपणे ऐकण्यासाठी आणि प्रभावित करण्याचा प्रयत्न न करता प्रामाणिकपणे प्रतिसाद देण्यासाठी माइंडफुलनेस तंत्रांचा वापर करा."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Rejection Healing Flow",
+          "hi": "अस्वीकरण उपचार प्रवाह",
+          "mr": "नकार बरे करणारा प्रवाह"
+        },
+        "description": {
+          "en": "Practice a gentle yoga flow combined with heart-opening poses to process and heal from dating disappointments or rejections.",
+          "hi": "डेटिंग निराशाओं या अस्वीकरण से प्रक्रिया और चंगा करने के लिए हृदय खोलने वाले आसनों के साथ एक कोमल योग प्रवाह का अभ्यास करें।",
+          "mr": "डेटिंग निराशा किंवा नकारापासून बरे होण्यासाठी हृदय उघडणाऱ्या आसनांसह सौम्य योग प्रवाहाचा सराव करा."
+        },
+        "xp": 3
+      }
+    ]
+  },
+  "relaxation": {
+    "title": {
+      "en": "Relaxation Techniques for Dating Stress",
+      "hi": "डेटिंग तनाव के लिए विश्राम तकनीकें",
+      "mr": "डेटिंग तणावासाठी विश्रांती तंत्रे"
+    },
+    "cards": [
+      {
+        "title": {
+          "en": "Progressive Muscle Relaxation",
+          "hi": "प्रगतिशील मांसपेशी विश्राम",
+          "mr": "प्रगतिशील स्नायू विश्रांती"
+        },
+        "description": {
+          "en": "Practice systematic muscle relaxation to release physical tension before dates and reduce social anxiety symptoms.",
+          "hi": "डेट से पहले शारीरिक तनाव को कम करने और सामाजिक चिंता के लक्षणों को कम करने के लिए व्यवस्थित मांसपेशी विश्राम का अभ्यास करें।",
+          "mr": "डेटपूर्वी शारीरिक तणाव कमी करण्यासाठी आणि सामाजिक चिंतेची लक्षणे कमी करण्यासाठी पद्धतशीर स्नायू विश्रांतीचा सराव करा."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Deep Breathing for Social Anxiety",
+          "hi": "सामाजिक चिंता के लिए गहरी सांस",
+          "mr": "सामाजिक चिंतेसाठी खोल श्वास"
+        },
+        "description": {
+          "en": "Use 4-7-8 breathing or box breathing techniques to calm nerves when feeling overwhelmed by dating app interactions or first date jitters.",
+          "hi": "डेटिंग ऐप इंटरैक्शन या पहली डेट की घबराहट से अभिभूत महसूस करने पर नर्वस को शांत करने के लिए 4-7-8 श्वास या बॉक्स श्वास तकनीकों का उपयोग करें।",
+          "mr": "डेटिंग अॅप संवाद किंवा पहिल्या डेटच्या चिंतेने अभिभूत वाटल्यावर मज्जा शांत करण्यासाठी 4-7-8 श्वास किंवा बॉक्स श्वास तंत्रांचा वापर करा."
+        },
+        "xp": 2
+      },
+      {
+        "title": {
+          "en": "Guided Visualization for Success",
+          "hi": "सफलता के लिए निर्देशित कल्पना",
+          "mr": "यशासाठी मार्गदर्शित कल्पना"
+        },
+        "description": {
+          "en": "Practice positive visualization techniques to imagine successful, enjoyable dating experiences and build confidence for real interactions.",
+          "hi": "सफल, आनंददायक डेटिंग अनुभवों की कल्पना करने और वास्तविक इंटरैक्शन के लिए आत्मविश्वास बनाने के लिए सकारात्मक दृश्यीकरण तकनीकों का अभ्यास करें।",
+          "mr": "यशस्वी, आनंददायी डेटिंग अनुभवांची कल्पना करण्यासाठी आणि वास्तविक संवादासाठी आत्मविश्वास निर्माण करण्यासाठी सकारात्मक दृश्यीकरण तंत्रांचा सराव करा."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Mindful App Usage",
+          "hi": "सचेत ऐप उपयोग",
+          "mr": "सजग अॅप वापर"
+        },
+        "description": {
+          "en": "Create mindful rituals around dating app usage, including setting intentions, taking breaks, and practicing gratitude for connections made.",
+          "hi": "डेटिंग ऐप उपयोग के आसपास सचेत अनुष्ठान बनाएं, जिसमें इरादे निर्धारित करना, ब्रेक लेना और बनाए गए कनेक्शन के लिए कृतज्ञता का अभ्यास करना शामिल है।",
+          "mr": "डेटिंग अॅप वापराभोवती सजग विधी तयार करा, ज्यामध्ये हेतू निश्चित करणे, विश्रांती घेणे आणि निर्माण झालेल्या कनेक्शनसाठी कृतज्ञता व्यक्त करणे समाविष्ट आहे."
+        },
+        "xp": 2
+      },
+      {
+        "title": {
+          "en": "Post-Date Reflection",
+          "hi": "डेट के बाद चिंतन",
+          "mr": "डेटनंतरचे चिंतन"
+        },
+        "description": {
+          "en": "Practice relaxing reflection after dates to process experiences without judgment, celebrate positive moments, and learn from challenges.",
+          "hi": "बिना जजमेंट के अनुभवों को प्रोसेस करने, सकारात्मक क्षणों का जश्न मनाने और चुनौतियों से सीखने के लिए डेट के बाद आरामदायक चिंतन का अभ्यास करें।",
+          "mr": "न्यायाशिवाय अनुभवांवर प्रक्रिया करण्यासाठी, सकारात्मक क्षणांचा उत्सव साजरा करण्यासाठी आणि आव्हानांमधून शिकण्यासाठी डेटनंतर आरामदायी चिंतनाचा सराव करा."
+        },
+        "xp": 3
+      }
+    ]
+  },
+  "cbt": {
+    "title": {
+      "en": "CBT Strategies for Dating Challenges",
+      "hi": "डेटिंग चुनौतियों के लिए CBT रणनीतियां",
+      "mr": "डेटिंग आव्हानांसाठी CBT रणनीती"
+    },
+    "cards": [
+      {
+        "title": {
+          "en": "Challenging Dating Catastrophizing",
+          "hi": "डेटिंग भयावहता को चुनौती देना",
+          "mr": "डेटिंग भयावहतेला आव्हान देणे"
+        },
+        "description": {
+          "en": "Identify and challenge catastrophic thoughts about dating outcomes, such as 'I'll never find love' or 'Everyone will reject me.'",
+          "hi": "डेटिंग परिणामों के बारे में भयावह विचारों की पहचान करें और उन्हें चुनौती दें, जैसे 'मुझे कभी प्यार नहीं मिलेगा' या 'हर कोई मुझे अस्वीकार कर देगा।'",
+          "mr": "डेटिंग परिणामांबद्दलच्या भयावह विचारांची ओळख करा आणि त्यांना आव्हान द्या, जसे 'मला कधीच प्रेम मिळणार नाही' किंवा 'प्रत्येकजण मला नाकारेल.'"
+        },
+        "xp": 4
+      },
+      {
+        "title": {
+          "en": "Thought Record for Rejection",
+          "hi": "अस्वीकरण के लिए विचार रिकॉर्ड",
+          "mr": "नकारासाठी विचार रेकॉर्ड"
+        },
+        "description": {
+          "en": "Use thought records to examine automatic thoughts when facing rejection, and develop more balanced, realistic perspectives about dating setbacks.",
+          "hi": "अस्वीकरण का सामना करते समय स्वचालित विचारों की जांच करने के लिए विचार रिकॉर्ड का उपयोग करें, और डेटिंग असफलताओं के बारे में अधिक संतुलित, यथार्थवादी दृष्टिकोण विकसित करें।",
+          "mr": "नकाराचा सामना करताना स्वयंचलित विचारांची तपासणी करण्यासाठी विचार रेकॉर्डचा वापर करा आणि डेटिंग अपयशांबद्दल अधिक संतुलित, वास्तववादी दृष्टिकोन विकसित करा."
+        },
+        "xp": 4
+      },
+      {
+        "title": {
+          "en": "Behavioral Experiments in Dating",
+          "hi": "डेटिंग में व्यवहारिक प्रयोग",
+          "mr": "डेटिंगमधील वर्तणूक प्रयोग"
+        },
+        "description": {
+          "en": "Design behavioral experiments to test dating-related fears, such as approaching someone new or expressing interest, to build confidence gradually.",
+          "hi": "आत्मविश्वास को धीरे-धीरे बनाने के लिए डेटिंग-संबंधी डर का परीक्षण करने के लिए व्यवहारिक प्रयोग डिज़ाइन करें, जैसे किसी नए व्यक्ति से संपर्क करना या रुचि व्यक्त करना।",
+          "mr": "आत्मविश्वास हळूहळू निर्माण करण्यासाठी डेटिंग-संबंधित भीतीची चाचणी करण्यासाठी वर्तणूक प्रयोग डिझाइन करा, जसे कोणाशी तरी नवीन व्यक्तीशी संपर्क साधणे किंवा आवड व्यक्त करणे."
+        },
+        "xp": 5
+      },
+      {
+        "title": {
+          "en": "Cognitive Restructuring for Self-Worth",
+          "hi": "आत्म-मूल्य के लिए संज्ञानात्मक पुनर्गठन",
+          "mr": "स्व-मूल्यासाठी संज्ञानात्मक पुनर्रचना"
+        },
+        "description": {
+          "en": "Restructure thoughts that tie self-worth to dating success, developing beliefs that your value as a person is independent of romantic outcomes.",
+          "hi": "उन विचारों को पुनर्गठित करें जो आत्म-मूल्य को डेटिंग सफलता से जोड़ते हैं, ऐसी मान्यताएं विकसित करें कि एक व्यक्ति के रूप में आपका मूल्य रोमांटिक परिणामों से स्वतंत्र है।",
+          "mr": "स्व-मूल्याला डेटिंग यशाशी जोडणारे विचार पुनर्रचना करा, एक व्यक्ती म्हणून तुमचे मूल्य रोमँटिक परिणामांपासून स्वतंत्र आहे अशा समजुती विकसित करा."
+        },
+        "xp": 4
+      },
+      {
+        "title": {
+          "en": "Activity Scheduling for Balance",
+          "hi": "संतुलन के लिए गतिविधि शेड्यूलिंग",
+          "mr": "संतुलनासाठी क्रियाकलाप नियोजन"
+        },
+        "description": {
+          "en": "Schedule enjoyable activities and social connections outside of dating to maintain emotional balance and prevent over-dependence on romantic pursuits.",
+          "hi": "भावनात्मक संतुलन बनाए रखने और रोमांटिक गतिविधियों पर अधिक निर्भरता को रोकने के लिए डेटिंग के बाहर आनंददायक गतिविधियों और सामाजिक कनेक्शन को शेड्यूल करें।",
+          "mr": "भावनिक संतुलन राखण्यासाठी आणि रोमँटिक गतिविधींवर जास्त अवलंबित्व टाळण्यासाठी डेटिंगच्या बाहेर आनंददायी क्रियाकलाप आणि सामाजिक कनेक्शन नियोजित करा."
+        },
+        "xp": 3
+      }
+    ]
+  },
+  "rebt": {
+    "title": {
+      "en": "REBT Approaches for Dating Beliefs",
+      "hi": "डेटिंग मान्यताओं के लिए REBT दृष्टिकोण",
+      "mr": "डेटिंग समजुतींसाठी REBT दृष्टिकोन"
+    },
+    "cards": [
+      {
+        "title": {
+          "en": "Disputing Dating 'Musts'",
+          "hi": "डेटिंग 'मस्ट' का खंडन",
+          "mr": "डेटिंग 'आवश्यक' ची खंडन"
+        },
+        "description": {
+          "en": "Challenge irrational demands like 'I must find love on dating apps' or 'Everyone must like me' and replace with preferences.",
+          "hi": "'मुझे डेटिंग ऐप्स पर प्यार मिलना चाहिए' या 'हर कोई मुझे पसंद करना चाहिए' जैसी तर्कहीन मांगों को चुनौती दें और वरीयताओं से बदलें।",
+          "mr": "'मला डेटिंग अॅप्सवर प्रेम मिळालेच पाहिजे' किंवा 'प्रत्येकाने मला आवडले पाहिजे' सारख्या अतर्कसंगत मागण्यांना आव्हान द्या आणि प्राधान्यांनी बदला."
+        },
+        "xp": 5
+      },
+      {
+        "title": {
+          "en": "Rational Thinking About Rejection",
+          "hi": "अस्वीकरण के बारे में तर्कसंगत सोच",
+          "mr": "नकाराबद्दल तर्कसंगत विचार"
+        },
+        "description": {
+          "en": "Develop rational beliefs about rejection, understanding that it's disappointing but not awful, and doesn't define your worth as a person.",
+          "hi": "अस्वीकरण के बारे में तर्कसंगत मान्यताएं विकसित करें, यह समझते हुए कि यह निराशाजनक है लेकिन भयानक नहीं है, और एक व्यक्ति के रूप में आपके मूल्य को परिभाषित नहीं करता है।",
+          "mr": "नकाराबद्दल तर्कसंगत समजुती विकसित करा, हे समजून घ्या की ते निराशाजनक आहे पण भयानक नाही आणि एक व्यक्ती म्हणून तुमचे मूल्य परिभाषित करत नाही."
+        },
+        "xp": 4
+      },
+      {
+        "title": {
+          "en": "Self-Worth Beyond Dating Success",
+          "hi": "डेटिंग सफलता से परे आत्म-मूल्य",
+          "mr": "डेटिंग यशाच्या पलीकडे स्व-मूल्य"
+        },
+        "description": {
+          "en": "Practice unconditional self-acceptance, recognizing that your value doesn't fluctuate based on matches, dates, or relationship status.",
+          "hi": "बिना शर्त आत्म-स्वीकृति का अभ्यास करें, यह पहचानते हुए कि आपका मूल्य मैच, डेट या रिश्ते की स्थिति के आधार पर नहीं बदलता है।",
+          "mr": "बिनशर्त स्व-स्वीकृतीचा सराव करा, हे ओळखून की तुमचे मूल्य मॅचेस, डेट्स किंवा नातेसंबंधाच्या स्थितीच्या आधारे बदलत नाही."
+        },
+        "xp": 4
+      },
+      {
+        "title": {
+          "en": "High Frustration Tolerance for Dating",
+          "hi": "डेटिंग के लिए उच्च निराशा सहनशीलता",
+          "mr": "डेटिंगसाठी उच्च निराशा सहनशीलता"
+        },
+        "description": {
+          "en": "Build tolerance for dating frustrations, understanding that finding meaningful connections takes time and involves disappointments.",
+          "hi": "डेटिंग निराशाओं के लिए सहनशीलता बनाएं, यह समझते हुए कि सार्थक कनेक्शन खोजने में समय लगता है और निराशाएं शामिल हैं।",
+          "mr": "डेटिंग निराशांसाठी सहनशीलता निर्माण करा, हे समजून घ्या की अर्थपूर्ण कनेक्शन शोधण्यास वेळ लागतो आणि त्यात निराशा समाविष्ट असते."
+        },
+        "xp": 3
+      },
+      {
+        "title": {
+          "en": "Rational Romance Expectations",
+          "hi": "तर्कसंगत रोमांस अपेक्षाएं",
+          "mr": "तर्कसंगत रोमान्स अपेक्षा"
+        },
+        "description": {
+          "en": "Replace fairy-tale thinking about love with realistic expectations about relationships, compatibility, and the effort required for meaningful connections.",
+          "hi": "प्रेम के बारे में परी-कथा सोच को रिश्तों, संगतता और सार्थक कनेक्शन के लिए आवश्यक प्रयास के बारे में यथार्थवादी अपेक्षाओं से बदलें।",
+          "mr": "प्रेमाबद्दलच्या परीकथा विचारसरणीची जागा नातेसंबंध, सुसंगतता आणि अर्थपूर्ण कनेक्शनसाठी आवश्यक प्रयत्नांबद्दलच्या वास्तववादी अपेक्षांनी घ्या."
+        },
+        "xp": 4
+      }
+    ]
+  }
+}
