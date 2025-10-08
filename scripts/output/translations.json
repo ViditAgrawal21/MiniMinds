@@ -1,0 +1,900 @@
+{
+  "scanIntro": {
+    "adhd": {
+      "title": "ADHD",
+      "overview": "ADHD is an important aspect of mental well-being. This assessment will help you understand your current state regarding adhd. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "abusiveLanguageAndBackAnswering": {
+      "title": "Abusive language and back answering",
+      "overview": "Abusive language and back answering is an important aspect of mental well-being. This assessment will help you understand your current state regarding abusive language and back answering. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "academicStress": {
+      "title": "Academic Stress",
+      "overview": "Academic Stress is an important aspect of mental well-being. This assessment will help you understand your current state regarding academic stress. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "anxietyIssues(ptsd/phobia/panic/conversion)": {
+      "title": "Anxiety issues (PTSD/Phobia/Panic/Conversion)",
+      "overview": "Anxiety issues (PTSD/Phobia/Panic/Conversion) is an important aspect of mental well-being. This assessment will help you understand your current state regarding anxiety issues (ptsd/phobia/panic/conversion). It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "autismAndIntellectualDisability": {
+      "title": "Autism and Intellectual Disability",
+      "overview": "Autism and Intellectual Disability is an important aspect of mental well-being. This assessment will help you understand your current state regarding autism and intellectual disability. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "breakupAndRebound": {
+      "title": "Breakup and Rebound",
+      "overview": "Breakup and Rebound is an important aspect of mental well-being. This assessment will help you understand your current state regarding breakup and rebound. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "bullyingInSchool": {
+      "title": "Bullying in School",
+      "overview": "Bullying in School is an important aspect of mental well-being. This assessment will help you understand your current state regarding bullying in school. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "bunkingInSchool": {
+      "title": "Bunking in School",
+      "overview": "Bunking in School is an important aspect of mental well-being. This assessment will help you understand your current state regarding bunking in school. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "conductIssues": {
+      "title": "Conduct Issues",
+      "overview": "Conduct Issues is an important aspect of mental well-being. This assessment will help you understand your current state regarding conduct issues. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "darkweb/onlyfansSites": {
+      "title": "Darkweb/OnlyFans Sites",
+      "overview": "Darkweb/OnlyFans Sites is an important aspect of mental well-being. This assessment will help you understand your current state regarding darkweb/onlyfans sites. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "datingSitesAndComplications": {
+      "title": "Dating Sites and Complications",
+      "overview": "Dating Sites and Complications is an important aspect of mental well-being. This assessment will help you understand your current state regarding dating sites and complications. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "dealingTraumaLossAndDeath/acuteStress": {
+      "title": "Dealing trauma loss and death/Acute stress",
+      "overview": "Dealing trauma loss and death/Acute stress is an important aspect of mental well-being. This assessment will help you understand your current state regarding dealing trauma loss and death/acute stress. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "dealingWithChildrenOfSpecialNeeds": {
+      "title": "Dealing with children of special Needs",
+      "overview": "Dealing with children of special Needs is an important aspect of mental well-being. This assessment will help you understand your current state regarding dealing with children of special needs. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "eatingHabits": {
+      "title": "Eating Habits",
+      "overview": "Eating Habits is an important aspect of mental well-being. This assessment will help you understand your current state regarding eating habits. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "examStress/fearOfFailure": {
+      "title": "Exam Stress/Fear of failure",
+      "overview": "Exam Stress/Fear of failure is an important aspect of mental well-being. This assessment will help you understand your current state regarding exam stress/fear of failure. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "friendshipAndRelationshipIssues/fomo": {
+      "title": "Friendship and relationship issues/FOMO",
+      "overview": "Friendship and relationship issues/FOMO is an important aspect of mental well-being. This assessment will help you understand your current state regarding friendship and relationship issues/fomo. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "gamingAddiction": {
+      "title": "Gaming Addiction",
+      "overview": "Gaming Addiction is an important aspect of mental well-being. This assessment will help you understand your current state regarding gaming addiction. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "goodParenting": {
+      "title": "Good Parenting",
+      "overview": "Good Parenting is an important aspect of mental well-being. This assessment will help you understand your current state regarding good parenting. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "internetAddiction": {
+      "title": "Internet Addiction",
+      "overview": "Internet Addiction is an important aspect of mental well-being. This assessment will help you understand your current state regarding internet addiction. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "introvertChild": {
+      "title": "Introvert child",
+      "overview": "Introvert child is an important aspect of mental well-being. This assessment will help you understand your current state regarding introvert child. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "learningDisability": {
+      "title": "Learning Disability",
+      "overview": "Learning Disability is an important aspect of mental well-being. This assessment will help you understand your current state regarding learning disability. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "learningIssuesAndDisability": {
+      "title": "Learning Issues and Disability",
+      "overview": "Learning Issues and Disability is an important aspect of mental well-being. This assessment will help you understand your current state regarding learning issues and disability. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "lonelinessAndDepression": {
+      "title": "Loneliness and Depression",
+      "overview": "Loneliness and Depression is an important aspect of mental well-being. This assessment will help you understand your current state regarding loneliness and depression. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "parenting(childPov)": {
+      "title": "Parenting (Child POV)",
+      "overview": "Parenting (Child POV) is an important aspect of mental well-being. This assessment will help you understand your current state regarding parenting (child pov). It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "parenting(parentPov)": {
+      "title": "Parenting (Parent POV)",
+      "overview": "Parenting (Parent POV) is an important aspect of mental well-being. This assessment will help you understand your current state regarding parenting (parent pov). It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "pornAddiction": {
+      "title": "Porn Addiction",
+      "overview": "Porn Addiction is an important aspect of mental well-being. This assessment will help you understand your current state regarding porn addiction. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "selfEsteemAndSelfIdentityIssues": {
+      "title": "Self Esteem and self identity issues",
+      "overview": "Self Esteem and self identity issues is an important aspect of mental well-being. This assessment will help you understand your current state regarding self esteem and self identity issues. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "selfHarmBehaviour": {
+      "title": "Self Harm behaviour",
+      "overview": "Self Harm behaviour is an important aspect of mental well-being. This assessment will help you understand your current state regarding self harm behaviour. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "selfCareAndHygiene": {
+      "title": "Self care and Hygiene",
+      "overview": "Self care and Hygiene is an important aspect of mental well-being. This assessment will help you understand your current state regarding self care and hygiene. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "socialMediaIssues": {
+      "title": "Social Media Issues",
+      "overview": "Social Media Issues is an important aspect of mental well-being. This assessment will help you understand your current state regarding social media issues. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "substanceAddiction": {
+      "title": "Substance Addiction",
+      "overview": "Substance Addiction is an important aspect of mental well-being. This assessment will help you understand your current state regarding substance addiction. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "suicidalBehaviour": {
+      "title": "Suicidal Behaviour",
+      "overview": "Suicidal Behaviour is an important aspect of mental well-being. This assessment will help you understand your current state regarding suicidal behaviour. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "unrealisticBeautyStandards/bodyImageIssues/obesity": {
+      "title": "Unrealistic Beauty Standards/Body image issues/obesity",
+      "overview": "Unrealistic Beauty Standards/Body image issues/obesity is an important aspect of mental well-being. This assessment will help you understand your current state regarding unrealistic beauty standards/body image issues/obesity. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    },
+    "violentAndAggressiveBehaviour": {
+      "title": "Violent and Aggressive Behaviour",
+      "overview": "Violent and Aggressive Behaviour is an important aspect of mental well-being. This assessment will help you understand your current state regarding violent and aggressive behaviour. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
+    }
+  },
+  "scanQuestions": {
+    "adhd": {
+      "title": "ADHD",
+      "questions": {
+        "1": "I often find it difficult to sustain attention on tasks or activities, even when they are important.",
+        "2": "I frequently act on impulse without thinking through the consequences.",
+        "3": "I am easily distracted by external stimuli (e.g., noises, people, notifications) while working.",
+        "4": "I struggle to organize tasks and manage time effectively.",
+        "5": "I feel restless or fidgety and find it hard to stay seated when expected.",
+        "6": "I can remain focused on tasks without getting distracted.",
+        "7": "I plan ahead and complete tasks in a timely, organized manner.",
+        "8": "I think carefully before acting and rarely make impulsive decisions.",
+        "9": "I can sit still and feel calm in situations where I am expected to remain seated.",
+        "10": "I can follow multi-step instructions without losing track or needing reminders."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "abusiveLanguageAndBackAnswering": {
+      "title": "Abusive language and back answering",
+      "questions": {
+        "1": "I often use offensive or insulting words when I am upset.",
+        "2": "I talk back to parents, teachers, or supervisors in a disrespectful tone.",
+        "3": "I escalate arguments by swearing, name-calling, or mocking others.",
+        "4": "I interrupt or shout over others instead of listening when corrected.",
+        "5": "I frequently respond with sarcasm or hostility when given instructions.",
+        "6": "I speak respectfully even when I disagree or feel frustrated.",
+        "7": "I pause to listen and respond calmly when someone corrects me.",
+        "8": "I apologize and repair things when my words hurt someone.",
+        "9": "I use assertive but polite language to express my needs or boundaries.",
+        "10": "I follow instructions without arguing, asking questions respectfully if needed."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "academicStress": {
+      "title": "Academic Stress",
+      "questions": {
+        "1": "I feel overwhelmed by the amount of schoolwork I have to complete.",
+        "2": "I worry excessively about grades or test performance.",
+        "3": "I experience physical symptoms (e.g., headaches, stomachaches) before exams or assignments.",
+        "4": "I have trouble sleeping because I am thinking about school.",
+        "5": "I avoid studying or procrastinate because academic tasks feel too stressful.",
+        "6": "I manage my time well and break tasks into manageable steps.",
+        "7": "I use healthy coping strategies (exercise, breaks, talking to someone) during busy academic periods.",
+        "8": "I feel confident in my ability to prepare for exams and complete assignments on time.",
+        "9": "I maintain a regular sleep schedule even during exam periods.",
+        "10": "I seek help from teachers or peers when I do not understand the material."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "anxietyIssues(ptsd/phobia/panic/conversion)": {
+      "title": "Anxiety issues (PTSD/Phobia/Panic/Conversion)",
+      "questions": {
+        "1": "I experience sudden surges of fear or panic with physical symptoms (e.g., rapid heartbeat, shortness of breath).",
+        "2": "I avoid places or situations because I’m afraid they will trigger anxiety or panic.",
+        "3": "Intrusive memories, nightmares, or flashbacks of a distressing event bother me.",
+        "4": "I feel constantly on edge, hypervigilant, or easily startled.",
+        "5": "I have episodes of unexplained physical symptoms (e.g., fainting, weakness, tremors) that worsen with stress.",
+        "6": "I use coping skills (breathing, grounding, relaxation) that help reduce my anxiety.",
+        "7": "I can enter feared situations gradually and manage my discomfort without avoiding them.",
+        "8": "I sleep reasonably well and can return to sleep if I wake up anxious.",
+        "9": "I can identify and challenge anxious thoughts, bringing my focus back to the present.",
+        "10": "I seek support (therapy, trusted people) and follow a plan when symptoms increase."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "autismAndIntellectualDisability": {
+      "title": "Autism and Intellectual Disability",
+      "questions": {
+        "1": "I have difficulty understanding social cues (tone of voice, facial expressions) in everyday interactions.",
+        "2": "Unexpected changes in routine cause me significant distress or meltdowns.",
+        "3": "I engage in repetitive movements or behaviors (e.g., hand-flapping, rocking, repeating phrases).",
+        "4": "I am very sensitive to sensory input (noise, lights, textures, smells) that others seem to tolerate.",
+        "5": "I need support with age-expected academic or daily living tasks (e.g., planning, problem-solving, self-care).",
+        "6": "I can understand and respond appropriately to most social cues.",
+        "7": "I adapt well to changes in plans or routines with minimal distress.",
+        "8": "I can manage sensory discomfort using strategies (breaks, headphones, preferred textures).",
+        "9": "I communicate my needs clearly and participate effectively in conversations.",
+        "10": "I complete age-appropriate schoolwork and daily tasks independently or with minimal support."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "breakupAndRebound": {
+      "title": "Breakup and Rebound",
+      "questions": {
+        "1": "I feel persistent sadness, emptiness, or hopelessness since the breakup.",
+        "2": "I frequently check my ex’s social media or try to contact them despite deciding not to.",
+        "3": "I rushed into a new relationship mainly to avoid loneliness or pain.",
+        "4": "I have strong urges to get back together even when the relationship was unhealthy.",
+        "5": "My work/studies, sleep, or appetite have significantly suffered after the breakup.",
+        "6": "I practice self-care (sleep, nutrition, exercise) and keep daily routines consistent.",
+        "7": "I can limit or avoid checking my ex’s updates and respect boundaries.",
+        "8": "I take time to reflect and heal before starting a new relationship.",
+        "9": "I lean on supportive friends/family or counseling rather than impulsive dating.",
+        "10": "I can accept the breakup, learn from it, and set healthy goals for future relationships."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "bullyingInSchool": {
+      "title": "Bullying in School",
+      "questions": {
+        "1": "I have intentionally teased, mocked, or humiliated a classmate.",
+        "2": "I have threatened or used physical force against another student.",
+        "3": "I spread rumors or exclude someone on purpose to hurt their reputation or relationships.",
+        "4": "I use online messages or posts to harass or embarrass a peer (cyberbullying).",
+        "5": "I repeatedly target the same student(s) despite knowing it upsets them.",
+        "6": "I treat classmates with respect and step in or seek help when I see someone being bullied.",
+        "7": "I resolve conflicts using calm discussion rather than threats or intimidation.",
+        "8": "I include others in group activities and avoid leaving people out on purpose.",
+        "9": "I use social media responsibly and avoid posting hurtful comments or messages.",
+        "10": "I report bullying to a trusted adult or support the student being targeted."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "bunkingInSchool": {
+      "title": "Bunking in School",
+      "questions": {
+        "1": "I skip classes even when I am able to attend.",
+        "2": "I make excuses or lie to avoid going to school.",
+        "3": "I leave campus during school hours without permission.",
+        "4": "I spend time with friends off-campus instead of attending scheduled classes.",
+        "5": "I miss school to avoid tests, assignments, or teachers.",
+        "6": "I attend all my classes on time throughout the week.",
+        "7": "I inform a teacher or guardian when I have a valid reason to miss a class.",
+        "8": "I prioritize being present in class even when I feel unmotivated.",
+        "9": "I plan my day to ensure I remain on campus during school hours.",
+        "10": "I catch up on missed work promptly and avoid repeated absences."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "conductIssues": {
+      "title": "Conduct Issues",
+      "questions": {
+        "1": "I often lose my temper and become verbally or physically aggressive.",
+        "2": "I intentionally break rules at home, school, or work even when I know the consequences.",
+        "3": "I frequently lie, cheat, or deceive to get what I want.",
+        "4": "I deliberately damage property or show little regard for others’ belongings.",
+        "5": "I often bully, threaten, or intimidate others.",
+        "6": "I respect rules and authority figures even when I disagree with them.",
+        "7": "I resolve conflicts calmly without resorting to threats or aggression.",
+        "8": "I am honest and take responsibility rather than lying or blaming others.",
+        "9": "I consider other people’s feelings and avoid causing harm or distress.",
+        "10": "I follow through on household, school, or workplace expectations without defiance.",
+        "11": "I often lose my temper and become verbally or physically aggressive.",
+        "12": "I intentionally break rules at home, school, or work even when I know the consequences.",
+        "13": "I frequently lie, cheat, or deceive to get what I want.",
+        "14": "I deliberately damage property or show little regard for others’ belongings.",
+        "15": "I often bully, threaten, or intimidate others.",
+        "16": "I respect rules and authority figures even when I disagree with them.",
+        "17": "I resolve conflicts calmly without resorting to threats or aggression.",
+        "18": "I am honest and take responsibility rather than lying or blaming others.",
+        "19": "I consider other people’s feelings and avoid causing harm or distress.",
+        "20": "I follow through on household, school, or workplace expectations without defiance."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "darkweb/onlyfansSites": {
+      "title": "Darkweb/OnlyFans Sites",
+      "questions": {
+        "1": "I spend significant time browsing or purchasing content on dark web or subscription adult platforms.",
+        "2": "I feel strong urges to access these sites and struggle to resist them.",
+        "3": "My use of these platforms has led to secrecy, conflicts, or problems in relationships.",
+        "4": "I have spent money I could not afford on subscriptions or related content.",
+        "5": "I continue using these sites despite concerns about legality, privacy, or personal values.",
+        "6": "I can avoid these platforms and focus on other activities without distress.",
+        "7": "I set clear limits (time/money) for online content and stick to them consistently.",
+        "8": "I prioritize sleep, work/study, and offline relationships over these sites.",
+        "9": "I use privacy and safety practices online and avoid risky or illegal sites.",
+        "10": "I can take extended breaks from these platforms without cravings or withdrawal-like feelings."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "datingSitesAndComplications": {
+      "title": "Dating Sites and Complications",
+      "questions": {
+        "1": "I spend excessive time on dating apps, often more than I intend.",
+        "2": "I feel anxious, low, or irritable when I cannot check dating apps.",
+        "3": "My use of dating apps interferes with sleep, work/study, or relationships.",
+        "4": "I continue swiping or messaging even when it causes stress or conflicts.",
+        "5": "I take risky decisions (meeting without precautions, oversharing) due to pressure from apps.",
+        "6": "I set clear limits for app use and stick to them consistently.",
+        "7": "I prioritize offline responsibilities and relationships over dating apps.",
+        "8": "I practice safe behaviors (verify identities, meet in public, protect privacy) when using apps.",
+        "9": "I can take extended breaks from dating apps without distress.",
+        "10": "I maintain realistic expectations and healthy boundaries when interacting on dating platforms."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "dealingTraumaLossAndDeath/acuteStress": {
+      "title": "Dealing trauma loss and death/Acute stress",
+      "questions": {
+        "1": "I experience intrusive memories, images, or dreams related to the loss or traumatic event.",
+        "2": "I feel on edge, easily startled, or constantly watchful since the event.",
+        "3": "I avoid places, people, or conversations that remind me of the loss or trauma.",
+        "4": "I have difficulty sleeping or concentrating because of stress related to the event.",
+        "5": "I feel numb, detached, or disconnected from my emotions or from others.",
+        "6": "I can talk about my feelings with someone I trust and find some relief.",
+        "7": "I use grounding or calming strategies (breathing, routines) that help me cope.",
+        "8": "I am able to face reminders of the event gradually without becoming overwhelmed.",
+        "9": "I maintain daily routines (sleep, meals, responsibilities) despite the stress.",
+        "10": "I seek support (friends, family, professionals) when symptoms increase."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "dealingWithChildrenOfSpecialNeeds": {
+      "title": "Dealing with children of special Needs",
+      "questions": {
+        "1": "I feel impatient or frustrated when a child needs instructions repeated or extra time.",
+        "2": "I struggle to adapt activities or expectations to match a child’s abilities.",
+        "3": "I find it hard to stay calm during challenging behaviors (meltdowns, refusals, sensory overload).",
+        "4": "I rarely collaborate with teachers/therapists to follow a child’s support plan or accommodations.",
+        "5": "I overlook signs that a child needs breaks, sensory supports, or alternative communication.",
+        "6": "I use patience and repeat instructions with visual or step-by-step supports as needed.",
+        "7": "I proactively modify tasks, routines, or environments to support the child’s needs.",
+        "8": "I respond to challenging behaviors with calm de-escalation and supportive strategies.",
+        "9": "I coordinate with caregivers and professionals to implement consistent strategies.",
+        "10": "I recognize early cues (fatigue, sensory overload) and provide timely accommodations or breaks."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "eatingHabits": {
+      "title": "Eating Habits",
+      "questions": {
+        "1": "I frequently overeat or binge even when I am not physically hungry.",
+        "2": "I often skip meals or go long periods without eating.",
+        "3": "I rely on highly processed or fast foods for most of my meals.",
+        "4": "My mood or stress strongly influences how much or what I eat.",
+        "5": "I eat very quickly and rarely pay attention to fullness cues.",
+        "6": "I plan balanced meals and include fruits, vegetables, and protein regularly.",
+        "7": "I maintain consistent meal times and avoid skipping meals.",
+        "8": "I practice mindful eating and stop when I feel comfortably full.",
+        "9": "I choose water or unsweetened beverages over sugary drinks most of the time.",
+        "10": "I prepare meals at home and limit takeout or fast food."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "examStress/fearOfFailure": {
+      "title": "Exam Stress/Fear of failure",
+      "questions": {
+        "1": "I feel intense anxiety or panic when I think about upcoming exams.",
+        "2": "I avoid studying because I fear I will fail no matter how much I prepare.",
+        "3": "Before or during exams, I experience physical symptoms (e.g., nausea, sweating, rapid heartbeat).",
+        "4": "I have trouble sleeping or wake up frequently due to worries about exams.",
+        "5": "I catastrophize outcomes (e.g., ‘If I don’t get a top grade, everything is ruined’).",
+        "6": "I use a study schedule and break tasks into manageable steps.",
+        "7": "I can take practice tests or review mistakes without spiraling into self-criticism.",
+        "8": "I use calming techniques (breathing, mindfulness) that help me manage exam nerves.",
+        "9": "I can keep setbacks in perspective and try again without fearing total failure.",
+        "10": "I seek help from teachers or peers when I feel unprepared rather than avoiding the topic."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "friendshipAndRelationshipIssues/fomo": {
+      "title": "Friendship and relationship issues/FOMO",
+      "questions": {
+        "1": "I feel anxious or left out when I see others hanging out without me.",
+        "2": "I constantly check messages or social apps to avoid missing invitations or updates.",
+        "3": "I change my plans or overcommit because I fear missing out.",
+        "4": "I worry excessively about what friends think of me or whether they still like me.",
+        "5": "Conflicts with friends frequently escalate or remain unresolved.",
+        "6": "I set healthy boundaries with friends and can say no without guilt.",
+        "7": "I can stay offline or ignore updates without feeling distressed or left out.",
+        "8": "I communicate openly and resolve disagreements calmly with friends or partners.",
+        "9": "I feel secure in my relationships even when I’m not included in every event.",
+        "10": "I prioritize meaningful connections over chasing every social opportunity."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "gamingAddiction": {
+      "title": "Gaming Addiction",
+      "questions": {
+        "1": "I spend more time gaming than I intend to and lose track of time frequently.",
+        "2": "I feel irritable, anxious, or low when I cannot play games.",
+        "3": "Gaming interferes with my sleep, school/work, or relationships.",
+        "4": "I have tried to cut down gaming but find it hard to stick to limits.",
+        "5": "I neglect responsibilities or hobbies because I prefer to game.",
+        "6": "I can stop gaming at planned times and stick to set limits.",
+        "7": "I prioritize essential tasks (study, work, chores) before gaming.",
+        "8": "I maintain healthy sleep habits even on days I play games.",
+        "9": "I regularly engage in offline activities and social time without needing games.",
+        "10": "I use gaming intentionally for short, scheduled periods and stop without distress."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "goodParenting": {
+      "title": "Good Parenting",
+      "questions": {
+        "1": "I consistently set clear expectations and follow through with fair consequences.",
+        "2": "I listen attentively to my child’s feelings without interrupting or judging.",
+        "3": "I spend regular quality time with my child (play, conversation, shared activities).",
+        "4": "I model calm problem-solving during conflicts and disagreements.",
+        "5": "I encourage independence by giving age-appropriate choices and responsibilities.",
+        "6": "I often raise my voice, criticize harshly, or punish impulsively.",
+        "7": "I struggle to stay consistent with rules and routines at home.",
+        "8": "I dismiss or minimize my child’s emotions instead of validating them.",
+        "9": "I frequently prioritize screens, work, or chores over connecting with my child.",
+        "10": "I react to misbehavior with threats or sarcasm rather than calm guidance."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "internetAddiction": {
+      "title": "Internet Addiction",
+      "questions": {
+        "1": "I spend more time online than I intend to, often losing track of time.",
+        "2": "I feel restless, irritable, or low when I can’t access the internet.",
+        "3": "My online use interferes with sleep, school/work, or relationships.",
+        "4": "I neglect responsibilities or hobbies because I prefer being online.",
+        "5": "I repeatedly try to cut back on internet use but cannot stick to it.",
+        "6": "I can put my device away and stay offline for extended periods without distress.",
+        "7": "I prioritize essential tasks (study, work, chores) before going online.",
+        "8": "I maintain healthy sleep by setting limits on nighttime screen use.",
+        "9": "I engage in offline activities (exercise, hobbies, social time) regularly.",
+        "10": "I use the internet intentionally (planned duration and purpose) and stop when finished."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "introvertChild": {
+      "title": "Introvert child",
+      "questions": {
+        "1": "I prefer solitary activities (reading, drawing) over group play most of the time.",
+        "2": "I feel drained or overwhelmed after spending time in large groups or noisy settings.",
+        "3": "I take time to warm up to new people and situations before I feel comfortable.",
+        "4": "I avoid initiating conversations or joining group games at school or in the neighborhood.",
+        "5": "I would rather spend recess or free time alone than with peers.",
+        "6": "I comfortably start conversations and join group activities without hesitation.",
+        "7": "I feel energized and happy after spending time with a big group of friends.",
+        "8": "I quickly make new friends and enjoy meeting unfamiliar people.",
+        "9": "I seek out group play and prefer team activities to solo ones.",
+        "10": "I speak up readily in class and enjoy being the center of attention."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "learningDisability": {
+      "title": "Learning Disability",
+      "questions": {
+        "1": "I struggle to read grade-level text accurately or fluently.",
+        "2": "I have difficulty understanding or remembering what I read or hear in class.",
+        "3": "I find spelling and writing tasks unusually hard and make frequent errors.",
+        "4": "I make repeated mistakes in basic math facts or word problems despite practice.",
+        "5": "I need extra time, repeated instructions, or step-by-step help to complete schoolwork.",
+        "6": "I can read grade-level material fluently and explain what I understood.",
+        "7": "I take clear notes and recall key points from lessons without extra support.",
+        "8": "I write organized paragraphs with correct spelling and grammar for my grade level.",
+        "9": "I solve grade-appropriate math problems accurately and independently.",
+        "10": "I follow multi-step instructions and complete assignments within expected time limits."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "learningIssuesAndDisability": {
+      "title": "Learning Issues and Disability",
+      "questions": {
+        "1": "I struggle to read grade-level texts accurately or fluently.",
+        "2": "I find it hard to understand or remember what I read or hear in class.",
+        "3": "I have persistent difficulty with spelling, writing, or organizing my thoughts on paper.",
+        "4": "I make frequent mistakes in basic math calculations or word problems.",
+        "5": "I need repeated instructions or extra time to complete academic tasks.",
+        "6": "I can understand lessons and complete assignments without extra support.",
+        "7": "I read grade-level material fluently and can explain what I’ve learned.",
+        "8": "I write clearly with organized ideas and correct spelling and grammar.",
+        "9": "I solve grade-level math problems accurately and with confidence.",
+        "10": "I follow instructions and finish schoolwork within the expected time."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "lonelinessAndDepression": {
+      "title": "Loneliness and Depression",
+      "questions": {
+        "1": "I feel sad or empty most days, even without a clear reason.",
+        "2": "I withdraw from friends and family and avoid social interactions.",
+        "3": "I have lost interest in activities I used to enjoy.",
+        "4": "I often feel isolated, even when I am around other people.",
+        "5": "My sleep or appetite has noticeably changed due to low mood or loneliness.",
+        "6": "I maintain regular contact with supportive people and feel connected.",
+        "7": "I find pleasure and motivation in hobbies, school/work, or daily activities.",
+        "8": "I can share my feelings with someone I trust when I feel down.",
+        "9": "I use healthy routines (sleep, exercise, nutrition) that help stabilize my mood.",
+        "10": "I can challenge negative thoughts and focus on small, achievable goals."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "parenting(childPov)": {
+      "title": "Parenting (Child POV)",
+      "questions": {
+        "1": "My parents often criticize me harshly or compare me unfavorably to others.",
+        "2": "I feel scared or very anxious to talk to my parents about my problems.",
+        "3": "My parents don’t listen to my opinions when decisions are made about me.",
+        "4": "Rules and punishments at home feel unpredictable or unfair.",
+        "5": "I don’t get enough encouragement or appreciation from my parents.",
+        "6": "My parents listen to me and try to understand my feelings.",
+        "7": "My parents set clear, consistent rules and explain the reasons behind them.",
+        "8": "I feel safe and supported when I make mistakes at home.",
+        "9": "My parents spend quality time with me and show interest in my activities.",
+        "10": "When we disagree, my parents discuss the issue calmly and respectfully."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "parenting(parentPov)": {
+      "title": "Parenting (Parent POV)",
+      "questions": {
+        "1": "I often raise my voice, criticize harshly, or lose my temper with my child.",
+        "2": "I struggle to stay consistent with rules and consequences at home.",
+        "3": "I find it difficult to listen calmly when my child expresses strong emotions.",
+        "4": "I frequently feel overwhelmed or burned out by parenting responsibilities.",
+        "5": "I sometimes use threats, excessive punishments, or guilt to control behavior.",
+        "6": "I remain calm and use respectful language during conflicts with my child.",
+        "7": "I set clear expectations and follow through with fair, consistent consequences.",
+        "8": "I make time for positive connection (play, conversation, shared activities) with my child.",
+        "9": "I validate my child’s feelings and problem-solve together when issues arise.",
+        "10": "I model healthy coping (breaks, breathing, asking for help) when I feel stressed."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "pornAddiction": {
+      "title": "Porn Addiction",
+      "questions": {
+        "1": "I spend more time viewing pornography than I intend to, often losing track of time.",
+        "2": "I feel strong cravings or urges to view pornography.",
+        "3": "My pornography use interferes with sleep, work/school, or relationships.",
+        "4": "I have tried to cut down or stop but find it difficult to maintain limits.",
+        "5": "I use pornography to cope with stress, loneliness, or difficult emotions.",
+        "6": "I can go for extended periods without viewing pornography without distress.",
+        "7": "I prioritize responsibilities and healthy activities over pornography use.",
+        "8": "I maintain open, respectful boundaries in relationships without secrecy around my use.",
+        "9": "I manage stress and emotions using non-sexual coping strategies.",
+        "10": "I use the internet intentionally and stop when I reach planned limits."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "selfEsteemAndSelfIdentityIssues": {
+      "title": "Self Esteem and self identity issues",
+      "questions": {
+        "1": "I often feel worthless or not good enough compared to others.",
+        "2": "I frequently criticize myself and dwell on my perceived flaws or mistakes.",
+        "3": "I change my behavior or opinions to fit in because I’m unsure of who I am.",
+        "4": "I avoid challenges or new opportunities because I fear I will fail.",
+        "5": "I rely heavily on others’ approval to feel okay about myself.",
+        "6": "I recognize my strengths and speak to myself with kindness.",
+        "7": "I can accept constructive feedback without feeling ashamed or defensive.",
+        "8": "I make choices that reflect my values, even when they are unpopular.",
+        "9": "I try new tasks and tolerate mistakes as part of learning.",
+        "10": "I feel comfortable in my identity and don’t need constant reassurance from others."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "selfHarmBehaviour": {
+      "title": "Self Harm behaviour",
+      "questions": {
+        "1": "I have urges to harm myself when I feel overwhelmed or distressed.",
+        "2": "I have engaged in behaviors that intentionally cause harm to my body.",
+        "3": "I frequently think about self-injury as a way to cope with difficult emotions.",
+        "4": "I hide or minimize injuries that I have caused to myself.",
+        "5": "I find it difficult to use safe coping strategies when experiencing intense emotions.",
+        "6": "I can talk to someone or use healthy coping skills instead of harming myself.",
+        "7": "I feel I have control over impulses to harm myself.",
+        "8": "I have a plan for staying safe when I feel triggered or overwhelmed.",
+        "9": "I seek support (friends, family, professionals) when I notice warning signs.",
+        "10": "I practice self-compassion and stress-reduction techniques when distressed."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "selfCareAndHygiene": {
+      "title": "Self care and Hygiene",
+      "questions": {
+        "1": "I often neglect basic personal hygiene (e.g., bathing, brushing teeth, laundering clothes).",
+        "2": "I frequently skip grooming tasks even when I have the time or resources.",
+        "3": "I go long periods without changing into clean clothes or maintaining appearance.",
+        "4": "I ignore signs that I need rest, nutrition, or hydration.",
+        "5": "I rarely keep my living space clean enough to support healthy self-care.",
+        "6": "I maintain a regular routine for bathing, brushing, and grooming.",
+        "7": "I prepare balanced meals and hydrate adequately throughout the day.",
+        "8": "I keep my clothes clean and presentable, changing them as needed.",
+        "9": "I schedule and attend health checkups and follow recommended care.",
+        "10": "I keep my living environment tidy to make self-care easier."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "socialMediaIssues": {
+      "title": "Social Media Issues",
+      "questions": {
+        "1": "I spend more time on social media than I intend, often losing track of time.",
+        "2": "I feel anxious, irritable, or low when I can’t check social media.",
+        "3": "My social media use interferes with sleep, school/work, or in-person relationships.",
+        "4": "I compare myself to others online and feel worse about myself.",
+        "5": "I check my phone or social apps compulsively, even during important tasks.",
+        "6": "I can put my phone away and stay off social media for extended periods without distress.",
+        "7": "I prioritize responsibilities and face-to-face interactions over social media.",
+        "8": "I limit screen time, especially before bed, to protect my sleep.",
+        "9": "I curate my feeds and unfollow accounts that negatively affect my mood or self-esteem.",
+        "10": "I use social media intentionally (clear purpose and time limit) and stop when finished."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "substanceAddiction": {
+      "title": "Substance Addiction",
+      "questions": {
+        "1": "I use alcohol or drugs more often or in larger amounts than I intend to.",
+        "2": "I experience strong cravings or urges to use substances.",
+        "3": "I continue using despite problems at work, school, or home caused by my use.",
+        "4": "I have needed more of the substance to get the same effect (tolerance).",
+        "5": "I feel unwell or irritable when I cut down or stop using (withdrawal).",
+        "6": "I can refuse substances even when offered or when I feel stressed.",
+        "7": "I keep my commitments and responsibilities regardless of opportunities to use.",
+        "8": "I spend most of my time on healthy activities rather than seeking or using substances.",
+        "9": "I manage stress and emotions with non-substance coping strategies.",
+        "10": "I maintain substance-free periods without significant difficulty."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "suicidalBehaviour": {
+      "title": "Suicidal Behaviour",
+      "questions": {
+        "1": "I have thoughts about ending my life.",
+        "2": "I have a specific plan or have taken steps toward harming myself.",
+        "3": "I feel hopeless about the future and believe things will never improve.",
+        "4": "I feel like a burden to others and think they would be better off without me.",
+        "5": "I engage in risky or reckless behaviors because I care less about my safety.",
+        "6": "I can talk to someone I trust when I notice warning signs or distressing thoughts.",
+        "7": "I have a safety plan (contacts, coping steps) and can follow it when I feel unsafe.",
+        "8": "I can identify reasons to live and remind myself of them during crises.",
+        "9": "I use coping strategies (breathing, grounding, reaching out) that reduce suicidal thoughts.",
+        "10": "I seek professional help (therapist, helpline, doctor) when suicidal thoughts increase."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "unrealisticBeautyStandards/bodyImageIssues/obesity": {
+      "title": "Unrealistic Beauty Standards/Body image issues/obesity",
+      "questions": {
+        "1": "I feel dissatisfied with my body shape or weight most days.",
+        "2": "I compare my appearance to others online or in media and feel worse about myself.",
+        "3": "I avoid social events, sports, or certain clothes because I feel self-conscious about my body.",
+        "4": "I frequently check mirrors, weigh myself, or seek reassurance about how I look.",
+        "5": "I engage in unhealthy behaviors (extreme dieting, overeating, purging, excessive exercise) to change my body.",
+        "6": "I appreciate what my body can do and speak to myself with kindness about my appearance.",
+        "7": "I can see and challenge unrealistic beauty standards when they affect my mood.",
+        "8": "I choose balanced, sustainable habits for health rather than chasing quick body changes.",
+        "9": "I participate in social activities and wear what I like without excessive body worry.",
+        "10": "I curate media I consume to reduce negative body comparisons and focus on supportive content."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    },
+    "violentAndAggressiveBehaviour": {
+      "title": "Violent and Aggressive Behaviour",
+      "questions": {
+        "1": "I often feel intense anger that is hard to control.",
+        "2": "I have threatened others or used physical force during conflicts.",
+        "3": "Minor frustrations quickly escalate into aggressive outbursts for me.",
+        "4": "I intentionally damage objects or property when upset.",
+        "5": "People around me feel unsafe because of my behavior.",
+        "6": "I remain calm and use nonviolent strategies to handle conflicts.",
+        "7": "I can walk away from provoking situations without retaliating.",
+        "8": "I communicate my anger assertively without becoming aggressive.",
+        "9": "I show empathy and consider others’ feelings during disagreements.",
+        "10": "I de-escalate tense situations and seek peaceful solutions."
+      },
+      "options": {
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
+      }
+    }
+  }
+}

@@ -1578,13 +1578,6 @@
     }
   },
   "scanIntro": {
-    "ui": {
-      "questionsLabel": "Questions",
-      "timeUnit": "min",
-      "timeLabel": "Approx time",
-      "overviewTitle": "Overview",
-      "takeTestButton": "Take Test"
-    },
     "adhd": {
       "title": "ADHD",
       "overview": "ADHD is an important aspect of mental well-being. This assessment will help you understand your current state regarding adhd. It involves learning techniques to recognize, understand, and manage various aspects that may affect your daily life and relationships."
@@ -7272,11 +7265,6 @@
     }
   },
   "scanQuestions": {
-    "ui": {
-      "saveAndProceed": "Save & Proceed",
-      "back": "Back",
-      "progressText": "Question Set {current} of {total}"
-    },
     "adhd": {
       "title": "ADHD",
       "questions": {

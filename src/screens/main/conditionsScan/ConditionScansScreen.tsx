@@ -9,6 +9,7 @@ import ConditionList from "../../../components/ConditionList";
 import SectionHeader from "../../../components/SectionHeader";
 import { t } from "@/i18n/locales/i18n";
 import { canAccessFeature } from "@/utils/premiumUtils";
+import { questionDataLoader } from "@/data/questionData";
 import { RootStackParamList } from "@/navigation/types";
 
 type Plan = "free" | "basic" | "premium";
@@ -22,182 +23,44 @@ export default function ConditionScansScreen() {
   const [blockedPlan, setBlockedPlan] = useState<Plan | null>(null);
   const navigation = useNavigation<NavigationProp>(); // Initialize navigation
 
-  const allScans = [
-    // FREE
-    {
-      id: 2,
-      nameKey: t("conditionScans.angerManagement"),
-      name: "Anger Management",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "free" as Plan,
-    },
-    {
-      id: 14,
-      nameKey: t("conditionScans.stressQuestion", "Stress"),
-      name: "Stress",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "free" as Plan,
-    },
-    {
-      id: 8,
-      nameKey: t(
-        "conditionScans.internetAndSocialMediaQuestion",
-        "Internet and Social Media Issue",
-      ),
-      name: "Internet and Social Media Issue",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "free" as Plan,
-    },
+  // Build scan list dynamically from questionDatabase.json so CSV-generated scans appear
+  const dynamicScanNames = questionDataLoader.getAllScanNames();
 
-    // BASIC
-    {
-      id: 5,
-      nameKey: t(
-        "conditionScans.familyIssuesQuestion",
-        "Family and Relationship",
-      ),
-      name: "Family and Relationship",
-      categoryKey: t("conditionScans.education"),
-      category: "Education",
-      requiredPlan: "basic" as Plan,
-    },
-    {
-      id: 12,
-      nameKey: t("conditionScans.sleepQuestion", "Sleep"),
-      name: "Sleep",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "basic" as Plan,
-    },
-    {
-      id: 15,
-      nameKey: t(
-        "conditionScans.suicidalBehaviorQuestion",
-        "Suicidal Behaviour",
-      ),
-      name: "Suicidal Behaviour",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "basic" as Plan,
-    },
-    {
-      id: 11,
-      nameKey: t("conditionScans.sexLifeQuestion", "Sex Life"),
-      name: "Sex Life",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "basic" as Plan,
-    },
+  // Helper: produce a readable title from the raw scan key when translation is missing
+  const humanize = (s: string) => {
+    if (!s) return "";
+    // Replace punctuation with spaces, collapse multiple spaces, trim, then Title Case
+    const cleaned = s.replace(/[\/_\-()]/g, " ").replace(/\s+/g, " ").trim();
+    return cleaned
+      .split(" ")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+      .join(" ");
+  };
 
-    // PREMIUM (all remaining)
-    {
-      id: 1,
-      nameKey: t("conditionScans.addictions"),
-      name: "Addictions",
-      categoryKey: t("conditionScans.addictions", "Education"),
-      category: "Education",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 3,
-      nameKey: t("conditionScans.commonPsychologicalIssuesQuestion"),
-      name: "Common Psychological Issues",
-      categoryKey: t("conditionScans.all"),
-      category: "All",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 4,
-      nameKey: t(
-        "conditionScans.environmentIssuesAffectingMentalWellbeingQuestion",
-        "Environment Issues Affecting Mental Wellbeing",
-      ),
-      name: "Environment Issues Affecting Mental Wellbeing",
-      categoryKey: t("conditionScans.all"),
-      category: "All",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 6,
-      nameKey: t(
-        "conditionScans.financialMentalHealthQuestion",
-        "Financial Mental Health",
-      ),
-      name: "Financial Mental Health",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 7,
-      nameKey: t(
-        "conditionScans.generalPhysicalFitnessQuestion",
-        "General Physical Fitness",
-      ),
-      name: "General Physical Fitness",
-      categoryKey: t("conditionScans.education"),
-      category: "Education",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 9,
-      nameKey: t(
-        "conditionScans.internetDependenceQuestion",
-        "Internet Dependence",
-      ),
-      name: "Internet Dependence",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 10,
-      nameKey: t(
-        "conditionScans.professionalMentalHealthQuestion",
-        "Professional Mental Health",
-      ),
-      name: "Professional Mental Health",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 13,
-      nameKey: t(
-        "conditionScans.socialMentalHealthQuestion",
-        "Social Mental Health",
-      ),
-      name: "Social Mental Health",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 16,
-      nameKey: t("conditionScans.youngsterIssuesQuestion", "Youngster Issues"),
-      name: "Youngster Issues",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "premium" as Plan,
-    },
-    {
-      id: 17,
-      nameKey: t("conditionScans.jobInsecurityQuestion", "Job Insecurity"),
-      name: "Job Insecurity",
-      categoryKey: t("conditionScans.peerInteraction"),
-      category: "Peer to Peer Interaction",
-      requiredPlan: "premium" as Plan,
-    },
-  ];
+  const allScans = dynamicScanNames.map((scanName, idx) => {
+    const intro = questionDataLoader.getIntroData(scanName);
+    const displayTitle = intro?.title && intro.title !== scanName ? intro.title : humanize(scanName);
+    const category = intro?.category || 'Other';
+
+    return {
+      id: idx + 1,
+      // Use generated intro title if available, otherwise a humanized version of the raw key
+      nameKey: displayTitle,
+      name: scanName,
+      // categoryKey for translation, category is an English label used for filtering
+      categoryKey: t(`conditionScans.${category.replace(/\s+/g, '').toLowerCase()}`, category),
+      category,
+      // Default to free so newly added scans are visible during testing — switch to a plan strategy if needed
+      requiredPlan: "free" as Plan,
+    };
+  });
 
   const tabs = [
     t("conditionScans.all", "All"),
     t("conditionScans.education", "Education"),
     t("conditionScans.peerInteraction", "Peer to Peer Interaction"),
     t("conditionScans.familyBonding", "Family Bonding"),
+    t("conditionScans.other", "Other"),
   ];
 
   // Map of translated tab to English tab for filtering
@@ -206,13 +69,14 @@ export default function ConditionScansScreen() {
     [t("conditionScans.education", "Education")]: "Education", 
     [t("conditionScans.peerInteraction", "Peer to Peer Interaction")]: "Peer to Peer Interaction",
     [t("conditionScans.familyBonding", "Family Bonding")]: "Family Bonding",
+    [t("conditionScans.other", "Other")]: "Other",
   };
 
   // Filter scans using English category names
   const filteredScans = allScans.filter(
     (scan) => {
       const englishTab = tabMapping[selectedTab] || selectedTab;
-      return (englishTab === "All" || scan.category === englishTab) &&
+      return (englishTab === "All" || (scan.category && scan.category === englishTab)) &&
         scan.name.toLowerCase().includes(searchText.toLowerCase());
     }
   );

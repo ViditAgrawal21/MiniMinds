@@ -95,7 +95,25 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
 export const useLanguage = (): LanguageContextProps => {
   const context = useContext(LanguageContext);
   if (!context) {
-    throw new Error("useLanguage must be used within a LanguageProvider");
+    // If the provider isn't mounted, return a safe fallback using the i18n singleton
+    // so components can still read current language and call t().
+    const fallbackLocale = i18n?.language || getCurrentLanguage();
+    return {
+      locale: fallbackLocale,
+      // setLocale will attempt to change i18n language but won't rely on provider
+      setLocale: async (newLocale: string) => {
+        try {
+          await changeLanguage(newLocale);
+        } catch (err) {
+          console.error('Fallback setLocale error:', err);
+          throw err;
+        }
+      },
+      supportedLanguages: getSupportedLanguages(),
+      isLoading: false,
+      t: i18n && typeof i18n.t === 'function' ? i18n.t.bind(i18n) : (k: string, o?: any) => k,
+    } as LanguageContextProps;
   }
+
   return context;
 };

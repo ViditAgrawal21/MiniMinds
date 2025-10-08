@@ -1,91 +1,97 @@
+// Updated ScanIntro.tsx - Dynamic Intro Loading
 import React from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { NativeStackNavigationProp, NativeStackScreenProps } from "@react-navigation/native-stack";
 import PrimaryButton from "@/components/common/PrimaryButton";
-import { t } from "@/i18n/locales/i18n"; // Import the i18n and t function
-import { useLanguage } from "@/context/LanguageContext"; // Import language context
+import { t } from "@/i18n/locales/i18n";
+import { useLanguage } from "@/context/LanguageContext";
+import i18n from "@/i18n/locales/i18n";
 import { RootStackParamList } from "@/navigation/types";
+import { questionDataLoader } from "@/data/questionData";
 
 const { height: screenHeight } = Dimensions.get("window");
 
 type ScanIntroScreenProps = NativeStackScreenProps<RootStackParamList, 'ScanIntro'>;
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
-// Static data with scan names and question screens
-const scanData = [
-  { name: "Addictions", questionScreen: "addictionsQuestion" },
-  { name: "Anger Management", questionScreen: "angerManagementQuestion" },
-  { name: "Common Psychological Issues", questionScreen: "commonPsychologicalIssuesQuestion" },
-  { name: "Environment Issues Affecting Mental Wellbeing", questionScreen: "environmentIssuesAffectingMentalWellbeingQuestion" },
-  { name: "Family and Relationship", questionScreen: "familyIssuesQuestion" },
-  { name: "Financial Mental Health", questionScreen: "financialMentalHealthQuestion" },
-  { name: "General Physical Fitness", questionScreen: "generalPhysicalFitnessQuestion" },
-  { name: "Internet and Social Media Issue", questionScreen: "internetAndSocialMediaQuestion" },
-  { name: "Internet Dependence", questionScreen: "internetDependenceQuestion" },
-  { name: "Professional Mental Health", questionScreen: "professionalMentalHealthQuestion" },
-  { name: "Sex Life", questionScreen: "sexLifeQuestion" },
-  { name: "Sleep", questionScreen: "sleepQuestion" },
-  { name: "Social Mental Health", questionScreen: "socialMentalHealthQuestion" },
-  { name: "Stress", questionScreen: "stressQuestion" },
-  { name: "Suicidal Behaviour", questionScreen: "suicidalBehaviorQuestion" },
-  { name: "Youngster Issues", questionScreen: "youngsterIssuesQuestion" },
-  { name: "Job Insecurity", questionScreen: "jobInsecurityQuestion" },
-];
+// Dynamic scan data - loaded from question database
+const getScanData = () => {
+  const allScans = questionDataLoader.getAllScanNames();
+  
+  return allScans.map(scanName => {
+    const normalized = scanName
+      .split(' ')
+      .map((word, idx) => 
+        idx === 0 ? word.toLowerCase() : word.charAt(0).toUpperCase() + word.slice(1)
+      )
+      .join('')
+      .replace(/[^a-zA-Z0-9]/g, '');
+    
+    return {
+      name: scanName,
+      questionScreen: `${normalized}Question`
+    };
+  });
+};
 
-// Translation key mappings
-const translationKeys: { [key: string]: string } = {
-  "Addictions": "addictions",
-  "Anger Management": "angerManagement", 
-  "Common Psychological Issues": "commonPsychologicalIssues",
-  "Environment Issues Affecting Mental Wellbeing": "environmentIssuesAffectingMentalWellbeing",
-  "Family and Relationship": "familyAndRelationship",
-  "Financial Mental Health": "financialMentalHealth", 
-  "General Physical Fitness": "generalPhysicalFitness",
-  "Internet and Social Media Issue": "internetAndSocialMediaIssue",
-  "Internet Dependence": "internetDependence",
-  "Professional Mental Health": "professionalMentalHealth",
-  "Sex Life": "sexLife",
-  "Sleep": "sleep",
-  "Social Mental Health": "socialMentalHealth", 
-  "Stress": "stress",
-  "Suicidal Behaviour": "suicidalBehaviour",
-  "Youngster Issues": "youngsterIssues",
-  "Job Insecurity": "jobInsecurity"
+// Dynamic translation keys - generated from scan names
+const getTranslationKeys = (): { [key: string]: string } => {
+  const allScans = questionDataLoader.getAllScanNames();
+  const keys: { [key: string]: string } = {};
+  
+  allScans.forEach(scanName => {
+    const normalized = scanName
+      .split(' ')
+      .map((word, idx) => 
+        idx === 0 ? word.toLowerCase() : word.charAt(0).toUpperCase() + word.slice(1)
+      )
+      .join('')
+      .replace(/[^a-zA-Z0-9]/g, '');
+    
+    keys[scanName] = normalized;
+  });
+  
+  return keys;
 };
 
 export default function ScanIntro() {
   const navigation = useNavigation<NavigationProp>();
   const route = useRoute<ScanIntroScreenProps['route']>();
   const { scanName } = route.params || {};
-  const { locale } = useLanguage(); // Get current locale from context
+  // Try to read locale from LanguageProvider; if the provider isn't mounted
+  // fall back to the i18n singleton language to avoid runtime errors.
+  let locale = i18n?.language || 'en';
+  try {
+    const maybe = useLanguage();
+    if (maybe && maybe.locale) {
+      locale = maybe.locale;
+    }
+  } catch (e) {
+    // If useLanguage throws because provider is missing, we already have a safe fallback.
+  }
   
   console.log("ScanIntro scanName", scanName);
   console.log("Current locale:", locale);
   
-  // Debug - test a simple translation
-  console.log("Test translation for addictions title:", t("scanIntro.addictions.title"));
-  console.log("Test translation for scanIntro.ui.questionsCount:", t("scanIntro.ui.questionsCount"));
+  // Get scan data dynamically
+  const scanData = getScanData();
+  const translationKeys = getTranslationKeys();
   
-  // Find the scan data
+  // Find the scan info
   const scanInfo = scanData.find((item) => item.name === scanName);
   
   // Get translation key for this scan
   const translationKey = translationKeys[scanName || ""];
   
-  // Get translated data - these calls happen at render time and depend on locale
-  const translatedTitle = translationKey 
-    ? t(`scanIntro.${translationKey}.title`) 
-    : scanName;
-  const translatedOverview = translationKey 
-    ? t(`scanIntro.${translationKey}.overview`) 
-    : "";
+  // Get intro data from the loader
+  const introData = questionDataLoader.getIntroData(scanName || "");
   
   const dataForUI = {
     name: scanName,
-    title: translatedTitle,
-    overview: translatedOverview,
+    title: introData?.title || scanName || "",
+    overview: introData?.overview || "",
     questionScreen: scanInfo?.questionScreen,
   };
   
@@ -93,7 +99,6 @@ export default function ScanIntro() {
 
   /** Go to the first question screen in this scan */
   function handleTakeTest() {
-    // Get the questionScreen from dataForUI to know which question set to load
     if (dataForUI && dataForUI.questionScreen) {
       // @ts-ignore – screen is auto‑registered elsewhere
       navigation.navigate("ScanQuestions", {
@@ -113,37 +118,69 @@ export default function ScanIntro() {
           <Text style={styles.headerText}>{dataForUI.title}</Text>
         </View>
 
-        {/* One‑liner description */}
-        {/* <Text style={styles.description}>
-          {ScreenIntroData[currentIntroScreenIndex].title}
-        </Text> */}
-
         {/* Info boxes */}
         <View style={styles.infoContainer}>
           {/* Questions */}
-          <View style={styles.infoBox}>
-            <Text style={styles.infoNumber}>{t("scanIntro.ui.questionsCount")}</Text>
-            <Text style={styles.infoLabel}>{t("scanIntro.ui.questionsLabel")}</Text>
-          </View>
-
-          {/* Approximate time */}
-          <View style={styles.infoBox}>
-            <View style={styles.infoRow}>
-              <Text style={styles.infoNumber}>{t("scanIntro.ui.timeCount")}</Text>
-              <Text style={styles.infoLabelPurple}>{t("scanIntro.ui.timeUnit")}</Text>
+            <View style={styles.infoBox}>
+              <Text style={styles.infoNumber}>
+                {/* Compute question count from the question data structure */}
+                {(() => {
+                  try {
+                    const qsets = questionDataLoader.getQuestionsForScan(scanName || "", locale);
+                    if (Array.isArray(qsets) && qsets.length > 0) {
+                      // qsets[0] is an object where the value is the array of question pairs
+                      const firstSet = qsets[0];
+                      const pairs = Object.values(firstSet)[0] as any[];
+                      const count = (pairs || []).reduce((sum, pair) => sum + (Array.isArray(pair) ? pair.length : 0), 0);
+                      return String(count);
+                    }
+                  } catch (e) {
+                    // fallback
+                    console.warn('Could not compute question count for', scanName, e);
+                  }
+                  return '0';
+                })()}
+              </Text>
+              <Text style={styles.infoLabel}>{t("scanIntro.ui.questionsLabel", "Questions")}</Text>
             </View>
-            <Text style={styles.infoSmallLabel}>{t("scanIntro.ui.timeLabel")}</Text>
-          </View>
+
+            {/* Approximate time */}
+            <View style={styles.infoBox}>
+              <View style={styles.infoRow}>
+                <Text style={styles.infoNumber}>
+                  {(() => {
+                    try {
+                      const qsets = questionDataLoader.getQuestionsForScan(scanName || "", locale);
+                      if (Array.isArray(qsets) && qsets.length > 0) {
+                        const firstSet = qsets[0];
+                        const pairs = Object.values(firstSet)[0] as any[];
+                        const count = (pairs || []).reduce((sum, pair) => sum + (Array.isArray(pair) ? pair.length : 0), 0);
+                        // Estimate 30 seconds per question
+                        const secondsPerQuestion = 30;
+                        const totalSeconds = Math.max(0, count * secondsPerQuestion);
+                        const minutes = Math.max(1, Math.round(totalSeconds / 60));
+                        return String(minutes);
+                      }
+                    } catch (e) {
+                      console.warn('Could not compute estimated time for', scanName, e);
+                    }
+                    return '1';
+                  })()}
+                </Text>
+                <Text style={styles.infoLabelPurple}>{t("scanIntro.ui.timeUnit", "min")}</Text>
+              </View>
+              <Text style={styles.infoSmallLabel}>{t("scanIntro.ui.timeLabel", "Approx time")}</Text>
+            </View>
         </View>
 
-        {/* Overview from markdown */}
-        <Text style={styles.sectionTitle}>{t("scanIntro.ui.overviewTitle")}</Text>
+        {/* Overview */}
+  <Text style={styles.sectionTitle}>{t("scanIntro.ui.overviewTitle", "Overview")}</Text>
         <Text style={styles.overviewText}>{dataForUI.overview}</Text>
 
         {/* CTA */}
         <View style={styles.buttonContainer}>
           <PrimaryButton
-            label={t("scanIntro.ui.takeTestButton")}
+            label={t("scanIntro.ui.takeTestButton", "Take Test")}
             callback={handleTakeTest}
           />
         </View>
@@ -167,17 +204,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontFamily: "Poppins-semibold",
     color: "#FFF",
-  },
-
-  description: {
-    fontSize: 13,
-    fontFamily: "Poppins-regular",
-    color: "#4A4A4A",
-    textAlign: "center",
-    lineHeight: 20,
-    padding: 20,
-    backgroundColor: "#FFF",
-    marginBottom: 20,
   },
 
   infoContainer: {

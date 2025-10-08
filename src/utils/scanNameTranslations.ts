@@ -1,3 +1,5 @@
+//scanNameTranslations.ts
+// Utility function to translate scan names to localized strings
 import { t } from "@/i18n/locales/i18n";
 
 // Function to get translated scan name
