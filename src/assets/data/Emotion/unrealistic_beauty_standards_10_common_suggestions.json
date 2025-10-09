@@ -1,695 +1,534 @@
 {
-  "issueType": "Emotional Issues",
-  "issueName": "Unrealistic beauty standards and obesity",
-  "interventionType": "Primary",
-  "interventionSubType": "10 Common Suggestions",
-  "totalSuggestions": 10,
-  "suggestions": [
-    {
-      "id": 1,
-      "xp": 2,
-      "title": {
-        "english": "Promote Body Positivity",
-        "hindi": "शरीर की सकारात्मकता को बढ़ावा दें",
-        "marathi": "शरीराच्या सकारात्मकतेला प्रोत्साहन द्या"
-      },
-      "description": {
-        "english": "Encourage acceptance of all body types, regardless of size or shape. For example, a clothing brand can use models of different sizes in their advertising campaigns to show that beauty comes in all forms.",
-        "hindi": "आकार या आकृति की परवाह किए बिना सभी शरीर के प्रकारों की स्वीकृति को प्रोत्साहित करें। उदाहरण के लिए, एक कपड़ों का ब्रांड अपने विज्ञापन अभियानों में विभिन्न आकारों के मॉडलों का उपयोग कर सकता है यह दिखाने के लिए कि सुंदरता सभी रूपों में आती है।",
-        "marathi": "आकार किंवा आकाराची पर्वा न करता सर्व शरीर प्रकारांची स्वीकृती प्रोत्साहित करा. उदाहरणार्थ, कपड्यांचा ब्रँड त्यांच्या जाहिरात मोहिमांमध्ये विविध आकारांचे मॉडेल वापरू शकतो हे दाखवण्यासाठी की सौंदर्य सर्व प्रकारांमध्ये येते."
-      }
+  "condition": "Unrealistic Beauty Standards",
+  "issueType": "General Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Curate Your Feed",
+            "hindi": "Curate Your Feed",
+            "marathi": "Curate Your Feed"
+          },
+          "description": {
+            "english": "Unfollow comparison triggers; follow skill; art; or nature accounts. How it works: Reduces negative self-evaluation and shifts focus to interests. Example: Replace #bodygoals with #naturephotography and #learnpainting.\"\"",
+            "hindi": "Unfollow comparison triggers; follow skill; art; or nature accounts. How it works: Reduces negative self-evaluation and shifts focus to interests. Example: Replace #bodygoals with #naturephotography and #learnpainting.\"\"",
+            "marathi": "Unfollow comparison triggers; follow skill; art; or nature accounts. How it works: Reduces negative self-evaluation and shifts focus to interests. Example: Replace #bodygoals with #naturephotography and #learnpainting.\"\""
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Set Screen Time Limits",
+            "hindi": "Set Screen Time Limits",
+            "marathi": "Set Screen Time Limits"
+          },
+          "description": {
+            "english": "Cap daily social media minutes and disable push notifications. How it works: Lowers exposure and rumination. Example: 20-minute app cap with Do Not Disturb after 9 pm.\"\"",
+            "hindi": "Cap daily social media minutes and disable push notifications. How it works: Lowers exposure and rumination. Example: 20-minute app cap with Do Not Disturb after 9 pm.\"\"",
+            "marathi": "Cap daily social media minutes and disable push notifications. How it works: Lowers exposure and rumination. Example: 20-minute app cap with Do Not Disturb after 9 pm.\"\""
+          }
+        },
+        {
+          "id": 3,
+          "xp": 1,
+          "title": {
+            "english": "Body-Neutral Self-Talk",
+            "hindi": "Body-Neutral Self-Talk",
+            "marathi": "Body-Neutral Self-Talk"
+          },
+          "description": {
+            "english": "Replace judgments with functional statements. How it works: Eases shame and promotes respect. Example: \"\"\"\"My legs help me get places\"\"\"\" instead of \"\"\"\"My legs look bad.\"\"\"\"\"\"",
+            "hindi": "Replace judgments with functional statements. How it works: Eases shame and promotes respect. Example: \"\"\"\"My legs help me get places\"\"\"\" instead of \"\"\"\"My legs look bad.\"\"\"\"\"\"",
+            "marathi": "Replace judgments with functional statements. How it works: Eases shame and promotes respect. Example: \"\"\"\"My legs help me get places\"\"\"\" instead of \"\"\"\"My legs look bad.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Mirror Compassion Practice",
+            "hindi": "Mirror Compassion Practice",
+            "marathi": "Mirror Compassion Practice"
+          },
+          "description": {
+            "english": "Limit mirror checks and use compassionate cues. How it works: Interrupts critical loops. Example: Post-it on mirror: \"\"\"\"I am more than appearance.\"\"\"\" 2-minute max checks.\"\"",
+            "hindi": "Limit mirror checks and use compassionate cues. How it works: Interrupts critical loops. Example: Post-it on mirror: \"\"\"\"I am more than appearance.\"\"\"\" 2-minute max checks.\"\"",
+            "marathi": "Limit mirror checks and use compassionate cues. How it works: Interrupts critical loops. Example: Post-it on mirror: \"\"\"\"I am more than appearance.\"\"\"\" 2-minute max checks.\"\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 1,
+          "title": {
+            "english": "Strengths and Values Log",
+            "hindi": "Strengths and Values Log",
+            "marathi": "Strengths and Values Log"
+          },
+          "description": {
+            "english": "List 3 non-appearance strengths daily. How it works: Builds identity beyond looks. Example: \"\"\"\"Patient friend; creative problem-solver; consistent at study.\"\"\"\"\"\"",
+            "hindi": "List 3 non-appearance strengths daily. How it works: Builds identity beyond looks. Example: \"\"\"\"Patient friend; creative problem-solver; consistent at study.\"\"\"\"\"\"",
+            "marathi": "List 3 non-appearance strengths daily. How it works: Builds identity beyond looks. Example: \"\"\"\"Patient friend; creative problem-solver; consistent at study.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Clothing That Fits Now",
+            "hindi": "Clothing That Fits Now",
+            "marathi": "Clothing That Fits Now"
+          },
+          "description": {
+            "english": "Wear comfortable; well-fitting clothes today. How it works: Reduces constant body monitoring. Example: Donate tight items; buy a staple that feels good now.\"\"",
+            "hindi": "Wear comfortable; well-fitting clothes today. How it works: Reduces constant body monitoring. Example: Donate tight items; buy a staple that feels good now.\"\"",
+            "marathi": "Wear comfortable; well-fitting clothes today. How it works: Reduces constant body monitoring. Example: Donate tight items; buy a staple that feels good now.\"\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Move for Mood Not Looks",
+            "hindi": "Move for Mood Not Looks",
+            "marathi": "Move for Mood Not Looks"
+          },
+          "description": {
+            "english": "Choose enjoyable movement with no tracking of calories/appearance. How it works: Rewires exercise motivation toward wellbeing. Example: 20-minute dance break after work.\"\"",
+            "hindi": "Choose enjoyable movement with no tracking of calories/appearance. How it works: Rewires exercise motivation toward wellbeing. Example: 20-minute dance break after work.\"\"",
+            "marathi": "Choose enjoyable movement with no tracking of calories/appearance. How it works: Rewires exercise motivation toward wellbeing. Example: 20-minute dance break after work.\"\""
+          }
+        },
+        {
+          "id": 8,
+          "xp": 3,
+          "title": {
+            "english": "Media Literacy Check",
+            "hindi": "Media Literacy Check",
+            "marathi": "Media Literacy Check"
+          },
+          "description": {
+            "english": "Identify editing; filters; and staging in ads/posts. How it works: Creates distance from unrealistic images. Example: Compare unfiltered vs. filtered selfies to see distortions.\"\"",
+            "hindi": "Identify editing; filters; and staging in ads/posts. How it works: Creates distance from unrealistic images. Example: Compare unfiltered vs. filtered selfies to see distortions.\"\"",
+            "marathi": "Identify editing; filters; and staging in ads/posts. How it works: Creates distance from unrealistic images. Example: Compare unfiltered vs. filtered selfies to see distortions.\"\""
+          }
+        },
+        {
+          "id": 9,
+          "xp": 4,
+          "title": {
+            "english": "Supportive Community",
+            "hindi": "Supportive Community",
+            "marathi": "Supportive Community"
+          },
+          "description": {
+            "english": "Engage with body-neutral or body-diverse spaces. How it works: Normalizes diverse appearances. Example: Join a group that celebrates hiking for joy; not physique.\"\"",
+            "hindi": "Engage with body-neutral or body-diverse spaces. How it works: Normalizes diverse appearances. Example: Join a group that celebrates hiking for joy; not physique.\"\"",
+            "marathi": "Engage with body-neutral or body-diverse spaces. How it works: Normalizes diverse appearances. Example: Join a group that celebrates hiking for joy; not physique.\"\""
+          }
+        }
+      ]
     },
-    {
-      "id": 2,
-      "xp": 2,
-      "title": {
-        "english": "Encourage Healthy Eating",
-        "hindi": "स्वस्थ खाने को प्रोत्साहित करें",
-        "marathi": "निरोगी खाण्याला प्रोत्साहन द्या"
-      },
-      "description": {
-        "english": "Promote balanced diets over fad diets. For instance, a health blog can share recipes and meal plans that include a variety of nutritious foods, rather than promoting restrictive diets that can lead to unhealthy weight loss.",
-        "hindi": "फैड डाइट के बजाय संतुलित आहार को बढ़ावा दें। उदाहरण के लिए, एक स्वास्थ्य ब्लॉग विविध पोषक खाद्य पदार्थों वाली रेसिपी और भोजन योजनाएं साझा कर सकता है, बजाय प्रतिबंधित आहार को बढ़ावा देने के जो अस्वस्थ वजन घटाने का कारण बन सकता है।",
-        "marathi": "फॅड डायट ऐवजी संतुलित आहाराला प्रोत्साहन द्या. उदाहरणार्थ, आरोग्य ब्लॉग विविध पौष्टिक खाद्यपदार्थांच्या रेसिपी आणि जेवणाची योजना सामायिक करू शकतो, प्रतिबंधित आहाराला प्रोत्साहन देण्याऐवजी जो अनारोग्यकर वजन कमी करण्यास कारणीभूत ठरू शकतो."
-      }
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Box Breathing Before Mirror",
+            "hindi": "Box Breathing Before Mirror",
+            "marathi": "Box Breathing Before Mirror"
+          },
+          "description": {
+            "english": "Why it helps: Lowers arousal that fuels harsh self-judgment. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3 minutes before mirror time. Example: Do 8–12 cycles; then choose one kind statement.\"\"",
+            "hindi": "Why it helps: Lowers arousal that fuels harsh self-judgment. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3 minutes before mirror time. Example: Do 8–12 cycles; then choose one kind statement.\"\"",
+            "marathi": "Why it helps: Lowers arousal that fuels harsh self-judgment. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3 minutes before mirror time. Example: Do 8–12 cycles; then choose one kind statement.\"\""
+          }
+        },
+        {
+          "id": 2,
+          "xp": 6,
+          "title": {
+            "english": "5-4-3-2-1 Grounding After Scroll",
+            "hindi": "5-4-3-2-1 Grounding After Scroll",
+            "marathi": "5-4-3-2-1 Grounding After Scroll"
+          },
+          "description": {
+            "english": "Why it helps: Pulls focus from comparisons to present senses. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste. Example: After influencer posts trigger shame; complete sequence before decisions.\"\"",
+            "hindi": "Why it helps: Pulls focus from comparisons to present senses. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste. Example: After influencer posts trigger shame; complete sequence before decisions.\"\"",
+            "marathi": "Why it helps: Pulls focus from comparisons to present senses. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste. Example: After influencer posts trigger shame; complete sequence before decisions.\"\""
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": {
+            "english": "Progressive Muscle Relaxation (PMR)",
+            "hindi": "Progressive Muscle Relaxation (PMR)",
+            "marathi": "Progressive Muscle Relaxation (PMR)"
+          },
+          "description": {
+            "english": "Why it helps: Releases tension that magnifies body preoccupation. What to do: Tense 5s/release 10s from feet to face for 8–10 minutes. Example: Evening PMR instead of doom-scrolling.\"\"",
+            "hindi": "Why it helps: Releases tension that magnifies body preoccupation. What to do: Tense 5s/release 10s from feet to face for 8–10 minutes. Example: Evening PMR instead of doom-scrolling.\"\"",
+            "marathi": "Why it helps: Releases tension that magnifies body preoccupation. What to do: Tense 5s/release 10s from feet to face for 8–10 minutes. Example: Evening PMR instead of doom-scrolling.\"\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Extended Exhale Breathing 4-6",
+            "hindi": "Extended Exhale Breathing 4-6",
+            "marathi": "Extended Exhale Breathing 4-6"
+          },
+          "description": {
+            "english": "Why it helps: Activates parasympathetic calm and eases critical thoughts. What to do: Inhale 4s; exhale 6s for 5 minutes. Example: Use pre-outing when outfit worries spike.\"\"",
+            "hindi": "Why it helps: Activates parasympathetic calm and eases critical thoughts. What to do: Inhale 4s; exhale 6s for 5 minutes. Example: Use pre-outing when outfit worries spike.\"\"",
+            "marathi": "Why it helps: Activates parasympathetic calm and eases critical thoughts. What to do: Inhale 4s; exhale 6s for 5 minutes. Example: Use pre-outing when outfit worries spike.\"\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 6,
+          "title": {
+            "english": "Guided Imagery Body-Neutral Walk",
+            "hindi": "Guided Imagery Body-Neutral Walk",
+            "marathi": "Guided Imagery Body-Neutral Walk"
+          },
+          "description": {
+            "english": "Why it helps: Builds a calmer; non-judging mindset. What to do: Visualize walking in nature focusing on sounds/textures for 5 minutes. Example: Use before trying on clothes.\"\"",
+            "hindi": "Why it helps: Builds a calmer; non-judging mindset. What to do: Visualize walking in nature focusing on sounds/textures for 5 minutes. Example: Use before trying on clothes.\"\"",
+            "marathi": "Why it helps: Builds a calmer; non-judging mindset. What to do: Visualize walking in nature focusing on sounds/textures for 5 minutes. Example: Use before trying on clothes.\"\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 5,
+          "title": {
+            "english": "Soothing Self-Talk Script",
+            "hindi": "Soothing Self-Talk Script",
+            "marathi": "Soothing Self-Talk Script"
+          },
+          "description": {
+            "english": "Why it helps: Softens inner critic that drives avoidance. What to do: Read a prepared line slowly for 2 minutes. Example: “My value isn’t a photo. I can show up as I am today.”\"\"",
+            "hindi": "Why it helps: Softens inner critic that drives avoidance. What to do: Read a prepared line slowly for 2 minutes. Example: “My value isn’t a photo. I can show up as I am today.”\"\"",
+            "marathi": "Why it helps: Softens inner critic that drives avoidance. What to do: Read a prepared line slowly for 2 minutes. Example: “My value isn’t a photo. I can show up as I am today.”\"\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 6,
+          "title": {
+            "english": "Mindful Walking 7 Minutes",
+            "hindi": "Mindful Walking 7 Minutes",
+            "marathi": "Mindful Walking 7 Minutes"
+          },
+          "description": {
+            "english": "Why it helps: Gentle movement reduces rumination and comparison. What to do: Walk; match steps to breath; notice 3 new details per minute. Example: Replace bathroom mirror checks with a hallway loop.\"\"",
+            "hindi": "Why it helps: Gentle movement reduces rumination and comparison. What to do: Walk; match steps to breath; notice 3 new details per minute. Example: Replace bathroom mirror checks with a hallway loop.\"\"",
+            "marathi": "Why it helps: Gentle movement reduces rumination and comparison. What to do: Walk; match steps to breath; notice 3 new details per minute. Example: Replace bathroom mirror checks with a hallway loop.\"\""
+          }
+        },
+        {
+          "id": 8,
+          "xp": 6,
+          "title": {
+            "english": "Body Scan Check-In",
+            "hindi": "Body Scan Check-In",
+            "marathi": "Body Scan Check-In"
+          },
+          "description": {
+            "english": "Why it helps: Increases awareness of tension to interrupt spirals. What to do: Scan crown to toes; label sensations nonjudgmentally for 6–8 minutes. Example: Notice shoulder tightness; soften and breathe.\"\"",
+            "hindi": "Why it helps: Increases awareness of tension to interrupt spirals. What to do: Scan crown to toes; label sensations nonjudgmentally for 6–8 minutes. Example: Notice shoulder tightness; soften and breathe.\"\"",
+            "marathi": "Why it helps: Increases awareness of tension to interrupt spirals. What to do: Scan crown to toes; label sensations nonjudgmentally for 6–8 minutes. Example: Notice shoulder tightness; soften and breathe.\"\""
+          }
+        },
+        {
+          "id": 9,
+          "xp": 7,
+          "title": {
+            "english": "Coherent Breathing (~5–6 breaths/min)",
+            "hindi": "Coherent Breathing (~5–6 breaths/min)",
+            "marathi": "Coherent Breathing (~5–6 breaths/min)"
+          },
+          "description": {
+            "english": "Why it helps: Stabilizes heart–breath rhythm for steady mood. What to do: Inhale 5s; exhale 5s for 10 minutes daily. Example: Morning practice to reduce baseline self-criticism.\"\"",
+            "hindi": "Why it helps: Stabilizes heart–breath rhythm for steady mood. What to do: Inhale 5s; exhale 5s for 10 minutes daily. Example: Morning practice to reduce baseline self-criticism.\"\"",
+            "marathi": "Why it helps: Stabilizes heart–breath rhythm for steady mood. What to do: Inhale 5s; exhale 5s for 10 minutes daily. Example: Morning practice to reduce baseline self-criticism.\"\""
+          }
+        }
+      ]
     },
-    {
-      "id": 3,
-      "xp": 2,
-      "title": {
-        "english": "Advocate for Regular Exercise",
-        "hindi": "नियमित व्यायाम की वकालत करें",
-        "marathi": "नियमित व्यायामाची वकिली करा"
-      },
-      "description": {
-        "english": "Encourage physical activity as a way to maintain health, not just lose weight. For example, a fitness instructor can emphasize the benefits of exercise for mental health and overall well-being, rather than focusing solely on weight loss.",
-        "hindi": "केवल वजन घटाने के लिए नहीं बल्कि स्वास्थ्य बनाए रखने के तरीके के रूप में शारीरिक गतिविधि को प्रोत्साहित करें। उदाहरण के लिए, एक फिटनेस प्रशिक्षक मानसिक स्वास्थ्य और समग्र कल्याण के लिए व्यायाम के फायदों पर जोर दे सकता है, केवल वजन घटाने पर ध्यान केंद्रित करने के बजाय।",
-        "marathi": "केवळ वजन कमी करण्यासाठी नव्हे तर आरोग्य राखण्यासाठी शारीरिक हालचालीला प्रोत्साहन द्या. उदाहरणार्थ, फिटनेस प्रशिक्षक मानसिक आरोग्य आणि एकूण कल्याणासाठी व्यायामाच्या फायद्यांवर भर देऊ शकतो, केवळ वजन कमी करण्यावर लक्ष केंद्रित करण्याऐवजी."
-      }
+    "cbt": {
+      "type": "Tertiary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 6,
+          "title": {
+            "english": "Situation and Trigger Log",
+            "hindi": "Situation and Trigger Log",
+            "marathi": "Situation and Trigger Log"
+          },
+          "description": {
+            "english": "Why it helps: Reveals contexts that spike body shame/comparison. What to do: Track time; place; content seen; mood (0–10); urge (0–10). Example: 8 am; scrolling influencer post; shame 7/10; urge to cancel plans 6/10.\"\"",
+            "hindi": "Why it helps: Reveals contexts that spike body shame/comparison. What to do: Track time; place; content seen; mood (0–10); urge (0–10). Example: 8 am; scrolling influencer post; shame 7/10; urge to cancel plans 6/10.\"\"",
+            "marathi": "Why it helps: Reveals contexts that spike body shame/comparison. What to do: Track time; place; content seen; mood (0–10); urge (0–10). Example: 8 am; scrolling influencer post; shame 7/10; urge to cancel plans 6/10.\"\""
+          }
+        },
+        {
+          "id": 2,
+          "xp": 7,
+          "title": {
+            "english": "Automatic Thought Record",
+            "hindi": "Automatic Thought Record",
+            "marathi": "Automatic Thought Record"
+          },
+          "description": {
+            "english": "Why it helps: Surfaces harsh appearance thoughts to challenge. What to do: Note situation; thought; emotion; behavior urge. Example: \"\"\"\"Unedited selfie\"\"\"\" → \"\"\"\"I look awful\"\"\"\" → sadness 7/10; urge to edit/hide.\"\"",
+            "hindi": "Why it helps: Surfaces harsh appearance thoughts to challenge. What to do: Note situation; thought; emotion; behavior urge. Example: \"\"\"\"Unedited selfie\"\"\"\" → \"\"\"\"I look awful\"\"\"\" → sadness 7/10; urge to edit/hide.\"\"",
+            "marathi": "Why it helps: Surfaces harsh appearance thoughts to challenge. What to do: Note situation; thought; emotion; behavior urge. Example: \"\"\"\"Unedited selfie\"\"\"\" → \"\"\"\"I look awful\"\"\"\" → sadness 7/10; urge to edit/hide.\"\""
+          }
+        },
+        {
+          "id": 3,
+          "xp": 8,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "Cognitive Restructuring",
+            "marathi": "Cognitive Restructuring"
+          },
+          "description": {
+            "english": "Why it helps: Replaces distortions (all-or-nothing; magnification) with balanced views. What to do: Evidence for/against; alternative; realistic outcome. Example: \"\"\"\"Everyone looks better than me\"\"\"\" → curated feeds ≠ reality; \"\"\"\"I can still show up.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Replaces distortions (all-or-nothing; magnification) with balanced views. What to do: Evidence for/against; alternative; realistic outcome. Example: \"\"\"\"Everyone looks better than me\"\"\"\" → curated feeds ≠ reality; \"\"\"\"I can still show up.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Replaces distortions (all-or-nothing; magnification) with balanced views. What to do: Evidence for/against; alternative; realistic outcome. Example: \"\"\"\"Everyone looks better than me\"\"\"\" → curated feeds ≠ reality; \"\"\"\"I can still show up.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 7,
+          "title": {
+            "english": "Behavioral Experiments",
+            "hindi": "Behavioral Experiments",
+            "marathi": "Behavioral Experiments"
+          },
+          "description": {
+            "english": "Why it helps: Tests beliefs with data from real life. What to do: Form hypothesis and run a small test. Example: Hypothesis: \"\"\"\"If I attend without makeup; people judge me\"\"\"\"; Test: go to coffee; Result: friend focused on conversation.\"\"",
+            "hindi": "Why it helps: Tests beliefs with data from real life. What to do: Form hypothesis and run a small test. Example: Hypothesis: \"\"\"\"If I attend without makeup; people judge me\"\"\"\"; Test: go to coffee; Result: friend focused on conversation.\"\"",
+            "marathi": "Why it helps: Tests beliefs with data from real life. What to do: Form hypothesis and run a small test. Example: Hypothesis: \"\"\"\"If I attend without makeup; people judge me\"\"\"\"; Test: go to coffee; Result: friend focused on conversation.\"\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 7,
+          "title": {
+            "english": "Exposure to Unedited Appearance (Graded)",
+            "hindi": "Exposure to Unedited Appearance (Graded)",
+            "marathi": "Exposure to Unedited Appearance (Graded)"
+          },
+          "description": {
+            "english": "Why it helps: Reduces avoidance and shame via gradual tolerance. What to do: Create ladder from easiest to hardest and practice. Example: Step 1 mirror 1 min; Step 2 unfiltered selfie to trusted friend; Step 3 gym without cap.\"\"",
+            "hindi": "Why it helps: Reduces avoidance and shame via gradual tolerance. What to do: Create ladder from easiest to hardest and practice. Example: Step 1 mirror 1 min; Step 2 unfiltered selfie to trusted friend; Step 3 gym without cap.\"\"",
+            "marathi": "Why it helps: Reduces avoidance and shame via gradual tolerance. What to do: Create ladder from easiest to hardest and practice. Example: Step 1 mirror 1 min; Step 2 unfiltered selfie to trusted friend; Step 3 gym without cap.\"\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 9,
+          "title": {
+            "english": "Stimulus Control and Feed Hygiene",
+            "hindi": "Stimulus Control and Feed Hygiene",
+            "marathi": "Stimulus Control and Feed Hygiene"
+          },
+          "description": {
+            "english": "Why it helps: Lowers constant triggers from idealized images. What to do: Unfollow/ mute comparison accounts; follow body-neutral/skill accounts; set app limits. Example: 20-minute daily cap; swap 5 accounts for hobbies.\"\"",
+            "hindi": "Why it helps: Lowers constant triggers from idealized images. What to do: Unfollow/ mute comparison accounts; follow body-neutral/skill accounts; set app limits. Example: 20-minute daily cap; swap 5 accounts for hobbies.\"\"",
+            "marathi": "Why it helps: Lowers constant triggers from idealized images. What to do: Unfollow/ mute comparison accounts; follow body-neutral/skill accounts; set app limits. Example: 20-minute daily cap; swap 5 accounts for hobbies.\"\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Strengths and Values Log",
+            "hindi": "Strengths and Values Log",
+            "marathi": "Strengths and Values Log"
+          },
+          "description": {
+            "english": "Why it helps: Broadens identity beyond looks. What to do: Record 3 daily strengths/values-based actions. Example: \"\"\"\"Helped teammate; finished code review; called grandma.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Broadens identity beyond looks. What to do: Record 3 daily strengths/values-based actions. Example: \"\"\"\"Helped teammate; finished code review; called grandma.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Broadens identity beyond looks. What to do: Record 3 daily strengths/values-based actions. Example: \"\"\"\"Helped teammate; finished code review; called grandma.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Compassionate Body Talk Script",
+            "hindi": "Compassionate Body Talk Script",
+            "marathi": "Compassionate Body Talk Script"
+          },
+          "description": {
+            "english": "Why it helps: Softens inner critic to reduce avoidance. What to do: Write and rehearse kind; functional statements. Example: \"\"\"\"This body lets me hike; I can be kind even when I dislike a photo.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Softens inner critic to reduce avoidance. What to do: Write and rehearse kind; functional statements. Example: \"\"\"\"This body lets me hike; I can be kind even when I dislike a photo.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Softens inner critic to reduce avoidance. What to do: Write and rehearse kind; functional statements. Example: \"\"\"\"This body lets me hike; I can be kind even when I dislike a photo.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 9,
+          "xp": 6,
+          "title": {
+            "english": "Cost–Benefit of Editing vs Authenticity",
+            "hindi": "Cost–Benefit of Editing vs Authenticity",
+            "marathi": "Cost–Benefit of Editing vs Authenticity"
+          },
+          "description": {
+            "english": "Why it helps: Exposes tradeoffs that maintain anxiety. What to do: Two columns: short-term relief vs long-term costs/values. Example: Heavy filtering → brief approval; cost: fear of real-life meets; value: genuine connection.\"\"",
+            "hindi": "Why it helps: Exposes tradeoffs that maintain anxiety. What to do: Two columns: short-term relief vs long-term costs/values. Example: Heavy filtering → brief approval; cost: fear of real-life meets; value: genuine connection.\"\"",
+            "marathi": "Why it helps: Exposes tradeoffs that maintain anxiety. What to do: Two columns: short-term relief vs long-term costs/values. Example: Heavy filtering → brief approval; cost: fear of real-life meets; value: genuine connection.\"\""
+          }
+        }
+      ]
     },
-    {
-      "id": 4,
-      "xp": 2,
-      "title": {
-        "english": "Challenge Unrealistic Beauty Standards",
-        "hindi": "अवास्तविक सौंदर्य मानकों को चुनौती दें",
-        "marathi": "अवास्तविक सौंदर्य मानकांना आव्हान द्या"
-      },
-      "description": {
-        "english": "Speak out against the unrealistic beauty standards perpetuated by the media. For example, a celebrity can use their platform to talk about the harmful effects of photoshopping and the importance of embracing natural beauty.",
-        "hindi": "मीडिया द्वारा फैलाए गए अवास्तविक सौंदर्य मानकों के खिलाफ बोलें। उदाहरण के लिए, एक सेलिब्रिटी अपने प्लेटफॉर्म का उपयोग फोटोशॉपिंग के हानिकारक प्रभावों और प्राकृतिक सुंदरता को अपनाने के महत्व के बारे में बात करने के लिए कर सकता है।",
-        "marathi": "मीडियाद्वारे पसरवलेल्या अवास्तविक सौंदर्य मानकांविरुद्ध बोला. उदाहरणार्थ, एक सेलिब्रिटी त्यांच्या व्यासपीठाचा वापर फोटोशॉपिंगच्या हानिकारक प्रभावांबद्दल आणि नैसर्गिक सौंदर्य स्वीकारण्याच्या महत्त्वाबद्दल बोलण्यासाठी करू शकतो."
-      }
-    },
-    {
-      "id": 5,
-      "xp": 2,
-      "title": {
-        "english": "Promote Mental Health",
-        "hindi": "मानसिक स्वास्थ्य को बढ़ावा दें",
-        "marathi": "मानसिक आरोग्याला प्रोत्साहन द्या"
-      },
-      "description": {
-        "english": "Encourage open conversations about mental health, as body image issues and obesity can often be linked to mental health problems. For instance, a school can organize workshops on mental health, body positivity, and self-esteem.",
-        "hindi": "मानसिक स्वास्थ्य के बारे में खुली बातचीत को प्रोत्साहित करें, क्योंकि शरीर की छवि की समस्याएं और मोटापा अक्सर मानसिक स्वास्थ्य समस्याओं से जुड़े होते हैं। उदाहरण के लिए, एक स्कूल मानसिक स्वास्थ्य, शरीर की सकारात्मकता और आत्म-सम्मान पर कार्यशालाओं का आयोजन कर सकता है।",
-        "marathi": "मानसिक आरोग्याबद्दल खुल्या संवादाला प्रोत्साहन द्या, कारण शरीराच्या प्रतिमेच्या समस्या आणि लठ्ठपणा अनेकदा मानसिक आरोग्य समस्यांशी जोडलेले असतात. उदाहरणार्थ, शाळा मानसिक आरोग्य, शरीर सकारात्मकता आणि आत्मसन्मान यावर कार्यशाळा आयोजित करू शकते."
-      }
-    },
-    {
-      "id": 6,
-      "xp": 2,
-      "title": {
-        "english": "Educate about the Dangers of Obesity",
-        "hindi": "मोटापे के खतरों के बारे में शिक्षित करें",
-        "marathi": "लठ्ठपणाच्या धोक्यांबद्दल शिक्षित करा"
-      },
-      "description": {
-        "english": "While promoting body positivity, it's also important to educate about the health risks associated with obesity. For example, a doctor can talk about the potential health problems, such as heart disease and diabetes, in a respectful and non-judgmental way.",
-        "hindi": "शरीर की सकारात्मकता को बढ़ावा देते समय, मोटापे से जुड़े स्वास्थ्य जोखिमों के बारे में शिक्षित करना भी महत्वपूर्ण है। उदाहरण के लिए, एक डॉक्टर हृदय रोग और मधुमेह जैसी संभावित स्वास्थ्य समस्याओं के बारे में सम्मानजनक और गैर-न्यायाधीश तरीके से बात कर सकता है।",
-        "marathi": "शरीर सकारात्मकतेला प्रोत्साहन देताना, लठ्ठपणाशी संबंधित आरोग्य धोक्यांबद्दल शिक्षित करणे देखील महत्त्वाचे आहे. उदाहरणार्थ, डॉक्टर हृदयरोग आणि मधुमेह सारख्या संभाव्य आरोग्य समस्यांबद्दल आदरपूर्वक आणि न्यायनिष्ठ पद्धतीने बोलू शकतो."
-      }
-    },
-    {
-      "id": 7,
-      "xp": 2,
-      "title": {
-        "english": "Encourage Self-Love and Acceptance",
-        "hindi": "आत्म-प्रेम और स्वीकृति को प्रोत्साहित करें",
-        "marathi": "आत्म-प्रेम आणि स्वीकार प्रोत्साहित करा"
-      },
-      "description": {
-        "english": "Promote the idea that self-worth is not tied to physical appearance. For instance, a motivational speaker can share personal stories and strategies for cultivating self-love and acceptance.",
-        "hindi": "इस विचार को बढ़ावा दें कि आत्म-मूल्य शारीरिक रूप से जुड़ा नहीं है। उदाहरण के लिए, एक प्रेरणादायक वक्ता आत्म-प्रेम और स्वीकृति विकसित करने के लिए व्यक्तिगत कहानियां और रणनीतियां साझा कर सकता है।",
-        "marathi": "आत्म-मूल्य शारीरिक स्वरूपाशी जोडलेले नाही या कल्पनेला प्रोत्साहन द्या. उदाहरणार्थ, प्रेरणादायी वक्ता आत्म-प्रेम आणि स्वीकार विकसित करण्यासाठी वैयक्तिक कथा आणि रणनीती सामायिक करू शकतो."
-      }
-    },
-    {
-      "id": 8,
-      "xp": 2,
-      "title": {
-        "english": "Advocate for Diversity",
-        "hindi": "विविधता की वकालत करें",
-        "marathi": "विविधतेची वकिली करा"
-      },
-      "description": {
-        "english": "Encourage the representation of diverse body types in media and fashion. For example, a fashion magazine can feature models of different sizes, ethnicities, and ages.",
-        "hindi": "मीडिया और फैशन में विविध शरीर के प्रकारों के प्रतिनिधित्व को प्रोत्साहित करें। उदाहरण के लिए, एक फैशन पत्रिका विभिन्न आकार, जातियों और उम्र के मॉडलों को दिखा सकती है।",
-        "marathi": "मीडिया आणि फॅशनमध्ये विविध शरीर प्रकारांच्या प्रतिनिधित्वाला प्रोत्साहन द्या. उदाहरणार्थ, फॅशन मासिक विविध आकार, जाती आणि वयाचे मॉडेल दाखवू शकते."
-      }
-    },
-    {
-      "id": 9,
-      "xp": 2,
-      "title": {
-        "english": "Promote Realistic Goals",
-        "hindi": "यथार्थवादी लक्ष्यों को बढ़ावा दें",
-        "marathi": "वास्तववादी उद्दिष्टांना प्रोत्साहन द्या"
-      },
-      "description": {
-        "english": "Encourage setting realistic and healthy goals for weight loss or body image. For example, a personal trainer can help clients set achievable fitness goals that focus on strength and endurance, rather than just weight loss.",
-        "hindi": "वजन घटाने या शरीर की छवि के लिए यथार्थवादी और स्वस्थ लक्ष्य निर्धारित करने को प्रोत्साहित करें। उदाहरण के लिए, एक व्यक्तिगत प्रशिक्षक ग्राहकों को प्राप्त करने योग्य फिटनेस लक्ष्य निर्धारित करने में मदद कर सकता है जो केवल वजन घटाने के बजाय शक्ति और सहनशीलता पर ध्यान केंद्रित करते हैं।",
-        "marathi": "वजन कमी करणे किंवा शरीराच्या प्रतिमेसाठी वास्तववादी आणि निरोगी उद्दिष्टे ठेवण्यास प्रोत्साहन द्या. उदाहरणार्थ, वैयक्तिक प्रशिक्षक ग्राहकांना साध्य करता येणारी फिटनेस उद्दिष्टे ठेवण्यास मदत करू शकतो जी केवळ वजन कमी करण्याऐवजी शक्ती आणि सहनशीलतेवर लक्ष केंद्रित करतात."
-      }
-    },
-    {
-      "id": 10,
-      "xp": 2,
-      "title": {
-        "english": "Support Research and Awareness",
-        "hindi": "अनुसंधान और जागरूकता का समर्थन करें",
-        "marathi": "संशोधन आणि जागरूकतेला पाठिंबा द्या"
-      },
-      "description": {
-        "english": "Support research into obesity and body image issues, and promote awareness of these topics. For example, a non-profit organization can organize fundraising events to support research into obesity and mental health.",
-        "hindi": "मोटापे और शरीर की छवि के मुद्दों में अनुसंधान का समर्थन करें, और इन विषयों की जागरूकता को बढ़ावा दें। उदाहरण के लिए, एक गैर-लाभकारी संगठन मोटापे और मानसिक स्वास्थ्य में अनुसंधान का समर्थन करने के लिए धन उगाहने के कार्यक्रम आयोजित कर सकता है।",
-        "marathi": "लठ्ठपणा आणि शरीराच्या प्रतिमेच्या समस्यांवरील संशोधनाला पाठिंबा द्या आणि या विषयांची जागरूकता वाढवा. उदाहरणार्थ, अनाभिलाषी संस्था लठ्ठपणा आणि मानसिक आरोग्यावरील संशोधनाला पाठिंबा देण्यासाठी निधी उभारणीचे कार्यक्रम आयोजित करू शकते."
-      }
+    "rebt": {
+      "type": "Tertiary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 6,
+          "title": {
+            "english": "Map ABCs of Body Thoughts",
+            "hindi": "Map ABCs of Body Thoughts",
+            "marathi": "Map ABCs of Body Thoughts"
+          },
+          "description": {
+            "english": "Why it helps: Separates triggering events from beliefs that drive shame. What to do: Write A (event); B (belief); C (emotion/urge). Example: A: mirror at gym; B: \"\"\"\"I must look perfect\"\"\"\"; C: shame 7/10; urge to hide.\"\"",
+            "hindi": "Why it helps: Separates triggering events from beliefs that drive shame. What to do: Write A (event); B (belief); C (emotion/urge). Example: A: mirror at gym; B: \"\"\"\"I must look perfect\"\"\"\"; C: shame 7/10; urge to hide.\"\"",
+            "marathi": "Why it helps: Separates triggering events from beliefs that drive shame. What to do: Write A (event); B (belief); C (emotion/urge). Example: A: mirror at gym; B: \"\"\"\"I must look perfect\"\"\"\"; C: shame 7/10; urge to hide.\"\""
+          }
+        },
+        {
+          "id": 2,
+          "xp": 8,
+          "title": {
+            "english": "Dispute Appearance Demands",
+            "hindi": "Dispute Appearance Demands",
+            "marathi": "Dispute Appearance Demands"
+          },
+          "description": {
+            "english": "Why it helps: Challenges rigid \"\"\"\"must/should\"\"\"\" standards. What to do: Test beliefs with logic; evidence; and usefulness. Example: \"\"\"\"I must be flawless\"\"\"\" → impossible standard; evidence: valued for skills too; usefulness: harms mood.\"\"",
+            "hindi": "Why it helps: Challenges rigid \"\"\"\"must/should\"\"\"\" standards. What to do: Test beliefs with logic; evidence; and usefulness. Example: \"\"\"\"I must be flawless\"\"\"\" → impossible standard; evidence: valued for skills too; usefulness: harms mood.\"\"",
+            "marathi": "Why it helps: Challenges rigid \"\"\"\"must/should\"\"\"\" standards. What to do: Test beliefs with logic; evidence; and usefulness. Example: \"\"\"\"I must be flawless\"\"\"\" → impossible standard; evidence: valued for skills too; usefulness: harms mood.\"\""
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": {
+            "english": "Create Rational Alternatives (E)",
+            "hindi": "Create Rational Alternatives (E)",
+            "marathi": "Create Rational Alternatives (E)"
+          },
+          "description": {
+            "english": "Why it helps: Flexible beliefs reduce comparison pain. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer to look my best; but I don’t need perfection to be worthy or confident.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Flexible beliefs reduce comparison pain. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer to look my best; but I don’t need perfection to be worthy or confident.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Flexible beliefs reduce comparison pain. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer to look my best; but I don’t need perfection to be worthy or confident.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 7,
+          "title": {
+            "english": "Unconditional Self-Acceptance (USA)",
+            "hindi": "Unconditional Self-Acceptance (USA)",
+            "marathi": "Unconditional Self-Acceptance (USA)"
+          },
+          "description": {
+            "english": "Why it helps: Decouples worth from appearance. What to do: Rehearse USA statements daily. Example: \"\"\"\"My value isn’t a function of looks; I’m fallible and still worthwhile.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Decouples worth from appearance. What to do: Rehearse USA statements daily. Example: \"\"\"\"My value isn’t a function of looks; I’m fallible and still worthwhile.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Decouples worth from appearance. What to do: Rehearse USA statements daily. Example: \"\"\"\"My value isn’t a function of looks; I’m fallible and still worthwhile.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 6,
+          "title": {
+            "english": "Dispute Global Ratings",
+            "hindi": "Dispute Global Ratings",
+            "marathi": "Dispute Global Ratings"
+          },
+          "description": {
+            "english": "Why it helps: Stops \"\"\"\"I’m ugly/useless\"\"\"\" overgeneralization. What to do: Ask for precise; balanced appraisals. Example: Replace \"\"\"\"I’m unattractive\"\"\"\" with \"\"\"\"I dislike my skin today; I’m strong and kind.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Stops \"\"\"\"I’m ugly/useless\"\"\"\" overgeneralization. What to do: Ask for precise; balanced appraisals. Example: Replace \"\"\"\"I’m unattractive\"\"\"\" with \"\"\"\"I dislike my skin today; I’m strong and kind.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Stops \"\"\"\"I’m ugly/useless\"\"\"\" overgeneralization. What to do: Ask for precise; balanced appraisals. Example: Replace \"\"\"\"I’m unattractive\"\"\"\" with \"\"\"\"I dislike my skin today; I’m strong and kind.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Low Frustration Tolerance Training",
+            "hindi": "Low Frustration Tolerance Training",
+            "marathi": "Low Frustration Tolerance Training"
+          },
+          "description": {
+            "english": "Why it helps: Builds tolerance for discomfort when seeing idealized images. What to do: Toleration lines + urge delay. Example: \"\"\"\"It’s uncomfortable; not unbearable—scroll pause 2 minutes; breathe 4-6.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Builds tolerance for discomfort when seeing idealized images. What to do: Toleration lines + urge delay. Example: \"\"\"\"It’s uncomfortable; not unbearable—scroll pause 2 minutes; breathe 4-6.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Builds tolerance for discomfort when seeing idealized images. What to do: Toleration lines + urge delay. Example: \"\"\"\"It’s uncomfortable; not unbearable—scroll pause 2 minutes; breathe 4-6.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Evidence Log Beyond Looks",
+            "hindi": "Evidence Log Beyond Looks",
+            "marathi": "Evidence Log Beyond Looks"
+          },
+          "description": {
+            "english": "Why it helps: Counters selective attention to appearance. What to do: Record 3 daily competencies/values. Example: \"\"\"\"Solved a client issue; supported a friend; learned a chord.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Counters selective attention to appearance. What to do: Record 3 daily competencies/values. Example: \"\"\"\"Solved a client issue; supported a friend; learned a chord.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Counters selective attention to appearance. What to do: Record 3 daily competencies/values. Example: \"\"\"\"Solved a client issue; supported a friend; learned a chord.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 8,
+          "xp": 7,
+          "title": {
+            "english": "Pragmatic Cost–Benefit Check",
+            "hindi": "Pragmatic Cost–Benefit Check",
+            "marathi": "Pragmatic Cost–Benefit Check"
+          },
+          "description": {
+            "english": "Why it helps: Exposes the cost of chasing perfection. What to do: Two columns: short-term relief vs long-term costs/values. Example: Excessive editing → brief approval; cost: anxiety/time; value: authenticity.\"\"",
+            "hindi": "Why it helps: Exposes the cost of chasing perfection. What to do: Two columns: short-term relief vs long-term costs/values. Example: Excessive editing → brief approval; cost: anxiety/time; value: authenticity.\"\"",
+            "marathi": "Why it helps: Exposes the cost of chasing perfection. What to do: Two columns: short-term relief vs long-term costs/values. Example: Excessive editing → brief approval; cost: anxiety/time; value: authenticity.\"\""
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Implementation Intentions for Triggers",
+            "hindi": "Implementation Intentions for Triggers",
+            "marathi": "Implementation Intentions for Triggers"
+          },
+          "description": {
+            "english": "Why it helps: Automates rational actions in hot moments. What to do: IF-THEN scripts. Example: \"\"\"\"If I start harsh self-talk in the mirror; then I say one USA line and shift to strength-based task.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Automates rational actions in hot moments. What to do: IF-THEN scripts. Example: \"\"\"\"If I start harsh self-talk in the mirror; then I say one USA line and shift to strength-based task.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Automates rational actions in hot moments. What to do: IF-THEN scripts. Example: \"\"\"\"If I start harsh self-talk in the mirror; then I say one USA line and shift to strength-based task.\"\"\"\"\"\""
+          }
+        }
+      ]
     }
-  ],
-  "yogaAndMeditation": {
-    "interventionType": "Secondary",
-    "interventionSubType": "Yoga And Meditation Techniques",
-    "totalTechniques": 10,
-    "techniques": [
-      {
-        "id": 1,
-        "xp": 5,
-        "title": {
-          "english": "Start with a positive affirmation",
-          "hindi": "सकारात्मक पुष्टि के साथ शुरुआत करें",
-          "marathi": "सकारात्मक पुष्टीसह सुरुवात करा"
-        },
-        "description": {
-          "english": "Before you begin your yoga or meditation session, start with a positive affirmation. This could be something like, 'I am beautiful just the way I am,' or 'I am working towards a healthier me.'",
-          "hindi": "अपने योग या ध्यान सत्र की शुरुआत करने से पहले, एक सकारात्मक पुष्टि के साथ शुरुआत करें। यह कुछ इस तरह हो सकता है, 'मैं जैसा हूं वैसा ही सुंदर हूं,' या 'मैं एक स्वस्थ व्यक्ति बनने की दिशा में काम कर रहा हूं।'",
-          "marathi": "तुमचा योग किंवा ध्यान सत्र सुरू करण्यापूर्वी, सकारात्मक पुष्टीसह सुरुवात करा. हे असे काहीतरी असू शकते, 'मी जसा आहे तसाच सुंदर आहे,' किंवा 'मी एक निरोगी व्यक्ती बनण्याच्या दिशेने काम करत आहे.'"
-        }
-      },
-      {
-        "id": 2,
-        "xp": 5,
-        "title": {
-          "english": "Warm-up",
-          "hindi": "वार्म-अप",
-          "marathi": "वॉर्म-अप"
-        },
-        "description": {
-          "english": "Start with some light stretching to prepare your body for yoga. This could include neck rolls, shoulder shrugs, and gentle twists.",
-          "hindi": "योग के लिए अपने शरीर को तैयार करने के लिए कुछ हल्की स्ट्रेचिंग से शुरुआत करें। इसमें गर्दन घुमाना, कंधे उचकाना और हल्के मोड़ शामिल हो सकते हैं।",
-          "marathi": "योगासाठी तुमच्या शरीराला तयार करण्यासाठी काही हलक्या स्ट्रेचिंगसह सुरुवात करा. यामध्ये मान फिरवणे, खांदे वर करणे आणि हलक्या वळणांचा समावेश असू शकतो."
-        }
-      },
-      {
-        "id": 3,
-        "xp": 5,
-        "title": {
-          "english": "Mountain Pose (Tadasana)",
-          "hindi": "पर्वत आसन (ताड़ासन)",
-          "marathi": "पर्वत आसन (ताडासन)"
-        },
-        "description": {
-          "english": "Stand tall with feet hip-width apart, grounding through all four corners of the feet. Engage your thighs, lift your chest, and relax your shoulders. This pose helps to improve posture, balance, and self-awareness.",
-          "hindi": "पैरों को कूल्हे की चौड़ाई के बराबर रखकर सीधे खड़े हों, पैरों के चारों कोनों के माध्यम से जमीन पर टिकें। अपनी जांघों को सक्रिय करें, अपनी छाती उठाएं, और अपने कंधों को आराम दें। यह आसन मुद्रा, संतुलन और आत्म-जागरूकता में सुधार करने में मदद करता है।",
-          "marathi": "पाय कमरेच्या रुंदीइतके अंतरावर ठेवून सरळ उभे राहा, पायांच्या चारही कोपऱ्यातून जमिनीवर स्थिर राहा. तुमच्या मांड्या सक्रिय करा, छाती वर करा आणि खांदे शिथिल करा. हे आसन पवित्रा, संतुलन आणि आत्म-जागरूकता सुधारण्यास मदत करते."
-        }
-      },
-      {
-        "id": 4,
-        "xp": 5,
-        "title": {
-          "english": "Warrior II (Virabhadrasana II)",
-          "hindi": "वीरभद्रासन II",
-          "marathi": "वीरभद्रासन II"
-        },
-        "description": {
-          "english": "Step your feet wide apart, turn your right foot out 90 degrees. Bend your right knee over your ankle, extend your arms parallel to the floor. This pose strengthens the legs and arms, improves balance and concentration, and gives a sense of empowerment.",
-          "hindi": "अपने पैरों को चौड़ा करके रखें, अपने दाहिने पैर को 90 डिग्री बाहर की ओर मोड़ें। अपने दाहिने घुटने को अपनी टखने के ऊपर मोड़ें, अपनी बाहों को फर्श के समानांतर फैलाएं। यह आसन पैरों और बाहों को मजबूत बनाता है, संतुलन और एकाग्रता में सुधार करता है, और सशक्तिकरण की भावना देता है।",
-          "marathi": "तुमचे पाय रुंद करून ठेवा, तुमचा उजवा पाय 90 अंश बाहेरच्या दिशेने वळवा. तुमचा उजवा गुडघा तुमच्या घोट्यावर वाकवा, तुमचे हात जमिनीच्या समांतर पसरवा. हे आसन पाय आणि हात मजबूत करते, संतुलन आणि एकाग्रता सुधारते आणि सशक्तीकरणाची भावना देते."
-        }
-      },
-      {
-        "id": 5,
-        "xp": 5,
-        "title": {
-          "english": "Tree Pose (Vrikshasana)",
-          "hindi": "वृक्षासन",
-          "marathi": "वृक्षासन"
-        },
-        "description": {
-          "english": "Stand on one leg, placing the sole of the other foot on your inner thigh or calf (avoid the knee). Bring your hands to prayer position or raise them overhead. This pose helps to improve balance, focus, and self-confidence.",
-          "hindi": "एक पैर पर खड़े हों, दूसरे पैर का तलवा अपनी भीतरी जांघ या पिंडली पर रखें (घुटने से बचें)। अपने हाथों को प्रार्थना की स्थिति में लाएं या उन्हें सिर के ऊपर उठाएं। यह आसन संतुलन, ध्यान और आत्मविश्वास बेहतर बनाने में मदद करता है।",
-          "marathi": "एका पायावर उभे राहा, दुसऱ्या पायाचा तळवा तुमच्या आतील मांडीवर किंवा नडगीवर ठेवा (गुडघा टाळा). तुमचे हात प्रार्थनेच्या स्थितीत आणा किंवा डोक्यावर वर करा. हे आसन संतुलन, लक्ष आणि आत्मविश्वास सुधारण्यास मदत करते."
-        }
-      },
-      {
-        "id": 6,
-        "xp": 5,
-        "title": {
-          "english": "Child's Pose (Balasana)",
-          "hindi": "बालासन",
-          "marathi": "बालासन"
-        },
-        "description": {
-          "english": "Kneel on the floor, sit back on your heels, and fold your torso over your thighs. Extend your arms forward or rest them by your side. This pose is a restful pose that can be done between more difficult poses. It helps to stretch the hips, thighs, and ankles while reducing stress and fatigue.",
-          "hindi": "फर्श पर घुटने टेकें, अपनी एड़ियों पर वापस बैठें, और अपने धड़ को अपनी जांघों के ऊपर मोड़ें। अपनी बाहों को आगे बढ़ाएं या उन्हें अपनी तरफ आराम दें। यह एक आरामदायक आसन है जो अधिक कठिन आसनों के बीच किया जा सकता है। यह कूल्हों, जांघों और टखनों को खींचने में मदद करता है और तनाव और थकान को कम करता है।",
-          "marathi": "जमिनीवर गुडघे टेकून बसा, तुमच्या टाचांवर मागे बसा आणि तुमचे धड तुमच्या मांड्यांवर वाकवा. तुमचे हात पुढे पसरवा किंवा तुमच्या बाजूला आराम करा. हे एक आरामदायक आसन आहे जे अधिक कठीण आसनांमध्ये केले जाऊ शकते. हे कमर, मांड्या आणि घोट्याला ताणण्यास मदत करते आणि तणाव आणि थकवा कमी करते."
-        }
-      },
-      {
-        "id": 7,
-        "xp": 5,
-        "title": {
-          "english": "Meditation",
-          "hindi": "ध्यान",
-          "marathi": "ध्यान"
-        },
-        "description": {
-          "english": "After your yoga session, take a few minutes to meditate. Sit in a comfortable position, close your eyes, and focus on your breath. Try to clear your mind and let go of any negative thoughts or feelings.",
-          "hindi": "अपने योग सत्र के बाद, ध्यान करने के लिए कुछ मिनट निकालें। आरामदायक स्थिति में बैठें, अपनी आंखें बंद करें, और अपनी सांस पर ध्यान दें। अपने मन को साफ करने की कोशिश करें और किसी भी नकारात्मक विचार या भावनाओं को जाने दें।",
-          "marathi": "तुमच्या योग सत्रानंतर, ध्यान करण्यासाठी काही मिनिटे काढा. आरामदायक स्थितीत बसा, तुमचे डोळे बंद करा आणि तुमच्या श्वासावर लक्ष केंद्रित करा. तुमचे मन स्वच्छ करण्याचा प्रयत्न करा आणि कोणत्याही नकारात्मक विचार किंवा भावना सोडून द्या."
-        }
-      },
-      {
-        "id": 8,
-        "xp": 5,
-        "title": {
-          "english": "Body Scan",
-          "hindi": "शरीर स्कैन",
-          "marathi": "शरीर स्कॅन"
-        },
-        "description": {
-          "english": "During your meditation, perform a body scan. This involves focusing on different parts of your body and noticing any sensations, tensions, or discomfort. This can help to promote a better body image and a greater sense of self-love.",
-          "hindi": "अपने ध्यान के दौरान, शरीर स्कैन करें। इसमें अपने शरीर के विभिन्न हिस्सों पर ध्यान देना और किसी भी संवेदना, तनाव या असुविधा को नोटिस करना शामिल है। यह बेहतर शरीर छवि और आत्म-प्रेम की अधिक भावना को बढ़ावा देने में मदद कर सकता है।",
-          "marathi": "तुमच्या ध्यानादरम्यान, शरीर स्कॅन करा. यामध्ये तुमच्या शरीराच्या विविध भागांवर लक्ष केंद्रित करणे आणि कोणत्याही संवेदना, तणाव किंवा अस्वस्थता लक्षात घेणे समाविष्ट आहे. हे चांगली शरीर प्रतिमा आणि आत्म-प्रेमाची अधिक भावना वाढवण्यास मदत करू शकते."
-        }
-      },
-      {
-        "id": 9,
-        "xp": 5,
-        "title": {
-          "english": "Mindful Eating",
-          "hindi": "सचेत भोजन",
-          "marathi": "जागरूक जेवण"
-        },
-        "description": {
-          "english": "Incorporate mindfulness into your eating habits. Pay attention to what you're eating, how it tastes, and how it makes your body feel. This can help to prevent overeating and promote healthier eating habits.",
-          "hindi": "अपनी खाने की आदतों में सचेतता शामिल करें। इस बात पर ध्यान दें कि आप क्या खा रहे हैं, इसका स्वाद कैसा है, और यह आपके शरीर को कैसा महसूस कराता है। यह अधिक खाने से रोकने और स्वस्थ खाने की आदतों को बढ़ावा देने में मदद कर सकता है।",
-          "marathi": "तुमच्या खाण्याच्या सवयींमध्ये जागरूकता समाविष्ट करा. तुम्ही काय खात आहात, त्याची चव कशी आहे आणि ते तुमच्या शरीराला कसे वाटते यावर लक्ष द्या. हे जास्त खाण्यापासून रोखण्यास आणि निरोगी खाण्याच्या सवयी वाढवण्यास मदत करू शकते."
-        }
-      },
-      {
-        "id": 10,
-        "xp": 5,
-        "title": {
-          "english": "Regular Practice",
-          "hindi": "नियमित अभ्यास",
-          "marathi": "नियमित सराव"
-        },
-        "description": {
-          "english": "Make yoga and meditation a regular part of your routine. Even just a few minutes a day can make a big difference. Remember, the goal of yoga and meditation is not to achieve a certain look, but to promote a healthier mind and body. It's about self-love and acceptance, not about meeting unrealistic beauty standards.",
-          "hindi": "योग और ध्यान को अपनी दिनचर्या का नियमित हिस्सा बनाएं। दिन में सिर्फ कुछ मिनट भी बड़ा फर्क ला सकते हैं। याद रखें, योग और ध्यान का लक्ष्य किसी खास रूप को प्राप्त करना नहीं है, बल्कि एक स्वस्थ मन और शरीर को बढ़ावा देना है। यह आत्म-प्रेम और स्वीकृति के बारे में है, अवास्तविक सौंदर्य मानकों को पूरा करने के बारे में नहीं।",
-          "marathi": "योग आणि ध्यानाला तुमच्या दिनक्रमाचा नियमित भाग बनवा. दिवसातील फक्त काही मिनिटे देखील मोठा फरक करू शकतात. लक्षात ठेवा, योग आणि ध्यानाचे उद्दिष्ट विशिष्ट रूप मिळवणे नव्हे तर निरोगी मन आणि शरीराला प्रोत्साहन देणे आहे. हे आत्म-प्रेम आणि स्वीकाराबद्दल आहे, अवास्तविक सौंदर्य मानके पूर्ण करण्याबद्दल नाही."
-        }
-      }
-    ]
-  },
-  "relaxationTechniques": {
-    "interventionType": "Secondary",
-    "interventionSubType": "Relaxation Techniques",
-    "totalTechniques": 7,
-    "techniques": [
-      {
-        "id": 1,
-        "xp": 5,
-        "title": {
-          "english": "Mindfulness Meditation",
-          "hindi": "माइंडफुलनेस मेडिटेशन",
-          "marathi": "माइंडफुलनेस मेडिटेशन"
-        },
-        "description": {
-          "english": "This involves focusing on your breathing and bringing your mind's attention to the present without drifting into concerns about the past or future. It helps you break the pattern of worry and self-judgment.",
-          "hindi": "इसमें अपनी सांस पर ध्यान देना और अतीत या भविष्य की चिंताओं में बहे बिना अपने मन का ध्यान वर्तमान में लाना शामिल है। यह आपको चिंता और आत्म-निर्णय के पैटर्न को तोड़ने में मदद करता है।",
-          "marathi": "यामध्ये तुमच्या श्वासावर लक्ष केंद्रित करणे आणि भूतकाळ किंवा भविष्याच्या चिंतांमध्ये न पडता तुमच्या मनाचे लक्ष वर्तमानात आणणे समाविष्ट आहे. हे तुम्हाला चिंता आणि आत्म-निर्णयाचा पॅटर्न मोडण्यास मदत करते."
-        }
-      },
-      {
-        "id": 2,
-        "xp": 5,
-        "title": {
-          "english": "Progressive Muscle Relaxation",
-          "hindi": "प्रगतिशील मांसपेशी विश्राम",
-          "marathi": "प्रगतिशील स्नायू विश्रांती"
-        },
-        "description": {
-          "english": "This technique involves tensing and then releasing each muscle group in your body, starting from your toes and working your way up to your head. As you release the tension, you'll likely feel a sense of relaxation and calm.",
-          "hindi": "इस तकनीक में आपके शरीर के प्रत्येक मांसपेशी समूह को तनाव देना और फिर छोड़ना शामिल है, जो आपके पैर की उंगलियों से शुरू होकर आपके सिर तक जाता है। जैसे ही आप तनाव छोड़ते हैं, आप संभावित रूप से विश्राम और शांति की भावना महसूस करेंगे।",
-          "marathi": "या तंत्रामध्ये तुमच्या शरीरातील प्रत्येक स्नायू गटाला ताण देणे आणि नंतर सोडणे समाविष्ट आहे, जे तुमच्या पायाच्या बोटांपासून सुरू होून तुमच्या डोक्यापर्यंत जाते. जेव्हा तुम्ही ताण सोडता तेव्हा तुम्हाला विश्रांती आणि शांततेची भावना जाणवते."
-        }
-      },
-      {
-        "id": 3,
-        "xp": 5,
-        "title": {
-          "english": "Yoga and Pilates",
-          "hindi": "योग और पिलाटेस",
-          "marathi": "योग आणि पिलाटेस"
-        },
-        "description": {
-          "english": "These exercises combine physical movement with breath control and meditation. They can help reduce anxiety, improve body image, and promote a more positive relationship with your body.",
-          "hindi": "ये व्यायाम शारीरिक गति को सांस नियंत्रण और ध्यान के साथ जोड़ते हैं। ये चिंता कम करने, शरीर की छवि सुधारने और आपके शरीर के साथ अधिक सकारात्मक संबंध को बढ़ावा देने में मदद कर सकते हैं।",
-          "marathi": "हे व्यायाम शारीरिक हालचाल श्वास नियंत्रण आणि ध्यानासह एकत्र करतात. ते चिंता कमी करण्यास, शरीराची प्रतिमा सुधारण्यास आणि तुमच्या शरीराशी अधिक सकारात्मक संबंध वाढवण्यास मदत करू शकतात."
-        }
-      },
-      {
-        "id": 4,
-        "xp": 5,
-        "title": {
-          "english": "Visualization",
-          "hindi": "दृश्यावलोकन",
-          "marathi": "दृश्यीकरण"
-        },
-        "description": {
-          "english": "This involves imagining a peaceful place or situation. Try to use as many senses as you can, including smell, sight, sound, and touch. If you visualize relaxing at the ocean, for instance, think about the smell of salt water, the sound of crashing waves, and the warmth of the sun on your body.",
-          "hindi": "इसमें एक शांतिपूर्ण जगह या स्थिति की कल्पना करना शामिल है। गंध, दृष्टि, ध्वनि और स्पर्श सहित जितनी इंद्रियों का उपयोग कर सकें उतना करने की कोशिश करें। उदाहरण के लिए, यदि आप समुद्र के किनारे आराम करने की कल्पना करते हैं, तो नमकीन पानी की गंध, लहरों की आवाज़ और अपने शरीर पर सूरज की गर्मी के बारे में सोचें।",
-          "marathi": "यामध्ये शांत ठिकाण किंवा परिस्थितीची कल्पना करणे समाविष्ट आहे. वास, दृष्टी, आवाज आणि स्पर्श यासह जितक्या इंद्रिया वापरू शकता तितक्या वापरण्याचा प्रयत्न करा. उदाहरणार्थ, जर तुम्ही समुद्रकिनाऱ्यावर विश्रांती घेण्याची कल्पना करत असाल तर खाऱ्या पाण्याचा वास, लाटांचा आवाज आणि तुमच्या शरीरावरील सूर्याची उष्णता याबद्दल विचार करा."
-        }
-      },
-      {
-        "id": 5,
-        "xp": 5,
-        "title": {
-          "english": "Self-love and Acceptance",
-          "hindi": "आत्म-प्रेम और स्वीकृति",
-          "marathi": "आत्म-प्रेम आणि स्वीकार"
-        },
-        "description": {
-          "english": "Practice self-love and acceptance by focusing on your positive qualities and achievements. Write them down, say them out loud, or think about them in your mind. This can help you develop a more balanced perception of yourself and reduce the influence of unrealistic beauty standards.",
-          "hindi": "अपने सकारात्मक गुणों और उपलब्धियों पर ध्यान देकर आत्म-प्रेम और स्वीकृति का अभ्यास करें। उन्हें लिखें, जोर से कहें, या अपने मन में उनके बारे में सोचें। यह आपको अपने बारे में अधिक संतुलित धारणा विकसित करने और अवास्तविक सौंदर्य मानकों के प्रभाव को कम करने में मदद कर सकता है।",
-          "marathi": "तुमच्या सकारात्मक गुणधर्मांवर आणि यशांवर लक्ष केंद्रित करून आत्म-प्रेम आणि स्वीकाराचा सराव करा. त्या लिहा, मोठ्याने बोला किंवा तुमच्या मनात त्यांचा विचार करा. हे तुम्हाला तुमच्याबद्दल अधिक संतुलित धारणा विकसित करण्यास आणि अवास्तविक सौंदर्य मानकांचा प्रभाव कमी करण्यास मदत करू शकते."
-        }
-      },
-      {
-        "id": 6,
-        "xp": 5,
-        "title": {
-          "english": "Healthy Eating and Exercise",
-          "hindi": "स्वस्थ खाना और व्यायाम",
-          "marathi": "निरोगी खाणे आणि व्यायाम"
-        },
-        "description": {
-          "english": "Regular physical activity and a balanced diet can help manage weight, but it's important to approach this from a perspective of self-care, not punishment. Find activities you enjoy and focus on how they make you feel, rather than how they might alter your appearance.",
-          "hindi": "नियमित शारीरिक गतिविधि और संतुलित आहार वजन प्रबंधन में मदद कर सकते हैं, लेकिन इसे सजा के नजरिए से नहीं बल्कि आत्म-देखभाल के नजरिए से देखना महत्वपूर्ण है। ऐसी गतिविधियां खोजें जिनका आप आनंद लेते हैं और इस बात पर ध्यान दें कि वे आपको कैसा महसूस कराती हैं, न कि इस बात पर कि वे आपके रूप को कैसे बदल सकती हैं।",
-          "marathi": "नियमित शारीरिक हालचाल आणि संतुलित आहार वजन व्यवस्थापनात मदत करू शकतात, परंतु याकडे शिक्षेच्या दृष्टिकोनातून नव्हे तर स्वत:च्या काळजीच्या दृष्टिकोनातून पाहणे महत्त्वाचे आहे. तुम्हाला आवडणाऱ्या क्रिया शोधा आणि त्या तुम्हाला कसे वाटतात यावर लक्ष केंद्रित करा, त्या तुमचे स्वरूप कसे बदलू शकतात यावर नव्हे."
-        }
-      },
-      {
-        "id": 7,
-        "xp": 5,
-        "title": {
-          "english": "Therapy and Counseling",
-          "hindi": "चिकित्सा और परामर्श",
-          "marathi": "थेरपी आणि समुपदेशन"
-        },
-        "description": {
-          "english": "If unrealistic beauty standards and obesity are causing significant stress, consider seeking help from a mental health professional. They can provide strategies to manage stress and improve self-esteem. Remember, it's okay to seek help and take time for self-care. Everyone's journey to self-acceptance and health is unique and personal. It's important to find what works best for you.",
-          "hindi": "यदि अवास्तविक सौंदर्य मानक और मोटापा महत्वपूर्ण तनाव का कारण बन रहे हैं, तो मानसिक स्वास्थ्य पेशेवर से मदद लेने पर विचार करें। वे तनाव का प्रबंधन करने और आत्म-सम्मान बेहतर बनाने की रणनीतियां प्रदान कर सकते हैं। याद रखें, मदद लेना और आत्म-देखभाल के लिए समय निकालना ठीक है। आत्म-स्वीकृति और स्वास्थ्य की दिशा में हर व्यक्ति की यात्रा अनोखी और व्यक्तिगत है। यह महत्वपूर्ण है कि आप वह खोजें जो आपके लिए सबसे अच्छा काम करे।",
-          "marathi": "जर अवास्तविक सौंदर्य मानके आणि लठ्ठपणा लक्षणीय तणावाचे कारण बनत असेल तर मानसिक आरोग्य व्यावसायिकाकडून मदत घेण्याचा विचार करा. ते तणाव व्यवस्थापित करण्यासाठी आणि आत्मसन्मान सुधारण्यासाठी रणनीती देऊ शकतात. लक्षात ठेवा, मदत घेणे आणि स्वत:च्या काळजीसाठी वेळ काढणे योग्य आहे. आत्म-स्वीकार आणि आरोग्याच्या दिशेने प्रत्येकाचा प्रवास अनोखा आणि वैयक्तिक असतो. तुमच्यासाठी काय सर्वोत्तम काम करते ते शोधणे महत्त्वाचे आहे."
-        }
-      }
-    ]
-  },
-  "cbtTechniques": {
-    "interventionType": "Secondary",
-    "interventionSubType": "CBT Interventions",
-    "totalTechniques": 10,
-    "techniques": [
-      {
-        "id": 1,
-        "xp": 6,
-        "title": {
-          "english": "Cognitive Restructuring",
-          "hindi": "संज्ञानात्मक पुनर्गठन",
-          "marathi": "संज्ञानात्मक पुनर्रचना"
-        },
-        "description": {
-          "english": "This helps by challenging and changing negative thoughts about body image and weight. Practice identifying and replacing negative thoughts with positive ones. For example, instead of thinking 'I'm fat and ugly,' think 'I'm healthy and strong.'",
-          "hindi": "यह शरीर की छवि और वजन के बारे में नकारात्मक विचारों को चुनौती देकर और बदलकर मदद करता है। नकारात्मक विचारों को पहचानने और उन्हें सकारात्मक विचारों से बदलने का अभ्यास करें। उदाहरण के लिए, 'मैं मोटा और बदसूरत हूं' सोचने के बजाय, 'मैं स्वस्थ और मजबूत हूं' सोचें।",
-          "marathi": "हे शरीराच्या प्रतिमा आणि वजनाबद्दलच्या नकारात्मक विचारांना आव्हान देऊन आणि बदलून मदत करते. नकारात्मक विचार ओळखण्याचा आणि त्यांना सकारात्मक विचारांनी बदलण्याचा सराव करा. उदाहरणार्थ, 'मी जाड आणि कुरूप आहे' असे विचारण्याऐवजी, 'मी निरोगी आणि बलवान आहे' असे विचारा."
-        }
-      },
-      {
-        "id": 2,
-        "xp": 4,
-        "title": {
-          "english": "Mindfulness",
-          "hindi": "माइंडफुलनेस",
-          "marathi": "माइंडफुलनेस"
-        },
-        "description": {
-          "english": "This helps by promoting awareness of one's body and acceptance of it as it is. Practice mindfulness through meditation, yoga, or simply paying attention to your body's needs and responses. For example, instead of focusing on your weight, focus on how your body feels and functions.",
-          "hindi": "यह अपने शरीर के बारे में जागरूकता और इसे जैसा है वैसा स्वीकार करने में मदद करता है। ध्यान, योग या बस अपने शरीर की जरूरतों और प्रतिक्रियाओं पर ध्यान देकर माइंडफुलनेस का अभ्यास करें। उदाहरण के लिए, अपने वजन पर ध्यान देने के बजाय, इस बात पर ध्यान दें कि आपका शरीर कैसा महसूस करता है और कैसे काम करता है।",
-          "marathi": "हे एखाद्याच्या शरीराविषयी जागरूकता वाढवण्यास आणि ते जसे आहे तसे स्वीकारण्यास मदत करते. ध्यान, योग किंवा फक्त तुमच्या शरीराच्या गरजा आणि प्रतिक्रियांकडे लक्ष देऊन माइंडफुलनेसचा सराव करा. उदाहरणार्थ, तुमच्या वजनावर लक्ष केंद्रित करण्याऐवजी, तुमचे शरीर कसे वाटते आणि कसे कार्य करते यावर लक्ष केंद्रित करा."
-        }
-      },
-      {
-        "id": 3,
-        "xp": 6,
-        "title": {
-          "english": "Self-Compassion",
-          "hindi": "आत्म-करुणा",
-          "marathi": "आत्म-करुणा"
-        },
-        "description": {
-          "english": "This helps by promoting self-love and acceptance, reducing self-criticism. Practice self-compassion by treating yourself with kindness, understanding, and forgiveness. For example, instead of berating yourself for gaining weight, remind yourself that everyone's body changes and it's okay.",
-          "hindi": "यह आत्म-प्रेम और स्वीकृति को बढ़ावा देकर, आत्म-आलोचना को कम करने में मदद करता है। अपने साथ दयालुता, समझ और क्षमा के साथ व्यवहार करके आत्म-करुणा का अभ्यास करें। उदाहरण के लिए, वजन बढ़ने के लिए खुद को डांटने के बजाय, खुद को याद दिलाएं कि हर किसी का शरीर बदलता है और यह ठीक है।",
-          "marathi": "हे आत्म-प्रेम आणि स्वीकार वाढवून, आत्म-टीका कमी करण्यास मदत करते. स्वतःशी दयाळुपणे, समजूतदारपणे आणि क्षमाशीलतेने वागून आत्म-करुणेचा सराव करा. उदाहरणार्थ, वजन वाढल्याबद्दल स्वतःला मारहाण करण्याऐवजी, स्वतःला आठवण करून द्या की प्रत्येकाचे शरीर बदलते आणि ते ठीक आहे."
-        }
-      },
-      {
-        "id": 4,
-        "xp": 7,
-        "title": {
-          "english": "Exposure Therapy",
-          "hindi": "एक्सपोज़र थेरेपी",
-          "marathi": "एक्सपोझर थेरपी"
-        },
-        "description": {
-          "english": "This helps by reducing fear and anxiety about weight and body image. Practice exposure therapy by gradually facing your fears about your body and weight. For example, wear clothes that you feel comfortable in, regardless of your size.",
-          "hindi": "यह वजन और शरीर की छवि के बारे में डर और चिंता को कम करने में मदद करता है। अपने शरीर और वजन के बारे में अपने डर का धीरे-धीरे सामना करके एक्सपोज़र थेरेपी का अभ्यास करें। उदाहरण के लिए, ऐसे कपड़े पहनें जिनमें आप सहज महसूस करते हैं, चाहे आपका साइज़ कुछ भी हो।",
-          "marathi": "हे वजन आणि शरीराच्या प्रतिमेबद्दलची भीती आणि चिंता कमी करण्यास मदत करते. तुमच्या शरीर आणि वजनाबद्दलच्या भीतीचा हळूहळू सामना करून एक्सपोझर थेरपीचा सराव करा. उदाहरणार्थ, तुमचा आकार काहीही असो, तुम्ही ज्या कपड्यांमध्ये आरामदायक वाटता ते घाला."
-        }
-      },
-      {
-        "id": 5,
-        "xp": 7,
-        "title": {
-          "english": "Graded Exposure",
-          "hindi": "क्रमिक एक्सपोज़र",
-          "marathi": "क्रमिक एक्सपोझर"
-        },
-        "description": {
-          "english": "This helps by gradually exposing oneself to feared situations related to body image and weight. Start with less challenging situations and gradually move to more challenging ones. For example, start by looking at yourself in the mirror, then progress to going out in public in an outfit you feel confident in.",
-          "hindi": "यह शरीर की छवि और वजन से संबंधित भयावह स्थितियों के लिए धीरे-धीरे खुद को उजागर करने में मदद करता है। कम चुनौतीपूर्ण स्थितियों से शुरू करें और धीरे-धीरे अधिक चुनौतीपूर्ण स्थितियों की ओर बढ़ें। उदाहरण के लिए, पहले आईने में खुद को देखना शुरू करें, फिर ऐसे कपड़ों में सार्वजनिक रूप से बाहर जाने की प्रगति करें जिनमें आप आत्मविश्वास महसूस करते हैं।",
-          "marathi": "हे शरीराच्या प्रतिमा आणि वजनाशी संबंधित भयावह परिस्थितींसाठी स्वतःला हळूहळू उघड करण्यास मदत करते. कमी आव्हानात्मक परिस्थितींपासून सुरुवात करा आणि हळूहळू अधिक आव्हानात्मक परिस्थितींकडे जा. उदाहरणार्थ, आरशात स्वतःकडे पाहण्यापासून सुरुवात करा, नंतर तुम्हाला आत्मविश्वास वाटणाऱ्या पोशाखात सार्वजनिक ठिकाणी बाहेर जाण्यात प्रगती करा."
-        }
-      },
-      {
-        "id": 6,
-        "xp": 6,
-        "title": {
-          "english": "Assertiveness Training",
-          "hindi": "मुखरता प्रशिक्षण",
-          "marathi": "स्पष्टवक्तृत्व प्रशिक्षण"
-        },
-        "description": {
-          "english": "This helps by empowering individuals to stand up for themselves and their body image. Practice assertiveness by expressing your feelings and needs in a respectful way. For example, if someone makes a negative comment about your weight, calmly tell them that their comment is hurtful and not appreciated.",
-          "hindi": "यह व्यक्तियों को अपने लिए और अपनी शरीर की छवि के लिए खड़े होने के लिए सशक्त बनाने में मदद करता है। सम्मानजनक तरीके से अपनी भावनाओं और जरूरतों को व्यक्त करके मुखरता का अभ्यास करें। उदाहरण के लिए, यदि कोई आपके वजन के बारे में नकारात्मक टिप्पणी करता है, तो उन्हें शांति से बताएं कि उनकी टिप्पणी दुखदायी है और सराहना नहीं की जाती है।",
-          "marathi": "हे व्यक्तींना स्वतःसाठी आणि त्यांच्या शरीराच्या प्रतिमेसाठी उभे राहण्यास सक्षम करण्यास मदत करते. आदरपूर्ण पद्धतीने तुमच्या भावना आणि गरजा व्यक्त करून स्पष्टवक्तृत्वाचा सराव करा. उदाहरणार्थ, जर कोणी तुमच्या वजनाबद्दल नकारात्मक टिप्पणी करत असेल तर त्यांना शांतपणे सांगा की त्यांची टिप्पणी दुखावणारी आहे आणि कौतुकास्पद नाही."
-        }
-      },
-      {
-        "id": 7,
-        "xp": 4,
-        "title": {
-          "english": "Goal Setting",
-          "hindi": "लक्ष्य निर्धारण",
-          "marathi": "ध्येय निर्धारण"
-        },
-        "description": {
-          "english": "This helps by providing a sense of direction and motivation. Set realistic and achievable goals for your health and body image. For example, aim to exercise regularly and eat healthily, rather than aiming to lose a certain amount of weight.",
-          "hindi": "यह दिशा और प्रेरणा की भावना प्रदान करने में मदद करता है। अपने स्वास्थ्य और शरीर की छवि के लिए यथार्थवादी और प्राप्त करने योग्य लक्ष्य निर्धारित करें। उदाहरण के लिए, निश्चित मात्रा में वजन कम करने का लक्ष्य रखने के बजाय, नियमित रूप से व्यायाम करने और स्वस्थ खाने का लक्ष्य रखें।",
-          "marathi": "हे दिशा आणि प्रेरणेची भावना प्रदान करण्यास मदत करते. तुमच्या आरोग्यासाठी आणि शरीराच्या प्रतिमेसाठी वास्तववादी आणि साध्य करण्यायोग्य ध्येये ठेवा. उदाहरणार्थ, विशिष्ट वजन कमी करण्याचे ध्येय ठेवण्याऐवजी, नियमित व्यायाम करणे आणि निरोगी खाणे यांचे ध्येय ठेवा."
-        }
-      },
-      {
-        "id": 8,
-        "xp": 6,
-        "title": {
-          "english": "Problem-Solving",
-          "hindi": "समस्या-समाधान",
-          "marathi": "समस्या-निराकरण"
-        },
-        "description": {
-          "english": "This helps by providing strategies to deal with challenges related to body image and weight. Practice problem-solving by identifying the problem, brainstorming solutions, choosing the best solution, and implementing it. For example, if you're struggling with overeating, consider seeking help from a nutritionist or therapist.",
-          "hindi": "यह शरीर की छवि और वजन से संबंधित चुनौतियों से निपटने की रणनीति प्रदान करने में मदद करता है। समस्या की पहचान करके, समाधान पर विचार करके, सबसे अच्छा समाधान चुनकर और इसे लागू करके समस्या-समाधान का अभ्यास करें। उदाहरण के लिए, यदि आप अधिक खाने से जूझ रहे हैं, तो पोषण विशेषज्ञ या चिकित्सक से सहायता लेने पर विचार करें।",
-          "marathi": "हे शरीराच्या प्रतिमा आणि वजनाशी संबंधित आव्हानांना सामोरे जाण्यासाठी रणनीती प्रदान करण्यास मदत करते. समस्या ओळखून, उपायांचा विचार करून, सर्वोत्तम उपाय निवडून आणि तो अंमलात आणून समस्या-निराकरणाचा सराव करा. उदाहरणार्थ, जर तुम्ही जास्त खाण्याची समस्या करत आहात तर पोषणतज्ञ किंवा थेरपिस्टकडून मदत घेण्याचा विचार करा."
-        }
-      },
-      {
-        "id": 9,
-        "xp": 3,
-        "title": {
-          "english": "Psychoeducation",
-          "hindi": "मनोशिक्षा",
-          "marathi": "मानसशिक्षण"
-        },
-        "description": {
-          "english": "This helps by providing knowledge and understanding about body image and weight issues. Learn about the unrealistic beauty standards set by society and the media, and how they can negatively impact mental health. For example, read books or watch documentaries about body positivity and health at every size.",
-          "hindi": "यह शरीर की छवि और वजन की समस्याओं के बारे में ज्ञान और समझ प्रदान करने में मदद करता है। समाज और मीडिया द्वारा निर्धारित अवास्तविक सौंदर्य मानकों के बारे में जानें और वे कैसे मानसिक स्वास्थ्य पर नकारात्मक प्रभाव डाल सकते हैं। उदाहरण के लिए, शरीर की सकारात्मकता और हर आकार में स्वास्थ्य के बारे में किताबें पढ़ें या वृत्तचित्र देखें।",
-          "marathi": "हे शरीराच्या प्रतिमा आणि वजनाच्या समस्यांबद्दल ज्ञान आणि समज प्रदान करण्यास मदत करते. समाज आणि मीडियाने निर्धारित केलेल्या अवास्तविक सौंदर्य मानकांबद्दल जाणून घ्या आणि ते मानसिक आरोग्यावर नकारात्मक कसा परिणाम करू शकतात. उदाहरणार्थ, शरीर सकारात्मकता आणि प्रत्येक आकारात आरोग्य याविषयी पुस्तके वाचा किंवा माहितीपट पहा."
-        }
-      },
-      {
-        "id": 10,
-        "xp": 6,
-        "title": {
-          "english": "Social Skills Training",
-          "hindi": "सामाजिक कौशल प्रशिक्षण",
-          "marathi": "सामाजिक कौशल्य प्रशिक्षण"
-        },
-        "description": {
-          "english": "This helps by improving interpersonal relationships and reducing social anxiety. Practice social skills by engaging in social activities and building supportive relationships. For example, join a body positivity group or a fitness class where people of all sizes are welcomed and accepted.",
-          "hindi": "यह पारस्परिक संबंधों में सुधार और सामाजिक चिंता को कम करने में मदद करता है। सामाजिक गतिविधियों में भाग लेकर और सहायक संबंध बनाकर सामाजिक कौशल का अभ्यास करें। उदाहरण के लिए, शरीर की सकारात्मकता समूह या फिटनेस क्लास में शामिल हों जहां सभी आकार के लोगों का स्वागत और स्वीकार किया जाता है।",
-          "marathi": "हे पारस्परिक संबंध सुधारण्यास आणि सामाजिक चिंता कमी करण्यास मदत करते. सामाजिक क्रियाकलापांमध्ये सहभागी होऊन आणि सहाय्यक संबंध निर्माण करून सामाजिक कौशल्यांचा सराव करा. उदाहरणार्थ, शरीर सकारात्मकता गटात किंवा फिटनेस वर्गात सामील व्हा जिथे सर्व आकारांच्या लोकांचे स्वागत केले जाते आणि स्वीकार केले जाते."
-        }
-      }
-    ]
-  },
-  "rebtTechniques": {
-    "interventionType": "Secondary",
-    "interventionSubType": "REBT Interventions",
-    "totalTechniques": 10,
-    "techniques": [
-      {
-        "id": 1,
-        "xp": 6,
-        "title": {
-          "english": "Acceptance of Self",
-          "hindi": "स्वयं की स्वीकृति",
-          "marathi": "स्वतःची स्वीकृती"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in reducing the negative self-image and boosts self-esteem. What to Do: Encourage acceptance of one's body and promote self-love. Example: Instead of focusing on societal beauty standards, focus on being healthy and comfortable in your own skin.",
-          "hindi": "यह क्यों मदद करता है: यह नकारात्मक आत्म-छवि को कम करने और आत्म-सम्मान बढ़ाने में मदद करता है। क्या करें: अपने शरीर की स्वीकृति को प्रोत्साहित करें और आत्म-प्रेम को बढ़ावा दें। उदाहरण: सामाजिक सौंदर्य मानकों पर ध्यान देने के बजाय, स्वस्थ रहने और अपनी त्वचा में सहज रहने पर ध्यान दें।",
-          "marathi": "हे का मदत करते: हे नकारात्मक आत्म-प्रतिमा कमी करण्यास आणि आत्मसन्मान वाढवण्यास मदत करते. काय करावे: स्वतःच्या शरीराची स्वीकृती प्रोत्साहित करा आणि आत्म-प्रेमाला प्रोत्साहन द्या. उदाहरण: सामाजिक सौंदर्य मानकांवर लक्ष केंद्रित करण्याऐवजी, निरोगी राहण्यावर आणि स्वतःच्या त्वचेत सहज राहण्यावर लक्ष केंद्रित करा."
-        }
-      },
-      {
-        "id": 2,
-        "xp": 7,
-        "title": {
-          "english": "Rational Emotive Behavior Therapy (REBT)",
-          "hindi": "तर्कसंगत भावनात्मक व्यवहार चिकित्सा (REBT)",
-          "marathi": "तर्कसंगत भावनिक वर्तन चिकित्सा (REBT)"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in identifying irrational beliefs and replacing them with rational ones. What to Do: Seek professional help to undergo REBT. Example: If you believe you're unattractive because you don't fit into societal beauty standards, REBT can help you realize that beauty is subjective and not defined by society.",
-          "hindi": "यह क्यों मदद करता है: यह अतर्कसंगत विश्वासों की पहचान करने और उन्हें तर्कसंगत विश्वासों से बदलने में मदद करता है। क्या करें: REBT से गुजरने के लिए पेशेवर मदद लें। उदाहरण: यदि आप मानते हैं कि आप अनाकर्षक हैं क्योंकि आप सामाजिक सौंदर्य मानकों में फिट नहीं होते हैं, तो REBT आपको यह समझने में मदद कर सकता है कि सुंदरता व्यक्तिपरक है और समाज द्वारा परिभाषित नहीं है।",
-          "marathi": "हे का मदत करते: हे अतर्कसंगत विश्वास ओळखण्यास आणि त्यांना तर्कसंगत विश्वासांनी बदलण्यास मदत करते. काय करावे: REBT घेण्यासाठी व्यावसायिक मदत घ्या. उदाहरण: जर तुमचा असा विश्वास आहे की तुम्ही अनाकर्षक आहात कारण तुम्ही सामाजिक सौंदर्य मानकांमध्ये बसत नाही, तर REBT तुम्हाला हे समजण्यास मदत करू शकते की सौंदर्य व्यक्तिनिष्ठ आहे आणि समाजाने परिभाषित केलेले नाही."
-        }
-      },
-      {
-        "id": 3,
-        "xp": 4,
-        "title": {
-          "english": "Mindfulness",
-          "hindi": "माइंडफुलनेस",
-          "marathi": "माइंडफुलनेस"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in reducing anxiety and stress related to body image. What to Do: Practice mindfulness exercises like meditation and yoga. Example: Mindfulness can help you focus on the present moment and appreciate your body for its abilities rather than its appearance.",
-          "hindi": "यह क्यों मदद करता है: यह शरीर की छवि से संबंधित चिंता और तनाव को कम करने में मदद करता है। क्या करें: ध्यान और योग जैसे माइंडफुलनेस अभ्यास करें। उदाहरण: माइंडफुलनेस आपको वर्तमान क्षण पर ध्यान केंद्रित करने और अपने शरीर की दिखावट के बजाय इसकी क्षमताओं की सराहना करने में मदद कर सकता है।",
-          "marathi": "हे का मदत करते: हे शरीराच्या प्रतिमेशी संबंधित चिंता आणि तणाव कमी करण्यास मदत करते. काय करावे: ध्यान आणि योग यासारखे माइंडफुलनेस व्यायाम करा. उदाहरण: माइंडफुलनेस तुम्हाला सध्याच्या क्षणावर लक्ष केंद्रित करण्यास आणि तुमच्या शरीराच्या देखाव्याऐवजी त्याच्या क्षमतांची प्रशंसा करण्यास मदत करू शकते."
-        }
-      },
-      {
-        "id": 4,
-        "xp": 3,
-        "title": {
-          "english": "Positive Affirmations",
-          "hindi": "सकारात्मक पुष्टि",
-          "marathi": "सकारात्मक पुष्टी"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in promoting a positive self-image and self-esteem. What to Do: Practice positive affirmations daily. Example: Affirmations like 'I am beautiful just the way I am' can help in boosting self-confidence.",
-          "hindi": "यह क्यों मदद करता है: यह सकारात्मक आत्म-छवि और आत्म-सम्मान को बढ़ावा देने में मदद करता है। क्या करें: दैनिक सकारात्मक पुष्टि का अभ्यास करें। उदाहरण: 'मैं जैसा हूं वैसा ही सुंदर हूं' जैसी पुष्टि आत्मविश्वास बढ़ाने में मदद कर सकती है।",
-          "marathi": "हे का मदत करते: हे सकारात्मक आत्म-प्रतिमा आणि आत्मसन्मान वाढवण्यास मदत करते. काय करावे: दररोज सकारात्मक पुष्टीचा सराव करा. उदाहरण: 'मी जसा आहे तसाच सुंदर आहे' यासारखी पुष्टी आत्मविश्वास वाढवण्यास मदत करू शकते."
-        }
-      },
-      {
-        "id": 5,
-        "xp": 4,
-        "title": {
-          "english": "Healthy Lifestyle",
-          "hindi": "स्वस्थ जीवनशैली",
-          "marathi": "निरोगी जीवनशैली"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in maintaining a healthy weight and promotes overall well-being. What to Do: Adopt a balanced diet and regular exercise routine. Example: Instead of dieting to fit into societal beauty standards, focus on eating healthy and staying active for your own well-being.",
-          "hindi": "यह क्यों मदद करता है: यह स्वस्थ वजन बनाए रखने और समग्र कल्याण को बढ़ावा देने में मदद करता है। क्या करें: संतुलित आहार और नियमित व्यायाम की दिनचर्या अपनाएं। उदाहरण: सामाजिक सौंदर्य मानकों में फिट होने के लिए डाइटिंग करने के बजाय, अपने कल्याण के लिए स्वस्थ खाने और सक्रिय रहने पर ध्यान दें।",
-          "marathi": "हे का मदत करते: हे निरोगी वजन राखण्यास आणि एकूण कल्याण वाढवण्यास मदत करते. काय करावे: संतुलित आहार आणि नियमित व्यायामाची दिनचर्या स्वीकारा. उदाहरण: सामाजिक सौंदर्य मानकांमध्ये बसण्यासाठी आहार नियंत्रण करण्याऐवजी, तुमच्या स्वतःच्या कल्याणासाठी निरोगी खाणे आणि सक्रिय राहण्यावर लक्ष केंद्रित करा."
-        }
-      },
-      {
-        "id": 6,
-        "xp": 7,
-        "title": {
-          "english": "Cognitive Restructuring",
-          "hindi": "संज्ञानात्मक पुनर्गठन",
-          "marathi": "संज्ञानात्मक पुनर्रचना"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in changing negative thought patterns about body image. What to Do: Seek professional help for cognitive restructuring. Example: If you constantly think you're overweight and unattractive, cognitive restructuring can help you replace these thoughts with positive ones.",
-          "hindi": "यह क्यों मदद करता है: यह शरीर की छवि के बारे में नकारात्मक विचार पैटर्न को बदलने में मदद करता है। क्या करें: संज्ञानात्मक पुनर्गठन के लिए पेशेवर मदद लें। उदाहरण: यदि आप लगातार सोचते हैं कि आप अधिक वजन वाले और अनाकर्षक हैं, तो संज्ञानात्मक पुनर्गठन आपको इन विचारों को सकारात्मक विचारों से बदलने में मदद कर सकता है।",
-          "marathi": "हे का मदत करते: हे शरीराच्या प्रतिमेबद्दलचे नकारात्मक विचार पैटर्न बदलण्यास मदत करते. काय करावे: संज्ञानात्मक पुनर्रचनेसाठी व्यावसायिक मदत घ्या. उदाहरण: जर तुम्ही सतत असे विचार करत असाल की तुम्ही जास्त वजनदार आणि अनाकर्षक आहात, तर संज्ञानात्मक पुनर्रचना तुम्हाला या विचारांना सकारात्मक विचारांनी बदलण्यास मदत करू शकते."
-        }
-      },
-      {
-        "id": 7,
-        "xp": 6,
-        "title": {
-          "english": "Self-Compassion",
-          "hindi": "आत्म-करुणा",
-          "marathi": "आत्म-करुणा"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in reducing self-criticism and promotes self-love. What to Do: Practice self-compassion exercises. Example: Treat yourself with the same kindness and understanding as you would treat a friend.",
-          "hindi": "यह क्यों मदद करता है: यह आत्म-आलोचना को कम करने और आत्म-प्रेम को बढ़ावा देने में मदद करता है। क्या करें: आत्म-करुणा अभ्यास करें। उदाहरण: अपने साथ वैसी ही दयालुता और समझ का व्यवहार करें जैसा आप एक मित्र के साथ करते हैं।",
-          "marathi": "हे का मदत करते: हे आत्म-टीका कमी करण्यास आणि आत्म-प्रेमाला प्रोत्साहन देण्यास मदत करते. काय करावे: आत्म-करुणेचे व्यायाम करा. उदाहरण: स्वतःशी तशीच दयाळुता आणि समजूतदारपणा दाखवा जशी तुम्ही एखाद्या मित्राशी करता."
-        }
-      },
-      {
-        "id": 8,
-        "xp": 7,
-        "title": {
-          "english": "Exposure Therapy",
-          "hindi": "एक्सपोज़र थेरेपी",
-          "marathi": "एक्सपोझर थेरपी"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in reducing fear and anxiety related to body image. What to Do: Gradually expose yourself to situations that trigger body image issues. Example: If you're afraid of going to the beach because of your body, start by wearing a swimsuit at home, then in a private pool, and finally at the beach.",
-          "hindi": "यह क्यों मदद करता है: यह शरीर की छवि से संबंधित डर और चिंता को कम करने में मदद करता है। क्या करें: धीरे-धीरे उन स्थितियों के सामने आएं जो शरीर की छवि की समस्याओं को ट्रिगर करती हैं। उदाहरण: यदि आप अपने शरीर के कारण समुद्र तट पर जाने से डरते हैं, तो पहले घर पर स्विमसूट पहनकर शुरुआत करें, फिर निजी पूल में, और अंत में समुद्र तट पर।",
-          "marathi": "हे का मदत करते: हे शरीराच्या प्रतिमेशी संबंधित भीती आणि चिंता कमी करण्यास मदत करते. काय करावे: शरीराच्या प्रतिमेच्या समस्या निर्माण करणाऱ्या परिस्थितींना हळूहळू तोंड द्या. उदाहरण: जर तुम्हाला तुमच्या शरीरामुळे समुद्रकिनाऱ्यावर जाण्याची भीती वाटत असेल तर घरात पोहण्याचे कपडे घालून सुरुवात करा, नंतर खाजगी पूलमध्ये आणि शेवटी समुद्रकिनाऱ्यावर."
-        }
-      },
-      {
-        "id": 9,
-        "xp": 4,
-        "title": {
-          "english": "Social Support",
-          "hindi": "सामाजिक सहारा",
-          "marathi": "सामाजिक आधार"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in reducing feelings of isolation and promotes a sense of belonging. What to Do: Seek support from friends, family, or support groups. Example: Share your feelings and experiences with others who are going through the same struggle.",
-          "hindi": "यह क्यों मदद करता है: यह अलगाव की भावनाओं को कम करने और अपनेपन की भावना को बढ़ावा देने में मदद करता है। क्या करें: दोस्तों, परिवार या सहायता समूहों से सहायता लें। उदाहरण: अपनी भावनाओं और अनुभवों को उन लोगों के साथ साझा करें जो समान संघर्ष से गुजर रहे हैं।",
-          "marathi": "हे का मदत करते: हे एकटेपणाची भावना कमी करण्यास आणि अपनत्वाची भावना वाढवण्यास मदत करते. काय करावे: मित्र, कुटुंब किंवा सहाय्यक गटांकडून आधार घ्या. उदाहरण: तुमच्या भावना आणि अनुभव अशा लोकांसोबत शेअर करा जे समान संघर्षातून जात आहेत."
-        }
-      },
-      {
-        "id": 10,
-        "xp": 5,
-        "title": {
-          "english": "Media Literacy",
-          "hindi": "मीडिया साक्षरता",
-          "marathi": "मीडिया साक्षरता"
-        },
-        "description": {
-          "english": "Why it Helps: It helps in understanding the unrealistic beauty standards portrayed in the media. What to Do: Educate yourself about the impact of media on body image. Example: Understand that images in the media are often edited and do not represent real bodies.",
-          "hindi": "यह क्यों मदद करता है: यह मीडिया में चित्रित अवास्तविक सौंदर्य मानकों को समझने में मदद करता है। क्या करें: शरीर की छवि पर मीडिया के प्रभाव के बारे में खुद को शिक्षित करें। उदाहरण: समझें कि मीडिया में छवियां अक्सर संपादित होती हैं और वास्तविक शरीर का प्रतिनिधित्व नहीं करती हैं।",
-          "marathi": "हे का मदत करते: हे मीडियामध्ये चित्रित केलेल्या अवास्तविक सौंदर्य मानकांना समजण्यास मदत करते. काय करावे: शरीराच्या प्रतिमेवर मीडियाच्या प्रभावाबद्दल स्वतःला शिक्षित करा. उदाहरण: समजून घ्या की मीडियातील प्रतिमा अनेकदा संपादित केल्या जातात आणि ते वास्तविक शरीराचे प्रतिनिधित्व करत नाहीत."
-        }
-      }
-    ]
   }
 }

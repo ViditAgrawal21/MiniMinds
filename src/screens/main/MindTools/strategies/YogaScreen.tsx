@@ -269,6 +269,7 @@ export default function YogaScreen({ navigation, route }: any) {
         "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
       "financial-mental-health": "scanIntro.financialMentalHealth.title",
       "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+      "social-media-issues": "socialMediaIssuesScreen.headerTitle",
       "job-insecurity": "scanIntro.jobInsecurity.title",
       "professional-mental-health": "scanIntro.professionalMentalHealth.title",
       "sex-life": "scanIntro.sexLife.title",
@@ -278,6 +279,10 @@ export default function YogaScreen({ navigation, route }: any) {
       "adhd": "adhdScreen.title",
       "aggressive-behaviour": "aggressiveBehaviourScreen.title",
       "conduct-issues": "conductIssues.headerTitle",
+      "substance-addiction": "substanceAddictionScreen.headerTitle",
+      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
+      "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
+      "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -331,6 +336,7 @@ export default function YogaScreen({ navigation, route }: any) {
       stress: "stress",
       "suicidal-behavior": "suicidalBehavior",
       "youngster-issues": "youngsterIssues",
+      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
     };
     
     const translationKey = translationKeyMap[condition];
@@ -413,6 +419,12 @@ export default function YogaScreen({ navigation, route }: any) {
 
   // Get translated yoga data or fall back to static JSON files
   const getYogaData = (condition: string): YogaData | null => {
+    // Debug: log which condition is being requested
+    try {
+      console.debug && console.debug('[getYogaData] condition=', condition, 'locale=', locale);
+    } catch (e) {
+      /* ignore */
+    }
     // Handle Eating Habits data from comprehensive JSON file
     if (condition === "eating-habits") {
       try {
@@ -774,6 +786,411 @@ export default function YogaScreen({ navigation, route }: any) {
       }
     }
 
+    // Handle Self-Esteem & Identity Yoga data
+    if (condition === "self-esteem-and-self-identity") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/self_esteem_self_identity_interventions.json",
+        );
+
+        const items = data.interventions;
+        if (!items || !Array.isArray(items)) {
+          console.error("No interventions array found in Self-Esteem & Identity data");
+          return null;
+        }
+
+        // Normalize locale (handles values like 'en', 'en-US', etc.)
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+
+        // Filter only CBT-category items from the array
+        const cbtItems = items.filter((it: any) => {
+          const cat = (it.category || "").toString().toLowerCase();
+          return cat === "yoga" || cat === "y-o-g-a";
+        });
+
+        if (!cbtItems || cbtItems.length === 0) {
+          console.error("No Yoga data found in Self-Esteem & Identity data");
+          return null;
+        }
+
+        const interventions = cbtItems.map((item: any) => {
+          const translations = item.translations || {};
+          const chosen = translations[lang] || translations["en"] || {};
+          return {
+            title: chosen.title || "",
+            description: chosen.description || "",
+            xp: item.xp || 0,
+          };
+        });
+
+        return {
+          condition: "self-esteem-and-self-identity",
+          intervention_type: "Yoga",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self-Esteem & Identity CBT data:", error);
+        return null;
+      }
+    }
+
+    
+
+    // handle Social Media Issues data from comprehensive JSON file for YOGA
+    if (condition === "social-media-issues") {
+      try {
+        const data = require(
+          "../../../../assets/data/Internet & Social Media Issues/SocialMediaComprehensiveData.json",
+        );
+
+        // interventions is an object in this file; prefer the yoga.cards array
+        const itemsCandidate =
+          data?.interventions?.yoga?.cards ||
+          data?.interventions?.yoga ||
+          data?.interventions?.yogaMeditation?.cards ||
+          data?.interventions?.yogaMeditation ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.commonSuggestions ||
+          data?.interventions ||
+          // data?.socialMediaIssuesScreen?.strategies?.yoga?.rebtSuggestionsList ||
+          data?.strategies?.yoga?.yogaSuggestionList ||
+          null;
+
+        // If itemsCandidate is an object with a `cards` array, resolve that
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Social Media Issues data", {
+            interventions: data?.interventions,
+          });
+          return null;
+        }
+
+        // Debug: report items count
+        try {
+          console.debug && console.debug('[getYogaData] social-media-issues itemsCount=', items.length, 'sample=', items[0]);
+        } catch (e) {}
+
+        // Normalize locale and map to the field names used in these JSON files
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        // Map card shape (title/description objects keyed by language)
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "social-media-issues",
+          intervention_type: "Yoga",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Social Media Issues Yoga data:", error);
+        return null;
+      }
+    }
+
+    // Handle Trauma loss and dreams data from comprehensive JSON file for YOGA
+    if (condition === "trauma-loss-and-dreams") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/trauma_loss_dreams_10_common_suggestions.json",
+        );
+
+        const items = (() => {
+          // direct array
+          if (Array.isArray(data?.interventions)) return data.interventions;
+
+          // interventions as an object - try several possible keys/shapes
+          if (data?.interventions && typeof data.interventions === "object") {
+            const interventionsObj: any = data.interventions;
+            const candidateKeys = [
+              "yoga",
+              "Yoga",
+              "yogaMeditation",
+              "yogaAndMeditation",
+              "yogaMeditations",
+              "commonSuggestions",
+              "YogaMeditation",
+            ];
+
+            for (const key of candidateKeys) {
+              const node = interventionsObj[key];
+              if (!node) continue;
+
+              if (Array.isArray(node)) return node;
+              if (Array.isArray(node.cards)) return node.cards;
+
+              // languages node may contain suggestions/cards
+              const languages = node.languages || node.language || node;
+              const localeKeyInner = (locale || "").slice(0, 2);
+              const langInner = ["en", "hi", "mr"].includes(localeKeyInner) ? localeKeyInner : "en";
+              const langNode = languages[langInner] || languages["en"] || languages["english"] || null;
+
+              if (langNode) {
+                if (Array.isArray(langNode.suggestions)) return langNode.suggestions;
+                if (Array.isArray(langNode.cards)) return langNode.cards;
+                if (Array.isArray(langNode.yoga)) return langNode.yoga;
+              }
+
+              if (Array.isArray(node.suggestions)) return node.suggestions;
+            }
+          }
+
+          // check top-level yoga/yoga.cards
+          if (Array.isArray(data?.yoga)) return data.yoga;
+          if (Array.isArray(data?.yoga?.cards)) return data.yoga.cards;
+
+          // top-level suggestions array
+          if (Array.isArray(data?.suggestions)) return data.suggestions;
+
+          // fall back to known REBT-shaped paths
+          return (
+            data?.socialMediaIssuesScreen?.strategies?.rebt?.rebtSuggestionsList ||
+            data?.strategies?.rebt?.rebtSuggestionsList ||
+            null
+          );
+        })();
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Trauma, Loss and Dreams data", {
+            interventions: data?.interventions,
+          });
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || item.heading || {};
+          const descObj = item.description || item.Description || item.body || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "trauma-loss-and-dreams",
+          intervention_type: "Yoga",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Trauma, Loss and Dreams Yoga data:", error);
+        return null;
+      }
+    }
+
+    // handle Unrealistic Beauty Standards data from comprehensive JSON file for Yoga
+    if (condition === "unrealistic-beauty-standards") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json",
+        );
+
+        // Prefer interventions.yoga.cards, then commonSuggestions.cards, then fallbacks
+        const itemsCandidate =
+          data?.interventions?.yoga?.cards ||
+          data?.interventions?.yoga ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Unrealistic Beauty Standards data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            } as any;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as any;
+        });
+
+        return {
+          condition: "unrealistic-beauty-standards",
+          intervention_type: "Yoga",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Unrealistic Beauty Standards Yoga data:", error);
+        return null;
+      }
+    }
+
+    // handle Substance Addiction data from comprehensive JSON file for Yoga
+    if (condition === "substance-addiction") {
+      try {
+        const data = require(
+          "../../../../assets/data/behaviour/SubstanceAddiction_comprehensive_data.json",
+        );
+
+        // Prefer interventions.yoga.cards, then yoga, then other common shapes
+        const itemsCandidate =
+          data?.interventions?.yoga?.cards ||
+          data?.interventions?.yoga ||
+          data?.interventions?.yogaAndMeditation?.cards ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.commonSuggestions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Substance Addiction data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || item?.xp || 0,
+            } as any;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as any;
+        });
+
+        return {
+          condition: "substance-addiction",
+          intervention_type: "Yoga",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Substance Addiction Yoga data:", error);
+        return null;
+      }
+    }
+
+
     // Check if we have translations for this condition
     const translationKeyMap: { [key: string]: string } = {
       "anger-management": "angerManagement",
@@ -782,6 +1199,7 @@ export default function YogaScreen({ navigation, route }: any) {
       "environment-issues": "environmentIssues",
       "family-relationship": "familyRelationship",
       "financial-mental-health": "financialMentalHealth",
+      "social-media-issues": "socialMediaIssues",
       "general-physical-fitness": "generalPhysicalFitness",
       "internet-dependence": "internetDependence",
       "internet-social-media": "internetSocialMedia",
@@ -944,7 +1362,8 @@ export default function YogaScreen({ navigation, route }: any) {
           return null;
         }
       }
-      const data = getYogaData(condition);
+  console.debug && console.debug('[loadYogaInterventions] loading for condition=', condition, 'locale=', locale);
+  const data = getYogaData(condition);
       
       if (!data) {
         console.error(`No yoga data found for condition: ${condition}`);
@@ -1028,6 +1447,7 @@ export default function YogaScreen({ navigation, route }: any) {
         "general-physical-fitness": "generalPhysicalFitness",
         "internet-dependence": "internetDependence",
         "internet-social-media": "internetSocialMedia",
+          "social-media-issues": "socialMediaIssues",
         "professional-mental-health": "professionalMentalHealth",
         "sex-life": "sexLife",
         sleep: "sleep",
@@ -1035,6 +1455,10 @@ export default function YogaScreen({ navigation, route }: any) {
         stress: "stress",
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
+        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
+        "trauma-loss-and-dreams": "traumaLossAndDreams",
+        "unrealistic-beauty-standards": "unrealisticBeautyStandards",
+        "substance-addiction": "substanceAddiction",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -1050,7 +1474,8 @@ export default function YogaScreen({ navigation, route }: any) {
         "family-relationship": "scanIntro.familyAndRelationship.title",
         "financial-mental-health": "scanIntro.financialMentalHealth.title",
         "internet-dependence": "scanIntro.internetDependence.title",
-        "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+          "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+          "social-media-issues": "socialMediaIssuesScreen.headerTitle",
         "job-insecurity": "scanIntro.jobInsecurity.title",
         "professional-mental-health":
           "scanIntro.professionalMentalHealth.title",
@@ -1058,6 +1483,7 @@ export default function YogaScreen({ navigation, route }: any) {
         sleep: "scanIntro.sleep.title",
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
+        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       };
 
       const translationKey = translationKeyMap[condition];

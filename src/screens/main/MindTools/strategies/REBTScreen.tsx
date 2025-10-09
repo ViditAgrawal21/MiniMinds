@@ -377,6 +377,15 @@ export default function REBTScreen({ navigation, route }: any) {
   };
 
   const getConditionDisplayName = (condition: string): string => {
+    // Special-case self-esteem because some assets and translation keys use
+    // different naming conventions; try a few keys and fall back to a literal.
+    if (condition === "self-esteem-and-self-identity") {
+      // Prefer the headerTitle key, fall back to a readable English string.
+      return t(
+        "selfEsteemAndSelfIdentityScreen.headerTitle",
+        "Self Esteem & Identity",
+      );
+    }
     const conditionKeyMap: { [key: string]: string } = {
       "anger-management": "scanIntro.angerManagement.title",
       stress: "scanIntro.stress.title",
@@ -391,6 +400,7 @@ export default function REBTScreen({ navigation, route }: any) {
         "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
       "financial-mental-health": "scanIntro.financialMentalHealth.title",
       "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+  "social-media-issues": "socialMediaIssuesScreen.headerTitle",
       "professional-mental-health": "scanIntro.professionalMentalHealth.title",
       "sex-life": "scanIntro.sexLife.title",
       sleep: "scanIntro.sleep.title",
@@ -400,6 +410,10 @@ export default function REBTScreen({ navigation, route }: any) {
       "adhd": "adhdScreen.title",
       "aggressive-behaviour": "aggressiveBehaviourScreen.title",
       "conduct-issues": "conductIssues.headerTitle",
+      "substance-addiction": "scanIntro.substanceAddiction.title",
+      "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
+      "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
+      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -638,6 +652,369 @@ export default function REBTScreen({ navigation, route }: any) {
         }
       }
 
+    // Handle Self-Esteem & Identity REBT data
+    if (condition === "self-esteem-and-self-identity") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/self_esteem_self_identity_interventions.json",
+        );
+
+        const items = data.interventions;
+        if (!items || !Array.isArray(items)) {
+          console.error("No interventions array found in Self-Esteem & Identity data");
+          return null;
+        }
+
+        // Normalize locale (handles values like 'en', 'en-US', etc.)
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+
+        // Filter only CBT-category items from the array
+        const cbtItems = items.filter((it: any) => {
+          const cat = (it.category || "").toString().toLowerCase();
+          return cat === "rebt" || cat === "r-e-b-t";
+        });
+
+        if (!cbtItems || cbtItems.length === 0) {
+          console.error("No REBT interventions found in Self-Esteem & Identity data");
+          return null;
+        }
+
+        const interventions = cbtItems.map((item: any) => {
+          const translations = item.translations || {};
+          const chosen = translations[lang] || translations["en"] || {};
+          return {
+            title: chosen.title || "",
+            description: chosen.description || "",
+            xp: item.xp || 0,
+          };
+        });
+
+        return {
+          condition: "self-esteem-and-self-identity",
+          intervention_type: "REBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self-Esteem & Identity REBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Social Media issues REBT data
+    if (condition === "social-media-issues") {
+      try {
+        const data = require(
+          "../../../../assets/data/Internet & Social Media Issues/SocialMediaComprehensiveData.json",
+        );
+
+        // Prefer rebt cards, then fall back to other known nodes
+        const items =
+          data?.interventions?.rebt?.cards ||
+          data?.interventions?.rebt ||
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions ||
+          data?.socialMediaIssuesScreen?.strategies?.rebt?.rebtSuggestionsList ||
+          data?.strategies?.rebt?.rebtSuggestionsList ||
+          null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No REBT interventions array found in Social Media Issues data");
+          return null;
+        }
+
+        // Normalize locale and map to asset fields (english/hindi/marathi)
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            } as REBTIntervention;
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as REBTIntervention;
+        });
+
+        return {
+          condition: "social-media-issues",
+          intervention_type: "REBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Social Media Issues REBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Trauma, Loss and Dreams data from comprehensive JSON file for REBT
+    if (condition === "trauma-loss-and-dreams") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/trauma_loss_dreams_10_common_suggestions.json",
+        );
+        const items = (() => {
+          // direct array
+          if (Array.isArray(data?.interventions)) return data.interventions;
+
+          // interventions as an object with a 10CommonSuggestions node
+          if (data?.interventions && typeof data.interventions === "object") {
+            const interventionsObj: any = data.interventions;
+            const commonNode =
+              interventionsObj["REBT"] ||
+              interventionsObj["REBT"] ||
+              interventionsObj["REBT"] ||
+              null;
+
+            if (commonNode) {
+              // languages may be keyed by short codes (en/hi/mr)
+              const languages = commonNode.languages || commonNode.language || {};
+              const localeKeyInner = (locale || "").slice(0, 2);
+              const langInner = ["en", "hi", "mr"].includes(localeKeyInner) ? localeKeyInner : "en";
+              const langNode = languages[langInner] || languages["en"] || languages["english"] || null;
+
+              if (langNode && Array.isArray(langNode.suggestions)) return langNode.suggestions;
+
+              // fallback: common node might include suggestions directly
+              if (Array.isArray(commonNode.suggestions)) return commonNode.suggestions;
+            }
+          }
+
+          // top-level suggestions array
+          if (Array.isArray(data?.suggestions)) return data.suggestions;
+
+          // fall back to known REBT-shaped paths
+          return (
+            data?.socialMediaIssuesScreen?.strategies?.rebt?.rebtSuggestionsList ||
+            data?.strategies?.rebt?.rebtSuggestionsList ||
+            null
+          );
+        })();
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No REBT data array found in Trauma, Loss and Dreams data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "trauma-loss-and-dreams",
+          intervention_type: "REBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Trauma, Loss and Dreams REBT data:", error);
+        return null;
+      }
+    }
+
+    // handle Unrealistic Beauty Standards data from comprehensive JSON file for REBT
+    if (condition === "unrealistic-beauty-standards") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json",
+        );
+
+        // Prefer interventions.rebt.cards, then fall back to other common shapes
+        const itemsCandidate =
+          data?.interventions?.rebt?.cards ||
+          data?.interventions?.rebt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No REBT data array found in Unrealistic Beauty Standards data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            } as REBTIntervention;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as REBTIntervention;
+        });
+
+        return {
+          condition: "unrealistic-beauty-standards",
+          intervention_type: "REBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Unrealistic Beauty Standards REBT data:", error);
+        return null;
+      }
+    }
+
+    // handle Substance Addiction data from comprehensive JSON file for REBT
+    if (condition === "substance-addiction") {
+      try {
+        const data = require(
+          "../../../../assets/data/behaviour/SubstanceAddiction_comprehensive_data.json",
+        );
+
+        // Prefer interventions.rebt.cards, then rebt, then other shapes
+        const itemsCandidate =
+          data?.interventions?.rebt?.cards ||
+          data?.interventions?.rebt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.commonSuggestions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No REBT data array found in Substance Addiction data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || item?.xp || 0,
+            } as REBTIntervention;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as REBTIntervention;
+        });
+
+        return {
+          condition: "substance-addiction",
+          intervention_type: "REBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Substance Addiction REBT data:", error);
+        return null;
+      }
+    }
+
       // Map URL-style condition names to camelCase keys used in translation files
       const conditionKeyMap: { [key: string]: string } = {
         "anger-management": "angerManagement",
@@ -651,12 +1028,14 @@ export default function REBTScreen({ navigation, route }: any) {
         "environment-issues": "environmentIssues",
         "financial-mental-health": "financialMentalHealth",
         "internet-social-media": "internetSocialMedia",
+    "social-media-issues": "socialMediaIssues",
         "professional-mental-health": "professionalMentalHealth",
         "sex-life": "sexLife",
         sleep: "sleep",
         "social-mental-health": "socialMentalHealth",
         "youngster-issues": "youngsterIssues",
         "job-insecurity": "jobInsecurity",
+        
       };
       
       const translationKey = conditionKeyMap[condition];
@@ -816,6 +1195,7 @@ export default function REBTScreen({ navigation, route }: any) {
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
         "job-insecurity": "jobInsecurity",
+        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -831,14 +1211,19 @@ export default function REBTScreen({ navigation, route }: any) {
         "family-relationship": "scanIntro.familyAndRelationship.title",
         "financial-mental-health": "scanIntro.financialMentalHealth.title",
         "internet-dependence": "scanIntro.internetDependence.title",
-        "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+          "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+          "social-media-issues": "socialMediaIssuesScreen.headerTitle",
         "professional-mental-health":
           "scanIntro.professionalMentalHealth.title",
         "sex-life": "scanIntro.sexLife.title",
         sleep: "scanIntro.sleep.title",
+        "substance-addiction": "scanIntro.substanceAddiction.title",
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
         "job-insecurity": "scanIntro.jobInsecurity.title",
+        "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
+        "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
+        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       };
 
       const translationKey = translationKeyMap[condition];

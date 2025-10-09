@@ -22,7 +22,7 @@ interface CBTIntervention {
   title: string;
   description: string;
   xp: number;
-  
+
   // Legacy format from static JSON files (keeping for backward compatibility)
   "Issue Name"?: string;
   "Intervention Sub Type"?: string;
@@ -86,10 +86,10 @@ export default function CBTScreen({ navigation, route }: any) {
   const [selectedCBT, setSelectedCBT] = useState<CBTIntervention | null>(null);
   const [modalAnimation] = useState(new Animated.Value(0));
   const [hasPremiumAccess, setHasPremiumAccess] = useState(false);
-  
+
   const { condition } = route.params || {};
 
-    // Language change detection - update condition name when language changes
+  // Language change detection - update condition name when language changes
   useEffect(() => {
     setConditionName(getConditionDisplayName(condition));
   }, [locale, condition]);
@@ -157,7 +157,7 @@ export default function CBTScreen({ navigation, route }: any) {
       hi: "विश्राम प्रशिक्षण",
       mr: "विश्रांति प्रशिक्षण",
     },
-    
+
     // Common CBT terms
     thoughts: {
       en: "thoughts",
@@ -214,7 +214,7 @@ export default function CBTScreen({ navigation, route }: any) {
       hi: "ट्रैकिंग",
       mr: "ट्रॅकिंग",
     },
-    
+
     // Common phrases that might appear in CBT descriptions
     "Identify negative thoughts": {
       en: "Identify negative thoughts",
@@ -261,14 +261,14 @@ export default function CBTScreen({ navigation, route }: any) {
     const currentLocale = locale as "en" | "hi" | "mr";
     const originalText =
       field === "title" ? getCBTTitle(cbt) : getCBTDescription(cbt);
-    
+
     // First, try to get from common translations mapping (exact match only)
     const commonTranslation =
       cbtTranslations[originalText as keyof typeof cbtTranslations];
     if (commonTranslation) {
       return commonTranslation[currentLocale];
     }
-    
+
     // Try case-insensitive exact match
     const lowerCaseText = originalText.toLowerCase();
     const caseInsensitiveMatch = Object.keys(cbtTranslations).find(
@@ -279,11 +279,11 @@ export default function CBTScreen({ navigation, route }: any) {
         cbtTranslations[caseInsensitiveMatch as keyof typeof cbtTranslations];
       return translation[currentLocale];
     }
-    
+
     // For longer descriptions, try to translate individual words and phrases
     if (field === "description" && originalText.length > 50) {
       let translatedText = originalText;
-      
+
       // Try to translate common phrases within the description
       Object.entries(cbtTranslations).forEach(([englishText, translations]) => {
         if (originalText.includes(englishText)) {
@@ -293,13 +293,13 @@ export default function CBTScreen({ navigation, route }: any) {
           );
         }
       });
-      
+
       // If we made any translations, return the processed text
       if (translatedText !== originalText) {
         return translatedText;
       }
     }
-    
+
     // Simplified word translation - only for single words that are common terms
     const trimmedText = originalText.trim();
     if (!trimmedText.includes(" ") && trimmedText.length > 3) {
@@ -313,7 +313,7 @@ export default function CBTScreen({ navigation, route }: any) {
         return translation[currentLocale];
       }
     }
-    
+
     // Finally, fall back to original text (apply formatting for descriptions)
     return field === "description"
       ? formatDescription(originalText)
@@ -355,6 +355,7 @@ export default function CBTScreen({ navigation, route }: any) {
         "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
       "financial-mental-health": "scanIntro.financialMentalHealth.title",
       "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+      "social-media-issues": "socialMediaIssuesScreen.headerTitle",
       "professional-mental-health": "scanIntro.professionalMentalHealth.title",
       "sex-life": "scanIntro.sexLife.title",
       sleep: "scanIntro.sleep.title",
@@ -364,6 +365,10 @@ export default function CBTScreen({ navigation, route }: any) {
       "adhd": "adhdScreen.title",
       "aggressive-behaviour": "aggressiveBehaviourScreen.title",
       "conduct-issues": "conductIssues.headerTitle",
+      "substance-addiction": "substanceAddictionScreen.headerTitle",
+      "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
+      "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
+      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -448,16 +453,16 @@ export default function CBTScreen({ navigation, route }: any) {
       try {
         const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
         const cbtCards = adhdData.interventions?.cbt?.cards;
-        
+
         if (!cbtCards || !Array.isArray(cbtCards)) {
           console.error("No CBT interventions found in ADHD data");
           return null;
         }
-        
+
         // Map locale codes to ADHD data field names
         const localeMap: { [key: string]: string } = {
           "en": "english",
-          "hi": "hindi", 
+          "hi": "hindi",
           "mr": "marathi"
         };
         const adhdLocaleField = localeMap[locale] || "english";
@@ -467,7 +472,7 @@ export default function CBTScreen({ navigation, route }: any) {
           description: card.description?.[adhdLocaleField] || card.description?.english || "",
           xp: card.xp || 0,
         }));
-        
+
         return {
           condition: "adhd",
           intervention_type: "CBT",
@@ -568,16 +573,16 @@ export default function CBTScreen({ navigation, route }: any) {
       try {
         const aggressiveData = require("../../../../assets/data/behaviour/AggressiveBehaviour_comprehensive_data.json");
         const cbtCards = aggressiveData.interventions?.cbt?.cards;
-        
+
         if (!cbtCards || !Array.isArray(cbtCards)) {
           console.error("No CBT interventions found in Aggressive Behaviour data");
           return null;
         }
-        
+
         // Map locale codes to data field names
         const localeMap: { [key: string]: string } = {
           "en": "english",
-          "hi": "hindi", 
+          "hi": "hindi",
           "mr": "marathi"
         };
         const localeField = localeMap[locale] || "english";
@@ -587,7 +592,7 @@ export default function CBTScreen({ navigation, route }: any) {
           description: card.description?.[localeField] || card.description?.english || "",
           xp: card.xp || 0,
         }));
-        
+
         return {
           condition: "aggressive-behaviour",
           intervention_type: "CBT",
@@ -598,6 +603,370 @@ export default function CBTScreen({ navigation, route }: any) {
         return null;
       }
     }
+
+    // Handle Self-Esteem & Identity CBT data
+    if (condition === "self-esteem-and-self-identity") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/self_esteem_self_identity_interventions.json",
+        );
+
+        const items = data.interventions;
+        if (!items || !Array.isArray(items)) {
+          console.error("No interventions array found in Self-Esteem & Identity data");
+          return null;
+        }
+
+        // Normalize locale (handles values like 'en', 'en-US', etc.)
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+
+        // Filter only CBT-category items from the array
+        const cbtItems = items.filter((it: any) => {
+          const cat = (it.category || "").toString().toLowerCase();
+          return cat === "cbt" || cat === "c-b-t";
+        });
+
+        if (!cbtItems || cbtItems.length === 0) {
+          console.error("No CBT interventions found in Self-Esteem & Identity data");
+          return null;
+        }
+
+        const interventions = cbtItems.map((item: any) => {
+          const translations = item.translations || {};
+          const chosen = translations[lang] || translations["en"] || {};
+          return {
+            title: chosen.title || "",
+            description: chosen.description || "",
+            xp: item.xp || 0,
+          };
+        });
+
+        return {
+          condition: "self-esteem-and-self-identity",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self-Esteem & Identity CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Social Media issues CBT/REBT data
+    if (condition === "social-media-issues") {
+      try {
+        const data = require(
+          "../../../../assets/data/Internet & Social Media Issues/SocialMediaComprehensiveData.json",
+        );
+
+        // The comprehensive file stores cards under interventions.<type>.cards
+        // (cbt, rebt, commonSuggestions, etc.). Prefer CBT, then REBT, then fallbacks.
+        const items =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cbt ||
+          null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT interventions array found in Social Media Issues data");
+          return null;
+        }
+
+        // Normalize locale and map to asset fields (english/hindi/marathi)
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            } as any;
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as any;
+        });
+
+        return {
+          condition: "social-media-issues",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Social Media Issues CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Trauma, Loss and Dreams data from comprehensive JSON file for CBT
+    if (condition === "trauma-loss-and-dreams") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/trauma_loss_dreams_10_common_suggestions.json",
+        );
+        const items = (() => {
+          // direct array
+          if (Array.isArray(data?.interventions)) return data.interventions;
+
+          // interventions as an object with a 10CommonSuggestions node
+          if (data?.interventions && typeof data.interventions === "object") {
+            const interventionsObj: any = data.interventions;
+            const commonNode =
+              interventionsObj["CBT"] ||
+              interventionsObj["CBT"] ||
+              interventionsObj["CBT"] ||
+              null;
+
+            if (commonNode) {
+              // languages may be keyed by short codes (en/hi/mr)
+              const languages = commonNode.languages || commonNode.language || {};
+              const localeKeyInner = (locale || "").slice(0, 2);
+              const langInner = ["en", "hi", "mr"].includes(localeKeyInner) ? localeKeyInner : "en";
+              const langNode = languages[langInner] || languages["en"] || languages["english"] || null;
+
+              if (langNode && Array.isArray(langNode.suggestions)) return langNode.suggestions;
+
+              // fallback: common node might include suggestions directly
+              if (Array.isArray(commonNode.suggestions)) return commonNode.suggestions;
+            }
+          }
+
+          // top-level suggestions array
+          if (Array.isArray(data?.suggestions)) return data.suggestions;
+
+          // fall back to known REBT-shaped paths
+          return (
+            data?.socialMediaIssuesScreen?.strategies?.rebt?.rebtSuggestionsList ||
+            data?.strategies?.rebt?.rebtSuggestionsList ||
+            null
+          );
+        })();
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Trauma, Loss and Dreams data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "trauma-loss-and-dreams",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Trauma, Loss and Dreams CBT data:", error);
+        return null;
+      }
+    }
+
+    // handle Unrealistic Beauty Standards data from comprehensive JSON file for CBT
+    if (condition === "unrealistic-beauty-standards") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json",
+        );
+
+        // Prefer interventions.commonSuggestions.cards (this file), then fall back
+        // to other common shapes used across assets.
+        const itemsCandidate =
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.commonSuggestions ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Unrealistic Beauty Standards data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            } as any;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as any;
+        });
+
+        return {
+          condition: "unrealistic-beauty-standards",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Unrealistic Beauty Standards CBT data:", error);
+        return null;
+      }
+    }
+
+    // handle Substance Addiction data from comprehensive JSON file for CBT
+    if (condition === "substance-addiction") {
+      try {
+        const data = require(
+          "../../../../assets/data/behaviour/SubstanceAddiction_comprehensive_data.json",
+        );
+
+        // Prefer the shape used across comprehensive files: interventions.<type>.cards
+        // Fall back to a variety of common shapes used in other assets.
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.CBT?.cards ||
+          data?.interventions?.CBT ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.commonSuggestions ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Substance Addiction data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "substance-addiction",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Substance Addiction CBT data:", error);
+        return null;
+      }
+    }
+
 
     // Map URL-style condition names to camelCase keys used in translation files
     const conditionKeyMap: { [key: string]: string } = {
@@ -619,23 +988,23 @@ export default function CBTScreen({ navigation, route }: any) {
       "youngster-issues": "youngsterIssues",
       "job-insecurity": "jobInsecurity",
     };
-    
+
     const translationKey = conditionKeyMap[condition];
     if (!translationKey) {
       console.error(`No translation key found for condition: ${condition}`);
       return null;
     }
-    
+
     // Get the interventions from the translation file
     const interventions = t(`cbtInterventions.${translationKey}`, {
       returnObjects: true,
     });
-    
+
     if (!Array.isArray(interventions)) {
       console.error(`No CBT interventions found for: ${translationKey}`);
       return null;
     }
-    
+
     return {
       condition: translationKey,
       intervention_type: "CBT",
@@ -646,14 +1015,14 @@ export default function CBTScreen({ navigation, route }: any) {
   const loadCBTInterventions = useCallback(async () => {
     try {
       setLoading(true);
-      
+
       if (!condition) {
         console.error("No condition parameter provided");
         return;
       }
 
       const data = getCBTData(condition);
-      
+
       if (!data) {
         console.error(`No CBT data found for condition: ${condition}`);
         Alert.alert(
@@ -668,7 +1037,7 @@ export default function CBTScreen({ navigation, route }: any) {
         );
         return;
       }
-      
+
       setCbtInterventions(data.interventions || []);
       setConditionName(getConditionDisplayName(condition));
     } catch (error) {
@@ -736,9 +1105,9 @@ export default function CBTScreen({ navigation, route }: any) {
 
   const handleTaskFrequencySelect = async (frequency: string) => {
     if (!selectedCBT) return;
-    
+
     hideModal();
-    
+
     try {
       // Map frequency to the correct tab format
       const tabMap: { [key: string]: string } = {
@@ -747,7 +1116,7 @@ export default function CBTScreen({ navigation, route }: any) {
         "Bi-Weekly": "Bi-weekly",
         Monthly: "Monthly",
       };
-      
+
       const tab = tabMap[frequency];
       if (!tab) {
         Alert.alert(
@@ -756,12 +1125,13 @@ export default function CBTScreen({ navigation, route }: any) {
         );
         return;
       }
-      
+
       // Create a new intervention in the format expected by InterventionsScreen
       // Get the translation keys for proper dynamic translation
       const translationKeyMap: { [key: string]: string } = {
         "anger-management": "angerManagement",
         addictions: "addictions",
+        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
         "common-psychological-issues": "commonPsychologicalIssues",
         "conduct-issues": "conductIssues",
         "environment-issues": "environmentIssues",
@@ -770,6 +1140,7 @@ export default function CBTScreen({ navigation, route }: any) {
         "general-physical-fitness": "generalPhysicalFitness",
         "internet-dependence": "internetDependence",
         "internet-social-media": "internetSocialMedia",
+        "social-media-issues": "socialMediaIssues",
         "professional-mental-health": "professionalMentalHealth",
         "sex-life": "sexLife",
         sleep: "sleep",
@@ -778,6 +1149,7 @@ export default function CBTScreen({ navigation, route }: any) {
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
         "job-insecurity": "jobInsecurity",
+        "trauma-loss-and-dreams": "traumaLossAndDreams",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -794,6 +1166,7 @@ export default function CBTScreen({ navigation, route }: any) {
         "financial-mental-health": "scanIntro.financialMentalHealth.title",
         "internet-dependence": "scanIntro.internetDependence.title",
         "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+        "social-media-issues": "socialMediaIssuesScreen.headerTitle",
         "professional-mental-health":
           "scanIntro.professionalMentalHealth.title",
         "sex-life": "scanIntro.sexLife.title",
@@ -801,13 +1174,15 @@ export default function CBTScreen({ navigation, route }: any) {
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
         "job-insecurity": "scanIntro.jobInsecurity.title",
+        "substance-addiction": "substanceAddictionScreen.headerTitle",
+        "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
       };
 
       const translationKey = translationKeyMap[condition];
       const currentCBTIndex = cbtInterventions.findIndex(
         (c) => c === selectedCBT,
       );
-      
+
       // Store translation keys for dynamic lookup
       const originalTitleKey = translationKey
         ? `cbtInterventions.${translationKey}.${currentCBTIndex}.title`
@@ -817,7 +1192,7 @@ export default function CBTScreen({ navigation, route }: any) {
         ? `cbtInterventions.${translationKey}.${currentCBTIndex}.description`
         : undefined;
       const conditionDisplayKey = conditionKeyMap[condition];
-      
+
       // Create translation objects for all languages - proper implementation
       const getTitleForLanguage = (lang: "en" | "hi" | "mr"): string => {
         if (originalTitleKey) {
@@ -840,7 +1215,7 @@ export default function CBTScreen({ navigation, route }: any) {
         hi: getTitleForLanguage("hi"),
         mr: getTitleForLanguage("mr"),
       };
-      
+
       // For subtitle, get the condition name in each language
       const getConditionNameForLanguage = (
         lang: "en" | "hi" | "mr",
@@ -915,11 +1290,11 @@ export default function CBTScreen({ navigation, route }: any) {
         condition: conditionName,
         interventionType: "CBT",
       };
-      
+
       // Load existing interventions for this tab
       const storageKey = `interventions_${tab}`;
       let existingInterventions: SavedIntervention[] = [];
-      
+
       try {
         const stored = await AsyncStorage.getItem(storageKey);
         if (stored && stored !== "null") {
@@ -931,16 +1306,16 @@ export default function CBTScreen({ navigation, route }: any) {
       } catch (error) {
         console.error("Error loading existing interventions:", error);
       }
-      
+
       // Add the new intervention
       const updatedInterventions = [...existingInterventions, newIntervention];
-      
+
       // Save back to AsyncStorage
       await AsyncStorage.setItem(
         storageKey,
         JSON.stringify(updatedInterventions),
       );
-      
+
       setTimeout(() => {
         Alert.alert(
           t("cbtScreen.success.title"),
@@ -985,12 +1360,12 @@ export default function CBTScreen({ navigation, route }: any) {
         {/* Condition Title */}
         <Text style={styles.conditionTitle}>{conditionName}</Text>
         <Text style={styles.subtitle}>{t("cbtScreen.subtitle")}</Text>
-        
+
         {/* CBT Interventions List */}
         <View style={styles.cbtContainer}>
           {cbtInterventions.map((cbt, index) => {
             const shouldBlur = index >= 5 && !hasPremiumAccess; // Show first 5 cards normally, blur the rest unless premium
-            
+
             if (shouldBlur) {
               return (
                 <View key={index} style={styles.blurWrapper}>
@@ -1002,7 +1377,7 @@ export default function CBTScreen({ navigation, route }: any) {
                         {getCBTXP(cbt)} {t("cbtScreen.xpLabel")}
                       </Text>
                     </View>
-                    
+
                     <Text style={[styles.cbtTitle, styles.blurredText]}>
                       {getLocalizedCBTText(cbt, "title")}
                     </Text>
@@ -1022,7 +1397,7 @@ export default function CBTScreen({ navigation, route }: any) {
                 </View>
               );
             }
-            
+
             return (
               <View key={index} style={styles.cbtCard}>
                 {/* XP Badge */}
@@ -1032,7 +1407,7 @@ export default function CBTScreen({ navigation, route }: any) {
                     {getCBTXP(cbt)} {t("cbtScreen.xpLabel")}
                   </Text>
                 </View>
-                
+
                 <Text style={styles.cbtTitle}>
                   {getLocalizedCBTText(cbt, "title")}
                 </Text>
@@ -1065,8 +1440,8 @@ export default function CBTScreen({ navigation, route }: any) {
         <View style={styles.modalOverlay}>
           <Pressable style={styles.modalOverlayTouchable} onPress={hideModal}>
             <View style={styles.modalContainer}>
-              <Pressable 
-                onPress={(e) => e.stopPropagation()} 
+              <Pressable
+                onPress={(e) => e.stopPropagation()}
                 style={styles.modalContent}
                 accessible={true}
                 accessibilityLabel={t("cbtScreen.modal.title")}

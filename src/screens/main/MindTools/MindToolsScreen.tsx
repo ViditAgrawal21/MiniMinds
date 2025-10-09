@@ -8,6 +8,7 @@ import {
   Pressable,
   Alert,
   Modal,
+  Image,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CustomIcon from "../../../components/CustomIcon";
@@ -139,13 +140,13 @@ export default function MindToolsScreen() {
       // Load all storage items in parallel for better performance
       const tabs = ["Daily", "Weekly", "Bi-weekly", "Monthly"];
       const storageKeys = tabs.map((tab) => `interventions_${tab}`);
-      
+
       // Get all intervention data in parallel
       const storagePromises = storageKeys.map((key) =>
         AsyncStorage.getItem(key),
       );
       const storageResults = await Promise.all(storagePromises);
-      
+
       let dailyCount = 0;
       let totalCount = 0;
 
@@ -154,7 +155,7 @@ export default function MindToolsScreen() {
           try {
             const parsed = JSON.parse(result);
             const count = Array.isArray(parsed) ? parsed.length : 0;
-            
+
             if (tabs[index] === "Daily") {
               dailyCount = count;
             }
@@ -188,8 +189,8 @@ export default function MindToolsScreen() {
     console.log(`${taskType} task pressed`);
     console.log("Navigation object:", navigation);
     // Navigate to interventions screen
-   console.log("Attempting to navigate to InterventionsScreen");
-      navigation.navigate("InterventionsScreen");
+    console.log("Attempting to navigate to InterventionsScreen");
+    navigation.navigate("InterventionsScreen");
   };
 
   const handleJournalPress = () => {
@@ -199,7 +200,7 @@ export default function MindToolsScreen() {
 
   const handleCategoryPress = async (categoryName: string) => {
     console.log(`${categoryName} pressed`);
-    
+
     // Check if category requires premium access
     const requiredPlan = categoryAccessMap[categoryName];
     if (!requiredPlan) {
@@ -209,7 +210,7 @@ export default function MindToolsScreen() {
 
     // Check premium access
     const canAccess = await canAccessFeature(requiredPlan);
-    
+
     // if (!canAccess) {
     //   // Track which plan blocked access so we can show correct copy (basic -> needs premium, premium -> needs ultra)
     //   setBlockedPlan(requiredPlan === "basic" ? "basic" : "premium");
@@ -360,12 +361,12 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="happy-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="happy-outline" size={24} color="#000000" />
                 </View>
                 <Text style={styles.taskNumber}>
                   {isLoading ? t("mindToolsScreen.loading") : dailyTasksCount}
                 </Text>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.taskTitle}>
                 {t("mindToolsScreen.dailyTasksTitle")}
@@ -375,11 +376,11 @@ export default function MindToolsScreen() {
                   ? t("mindToolsScreen.dailyTasksDescriptionLoading")
                   : dailyTasksCount === 1
                     ? t("mindToolsScreen.dailyTasksDescriptionSingular", {
-                        count: dailyTasksCount,
-                      })
+                      count: dailyTasksCount,
+                    })
                     : t("mindToolsScreen.dailyTasksDescriptionPlural", {
-                        count: dailyTasksCount,
-                      })}
+                      count: dailyTasksCount,
+                    })}
               </Text>
             </Pressable>
 
@@ -390,14 +391,14 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="calendar-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="calendar-outline" size={24} color="#000000" />
                 </View>
                 <Text style={styles.taskNumber}>
                   {isLoading
                     ? t("mindToolsScreen.loading")
                     : interventionsCount}
                 </Text>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.taskTitle}>
                 {t("mindToolsScreen.totalInterventionsTitle")}
@@ -407,14 +408,14 @@ export default function MindToolsScreen() {
                   ? t("mindToolsScreen.totalInterventionsDescriptionLoading")
                   : interventionsCount === 1
                     ? t(
-                        "mindToolsScreen.totalInterventionsDescriptionSingular",
-                        {
-                          count: interventionsCount,
-                        },
-                      )
-                    : t("mindToolsScreen.totalInterventionsDescriptionPlural", {
+                      "mindToolsScreen.totalInterventionsDescriptionSingular",
+                      {
                         count: interventionsCount,
-                      })}
+                      },
+                    )
+                    : t("mindToolsScreen.totalInterventionsDescriptionPlural", {
+                      count: interventionsCount,
+                    })}
               </Text>
             </Pressable>
           </View>
@@ -429,7 +430,7 @@ export default function MindToolsScreen() {
           <Pressable style={styles.journalCard} onPress={handleJournalPress}>
             <View style={styles.journalContent}>
               <View style={styles.journalIconContainer}>
-                <CustomIcon type="IO" name="journal-outline" size={28} color="#8b5cf6" />
+                <CustomIcon type="IO" name="journal-outline" size={28} color="#000000" />
               </View>
               <View style={styles.journalTextContainer}>
                 <Text style={styles.journalTitle}>
@@ -440,7 +441,7 @@ export default function MindToolsScreen() {
                 </Text>
               </View>
               <View style={styles.journalArrow}>
-                <CustomIcon type="IO" name="chevron-forward" size={20} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={20} color="#000000" />
               </View>
             </View>
           </Pressable>
@@ -460,9 +461,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="flash" size={24} color="#3b82f6" />
+                  <CustomIcon type="IO" name="flash" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.adhd.title")}
@@ -478,9 +479,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="warning" size={24} color="#ef4444" />
+                  <CustomIcon type="IO" name="warning" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.aggressiveBehaviour.title")}
@@ -500,10 +501,10 @@ export default function MindToolsScreen() {
                   <CustomIcon type="IO"
                     name="warning-outline"
                     size={24}
-                    color="#f59e0b"
+                    color="#000000"
                   />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.conductIssues.title")}
@@ -519,9 +520,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="restaurant" size={24} color="#10b981" />
+                  <CustomIcon type="IO" name="restaurant" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.eatingHabits.title")}
@@ -538,9 +539,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="person-outline" size={24} color="#7c3aed" />
+                  <CustomIcon type="IO" name="person-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.introvertChild.title")}
@@ -557,9 +558,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="MCI" name="heart-broken" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="moon-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.breakupandrebound.title")}
@@ -575,9 +576,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="warning-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="warning-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.abusiveLanguageBackAnswering.title")}
@@ -594,9 +595,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="document-text-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="document-text-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.examstressscreen.title")}
@@ -612,9 +613,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="lock-closed-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="lock-closed-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.darkwebandonlyfansscreen.title")}
@@ -631,9 +632,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="people-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="people-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.friendshipandrelationshipscreen.title")}
@@ -649,9 +650,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="people-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="people-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.datingsitesandcomplicationsscreen.title")}
@@ -668,9 +669,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="game-controller-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="game-controller-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.gamblingandgamingaddictionscreen.title")}
@@ -686,9 +687,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="wifi-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="wifi-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.internetaddictionscreen.title")}
@@ -705,9 +706,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="person-circle-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="person-circle-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.parentingfromchildviewscreen.title")}
@@ -723,9 +724,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="people-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="people-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.parentingfromparentsviewscreen.title")}
@@ -742,9 +743,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="eye-off-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="eye-off-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.pornaddictionscreen.title")}
@@ -760,9 +761,9 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="medkit-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="medkit-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.selfcarehygienescreen.title")}
@@ -772,24 +773,113 @@ export default function MindToolsScreen() {
               </Text>
             </Pressable>
 
-            
-
-            {/* Job Insecurity - Full Width Card with Regular Design */}
+            {/* Job Insecurity - Full Width Card with Regular Design
             <Pressable
               style={styles.jobInsecurityCard}
               onPress={() => handleCategoryPress("Job Insecurity")}
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="briefcase-outline" size={24} color="#1f2937" />
+                  <CustomIcon type="IO" name="briefcase-outline" size={24} color="#000000" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
                 {t("mindToolsScreen.categories.jobInsecurity.title")}
               </Text>
               <Text style={styles.categoryDescription}>
                 {t("mindToolsScreen.categories.jobInsecurity.description")}
+              </Text>
+            </Pressable> */}
+
+            {/* Self Esteem & Self Identity Card */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("SelfEsteemAndSelfIdentityScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="person-circle-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.selfesteemandselfidentityscreen.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.selfesteemandselfidentityscreen.description")}
+              </Text>
+            </Pressable>
+
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("SocialMediaIssuesScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="share-social-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.socialmediaissuesscreen.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.socialmediaissuesscreen.description")}
+              </Text>
+            </Pressable>
+
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("SubstanceAddictionScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="medkit-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.SubstanceAddictionScreen.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.SubstanceAddictionScreen.description")}
+              </Text>
+            </Pressable>
+
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("TraumaLossAndDreamsScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="moon-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.TraumaLossAndDreamsScreen.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.TraumaLossAndDreamsScreen.description")}
+              </Text>
+            </Pressable>
+
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("UnrealisticBeautyStandardsScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="happy-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.UnrealisticBeautyStandardsScreen.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.UnrealisticBeautyStandardsScreen.description")}
               </Text>
             </Pressable>
 
@@ -800,7 +890,7 @@ export default function MindToolsScreen() {
             >
               <View style={styles.eqCardHeader}>
                 <View style={styles.eqIconContainer}>
-                  <CustomIcon type="IO" name="heart" size={32} color="#8b5cf6" />
+                  <CustomIcon type="IO" name="heart" size={32} color="#000000" />
                 </View>
                 <View style={styles.eqTextContainer}>
                   <Text style={styles.eqCardTitle}>
@@ -815,7 +905,7 @@ export default function MindToolsScreen() {
                   </Text>
                 </View>
                 <View style={styles.eqArrowContainer}>
-                  <CustomIcon type="IO" name="chevron-forward" size={20} color="#6b7280" />
+                  <CustomIcon type="IO" name="chevron-forward" size={20} color="#000000" />
                 </View>
               </View>
             </Pressable>
@@ -839,15 +929,15 @@ export default function MindToolsScreen() {
                 ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.title`)
                 : t("upgradeDialog.title")}
             </Text>
-            
+
             <Text style={styles.dialogText}>
               {blockedPlan
                 ? t(`mindToolsScreen.upgradeDialog.${blockedPlan}.message`)
                 : t("upgradeDialog.message")}
             </Text>
-            
+
             <View style={styles.dialogActions}>
-              <Pressable 
+              <Pressable
                 style={styles.cancelButton}
                 onPress={() => setDialogVisible(false)}
               >
@@ -871,313 +961,313 @@ export default function MindToolsScreen() {
                     : t("upgradeDialog.upgradeButton")}
                 </Text>
               </Pressable>
-            
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("BreakupAndRebound")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
-                </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.breakupandreboundscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.breakupandreboundscreen.description")}
-              </Text>
-            </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("DarkWebAndOnlyFans")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("BreakupAndRebound")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.darkwebandonlyfansscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.darkwebandonlyfansscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.breakupandreboundscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.breakupandreboundscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("DatingSitesAndComplications")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("DarkWebAndOnlyFans")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.datingsitesandcomplicationsscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.datingsitesandcomplicationsscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.darkwebandonlyfansscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.darkwebandonlyfansscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("ExamStress")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("DatingSitesAndComplications")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.examstressscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.examstressscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.datingsitesandcomplicationsscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.datingsitesandcomplicationsscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("FriendshipAndRelationship")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("ExamStress")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.friendshipandrelationshipscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.friendshipandrelationshipscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.examstressscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.examstressscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("GamblingAndGamingAddiction")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("FriendshipAndRelationship")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.gamblingandgamingaddictionscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.gamblingandgamingaddictionscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.friendshipandrelationshipscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.friendshipandrelationshipscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("InternetAddiction")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("GamblingAndGamingAddiction")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.internetaddictionscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.internetaddictionscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.gamblingandgamingaddictionscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.gamblingandgamingaddictionscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("ParentingFromChildView")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("InternetAddiction")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.parentingfromchildviewscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.parentingfromchildviewscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.internetaddictionscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.internetaddictionscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("ParentingFromParentsView")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("ParentingFromChildView")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.parentingfromparentsviewscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.parentingfromparentsviewscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.parentingfromchildviewscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.parentingfromchildviewscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("PornAddiction")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("ParentingFromParentsView")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.pornaddictionscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.pornaddictionscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.parentingfromparentsviewscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.parentingfromparentsviewscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("SelfCareHygiene")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("PornAddiction")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.selfcarehygienescreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.selfcarehygienescreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.pornaddictionscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.pornaddictionscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("SelfEsteemAndSelfIdentity")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("SelfCareHygiene")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.selfesteemandselfidentityscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.selfesteemandselfidentityscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.selfcarehygienescreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.selfcarehygienescreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("SocialMediaIssues")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("SelfEsteemAndSelfIdentity")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.socialmediaissuesscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.socialmediaissuesscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.selfesteemandselfidentityscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.selfesteemandselfidentityscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("SubstanceAddiction")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("SocialMediaIssues")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.substanceaddictionscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.substanceaddictionscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.socialmediaissuesscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.socialmediaissuesscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("TraumaLossAndDreams")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("SubstanceAddiction")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.traumalossanddreamsscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.traumalossanddreamsscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.substanceaddictionscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.substanceaddictionscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("UnrealisticBeautyStandards")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("TraumaLossAndDreams")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.description")}
-              </Text>
-            </Pressable>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.traumalossanddreamsscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.traumalossanddreamsscreen.description")}
+                </Text>
+              </Pressable>
 
-            <Pressable
-              style={styles.categoryCard}
-              onPress={() => handleCategoryPress("AbusiveLanguageBackAnswering")}
-            >
-              <View style={styles.taskHeader}>
-                <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("UnrealisticBeautyStandards")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
-              </View>
-              <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.abusivelanguagebackansweringscreen.title")}
-              </Text>
-              <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.abusivelanguagebackansweringscreen.description")}
-              </Text>
-            </Pressable>
-</View>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.description")}
+                </Text>
+              </Pressable>
+
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => handleCategoryPress("AbusiveLanguageBackAnswering")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                </View>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.abusivelanguagebackansweringscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.abusivelanguagebackansweringscreen.description")}
+                </Text>
+              </Pressable>
+            </View>
           </View>
         </View>
       </Modal>
@@ -1238,6 +1328,12 @@ const styles = StyleSheet.create({
   },
   taskIconContainer: {
     marginRight: 8,
+    width: 40,
+    height: 40,
+    backgroundColor: '#ffffff',
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   taskNumber: {
     fontSize: 24,
@@ -1279,7 +1375,7 @@ const styles = StyleSheet.create({
   journalIconContainer: {
     width: 48,
     height: 48,
-    backgroundColor: "#f3f4f6",
+    backgroundColor: "#ffffff",
     borderRadius: 8,
     alignItems: "center",
     justifyContent: "center",
@@ -1361,7 +1457,7 @@ const styles = StyleSheet.create({
   eqIconContainer: {
     width: 56,
     height: 56,
-    backgroundColor: "#f3f4f6",
+    backgroundColor: "#ffffff",
     borderRadius: 12,
     alignItems: "center",
     justifyContent: "center",

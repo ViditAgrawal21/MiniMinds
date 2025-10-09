@@ -1,403 +1,736 @@
 {
-  "socialMediaIssuesScreen": {
-    "headerTitle": "Social Media Issues",
-    "mainTitle": "Social Media Issue Recovery",
-    "description": "Overcome social media issues with evidence-based strategies and professional support for a healthier digital lifestyle.",
-    "commonSymptoms": "Common Symptoms",
-    "symptoms": {
-      "compulsive": "Compulsive checking of social media apps",
-      "relationships": "Negative impact on relationships",
-      "guilt": "Feelings of guilt or anxiety",
-      "isolation": "Social isolation",
-      "productivity": "Reduced productivity"
+  "condition": "Social Media Issues",
+  "issueType": "General Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 4,
+          "title": {
+            "english": "Set Time Limits",
+            "hindi": "समय सीमा निर्धारित करें",
+            "marathi": "वेळेची मर्यादा सेट करा"
+          },
+          "description": {
+            "english": "How it works: Prevents overuse by restricting hours online. Example: Use app timers to limit scrolling to 1 hour daily.",
+            "hindi": "यह कैसे काम करता है: ऑनलाइन समय को सीमित करके अति प्रयोग को रोकता है। उदाहरण: स्क्रॉलिंग को प्रतिदिन 1 घंटे तक सीमित करने के लिए ऐप टाइमर का उपयोग करें।",
+            "marathi": "हे कसे कार्य करते: ऑनलाइन तास मर्यादित करून अतिवापर रोखते. उदाहरण: दररोज स्क्रोलिंग 1 तासापर्यंत मर्यादित करण्यासाठी अ‍ॅप टाइमर वापरा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Turn Off Notifications",
+            "hindi": "सूचनाएं बंद करो",
+            "marathi": "सूचना बंद करा"
+          },
+          "description": {
+            "english": "How it works: Reduces constant distractions. Example: Disable social media alerts to stay focused on studies.",
+            "hindi": "यह कैसे काम करता है: लगातार ध्यान भटकाने वाली चीज़ों को कम करता है। उदाहरण: पढ़ाई पर ध्यान केंद्रित रखने के लिए सोशल मीडिया अलर्ट बंद कर दें।",
+            "marathi": "हे कसे कार्य करते: सततचे लक्ष विचलित करणे कमी करते. उदाहरण: अभ्यासावर लक्ष केंद्रित करण्यासाठी सोशल मीडिया अलर्ट बंद करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Follow Positive Content",
+            "hindi": "सकारात्मक सामग्री का अनुसरण करें",
+            "marathi": "सकारात्मक आशयाचे अनुसरण करा"
+          },
+          "description": {
+            "english": "How it works: Improves mood and mindset. Example: Subscribe to motivational or educational pages instead of negative ones.",
+            "hindi": "यह कैसे काम करता है: मूड और मानसिकता में सुधार करता है। उदाहरण: नकारात्मक पेजों के बजाय प्रेरक या शिक्षाप्रद पेजों की सदस्यता लें।",
+            "marathi": "ते कसे कार्य करते: मनःस्थिती आणि मानसिकता सुधारते. उदाहरण: नकारात्मक पृष्ठांऐवजी प्रेरक किंवा शैक्षणिक पृष्ठांची सदस्यता घ्या."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Schedule Offline Time",
+            "hindi": "ऑफ़लाइन समय निर्धारित करें",
+            "marathi": "ऑफलाइन वेळ शेड्यूल करा"
+          },
+          "description": {
+            "english": "How it works: Builds balance in lifestyle. Example: Keep phones away during family meals or before bedtime.",
+            "hindi": "यह कैसे काम करता है: जीवनशैली में संतुलन बनाता है। उदाहरण: परिवार के साथ खाना खाते समय या सोने से पहले फ़ोन को दूर रखें।",
+            "marathi": "हे कसे कार्य करते: जीवनशैलीत संतुलन निर्माण करते. उदाहरणार्थ: कुटुंबाच्या जेवणादरम्यान किंवा झोपण्यापूर्वी फोन दूर ठेवा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Track Usage",
+            "hindi": "उपयोग ट्रैक करें",
+            "marathi": "वापराचा मागोवा घ्या"
+          },
+          "description": {
+            "english": "How it works: Increases awareness of time spent online. Example: Use apps like Digital Wellbeing to monitor daily usage.",
+            "hindi": "यह कैसे काम करता है: ऑनलाइन बिताए गए समय के बारे में जागरूकता बढ़ाता है। उदाहरण: दैनिक उपयोग पर नज़र रखने के लिए डिजिटल वेलबीइंग जैसे ऐप्स का उपयोग करें।",
+            "marathi": "ते कसे कार्य करते: ऑनलाइन घालवलेल्या वेळेची जाणीव वाढवते. उदाहरण: दैनंदिन वापराचे निरीक्षण करण्यासाठी डिजिटल वेलबीइंग सारख्या अॅप्सचा वापर करा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Engage in Hobbies",
+            "hindi": "शौक में संलग्न रहें",
+            "marathi": "छंद जोपासा"
+          },
+          "description": {
+            "english": "How it works: Creates healthy alternatives to scrolling. Example: Spend time painting, gardening, or reading instead of browsing feeds.",
+            "hindi": "यह कैसे काम करता है: स्क्रॉल करने के बजाय स्वस्थ विकल्प प्रदान करता है। उदाहरण के लिए: फ़ीड ब्राउज़ करने के बजाय पेंटिंग, बागवानी या पढ़ने में समय बिताएँ।",
+            "marathi": "हे कसे कार्य करते: स्क्रोलिंगसाठी निरोगी पर्याय तयार करते. उदाहरण: फीड ब्राउझ करण्याऐवजी रंगकाम, बागकाम किंवा वाचन करण्यात वेळ घालवा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Avoid Comparisons",
+            "hindi": "तुलना से बचें",
+            "marathi": "तुलना टाळा"
+          },
+          "description": {
+            "english": "How it works: Reduces stress from unrealistic online portrayals. Example: Remind yourself that social media often shows highlights, not reality.",
+            "hindi": "यह कैसे काम करता है: अवास्तविक ऑनलाइन चित्रण से होने वाले तनाव को कम करता है। उदाहरण: खुद को याद दिलाएँ कि सोशल मीडिया अक्सर वास्तविकता नहीं, बल्कि मुख्य बातें दिखाता है।",
+            "marathi": "हे कसे कार्य करते: अवास्तव ऑनलाइन चित्रणातून येणारा ताण कमी करते. उदाहरण: स्वतःला आठवण करून द्या की सोशल मीडिया अनेकदा वास्तव दाखवत नाही तर ठळक मुद्दे दाखवतो."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Practice Digital Detox",
+            "hindi": "डिजिटल डिटॉक्स का अभ्यास करें",
+            "marathi": "डिजिटल डिटॉक्सचा सराव करा"
+          },
+          "description": {
+            "english": "How it works: Refreshes mind by taking breaks from apps. Example: Stay off social media every Sunday.",
+            "hindi": "यह कैसे काम करता है: ऐप्स से ब्रेक लेकर दिमाग को तरोताज़ा करता है। उदाहरण: हर रविवार सोशल मीडिया से दूर रहें।",
+            "marathi": "ते कसे कार्य करते: अ‍ॅप्समधून ब्रेक घेऊन मनाला ताजेतवाने करते. उदाहरण: दर रविवारी सोशल मीडियापासून दूर राहा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Promote Face-to-Face Interactions",
+            "hindi": "आमने-सामने बातचीत को बढ़ावा दें",
+            "marathi": "समोरासमोर संवादांना प्रोत्साहन द्या"
+          },
+          "description": {
+            "english": "How it works: Strengthens real-life relationships. Example: Meet a friend for coffee instead of chatting online.",
+            "hindi": "यह कैसे काम करता है: वास्तविक जीवन के रिश्तों को मज़बूत बनाता है। उदाहरण: ऑनलाइन चैट करने के बजाय किसी दोस्त से कॉफ़ी पर मिलें।",
+            "marathi": "ते कसे कार्य करते: वास्तविक जीवनातील नातेसंबंध मजबूत करते. उदाहरण: ऑनलाइन गप्पा मारण्याऐवजी मित्राला कॉफीसाठी भेटा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Seek Support if Needed",
+            "hindi": "यदि आवश्यक हो तो सहायता लें",
+            "marathi": "गरज पडल्यास आधार घ्या"
+          },
+          "description": {
+            "english": "How it works: Guidance from friends, family, or professionals helps manage overuse. Example: Discuss social media stress with a counselor.",
+            "hindi": "यह कैसे काम करता है: दोस्तों, परिवार या पेशेवरों से मिलने वाला मार्गदर्शन, सोशल मीडिया के अत्यधिक उपयोग को नियंत्रित करने में मदद करता है। उदाहरण: किसी काउंसलर से सोशल मीडिया के तनाव पर चर्चा करें।",
+            "marathi": "हे कसे कार्य करते: मित्र, कुटुंब किंवा व्यावसायिकांकडून मार्गदर्शन अतिवापराचे व्यवस्थापन करण्यास मदत करते. उदाहरण: समुपदेशकाशी सोशल मीडियाच्या ताणाबद्दल चर्चा करा."
+          }
+        }
+      ]
     },
-    "recoveryStrategies": "Recovery Strategies",
-    "strategies": {
-      "commonSuggestions": {
-        "title": "Common Suggestions",
-        "description": "Tips for managing social media use and improving well-being."
-      },
-      "yoga": {
-        "title": "Yoga",
-        "description": "Yoga practices to reduce stress and improve focus.",
-        "yogaSuggestionsList": [
-          {
-            "title": {
-              "en": "Breathing Exercises (Pranayama)",
-              "hi": "श्वास व्यायाम (प्राणायाम)",
-              "mr": "श्वसन व्यायाम (प्राणायाम)"
-            },
-            "description": {
-              "en": "Practice deep breathing to reduce stress and improve focus before and after social media use.",
-              "hi": "सोशल मीडिया उपयोग से पहले और बाद में तनाव कम करने और ध्यान केंद्रित करने के लिए गहरी सांस लें।",
-              "mr": "सोशल मीडिया वापरापूर्वी आणि नंतर तणाव कमी करण्यासाठी आणि लक्ष केंद्रित करण्यासाठी खोल श्वास घ्या."
-            }
+    "yoga": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 7,
+          "title": {
+            "english": "Alternate Nostril Breathing (Nadi Shodhana)",
+            "hindi": "वैकल्पिक नासिका श्वास (नाड़ी शोधन)",
+            "marathi": "Alternate Nostril Breathing (Nadi Shodhana)"
           },
-          {
-            "title": {
-              "en": "Child's Pose (Balasana)",
-              "hi": "बालासन",
-              "mr": "बालासन"
-            },
-            "description": {
-              "en": "Use Child's Pose to relax your mind and body after long periods of screen time.",
-              "hi": "लंबे समय तक स्क्रीन देखने के बाद मन और शरीर को आराम देने के लिए बालासन करें।",
-              "mr": "लांब वेळ स्क्रीन पाहिल्यानंतर मन आणि शरीर शांत करण्यासाठी बालासन करा."
-            }
-          },
-          {
-            "title": {
-              "en": "Mountain Pose (Tadasana)",
-              "hi": "ताड़ासन",
-              "mr": "ताडासन"
-            },
-            "description": {
-              "en": "Improve posture and awareness during device use with Mountain Pose.",
-              "hi": "डिवाइस उपयोग के दौरान ताड़ासन से मुद्रा और जागरूकता सुधारें।",
-              "mr": "डिव्हाइस वापरताना ताडासनने स्थिती आणि जागरूकता सुधारावी."
-            }
+          "description": {
+            "english": "Step: Inhale through left nostril, exhale through right, alternate sides. How it helps: Balances emotions and reduces urge for constant scrolling. Example: 5 minutes before bedtime.",
+            "hindi": "चरण: बाएँ नथुने से साँस लें, दाएँ नथुने से साँस छोड़ें, दोनों तरफ बारी-बारी से साँस छोड़ें। यह कैसे मदद करता है: भावनाओं को संतुलित करता है और लगातार स्क्रॉल करने की इच्छा को कम करता है। उदाहरण: सोने से 5 मिनट पहले।",
+            "marathi": "पायरी: डाव्या नाकपुडीने श्वास घ्या, उजव्या, आलटून पालटून श्वास सोडा. हे कसे मदत करते: भावना संतुलित करते आणि सतत स्क्रोल करण्याची इच्छा कमी करते. उदाहरण: झोपण्यापूर्वी ५ मिनिटे."
           }
-        ]
-      },
-      "relaxation": {
-        "title": "Relaxation",
-        "description": "Relaxation techniques for better mental health.",
-        "relaxationSuggestionsList": [
-          {
-            "title": {
-              "en": "Set Your Intention",
-              "hi": "अपना इरादा निर्धारित करें",
-              "mr": "तुमचा हेतू ठरवा"
-            },
-            "description": {
-              "en": "Begin each session by setting an intention to create a healthy balance with technology. For example, \"I will be present and mindful during this practice, letting go of digital distractions.\"",
-              "hi": "प्रत्येक सत्र की शुरुआत में तकनीक के साथ एक स्वस्थ संतुलन बनाने का इरादा निर्धारित करें। उदाहरण के लिए, \"मैं इस अभ्यास के दौरान उपस्थित और सचेत रहूंगा, डिजिटल विकर्षणों को छोड़ूंगा।\"",
-              "mr": "प्रत्येक सत्राच्या सुरुवातीला तंत्रज्ञानाशी निरोगी संतुलन निर्माण करण्याचा हेतू ठरवा. उदाहरणार्थ, \"मी या सरावादरम्यान उपस्थित आणि सजग राहीन, डिजिटल विकर्षणे सोडून देईन.\""
-            },
-            "xp": 5
+        },
+        {
+          "id": 2,
+          "xp": 6,
+          "title": {
+            "english": "Tree Pose (Vrikshasana)",
+            "hindi": "वृक्षासन",
+            "marathi": "Tree Pose (Vrikshasana)"
           },
-          {
-            "title": {
-              "en": "Breathing Exercise (Pranayama)",
-              "hi": "श्वास व्यायाम (प्राणायाम)",
-              "mr": "श्वसन व्यायाम (प्राणायाम)"
-            },
-            "description": {
-              "en": "Deep Belly Breathing: Sit comfortably or lie on your back. Inhale deeply through your nose, letting your belly rise. Exhale slowly through your mouth. This helps calm the nervous system and reduce the urge for constant digital stimulation. 4-7-8 Breathing: Inhale for 4 counts, hold for 7 counts, and exhale for 8 counts. This technique helps reduce anxiety often associated with social media use.",
-              "hi": "गहरी पेट की सांस: आराम से बैठें या अपनी पीठ के बल लेटें। अपनी नाक से गहरी सांस लें, अपने पेट को उठने दें। धीरे-धीरे अपने मुंह से सांस छोड़ें। यह तंत्रिका तंत्र को शांत करने और निरंतर डिजिटल उत्तेजना की इच्छा को कम करने में मदद करता है। 4-7-8 सांस: 4 गिनती के लिए सांस लें, 7 गिनती के लिए रोकें, और 8 गिनती के लिए सांस छोड़ें।",
-              "mr": "खोल पोटाचा श्वास: आरामात बसा किंवा पाठीवर झोपा. नाकातून खोल श्वास घ्या, पोट वर येऊ द्या. तोंडातून हळू हळू श्वास सोडा. हे मज्जासंस्था शांत करण्यास आणि सततच्या डिजिटल उत्तेजनेची इच्छा कमी करण्यास मदत करते. 4-7-8 श्वास: 4 मोजणीसाठी श्वास घ्या, 7 मोजणीसाठी धरा आणि 8 मोजणीसाठी श्वास सोडा."
-            },
-            "xp": 5
-          },
-          {
-            "title": {
-              "en": "Grounding Poses",
-              "hi": "ग्राउंडिंग पोज़",
-              "mr": "ग्राउंडिंग आसने"
-            },
-            "description": {
-              "en": "Mountain Pose (Tadasana): Stand tall with feet hip-width apart, feeling grounded and present. Focus on the physical sensations of standing rather than mental distractions. Tree Pose (Vrikshasana): Balance on one foot to cultivate focus and presence, training your mind to concentrate on the here and now.",
-              "hi": "पर्वत आसन (ताड़ासन): कूल्हे की चौड़ाई के बराबर पैरों के साथ लंबे खड़े हों, जमीन से जुड़ाव और उपस्थिति महसूस करें। मानसिक विकर्षणों के बजाय खड़े होने की शारीरिक संवेदनाओं पर ध्यान दें। वृक्ष आसन (वृक्षासन): फोकस और उपस्थिति विकसित करने के लिए एक पैर पर संतुलन बनाएं।",
-              "mr": "पर्वत आसन (ताडासन): नितंबाच्या रुंदीइतके पाय घेऊन उंच उभे राहा, स्थिर आणि उपस्थित वाटत. मानसिक विकर्षणांऐवजी उभे राहण्याच्या शारीरिक संवेदनांवर लक्ष केंद्रित करा. वृक्ष आसन (वृक्षासन): लक्ष आणि उपस्थिती वाढवण्यासाठी एका पायावर संतुलन साधा."
-            },
-            "xp": 5
-          },
-          {
-            "title": {
-              "en": "Eye and Mind Rest Poses",
-              "hi": "आंख और मन आराम आसन",
-              "mr": "डोळे आणि मन विश्रांती आसने"
-            },
-            "description": {
-              "en": "Child's Pose (Balasana): Rest your forehead on the mat, giving your eyes a break from screens and your mind a chance to turn inward. Palming: Sit comfortably, rub your palms together to create warmth, and gently place them over your closed eyes for 30 seconds to 1 minute.",
-              "hi": "बालासन: अपना माथा चटाई पर टिकाएं, अपनी आंखों को स्क्रीन से ब्रेक दें और अपने मन को अंतर्मुखी होने का मौका दें। हथेली: आराम से बैठें, गर्मी पैदा करने के लिए अपनी हथेलियों को रगड़ें, और धीरे से उन्हें 30 सेकंड से 1 मिनट तक अपनी बंद आंखों पर रखें।",
-              "mr": "बालासन: तुमचे कपाळ चटईवर टेकवा, तुमच्या डोळ्यांना स्क्रीनपासून विश्रांती द्या आणि तुमच्या मनाला आतून वळण्याची संधी द्या. तळहात: आरामात बसा, उष्णता निर्माण करण्यासाठी तुमचे तळहात घासा आणि 30 सेकंदांपासून 1 मिनिटापर्यंत तुमच्या बंद डोळ्यांवर हळूवारपणे ठेवा."
-            },
-            "xp": 5
-          },
-          {
-            "title": {
-              "en": "Mindfulness Meditation",
-              "hi": "माइंडफुलनेस मेडिटेशन",
-              "mr": "सजगता ध्यान"
-            },
-            "description": {
-              "en": "Present Moment Awareness: Sit comfortably and focus your attention on your breath. Notice the sensations of breathing and gently bring your mind back when it wanders to social media or online interactions. Digital Detox Meditation: Set aside 15-20 minutes daily for meditation without any devices nearby.",
-              "hi": "वर्तमान क्षण जागरूकता: आराम से बैठें और अपना ध्यान अपनी सांस पर केंद्रित करें। सांस लेने की संवेदनाओं को नोटिस करें और जब आपका मन सोशल मीडिया या ऑनलाइन बातचीत की ओर भटके तो धीरे से इसे वापस लाएं। डिजिटल डिटॉक्स मध्यध्यान: प्रतिदिन 15-20 मिनट बिना किसी डिवाइस के ध्यान के लिए अलग रखें।",
-              "mr": "सध्याच्या क्षणाची जागरूकता: आरामात बसा आणि तुमचे लक्ष तुमच्या श्वासावर केंद्रित करा. श्वास घेण्याच्या संवेदना लक्षात घ्या आणि जेव्हा तुमचे मन सोशल मीडिया किंवा ऑनलाइन संवादाकडे भटकते तेव्हा हळूवारपणे ते परत आणा. डिजिटल डिटॉक्स ध्यान: दररोज 15-20 मिनिटे कोणत्याही उपकरणाशिवाय ध्यानासाठी अलग ठेवा."
-            },
-            "xp": 5
+          "description": {
+            "english": "Step: Stand on one leg, place other foot on thigh, palms joined overhead. How it helps: Improves focus and stability, reducing distraction from social media. Example: Hold for 30 seconds each side.",
+            "hindi": "चरण: एक पैर पर खड़े हो जाएँ, दूसरे पैर को जांघ पर रखें, हथेलियाँ ऊपर की ओर जुड़ी हुई हों। यह कैसे मदद करता है: ध्यान और स्थिरता में सुधार करता है, सोशल मीडिया से ध्यान भटकने से बचाता है। उदाहरण: दोनों तरफ 30 सेकंड तक रुकें।",
+            "marathi": "पायरी: एका पायावर उभे राहा, दुसरा पाय मांडीवर ठेवा, तळवे वर जोडलेले. ते कसे मदत करते: लक्ष केंद्रित करणे आणि स्थिरता सुधारते, सोशल मीडियावरून लक्ष विचलित होणे कमी करते. उदाहरण: प्रत्येक बाजूला ३० सेकंद धरा."
           }
-        ]
-      },
-      "cbt": {
-        "title": "CBT",
-        "description": "Cognitive Behavioral Therapy strategies for social media issues.",
-        "cbtSuggestionsList": [
-          {
-            "title": {
-              "en": "Identify Negative Thought Patterns",
-              "hi": "नकारात्मक विचार पैटर्न की पहचान करें",
-              "mr": "नकारात्मक विचार पद्धती ओळखा"
-            },
-            "description": {
-              "en": "It allows individuals to recognize and understand the unrealistic or harmful thoughts that contribute to their internet and social media use. Keep a thought diary to track the situations that lead to excessive use and the thoughts associated with them. Example: If you find yourself scrolling late at night, note thoughts like \"I need to stay updated\" and challenge their validity.",
-              "hi": "यह व्यक्तियों को उन अवास्तविक या हानिकारक विचारों को पहचानने और समझने की अनुमति देता है जो उनके इंटरनेट और सोशल मीडिया उपयोग में योगदान करते हैं। अत्यधिक उपयोग की स्थितियों और उनसे जुड़े विचारों को ट्रैक करने के लिए एक विचार डायरी रखें। उदाहरण: यदि आप रात में देर तक स्क्रॉल करते हुए पाते हैं, तो \"मुझे अपडेट रहना चाहिए\" जैसे विचारों को नोट करें।",
-              "mr": "हे व्यक्तींना त्यांच्या इंटरनेट आणि सोशल मीडिया वापरात योगदान देणारे अवास्तविक किंवा हानिकारक विचार ओळखण्यास आणि समजून घेण्यास अनुमती देते. अत्यधिक वापराकडे नेणाऱ्या परिस्थिती आणि त्यांच्याशी संबंधित विचारांचा मागोवा घेण्यासाठी विचार डायरी ठेवा. उदाहरण: जर तुम्ही रात्री उशिरापर्यंत स्क्रॉल करताना आढळता, तर \"मला अपडेट राहणे आवश्यक आहे\" अशा विचारांची नोंद घ्या."
-            },
-            "xp": 5
+        },
+        {
+          "id": 3,
+          "xp": 9,
+          "title": {
+            "english": "Mindfulness Meditation",
+            "hindi": "माइंडफुलनेस मेडिटेशन",
+            "marathi": "माइंडफुलनेस मेडिटेशन"
           },
-          {
-            "title": {
-              "en": "Challenge Cognitive Distortions",
-              "hi": "संज्ञानात्मक विकृतियों को चुनौती दें",
-              "mr": "संज्ञानात्मक विकृतींना आव्हान द्या"
-            },
-            "description": {
-              "en": "It encourages the evaluation and restructuring of distorted thoughts, reducing anxiety or compulsive behavior. After identifying negative thoughts, question their truth and consider alternative interpretations. Example: Counter the belief \"I'm missing out\" with \"I can catch up later without missing important life moments.\"",
-              "hi": "यह विकृत विचारों के मूल्यांकन और पुनर्गठन को प्रोत्साहित करता है, चिंता या बाध्यकारी व्यवहार को कम करता है। नकारात्मक विचारों की पहचान के बाद, उनकी सत्यता पर सवाल उठाएं और वैकल्पिक व्याख्याओं पर विचार करें। उदाहरण: \"मैं चूक रहा हूं\" की मान्यता का मुकाबला \"मैं बाद में पकड़ सकता हूं\" से करें।",
-              "mr": "हे विकृत विचारांचे मूल्यमापन आणि पुनर्रचना प्रोत्साहित करते, चिंता किंवा सक्तीचे वर्तन कमी करते. नकारात्मक विचारांची ओळख केल्यानंतर, त्यांच्या सत्यतेवर प्रश्न विचारा आणि पर्यायी स्पष्टीकरणांचा विचार करा. उदाहरण: \"मी चुकवत आहे\" या समजुतीचा प्रतिकार \"मी नंतर पकडू शकतो\" असे करा."
-            },
-            "xp": 7
-          },
-          {
-            "title": {
-              "en": "Develop Coping Strategies",
-              "hi": "मुकाबला रणनीति विकसित करें",
-              "mr": "सामना करण्याच्या रणनीती विकसित करा"
-            },
-            "description": {
-              "en": "Equips individuals with tools to manage urges effectively and reduces dependency on social media for emotional regulation. List healthy activities (e.g., reading, exercise) to replace screen time. Example: When feeling the urge to check social media, go for a 10-minute walk instead.",
-              "hi": "व्यक्तियों को प्रभावी रूप से इच्छाओं को प्रबंधित करने के लिए उपकरणों से लैस करता है और भावनात्मक नियंत्रण के लिए सोशल मीडिया पर निर्भरता कम करता है। स्क्रीन समय को बदलने के लिए स्वस्थ गतिविधियों (जैसे पढ़ना, व्यायाम) की सूची बनाएं। उदाहरण: सोशल मीडिया देखने की इच्छा महसूस करने पर, इसके बजाय 10 मिनट की सैर करें।",
-              "mr": "व्यक्तींना प्रभावीपणे इच्छा व्यवस्थापित करण्यासाठी साधनांनी सुसज्ज करते आणि भावनिक नियंत्रणासाठी सोशल मीडियावरील अवलंबित्व कमी करते. स्क्रीन वेळ बदलण्यासाठी निरोगी क्रियाकलाप (जसे वाचन, व्यायाम) यादी करा. उदाहरण: सोशल मीडिया तपासण्याची इच्छा वाटल्यास, त्याऐवजी 10 मिनिटांची चालणे करा."
-            },
-            "xp": 3
-          },
-          {
-            "title": {
-              "en": "Practice Mindfulness",
-              "hi": "माइंडफुलनेस का अभ्यास करें",
-              "mr": "सजगतेचा सराव करा"
-            },
-            "description": {
-              "en": "Enhances awareness of present activities and reduces automatic habits of checking devices. Practice mindfulness exercises focusing on being present without relying on gadgets. Example: Allocate specific times to be device-free and focus on deep breathing or body scans.",
-              "hi": "वर्तमान गतिविधियों की जागरूकता बढ़ाता है और डिवाइस चेक करने की स्वचालित आदतों को कम करता है। गैजेट्स पर निर्भर हुए बिना उपस्थित रहने पर ध्यान केंद्रित करने वाले माइंडफुलनेस अभ्यास करें। उदाहरण: डिवाइस-फ्री रहने के लिए विशिष्ट समय आवंटित करें और गहरी सांस या बॉडी स्कैन पर ध्यान दें।",
-              "mr": "सध्याच्या क्रियाकलापांची जागरूकता वाढवते आणि उपकरणे तपासण्याच्या स्वयंचलित सवयी कमी करते. गॅजेट्सवर अवलंबून न राहता उपस्थित राहण्यावर लक्ष केंद्रित करणारे सजगता अभ्यास करा. उदाहरण: उपकरण-मुक्त राहण्यासाठी विशिष्ट वेळा वाटप करा आणि खोल श्वास किंवा शरीर स्कॅनवर लक्ष केंद्रित करा."
-            },
-            "xp": 5
-          },
-          {
-            "title": {
-              "en": "Set Boundaries with Technology",
-              "hi": "तकनीक के साथ सीमाएं निर्धारित करें",
-              "mr": "तंत्रज्ञानासह सीमा निर्धारित करा"
-            },
-            "description": {
-              "en": "Establishes a healthy relationship with technology and prevents it from interfering with daily functions. Define clear rules for when and how long you engage with devices. Example: Turn off notifications after 8 PM to enhance relaxation time before sleep.",
-              "hi": "तकनीक के साथ एक स्वस्थ संबंध स्थापित करता है और इसे दैनिक कार्यों में हस्तक्षेप करने से रोकता है। स्पष्ट नियम निर्धारित करें कि आप कब और कितनी देर तक डिवाइस के साथ जुड़ते हैं। उदाहरण: नींद से पहले आराम के समय को बढ़ाने के लिए रात 8 बजे के बाद सूचनाएं बंद कर दें।",
-              "mr": "तंत्रज्ञानाशी निरोगी संबंध स्थापित करते आणि दैनंदिन कार्यांमध्ये हस्तक्षेप करण्यापासून प्रतिबंधित करते. तुम्ही केव्हा आणि किती वेळ उपकरणांशी संलग्न होता याचे स्पष्ट नियम निश्चित करा. उदाहरण: झोपण्यापूर्वी विश्रांतीचा वेळ वाढवण्यासाठी रात्री 8 नंतर सूचना बंद करा."
-            },
-            "xp": 5
+          "description": {
+            "english": "Step: Sit quietly, observe breath and thoughts without judgment. How it helps: Builds awareness and reduces compulsive app-checking. Example: 10 minutes daily in the morning.",
+            "hindi": "चरण: चुपचाप बैठें, बिना किसी निर्णय के अपनी साँसों और विचारों का अवलोकन करें। यह कैसे मदद करता है: जागरूकता बढ़ाता है और बार-बार ऐप चेक करने की आदत को कम करता है। उदाहरण: रोज़ाना सुबह 10 मिनट।",
+            "marathi": "पायरी: शांत बसा, श्वास आणि विचारांचे निरीक्षण करा, कोणताही निर्णय न घेता. ते कसे मदत करते: जागरूकता निर्माण करते आणि सक्तीचे अॅप-चेकिंग कमी करते. उदाहरण: दररोज सकाळी १० मिनिटे."
           }
-        ]
-      },
-      "rebt": {
-        "title": "REBT",
-        "description": "Rational Emotive Behavior Therapy strategies for healthy habits.",
-        "rebtSuggestionsList": [
-          {
-            "title": {
-              "en": "Identify Irrational Beliefs",
-              "hi": "अतर्कसंगत मान्यताओं की पहचान करें",
-              "mr": "अतर्कसंगत समजुती ओळखा"
-            },
-            "description": {
-              "en": "By identifying irrational beliefs, you can start questioning and challenging thoughts that lead to emotional distress. Reflect on your thoughts when using social media. Identify beliefs that are unrealistic or overly negative. Example: \"I must be liked by everyone online, or I'm worthless.\"",
-              "hi": "अतर्कसंगत मान्यताओं की पहचान करके, आप उन विचारों पर सवाल उठाना और चुनौती देना शुरू कर सकते हैं जो भावनात्मक संकट का कारण बनते हैं। सोशल मीडिया का उपयोग करते समय अपने विचारों पर विचार करें। अवास्तविक या अत्यधिक नकारात्मक मान्यताओं की पहचान करें। उदाहरण: \"मुझे ऑनलाइन सभी लोगों द्वारा पसंद किया जाना चाहिए, अन्यथा मैं बेकार हूं।\"",
-              "mr": "अतर्कसंगत समजुती ओळखून, तुम्ही भावनिक त्रासाकडे नेणाऱ्या विचारांवर प्रश्न विचारणे आणि आव्हान देणे सुरू करू शकता. सोशल मीडिया वापरताना तुमच्या विचारांवर विचार करा. अवास्तविक किंवा अति नकारात्मक समजुती ओळखा. उदाहरण: \"मला ऑनलाइन प्रत्येकाने आवडले पाहिजे, नाहीतर मी निरुपयोगी आहे.\""
-            },
-            "xp": 5
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Child‚Äôs Pose (Balasana)",
+            "hindi": "बाल मुद्रा (बालासन)",
+            "marathi": "बाळाची आसन (बालासन)"
           },
-          {
-            "title": {
-              "en": "Challenge the Need for Approval",
-              "hi": "अनुमोदन की आवश्यकता को चुनौती दें",
-              "mr": "मान्यतेच्या गरजेला आव्हान द्या"
-            },
-            "description": {
-              "en": "Understanding that not everyone's approval is necessary reduces anxiety and dependence on external validation. Start reframing thoughts. Ask yourself if not getting likes truly reflects your worth. Example: \"While getting likes is nice, my self-worth isn't determined by others' opinions.\"",
-              "hi": "यह समझना कि हर किसी की अनुमति आवश्यक नहीं है, चिंता और बाहरी सत्यापन पर निर्भरता को कम करता है। विचारों को फिर से तैयार करना शुरू करें। खुद से पूछें कि क्या लाइक न मिलना वास्तव में आपकी योग्यता को दर्शाता है। उदाहरण: \"जबकि लाइक मिलना अच्छा है, मेरी आत्म-योग्यता दूसरों की राय से निर्धारित नहीं होती।\"",
-              "mr": "प्रत्येकाची मान्यता आवश्यक नाही हे समजून घेतल्याने चिंता आणि बाह्य प्रमाणीकरणावरील अवलंबित्व कमी होते. विचारांची पुनर्रचना करणे सुरू करा. स्वतःला विचारा की लाइक न मिळणे खरोखर तुमची योग्यता दर्शवते का. उदाहरण: \"लाइक मिळणे छान आहे, पण माझी आत्म-योग्यता इतरांच्या मतानुसार ठरत नाही.\""
-            },
-            "xp": 5
-          },
-          {
-            "title": {
-              "en": "Practice Self-Acceptance",
-              "hi": "आत्म-स्वीकृति का अभ्यास करें",
-              "mr": "आत्म-स्वीकाराचा सराव करा"
-            },
-            "description": {
-              "en": "Accepting yourself unconditionally diminishes the impact of negative feedback or comparison. Regularly remind yourself of your inherent worth, regardless of social media feedback. Example: \"I am a valuable person regardless of how many likes my post gets.\"",
-              "hi": "बिना शर्त खुद को स्वीकार करना नकारात्मक फीडबैक या तुलना के प्रभाव को कम करता है। सोशल मीडिया फीडबैक की परवाह किए बिना नियमित रूप से अपनी अंतर्निहित योग्यता की याद दिलाएं। उदाहरण: \"मैं एक मूल्यवान व्यक्ति हूं, भले ही मेरी पोस्ट को कितने भी लाइक मिलें।\"",
-              "mr": "बिनशर्त स्वतःला स्वीकारणे नकारात्मक प्रतिक्रिया किंवा तुलनेचा प्रभाव कमी करते. सोशल मीडिया प्रतिक्रियेची पर्वा न करता नियमितपणे तुमच्या अंतर्निहित योग्यतेची आठवण करून द्या. उदाहरण: \"माझ्या पोस्टला कितीही लाइक मिळाले तरी मी एक मूल्यवान व्यक्ती आहे.\""
-            },
-            "xp": 3
-          },
-          {
-            "title": {
-              "en": "Dispute Catastrophic Thinking",
-              "hi": "आपत्तिजनक सोच का विरोध करें",
-              "mr": "आपत्तिजनक विचारसरणीचा विरोध करा"
-            },
-            "description": {
-              "en": "Reducing catastrophic thinking lowers anxiety and distress. When you notice catastrophic thoughts, question their likelihood and impact. Example: \"Not getting any comments today might feel disappointing but it doesn't mean my friends don't care.\"",
-              "hi": "आपत्तिजनक सोच को कम करना चिंता और संकट को कम करता है। जब आप आपत्तिजनक विचारों को नोटिस करें, तो उनकी संभावना और प्रभाव पर सवाल उठाएं। उदाहरण: \"आज कोई टिप्पणी न मिलना निराशाजनक लग सकता है लेकिन इसका मतलब यह नहीं है कि मेरे दोस्त परवाह नहीं करते।\"",
-              "mr": "आपत्तिजनक विचारसरणी कमी केल्याने चिंता आणि त्रास कमी होतो. जेव्हा तुम्ही आपत्तिजनक विचार लक्षात घेता, तेव्हा त्यांच्या शक्यता आणि प्रभावावर प्रश्न विचारा. उदाहरण: \"आज कोणत्याही टिप्पण्या न मिळणे निराशाजनक वाटू शकते पण याचा अर्थ असा नाही की माझे मित्र काळजी घेत नाहीत.\""
-            },
-            "xp": 3
-          },
-          {
-            "title": {
-              "en": "Focus on Real-life Interactions",
-              "hi": "वास्तविक जीवन की बातचीत पर ध्यान दें",
-              "mr": "वास्तविक जीवनातील संवादावर लक्ष केंद्रित करा"
-            },
-            "description": {
-              "en": "Real-life interactions provide meaningful connections and reduce dependency on virtual validation. Prioritize face-to-face interactions and activities that bring joy and fulfillment. Example: \"I'll spend more time with my family and friends in person, which brings real joy beyond social media.\"",
-              "hi": "वास्तविक जीवन की बातचीत अर्थपूर्ण कनेक्शन प्रदान करती है और आभासी सत्यापन पर निर्भरता कम करती है। आमने-सामने की बातचीत और उन गतिविधियों को प्राथमिकता दें जो खुशी और संतुष्टि लाती हैं। उदाहरण: \"मैं अपने परिवार और दोस्तों के साथ व्यक्तिगत रूप से अधिक समय बिताऊंगा, जो सोशल मीडिया से कहीं अधिक वास्तविक खुशी लाता है।\"",
-              "mr": "वास्तविक जीवनातील संवाद अर्थपूर्ण कनेक्शन प्रदान करतात आणि आभासी प्रमाणीकरणावरील अवलंबित्व कमी करतात. समोरासमोरच्या संवादांना आणि आनंद व पूर्णता आणणाऱ्या क्रियाकलापांना प्राधान्य द्या. उदाहरण: \"मी माझ्या कुटुंबीयांसह आणि मित्रांसोबत व्यक्तिशः जास्त वेळ घालवेन, जे सोशल मीडियापेक्षा खरा आनंद देते.\""
-            },
-            "xp": 5
+          "description": {
+            "english": "Step: Kneel, fold forward, arms stretched out. How it helps: Relieves mental fatigue caused by screen time. Example: Practice 2‚Äì3 minutes after long online use.",
+            "hindi": "चरण: घुटने टेकें, आगे की ओर झुकें, बाहें फैलाएँ। यह कैसे मदद करता है: स्क्रीन पर समय बिताने से होने वाली मानसिक थकान दूर करता है। उदाहरण: लंबे समय तक ऑनलाइन रहने के बाद 2-3 मिनट अभ्यास करें।",
+            "marathi": "पायरी: गुडघे टेकणे, पुढे वाकणे, हात पसरणे. ते कसे मदत करते: स्क्रीन वेळेमुळे येणारा मानसिक थकवा कमी करते. उदाहरण: ऑनलाइन दीर्घकाळ वापर केल्यानंतर २-३ मिनिटे सराव करा."
           }
-        ]
-      }
+        },
+        {
+          "id": 5,
+          "xp": 8,
+          "title": {
+            "english": "Sun Salutations (Surya Namaskar)",
+            "hindi": "Sun Salutations (Surya Namaskar)",
+            "marathi": "सूर्य नमस्कार (सूर्य नमस्कार)"
+          },
+          "description": {
+            "english": "Step: Perform 12-pose sequence with breath control. How it helps: Energizes body and mind, creating discipline to limit digital use. Example: 3‚Äì5 rounds in the morning.",
+            "hindi": "चरण: श्वास नियंत्रण के साथ 12-आसन अनुक्रम करें। यह कैसे मदद करता है: शरीर और मन को ऊर्जावान बनाता है, डिजिटल उपयोग को सीमित करने के लिए अनुशासन विकसित करता है। उदाहरण: सुबह 3-5 राउंड।",
+            "marathi": "पायरी: श्वास नियंत्रणासह १२-पोझ क्रम करा. ते कसे मदत करते: शरीर आणि मनाला ऊर्जा देते, डिजिटल वापर मर्यादित करण्यासाठी शिस्त निर्माण करते. उदाहरण: सकाळी ३-५ फेऱ्या."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 10,
+          "title": {
+            "english": "Body Scan Meditation",
+            "hindi": "बॉडी स्कैन ध्यान",
+            "marathi": "बॉडी स्कॅन मेडिटेशन"
+          },
+          "description": {
+            "english": "Step: Lie down, relax each body part from toes to head. How it helps: Increases self-awareness instead of mindless scrolling. Example: 10 minutes before sleep.",
+            "hindi": "चरण: लेट जाएँ, पैर की उंगलियों से लेकर सिर तक शरीर के हर हिस्से को आराम दें। यह कैसे मदद करता है: बिना सोचे-समझे स्क्रॉल करने के बजाय आत्म-जागरूकता बढ़ाता है। उदाहरण: सोने से 10 मिनट पहले।",
+            "marathi": "पायरी: झोपा, पायाच्या बोटांपासून डोक्यापर्यंत शरीराच्या प्रत्येक भागाला आराम द्या. ते कसे मदत करते: बेफिकीरपणे स्क्रोलिंग करण्याऐवजी आत्म-जागरूकता वाढवते. उदाहरण: झोपेच्या १० मिनिटे आधी."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 6,
+          "title": {
+            "english": "Seated Forward Bend (Paschimottanasana)",
+            "hindi": "बैठे हुए आगे की ओर झुकना (पश्चिमोत्तानासन)",
+            "marathi": "बसलेला पुढे वाकणे (पश्चिमोत्तानासन)"
+          },
+          "description": {
+            "english": "Step: Sit with legs stretched, bend forward to touch toes. How it helps: Releases tension and improves patience. Example: Hold for 30‚Äì40 seconds after work.",
+            "hindi": "चरण: पैरों को फैलाकर बैठें, आगे की ओर झुककर पैर के अंगूठे छुएँ। यह कैसे मदद करता है: तनाव कम करता है और धैर्य बढ़ाता है। उदाहरण: काम के बाद 30-40 सेकंड तक इसी स्थिति में रहें।",
+            "marathi": "पायरी: पाय ताणून बसा, बोटांना स्पर्श करण्यासाठी पुढे वाकून बसा. ते कसे मदत करते: ताण कमी करते आणि संयम वाढवते. उदाहरण: काम केल्यानंतर ३०-४० सेकंद धरा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Deep Belly Breathing",
+            "hindi": "गहरी पेट की साँस",
+            "marathi": "खोलवर श्वास घेणे"
+          },
+          "description": {
+            "english": "Step: Inhale deeply into abdomen, exhale slowly. How it helps: Reduces stress that triggers social media overuse. Example: 10 rounds during screen breaks.",
+            "hindi": "चरण: पेट में गहरी साँस लें, धीरे-धीरे साँस छोड़ें। यह कैसे मदद करता है: सोशल मीडिया के अत्यधिक उपयोग से होने वाले तनाव को कम करता है। उदाहरण: स्क्रीन ब्रेक के दौरान 10 राउंड।",
+            "marathi": "पायरी: पोटात खोलवर श्वास घ्या, हळूहळू श्वास सोडा. ते कसे मदत करते: सोशल मीडियाच्या अतिवापराला चालना देणारा ताण कमी करते. उदाहरण: स्क्रीन ब्रेक दरम्यान १० राउंड."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 9,
+          "title": {
+            "english": "Visualization Meditation",
+            "hindi": "विज़ुअलाइज़ेशन ध्यान",
+            "marathi": "व्हिज्युअलायझेशन मेडिटेशन"
+          },
+          "description": {
+            "english": "Step: Imagine yourself enjoying time offline with friends or outdoors. How it helps: Creates positive mindset for reducing digital dependence. Example: 5 minutes visualization daily.",
+            "hindi": "चरण: कल्पना कीजिए कि आप दोस्तों के साथ या बाहर ऑफ़लाइन समय बिता रहे हैं। यह कैसे मदद करता है: डिजिटल निर्भरता कम करने के लिए सकारात्मक मानसिकता बनाता है। उदाहरण: रोज़ाना 5 मिनट विज़ुअलाइज़ेशन करें।",
+            "marathi": "पायरी: कल्पना करा की तुम्ही मित्रांसोबत ऑफलाइन किंवा बाहेर वेळ घालवण्याचा आनंद घेत आहात. ते कसे मदत करते: डिजिटल अवलंबित्व कमी करण्यासाठी सकारात्मक मानसिकता निर्माण करते. उदाहरण: दररोज ५ मिनिटे व्हिज्युअलायझेशन."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 7,
+          "title": {
+            "english": "Mantra Chanting",
+            "hindi": "मंत्र जप",
+            "marathi": "मंत्र जप"
+          },
+          "description": {
+            "english": "Step: Repeat calming sounds like 'Om' with slow breathing. How it helps: Clears obsessive thoughts about social media. Example: 5 minutes chanting before bedtime.",
+            "hindi": "चरण: धीमी साँसों के साथ &#39;ॐ&#39; जैसी शांतिदायक ध्वनि दोहराएँ। यह कैसे मदद करता है: सोशल मीडिया के बारे में जुनूनी विचारों को दूर करता है। उदाहरण: सोने से पहले 5 मिनट तक जप करें।",
+            "marathi": "पायरी: &#39;ओम&#39; सारखे शांत करणारे आवाज हळूहळू श्वास घेत पुन्हा पुन्हा म्हणा. ते कसे मदत करते: सोशल मीडियाबद्दलचे वेडे विचार दूर करते. उदाहरण: झोपण्यापूर्वी ५ मिनिटे जप करा."
+          }
+        }
+      ]
     },
-    "viewStrategyButton": "View Strategy",
-    "alertTitle": "Important",
-    "alertText": "Excessive social media use can impact mental health. Seek professional help if needed.",
-    "imageLabel": "Digital Wellbeing",
-    "commonSuggestionsList": [
-      {
-        "title": {
-          "en": "Limit Screen Time",
-          "hi": "स्क्रीन समय सीमित करें",
-          "mr": "स्क्रीन वेळ मर्यादित ठेवा"
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 7,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी विश्राम",
+            "marathi": "प्रोग्रेसिव्ह स्नायू विश्रांती"
+          },
+          "description": {
+            "english": "Step: Tense and release each muscle group from feet upward. How it helps: Releases stress from screen overuse. Example: 10 minutes after long scrolling session.",
+            "hindi": "चरण: पैरों से ऊपर की ओर प्रत्येक मांसपेशी समूह को तनाव दें और ढीला छोड़ें। यह कैसे मदद करता है: स्क्रीन के अत्यधिक उपयोग से होने वाले तनाव को कम करता है। उदाहरण: लंबे स्क्रॉलिंग सत्र के 10 मिनट बाद।",
+            "marathi": "पायरी: प्रत्येक स्नायू गटाला पायांपासून वरच्या दिशेने ताणून सोडा. ते कसे मदत करते: स्क्रीनच्या अतिवापरामुळे होणारा ताण कमी होतो. उदाहरण: दीर्घ स्क्रोलिंग सत्रानंतर १० मिनिटे."
+          }
         },
-        "description": {
-          "en": "Set daily limits for social media use to avoid overuse and improve focus.",
-          "hi": "अत्यधिक उपयोग से बचने और ध्यान केंद्रित करने के लिए सोशल मीडिया के लिए दैनिक सीमा निर्धारित करें।",
-          "mr": "अति वापर टाळण्यासाठी आणि लक्ष केंद्रित करण्यासाठी सोशल मीडिया वापरासाठी दररोजची मर्यादा ठेवा."
-        }
-      },
-      {
-        "title": {
-          "en": "Turn Off Notifications",
-          "hi": "सूचनाएँ बंद करें",
-          "mr": "सूचना बंद करा"
+        {
+          "id": 2,
+          "xp": 8,
+          "title": {
+            "english": "Visualization of Offline Life",
+            "hindi": "ऑफ़लाइन जीवन का दृश्यीकरण",
+            "marathi": "ऑफलाइन जीवनाचे दृश्यमानीकरण"
+          },
+          "description": {
+            "english": "Step: Close eyes, imagine enjoying activities without devices. How it helps: Builds positive offline mindset. Example: Visualize reading in a park instead of browsing feeds.",
+            "hindi": "चरण: आँखें बंद करें, कल्पना करें कि आप बिना किसी उपकरण के गतिविधियों का आनंद ले रहे हैं। यह कैसे मदद करता है: सकारात्मक ऑफ़लाइन मानसिकता का निर्माण करता है। उदाहरण: फ़ीड ब्राउज़ करने के बजाय किसी पार्क में पढ़ते हुए कल्पना करें।",
+            "marathi": "पायरी: डोळे बंद करा, डिव्हाइसशिवाय क्रियाकलापांचा आनंद घेण्याची कल्पना करा. ते कसे मदत करते: सकारात्मक ऑफलाइन मानसिकता निर्माण करते. उदाहरण: फीड ब्राउझ करण्याऐवजी उद्यानात वाचनाची कल्पना करा."
+          }
         },
-        "description": {
-          "en": "Disable unnecessary notifications to reduce distractions and anxiety.",
-          "hi": "अनावश्यक सूचनाएँ बंद करें ताकि ध्यान भंग और चिंता कम हो सके।",
-          "mr": "अनावश्यक सूचना बंद करा जेणेकरून विचलन आणि चिंता कमी होईल."
-        }
-      },
-      {
-        "title": {
-          "en": "Unfollow Negative Accounts",
-          "hi": "नकारात्मक खातों को अनफॉलो करें",
-          "mr": "नकारात्मक खात्यांना अनफॉलो करा"
+        {
+          "id": 3,
+          "xp": 5,
+          "title": {
+            "english": "Listening to Calm Music",
+            "hindi": "शांत संगीत सुनना",
+            "marathi": "शांत संगीत ऐकणे"
+          },
+          "description": {
+            "english": "Step: Play soothing instrumental or nature sounds. How it helps: Reduces digital overstimulation and calms mind. Example: 15 minutes before bedtime instead of scrolling.",
+            "hindi": "चरण: सुखदायक वाद्य यंत्र या प्राकृतिक ध्वनियाँ बजाएँ। यह कैसे मदद करता है: डिजिटल अति-उत्तेजना को कम करता है और मन को शांत करता है। उदाहरण: सोने से 15 मिनट पहले स्क्रॉल करने के बजाय।",
+            "marathi": "पायरी: सुखदायक वाद्ये किंवा निसर्गाचे ध्वनी वाजवा. ते कसे मदत करते: डिजिटल अतिउत्तेजना कमी करते आणि मन शांत करते. उदाहरण: स्क्रोल करण्याऐवजी झोपेच्या १५ मिनिटे आधी."
+          }
         },
-        "description": {
-          "en": "Remove or mute accounts that spread negativity or stress.",
-          "hi": "नकारात्मकता या तनाव फैलाने वाले खातों को हटाएँ या म्यूट करें।",
-          "mr": "नकारात्मकता किंवा तणाव पसरवणारे खाते हटवा किंवा म्यूट करा."
-        }
-      },
-      {
-        "title": {
-          "en": "Schedule Social Media Breaks",
-          "hi": "सोशल मीडिया ब्रेक निर्धारित करें",
-          "mr": "सोशल मीडिया ब्रेक ठरवा"
+        {
+          "id": 4,
+          "xp": 6,
+          "title": {
+            "english": "5-4-3-2-1 Grounding",
+            "hindi": "5-4-3-2-1 ग्राउंडिंग",
+            "marathi": "५-४-३-२-१ ग्राउंडिंग"
+          },
+          "description": {
+            "english": "Step: Identify 5 things you see, 4 you feel, 3 you hear, 2 you smell, 1 you taste. How it helps: Anchors attention to present moment. Example: Practice when craving to check apps.",
+            "hindi": "चरण: 5 चीज़ें जो आप देखते हैं, 4 जो आप महसूस करते हैं, 3 जो आप सुनते हैं, 2 जो आप सूंघते हैं, और 1 जो आप चखते हैं, उन्हें पहचानें। यह कैसे मदद करता है: ध्यान को वर्तमान क्षण पर केंद्रित करता है। उदाहरण: जब ऐप्स देखने की इच्छा हो, तब अभ्यास करें।",
+            "marathi": "पायरी: तुम्हाला दिसणाऱ्या ५ गोष्टी ओळखा, ४ तुम्हाला जाणवतात, ३ तुम्ही ऐकता, २ तुम्हाला वास येतो, १ तुम्हाला चव येते. ते कसे मदत करते: वर्तमान क्षणाकडे लक्ष केंद्रित करते. उदाहरण: अॅप्स तपासण्याची इच्छा असताना सराव करा."
+          }
         },
-        "description": {
-          "en": "Take regular breaks from social media to refresh your mind.",
-          "hi": "मन को ताज़ा करने के लिए सोशल मीडिया से नियमित ब्रेक लें।",
-          "mr": "मन ताजेतवाने करण्यासाठी सोशल मीडिया पासून नियमित ब्रेक घ्या."
-        }
-      },
-      {
-        "title": {
-          "en": "Avoid Social Media Before Bed",
-          "hi": "सोने से पहले सोशल मीडिया से बचें",
-          "mr": "झोपण्यापूर्वी सोशल मीडिया टाळा"
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Breath Counting",
+            "hindi": "सांस गिनना",
+            "marathi": "श्वास मोजणे"
+          },
+          "description": {
+            "english": "Step: Inhale for 4 counts, exhale for 6 counts. How it helps: Slows heart rate and reduces urge to constantly refresh feeds. Example: 10 rounds before checking notifications.",
+            "hindi": "चरण: 4 बार गिनकर साँस लें, 6 बार गिनकर साँस छोड़ें। यह कैसे मदद करता है: हृदय गति धीमी करता है और बार-बार फ़ीड रिफ़्रेश करने की इच्छा कम करता है। उदाहरण: नोटिफिकेशन देखने से पहले 10 बार।",
+            "marathi": "पायरी: ४ वेळा श्वास घ्या, ६ वेळा श्वास सोडा. हे कसे मदत करते: हृदय गती कमी करते आणि सतत फीड रिफ्रेश करण्याची इच्छा कमी करते. उदाहरण: सूचना तपासण्यापूर्वी १० वेळा."
+          }
         },
-        "description": {
-          "en": "Stop using social media at least 1 hour before sleep to improve sleep quality.",
-          "hi": "नींद की गुणवत्ता सुधारने के लिए कम से कम 1 घंटे पहले सोशल मीडिया का उपयोग बंद करें।",
-          "mr": "झोपेच्या किमान 1 तास आधी सोशल मीडिया वापरणे बंद करा जेणेकरून झोपेची गुणवत्ता सुधारेल."
-        }
-      },
-      {
-        "title": {
-          "en": "Engage in Offline Activities",
-          "hi": "ऑफलाइन गतिविधियों में भाग लें",
-          "mr": "ऑफलाइन क्रियाकलापात सहभागी व्हा"
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Warm Bath Relaxation",
+            "hindi": "गर्म स्नान विश्राम",
+            "marathi": "उबदार आंघोळीने आराम"
+          },
+          "description": {
+            "english": "Step: Take a warm bath for 15‚Äì20 minutes. How it helps: Relaxes body and reduces evening device use. Example: Evening bath instead of late-night scrolling.",
+            "hindi": "चरण: 15-20 मिनट तक गर्म पानी से नहाएँ। यह कैसे मदद करता है: शरीर को आराम देता है और शाम को डिवाइस का इस्तेमाल कम करता है। उदाहरण: देर रात तक स्क्रॉल करने के बजाय शाम को नहाना।",
+            "marathi": "पायरी: १५-२० मिनिटे गरम आंघोळ करा. ते कसे मदत करते: शरीराला आराम देते आणि संध्याकाळी उपकरणाचा वापर कमी करते. उदाहरणार्थ: रात्री उशिरा स्क्रोल करण्याऐवजी संध्याकाळी आंघोळ."
+          }
         },
-        "description": {
-          "en": "Spend time on hobbies, sports, or with family and friends away from screens.",
-          "hi": "स्क्रीन से दूर शौक, खेल या परिवार और दोस्तों के साथ समय बिताएँ।",
-          "mr": "स्क्रीनपासून दूर छंद, खेळ किंवा कुटुंब आणि मित्रांसोबत वेळ घालवा."
-        }
-      },
-      {
-        "title": {
-          "en": "Be Mindful of What You Share",
-          "hi": "जो साझा करें उसके प्रति सतर्क रहें",
-          "mr": "जे शेअर करता त्याबद्दल जागरूक रहा"
+        {
+          "id": 7,
+          "xp": 9,
+          "title": {
+            "english": "Guided Meditation Audio",
+            "hindi": "निर्देशित ध्यान ऑडियो",
+            "marathi": "मार्गदर्शित ध्यान ऑडिओ"
+          },
+          "description": {
+            "english": "Step: Listen to guided meditation tracks. How it helps: Provides structured calmness and reduces stress. Example: 10 minutes session before sleep.",
+            "hindi": "चरण: निर्देशित ध्यान ट्रैक सुनें। यह कैसे मदद करता है: व्यवस्थित शांति प्रदान करता है और तनाव कम करता है। उदाहरण: सोने से पहले 10 मिनट का सत्र।",
+            "marathi": "पायरी: मार्गदर्शित ध्यान ट्रॅक ऐका. ते कसे मदत करते: संरचित शांतता प्रदान करते आणि ताण कमी करते. उदाहरण: झोपण्यापूर्वी १० मिनिटे सत्र."
+          }
         },
-        "description": {
-          "en": "Think before posting and avoid sharing personal information publicly.",
-          "hi": "पोस्ट करने से पहले सोचें और व्यक्तिगत जानकारी सार्वजनिक रूप से साझा करने से बचें।",
-          "mr": "पोस्ट करण्यापूर्वी विचार करा आणि वैयक्तिक माहिती सार्वजनिकपणे शेअर करणे टाळा."
-        }
-      },
-      {
-        "title": {
-          "en": "Practice Digital Detox",
-          "hi": "डिजिटल डिटॉक्स का अभ्यास करें",
-          "mr": "डिजिटल डिटॉक्सचा सराव करा"
+        {
+          "id": 8,
+          "xp": 7,
+          "title": {
+            "english": "Journaling Thoughts",
+            "hindi": "जर्नलिंग विचार",
+            "marathi": "विचारांची जर्नलिंग"
+          },
+          "description": {
+            "english": "Step: Write down feelings after online interactions. How it helps: Clears emotional clutter caused by comparisons. Example: Note 'Felt anxious after seeing friend‚Äôs post, but I achieved my goals too.'",
+            "hindi": "चरण: ऑनलाइन बातचीत के बाद अपनी भावनाओं को लिखें। यह कैसे मदद करता है: तुलनाओं से पैदा हुए भावनात्मक तनाव को दूर करता है। उदाहरण: नोट करें, &#39;दोस्त की पोस्ट देखकर बेचैनी हुई, लेकिन मैंने अपने लक्ष्य भी हासिल कर लिए।&#39;",
+            "marathi": "पायरी: ऑनलाइन संवादानंतरच्या भावना लिहा. ते कसे मदत करते: तुलनांमुळे निर्माण होणारे भावनिक गोंधळ दूर करते. उदाहरण: टीप &#39;मित्राची पोस्ट पाहिल्यानंतर काळजी वाटली, पण मी माझे ध्येय देखील साध्य केले.&#39;"
+          }
         },
-        "description": {
-          "en": "Take a day off from all social media platforms to relax and recharge.",
-          "hi": "आराम और पुनः ऊर्जा पाने के लिए सभी सोशल मीडिया प्लेटफार्म से एक दिन का ब्रेक लें।",
-          "mr": "आराम आणि पुनरुज्जीवनासाठी सर्व सोशल मीडिया प्लॅटफॉर्मपासून एक दिवस ब्रेक घ्या."
-        }
-      },
-      {
-        "title": {
-          "en": "Talk About Your Feelings",
-          "hi": "अपनी भावनाओं के बारे में बात करें",
-          "mr": "तुमच्या भावना बोलून दाखवा"
+        {
+          "id": 9,
+          "xp": 8,
+          "title": {
+            "english": "Aromatherapy with Lavender",
+            "hindi": "लैवेंडर के साथ अरोमाथेरेपी",
+            "marathi": "लॅव्हेंडरसह अरोमाथेरपी"
+          },
+          "description": {
+            "english": "Step: Use lavender or chamomile diffuser while resting. How it helps: Creates calm atmosphere and reduces online urge. Example: Diffuse scent before bedtime.",
+            "hindi": "चरण: आराम करते समय लैवेंडर या कैमोमाइल डिफ्यूज़र का इस्तेमाल करें। यह कैसे मदद करता है: शांत वातावरण बनाता है और ऑनलाइन होने की इच्छा को कम करता है। उदाहरण: सोने से पहले खुशबू फैलाएँ।",
+            "marathi": "पायरी: विश्रांती घेताना लैव्हेंडर किंवा कॅमोमाइल डिफ्यूझर वापरा. ते कसे मदत करते: शांत वातावरण तयार करते आणि ऑनलाइन इच्छा कमी करते. उदाहरण: झोपण्यापूर्वी सुगंध पसरवा."
+          }
         },
-        "description": {
-          "en": "Share your social media experiences and feelings with someone you trust.",
-          "hi": "अपने सोशल मीडिया अनुभव और भावनाएँ किसी विश्वसनीय व्यक्ति से साझा करें।",
-          "mr": "तुमचे सोशल मीडिया अनुभव आणि भावना विश्वासू व्यक्तीसोबत शेअर करा."
+        {
+          "id": 10,
+          "xp": 10,
+          "title": {
+            "english": "Short Power Nap",
+            "hindi": "छोटी पावर नैप",
+            "marathi": "शॉर्ट पॉवर नॅप"
+          },
+          "description": {
+            "english": "Step: Take a 15‚Äì20 min nap when tempted to browse. How it helps: Refreshes mind and replaces mindless scrolling. Example: Nap in afternoon instead of checking social media.",
+            "hindi": "कदम: जब भी ब्राउज़ करने का मन करे, 15-20 मिनट की झपकी ले लें। यह कैसे मदद करता है: दिमाग को तरोताज़ा करता है और बेवजह स्क्रॉल करने से बचाता है। उदाहरण: सोशल मीडिया देखने के बजाय दोपहर में झपकी लें।",
+            "marathi": "पायरी: ब्राउझ करण्याचा मोह झाल्यावर १५-२० मिनिटे झोप घ्या. ते कसे मदत करते: मनाला ताजेतवाने करते आणि बेफिकीर स्क्रोलिंगची जागा घेते. उदाहरण: सोशल मीडिया तपासण्याऐवजी दुपारी झोपा."
+          }
         }
-      },
-      {
-        "title": {
-          "en": "Seek Help If Needed",
-          "hi": "आवश्यकता होने पर मदद लें",
-          "mr": "गरज असल्यास मदत घ्या"
+      ]
+    },
+    "cbt": {
+      "type": "Tertiary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 6,
+          "title": {
+            "english": "Identify Negative Beliefs",
+            "hindi": "नकारात्मक मान्यताओं की पहचान करें",
+            "marathi": "नकारात्मक श्रद्धा ओळखा"
+          },
+          "description": {
+            "english": "Why it helps: Recognizing distorted beliefs reduces dependency. What to do: Write thoughts like 'Everyone is happier than me online.' Example: Replace with 'People post highlights, not their full life.'",
+            "hindi": "यह क्यों मददगार है: विकृत मान्यताओं को पहचानने से निर्भरता कम होती है। क्या करें: इस तरह के विचार लिखें, &#39;हर कोई ऑनलाइन मुझसे ज़्यादा खुश है।&#39; उदाहरण: इसे &#39;लोग अपनी पूरी ज़िंदगी नहीं, बल्कि हाइलाइट्स पोस्ट करते हैं&#39; से बदलें।",
+            "marathi": "हे का मदत करते: विकृत समजुती ओळखल्याने अवलंबित्व कमी होते. काय करावे: &#39;ऑनलाइन प्रत्येकजण माझ्यापेक्षा आनंदी आहे&#39; असे विचार लिहा. उदाहरण: &#39;लोक त्यांचे संपूर्ण आयुष्य नव्हे तर हायलाइट्स पोस्ट करतात&#39; असे लिहा."
+          }
         },
-        "description": {
-          "en": "If social media is affecting your mental health, consult a professional.",
-          "hi": "अगर सोशल मीडिया आपके मानसिक स्वास्थ्य को प्रभावित कर रहा है, तो किसी विशेषज्ञ से सलाह लें।",
-          "mr": "जर सोशल मीडिया तुमच्या मानसिक आरोग्यावर परिणाम करत असेल, तर तज्ञाचा सल्ला घ्या."
+        {
+          "id": 2,
+          "xp": 7,
+          "title": {
+            "english": "Cognitive Reframing",
+            "hindi": "संज्ञानात्मक पुनर्रचना",
+            "marathi": "संज्ञानात्मक पुनर्रचना"
+          },
+          "description": {
+            "english": "Why it helps: Changes harmful beliefs into balanced ones. What to do: Replace 'I must be online or I‚Äôll miss out' with 'I can stay informed without constant checking.' Example: Limit to two logins daily.",
+            "hindi": "यह क्यों मददगार है: हानिकारक मान्यताओं को संतुलित मान्यताओं में बदल देता है। क्या करें: &#39;मुझे ऑनलाइन रहना ज़रूरी है, वरना मैं कुछ भी नहीं देख पाऊँगा&#39; की जगह &#39;मैं लगातार जाँच किए बिना भी जानकारी प्राप्त कर सकता हूँ&#39; रखें। उदाहरण: रोज़ाना सिर्फ़ दो बार लॉग इन करें।",
+            "marathi": "हे का मदत करते: हानिकारक समजुतींना संतुलित समजुतींमध्ये बदलते. काय करावे: &#39;मी ऑनलाइन असायला हवे नाहीतर मी चुकेन&#39; असे बदलून &#39;मी सतत तपासणी न करता माहिती मिळवू शकतो&#39; असे लिहा. उदाहरण: दररोज दोन लॉगिन मर्यादित करा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 8,
+          "title": {
+            "english": "Thought Records",
+            "hindi": "विचार रिकॉर्ड्स",
+            "marathi": "विचारांच्या नोंदी"
+          },
+          "description": {
+            "english": "Why it helps: Tracks emotions linked to social media use. What to do: Log situation, thought, and feeling. Example: 'Saw friend‚Äôs post ‚Üí Thought: I‚Äôm behind ‚Üí Felt sad.'",
+            "hindi": "यह क्यों मददगार है: सोशल मीडिया के इस्तेमाल से जुड़ी भावनाओं को ट्रैक करता है। क्या करें: स्थिति, विचार और भावनाओं को रिकॉर्ड करें। उदाहरण: &#39;दोस्त की पोस्ट देखी ‚Üí सोचा: मैं पीछे हूँ ‚Üí उदास हुआ।&#39;",
+            "marathi": "हे का मदत करते: सोशल मीडिया वापराशी जोडलेल्या भावनांचा मागोवा घेते. काय करावे: परिस्थिती, विचार आणि भावना नोंदवा. उदाहरण: &#39;मित्राची पोस्ट पाहिली - विचार: मी मागे आहे - दुःखी वाटले.&#39;"
+          }
+        },
+        {
+          "id": 4,
+          "xp": 9,
+          "title": {
+            "english": "Challenge Comparisons",
+            "hindi": "चुनौती तुलना",
+            "marathi": "आव्हान तुलना"
+          },
+          "description": {
+            "english": "Why it helps: Stops harmful self-evaluation. What to do: Ask 'Is this comparison fair?' Example: Replace 'They‚Äôre more successful' with 'I‚Äôm progressing at my own pace.'",
+            "hindi": "यह क्यों मददगार है: हानिकारक आत्म-मूल्यांकन को रोकता है। क्या करें: पूछें, &#39;क्या यह तुलना उचित है?&#39; उदाहरण: &#39;वे ज़्यादा सफल हैं&#39; की जगह &#39;मैं अपनी गति से प्रगति कर रहा हूँ&#39; लिखें।",
+            "marathi": "ते का मदत करते: हानिकारक स्व-मूल्यांकन थांबवते. काय करावे: &#39;ही तुलना योग्य आहे का?&#39; असे विचारा. उदाहरण: &#39;ते अधिक यशस्वी आहेत&#39; असे &#39;मी माझ्या स्वतःच्या गतीने प्रगती करत आहे&#39; असे लिहा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Positive Self-Talk",
+            "hindi": "सकारात्मक आत्म-चर्चा",
+            "marathi": "सकारात्मक स्व-संवाद"
+          },
+          "description": {
+            "english": "Why it helps: Increases confidence and reduces FOMO. What to do: Use affirmations like 'My worth is not defined by likes.' Example: Say before posting or scrolling.",
+            "hindi": "यह क्यों मददगार है: आत्मविश्वास बढ़ाता है और FOMO कम करता है। क्या करें: &#39;मेरी कीमत लाइक्स से नहीं तय होती&#39; जैसे सकारात्मक वाक्यों का इस्तेमाल करें। उदाहरण: पोस्ट करने या स्क्रॉल करने से पहले कहें।",
+            "marathi": "ते का मदत करते: आत्मविश्वास वाढवते आणि FOMO कमी करते. काय करावे: &#39;माझी किंमत लाईक्सने परिभाषित केली जात नाही&#39; असे प्रतिपादन वापरा. उदाहरण: पोस्ट करण्यापूर्वी किंवा स्क्रोल करण्यापूर्वी म्हणा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Set Realistic Goals",
+            "hindi": "यथार्थवादी लक्ष्य निर्धारित करें",
+            "marathi": "वास्तववादी ध्येये निश्चित करा"
+          },
+          "description": {
+            "english": "Why it helps: Prevents burnout from unrealistic expectations. What to do: Set daily screen limit goals. Example: Reduce usage from 5 hours to 3 hours gradually.",
+            "hindi": "यह क्यों मददगार है: अवास्तविक उम्मीदों से होने वाली थकान से बचाता है। क्या करें: स्क्रीन इस्तेमाल की दैनिक सीमा निर्धारित करें। उदाहरण: स्क्रीन इस्तेमाल को धीरे-धीरे 5 घंटे से घटाकर 3 घंटे करें।",
+            "marathi": "हे का मदत करते: अवास्तव अपेक्षांमुळे होणारा त्रास टाळतो. काय करावे: दैनिक स्क्रीन मर्यादा ध्येये सेट करा. उदाहरण: वापर हळूहळू ५ तासांवरून ३ तासांपर्यंत कमी करा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 10,
+          "title": {
+            "english": "Behavioral Experiments",
+            "hindi": "व्यवहारिक प्रयोग",
+            "marathi": "वर्तणुकीचे प्रयोग"
+          },
+          "description": {
+            "english": "Why it helps: Tests beliefs about needing constant updates. What to do: Stay offline for 24 hours. Example: Realize nothing major was missed.",
+            "hindi": "यह क्यों मददगार है: लगातार अपडेट की ज़रूरत के बारे में आपकी धारणाओं का परीक्षण करता है। क्या करें: 24 घंटे ऑफ़लाइन रहें। उदाहरण: ध्यान रखें कि कोई बड़ी बात छूट न गई हो।",
+            "marathi": "हे का मदत करते: सतत अपडेट्सची आवश्यकता आहे याबद्दलच्या विश्वासांची चाचणी घेते. काय करावे: २४ तास ऑफलाइन राहा. उदाहरण: कोणतीही मोठी गोष्ट चुकली नाही हे लक्षात घ्या."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 8,
+          "title": {
+            "english": "Problem-Solving Practice",
+            "hindi": "समस्या-समाधान अभ्यास",
+            "marathi": "समस्या सोडवण्याचा सराव"
+          },
+          "description": {
+            "english": "Why it helps: Finds alternatives to excessive use. What to do: Identify trigger and create solutions. Example: Replace boredom scrolling with reading or a walk.",
+            "hindi": "यह क्यों मददगार है: अत्यधिक उपयोग के विकल्प ढूँढ़ता है। क्या करें: ट्रिगर पहचानें और समाधान बनाएँ। उदाहरण: बोरियत से भरे स्क्रॉलिंग की जगह पढ़ने या टहलने का आनंद लें।",
+            "marathi": "ते का मदत करते: अतिवापराचे पर्याय शोधते. काय करावे: ट्रिगर ओळखा आणि उपाय तयार करा. उदाहरण: कंटाळवाणेपणा वाचून किंवा चालण्याने स्क्रोल करून बदला."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Gratitude Journaling",
+            "hindi": "कृतज्ञता जर्नलिंग",
+            "marathi": "कृतज्ञता जर्नलिंग"
+          },
+          "description": {
+            "english": "Why it helps: Shifts focus from online comparisons to personal positives. What to do: Write 3 things you are grateful for daily. Example: 'I completed a task, had a good meal, talked to a friend.'",
+            "hindi": "यह क्यों मददगार है: ऑनलाइन तुलनाओं से ध्यान हटाकर व्यक्तिगत सकारात्मक बातों पर केंद्रित करता है। क्या करें: रोज़ाना तीन ऐसी चीज़ें लिखें जिनके लिए आप आभारी हैं। उदाहरण: &#39;मैंने एक काम पूरा किया, अच्छा खाना खाया, एक दोस्त से बात की।&#39;",
+            "marathi": "हे का मदत करते: ऑनलाइन तुलनांवरून वैयक्तिक सकारात्मक गोष्टींकडे लक्ष केंद्रित करते. काय करावे: दररोज ज्या गोष्टींसाठी तुम्ही कृतज्ञ आहात अशा ३ गोष्टी लिहा. उदाहरण: &#39;मी एक काम पूर्ण केले, चांगले जेवण केले, मित्राशी बोललो.&#39;"
+          }
+        },
+        {
+          "id": 10,
+          "xp": 9,
+          "title": {
+            "english": "Role-Playing Scenarios",
+            "hindi": "भूमिका निभाने के परिदृश्य",
+            "marathi": "भूमिका साकारणारी परिस्थिती"
+          },
+          "description": {
+            "english": "Why it helps: Prepares to handle peer pressure to stay online. What to do: Practice saying 'I‚Äôll check later, now I‚Äôm busy.' Example: Rehearse with a friend before group chats.",
+            "hindi": "यह क्यों मददगार है: ऑनलाइन रहने के लिए साथियों के दबाव से निपटने के लिए तैयारी करें। क्या करें: यह कहने का अभ्यास करें, &#39;मैं बाद में देखूँगा, अभी मैं व्यस्त हूँ।&#39; उदाहरण: ग्रुप चैट से पहले किसी दोस्त के साथ अभ्यास करें।",
+            "marathi": "हे का मदत करते: ऑनलाइन राहण्यासाठी मित्रांच्या दबावाला तोंड देण्याची तयारी करते. काय करावे: &#39;मी नंतर तपासतो, आता मी व्यस्त आहे&#39; असे म्हणण्याचा सराव करा. उदाहरण: ग्रुप चॅट करण्यापूर्वी मित्रासोबत सराव करा."
+          }
         }
-      }
-    ]
+      ]
+    },
+    "rebt": {
+      "type": "Tertiary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 7,
+          "title": {
+            "english": "Dispute Irrational Beliefs",
+            "hindi": "तर्कहीन विश्वासों पर विवाद करें",
+            "marathi": "अतार्किक श्रद्धांवर विवाद करा"
+          },
+          "description": {
+            "english": "Why it helps: Challenges unhealthy ideas like 'I must be online to stay relevant.' What to do: Ask if this belief is realistic. Example: Replace with 'I prefer being online, but I can live meaningfully offline too.'",
+            "hindi": "यह क्यों मददगार है: यह उन अस्वास्थ्यकर विचारों को चुनौती देता है जैसे, &quot;प्रासंगिक बने रहने के लिए मुझे ऑनलाइन रहना ज़रूरी है।&quot; क्या करें: पूछें कि क्या यह धारणा यथार्थवादी है। उदाहरण: इसे &quot;मुझे ऑनलाइन रहना पसंद है, लेकिन मैं ऑफ़लाइन भी सार्थक जीवन जी सकता हूँ&quot; से बदलें।",
+            "marathi": "हे का मदत करते: &#39;मी संबंधित राहण्यासाठी ऑनलाइन असले पाहिजे&#39; सारख्या वाईट कल्पनांना आव्हान देते. काय करावे: हा विश्वास वास्तववादी आहे का ते विचारा. उदाहरण: &#39;मला ऑनलाइन राहणे आवडते, पण मी ऑफलाइन देखील अर्थपूर्णपणे जगू शकतो&#39; असे लिहा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 8,
+          "title": {
+            "english": "ABC Model for Social Media",
+            "hindi": "सोशल मीडिया के लिए एबीसी मॉडल",
+            "marathi": "सोशल मीडियासाठी एबीसी मॉडेल"
+          },
+          "description": {
+            "english": "Why it helps: Connects event, belief, and consequence. What to do: A=No likes on post, B='I‚Äôm not good enough,' C=Feeling sad. Replace B with 'Likes don‚Äôt define my worth.'",
+            "hindi": "यह क्यों मददगार है: यह घटना, विश्वास और परिणाम को जोड़ता है। क्या करें: A=पोस्ट पर कोई लाइक नहीं, B=&#39;मैं काफ़ी अच्छा नहीं हूँ,&#39; C=उदास महसूस हो रहा है। B को &#39;लाइक मेरी कीमत तय नहीं करते&#39; से बदलें।",
+            "marathi": "ते का मदत करते: घटना, श्रद्धा आणि परिणाम यांना जोडते. काय करावे: A=पोस्टवर लाईक्स नाहीत, B=&#39;मी पुरेसा चांगला नाही&#39;, C=दु:खी वाटत आहे. B च्या जागी &#39;लाईक्स माझे मूल्य परिभाषित करत नाहीत&#39; असे लिहा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 6,
+          "title": {
+            "english": "Unconditional Self-Acceptance",
+            "hindi": "बिना शर्त आत्म-स्वीकृति",
+            "marathi": "बिनशर्त स्व-स्वीकृती"
+          },
+          "description": {
+            "english": "Why it helps: Builds self-worth beyond social media validation. What to do: Remind yourself 'I am valuable regardless of online approval.' Example: Repeat after posting.",
+            "hindi": "यह क्यों मददगार है: सोशल मीडिया की मान्यता से परे आत्म-सम्मान बढ़ाता है। क्या करें: खुद को याद दिलाएँ, &#39;ऑनलाइन स्वीकृति के बावजूद मैं मूल्यवान हूँ।&#39; उदाहरण: पोस्ट करने के बाद दोहराएँ।",
+            "marathi": "हे का मदत करते: सोशल मीडिया प्रमाणीकरणाच्या पलीकडे स्वतःचे मूल्य वाढवते. काय करावे: स्वतःला आठवण करून द्या की &#39;ऑनलाइन मंजुरीची पर्वा न करता मी मौल्यवान आहे.&#39; उदाहरण: पोस्ट केल्यानंतर पुन्हा करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 7,
+          "title": {
+            "english": "Rational Coping Statements",
+            "hindi": "तर्कसंगत मुकाबला कथन",
+            "marathi": "तर्कसंगत सामना विधाने"
+          },
+          "description": {
+            "english": "Why it helps: Creates balanced reminders during cravings. What to do: Say 'Social media is fun, but I don‚Äôt need it all the time.' Example: Repeat when tempted to scroll endlessly.",
+            "hindi": "यह क्यों मददगार है: जब आप कुछ खाने की तलब में हों, तो संतुलित रिमाइंडर देता है। क्या करें: कहें, &#39;सोशल मीडिया मज़ेदार है, लेकिन मुझे हर समय इसकी ज़रूरत नहीं पड़ती।&#39; उदाहरण: जब अंतहीन स्क्रॉल करने का मन करे, तो इसे दोहराएँ।",
+            "marathi": "हे का मदत करते: इच्छा असताना संतुलित आठवणी निर्माण करते. काय करावे: म्हणा &#39;सोशल मीडिया मजेदार आहे, पण मला त्याची नेहमीच गरज नाही.&#39; उदाहरण: जेव्हा सतत स्क्रोल करण्याचा मोह होतो तेव्हा पुन्हा करा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 9,
+          "title": {
+            "english": "Reality Testing",
+            "hindi": "वास्तविकता परीक्षण",
+            "marathi": "वास्तव चाचणी"
+          },
+          "description": {
+            "english": "Why it helps: Counters exaggerated fears like 'I‚Äôll miss out if I don‚Äôt check constantly.' What to do: Ask 'What real evidence supports this?' Example: Realize most updates are not urgent.",
+            "hindi": "यह क्यों मददगार है: यह अतिशयोक्तिपूर्ण आशंकाओं का प्रतिकार करता है, जैसे कि ‘अगर मैं लगातार जाँच नहीं करूँगा तो मैं कुछ खो दूँगा।’ क्या करें: पूछें कि ‘इसका समर्थन करने वाले वास्तविक प्रमाण क्या हैं?’ उदाहरण: यह समझें कि अधिकांश अपडेट अत्यावश्यक नहीं होते।",
+            "marathi": "हे का मदत करते: &#39;जर मी सतत तपासणी केली नाही तर मी चुकेन&#39; अशी भीती काउंटर अतिरंजित करतात. काय करावे: &#39;याला कोणते खरे पुरावे समर्थन देतात?&#39; असे विचारा. उदाहरण: बहुतेक अपडेट्स तातडीचे नसतात हे लक्षात घ्या."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 8,
+          "title": {
+            "english": "Shift Demands to Preferences",
+            "hindi": "मांगों को प्राथमिकताओं में बदलें",
+            "marathi": "मागण्या प्राधान्यांकडे वळवा"
+          },
+          "description": {
+            "english": "Why it helps: Replaces rigid thinking with flexibility. What to do: Change 'I must reply instantly' to 'I prefer replying soon, but it‚Äôs okay to wait.' Example: Delay responses without guilt.",
+            "hindi": "यह क्यों मददगार है: यह कठोर सोच को लचीलेपन से बदल देता है। क्या करें: &#39;मुझे तुरंत जवाब देना चाहिए&#39; को बदलकर &#39;मैं जल्दी जवाब देना चाहता हूँ, लेकिन इंतज़ार करना ठीक है&#39; कर दें। उदाहरण: बिना किसी अपराधबोध के जवाब देने में देरी करें।",
+            "marathi": "हे का मदत करते: कठोर विचारसरणीला लवचिकतेने बदलते. काय करावे: &#39;मला त्वरित उत्तर द्यावे लागेल&#39; हे &#39;मला लवकरच उत्तर देणे आवडते, परंतु वाट पाहणे ठीक आहे&#39; असे बदला. उदाहरण: अपराधीपणाशिवाय प्रतिसाद देण्यास विलंब करा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 6,
+          "title": {
+            "english": "Model Rational Thinking",
+            "hindi": "तर्कसंगत सोच का मॉडल",
+            "marathi": "मॉडेल रॅशनल थिंकिंग"
+          },
+          "description": {
+            "english": "Why it helps: Learning balanced attitudes reduces stress. What to do: Observe role models using social media in moderation. Example: A friend who checks apps once daily.",
+            "hindi": "यह क्यों मददगार है: संतुलित दृष्टिकोण सीखने से तनाव कम होता है। क्या करें: सोशल मीडिया का संयम से इस्तेमाल करने वाले आदर्श लोगों पर नज़र डालें। उदाहरण के लिए: एक दोस्त जो रोज़ाना एक बार ऐप्स चेक करता है।",
+            "marathi": "हे का मदत करते: संतुलित दृष्टिकोन शिकल्याने ताण कमी होतो. काय करावे: सोशल मीडियाचा वापर करणाऱ्या आदर्शांचे संयमाने निरीक्षण करा. उदाहरण: एक मित्र जो दररोज एकदा अॅप्स तपासतो."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 10,
+          "title": {
+            "english": "Reframe Rejection",
+            "hindi": "अस्वीकृति को फिर से परिभाषित करें",
+            "marathi": "रिफ्रेम नकार"
+          },
+          "description": {
+            "english": "Why it helps: Prevents equating low online attention with failure. What to do: Replace 'Few likes mean I‚Äôm boring' with 'Likes don‚Äôt measure my personality.' Example: Focus on real-life interactions.",
+            "hindi": "यह क्यों मददगार है: कम ऑनलाइन अटेंशन को असफलता से जोड़ने से रोकता है। क्या करें: &#39;कम लाइक्स का मतलब है कि मैं बोरिंग हूँ&#39; को &#39;लाइक्स मेरे व्यक्तित्व को नहीं मापते&#39; से बदलें। उदाहरण: वास्तविक जीवन की बातचीत पर ध्यान केंद्रित करें।",
+            "marathi": "हे का मदत करते: कमी ऑनलाइन लक्ष अपयशाशी समीकरण करण्यापासून रोखते. काय करावे: &#39;कमी लाईक्स म्हणजे मी कंटाळवाणा आहे&#39; याऐवजी &#39;लाईक्स माझे व्यक्तिमत्व मोजत नाहीत&#39; असे लिहा. उदाहरण: वास्तविक जीवनातील संवादांवर लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 7,
+          "title": {
+            "english": "Decatastrophizing",
+            "hindi": "विनाशकारी विनाश",
+            "marathi": "विनाशकारी"
+          },
+          "description": {
+            "english": "Why it helps: Reduces extreme fears about disconnection. What to do: Ask 'What‚Äôs the worst, best, and likely outcome if I log off?' Example: Realize nothing major happens if offline for a day.",
+            "hindi": "यह क्यों मददगार है: कनेक्शन टूटने के डर को कम करता है। क्या करें: पूछें, &#39;अगर मैं लॉग ऑफ करूँ तो सबसे बुरा, सबसे अच्छा और संभावित परिणाम क्या होगा?&#39; उदाहरण: यह समझें कि अगर एक दिन के लिए ऑफलाइन रहा जाए तो कोई बड़ी बात नहीं होती।",
+            "marathi": "हे का मदत करते: डिस्कनेक्शनबद्दलची तीव्र भीती कमी करते. काय करावे: &#39;मी लॉग ऑफ केल्यास सर्वात वाईट, सर्वोत्तम आणि संभाव्य परिणाम काय असेल?&#39; असे विचारा. उदाहरण: एक दिवस ऑफलाइन राहिल्यास काहीही मोठे होणार नाही हे लक्षात ठेवा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 9,
+          "title": {
+            "english": "Forgive Setbacks",
+            "hindi": "असफलताओं को क्षमा करें",
+            "marathi": "अडथळे माफ करा"
+          },
+          "description": {
+            "english": "Why it helps: Builds resilience after overuse. What to do: Accept mistakes as part of learning. Example: 'I scrolled too long today, but tomorrow I‚Äôll use healthier limits.'",
+            "hindi": "यह क्यों मददगार है: ज़रूरत से ज़्यादा इस्तेमाल के बाद लचीलापन बढ़ाता है। क्या करें: गलतियों को सीखने के एक हिस्से के रूप में स्वीकार करें। उदाहरण: &#39;मैंने आज बहुत देर तक स्क्रॉल किया, लेकिन कल मैं स्वस्थ सीमाओं का उपयोग करूँगा।&#39;",
+            "marathi": "ते का मदत करते: अतिवापरानंतर लवचिकता निर्माण करते. काय करावे: शिकण्याचा एक भाग म्हणून चुका स्वीकारा. उदाहरण: &#39;मी आज खूप वेळ स्क्रोल केले, पण उद्या मी निरोगी मर्यादा वापरेन.&#39;"
+          }
+        }
+      ]
+    }
   }
 }

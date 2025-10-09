@@ -9044,11 +9044,23 @@
         "title": "Substance Addiction",
         "description": "Seek support and practice relapse‑prevention skills"
       },
+      "SubstanceAddictionScreen": {
+        "title": "Substance Addiction",
+        "description": "Seek support and practice relapse‑prevention skills"
+      },
       "traumalossanddreamsscreen": {
         "title": "Trauma, Loss & Dreams",
         "description": "Process trauma and grief with gentle guidance"
       },
+      "TraumaLossAndDreamsScreen": {
+        "title": "Trauma, Loss & Dreams",
+        "description": "Process trauma and grief with gentle guidance"
+      },
       "unrealisticbeautystandardsscreen": {
+        "title": "Unrealistic Beauty Standards",
+        "description": "Build body neutrality and media literacy"
+      },
+      "UnrealisticBeautyStandardsScreen": {
         "title": "Unrealistic Beauty Standards",
         "description": "Build body neutrality and media literacy"
       },
@@ -12237,6 +12249,48 @@
         "description": "- **How it works**: Professional counselors and therapists can provide specialized techniques and strategies for managing chronic anger issues.\n   - **Example**: If anger is affecting your relationships or work performance, schedule sessions with a licensed therapist who specializes in anger management."
       }
     ],
+    "selfEsteemAndSelfIdentity": [
+      {
+        "title": "Practice Daily Positive Affirmations",
+        "description": "Start each day by looking in the mirror and stating three positive things about yourself. For example, 'I am capable', 'I am worthy of love', or 'I have unique strengths that contribute to the world'."
+      },
+      {
+        "title": "Create a Personal Achievement Journal",
+        "description": "Keep a daily record of your accomplishments, no matter how small. Include compliments received, tasks completed, and moments when you felt proud of yourself."
+      },
+      {
+        "title": "Set and Celebrate Small Goals",
+        "description": "Break larger objectives into smaller, achievable goals. Celebrate each milestone to build confidence and momentum."
+      },
+      {
+        "title": "Practice Self-Compassion",
+        "description": "Treat yourself with the same kindness you would show a good friend. When you make mistakes, respond with understanding rather than harsh self-criticism."
+      },
+      {
+        "title": "Identify and Challenge Negative Self-Talk",
+        "description": "Pay attention to your inner critic and actively challenge negative thoughts about yourself. Replace 'I always fail' with 'I'm learning and improving.'"
+      },
+      {
+        "title": "Develop Personal Boundaries",
+        "description": "Learn to say 'no' to requests that drain your energy or compromise your values. Setting healthy boundaries protects your time, energy, and self-worth."
+      },
+      {
+        "title": "Engage in Activities You Enjoy",
+        "description": "Make time for hobbies, interests, and activities that bring you joy and fulfillment. Engaging in enjoyable activities boosts self-esteem."
+      },
+      {
+        "title": "Surround Yourself with Positive People",
+        "description": "Seek out relationships with people who support, encourage, and believe in you. Limit time with those who consistently criticize or undermine your confidence."
+      },
+      {
+        "title": "Learn New Skills",
+        "description": "Challenge yourself to acquire new abilities or improve existing ones. Growth builds confidence and expands your sense of identity."
+      },
+      {
+        "title": "Practice Gratitude for Yourself",
+        "description": "Take time to appreciate your own qualities, efforts, and progress. Write down three things you're grateful for about yourself each day."
+      }
+    ],
     "addictions": [
       {
         "title": "Acknowledgment and Acceptance",
@@ -13036,6 +13090,53 @@
       {
         "title": "Setting Realistic Goals",
         "description": "- **Why it Helps**: Unrealistic expectations can lead to frustration and anger, while realistic goals promote patience.\n    - **What to Do**: Set small, achievable goals and celebrate progress.\n    - **Example**: Instead of expecting never to get angry, aim to reduce frequency and intensity over time.\n\nEach of these strategies integrates thoughtful reflection and action, ultimately fostering a more balanced response to anger-provoking situations.",
+        "xp": 6
+      }
+    ],
+    "selfEsteemAndSelfIdentity": [
+      {
+        "title": "Positive Self-Talk",
+        "description": "This helps to counteract negative thoughts and beliefs about oneself. Practice replacing negative thoughts with positive ones. For example, instead of thinking 'I'm a failure,' think 'I can learn from my mistakes.'",
+        "xp": 4
+      },
+      {
+        "title": "Cognitive Restructuring",
+        "description": "This helps to challenge and change irrational beliefs. Identify irrational beliefs about yourself and replace them with more rational ones. For example, if you believe you're worthless because you made a mistake, challenge this belief and replace it with the understanding that everyone makes mistakes and it doesn't define your worth.",
+        "xp": 7
+      },
+      {
+        "title": "Self-Compassion Practice",
+        "description": "This helps to treat yourself with kindness and understanding. Practice self-compassion by speaking to yourself as you would a friend. For example, if you're feeling down, tell yourself 'It's okay to feel this way, everyone has bad days.'",
+        "xp": 5
+      },
+      {
+        "title": "Mindfulness Practice",
+        "description": "This helps to focus on the present moment without judgment. Practice mindfulness through meditation or mindful activities like walking or eating. For example, spend a few minutes each day focusing on your breath or the sensations of eating a piece of fruit.",
+        "xp": 4
+      },
+      {
+        "title": "Assertiveness Training",
+        "description": "This helps to express your needs and wants effectively. Practice assertiveness by expressing your feelings and needs in a respectful way. For example, if someone is treating you poorly, tell them how it makes you feel and ask them to treat you with respect.",
+        "xp": 6
+      },
+      {
+        "title": "Self-Affirmations",
+        "description": "This helps to reinforce positive beliefs about yourself. Write down positive affirmations and repeat them to yourself daily. For example, 'I am capable,' 'I am worthy of love and respect,' or 'I am strong.'",
+        "xp": 3
+      },
+      {
+        "title": "Goal Setting",
+        "description": "This helps to build confidence and a sense of achievement. Set realistic and achievable goals for yourself and work towards them. For example, if you want to improve your fitness, set a goal to exercise for 30 minutes a day.",
+        "xp": 4
+      },
+      {
+        "title": "Exposure Therapy",
+        "description": "This helps to face and overcome fears and insecurities. Gradually expose yourself to situations that make you feel insecure and practice coping strategies. For example, if you're insecure about public speaking, start by speaking in front of a small group and gradually increase the size.",
+        "xp": 8
+      },
+      {
+        "title": "Social Skills Training",
+        "description": "This helps to improve interactions with others. Practice social skills like active listening, empathy, and effective communication. For example, practice active listening by focusing on what the other person is saying and responding appropriately.",
         "xp": 6
       }
     ],
@@ -18596,5 +18697,143 @@
     "thought8": "Your worth is not determined by your achievements or failures.",
     "thought9": "Breathing deeply is a simple act of self-care you can do right now.",
     "thought10": "You are doing better than you think, even on difficult days."
+  }
+  ,
+  "selfEsteemAndSelfIdentityScreen": {
+    "headerTitle": "Self Esteem & Identity",
+    "imageLabel": "Self Esteem & Identity",
+    "title": "Self‑Esteem & Identity",
+    "description": "Strengthen self‑worth and personal identity with practical exercises and reflections.",
+    "concernsTitle": "Common concerns",
+    "concerns": {
+      "lowSelfWorth": "Low self‑worth",
+      "negativeThoughts": "Persistent negative thoughts",
+      "identityConfusion": "Confusion about identity",
+      "selfDoubt": "Self‑doubt",
+      "comparisons": "Comparisons with others"
+    },
+    "supportStrategiesTitle": "Support strategies",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 common suggestions",
+        "description": "Practical steps and daily actions to improve self‑worth and resilience."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Gentle yoga practices to calm the mind and connect with the body."
+      },
+      "relaxation": {
+        "title": "Relaxation",
+        "description": "Relaxation exercises to reduce stress and improve emotional balance."
+      },
+      "cbt": {
+        "title": "Cognitive Behavioural Therapy (CBT)",
+        "description": "CBT techniques to identify and reframe unhelpful thoughts."
+      },
+      "rebt": {
+        "title": "Rational Emotive Behaviour Therapy (REBT)",
+        "description": "REBT approaches to challenge irrational beliefs."
+      }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Safety & limits",
+    "alertText": "This content is for educational purposes and not a substitute for professional care. If you're in crisis, seek immediate help."
+  }
+  ,
+  "socialMediaIssuesScreen": {
+    "headerTitle": "Social Media Issues",
+    "imageLabel": "Social Media",
+    "mainTitle": "Social Media Issues",
+    "description": "Reduce comparison, compulsive checking and the emotional toll of online life with targeted strategies.",
+    "commonSymptoms": "Common symptoms",
+    "symptoms": {
+      "compulsive": "Compulsive checking",
+      "relationships": "Relationship strain from online interactions",
+      "guilt": "Guilt or shame after use",
+      "isolation": "Feelings of isolation",
+      "productivity": "Reduced productivity"
+    },
+    "recoveryStrategies": "Recovery strategies",
+    "strategies": {
+      "commonSuggestions": { "title": "10 common suggestions", "description": "Practical changes to daily routine and thinking to reduce harmful social media use." },
+      "yoga": { "title": "Yoga", "description": "Short movement practices to ground attention away from screens." },
+      "relaxation": { "title": "Relaxation", "description": "Techniques to reduce anxiety and cravings to check apps." },
+      "cbt": { "title": "CBT", "description": "Exercise to identify and reframe social comparison thoughts." },
+      "rebt": { "title": "REBT", "description": "Challenge absolutist beliefs that drive shame and compulsive responding." }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Warning",
+    "alertText": "If social media use is harming your mental health, consider professional support."
+  },
+  "substanceAddictionScreen": {
+    "headerTitle": "Substance Addiction",
+    "mainTitle": "Substance Addiction",
+    "description": "Understand substance dependence and learn evidence-based strategies for recovery and relapse prevention.",
+    "benefitsTitle": "Benefits of recovery",
+    "benefits": {
+      "improvedHealth": "Improved physical health",
+      "betterRelationships": "Better relationships",
+      "financialStability": "Improved financial stability",
+      "mentalClarity": "Greater mental clarity",
+      "increasedSelfEsteem": "Improved self‑esteem"
+    },
+    "strategiesTitle": "Recovery strategies",
+    "strategySummaries": {
+      "commonSuggestions": { "title": "Common suggestions", "description": "Practical steps to build a recovery plan and reduce use." },
+      "yoga": { "title": "Yoga", "description": "Movement and breathwork to manage urges." },
+      "relaxation": { "title": "Relaxation", "description": "Grounding and relaxation exercises to reduce stress-driven use." },
+      "cbt": { "title": "CBT", "description": "Techniques to identify triggers and reframe thoughts." },
+      "rebt": { "title": "REBT", "description": "Challenge irrational beliefs that maintain substance use." }
+    },
+    "viewStrategyButton": "View Strategy",
+    "importantNote": { "title": "Important note", "description": "If you're facing severe dependence or withdrawal, seek medical help immediately." }
+  },
+  "traumaLossAndDreamsScreen": {
+    "headerTitle": "Trauma, Loss & Dreams",
+    "title": "Trauma, Loss & Dreams",
+    "description": "Support for processing traumatic experiences, grief, and distressing dreams with compassionate strategies.",
+    "benefitsTitle": "What this can help with",
+    "benefits": {
+      "emotionalHealing": "Emotional healing",
+      "improvedSleep": "Improved sleep",
+      "betterCoping": "Better coping skills",
+      "increasedResilience": "Increased resilience",
+      "restoredHope": "Restored sense of hope"
+    },
+    "strategiesTitle": "Healing strategies",
+    "strategies": {
+      "commonSuggestions": { "title": "Common suggestions", "description": "Gentle practices for grounding and processing difficult emotions." },
+      "yoga": { "title": "Yoga", "description": "Embodied practices to regulate the nervous system." },
+      "relaxation": { "title": "Relaxation", "description": "Techniques for calming when memories or dreams feel overwhelming." },
+      "cbt": { "title": "CBT", "description": "Work on meaning-making and reframing distressing appraisals." },
+      "rebt": { "title": "REBT", "description": "Address rigid beliefs that maintain suffering." }
+    },
+    "viewStrategyButton": "View Strategy",
+    "alertTitle": "Note",
+    "alertText": "If trauma symptoms are severe or you are at risk, contact a mental health professional immediately."
+  },
+  "unrealisticBeautyStandardsScreen": {
+    "headerTitle": "Unrealistic Beauty Standards",
+    "imageLabel": "Body image",
+    "title": "Unrealistic Beauty Standards",
+    "description": "Address body image concerns and societal pressures with practical steps to build self‑acceptance.",
+    "benefitsTitle": "Benefits",
+    "benefits": {
+      "improvedSelfImage": "Improved self‑image",
+      "healthyHabits": "Healthier habits",
+      "reducedAnxiety": "Reduced anxiety",
+      "betterSelfAcceptance": "Greater self‑acceptance",
+      "improvedMentalHealth": "Improved overall mental health"
+    },
+    "strategiesTitle": "Strategies",
+    "strategies": {
+      "commonSuggestions": { "title": "Common suggestions", "description": "Practical ways to challenge appearance-focused thoughts and media pressures." },
+      "yoga": { "title": "Yoga", "description": "Movement to reconnect with body function over appearance." },
+      "relaxation": { "title": "Relaxation", "description": "Reduce anxiety tied to body image with calming practices." },
+      "cbt": { "title": "CBT", "description": "Work to identify and reframe distorted body image beliefs." },
+      "rebt": { "title": "REBT", "description": "Challenge absolutist ‘‘must’’ beliefs about appearance." }
+    },
+    "viewStrategyButton": "View Strategy",
+    "importantNote": { "title": "Important note", "text": "If body image problems are causing major distress, consider professional support." }
   }
 }

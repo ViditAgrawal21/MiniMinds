@@ -19,6 +19,14 @@ interface RelaxationIntervention {
   title: string;
   description: string;
   xp: number;
+  // Keep the original translations object from comprehensive JSON assets when present
+  translations?: {
+    [lang: string]: {
+      title?: string;
+      description?: string;
+      journalTemplate?: any;
+    };
+  };
   
   // Legacy format from static JSON files (keeping for backward compatibility)
   "Issue Name"?: string;
@@ -326,6 +334,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
         "scanIntro.environmentIssuesAffectingMentalWellbeing.title",
       "financial-mental-health": "scanIntro.financialMentalHealth.title",
       "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+      "social-media-issues": "socialMediaIssuesScreen.headerTitle",
       "job-insecurity": "scanIntro.jobInsecurity.title",
       "professional-mental-health": "scanIntro.professionalMentalHealth.title",
       "sex-life": "scanIntro.sexLife.title",
@@ -335,6 +344,10 @@ export default function RelaxationScreen({ navigation, route }: any) {
       "adhd": "adhdScreen.title",
       "aggressive-behaviour": "aggressiveBehaviourScreen.title",
       "conduct-issues": "conductIssues.headerTitle",
+      "trauma-loss-and-dreams": "Trauma, Loss and Dreams",
+      "unrealistic-beauty-standards": "Unrealistic Beauty Standards",
+      "substance-addiction": "scanIntro.substanceAddiction.title",
+      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -585,6 +598,373 @@ export default function RelaxationScreen({ navigation, route }: any) {
       }
     }
 
+    // Handle Self-Esteem & Identity relaxation data
+    if (condition === "self-esteem-and-self-identity") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/self_esteem_self_identity_interventions.json",
+        );
+
+        const items = data.interventions;
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation array found in Self-Esteem & Identity data");
+          return null;
+        }
+
+        // Normalize locale (handles values like 'en', 'en-US', etc.)
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+
+        // Filter only Relaxation-category items from the array (case-insensitive)
+        const relaxItems = items.filter((it: any) => {
+          const cat = (it.category || "").toString().toLowerCase();
+          return cat === "relaxation" || cat.includes("relax");
+        });
+
+        if (!relaxItems || relaxItems.length === 0) {
+          console.error("No Relaxation interventions found in Self-Esteem & Identity data");
+          return null;
+        }
+
+        const interventions = relaxItems.map((item: any) => {
+          const translations = item.translations || {};
+          const chosen = translations[lang] || translations["en"] || {};
+          return {
+            title: chosen.title || "",
+            description: chosen.description || "",
+            xp: item.xp || 0,
+            translations: translations,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "self-esteem-and-self-identity",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self-Esteem & Identity Relaxation data:", error);
+        return null;
+      }
+    }
+
+    // Handle Social Media issues Relaxation data
+    if (condition === "social-media-issues") {
+      try {
+        const data = require(
+          "../../../../assets/data/Internet & Social Media Issues/SocialMediaComprehensiveData.json",
+        );
+
+        // The comprehensive file stores cards under interventions.relaxation.cards
+        // but we support a few fallbacks just in case other shapes exist.
+        const items =
+          data?.interventions?.relaxation?.cards ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.rebt?.cards ||
+          data?.socialMediaIssuesScreen?.strategies?.relaxation?.relaxationSuggestionList ||
+          data?.strategies?.relaxation?.relaxationSuggestionList ||
+          null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation interventions array found in Social Media Issues data");
+          return null;
+        }
+
+        // Normalize locale (handles values like 'en', 'en-US', etc.)
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        // Map items to RelaxationIntervention shape. Support both `translations`
+        // objects and per-locale title/description keys (english/hindi/marathi).
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+              translations: translations,
+            } as RelaxationIntervention;
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "social-media-issues",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Social Media Issues Relaxation data:", error);
+        return null;
+      }
+    }
+
+    // Handle Trauma, Loss and Dreams data from comprehensive JSON file for Common Suggestions
+    if (condition === "trauma-loss-and-dreams") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/trauma_loss_dreams_10_common_suggestions.json",
+        );
+        const items = (() => {
+          // direct array
+          if (Array.isArray(data?.interventions)) return data.interventions;
+
+          // interventions as an object with a 10CommonSuggestions node
+          if (data?.interventions && typeof data.interventions === "object") {
+            const interventionsObj: any = data.interventions;
+            const commonNode =
+              interventionsObj["Relaxation"] ||
+              interventionsObj["Relaxation"] ||
+              interventionsObj["Relaxation"] ||
+              null;
+
+            if (commonNode) {
+              // languages may be keyed by short codes (en/hi/mr)
+              const languages = commonNode.languages || commonNode.language || {};
+              const localeKeyInner = (locale || "").slice(0, 2);
+              const langInner = ["en", "hi", "mr"].includes(localeKeyInner) ? localeKeyInner : "en";
+              const langNode = languages[langInner] || languages["en"] || languages["english"] || null;
+
+              if (langNode && Array.isArray(langNode.suggestions)) return langNode.suggestions;
+
+              // fallback: common node might include suggestions directly
+              if (Array.isArray(commonNode.suggestions)) return commonNode.suggestions;
+            }
+          }
+
+          // top-level suggestions array
+          if (Array.isArray(data?.suggestions)) return data.suggestions;
+
+          // fall back to known REBT-shaped paths
+          return (
+            data?.socialMediaIssuesScreen?.strategies?.rebt?.rebtSuggestionsList ||
+            data?.strategies?.rebt?.rebtSuggestionsList ||
+            null
+          );
+        })();
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation data array found in Trauma, Loss and Dreams data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "trauma-loss-and-dreams",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Trauma, Loss and Dreams Relaxation data:", error);
+        return null;
+      }
+    }
+
+    // handle Unrealistic Beauty Standards data from comprehensive JSON file for Relaxation
+    if (condition === "unrealistic-beauty-standards") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json",
+        );
+
+        // Prefer interventions.relaxation.cards, then commonSuggestions.cards, then fallbacks
+        const itemsCandidate =
+          data?.interventions?.relaxation?.cards ||
+          data?.interventions?.relaxation ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation data array found in Unrealistic Beauty Standards data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+              translations,
+            } as RelaxationIntervention;
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "unrealistic-beauty-standards",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Unrealistic Beauty Standards Relaxation data:", error);
+        return null;
+      }
+    }
+
+    // handle Substance Addiction data from comprehensive JSON file for Relaxation
+    if (condition === "substance-addiction") {
+      try {
+        const data = require(
+          "../../../../assets/data/behaviour/SubstanceAddiction_comprehensive_data.json",
+        );
+
+        // Prefer interventions.relaxation.cards, then relaxation, then other common shapes
+        const itemsCandidate =
+          data?.interventions?.relaxation?.cards ||
+          data?.interventions?.relaxation ||
+          data?.interventions?.relaxationStrategies?.cards ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.commonSuggestions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation data array found in Substance Addiction data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || item?.xp || 0,
+            } as RelaxationIntervention;
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "substance-addiction",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Substance Addiction Relaxation data:", error);
+        return null;
+      }
+    }
+
+
     // Map URL-style condition names to camelCase keys used in translation files
     const conditionKeyMap: { [key: string]: string } = {
       "anger-management": "angerManagement",
@@ -598,12 +978,15 @@ export default function RelaxationScreen({ navigation, route }: any) {
       "environment-issues": "environmentIssues",
       "financial-mental-health": "financialMentalHealth",
       "internet-social-media": "internetAndSocialMediaIssue",
+  "social-media-issues": "socialMediaIssues",
       "job-insecurity": "jobInsecurity",
       "professional-mental-health": "professionalMentalHealth",
       "sex-life": "sexLife",
       sleep: "sleep",
       "social-mental-health": "socialMentalHealth",
       "youngster-issues": "youngsterIssues",
+      "self-esteem-and-self-identity": "selfEsteemAndSelfIdentity",
+      "trauma-loss-and-dreams": "traumaLossAndDreams",
     };
     
     const translationKey = conditionKeyMap[condition];
@@ -757,6 +1140,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
         stress: "stress",
         "suicidal-behavior": "suicidalBehavior",
         "youngster-issues": "youngsterIssues",
+        "substance-addiction": "substanceAddiction",
       };
 
       const conditionKeyMap: { [key: string]: string } = {
@@ -773,6 +1157,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
         "financial-mental-health": "scanIntro.financialMentalHealth.title",
         "internet-dependence": "scanIntro.internetDependence.title",
         "internet-social-media": "scanIntro.internetAndSocialMediaIssue.title",
+  "social-media-issues": "socialMediaIssuesScreen.headerTitle",
         "job-insecurity": "scanIntro.jobInsecurity.title",
         "professional-mental-health":
           "scanIntro.professionalMentalHealth.title",
@@ -780,6 +1165,8 @@ export default function RelaxationScreen({ navigation, route }: any) {
         sleep: "scanIntro.sleep.title",
         "social-mental-health": "scanIntro.socialMentalHealth.title",
         "youngster-issues": "scanIntro.youngsterIssues.title",
+        "unrealistic-beauty-standards": "unrealisticBeautyStandards.headerTitle",
+        "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       };
 
       const translationKey = translationKeyMap[condition];
@@ -990,6 +1377,22 @@ export default function RelaxationScreen({ navigation, route }: any) {
         );
       }
     }
+    // If this intervention came from a comprehensive asset and has translations, prefer them
+    try {
+      const assetTranslations = relaxation.translations || (relaxation as any).translations;
+      if (assetTranslations) {
+        const assetLocale = currentLocale || "en";
+        const localized = assetTranslations[assetLocale] || assetTranslations[assetLocale.slice(0,2)] || assetTranslations["en"];
+        if (localized && typeof localized === "object") {
+          const value = field === "title" ? localized.title : localized.description;
+          if (value && value.length > 0) {
+            return field === "description" ? formatDescription(value) : value;
+          }
+        }
+      }
+    } catch (e) {
+      // ignore and continue with other heuristics
+    }
     
     // Second, try to get from common translations mapping (exact match)
     const commonTranslation =
@@ -1019,9 +1422,12 @@ export default function RelaxationScreen({ navigation, route }: any) {
         : translated;
     }
     
-    // For partial matching, be conservative - only match if the text contains common terms
+    // For partial matching, be conservative - only match if the translation key is multi-word
+    // This avoids returning very generic single-word translations like 'breathing' or 'practice'
     for (const [key, translation] of Object.entries(relaxationTranslations)) {
+      const isMultiWord = key.trim().includes(" ");
       if (
+        isMultiWord &&
         originalText.toLowerCase().includes(key.toLowerCase()) &&
         key.length > 5
       ) {
@@ -1035,18 +1441,16 @@ export default function RelaxationScreen({ navigation, route }: any) {
       }
     }
     
-    // Simplified word translation - only for single words that are common terms
+    // Simplified word translation - only for single words and only for descriptions
     const trimmedText = originalText.trim();
-    if (!trimmedText.includes(" ") && trimmedText.length > 3) {
+    if (field === "description" && !trimmedText.includes(" ") && trimmedText.length > 3) {
       const wordTranslation =
         relaxationTranslations[
           trimmedText.toLowerCase() as keyof typeof relaxationTranslations
         ];
       if (wordTranslation) {
         const translated = wordTranslation[currentLocale] || originalText;
-        return field === "description"
-          ? formatDescription(translated)
-          : translated;
+        return formatDescription(translated);
       }
     }
     

@@ -47,7 +47,7 @@ export default function SelfEsteemAndSelfIdentityScreen({ navigation} : any){
           <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
         <Text style={styles.headerTitle}>
-          {t("selfEsteemAndSelfIdentityScreen.headerTitle")}
+          {t("selfEsteemAndSelfIdentityScreen.headerTitle", "Self Esteem & Identity")}
         </Text>
       </View>
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
