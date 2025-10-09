@@ -840,10 +840,10 @@ export default function MindToolsScreen() {
                 <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.SubstanceAddictionScreen.title")}
+                {t("mindToolsScreen.categories.substanceaddictionscreen.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.SubstanceAddictionScreen.description")}
+                {t("mindToolsScreen.categories.substanceaddictionscreen.description")}
               </Text>
             </Pressable>
 
@@ -858,10 +858,10 @@ export default function MindToolsScreen() {
                 <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.TraumaLossAndDreamsScreen.title")}
+                {t("mindToolsScreen.categories.traumalossanddreamsscreen.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.TraumaLossAndDreamsScreen.description")}
+                {t("mindToolsScreen.categories.traumalossanddreamsscreen.description")}
               </Text>
             </Pressable>
 
@@ -876,10 +876,10 @@ export default function MindToolsScreen() {
                 <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
               <Text style={styles.categoryTitle}>
-                {t("mindToolsScreen.categories.UnrealisticBeautyStandardsScreen.title")}
+                {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.title")}
               </Text>
               <Text style={styles.categoryDescription}>
-                {t("mindToolsScreen.categories.UnrealisticBeautyStandardsScreen.description")}
+                {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.description")}
               </Text>
             </Pressable>
 

@@ -7527,6 +7527,26 @@
             "title": "ब्रेकअप और रीबाउंड",
             "description": "दिल टूटने से उबरें और स्वस्थ मुकाबला रणनीतियों से खुद को फिर से बनाएँ"
           },
+          "selfesteemandselfidentityscreen": {
+            "title": "आत्म-सम्मान और पहचान",
+            "description": "आत्म-मूल्य और व्यक्तिगत पहचान को मजबूत करें"
+          },
+          "socialmediaissuesscreen": {
+            "title": "सोशल मीडिया मुद्दे",
+            "description": "तुलना कम करें, FOMO को प्रबंधित करें, और सावधानीपूर्वक उपयोग करें"
+          },
+          "substanceaddictionscreen": {
+            "title": "नशीली आदतें",
+            "description": "सहायता प्राप्त करें और प्रतिशोध-रोकथाम कौशल का अभ्यास करें"
+          },
+          "traumalossanddreamsscreen": {
+            "title": "आघात, क्षति और सपने",
+            "description": "मृदु मार्गदर्शन के साथ आघात और शोक को संसाधित करें"
+          },
+          "unrealisticbeautystandardsscreen": {
+            "title": "अवास्तविक सौंदर्य मानदंड",
+            "description": "शरीर के प्रति उदासीनता और मीडिया साक्षरता विकसित करें"
+          },
         "pornaddictionscreen": {
           "title": "पोर्न की लत",
           "description": "तीव्र इच्छाओं का प्रबंधन करें और स्वस्थ आदतें बनाएँ"
@@ -7635,6 +7655,54 @@
     "viewStrategyButton": "रणनीति देखें",
     "alertTitle": "नोट",
     "alertText": "यह सामग्री केवल शैक्षिक सहायता के लिए है, यह पेशेवर देखभाल का विकल्प नहीं है। यदि दर्द असहनीय लगे तो किसी योग्य पेशेवर से संपर्क करें।"
+  },
+  "substanceAddictionScreen": {
+    "headerTitle": "नशीली आदतें",
+    "mainTitle": "नशीली आदतें",
+    "description": "नशे की निर्भरता को समझें और रिकवरी तथा रिलेप्स-रोकथाम के लिए साक्ष्य-आधारित रणनीतियाँ सीखें।",
+    "benefitsTitle": "रिकवरी के लाभ",
+    "benefits": {
+      "improvedHealth": "बेहतर शारीरिक स्वास्थ्य",
+      "betterRelationships": "बेहतर संबंध",
+      "financialStability": "आर्थिक स्थिरता",
+      "mentalClarity": "बेहतर मानसिक स्पष्टता",
+      "increasedSelfEsteem": "बेहतर आत्म-सम्मान"
+    },
+    "strategiesTitle": "रिकवरी रणनीतियाँ",
+    "strategySummaries": {
+      "commonSuggestions": { "title": "सामान्य सुझाव", "description": "रिकवरी योजना बनाने और उपयोग कम करने के व्यावहारिक कदम।" },
+      "yoga": { "title": "योग", "description": "इच्छाओं को प्रबंधित करने के लिए आंदोलन और श्वास अभ्यास।" },
+      "relaxation": { "title": "विश्राम", "description": "तनाव-प्रेरित उपयोग कम करने के लिए ग्राउंडिंग और विश्राम अभ्यास।" },
+      "cbt": { "title": "CBT", "description": "ट्रिगर्स की पहचान करने और विचारों को रीफ्रेम करने की तकनीकें।" },
+      "rebt": { "title": "REBT", "description": "नशीले उपयोग को बनाए रखने वाले अतार्किक मान्यताओं को चुनौती दें।" }
+    },
+    "viewStrategyButton": "रणनीति देखें",
+    "importantNote": { "title": "महत्वपूर्ण नोट", "description": "यदि आप गंभीर निर्भरता या निकासी का सामना कर रहे हैं, तो तुरंत चिकित्सा सहायता लें।" }
+  },
+
+  "unrealisticBeautyStandardsScreen": {
+    "headerTitle": "अवास्तविक सौंदर्य मानदंड",
+    "imageLabel": "शरीर छवि",
+    "title": "अवास्तविक सौंदर्य मानदंड",
+    "description": "शरीर छवि संबंधी चिंताओं और सामाजिक दबावों का समाधान करें और आत्म-स्वीकृति बनाने के व्यावहारिक कदम उठाएँ।",
+    "benefitsTitle": "लाभ",
+    "benefits": {
+      "improvedSelfImage": "बेहतर आत्म-छवि",
+      "healthyHabits": "स्वस्थ आदतें",
+      "reducedAnxiety": "कम चिंता",
+      "betterSelfAcceptance": "बेहतर आत्म-स्वीकृति",
+      "improvedMentalHealth": "कुल मिलाकर बेहतर मानसिक स्वास्थ्य"
+    },
+    "strategiesTitle": "रणनीतियाँ",
+    "strategies": {
+      "commonSuggestions": { "title": "सामान्य सुझाव", "description": "दिखावटी सोच और मीडिया दबावों को चुनौती देने के व्यावहारिक तरीके।" },
+      "yoga": { "title": "योग", "description": "दिखावट की बजाय शरीर के कार्य से जुड़ने के लिए आंदोलन।" },
+      "relaxation": { "title": "विश्राम", "description": "शरीर छवि से जुड़ी चिंता को कम करने के शांत अभ्यास।" },
+      "cbt": { "title": "CBT", "description": "विकृत शरीर छवि मान्यताओं की पहचान और रीफ्रेमिंग पर काम करें।" },
+      "rebt": { "title": "REBT", "description": "दिखावट के बारे में 'चाहिए' जैसी कठोर मान्यताओं को चुनौती दें।" }
+    },
+    "viewStrategyButton": "रणनीति देखें",
+    "importantNote": { "title": "महत्वपूर्ण नोट", "text": "यदि शरीर छवि समस्याएँ भारी कष्ट दे रही हैं, तो पेशेवर समर्थन पर विचार करें।" }
   },
   "angerManagementScreen": {
     "headerTitle": "क्रोध प्रबंधन",
