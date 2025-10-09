@@ -9742,23 +9742,23 @@
     "parentingStrategies": "Evidence-Based Parenting Strategies",
     "strategies": {
       "commonSuggestions": {
-        "title": "Practical Parenting Tips",
+        "title": "10 Common Suggestions",
         "description": "Essential daily strategies and proven techniques for effective parenting, including boundary setting, positive reinforcement, and communication skills."
       },
       "yoga": {
-        "title": "Mindful Parenting & Self-Care",
+        "title": "Yoga & Meditation",
         "description": "Practice mindfulness and self-care techniques to manage parental stress, stay present with your children, and model emotional regulation."
       },
       "relaxation": {
-        "title": "Stress Management for Parents",
+        "title": "Relaxation Techniques",
         "description": "Learn relaxation techniques to manage the daily stresses of parenting and maintain your emotional well-being while caring for your family."
       },
       "cbt": {
-        "title": "Cognitive Parenting Strategies",
+        "title": "CBT (Cognitive Behavioral Therapy)",
         "description": "Apply cognitive-behavioral approaches to understand your parenting patterns, manage difficult behaviors, and create positive family dynamics."
       },
       "rebt": {
-        "title": "Rational Parenting Approaches",
+        "title": "REBT (Rational Emotive Behavior Therapy)",
         "description": "Develop rational thinking patterns about parenting expectations, manage perfectionism, and build resilience in your parenting journey."
       }
     },
