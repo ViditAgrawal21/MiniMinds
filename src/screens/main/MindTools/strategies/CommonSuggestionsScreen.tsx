@@ -183,6 +183,106 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         return null;
       }
     }
+
+    // Handle Parenting from Child's View REBT data (top-level locale)
+    if (condition === "parenting-from-child-view") {
+      try {
+        const data = require("../../../../assets/data/Parenting/ChildPointOfView_comprehensive_data.json");
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeKey] || data["en"];
+        const list = dataset?.commonSuggestions; // fallback if no dedicated common suggestions
+
+        if (!list || !Array.isArray(list)) {
+          return null;
+        }
+
+        const interventions = list.map((item: any) => ({
+          title: item.title || "",
+          description: item.description || "",
+          xp: item.xp || 0,
+        }));
+
+        return {
+          condition: "parenting-from-child-view",
+          intervention_type: "10 Common Suggestions",
+          interventions,
+        };
+      } catch (error) {
+        return null;
+      }
+    }
+
+     // Handle Introvert Child data from comprehensive data file
+     if (condition === "introvert-child") {
+      try {
+        const IntrovertChildData = require("../../../../assets/data/behaviour/IntrovertChild_comprehensive_data.json");
+        const commonSuggestionsCards = IntrovertChildData.interventions?.commonSuggestions?.cards;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Introvert Child data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi",
+          "mr": "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "No title",
+          description:
+            card.description?.[localeField] || card.description?.english ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "introvert-child",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Introvert Child common suggestions data:", error);
+        return null;
+      }
+    }
+
+// Handle Porn Addiction relaxation data (localized en/hi/mr)
+    if (condition === "porn-addiction") {
+      try {
+        const data = require("../../../../assets/data/Internet & Social Media Issues/PornAddiction_comprehensive_data.json");
+        const cards = data?.relaxation?.cards;
+
+        if (!cards || !Array.isArray(cards)) {
+          console.error("No relaxation interventions found in Porn Addiction data");
+          return null;
+        }
+
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const interventions = cards.map((card: any) => ({
+          title: card.title?.[localeKey] || card.title?.en || "",
+          description:
+            card.description?.[localeKey] || card.description?.en || "",
+          xp: card.xp || 0,
+        }));
+
+        return {
+          condition: "porn-addiction",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Porn Addiction relaxation data:", error);
+        return null;
+      }
+    }
+    // Handle Exam Stress & Fear of Failure data from comprehensive data file
     if (condition === "exam-stress-fear-of-failure") {
       try {
         const data = require("../../../../assets/data/Parenting/ExamStressFearOfFailure_comprehensive_data.json");
@@ -444,8 +544,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         return null;
       }
     }
-    //Handle Eating Habits data file
-
+   
     // Handle Abusive Language & Back Answering from comprehensive data file
     if (condition === "abusive-language-back-answering") {
       try {

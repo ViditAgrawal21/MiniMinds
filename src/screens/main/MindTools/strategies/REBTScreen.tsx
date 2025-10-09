@@ -445,6 +445,44 @@ export default function REBTScreen({ navigation, route }: any) {
           return null;
         }
       }
+
+      // Handle Introvert Child  data from comprehensive data file
+      if (condition === "introvert-child") {
+        try {
+          const IntrovertChildData = require("../../../../assets/data/behaviour/IntrovertChild_comprehensive_data.json");
+          const rebtCards = IntrovertChildData.interventions?.rebt?.cards;
+
+          if (!rebtCards || !Array.isArray(rebtCards)) {
+            console.error("No REBT interventions found in introvert child data");
+            return null;
+          }
+
+          // Map locale codes to data field names
+          const localeMap: { [key: string]: string } = {
+            "en": "english",
+            "hi": "hindi",
+            "mr": "marathi",
+          };
+          const localeField = localeMap[locale] || "english";
+
+          const interventions = rebtCards.map((card: any) => ({
+            title: card.title?.[localeField] || card.title?.english || "",
+            description:
+              card.description?.[localeField] || card.description?.english ||
+              "",
+            xp: card.xp || 0,
+          }));
+
+          return {
+            condition: "introvert-child",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Introvert Child REBT data:", error);
+          return null;
+        }
+      }
       // Handle Conduct Issues data from comprehensive data file
       if (condition === "conduct-issues") {
         try {
@@ -547,6 +585,142 @@ export default function REBTScreen({ navigation, route }: any) {
         }
       }
 
+      // Handle Abusive Language & Back Answering REBT data (top-level locale)
+      if (condition === "abusive-language-back-answering") {
+        try {
+          const data = require("../../../../assets/data/Parenting/AbusiveLanguageBackAnswering_comprehensive_data.json");
+          const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+          const dataset = data[localeKey] || data["en"];
+          const list = dataset?.rebt;
+
+          if (!list || !Array.isArray(list)) {
+            console.error(
+              "No REBT interventions found in Abusive Language & Back Answering data",
+            );
+            return null;
+          }
+
+          const interventions = list.map((item: any) => ({
+            title: item.title || "",
+            description: item.description || "",
+            xp: item.xp || 0,
+          }));
+
+          return {
+            condition: "abusive-language-back-answering",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error(
+            "Error loading Abusive Language & Back Answering REBT data:",
+            error,
+          );
+          return null;
+        }
+      }
+
+
+      // Handle Exam stress and fear of failure REBT data (top-level locale)
+      if (condition === "exam-stress-fear-of-failure") {
+        try {
+          const data = require("../../../../assets/data/Parenting/ExamStressFearOfFailure_comprehensive_data.json");
+          const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+          const dataset = data[localeKey] || data["en"];
+          const list = dataset?.rebt;
+
+          if (!list || !Array.isArray(list)) {
+            console.error(
+              "No REBT interventions found in Exam stress and fear of failure data",
+            );
+            return null;
+          }
+
+          const interventions = list.map((item: any) => ({
+            title: item.title || "",
+            description: item.description || "",
+            xp: item.xp || 0,
+          }));
+
+          return {
+            condition: "exam-stress-fear-of-failure",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error(
+            "Error loading Exam stress and fear of failure REBT data:",
+            error,
+          );
+          return null;
+        }
+      }
+
+      // Handle Dating Sites and Complications   REBT data (localized en/hi/mr in cards)
+      if (condition === "dating-sites-and-complications") {
+        try {
+          const data = require("../../../../assets/data/Emotion/dating_sites_complications_comprehensive_data.json");
+          const cards = data?.rebt?.cards;
+
+          if (!cards || !Array.isArray(cards)) {
+            console.error("No REBT interventions found in Dating Sites and Complications data");
+            return null;
+          }
+
+          const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+          const interventions = cards.map((card: any) => ({
+            title: card.title?.[localeKey] || card.title?.en || "",
+            description: card.description?.[localeKey] || card.description?.en || "",
+            xp: card.xp || 0,
+          }));
+
+          return {
+            condition: "dating-sites-and-complications",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Dating Sites and Complications REBT data:", error);
+          return null;
+        }
+      }
+       // Handle Friendship and Relationship REBT data (fallback to 10 common suggestions)
+       if (condition === "friendship-and-relationship") { // fallback to 10 common suggestions
+        try {
+          const data = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
+          const list = data?.["10_common_suggestions"]; // array directly
+
+          if (!list || !Array.isArray(list)) {
+            console.error(
+              "No REBT interventions found in Friendship and Relationship data",
+            );
+            return null;
+          }
+
+          const interventions = list.map((item: any) => ({
+            title:
+              (typeof item.title === "string" ? item.title : item.title?.en) || "",
+            description:
+              (typeof item.description === "string"
+                ? item.description
+                : item.description?.en) || "",
+            xp: item.xp || 0,
+          }));
+
+          return {
+            condition: "friendship-and-relationship",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error(
+            "Error loading Friendship and Relationship REBT data:",
+            error,
+          );
+          return null;
+        }
+      }
+
       // Handle Parenting from Child's View REBT data (top-level locale)
       if (condition === "parenting-from-child-view") {
         try {
@@ -634,6 +808,72 @@ export default function REBTScreen({ navigation, route }: any) {
         };
         } catch (error) {
           console.error("Error loading Aggressive Behaviour REBT data:", error);
+          return null;
+        }
+      }
+
+      // Handle Internet Addiction data from comprehensive data file
+    if (condition === "internet-addiction") {
+      try {
+        const InternetData = require("../../../../assets/data/Internet & Social Media Issues/InternetAddiction_comprehensive_data.json");
+        const rebtCards = InternetData.rebt?.cards;
+
+        if (!rebtCards || !Array.isArray(rebtCards)) {
+        console.error("No REBT interventions found in Internet Addiction data");
+          return null;
+        }
+
+        const interventions = rebtCards.map((card: any) => ({
+          title: card.title?.[locale] || card.title?.en || "No title",
+          description:
+            card.description?.[locale] || card.description?.en ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          condition: "internet-addiction",
+          intervention_type: "REBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Internet Addiction data:", error);
+        return null;
+      }
+    }
+
+      // Handle Gambling and Gaming Addiction data from comprehensive data file
+      if (condition === "gambling-and-gaming-addiction") {
+        try {
+          const aggressiveData = require("../../../../assets/data/Internet & Social Media Issues/GamblingAndGamingAddiction_comprehensive_data.json");
+          const rebtCards = aggressiveData.interventions?.rebt?.cards;
+          
+          if (!rebtCards || !Array.isArray(rebtCards)) {
+            console.error("No REBT interventions found in Gambling and Gaming Addiction data");
+            return null;
+          }
+          
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi", 
+          "mr": "marathi"
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = rebtCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "",
+          description: card.description?.[localeField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+        
+        return {
+          condition: "gambling-and-gaming-addiction",
+          intervention_type: "REBT",
+          interventions,
+        };
+        } catch (error) {
+          console.error("Error loading Gambling and Gaming Addiction REBT data:", error);
           return null;
         }
       }
