@@ -9702,23 +9702,23 @@
     "parentingStrategies": "Evidence-Based Parenting Strategies",
     "strategies": {
       "commonSuggestions": {
-        "title": "Child-Centered Communication",
+        "title": "10 Common Suggestions",
         "description": "Learn active listening techniques and empathetic communication strategies that validate your child's feelings and foster open dialogue."
       },
       "yoga": {
-        "title": "Family Mindfulness & Yoga",
+        "title": "Yoga & Meditation",
         "description": "Practice mindfulness and gentle yoga exercises together to build emotional regulation skills and strengthen your bond."
       },
       "relaxation": {
-        "title": "Calming Techniques for Families",
+        "title": "Relaxation",
         "description": "Discover relaxation methods that help both you and your child manage stress and create peaceful family moments."
       },
       "cbt": {
-        "title": "Positive Parenting Approaches",
+        "title": "CBT (Cognitive Behavioral Therapy)",
         "description": "Apply cognitive-behavioral techniques to understand and reshape both your parenting patterns and your child's behavioral responses."
       },
       "rebt": {
-        "title": "Rational Parenting Methods",
+        "title": "REBT (Rational Emotive Behavior Therapy)",
         "description": "Use rational emotive approaches to manage parenting expectations and help children develop healthy thinking patterns."
       }
     },
