@@ -9379,29 +9379,31 @@
     "interventionStrategies": "Intervention Strategies",
     "strategies": {
       "commonSuggestions": {
-        "title": "Study & Stress Management",
+        "title": "10 Common Suggestions",
         "description": "Practical study techniques, time management strategies, and stress reduction methods to improve exam preparation and performance."
       },
       "yoga": {
-        "title": "Mindful Movement",
+        "title": "Yoga",
         "description": "Yoga poses and breathing exercises to reduce physical tension, calm the mind, and improve focus during study sessions."
       },
       "relaxation": {
-        "title": "Anxiety Relief",
+        "title": "Relaxation",
         "description": "Relaxation techniques and mindfulness practices to manage exam anxiety, reduce stress hormones, and promote better sleep."
       },
       "cbt": {
-        "title": "Cognitive Restructuring",
+        "title": "CBT (Cognitive Behavioral Therapy)",
         "description": "Cognitive-behavioral strategies to challenge negative thoughts, reframe perfectionist thinking, and build confidence in academic abilities."
       },
       "rebt": {
-        "title": "Rational Thinking",
+        "title": "REBT (Rational Emotive Behavior Therapy)",
         "description": "Rational emotive techniques to address irrational fears about failure, develop realistic expectations, and build resilience for academic challenges."
       }
     },
     "viewStrategyButton": "View Strategy",
-    "alertTitle": "Academic Support Available",
-    "alertText": "If exam stress significantly impacts your daily life or academic performance, consider speaking with a counselor, academic advisor, or mental health professional for additional support and resources."
+  "alertTitle": "Academic Support Available",
+  "alertText": "If exam stress significantly impacts your daily life or academic performance, consider speaking with a counselor, academic advisor, or mental health professional for additional support and resources.",
+  "successTipsTitle": "Success Tips",
+  "successTipsText": "Create a study schedule, practice active recall, take regular breaks, and prioritize sleep and nutrition to improve exam performance."
   },
   "conductIssues": {
     "headerTitle": "Conduct Issues Information",
@@ -9540,15 +9542,15 @@
     "strategiesTitle": "Support Strategies",
     "strategies": {
       "commonSuggestions": {
-        "title": "General Recovery Suggestions",
+        "title": "10 Common Suggestions",
         "description": "Evidence-based strategies to break the digital addiction cycle and establish healthy online habits."
       },
       "yoga": {
-        "title": "Mindful Yoga Practice",
+        "title": "Yoga",
         "description": "Physical and mental exercise to redirect energy and improve self-control through mindful movement."
       },
       "relaxation": {
-        "title": "Relaxation Techniques",
+        "title": "Relaxation",
         "description": "Stress-reduction methods to manage cravings and develop healthy coping mechanisms."
       },
       "cbt": {

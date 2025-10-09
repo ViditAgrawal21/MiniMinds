@@ -558,7 +558,7 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="moon-outline" size={24} color="#000000" />
+                  <CustomIcon type="IO" name="heart-dislike" size={24} color="#000000" />
                 </View>
                 <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
               </View>
@@ -968,7 +968,7 @@ export default function MindToolsScreen() {
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="help-outline" size={24} color="#7c3aed" />
+                    <CustomIcon type="IO" name="heart-dislike" size={24} color="#7c3aed" />
                   </View>
                   <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
                 </View>

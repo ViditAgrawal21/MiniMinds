@@ -342,12 +342,21 @@ export default function RelaxationScreen({ navigation, route }: any) {
       "social-mental-health": "scanIntro.socialMentalHealth.title",
       "youngster-issues": "scanIntro.youngsterIssues.title",
       "adhd": "adhdScreen.title",
+      "eating-habits": "Eating Habits",
       "aggressive-behaviour": "aggressiveBehaviourScreen.title",
       "conduct-issues": "conductIssues.headerTitle",
+      "introvert-child": "Introvert Child",
+      "abusive-language-back-answering": "Abusive Language & Back Answering",
+      "breakupAndRebound": "Breakup and Rebound",
       "trauma-loss-and-dreams": "Trauma, Loss and Dreams",
       "unrealistic-beauty-standards": "Unrealistic Beauty Standards",
       "substance-addiction": "scanIntro.substanceAddiction.title",
+      "exam-stress-fear-of-failure": "examStressScreen.headerTitle",
+      "friendship-and-relationship": "Frendship and Relationship",
+      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
+      "internet-addiction": "Internet Addiction",
       "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
+      "dating-sites-and-complications": "Dating Sites and Complications",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -427,6 +436,44 @@ export default function RelaxationScreen({ navigation, route }: any) {
         return null;
       }
     }
+
+    // Handle Breakup & Rebound data from comprehensive data file
+     if (condition === "breakupAndRebound") {
+      try {
+        const IntrovertChildData = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
+        const relaxationCards = IntrovertChildData.interventions?.relaxation?.cards;
+
+        if (!relaxationCards || !Array.isArray(relaxationCards)) {
+          console.error("No relaxation interventions found in Breakup & Rebound data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi",
+          "mr": "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = relaxationCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "",
+          description:
+            card.description?.[localeField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+
+        return {
+          condition: "breakupAndRebound",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Breakup & Rebound relaxation data:", error);
+        return null;
+      }
+    }
+
     // Handle Conduct Issues data from comprehensive data file
     if (condition === "conduct-issues") {
       try {

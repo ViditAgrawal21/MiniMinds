@@ -129,18 +129,23 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "conduct-issues": "conductIssues.headerTitle",
   "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       // Miniminds conditions
-      "abusive-language-back-answering":
-        "mindToolsScreen.categories.abusivelanguagebackansweringscreen.title",
+     "abusive-language-back-answering": "Abusive Language & Back Answering",
      "exam-stress-fear-of-failure": "examStressScreen.headerTitle",
      "dark-web-onlyfans": "Dark Web and OnlyFans",
      "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
-     "dating-sites-and-complications":"datingsitesandcomplicationsScreen.headerTitle",
+    //  "dating-sites-and-complications":"datingsitesandcomplicationsScreen.headerTitle",
      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
       "internet-addiction": "Internet Addiction",
       "self-care-hygiene": "Self-care Hygiene",
       "substance-addiction": "Substance Addiction",
       "trauma-loss-and-dreams": "Trauma, Loss and Dreams",
       "unrealistic-beauty-standards": "Unrealistic Beauty Standards",
+      "eating-habits": "Eating Habits",
+      "introvert-child": "Introvert Child",
+      "breakupAndRebound": "Breakup and Rebound",
+      // "internet-addiction": "Internet Addiction",
+      "dating-sites-and-complications": "Dating Sites and Complications",
+      
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -217,6 +222,46 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       }
     }
 
+    // Handle Breakup and Rebound data from comprehensive data file
+     if (condition === "breakupAndRebound") {
+      try {
+        const IntrovertChildData = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
+        const commonSuggestionsCards = IntrovertChildData.interventions?.commonSuggestions?.cards;
+
+        if (!commonSuggestionsCards || !Array.isArray(commonSuggestionsCards)) {
+          console.error("No common suggestions found in Breakup and Rebound data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi",
+          "mr": "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = commonSuggestionsCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "No title",
+          description:
+            card.description?.[localeField] || card.description?.english ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          metadata: {
+            condition: "breakupAndRebound",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Breakup and Rebound common suggestions data:", error);
+        return null;
+      }
+    }
      // Handle Introvert Child data from comprehensive data file
      if (condition === "introvert-child") {
       try {

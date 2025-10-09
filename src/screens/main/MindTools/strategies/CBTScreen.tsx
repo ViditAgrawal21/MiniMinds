@@ -367,8 +367,17 @@ export default function CBTScreen({ navigation, route }: any) {
       "conduct-issues": "conductIssues.headerTitle",
       "substance-addiction": "substanceAddictionScreen.headerTitle",
       "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
+      "eating-habits": "Eating Habits",
+      "introvert-child": "Introvert Child",
+      "breakupAndRebound": "Breakup and Rebound",
+      "dating-sites-and-complications": "Dating Sites and Complications",
+      "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
+      "exam-stress-fear-of-failure": "examStressScreen.headerTitle",
       "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
       "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
+      "abusive-language-back-answering": "Abusive Language & Back Answering",
+      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
+      "internet-addiction": "Internet Addiction",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -698,6 +707,79 @@ if (condition === "exam-stress-fear-of-failure") {
           interventions,
         };
       } catch (error) {
+        return null;
+      }
+    }
+
+    // Handle Breakup & Rebound CBT data (support many shapes)
+    if (condition === "breakupAndRebound") {
+      try {
+        const raw = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
+
+        // Try localized top-level dataset first
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = raw[localeKey] || raw["en"] || raw;
+
+        // Candidate shapes: dataset.commonSuggestions, interventions.cbt.cards, interventions.cbt, suggestions, top-level arrays
+        const itemsCandidate =
+          dataset?.commonSuggestions ||
+          dataset?.interventions?.cbt?.cards ||
+          dataset?.interventions?.cbt ||
+          raw?.interventions?.cbt?.cards ||
+          raw?.interventions?.cbt ||
+          raw?.suggestions ||
+          raw?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items) || items.length === 0) {
+          console.error("No CBT data array found for Breakup & Rebound", { candidate: itemsCandidate });
+          try {
+            Alert.alert(
+              "Debug: breakup&rebound CBT",
+              `no items candidate: ${JSON.stringify(itemsCandidate?.slice?.(0,3) || itemsCandidate || null)}\nlocaleKey: ${localeKey}`,
+            );
+          } catch (e) {}
+          return null;
+        }
+
+        const interventions = items.map((item: any) => {
+          // translations object preferred
+          if (item.translations && typeof item.translations === 'object') {
+            const chosen = item.translations[localeKey] || item.translations['en'] || item.translations['english'] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          // title/description may be objects keyed by language or plain strings
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === 'object' && (titleObj[localeKey] || titleObj['english'] || titleObj['en'])) || (typeof titleObj === 'string' ? titleObj : '');
+          const description = (typeof descObj === 'object' && (descObj[localeKey] || descObj['english'] || descObj['en'])) || (typeof descObj === 'string' ? descObj : '');
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "breakupAndRebound",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Breakup & Rebound CBT data:", error);
         return null;
       }
     }

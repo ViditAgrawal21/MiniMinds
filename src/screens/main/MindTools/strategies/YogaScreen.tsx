@@ -279,10 +279,19 @@ export default function YogaScreen({ navigation, route }: any) {
       "adhd": "adhdScreen.title",
       "aggressive-behaviour": "aggressiveBehaviourScreen.title",
       "conduct-issues": "conductIssues.headerTitle",
+      "eating-habits": "Eating Habits",
+      "introvert-child": "Introvert Child",
+      "friendship-and-relationship": "Frendship and Relationship",
+      "breakupAndRebound": "Breakup and Rebound",
+      "exam-stress-fear-of-failure": "examStressScreen.headerTitle",
       "substance-addiction": "substanceAddictionScreen.headerTitle",
       "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       "trauma-loss-and-dreams": "traumaLossAndDreamsScreen.headerTitle",
       "unrealistic-beauty-standards": "unrealisticBeautyStandardsScreen.headerTitle",
+      "abusive-language-back-answering": "Abusive Language & Back Answering",
+      "dating-sites-and-complications": "Dating Sites and Complications",
+      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
+      "internet-addiction": "Internet Addiction",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -489,26 +498,65 @@ export default function YogaScreen({ navigation, route }: any) {
         return null;
       }
     }
-     // Handle Breakup & Rebound data from comprehensive JSON file
-     if (condition === "breakupAndRebound") {
+    // Handle Breakup & Rebound 
+    const _condNorm = (condition || "").toString().toLowerCase();
+    if (
+      _condNorm === "breakupandrebounce" || // defensive, unlikely
+      _condNorm === "breakupandrebound" ||
+      _condNorm === "breakupandreb" ||
+      _condNorm.includes("breakup") && _condNorm.includes("rebound") ||
+      _condNorm === "breakupandrewbound" ||
+      _condNorm === "breakupandrebound" ||
+      _condNorm === "breakupandrebond" ||
+      _condNorm === "breakupandrebound"
+    ) {
       try {
-        const BreakupData = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
-        const yogaCards = BreakupData.interventions?.yogaMeditation?.cards || [];
+        const raw = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
 
-        // Map locale codes to data field names
-        const localeMap: { [key: string]: string } = {
-          "en": "english",
-          "hi": "hindi",
-          "mr": "marathi",
-        };
-        const localeField = localeMap[locale] || "english";
+        // pick locale dataset if the file is localized at top-level
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = raw[localeKey] || raw["en"] || raw;
 
-        const interventions = yogaCards.map((card: any) => ({
-          title: card.title?.[localeField] || card.title?.english || "No title",
-          description:
-            card.description?.[localeField] || card.description?.english ||
-            "No description",
-          xp: card.xp || 5,
+        // Try multiple shapes where yoga items may appear
+        const itemsCandidate =
+          dataset?.yoga ||
+          dataset?.yoga?.cards ||
+          dataset?.interventions?.yogaMeditation?.cards ||
+          raw?.interventions?.yogaMeditation?.cards ||
+          raw?.interventions?.yoga?.cards ||
+          raw?.interventions?.yoga ||
+          raw?.yoga?.cards ||
+          raw?.yoga ||
+          dataset?.commonSuggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items) || items.length === 0) {
+          console.error("No Yoga data found for Breakup & Rebound", { candidate: itemsCandidate });
+          try {
+            // show a dev alert so it's obvious in the running app
+            Alert.alert(
+              "Debug: breakup&rebound",
+              `no items candidate: ${JSON.stringify(itemsCandidate?.slice?.(0,3) || itemsCandidate || null)}\nlocaleKey: ${localeKey}`,
+            );
+          } catch (e) {}
+          return null;
+        }
+
+        // Debug: log resolved items count and sample (dev-only)
+        try {
+          console.debug && console.debug('[getYogaData] breakup&rebound itemsCount=', items.length, 'sample=', items[0]);
+        } catch (e) {}
+
+        const interventions = items.map((item: any) => ({
+          title: (item.title && typeof item.title === 'string') ? item.title : (item.title?.english || item.title?.en || item.title?.[localeKey] || item.CardTitle || item['Card Title'] || "No title"),
+          description: (item.description && typeof item.description === 'string') ? item.description : (item.description?.english || item.description?.en || item.description?.[localeKey] || item.CardDescription || item['Card Description'] || "No description"),
+          xp: item.xp || item.XP || 5,
         }));
 
         return {
@@ -517,7 +565,7 @@ export default function YogaScreen({ navigation, route }: any) {
           interventions: interventions,
         };
       } catch (error) {
-        console.error("Error loading Breakup & Rebound  yoga data:", error);
+        console.error("Error loading Breakup & Rebound yoga data:", error);
         return null;
       }
     }
@@ -553,6 +601,7 @@ export default function YogaScreen({ navigation, route }: any) {
         return null;
       }
     }
+
     // Handle Abusive Language & Back Answering yoga data (localized at top-level)
     if (condition === "abusive-language-back-answering") {
       try {
@@ -583,7 +632,6 @@ export default function YogaScreen({ navigation, route }: any) {
         return null;
       }
     }
-
     // Handle Exam Stress yoga data (localized at top-level)
     if (condition === "exam-stress-fear-of-failure") {
       try {

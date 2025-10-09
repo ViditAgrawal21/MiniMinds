@@ -4,7 +4,7 @@ import { useLanguage } from "../../../../context/LanguageContext";
 import CustomIcon from "../../../../components/CustomIcon";
 
 export default function ExamStressScreen({ navigation}:any){ 
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
   const handleBackPress = () => {
     navigation.goBack();
   };

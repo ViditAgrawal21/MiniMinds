@@ -401,10 +401,19 @@ export default function REBTScreen({ navigation, route }: any) {
       "adhd": "adhdScreen.title",
       "aggressive-behaviour": "aggressiveBehaviourScreen.title",
       "conduct-issues": "conductIssues.headerTitle",
+      "eating-habits": "Eating Habits",
       "self-esteem-and-self-identity": "Self Esteem & Self Identity",
       "social-media-issues": "Social Media Issues",
       "trauma-loss-and-dreams": "Trauma, Loss & Dreams",
       "unrealistic-beauty-standards": "Unrealistic Beauty Standards",
+      "introvert-child": "Introvert Child",
+      "breakupAndRebound": "Breakup and Rebound",
+      "friendship-and-relationship": "Frendship and Relationship",
+      "abusive-language-back-answering": "Abusive Language & Back Answering",
+      "exam-stress-fear-of-failure": "examStressScreen.headerTitle",
+      "internet-addiction": "Internet Addiction",
+      "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
+      "dating-sites-and-complications": "Dating Sites and Complications",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -560,6 +569,43 @@ export default function REBTScreen({ navigation, route }: any) {
           return null;
         }
       }
+
+      // Handle Breakup & Rebound comprehensive data file
+      if (condition === "breakupAndRebound") {
+        try {
+          const adhdData = require("../../../../assets/data/Emotion/breakup_rebound_10_common_suggestions.json");
+          const rebtCards = adhdData.interventions?.rebt?.cards;
+
+          if (!rebtCards || !Array.isArray(rebtCards)) {
+            console.error("No Breakup & Rebound interventions found in ADHD data");
+            return null;
+          }
+
+          // Map locale codes to ADHD data field names
+          const localeMap: { [key: string]: string } = {
+            "en": "english",
+            "hi": "hindi",
+            "mr": "marathi"
+          };
+          const adhdLocaleField = localeMap[locale] || "english";
+
+          const interventions = rebtCards.map((card: any) => ({
+            title: card.title?.[adhdLocaleField] || card.title?.english || "",
+            description: card.description?.[adhdLocaleField] || card.description?.english || "",
+            xp: card.xp || 0,
+          }));
+
+          return {
+            condition: "breakupAndRebound",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Breakup & Rebound REBT data:", error);
+          return null;
+        }
+      }
+
 
       // Handle Porn Addiction REBT data (localized en/hi/mr)
       if (condition === "porn-addiction") {
