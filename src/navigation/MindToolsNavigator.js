@@ -22,6 +22,10 @@ import ProfessionalMentalHealthScreen from '../screens/main/MindTools/Profession
 import SocialMentalHealthScreen from '../screens/main/MindTools/SocialMentalHealthScreen';
 import YoungsterIssuesScreen from '../screens/main/MindTools/YoungsterIssuesScreen';
 import EmotionalIntelligenceScreen from '../screens/main/MindTools/EmotionalIntelligenceScreen';
+// Miniminds screens
+import BullyingScreen from '../screens/main/MindTools/Miniminds Screen/BullyingScreen';
+import BunkingScreen from '../screens/main/MindTools/Miniminds Screen/BunkingScreen';
+import LearningDisabilityScreen from '../screens/main/MindTools/Miniminds Screen/LearningDisability';
 
 // Import intervention-related screens
 import InterventionsScreen from '../screens/main/MindTools/InterventionsScreen';
@@ -127,6 +131,18 @@ const MindToolsNavigator = () => {
       <MindtoolsStack.Screen 
         name="EmotionalIntelligenceScreen" 
         component={EmotionalIntelligenceScreen} 
+      />
+      <MindtoolsStack.Screen 
+        name="BullyingScreen"
+        component={BullyingScreen}
+      />
+      <MindtoolsStack.Screen 
+        name="BunkingScreen"
+        component={BunkingScreen}
+      />
+      <MindtoolsStack.Screen 
+        name="LearningDisabilityScreen"
+        component={LearningDisabilityScreen}
       />
       
       {/* Intervention Related Screens */}

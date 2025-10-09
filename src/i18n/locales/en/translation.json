@@ -9068,6 +9068,19 @@
         "title": "Breakup & Rebound",
         "description": "Heal from heartbreak and rebuild with healthy coping strategies"
       }
+      ,
+      "bullyingscreen": {
+        "title": "Bullying",
+        "description": "Support for bullying, bystanders, and building safety plans"
+      },
+      "bunkingscreen": {
+        "title": "Bunking (Skipping School)",
+        "description": "Understand reasons for skipping classes and find constructive ways to re-engage"
+      },
+      "learningdisability": {
+        "title": "Learning Disability",
+        "description": "Strategies to support learning differences and practical classroom accommodations"
+      }
     },
     "upgradeDialog": {
       "basic": {

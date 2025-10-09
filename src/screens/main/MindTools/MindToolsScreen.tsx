@@ -66,6 +66,9 @@ type RootStackParamList = {
   SocialMediaIssuesScreen: undefined;
   SubstanceAddictionScreen: undefined;
   TraumaLossAndDreamsScreen: undefined;
+  BullyingScreen: undefined;
+  BunkingScreen: undefined;
+  LearningDisabilityScreen: undefined;
   UnrealisticBeautyStandardsScreen: undefined;
   Upgrade: undefined;
 };
@@ -82,6 +85,19 @@ export default function MindToolsScreen() {
     null,
   );
   const navigation = useNavigation<NavigationProp>();
+
+  // Debug: print navigation state once when screen mounts to verify available routes
+  React.useEffect(() => {
+    try {
+      // This will print the current navigation state to Metro console
+      // so you can confirm whether nested routes like "BunkingScreen" exist.
+      // Remove after debugging.
+      // eslint-disable-next-line no-console
+      console.log('MindToolsScreen navigation state:', navigation.getState());
+    } catch (e) {
+      // ignore if navigation doesn't support getState in this context
+    }
+  }, [navigation]);
 
   // Exit confirmation hook
   const { ExitConfirmationModal } = useExitConfirmation();
@@ -102,6 +118,9 @@ export default function MindToolsScreen() {
     DatingSitesAndComplications: "free",
     GamblingAndGamingAddiction: "free",
     InternetAddiction: "free",
+    Bullying: "free",
+    Bunking: "free",
+    LearningDisability: "free",
     ParentingFromChildView: "free",
     ParentingFromParentsView: "free",
     PornAddiction: "free",
@@ -882,6 +901,62 @@ export default function MindToolsScreen() {
                 {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.description")}
               </Text>
             </Pressable>
+            {/* Bullying Card - visible in main grid */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("BullyingScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="hand-left-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.bullyingscreen.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.bullyingscreen.description")}
+              </Text>
+            </Pressable>
+
+            {/* Bunking Card - visible in main grid */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("BunkingScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="school-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.bunkingscreen.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.bunkingscreen.description")}
+              </Text>
+            </Pressable>
+
+            {/* Learning Disability Card - visible in main grid */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("LearningDisabilityScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="book-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.learningdisability.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.learningdisability.description")}
+              </Text>
+            </Pressable>
 
             {/* Row 9 - Full Width Emotional Intelligence Card */}
             <Pressable
@@ -1249,6 +1324,46 @@ export default function MindToolsScreen() {
                   {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.description")}
                 </Text>
               </Pressable>
+
+              {/* Bullying Card */}
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => navigation.navigate("BullyingScreen")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="hand-left-outline" size={24} color="#000000" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                </View>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.bullyingscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.bullyingscreen.description")}
+                </Text>
+              </Pressable>
+
+              {/* Bunking Card */}
+              <Pressable
+                style={styles.categoryCard}
+                onPress={() => navigation.navigate("BunkingScreen")}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="school-outline" size={24} color="#000000" />
+                  </View>
+                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#6b7280" />
+                </View>
+                <Text style={styles.categoryTitle}>
+                  {t("mindToolsScreen.categories.bunkingscreen.title")}
+                </Text>
+                <Text style={styles.categoryDescription}>
+                  {t("mindToolsScreen.categories.bunkingscreen.description")}
+                </Text>
+              </Pressable>
+
+              /* LearningDisability card removed from modal to avoid duplicate entry (moved to main grid) */
 
               <Pressable
                 style={styles.categoryCard}
