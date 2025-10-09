@@ -562,7 +562,7 @@ export default function YogaScreen({ navigation, route }: any) {
         const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
         const dataset = AbusiveData[localeKey] || AbusiveData["en"];
 
-        const yogaList = dataset?.yoga || [];
+        const yogaList = dataset?.yoga || []; // fallback if no dedicated yoga
 
         const interventions = yogaList.map((item: any) => ({
           title: item.title || "No title",
@@ -593,7 +593,7 @@ export default function YogaScreen({ navigation, route }: any) {
         const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
         const dataset = ExamStessdata[localeKey] || ExamStessdata["en"];
 
-        const yogaList = dataset?.yoga || [];
+        const yogaList = dataset?.yoga || []; // fallback if no dedicated yoga
 
         const interventions = yogaList.map((item: any) => ({
           title: item.title || "No title",
@@ -614,12 +614,68 @@ export default function YogaScreen({ navigation, route }: any) {
         return null;
       }
     }
+
+    // Handle Parenting from Child's View yoga data (top-level locale)
+    if (condition === "parenting-from-child-view") {
+      try {
+        const data = require("../../../../assets/data/Parenting/ChildPointOfView_comprehensive_data.json");
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeKey] || data["en"];
+        const list = dataset?.yoga; // fallback if no dedicated yoga
+
+        if (!list || !Array.isArray(list)) {
+          return null;
+        }
+
+        const interventions = list.map((item: any) => ({
+          title: item.title || "",
+          description: item.description || "",
+          xp: item.xp || 0,
+        }));
+
+        return {
+          condition: "parenting-from-child-view",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions,
+        };
+      } catch (error) {
+        return null;
+      }
+    }
+
     // Handle Friendship & Relationship yoga data (single-language JSON)
     if (condition === "friendship-and-relationship") {
       try {
         const frData = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
 
-        const yogaList = frData?.yoga_meditation || [];
+        const yogaList = frData?.yoga_meditation || []; // fallback if no dedicated yoga
+
+        const interventions = yogaList.map((item: any) => ({
+          title: item.title || "No title",
+          description: item.description || "No description",
+          xp: item.xp || 5,
+        }));
+
+        return {
+          condition: "friendship-and-relationship",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions,
+        };
+      } catch (error) {
+        console.error(
+          "Error loading Friendship & Relationship yoga data:",
+          error,
+        );
+        return null;
+      }
+    }
+
+     // Handle Friendship & Relationship yoga data (single-language JSON)
+    if (condition === "friendship-and-relationship") {
+      try {
+        const frData = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
+
+        const yogaList = frData?.yoga_meditation || []; // fallback if no dedicated yoga
 
         const interventions = yogaList.map((item: any) => ({
           title: item.title || "No title",
@@ -647,7 +703,7 @@ export default function YogaScreen({ navigation, route }: any) {
           const data = require("../../../../assets/data/Emotion/dating_sites_complications_comprehensive_data.json");
 
           const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
-          const yogaCards = data?.yoga?.cards || [];
+          const yogaCards = data?.yoga?.cards || []; // fallback if no dedicated yoga
 
           const interventions = yogaCards.map((card: any) => ({
             title: card.title?.[localeKey] || card.title?.en || "No title",
@@ -670,11 +726,41 @@ export default function YogaScreen({ navigation, route }: any) {
           return null;
         }
       }
+
+      // // Handle Friendship and Relationship yoga data (localized en/hi/mr)
+      // if (condition === "friendship-and-relationship") {
+      //   try {
+      //     const data = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
+
+      //     const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+      //     const yogaCards = data?.yoga?.cards || [];
+
+      //     const interventions = yogaCards.map((card: any) => ({
+      //       title: card.title?.[localeKey] || card.title?.en || "No title",
+      //       description:
+      //         card.description?.[localeKey] || card.description?.en ||
+      //         "No description",
+      //       xp: card.xp || 5,
+      //     }));
+
+      //     return {
+      //       condition: "friendship-and-relationship",
+      //       intervention_type: "Yoga & Meditation Techniques",
+      //       interventions,
+      //     };
+      //   } catch (error) {
+      //     console.error(
+      //       "Error loading Friendship and Relationship yoga data:",
+      //       error,
+      //     );
+      //     return null;
+      //   }
+      // }
     // Handle ADHD data from comprehensive JSON file
     if (condition === "adhd") {
       try {
         const adhdData = require("../../../../assets/data/behaviour/ADHD_comprehensive_data.json");
-        const yogaCards = adhdData.interventions?.yoga?.cards || [];
+        const yogaCards = adhdData.interventions?.yoga?.cards || []; // fallback if no dedicated yoga
         
         // Map locale codes to ADHD data field names
         const localeMap: { [key: string]: string } = {
@@ -705,7 +791,7 @@ export default function YogaScreen({ navigation, route }: any) {
      if (condition === "gambling-and-gaming-addiction") {
       try {
         const darkData = require("../../../../assets/data/Internet & Social Media Issues/GamblingAndGamingAddiction_comprehensive_data.json");
-        const yogaCards = darkData.interventions?.yoga?.cards || [];
+        const yogaCards = darkData.interventions?.yoga?.cards || []; // fallback if no dedicated yoga
         
         // Map locale codes to ADHD data field names
         const localeMap: { [key: string]: string } = 
@@ -728,12 +814,66 @@ export default function YogaScreen({ navigation, route }: any) {
         return null;
       }
     }
+     // Handle Porn Addiction data from comprehensive JSON file
+     if (condition === "porn-addiction") {
+      try {
+        const pornData = require("../../../../assets/data/Internet & Social Media Issues/PornAddiction_comprehensive_data.json");
+        const yogaCards = pornData.interventions?.yogaAndMeditation?.cards || []; // fallback if no dedicated yoga
+        
+        // Map locale codes to ADHD data field names
+        const localeMap: { [key: string]: string } = 
+        { en: "english", hi: "hindi", mr: "marathi" };
+        
+        const localeField = localeMap[locale] || "english";
+        const interventions = yogaCards.map((card: any) => ({
+        title: card.title?.[localeField] || card.title?.english || "No title",
+        description: card.description?.[localeField] || card.description?.english || "No description",
+        xp: card.xp || 5,
+        }));
+
+        return {
+          condition: "porn-addiction",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Porn Addiction yoga data:", error);
+        return null;
+      }
+    }
+
+    // Handle Self Care & Hygine data from comprehensive JSON file
+    if (condition === "self-care-hygiene") {
+      try {
+        const InternetData = require("../../../../assets/data/behaviour/SelfCareHygiene_comprehensive_data.json");
+        const yogaCards = InternetData?.yogaAndMeditation?.cards || []; // fallback if no dedicated yoga
+
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const interventions = yogaCards.map((card: any) => ({
+          title: card.title?.[localeKey] || card.title?.en || "No title",
+          description:
+            card.description?.[localeKey] || card.description?.en ||
+            "No description",
+          xp: card.xp || 5,
+        }));
+
+        return {
+          condition: "self-care-hygiene",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self Care & Hygine yoga data:", error);
+        return null;
+      }
+    }
+    
 
     // Handle Internet Addiction data from comprehensive JSON file
     if (condition === "internet-addiction") {
       try {
         const InternetData = require("../../../../assets/data/Internet & Social Media Issues/InternetAddiction_comprehensive_data.json");
-        const yogaCards = InternetData?.yoga?.cards || [];
+        const yogaCards = InternetData?.yoga?.cards || []; // fallback if no dedicated yoga
 
         const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
         const interventions = yogaCards.map((card: any) => ({
@@ -1281,31 +1421,7 @@ export default function YogaScreen({ navigation, route }: any) {
         return;
       }
 
-      // Handle Porn Addiction yoga data (localized en/hi/mr)
-      if (condition === "porn-addiction") {
-        try {
-          const data = require("../../../../assets/data/Internet & Social Media Issues/PornAddiction_comprehensive_data.json");
-          const cards = data?.yoga?.cards || [];
-          const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
-
-          const interventions = cards.map((card: any) => ({
-            title: card.title?.[localeKey] || card.title?.en || "No title",
-            description:
-              card.description?.[localeKey] || card.description?.en ||
-              "No description",
-            xp: card.xp || 5,
-          }));
-
-          return {
-            condition: "porn-addiction",
-            intervention_type: "Yoga & Meditation Techniques",
-            interventions,
-          };
-        } catch (error) {
-          console.error("Error loading Porn Addiction yoga data:", error);
-          return null;
-        }
-      }
+     
 
       // Handle Parenting from Child's View yoga data (top-level locale)
       if (condition === "parenting-from-child-view") {

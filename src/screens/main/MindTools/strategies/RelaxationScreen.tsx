@@ -391,6 +391,42 @@ export default function RelaxationScreen({ navigation, route }: any) {
         return null;
       }
     }
+     // Handle Introvert Child data from comprehensive data file
+     if (condition === "introvert-child") {
+      try {
+        const IntrovertChildData = require("../../../../assets/data/behaviour/IntrovertChild_comprehensive_data.json");
+        const relaxationCards = IntrovertChildData.interventions?.relaxation?.cards;
+
+        if (!relaxationCards || !Array.isArray(relaxationCards)) {
+          console.error("No relaxation interventions found in Introvert Child data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi",
+          "mr": "marathi",
+        };
+        const localeField = localeMap[locale] || "english";
+
+        const interventions = relaxationCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "",
+          description:
+            card.description?.[localeField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+
+        return {
+          condition: "introvert-child",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Introvert Child relaxation data:", error);
+        return null;
+      }
+    }
     // Handle Conduct Issues data from comprehensive data file
     if (condition === "conduct-issues") {
       try {
@@ -493,6 +529,70 @@ export default function RelaxationScreen({ navigation, route }: any) {
       }
     }
 
+    // Handle Self Care & Hygine data from comprehensive JSON file
+    if (condition === "self-care-hygiene") {
+      try {
+        const InternetData = require("../../../../assets/data/behaviour/SelfCareHygiene_comprehensive_data.json");
+        const yogaCards = InternetData?.relaxation?.cards || []; // fallback if no dedicated yoga
+
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const interventions = yogaCards.map((card: any) => ({
+          title: card.title?.[localeKey] || card.title?.en || "No title",
+          description:
+            card.description?.[localeKey] || card.description?.en ||
+            "No description",
+          xp: card.xp || 5,
+        }));
+
+        return {
+          condition: "self-care-hygiene",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self Care & Hygine relaxation data:", error);
+        return null;
+      }
+    }
+
+    // Handle Friendship and Relationship relaxation data (array-based file)
+    if (condition === "friendship-and-relationship") {
+      try {
+        const data = require("../../../../assets/data/Emotion/friendship_relationship_interventions.json");
+        const list = data?.relaxation; // this file stores an array directly
+
+        if (!list || !Array.isArray(list)) {
+          console.error("No relaxation interventions found in Friendship and Relationship data");
+          return null;
+        }
+
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const interventions = list.map((item: any) => ({
+          // Support both localized object and plain string values
+          title:
+            (typeof item.title === "string"
+              ? item.title
+              : item.title?.[localeKey] || item.title?.en) || "",
+          description:
+            (typeof item.description === "string"
+              ? item.description
+              : item.description?.[localeKey] || item.description?.en) || "",
+          xp: item.xp || 0,
+        }));
+
+        return {
+          condition: "friendship-and-relationship",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Friendship and Relationship relaxation data:", error);
+        return null;
+      }
+    }
+
+    
+
     // Handle Parenting from Child's View relaxation data (top-level locale)
     if (condition === "parenting-from-child-view") {
       try {
@@ -522,6 +622,110 @@ export default function RelaxationScreen({ navigation, route }: any) {
       } catch (error) {
         console.error(
           "Error loading Parenting from Child's View relaxation data:",
+          error,
+        );
+        return null;
+      }
+    }
+
+     // Handle from Abusive Language and Back Answering relaxation data (top-level locale)
+     if (condition === "abusive-language-back-answering") {
+      try {
+        const data = require("../../../../assets/data/Parenting/AbusiveLanguageBackAnswering_comprehensive_data.json");
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeKey] || data["en"];
+        const list = dataset?.relaxation;
+
+        if (!list || !Array.isArray(list)) {
+          console.error(
+            "No relaxation interventions found in Abusive Language and Back Answering  data",
+          );
+          return null;
+        }
+
+        const interventions = list.map((item: any) => ({
+          title: item.title || "",
+          description: item.description || "",
+          xp: item.xp || 0,
+        }));
+
+        return {
+          condition: "abusive-language-back-answering",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error(
+          "Error loading Abusive Language and Back Answering relaxation data:",
+          error,
+        );
+        return null;
+      }
+    }
+
+    // Handle from Exam Stress relaxation data (top-level locale)
+     if (condition === "exam-stress-fear-of-failure") {
+      try {
+        const data = require("../../../../assets/data/Parenting/ExamStressFearOfFailure_comprehensive_data.json");
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeKey] || data["en"];
+        const list = dataset?.relaxation;
+
+        if (!list || !Array.isArray(list)) {
+          console.error(
+            "No relaxation interventions found in Exam stress and fear of failure  data",
+          );
+          return null;
+        }
+
+        const interventions = list.map((item: any) => ({
+          title: item.title || "",
+          description: item.description || "",
+          xp: item.xp || 0,
+        }));
+
+        return {
+          condition: "exam-stress-fear-of-failure",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error(
+          "Error loading Exam stress and fear of failure relaxation data:",
+          error,
+        );
+        return null;
+      }
+    }
+
+    // Handle from Dating Sites and Complications relaxation data (localized en/hi/mr in cards)
+    if (condition === "dating-sites-and-complications") {
+      try {
+        const data = require("../../../../assets/data/Emotion/dating_sites_complications_comprehensive_data.json");
+        const cards = data?.relaxation?.cards;
+
+        if (!cards || !Array.isArray(cards)) {
+          console.error(
+            "No relaxation interventions found in Dating Sites and Complications data",
+          );
+          return null;
+        }
+
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const interventions = cards.map((card: any) => ({
+          title: card.title?.[localeKey] || card.title?.en || "",
+          description: card.description?.[localeKey] || card.description?.en || "",
+          xp: card.xp || 0,
+        }));
+
+        return {
+          condition: "dating-sites-and-complications",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error(
+          "Error loading Dating Sites and Complications relaxation data:",
           error,
         );
         return null;
@@ -597,6 +801,101 @@ export default function RelaxationScreen({ navigation, route }: any) {
         return null;
       }
     }
+
+    // Handle Gambling and Gaming Addiction data from comprehensive data file
+    if (condition === "gambling-and-gaming-addiction") {
+      try {
+        const aggressiveData = require("../../../../assets/data/Internet & Social Media Issues/GamblingAndGamingAddiction_comprehensive_data.json");
+        const relaxationCards = aggressiveData.interventions?.relaxation?.cards;
+        
+        if (!relaxationCards || !Array.isArray(relaxationCards)) {
+          console.error("No relaxation interventions found in Gambling and Gaming Addiction data");
+          return null;
+        }
+
+        // Map locale codes to data field names
+        const localeMap: { [key: string]: string } = {
+          "en": "english",
+          "hi": "hindi", 
+          "mr": "marathi"
+        };
+        const localeField = localeMap[locale] || "english";
+        
+        const interventions = relaxationCards.map((card: any) => ({
+          title: card.title?.[localeField] || card.title?.english || "",
+          description: card.description?.[localeField] || card.description?.english || "",
+          xp: card.xp || 0,
+        }));
+        
+        return {
+          condition: "gambling-and-gaming-addiction",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Gambling and Gaming Addiction relaxation data:", error);
+        return null;
+      }
+    }
+
+    // Handle Parenting from Child's View relaxation data (top-level locale)
+    if (condition === "parenting-from-child-view") {
+      try {
+        const data = require("../../../../assets/data/Parenting/ChildPointOfView_comprehensive_data.json");
+        const localeKey = ["en", "hi", "mr"].includes(locale) ? locale : "en";
+        const dataset = data[localeKey] || data["en"];
+        const list = dataset?.relaxationStrategies; // fallback if no dedicated REBT
+
+        if (!list || !Array.isArray(list)) {
+          return null;
+        }
+
+        const interventions = list.map((item: any) => ({
+          title: item.title || "",
+          description: item.description || "",
+          xp: item.xp || 0,
+        }));
+
+        return {
+          condition: "parenting-from-child-view",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        return null;
+      }
+    }
+
+    // Handle Internet Addiction data from comprehensive data file
+    if (condition === "internet-addiction") {
+      try {
+        const InternetData = require("../../../../assets/data/Internet & Social Media Issues/InternetAddiction_comprehensive_data.json");
+        const relaxationCards = InternetData.relaxation?.cards; // fallback if no dedicated REBT
+
+        if (!relaxationCards || !Array.isArray(relaxationCards)) {
+          console.error("No relaxation interventions found in Internet Addiction data");
+          return null;
+        }
+
+        const interventions = relaxationCards.map((card: any) => ({
+          title: card.title?.[locale] || card.title?.en || "No title",
+          description:
+            card.description?.[locale] || card.description?.en ||
+            "No description",
+          xp: card.xp || 2,
+        }));
+
+        return {
+          condition: "internet-addiction",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Internet Addiction data:", error);
+        return null;
+      }
+    }
+
 
     // Handle Self-Esteem & Identity relaxation data
     if (condition === "self-esteem-and-self-identity") {
