@@ -370,6 +370,7 @@ export default function CBTScreen({ navigation, route }: any) {
       "eating-habits": "Eating Habits",
       "introvert-child": "Introvert Child",
       "breakupAndRebound": "Breakup and Rebound",
+      "bullying": "Bullying",
       "dating-sites-and-complications": "Dating Sites and Complications",
       "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",
       "exam-stress-fear-of-failure": "examStressScreen.headerTitle",
@@ -378,6 +379,10 @@ export default function CBTScreen({ navigation, route }: any) {
       "abusive-language-back-answering": "Abusive Language & Back Answering",
       "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
       "internet-addiction": "Internet Addiction",
+      "bunking": "Bunking in School",
+      "academic": "Academic Stress",
+      "selfharm": "Self Harm Behavior",
+      "learning-disability": "Learning Disability",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -1334,6 +1339,295 @@ if (condition === "exam-stress-fear-of-failure") {
       }
     }
 
+    // Handle Bullying CBT data from comprehensive JSON file
+    if (condition === "bullying") {
+      try {
+        const data = require("../../../../assets/data/Parenting/BullyingInSchool.json");
+
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Bullying data");
+          return null;
+        }
+
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          return {
+            title: item.title?.[localeField] || item.title?.english || item.title || "",
+            description: item.description?.[localeField] || item.description?.english || item.description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "bullying",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Bullying CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Bunking in School CBT data from comprehensive JSON file
+    if (condition === "bunking") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Bunking_School_comprehensive_data.json");
+
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Bunking in School data");
+          return null;
+        }
+
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          return {
+            title: item.title?.[localeField] || item.title?.english || item.title || "",
+            description: item.description?.[localeField] || item.description?.english || item.description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "bullying",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Bunking in School CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Academic Stress CBT data from comprehensive JSON file
+    if (condition === "academic") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Academic_Stress_comprehensive_data.json");
+
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Academic Stress data");
+          return null;
+        }
+
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          return {
+            title: item.title?.[localeField] || item.title?.english || item.title || "",
+            description: item.description?.[localeField] || item.description?.english || item.description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "academic",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Academic Stress CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Academic Stress CBT data from comprehensive JSON file
+    if (condition === "selfharm") {
+      try {
+        const data = require("../../../../assets/data/behaviour/Self-harm_Behaviour_comprehensive_data.json");
+
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Self Harm data");
+          return null;
+        }
+
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          return {
+            title: item.title?.[localeField] || item.title?.english || item.title || "",
+            description: item.description?.[localeField] || item.description?.english || item.description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "selfharm",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self Harm CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Learning Disability CBT data from comprehensive JSON file
+    if (condition === "learning-disability") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Learning_Disability_comprehensive_data.json");
+
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Learning Disability data");
+          return null;
+        }
+
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          return {
+            title: item.title?.[localeField] || item.title?.english || item.title || "",
+            description: item.description?.[localeField] || item.description?.english || item.description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "learning-disability",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Learning Disability CBT data:", error);
+        return null;
+      }
+    }
 
     // Map URL-style condition names to camelCase keys used in translation files
     const conditionKeyMap: { [key: string]: string } = {

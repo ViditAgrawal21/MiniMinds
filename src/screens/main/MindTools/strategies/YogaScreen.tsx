@@ -292,6 +292,12 @@ export default function YogaScreen({ navigation, route }: any) {
       "dating-sites-and-complications": "Dating Sites and Complications",
       "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
       "internet-addiction": "Internet Addiction",
+      "bullying": "Bullying",
+      "bunking": "Bunking In School",
+      "academic": "Academic Stress",
+      "selfharm": "Self Harm",
+      "learning-disability": "Learning Disability",
+
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -1378,10 +1384,10 @@ export default function YogaScreen({ navigation, route }: any) {
       }
     }
 
-    // Handle Suicidal Behaviour data from comprehensive JSON file for Yoga
-    if (condition === "suicidal-behavior") {
+    // Handle Bunking data from comprehensive JSON file for Yoga
+    if (condition === "bullying") {
       try {
-        const data = require("../../../../assets/data/behaviour/Suicidal_Behaviour_comprehensive_data.json");
+        const data = require("../../../../assets/data/Parenting/BullyingInSchool.json");
         const itemsCandidate = data?.interventions?.yoga?.cards || data?.interventions?.yoga || data?.interventions?.yogaAndMeditation?.cards || data?.interventions?.yogaAndMeditation || data?.interventions?.cards || data?.interventions || null;
 
         const items = Array.isArray(itemsCandidate)
@@ -1407,12 +1413,222 @@ export default function YogaScreen({ navigation, route }: any) {
         }));
 
         return {
+          condition: "bullying",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Bullying yoga data:", error);
+        return null;
+      }
+    }
+
+    // Handle Suicidal Behaviour data from comprehensive JSON file for Yoga
+    if (condition === "suicidal-behavior") {
+      try {
+        const raw = require("../../../../assets/data/behaviour/Suicidal_Behaviour_comprehensive_data.json");
+
+        // prefer locale-rooted dataset if present (some comprehensive files have top-level en/hi/mr)
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const dataset = raw[lang] || raw["en"] || raw;
+
+        const itemsCandidate =
+          dataset?.interventions?.yoga?.cards ||
+          dataset?.interventions?.yoga ||
+          dataset?.interventions?.yogaAndMeditation?.cards ||
+          dataset?.interventions?.yogaAndMeditation ||
+          dataset?.interventions?.cards ||
+          dataset?.interventions ||
+          raw?.interventions?.yoga?.cards ||
+          raw?.interventions?.yoga ||
+          raw?.yoga?.cards ||
+          raw?.yoga ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items) || items.length === 0) {
+          console.error("No Yoga data array found in Suicidal Behaviour data", { candidate: itemsCandidate });
+          return null;
+        }
+
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => ({
+          title: (item.title && typeof item.title === 'string') ? item.title : (item.title?.[localeField] || item.title?.english || item.CardTitle || item['Card Title'] || "No title"),
+          description: (item.description && typeof item.description === 'string') ? item.description : (item.description?.[localeField] || item.description?.english || item.CardDescription || item['Card Description'] || "No description"),
+          xp: item.xp || item.XP || 5,
+        }));
+
+        return {
           condition: "suicidal-behavior",
           intervention_type: "Yoga & Meditation Techniques",
           interventions: interventions,
         };
       } catch (error) {
         console.error("Error loading Suicidal Behaviour yoga data:", error);
+        return null;
+      }
+    }
+
+    // Handle Bunking In School data from comprehensive JSON file for Yoga
+    if (condition === "bunking") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Bunking_School_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.yoga?.cards || data?.interventions?.yoga || data?.interventions?.yogaAndMeditation?.cards || data?.interventions?.yogaAndMeditation || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Bunking In School data");
+          return null;
+        }
+
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => ({
+          title: (item.title && typeof item.title === 'string') ? item.title : (item.title?.[localeField] || item.title?.english || item.CardTitle || item['Card Title'] || "No title"),
+          description: (item.description && typeof item.description === 'string') ? item.description : (item.description?.[localeField] || item.description?.english || item.CardDescription || item['Card Description'] || "No description"),
+          xp: item.xp || item.XP || 5,
+        }));
+
+        return {
+          condition: "bunking",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Bunking In School yoga data:", error);
+        return null;
+      }
+    }
+
+    // Handle Academic data from comprehensive JSON file for Yoga
+    if (condition === "academic") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Academic_Stress_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.yoga?.cards || data?.interventions?.yoga || data?.interventions?.yogaAndMeditation?.cards || data?.interventions?.yogaAndMeditation || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Academic Stress data");
+          return null;
+        }
+
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => ({
+          title: (item.title && typeof item.title === 'string') ? item.title : (item.title?.[localeField] || item.title?.english || item.CardTitle || item['Card Title'] || "No title"),
+          description: (item.description && typeof item.description === 'string') ? item.description : (item.description?.[localeField] || item.description?.english || item.CardDescription || item['Card Description'] || "No description"),
+          xp: item.xp || item.XP || 5,
+        }));
+
+        return {
+          condition: "academic",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Academic Stress yoga data:", error);
+        return null;
+      }
+    }
+
+        // Handle Academic data from comprehensive JSON file for Yoga
+    if (condition === "selfharm") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Academic_Stress_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.yoga?.cards || data?.interventions?.yoga || data?.interventions?.yogaAndMeditation?.cards || data?.interventions?.yogaAndMeditation || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Self Harm data");
+          return null;
+        }
+
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => ({
+          title: (item.title && typeof item.title === 'string') ? item.title : (item.title?.[localeField] || item.title?.english || item.CardTitle || item['Card Title'] || "No title"),
+          description: (item.description && typeof item.description === 'string') ? item.description : (item.description?.[localeField] || item.description?.english || item.CardDescription || item['Card Description'] || "No description"),
+          xp: item.xp || item.XP || 5,
+        }));
+
+        return {
+          condition: "selfharm",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self Harm yoga data:", error);
+        return null;
+      }
+    }
+
+    // Handle Learning Disability data from comprehensive JSON file for Yoga
+    if (condition === "learning-disability") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Learning_Disability_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.yoga?.cards || data?.interventions?.yoga || data?.interventions?.yogaAndMeditation?.cards || data?.interventions?.yogaAndMeditation || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Learning Disability data");
+          return null;
+        }
+
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => ({
+          title: (item.title && typeof item.title === 'string') ? item.title : (item.title?.[localeField] || item.title?.english || item.CardTitle || item['Card Title'] || "No title"),
+          description: (item.description && typeof item.description === 'string') ? item.description : (item.description?.[localeField] || item.description?.english || item.CardDescription || item['Card Description'] || "No description"),
+          xp: item.xp || item.XP || 5,
+        }));
+
+        return {
+          condition: "learning-disability",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Learning Disability yoga data:", error);
         return null;
       }
     }

@@ -15,7 +15,7 @@ import CustomIcon from "../../../components/CustomIcon";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { t } from "../../../i18n/locales/i18n"; // Import the translation function
+import { useLanguage } from "../../../context/LanguageContext";
 // Premium access control imports
 import { canAccessFeature } from "../../../utils/premiumUtils";
 import MoodSelector from "../../../components/MoodSelector";
@@ -82,6 +82,7 @@ type RootStackParamList = {
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 export default function MindToolsScreen() {
+  const { t } = useLanguage();
   const [dailyTasksCount, setDailyTasksCount] = useState(0);
   const [interventionsCount, setInterventionsCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);

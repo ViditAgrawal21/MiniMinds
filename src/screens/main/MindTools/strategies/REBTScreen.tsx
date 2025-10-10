@@ -414,6 +414,11 @@ export default function REBTScreen({ navigation, route }: any) {
       "internet-addiction": "Internet Addiction",
       "gambling-and-gaming-addiction": "Gambling and Gaming Addiction",
       "dating-sites-and-complications": "Dating Sites and Complications",
+      "bullying": "Bullying",
+      "bunking": "Bunking in School",
+      "academic": "Academic Stress",
+      "selfharm": "Self Harm Behavior",
+      "learning-disability": "Learning Disability",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -1355,6 +1360,351 @@ export default function REBTScreen({ navigation, route }: any) {
             };
           } catch (error) {
             console.error("Error loading Suicidal Behaviour REBT data:", error);
+            return null;
+          }
+        }
+
+        // Handle Bullying REBT data from comprehensive JSON file
+        if (condition === "bullying") {
+          try {
+            const data = require("../../../../assets/data/behaviour/Suicidal_Behaviour_comprehensive_data.json");
+
+            const itemsCandidate =
+              data?.interventions?.rebt?.cards ||
+              data?.interventions?.rebt ||
+              data?.interventions?.commonSuggestions?.cards ||
+              data?.interventions?.cards ||
+              data?.interventions ||
+              null;
+
+            const items = Array.isArray(itemsCandidate)
+              ? itemsCandidate
+              : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+            if (!items || !Array.isArray(items)) {
+              console.error("No REBT data array found in Bullying data");
+              return null;
+            }
+
+            const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+            const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+            const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+            const localeField = localeFieldMap[lang] || "english";
+
+            const interventions = items.map((item: any) => {
+              if (item.translations && typeof item.translations === "object") {
+                const translations = item.translations || {};
+                const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+                return {
+                  title: chosen.title || chosen.heading || "",
+                  description: chosen.description || chosen.body || "",
+                  xp: item.xp || item.XP || 0,
+                } as REBTIntervention;
+              }
+
+              const titleObj = item.title || item.Title || {};
+              const descObj = item.description || item.Description || {};
+
+              const title =
+                (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+                (typeof titleObj === "string" ? titleObj : "");
+
+              const description =
+                (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+                (typeof descObj === "string" ? descObj : "");
+
+              return {
+                title: title || "",
+                description: description || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            });
+
+            return {
+              condition: "bullying",
+              intervention_type: "REBT",
+              interventions,
+            };
+          } catch (error) {
+            console.error("Error loading Bullying REBT data:", error);
+            return null;
+          }
+        }
+
+        // Handle Bunking In School REBT data from comprehensive JSON file
+        if (condition === "bunking") {
+          try {
+            const data = require("../../../../assets/data/Parenting/Bunking_School_comprehensive_data.json");
+
+            const itemsCandidate =
+              data?.interventions?.rebt?.cards ||
+              data?.interventions?.rebt ||
+              data?.interventions?.commonSuggestions?.cards ||
+              data?.interventions?.cards ||
+              data?.interventions ||
+              null;
+
+            const items = Array.isArray(itemsCandidate)
+              ? itemsCandidate
+              : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+            if (!items || !Array.isArray(items)) {
+              console.error("No REBT data array found in Bunking In School data");
+              return null;
+            }
+
+            const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+            const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+            const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+            const localeField = localeFieldMap[lang] || "english";
+
+            const interventions = items.map((item: any) => {
+              if (item.translations && typeof item.translations === "object") {
+                const translations = item.translations || {};
+                const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+                return {
+                  title: chosen.title || chosen.heading || "",
+                  description: chosen.description || chosen.body || "",
+                  xp: item.xp || item.XP || 0,
+                } as REBTIntervention;
+              }
+
+              const titleObj = item.title || item.Title || {};
+              const descObj = item.description || item.Description || {};
+
+              const title =
+                (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+                (typeof titleObj === "string" ? titleObj : "");
+
+              const description =
+                (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+                (typeof descObj === "string" ? descObj : "");
+
+              return {
+                title: title || "",
+                description: description || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            });
+
+            return {
+              condition: "bunking",
+              intervention_type: "REBT",
+              interventions,
+            };
+          } catch (error) {
+            console.error("Error loading Bunking In School REBT data:", error);
+            return null;
+          }
+        }
+
+        // Handle Bunking In School REBT data from comprehensive JSON file
+        if (condition === "academic") {
+          try {
+            const data = require("../../../../assets/data/Parenting/Academic_Stress_comprehensive_data.json");
+
+            const itemsCandidate =
+              data?.interventions?.rebt?.cards ||
+              data?.interventions?.rebt ||
+              data?.interventions?.commonSuggestions?.cards ||
+              data?.interventions?.cards ||
+              data?.interventions ||
+              null;
+
+            const items = Array.isArray(itemsCandidate)
+              ? itemsCandidate
+              : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+            if (!items || !Array.isArray(items)) {
+              console.error("No REBT data array found in Academic Stress data");
+              return null;
+            }
+
+            const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+            const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+            const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+            const localeField = localeFieldMap[lang] || "english";
+
+            const interventions = items.map((item: any) => {
+              if (item.translations && typeof item.translations === "object") {
+                const translations = item.translations || {};
+                const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+                return {
+                  title: chosen.title || chosen.heading || "",
+                  description: chosen.description || chosen.body || "",
+                  xp: item.xp || item.XP || 0,
+                } as REBTIntervention;
+              }
+
+              const titleObj = item.title || item.Title || {};
+              const descObj = item.description || item.Description || {};
+
+              const title =
+                (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+                (typeof titleObj === "string" ? titleObj : "");
+
+              const description =
+                (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+                (typeof descObj === "string" ? descObj : "");
+
+              return {
+                title: title || "",
+                description: description || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            });
+
+            return {
+              condition: "academic",
+              intervention_type: "REBT",
+              interventions,
+            };
+          } catch (error) {
+            console.error("Error loading Academic Stress REBT data:", error);
+            return null;
+          }
+        }
+
+        // Handle Self Harm REBT data from comprehensive JSON file
+        if (condition === "selfharm") {
+          try {
+            const data = require("../../../../assets/data/behaviour/Self-harm_Behaviour_comprehensive_data.json");
+
+            const itemsCandidate =
+              data?.interventions?.rebt?.cards ||
+              data?.interventions?.rebt ||
+              data?.interventions?.commonSuggestions?.cards ||
+              data?.interventions?.cards ||
+              data?.interventions ||
+              null;
+
+            const items = Array.isArray(itemsCandidate)
+              ? itemsCandidate
+              : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+            if (!items || !Array.isArray(items)) {
+              console.error("No REBT data array found in Academic Stress data");
+              return null;
+            }
+
+            const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+            const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+            const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+            const localeField = localeFieldMap[lang] || "english";
+
+            const interventions = items.map((item: any) => {
+              if (item.translations && typeof item.translations === "object") {
+                const translations = item.translations || {};
+                const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+                return {
+                  title: chosen.title || chosen.heading || "",
+                  description: chosen.description || chosen.body || "",
+                  xp: item.xp || item.XP || 0,
+                } as REBTIntervention;
+              }
+
+              const titleObj = item.title || item.Title || {};
+              const descObj = item.description || item.Description || {};
+
+              const title =
+                (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+                (typeof titleObj === "string" ? titleObj : "");
+
+              const description =
+                (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+                (typeof descObj === "string" ? descObj : "");
+
+              return {
+                title: title || "",
+                description: description || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            });
+
+            return {
+              condition: "selfharm",
+              intervention_type: "REBT",
+              interventions,
+            };
+          } catch (error) {
+            console.error("Error loading Academic Stress REBT data:", error);
+            return null;
+          }
+        }
+        
+        // Handle Learning Disability REBT data from comprehensive JSON file
+        if (condition === "learning-disability") {
+          try {
+            const data = require("../../../../assets/data/Parenting/Learning_Disability_comprehensive_data.json");
+
+            const itemsCandidate =
+              data?.interventions?.rebt?.cards ||
+              data?.interventions?.rebt ||
+              data?.interventions?.commonSuggestions?.cards ||
+              data?.interventions?.cards ||
+              data?.interventions ||
+              null;
+
+            const items = Array.isArray(itemsCandidate)
+              ? itemsCandidate
+              : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+            if (!items || !Array.isArray(items)) {
+              console.error("No REBT data array found in Learning Disability data");
+              return null;
+            }
+
+            const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+            const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+            const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+            const localeField = localeFieldMap[lang] || "english";
+
+            const interventions = items.map((item: any) => {
+              if (item.translations && typeof item.translations === "object") {
+                const translations = item.translations || {};
+                const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+                return {
+                  title: chosen.title || chosen.heading || "",
+                  description: chosen.description || chosen.body || "",
+                  xp: item.xp || item.XP || 0,
+                } as REBTIntervention;
+              }
+
+              const titleObj = item.title || item.Title || {};
+              const descObj = item.description || item.Description || {};
+
+              const title =
+                (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+                (typeof titleObj === "string" ? titleObj : "");
+
+              const description =
+                (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+                (typeof descObj === "string" ? descObj : "");
+
+              return {
+                title: title || "",
+                description: description || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            });
+
+            return {
+              condition: "learning-disability",
+              intervention_type: "REBT",
+              interventions,
+            };
+          } catch (error) {
+            console.error("Error loading Learning Disability REBT data:", error);
             return null;
           }
         }

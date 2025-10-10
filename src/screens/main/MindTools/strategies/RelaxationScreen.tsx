@@ -357,6 +357,11 @@ export default function RelaxationScreen({ navigation, route }: any) {
       "internet-addiction": "Internet Addiction",
       "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       "dating-sites-and-complications": "Dating Sites and Complications",
+      "bullying": "Bullying",
+      "bunking": "Bunking in School",
+      "academic": "Academic Stress",
+      "selfharm": "Self Harm",
+      "learning-disability": "Learning Disability",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -1381,6 +1386,361 @@ export default function RelaxationScreen({ navigation, route }: any) {
       }
     }
 
+
+    // Handle Bullying relaxation data from comprehensive JSON file
+    if (condition === "bullying") {
+      try {
+        const data = require("../../../../assets/data/Parenting/BullyingInSchool.json");
+
+        const itemsCandidate =
+          data?.interventions?.relaxation?.cards ||
+          data?.interventions?.relaxation ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation data array found in Bullying data");
+          return null;
+        }
+
+        // Normalize locale and map to asset fields (english/hindi/marathi)
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+              translations,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "bullying",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Bullying Relaxation data:", error);
+        return null;
+      }
+    }
+
+    // Handle Bunking in School relaxation data from comprehensive JSON file
+    if (condition === "bunking") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Bunking_School_comprehensive_data.json");
+
+        const itemsCandidate =
+          data?.interventions?.relaxation?.cards ||
+          data?.interventions?.relaxation ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation data array found in Bunking in School data");
+          return null;
+        }
+
+        // Normalize locale and map to asset fields (english/hindi/marathi)
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+              translations,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "bunking",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Bunking in School Relaxation data:", error);
+        return null;
+      }
+    }
+
+    // Handle Academic Stress relaxation data from comprehensive JSON file
+    if (condition === "academic") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Academic_Stress_comprehensive_data.json");
+
+        const itemsCandidate =
+          data?.interventions?.relaxation?.cards ||
+          data?.interventions?.relaxation ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation data array found in Academic Stress data");
+          return null;
+        }
+
+        // Normalize locale and map to asset fields (english/hindi/marathi)
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+              translations,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "academic",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Academic Stress Relaxation data:", error);
+        return null;
+      }
+    }
+
+        // Handle Academic Stress relaxation data from comprehensive JSON file
+    if (condition === "selfharm") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Academic_Stress_comprehensive_data.json");
+
+        const itemsCandidate =
+          data?.interventions?.relaxation?.cards ||
+          data?.interventions?.relaxation ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation data array found in Self Harm data");
+          return null;
+        }
+
+        // Normalize locale and map to asset fields (english/hindi/marathi)
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+              translations,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "selfharm",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self Harm Relaxation data:", error);
+        return null;
+      }
+    }
+
+    // Handle Learning Disability relaxation data from comprehensive JSON file
+    if (condition === "learning-disability") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Learning_Disability_comprehensive_data.json");
+
+        const itemsCandidate =
+          data?.interventions?.relaxation?.cards ||
+          data?.interventions?.relaxation ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Relaxation data array found in Learning Disability data");
+          return null;
+        }
+
+        // Normalize locale and map to asset fields (english/hindi/marathi)
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+              translations,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 0,
+          } as RelaxationIntervention;
+        });
+
+        return {
+          condition: "learning-disability",
+          intervention_type: "Relaxation",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Learning Disability Relaxation data:", error);
+        return null;
+      }
+    }
 
     // Map URL-style condition names to camelCase keys used in translation files
     const conditionKeyMap: { [key: string]: string } = {

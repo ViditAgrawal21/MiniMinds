@@ -144,8 +144,12 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "introvert-child": "Introvert Child",
       "breakupAndRebound": "Breakup and Rebound",
       // "internet-addiction": "Internet Addiction",
+      "bullying": "Bullying",
       "dating-sites-and-complications": "Dating Sites and Complications",
-      
+      "bunking": "Bunking In School",
+      "academic": "Academic Stress",
+      "selfharm": "Self Harm",
+      "learning-disability": "Learning Disabilities",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -1182,6 +1186,316 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         };
       } catch (error) {
         console.error("Error loading Suicidal Behaviour common suggestions data:", error);
+        return null;
+      }
+    }
+
+    // Handle Bullying data from comprehensive JSON file
+    if (condition === "bullying") {
+      try {
+        const data = require("../../../../assets/data/Parenting/BullyingInSchool.json");
+        const itemsCandidate = data?.interventions?.commonSuggestions?.cards || data?.interventions?.commonSuggestions || data?.interventions?.common_suggestions || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Bullying data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          };
+        });
+
+        return {
+          metadata: {
+            condition: "bullying",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Bullying common suggestions data:", error);
+        return null;
+      }
+    }
+
+        // Handle Bunking In School data from comprehensive JSON file
+    if (condition === "bunking") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Bunking_School_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.commonSuggestions?.cards || data?.interventions?.commonSuggestions || data?.interventions?.common_suggestions || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Bunking In School data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          };
+        });
+
+        return {
+          metadata: {
+            condition: "bunking",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Bunking In School common suggestions data:", error);
+        return null;
+      }
+    }
+
+    // Handle Bunking In School data from comprehensive JSON file
+    if (condition === "academic") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Academic_Stress_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.commonSuggestions?.cards || data?.interventions?.commonSuggestions || data?.interventions?.common_suggestions || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Academic Stress data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          };
+        });
+
+        return {
+          metadata: {
+            condition: "academic",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Academic Stress common suggestions data:", error);
+        return null;
+      }
+    }
+
+    // Handle Self Harm data from comprehensive JSON file
+    if (condition === "selfharm") {
+      try {
+        const data = require("../../../../assets/data/behaviour/Self-harm_Behaviour_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.commonSuggestions?.cards || data?.interventions?.commonSuggestions || data?.interventions?.common_suggestions || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Self Harm data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          };
+        });
+
+        return {
+          metadata: {
+            condition: "selfharm",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Self Harm common suggestions data:", error);
+        return null;
+      }
+    }
+
+        // Handle Self Harm data from comprehensive JSON file
+    if (condition === "learning-disability") {
+      try {
+        const data = require("../../../../assets/data/Parenting/Learning_Disability_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.commonSuggestions?.cards || data?.interventions?.commonSuggestions || data?.interventions?.common_suggestions || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Learning Disability data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          };
+        });
+
+        return {
+          metadata: {
+            condition: "learning-disability",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Learning Disability common suggestions data:", error);
         return null;
       }
     }
