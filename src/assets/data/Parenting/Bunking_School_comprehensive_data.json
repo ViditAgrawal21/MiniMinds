@@ -1,0 +1,737 @@
+{
+    "condition": "Bunking School",
+    "issueType": "General Issues",
+    "interventions": {
+      "commonSuggestions": {
+        "type": "Primary",
+        "interventionSubType": "10 Common Suggestions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 2,
+            "title": {
+              "english": "Open Communication",
+              "hindi": "खुला संचार",
+              "marathi": "मुक्त संवाद"
+            },
+            "description": {
+              "english": "How it works: Talking openly helps children share reasons behind skipping school. Example: Ask 'What makes you want to stay home?' instead of scolding.",
+              "hindi": "यह कैसे काम करता है: खुलकर बात करने से बच्चों को स्कूल न जाने के कारण बताने में मदद मिलती है। उदाहरण के लिए, डाँटने के बजाय पूछें, &quot;तुम घर पर क्यों रहना चाहते हो?&quot;",
+              "marathi": "हे कसे कार्य करते: मोकळेपणाने बोलल्याने मुलांना शाळा सोडण्यामागील कारणे सांगण्यास मदत होते. उदाहरण: शिव्या देण्याऐवजी &#39;तुम्हाला घरी का राहायचे आहे?&#39; असे विचारा."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 3,
+            "title": {
+              "english": "Set Clear Rules",
+              "hindi": "स्पष्ट नियम निर्धारित करें",
+              "marathi": "स्पष्ट नियम सेट करा"
+            },
+            "description": {
+              "english": "How it works: Clear expectations reduce confusion about attendance. Example: Agree that missing school is allowed only for illness or emergencies.",
+              "hindi": "यह कैसे काम करता है: स्पष्ट अपेक्षाएँ उपस्थिति के बारे में भ्रम को कम करती हैं। उदाहरण: इस बात पर सहमत हों कि स्कूल छूटने की अनुमति केवल बीमारी या आपात स्थिति में ही दी जा सकती है।",
+              "marathi": "हे कसे कार्य करते: स्पष्ट अपेक्षा उपस्थितीबद्दलचा गोंधळ कमी करतात. उदाहरण: फक्त आजारपण किंवा आपत्कालीन परिस्थितीतच शाळा सोडण्याची परवानगी आहे यावर सहमत."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 4,
+            "title": {
+              "english": "Identify Triggers",
+              "hindi": "ट्रिगर्स की पहचान करें",
+              "marathi": "ट्रिगर्स ओळखा"
+            },
+            "description": {
+              "english": "How it works: Knowing the cause helps solve the root issue. Example: If bullying is the reason, approach teachers to intervene.",
+              "hindi": "यह कैसे काम करता है: कारण जानने से मूल समस्या का समाधान करने में मदद मिलती है। उदाहरण: अगर बदमाशी कारण है, तो हस्तक्षेप करने के लिए शिक्षकों से संपर्क करें।",
+              "marathi": "ते कसे कार्य करते: कारण जाणून घेतल्याने मूळ समस्येचे निराकरण होण्यास मदत होते. उदाहरण: जर गुंडगिरी हे कारण असेल, तर शिक्षकांना हस्तक्षेप करण्यासाठी संपर्क साधा."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 2,
+            "title": {
+              "english": "Positive Reinforcement",
+              "hindi": "सकारात्मक सुदृढीकरण",
+              "marathi": "सकारात्मक मजबुतीकरण"
+            },
+            "description": {
+              "english": "How it works: Encourages consistent school attendance. Example: Praise or reward your child after a full week of attending school.",
+              "hindi": "यह कैसे काम करता है: स्कूल में नियमित उपस्थिति को प्रोत्साहित करता है। उदाहरण: पूरे एक हफ़्ते स्कूल जाने के बाद अपने बच्चे की प्रशंसा करें या उसे पुरस्कृत करें।",
+              "marathi": "हे कसे कार्य करते: शाळेत सातत्यपूर्ण उपस्थितीला प्रोत्साहन देते. उदाहरण: शाळेत पूर्ण आठवडा गेल्यानंतर तुमच्या मुलाची प्रशंसा करा किंवा बक्षीस द्या."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 3,
+            "title": {
+              "english": "Create a Morning Routine",
+              "hindi": "सुबह की दिनचर्या बनाएं",
+              "marathi": "सकाळचा दिनक्रम तयार करा"
+            },
+            "description": {
+              "english": "How it works: A structured start reduces resistance. Example: Fixed breakfast and leaving time makes mornings smoother.",
+              "hindi": "यह कैसे काम करता है: एक व्यवस्थित शुरुआत प्रतिरोध को कम करती है। उदाहरण: निश्चित नाश्ता और समय पर जाने से सुबह आसान हो जाती है।",
+              "marathi": "हे कसे कार्य करते: संरचित सुरुवात प्रतिकारशक्ती कमी करते. उदाहरण: निश्चित नाश्ता आणि निघण्याची वेळ सकाळ नितळ बनवते."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 4,
+            "title": {
+              "english": "Involve Teachers",
+              "hindi": "शिक्षकों को शामिल करें",
+              "marathi": "शिक्षकांना सहभागी करा"
+            },
+            "description": {
+              "english": "How it works: Teachers can monitor attendance and support the child. Example: Teacher checks in daily and encourages the student in class.",
+              "hindi": "यह कैसे काम करता है: शिक्षक उपस्थिति पर नज़र रख सकते हैं और बच्चे की मदद कर सकते हैं। उदाहरण के लिए: शिक्षक रोज़ाना जाँच करते हैं और कक्षा में छात्र को प्रोत्साहित करते हैं।",
+              "marathi": "हे कसे कार्य करते: शिक्षक उपस्थितीचे निरीक्षण करू शकतात आणि मुलाला पाठिंबा देऊ शकतात. उदाहरण: शिक्षक दररोज वर्गात तपासणी करतात आणि विद्यार्थ्याला प्रोत्साहन देतात."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 5,
+            "title": {
+              "english": "Address Academic Stress",
+              "hindi": "शैक्षणिक तनाव का समाधान करें",
+              "marathi": "शैक्षणिक ताणतणाव दूर करा"
+            },
+            "description": {
+              "english": "How it works: Reduces fear of failure that causes bunking. Example: Provide extra help at home or arrange tutoring for weak subjects.",
+              "hindi": "यह कैसे काम करता है: असफलता के डर को कम करता है जो स्कूल छोड़ने का कारण बनता है। उदाहरण: घर पर अतिरिक्त मदद प्रदान करें या कमज़ोर विषयों के लिए ट्यूशन की व्यवस्था करें।",
+              "marathi": "हे कसे कार्य करते: बंकिंगला कारणीभूत ठरणाऱ्या अपयशाची भीती कमी करते. उदाहरण: घरी अतिरिक्त मदत द्या किंवा कमकुवत विषयांसाठी शिकवणीची व्यवस्था करा."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 2,
+            "title": {
+              "english": "Encourage Peer Support",
+              "hindi": "सहकर्मी समर्थन को प्रोत्साहित करें",
+              "marathi": "समवयस्कांच्या समर्थनाला प्रोत्साहन द्या"
+            },
+            "description": {
+              "english": "How it works: Friends can motivate regular attendance. Example: Arrange for your child to walk to school with a classmate.",
+              "hindi": "यह कैसे काम करता है: दोस्त नियमित उपस्थिति के लिए प्रेरित कर सकते हैं। उदाहरण के लिए: अपने बच्चे को किसी सहपाठी के साथ स्कूल चलने के लिए कहें।",
+              "marathi": "हे कसे कार्य करते: मित्र नियमित उपस्थितीला प्रेरित करू शकतात. उदाहरण: तुमच्या मुलाला वर्गमित्रासह शाळेत चालत जाण्याची व्यवस्था करा."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 3,
+            "title": {
+              "english": "Model Responsibility",
+              "hindi": "आदर्श उत्तरदायित्व",
+              "marathi": "मॉडेल जबाबदारी"
+            },
+            "description": {
+              "english": "How it works: Children learn from parents‚Äô behavior. Example: Show commitment by being punctual at your own work.",
+              "hindi": "यह कैसे काम करता है: बच्चे माता-पिता के व्यवहार से सीखते हैं। उदाहरण: अपने काम में समयनिष्ठ रहकर प्रतिबद्धता दिखाएँ।",
+              "marathi": "हे कसे कार्य करते: मुले पालकांच्या वर्तनातून शिकतात. उदाहरण: तुमच्या स्वतःच्या कामात वेळेवर राहून वचनबद्धता दाखवा."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 5,
+            "title": {
+              "english": "Seek Counseling if Needed",
+              "hindi": "यदि आवश्यक हो तो परामर्श लें",
+              "marathi": "गरज पडल्यास समुपदेशन घ्या"
+            },
+            "description": {
+              "english": "How it works: Professional support helps with deeper issues like anxiety or bullying. Example: A school counselor helps the child cope with stress.",
+              "hindi": "यह कैसे काम करता है: पेशेवर सहायता चिंता या बदमाशी जैसे गंभीर मुद्दों से निपटने में मदद करती है। उदाहरण के लिए: एक स्कूल काउंसलर बच्चे को तनाव से निपटने में मदद करता है।",
+              "marathi": "हे कसे कार्य करते: चिंता किंवा गुंडगिरीसारख्या खोलवरच्या समस्यांमध्ये व्यावसायिक मदत मदत करते. उदाहरण: शाळेतील सल्लागार मुलाला तणावाचा सामना करण्यास मदत करतो."
+            }
+          }
+        ]
+      },
+      "yoga": {
+        "type": "Secondary",
+        "interventionSubType": "Yoga And Meditation Techniques",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 5,
+            "title": {
+              "english": "Deep Breathing for Calm",
+              "hindi": "शांति के लिए गहरी साँस लेना",
+              "marathi": "शांततेसाठी खोल श्वास घेणे"
+            },
+            "description": {
+              "english": "Step: Sit comfortably, inhale deeply through the nose, exhale slowly. How it helps: Reduces anxiety before school. Example: Practice 5 minutes before leaving for school.",
+              "hindi": "चरण: आराम से बैठें, नाक से गहरी साँस लें, धीरे-धीरे साँस छोड़ें। यह कैसे मदद करता है: स्कूल जाने से पहले चिंता कम होती है। उदाहरण: स्कूल जाने से पहले 5 मिनट अभ्यास करें।",
+              "marathi": "पायरी: आरामात बसा, नाकातून खोलवर श्वास घ्या, हळूहळू श्वास सोडा. हे कसे मदत करते: शाळेपूर्वी चिंता कमी करते. उदाहरण: शाळेत जाण्यापूर्वी ५ मिनिटे सराव करा."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 6,
+            "title": {
+              "english": "Child‚Äôs Pose (Balasana)",
+              "hindi": "बाल मुद्रा (बालासन)",
+              "marathi": "बाळाची आसन (बालासन)"
+            },
+            "description": {
+              "english": "Step: Kneel, fold forward, stretch arms out. How it helps: Relieves stress and promotes a sense of safety. Example: Practice for 2‚Äì3 minutes in the morning.",
+              "hindi": "चरण: घुटने टेकें, आगे की ओर झुकें, बाँहें फैलाएँ। यह कैसे मदद करता है: तनाव कम करता है और सुरक्षा की भावना को बढ़ावा देता है। उदाहरण: सुबह 2-3 मिनट अभ्यास करें।",
+              "marathi": "पायरी: गुडघे टेकणे, पुढे वाकणे, हात पसरवणे. ते कसे मदत करते: ताण कमी करते आणि सुरक्षिततेची भावना वाढवते. उदाहरण: सकाळी २-३ मिनिटे सराव करा."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 8,
+            "title": {
+              "english": "Sun Salutations (Surya Namaskar)",
+              "hindi": "Sun Salutations (Surya Namaskar)",
+              "marathi": "सूर्य नमस्कार (सूर्य नमस्कार)"
+            },
+            "description": {
+              "english": "Step: Perform a sequence of 12 postures with breath control. How it helps: Energizes body and mind, builds routine discipline. Example: Do 3 rounds before school.",
+              "hindi": "चरण: श्वास नियंत्रण के साथ 12 आसनों का क्रम करें। यह कैसे मदद करता है: शरीर और मन को ऊर्जावान बनाता है, दिनचर्या में अनुशासन लाता है। उदाहरण: स्कूल जाने से पहले 3 बार करें।",
+              "marathi": "पायरी: श्वास नियंत्रणासह १२ आसनांचा क्रम करा. ते कसे मदत करते: शरीर आणि मनाला ऊर्जा देते, नियमित शिस्त निर्माण करते. उदाहरण: शाळेपूर्वी ३ फेऱ्या करा."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 7,
+            "title": {
+              "english": "Alternate Nostril Breathing (Nadi Shodhana)",
+              "hindi": "वैकल्पिक नासिका श्वास (नाड़ी शोधन)",
+              "marathi": "Alternate Nostril Breathing (Nadi Shodhana)"
+            },
+            "description": {
+              "english": "Step: Close one nostril, inhale through the other, switch sides. How it helps: Balances emotions and reduces fear of attending school. Example: 5‚Äì7 rounds daily.",
+              "hindi": "चरण: एक नथुना बंद करें, दूसरे से साँस लें, फिर करवटें बदलें। यह कैसे मदद करता है: भावनाओं को संतुलित करता है और स्कूल जाने के डर को कम करता है। उदाहरण: रोज़ाना 5-7 चक्कर।",
+              "marathi": "पायरी: एक नाकपुडी बंद करा, दुसऱ्या नाकपुडीतून श्वास घ्या, बाजू बदला. ते कसे मदत करते: भावना संतुलित करते आणि शाळेत जाण्याची भीती कमी करते. उदाहरण: दररोज ५-७ फेऱ्या."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 5,
+            "title": {
+              "english": "Mountain Pose (Tadasana)",
+              "hindi": "पर्वत मुद्रा (ताड़ासन)",
+              "marathi": "पर्वतीय आसन (ताडासन)"
+            },
+            "description": {
+              "english": "Step: Stand tall, feet together, hands raised above head. How it helps: Improves focus and confidence. Example: Hold for 1 minute before heading to school.",
+              "hindi": "चरण: सीधे खड़े हो जाएँ, पैर एक साथ, हाथ सिर के ऊपर। यह कैसे मदद करता है: ध्यान और आत्मविश्वास बढ़ाता है। उदाहरण: स्कूल जाने से पहले 1 मिनट तक इसी स्थिति में रहें।",
+              "marathi": "पायरी: उभे राहा, पाय एकत्र ठेवा, हात डोक्यावर वर करा. ते कसे मदत करते: लक्ष केंद्रित करणे आणि आत्मविश्वास वाढवते. उदाहरण: शाळेत जाण्यापूर्वी १ मिनिट थांबा."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 9,
+            "title": {
+              "english": "Guided Visualization",
+              "hindi": "निर्देशित विज़ुअलाइज़ेशन",
+              "marathi": "मार्गदर्शित व्हिज्युअलायझेशन"
+            },
+            "description": {
+              "english": "Step: Close eyes, imagine walking confidently to school. How it helps: Builds positive association with school. Example: Practice 10 minutes at night.",
+              "hindi": "चरण: आँखें बंद करें, आत्मविश्वास से स्कूल जाते हुए कल्पना करें। यह कैसे मदद करता है: स्कूल के साथ सकारात्मक जुड़ाव बनाता है। उदाहरण: रात में 10 मिनट अभ्यास करें।",
+              "marathi": "पायरी: डोळे बंद करा, आत्मविश्वासाने शाळेत चालत जाण्याची कल्पना करा. ते कसे मदत करते: शाळेशी सकारात्मक संबंध निर्माण करते. उदाहरण: रात्री १० मिनिटे सराव करा."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 6,
+            "title": {
+              "english": "Seated Forward Bend (Paschimottanasana)",
+              "hindi": "बैठे हुए आगे की ओर झुकना (पश्चिमोत्तानासन)",
+              "marathi": "बसलेला पुढे वाकणे (पश्चिमोत्तानासन)"
+            },
+            "description": {
+              "english": "Step: Sit with legs extended, bend forward to touch toes. How it helps: Releases tension and calms the mind. Example: Hold for 30 seconds, repeat twice.",
+              "hindi": "चरण: पैर फैलाकर बैठें, आगे झुककर पैर की उँगलियों को छुएँ। यह कैसे मदद करता है: तनाव दूर करता है और मन को शांत करता है। उदाहरण: 30 सेकंड तक रुकें, दो बार दोहराएँ।",
+              "marathi": "पायरी: पाय पसरून बसा, पायाच्या बोटांना स्पर्श करण्यासाठी पुढे वाकून बसा. हे कसे मदत करते: तणाव कमी करते आणि मन शांत करते. उदाहरण: ३० सेकंद धरा, दोनदा पुन्हा करा."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 8,
+            "title": {
+              "english": "Mantra Meditation",
+              "hindi": "मंत्र ध्यान",
+              "marathi": "मंत्र ध्यान"
+            },
+            "description": {
+              "english": "Step: Sit quietly, repeat a calming word like 'Shanti'. How it helps: Reduces negative thinking patterns about school. Example: Chant for 5 minutes daily.",
+              "hindi": "चरण: चुपचाप बैठें, &#39;शांति&#39; जैसे किसी शांतिदायक शब्द का जाप करें। यह कैसे मदद करता है: स्कूल के बारे में नकारात्मक सोच को कम करता है। उदाहरण: रोज़ाना 5 मिनट तक जप करें।",
+              "marathi": "पायरी: शांत बसा, &#39;शांती&#39; सारखा शांत शब्द पुन्हा उच्चारून सांगा. ते कसे मदत करते: शाळेबद्दल नकारात्मक विचारसरणी कमी करते. उदाहरण: दररोज ५ मिनिटे जप करा."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 7,
+            "title": {
+              "english": "Tree Pose (Vrikshasana)",
+              "hindi": "वृक्षासन",
+              "marathi": "Tree Pose (Vrikshasana)"
+            },
+            "description": {
+              "english": "Step: Stand on one leg, place other foot on thigh, hands together above head. How it helps: Improves balance, focus, and self-control. Example: Hold for 30 seconds each side.",
+              "hindi": "चरण: एक पैर पर खड़े हो जाएँ, दूसरे पैर को जांघ पर रखें, दोनों हाथों को सिर के ऊपर एक साथ रखें। यह कैसे मदद करता है: संतुलन, ध्यान और आत्म-नियंत्रण में सुधार करता है। उदाहरण: दोनों तरफ 30 सेकंड तक रुकें।",
+              "marathi": "पायरी: एका पायावर उभे राहा, दुसरा पाय मांडीवर ठेवा, हात डोक्याच्या वर एकत्र करा. ते कसे मदत करते: संतुलन, लक्ष केंद्रित करणे आणि आत्म-नियंत्रण सुधारते. उदाहरण: प्रत्येक बाजूला ३० सेकंद धरा."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 10,
+            "title": {
+              "english": "Body Scan Meditation",
+              "hindi": "बॉडी स्कैन ध्यान",
+              "marathi": "बॉडी स्कॅन मेडिटेशन"
+            },
+            "description": {
+              "english": "Step: Lie down, mentally relax each body part from toes to head. How it helps: Promotes relaxation and reduces morning resistance. Example: Practice for 10 minutes before sleep.",
+              "hindi": "चरण: लेट जाएँ, पैर की उंगलियों से लेकर सिर तक शरीर के हर हिस्से को मानसिक रूप से आराम दें। यह कैसे मदद करता है: विश्राम को बढ़ावा देता है और सुबह के प्रतिरोध को कम करता है। उदाहरण: सोने से पहले 10 मिनट तक अभ्यास करें।",
+              "marathi": "पायरी: झोपा, पायाच्या बोटांपासून डोक्यापर्यंत शरीराच्या प्रत्येक भागाला मानसिकरित्या आराम द्या. ते कसे मदत करते: आराम करण्यास प्रोत्साहन देते आणि सकाळी प्रतिकार कमी करते. उदाहरण: झोपण्यापूर्वी १० मिनिटे सराव करा."
+            }
+          }
+        ]
+      },
+      "relaxation": {
+        "type": "Secondary",
+        "interventionSubType": "Relaxation",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 7,
+            "title": {
+              "english": "Progressive Muscle Relaxation",
+              "hindi": "प्रगतिशील मांसपेशी विश्राम",
+              "marathi": "प्रोग्रेसिव्ह स्नायू विश्रांती"
+            },
+            "description": {
+              "english": "Step: Tense and relax each muscle group from toes to head. How it helps: Releases built-up tension that may cause avoidance of school. Example: Practice for 10 minutes before bedtime.",
+              "hindi": "चरण: पैर की उंगलियों से लेकर सिर तक हर मांसपेशी समूह को तनाव दें और आराम दें। यह कैसे मदद करता है: जमा हुआ तनाव दूर होता है जिसकी वजह से स्कूल जाने से परहेज हो सकता है। उदाहरण: सोने से पहले 10 मिनट तक अभ्यास करें।",
+              "marathi": "पायरी: पायाच्या बोटांपासून डोक्यापर्यंत प्रत्येक स्नायू गटाला ताण द्या आणि आराम द्या. ते कसे मदत करते: शाळेला टाळण्यास कारणीभूत ठरू शकणारा ताण कमी करते. उदाहरण: झोपण्यापूर्वी १० मिनिटे सराव करा."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 8,
+            "title": {
+              "english": "Visualization Walk",
+              "hindi": "विज़ुअलाइज़ेशन वॉक",
+              "marathi": "व्हिज्युअलायझेशन वॉक"
+            },
+            "description": {
+              "english": "Step: Close eyes and imagine walking peacefully to school with confidence. How it helps: Reduces fear and builds positive association with school. Example: Practice 5 minutes every morning.",
+              "hindi": "चरण: आँखें बंद करें और आत्मविश्वास के साथ शांति से स्कूल जाने की कल्पना करें। यह कैसे मदद करता है: डर कम करता है और स्कूल के साथ सकारात्मक जुड़ाव बनाता है। उदाहरण: हर सुबह 5 मिनट अभ्यास करें।",
+              "marathi": "पायरी: डोळे बंद करा आणि आत्मविश्वासाने शांतपणे शाळेत जाण्याची कल्पना करा. ते कसे मदत करते: भीती कमी करते आणि शाळेशी सकारात्मक संबंध निर्माण करते. उदाहरण: दररोज सकाळी ५ मिनिटे सराव करा."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 6,
+            "title": {
+              "english": "Soothing Music Break",
+              "hindi": "सुखदायक संगीत ब्रेक",
+              "marathi": "शांत करणारे संगीत ब्रेक"
+            },
+            "description": {
+              "english": "Step: Listen to calming instrumental music. How it helps: Eases anxiety and regulates emotions. Example: Play soft music during breakfast before school.",
+              "hindi": "चरण: शांत करने वाला वाद्य संगीत सुनें। यह कैसे मदद करता है: चिंता कम करता है और भावनाओं को नियंत्रित करता है। उदाहरण: स्कूल जाने से पहले नाश्ते के समय हल्का संगीत बजाएँ।",
+              "marathi": "पायरी: शांत करणारे वाद्य संगीत ऐका. ते कसे मदत करते: चिंता कमी करते आणि भावना नियंत्रित करते. उदाहरण: शाळेपूर्वी नाश्त्याच्या वेळी मऊ संगीत वाजवा."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 9,
+            "title": {
+              "english": "Aromatherapy with Deep Breathing",
+              "hindi": "गहरी साँस के साथ अरोमाथेरेपी",
+              "marathi": "खोल श्वासोच्छवासासह अरोमाथेरपी"
+            },
+            "description": {
+              "english": "Step: Use calming scents like lavender while breathing deeply. How it helps: Enhances relaxation and reduces resistance to going out. Example: Light lavender oil before preparing for school.",
+              "hindi": "चरण: गहरी साँस लेते हुए लैवेंडर जैसी शांत सुगंध का प्रयोग करें। यह कैसे मदद करता है: आराम बढ़ाता है और बाहर जाने की इच्छा को कम करता है। उदाहरण: स्कूल जाने से पहले लैवेंडर का तेल हल्का करें।",
+              "marathi": "पायरी: खोल श्वास घेताना लैव्हेंडर सारख्या शांत सुगंधांचा वापर करा. ते कसे मदत करते: आराम वाढवते आणि बाहेर जाण्याचा प्रतिकार कमी करते. उदाहरण: शाळेची तयारी करण्यापूर्वी लैव्हेंडर तेल लावा."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 8,
+            "title": {
+              "english": "5-4-3-2-1 Grounding Technique",
+              "hindi": "5-4-3-2-1 ग्राउंडिंग तकनीक",
+              "marathi": "५-४-३-२-१ ग्राउंडिंग तंत्र"
+            },
+            "description": {
+              "english": "Step: Notice 5 things you see, 4 you touch, 3 you hear, 2 you smell, 1 you taste. How it helps: Brings focus to the present and reduces stress about school. Example: Practice before leaving home.",
+              "hindi": "चरण: 5 चीज़ों पर ध्यान दें जिन्हें आप देखते हैं, 4 जिन्हें आप छूते हैं, 3 जिन्हें आप सुनते हैं, 2 जिन्हें आप सूंघते हैं, और 1 जिन्हें आप चखते हैं। यह कैसे मदद करता है: वर्तमान पर ध्यान केंद्रित करता है और स्कूल के तनाव को कम करता है। उदाहरण: घर से निकलने से पहले अभ्यास करें।",
+              "marathi": "पायरी: तुम्ही पाहता त्या ५ गोष्टींकडे लक्ष द्या, ४ तुम्ही स्पर्श करता, ३ तुम्ही ऐकता, २ तुम्ही वास घेता, १ तुम्ही चव घेता. ते कसे मदत करते: वर्तमानाकडे लक्ष केंद्रित करते आणि शाळेबद्दलचा ताण कमी करते. उदाहरण: घर सोडण्यापूर्वी सराव करा."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 5,
+            "title": {
+              "english": "Counting Breaths",
+              "hindi": "साँसें गिनना",
+              "marathi": "श्वास मोजणे"
+            },
+            "description": {
+              "english": "Step: Inhale slowly and count to 4, exhale and count to 6. How it helps: Slows down heart rate and eases anxiety. Example: Do 10 rounds when child resists going to school.",
+              "hindi": "चरण: धीरे-धीरे साँस लें और 4 तक गिनें, साँस छोड़ें और 6 तक गिनें। यह कैसे मदद करता है: हृदय गति धीमी करता है और चिंता कम करता है। उदाहरण: जब बच्चा स्कूल जाने से मना करे, तो 10 चक्कर लगाएँ।",
+              "marathi": "पायरी: हळूहळू श्वास घ्या आणि ४ पर्यंत मोजा, श्वास सोडा आणि ६ पर्यंत मोजा. हे कसे मदत करते: हृदय गती कमी करते आणि चिंता कमी करते. उदाहरण: जेव्हा मूल शाळेत जाण्यास विरोध करते तेव्हा १० फेऱ्या करा."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 6,
+            "title": {
+              "english": "Warm Bath Relaxation",
+              "hindi": "गर्म स्नान विश्राम",
+              "marathi": "उबदार आंघोळीने आराम"
+            },
+            "description": {
+              "english": "Step: Take a warm bath in the evening. How it helps: Relaxes muscles and improves sleep, making mornings smoother. Example: 15-minute bath before bedtime.",
+              "hindi": "चरण: शाम को गुनगुने पानी से नहाएँ। यह कैसे मदद करता है: मांसपेशियों को आराम देता है और नींद में सुधार करता है, जिससे सुबह सुकून भरी होती है। उदाहरण: सोने से 15 मिनट पहले नहाना।",
+              "marathi": "पायरी: संध्याकाळी गरम आंघोळ करा. ते कसे मदत करते: स्नायूंना आराम देते आणि झोप सुधारते, ज्यामुळे सकाळ नितळ होते. उदाहरण: झोपण्यापूर्वी १५ मिनिटे आंघोळ करा."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 7,
+            "title": {
+              "english": "Journaling Worries",
+              "hindi": "जर्नलिंग की चिंताएँ",
+              "marathi": "जर्नलिंगच्या चिंता"
+            },
+            "description": {
+              "english": "Step: Write down fears or reasons for not wanting to attend school. How it helps: Reduces mental load and clarifies thoughts. Example: Journal 10 minutes before sleep.",
+              "hindi": "चरण: स्कूल न जाने के डर या कारणों को लिखें। यह कैसे मदद करता है: मानसिक तनाव कम करता है और विचारों को स्पष्ट करता है। उदाहरण: सोने से 10 मिनट पहले डायरी लिखें।",
+              "marathi": "पायरी: शाळेत न जाण्याची भीती किंवा कारणे लिहा. ते कसे मदत करते: मानसिक ताण कमी करते आणि विचार स्पष्ट करते. उदाहरण: झोपण्यापूर्वी १० मिनिटे जर्नल लिहा."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 9,
+            "title": {
+              "english": "Guided Body Scan Audio",
+              "hindi": "निर्देशित बॉडी स्कैन ऑडियो",
+              "marathi": "मार्गदर्शित बॉडी स्कॅन ऑडिओ"
+            },
+            "description": {
+              "english": "Step: Listen to a guided relaxation that directs focus on each body part. How it helps: Relieves tension and anxiety. Example: Use a 10-minute audio before school prep.",
+              "hindi": "चरण: एक निर्देशित विश्राम संगीत सुनें जो शरीर के प्रत्येक अंग पर ध्यान केंद्रित करता है। यह कैसे मदद करता है: तनाव और चिंता से राहत देता है। उदाहरण: स्कूल की तैयारी से पहले 10 मिनट का ऑडियो सुनें।",
+              "marathi": "पायरी: शरीराच्या प्रत्येक भागावर लक्ष केंद्रित करण्यासाठी मार्गदर्शित विश्रांती ऐका. ते कसे मदत करते: तणाव आणि चिंता कमी करते. उदाहरण: शाळेच्या तयारीपूर्वी १० मिनिटांचा ऑडिओ वापरा."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 10,
+            "title": {
+              "english": "Family Relax Time",
+              "hindi": "परिवार के आराम का समय",
+              "marathi": "कुटुंबासाठी आरामदायी वेळ"
+            },
+            "description": {
+              "english": "Step: Spend 15 minutes doing a calm activity together (reading, storytelling). How it helps: Strengthens bond and provides emotional security. Example: Share a short story before sleep.",
+              "hindi": "चरण: साथ में कोई शांत गतिविधि (पढ़ना, कहानी सुनाना) करते हुए 15 मिनट बिताएँ। यह कैसे मदद करता है: बंधन मज़बूत करता है और भावनात्मक सुरक्षा प्रदान करता है। उदाहरण: सोने से पहले एक छोटी कहानी सुनाएँ।",
+              "marathi": "पायरी: एकत्र शांतपणे काम करण्यासाठी १५ मिनिटे घालवा (वाचन, कथाकथन). ते कसे मदत करते: बंध मजबूत करते आणि भावनिक सुरक्षितता प्रदान करते. उदाहरण: झोपण्यापूर्वी एक छोटीशी गोष्ट सांगा."
+            }
+          }
+        ]
+      },
+      "cbt": {
+        "type": "Tertiary",
+        "interventionSubType": "CBT Interventions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 6,
+            "title": {
+              "english": "Identify Thought Patterns",
+              "hindi": "विचार पैटर्न की पहचान करें",
+              "marathi": "विचारांचे नमुने ओळखा"
+            },
+            "description": {
+              "english": "Why it helps: Recognizing the child's avoidance thoughts helps reduce bunking. What to do: Ask the child to write what they think when school is mentioned. Example: Child writes 'I will be laughed at in class'‚Äîparent helps reframe.",
+              "hindi": "यह क्यों मददगार है: बच्चे के टालमटोल वाले विचारों को पहचानने से स्कूल छोड़ने की आदत को कम करने में मदद मिलती है। क्या करें: बच्चे से पूछें कि स्कूल का ज़िक्र आने पर वे क्या सोचते हैं। उदाहरण: बच्चा लिखता है, &quot;कक्षा में मेरा मज़ाक उड़ाया जाएगा&quot;, माता-पिता उसे फिर से समझने में मदद करते हैं।",
+              "marathi": "हे का मदत करते: मुलाचे टाळण्याचे विचार ओळखल्याने बंकिंग कमी होण्यास मदत होते. काय करावे: शाळेचा उल्लेख आल्यावर मुलाला काय वाटते ते लिहिण्यास सांगा. उदाहरण: मूल लिहिते &#39;वर्गात माझे हसले जाईल&#39; पालक पुन्हा तयार करण्यास मदत करतात."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 7,
+            "title": {
+              "english": "Cognitive Reframing",
+              "hindi": "संज्ञानात्मक पुनर्रचना",
+              "marathi": "संज्ञानात्मक पुनर्रचना"
+            },
+            "description": {
+              "english": "Why it helps: Shifts negative thoughts into balanced ones. What to do: Replace 'School is scary' with 'I can handle one class at a time.' Example: Role-play reframing before bedtime.",
+              "hindi": "यह क्यों मददगार है: नकारात्मक विचारों को संतुलित विचारों में बदल देता है। क्या करें: &#39;स्कूल डरावना है&#39; की जगह &#39;मैं एक समय में एक ही क्लास संभाल सकता हूँ&#39; रखें। उदाहरण: सोने से पहले रोल-प्ले को फिर से तैयार करें।",
+              "marathi": "हे का मदत करते: नकारात्मक विचारांना संतुलित विचारांमध्ये बदलते. काय करावे: &#39;शाळा भयानक आहे&#39; याऐवजी &#39;मी एका वेळी एक वर्ग हाताळू शकतो&#39; असे लिहा. उदाहरण: झोपण्यापूर्वी भूमिका-नाटक पुन्हा तयार करणे."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 9,
+            "title": {
+              "english": "Behavioral Experiments",
+              "hindi": "व्यवहारिक प्रयोग",
+              "marathi": "वर्तणुकीचे प्रयोग"
+            },
+            "description": {
+              "english": "Why it helps: Tests if fears are realistic. What to do: Encourage the child to attend school for one subject and reflect on the experience. Example: Student finds classmates supportive instead of critical.",
+              "hindi": "यह क्यों मददगार है: यह जाँचता है कि क्या डर वास्तविक हैं। क्या करें: बच्चे को एक विषय के लिए स्कूल जाने और उस अनुभव पर विचार करने के लिए प्रोत्साहित करें। उदाहरण: छात्र को लगता है कि सहपाठी आलोचनात्मक होने के बजाय सहयोगी हैं।",
+              "marathi": "हे का मदत करते: भीती वास्तववादी आहे का ते तपासा. काय करावे: मुलाला एका विषयासाठी शाळेत जाण्यास प्रोत्साहित करा आणि अनुभवावर चिंतन करा. उदाहरण: विद्यार्थ्याला वर्गमित्र टीका करण्याऐवजी पाठिंबा देतात असे वाटते."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 5,
+            "title": {
+              "english": "Reward System",
+              "hindi": "पुरस्कार प्रणाली",
+              "marathi": "बक्षीस प्रणाली"
+            },
+            "description": {
+              "english": "Why it helps: Reinforces positive behavior. What to do: Give small rewards for attending school regularly. Example: Extra playtime for attending 5 days without bunking.",
+              "hindi": "यह क्यों मददगार है: सकारात्मक व्यवहार को मज़बूत करता है। क्या करें: नियमित रूप से स्कूल आने पर छोटे-छोटे इनाम दें। उदाहरण के लिए: बिना स्कूल छोड़े 5 दिन स्कूल आने पर अतिरिक्त खेलने का समय।",
+              "marathi": "हे का मदत करते: सकारात्मक वर्तन मजबूत करते. काय करावे: नियमितपणे शाळेत जाण्यासाठी लहान बक्षिसे द्या. उदाहरण: ५ दिवस बंक न करता उपस्थित राहण्यासाठी अतिरिक्त खेळाचा वेळ."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 8,
+            "title": {
+              "english": "Challenging Catastrophic Thinking",
+              "hindi": "विनाशकारी सोच को चुनौती देना",
+              "marathi": "आपत्तीजनक विचारसरणीला आव्हान देणे"
+            },
+            "description": {
+              "english": "Why it helps: Reduces irrational fears. What to do: Ask 'What‚Äôs the worst, best, and most likely outcome?' Example: Instead of 'Teacher will hate me,' think 'Teacher may guide me kindly.'",
+              "hindi": "यह क्यों मददगार है: बेतुके डर कम करता है। क्या करें: पूछें, &#39;सबसे बुरा, सबसे अच्छा और सबसे संभावित परिणाम क्या होगा?&#39; उदाहरण: &#39;शिक्षक मुझसे नफ़रत करेंगे&#39; के बजाय, सोचें, &#39;शिक्षक मुझे दयालुता से मार्गदर्शन देंगे।&#39;",
+              "marathi": "ते का मदत करते: अतार्किक भीती कमी करते. काय करावे: &#39;सर्वात वाईट, सर्वोत्तम आणि संभाव्य परिणाम काय आहे?&#39; असे विचारा. उदाहरण: &#39;शिक्षक माझा द्वेष करतील&#39; असे म्हणण्याऐवजी, &#39;शिक्षक मला दयाळूपणे मार्गदर्शन करतील&#39; असा विचार करा."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 10,
+            "title": {
+              "english": "Graded Exposure",
+              "hindi": "ग्रेडेड एक्सपोज़र",
+              "marathi": "श्रेणीबद्ध एक्सपोजर"
+            },
+            "description": {
+              "english": "Why it helps: Gradually reduces avoidance. What to do: Start with attending half-day, then full-day. Example: Child attends morning classes first, then stays entire day.",
+              "hindi": "यह क्यों मददगार है: धीरे-धीरे टालमटोल कम हो जाता है। क्या करें: पहले आधे दिन, फिर पूरे दिन कक्षा में उपस्थित रहें। उदाहरण के लिए: बच्चा पहले सुबह की कक्षाओं में जाता है, फिर पूरा दिन कक्षा में रहता है।",
+              "marathi": "हे का मदत करते: हळूहळू टाळाटाळ कमी होते. काय करावे: अर्धा दिवस उपस्थित राहून सुरुवात करा, नंतर पूर्ण दिवस. उदाहरण: मूल प्रथम सकाळच्या वर्गांना उपस्थित राहते, नंतर संपूर्ण दिवस राहते."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 7,
+            "title": {
+              "english": "Self-Monitoring Diary",
+              "hindi": "स्व-निगरानी डायरी",
+              "marathi": "स्व-निरीक्षण डायरी"
+            },
+            "description": {
+              "english": "Why it helps: Tracks patterns of bunking and emotions. What to do: Maintain a log of days attended, thoughts, and feelings. Example: Child notes feeling anxious on Mondays but relaxed by Friday.",
+              "hindi": "यह क्यों मददगार है: स्कूल छोड़ने के पैटर्न और भावनाओं पर नज़र रखता है। क्या करें: पढ़ाई के दिनों, विचारों और भावनाओं का रिकॉर्ड रखें। उदाहरण: बच्चा सोमवार को बेचैनी महसूस करता है, लेकिन शुक्रवार तक आराम महसूस करता है।",
+              "marathi": "हे का मदत करते: बंकिंग आणि भावनांच्या पद्धतींचा मागोवा घेते. काय करावे: उपस्थित राहिलेल्या दिवसांचा, विचारांचा आणि भावनांचा लॉग ठेवा. उदाहरण: मुलाला सोमवारी चिंता वाटत असल्याचे लक्षात येते परंतु शुक्रवारी आराम मिळतो."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 8,
+            "title": {
+              "english": "Problem-Solving Training",
+              "hindi": "समस्या-समाधान प्रशिक्षण",
+              "marathi": "समस्या सोडवण्याचे प्रशिक्षण"
+            },
+            "description": {
+              "english": "Why it helps: Teaches children to address triggers. What to do: Break down problems into solutions. Example: If homework feels overwhelming, divide it into small chunks.",
+              "hindi": "यह क्यों मददगार है: यह बच्चों को ट्रिगर्स से निपटना सिखाता है। क्या करें: समस्याओं को समाधानों में बाँटें। उदाहरण: अगर होमवर्क बहुत ज़्यादा लग रहा हो, तो उसे छोटे-छोटे हिस्सों में बाँट लें।",
+              "marathi": "हे का मदत करते: मुलांना ट्रिगर्सना तोंड द्यायला शिकवते. काय करावे: समस्यांचे निराकरणात विभाजन करा. उदाहरण: जर गृहपाठ जबरदस्त वाटत असेल, तर ते लहान भागांमध्ये विभागा."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 5,
+            "title": {
+              "english": "Positive Self-Talk",
+              "hindi": "सकारात्मक आत्म-चर्चा",
+              "marathi": "सकारात्मक स्व-संवाद"
+            },
+            "description": {
+              "english": "Why it helps: Builds confidence and reduces avoidance. What to do: Encourage repeating affirmations like 'I am capable of learning.' Example: Child says it before leaving home.",
+              "hindi": "यह क्यों मददगार है: इससे आत्मविश्वास बढ़ता है और टालमटोल कम होता है। क्या करें: &#39;मैं सीखने में सक्षम हूँ&#39; जैसे कथनों को बार-बार दोहराने के लिए प्रोत्साहित करें। उदाहरण: बच्चा घर से निकलने से पहले यह बात कहता है।",
+              "marathi": "हे का मदत करते: आत्मविश्वास वाढवते आणि टाळाटाळ कमी करते. काय करावे: &#39;मी शिकण्यास सक्षम आहे&#39; सारखे पुनरावृत्ती होकार देण्यास प्रोत्साहित करा. उदाहरण: घर सोडण्यापूर्वी मूल ते म्हणते."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 9,
+            "title": {
+              "english": "Role-Playing Difficult Situations",
+              "hindi": "कठिन परिस्थितियों में भूमिका निभाना",
+              "marathi": "कठीण परिस्थितीत भूमिका साकारणे"
+            },
+            "description": {
+              "english": "Why it helps: Prepares for real-life challenges at school. What to do: Act out scenarios like facing teasing in class. Example: Parent plays role of classmate, child practices calm responses.",
+              "hindi": "यह क्यों मददगार है: स्कूल में आने वाली वास्तविक चुनौतियों के लिए तैयारी करता है। क्या करें: कक्षा में चिढ़ाए जाने जैसे परिदृश्यों का अभिनय करें। उदाहरण: माता-पिता सहपाठी की भूमिका निभाएँ, बच्चा शांत प्रतिक्रिया का अभ्यास करे।",
+              "marathi": "हे का मदत करते: शाळेत वास्तविक जीवनातील आव्हानांसाठी तयारी करते. काय करावे: वर्गात छेडछाडीचा सामना करणे यासारख्या परिस्थितींमध्ये अभिनय करा. उदाहरण: पालक वर्गमित्राची भूमिका बजावतात, मूल शांत प्रतिसादांचा सराव करते."
+            }
+          }
+        ]
+      },
+      "rebt": {
+        "type": "Tertiary",
+        "interventionSubType": "REBT Interventions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 7,
+            "title": {
+              "english": "Disputing Irrational Beliefs",
+              "hindi": "तर्कहीन विश्वासों पर विवाद",
+              "marathi": "अतार्किक श्रद्धांवर वाद घालणे"
+            },
+            "description": {
+              "english": "Why it helps: Challenges extreme negative thoughts causing bunking. What to do: Ask the child 'Is it true that everyone will hate you at school?' Example: Child realizes some classmates are friendly.",
+              "hindi": "यह क्यों मददगार है: स्कूल छोड़ने के कारण बनने वाले अत्यधिक नकारात्मक विचारों को चुनौती देता है। क्या करें: बच्चे से पूछें, &#39;क्या यह सच है कि स्कूल में सब तुमसे नफ़रत करेंगे?&#39; उदाहरण: बच्चे को एहसास होता है कि कुछ सहपाठी मिलनसार हैं।",
+              "marathi": "हे का मदत करते: बंकिंगला कारणीभूत असलेल्या अत्यंत नकारात्मक विचारांना आव्हान देते. काय करावे: मुलाला विचारा &#39;शाळेत सर्वजण तुमचा द्वेष करतील हे खरे आहे का?&#39; उदाहरण: मुलाला कळते की काही वर्गमित्र मैत्रीपूर्ण आहेत."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 8,
+            "title": {
+              "english": "ABC Model Practice",
+              "hindi": "एबीसी मॉडल अभ्यास",
+              "marathi": "एबीसी मॉडेल सराव"
+            },
+            "description": {
+              "english": "Why it helps: Connects Activating event, Beliefs, and Consequences. What to do: Write: A=Teacher scolded, B='I am worthless', C=Avoid school. Example: Replace B with 'I made a mistake, I can improve.'",
+              "hindi": "यह क्यों मददगार है: यह सक्रिय करने वाली घटनाओं, विश्वासों और परिणामों को जोड़ता है। क्या करें: लिखें: A=शिक्षक ने डाँटा, B=&#39;मैं बेकार हूँ&#39;, C=स्कूल न जाएँ। उदाहरण: B के स्थान पर &#39;मैंने गलती की, मैं सुधार कर सकता हूँ&#39; लिखें।",
+              "marathi": "ते का मदत करते: सक्रिय कार्यक्रम, श्रद्धा आणि परिणाम जोडते. काय करावे: लिहा: A=शिक्षकाने फटकारले, B=&#39;मी निरुपयोगी आहे&#39;, C=शाळा टाळा. उदाहरण: B च्या जागी &#39;मी चूक केली, मी सुधारणा करू शकतो&#39; असे लिहा."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 6,
+            "title": {
+              "english": "Unconditional Self-Acceptance",
+              "hindi": "बिना शर्त आत्म-स्वीकृति",
+              "marathi": "बिनशर्त स्व-स्वीकृती"
+            },
+            "description": {
+              "english": "Why it helps: Reduces self-blame and builds confidence. What to do: Teach 'I am valuable even if I make mistakes.' Example: Child repeats this after poor grades.",
+              "hindi": "यह क्यों मददगार है: आत्म-दोष कम करता है और आत्मविश्वास बढ़ाता है। क्या करें: सिखाएँ कि &#39;गलतियाँ करने पर भी मैं मूल्यवान हूँ।&#39; उदाहरण: बच्चा खराब ग्रेड के बाद भी यही बात दोहराता है।",
+              "marathi": "हे का मदत करते: स्वतःवरचा दोष कमी करते आणि आत्मविश्वास वाढवते. काय करावे: &#39;मी चुका केल्या तरी मी मौल्यवान आहे&#39; हे शिकवा. उदाहरण: खराब गुण मिळाल्यानंतर मूल हे पुन्हा पुन्हा करते."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 7,
+            "title": {
+              "english": "Rational Coping Statements",
+              "hindi": "तर्कसंगत मुकाबला कथन",
+              "marathi": "तर्कसंगत सामना विधाने"
+            },
+            "description": {
+              "english": "Why it helps: Provides logical alternatives to fearful beliefs. What to do: Create a list of rational responses. Example: 'Even if school is tough, I can learn to handle it.'",
+              "hindi": "यह क्यों मददगार है: यह डरावने विश्वासों के तार्किक विकल्प प्रदान करता है। क्या करें: तर्कसंगत प्रतिक्रियाओं की एक सूची बनाएँ। उदाहरण: &#39;भले ही स्कूल कठिन हो, मैं उससे निपटना सीख सकता हूँ।&#39;",
+              "marathi": "हे का मदत करते: भीतीदायक समजुतींना तार्किक पर्याय प्रदान करते. काय करावे: तर्कशुद्ध प्रतिसादांची यादी तयार करा. उदाहरण: &#39;शाळा कठीण असली तरी मी ती हाताळायला शिकू शकतो.&#39;"
+            }
+          },
+          {
+            "id": 5,
+            "xp": 9,
+            "title": {
+              "english": "Reality Testing",
+              "hindi": "वास्तविकता परीक्षण",
+              "marathi": "वास्तव चाचणी"
+            },
+            "description": {
+              "english": "Why it helps: Shows beliefs may not match reality. What to do: Ask 'What proof do you have that school is unbearable?' Example: Child recalls fun moments in playground.",
+              "hindi": "यह क्यों मददगार है: यह दर्शाता है कि मान्यताएँ वास्तविकता से मेल नहीं खा सकतीं। क्या करें: पूछें, &#39;आपके पास क्या सबूत है कि स्कूल असहनीय है?&#39; उदाहरण: बच्चा खेल के मैदान में बिताए मज़ेदार पलों को याद करता है।",
+              "marathi": "हे का मदत करते: विश्वास वास्तवाशी जुळत नसतील हे दाखवते. काय करावे: विचारा &#39;शाळा असह्य आहे याचा तुमच्याकडे काय पुरावा आहे?&#39; उदाहरण: मुलाला खेळाच्या मैदानातील मजेदार क्षण आठवतात."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 8,
+            "title": {
+              "english": "Preference over Demand",
+              "hindi": "मांग पर वरीयता",
+              "marathi": "मागणीपेक्षा प्राधान्य"
+            },
+            "description": {
+              "english": "Why it helps: Teaches flexible thinking. What to do: Change 'I must never be teased' to 'I prefer kindness, but I can handle teasing.' Example: Child feels less pressure at school.",
+              "hindi": "यह क्यों मददगार है: यह लचीली सोच सिखाता है। क्या करें: &#39;मुझे कभी नहीं छेड़ा जाना चाहिए&#39; को बदलकर &#39;मुझे दयालुता पसंद है, लेकिन मैं छेड़खानी बर्दाश्त कर सकता हूँ&#39; कर दें। उदाहरण: बच्चा स्कूल में कम दबाव महसूस करता है।",
+              "marathi": "हे का मदत करते: लवचिक विचार शिकवते. काय करावे: &#39;मला कधीही छेडले जाऊ नये&#39; असे बदलून &#39;मला दयाळूपणा आवडतो, पण मी छेडछाड सहन करू शकतो.&#39; उदाहरण: मुलाला शाळेत कमी दबाव जाणवतो."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 6,
+            "title": {
+              "english": "Model Rational Thinking",
+              "hindi": "तर्कसंगत सोच का मॉडल",
+              "marathi": "मॉडेल रॅशनल थिंकिंग"
+            },
+            "description": {
+              "english": "Why it helps: Parents demonstrate balanced beliefs. What to do: Parent says 'I prefer peace, but I can handle stress.' Example: Child imitates calm thinking when nervous.",
+              "hindi": "यह क्यों मददगार है: माता-पिता संतुलित विश्वास प्रदर्शित करते हैं। क्या करें: माता-पिता कहते हैं, &#39;मुझे शांति पसंद है, लेकिन मैं तनाव को संभाल सकता हूँ।&#39; उदाहरण: बच्चा घबराहट में शांत सोच का अनुकरण करता है।",
+              "marathi": "हे का मदत करते: पालक संतुलित विश्वास दाखवतात. काय करावे: पालक म्हणतात &#39;मला शांतता आवडते, पण मी ताण हाताळू शकतो.&#39; उदाहरण: मूल चिंताग्रस्त असताना शांत विचारांचे अनुकरण करते."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 10,
+            "title": {
+              "english": "Reframing Failure",
+              "hindi": "विफलता को पुनर्परिभाषित करना",
+              "marathi": "रिफ्रेमिंग अयशस्वी"
+            },
+            "description": {
+              "english": "Why it helps: Stops equating failure with worthlessness. What to do: Teach 'Failing one test doesn‚Äôt make me a failure.' Example: After failing math, child still attends school with hope.",
+              "hindi": "यह क्यों मददगार है: असफलता को बेकार समझने से रोकता है। क्या करें: सिखाएँ कि &#39;एक परीक्षा में फेल होने से मैं फेल नहीं हो जाता।&#39; उदाहरण: गणित में फेल होने के बाद भी बच्चा उम्मीद के साथ स्कूल जाता है।",
+              "marathi": "हे का मदत करते: अपयशाची निरुपयोगीतेशी तुलना करणे थांबवते. काय करावे: शिकवा &#39;एका परीक्षेत नापास झाल्याने मी नापास होत नाही.&#39; उदाहरण: गणितात नापास झाल्यानंतरही, मूल आशेने शाळेत जाते."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 7,
+            "title": {
+              "english": "Decatastrophizing",
+              "hindi": "विनाशकारी विनाश",
+              "marathi": "विनाशकारी"
+            },
+            "description": {
+              "english": "Why it helps: Reduces exaggerated fears. What to do: Ask 'What‚Äôs the worst that can happen if you attend school?' Example: Child realizes the worst is minor embarrassment.",
+              "hindi": "यह क्यों मददगार है: यह अतिशयोक्तिपूर्ण भय को कम करता है। क्या करें: पूछें, &#39;अगर आप स्कूल जाते हैं तो सबसे बुरा क्या हो सकता है?&#39; उदाहरण: बच्चे को एहसास होता है कि सबसे बुरा तो छोटी-मोटी शर्मिंदगी ही है।",
+              "marathi": "हे का मदत करते: अतिरंजित भीती कमी करते. काय करावे: &#39;शाळेत गेल्यास सर्वात वाईट काय घडू शकते?&#39; असे विचारा. उदाहरण: मुलाला कळते की सर्वात वाईट म्हणजे किरकोळ लाजिरवाणेपणा."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 9,
+            "title": {
+              "english": "Flexible Goal Setting",
+              "hindi": "लचीला लक्ष्य निर्धारण",
+              "marathi": "लवचिक ध्येय निश्चिती"
+            },
+            "description": {
+              "english": "Why it helps: Creates achievable expectations. What to do: Encourage 'I want to attend 3 days this week' instead of 'I must attend daily without fail.' Example: Child builds consistency gradually.",
+              "hindi": "यह क्यों मददगार है: इससे प्राप्त करने योग्य अपेक्षाएँ पैदा होती हैं। क्या करें: &#39;मुझे इस हफ़्ते 3 दिन कक्षा में आना है&#39; के बजाय प्रोत्साहित करें कि &#39;मुझे बिना चूके रोज़ कक्षा में आना चाहिए।&#39; उदाहरण: बच्चा धीरे-धीरे नियमितता विकसित करता है।",
+              "marathi": "हे का मदत करते: साध्य करण्यायोग्य अपेक्षा निर्माण करते. काय करावे: &#39;मला दररोज न चुकता उपस्थित राहावे लागेल&#39; याऐवजी &#39;मला या आठवड्यात ३ दिवस उपस्थित राहायचे आहे&#39; असे प्रोत्साहित करा. उदाहरण: मूल हळूहळू सातत्य निर्माण करते."
+            }
+          }
+        ]
+      }
+    }
+  }
+  

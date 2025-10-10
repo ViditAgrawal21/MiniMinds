@@ -1,0 +1,737 @@
+{
+    "condition": "Learning Disability",
+    "issueType": "Developmental Issues",
+    "interventions": {
+      "commonSuggestions": {
+        "type": "Primary",
+        "interventionSubType": "10 Common Suggestions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 3,
+            "title": {
+              "english": "Use Multisensory Learning",
+              "hindi": "बहुसंवेदी शिक्षण का उपयोग करें",
+              "marathi": "बहुसंवेदी शिक्षण वापरा"
+            },
+            "description": {
+              "english": "Works by engaging multiple senses to aid understanding. Example: Use flashcards with pictures and sounds for reading practice.",
+              "hindi": "समझने में सहायता के लिए कई इंद्रियों को शामिल करके काम करता है। उदाहरण: पढ़ने के अभ्यास के लिए चित्रों और ध्वनियों वाले फ़्लैशकार्ड का उपयोग करें।",
+              "marathi": "समजून घेण्यास मदत करण्यासाठी अनेक इंद्रियांना गुंतवून कार्य करते. उदाहरण: वाचन सरावासाठी चित्रे आणि ध्वनी असलेले फ्लॅशकार्ड वापरा."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 2,
+            "title": {
+              "english": "Break Tasks into Small Steps",
+              "hindi": "कार्यों को छोटे-छोटे चरणों में विभाजित करें",
+              "marathi": "कामे लहान पायऱ्यांमध्ये विभाजित करा"
+            },
+            "description": {
+              "english": "Works by making learning manageable. Example: Teach long division step by step instead of all at once.",
+              "hindi": "यह सीखने को आसान बनाकर काम करता है। उदाहरण: लंबा भाग एक साथ सिखाने के बजाय चरणबद्ध तरीके से सिखाएँ।",
+              "marathi": "शिकणे व्यवस्थापित करण्यायोग्य बनवून कार्य करते. उदाहरण: एकाच वेळी सर्व भागाऐवजी टप्प्याटप्प्याने लांब भागाकार शिकवा."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 3,
+            "title": {
+              "english": "Provide Extra Time",
+              "hindi": "अतिरिक्त समय प्रदान करें",
+              "marathi": "अतिरिक्त वेळ द्या"
+            },
+            "description": {
+              "english": "Works by reducing pressure and anxiety. Example: Give additional minutes during tests or assignments.",
+              "hindi": "यह दबाव और चिंता को कम करके काम करता है। उदाहरण: परीक्षा या असाइनमेंट के दौरान अतिरिक्त समय दें।",
+              "marathi": "दबाव आणि चिंता कमी करून कार्य करते. उदाहरण: चाचण्या किंवा असाइनमेंट दरम्यान अतिरिक्त मिनिटे द्या."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 2,
+            "title": {
+              "english": "Encourage Repetition",
+              "hindi": "पुनरावृत्ति को प्रोत्साहित करें",
+              "marathi": "पुनरावृत्तीला प्रोत्साहन द्या"
+            },
+            "description": {
+              "english": "Works by reinforcing memory through practice. Example: Review spelling words daily until mastered.",
+              "hindi": "अभ्यास के माध्यम से स्मृति को सुदृढ़ करके काम करता है। उदाहरण: शब्दों की वर्तनी में महारत हासिल होने तक रोज़ाना उनकी समीक्षा करें।",
+              "marathi": "सरावाद्वारे स्मरणशक्ती मजबूत करून कार्य करते. उदाहरण: शुद्धलेखन शब्दांचे दररोज पुनरावलोकन करा जोपर्यंत तुम्ही त्यावर प्रभुत्व मिळवत नाही."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 2,
+            "title": {
+              "english": "Use Simple Clear Instructions",
+              "hindi": "सरल स्पष्ट निर्देशों का उपयोग करें",
+              "marathi": "सोप्या स्पष्ट सूचना वापरा"
+            },
+            "description": {
+              "english": "Works by reducing confusion. Example: Say 'Write your name here' instead of giving long explanations.",
+              "hindi": "यह भ्रम को कम करके काम करता है। उदाहरण: लंबी व्याख्या देने के बजाय कहें, &#39;अपना नाम यहाँ लिखें&#39;।",
+              "marathi": "गोंधळ कमी करून काम करते. उदाहरण: लांब स्पष्टीकरण देण्याऐवजी &#39;तुमचे नाव येथे लिहा&#39; असे म्हणा."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 4,
+            "title": {
+              "english": "Incorporate Technology Aids",
+              "hindi": "प्रौद्योगिकी सहायता को शामिल करें",
+              "marathi": "तंत्रज्ञान सहाय्य समाविष्ट करा"
+            },
+            "description": {
+              "english": "Works by using supportive tools. Example: Use text-to-speech apps to assist with reading.",
+              "hindi": "सहायक उपकरणों का उपयोग करके काम करता है। उदाहरण: पढ़ने में सहायता के लिए टेक्स्ट-टू-स्पीच ऐप्स का उपयोग करें।",
+              "marathi": "सहाय्यक साधनांचा वापर करून कार्य करते. उदाहरण: वाचनात मदत करण्यासाठी टेक्स्ट-टू-स्पीच अॅप्स वापरा."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 3,
+            "title": {
+              "english": "Positive Reinforcement",
+              "hindi": "सकारात्मक सुदृढीकरण",
+              "marathi": "सकारात्मक मजबुतीकरण"
+            },
+            "description": {
+              "english": "Works by motivating effort and persistence. Example: Praise the child when they attempt a math problem, even if incorrect.",
+              "hindi": "यह प्रयास और लगन को प्रेरित करके काम करता है। उदाहरण: जब बच्चा गणित का कोई सवाल हल करे, तो उसकी तारीफ़ करें, भले ही वह सवाल गलत ही क्यों न हो।",
+              "marathi": "प्रयत्न आणि चिकाटीला प्रेरित करून कार्य करते. उदाहरण: जेव्हा मूल गणिताचा प्रश्न सोडवण्याचा प्रयत्न करते तेव्हा त्याची प्रशंसा करा, जरी तो चुकीचा असला तरीही."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 4,
+            "title": {
+              "english": "Peer or Group Learning",
+              "hindi": "सहकर्मी या समूह शिक्षण",
+              "marathi": "समवयस्क किंवा गट शिक्षण"
+            },
+            "description": {
+              "english": "Works by improving confidence and understanding through collaboration. Example: Pair with a buddy for reading practice.",
+              "hindi": "सहयोग के माध्यम से आत्मविश्वास और समझ में सुधार करके काम करता है। उदाहरण: पढ़ने का अभ्यास करने के लिए किसी साथी के साथ जोड़ी बनाएँ।",
+              "marathi": "सहकार्याद्वारे आत्मविश्वास आणि समज सुधारून कार्य करते. उदाहरण: वाचन सरावासाठी मित्रासोबत जोडी बनवा."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 2,
+            "title": {
+              "english": "Create a Quiet Study Space",
+              "hindi": "एक शांत अध्ययन स्थान बनाएँ",
+              "marathi": "शांत अभ्यासाची जागा तयार करा"
+            },
+            "description": {
+              "english": "Works by reducing distractions and improving focus. Example: Provide a separate corner at home for study.",
+              "hindi": "यह ध्यान भटकाने वाली चीज़ों को कम करके और ध्यान केंद्रित करने की क्षमता बढ़ाकर काम करता है। उदाहरण: घर में पढ़ाई के लिए एक अलग कोना बनाएँ।",
+              "marathi": "लक्ष विचलित करणे कमी करून आणि लक्ष केंद्रित करणे सुधारून कार्य करते. उदाहरण: अभ्यासासाठी घरी एक वेगळा कोपरा द्या."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 5,
+            "title": {
+              "english": "Collaborate with Teachers and Specialists",
+              "hindi": "शिक्षकों और विशेषज्ञों के साथ सहयोग करें",
+              "marathi": "शिक्षक आणि तज्ञांशी सहयोग करा"
+            },
+            "description": {
+              "english": "Works by ensuring consistent strategies at home and school. Example: Follow an Individualized Education Plan (IEP).",
+              "hindi": "घर और स्कूल में एकसमान रणनीतियाँ सुनिश्चित करके काम करता है। उदाहरण: एक व्यक्तिगत शिक्षा योजना (IEP) का पालन करें।",
+              "marathi": "घरी आणि शाळेत सुसंगत धोरणे सुनिश्चित करून कार्य करते. उदाहरण: वैयक्तिकृत शिक्षण योजना (IEP) अनुसरण करा."
+            }
+          }
+        ]
+      },
+      "yoga": {
+        "type": "Secondary",
+        "interventionSubType": "Yoga And Meditation Techniques",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 7,
+            "title": {
+              "english": "Tree Pose (Vrikshasana)",
+              "hindi": "वृक्षासन",
+              "marathi": "Tree Pose (Vrikshasana)"
+            },
+            "description": {
+              "english": "Step: Stand on one leg, place other on thigh, hands together. Benefit: Improves concentration and balance, supporting focus in learning.",
+              "hindi": "चरण: एक पैर पर खड़े हों, दूसरे को जांघ पर रखें, दोनों हाथ एक साथ। लाभ: एकाग्रता और संतुलन में सुधार, सीखने में ध्यान केंद्रित करने में सहायता।",
+              "marathi": "पायरी: एका पायावर उभे राहा, दुसरा मांडीवर ठेवा, हात एकत्र करा. फायदा: एकाग्रता आणि संतुलन सुधारते, शिकण्यात लक्ष केंद्रित करण्यास मदत करते."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 5,
+            "title": {
+              "english": "Child‚Äôs Pose (Balasana)",
+              "hindi": "बाल मुद्रा (बालासन)",
+              "marathi": "बाळाची आसन (बालासन)"
+            },
+            "description": {
+              "english": "Step: Kneel, sit back on heels, stretch arms forward. Benefit: Calms the mind and reduces frustration from study struggles.",
+              "hindi": "चरण: घुटनों के बल बैठें, एड़ियों के बल बैठें, बाँहों को आगे की ओर फैलाएँ। लाभ: मन शांत होता है और पढ़ाई में आने वाली परेशानियों से होने वाली निराशा कम होती है।",
+              "marathi": "पायरी: गुडघे टेकणे, टाचांवर बसणे, हात पुढे पसरवणे. फायदा: मन शांत करते आणि अभ्यासाच्या अडचणींमुळे होणारी निराशा कमी करते."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 8,
+            "title": {
+              "english": "Alternate Nostril Breathing (Nadi Shodhana)",
+              "hindi": "वैकल्पिक नासिका श्वास (नाड़ी शोधन)",
+              "marathi": "Alternate Nostril Breathing (Nadi Shodhana)"
+            },
+            "description": {
+              "english": "Step: Inhale through one nostril, exhale through the other. Benefit: Balances brain activity and enhances attention.",
+              "hindi": "चरण: एक नथुने से साँस लें, दूसरे से साँस छोड़ें। लाभ: मस्तिष्क की गतिविधि संतुलित होती है और एकाग्रता बढ़ती है।",
+              "marathi": "पायरी: एका नाकपुडीने श्वास घ्या, दुसऱ्या नाकपुडीने श्वास सोडा. फायदा: मेंदूची क्रिया संतुलित करते आणि लक्ष वाढवते."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 6,
+            "title": {
+              "english": "Seated Forward Bend (Paschimottanasana)",
+              "hindi": "बैठे हुए आगे की ओर झुकना (पश्चिमोत्तानासन)",
+              "marathi": "बसलेला पुढे वाकणे (पश्चिमोत्तानासन)"
+            },
+            "description": {
+              "english": "Step: Sit with legs stretched, bend forward slowly. Benefit: Releases stress and increases patience for learning tasks.",
+              "hindi": "चरण: पैरों को फैलाकर बैठें, धीरे-धीरे आगे की ओर झुकें। लाभ: तनाव मुक्त होता है और सीखने के कार्यों के लिए धैर्य बढ़ता है।",
+              "marathi": "पायरी: पाय ताणून बसा, हळूहळू पुढे वाकून. फायदा: ताण कमी होतो आणि शिकण्याच्या कामांसाठी संयम वाढतो."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 7,
+            "title": {
+              "english": "Bridge Pose (Setu Bandhasana)",
+              "hindi": "सेतुबंधासन",
+              "marathi": "ब्रिज पोज (सेतू बंधासन)"
+            },
+            "description": {
+              "english": "Step: Lie on back, bend knees, lift hips upward. Benefit: Improves blood flow to the brain and reduces mental fatigue.",
+              "hindi": "चरण: पीठ के बल लेटें, घुटनों को मोड़ें, कूल्हों को ऊपर उठाएँ। लाभ: मस्तिष्क में रक्त प्रवाह बेहतर होता है और मानसिक थकान कम होती है।",
+              "marathi": "पायरी: पाठीवर झोपा, गुडघे वाकवा, कंबर वर उचला. फायदा: मेंदूला रक्तपुरवठा सुधारतो आणि मानसिक थकवा कमी होतो."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 6,
+            "title": {
+              "english": "Om Chanting",
+              "hindi": "जप के बारे में",
+              "marathi": "जप बद्दल"
+            },
+            "description": {
+              "english": "Step: Sit cross-legged, close eyes, chant 'Om' repeatedly. Benefit: Improves auditory processing and creates inner calm.",
+              "hindi": "चरण: पालथी मारकर बैठें, आँखें बंद करें और बार-बार &#39;ॐ&#39; का जाप करें। लाभ: श्रवण प्रक्रिया में सुधार होता है और आंतरिक शांति आती है।",
+              "marathi": "पायरी: पाय आडवे करून बसा, डोळे बंद करा, वारंवार &#39;ॐ&#39; चा जप करा. फायदा: श्रवण प्रक्रिया सुधारते आणि आंतरिक शांतता निर्माण होते."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 9,
+            "title": {
+              "english": "Guided Visualization",
+              "hindi": "निर्देशित विज़ुअलाइज़ेशन",
+              "marathi": "मार्गदर्शित व्हिज्युअलायझेशन"
+            },
+            "description": {
+              "english": "Step: Imagine achieving a learning goal with guided narration. Benefit: Builds self-confidence and reduces anxiety about studies.",
+              "hindi": "चरण: निर्देशित वर्णन के साथ सीखने के लक्ष्य को प्राप्त करने की कल्पना करें। लाभ: आत्मविश्वास बढ़ता है और पढ़ाई को लेकर चिंता कम होती है।",
+              "marathi": "पायरी: मार्गदर्शनित कथन वापरून शिकण्याचे ध्येय साध्य करण्याची कल्पना करा. फायदा: आत्मविश्वास वाढवते आणि अभ्यासाबद्दलची चिंता कमी करते."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 7,
+            "title": {
+              "english": "Mindful Walking",
+              "hindi": "सचेतन चलना",
+              "marathi": "मन लावून चालणे"
+            },
+            "description": {
+              "english": "Step: Walk slowly, paying attention to each step. Benefit: Enhances awareness and focus, helpful for attention-related issues.",
+              "hindi": "कदम: धीरे-धीरे चलें, हर कदम पर ध्यान दें। लाभ: जागरूकता और एकाग्रता बढ़ाता है, ध्यान संबंधी समस्याओं में मददगार।",
+              "marathi": "पाऊल: प्रत्येक पावलाकडे लक्ष देऊन हळू चालणे. फायदा: जागरूकता आणि लक्ष केंद्रित करते, लक्ष देण्याशी संबंधित समस्यांसाठी उपयुक्त."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 6,
+            "title": {
+              "english": "Lion‚Äôs Breath",
+              "hindi": "शेर की सांस",
+              "marathi": "सिंहाचा श्वास"
+            },
+            "description": {
+              "english": "Step: Inhale deeply, exhale with tongue out and roar. Benefit: Releases frustration in a playful way, reducing learning stress.",
+              "hindi": "चरण: गहरी साँस लें, जीभ बाहर निकालकर साँस छोड़ें और गर्जना करें। लाभ: चंचल तरीके से निराशा दूर होती है, जिससे सीखने का तनाव कम होता है।",
+              "marathi": "पायरी: खोलवर श्वास घ्या, जीभ बाहेर काढा आणि गर्जना करा. फायदा: खेळकर पद्धतीने निराशा दूर करते, शिकण्याचा ताण कमी करते."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 10,
+            "title": {
+              "english": "Loving-Kindness Meditation",
+              "hindi": "प्रेम-दया ध्यान",
+              "marathi": "प्रेमळ-दयाळू ध्यान"
+            },
+            "description": {
+              "english": "Step: Repeat phrases of self-compassion like 'May I be calm, may I learn well.' Benefit: Increases self-acceptance and reduces negative self-talk.",
+              "hindi": "चरण: आत्म-करुणा के वाक्यांशों को दोहराएँ, जैसे ‘मैं शांत रहूँ, मैं अच्छी तरह सीखूँ।’ लाभ: आत्म-स्वीकृति बढ़ती है और नकारात्मक आत्म-चर्चा कम होती है।",
+              "marathi": "पायरी: &#39;मी शांत राहू दे, मी चांगले शिकू दे&#39; अशी आत्म-करुणेची वाक्ये पुन्हा सांगा. फायदा: आत्म-स्वीकृती वाढवते आणि नकारात्मक आत्म-बोलणे कमी करते."
+            }
+          }
+        ]
+      },
+      "relaxation": {
+        "type": "Secondary",
+        "interventionSubType": "Relaxation",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 7,
+            "title": {
+              "english": "Progressive Muscle Relaxation",
+              "hindi": "प्रगतिशील मांसपेशी विश्राम",
+              "marathi": "प्रोग्रेसिव्ह स्नायू विश्रांती"
+            },
+            "description": {
+              "english": "Step: Tense and release each muscle group slowly. Benefit: Reduces physical stress and improves concentration.",
+              "hindi": "चरण: प्रत्येक मांसपेशी समूह को धीरे-धीरे तनाव दें और छोड़ें। लाभ: शारीरिक तनाव कम होता है और एकाग्रता में सुधार होता है।",
+              "marathi": "पायरी: प्रत्येक स्नायू गटाला हळूहळू ताण द्या आणि सोडा. फायदा: शारीरिक ताण कमी करते आणि एकाग्रता सुधारते."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 6,
+            "title": {
+              "english": "Deep Breathing with Counting",
+              "hindi": "गिनती के साथ गहरी साँस लेना",
+              "marathi": "मोजणीसह खोल श्वास घेणे"
+            },
+            "description": {
+              "english": "Step: Inhale for 4 counts, exhale for 6 counts. Benefit: Calms anxiety during study and exams.",
+              "hindi": "चरण: 4 बार गिनकर साँस लें, 6 बार गिनकर साँस छोड़ें। लाभ: पढ़ाई और परीक्षा के दौरान चिंता को शांत करता है।",
+              "marathi": "पायरी: ४ वेळा श्वास घ्या, ६ वेळा श्वास सोडा. फायदा: अभ्यास आणि परीक्षेदरम्यान चिंता कमी करते."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 8,
+            "title": {
+              "english": "Visualization of Success",
+              "hindi": "सफलता का दृश्यीकरण",
+              "marathi": "यशाचे दृश्यमानीकरण"
+            },
+            "description": {
+              "english": "Step: Imagine completing a school task successfully. Benefit: Builds confidence and reduces fear of failure.",
+              "hindi": "चरण: स्कूल का कोई काम सफलतापूर्वक पूरा करने की कल्पना करें। लाभ: आत्मविश्वास बढ़ता है और असफलता का डर कम होता है।",
+              "marathi": "पायरी: शाळेतील एखादे काम यशस्वीरित्या पूर्ण करण्याची कल्पना करा. फायदा: आत्मविश्वास वाढवते आणि अपयशाची भीती कमी करते."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 5,
+            "title": {
+              "english": "Listening to Calming Music",
+              "hindi": "शांत संगीत सुनना",
+              "marathi": "शांत करणारे संगीत ऐकणे"
+            },
+            "description": {
+              "english": "Step: Play soft instrumental or nature sounds for 10‚Äì15 minutes. Benefit: Improves focus and lowers study stress.",
+              "hindi": "चरण: 10-15 मिनट तक मधुर वाद्य यंत्र या प्राकृतिक ध्वनियाँ बजाएँ। लाभ: ध्यान केंद्रित करने की क्षमता में सुधार और पढ़ाई का तनाव कम होता है।",
+              "marathi": "पायरी: १०-१५ मिनिटे मऊ वाद्य किंवा निसर्ग ध्वनी वाजवा. फायदा: लक्ष केंद्रित करते आणि अभ्यासाचा ताण कमी करते."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 9,
+            "title": {
+              "english": "Body Scan Exercise",
+              "hindi": "बॉडी स्कैन व्यायाम",
+              "marathi": "बॉडी स्कॅन व्यायाम"
+            },
+            "description": {
+              "english": "Step: Lie down, notice sensations in each body part, release tension. Benefit: Enhances self-awareness and reduces frustration.",
+              "hindi": "चरण: लेट जाएँ, शरीर के हर अंग में होने वाली संवेदनाओं पर ध्यान दें, तनाव मुक्त हों। लाभ: आत्म-जागरूकता बढ़ती है और निराशा कम होती है।",
+              "marathi": "पायरी: झोपा, शरीराच्या प्रत्येक भागात होणाऱ्या संवेदना लक्षात घ्या, ताण सोडा. फायदा: आत्म-जागरूकता वाढवते आणि निराशा कमी करते."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 6,
+            "title": {
+              "english": "Aromatherapy Relaxation",
+              "hindi": "अरोमाथेरेपी विश्राम",
+              "marathi": "अरोमाथेरपी आराम"
+            },
+            "description": {
+              "english": "Step: Use calming scents like lavender or sandalwood. Benefit: Helps reduce restlessness and improves sleep.",
+              "hindi": "चरण: लैवेंडर या चंदन जैसी शांत सुगंधों का प्रयोग करें। लाभ: बेचैनी कम करने और नींद में सुधार करने में मदद करता है।",
+              "marathi": "पायरी: लैव्हेंडर किंवा चंदन सारखे शांत करणारे सुगंध वापरा. फायदा: अस्वस्थता कमी करण्यास मदत करते आणि झोप सुधारते."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 8,
+            "title": {
+              "english": "Grounding 5-4-3-2-1",
+              "hindi": "ग्राउंडिंग 5-4-3-2-1",
+              "marathi": "ग्राउंडिंग ५-४-३-२-१"
+            },
+            "description": {
+              "english": "Step: Name 5 things you see, 4 touch, 3 hear, 2 smell, 1 taste. Benefit: Brings attention back to the present during learning stress.",
+              "hindi": "चरण: 5 चीज़ें बताएँ जिन्हें आप देखते हैं, 4 जिन्हें छूते हैं, 3 जिन्हें सुनते हैं, 2 जिन्हें सूंघते हैं, और 1 जिन्हें चखते हैं। लाभ: सीखने के तनाव के दौरान ध्यान को वर्तमान में वापस लाता है।",
+              "marathi": "पायरी: तुम्हाला दिसणाऱ्या ५ गोष्टींची नावे सांगा, ४ स्पर्श, ३ ऐकू येणे, २ वास घेणे, १ चव घेणे. फायदा: शिकण्याच्या ताणतणावादरम्यान लक्ष वर्तमानाकडे परत आणते."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 5,
+            "title": {
+              "english": "Art and Coloring Therapy",
+              "hindi": "कला और रंग चिकित्सा",
+              "marathi": "कला आणि रंगसंगती थेरपी"
+            },
+            "description": {
+              "english": "Step: Use mindful coloring or doodling as a break. Benefit: Provides emotional release and resets focus.",
+              "hindi": "चरण: मन लगाकर रंग भरने या चित्र बनाने का अभ्यास करें। लाभ: इससे भावनात्मक राहत मिलती है और ध्यान केंद्रित होता है।",
+              "marathi": "पायरी: ब्रेक म्हणून माइंडफुल कलरिंग किंवा डूडलिंग वापरा. फायदा: भावनिक मोकळीक देते आणि लक्ष केंद्रित करण्यास मदत करते."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 6,
+            "title": {
+              "english": "Warm Bath or Foot Soak",
+              "hindi": "गर्म स्नान या पैर भिगोना",
+              "marathi": "उबदार आंघोळ किंवा पाय भिजवणे"
+            },
+            "description": {
+              "english": "Step: Sit in warm water for 10‚Äì15 minutes. Benefit: Relieves body tension and creates relaxation before study.",
+              "hindi": "चरण: 10-15 मिनट तक गर्म पानी में बैठें। लाभ: शरीर का तनाव कम होता है और पढ़ाई से पहले आराम मिलता है।",
+              "marathi": "पायरी: कोमट पाण्यात १०-१५ मिनिटे बसा. फायदा: शरीराचा ताण कमी होतो आणि अभ्यासापूर्वी आराम मिळतो."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 10,
+            "title": {
+              "english": "Guided Relaxation Audio",
+              "hindi": "निर्देशित विश्राम ऑडियो",
+              "marathi": "मार्गदर्शित विश्रांती ऑडिओ"
+            },
+            "description": {
+              "english": "Step: Listen to short recordings with calming voice guidance. Benefit: Reduces negative thinking and prepares mind for learning.",
+              "hindi": "चरण: शांत स्वर में मार्गदर्शन के साथ छोटी रिकॉर्डिंग सुनें। लाभ: नकारात्मक सोच कम होती है और मन सीखने के लिए तैयार होता है।",
+              "marathi": "पायरी: शांत आवाज मार्गदर्शनासह लहान रेकॉर्डिंग ऐका. फायदा: नकारात्मक विचार कमी करते आणि मन शिकण्यासाठी तयार करते."
+            }
+          }
+        ]
+      },
+      "cbt": {
+        "type": "Tertiary",
+        "interventionSubType": "CBT Interventions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 7,
+            "title": {
+              "english": "Identify Negative Self-Talk",
+              "hindi": "नकारात्मक आत्म-चर्चा की पहचान करें",
+              "marathi": "नकारात्मक स्व-बोलणे ओळखा"
+            },
+            "description": {
+              "english": "Why it Helps: Reduces harmful beliefs like 'I can‚Äôt learn.' What to Do: Write down negative thoughts and replace with positives. Example: 'I‚Äôm dumb' ‚Üí 'I learn differently but can still succeed.'",
+              "hindi": "यह क्यों मददगार है: &#39;मैं सीख नहीं सकता&#39; जैसी हानिकारक धारणाओं को कम करता है। क्या करें: नकारात्मक विचारों को लिखें और उनकी जगह सकारात्मक विचार रखें। उदाहरण: &#39;मैं मूर्ख हूँ&#39; - &#39;मैं अलग तरीके से सीखता हूँ, लेकिन फिर भी सफल हो सकता हूँ।&#39;",
+              "marathi": "हे का मदत करते: &#39;मी शिकू शकत नाही&#39; सारख्या हानिकारक समजुती कमी करते. काय करावे: नकारात्मक विचार लिहून ठेवा आणि त्याऐवजी सकारात्मक विचार ठेवा. उदाहरण: &#39;मी मूर्ख आहे&#39; &#39;मी वेगळ्या पद्धतीने शिकतो पण तरीही यशस्वी होऊ शकतो.&#39;"
+            }
+          },
+          {
+            "id": 2,
+            "xp": 8,
+            "title": {
+              "english": "Thought Records",
+              "hindi": "विचार रिकॉर्ड्स",
+              "marathi": "विचारांच्या नोंदी"
+            },
+            "description": {
+              "english": "Why it Helps: Encourages reflection and reframing. What to Do: Record situation, thought, feeling, and alternative. Example: 'I failed a test' ‚Üí 'I can improve with practice.'",
+              "hindi": "यह क्यों मददगार है: यह चिंतन और पुनर्रचना को प्रोत्साहित करता है। क्या करें: स्थिति, विचार, भावना और विकल्प को रिकॉर्ड करें। उदाहरण: &#39;मैं एक परीक्षा में फेल हो गया&#39; - &#39;मैं अभ्यास से सुधार कर सकता हूँ।&#39;",
+              "marathi": "हे का मदत करते: चिंतन आणि पुनर्रचना करण्यास प्रोत्साहन देते. काय करावे: परिस्थिती, विचार, भावना आणि पर्याय नोंदवा. उदाहरण: &#39;मी परीक्षेत नापास झालो&#39; ‚Üí &#39;मी सरावाने सुधारणा करू शकतो.&#39;"
+            }
+          },
+          {
+            "id": 3,
+            "xp": 9,
+            "title": {
+              "english": "Behavioral Activation",
+              "hindi": "व्यवहारिक सक्रियण",
+              "marathi": "वर्तणुकीय सक्रियकरण"
+            },
+            "description": {
+              "english": "Why it Helps: Breaks cycle of avoidance. What to Do: Schedule small learning tasks daily. Example: Read one page instead of a whole chapter.",
+              "hindi": "यह क्यों मददगार है: टालमटोल के चक्र को तोड़ता है। क्या करें: रोज़ाना छोटे-छोटे सीखने के काम तय करें। उदाहरण: पूरे अध्याय के बजाय एक पृष्ठ पढ़ें।",
+              "marathi": "हे का मदत करते: टाळाटाळ करण्याचे चक्र तोडते. काय करावे: दररोज लहान शिकण्याची कामे शेड्यूल करा. उदाहरण: संपूर्ण प्रकरणाऐवजी एक पान वाचा."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 7,
+            "title": {
+              "english": "Challenge All-or-Nothing Thinking",
+              "hindi": "सब कुछ या कुछ भी नहीं वाली सोच को चुनौती दें",
+              "marathi": "सर्व-किंवा-नथिंग विचारसरणीला आव्हान द्या"
+            },
+            "description": {
+              "english": "Why it Helps: Replaces extreme thoughts with balance. What to Do: Teach flexible thinking. Example: 'I always fail' ‚Üí 'Sometimes I struggle, but I can succeed too.'",
+              "hindi": "यह क्यों मददगार है: अतिवादी विचारों को संतुलित विचारों से बदल देता है। क्या करें: लचीली सोच सिखाएँ। उदाहरण: &#39;मैं हमेशा असफल होता हूँ&#39; - &#39;कभी-कभी मुझे संघर्ष करना पड़ता है, लेकिन मैं सफल भी हो सकता हूँ।&#39;",
+              "marathi": "हे का मदत करते: अतिरेकी विचारांना संतुलनाने बदलते. काय करावे: लवचिक विचार शिकवा. उदाहरण: &#39;मी नेहमीच अपयशी ठरतो&#39; ‚Üí &#39;कधीकधी मी संघर्ष करतो, पण मी यशस्वी देखील होऊ शकतो.&#39;"
+            }
+          },
+          {
+            "id": 5,
+            "xp": 8,
+            "title": {
+              "english": "Graded Task Assignment",
+              "hindi": "ग्रेडेड कार्य असाइनमेंट",
+              "marathi": "श्रेणीबद्ध कार्य असाइनमेंट"
+            },
+            "description": {
+              "english": "Why it Helps: Builds confidence with step-by-step progress. What to Do: Break down learning into smaller tasks. Example: Learn one spelling word at a time.",
+              "hindi": "यह क्यों मददगार है: चरण-दर-चरण प्रगति के साथ आत्मविश्वास बढ़ाता है। क्या करें: सीखी हुई बातों को छोटे-छोटे कार्यों में बाँटें। उदाहरण: एक बार में एक ही स्पेलिंग शब्द सीखें।",
+              "marathi": "हे का मदत करते: टप्प्याटप्प्याने प्रगती केल्याने आत्मविश्वास वाढतो. काय करावे: शिकण्याचे लहान कामांमध्ये विभाजन करा. उदाहरण: एका वेळी एक स्पेलिंग शब्द शिका."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 6,
+            "title": {
+              "english": "Positive Self-Talk Practice",
+              "hindi": "सकारात्मक आत्म-वार्ता अभ्यास",
+              "marathi": "सकारात्मक स्व-बोलण्याचा सराव"
+            },
+            "description": {
+              "english": "Why it Helps: Builds motivation. What to Do: Encourage affirmations like 'I can learn with practice.' Example: Say this before homework.",
+              "hindi": "यह क्यों मददगार है: प्रेरणा देता है। क्या करें: &#39;मैं अभ्यास से सीख सकता हूँ&#39; जैसे सकारात्मक कथनों को प्रोत्साहित करें। उदाहरण: होमवर्क से पहले यह बात कहें।",
+              "marathi": "हे का मदत करते: प्रेरणा निर्माण करते. काय करावे: &#39;मी सरावाने शिकू शकतो&#39; सारख्या पुष्टीकरणांना प्रोत्साहन द्या. उदाहरण: गृहपाठापूर्वी हे सांगा."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 9,
+            "title": {
+              "english": "Problem-Solving Skills",
+              "hindi": "समस्या समाधान करने की कुशलताएं",
+              "marathi": "समस्या सोडवण्याची कौशल्ये"
+            },
+            "description": {
+              "english": "Why it Helps: Teaches structured ways to handle challenges. What to Do: Guide steps‚Äîdefine problem, brainstorm solutions, pick one. Example: 'I can‚Äôt solve math' ‚Üí 'Ask teacher or use practice problems.'",
+              "hindi": "यह क्यों मददगार है: चुनौतियों से निपटने के व्यवस्थित तरीके सिखाता है। क्या करें: चरणों का मार्गदर्शन करें‚Äî समस्या को परिभाषित करें, समाधान पर विचार करें, और एक चुनें। उदाहरण: &#39;मैं गणित हल नहीं कर सकता&#39;‚Üí &#39;शिक्षक से पूछें या अभ्यास समस्याओं का उपयोग करें।&#39;",
+              "marathi": "ते का मदत करते: आव्हानांना तोंड देण्याचे संरचित मार्ग शिकवते. काय करावे: पायऱ्यांचे मार्गदर्शन करा, समस्या परिभाषित करा, उपायांवर विचारमंथन करा, एक निवडा. उदाहरण: &#39;मी गणित सोडवू शकत नाही&#39; &#39;शिक्षकांना विचारा किंवा सराव समस्या वापरा.&#39;"
+            }
+          },
+          {
+            "id": 8,
+            "xp": 7,
+            "title": {
+              "english": "Reward Effort Not Just Results",
+              "hindi": "केवल परिणाम नहीं, प्रयास को पुरस्कृत करें",
+              "marathi": "केवळ परिणामच नाही तर प्रयत्नांना बक्षीस द्या"
+            },
+            "description": {
+              "english": "Why it Helps: Encourages persistence. What to Do: Praise attempts as much as success. Example: 'You worked hard on this task even if it‚Äôs not perfect.'",
+              "hindi": "यह क्यों मददगार है: दृढ़ता को प्रोत्साहित करता है। क्या करें: सफलता के साथ-साथ प्रयासों की भी प्रशंसा करें। उदाहरण: &#39;आपने इस काम पर कड़ी मेहनत की है, भले ही यह सही न हो।&#39;",
+              "marathi": "हे का मदत करते: चिकाटीला प्रोत्साहन देते. काय करावे: यशाइतकेच प्रयत्नांचे कौतुक करा. उदाहरण: &#39;हे काम परिपूर्ण नसले तरीही तुम्ही त्यावर कठोर परिश्रम केले.&#39;"
+            }
+          },
+          {
+            "id": 9,
+            "xp": 8,
+            "title": {
+              "english": "Visualization of Success",
+              "hindi": "सफलता का दृश्यीकरण",
+              "marathi": "यशाचे दृश्यमानीकरण"
+            },
+            "description": {
+              "english": "Why it Helps: Builds confidence before tasks. What to Do: Imagine doing homework successfully. Example: Picture yourself finishing a worksheet calmly.",
+              "hindi": "यह क्यों मददगार है: काम शुरू करने से पहले आत्मविश्वास बढ़ाता है। क्या करें: कल्पना कीजिए कि आप अपना होमवर्क सफलतापूर्वक कर रहे हैं। उदाहरण के लिए: खुद को शांति से वर्कशीट पूरा करते हुए देखें।",
+              "marathi": "हे का मदत करते: कामांपूर्वी आत्मविश्वास वाढवते. काय करावे: गृहपाठ यशस्वीरित्या पूर्ण करण्याची कल्पना करा. उदाहरण: तुम्ही शांतपणे वर्कशीट पूर्ण करत आहात अशी कल्पना करा."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 10,
+            "title": {
+              "english": "Social Support Role-Play",
+              "hindi": "सामाजिक समर्थन भूमिका-खेल",
+              "marathi": "सामाजिक समर्थन भूमिका-खेळ"
+            },
+            "description": {
+              "english": "Why it Helps: Prepares for asking help. What to Do: Practice conversations like requesting clarification. Example: 'Can you please explain again?' with teacher.",
+              "hindi": "यह क्यों मददगार है: मदद माँगने के लिए तैयार करता है। क्या करें: स्पष्टीकरण माँगने जैसी बातचीत का अभ्यास करें। उदाहरण के लिए: शिक्षक से &#39;क्या आप कृपया फिर से समझा सकते हैं?&#39;",
+              "marathi": "हे का मदत करते: मदत मागण्याची तयारी करते. काय करावे: स्पष्टीकरण मागण्यासारख्या संभाषणांचा सराव करा. उदाहरण: &#39;तुम्ही कृपया पुन्हा स्पष्ट करू शकाल का?&#39; शिक्षकांसोबत."
+            }
+          }
+        ]
+      },
+      "rebt": {
+        "type": "Tertiary",
+        "interventionSubType": "REBT Interventions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 9,
+            "title": {
+              "english": "Dispute ‚ÄúI Am Stupid‚Äù Belief",
+              "hindi": "विवाद ‚Äúमैं मूर्ख हूँ‚Äù विश्वास",
+              "marathi": "&quot;मी मूर्ख आहे&quot; असा वाद, श्रद्धा"
+            },
+            "description": {
+              "english": "Why it Helps: Counters harmful self-labeling. What to Do: Challenge thought with evidence of strengths. Example: 'I struggle with reading, but I am good at drawing.'",
+              "hindi": "यह क्यों मददगार है: हानिकारक आत्म-लेबलिंग का प्रतिकार करता है। क्या करें: अपनी खूबियों के प्रमाण के साथ विचारों को चुनौती दें। उदाहरण: &#39;मुझे पढ़ने में दिक्कत होती है, लेकिन मैं चित्र बनाने में अच्छा हूँ।&#39;",
+              "marathi": "हे का मदत करते: हानिकारक स्व-लेबलिंगचा प्रतिकार करते. काय करावे: ताकदीच्या पुराव्यांसह विचारांना आव्हान द्या. उदाहरण: &#39;मला वाचनात अडचण येते, पण मी चित्र काढण्यात चांगला आहे.&#39;"
+            }
+          },
+          {
+            "id": 2,
+            "xp": 7,
+            "title": {
+              "english": "Challenge ‚ÄúI Must Learn Like Everyone Else‚Äù",
+              "hindi": "चुनौती: &quot;मुझे भी बाकी सब की तरह सीखना होगा&quot;",
+              "marathi": "आव्हान &quot;मला इतरांसारखे शिकले पाहिजे&quot;"
+            },
+            "description": {
+              "english": "Why it Helps: Reduces rigid expectations. What to Do: Replace with flexible thinking. Example: 'I‚Äôd prefer to learn quickly, but I can learn at my own pace.'",
+              "hindi": "यह क्यों मददगार है: कठोर अपेक्षाएँ कम करता है। क्या करें: लचीली सोच अपनाएँ। उदाहरण: &#39;मैं जल्दी सीखना पसंद करूँगा, लेकिन मैं अपनी गति से सीख सकता हूँ।&#39;",
+              "marathi": "हे का मदत करते: कठोर अपेक्षा कमी करते. काय करावे: लवचिक विचारसरणीने बदला. उदाहरण: &#39;मला लवकर शिकायला आवडते, पण मी माझ्या स्वतःच्या गतीने शिकू शकतो.&#39;"
+            }
+          },
+          {
+            "id": 3,
+            "xp": 8,
+            "title": {
+              "english": "Unconditional Self-Acceptance",
+              "hindi": "बिना शर्त आत्म-स्वीकृति",
+              "marathi": "बिनशर्त स्व-स्वीकृती"
+            },
+            "description": {
+              "english": "Why it Helps: Builds self-worth despite difficulties. What to Do: Practice affirmations daily. Example: 'I am valuable even if I make mistakes.'",
+              "hindi": "यह क्यों मददगार है: मुश्किलों के बावजूद आत्म-सम्मान बढ़ाता है। क्या करें: रोज़ाना सकारात्मक वाक्यों का अभ्यास करें। उदाहरण: &#39;मैं गलतियाँ करके भी मूल्यवान हूँ।&#39;",
+              "marathi": "हे का मदत करते: अडचणी असूनही आत्म-मूल्य निर्माण करते. काय करावे: दररोज पुष्टीकरणाचा सराव करा. उदाहरण: &#39;मी चुका केल्या तरीही मी मौल्यवान आहे.&#39;"
+            }
+          },
+          {
+            "id": 4,
+            "xp": 6,
+            "title": {
+              "english": "Flexible Goal Setting",
+              "hindi": "लचीला लक्ष्य निर्धारण",
+              "marathi": "लवचिक ध्येय निश्चिती"
+            },
+            "description": {
+              "english": "Why it Helps: Prevents discouragement from unmet goals. What to Do: Break learning into smaller goals. Example: 'I may not finish the whole book, but I can read one chapter.'",
+              "hindi": "यह क्यों मददगार है: अधूरे लक्ष्यों से होने वाली निराशा को रोकता है। क्या करें: सीखने को छोटे-छोटे लक्ष्यों में बाँटें। उदाहरण: &#39;हो सकता है कि मैं पूरी किताब न पढ़ पाऊँ, लेकिन मैं एक अध्याय ज़रूर पढ़ सकता हूँ।&#39;",
+              "marathi": "हे का मदत करते: अपूर्ण ध्येयांमुळे होणारा निराशा टाळते. काय करावे: शिकण्याचे लहान ध्येयांमध्ये विभाजन करा. उदाहरण: &#39;मी कदाचित संपूर्ण पुस्तक पूर्ण करू शकणार नाही, पण मी एक अध्याय वाचू शकतो.&#39;"
+            }
+          },
+          {
+            "id": 5,
+            "xp": 8,
+            "title": {
+              "english": "Dispute Catastrophic Thinking",
+              "hindi": "विनाशकारी सोच पर विवाद",
+              "marathi": "आपत्तीजनक विचारसरणीचा वाद घाला"
+            },
+            "description": {
+              "english": "Why it Helps: Stops extreme negative beliefs. What to Do: Ask if the situation is really unbearable. Example: 'Failing one test is disappointing, but it‚Äôs not the end.'",
+              "hindi": "यह क्यों मददगार है: यह अत्यधिक नकारात्मक धारणाओं को रोकता है। क्या करें: पूछें कि क्या स्थिति वाकई असहनीय है। उदाहरण: &#39;एक परीक्षा में फेल होना निराशाजनक है, लेकिन यह अंत नहीं है।&#39;",
+              "marathi": "हे का मदत करते: अत्यंत नकारात्मक समजुती थांबवते. काय करावे: परिस्थिती खरोखरच असह्य आहे का ते विचारा. उदाहरण: &#39;एका परीक्षेत नापास होणे निराशाजनक आहे, पण तो शेवट नाही.&#39;"
+            }
+          },
+          {
+            "id": 6,
+            "xp": 7,
+            "title": {
+              "english": "Promote Frustration Tolerance",
+              "hindi": "निराशा सहनशीलता को बढ़ावा दें",
+              "marathi": "निराशा सहनशीलतेला प्रोत्साहन द्या"
+            },
+            "description": {
+              "english": "Why it Helps: Teaches patience during challenges. What to Do: Use rational self-talk. Example: 'This is hard, but I can keep trying step by step.'",
+              "hindi": "यह क्यों मददगार है: चुनौतियों के दौरान धैर्य रखना सिखाता है। क्या करें: तार्किक आत्म-चर्चा का प्रयोग करें। उदाहरण: &#39;यह मुश्किल है, लेकिन मैं कदम दर कदम कोशिश कर सकता हूँ।&#39;",
+              "marathi": "हे का मदत करते: आव्हानांमध्ये संयम शिकवते. काय करावे: तर्कशुद्ध स्व-बोल वापरा. उदाहरण: &#39;हे कठीण आहे, परंतु मी टप्प्याटप्प्याने प्रयत्न करत राहू शकतो.&#39;"
+            }
+          },
+          {
+            "id": 7,
+            "xp": 8,
+            "title": {
+              "english": "Reframe Success",
+              "hindi": "सफलता को पुनर्परिभाषित करें",
+              "marathi": "रीफ्रेम यशस्वी"
+            },
+            "description": {
+              "english": "Why it Helps: Encourages valuing progress, not perfection. What to Do: Define success as effort. Example: 'Doing better than yesterday means I am improving.'",
+              "hindi": "यह क्यों मददगार है: यह पूर्णता की नहीं, बल्कि प्रगति की कद्र करने के लिए प्रोत्साहित करता है। क्या करें: सफलता को प्रयास के रूप में परिभाषित करें। उदाहरण: &#39;कल से बेहतर करने का मतलब है कि मैं बेहतर हो रहा हूँ।&#39;",
+              "marathi": "ते का मदत करते: प्रगतीचे मूल्यमापन करण्यास प्रोत्साहन देते, परिपूर्णतेचे नाही. काय करावे: यशाची व्याख्या प्रयत्न म्हणून करा. उदाहरण: &#39;कालपेक्षा चांगले करणे म्हणजे मी सुधारत आहे.&#39;"
+            }
+          },
+          {
+            "id": 8,
+            "xp": 7,
+            "title": {
+              "english": "Dispute Harsh Labels",
+              "hindi": "कठोर लेबलों पर विवाद करें",
+              "marathi": "कठोर लेबल्सचा वाद घाला"
+            },
+            "description": {
+              "english": "Why it Helps: Prevents negative identity beliefs. What to Do: Focus on actions not self. Example: 'I struggled in math today, but that doesn‚Äôt mean I am a failure.'",
+              "hindi": "यह क्यों मददगार है: नकारात्मक पहचान संबंधी धारणाओं को रोकता है। क्या करें: खुद पर नहीं, बल्कि अपने कार्यों पर ध्यान केंद्रित करें। उदाहरण: &#39;आज मुझे गणित में थोड़ी दिक्कत हुई, लेकिन इसका मतलब यह नहीं कि मैं असफल हूँ।&#39;",
+              "marathi": "हे का मदत करते: नकारात्मक ओळखीच्या विश्वासांना प्रतिबंधित करते. काय करावे: स्वतःवर नाही तर कृतींवर लक्ष केंद्रित करा. उदाहरण: &#39;आज मला गणितात संघर्ष करावा लागला, पण याचा अर्थ असा नाही की मी अपयशी आहे.&#39;"
+            }
+          },
+          {
+            "id": 9,
+            "xp": 6,
+            "title": {
+              "english": "Rational Coping Self-Talk",
+              "hindi": "तर्कसंगत मुकाबला आत्म-चर्चा",
+              "marathi": "तर्कसंगत सामना स्वतःशी बोलणे"
+            },
+            "description": {
+              "english": "Why it Helps: Provides calm during stress. What to Do: Repeat rational statements. Example: 'I can learn at my own pace, and that‚Äôs okay.'",
+              "hindi": "यह क्यों मददगार है: तनाव के दौरान शांति प्रदान करता है। क्या करें: तर्कसंगत कथन दोहराएँ। उदाहरण: &#39;मैं अपनी गति से सीख सकता हूँ, और यह ठीक है।&#39;",
+              "marathi": "हे का मदत करते: तणावादरम्यान शांतता प्रदान करते. काय करावे: तर्कशुद्ध विधाने पुन्हा करा. उदाहरण: &#39;मी माझ्या स्वतःच्या गतीने शिकू शकतो आणि ते ठीक आहे.&#39;"
+            }
+          },
+          {
+            "id": 10,
+            "xp": 5,
+            "title": {
+              "english": "Acceptance of Imperfection",
+              "hindi": "अपूर्णता की स्वीकृति",
+              "marathi": "अपूर्णतेचा स्वीकार"
+            },
+            "description": {
+              "english": "Why it Helps: Normalizes mistakes in learning. What to Do: Remind self that errors are part of growth. Example: 'It‚Äôs okay if I get some answers wrong; I am still learning.'",
+              "hindi": "यह क्यों मददगार है: सीखने में होने वाली गलतियों को सामान्य बनाता है। क्या करें: खुद को याद दिलाएँ कि गलतियाँ भी विकास का हिस्सा हैं। उदाहरण: &#39;अगर मैं कुछ उत्तर गलत करूँ तो कोई बात नहीं; मैं अभी भी सीख रहा हूँ।&#39;",
+              "marathi": "हे का मदत करते: शिकण्यातील चुका सामान्य करते. काय करावे: स्वतःला आठवण करून द्या की चुका वाढीचा एक भाग आहेत. उदाहरण: &#39;जर मला काही उत्तरे चुकीची मिळाली तर ठीक आहे; मी अजूनही शिकत आहे.&#39;"
+            }
+          }
+        ]
+      }
+    }
+  }
+  
