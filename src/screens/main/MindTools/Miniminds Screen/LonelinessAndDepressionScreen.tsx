@@ -5,27 +5,33 @@ import { useLanguage } from "../../../../context/LanguageContext";
 
 export default function LonelinessAndDepressionScreen({ navigation }: any) {
   const { t } = useLanguage();
+
   const handleBackPress = () => {
     navigation.goBack();
   };
 
   const handleViewStrategy = (strategyKey: string) => {
+    console.log(`${strategyKey} strategy pressed`);
+    const condition = "loneliness-depression";
+
     switch (strategyKey) {
       case "commonSuggestions":
-        navigation.navigate("CommonSuggestionsScreen", { condition: "loneliness" });
+        navigation.navigate("CommonSuggestionsScreen", { condition });
         break;
       case "yoga":
-        navigation.navigate("YogaScreen", { condition: "loneliness" });
+        navigation.navigate("YogaScreen", { condition });
         break;
       case "relaxation":
-        navigation.navigate("RelaxationScreen", { condition: "loneliness" });
+        navigation.navigate("RelaxationScreen", { condition });
         break;
       case "cbt":
-        navigation.navigate("CBTScreen", { condition: "loneliness" });
+        navigation.navigate("CBTScreen", { condition });
         break;
       case "rebt":
-        navigation.navigate("REBTScreen", { condition: "loneliness" });
+        navigation.navigate("REBTScreen", { condition });
         break;
+      default:
+        console.log(`Unknown strategy: ${strategyKey}`);
     }
   };
 
@@ -35,50 +41,92 @@ export default function LonelinessAndDepressionScreen({ navigation }: any) {
         <Pressable style={styles.backButton} onPress={handleBackPress}>
           <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
-        <Text style={styles.headerTitle}>{t("lonelinessAndDepressionScreen.headerTitle")}</Text>
+        <Text style={styles.headerTitle}>
+          {t("lonelinessDepressionScreen.headerTitle")}
+        </Text>
       </View>
 
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="person" size={48} color="#10b981" />
-              <Text style={styles.imageLabel}>{t("lonelinessAndDepressionScreen.imageLabel")}</Text>
+              <CustomIcon type="IO" name="sad-outline" size={48} color="#f97316" />
+              <Text style={styles.imageLabel}>
+                {t("lonelinessDepressionScreen.imageLabel")}
+              </Text>
             </View>
           </View>
         </View>
 
-        <Text style={styles.title}>{t("lonelinessAndDepressionScreen.title")}</Text>
-        <Text style={styles.description}>{t("lonelinessAndDepressionScreen.description")}</Text>
+        <Text style={styles.title}>
+          {t("lonelinessDepressionScreen.title")}
+        </Text>
+        <Text style={styles.description}>
+          {t("lonelinessDepressionScreen.description")}
+        </Text>
 
+        {/* Symptoms Section */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("lonelinessAndDepressionScreen.symptomsTitle")}</Text>
-          <View style={styles.symptomItem}>
-            <View style={styles.symptomDot} />
-            <Text style={styles.symptomText}>{t("lonelinessAndDepressionScreen.symptoms.isolation")}</Text>
-          </View>
+          <Text style={styles.sectionTitle}>
+            {t("lonelinessDepressionScreen.symptomsTitle")}
+          </Text>
+          {[
+            "feelingIsolated",
+            "lossOfInterest",
+            "lowEnergy",
+            "negativeThinking",
+            "sleepIssues",
+          ].map((key) => (
+            <View style={styles.symptomItem} key={key}>
+              <View style={styles.symptomDot} />
+              <Text style={styles.symptomText}>
+                {t(`lonelinessDepressionScreen.symptoms.${key}`)}
+              </Text>
+            </View>
+          ))}
         </View>
 
+        {/* Strategies Section */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("lonelinessAndDepressionScreen.supportStrategiesTitle")}</Text>
+          <Text style={styles.sectionTitle}>
+            {t("lonelinessDepressionScreen.supportStrategiesTitle")}
+          </Text>
 
-          <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>{t("lonelinessAndDepressionScreen.strategies.commonSuggestions.title")}</Text>
-            <Text style={styles.strategyDescription}>{t("lonelinessAndDepressionScreen.strategies.commonSuggestions.description")}</Text>
-            <Pressable style={styles.viewStrategyButton} onPress={() => handleViewStrategy("commonSuggestions")}>
-              <Text style={styles.viewStrategyButtonText}>{t("lonelinessAndDepressionScreen.viewStrategyButton")}</Text>
-            </Pressable>
-          </View>
+          {["commonSuggestions", "yoga", "relaxation", "cbt", "rebt"].map(
+            (key) => (
+              <View style={styles.strategyCard} key={key}>
+                <Text style={styles.strategyTitle}>
+                  {t(`lonelinessDepressionScreen.strategies.${key}.title`)}
+                </Text>
+                <Text style={styles.strategyDescription}>
+                  {t(`lonelinessDepressionScreen.strategies.${key}.description`)}
+                </Text>
+                <Pressable
+                  style={styles.viewStrategyButton}
+                  onPress={() => handleViewStrategy(key)}
+                >
+                  <Text style={styles.viewStrategyButtonText}>
+                    {t("lonelinessDepressionScreen.viewStrategyButton")}
+                  </Text>
+                </Pressable>
+              </View>
+            )
+          )}
         </View>
 
+        {/* Alert Box */}
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
               <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
             </View>
-            <Text style={styles.alertTitle}>{t("lonelinessAndDepressionScreen.alertTitle")}</Text>
+            <Text style={styles.alertTitle}>
+              {t("lonelinessDepressionScreen.alertTitle")}
+            </Text>
           </View>
-          <Text style={styles.alertText}>{t("lonelinessAndDepressionScreen.alertText")}</Text>
+          <Text style={styles.alertText}>
+            {t("lonelinessDepressionScreen.alertText")}
+          </Text>
         </View>
 
         <View style={styles.bottomSpacing} />
@@ -184,7 +232,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   viewStrategyButton: {
-    backgroundColor: "#10b981",
+    backgroundColor: "#f97316",
     paddingVertical: 8,
     paddingHorizontal: 16,
     borderRadius: 8,

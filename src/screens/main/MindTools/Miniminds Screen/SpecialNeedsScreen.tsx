@@ -10,22 +10,35 @@ export default function SpecialNeedsScreen({ navigation }: any) {
   };
 
   const handleViewStrategy = (strategyKey: string) => {
+    console.log(`${strategyKey} strategy pressed`);
     switch (strategyKey) {
       case "commonSuggestions":
-        navigation.navigate("CommonSuggestionsScreen", { condition: "specialneeds" });
+        navigation.navigate("CommonSuggestionsScreen", {
+          condition: "special-needs",
+        });
         break;
       case "yoga":
-        navigation.navigate("YogaScreen", { condition: "specialneeds" });
+        navigation.navigate("YogaScreen", {
+          condition: "special-needs",
+        });
         break;
       case "relaxation":
-        navigation.navigate("RelaxationScreen", { condition: "specialneeds" });
+        navigation.navigate("RelaxationScreen", {
+          condition: "special-needs",
+        });
         break;
       case "cbt":
-        navigation.navigate("CBTScreen", { condition: "specialneeds" });
+        navigation.navigate("CBTScreen", {
+          condition: "special-needs",
+        });
         break;
       case "rebt":
-        navigation.navigate("REBTScreen", { condition: "specialneeds" });
+        navigation.navigate("REBTScreen", {
+          condition: "special-needs",
+        });
         break;
+      default:
+        console.log(`Unknown strategy: ${strategyKey}`);
     }
   };
 
@@ -35,38 +48,151 @@ export default function SpecialNeedsScreen({ navigation }: any) {
         <Pressable style={styles.backButton} onPress={handleBackPress}>
           <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
-        <Text style={styles.headerTitle}>{t("specialNeedsScreen.headerTitle")}</Text>
+        <Text style={styles.headerTitle}>
+          {t("specialNeedsScreen.headerTitle")}
+        </Text>
       </View>
 
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="people" size={48} color="#10b981" />
-              <Text style={styles.imageLabel}>{t("specialNeedsScreen.imageLabel")}</Text>
+              <CustomIcon type="IO" name="heart" size={48} color="#ec4899" />
+              <Text style={styles.imageLabel}>
+                {t("specialNeedsScreen.imageLabel")}
+              </Text>
             </View>
           </View>
         </View>
 
         <Text style={styles.title}>{t("specialNeedsScreen.title")}</Text>
-        <Text style={styles.description}>{t("specialNeedsScreen.description")}</Text>
+        <Text style={styles.description}>
+          {t("specialNeedsScreen.description")}
+        </Text>
 
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("specialNeedsScreen.symptomsTitle")}</Text>
+          <Text style={styles.sectionTitle}>
+            {t("specialNeedsScreen.symptomsTitle")}
+          </Text>
           <View style={styles.symptomItem}>
             <View style={styles.symptomDot} />
-            <Text style={styles.symptomText}>{t("specialNeedsScreen.symptoms.challenges")}</Text>
+            <Text style={styles.symptomText}>
+              {t("specialNeedsScreen.symptoms.emotionalExhaustion")}
+            </Text>
+          </View>
+          <View style={styles.symptomItem}>
+            <View style={styles.symptomDot} />
+            <Text style={styles.symptomText}>
+              {t("specialNeedsScreen.symptoms.feelingOverwhelmed")}
+            </Text>
+          </View>
+          <View style={styles.symptomItem}>
+            <View style={styles.symptomDot} />
+            <Text style={styles.symptomText}>
+              {t("specialNeedsScreen.symptoms.guiltOrInadequacy")}
+            </Text>
+          </View>
+          <View style={styles.symptomItem}>
+            <View style={styles.symptomDot} />
+            <Text style={styles.symptomText}>
+              {t("specialNeedsScreen.symptoms.socialIsolation")}
+            </Text>
+          </View>
+          <View style={styles.symptomItem}>
+            <View style={styles.symptomDot} />
+            <Text style={styles.symptomText}>
+              {t("specialNeedsScreen.symptoms.chronicStress")}
+            </Text>
           </View>
         </View>
 
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("specialNeedsScreen.supportStrategiesTitle")}</Text>
+          <Text style={styles.sectionTitle}>
+            {t("specialNeedsScreen.supportStrategiesTitle")}
+          </Text>
 
           <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>{t("specialNeedsScreen.strategies.commonSuggestions.title")}</Text>
-            <Text style={styles.strategyDescription}>{t("specialNeedsScreen.strategies.commonSuggestions.description")}</Text>
-            <Pressable style={styles.viewStrategyButton} onPress={() => handleViewStrategy("commonSuggestions")}>
-              <Text style={styles.viewStrategyButtonText}>{t("specialNeedsScreen.viewStrategyButton")}</Text>
+            <Text style={styles.strategyTitle}>
+              {t("specialNeedsScreen.strategies.commonSuggestions.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("specialNeedsScreen.strategies.commonSuggestions.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("commonSuggestions")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("specialNeedsScreen.viewStrategyButton")}
+              </Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.strategyCard}>
+            <Text style={styles.strategyTitle}>
+              {t("specialNeedsScreen.strategies.yoga.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("specialNeedsScreen.strategies.yoga.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("yoga")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("specialNeedsScreen.viewStrategyButton")}
+              </Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.strategyCard}>
+            <Text style={styles.strategyTitle}>
+              {t("specialNeedsScreen.strategies.relaxation.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("specialNeedsScreen.strategies.relaxation.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("relaxation")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("specialNeedsScreen.viewStrategyButton")}
+              </Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.strategyCard}>
+            <Text style={styles.strategyTitle}>
+              {t("specialNeedsScreen.strategies.cbt.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("specialNeedsScreen.strategies.cbt.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("cbt")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("specialNeedsScreen.viewStrategyButton")}
+              </Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.strategyCard}>
+            <Text style={styles.strategyTitle}>
+              {t("specialNeedsScreen.strategies.rebt.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("specialNeedsScreen.strategies.rebt.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("rebt")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("specialNeedsScreen.viewStrategyButton")}
+              </Text>
             </Pressable>
           </View>
         </View>
@@ -76,9 +202,13 @@ export default function SpecialNeedsScreen({ navigation }: any) {
             <View style={styles.alertIconContainer}>
               <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
             </View>
-            <Text style={styles.alertTitle}>{t("specialNeedsScreen.alertTitle")}</Text>
+            <Text style={styles.alertTitle}>
+              {t("specialNeedsScreen.alertTitle")}
+            </Text>
           </View>
-          <Text style={styles.alertText}>{t("specialNeedsScreen.alertText")}</Text>
+          <Text style={styles.alertText}>
+            {t("specialNeedsScreen.alertText")}
+          </Text>
         </View>
 
         <View style={styles.bottomSpacing} />
@@ -184,7 +314,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   viewStrategyButton: {
-    backgroundColor: "#10b981",
+    backgroundColor: "#ec4899",
     paddingVertical: 8,
     paddingHorizontal: 16,
     borderRadius: 8,
