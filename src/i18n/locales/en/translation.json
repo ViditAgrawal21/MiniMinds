@@ -9073,6 +9073,10 @@
         "title": "Bullying",
         "description": "Support for bullying, bystanders, and building safety plans"
       },
+      "selfharmbehaviour": {
+        "title": "Self‑harm Behaviour",
+        "description": "Understanding self‑harm, safety planning, and supportive strategies"
+      },
       "bunkingscreen": {
         "title": "Bunking (Skipping School)",
         "description": "Understand reasons for skipping classes and find constructive ways to re-engage"
@@ -9132,6 +9136,46 @@
         "description": "Challenge unhelpful beliefs and encourage self‑acceptance."
       }
     }
+  },
+  "selfHarmScreen": {
+    "headerTitle": "Self‑harm Behaviour",
+    "imageLabel": "Safety first",
+    "title": "Support for self‑harm behaviour",
+    "description": "Information on self‑harm, safety planning, and steps to find immediate support. This content is educational and not a substitute for emergency help.",
+    "symptomsTitle": "Common signs",
+    "symptoms": {
+      "withdrawalFromSocial": "Withdrawing from friends or activities",
+      "anxietyOrFear": "High anxiety or fear",
+      "lowSelfEsteem": "Low self‑esteem or self‑criticism",
+      "academicDecline": "Changes in school performance",
+      "physicalSymptoms": "Unexplained injuries or frequent bandaging"
+    },
+    "supportStrategiesTitle": "Support strategies",
+    "viewStrategyButton": "View strategy",
+    "strategies": {
+      "commonSuggestions": {
+        "title": "10 Common Suggestions",
+        "description": "Steps to keep safe, seek support, and reduce immediate risk."
+      },
+      "yoga": {
+        "title": "Yoga",
+        "description": "Simple grounding exercises and breathing to reduce distress."
+      },
+      "relaxation": {
+        "title": "Relaxation",
+        "description": "Short relaxation techniques to lower arousal."
+      },
+      "cbt": {
+        "title": "CBT (Cognitive Behavioral Therapy)",
+        "description": "Cognitive strategies to manage urges and distress."
+      },
+      "rebt": {
+        "title": "REBT (Rational Emotive Behavior Therapy)",
+        "description": "Challenge unhelpful beliefs and build coping statements."
+      }
+    },
+    "alertTitle": "Important",
+    "alertText": "If you or someone is in immediate danger, contact local emergency services or a crisis line. This content is for educational support; seek professional help when needed."
   },
   "eatingHabitScreen": {
     "headerTitle": "Eating Habits",

@@ -67,6 +67,7 @@ type RootStackParamList = {
   SubstanceAddictionScreen: undefined;
   TraumaLossAndDreamsScreen: undefined;
   BullyingScreen: undefined;
+  SelfHarmBehaviourScreen: undefined;
   BunkingScreen: undefined;
   LearningDisabilityScreen: undefined;
   UnrealisticBeautyStandardsScreen: undefined;
@@ -917,6 +918,25 @@ export default function MindToolsScreen() {
               </Text>
               <Text style={styles.categoryDescription}>
                 {t("mindToolsScreen.categories.bullyingscreen.description")}
+              </Text>
+            </Pressable>
+
+            {/* Self Harm Behaviour Card - new */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("SelfHarmBehaviourScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="bandage-outline" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.selfharmbehaviour.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.selfharmbehaviour.description")}
               </Text>
             </Pressable>
 

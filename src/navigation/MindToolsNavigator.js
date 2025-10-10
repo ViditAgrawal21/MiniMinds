@@ -24,6 +24,7 @@ import YoungsterIssuesScreen from '../screens/main/MindTools/YoungsterIssuesScre
 import EmotionalIntelligenceScreen from '../screens/main/MindTools/EmotionalIntelligenceScreen';
 // Miniminds screens
 import BullyingScreen from '../screens/main/MindTools/Miniminds Screen/BullyingScreen';
+import SelfHarmBehaviourScreen from '../screens/main/MindTools/Miniminds Screen/SelfHarmBehaviourScreen';
 import BunkingScreen from '../screens/main/MindTools/Miniminds Screen/BunkingScreen';
 import LearningDisabilityScreen from '../screens/main/MindTools/Miniminds Screen/LearningDisability';
 
@@ -135,6 +136,10 @@ const MindToolsNavigator = () => {
       <MindtoolsStack.Screen 
         name="BullyingScreen"
         component={BullyingScreen}
+      />
+      <MindtoolsStack.Screen 
+        name="SelfHarmBehaviourScreen"
+        component={SelfHarmBehaviourScreen}
       />
       <MindtoolsStack.Screen 
         name="BunkingScreen"
