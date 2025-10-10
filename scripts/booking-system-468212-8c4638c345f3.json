@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "booking-system-468212",
+  "private_key_id": "8c4638c345f3507b7bb73d02e17cf5a41db3659f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvtbZPG55LbdIi\nv6O/4Dgj0KHSm6kodRKIoCuA7ZV6+H/LKsl3UOkYg4N3mC4SmKNjRH44l63n2ODk\nzfRoy8J7aWCZNMirsAguW67Oa5/5XLoIdC9gb2OkoJ93IRiA00ji1FBqT2z+B4Go\nfcEl/8kkceY5i+RA2AQDwTUi2wntO5vKoz5/xd0GZyESvh9U4zo/T7cT+VPCXbyV\ng5fsofghyeMtUp/CQdBaTVCnKcxtv+uLQwwCw/KT9IQu4GPVn0DujLcC8hHyM3ym\n+8R5X6A1s0DkeoqQ2DQk2BfcvhDpXXBxP3VDUqIXXY2spNh3PMD8wJVDeOA+uV2H\nwQ8HzODVAgMBAAECggEAR1Mg1Q3l/MJwmXBnXRz8TPWEqsRLL0QOqO0zm5tVoVw8\nK9GLhGaQqEXCWQqqMRxKvqHwBrLzgfiUmexMeTm1EXmeH7LAfojvWToYRGyFvKh6\nT7IyBRhSP2KAONBzbN/XZ1Q97FmfaaLMbAPYIr+o+6VMijGSDwxg3NFR63s0lVp/\ni7J2keycnVWHSXCLxMTU/V08wF5kBPGCGxTSn47y1XNcbM/NiAZ3b0EkrIVW09v5\nYlo/goTKyo0AkRfCjISj12w8XHp024yic7iuXh2ePHLLYQrQxpbSv2FyTiul4w1R\nOsNyhXJqIw9qFsN7/9A5oHsMxXGKN/UqiAJryTb/ZQKBgQDhT+pTzZdv/893C9rP\npCB9AA1swebd+Xi4a79JYHOpDC7NgTA7WX3Ax9pTKkR/S8m2qVEd8CiaxqT6Y2j8\npLbhJ7gk1A3dQc3kxm+DfxqQTzp+QLMBY4vEzommTfoA24bt1wxBS9rD/O3ZzVXk\n7XSX99VNBgzr7i7gidSYqiEVXwKBgQDHpEir/S5adDTUiqDJIR9VdiCAwH6PlKpm\n+c59o4VOdH7/E3Q7eYnqFWmM/SkDy0enMNZ1K/+6FADIX0C/f5fMKN5Ur3wosuJs\nKBL79q439cgVixNMnZy3VZK9qOvrpznnNbNlxD7px+7quy2hFfA3aIyAyhZceoDI\nmRDUXdsiSwKBgBZI4zJauUm4kXqCz6eN4jC62pkRLJZz4D7NWWQWiBoGPHLS/kRA\ne7GfkrZ7Db9RbagFYyKE6F82moaxYmbqm7P1S79Iwf5KTeT8w3bMEYKIc46dM5dF\nk0Np8i9iswF2tQe9J1cl+4M69wN9zasQ2WFWf+BYYtrK+hP3TfGzkgYdAoGBALpL\nB/FN8UpA8+d9cOoeOWIDN/NNLQyIerZa1yAQTd3XAYa+vZCeKl7AGl2RAwviTfuq\nrARsyVX3Qn+3uvC3fIvrewRlOKO1wWmRv51VJF9dv5ayz5CH5uyBMsw+a9/bjUG+\nr6gAB4EZq01o2vxdP2pE6g9oBJPJUJFfm/+/kTOfAoGBAIwKwkyiQQq1UfIHqfYn\nuu1RUv249thwelMUDWJXxtN1ANjC9F/s+8vqk70bh9bg1mW5GMHFzxofge2DVHmR\nUutFPk/569wPVsxIMH8F0ITNbgfKdbxNKT0Dlx9zN2p6NjZpB4GsvxyJ12LIf/Kk\nBEY/ivyizFN6mKDerVjnTXMD\n-----END PRIVATE KEY-----\n",
+  "client_email": "synept-service-account@booking-system-468212.iam.gserviceaccount.com",
+  "client_id": "114212981111966287841",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/synept-service-account%40booking-system-468212.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

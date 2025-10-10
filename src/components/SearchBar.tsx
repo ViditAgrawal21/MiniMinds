@@ -5,11 +5,15 @@ import CustomIcon from "./CustomIcon";
 type SearchBarProps = {
   searchText: string;
   onChangeText: (text: string) => void;
+  placeholder?: string;
+  helperText?: string;
 };
 
 export default function SearchBar({
   searchText,
   onChangeText,
+  placeholder = "Search Scans applicable to you",
+  helperText = "Click on the scan below to proceed",
 }: SearchBarProps) {
   return (
     <View style={styles.container}>
@@ -18,7 +22,7 @@ export default function SearchBar({
         <CustomIcon type="IO" name="search" size={20} color="#4A4A4A" style={styles.icon} />
         <TextInput
           style={styles.searchInput}
-          placeholder="Search Scans applicable to you"
+          placeholder={placeholder}
           placeholderTextColor="#4A4A4A"
           value={searchText}
           onChangeText={onChangeText}
@@ -26,7 +30,7 @@ export default function SearchBar({
       </View>
 
       {/* Helper Text */}
-      <Text style={styles.helperText}>Click on the scan below to proceed</Text>
+      <Text style={styles.helperText}>{helperText}</Text>
     </View>
   );
 }

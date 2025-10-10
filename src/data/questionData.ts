@@ -111,15 +111,17 @@ class QuestionDataLoader {
         const isReverse = reverseScored[questionIndex] || false;
 
         const questionObj: QuestionOption = {
-          filename: t(
-            `scanQuestions.${this.getCamelCase(conditionKey)}.title`,
+          filename: this.tryTranslation(
+            'scanQuestions',
+            conditionKey,
+            'title',
             conditionKey
           ),
           Q_id: (questionIndex + 1).toString(),
-          Name: t(
-            `scanQuestions.${this.getCamelCase(conditionKey)}.questions.${
-              questionIndex + 1
-            }`,
+          Name: this.tryTranslation(
+            'scanQuestions',
+            conditionKey,
+            `questions.${questionIndex + 1}`,
             question.text
           ),
           "Option 1": t(
@@ -195,6 +197,50 @@ class QuestionDataLoader {
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join("")
     );
+  }
+
+  /**
+   * Generate likely variant keys for a condition name to increase chances of finding a translation
+   */
+  private getCandidateKeys(str: string): string[] {
+    const camel = this.getCamelCase(str);
+    const normalized = this.normalizeConditionName(str); // lowercase, no spaces, alnum only
+    const underscored = str
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "_")
+      .replace(/^_|_$/g, "");
+    const nospace = str.toLowerCase().replace(/[^a-z0-9]+/g, "");
+    const dashed = str
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$|\s+/g, "");
+    const original = str;
+
+    const list = [camel, normalized, underscored, nospace, dashed, original];
+    return list.filter((v, i) => v && list.indexOf(v) === i) as string[];
+  }
+
+  /**
+   * Try multiple translation keys for a given section and field. Returns the first translated value
+   * (i.e., not equal to the provided fallback) or the fallback as last resort.
+   */
+  private tryTranslation(
+    section: string,
+    conditionKey: string,
+    fieldPath: string,
+    fallback: string
+  ): string {
+    const candidates = this.getCandidateKeys(conditionKey);
+
+    for (const cand of candidates) {
+      const key = `${section}.${cand}.${fieldPath}`;
+      const val = t(key, fallback);
+      if (val !== fallback && val !== undefined && val !== null && val !== "") {
+        return val;
+      }
+    }
+
+    return fallback;
   }
 
   /**

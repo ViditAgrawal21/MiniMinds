@@ -1,11 +1,351 @@
-
-Bullying in School
-Academic Stress
-Bunking in School
-Learning Issues and Disability
-Dealing with children of special Needs
-Good Parenting
-Loneliness and Depression
-Anxiety issues (PTSD/Phobia/Panic/Conversion)
-Learning Disability
-Suicidal Behaviour
+Condition Name,Question Text,Strongly Agree Score,Agree Score,Neutral Score,Disagree Score,Strongly Disagree Score
+ADHD,"I often find it difficult to sustain attention on tasks or activities, even when they are important.",10,8,6,4,2
+ADHD,"I frequently act on impulse without thinking through the consequences.",10,8,6,4,2
+ADHD,"I am easily distracted by external stimuli (e.g., noises, people, notifications) while working.",10,8,6,4,2
+ADHD,"I struggle to organize tasks and manage time effectively.",10,8,6,4,2
+ADHD,"I feel restless or fidgety and find it hard to stay seated when expected.",10,8,6,4,2
+ADHD,"I can remain focused on tasks without getting distracted.",2,4,6,8,10
+ADHD,"I plan ahead and complete tasks in a timely, organized manner.",2,4,6,8,10
+ADHD,"I think carefully before acting and rarely make impulsive decisions.",2,4,6,8,10
+ADHD,"I can sit still and feel calm in situations where I am expected to remain seated.",2,4,6,8,10
+ADHD,"I can follow multi-step instructions without losing track or needing reminders.",2,4,6,8,10
+Conduct Issues,"I often lose my temper and become verbally or physically aggressive.",10,8,6,4,2
+Conduct Issues,"I intentionally break rules at home, school, or work even when I know the consequences.",10,8,6,4,2
+Conduct Issues,"I frequently lie, cheat, or deceive to get what I want.",10,8,6,4,2
+Conduct Issues,"I deliberately damage property or show little regard for others’ belongings.",10,8,6,4,2
+Conduct Issues,"I often bully, threaten, or intimidate others.",10,8,6,4,2
+Conduct Issues,"I respect rules and authority figures even when I disagree with them.",2,4,6,8,10
+Conduct Issues,"I resolve conflicts calmly without resorting to threats or aggression.",2,4,6,8,10
+Conduct Issues,"I am honest and take responsibility rather than lying or blaming others.",2,4,6,8,10
+Conduct Issues,"I consider other people’s feelings and avoid causing harm or distress.",2,4,6,8,10
+Conduct Issues,"I follow through on household, school, or workplace expectations without defiance.",2,4,6,8,10
+Violent and Aggressive Behaviour,"I often feel intense anger that is hard to control.",10,8,6,4,2
+Violent and Aggressive Behaviour,"I have threatened others or used physical force during conflicts.",10,8,6,4,2
+Violent and Aggressive Behaviour,"Minor frustrations quickly escalate into aggressive outbursts for me.",10,8,6,4,2
+Violent and Aggressive Behaviour,"I intentionally damage objects or property when upset.",10,8,6,4,2
+Violent and Aggressive Behaviour,"People around me feel unsafe because of my behavior.",10,8,6,4,2
+Violent and Aggressive Behaviour,"I remain calm and use nonviolent strategies to handle conflicts.",2,4,6,8,10
+Violent and Aggressive Behaviour,"I can walk away from provoking situations without retaliating.",2,4,6,8,10
+Violent and Aggressive Behaviour,"I communicate my anger assertively without becoming aggressive.",2,4,6,8,10
+Violent and Aggressive Behaviour,"I show empathy and consider others’ feelings during disagreements.",2,4,6,8,10
+Violent and Aggressive Behaviour,"I de-escalate tense situations and seek peaceful solutions.",2,4,6,8,10
+Self care and Hygiene,"I often neglect basic personal hygiene (e.g., bathing, brushing teeth, laundering clothes).",10,8,6,4,2
+Self care and Hygiene,"I frequently skip grooming tasks even when I have the time or resources.",10,8,6,4,2
+Self care and Hygiene,"I go long periods without changing into clean clothes or maintaining appearance.",10,8,6,4,2
+Self care and Hygiene,"I ignore signs that I need rest, nutrition, or hydration.",10,8,6,4,2
+Self care and Hygiene,"I rarely keep my living space clean enough to support healthy self-care.",10,8,6,4,2
+Self care and Hygiene,"I maintain a regular routine for bathing, brushing, and grooming.",2,4,6,8,10
+Self care and Hygiene,"I prepare balanced meals and hydrate adequately throughout the day.",2,4,6,8,10
+Self care and Hygiene,"I keep my clothes clean and presentable, changing them as needed.",2,4,6,8,10
+Self care and Hygiene,"I schedule and attend health checkups and follow recommended care.",2,4,6,8,10
+Self care and Hygiene,"I keep my living environment tidy to make self-care easier.",2,4,6,8,10
+Self Harm behaviour,"I have urges to harm myself when I feel overwhelmed or distressed.",10,8,6,4,2
+Self Harm behaviour,"I have engaged in behaviors that intentionally cause harm to my body.",10,8,6,4,2
+Self Harm behaviour,"I frequently think about self-injury as a way to cope with difficult emotions.",10,8,6,4,2
+Self Harm behaviour,"I hide or minimize injuries that I have caused to myself.",10,8,6,4,2
+Self Harm behaviour,"I find it difficult to use safe coping strategies when experiencing intense emotions.",10,8,6,4,2
+Self Harm behaviour,"I can talk to someone or use healthy coping skills instead of harming myself.",2,4,6,8,10
+Self Harm behaviour,"I feel I have control over impulses to harm myself.",2,4,6,8,10
+Self Harm behaviour,"I have a plan for staying safe when I feel triggered or overwhelmed.",2,4,6,8,10
+Self Harm behaviour,"I seek support (friends, family, professionals) when I notice warning signs.",2,4,6,8,10
+Self Harm behaviour,"I practice self-compassion and stress-reduction techniques when distressed.",2,4,6,8,10
+Introvert child,"I prefer solitary activities (reading, drawing) over group play most of the time.",10,8,6,4,2
+Introvert child,"I feel drained or overwhelmed after spending time in large groups or noisy settings.",10,8,6,4,2
+Introvert child,"I take time to warm up to new people and situations before I feel comfortable.",10,8,6,4,2
+Introvert child,"I avoid initiating conversations or joining group games at school or in the neighborhood.",10,8,6,4,2
+Introvert child,"I would rather spend recess or free time alone than with peers.",10,8,6,4,2
+Introvert child,"I comfortably start conversations and join group activities without hesitation.",2,4,6,8,10
+Introvert child,"I feel energized and happy after spending time with a big group of friends.",2,4,6,8,10
+Introvert child,"I quickly make new friends and enjoy meeting unfamiliar people.",2,4,6,8,10
+Introvert child,"I seek out group play and prefer team activities to solo ones.",2,4,6,8,10
+Introvert child,"I speak up readily in class and enjoy being the center of attention.",2,4,6,8,10
+Eating Habits,"I frequently overeat or binge even when I am not physically hungry.",10,8,6,4,2
+Eating Habits,"I often skip meals or go long periods without eating.",10,8,6,4,2
+Eating Habits,"I rely on highly processed or fast foods for most of my meals.",10,8,6,4,2
+Eating Habits,"My mood or stress strongly influences how much or what I eat.",10,8,6,4,2
+Eating Habits,"I eat very quickly and rarely pay attention to fullness cues.",10,8,6,4,2
+Eating Habits,"I plan balanced meals and include fruits, vegetables, and protein regularly.",2,4,6,8,10
+Eating Habits,"I maintain consistent meal times and avoid skipping meals.",2,4,6,8,10
+Eating Habits,"I practice mindful eating and stop when I feel comfortably full.",2,4,6,8,10
+Eating Habits,"I choose water or unsweetened beverages over sugary drinks most of the time.",2,4,6,8,10
+Eating Habits,"I prepare meals at home and limit takeout or fast food.",2,4,6,8,10
+Substance Addiction,"I use alcohol or drugs more often or in larger amounts than I intend to.",10,8,6,4,2
+Substance Addiction,"I experience strong cravings or urges to use substances.",10,8,6,4,2
+Substance Addiction,"I continue using despite problems at work, school, or home caused by my use.",10,8,6,4,2
+Substance Addiction,"I have needed more of the substance to get the same effect (tolerance).",10,8,6,4,2
+Substance Addiction,"I feel unwell or irritable when I cut down or stop using (withdrawal).",10,8,6,4,2
+Substance Addiction,"I can refuse substances even when offered or when I feel stressed.",2,4,6,8,10
+Substance Addiction,"I keep my commitments and responsibilities regardless of opportunities to use.",2,4,6,8,10
+Substance Addiction,"I spend most of my time on healthy activities rather than seeking or using substances.",2,4,6,8,10
+Substance Addiction,"I manage stress and emotions with non-substance coping strategies.",2,4,6,8,10
+Substance Addiction,"I maintain substance-free periods without significant difficulty.",2,4,6,8,10
+Bullying in School,"I have intentionally teased, mocked, or humiliated a classmate.",10,8,6,4,2
+Bullying in School,"I have threatened or used physical force against another student.",10,8,6,4,2
+Bullying in School,"I spread rumors or exclude someone on purpose to hurt their reputation or relationships.",10,8,6,4,2
+Bullying in School,"I use online messages or posts to harass or embarrass a peer (cyberbullying).",10,8,6,4,2
+Bullying in School,"I repeatedly target the same student(s) despite knowing it upsets them.",10,8,6,4,2
+Bullying in School,"I treat classmates with respect and step in or seek help when I see someone being bullied.",2,4,6,8,10
+Bullying in School,"I resolve conflicts using calm discussion rather than threats or intimidation.",2,4,6,8,10
+Bullying in School,"I include others in group activities and avoid leaving people out on purpose.",2,4,6,8,10
+Bullying in School,"I use social media responsibly and avoid posting hurtful comments or messages.",2,4,6,8,10
+Bullying in School,"I report bullying to a trusted adult or support the student being targeted.",2,4,6,8,10
+Academic Stress,"I feel overwhelmed by the amount of schoolwork I have to complete.",10,8,6,4,2
+Academic Stress,"I worry excessively about grades or test performance.",10,8,6,4,2
+Academic Stress,"I experience physical symptoms (e.g., headaches, stomachaches) before exams or assignments.",10,8,6,4,2
+Academic Stress,"I have trouble sleeping because I am thinking about school.",10,8,6,4,2
+Academic Stress,"I avoid studying or procrastinate because academic tasks feel too stressful.",10,8,6,4,2
+Academic Stress,"I manage my time well and break tasks into manageable steps.",2,4,6,8,10
+Academic Stress,"I use healthy coping strategies (exercise, breaks, talking to someone) during busy academic periods.",2,4,6,8,10
+Academic Stress,"I feel confident in my ability to prepare for exams and complete assignments on time.",2,4,6,8,10
+Academic Stress,"I maintain a regular sleep schedule even during exam periods.",2,4,6,8,10
+Academic Stress,"I seek help from teachers or peers when I do not understand the material.",2,4,6,8,10
+Bunking in School,"I skip classes even when I am able to attend.",10,8,6,4,2
+Bunking in School,"I make excuses or lie to avoid going to school.",10,8,6,4,2
+Bunking in School,"I leave campus during school hours without permission.",10,8,6,4,2
+Bunking in School,"I spend time with friends off-campus instead of attending scheduled classes.",10,8,6,4,2
+Bunking in School,"I miss school to avoid tests, assignments, or teachers.",10,8,6,4,2
+Bunking in School,"I attend all my classes on time throughout the week.",2,4,6,8,10
+Bunking in School,"I inform a teacher or guardian when I have a valid reason to miss a class.",2,4,6,8,10
+Bunking in School,"I prioritize being present in class even when I feel unmotivated.",2,4,6,8,10
+Bunking in School,"I plan my day to ensure I remain on campus during school hours.",2,4,6,8,10
+Bunking in School,"I catch up on missed work promptly and avoid repeated absences.",2,4,6,8,10
+Learning Issues and Disability,"I struggle to read grade-level texts accurately or fluently.",10,8,6,4,2
+Learning Issues and Disability,"I find it hard to understand or remember what I read or hear in class.",10,8,6,4,2
+Learning Issues and Disability,"I have persistent difficulty with spelling, writing, or organizing my thoughts on paper.",10,8,6,4,2
+Learning Issues and Disability,"I make frequent mistakes in basic math calculations or word problems.",10,8,6,4,2
+Learning Issues and Disability,"I need repeated instructions or extra time to complete academic tasks.",10,8,6,4,2
+Learning Issues and Disability,"I can understand lessons and complete assignments without extra support.",2,4,6,8,10
+Learning Issues and Disability,"I read grade-level material fluently and can explain what I’ve learned.",2,4,6,8,10
+Learning Issues and Disability,"I write clearly with organized ideas and correct spelling and grammar.",2,4,6,8,10
+Learning Issues and Disability,"I solve grade-level math problems accurately and with confidence.",2,4,6,8,10
+Learning Issues and Disability,"I follow instructions and finish schoolwork within the expected time.",2,4,6,8,10
+Exam Stress/Fear of failure,"I feel intense anxiety or panic when I think about upcoming exams.",10,8,6,4,2
+Exam Stress/Fear of failure,"I avoid studying because I fear I will fail no matter how much I prepare.",10,8,6,4,2
+Exam Stress/Fear of failure,"Before or during exams, I experience physical symptoms (e.g., nausea, sweating, rapid heartbeat).",10,8,6,4,2
+Exam Stress/Fear of failure,"I have trouble sleeping or wake up frequently due to worries about exams.",10,8,6,4,2
+Exam Stress/Fear of failure,"I catastrophize outcomes (e.g., ‘If I don’t get a top grade, everything is ruined’).",10,8,6,4,2
+Exam Stress/Fear of failure,"I use a study schedule and break tasks into manageable steps.",2,4,6,8,10
+Exam Stress/Fear of failure,"I can take practice tests or review mistakes without spiraling into self-criticism.",2,4,6,8,10
+Exam Stress/Fear of failure,"I use calming techniques (breathing, mindfulness) that help me manage exam nerves.",2,4,6,8,10
+Exam Stress/Fear of failure,"I can keep setbacks in perspective and try again without fearing total failure.",2,4,6,8,10
+Exam Stress/Fear of failure,"I seek help from teachers or peers when I feel unprepared rather than avoiding the topic.",2,4,6,8,10
+Internet Addiction,"I spend more time online than I intend to, often losing track of time.",10,8,6,4,2
+Internet Addiction,"I feel restless, irritable, or low when I can’t access the internet.",10,8,6,4,2
+Internet Addiction,"My online use interferes with sleep, school/work, or relationships.",10,8,6,4,2
+Internet Addiction,"I neglect responsibilities or hobbies because I prefer being online.",10,8,6,4,2
+Internet Addiction,"I repeatedly try to cut back on internet use but cannot stick to it.",10,8,6,4,2
+Internet Addiction,"I can put my device away and stay offline for extended periods without distress.",2,4,6,8,10
+Internet Addiction,"I prioritize essential tasks (study, work, chores) before going online.",2,4,6,8,10
+Internet Addiction,"I maintain healthy sleep by setting limits on nighttime screen use.",2,4,6,8,10
+Internet Addiction,"I engage in offline activities (exercise, hobbies, social time) regularly.",2,4,6,8,10
+Internet Addiction,"I use the internet intentionally (planned duration and purpose) and stop when finished.",2,4,6,8,10
+Gaming Addiction,"I spend more time gaming than I intend to and lose track of time frequently.",10,8,6,4,2
+Gaming Addiction,"I feel irritable, anxious, or low when I cannot play games.",10,8,6,4,2
+Gaming Addiction,"Gaming interferes with my sleep, school/work, or relationships.",10,8,6,4,2
+Gaming Addiction,"I have tried to cut down gaming but find it hard to stick to limits.",10,8,6,4,2
+Gaming Addiction,"I neglect responsibilities or hobbies because I prefer to game.",10,8,6,4,2
+Gaming Addiction,"I can stop gaming at planned times and stick to set limits.",2,4,6,8,10
+Gaming Addiction,"I prioritize essential tasks (study, work, chores) before gaming.",2,4,6,8,10
+Gaming Addiction,"I maintain healthy sleep habits even on days I play games.",2,4,6,8,10
+Gaming Addiction,"I regularly engage in offline activities and social time without needing games.",2,4,6,8,10
+Gaming Addiction,"I use gaming intentionally for short, scheduled periods and stop without distress.",2,4,6,8,10
+Porn Addiction,"I spend more time viewing pornography than I intend to, often losing track of time.",10,8,6,4,2
+Porn Addiction,"I feel strong cravings or urges to view pornography.",10,8,6,4,2
+Porn Addiction,"My pornography use interferes with sleep, work/school, or relationships.",10,8,6,4,2
+Porn Addiction,"I have tried to cut down or stop but find it difficult to maintain limits.",10,8,6,4,2
+Porn Addiction,"I use pornography to cope with stress, loneliness, or difficult emotions.",10,8,6,4,2
+Porn Addiction,"I can go for extended periods without viewing pornography without distress.",2,4,6,8,10
+Porn Addiction,"I prioritize responsibilities and healthy activities over pornography use.",2,4,6,8,10
+Porn Addiction,"I maintain open, respectful boundaries in relationships without secrecy around my use.",2,4,6,8,10
+Porn Addiction,"I manage stress and emotions using non-sexual coping strategies.",2,4,6,8,10
+Porn Addiction,"I use the internet intentionally and stop when I reach planned limits.",2,4,6,8,10
+Dating Sites and Complications,"I spend excessive time on dating apps, often more than I intend.",10,8,6,4,2
+Dating Sites and Complications,"I feel anxious, low, or irritable when I cannot check dating apps.",10,8,6,4,2
+Dating Sites and Complications,"My use of dating apps interferes with sleep, work/study, or relationships.",10,8,6,4,2
+Dating Sites and Complications,"I continue swiping or messaging even when it causes stress or conflicts.",10,8,6,4,2
+Dating Sites and Complications,"I take risky decisions (meeting without precautions, oversharing) due to pressure from apps.",10,8,6,4,2
+Dating Sites and Complications,"I set clear limits for app use and stick to them consistently.",2,4,6,8,10
+Dating Sites and Complications,"I prioritize offline responsibilities and relationships over dating apps.",2,4,6,8,10
+Dating Sites and Complications,"I practice safe behaviors (verify identities, meet in public, protect privacy) when using apps.",2,4,6,8,10
+Dating Sites and Complications,"I can take extended breaks from dating apps without distress.",2,4,6,8,10
+Dating Sites and Complications,"I maintain realistic expectations and healthy boundaries when interacting on dating platforms.",2,4,6,8,10
+Social Media Issues,"I spend more time on social media than I intend, often losing track of time.",10,8,6,4,2
+Social Media Issues,"I feel anxious, irritable, or low when I can’t check social media.",10,8,6,4,2
+Social Media Issues,"My social media use interferes with sleep, school/work, or in-person relationships.",10,8,6,4,2
+Social Media Issues,"I compare myself to others online and feel worse about myself.",10,8,6,4,2
+Social Media Issues,"I check my phone or social apps compulsively, even during important tasks.",10,8,6,4,2
+Social Media Issues,"I can put my phone away and stay off social media for extended periods without distress.",2,4,6,8,10
+Social Media Issues,"I prioritize responsibilities and face-to-face interactions over social media.",2,4,6,8,10
+Social Media Issues,"I limit screen time, especially before bed, to protect my sleep.",2,4,6,8,10
+Social Media Issues,"I curate my feeds and unfollow accounts that negatively affect my mood or self-esteem.",2,4,6,8,10
+Social Media Issues,"I use social media intentionally (clear purpose and time limit) and stop when finished.",2,4,6,8,10
+Darkweb/OnlyFans Sites,"I spend significant time browsing or purchasing content on dark web or subscription adult platforms.",10,8,6,4,2
+Darkweb/OnlyFans Sites,"I feel strong urges to access these sites and struggle to resist them.",10,8,6,4,2
+Darkweb/OnlyFans Sites,"My use of these platforms has led to secrecy, conflicts, or problems in relationships.",10,8,6,4,2
+Darkweb/OnlyFans Sites,"I have spent money I could not afford on subscriptions or related content.",10,8,6,4,2
+Darkweb/OnlyFans Sites,"I continue using these sites despite concerns about legality, privacy, or personal values.",10,8,6,4,2
+Darkweb/OnlyFans Sites,"I can avoid these platforms and focus on other activities without distress.",2,4,6,8,10
+Darkweb/OnlyFans Sites,"I set clear limits (time/money) for online content and stick to them consistently.",2,4,6,8,10
+Darkweb/OnlyFans Sites,"I prioritize sleep, work/study, and offline relationships over these sites.",2,4,6,8,10
+Darkweb/OnlyFans Sites,"I use privacy and safety practices online and avoid risky or illegal sites.",2,4,6,8,10
+Darkweb/OnlyFans Sites,"I can take extended breaks from these platforms without cravings or withdrawal-like feelings.",2,4,6,8,10
+Abusive language and back answering,"I often use offensive or insulting words when I am upset.",10,8,6,4,2
+Abusive language and back answering,"I talk back to parents, teachers, or supervisors in a disrespectful tone.",10,8,6,4,2
+Abusive language and back answering,"I escalate arguments by swearing, name-calling, or mocking others.",10,8,6,4,2
+Abusive language and back answering,"I interrupt or shout over others instead of listening when corrected.",10,8,6,4,2
+Abusive language and back answering,"I frequently respond with sarcasm or hostility when given instructions.",10,8,6,4,2
+Abusive language and back answering,"I speak respectfully even when I disagree or feel frustrated.",2,4,6,8,10
+Abusive language and back answering,"I pause to listen and respond calmly when someone corrects me.",2,4,6,8,10
+Abusive language and back answering,"I apologize and repair things when my words hurt someone.",2,4,6,8,10
+Abusive language and back answering,"I use assertive but polite language to express my needs or boundaries.",2,4,6,8,10
+Abusive language and back answering,"I follow instructions without arguing, asking questions respectfully if needed.",2,4,6,8,10
+Parenting (Child POV),"My parents often criticize me harshly or compare me unfavorably to others.",10,8,6,4,2
+Parenting (Child POV),"I feel scared or very anxious to talk to my parents about my problems.",10,8,6,4,2
+Parenting (Child POV),"My parents don’t listen to my opinions when decisions are made about me.",10,8,6,4,2
+Parenting (Child POV),"Rules and punishments at home feel unpredictable or unfair.",10,8,6,4,2
+Parenting (Child POV),"I don’t get enough encouragement or appreciation from my parents.",10,8,6,4,2
+Parenting (Child POV),"My parents listen to me and try to understand my feelings.",2,4,6,8,10
+Parenting (Child POV),"My parents set clear, consistent rules and explain the reasons behind them.",2,4,6,8,10
+Parenting (Child POV),"I feel safe and supported when I make mistakes at home.",2,4,6,8,10
+Parenting (Child POV),"My parents spend quality time with me and show interest in my activities.",2,4,6,8,10
+Parenting (Child POV),"When we disagree, my parents discuss the issue calmly and respectfully.",2,4,6,8,10
+Parenting (Parent POV),"I often raise my voice, criticize harshly, or lose my temper with my child.",10,8,6,4,2
+Parenting (Parent POV),"I struggle to stay consistent with rules and consequences at home.",10,8,6,4,2
+Parenting (Parent POV),"I find it difficult to listen calmly when my child expresses strong emotions.",10,8,6,4,2
+Parenting (Parent POV),"I frequently feel overwhelmed or burned out by parenting responsibilities.",10,8,6,4,2
+Parenting (Parent POV),"I sometimes use threats, excessive punishments, or guilt to control behavior.",10,8,6,4,2
+Parenting (Parent POV),"I remain calm and use respectful language during conflicts with my child.",2,4,6,8,10
+Parenting (Parent POV),"I set clear expectations and follow through with fair, consistent consequences.",2,4,6,8,10
+Parenting (Parent POV),"I make time for positive connection (play, conversation, shared activities) with my child.",2,4,6,8,10
+Parenting (Parent POV),"I validate my child’s feelings and problem-solve together when issues arise.",2,4,6,8,10
+Parenting (Parent POV),"I model healthy coping (breaks, breathing, asking for help) when I feel stressed.",2,4,6,8,10
+Conduct Issues,"I often lose my temper and become verbally or physically aggressive.",10,8,6,4,2
+Conduct Issues,"I intentionally break rules at home, school, or work even when I know the consequences.",10,8,6,4,2
+Conduct Issues,"I frequently lie, cheat, or deceive to get what I want.",10,8,6,4,2
+Conduct Issues,"I deliberately damage property or show little regard for others’ belongings.",10,8,6,4,2
+Conduct Issues,"I often bully, threaten, or intimidate others.",10,8,6,4,2
+Conduct Issues,"I respect rules and authority figures even when I disagree with them.",2,4,6,8,10
+Conduct Issues,"I resolve conflicts calmly without resorting to threats or aggression.",2,4,6,8,10
+Conduct Issues,"I am honest and take responsibility rather than lying or blaming others.",2,4,6,8,10
+Conduct Issues,"I consider other people’s feelings and avoid causing harm or distress.",2,4,6,8,10
+Conduct Issues,"I follow through on household, school, or workplace expectations without defiance.",2,4,6,8,10
+Dealing with children of special Needs,"I feel impatient or frustrated when a child needs instructions repeated or extra time.",10,8,6,4,2
+Dealing with children of special Needs,"I struggle to adapt activities or expectations to match a child’s abilities.",10,8,6,4,2
+Dealing with children of special Needs,"I find it hard to stay calm during challenging behaviors (meltdowns, refusals, sensory overload).",10,8,6,4,2
+Dealing with children of special Needs,"I rarely collaborate with teachers/therapists to follow a child’s support plan or accommodations.",10,8,6,4,2
+Dealing with children of special Needs,"I overlook signs that a child needs breaks, sensory supports, or alternative communication.",10,8,6,4,2
+Dealing with children of special Needs,"I use patience and repeat instructions with visual or step-by-step supports as needed.",2,4,6,8,10
+Dealing with children of special Needs,"I proactively modify tasks, routines, or environments to support the child’s needs.",2,4,6,8,10
+Dealing with children of special Needs,"I respond to challenging behaviors with calm de-escalation and supportive strategies.",2,4,6,8,10
+Dealing with children of special Needs,"I coordinate with caregivers and professionals to implement consistent strategies.",2,4,6,8,10
+Dealing with children of special Needs,"I recognize early cues (fatigue, sensory overload) and provide timely accommodations or breaks.",2,4,6,8,10
+Good Parenting,"I consistently set clear expectations and follow through with fair consequences.",2,4,6,8,10
+Good Parenting,"I listen attentively to my child’s feelings without interrupting or judging.",2,4,6,8,10
+Good Parenting,"I spend regular quality time with my child (play, conversation, shared activities).",2,4,6,8,10
+Good Parenting,"I model calm problem-solving during conflicts and disagreements.",2,4,6,8,10
+Good Parenting,"I encourage independence by giving age-appropriate choices and responsibilities.",2,4,6,8,10
+Good Parenting,"I often raise my voice, criticize harshly, or punish impulsively.",10,8,6,4,2
+Good Parenting,"I struggle to stay consistent with rules and routines at home.",10,8,6,4,2
+Good Parenting,"I dismiss or minimize my child’s emotions instead of validating them.",10,8,6,4,2
+Good Parenting,"I frequently prioritize screens, work, or chores over connecting with my child.",10,8,6,4,2
+Good Parenting,"I react to misbehavior with threats or sarcasm rather than calm guidance.",10,8,6,4,2
+Loneliness and Depression,"I feel sad or empty most days, even without a clear reason.",10,8,6,4,2
+Loneliness and Depression,"I withdraw from friends and family and avoid social interactions.",10,8,6,4,2
+Loneliness and Depression,"I have lost interest in activities I used to enjoy.",10,8,6,4,2
+Loneliness and Depression,"I often feel isolated, even when I am around other people.",10,8,6,4,2
+Loneliness and Depression,"My sleep or appetite has noticeably changed due to low mood or loneliness.",10,8,6,4,2
+Loneliness and Depression,"I maintain regular contact with supportive people and feel connected.",2,4,6,8,10
+Loneliness and Depression,"I find pleasure and motivation in hobbies, school/work, or daily activities.",2,4,6,8,10
+Loneliness and Depression,"I can share my feelings with someone I trust when I feel down.",2,4,6,8,10
+Loneliness and Depression,"I use healthy routines (sleep, exercise, nutrition) that help stabilize my mood.",2,4,6,8,10
+Loneliness and Depression,"I can challenge negative thoughts and focus on small, achievable goals.",2,4,6,8,10
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I experience sudden surges of fear or panic with physical symptoms (e.g., rapid heartbeat, shortness of breath).",10,8,6,4,2
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I avoid places or situations because I’m afraid they will trigger anxiety or panic.",10,8,6,4,2
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"Intrusive memories, nightmares, or flashbacks of a distressing event bother me.",10,8,6,4,2
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I feel constantly on edge, hypervigilant, or easily startled.",10,8,6,4,2
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I have episodes of unexplained physical symptoms (e.g., fainting, weakness, tremors) that worsen with stress.",10,8,6,4,2
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I use coping skills (breathing, grounding, relaxation) that help reduce my anxiety.",2,4,6,8,10
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I can enter feared situations gradually and manage my discomfort without avoiding them.",2,4,6,8,10
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I sleep reasonably well and can return to sleep if I wake up anxious.",2,4,6,8,10
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I can identify and challenge anxious thoughts, bringing my focus back to the present.",2,4,6,8,10
+Anxiety issues (PTSD/Phobia/Panic/Conversion),"I seek support (therapy, trusted people) and follow a plan when symptoms increase.",2,4,6,8,10
+Autism and Intellectual Disability,"I have difficulty understanding social cues (tone of voice, facial expressions) in everyday interactions.",10,8,6,4,2
+Autism and Intellectual Disability,"Unexpected changes in routine cause me significant distress or meltdowns.",10,8,6,4,2
+Autism and Intellectual Disability,"I engage in repetitive movements or behaviors (e.g., hand-flapping, rocking, repeating phrases).",10,8,6,4,2
+Autism and Intellectual Disability,"I am very sensitive to sensory input (noise, lights, textures, smells) that others seem to tolerate.",10,8,6,4,2
+Autism and Intellectual Disability,"I need support with age-expected academic or daily living tasks (e.g., planning, problem-solving, self-care).",10,8,6,4,2
+Autism and Intellectual Disability,"I can understand and respond appropriately to most social cues.",2,4,6,8,10
+Autism and Intellectual Disability,"I adapt well to changes in plans or routines with minimal distress.",2,4,6,8,10
+Autism and Intellectual Disability,"I can manage sensory discomfort using strategies (breaks, headphones, preferred textures).",2,4,6,8,10
+Autism and Intellectual Disability,"I communicate my needs clearly and participate effectively in conversations.",2,4,6,8,10
+Autism and Intellectual Disability,"I complete age-appropriate schoolwork and daily tasks independently or with minimal support.",2,4,6,8,10
+Learning Disability,"I struggle to read grade-level text accurately or fluently.",10,8,6,4,2
+Learning Disability,"I have difficulty understanding or remembering what I read or hear in class.",10,8,6,4,2
+Learning Disability,"I find spelling and writing tasks unusually hard and make frequent errors.",10,8,6,4,2
+Learning Disability,"I make repeated mistakes in basic math facts or word problems despite practice.",10,8,6,4,2
+Learning Disability,"I need extra time, repeated instructions, or step-by-step help to complete schoolwork.",10,8,6,4,2
+Learning Disability,"I can read grade-level material fluently and explain what I understood.",2,4,6,8,10
+Learning Disability,"I take clear notes and recall key points from lessons without extra support.",2,4,6,8,10
+Learning Disability,"I write organized paragraphs with correct spelling and grammar for my grade level.",2,4,6,8,10
+Learning Disability,"I solve grade-appropriate math problems accurately and independently.",2,4,6,8,10
+Learning Disability,"I follow multi-step instructions and complete assignments within expected time limits.",2,4,6,8,10
+Suicidal Behaviour,"I have thoughts about ending my life.",10,8,6,4,2
+Suicidal Behaviour,"I have a specific plan or have taken steps toward harming myself.",10,8,6,4,2
+Suicidal Behaviour,"I feel hopeless about the future and believe things will never improve.",10,8,6,4,2
+Suicidal Behaviour,"I feel like a burden to others and think they would be better off without me.",10,8,6,4,2
+Suicidal Behaviour,"I engage in risky or reckless behaviors because I care less about my safety.",10,8,6,4,2
+Suicidal Behaviour,"I can talk to someone I trust when I notice warning signs or distressing thoughts.",2,4,6,8,10
+Suicidal Behaviour,"I have a safety plan (contacts, coping steps) and can follow it when I feel unsafe.",2,4,6,8,10
+Suicidal Behaviour,"I can identify reasons to live and remind myself of them during crises.",2,4,6,8,10
+Suicidal Behaviour,"I use coping strategies (breathing, grounding, reaching out) that reduce suicidal thoughts.",2,4,6,8,10
+Suicidal Behaviour,"I seek professional help (therapist, helpline, doctor) when suicidal thoughts increase.",2,4,6,8,10
+Friendship and relationship issues/FOMO,"I feel anxious or left out when I see others hanging out without me.",10,8,6,4,2
+Friendship and relationship issues/FOMO,"I constantly check messages or social apps to avoid missing invitations or updates.",10,8,6,4,2
+Friendship and relationship issues/FOMO,"I change my plans or overcommit because I fear missing out.",10,8,6,4,2
+Friendship and relationship issues/FOMO,"I worry excessively about what friends think of me or whether they still like me.",10,8,6,4,2
+Friendship and relationship issues/FOMO,"Conflicts with friends frequently escalate or remain unresolved.",10,8,6,4,2
+Friendship and relationship issues/FOMO,"I set healthy boundaries with friends and can say no without guilt.",2,4,6,8,10
+Friendship and relationship issues/FOMO,"I can stay offline or ignore updates without feeling distressed or left out.",2,4,6,8,10
+Friendship and relationship issues/FOMO,"I communicate openly and resolve disagreements calmly with friends or partners.",2,4,6,8,10
+Friendship and relationship issues/FOMO,"I feel secure in my relationships even when I’m not included in every event.",2,4,6,8,10
+Friendship and relationship issues/FOMO,"I prioritize meaningful connections over chasing every social opportunity.",2,4,6,8,10
+Breakup and Rebound,"I feel persistent sadness, emptiness, or hopelessness since the breakup.",10,8,6,4,2
+Breakup and Rebound,"I frequently check my ex’s social media or try to contact them despite deciding not to.",10,8,6,4,2
+Breakup and Rebound,"I rushed into a new relationship mainly to avoid loneliness or pain.",10,8,6,4,2
+Breakup and Rebound,"I have strong urges to get back together even when the relationship was unhealthy.",10,8,6,4,2
+Breakup and Rebound,"My work/studies, sleep, or appetite have significantly suffered after the breakup.",10,8,6,4,2
+Breakup and Rebound,"I practice self-care (sleep, nutrition, exercise) and keep daily routines consistent.",2,4,6,8,10
+Breakup and Rebound,"I can limit or avoid checking my ex’s updates and respect boundaries.",2,4,6,8,10
+Breakup and Rebound,"I take time to reflect and heal before starting a new relationship.",2,4,6,8,10
+Breakup and Rebound,"I lean on supportive friends/family or counseling rather than impulsive dating.",2,4,6,8,10
+Breakup and Rebound,"I can accept the breakup, learn from it, and set healthy goals for future relationships.",2,4,6,8,10
+Self Esteem and self identity issues,"I often feel worthless or not good enough compared to others.",10,8,6,4,2
+Self Esteem and self identity issues,"I frequently criticize myself and dwell on my perceived flaws or mistakes.",10,8,6,4,2
+Self Esteem and self identity issues,"I change my behavior or opinions to fit in because I’m unsure of who I am.",10,8,6,4,2
+Self Esteem and self identity issues,"I avoid challenges or new opportunities because I fear I will fail.",10,8,6,4,2
+Self Esteem and self identity issues,"I rely heavily on others’ approval to feel okay about myself.",10,8,6,4,2
+Self Esteem and self identity issues,"I recognize my strengths and speak to myself with kindness.",2,4,6,8,10
+Self Esteem and self identity issues,"I can accept constructive feedback without feeling ashamed or defensive.",2,4,6,8,10
+Self Esteem and self identity issues,"I make choices that reflect my values, even when they are unpopular.",2,4,6,8,10
+Self Esteem and self identity issues,"I try new tasks and tolerate mistakes as part of learning.",2,4,6,8,10
+Self Esteem and self identity issues,"I feel comfortable in my identity and don’t need constant reassurance from others.",2,4,6,8,10
+Dealing trauma loss and death/Acute stress,"I experience intrusive memories, images, or dreams related to the loss or traumatic event.",10,8,6,4,2
+Dealing trauma loss and death/Acute stress,"I feel on edge, easily startled, or constantly watchful since the event.",10,8,6,4,2
+Dealing trauma loss and death/Acute stress,"I avoid places, people, or conversations that remind me of the loss or trauma.",10,8,6,4,2
+Dealing trauma loss and death/Acute stress,"I have difficulty sleeping or concentrating because of stress related to the event.",10,8,6,4,2
+Dealing trauma loss and death/Acute stress,"I feel numb, detached, or disconnected from my emotions or from others.",10,8,6,4,2
+Dealing trauma loss and death/Acute stress,"I can talk about my feelings with someone I trust and find some relief.",2,4,6,8,10
+Dealing trauma loss and death/Acute stress,"I use grounding or calming strategies (breathing, routines) that help me cope.",2,4,6,8,10
+Dealing trauma loss and death/Acute stress,"I am able to face reminders of the event gradually without becoming overwhelmed.",2,4,6,8,10
+Dealing trauma loss and death/Acute stress,"I maintain daily routines (sleep, meals, responsibilities) despite the stress.",2,4,6,8,10
+Dealing trauma loss and death/Acute stress,"I seek support (friends, family, professionals) when symptoms increase.",2,4,6,8,10
+Unrealistic Beauty Standards/Body image issues/obesity,"I feel dissatisfied with my body shape or weight most days.",10,8,6,4,2
+Unrealistic Beauty Standards/Body image issues/obesity,"I compare my appearance to others online or in media and feel worse about myself.",10,8,6,4,2
+Unrealistic Beauty Standards/Body image issues/obesity,"I avoid social events, sports, or certain clothes because I feel self-conscious about my body.",10,8,6,4,2
+Unrealistic Beauty Standards/Body image issues/obesity,"I frequently check mirrors, weigh myself, or seek reassurance about how I look.",10,8,6,4,2
+Unrealistic Beauty Standards/Body image issues/obesity,"I engage in unhealthy behaviors (extreme dieting, overeating, purging, excessive exercise) to change my body.",10,8,6,4,2
+Unrealistic Beauty Standards/Body image issues/obesity,"I appreciate what my body can do and speak to myself with kindness about my appearance.",2,4,6,8,10
+Unrealistic Beauty Standards/Body image issues/obesity,"I can see and challenge unrealistic beauty standards when they affect my mood.",2,4,6,8,10
+Unrealistic Beauty Standards/Body image issues/obesity,"I choose balanced, sustainable habits for health rather than chasing quick body changes.",2,4,6,8,10
+Unrealistic Beauty Standards/Body image issues/obesity,"I participate in social activities and wear what I like without excessive body worry.",2,4,6,8,10
+Unrealistic Beauty Standards/Body image issues/obesity,"I curate media I consume to reduce negative body comparisons and focus on supportive content.",2,4,6,8,10

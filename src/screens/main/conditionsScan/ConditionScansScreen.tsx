@@ -104,13 +104,18 @@ export default function ConditionScansScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <SectionHeader title="Check your conditional wellness" />
+        <SectionHeader title={t('conditionScans.headerTitle', 'Check your conditional wellness')} />
         <TabSelector
           tabs={tabs}
           selectedTab={selectedTab}
           onSelectTab={setSelectedTab}
         />
-        <SearchBar searchText={searchText} onChangeText={setSearchText} />
+        <SearchBar
+          searchText={searchText}
+          onChangeText={setSearchText}
+          placeholder={t('conditionScans.searchPlaceholder', 'Search conditions...')}
+          helperText={t('conditionScans.helperText', 'Click on the scan below to proceed')}
+        />
         <ConditionList data={filteredScans} onPressItem={handleItemPress} />
       </View>
 
