@@ -9219,58 +9219,7 @@
     "alertTitle": "Note",
     "alertText": "If stress affects daily function or mood significantly, seek professional support."
   },
-  "specialNeedsScreen": {
-    "headerTitle": "Children with Special Needs",
-    "imageLabel": "Support & care",
-    "title": "Supporting children with special needs",
-    "description": "Practical strategies for caregiving, routines, and school support.",
-    "symptomsTitle": "Common challenges",
-    "symptoms": { "challenges": "Communication, sensory needs, and routine disruptions" },
-    "supportStrategiesTitle": "Support strategies",
-    "viewStrategyButton": "View strategy",
-    "strategies": { "commonSuggestions": { "title": "Practical tips", "description": "Daily routines, school collaboration, and calm parenting." } },
-    "alertTitle": "Note",
-    "alertText": "For complex needs, consider specialist assessment and multi-disciplinary support."
-  },
-  "goodParentingScreen": {
-    "headerTitle": "Good Parenting",
-    "imageLabel": "Nurturing care",
-    "title": "Practical parenting support",
-    "description": "Evidence-based tips to build secure attachments and consistent routines.",
-    "symptomsTitle": "Common challenges",
-    "symptoms": { "commonChallenges": "Setting boundaries, consistent routines, and emotional coaching" },
-    "supportStrategiesTitle": "Parenting strategies",
-    "viewStrategyButton": "View strategy",
-    "strategies": { "commonSuggestions": { "title": "Parenting tips", "description": "Simple steps to improve daily interactions and child wellbeing." } },
-    "alertTitle": "Note",
-    "alertText": "Parenting support complements professional help when behaviour concerns persist."
-  },
-  "lonelinessAndDepressionScreen": {
-    "headerTitle": "Loneliness & Depression",
-    "imageLabel": "Connection",
-    "title": "Supporting loneliness and low mood",
-    "description": "Recognise signs of depression and practical steps to rebuild social contact and daily structure.",
-    "symptomsTitle": "Common signs",
-    "symptoms": { "isolation": "Withdrawing from others and activities" },
-    "supportStrategiesTitle": "Helpful steps",
-    "viewStrategyButton": "View strategy",
-    "strategies": { "commonSuggestions": { "title": "Reconnect steps", "description": "Small social goals, scheduling activities and seeking support." } },
-    "alertTitle": "Important",
-    "alertText": "If someone is at risk or has suicidal thoughts, contact a crisis line or professional immediately."
-  },
-  "anxietyIssuesScreen": {
-    "headerTitle": "Anxiety Issues",
-    "imageLabel": "Calm & steady",
-    "title": "Understanding and managing anxiety",
-    "description": "Techniques to cope with panic, phobias, PTSD triggers and conversion symptoms.",
-    "symptomsTitle": "Common signs",
-    "symptoms": { "panic": "Sudden intense fear or panic attacks" },
-    "supportStrategiesTitle": "Helpful strategies",
-    "viewStrategyButton": "View strategy",
-    "strategies": { "commonSuggestions": { "title": "Anxiety tips", "description": "Breathing, grounding and structured exposure planning." } },
-    "alertTitle": "Note",
-    "alertText": "If anxiety is severe or disabling, seek assessment from a mental health professional."
-  },
+  
   "eatingHabitScreen": {
     "headerTitle": "Eating Habits",
     "imageLabel": "Mindful Eating",
@@ -9676,6 +9625,127 @@
     "alertTitle": "Professional Support Available",
     "alertText": "If disrespectful communication persists or escalates to verbal abuse, consider family therapy or counseling. Professional support can help address underlying issues and restore healthy family dynamics."
   },
+  
+    "goodParentingScreen": {
+      "headerTitle": "Good Parenting",
+      "imageLabel": "Family",
+      "title": "Positive Parenting Strategies",
+      "description": "Good parenting is a journey of learning and growth. Discover effective strategies to build strong, healthy relationships with your children.",
+      "symptomsTitle": "Common Parenting Challenges",
+      "symptoms": {
+        "parentalStress": "Parental stress and feeling overwhelmed",
+        "conflictWithChildren": "Frequent conflict or power struggles with children",
+        "uncertaintyAboutApproach": "Uncertainty about the right parenting approach",
+        "guiltOrSelfDoubt": "Guilt or self-doubt as a parent",
+        "workLifeBalance": "Difficulty balancing work and family life"
+      },
+      "supportStrategiesTitle": "Support Strategies",
+      "strategies": {
+        "commonSuggestions": {
+          "title": "10 Common Suggestions",
+          "description": "Evidence-based parenting techniques and practical tips for daily challenges."
+        },
+        "communication": {
+          "title": "Effective Communication",
+          "description": "Learn to communicate clearly, listen actively, and connect with your children."
+        },
+        "relaxation": {
+          "title": "Relaxation",
+          "description": "Stress management techniques to stay calm and patient with your children."
+        },
+        "cbt": {
+          "title": "CBT (Cognitive Behavioral Therapy)",
+          "description": "Challenge negative parenting thoughts and develop healthier patterns."
+        },
+        "rebt": {
+          "title": "REBT (Rational Emotive Behavior Therapy)",
+          "description": "Address perfectionist beliefs and build realistic parenting expectations."
+        }
+      },
+      "viewStrategyButton": "View Strategy",
+      "alertTitle": "Remember",
+      "alertText": "Perfect parenting doesn't exist. Focus on being present, consistent, and loving. Seek support from parenting groups or professionals when needed."
+    },
+      "lonelinessDepressionScreen": {
+        "headerTitle": "Loneliness and Depression",
+        "imageLabel": "Loneliness & Depression",
+        "title": "Understanding Loneliness and Depression",
+        "description": "Feeling isolated, emotionally low, or disconnected from others can impact your well-being. Here are ways to recognize and manage these emotions effectively.",
+        "symptomsTitle": "Common Symptoms",
+        "symptoms": {
+          "feelingIsolated": "Feeling isolated or disconnected",
+          "lossOfInterest": "Loss of interest in activities once enjoyed",
+          "lowEnergy": "Low energy or fatigue",
+          "negativeThinking": "Persistent negative thoughts",
+          "sleepIssues": "Sleep disturbances or changes"
+        },
+        "supportStrategiesTitle": "Support Strategies",
+        "strategies": {
+          "commonSuggestions": {
+            "title": "10 Common Suggestions",
+            "description": "Practical everyday steps to boost your mood, reconnect with people, and maintain mental balance."
+          },
+          "yoga": {
+            "title": "Yoga",
+            "description": "Gentle yoga routines to calm your mind, reduce stress, and reconnect with your body."
+          },
+          "relaxation": {
+            "title": "Relaxation Techniques",
+            "description": "Simple breathing and mindfulness exercises to help you relax and reduce anxiety."
+          },
+          "cbt": {
+            "title": "Cognitive Behavioral Therapy (CBT)",
+            "description": "Structured exercises to identify and change unhelpful thought patterns."
+          },
+          "rebt": {
+            "title": "Rational Emotive Behavior Therapy (REBT)",
+            "description": "Methods to challenge irrational beliefs that lead to sadness and self-doubt."
+          }
+        },
+        "viewStrategyButton": "View Strategy",
+        "alertTitle": "Important",
+        "alertText": "If feelings of loneliness or depression persist, consider seeking help from a counselor or mental health professional."
+      },    
+        "anxietyScreen": {
+          "headerTitle": "Anxiety",
+          "imageLabel": "Calm Mind",
+          "title": "Understanding and Managing Anxiety",
+          "description": "Anxiety can affect your thoughts, emotions, and physical health. With awareness and coping strategies, you can regain control and calm your mind.",
+          "symptomsTitle": "Common Symptoms",
+          "symptoms": {
+            "excessiveWorry": "Persistent or excessive worry about daily situations",
+            "restlessness": "Feeling restless or on edge",
+            "racingHeart": "Increased heart rate or palpitations",
+            "troubleConcentrating": "Difficulty concentrating or focusing",
+            "sleepDisturbance": "Trouble sleeping or staying asleep"
+          },
+          "supportStrategiesTitle": "Support Strategies",
+          "strategies": {
+            "commonSuggestions": {
+              "title": "Common Suggestions",
+              "description": "Simple lifestyle changes and relaxation techniques to manage anxiety."
+            },
+            "yoga": {
+              "title": "Yoga",
+              "description": "Gentle yoga and breathing exercises to relax the body and mind."
+            },
+            "relaxation": {
+              "title": "Relaxation Techniques",
+              "description": "Mindfulness, grounding, and muscle relaxation methods to reduce tension."
+            },
+            "cbt": {
+              "title": "Cognitive Behavioral Therapy",
+              "description": "Identifying anxious thought patterns and learning healthier coping skills."
+            },
+            "rebt": {
+              "title": "Rational Emotive Behavior Therapy",
+              "description": "Challenging irrational fears and replacing them with realistic perspectives."
+            }
+          },
+          "viewStrategyButton": "View Strategy",
+          "alertTitle": "When to Seek Help",
+          "alertText": "If anxiety is affecting your daily life, seek help from a mental health professional. Early support can make a big difference."
+        },      
   "darkWebAndOnlyFansScreen": {
     "headerTitle": "Dark Web and OnlyFans",
     "imageLabel": "Digital Addiction Support",
@@ -18965,6 +19035,48 @@
     "alertTitle": "Note",
     "alertText": "If trauma symptoms are severe or you are at risk, contact a mental health professional immediately."
   },
+  
+    "specialNeedsScreen": {
+      "headerTitle": "Special Needs Support",
+      "imageLabel": "Care",
+      "title": "Supporting Children with Special Needs",
+      "description": "Caring for children with special needs can be challenging but rewarding. Learn strategies to support your child while taking care of your own mental health.",
+      "symptomsTitle": "Common Caregiver Challenges",
+      "symptoms": {
+        "emotionalExhaustion": "Emotional exhaustion and burnout",
+        "feelingOverwhelmed": "Feeling overwhelmed by daily responsibilities",
+        "guiltOrInadequacy": "Guilt or feelings of inadequacy as a caregiver",
+        "socialIsolation": "Social isolation from friends and community",
+        "chronicStress": "Chronic stress and anxiety about the future"
+      },
+      "supportStrategiesTitle": "Support Strategies",
+      "strategies": {
+        "commonSuggestions": {
+          "title": "Common Suggestions",
+          "description": "Practical tips for self-care, building support networks, and managing caregiving demands."
+        },
+        "yoga": {
+          "title": "Yoga",
+          "description": "Gentle movement practices to release tension and restore energy."
+        },
+        "relaxation": {
+          "title": "Relaxation",
+          "description": "Techniques to find moments of calm and reduce caregiver stress."
+        },
+        "cbt": {
+          "title": "CBT",
+          "description": "Address negative thoughts and develop healthier caregiving perspectives."
+        },
+        "rebt": {
+          "title": "REBT",
+          "description": "Challenge perfectionist beliefs and build emotional resilience as a caregiver."
+        }
+      },
+      "viewStrategyButton": "View Strategy",
+      "alertTitle": "Remember Self-Care",
+      "alertText": "Taking care of yourself is not selfish—it's essential. Seek support from professionals, support groups, and respite care services when needed."
+    },
+  
   "unrealisticBeautyStandardsScreen": {
     "headerTitle": "Unrealistic Beauty Standards",
     "imageLabel": "Body image",

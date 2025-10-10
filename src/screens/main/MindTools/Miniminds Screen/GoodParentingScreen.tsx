@@ -10,22 +10,35 @@ export default function GoodParentingScreen({ navigation }: any) {
   };
 
   const handleViewStrategy = (strategyKey: string) => {
+    console.log(`${strategyKey} strategy pressed`);
     switch (strategyKey) {
       case "commonSuggestions":
-        navigation.navigate("CommonSuggestionsScreen", { condition: "goodparenting" });
+        navigation.navigate("CommonSuggestionsScreen", {
+          condition: "good-parenting",
+        });
         break;
-      case "yoga":
-        navigation.navigate("YogaScreen", { condition: "goodparenting" });
+      // case "communication":
+      //   navigation.navigate("CommunicationScreen", {
+      //     condition: "good-parenting",
+      //   });
         break;
       case "relaxation":
-        navigation.navigate("RelaxationScreen", { condition: "goodparenting" });
+        navigation.navigate("RelaxationScreen", {
+          condition: "good-parenting",
+        });
         break;
       case "cbt":
-        navigation.navigate("CBTScreen", { condition: "goodparenting" });
+        navigation.navigate("CBTScreen", {
+          condition: "good-parenting",
+        });
         break;
       case "rebt":
-        navigation.navigate("REBTScreen", { condition: "goodparenting" });
+        navigation.navigate("REBTScreen", {
+          condition: "good-parenting",
+        });
         break;
+      default:
+        console.log(`Unknown strategy: ${strategyKey}`);
     }
   };
 
@@ -35,38 +48,151 @@ export default function GoodParentingScreen({ navigation }: any) {
         <Pressable style={styles.backButton} onPress={handleBackPress}>
           <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
-        <Text style={styles.headerTitle}>{t("goodParentingScreen.headerTitle")}</Text>
+        <Text style={styles.headerTitle}>
+          {t("goodParentingScreen.headerTitle")}
+        </Text>
       </View>
 
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="heart" size={48} color="#10b981" />
-              <Text style={styles.imageLabel}>{t("goodParentingScreen.imageLabel")}</Text>
+              <CustomIcon type="IO" name="people" size={48} color="#f97316" />
+              <Text style={styles.imageLabel}>
+                {t("goodParentingScreen.imageLabel")}
+              </Text>
             </View>
           </View>
         </View>
 
         <Text style={styles.title}>{t("goodParentingScreen.title")}</Text>
-        <Text style={styles.description}>{t("goodParentingScreen.description")}</Text>
+        <Text style={styles.description}>
+          {t("goodParentingScreen.description")}
+        </Text>
 
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("goodParentingScreen.symptomsTitle")}</Text>
+          <Text style={styles.sectionTitle}>
+            {t("goodParentingScreen.symptomsTitle")}
+          </Text>
           <View style={styles.symptomItem}>
             <View style={styles.symptomDot} />
-            <Text style={styles.symptomText}>{t("goodParentingScreen.symptoms.commonChallenges")}</Text>
+            <Text style={styles.symptomText}>
+              {t("goodParentingScreen.symptoms.parentalStress")}
+            </Text>
+          </View>
+          <View style={styles.symptomItem}>
+            <View style={styles.symptomDot} />
+            <Text style={styles.symptomText}>
+              {t("goodParentingScreen.symptoms.conflictWithChildren")}
+            </Text>
+          </View>
+          <View style={styles.symptomItem}>
+            <View style={styles.symptomDot} />
+            <Text style={styles.symptomText}>
+              {t("goodParentingScreen.symptoms.uncertaintyAboutApproach")}
+            </Text>
+          </View>
+          <View style={styles.symptomItem}>
+            <View style={styles.symptomDot} />
+            <Text style={styles.symptomText}>
+              {t("goodParentingScreen.symptoms.guiltOrSelfDoubt")}
+            </Text>
+          </View>
+          <View style={styles.symptomItem}>
+            <View style={styles.symptomDot} />
+            <Text style={styles.symptomText}>
+              {t("goodParentingScreen.symptoms.workLifeBalance")}
+            </Text>
           </View>
         </View>
 
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("goodParentingScreen.supportStrategiesTitle")}</Text>
+          <Text style={styles.sectionTitle}>
+            {t("goodParentingScreen.supportStrategiesTitle")}
+          </Text>
 
           <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>{t("goodParentingScreen.strategies.commonSuggestions.title")}</Text>
-            <Text style={styles.strategyDescription}>{t("goodParentingScreen.strategies.commonSuggestions.description")}</Text>
-            <Pressable style={styles.viewStrategyButton} onPress={() => handleViewStrategy("commonSuggestions")}>
-              <Text style={styles.viewStrategyButtonText}>{t("goodParentingScreen.viewStrategyButton")}</Text>
+            <Text style={styles.strategyTitle}>
+              {t("goodParentingScreen.strategies.commonSuggestions.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("goodParentingScreen.strategies.commonSuggestions.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("commonSuggestions")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("goodParentingScreen.viewStrategyButton")}
+              </Text>
+            </Pressable>
+          </View>
+
+          {/* <View style={styles.strategyCard}>
+            <Text style={styles.strategyTitle}>
+              {t("goodParentingScreen.strategies.communication.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("goodParentingScreen.strategies.communication.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("communication")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("goodParentingScreen.viewStrategyButton")}
+              </Text>
+            </Pressable>
+          </View> */}
+
+          <View style={styles.strategyCard}>
+            <Text style={styles.strategyTitle}>
+              {t("goodParentingScreen.strategies.relaxation.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("goodParentingScreen.strategies.relaxation.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("relaxation")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("goodParentingScreen.viewStrategyButton")}
+              </Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.strategyCard}>
+            <Text style={styles.strategyTitle}>
+              {t("goodParentingScreen.strategies.cbt.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("goodParentingScreen.strategies.cbt.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("cbt")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("goodParentingScreen.viewStrategyButton")}
+              </Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.strategyCard}>
+            <Text style={styles.strategyTitle}>
+              {t("goodParentingScreen.strategies.rebt.title")}
+            </Text>
+            <Text style={styles.strategyDescription}>
+              {t("goodParentingScreen.strategies.rebt.description")}
+            </Text>
+            <Pressable
+              style={styles.viewStrategyButton}
+              onPress={() => handleViewStrategy("rebt")}
+            >
+              <Text style={styles.viewStrategyButtonText}>
+                {t("goodParentingScreen.viewStrategyButton")}
+              </Text>
             </Pressable>
           </View>
         </View>
@@ -76,9 +202,13 @@ export default function GoodParentingScreen({ navigation }: any) {
             <View style={styles.alertIconContainer}>
               <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
             </View>
-            <Text style={styles.alertTitle}>{t("goodParentingScreen.alertTitle")}</Text>
+            <Text style={styles.alertTitle}>
+              {t("goodParentingScreen.alertTitle")}
+            </Text>
           </View>
-          <Text style={styles.alertText}>{t("goodParentingScreen.alertText")}</Text>
+          <Text style={styles.alertText}>
+            {t("goodParentingScreen.alertText")}
+          </Text>
         </View>
 
         <View style={styles.bottomSpacing} />
@@ -184,7 +314,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   viewStrategyButton: {
-    backgroundColor: "#10b981",
+    backgroundColor: "#f97316",
     paddingVertical: 8,
     paddingHorizontal: 16,
     borderRadius: 8,

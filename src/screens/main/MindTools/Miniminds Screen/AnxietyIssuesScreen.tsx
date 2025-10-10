@@ -3,82 +3,132 @@ import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
 import CustomIcon from "../../../../components/CustomIcon";
 import { useLanguage } from "../../../../context/LanguageContext";
 
-export default function AnxietyIssuesScreen({ navigation }: any) {
+export default function AnxietyScreen({ navigation }: any) {
   const { t } = useLanguage();
+
   const handleBackPress = () => {
     navigation.goBack();
   };
 
   const handleViewStrategy = (strategyKey: string) => {
+    console.log(`${strategyKey} strategy pressed`);
+    const condition = "anxiety";
+
     switch (strategyKey) {
       case "commonSuggestions":
-        navigation.navigate("CommonSuggestionsScreen", { condition: "anxiety" });
+        navigation.navigate("CommonSuggestionsScreen", { condition });
         break;
       case "yoga":
-        navigation.navigate("YogaScreen", { condition: "anxiety" });
+        navigation.navigate("YogaScreen", { condition });
         break;
       case "relaxation":
-        navigation.navigate("RelaxationScreen", { condition: "anxiety" });
+        navigation.navigate("RelaxationScreen", { condition });
         break;
       case "cbt":
-        navigation.navigate("CBTScreen", { condition: "anxiety" });
+        navigation.navigate("CBTScreen", { condition });
         break;
       case "rebt":
-        navigation.navigate("REBTScreen", { condition: "anxiety" });
+        navigation.navigate("REBTScreen", { condition });
         break;
+      default:
+        console.log(`Unknown strategy: ${strategyKey}`);
     }
   };
 
   return (
     <View style={styles.container}>
+      {/* Header */}
       <View style={styles.header}>
         <Pressable style={styles.backButton} onPress={handleBackPress}>
           <CustomIcon type="IO" name="chevron-back" size={24} color="#1a1a1a" />
         </Pressable>
-        <Text style={styles.headerTitle}>{t("anxietyIssuesScreen.headerTitle")}</Text>
+        <Text style={styles.headerTitle}>
+          {t("anxietyScreen.headerTitle")}
+        </Text>
       </View>
 
+      {/* Content */}
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
+        {/* Illustration */}
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="pulse" size={48} color="#10b981" />
-              <Text style={styles.imageLabel}>{t("anxietyIssuesScreen.imageLabel")}</Text>
+              <CustomIcon type="IO" name="pulse-outline" size={48} color="#2563eb" />
+              <Text style={styles.imageLabel}>
+                {t("anxietyScreen.imageLabel")}
+              </Text>
             </View>
           </View>
         </View>
 
-        <Text style={styles.title}>{t("anxietyIssuesScreen.title")}</Text>
-        <Text style={styles.description}>{t("anxietyIssuesScreen.description")}</Text>
+        {/* Title & Description */}
+        <Text style={styles.title}>{t("anxietyScreen.title")}</Text>
+        <Text style={styles.description}>
+          {t("anxietyScreen.description")}
+        </Text>
 
+        {/* Symptoms Section */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("anxietyIssuesScreen.symptomsTitle")}</Text>
-          <View style={styles.symptomItem}>
-            <View style={styles.symptomDot} />
-            <Text style={styles.symptomText}>{t("anxietyIssuesScreen.symptoms.panic")}</Text>
-          </View>
+          <Text style={styles.sectionTitle}>
+            {t("anxietyScreen.symptomsTitle")}
+          </Text>
+          {[
+            "excessiveWorry",
+            "restlessness",
+            "racingHeart",
+            "troubleConcentrating",
+            "sleepDisturbance",
+          ].map((key) => (
+            <View style={styles.symptomItem} key={key}>
+              <View style={styles.symptomDot} />
+              <Text style={styles.symptomText}>
+                {t(`anxietyScreen.symptoms.${key}`)}
+              </Text>
+            </View>
+          ))}
         </View>
 
+        {/* Strategies Section */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("anxietyIssuesScreen.supportStrategiesTitle")}</Text>
+          <Text style={styles.sectionTitle}>
+            {t("anxietyScreen.supportStrategiesTitle")}
+          </Text>
 
-          <View style={styles.strategyCard}>
-            <Text style={styles.strategyTitle}>{t("anxietyIssuesScreen.strategies.commonSuggestions.title")}</Text>
-            <Text style={styles.strategyDescription}>{t("anxietyIssuesScreen.strategies.commonSuggestions.description")}</Text>
-            <Pressable style={styles.viewStrategyButton} onPress={() => handleViewStrategy("commonSuggestions")}>
-              <Text style={styles.viewStrategyButtonText}>{t("anxietyIssuesScreen.viewStrategyButton")}</Text>
-            </Pressable>
-          </View>
+          {["commonSuggestions", "yoga", "relaxation", "cbt", "rebt"].map(
+            (key) => (
+              <View style={styles.strategyCard} key={key}>
+                <Text style={styles.strategyTitle}>
+                  {t(`anxietyScreen.strategies.${key}.title`)}
+                </Text>
+                <Text style={styles.strategyDescription}>
+                  {t(`anxietyScreen.strategies.${key}.description`)}
+                </Text>
+                <Pressable
+                  style={styles.viewStrategyButton}
+                  onPress={() => handleViewStrategy(key)}
+                >
+                  <Text style={styles.viewStrategyButtonText}>
+                    {t("anxietyScreen.viewStrategyButton")}
+                  </Text>
+                </Pressable>
+              </View>
+            )
+          )}
         </View>
 
+        {/* Alert Box */}
         <View style={styles.alertBox}>
           <View style={styles.alertHeader}>
             <View style={styles.alertIconContainer}>
               <CustomIcon type="IO" name="warning" size={16} color="#f59e0b" />
             </View>
-            <Text style={styles.alertTitle}>{t("anxietyIssuesScreen.alertTitle")}</Text>
+            <Text style={styles.alertTitle}>
+              {t("anxietyScreen.alertTitle")}
+            </Text>
           </View>
-          <Text style={styles.alertText}>{t("anxietyIssuesScreen.alertText")}</Text>
+          <Text style={styles.alertText}>
+            {t("anxietyScreen.alertText")}
+          </Text>
         </View>
 
         <View style={styles.bottomSpacing} />
@@ -153,7 +203,7 @@ const styles = StyleSheet.create({
     width: 6,
     height: 6,
     borderRadius: 3,
-    backgroundColor: "#ef4444",
+    backgroundColor: "#3b82f6",
     marginRight: 12,
     marginTop: 7,
   },
@@ -184,7 +234,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   viewStrategyButton: {
-    backgroundColor: "#10b981",
+    backgroundColor: "#2563eb",
     paddingVertical: 8,
     paddingHorizontal: 16,
     borderRadius: 8,
@@ -192,16 +242,16 @@ const styles = StyleSheet.create({
   },
   viewStrategyButtonText: { color: "#ffffff", fontSize: 14, fontWeight: "500" },
   alertBox: {
-    backgroundColor: "#fef3c7",
+    backgroundColor: "#dbeafe",
     borderRadius: 12,
     padding: 16,
     borderWidth: 1,
-    borderColor: "#f59e0b",
+    borderColor: "#3b82f6",
     marginBottom: 32,
   },
   alertHeader: { flexDirection: "row", alignItems: "center", marginBottom: 8 },
   alertIconContainer: { marginRight: 8 },
-  alertTitle: { fontSize: 16, fontWeight: "600", color: "#92400e" },
-  alertText: { fontSize: 14, color: "#92400e", lineHeight: 20 },
+  alertTitle: { fontSize: 16, fontWeight: "600", color: "#1e40af" },
+  alertText: { fontSize: 14, color: "#1e40af", lineHeight: 20 },
   bottomSpacing: { height: 32 },
 });
