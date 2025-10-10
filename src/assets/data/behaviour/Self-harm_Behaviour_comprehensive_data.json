@@ -1,0 +1,535 @@
+{
+    "condition": "Self-harm Behaviour",
+    "issueType": "General Issues",
+    "interventions": {
+      "commonSuggestions": {
+        "type": "Primary",
+        "interventionSubType": "10 Common Suggestions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 4,
+            "title": {
+              "english": "Remove Means",
+              "hindi": "Remove Means",
+              "marathi": "Remove Means"
+            },
+            "description": {
+              "english": "Store or dispose of sharp objects/medications; use lockboxes or safety caps; ask a trusted person to hold items temporarily. Example: Give razors to a roommate for a week to reduce immediate access.\"\"",
+              "hindi": "Store or dispose of sharp objects/medications; use lockboxes or safety caps; ask a trusted person to hold items temporarily. Example: Give razors to a roommate for a week to reduce immediate access.\"\"",
+              "marathi": "Store or dispose of sharp objects/medications; use lockboxes or safety caps; ask a trusted person to hold items temporarily. Example: Give razors to a roommate for a week to reduce immediate access.\"\""
+            }
+          },
+          {
+            "id": 2,
+            "xp": 3,
+            "title": {
+              "english": "Create a Safety Plan",
+              "hindi": "Create a Safety Plan",
+              "marathi": "Create a Safety Plan"
+            },
+            "description": {
+              "english": "Write warning signs; coping steps; contacts; and emergency numbers; keep it visible. Example: A one-page plan on the phone notes app with 3 grounding steps and a friend's number.\"\"",
+              "hindi": "Write warning signs; coping steps; contacts; and emergency numbers; keep it visible. Example: A one-page plan on the phone notes app with 3 grounding steps and a friend's number.\"\"",
+              "marathi": "Write warning signs; coping steps; contacts; and emergency numbers; keep it visible. Example: A one-page plan on the phone notes app with 3 grounding steps and a friend's number.\"\""
+            }
+          },
+          {
+            "id": 3,
+            "xp": 3,
+            "title": {
+              "english": "Delay the Urge",
+              "hindi": "Delay the Urge",
+              "marathi": "Delay the Urge"
+            },
+            "description": {
+              "english": "Use the 10-minute rule—set a timer and do a neutral activity (shower; tea; walk). Example: Each time the urge hits; fold laundry for 10 minutes; urges often dip in intensity.\"\"",
+              "hindi": "Use the 10-minute rule—set a timer and do a neutral activity (shower; tea; walk). Example: Each time the urge hits; fold laundry for 10 minutes; urges often dip in intensity.\"\"",
+              "marathi": "Use the 10-minute rule—set a timer and do a neutral activity (shower; tea; walk). Example: Each time the urge hits; fold laundry for 10 minutes; urges often dip in intensity.\"\""
+            }
+          },
+          {
+            "id": 4,
+            "xp": 2,
+            "title": {
+              "english": "Grounding with Senses",
+              "hindi": "Grounding with Senses",
+              "marathi": "Grounding with Senses"
+            },
+            "description": {
+              "english": "5-4-3-2-1 method: name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste; pair with slow breathing. Example: In bed at night; label items in the room while exhaling for 6 counts.\"\"",
+              "hindi": "5-4-3-2-1 method: name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste; pair with slow breathing. Example: In bed at night; label items in the room while exhaling for 6 counts.\"\"",
+              "marathi": "5-4-3-2-1 method: name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste; pair with slow breathing. Example: In bed at night; label items in the room while exhaling for 6 counts.\"\""
+            }
+          },
+          {
+            "id": 5,
+            "xp": 2,
+            "title": {
+              "english": "Soothing Alternatives",
+              "hindi": "Soothing Alternatives",
+              "marathi": "Soothing Alternatives"
+            },
+            "description": {
+              "english": "Swap harmful action with safe sensations (ice cube on wrist; hold a frozen towel; draw on skin with marker). Example: Keep a \"\"\"\"cool kit\"\"\"\" in the freezer for high-urge moments.\"\"",
+              "hindi": "Swap harmful action with safe sensations (ice cube on wrist; hold a frozen towel; draw on skin with marker). Example: Keep a \"\"\"\"cool kit\"\"\"\" in the freezer for high-urge moments.\"\"",
+              "marathi": "Swap harmful action with safe sensations (ice cube on wrist; hold a frozen towel; draw on skin with marker). Example: Keep a \"\"\"\"cool kit\"\"\"\" in the freezer for high-urge moments.\"\""
+            }
+          },
+          {
+            "id": 6,
+            "xp": 3,
+            "title": {
+              "english": "Emotion Labeling",
+              "hindi": "Emotion Labeling",
+              "marathi": "Emotion Labeling"
+            },
+            "description": {
+              "english": "Name the emotion + intensity (e.g.; \"\"\"\"sad 7/10\"\"\"\") to reduce reactivity; write one need. Example: \"\"\"\"Overwhelmed 8/10—need rest and reassurance.\"\"\"\"\"\"",
+              "hindi": "Name the emotion + intensity (e.g.; \"\"\"\"sad 7/10\"\"\"\") to reduce reactivity; write one need. Example: \"\"\"\"Overwhelmed 8/10—need rest and reassurance.\"\"\"\"\"\"",
+              "marathi": "Name the emotion + intensity (e.g.; \"\"\"\"sad 7/10\"\"\"\") to reduce reactivity; write one need. Example: \"\"\"\"Overwhelmed 8/10—need rest and reassurance.\"\"\"\"\"\""
+            }
+          },
+          {
+            "id": 7,
+            "xp": 4,
+            "title": {
+              "english": "Reach Out Early",
+              "hindi": "Reach Out Early",
+              "marathi": "Reach Out Early"
+            },
+            "description": {
+              "english": "Text/call a trusted person before the urge peaks; use brief scripts. Example: Send \"\"\"\"Having a tough moment—can you stay on the phone 5 mins?\"\"\"\"\"\"",
+              "hindi": "Text/call a trusted person before the urge peaks; use brief scripts. Example: Send \"\"\"\"Having a tough moment—can you stay on the phone 5 mins?\"\"\"\"\"\"",
+              "marathi": "Text/call a trusted person before the urge peaks; use brief scripts. Example: Send \"\"\"\"Having a tough moment—can you stay on the phone 5 mins?\"\"\"\"\"\""
+            }
+          },
+          {
+            "id": 8,
+            "xp": 5,
+            "title": {
+              "english": "Therapy and Crisis Resources",
+              "hindi": "Therapy and Crisis Resources",
+              "marathi": "Therapy and Crisis Resources"
+            },
+            "description": {
+              "english": "Schedule regular therapy; save crisis contacts. Example: Book a weekly CBT/DBT session; add local crisis hotline and nearest ER in favorites.\"\"",
+              "hindi": "Schedule regular therapy; save crisis contacts. Example: Book a weekly CBT/DBT session; add local crisis hotline and nearest ER in favorites.\"\"",
+              "marathi": "Schedule regular therapy; save crisis contacts. Example: Book a weekly CBT/DBT session; add local crisis hotline and nearest ER in favorites.\"\""
+            }
+          },
+          {
+            "id": 9,
+            "xp": 2,
+            "title": {
+              "english": "Routine and Sleep",
+              "hindi": "Routine and Sleep",
+              "marathi": "Routine and Sleep"
+            },
+            "description": {
+              "english": "Keep consistent sleep/wake times; plan simple meals and movement. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch; prep snacks on Sundays.\"\"",
+              "hindi": "Keep consistent sleep/wake times; plan simple meals and movement. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch; prep snacks on Sundays.\"\"",
+              "marathi": "Keep consistent sleep/wake times; plan simple meals and movement. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch; prep snacks on Sundays.\"\""
+            }
+          }
+        ]
+      },
+      "relaxation": {
+        "type": "Secondary",
+        "interventionSubType": "Relaxation",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 5,
+            "title": {
+              "english": "Box Breathing 4-4-4-4",
+              "hindi": "Box Breathing 4-4-4-4",
+              "marathi": "Box Breathing 4-4-4-4"
+            },
+            "description": {
+              "english": "Why it helps: Calms the nervous system rapidly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use during a surge (urge ≥7/10) until it drops by 2 points.\"\"",
+              "hindi": "Why it helps: Calms the nervous system rapidly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use during a surge (urge ≥7/10) until it drops by 2 points.\"\"",
+              "marathi": "Why it helps: Calms the nervous system rapidly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use during a surge (urge ≥7/10) until it drops by 2 points.\"\""
+            }
+          },
+          {
+            "id": 2,
+            "xp": 6,
+            "title": {
+              "english": "5-4-3-2-1 Grounding",
+              "hindi": "5-4-3-2-1 Grounding",
+              "marathi": "5-4-3-2-1 Grounding"
+            },
+            "description": {
+              "english": "Why it helps: Shifts attention from intrusive urges to present sensations. What to do: Name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste. Example: Do in a quiet corner after a triggering text.\"\"",
+              "hindi": "Why it helps: Shifts attention from intrusive urges to present sensations. What to do: Name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste. Example: Do in a quiet corner after a triggering text.\"\"",
+              "marathi": "Why it helps: Shifts attention from intrusive urges to present sensations. What to do: Name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste. Example: Do in a quiet corner after a triggering text.\"\""
+            }
+          },
+          {
+            "id": 3,
+            "xp": 7,
+            "title": {
+              "english": "Progressive Muscle Relaxation (PMR)",
+              "hindi": "Progressive Muscle Relaxation (PMR)",
+              "marathi": "Progressive Muscle Relaxation (PMR)"
+            },
+            "description": {
+              "english": "Why it helps: Releases tension that amplifies urges. What to do: Tense each muscle group 5s then release 10s from feet to head (10–12 groups). Example: Use before bed when rumination spikes.\"\"",
+              "hindi": "Why it helps: Releases tension that amplifies urges. What to do: Tense each muscle group 5s then release 10s from feet to head (10–12 groups). Example: Use before bed when rumination spikes.\"\"",
+              "marathi": "Why it helps: Releases tension that amplifies urges. What to do: Tense each muscle group 5s then release 10s from feet to head (10–12 groups). Example: Use before bed when rumination spikes.\"\""
+            }
+          },
+          {
+            "id": 4,
+            "xp": 6,
+            "title": {
+              "english": "Cold Temperature Reset",
+              "hindi": "Cold Temperature Reset",
+              "marathi": "Cold Temperature Reset"
+            },
+            "description": {
+              "english": "Why it helps: Lowers physiological arousal quickly. What to do: Hold ice or splash cold water on face for 30–60s while breathing slowly. Example: During peak urge to self-harm in the bathroom.\"\"",
+              "hindi": "Why it helps: Lowers physiological arousal quickly. What to do: Hold ice or splash cold water on face for 30–60s while breathing slowly. Example: During peak urge to self-harm in the bathroom.\"\"",
+              "marathi": "Why it helps: Lowers physiological arousal quickly. What to do: Hold ice or splash cold water on face for 30–60s while breathing slowly. Example: During peak urge to self-harm in the bathroom.\"\""
+            }
+          },
+          {
+            "id": 5,
+            "xp": 5,
+            "title": {
+              "english": "Safe Sensory Kit",
+              "hindi": "Safe Sensory Kit",
+              "marathi": "Safe Sensory Kit"
+            },
+            "description": {
+              "english": "Why it helps: Provides soothing alternatives to harmful behaviors. What to do: Prepare items: soft fabric; scented oil; stress ball; calming playlist. Example: Grip stress ball + lavender scent for 3 minutes.\"\"",
+              "hindi": "Why it helps: Provides soothing alternatives to harmful behaviors. What to do: Prepare items: soft fabric; scented oil; stress ball; calming playlist. Example: Grip stress ball + lavender scent for 3 minutes.\"\"",
+              "marathi": "Why it helps: Provides soothing alternatives to harmful behaviors. What to do: Prepare items: soft fabric; scented oil; stress ball; calming playlist. Example: Grip stress ball + lavender scent for 3 minutes.\"\""
+            }
+          },
+          {
+            "id": 6,
+            "xp": 7,
+            "title": {
+              "english": "Guided Imagery Sanctuary",
+              "hindi": "Guided Imagery Sanctuary",
+              "marathi": "Guided Imagery Sanctuary"
+            },
+            "description": {
+              "english": "Why it helps: Creates mental distance from triggers. What to do: Close eyes; visualize a safe place with 3 sensory details per sense for 5 minutes. Example: Beach scene with waves and warm sun.\"\"",
+              "hindi": "Why it helps: Creates mental distance from triggers. What to do: Close eyes; visualize a safe place with 3 sensory details per sense for 5 minutes. Example: Beach scene with waves and warm sun.\"\"",
+              "marathi": "Why it helps: Creates mental distance from triggers. What to do: Close eyes; visualize a safe place with 3 sensory details per sense for 5 minutes. Example: Beach scene with waves and warm sun.\"\""
+            }
+          },
+          {
+            "id": 7,
+            "xp": 5,
+            "title": {
+              "english": "Extended Exhale Breathing 4-6",
+              "hindi": "Extended Exhale Breathing 4-6",
+              "marathi": "Extended Exhale Breathing 4-6"
+            },
+            "description": {
+              "english": "Why it helps: Activates parasympathetic tone to reduce urge intensity. What to do: Inhale 4s; exhale 6s for 5 minutes; keep shoulders relaxed. Example: After conflict; sit and breathe before responding.\"\"",
+              "hindi": "Why it helps: Activates parasympathetic tone to reduce urge intensity. What to do: Inhale 4s; exhale 6s for 5 minutes; keep shoulders relaxed. Example: After conflict; sit and breathe before responding.\"\"",
+              "marathi": "Why it helps: Activates parasympathetic tone to reduce urge intensity. What to do: Inhale 4s; exhale 6s for 5 minutes; keep shoulders relaxed. Example: After conflict; sit and breathe before responding.\"\""
+            }
+          },
+          {
+            "id": 8,
+            "xp": 6,
+            "title": {
+              "english": "Soothing Self-Talk Script",
+              "hindi": "Soothing Self-Talk Script",
+              "marathi": "Soothing Self-Talk Script"
+            },
+            "description": {
+              "english": "Why it helps: Reduces shame and increases self-compassion. What to do: Read a prewritten script aloud slowly. Example: “This urge will pass. I choose safety. I deserve care even when I hurt.”\"\"",
+              "hindi": "Why it helps: Reduces shame and increases self-compassion. What to do: Read a prewritten script aloud slowly. Example: “This urge will pass. I choose safety. I deserve care even when I hurt.”\"\"",
+              "marathi": "Why it helps: Reduces shame and increases self-compassion. What to do: Read a prewritten script aloud slowly. Example: “This urge will pass. I choose safety. I deserve care even when I hurt.”\"\""
+            }
+          },
+          {
+            "id": 9,
+            "xp": 5,
+            "title": {
+              "english": "Mindful Walk 5 Minutes",
+              "hindi": "Mindful Walk 5 Minutes",
+              "marathi": "Mindful Walk 5 Minutes"
+            },
+            "description": {
+              "english": "Why it helps: Gentle movement disperses stress hormones. What to do: Walk slowly; match steps to breath; notice 3 new details each minute. Example: Loop the hallway or backyard during late-night spikes.\"\"",
+              "hindi": "Why it helps: Gentle movement disperses stress hormones. What to do: Walk slowly; match steps to breath; notice 3 new details each minute. Example: Loop the hallway or backyard during late-night spikes.\"\"",
+              "marathi": "Why it helps: Gentle movement disperses stress hormones. What to do: Walk slowly; match steps to breath; notice 3 new details each minute. Example: Loop the hallway or backyard during late-night spikes.\"\""
+            }
+          }
+        ]
+      },
+      "cbt": {
+        "type": "Tertiary",
+        "interventionSubType": "CBT Interventions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 6,
+            "title": {
+              "english": "Trigger and Situation Log",
+              "hindi": "Trigger and Situation Log",
+              "marathi": "Trigger and Situation Log"
+            },
+            "description": {
+              "english": "Why it helps: Identifies patterns that precede urges for targeted interventions. What to do: Track time; place; people; emotion (0–10); and urge (0–10) after each spike. Example: 10:30 pm; alone in room; sadness 7/10; urge 6/10 after argument.\"\"",
+              "hindi": "Why it helps: Identifies patterns that precede urges for targeted interventions. What to do: Track time; place; people; emotion (0–10); and urge (0–10) after each spike. Example: 10:30 pm; alone in room; sadness 7/10; urge 6/10 after argument.\"\"",
+              "marathi": "Why it helps: Identifies patterns that precede urges for targeted interventions. What to do: Track time; place; people; emotion (0–10); and urge (0–10) after each spike. Example: 10:30 pm; alone in room; sadness 7/10; urge 6/10 after argument.\"\""
+            }
+          },
+          {
+            "id": 2,
+            "xp": 7,
+            "title": {
+              "english": "Thought Record (Automatic Thoughts)",
+              "hindi": "Thought Record (Automatic Thoughts)",
+              "marathi": "Thought Record (Automatic Thoughts)"
+            },
+            "description": {
+              "english": "Why it helps: Brings hidden thoughts to light to challenge them. What to do: Write situation; automatic thought; emotion; behavior urge. Example: Situation: criticism; Thought: \"\"\"\"I’m useless\"\"\"\"; Emotion: shame 8/10; Urge: cut 7/10.\"\"",
+              "hindi": "Why it helps: Brings hidden thoughts to light to challenge them. What to do: Write situation; automatic thought; emotion; behavior urge. Example: Situation: criticism; Thought: \"\"\"\"I’m useless\"\"\"\"; Emotion: shame 8/10; Urge: cut 7/10.\"\"",
+              "marathi": "Why it helps: Brings hidden thoughts to light to challenge them. What to do: Write situation; automatic thought; emotion; behavior urge. Example: Situation: criticism; Thought: \"\"\"\"I’m useless\"\"\"\"; Emotion: shame 8/10; Urge: cut 7/10.\"\""
+            }
+          },
+          {
+            "id": 3,
+            "xp": 8,
+            "title": {
+              "english": "Cognitive Restructuring",
+              "hindi": "Cognitive Restructuring",
+              "marathi": "Cognitive Restructuring"
+            },
+            "description": {
+              "english": "Why it helps: Replaces distorted thoughts with balanced alternatives. What to do: Test thought for evidence; alternatives; and realistic outcome. Example: \"\"\"\"I can’t cope\"\"\"\" → \"\"\"\"I’ve coped before using ice + call—try again.\"\"\"\"\"\"",
+              "hindi": "Why it helps: Replaces distorted thoughts with balanced alternatives. What to do: Test thought for evidence; alternatives; and realistic outcome. Example: \"\"\"\"I can’t cope\"\"\"\" → \"\"\"\"I’ve coped before using ice + call—try again.\"\"\"\"\"\"",
+              "marathi": "Why it helps: Replaces distorted thoughts with balanced alternatives. What to do: Test thought for evidence; alternatives; and realistic outcome. Example: \"\"\"\"I can’t cope\"\"\"\" → \"\"\"\"I’ve coped before using ice + call—try again.\"\"\"\"\"\""
+            }
+          },
+          {
+            "id": 4,
+            "xp": 6,
+            "title": {
+              "english": "Behavioral Activation Plan",
+              "hindi": "Behavioral Activation Plan",
+              "marathi": "Behavioral Activation Plan"
+            },
+            "description": {
+              "english": "Why it helps: Counters withdrawal that worsens mood and urges. What to do: Schedule 3 daily activities: one pleasure; one mastery; one connection. Example: Walk 15 min; finish email; text a friend.\"\"",
+              "hindi": "Why it helps: Counters withdrawal that worsens mood and urges. What to do: Schedule 3 daily activities: one pleasure; one mastery; one connection. Example: Walk 15 min; finish email; text a friend.\"\"",
+              "marathi": "Why it helps: Counters withdrawal that worsens mood and urges. What to do: Schedule 3 daily activities: one pleasure; one mastery; one connection. Example: Walk 15 min; finish email; text a friend.\"\""
+            }
+          },
+          {
+            "id": 5,
+            "xp": 7,
+            "title": {
+              "english": "Distress Tolerance Skills Pack",
+              "hindi": "Distress Tolerance Skills Pack",
+              "marathi": "Distress Tolerance Skills Pack"
+            },
+            "description": {
+              "english": "Why it helps: Offers rapid; safe replacements during peak urges. What to do: Prepare kit: ice pack; sour candy; grounding card; music. Example: Hold ice to wrist 60s + 5-4-3-2-1 until urge drops below 4/10.\"\"",
+              "hindi": "Why it helps: Offers rapid; safe replacements during peak urges. What to do: Prepare kit: ice pack; sour candy; grounding card; music. Example: Hold ice to wrist 60s + 5-4-3-2-1 until urge drops below 4/10.\"\"",
+              "marathi": "Why it helps: Offers rapid; safe replacements during peak urges. What to do: Prepare kit: ice pack; sour candy; grounding card; music. Example: Hold ice to wrist 60s + 5-4-3-2-1 until urge drops below 4/10.\"\""
+            }
+          },
+          {
+            "id": 6,
+            "xp": 6,
+            "title": {
+              "english": "Problem-Solving Worksheet",
+              "hindi": "Problem-Solving Worksheet",
+              "marathi": "Problem-Solving Worksheet"
+            },
+            "description": {
+              "english": "Why it helps: Shifts from ruminating to concrete plans. What to do: Define problem; brainstorm 3 options; pick one; plan next step. Example: Issue: roommate conflict → Option: set meeting and script requests.\"\"",
+              "hindi": "Why it helps: Shifts from ruminating to concrete plans. What to do: Define problem; brainstorm 3 options; pick one; plan next step. Example: Issue: roommate conflict → Option: set meeting and script requests.\"\"",
+              "marathi": "Why it helps: Shifts from ruminating to concrete plans. What to do: Define problem; brainstorm 3 options; pick one; plan next step. Example: Issue: roommate conflict → Option: set meeting and script requests.\"\""
+            }
+          },
+          {
+            "id": 7,
+            "xp": 7,
+            "title": {
+              "english": "Urge Surfing with Timer",
+              "hindi": "Urge Surfing with Timer",
+              "marathi": "Urge Surfing with Timer"
+            },
+            "description": {
+              "english": "Why it helps: Teaches that urges rise/fall like waves without acting. What to do: Set 10-minute timer; observe sensations; breathe 4-in/6-out; rate urge each minute. Example: 7→6→4 by minute 10.\"\"",
+              "hindi": "Why it helps: Teaches that urges rise/fall like waves without acting. What to do: Set 10-minute timer; observe sensations; breathe 4-in/6-out; rate urge each minute. Example: 7→6→4 by minute 10.\"\"",
+              "marathi": "Why it helps: Teaches that urges rise/fall like waves without acting. What to do: Set 10-minute timer; observe sensations; breathe 4-in/6-out; rate urge each minute. Example: 7→6→4 by minute 10.\"\""
+            }
+          },
+          {
+            "id": 8,
+            "xp": 9,
+            "title": {
+              "english": "Safety Plan and Means Restriction",
+              "hindi": "Safety Plan and Means Restriction",
+              "marathi": "Safety Plan and Means Restriction"
+            },
+            "description": {
+              "english": "Why it helps: Reduces immediate risk when urges peak. What to do: List warning signs; coping steps; contacts; lock up or hand off sharp objects/meds. Example: Friend holds razors; crisis numbers pinned.\"\"",
+              "hindi": "Why it helps: Reduces immediate risk when urges peak. What to do: List warning signs; coping steps; contacts; lock up or hand off sharp objects/meds. Example: Friend holds razors; crisis numbers pinned.\"\"",
+              "marathi": "Why it helps: Reduces immediate risk when urges peak. What to do: List warning signs; coping steps; contacts; lock up or hand off sharp objects/meds. Example: Friend holds razors; crisis numbers pinned.\"\""
+            }
+          },
+          {
+            "id": 9,
+            "xp": 5,
+            "title": {
+              "english": "Compassionate Self-Talk Scripts",
+              "hindi": "Compassionate Self-Talk Scripts",
+              "marathi": "Compassionate Self-Talk Scripts"
+            },
+            "description": {
+              "english": "Why it helps: Lowers shame that fuels the cycle. What to do: Write 3 statements to read aloud in crises. Example: \"\"\"\"This urge will pass. I can choose safety. I deserve care even when I’m hurting.\"\"\"\"\"\"",
+              "hindi": "Why it helps: Lowers shame that fuels the cycle. What to do: Write 3 statements to read aloud in crises. Example: \"\"\"\"This urge will pass. I can choose safety. I deserve care even when I’m hurting.\"\"\"\"\"\"",
+              "marathi": "Why it helps: Lowers shame that fuels the cycle. What to do: Write 3 statements to read aloud in crises. Example: \"\"\"\"This urge will pass. I can choose safety. I deserve care even when I’m hurting.\"\"\"\"\"\""
+            }
+          }
+        ]
+      },
+      "rebt": {
+        "type": "Tertiary",
+        "interventionSubType": "REBT Interventions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 6,
+            "title": {
+              "english": "Identify Activating Events (A)",
+              "hindi": "Identify Activating Events (A)",
+              "marathi": "Identify Activating Events (A)"
+            },
+            "description": {
+              "english": "Why it helps: Clarifies what triggers urges so you can intervene earlier. What to do: List recent situations; thoughts; sensations before urges. Example: Argument with partner + sleepless night → urge rose to 7/10.\"\"",
+              "hindi": "Why it helps: Clarifies what triggers urges so you can intervene earlier. What to do: List recent situations; thoughts; sensations before urges. Example: Argument with partner + sleepless night → urge rose to 7/10.\"\"",
+              "marathi": "Why it helps: Clarifies what triggers urges so you can intervene earlier. What to do: List recent situations; thoughts; sensations before urges. Example: Argument with partner + sleepless night → urge rose to 7/10.\"\""
+            }
+          },
+          {
+            "id": 2,
+            "xp": 7,
+            "title": {
+              "english": "Spot Irrational Beliefs (B)",
+              "hindi": "Spot Irrational Beliefs (B)",
+              "marathi": "Spot Irrational Beliefs (B)"
+            },
+            "description": {
+              "english": "Why it helps: REBT targets rigid; extreme; and illogical beliefs that fuel urges. What to do: Write down beliefs starting with must/should/always/never. Example: \"\"\"\"I must never feel weak; if I do; I deserve pain.\"\"\"\"\"\"",
+              "hindi": "Why it helps: REBT targets rigid; extreme; and illogical beliefs that fuel urges. What to do: Write down beliefs starting with must/should/always/never. Example: \"\"\"\"I must never feel weak; if I do; I deserve pain.\"\"\"\"\"\"",
+              "marathi": "Why it helps: REBT targets rigid; extreme; and illogical beliefs that fuel urges. What to do: Write down beliefs starting with must/should/always/never. Example: \"\"\"\"I must never feel weak; if I do; I deserve pain.\"\"\"\"\"\""
+            }
+          },
+          {
+            "id": 3,
+            "xp": 8,
+            "title": {
+              "english": "Dispute Beliefs (D) with Evidence",
+              "hindi": "Dispute Beliefs (D) with Evidence",
+              "marathi": "Dispute Beliefs (D) with Evidence"
+            },
+            "description": {
+              "english": "Why it helps: Logical; empirical; and pragmatic disputes weaken urges. What to do: Ask 3 questions—Is it true? Where’s the proof? Is this belief helpful? Example: \"\"\"\"I can’t handle this\"\"\"\" → Evidence: handled last week with grounding + call.\"\"",
+              "hindi": "Why it helps: Logical; empirical; and pragmatic disputes weaken urges. What to do: Ask 3 questions—Is it true? Where’s the proof? Is this belief helpful? Example: \"\"\"\"I can’t handle this\"\"\"\" → Evidence: handled last week with grounding + call.\"\"",
+              "marathi": "Why it helps: Logical; empirical; and pragmatic disputes weaken urges. What to do: Ask 3 questions—Is it true? Where’s the proof? Is this belief helpful? Example: \"\"\"\"I can’t handle this\"\"\"\" → Evidence: handled last week with grounding + call.\"\""
+            }
+          },
+          {
+            "id": 4,
+            "xp": 7,
+            "title": {
+              "english": "Create Rational Alternatives (E)",
+              "hindi": "Create Rational Alternatives (E)",
+              "marathi": "Create Rational Alternatives (E)"
+            },
+            "description": {
+              "english": "Why it helps: Balanced beliefs reduce intensity and open safer choices. What to do: Replace demands with preferences and toleration. Example: \"\"\"\"I prefer to feel in control; but I can stand discomfort and seek support.\"\"\"\"\"\"",
+              "hindi": "Why it helps: Balanced beliefs reduce intensity and open safer choices. What to do: Replace demands with preferences and toleration. Example: \"\"\"\"I prefer to feel in control; but I can stand discomfort and seek support.\"\"\"\"\"\"",
+              "marathi": "Why it helps: Balanced beliefs reduce intensity and open safer choices. What to do: Replace demands with preferences and toleration. Example: \"\"\"\"I prefer to feel in control; but I can stand discomfort and seek support.\"\"\"\"\"\""
+            }
+          },
+          {
+            "id": 5,
+            "xp": 6,
+            "title": {
+              "english": "Unconditional Self-Acceptance",
+              "hindi": "Unconditional Self-Acceptance",
+              "marathi": "Unconditional Self-Acceptance"
+            },
+            "description": {
+              "english": "Why it helps: Cuts shame that drives self-punishment. What to do: Separate worth from performance and emotions. Example: \"\"\"\"I did a thing I dislike; but I’m not a worthless person.\"\"\"\"\"\"",
+              "hindi": "Why it helps: Cuts shame that drives self-punishment. What to do: Separate worth from performance and emotions. Example: \"\"\"\"I did a thing I dislike; but I’m not a worthless person.\"\"\"\"\"\"",
+              "marathi": "Why it helps: Cuts shame that drives self-punishment. What to do: Separate worth from performance and emotions. Example: \"\"\"\"I did a thing I dislike; but I’m not a worthless person.\"\"\"\"\"\""
+            }
+          },
+          {
+            "id": 6,
+            "xp": 7,
+            "title": {
+              "english": "Low Frustration Tolerance Training",
+              "hindi": "Low Frustration Tolerance Training",
+              "marathi": "Low Frustration Tolerance Training"
+            },
+            "description": {
+              "english": "Why it helps: Builds tolerance for distress spikes that precede urges. What to do: Practice statements: \"\"\"\"It’s hard; not unbearable; I can stand it.\"\"\"\" Example: Ride a 10-minute urge wave using paced breathing.\"\"",
+              "hindi": "Why it helps: Builds tolerance for distress spikes that precede urges. What to do: Practice statements: \"\"\"\"It’s hard; not unbearable; I can stand it.\"\"\"\" Example: Ride a 10-minute urge wave using paced breathing.\"\"",
+              "marathi": "Why it helps: Builds tolerance for distress spikes that precede urges. What to do: Practice statements: \"\"\"\"It’s hard; not unbearable; I can stand it.\"\"\"\" Example: Ride a 10-minute urge wave using paced breathing.\"\""
+            }
+          },
+          {
+            "id": 7,
+            "xp": 5,
+            "title": {
+              "english": "Preference over Demand Language",
+              "hindi": "Preference over Demand Language",
+              "marathi": "Preference over Demand Language"
+            },
+            "description": {
+              "english": "Why it helps: Softens rigid musts that escalate crises. What to do: Convert must/should to prefer/want and add flexibility. Example: \"\"\"\"I want relief now; but I don’t need it immediately; I can use my plan.\"\"\"\"\"\"",
+              "hindi": "Why it helps: Softens rigid musts that escalate crises. What to do: Convert must/should to prefer/want and add flexibility. Example: \"\"\"\"I want relief now; but I don’t need it immediately; I can use my plan.\"\"\"\"\"\"",
+              "marathi": "Why it helps: Softens rigid musts that escalate crises. What to do: Convert must/should to prefer/want and add flexibility. Example: \"\"\"\"I want relief now; but I don’t need it immediately; I can use my plan.\"\"\"\"\"\""
+            }
+          },
+          {
+            "id": 8,
+            "xp": 6,
+            "title": {
+              "english": "Consequences Review (Short vs Long Term)",
+              "hindi": "Consequences Review (Short vs Long Term)",
+              "marathi": "Consequences Review (Short vs Long Term)"
+            },
+            "description": {
+              "english": "Why it helps: Highlights pragmatic costs/benefits to counter tunnel vision. What to do: Make a 2-column list: short-term relief vs long-term harm/alternatives. Example: Relief 5 min vs wounds; shame; hiding; alternative: call + ice.\"\"",
+              "hindi": "Why it helps: Highlights pragmatic costs/benefits to counter tunnel vision. What to do: Make a 2-column list: short-term relief vs long-term harm/alternatives. Example: Relief 5 min vs wounds; shame; hiding; alternative: call + ice.\"\"",
+              "marathi": "Why it helps: Highlights pragmatic costs/benefits to counter tunnel vision. What to do: Make a 2-column list: short-term relief vs long-term harm/alternatives. Example: Relief 5 min vs wounds; shame; hiding; alternative: call + ice.\"\""
+            }
+          },
+          {
+            "id": 9,
+            "xp": 7,
+            "title": {
+              "english": "ABC Diary with Urge Scale",
+              "hindi": "ABC Diary with Urge Scale",
+              "marathi": "ABC Diary with Urge Scale"
+            },
+            "description": {
+              "english": "Why it helps: Repetition builds insight and faster disputing. What to do: Daily log A (event); B (belief); C (feeling/urge 0–10); D (dispute); E (new effect). Example: A: loneliness; B: \"\"\"\"no one cares\"\"\"\"; C: 8; D: evidence check; E: 4.\"\"",
+              "hindi": "Why it helps: Repetition builds insight and faster disputing. What to do: Daily log A (event); B (belief); C (feeling/urge 0–10); D (dispute); E (new effect). Example: A: loneliness; B: \"\"\"\"no one cares\"\"\"\"; C: 8; D: evidence check; E: 4.\"\"",
+              "marathi": "Why it helps: Repetition builds insight and faster disputing. What to do: Daily log A (event); B (belief); C (feeling/urge 0–10); D (dispute); E (new effect). Example: A: loneliness; B: \"\"\"\"no one cares\"\"\"\"; C: 8; D: evidence check; E: 4.\"\""
+            }
+          }
+        ]
+      }
+    }
+  }
+  

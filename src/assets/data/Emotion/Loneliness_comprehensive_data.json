@@ -1,0 +1,736 @@
+{
+  "condition": "Loneliness",
+  "issueType": "Mental Health Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Stay Connected with Family",
+            "hindi": "परिवार के साथ जुड़े रहें",
+            "marathi": "कुटुंबाशी जोडलेले रहा"
+          },
+          "description": {
+            "english": "Works by reducing isolation and providing emotional support. Example: Call or video chat with parents or siblings regularly.",
+            "hindi": "यह अकेलेपन को कम करके और भावनात्मक सहारा प्रदान करके काम करता है। उदाहरण के लिए: माता-पिता या भाई-बहनों से नियमित रूप से कॉल या वीडियो चैट करें।",
+            "marathi": "एकटेपणा कमी करून आणि भावनिक आधार देऊन कार्य करते. उदाहरणार्थ: पालक किंवा भावंडांशी नियमितपणे कॉल किंवा व्हिडिओ चॅट करणे."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Join a Hobby Group",
+            "hindi": "एक शौक समूह में शामिल हों",
+            "marathi": "हॉबी ग्रुपमध्ये सामील व्हा"
+          },
+          "description": {
+            "english": "Works by creating new friendships through shared interests. Example: Join a local book club or painting class.",
+            "hindi": "साझा रुचियों के ज़रिए नई दोस्तियाँ बनाकर काम करता है। उदाहरण: किसी स्थानीय बुक क्लब या पेंटिंग क्लास में शामिल हों।",
+            "marathi": "सामायिक आवडींद्वारे नवीन मैत्री निर्माण करून कार्य करते. उदाहरण: स्थानिक पुस्तक क्लब किंवा चित्रकला वर्गात सामील व्हा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Volunteer for a Cause",
+            "hindi": "किसी उद्देश्य के लिए स्वयंसेवा करें",
+            "marathi": "एखाद्या कारणासाठी स्वयंसेवक व्हा"
+          },
+          "description": {
+            "english": "Works by giving a sense of purpose and connection. Example: Help at an animal shelter or community kitchen.",
+            "hindi": "यह उद्देश्य और जुड़ाव की भावना देकर काम करता है। उदाहरण: किसी पशु आश्रय या सामुदायिक रसोईघर में मदद करें।",
+            "marathi": "उद्देश आणि संबंधाची भावना देऊन कार्य करते. उदाहरण: प्राण्यांच्या निवारा किंवा सामुदायिक स्वयंपाकघरात मदत करणे."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Adopt a Pet",
+            "hindi": "एक पालतू जानवर को गोद लें",
+            "marathi": "पाळीव प्राणी दत्तक घ्या"
+          },
+          "description": {
+            "english": "Works by providing companionship and reducing feelings of emptiness. Example: Caring for a dog or cat offers daily bonding.",
+            "hindi": "यह साथी प्रदान करके और खालीपन की भावना को कम करके काम करता है। उदाहरण: कुत्ते या बिल्ली की देखभाल करने से रोज़ाना जुड़ाव बढ़ता है।",
+            "marathi": "सोबती प्रदान करून आणि रिक्तपणाची भावना कमी करून कार्य करते. उदाहरण: कुत्रा किंवा मांजरीची काळजी घेतल्याने दररोजचे नाते निर्माण होते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 3,
+          "title": {
+            "english": "Limit Excessive Social Media",
+            "hindi": "अत्यधिक सोशल मीडिया का उपयोग सीमित करें",
+            "marathi": "अतिरेकी सोशल मीडिया मर्यादित करा"
+          },
+          "description": {
+            "english": "Works by preventing unhealthy comparison that worsens loneliness. Example: Reduce scrolling and instead message one friend directly.",
+            "hindi": "यह अस्वस्थ तुलना को रोककर काम करता है जो अकेलेपन को और बढ़ा देती है। उदाहरण: स्क्रॉल करना कम करें और इसके बजाय किसी एक दोस्त को सीधे संदेश भेजें।",
+            "marathi": "एकाकीपणा वाढवणारी अस्वास्थ्यकर तुलना रोखून कार्य करते. उदाहरण: स्क्रोलिंग कमी करा आणि त्याऐवजी एका मित्राला थेट संदेश पाठवा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Practice Gratitude Journaling",
+            "hindi": "कृतज्ञता जर्नलिंग का अभ्यास करें",
+            "marathi": "कृतज्ञता जर्नलिंगचा सराव करा"
+          },
+          "description": {
+            "english": "Works by shifting focus to positive aspects of life. Example: Write down 3 things you are grateful for each night.",
+            "hindi": "यह जीवन के सकारात्मक पहलुओं पर ध्यान केंद्रित करने में मदद करता है। उदाहरण: हर रात तीन ऐसी चीज़ें लिखें जिनके लिए आप आभारी हैं।",
+            "marathi": "जीवनातील सकारात्मक पैलूंवर लक्ष केंद्रित करून कार्य करते. उदाहरण: प्रत्येक रात्री ज्या 3 गोष्टींसाठी तुम्ही कृतज्ञ आहात त्या लिहा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Stay Physically Active",
+            "hindi": "शारीरिक रूप से सक्रिय रहें",
+            "marathi": "शारीरिकदृष्ट्या सक्रिय रहा"
+          },
+          "description": {
+            "english": "Works by boosting mood and connecting with others in groups. Example: Join a yoga class or go jogging with a neighbor.",
+            "hindi": "यह मूड को बेहतर बनाने और समूहों में दूसरों से जुड़ने का काम करता है। उदाहरण के लिए: किसी योग कक्षा में शामिल हों या किसी पड़ोसी के साथ जॉगिंग करने जाएँ।",
+            "marathi": "मूड वाढवून आणि गटांमध्ये इतरांशी संपर्क साधून कार्य करते. उदाहरण: योगा वर्गात सामील व्हा किंवा शेजाऱ्यासोबत जॉगिंग करा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 3,
+          "title": {
+            "english": "Reconnect with Old Friends",
+            "hindi": "पुराने दोस्तों से फिर से जुड़ें",
+            "marathi": "जुन्या मित्रांशी पुन्हा संपर्क साधा"
+          },
+          "description": {
+            "english": "Works by reigniting supportive bonds. Example: Send a message to a school friend you lost touch with.",
+            "hindi": "यह आपके बीच के सहयोगात्मक संबंधों को फिर से जीवंत करता है। उदाहरण: अपने किसी स्कूल के दोस्त को संदेश भेजें जिससे आपका संपर्क टूट गया है।",
+            "marathi": "सहाय्यक बंध पुन्हा प्रज्वलित करून कार्य करते. उदाहरण: ज्या शाळेतील मित्राशी तुमचा संपर्क तुटला आहे त्याला संदेश पाठवा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Create a Daily Routine",
+            "hindi": "एक दैनिक दिनचर्या बनाएं",
+            "marathi": "दैनंदिन दिनचर्या तयार करा"
+          },
+          "description": {
+            "english": "Works by reducing feelings of aimlessness. Example: Schedule reading, cooking, and walking at fixed times.",
+            "hindi": "यह लक्ष्यहीनता की भावना को कम करके काम करता है। उदाहरण: पढ़ने, खाना पकाने और टहलने का समय निश्चित करें।",
+            "marathi": "ध्येयहीनतेच्या भावना कमी करून कार्य करते. उदाहरण: वाचन, स्वयंपाक आणि चालण्याचे वेळापत्रक निश्चित वेळी तयार करा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Seek Professional Help",
+            "hindi": "पेशेवर मदद लें",
+            "marathi": "व्यावसायिक मदत घ्या"
+          },
+          "description": {
+            "english": "Works by providing coping strategies from experts. Example: Talk to a therapist about persistent loneliness.",
+            "hindi": "विशेषज्ञों से समाधान की रणनीतियाँ बताकर काम करता है। उदाहरण: लगातार अकेलेपन के बारे में किसी चिकित्सक से बात करें।",
+            "marathi": "तज्ञांकडून सामना करण्याच्या रणनीती प्रदान करून कार्य करते. उदाहरण: सततच्या एकाकीपणाबद्दल थेरपिस्टशी बोला."
+          }
+        }
+      ]
+    },
+    "yoga": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Child‚Äôs Pose (Balasana)",
+            "hindi": "बाल मुद्रा (बालासन)",
+            "marathi": "बाळाची आसन (बालासन)"
+          },
+          "description": {
+            "english": "Step: Kneel, sit back on heels, arms stretched forward. Benefit: Encourages deep relaxation and emotional comfort during lonely moments.",
+            "hindi": "चरण: घुटनों के बल बैठें, एड़ियों के बल बैठें, बाहें आगे की ओर फैलाएँ। लाभ: अकेलेपन के क्षणों में गहन विश्राम और भावनात्मक सुकून मिलता है।",
+            "marathi": "पायरी: गुडघे टेकून, टाचांवर बसून, हात पुढे पसरून. फायदा: एकाकीपणाच्या क्षणांमध्ये खोल विश्रांती आणि भावनिक आराम मिळण्यास प्रोत्साहन देते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 6,
+          "title": {
+            "english": "Tree Pose (Vrikshasana)",
+            "hindi": "वृक्षासन",
+            "marathi": "Tree Pose (Vrikshasana)"
+          },
+          "description": {
+            "english": "Step: Balance on one leg, place the other on thigh, palms together. Benefit: Improves focus and stability, reducing anxious thoughts linked with loneliness.",
+            "hindi": "चरण: एक पैर पर संतुलन बनाएँ, दूसरे को जांघ पर रखें, हथेलियाँ एक साथ। लाभ: ध्यान और स्थिरता में सुधार, अकेलेपन से जुड़े चिंताजनक विचारों को कम करता है।",
+            "marathi": "पायरी: एका पायावर संतुलन राखा, दुसरा मांडीवर ठेवा, तळवे एकत्र ठेवा. फायदा: एकाकीपणाशी संबंधित चिंताग्रस्त विचार कमी करून, लक्ष केंद्रित करणे आणि स्थिरता सुधारते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": {
+            "english": "Seated Forward Bend (Paschimottanasana)",
+            "hindi": "बैठे हुए आगे की ओर झुकना (पश्चिमोत्तानासन)",
+            "marathi": "बसलेला पुढे वाकणे (पश्चिमोत्तानासन)"
+          },
+          "description": {
+            "english": "Step: Sit with legs stretched out, bend forward holding toes. Benefit: Releases tension, calms the nervous system, and reduces feelings of isolation.",
+            "hindi": "चरण: पैरों को फैलाकर बैठें, पंजों को पकड़ते हुए आगे की ओर झुकें। लाभ: तनाव मुक्त करता है, तंत्रिका तंत्र को शांत करता है, और अकेलेपन की भावना को कम करता है।",
+            "marathi": "पायरी: पाय पसरून बसा, बोटे धरून पुढे वाकून बसा. फायदा: तणाव कमी होतो, मज्जासंस्था शांत होते आणि एकाकीपणाची भावना कमी होते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 6,
+          "title": {
+            "english": "Lotus Pose with Breath Awareness",
+            "hindi": "श्वास जागरूकता के साथ कमल मुद्रा",
+            "marathi": "श्वास जागरूकतेसह कमळाची मुद्रा"
+          },
+          "description": {
+            "english": "Step: Sit cross-legged, hands on knees, focus on slow breathing. Benefit: Promotes inner peace and connection with self.",
+            "hindi": "चरण: पालथी मारकर बैठें, हाथ घुटनों पर रखें, धीमी साँसों पर ध्यान केंद्रित करें। लाभ: आंतरिक शांति और स्वयं के साथ जुड़ाव को बढ़ावा देता है।",
+            "marathi": "पायरी: पाय आडवे करून बसा, गुडघ्यांवर हात ठेवा, हळूहळू श्वास घेण्यावर लक्ष केंद्रित करा. फायदा: आंतरिक शांती आणि स्वतःशी संबंध वाढवते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 7,
+          "title": {
+            "english": "Om Chanting Meditation",
+            "hindi": "ओम जप ध्यान",
+            "marathi": "ओम जप ध्यान"
+          },
+          "description": {
+            "english": "Step: Sit comfortably, close eyes, chant 'Om' repeatedly. Benefit: Creates vibrations that soothe loneliness and bring mental clarity.",
+            "hindi": "चरण: आराम से बैठें, आँखें बंद करें और बार-बार &#39;ॐ&#39; का जाप करें। लाभ: इससे ऐसे कंपन पैदा होते हैं जो अकेलेपन को दूर करते हैं और मानसिक स्पष्टता लाते हैं।",
+            "marathi": "पायरी: आरामात बसा, डोळे बंद करा, वारंवार &#39;ॐ&#39; चा जप करा. फायदा: एकाकीपणा शांत करणारी आणि मानसिक स्पष्टता आणणारी कंपनं निर्माण करते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 9,
+          "title": {
+            "english": "Loving-Kindness Meditation",
+            "hindi": "प्रेम-दया ध्यान",
+            "marathi": "प्रेमळ-दयाळू ध्यान"
+          },
+          "description": {
+            "english": "Step: Close eyes, silently repeat 'May I be happy, may others be happy.' Benefit: Builds compassion, reducing negative feelings of isolation.",
+            "hindi": "चरण: आँखें बंद करें, मन ही मन दोहराएँ, ‘मैं खुश रहूँ, दूसरे भी खुश रहें।’ लाभ: करुणा का विकास होता है, अलगाव की नकारात्मक भावनाओं में कमी आती है।",
+            "marathi": "पायरी: डोळे बंद करा, शांतपणे पुन्हा सांगा &#39;मी आनंदी राहावे, इतर आनंदी राहावेत.&#39; फायदा: करुणा निर्माण करते, एकाकीपणाच्या नकारात्मक भावना कमी करते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 8,
+          "title": {
+            "english": "Guided Visualization",
+            "hindi": "निर्देशित विज़ुअलाइज़ेशन",
+            "marathi": "मार्गदर्शित व्हिज्युअलायझेशन"
+          },
+          "description": {
+            "english": "Step: Imagine a safe, loving place guided by calm narration. Benefit: Helps create feelings of belonging and comfort.",
+            "hindi": "चरण: शांत कथन द्वारा निर्देशित एक सुरक्षित, प्रेमपूर्ण स्थान की कल्पना करें। लाभ: इससे अपनेपन और आराम की भावनाएँ पैदा करने में मदद मिलती है।",
+            "marathi": "पायरी: शांत कथनाच्या मार्गदर्शनाखाली एका सुरक्षित, प्रेमळ जागेची कल्पना करा. फायदा: आपलेपणा आणि सांत्वनाची भावना निर्माण करण्यास मदत करते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 8,
+          "title": {
+            "english": "Alternate Nostril Breathing (Nadi Shodhana)",
+            "hindi": "वैकल्पिक नासिका श्वास (नाड़ी शोधन)",
+            "marathi": "Alternate Nostril Breathing (Nadi Shodhana)"
+          },
+          "description": {
+            "english": "Step: Close one nostril, inhale, switch nostrils, exhale. Benefit: Balances emotions, reduces anxiety tied to loneliness.",
+            "hindi": "चरण: एक नथुना बंद करें, साँस लें, दूसरा नथुना बदलें, साँस छोड़ें। लाभ: भावनाओं को संतुलित करता है, अकेलेपन से जुड़ी चिंता को कम करता है।",
+            "marathi": "पायरी: एक नाकपुडी बंद करा, श्वास घ्या, नाकपुड्या बदला, श्वास सोडा. फायदा: भावना संतुलित करते, एकाकीपणाशी संबंधित चिंता कमी करते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 7,
+          "title": {
+            "english": "Mindful Walking Meditation",
+            "hindi": "सचेतन चलना ध्यान",
+            "marathi": "मन लावून चालणे ध्यान"
+          },
+          "description": {
+            "english": "Step: Walk slowly, noticing each step and breath. Benefit: Combines movement with mindfulness, creating connection with surroundings.",
+            "hindi": "कदम: धीरे-धीरे चलें, हर कदम और साँस पर ध्यान दें। लाभ: गति को जागरूकता के साथ जोड़ता है, जिससे आसपास के वातावरण के साथ जुड़ाव बनता है।",
+            "marathi": "पाऊल: प्रत्येक पाऊल आणि श्वास लक्षात घेऊन हळू चाला. फायदा: हालचालींना जागरूकतेशी जोडते, सभोवतालच्या परिसराशी संबंध निर्माण करते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 10,
+          "title": {
+            "english": "Evening Gratitude Meditation",
+            "hindi": "शाम का कृतज्ञता ध्यान",
+            "marathi": "संध्याकाळी कृतज्ञता ध्यान"
+          },
+          "description": {
+            "english": "Step: Sit quietly, recall three positive experiences of the day. Benefit: Replaces loneliness with appreciation and positive emotions.",
+            "hindi": "चरण: चुपचाप बैठें और दिन के तीन सकारात्मक अनुभवों को याद करें। लाभ: अकेलेपन की जगह कृतज्ञता और सकारात्मक भावनाएँ ले लें।",
+            "marathi": "पायरी: शांत बसा, दिवसातील तीन सकारात्मक अनुभव आठवा. फायदा: एकाकीपणाची जागा कौतुक आणि सकारात्मक भावनांनी घेते."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Deep Breathing Exercise",
+            "hindi": "गहरी साँस लेने का व्यायाम",
+            "marathi": "खोल श्वास घेण्याचा व्यायाम"
+          },
+          "description": {
+            "english": "Step: Inhale deeply for 4 counts, hold for 2, exhale for 6. Benefit: Reduces anxiety and creates inner calm during lonely moments.",
+            "hindi": "चरण: 4 बार तक गहरी सांस लें, 2 बार तक रोकें, 6 बार तक सांस छोड़ें। लाभ: अकेलेपन के क्षणों में चिंता कम होती है और आंतरिक शांति पैदा होती है।",
+            "marathi": "पायरी: ४ वेळा खोलवर श्वास घ्या, २ वेळा श्वास रोखून ठेवा, ६ वेळा श्वास सोडा. फायदा: एकाकीपणाच्या क्षणांमध्ये चिंता कमी करते आणि आंतरिक शांतता निर्माण करते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 6,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी विश्राम",
+            "marathi": "प्रोग्रेसिव्ह स्नायू विश्रांती"
+          },
+          "description": {
+            "english": "Step: Tense and release muscles from toes to head. Benefit: Releases physical tension linked to emotional stress.",
+            "hindi": "चरण: पैर की उंगलियों से लेकर सिर तक की मांसपेशियों को तनावमुक्त करें। लाभ: भावनात्मक तनाव से जुड़े शारीरिक तनाव को दूर करता है।",
+            "marathi": "पायरी: पायाच्या बोटांपासून डोक्यापर्यंत स्नायूंना ताण द्या आणि मोकळे करा. फायदा: भावनिक ताणाशी संबंधित शारीरिक ताण कमी करते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": {
+            "english": "Visualization of a Safe Place",
+            "hindi": "एक सुरक्षित स्थान का दृश्यीकरण",
+            "marathi": "सुरक्षित ठिकाणाचे दृश्यमानीकरण"
+          },
+          "description": {
+            "english": "Step: Close eyes, imagine being in a peaceful place like a garden or beach. Benefit: Provides comfort and reduces feelings of emptiness.",
+            "hindi": "चरण: आँखें बंद करें और कल्पना करें कि आप किसी शांत जगह जैसे बगीचे या समुद्र तट पर हैं। लाभ: आराम मिलता है और खालीपन की भावना कम होती है।",
+            "marathi": "पायरी: डोळे बंद करा, बाग किंवा समुद्रकिनाऱ्यासारख्या शांत ठिकाणी असल्याची कल्पना करा. फायदा: आराम देते आणि रिकामपणाची भावना कमी करते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Listening to Calming Music",
+            "hindi": "शांत संगीत सुनना",
+            "marathi": "शांत करणारे संगीत ऐकणे"
+          },
+          "description": {
+            "english": "Step: Play slow instrumental or nature sounds for 10‚Äì15 minutes. Benefit: Improves mood and reduces feelings of isolation.",
+            "hindi": "चरण: 10-15 मिनट तक धीमी गति से वाद्य यंत्र या प्राकृतिक ध्वनियाँ बजाएँ। लाभ: मूड बेहतर होता है और अकेलेपन की भावना कम होती है।",
+            "marathi": "पायरी: १०-१५ मिनिटे मंद वाद्य किंवा निसर्गाचे ध्वनी वाजवा. फायदा: मूड सुधारतो आणि एकाकीपणाची भावना कमी होते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 8,
+          "title": {
+            "english": "Body Scan Meditation",
+            "hindi": "बॉडी स्कैन ध्यान",
+            "marathi": "बॉडी स्कॅन मेडिटेशन"
+          },
+          "description": {
+            "english": "Step: Lie down and mentally scan the body for tension, releasing it gradually. Benefit: Increases self-awareness and relaxation.",
+            "hindi": "चरण: लेट जाएँ और मानसिक रूप से शरीर में तनाव की जाँच करें, धीरे-धीरे उसे छोड़ें। लाभ: आत्म-जागरूकता और विश्राम बढ़ता है।",
+            "marathi": "पायरी: झोपा आणि शरीराचा ताण मानसिकरित्या तपासा, हळूहळू तो सोडा. फायदा: आत्म-जागरूकता आणि विश्रांती वाढवते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 7,
+          "title": {
+            "english": "Aromatherapy Relaxation",
+            "hindi": "अरोमाथेरेपी विश्राम",
+            "marathi": "अरोमाथेरपी आराम"
+          },
+          "description": {
+            "english": "Step: Use soothing scents like lavender or chamomile with supervision. Benefit: Promotes calmness and uplifts mood.",
+            "hindi": "चरण: लैवेंडर या कैमोमाइल जैसी सुखदायक सुगंधों का उपयोग निगरानी में करें। लाभ: शांति प्रदान करता है और मनोदशा को बेहतर बनाता है।",
+            "marathi": "पायरी: देखरेखीखाली लैव्हेंडर किंवा कॅमोमाइल सारख्या सुखदायक सुगंधांचा वापर करा. फायदा: शांतता वाढवते आणि मूड उंचावते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 9,
+          "title": {
+            "english": "Grounding 5-4-3-2-1",
+            "hindi": "ग्राउंडिंग 5-4-3-2-1",
+            "marathi": "ग्राउंडिंग ५-४-३-२-१"
+          },
+          "description": {
+            "english": "Step: Identify 5 things you see, 4 touch, 3 hear, 2 smell, 1 taste. Benefit: Brings focus to the present moment and reduces emotional distress.",
+            "hindi": "चरण: 5 चीज़ें पहचानें जिन्हें आप देखते हैं, 4 जिन्हें छूते हैं, 3 जिन्हें सुनते हैं, 2 जिन्हें सूंघते हैं, और 1 जिन्हें चखते हैं। लाभ: वर्तमान क्षण पर ध्यान केंद्रित करता है और भावनात्मक तनाव कम करता है।",
+            "marathi": "पायरी: तुम्हाला दिसणाऱ्या ५ गोष्टी ओळखा, ४ स्पर्श, ३ ऐकू येणे, २ वास येणे, १ चव येणे. फायदा: सध्याच्या क्षणाकडे लक्ष केंद्रित करते आणि भावनिक त्रास कमी करते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 6,
+          "title": {
+            "english": "Journaling with Deep Breaths",
+            "hindi": "गहरी साँसों के साथ जर्नलिंग",
+            "marathi": "खोल श्वासांसह जर्नल लिहिणे"
+          },
+          "description": {
+            "english": "Step: Write down thoughts while practicing slow breathing. Benefit: Releases bottled-up emotions and brings clarity.",
+            "hindi": "चरण: धीमी साँस लेने का अभ्यास करते हुए विचारों को लिखें। लाभ: दबी हुई भावनाएँ मुक्त होती हैं और स्पष्टता आती है।",
+            "marathi": "पायरी: संथ श्वास घेण्याचा सराव करताना विचार लिहून काढा. फायदा: कोंडलेल्या भावना सोडतात आणि स्पष्टता आणतात."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 7,
+          "title": {
+            "english": "Warm Bath Relaxation",
+            "hindi": "गर्म स्नान विश्राम",
+            "marathi": "उबदार आंघोळीने आराम"
+          },
+          "description": {
+            "english": "Step: Take a warm bath or foot soak for 15‚Äì20 minutes. Benefit: Relieves physical stress and soothes emotional loneliness.",
+            "hindi": "चरण: 15-20 मिनट तक गर्म पानी से नहाएँ या पैरों को उसमें डुबोएँ। लाभ: शारीरिक तनाव से राहत और भावनात्मक अकेलेपन से राहत।",
+            "marathi": "पायरी: गरम आंघोळ करा किंवा १५-२० मिनिटे पाय भिजवा. फायदा: शारीरिक ताण कमी करते आणि भावनिक एकटेपणा कमी करते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 6,
+          "title": {
+            "english": "Art or Coloring Therapy",
+            "hindi": "कला या रंग चिकित्सा",
+            "marathi": "कला किंवा रंगसंगती थेरपी"
+          },
+          "description": {
+            "english": "Step: Engage in simple drawing or coloring mindfully. Benefit: Shifts focus from isolation to creativity and peace.",
+            "hindi": "चरण: ध्यानपूर्वक सरल चित्रकारी या रंग भरने में व्यस्त रहें। लाभ: ध्यान एकाकीपन से हटकर रचनात्मकता और शांति की ओर स्थानांतरित होता है।",
+            "marathi": "पायरी: साधे रेखाचित्र किंवा रंगकाम जाणीवपूर्वक करा. फायदा: एकाकीपणापासून सर्जनशीलता आणि शांततेकडे लक्ष केंद्रित करते."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Tertiary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 7,
+          "title": {
+            "english": "Identify Negative Self-Talk",
+            "hindi": "नकारात्मक आत्म-चर्चा की पहचान करें",
+            "marathi": "नकारात्मक स्व-बोलणे ओळखा"
+          },
+          "description": {
+            "english": "Why it Helps: Reduces harmful thoughts like 'I am unworthy.' What to Do: Write down negative statements and challenge them. Example: Replace 'Nobody cares' with 'I can reach out to someone today.'",
+            "hindi": "यह क्यों मददगार है: &#39;मैं अयोग्य हूँ&#39; जैसे हानिकारक विचारों को कम करता है। क्या करें: नकारात्मक बातें लिखें और उन्हें चुनौती दें। उदाहरण: &#39;किसी को परवाह नहीं&#39; के बजाय &#39;मैं आज किसी से संपर्क कर सकता हूँ&#39; लिखें।",
+            "marathi": "हे का मदत करते: &#39;मी अयोग्य आहे&#39; सारखे हानिकारक विचार कमी करते. काय करावे: नकारात्मक विधाने लिहा आणि त्यांना आव्हान द्या. उदाहरण: &#39;कोणीही काळजी घेत नाही&#39; च्या जागी &#39;मी आज कोणाशी तरी संपर्क साधू शकतो&#39; असे लिहा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 8,
+          "title": {
+            "english": "Thought Records",
+            "hindi": "विचार रिकॉर्ड्स",
+            "marathi": "विचारांच्या नोंदी"
+          },
+          "description": {
+            "english": "Why it Helps: Helps analyze situations and emotions. What to Do: Record situation, thought, feeling, alternative thought. Example: 'I‚Äôm alone this weekend' ‚Üí 'I can plan an activity I enjoy.'",
+            "hindi": "यह क्यों मददगार है: परिस्थितियों और भावनाओं का विश्लेषण करने में मदद करता है। क्या करें: परिस्थिति, विचार, भावना, वैकल्पिक विचार को रिकॉर्ड करें। उदाहरण: &#39;मैं इस सप्ताहांत अकेला हूँ&#39; - &#39;मैं अपनी पसंद की कोई गतिविधि प्लान कर सकता हूँ।&#39;",
+            "marathi": "हे का मदत करते: परिस्थिती आणि भावनांचे विश्लेषण करण्यास मदत करते. काय करावे: परिस्थिती, विचार, भावना, पर्यायी विचार नोंदवा. उदाहरण: &#39;मी या आठवड्याच्या शेवटी एकटा आहे&#39; &#39;मी मला आवडणाऱ्या क्रियाकलापांची योजना करू शकतो.&#39;"
+          }
+        },
+        {
+          "id": 3,
+          "xp": 9,
+          "title": {
+            "english": "Behavioral Activation",
+            "hindi": "व्यवहारिक सक्रियण",
+            "marathi": "वर्तणुकीय सक्रियकरण"
+          },
+          "description": {
+            "english": "Why it Helps: Breaks cycle of isolation by encouraging action. What to Do: Schedule enjoyable or social activities. Example: Call a friend or join an online class.",
+            "hindi": "यह क्यों मददगार है: कार्रवाई को प्रोत्साहित करके अलगाव के चक्र को तोड़ता है। क्या करें: मनोरंजक या सामाजिक गतिविधियों का कार्यक्रम बनाएँ। उदाहरण के लिए: किसी दोस्त को कॉल करें या किसी ऑनलाइन कक्षा में शामिल हों।",
+            "marathi": "हे का मदत करते: कृतीला प्रोत्साहन देऊन एकाकीपणाचे चक्र तोडते. काय करावे: आनंददायक किंवा सामाजिक क्रियाकलापांचे वेळापत्रक तयार करा. उदाहरणार्थ: मित्राला कॉल करा किंवा ऑनलाइन वर्गात सामील व्हा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 8,
+          "title": {
+            "english": "Graded Exposure",
+            "hindi": "ग्रेडेड एक्सपोज़र",
+            "marathi": "श्रेणीबद्ध एक्सपोजर"
+          },
+          "description": {
+            "english": "Why it Helps: Builds social confidence step by step. What to Do: Start with small interactions. Example: Greet a neighbor, then progress to a short conversation.",
+            "hindi": "यह क्यों मददगार है: यह धीरे-धीरे सामाजिक आत्मविश्वास बढ़ाता है। क्या करें: छोटी-छोटी बातचीत से शुरुआत करें। उदाहरण: किसी पड़ोसी का अभिवादन करें, फिर छोटी-सी बातचीत शुरू करें।",
+            "marathi": "हे का मदत करते: टप्प्याटप्प्याने सामाजिक आत्मविश्वास वाढवते. काय करावे: छोट्या संवादांपासून सुरुवात करा. उदाहरण: शेजाऱ्याला अभिवादन करा, नंतर एका लहान संभाषणात पुढे जा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 7,
+          "title": {
+            "english": "Challenge Catastrophic Thinking",
+            "hindi": "विनाशकारी सोच को चुनौती दें",
+            "marathi": "आपत्तीजनक विचारसरणीला आव्हान द्या"
+          },
+          "description": {
+            "english": "Why it Helps: Stops exaggerating situations. What to Do: Ask, 'Is it really true I will always be alone?' Example: 'I may feel lonely today, but tomorrow can be different.'",
+            "hindi": "यह क्यों मददगार है: परिस्थितियों को बढ़ा-चढ़ाकर पेश करने से रोकता है। क्या करें: पूछें, &#39;क्या यह सच है कि मैं हमेशा अकेला रहूँगा?&#39; उदाहरण: &#39;आज मैं अकेला महसूस कर सकता हूँ, लेकिन कल अलग हो सकता है।&#39;",
+            "marathi": "हे का मदत करते: परिस्थितींना अतिशयोक्तीपूर्ण करणे थांबवते. काय करावे: विचारा, &#39;मी नेहमीच एकटा राहीन हे खरोखर खरे आहे का?&#39; उदाहरणार्थ: &#39;मला आज एकटे वाटू शकते, पण उद्या वेगळे असू शकते.&#39;"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Activity Scheduling",
+            "hindi": "गतिविधि शेड्यूलिंग",
+            "marathi": "क्रियाकलाप वेळापत्रक"
+          },
+          "description": {
+            "english": "Why it Helps: Prevents idle time fueling negative thoughts. What to Do: Create a daily plan with structured activities. Example: Exercise in the morning, call a friend in evening.",
+            "hindi": "यह क्यों मददगार है: यह खाली समय को नकारात्मक विचारों को बढ़ावा देने से रोकता है। क्या करें: व्यवस्थित गतिविधियों वाली एक दैनिक योजना बनाएँ। उदाहरण: सुबह व्यायाम करें, शाम को किसी दोस्त को फ़ोन करें।",
+            "marathi": "हे का मदत करते: नकारात्मक विचारांना चालना देणारा निष्क्रिय वेळ टाळतो. काय करावे: संरचित क्रियाकलापांसह दैनिक योजना तयार करा. उदाहरणार्थ: सकाळी व्यायाम करा, संध्याकाळी मित्राला कॉल करा."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 9,
+          "title": {
+            "english": "Social Skills Role-Play",
+            "hindi": "सामाजिक कौशल भूमिका-खेल",
+            "marathi": "सामाजिक कौशल्ये भूमिका-नाटक"
+          },
+          "description": {
+            "english": "Why it Helps: Improves ability to connect with others. What to Do: Practice conversations with a friend or therapist. Example: Role-play introducing yourself at a gathering.",
+            "hindi": "यह क्यों मददगार है: दूसरों से जुड़ने की क्षमता में सुधार करता है। क्या करें: किसी दोस्त या चिकित्सक के साथ बातचीत का अभ्यास करें। उदाहरण: किसी समारोह में अपना परिचय देने का रोल-प्ले करें।",
+            "marathi": "हे का मदत करते: इतरांशी संपर्क साधण्याची क्षमता सुधारते. काय करावे: मित्र किंवा थेरपिस्टशी संभाषणाचा सराव करा. उदाहरण: एखाद्या मेळाव्यात स्वतःची ओळख करून देऊन भूमिका बजावा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 6,
+          "title": {
+            "english": "Positive Data Log",
+            "hindi": "सकारात्मक डेटा लॉग",
+            "marathi": "सकारात्मक डेटा लॉग"
+          },
+          "description": {
+            "english": "Why it Helps: Counters belief 'I‚Äôm always alone.' What to Do: Keep track of positive interactions. Example: Note 'Spoke to a colleague during lunch' as evidence.",
+            "hindi": "यह क्यों मददगार है: यह इस धारणा का खंडन करता है कि &#39;मैं हमेशा अकेला रहता हूँ।&#39; क्या करें: सकारात्मक बातचीत पर नज़र रखें। उदाहरण: सबूत के तौर पर &#39;दोपहर के भोजन के दौरान एक सहकर्मी से बात की&#39; लिखें।",
+            "marathi": "हे का मदत करते: &#39;मी नेहमीच एकटा असतो&#39; या समजुतीचे खंडन करते. काय करावे: सकारात्मक संवादांचा मागोवा ठेवा. उदाहरण: पुरावा म्हणून &#39;दुपारच्या जेवणाच्या वेळी सहकाऱ्याशी बोललो&#39; हे लक्षात ठेवा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 7,
+          "title": {
+            "english": "Develop Balanced Beliefs",
+            "hindi": "संतुलित विश्वास विकसित करें",
+            "marathi": "संतुलित विश्वास विकसित करा"
+          },
+          "description": {
+            "english": "Why it Helps: Shifts from extreme views. What to Do: Replace absolutes with realistic ones. Example: 'I am not always lonely, sometimes I have good connections.'",
+            "hindi": "यह क्यों मददगार है: अतिवादी विचारों से हटकर। क्या करें: निरपेक्षता को यथार्थवादी दृष्टिकोण से बदलें। उदाहरण: &#39;मैं हमेशा अकेला नहीं रहता, कभी-कभी मेरे अच्छे संबंध होते हैं।&#39;",
+            "marathi": "हे का मदत करते: अतिरेकी दृष्टिकोनातून बदल. काय करावे: निरपेक्ष दृष्टिकोन वास्तववादी दृष्टिकोनाने बदला. उदाहरण: &#39;मी नेहमीच एकटा नसतो, कधीकधी माझे चांगले संबंध असतात.&#39;"
+          }
+        },
+        {
+          "id": 10,
+          "xp": 10,
+          "title": {
+            "english": "Visualization of Social Success",
+            "hindi": "सामाजिक सफलता का दृश्यीकरण",
+            "marathi": "सामाजिक यशाचे दृश्यमानीकरण"
+          },
+          "description": {
+            "english": "Why it Helps: Builds confidence before real-life interactions. What to Do: Imagine successful conversations or outings. Example: Picture yourself enjoying time with friends calmly.",
+            "hindi": "यह क्यों मददगार है: वास्तविक जीवन की बातचीत से पहले आत्मविश्वास बढ़ाता है। क्या करें: सफल बातचीत या सैर-सपाटे की कल्पना करें। उदाहरण: खुद को दोस्तों के साथ शांति से समय बिताते हुए देखें।",
+            "marathi": "हे का मदत करते: वास्तविक जीवनातील संवादांपूर्वी आत्मविश्वास वाढवते. काय करावे: यशस्वी संभाषणे किंवा बाहेर जाण्याची कल्पना करा. उदाहरण: मित्रांसोबत शांतपणे वेळ घालवताना तुम्ही स्वतःची कल्पना करा."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Tertiary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 7,
+          "title": {
+            "english": "Dispute ‚ÄúI Must Always Have Company‚Äù",
+            "hindi": "विवाद ‚Äúमुझे हमेशा साथ रहना चाहिए‚Äù",
+            "marathi": "वाद &quot;मला नेहमीच सोबत असायला हवी&quot;"
+          },
+          "description": {
+            "english": "Why it Helps: Reduces dependency on others for happiness. What to Do: Replace rigid demand with preference. Example: 'I prefer company, but I can still enjoy time alone.'",
+            "hindi": "यह क्यों मददगार है: खुशी के लिए दूसरों पर निर्भरता कम करता है। क्या करें: कठोर माँग की जगह प्राथमिकता को प्राथमिकता दें। उदाहरण: &#39;मुझे लोगों का साथ पसंद है, लेकिन मैं अकेले समय का आनंद भी ले सकता हूँ।&#39;",
+            "marathi": "हे का मदत करते: आनंदासाठी इतरांवर अवलंबून राहणे कमी करते. काय करावे: कठोर मागणीऐवजी पसंती द्या. उदाहरण: &#39;मला कंपनी आवडते, पण तरीही मी एकटा वेळ घालवू शकतो.&#39;"
+          }
+        },
+        {
+          "id": 2,
+          "xp": 9,
+          "title": {
+            "english": "Challenge ‚ÄúI‚Äôm Unlovable‚Äù Belief",
+            "hindi": "चुनौती &#39;मैं अप्रिय हूँ&#39; विश्वास",
+            "marathi": "&quot;मी प्रेमळ नाही&quot; असा विश्वास आव्हान द्या"
+          },
+          "description": {
+            "english": "Why it Helps: Stops harmful self-labeling. What to Do: Separate self-worth from temporary loneliness. Example: 'I feel lonely, but that doesn‚Äôt mean I am unlovable.'",
+            "hindi": "यह क्यों मददगार है: हानिकारक आत्म-लेबलिंग को रोकता है। क्या करें: आत्म-मूल्य को अस्थायी अकेलेपन से अलग करें। उदाहरण: &#39;मैं अकेलापन महसूस करता हूँ, लेकिन इसका मतलब यह नहीं कि मैं प्यार के लायक नहीं हूँ।&#39;",
+            "marathi": "हे का मदत करते: हानिकारक स्व-लेबलिंग थांबवते. काय करावे: तात्पुरत्या एकाकीपणापासून स्वतःचे मूल्य वेगळे करा. उदाहरण: &#39;मला एकटेपणा जाणवतो, पण याचा अर्थ असा नाही की मी प्रेमळ नाही.&#39;"
+          }
+        },
+        {
+          "id": 3,
+          "xp": 8,
+          "title": {
+            "english": "Unconditional Self-Acceptance",
+            "hindi": "बिना शर्त आत्म-स्वीकृति",
+            "marathi": "बिनशर्त स्व-स्वीकृती"
+          },
+          "description": {
+            "english": "Why it Helps: Encourages self-worth regardless of circumstances. What to Do: Affirm personal value daily. Example: 'I matter even when I am alone.'",
+            "hindi": "यह क्यों मददगार है: परिस्थितियों की परवाह किए बिना आत्म-सम्मान को बढ़ावा देता है। क्या करें: रोज़ाना अपने व्यक्तिगत मूल्यों की पुष्टि करें। उदाहरण: &#39;मैं अकेले होने पर भी मायने रखता हूँ।&#39;",
+            "marathi": "हे का मदत करते: परिस्थिती कशीही असली तरी आत्म-मूल्याला प्रोत्साहन देते. काय करावे: दररोज वैयक्तिक मूल्याची पुष्टी करा. उदाहरण: &#39;मी एकटा असतानाही मला फरक पडतो.&#39;"
+          }
+        },
+        {
+          "id": 4,
+          "xp": 6,
+          "title": {
+            "english": "Flexible Thinking About Relationships",
+            "hindi": "रिश्तों के बारे में लचीली सोच",
+            "marathi": "नात्यांबद्दल लवचिक विचारसरणी"
+          },
+          "description": {
+            "english": "Why it Helps: Reduces frustration when connections don‚Äôt meet expectations. What to Do: Replace 'They must always include me' with 'I‚Äôd like them to, but I can handle it if they don‚Äôt.'",
+            "hindi": "यह क्यों मददगार है: जब कनेक्शन उम्मीदों पर खरे नहीं उतरते, तो निराशा कम होती है। क्या करें: &#39;उन्हें हमेशा मुझे शामिल करना होगा&#39; की जगह &#39;मैं चाहूँगा कि वे ऐसा करें, लेकिन अगर वे ऐसा नहीं करते, तो मैं इसे संभाल सकता हूँ&#39; लिखें।",
+            "marathi": "हे का मदत करते: जेव्हा संबंध अपेक्षा पूर्ण करत नाहीत तेव्हा निराशा कमी करते. काय करावे: &#39;त्यांनी नेहमीच मला समाविष्ट केले पाहिजे&#39; याऐवजी &#39;मला ते आवडतील, परंतु जर ते तसे करत नसतील तर मी ते हाताळू शकतो&#39; असे लिहा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 7,
+          "title": {
+            "english": "Disputing Catastrophic Thoughts",
+            "hindi": "विनाशकारी विचारों पर विवाद",
+            "marathi": "आपत्तीजनक विचारांवर वाद घालणे"
+          },
+          "description": {
+            "english": "Why it Helps: Prevents exaggeration of isolation. What to Do: Ask 'Is it really unbearable?' Example: 'I feel lonely now, but this feeling will pass.'",
+            "hindi": "यह क्यों मददगार है: अकेलेपन को बढ़ने से रोकता है। क्या करें: पूछें, &#39;क्या यह सचमुच असहनीय है?&#39; उदाहरण: &#39;अभी मुझे अकेलापन महसूस हो रहा है, लेकिन यह एहसास जल्द ही दूर हो जाएगा।&#39;",
+            "marathi": "हे का मदत करते: एकाकीपणाची अतिरेक टाळते. काय करावे: विचारा &#39;हे खरोखर असह्य आहे का?&#39; उदाहरणार्थ: &#39;मला आता एकटेपणा जाणवत आहे, पण ही भावना निघून जाईल.&#39;"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 8,
+          "title": {
+            "english": "Promote Frustration Tolerance",
+            "hindi": "निराशा सहनशीलता को बढ़ावा दें",
+            "marathi": "निराशा सहनशीलतेला प्रोत्साहन द्या"
+          },
+          "description": {
+            "english": "Why it Helps: Builds patience in handling solitude. What to Do: Practice rational self-talk. Example: 'It‚Äôs tough to be alone, but I can stand it and use the time well.'",
+            "hindi": "यह क्यों मददगार है: अकेलेपन को संभालने में धैर्य विकसित करता है। क्या करें: तार्किक आत्म-चर्चा का अभ्यास करें। उदाहरण: &#39;अकेले रहना मुश्किल है, लेकिन मैं इसे बर्दाश्त कर सकता हूँ और समय का सदुपयोग कर सकता हूँ।&#39;",
+            "marathi": "हे का मदत करते: एकटेपणा हाताळताना संयम निर्माण करते. काय करावे: तर्कशुद्ध स्व-बोलण्याचा सराव करा. उदाहरण: &#39;एकटे राहणे कठीण आहे, परंतु मी ते सहन करू शकतो आणि वेळेचा चांगला वापर करू शकतो.&#39;"
+          }
+        },
+        {
+          "id": 7,
+          "xp": 9,
+          "title": {
+            "english": "Reframe Success in Social Life",
+            "hindi": "सामाजिक जीवन में सफलता को नए सिरे से परिभाषित करें",
+            "marathi": "सामाजिक जीवनात यशाची पुनर्रचना करा"
+          },
+          "description": {
+            "english": "Why it Helps: Prevents unrealistic expectations of constant friendships. What to Do: Define success as quality, not quantity, of connections. Example: 'Having one genuine friend is meaningful.'",
+            "hindi": "यह क्यों मददगार है: लगातार दोस्ती की अवास्तविक उम्मीदों को रोकता है। क्या करें: सफलता को संबंधों की गुणवत्ता से परिभाषित करें, न कि उनकी संख्या से। उदाहरण: &#39;एक सच्चा दोस्त होना सार्थक है।&#39;",
+            "marathi": "हे का मदत करते: सततच्या मैत्रीच्या अवास्तव अपेक्षांना प्रतिबंधित करते. काय करावे: यशाची व्याख्या संबंधांच्या प्रमाणात नव्हे तर गुणवत्तेत करा. उदाहरण: &#39;एक खरा मित्र असणे अर्थपूर्ण आहे.&#39;"
+          }
+        },
+        {
+          "id": 8,
+          "xp": 7,
+          "title": {
+            "english": "Dispute Harsh Judgments About Others",
+            "hindi": "दूसरों के बारे में कठोर निर्णयों पर विवाद करें",
+            "marathi": "इतरांबद्दलच्या कठोर निर्णयांवर विवाद करा"
+          },
+          "description": {
+            "english": "Why it Helps: Stops assumptions like 'People are rejecting me.' What to Do: Replace with balanced thoughts. Example: 'They didn‚Äôt call because they were busy, not because I‚Äôm unwanted.'",
+            "hindi": "यह क्यों मददगार है: &#39;लोग मुझे अस्वीकार कर रहे हैं&#39; जैसी धारणाओं को रोकता है। क्या करें: संतुलित विचारों को अपनाएँ। उदाहरण: &#39;उन्होंने इसलिए फ़ोन नहीं किया क्योंकि वे व्यस्त थे, इसलिए नहीं कि मैं अवांछित हूँ।&#39;",
+            "marathi": "हे का मदत करते: &#39;लोक मला नाकारत आहेत&#39; अशा गृहीतकांना थांबवते. काय करावे: संतुलित विचारांनी बदला. उदाहरण: &#39;त्यांनी व्यस्त असल्याने फोन केला नाही, मी नकोसा आहे म्हणून नाही.&#39;"
+          }
+        },
+        {
+          "id": 9,
+          "xp": 6,
+          "title": {
+            "english": "Rational Coping Statements",
+            "hindi": "तर्कसंगत मुकाबला कथन",
+            "marathi": "तर्कसंगत सामना विधाने"
+          },
+          "description": {
+            "english": "Why it Helps: Encourages calm when feeling isolated. What to Do: Teach phrases like 'This is unpleasant, but I can manage it.' Example: Repeat during evenings when loneliness is strongest.",
+            "hindi": "यह क्यों मददगार है: अकेलापन महसूस होने पर शांत रहने को प्रोत्साहित करता है। क्या करें: &#39;यह अप्रिय है, लेकिन मैं इसे संभाल सकता हूँ&#39; जैसे वाक्यांश सिखाएँ। उदाहरण: शाम के समय दोहराएँ जब अकेलापन सबसे ज़्यादा होता है।",
+            "marathi": "हे का मदत करते: एकटेपणा जाणवत असताना शांत राहण्यास प्रोत्साहन देते. काय करावे: &#39;हे अप्रिय आहे, पण मी ते हाताळू शकतो&#39; असे वाक्ये शिकवा. उदाहरण: संध्याकाळी जेव्हा एकटेपणा सर्वात जास्त असतो तेव्हा पुनरावृत्ती करा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Acceptance of Imperfection",
+            "hindi": "अपूर्णता की स्वीकृति",
+            "marathi": "अपूर्णतेचा स्वीकार"
+          },
+          "description": {
+            "english": "Why it Helps: Normalizes ups and downs in relationships. What to Do: Remind self it‚Äôs okay if connections aren‚Äôt perfect. Example: 'It‚Äôs fine if I sometimes feel left out; it doesn‚Äôt define me.'",
+            "hindi": "यह क्यों मददगार है: रिश्तों में उतार-चढ़ाव को सामान्य बनाता है। क्या करें: खुद को याद दिलाएँ कि अगर रिश्ते सही नहीं हैं तो कोई बात नहीं। उदाहरण: &#39;अगर मैं कभी-कभी खुद को अलग-थलग महसूस करता हूँ तो कोई बात नहीं; यह मुझे परिभाषित नहीं करता।&#39;",
+            "marathi": "हे का मदत करते: नातेसंबंधांमधील चढ-उतार सामान्य करते. काय करावे: स्वतःला आठवण करून द्या की जर संबंध परिपूर्ण नसतील तर ते ठीक आहे. उदाहरण: &#39;मला कधीकधी एकटे वाटले तर ते ठीक आहे; ते मला परिभाषित करत नाही.&#39;"
+          }
+        }
+      ]
+    }
+  }
+}

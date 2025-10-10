@@ -1,0 +1,736 @@
+{
+  "condition": "Anxiety issues like PTSD",
+  "issueType": "Mental Health Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Practice Grounding",
+            "hindi": "ग्राउंडिंग का अभ्यास करें",
+            "marathi": "ग्राउंडिंगचा सराव करा"
+          },
+          "description": {
+            "english": "Works by bringing attention to the present moment. Example: Use 5-4-3-2-1 technique to focus on senses during a flashback.",
+            "hindi": "यह तकनीक वर्तमान क्षण पर ध्यान केंद्रित करके काम करती है। उदाहरण: फ़्लैशबैक के दौरान इंद्रियों पर ध्यान केंद्रित करने के लिए 5-4-3-2-1 तकनीक का उपयोग करें।",
+            "marathi": "वर्तमान क्षणाकडे लक्ष वेधून कार्य करते. उदाहरण: फ्लॅशबॅक दरम्यान इंद्रियांवर लक्ष केंद्रित करण्यासाठी 5-4-3-2-1 तंत्र वापरा."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Establish a Safe Routine",
+            "hindi": "एक सुरक्षित दिनचर्या स्थापित करें",
+            "marathi": "एक सुरक्षित दिनचर्या स्थापित करा"
+          },
+          "description": {
+            "english": "Works by creating predictability and reducing uncertainty. Example: Having a fixed bedtime helps prevent anxiety at night.",
+            "hindi": "यह पूर्वानुमान लगाने और अनिश्चितता कम करने का काम करता है। उदाहरण: सोने का एक निश्चित समय रखने से रात में चिंता से बचने में मदद मिलती है।",
+            "marathi": "अंदाज निर्माण करून आणि अनिश्चितता कमी करून कार्य करते. उदाहरण: झोपण्याची वेळ निश्चित केल्याने रात्रीची चिंता टाळण्यास मदत होते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Stay Physically Active",
+            "hindi": "शारीरिक रूप से सक्रिय रहें",
+            "marathi": "शारीरिकदृष्ट्या सक्रिय रहा"
+          },
+          "description": {
+            "english": "Works by releasing tension and calming the nervous system. Example: Go for a daily walk or practice light exercise.",
+            "hindi": "यह तनाव मुक्त करके और तंत्रिका तंत्र को शांत करके काम करता है। उदाहरण: रोज़ाना टहलने जाएँ या हल्का व्यायाम करें।",
+            "marathi": "तणाव कमी करून आणि मज्जासंस्था शांत करून कार्य करते. उदाहरणार्थ: दररोज फिरायला जा किंवा हलका व्यायाम करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Limit News and Triggers",
+            "hindi": "समाचार और ट्रिगर्स को सीमित करें",
+            "marathi": "बातम्या आणि ट्रिगर्स मर्यादित करा"
+          },
+          "description": {
+            "english": "Works by avoiding unnecessary re-exposure to trauma reminders. Example: Turn off violent media that may trigger symptoms.",
+            "hindi": "यह आघात की याद दिलाने वाली चीज़ों के अनावश्यक दोबारा संपर्क से बचने में मदद करता है। उदाहरण: ऐसे हिंसक मीडिया को बंद कर दें जो लक्षणों को बढ़ा सकते हैं।",
+            "marathi": "दुखापतीच्या आठवणींना अनावश्यकपणे पुन्हा संपर्क टाळून हे कार्य करते. उदाहरण: लक्षणे निर्माण करू शकणारे हिंसक माध्यम बंद करा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Use Journaling",
+            "hindi": "जर्नलिंग का उपयोग करें",
+            "marathi": "जर्नलिंग वापरा"
+          },
+          "description": {
+            "english": "Works by expressing emotions safely on paper. Example: Write down thoughts after a nightmare to release fear.",
+            "hindi": "यह भावनाओं को कागज़ पर सुरक्षित रूप से व्यक्त करके काम करता है। उदाहरण: किसी बुरे सपने के बाद डर से मुक्ति पाने के लिए अपने विचारों को लिख लें।",
+            "marathi": "कागदावर सुरक्षितपणे भावना व्यक्त करून कार्य करते. उदाहरण: भीती दूर करण्यासाठी दुःस्वप्नानंतरचे विचार लिहा."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Connect with Supportive People",
+            "hindi": "सहायक लोगों से जुड़ें",
+            "marathi": "समर्थक लोकांशी संपर्क साधा"
+          },
+          "description": {
+            "english": "Works by reducing isolation and fear. Example: Talk to a trusted friend or family member after an anxious episode.",
+            "hindi": "यह अकेलेपन और डर को कम करके काम करता है। उदाहरण: किसी चिंताजनक घटना के बाद किसी विश्वसनीय मित्र या परिवार के सदस्य से बात करें।",
+            "marathi": "एकटेपणा आणि भीती कमी करून कार्य करते. उदाहरण: चिंताग्रस्त घटनेनंतर विश्वासू मित्र किंवा कुटुंबातील सदस्याशी बोला."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Practice Relaxation Breathing",
+            "hindi": "विश्राम श्वास का अभ्यास करें",
+            "marathi": "आरामदायी श्वास घेण्याचा सराव करा"
+          },
+          "description": {
+            "english": "Works by calming panic symptoms. Example: Inhale for 4 counts, exhale for 6 during a stressful memory.",
+            "hindi": "यह घबराहट के लक्षणों को शांत करके काम करता है। उदाहरण: किसी तनावपूर्ण याद के दौरान 4 बार साँस लें और 6 बार साँस छोड़ें।",
+            "marathi": "घाबरण्याची लक्षणे शांत करून कार्य करते. उदाहरण: तणावपूर्ण आठवणी दरम्यान ४ वेळा श्वास घ्या, ६ वेळा श्वास सोडा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Create a Comfort Space",
+            "hindi": "एक आरामदायक स्थान बनाएँ",
+            "marathi": "आरामदायी जागा तयार करा"
+          },
+          "description": {
+            "english": "Works by offering a safe zone during anxiety. Example: Keep a quiet corner with a blanket and soothing objects.",
+            "hindi": "चिंता के दौरान एक सुरक्षित क्षेत्र प्रदान करके काम करता है। उदाहरण: एक शांत कोने में कंबल और सुखदायक वस्तुओं के साथ रहें।",
+            "marathi": "चिंतेच्या वेळी सुरक्षित जागा देऊन कार्य करते. उदाहरण: ब्लँकेट आणि आरामदायी वस्तूंसह शांत कोपरा ठेवा."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 3,
+          "title": {
+            "english": "Positive Affirmations",
+            "hindi": "सकारात्मक पुष्टि",
+            "marathi": "सकारात्मक पुष्टीकरण"
+          },
+          "description": {
+            "english": "Works by countering negative self-beliefs. Example: Replace 'I am broken' with 'I am healing and strong.'",
+            "hindi": "नकारात्मक आत्म-विश्वासों का प्रतिकार करके काम करता है। उदाहरण: &#39;मैं टूटा हुआ हूँ&#39; को &#39;मैं ठीक हो रहा हूँ और मज़बूत हूँ&#39; से बदलें।",
+            "marathi": "नकारात्मक आत्म-श्रद्धेचा प्रतिकार करून कार्य करते. उदाहरण: &#39;मी तुटलो आहे&#39; च्या जागी &#39;मी बरे करणारा आणि बलवान आहे&#39; असे लिहा."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Seek Professional Guidance",
+            "hindi": "पेशेवर मार्गदर्शन लें",
+            "marathi": "व्यावसायिक मार्गदर्शन घ्या"
+          },
+          "description": {
+            "english": "Works by providing coping strategies tailored to trauma. Example: Regular therapy sessions with a counselor for ongoing support.",
+            "hindi": "आघात से निपटने के लिए अनुकूलित रणनीतियाँ प्रदान करके काम करता है। उदाहरण: निरंतर सहायता के लिए परामर्शदाता के साथ नियमित थेरेपी सत्र।",
+            "marathi": "दुखापतींनुसार सामना करण्याच्या रणनीती प्रदान करून कार्य करते. उदाहरण: सतत मदतीसाठी समुपदेशकासह नियमित थेरपी सत्रे."
+          }
+        }
+      ]
+    },
+    "yoga": {
+      "type": "Secondary",
+      "interventionSubType": "Yoga And Meditation Techniques",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Child‚Äôs Pose (Balasana)",
+            "hindi": "बाल मुद्रा (बालासन)",
+            "marathi": "बाळाची आसन (बालासन)"
+          },
+          "description": {
+            "english": "Step: Kneel, sit back on heels, arms stretched forward. Benefit: Provides safety and deep relaxation during anxious states.",
+            "hindi": "चरण: घुटनों के बल बैठें, एड़ियों के बल बैठें, बाहें आगे की ओर फैलाएँ। लाभ: चिंता की स्थिति में सुरक्षा और गहन विश्राम प्रदान करता है।",
+            "marathi": "पायरी: गुडघे टेकून, टाचांवर बसून, हात पुढे पसरून. फायदा: चिंताग्रस्त अवस्थेत सुरक्षितता आणि खोल विश्रांती प्रदान करते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 8,
+          "title": {
+            "english": "Alternate Nostril Breathing (Nadi Shodhana)",
+            "hindi": "वैकल्पिक नासिका श्वास (नाड़ी शोधन)",
+            "marathi": "Alternate Nostril Breathing (Nadi Shodhana)"
+          },
+          "description": {
+            "english": "Step: Inhale through one nostril, exhale through the other, repeat. Benefit: Balances emotions and calms the nervous system.",
+            "hindi": "चरण: एक नथुने से साँस लें, दूसरे से साँस छोड़ें, दोहराएँ। लाभ: भावनाओं को संतुलित करता है और तंत्रिका तंत्र को शांत करता है।",
+            "marathi": "पायरी: एका नाकपुडीतून श्वास घ्या, दुसऱ्या नाकपुडीतून श्वास सोडा, पुन्हा करा. फायदा: भावना संतुलित करते आणि मज्जासंस्था शांत करते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 6,
+          "title": {
+            "english": "Tree Pose (Vrikshasana)",
+            "hindi": "वृक्षासन",
+            "marathi": "Tree Pose (Vrikshasana)"
+          },
+          "description": {
+            "english": "Step: Balance on one leg, place other on thigh, palms together. Benefit: Improves stability and reduces hyperarousal.",
+            "hindi": "चरण: एक पैर पर संतुलन बनाएँ, दूसरे पैर को जांघ पर रखें, हथेलियाँ एक साथ। लाभ: स्थिरता में सुधार और अति-उत्तेजना में कमी।",
+            "marathi": "पायरी: एका पायावर संतुलन राखा, दुसरा मांडीवर ठेवा, तळवे एकत्र ठेवा. फायदा: स्थिरता सुधारते आणि अतिउत्साह कमी करते."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 7,
+          "title": {
+            "english": "Seated Forward Bend (Paschimottanasana)",
+            "hindi": "बैठे हुए आगे की ओर झुकना (पश्चिमोत्तानासन)",
+            "marathi": "बसलेला पुढे वाकणे (पश्चिमोत्तानासन)"
+          },
+          "description": {
+            "english": "Step: Sit with legs extended, bend forward slowly. Benefit: Releases tension, grounds body, and calms intrusive thoughts.",
+            "hindi": "चरण: पैर फैलाकर बैठें, धीरे-धीरे आगे की ओर झुकें। लाभ: तनाव मुक्त करता है, शरीर को स्थिर करता है, और घुसपैठिया विचारों को शांत करता है।",
+            "marathi": "पायरी: पाय पसरून बसा, हळू हळू पुढे वाकून. फायदा: तणाव कमी होतो, शरीर स्थिर होते आणि अनाहूत विचार शांत होतात."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 7,
+          "title": {
+            "english": "Lion‚Äôs Breath",
+            "hindi": "शेर की सांस",
+            "marathi": "सिंहाचा श्वास"
+          },
+          "description": {
+            "english": "Step: Inhale deeply, exhale forcefully with tongue out. Benefit: Releases pent-up fear and aggression safely.",
+            "hindi": "चरण: गहरी साँस लें, जीभ बाहर निकालकर ज़ोर से साँस छोड़ें। लाभ: दबा हुआ डर और आक्रामकता सुरक्षित रूप से बाहर निकलती है।",
+            "marathi": "पायरी: खोलवर श्वास घ्या, जीभ बाहेर काढून जोरात श्वास सोडा. फायदा: दडपलेली भीती आणि आक्रमकता सुरक्षितपणे सोडते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 9,
+          "title": {
+            "english": "Guided Visualization Meditation",
+            "hindi": "निर्देशित विज़ुअलाइज़ेशन ध्यान",
+            "marathi": "मार्गदर्शित व्हिज्युअलायझेशन ध्यान"
+          },
+          "description": {
+            "english": "Step: Close eyes, imagine a safe place with soothing narration. Benefit: Creates inner safety and reduces flashbacks.",
+            "hindi": "चरण: आँखें बंद करें, एक सुरक्षित जगह की कल्पना करें और मन को सुकून देने वाली कहानी सुनें। लाभ: आंतरिक सुरक्षा का एहसास होता है और फ़्लैशबैक कम होते हैं।",
+            "marathi": "पायरी: डोळे बंद करा, सुखदायक कथन करून सुरक्षित ठिकाणाची कल्पना करा. फायदा: आतील सुरक्षितता निर्माण करते आणि फ्लॅशबॅक कमी करते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 6,
+          "title": {
+            "english": "Om Chanting",
+            "hindi": "जप के बारे में",
+            "marathi": "जप बद्दल"
+          },
+          "description": {
+            "english": "Step: Sit cross-legged, chant 'Om' with slow breaths. Benefit: Vibrations relax body and mind, reducing panic.",
+            "hindi": "चरण: पालथी मारकर बैठें, धीमी साँसों के साथ &#39;ॐ&#39; का जाप करें। लाभ: कंपन शरीर और मन को आराम देते हैं, जिससे घबराहट कम होती है।",
+            "marathi": "पायरी: पाय आडवे करून बसा, हळूहळू श्वास घेत &#39;ॐ&#39; चा जप करा. फायदा: कंपनांमुळे शरीर आणि मन आराम मिळते, ज्यामुळे भीती कमी होते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 9,
+          "title": {
+            "english": "Body Scan Meditation",
+            "hindi": "बॉडी स्कैन ध्यान",
+            "marathi": "बॉडी स्कॅन मेडिटेशन"
+          },
+          "description": {
+            "english": "Step: Lie down, focus on relaxing each body part progressively. Benefit: Improves awareness, reduces stored trauma tension.",
+            "hindi": "चरण: लेट जाएँ, शरीर के प्रत्येक अंग को क्रमशः आराम देने पर ध्यान केंद्रित करें। लाभ: जागरूकता में सुधार, संचित आघात तनाव को कम करता है।",
+            "marathi": "पायरी: झोपा, शरीराच्या प्रत्येक भागाला हळूहळू आराम देण्यावर लक्ष केंद्रित करा. फायदा: जाणीव सुधारते, साठवलेल्या आघाताचा ताण कमी करते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 8,
+          "title": {
+            "english": "Mindful Walking",
+            "hindi": "सचेतन चलना",
+            "marathi": "मन लावून चालणे"
+          },
+          "description": {
+            "english": "Step: Walk slowly, notice each step and breath. Benefit: Grounds attention to the present, helpful during dissociation.",
+            "hindi": "कदम: धीरे-धीरे चलें, हर कदम और साँस पर ध्यान दें। लाभ: ध्यान को वर्तमान पर केंद्रित करता है, वियोजन के दौरान सहायक।",
+            "marathi": "पाऊल: हळू चालत जा, प्रत्येक पाऊल आणि श्वास लक्षात घ्या. फायदा: वर्तमानाकडे लक्ष केंद्रित करते, वियोगाच्या वेळी उपयुक्त."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 10,
+          "title": {
+            "english": "Loving-Kindness Meditation",
+            "hindi": "प्रेम-दया ध्यान",
+            "marathi": "प्रेमळ-दयाळू ध्यान"
+          },
+          "description": {
+            "english": "Step: Repeat phrases of compassion for self and others. Benefit: Counters negative self-beliefs and fosters safety.",
+            "hindi": "चरण: स्वयं और दूसरों के प्रति करुणा के वाक्यांश दोहराएँ। लाभ: नकारात्मक आत्म-विश्वासों का प्रतिकार करता है और सुरक्षा को बढ़ावा देता है।",
+            "marathi": "पायरी: स्वतःबद्दल आणि इतरांबद्दल करुणेचे वाक्ये पुन्हा सांगा. फायदा: नकारात्मक आत्म-श्रद्धेला विरोध करते आणि सुरक्षिततेला प्रोत्साहन देते."
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 7,
+          "title": {
+            "english": "Progressive Muscle Relaxation",
+            "hindi": "प्रगतिशील मांसपेशी विश्राम",
+            "marathi": "प्रोग्रेसिव्ह स्नायू विश्रांती"
+          },
+          "description": {
+            "english": "Step: Tense and release each muscle group from toes to head. Benefit: Releases trauma-related body tension and calms the nervous system.",
+            "hindi": "चरण: पैर की उंगलियों से लेकर सिर तक प्रत्येक मांसपेशी समूह को तनाव दें और ढीला छोड़ें। लाभ: आघात से संबंधित शारीरिक तनाव को दूर करता है और तंत्रिका तंत्र को शांत करता है।",
+            "marathi": "पायरी: पायाच्या बोटांपासून डोक्यापर्यंत प्रत्येक स्नायू गट ताणा आणि सोडा. फायदा: आघाताशी संबंधित शरीराचा ताण कमी करते आणि मज्जासंस्था शांत करते."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 6,
+          "title": {
+            "english": "Deep Breathing with Counting",
+            "hindi": "गिनती के साथ गहरी साँस लेना",
+            "marathi": "मोजणीसह खोल श्वास घेणे"
+          },
+          "description": {
+            "english": "Step: Inhale for 4 counts, hold for 2, exhale for 6 counts. Benefit: Reduces panic and slows rapid heartbeat.",
+            "hindi": "चरण: 4 बार गिनकर साँस लें, 2 बार गिनकर रोकें, 6 बार गिनकर साँस छोड़ें। लाभ: घबराहट कम होती है और तेज़ दिल की धड़कन धीमी हो जाती है।",
+            "marathi": "पायरी: ४ वेळा श्वास घ्या, २ वेळा धरून ठेवा, ६ वेळा श्वास सोडा. फायदा: घाबरणे कमी करते आणि हृदयाचे ठोके कमी करते."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 8,
+          "title": {
+            "english": "Grounding 5-4-3-2-1",
+            "hindi": "ग्राउंडिंग 5-4-3-2-1",
+            "marathi": "ग्राउंडिंग ५-४-३-२-१"
+          },
+          "description": {
+            "english": "Step: Identify 5 things you see, 4 touch, 3 hear, 2 smell, 1 taste. Benefit: Anchors attention to the present during flashbacks.",
+            "hindi": "चरण: 5 चीज़ें पहचानें जिन्हें आप देखते हैं, 4 जिन्हें छूते हैं, 3 जिन्हें सुनते हैं, 2 जिन्हें सूंघते हैं, और 1 जिन्हें चखते हैं। लाभ: फ़्लैशबैक के दौरान ध्यान वर्तमान पर केंद्रित होता है।",
+            "marathi": "पायरी: तुम्हाला दिसणाऱ्या ५ गोष्टी ओळखा, ४ स्पर्श, ३ ऐकू येणे, २ वास घेणे, १ चव घेणे. फायदा: फ्लॅशबॅक दरम्यान वर्तमानाकडे लक्ष केंद्रित करा."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 9,
+          "title": {
+            "english": "Safe Place Visualization",
+            "hindi": "सुरक्षित स्थान दृश्यीकरण",
+            "marathi": "सुरक्षित ठिकाणाचे व्हिज्युअलायझेशन"
+          },
+          "description": {
+            "english": "Step: Close eyes and imagine a comforting safe place with details. Benefit: Reduces fear by creating inner security.",
+            "hindi": "चरण: आँखें बंद करें और एक आरामदायक, सुरक्षित जगह की कल्पना करें, जिसमें विस्तृत जानकारी हो। लाभ: आंतरिक सुरक्षा पैदा करके भय कम होता है।",
+            "marathi": "पायरी: डोळे बंद करा आणि तपशीलांसह एका आरामदायी सुरक्षित जागेची कल्पना करा. फायदा: अंतर्गत सुरक्षा निर्माण करून भीती कमी करते."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 5,
+          "title": {
+            "english": "Listening to Calm Music",
+            "hindi": "शांत संगीत सुनना",
+            "marathi": "शांत संगीत ऐकणे"
+          },
+          "description": {
+            "english": "Step: Play soft instrumental or nature sounds for 10‚Äì15 minutes. Benefit: Lowers arousal levels and reduces anxious thoughts.",
+            "hindi": "चरण: 10-15 मिनट तक मधुर वाद्य यंत्र या प्राकृतिक ध्वनियाँ बजाएँ। लाभ: उत्तेजना का स्तर कम होता है और चिंताजनक विचार कम होते हैं।",
+            "marathi": "पायरी: १०-१५ मिनिटे मऊ वाद्य किंवा निसर्गाचे ध्वनी वाजवा. फायदा: उत्तेजनाची पातळी कमी करते आणि चिंताग्रस्त विचार कमी करते."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Aromatherapy Relaxation",
+            "hindi": "अरोमाथेरेपी विश्राम",
+            "marathi": "अरोमाथेरपी आराम"
+          },
+          "description": {
+            "english": "Step: Use soothing scents like lavender or chamomile with supervision. Benefit: Promotes calmness and better sleep.",
+            "hindi": "चरण: लैवेंडर या कैमोमाइल जैसी सुखदायक सुगंधों का उपयोग निगरानी में करें। लाभ: शांति और बेहतर नींद को बढ़ावा देता है।",
+            "marathi": "पायरी: देखरेखीखाली लैव्हेंडर किंवा कॅमोमाइल सारख्या सुखदायक सुगंधांचा वापर करा. फायदा: शांतता आणि चांगली झोप वाढवते."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 8,
+          "title": {
+            "english": "Body Scan Exercise",
+            "hindi": "बॉडी स्कैन व्यायाम",
+            "marathi": "बॉडी स्कॅन व्यायाम"
+          },
+          "description": {
+            "english": "Step: Lie down, mentally scan body for tension and release it. Benefit: Increases awareness of trauma-related stress points.",
+            "hindi": "चरण: लेट जाएँ, मानसिक रूप से शरीर में तनाव की जाँच करें और उसे मुक्त करें। लाभ: आघात-संबंधी तनाव बिंदुओं के प्रति जागरूकता बढ़ती है।",
+            "marathi": "पायरी: झोपा, शरीराचा ताण मानसिकरित्या तपासा आणि तो सोडा. फायदा: आघाताशी संबंधित ताण बिंदूंची जाणीव वाढवते."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 5,
+          "title": {
+            "english": "Warm Bath Therapy",
+            "hindi": "गर्म स्नान चिकित्सा",
+            "marathi": "उबदार आंघोळीची थेरपी"
+          },
+          "description": {
+            "english": "Step: Soak in warm water for 15‚Äì20 minutes. Benefit: Relaxes tense muscles and eases hyperarousal.",
+            "hindi": "चरण: 15-20 मिनट तक गर्म पानी में भिगोएँ। लाभ: तनावग्रस्त मांसपेशियों को आराम मिलता है और अति-उत्तेजना कम होती है।",
+            "marathi": "पायरी: १५-२० मिनिटे कोमट पाण्यात भिजवा. फायदा: ताणलेल्या स्नायूंना आराम देते आणि अतिउत्साह कमी करते."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 7,
+          "title": {
+            "english": "Coloring or Art Relaxation",
+            "hindi": "रंग भरना या कला विश्राम",
+            "marathi": "रंगकाम किंवा कला विश्रांती"
+          },
+          "description": {
+            "english": "Step: Engage in mindful coloring or drawing. Benefit: Provides distraction and emotional release from intrusive memories.",
+            "hindi": "चरण: ध्यानपूर्वक रंग भरने या चित्र बनाने में व्यस्त रहें। लाभ: यह ध्यान भटकाने वाली यादों से ध्यान हटाकर भावनात्मक मुक्ति प्रदान करता है।",
+            "marathi": "पायरी: जागरूकतेने रंगवणे किंवा रेखाचित्र काढणे. फायदा: लक्ष विचलित करणे आणि अनाहूत आठवणींपासून भावनिक मुक्तता प्रदान करते."
+          }
+        },
+        {
+          "id": 10,
+          "xp": 10,
+          "title": {
+            "english": "Guided Relaxation Audio",
+            "hindi": "निर्देशित विश्राम ऑडियो",
+            "marathi": "मार्गदर्शित विश्रांती ऑडिओ"
+          },
+          "description": {
+            "english": "Step: Listen to guided recordings for relaxation. Benefit: Helps focus away from distressing thoughts and improves calmness.",
+            "hindi": "चरण: विश्राम के लिए निर्देशित रिकॉर्डिंग सुनें। लाभ: परेशान करने वाले विचारों से ध्यान हटाने में मदद करता है और शांति में सुधार करता है।",
+            "marathi": "पायरी: विश्रांतीसाठी मार्गदर्शित रेकॉर्डिंग ऐका. फायदा: त्रासदायक विचारांपासून लक्ष केंद्रित करण्यास मदत करते आणि शांतता सुधारते."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Tertiary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 7,
+          "title": {
+            "english": "Identify Trauma Triggers",
+            "hindi": "आघात ट्रिगर्स की पहचान करें",
+            "marathi": "ट्रॉमा ट्रिगर ओळखा"
+          },
+          "description": {
+            "english": "Why it Helps: Builds awareness of what sparks anxiety. What to Do: Keep a diary of events, places, or sounds linked to distress. Example: Loud noises trigger flashbacks.",
+            "hindi": "यह क्यों मददगार है: यह जागरूकता बढ़ाता है कि चिंता किस वजह से होती है। क्या करें: परेशानी से जुड़ी घटनाओं, जगहों या आवाज़ों का रिकॉर्ड रखें। उदाहरण: तेज़ आवाज़ें याद आने लगती हैं।",
+            "marathi": "हे का मदत करते: चिंता कशामुळे निर्माण होते याची जाणीव निर्माण करते. काय करावे: त्रासाशी संबंधित घटना, ठिकाणे किंवा आवाजांची डायरी ठेवा. उदाहरण: मोठ्या आवाजामुळे फ्लॅशबॅक येतात."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 8,
+          "title": {
+            "english": "Challenge Catastrophic Thoughts",
+            "hindi": "विनाशकारी विचारों को चुनौती दें",
+            "marathi": "आपत्तीजनक विचारांना आव्हान द्या"
+          },
+          "description": {
+            "english": "Why it Helps: Prevents spiraling into worst-case thinking. What to Do: Ask 'Is this danger real or imagined?' Example: Replace 'I will never be safe' with 'I am safe right now.'",
+            "hindi": "यह क्यों मददगार है: यह आपको सबसे बुरी स्थिति के बारे में सोचने से रोकता है। क्या करें: पूछें, &#39;क्या यह ख़तरा वास्तविक है या काल्पनिक?&#39; उदाहरण: &#39;मैं कभी सुरक्षित नहीं रहूँगा&#39; को &#39;मैं अभी सुरक्षित हूँ&#39; से बदलें।",
+            "marathi": "हे का मदत करते: सर्वात वाईट परिस्थितीत विचार करण्यापासून रोखते. काय करावे: विचारा &#39;हा धोका खरा आहे की काल्पनिक?&#39; उदाहरण: &#39;मी कधीही सुरक्षित राहणार नाही&#39; याऐवजी &#39;मी सध्या सुरक्षित आहे&#39; असे लिहा."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 10,
+          "title": {
+            "english": "Exposure in Small Steps",
+            "hindi": "छोटे-छोटे चरणों में एक्सपोजर",
+            "marathi": "छोट्या टप्प्यात एक्सपोजर"
+          },
+          "description": {
+            "english": "Why it Helps: Reduces fear by gradual re-exposure to triggers. What to Do: Face mild triggers in safe environments. Example: Slowly watching fireworks videos if noise is a trigger.",
+            "hindi": "यह क्यों मददगार है: ट्रिगर्स के धीरे-धीरे दोबारा संपर्क में आने से डर कम होता है। क्या करें: हल्के ट्रिगर्स का सुरक्षित वातावरण में सामना करें। उदाहरण के लिए: अगर शोर ट्रिगर है तो धीरे-धीरे आतिशबाजी के वीडियो देखें।",
+            "marathi": "हे का मदत करते: हळूहळू ट्रिगर्सच्या संपर्कात येऊन भीती कमी करते. काय करावे: सुरक्षित वातावरणात सौम्य ट्रिगर्सचा सामना करा. उदाहरण: जर आवाज ट्रिगर असेल तर फटाक्यांचे व्हिडिओ हळूहळू पाहणे."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 9,
+          "title": {
+            "english": "Relaxation Paired with Coping",
+            "hindi": "विश्राम और सामना",
+            "marathi": "आराम आणि सामना"
+          },
+          "description": {
+            "english": "Why it Helps: Combines calmness with thought restructuring. What to Do: Practice deep breathing before confronting a memory. Example: Recall event while breathing slowly.",
+            "hindi": "यह क्यों मददगार है: यह शांति और विचारों के पुनर्गठन का संयोजन करता है। क्या करें: किसी याद का सामना करने से पहले गहरी साँस लेने का अभ्यास करें। उदाहरण: धीरे-धीरे साँस लेते हुए किसी घटना को याद करें।",
+            "marathi": "हे का मदत करते: शांतता आणि विचार पुनर्रचना एकत्र करते. काय करावे: आठवणींना सामोरे जाण्यापूर्वी दीर्घ श्वास घेण्याचा सराव करा. उदाहरण: हळूहळू श्वास घेताना घटना आठवा."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 8,
+          "title": {
+            "english": "Thought Records",
+            "hindi": "विचार रिकॉर्ड्स",
+            "marathi": "विचारांच्या नोंदी"
+          },
+          "description": {
+            "english": "Why it Helps: Encourages reflection on anxious thoughts. What to Do: Write down situation, thought, emotion, new thought. Example: 'Crowded bus ‚Üí I‚Äôll panic ‚Üí I‚Äôve survived before, I‚Äôll be okay.'",
+            "hindi": "यह क्यों मददगार है: चिंताजनक विचारों पर चिंतन करने के लिए प्रोत्साहित करता है। क्या करें: परिस्थिति, विचार, भावना, नए विचार को लिखें। उदाहरण: &#39;भीड़ भरी बस - मैं घबरा जाऊँगा - मैं पहले भी बच चुका हूँ, मैं ठीक हो जाऊँगा।&#39;",
+            "marathi": "हे का मदत करते: चिंताग्रस्त विचारांवर चिंतन करण्यास प्रोत्साहन देते. काय करावे: परिस्थिती, विचार, भावना, नवीन विचार लिहा. उदाहरण: &#39;गर्दीची बस, मी घाबरेन, मी आधी वाचलो आहे, मी ठीक आहे.&#39;"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Safe Coping Statements",
+            "hindi": "सुरक्षित मुकाबला कथन",
+            "marathi": "सुरक्षित सामना विधाने"
+          },
+          "description": {
+            "english": "Why it Helps: Creates self-reassurance during distress. What to Do: Prepare rational phrases. Example: 'This is just a memory, not reality right now.'",
+            "hindi": "यह क्यों मददगार है: संकट के समय आत्म-आश्वासन देता है। क्या करें: तर्कसंगत वाक्यांश तैयार करें। उदाहरण: &#39;यह सिर्फ़ एक याद है, अभी वास्तविकता नहीं।&#39;",
+            "marathi": "हे का मदत करते: संकटाच्या वेळी आत्म-आश्वासन निर्माण करते. काय करावे: तर्कशुद्ध वाक्ये तयार करा. उदाहरण: &#39;ही फक्त एक आठवण आहे, सध्याची वास्तविकता नाही.&#39;"
+          }
+        },
+        {
+          "id": 7,
+          "xp": 7,
+          "title": {
+            "english": "Positive Activity Scheduling",
+            "hindi": "सकारात्मक गतिविधि शेड्यूलिंग",
+            "marathi": "सकारात्मक क्रियाकलाप वेळापत्रक"
+          },
+          "description": {
+            "english": "Why it Helps: Reduces avoidance and isolation. What to Do: Plan enjoyable and safe activities. Example: Meet a friend for coffee once a week.",
+            "hindi": "यह क्यों मददगार है: इससे बचने और अकेलेपन की भावना कम होती है। क्या करें: आनंददायक और सुरक्षित गतिविधियों की योजना बनाएँ। उदाहरण: हफ़्ते में एक बार किसी दोस्त से कॉफ़ी पर मिलें।",
+            "marathi": "हे का मदत करते: टाळाटाळ आणि एकटेपणा कमी करते. काय करावे: आनंददायक आणि सुरक्षित क्रियाकलापांची योजना करा. उदाहरण: आठवड्यातून एकदा मित्राला कॉफीसाठी भेटा."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 9,
+          "title": {
+            "english": "Reframe Helplessness",
+            "hindi": "असहायता को फिर से परिभाषित करें",
+            "marathi": "असहाय्यतेची पुनर्रचना करा"
+          },
+          "description": {
+            "english": "Why it Helps: Builds a sense of control over reactions. What to Do: Replace helpless beliefs with coping strengths. Example: 'I froze before' ‚Üí 'Now I have tools to manage it.'",
+            "hindi": "यह क्यों मददगार है: प्रतिक्रियाओं पर नियंत्रण की भावना विकसित करता है। क्या करें: असहाय विश्वासों को सामना करने की ताकत से बदलें। उदाहरण: &#39;मैं पहले स्तब्ध रह जाता था&#39; - &#39;अब मेरे पास इसे संभालने के साधन हैं।&#39;",
+            "marathi": "ते का मदत करते: प्रतिक्रियांवर नियंत्रण ठेवण्याची भावना निर्माण करते. काय करावे: असहाय्य विश्वासांना सामना करण्याच्या शक्तीने बदला. उदाहरण: &#39;मी आधी गोठलो होतो&#39; ‚Üí &#39;आता माझ्याकडे ते व्यवस्थापित करण्यासाठी साधने आहेत.&#39;"
+          }
+        },
+        {
+          "id": 9,
+          "xp": 6,
+          "title": {
+            "english": "Use of Anger Thermometer",
+            "hindi": "क्रोध थर्मामीटर का उपयोग",
+            "marathi": "राग थर्मामीटरचा वापर"
+          },
+          "description": {
+            "english": "Why it Helps: Helps track intensity of emotions. What to Do: Rate feelings on a scale of 1‚Äì10. Example: 'I‚Äôm at 6, I need to do grounding before it gets higher.'",
+            "hindi": "यह क्यों मददगार है: भावनाओं की तीव्रता पर नज़र रखने में मदद करता है। क्या करें: भावनाओं को 1‚Äììì के पैमाने पर आंकें। उदाहरण: &#39;मैं 6 पर हूँ, इससे पहले कि यह और बढ़ जाए, मुझे ग्राउंडिंग करनी होगी।&#39;",
+            "marathi": "हे का मदत करते: भावनांची तीव्रता ट्रॅक करण्यास मदत करते. काय करावे: १-१० च्या स्केलवर भावनांना रेट करा. उदाहरण: &#39;मी ६ वर्षांचा आहे, ते वाढण्यापूर्वी मला ग्राउंडिंग करावे लागेल.&#39;"
+          }
+        },
+        {
+          "id": 10,
+          "xp": 10,
+          "title": {
+            "english": "Behavioral Experiments",
+            "hindi": "व्यवहारिक प्रयोग",
+            "marathi": "वर्तणुकीचे प्रयोग"
+          },
+          "description": {
+            "english": "Why it Helps: Tests beliefs that fuel anxiety. What to Do: Try safe experiments to challenge fears. Example: Sit in a quiet park and note that nothing bad happens.",
+            "hindi": "यह क्यों मददगार है: यह उन विश्वासों का परीक्षण करता है जो चिंता को बढ़ावा देते हैं। क्या करें: डर को चुनौती देने के लिए सुरक्षित प्रयोग करें। उदाहरण: किसी शांत पार्क में बैठें और ध्यान दें कि कुछ भी बुरा न हो।",
+            "marathi": "हे का मदत करते: चिंता वाढवणाऱ्या विश्वासांची चाचणी घ्या. काय करावे: भीतीला आव्हान देण्यासाठी सुरक्षित प्रयोग करून पहा. उदाहरण: शांत उद्यानात बसा आणि लक्षात ठेवा की काहीही वाईट घडत नाही."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Tertiary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 9,
+          "title": {
+            "english": "Dispute ‚ÄúI Am Never Safe‚Äù Belief",
+            "hindi": "विवाद ‚Äúमैं कभी सुरक्षित नहीं हूँ‚Äù विश्वास",
+            "marathi": "&quot;मी कधीच सुरक्षित नाही&quot; असा वाद, विश्वास"
+          },
+          "description": {
+            "english": "Why it Helps: Challenges extreme fear-based thinking. What to Do: Replace with rational perspective. Example: 'I feel unsafe, but in reality I am safe in this room.'",
+            "hindi": "यह क्यों मददगार है: अत्यधिक भय-आधारित सोच को चुनौती देता है। क्या करें: तर्कसंगत दृष्टिकोण अपनाएँ। उदाहरण: &#39;मैं असुरक्षित महसूस करता हूँ, लेकिन वास्तव में मैं इस कमरे में सुरक्षित हूँ।&#39;",
+            "marathi": "हे का मदत करते: अत्यंत भीतीवर आधारित विचारसरणीला आव्हान देते. काय करावे: तर्कशुद्ध दृष्टिकोनाने बदला. उदाहरण: &#39;मला असुरक्षित वाटते, परंतु प्रत्यक्षात मी या खोलीत सुरक्षित आहे.&#39;"
+          }
+        },
+        {
+          "id": 2,
+          "xp": 8,
+          "title": {
+            "english": "Challenge ‚ÄúI Must Forget the Trauma‚Äù",
+            "hindi": "चुनौती: &quot;मुझे आघात को भूलना होगा&quot;",
+            "marathi": "आव्हान &quot;मला आघात विसरावा लागेल&quot;"
+          },
+          "description": {
+            "english": "Why it Helps: Reduces pressure to erase painful memories. What to Do: Reframe to acceptance. Example: 'It happened, but I can live meaningfully despite it.'",
+            "hindi": "यह क्यों मददगार है: दर्दनाक यादों को मिटाने का दबाव कम करता है। क्या करें: स्वीकारोक्ति की ओर लौटें। उदाहरण: &#39;ऐसा हुआ था, लेकिन मैं इसके बावजूद सार्थक जीवन जी सकता हूँ।&#39;",
+            "marathi": "हे का मदत करते: वेदनादायक आठवणी पुसून टाकण्याचा दबाव कमी करते. काय करावे: स्वीकृतीचा विचार करा. उदाहरण: &#39;हे घडले, पण तरीही मी अर्थपूर्णपणे जगू शकतो.&#39;"
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": {
+            "english": "Unconditional Self-Acceptance",
+            "hindi": "बिना शर्त आत्म-स्वीकृति",
+            "marathi": "बिनशर्त स्व-स्वीकृती"
+          },
+          "description": {
+            "english": "Why it Helps: Counters guilt and shame tied to trauma. What to Do: Affirm self-worth regardless of past. Example: 'I made it through; I still have value.'",
+            "hindi": "यह क्यों मददगार है: आघात से जुड़े अपराधबोध और शर्मिंदगी को कम करता है। क्या करें: अतीत की परवाह किए बिना आत्म-मूल्य की पुष्टि करें। उदाहरण: &#39;मैंने इसे पार कर लिया; मेरा अभी भी मूल्य है।&#39;",
+            "marathi": "हे का मदत करते: आघाताशी संबंधित अपराधीपणा आणि लज्जेची भावना दूर करते. काय करावे: भूतकाळ काहीही असो, स्वतःचे मूल्य सिद्ध करा. उदाहरण: &#39;मी त्यातून बाहेर पडलो; माझ्याकडे अजूनही मूल्य आहे.&#39;"
+          }
+        },
+        {
+          "id": 4,
+          "xp": 6,
+          "title": {
+            "english": "Flexible Thinking About Triggers",
+            "hindi": "ट्रिगर्स के बारे में लचीली सोच",
+            "marathi": "ट्रिगर्सबद्दल लवचिक विचारसरणी"
+          },
+          "description": {
+            "english": "Why it Helps: Reduces avoidance behavior. What to Do: Change rigid belief 'I must avoid all reminders.' Example: 'I‚Äôd prefer avoiding them, but I can face them gradually.'",
+            "hindi": "यह क्यों मददगार है: टालने की आदत को कम करता है। क्या करें: इस दृढ़ विश्वास को बदलें कि &#39;मुझे सभी अनुस्मारकों से बचना चाहिए।&#39; उदाहरण: &#39;मैं उनसे बचना पसंद करूँगा, लेकिन मैं धीरे-धीरे उनका सामना कर सकता हूँ।&#39;",
+            "marathi": "हे का मदत करते: टाळाटाळ करण्याचे वर्तन कमी करते. काय करावे: &#39;मला सर्व आठवणी टाळाव्या लागतील&#39; हा कठोर विश्वास बदला. उदाहरण: &#39;मला ते टाळायला आवडेल, परंतु मी हळूहळू त्यांचा सामना करू शकतो.&#39;"
+          }
+        },
+        {
+          "id": 5,
+          "xp": 9,
+          "title": {
+            "english": "Dispute Catastrophic Thoughts",
+            "hindi": "विनाशकारी विचारों पर विवाद",
+            "marathi": "आपत्तीजनक विचारांवर वाद घाला"
+          },
+          "description": {
+            "english": "Why it Helps: Stops spiraling into unbearable conclusions. What to Do: Ask 'Is this the worst or can I cope?' Example: 'Flashbacks are unpleasant, but not dangerous.'",
+            "hindi": "यह क्यों मददगार है: असहनीय निष्कर्षों पर पहुँचने से रोकता है। क्या करें: पूछें, &#39;क्या यह सबसे बुरा है या मैं इससे निपट सकता हूँ?&#39; उदाहरण: &#39;फ़्लैशबैक अप्रिय होते हैं, लेकिन खतरनाक नहीं।&#39;",
+            "marathi": "हे का मदत करते: असह्य निष्कर्षांकडे वळणे थांबवते. काय करावे: विचारा &#39;हे सर्वात वाईट आहे की मी ते सहन करू शकतो?&#39; उदाहरण: &#39;फ्लॅशबॅक अप्रिय आहेत, परंतु धोकादायक नाहीत.&#39;"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 7,
+          "title": {
+            "english": "Promote Frustration Tolerance",
+            "hindi": "निराशा सहनशीलता को बढ़ावा दें",
+            "marathi": "निराशा सहनशीलतेला प्रोत्साहन द्या"
+          },
+          "description": {
+            "english": "Why it Helps: Builds patience to endure symptoms. What to Do: Teach coping statements. Example: 'This feeling is hard, but I can tolerate it until it passes.'",
+            "hindi": "यह क्यों मददगार है: लक्षणों को सहने के लिए धैर्य विकसित करता है। क्या करें: सामना करने के तरीके सिखाएँ। उदाहरण: &#39;यह एहसास कठिन है, लेकिन मैं इसे तब तक सहन कर सकता हूँ जब तक यह खत्म न हो जाए।&#39;",
+            "marathi": "हे का मदत करते: लक्षणे सहन करण्यासाठी संयम निर्माण करते. काय करावे: विधानांचा सामना करण्यास शिकवा. उदाहरण: &#39;ही भावना कठीण आहे, परंतु ती जाईपर्यंत मी ती सहन करू शकतो.&#39;"
+          }
+        },
+        {
+          "id": 7,
+          "xp": 8,
+          "title": {
+            "english": "Reframe Control Beliefs",
+            "hindi": "नियंत्रण विश्वासों को पुनर्परिभाषित करें",
+            "marathi": "नियंत्रण श्रद्धा पुन्हा तयार करा"
+          },
+          "description": {
+            "english": "Why it Helps: Prevents helplessness. What to Do: Replace 'I must control everything' with 'I can handle what is in my control.' Example: 'I cannot control noises, but I can control my breathing.'",
+            "hindi": "यह क्यों मददगार है: असहायता से बचाता है। क्या करें: &#39;मुझे सब कुछ नियंत्रित करना होगा&#39; के स्थान पर &#39;मैं वह सब संभाल सकता हूँ जो मेरे नियंत्रण में है&#39; रखें। उदाहरण: &#39;मैं शोर को नियंत्रित नहीं कर सकता, लेकिन मैं अपनी साँसों को नियंत्रित कर सकता हूँ।&#39;",
+            "marathi": "ते का मदत करते: असहाय्यता टाळते. काय करावे: &#39;मला सर्वकाही नियंत्रित करावे लागेल&#39; याऐवजी &#39;माझ्या नियंत्रणात असलेल्या गोष्टी मी हाताळू शकतो&#39; असे लिहा. उदाहरण: &#39;मी आवाज नियंत्रित करू शकत नाही, पण मी माझ्या श्वासांवर नियंत्रण ठेवू शकतो.&#39;"
+          }
+        },
+        {
+          "id": 8,
+          "xp": 7,
+          "title": {
+            "english": "Dispute Global Judgments",
+            "hindi": "विवाद वैश्विक निर्णय",
+            "marathi": "जागतिक निर्णयांवर विवाद करा"
+          },
+          "description": {
+            "english": "Why it Helps: Stops self-labeling as broken. What to Do: Focus on actions not identity. Example: 'I had trauma, but it does not mean I am permanently damaged.'",
+            "hindi": "यह क्यों मददगार है: खुद को टूटा हुआ मानने से रोकता है। क्या करें: पहचान पर नहीं, बल्कि कार्यों पर ध्यान केंद्रित करें। उदाहरण: &#39;मुझे आघात पहुँचा था, लेकिन इसका मतलब यह नहीं कि मैं हमेशा के लिए क्षतिग्रस्त हो गया हूँ।&#39;",
+            "marathi": "हे का मदत करते: स्वतःला तुटलेले म्हणून लेबल करणे थांबवते. काय करावे: ओळखीवर नाही तर कृतींवर लक्ष केंद्रित करा. उदाहरण: &#39;मला दुखापत झाली होती, पण याचा अर्थ असा नाही की मी कायमचे नुकसान झालो आहे.&#39;"
+          }
+        },
+        {
+          "id": 9,
+          "xp": 6,
+          "title": {
+            "english": "Rational Coping Self-Talk",
+            "hindi": "तर्कसंगत मुकाबला आत्म-चर्चा",
+            "marathi": "तर्कसंगत सामना स्वतःशी बोलणे"
+          },
+          "description": {
+            "english": "Why it Helps: Provides calm statements in anxious episodes. What to Do: Repeat rational phrases. Example: 'This is a memory, not a real threat right now.'",
+            "hindi": "यह क्यों मददगार है: चिंता के दौरों में शांति प्रदान करता है। क्या करें: तर्कसंगत वाक्यांशों को दोहराएँ। उदाहरण: &#39;यह एक याद है, अभी कोई वास्तविक ख़तरा नहीं है।&#39;",
+            "marathi": "हे का मदत करते: चिंताग्रस्त भागात शांत विधाने देते. काय करावे: तर्कसंगत वाक्ये पुन्हा सांगा. उदाहरण: &#39;ही एक आठवण आहे, सध्या खरा धोका नाही.&#39;"
+          }
+        },
+        {
+          "id": 10,
+          "xp": 5,
+          "title": {
+            "english": "Acceptance of Imperfection",
+            "hindi": "अपूर्णता की स्वीकृति",
+            "marathi": "अपूर्णतेचा स्वीकार"
+          },
+          "description": {
+            "english": "Why it Helps: Reduces pressure to recover perfectly. What to Do: Normalize ups and downs in healing. Example: 'It‚Äôs okay if progress is slow; healing is a process.'",
+            "hindi": "यह क्यों मददगार है: पूरी तरह से ठीक होने के दबाव को कम करता है। क्या करें: उपचार में उतार-चढ़ाव को सामान्य बनाएँ। उदाहरण: &#39;अगर प्रगति धीमी हो तो कोई बात नहीं; उपचार एक प्रक्रिया है।&#39;",
+            "marathi": "हे का मदत करते: पूर्णपणे बरे होण्यासाठी दबाव कमी करते. काय करावे: बरे होण्यात चढ-उतार सामान्य करा. उदाहरण: &#39;जर प्रगती मंद असेल तर ते ठीक आहे; बरे होणे ही एक प्रक्रिया आहे.&#39;"
+          }
+        }
+      ]
+    }
+  }
+}

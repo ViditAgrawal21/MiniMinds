@@ -1,0 +1,534 @@
+{
+  "condition": "Good Parenting",
+  "issueType": "General Issues",
+  "interventions": {
+    "commonSuggestions": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Establish Predictable Routines",
+            "hindi": "Establish Predictable Routines",
+            "marathi": "Establish Predictable Routines"
+          },
+          "description": {
+            "english": "Create simple morning/bedtime routines to reduce friction. How it works: Fewer decisions lower stress and tantrums. Example: Brush-teeth; story; lights-out at 9 pm daily.\"\"",
+            "hindi": "Create simple morning/bedtime routines to reduce friction. How it works: Fewer decisions lower stress and tantrums. Example: Brush-teeth; story; lights-out at 9 pm daily.\"\"",
+            "marathi": "Create simple morning/bedtime routines to reduce friction. How it works: Fewer decisions lower stress and tantrums. Example: Brush-teeth; story; lights-out at 9 pm daily.\"\""
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "One-on-One Time",
+            "hindi": "One-on-One Time",
+            "marathi": "One-on-One Time"
+          },
+          "description": {
+            "english": "Spend 10–15 minutes of undivided attention daily. How it works: Fills connection tank; reducing attention-seeking behavior. Example: Play a board game after dinner; phones away.\"\"",
+            "hindi": "Spend 10–15 minutes of undivided attention daily. How it works: Fills connection tank; reducing attention-seeking behavior. Example: Play a board game after dinner; phones away.\"\"",
+            "marathi": "Spend 10–15 minutes of undivided attention daily. How it works: Fills connection tank; reducing attention-seeking behavior. Example: Play a board game after dinner; phones away.\"\""
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Connect Before Correct",
+            "hindi": "Connect Before Correct",
+            "marathi": "Connect Before Correct"
+          },
+          "description": {
+            "english": "Acknowledge feelings first; then guide behavior. How it works: Validates emotion; keeps brain receptive. Example: \"\"\"\"You’re upset the tablet is off; let’s breathe; then we’ll set a timer.\"\"\"\"\"\"",
+            "hindi": "Acknowledge feelings first; then guide behavior. How it works: Validates emotion; keeps brain receptive. Example: \"\"\"\"You’re upset the tablet is off; let’s breathe; then we’ll set a timer.\"\"\"\"\"\"",
+            "marathi": "Acknowledge feelings first; then guide behavior. How it works: Validates emotion; keeps brain receptive. Example: \"\"\"\"You’re upset the tablet is off; let’s breathe; then we’ll set a timer.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Clear and Consistent Boundaries",
+            "hindi": "Clear and Consistent Boundaries",
+            "marathi": "Clear and Consistent Boundaries"
+          },
+          "description": {
+            "english": "State rules simply and follow through calmly. How it works: Predictability builds trust and safety. Example: \"\"\"\"Markers stay on paper. If they go on walls; markers rest until tomorrow.\"\"\"\"\"\"",
+            "hindi": "State rules simply and follow through calmly. How it works: Predictability builds trust and safety. Example: \"\"\"\"Markers stay on paper. If they go on walls; markers rest until tomorrow.\"\"\"\"\"\"",
+            "marathi": "State rules simply and follow through calmly. How it works: Predictability builds trust and safety. Example: \"\"\"\"Markers stay on paper. If they go on walls; markers rest until tomorrow.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Positive Reinforcement",
+            "hindi": "Positive Reinforcement",
+            "marathi": "Positive Reinforcement"
+          },
+          "description": {
+            "english": "Praise specific behaviors you want repeated. How it works: Attention strengthens desired actions. Example: \"\"\"\"I noticed you shared your toys—that was kind.\"\"\"\"\"\"",
+            "hindi": "Praise specific behaviors you want repeated. How it works: Attention strengthens desired actions. Example: \"\"\"\"I noticed you shared your toys—that was kind.\"\"\"\"\"\"",
+            "marathi": "Praise specific behaviors you want repeated. How it works: Attention strengthens desired actions. Example: \"\"\"\"I noticed you shared your toys—that was kind.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Calm-Down Corner",
+            "hindi": "Calm-Down Corner",
+            "marathi": "Calm-Down Corner"
+          },
+          "description": {
+            "english": "Designate a quiet spot with calming items. How it works: Teaches self-regulation skills. Example: A basket with a soft toy; coloring pages; and a timer.\"\"",
+            "hindi": "Designate a quiet spot with calming items. How it works: Teaches self-regulation skills. Example: A basket with a soft toy; coloring pages; and a timer.\"\"",
+            "marathi": "Designate a quiet spot with calming items. How it works: Teaches self-regulation skills. Example: A basket with a soft toy; coloring pages; and a timer.\"\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 4,
+          "title": {
+            "english": "Family Meetings",
+            "hindi": "Family Meetings",
+            "marathi": "Family Meetings"
+          },
+          "description": {
+            "english": "Weekly 15–20 minute check-in for plans and feelings. How it works: Builds communication and problem-solving. Example: Each person shares a win; a worry; and a wish.\"\"",
+            "hindi": "Weekly 15–20 minute check-in for plans and feelings. How it works: Builds communication and problem-solving. Example: Each person shares a win; a worry; and a wish.\"\"",
+            "marathi": "Weekly 15–20 minute check-in for plans and feelings. How it works: Builds communication and problem-solving. Example: Each person shares a win; a worry; and a wish.\"\""
+          }
+        },
+        {
+          "id": 8,
+          "xp": 3,
+          "title": {
+            "english": "Device Rules and Tech Hygiene",
+            "hindi": "Device Rules and Tech Hygiene",
+            "marathi": "Device Rules and Tech Hygiene"
+          },
+          "description": {
+            "english": "Set screen limits and no-device zones/times. How it works: Reduces conflict and improves sleep. Example: No phones at meals; chargers stay in kitchen overnight.\"\"",
+            "hindi": "Set screen limits and no-device zones/times. How it works: Reduces conflict and improves sleep. Example: No phones at meals; chargers stay in kitchen overnight.\"\"",
+            "marathi": "Set screen limits and no-device zones/times. How it works: Reduces conflict and improves sleep. Example: No phones at meals; chargers stay in kitchen overnight.\"\""
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Model the Behavior",
+            "hindi": "Model the Behavior",
+            "marathi": "Model the Behavior"
+          },
+          "description": {
+            "english": "Demonstrate respect; apologies; and coping skills. How it works: Kids imitate what they see. Example: \"\"\"\"I’m frustrated—taking three breaths before we talk.\"\"\"\"\"\"",
+            "hindi": "Demonstrate respect; apologies; and coping skills. How it works: Kids imitate what they see. Example: \"\"\"\"I’m frustrated—taking three breaths before we talk.\"\"\"\"\"\"",
+            "marathi": "Demonstrate respect; apologies; and coping skills. How it works: Kids imitate what they see. Example: \"\"\"\"I’m frustrated—taking three breaths before we talk.\"\"\"\"\"\""
+          }
+        }
+      ]
+    },
+    "relaxation": {
+      "type": "Secondary",
+      "interventionSubType": "Relaxation",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 5,
+          "title": {
+            "english": "Box Breathing Reset (Parent Pause)",
+            "hindi": "Box Breathing Reset (Parent Pause)",
+            "marathi": "Box Breathing Reset (Parent Pause)"
+          },
+          "description": {
+            "english": "Why it helps: Quickly lowers arousal so you can respond calmly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 1–3 minutes before addressing behavior. Example: Step into hallway; 6 cycles; return with softer tone.\"\"",
+            "hindi": "Why it helps: Quickly lowers arousal so you can respond calmly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 1–3 minutes before addressing behavior. Example: Step into hallway; 6 cycles; return with softer tone.\"\"",
+            "marathi": "Why it helps: Quickly lowers arousal so you can respond calmly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 1–3 minutes before addressing behavior. Example: Step into hallway; 6 cycles; return with softer tone.\"\""
+          }
+        },
+        {
+          "id": 2,
+          "xp": 6,
+          "title": {
+            "english": "Progressive Muscle Relaxation (Mini-PMR)",
+            "hindi": "Progressive Muscle Relaxation (Mini-PMR)",
+            "marathi": "Progressive Muscle Relaxation (Mini-PMR)"
+          },
+          "description": {
+            "english": "Why it helps: Releases muscle tension that fuels irritability. What to do: Tense shoulders/hands 5s; release 10s; repeat 5 rounds. Example: Do at the sink before giving instructions.\"\"",
+            "hindi": "Why it helps: Releases muscle tension that fuels irritability. What to do: Tense shoulders/hands 5s; release 10s; repeat 5 rounds. Example: Do at the sink before giving instructions.\"\"",
+            "marathi": "Why it helps: Releases muscle tension that fuels irritability. What to do: Tense shoulders/hands 5s; release 10s; repeat 5 rounds. Example: Do at the sink before giving instructions.\"\""
+          }
+        },
+        {
+          "id": 3,
+          "xp": 7,
+          "title": {
+            "english": "5-4-3-2-1 Grounding with Child",
+            "hindi": "5-4-3-2-1 Grounding with Child",
+            "marathi": "5-4-3-2-1 Grounding with Child"
+          },
+          "description": {
+            "english": "Why it helps: Co-regulates you and your child during meltdowns. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste together. Example: Sit on rug and do the list before problem-solving.\"\"",
+            "hindi": "Why it helps: Co-regulates you and your child during meltdowns. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste together. Example: Sit on rug and do the list before problem-solving.\"\"",
+            "marathi": "Why it helps: Co-regulates you and your child during meltdowns. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste together. Example: Sit on rug and do the list before problem-solving.\"\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Extended Exhale Breathing 4-6",
+            "hindi": "Extended Exhale Breathing 4-6",
+            "marathi": "Extended Exhale Breathing 4-6"
+          },
+          "description": {
+            "english": "Why it helps: Activates the parasympathetic system for patience. What to do: Inhale 4s; exhale 6s for 3–5 minutes. Example: Use during homework resistance to keep voice steady.\"\"",
+            "hindi": "Why it helps: Activates the parasympathetic system for patience. What to do: Inhale 4s; exhale 6s for 3–5 minutes. Example: Use during homework resistance to keep voice steady.\"\"",
+            "marathi": "Why it helps: Activates the parasympathetic system for patience. What to do: Inhale 4s; exhale 6s for 3–5 minutes. Example: Use during homework resistance to keep voice steady.\"\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 6,
+          "title": {
+            "english": "Calming Ritual Cue (Tea + Soft Light)",
+            "hindi": "Calming Ritual Cue (Tea + Soft Light)",
+            "marathi": "Calming Ritual Cue (Tea + Soft Light)"
+          },
+          "description": {
+            "english": "Why it helps: Predictable routine signals wind-down for everyone. What to do: Dim lights; warm drink; low-volume music for 10 minutes pre-bed. Example: Start after dinner to reduce bedtime battles.\"\"",
+            "hindi": "Why it helps: Predictable routine signals wind-down for everyone. What to do: Dim lights; warm drink; low-volume music for 10 minutes pre-bed. Example: Start after dinner to reduce bedtime battles.\"\"",
+            "marathi": "Why it helps: Predictable routine signals wind-down for everyone. What to do: Dim lights; warm drink; low-volume music for 10 minutes pre-bed. Example: Start after dinner to reduce bedtime battles.\"\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Guided Imagery Safe Place",
+            "hindi": "Guided Imagery Safe Place",
+            "marathi": "Guided Imagery Safe Place"
+          },
+          "description": {
+            "english": "Why it helps: Creates mental space from frustration. What to do: Close eyes; visualize a calm location with 3 sensory details per sense for 3 minutes. Example: Picture a quiet beach before re-entering the room.\"\"",
+            "hindi": "Why it helps: Creates mental space from frustration. What to do: Close eyes; visualize a calm location with 3 sensory details per sense for 3 minutes. Example: Picture a quiet beach before re-entering the room.\"\"",
+            "marathi": "Why it helps: Creates mental space from frustration. What to do: Close eyes; visualize a calm location with 3 sensory details per sense for 3 minutes. Example: Picture a quiet beach before re-entering the room.\"\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 5,
+          "title": {
+            "english": "Soothing Self-Talk Script",
+            "hindi": "Soothing Self-Talk Script",
+            "marathi": "Soothing Self-Talk Script"
+          },
+          "description": {
+            "english": "Why it helps: Reduces self-criticism that escalates reactivity. What to do: Repeat a prepared statement slowly. Example: “I can be firm and kind. This is hard and temporary. We’ll get through it.”\"\"",
+            "hindi": "Why it helps: Reduces self-criticism that escalates reactivity. What to do: Repeat a prepared statement slowly. Example: “I can be firm and kind. This is hard and temporary. We’ll get through it.”\"\"",
+            "marathi": "Why it helps: Reduces self-criticism that escalates reactivity. What to do: Repeat a prepared statement slowly. Example: “I can be firm and kind. This is hard and temporary. We’ll get through it.”\"\""
+          }
+        },
+        {
+          "id": 8,
+          "xp": 7,
+          "title": {
+            "english": "Joint Calm-Down Corner",
+            "hindi": "Joint Calm-Down Corner",
+            "marathi": "Joint Calm-Down Corner"
+          },
+          "description": {
+            "english": "Why it helps: Models emotion regulation and co-regulation. What to do: Set a space with pillows; sensory toys; and a visual breath card; sit together for 5 minutes. Example: Use after sibling conflict before discussing repair.\"\"",
+            "hindi": "Why it helps: Models emotion regulation and co-regulation. What to do: Set a space with pillows; sensory toys; and a visual breath card; sit together for 5 minutes. Example: Use after sibling conflict before discussing repair.\"\"",
+            "marathi": "Why it helps: Models emotion regulation and co-regulation. What to do: Set a space with pillows; sensory toys; and a visual breath card; sit together for 5 minutes. Example: Use after sibling conflict before discussing repair.\"\""
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Mindful Walking Micro-Break",
+            "hindi": "Mindful Walking Micro-Break",
+            "marathi": "Mindful Walking Micro-Break"
+          },
+          "description": {
+            "english": "Why it helps: Short movement disperses stress hormones. What to do: Walk 3–5 minutes; match steps to breath; notice 3 details per minute. Example: Loop the hallway before addressing a mess.\"\"",
+            "hindi": "Why it helps: Short movement disperses stress hormones. What to do: Walk 3–5 minutes; match steps to breath; notice 3 details per minute. Example: Loop the hallway before addressing a mess.\"\"",
+            "marathi": "Why it helps: Short movement disperses stress hormones. What to do: Walk 3–5 minutes; match steps to breath; notice 3 details per minute. Example: Loop the hallway before addressing a mess.\"\""
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Tertiary",
+      "interventionSubType": "CBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 6,
+          "title": {
+            "english": "Behavioral Definition of Goals",
+            "hindi": "Behavioral Definition of Goals",
+            "marathi": "Behavioral Definition of Goals"
+          },
+          "description": {
+            "english": "Why it helps: Clear; observable goals reduce confusion and frustration. What to do: Define behaviors in specific; measurable terms. Example: \"\"\"\"Bedtime routine starts at 8:30; three steps: brush; story; lights out.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Clear; observable goals reduce confusion and frustration. What to do: Define behaviors in specific; measurable terms. Example: \"\"\"\"Bedtime routine starts at 8:30; three steps: brush; story; lights out.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Clear; observable goals reduce confusion and frustration. What to do: Define behaviors in specific; measurable terms. Example: \"\"\"\"Bedtime routine starts at 8:30; three steps: brush; story; lights out.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 2,
+          "xp": 7,
+          "title": {
+            "english": "Antecedent Planning (A in ABC)",
+            "hindi": "Antecedent Planning (A in ABC)",
+            "marathi": "Antecedent Planning (A in ABC)"
+          },
+          "description": {
+            "english": "Why it helps: Adjusting cues prevents problem behaviors. What to do: Modify triggers—timers; visual schedules; transitions. Example: 5‑minute timer before cleanup; picture chart on the wall.\"\"",
+            "hindi": "Why it helps: Adjusting cues prevents problem behaviors. What to do: Modify triggers—timers; visual schedules; transitions. Example: 5‑minute timer before cleanup; picture chart on the wall.\"\"",
+            "marathi": "Why it helps: Adjusting cues prevents problem behaviors. What to do: Modify triggers—timers; visual schedules; transitions. Example: 5‑minute timer before cleanup; picture chart on the wall.\"\""
+          }
+        },
+        {
+          "id": 3,
+          "xp": 6,
+          "title": {
+            "english": "Positive Reinforcement Plan",
+            "hindi": "Positive Reinforcement Plan",
+            "marathi": "Positive Reinforcement Plan"
+          },
+          "description": {
+            "english": "Why it helps: Desired behaviors increase when rewarded. What to do: Praise and small rewards for specific actions. Example: \"\"\"\"You put toys in the bin—high five! Sticker added to chart.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Desired behaviors increase when rewarded. What to do: Praise and small rewards for specific actions. Example: \"\"\"\"You put toys in the bin—high five! Sticker added to chart.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Desired behaviors increase when rewarded. What to do: Praise and small rewards for specific actions. Example: \"\"\"\"You put toys in the bin—high five! Sticker added to chart.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Behavioral Activation for Parents",
+            "hindi": "Behavioral Activation for Parents",
+            "marathi": "Behavioral Activation for Parents"
+          },
+          "description": {
+            "english": "Why it helps: Reduces parental burnout that fuels reactivity. What to do: Schedule brief joy/mastery activities. Example: 10‑minute walk after dinner; prepare lunch the night before.\"\"",
+            "hindi": "Why it helps: Reduces parental burnout that fuels reactivity. What to do: Schedule brief joy/mastery activities. Example: 10‑minute walk after dinner; prepare lunch the night before.\"\"",
+            "marathi": "Why it helps: Reduces parental burnout that fuels reactivity. What to do: Schedule brief joy/mastery activities. Example: 10‑minute walk after dinner; prepare lunch the night before.\"\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 8,
+          "title": {
+            "english": "Thought Record for Hot Moments",
+            "hindi": "Thought Record for Hot Moments",
+            "marathi": "Thought Record for Hot Moments"
+          },
+          "description": {
+            "english": "Why it helps: Challenges unhelpful automatic thoughts driving harsh responses. What to do: Note situation; thought; evidence; balanced thought. Example: \"\"\"\"They never listen\"\"\"\" → \"\"\"\"They listened yesterday when I knelt and spoke calmly.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Challenges unhelpful automatic thoughts driving harsh responses. What to do: Note situation; thought; evidence; balanced thought. Example: \"\"\"\"They never listen\"\"\"\" → \"\"\"\"They listened yesterday when I knelt and spoke calmly.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Challenges unhelpful automatic thoughts driving harsh responses. What to do: Note situation; thought; evidence; balanced thought. Example: \"\"\"\"They never listen\"\"\"\" → \"\"\"\"They listened yesterday when I knelt and spoke calmly.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 7,
+          "title": {
+            "english": "Calm-Down Routine (STOP Skill)",
+            "hindi": "Calm-Down Routine (STOP Skill)",
+            "marathi": "Calm-Down Routine (STOP Skill)"
+          },
+          "description": {
+            "english": "Why it helps: Lowers physiological arousal before responding. What to do: Stop; Take a breath; Observe; Proceed. Example: Step away 60 seconds; 4‑6 breathing; then give one clear instruction.\"\"",
+            "hindi": "Why it helps: Lowers physiological arousal before responding. What to do: Stop; Take a breath; Observe; Proceed. Example: Step away 60 seconds; 4‑6 breathing; then give one clear instruction.\"\"",
+            "marathi": "Why it helps: Lowers physiological arousal before responding. What to do: Stop; Take a breath; Observe; Proceed. Example: Step away 60 seconds; 4‑6 breathing; then give one clear instruction.\"\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 6,
+          "title": {
+            "english": "Shaping and Successive Approximations",
+            "hindi": "Shaping and Successive Approximations",
+            "marathi": "Shaping and Successive Approximations"
+          },
+          "description": {
+            "english": "Why it helps: Builds complex skills gradually. What to do: Reinforce small steps toward the target behavior. Example: Praise \"\"\"\"put shirt in hamper\"\"\"\" on week 1; expand to full room tidy by week 3.\"\"",
+            "hindi": "Why it helps: Builds complex skills gradually. What to do: Reinforce small steps toward the target behavior. Example: Praise \"\"\"\"put shirt in hamper\"\"\"\" on week 1; expand to full room tidy by week 3.\"\"",
+            "marathi": "Why it helps: Builds complex skills gradually. What to do: Reinforce small steps toward the target behavior. Example: Praise \"\"\"\"put shirt in hamper\"\"\"\" on week 1; expand to full room tidy by week 3.\"\""
+          }
+        },
+        {
+          "id": 8,
+          "xp": 7,
+          "title": {
+            "english": "Effective Instructions and One-Step Commands",
+            "hindi": "Effective Instructions and One-Step Commands",
+            "marathi": "Effective Instructions and One-Step Commands"
+          },
+          "description": {
+            "english": "Why it helps: Reduces defiance due to overload. What to do: Get eye level; state one specific action; wait 5–10 seconds. Example: \"\"\"\"Please put the red blocks in the bin; then we’ll read.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Reduces defiance due to overload. What to do: Get eye level; state one specific action; wait 5–10 seconds. Example: \"\"\"\"Please put the red blocks in the bin; then we’ll read.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Reduces defiance due to overload. What to do: Get eye level; state one specific action; wait 5–10 seconds. Example: \"\"\"\"Please put the red blocks in the bin; then we’ll read.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 9,
+          "xp": 6,
+          "title": {
+            "english": "Token/Point System (Time-Limited)",
+            "hindi": "Token/Point System (Time-Limited)",
+            "marathi": "Token/Point System (Time-Limited)"
+          },
+          "description": {
+            "english": "Why it helps: Structures consistency and motivation. What to do: Earn tokens for target behaviors; trade for privileges; review weekly. Example: 5 tokens → choose Friday movie.\"\"",
+            "hindi": "Why it helps: Structures consistency and motivation. What to do: Earn tokens for target behaviors; trade for privileges; review weekly. Example: 5 tokens → choose Friday movie.\"\"",
+            "marathi": "Why it helps: Structures consistency and motivation. What to do: Earn tokens for target behaviors; trade for privileges; review weekly. Example: 5 tokens → choose Friday movie.\"\""
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Tertiary",
+      "interventionSubType": "REBT Interventions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 6,
+          "title": {
+            "english": "Clarify Parental Beliefs (A-B-C)",
+            "hindi": "Clarify Parental Beliefs (A-B-C)",
+            "marathi": "Clarify Parental Beliefs (A-B-C)"
+          },
+          "description": {
+            "english": "Why it helps: Reveals rigid demands that trigger yelling or inconsistency. What to do: Note Activating event (A); Belief (B); Consequence (C). Example: A: toy mess; B: \"\"\"\"Kids must obey instantly\"\"\"\"; C: anger 8/10.\"\"",
+            "hindi": "Why it helps: Reveals rigid demands that trigger yelling or inconsistency. What to do: Note Activating event (A); Belief (B); Consequence (C). Example: A: toy mess; B: \"\"\"\"Kids must obey instantly\"\"\"\"; C: anger 8/10.\"\"",
+            "marathi": "Why it helps: Reveals rigid demands that trigger yelling or inconsistency. What to do: Note Activating event (A); Belief (B); Consequence (C). Example: A: toy mess; B: \"\"\"\"Kids must obey instantly\"\"\"\"; C: anger 8/10.\"\""
+          }
+        },
+        {
+          "id": 2,
+          "xp": 7,
+          "title": {
+            "english": "Dispute Rigid Musts",
+            "hindi": "Dispute Rigid Musts",
+            "marathi": "Dispute Rigid Musts"
+          },
+          "description": {
+            "english": "Why it helps: Softens perfectionism and reduces reactivity. What to do: Challenge \"\"\"\"must/should/always\"\"\"\" with logic; evidence; and usefulness. Example: \"\"\"\"Kids must be quiet\"\"\"\" → Not realistic; teaching voice levels works better.\"\"",
+            "hindi": "Why it helps: Softens perfectionism and reduces reactivity. What to do: Challenge \"\"\"\"must/should/always\"\"\"\" with logic; evidence; and usefulness. Example: \"\"\"\"Kids must be quiet\"\"\"\" → Not realistic; teaching voice levels works better.\"\"",
+            "marathi": "Why it helps: Softens perfectionism and reduces reactivity. What to do: Challenge \"\"\"\"must/should/always\"\"\"\" with logic; evidence; and usefulness. Example: \"\"\"\"Kids must be quiet\"\"\"\" → Not realistic; teaching voice levels works better.\"\""
+          }
+        },
+        {
+          "id": 3,
+          "xp": 6,
+          "title": {
+            "english": "Create Flexible Preferences",
+            "hindi": "Create Flexible Preferences",
+            "marathi": "Create Flexible Preferences"
+          },
+          "description": {
+            "english": "Why it helps: Rational alternatives lower stress and improve coaching. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer quick cleanup; but I can coach step-by-step without losing it.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Rational alternatives lower stress and improve coaching. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer quick cleanup; but I can coach step-by-step without losing it.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Rational alternatives lower stress and improve coaching. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer quick cleanup; but I can coach step-by-step without losing it.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 4,
+          "xp": 5,
+          "title": {
+            "english": "Unconditional Self-Acceptance (USA)",
+            "hindi": "Unconditional Self-Acceptance (USA)",
+            "marathi": "Unconditional Self-Acceptance (USA)"
+          },
+          "description": {
+            "english": "Why it helps: Cuts shame after mistakes so repair is possible. What to do: Separate worth from one bad moment; plan repair. Example: \"\"\"\"I yelled; I’m still a caring parent—I'll apologize and reset.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Cuts shame after mistakes so repair is possible. What to do: Separate worth from one bad moment; plan repair. Example: \"\"\"\"I yelled; I’m still a caring parent—I'll apologize and reset.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Cuts shame after mistakes so repair is possible. What to do: Separate worth from one bad moment; plan repair. Example: \"\"\"\"I yelled; I’m still a caring parent—I'll apologize and reset.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 5,
+          "xp": 7,
+          "title": {
+            "english": "Unconditional Other-Acceptance (UOA) for Kids",
+            "hindi": "Unconditional Other-Acceptance (UOA) for Kids",
+            "marathi": "Unconditional Other-Acceptance (UOA) for Kids"
+          },
+          "description": {
+            "english": "Why it helps: Reduces labeling the child as \"\"\"\"bad;\"\"\"\" enabling skill-teaching. What to do: View behavior as skills need; not character flaw. Example: \"\"\"\"They’re learning transitions; we’ll practice timers.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Reduces labeling the child as \"\"\"\"bad;\"\"\"\" enabling skill-teaching. What to do: View behavior as skills need; not character flaw. Example: \"\"\"\"They’re learning transitions; we’ll practice timers.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Reduces labeling the child as \"\"\"\"bad;\"\"\"\" enabling skill-teaching. What to do: View behavior as skills need; not character flaw. Example: \"\"\"\"They’re learning transitions; we’ll practice timers.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 6,
+          "xp": 6,
+          "title": {
+            "english": "Low Frustration Tolerance Training",
+            "hindi": "Low Frustration Tolerance Training",
+            "marathi": "Low Frustration Tolerance Training"
+          },
+          "description": {
+            "english": "Why it helps: Increases patience during chaos. What to do: Rehearse toleration lines: \"\"\"\"It’s hard; not unbearable; I can handle 5 more minutes.\"\"\"\" Example: Stay calm through a tantrum with paced breathing.\"\"",
+            "hindi": "Why it helps: Increases patience during chaos. What to do: Rehearse toleration lines: \"\"\"\"It’s hard; not unbearable; I can handle 5 more minutes.\"\"\"\" Example: Stay calm through a tantrum with paced breathing.\"\"",
+            "marathi": "Why it helps: Increases patience during chaos. What to do: Rehearse toleration lines: \"\"\"\"It’s hard; not unbearable; I can handle 5 more minutes.\"\"\"\" Example: Stay calm through a tantrum with paced breathing.\"\""
+          }
+        },
+        {
+          "id": 7,
+          "xp": 7,
+          "title": {
+            "english": "Consequences Reality Check",
+            "hindi": "Consequences Reality Check",
+            "marathi": "Consequences Reality Check"
+          },
+          "description": {
+            "english": "Why it helps: Prevents impulsive punishments that backfire. What to do: Ask: Does this teach or just vent? Short vs long-term outcomes. Example: Taking all toys vs teaching \"\"\"\"clean one bin now.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Prevents impulsive punishments that backfire. What to do: Ask: Does this teach or just vent? Short vs long-term outcomes. Example: Taking all toys vs teaching \"\"\"\"clean one bin now.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Prevents impulsive punishments that backfire. What to do: Ask: Does this teach or just vent? Short vs long-term outcomes. Example: Taking all toys vs teaching \"\"\"\"clean one bin now.\"\"\"\"\"\""
+          }
+        },
+        {
+          "id": 8,
+          "xp": 6,
+          "title": {
+            "english": "ABC Diary with Repair Step",
+            "hindi": "ABC Diary with Repair Step",
+            "marathi": "ABC Diary with Repair Step"
+          },
+          "description": {
+            "english": "Why it helps: Builds awareness and course-correction. What to do: Log A-B-C; then D (dispute) and E (effective new action) + repair. Example: A: sibling fight; D: \"\"\"\"Kids don’t have to be perfect\"\"\"\"; E: coach turn-taking + apology.\"\"",
+            "hindi": "Why it helps: Builds awareness and course-correction. What to do: Log A-B-C; then D (dispute) and E (effective new action) + repair. Example: A: sibling fight; D: \"\"\"\"Kids don’t have to be perfect\"\"\"\"; E: coach turn-taking + apology.\"\"",
+            "marathi": "Why it helps: Builds awareness and course-correction. What to do: Log A-B-C; then D (dispute) and E (effective new action) + repair. Example: A: sibling fight; D: \"\"\"\"Kids don’t have to be perfect\"\"\"\"; E: coach turn-taking + apology.\"\""
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Implementation Intentions for Hot Moments",
+            "hindi": "Implementation Intentions for Hot Moments",
+            "marathi": "Implementation Intentions for Hot Moments"
+          },
+          "description": {
+            "english": "Why it helps: Pre-commits calm actions under stress. What to do: IF-THEN plan. Example: \"\"\"\"If I feel volume rising; then I step away 60 seconds; sip water; return with one instruction.\"\"\"\"\"\"",
+            "hindi": "Why it helps: Pre-commits calm actions under stress. What to do: IF-THEN plan. Example: \"\"\"\"If I feel volume rising; then I step away 60 seconds; sip water; return with one instruction.\"\"\"\"\"\"",
+            "marathi": "Why it helps: Pre-commits calm actions under stress. What to do: IF-THEN plan. Example: \"\"\"\"If I feel volume rising; then I step away 60 seconds; sip water; return with one instruction.\"\"\"\"\"\""
+          }
+        }
+      ]
+    }
+  }
+}
