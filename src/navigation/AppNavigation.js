@@ -65,7 +65,7 @@ import StressScreen from '@/screens/main/MindTools/StressScreen';
 import InternetSocialMediaScreen from '@/screens/main/MindTools/InternetSocialMediaScreen';
 import FamilyRelationshipScreen from '@/screens/main/MindTools/FamilyRelationshipScreen';
 import SleepScreen from '@/screens/main/MindTools/SleepScreen';
-import SuicidalBehaviourScreen from '@/screens/main/MindTools/SuicidalBehaviourScreen';
+import SuicidalBehaviourScreen from '@/screens/main/MindTools/Miniminds Screen/SuicidalBehaviourScreen';
 
 // Import Insights Sleep Tracking Screen
 import SleepTrackingScreen from '@/screens/main/sleepScreen';

@@ -9077,6 +9077,26 @@
         "title": "Self‑harm Behaviour",
         "description": "Understanding self‑harm, safety planning, and supportive strategies"
       },
+      "academicStress": {
+        "title": "Academic Stress",
+        "description": "Manage exam pressure, expectations, and study‑related anxiety"
+      },
+      "specialNeeds": {
+        "title": "Dealing with children of special Needs",
+        "description": "Support strategies for children with additional needs"
+      },
+      "goodParenting": {
+        "title": "Good Parenting",
+        "description": "Build nurturing routines and positive parenting skills"
+      },
+      "lonelinessAndDepression": {
+        "title": "Loneliness & Depression",
+        "description": "Recognise signs of low mood and practical steps to reconnect"
+      },
+      "anxietyIssues": {
+        "title": "Anxiety issues",
+        "description": "Tools for panic, phobias, PTSD triggers and panic symptoms"
+      },
       "bunkingscreen": {
         "title": "Bunking (Skipping School)",
         "description": "Understand reasons for skipping classes and find constructive ways to re-engage"
@@ -9176,6 +9196,80 @@
     },
     "alertTitle": "Important",
     "alertText": "If you or someone is in immediate danger, contact local emergency services or a crisis line. This content is for educational support; seek professional help when needed."
+  },
+  "academicStressScreen": {
+    "headerTitle": "Academic Stress",
+    "imageLabel": "Study wellbeing",
+    "title": "Coping with academic stress",
+    "description": "Practical tips to reduce study pressure, manage time, and handle exam anxiety.",
+    "symptomsTitle": "Common signs",
+    "symptoms": {
+      "overwhelm": "Feeling overwhelmed by workload",
+      "sleepIssues": "Sleep disturbances"
+    },
+    "supportStrategiesTitle": "Helpful strategies",
+    "viewStrategyButton": "View strategy",
+    "strategies": {
+      "commonSuggestions": { "title": "10 Common Suggestions", "description": "Planning, breaks, and simple self-care to reduce pressure." },
+      "yoga": { "title": "Yoga & Breath", "description": "Short grounding movements to calm nerves." },
+      "relaxation": { "title": "Relaxation", "description": "Quick relaxation exercises to reduce arousal." },
+      "cbt": { "title": "CBT (Cognitive Behavioral Therapy)", "description": "Address catastrophic thinking and build study plans." },
+      "rebt": { "title": "REBT (Rational Emotive Behavior Therapy)", "description": "Challenge unhelpful beliefs about performance." }
+    },
+    "alertTitle": "Note",
+    "alertText": "If stress affects daily function or mood significantly, seek professional support."
+  },
+  "specialNeedsScreen": {
+    "headerTitle": "Children with Special Needs",
+    "imageLabel": "Support & care",
+    "title": "Supporting children with special needs",
+    "description": "Practical strategies for caregiving, routines, and school support.",
+    "symptomsTitle": "Common challenges",
+    "symptoms": { "challenges": "Communication, sensory needs, and routine disruptions" },
+    "supportStrategiesTitle": "Support strategies",
+    "viewStrategyButton": "View strategy",
+    "strategies": { "commonSuggestions": { "title": "Practical tips", "description": "Daily routines, school collaboration, and calm parenting." } },
+    "alertTitle": "Note",
+    "alertText": "For complex needs, consider specialist assessment and multi-disciplinary support."
+  },
+  "goodParentingScreen": {
+    "headerTitle": "Good Parenting",
+    "imageLabel": "Nurturing care",
+    "title": "Practical parenting support",
+    "description": "Evidence-based tips to build secure attachments and consistent routines.",
+    "symptomsTitle": "Common challenges",
+    "symptoms": { "commonChallenges": "Setting boundaries, consistent routines, and emotional coaching" },
+    "supportStrategiesTitle": "Parenting strategies",
+    "viewStrategyButton": "View strategy",
+    "strategies": { "commonSuggestions": { "title": "Parenting tips", "description": "Simple steps to improve daily interactions and child wellbeing." } },
+    "alertTitle": "Note",
+    "alertText": "Parenting support complements professional help when behaviour concerns persist."
+  },
+  "lonelinessAndDepressionScreen": {
+    "headerTitle": "Loneliness & Depression",
+    "imageLabel": "Connection",
+    "title": "Supporting loneliness and low mood",
+    "description": "Recognise signs of depression and practical steps to rebuild social contact and daily structure.",
+    "symptomsTitle": "Common signs",
+    "symptoms": { "isolation": "Withdrawing from others and activities" },
+    "supportStrategiesTitle": "Helpful steps",
+    "viewStrategyButton": "View strategy",
+    "strategies": { "commonSuggestions": { "title": "Reconnect steps", "description": "Small social goals, scheduling activities and seeking support." } },
+    "alertTitle": "Important",
+    "alertText": "If someone is at risk or has suicidal thoughts, contact a crisis line or professional immediately."
+  },
+  "anxietyIssuesScreen": {
+    "headerTitle": "Anxiety Issues",
+    "imageLabel": "Calm & steady",
+    "title": "Understanding and managing anxiety",
+    "description": "Techniques to cope with panic, phobias, PTSD triggers and conversion symptoms.",
+    "symptomsTitle": "Common signs",
+    "symptoms": { "panic": "Sudden intense fear or panic attacks" },
+    "supportStrategiesTitle": "Helpful strategies",
+    "viewStrategyButton": "View strategy",
+    "strategies": { "commonSuggestions": { "title": "Anxiety tips", "description": "Breathing, grounding and structured exposure planning." } },
+    "alertTitle": "Note",
+    "alertText": "If anxiety is severe or disabling, seek assessment from a mental health professional."
   },
   "eatingHabitScreen": {
     "headerTitle": "Eating Habits",

@@ -1124,6 +1124,68 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       }
     }
 
+    // Handle Suicidal Behaviour data from comprehensive JSON file
+    if (condition === "suicidal-behavior") {
+      try {
+        const data = require("../../../../assets/data/behaviour/Suicidal_Behaviour_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.commonSuggestions?.cards || data?.interventions?.commonSuggestions || data?.interventions?.common_suggestions || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Suicidal Behaviour data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            };
+          }
+
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title = (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) || (typeof titleObj === "string" ? titleObj : "");
+          const description = (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) || (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          };
+        });
+
+        return {
+          metadata: {
+            condition: "suicidal-behavior",
+            intervention_type: "10 Common Suggestions",
+            total_interventions: interventions.length,
+          },
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Suicidal Behaviour common suggestions data:", error);
+        return null;
+      }
+    }
+
     // Check if we have translations for this condition
     const translationKeyMap: { [key: string]: string } = {
       "anger-management": "angerManagement",

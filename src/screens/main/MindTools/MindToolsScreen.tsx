@@ -68,6 +68,11 @@ type RootStackParamList = {
   TraumaLossAndDreamsScreen: undefined;
   BullyingScreen: undefined;
   SelfHarmBehaviourScreen: undefined;
+  AcademicStressScreen: undefined;
+  SpecialNeedsScreen: undefined;
+  GoodParentingScreen: undefined;
+  LonelinessAndDepressionScreen: undefined;
+  AnxietyIssuesScreen: undefined;
   BunkingScreen: undefined;
   LearningDisabilityScreen: undefined;
   UnrealisticBeautyStandardsScreen: undefined;
@@ -239,117 +244,145 @@ export default function MindToolsScreen() {
     // }
 
     // User has access, proceed with navigation
+    const navigateToRoute = (routeName: string, params?: any) => {
+      // climb navigator hierarchy to find a navigator that knows this route
+      let navRef: any = navigation as any;
+      while (navRef) {
+        try {
+          const state = typeof navRef.getState === "function" ? navRef.getState() : null;
+          if (state && Array.isArray(state.routeNames) && state.routeNames.includes(routeName)) {
+            navRef.navigate(routeName, params);
+            return;
+          }
+        } catch (e) {
+          // ignore and continue climbing
+        }
+        navRef = typeof navRef.getParent === "function" ? navRef.getParent() : null;
+      }
+
+      // fallback: try the original navigation (may still error but we've tried)
+      try {
+        (navigation as any).navigate(routeName, params);
+      } catch (e) {
+        console.warn(`Failed to navigate to ${routeName}:`, e);
+        Alert.alert(
+          t("mindToolsScreen.navigation"),
+          t("mindToolsScreen.navigateTo", { categoryName }),
+        );
+      }
+    };
+
     switch (categoryName) {
       case "Anger Management":
-        navigation.navigate("AngerManagementScreen");
+        navigateToRoute("AngerManagementScreen");
         break;
       case "Stress":
-        navigation.navigate("StressScreen");
+        navigateToRoute("StressScreen");
         break;
       case "Internet & Social Media":
-        navigation.navigate("InternetSocialMediaScreen");
+        navigateToRoute("InternetSocialMediaScreen");
         break;
       case "Family & Relationship":
-        navigation.navigate("FamilyRelationshipScreen");
+        navigateToRoute("FamilyRelationshipScreen");
         break;
       case "Sleep":
-        navigation.navigate("SleepScreen");
+        navigateToRoute("SleepScreen");
         break;
       case "Suicidal Behaviour":
-        navigation.navigate("SuicidalBehaviourScreen");
+        navigateToRoute("SuicidalBehaviourScreen");
         break;
       case "Sex Life":
-        navigation.navigate("SexLifeScreen");
+        navigateToRoute("SexLifeScreen");
         break;
       case "Addictions":
-        navigation.navigate("AddictionsScreen");
+        navigateToRoute("AddictionsScreen");
         break;
       case "Common Psychological":
-        navigation.navigate("CommonPsychologicalScreen");
+        navigateToRoute("CommonPsychologicalScreen");
         break;
       case "Environment Issues":
-        navigation.navigate("EnvironmentIssuesScreen");
+        navigateToRoute("EnvironmentIssuesScreen");
         break;
       case "Financial Mental Health":
-        navigation.navigate("FinancialMentalHealthScreen");
+        navigateToRoute("FinancialMentalHealthScreen");
         break;
       case "Physical Fitness":
-        navigation.navigate("PhysicalFitnessScreen");
+        navigateToRoute("PhysicalFitnessScreen");
         break;
       case "Internet Dependence":
-        navigation.navigate("InternetDependenceScreen");
+        navigateToRoute("InternetDependenceScreen");
         break;
       case "Professional Mental Health":
-        navigation.navigate("ProfessionalMentalHealthScreen");
+        navigateToRoute("ProfessionalMentalHealthScreen");
         break;
       case "Social Mental Health":
-        navigation.navigate("SocialMentalHealthScreen");
+        navigateToRoute("SocialMentalHealthScreen");
         break;
       case "Job Insecurity":
-        navigation.navigate("JobInsecurityScreen");
+        navigateToRoute("JobInsecurityScreen");
         break;
       case "Youngster Issues":
-        navigation.navigate("YoungsterIssuesScreen");
+        navigateToRoute("YoungsterIssuesScreen");
         break;
       case "Emotional Intelligence":
-        navigation.navigate("EmotionalIntelligenceScreen");
+        navigateToRoute("EmotionalIntelligenceScreen");
         break;
       case "Introvert Child":
-        navigation.navigate("IntrovertChildScreen");
+        navigateToRoute("IntrovertChildScreen");
         break;
       case "Eating Habits":
-        navigation.navigate("EatingHabitScreen");
+        navigateToRoute("EatingHabitScreen");
         break;
       case "BreakupAndRebound":
-        navigation.navigate("BreakupAndReboundScreen");
+        navigateToRoute("BreakupAndReboundScreen");
         break;
       case "AbusiveLanguageBackAnswering":
-        navigation.navigate("AbusiveLanguageBackAnsweringScreen");
+        navigateToRoute("AbusiveLanguageBackAnsweringScreen");
         break;
       case "DarkWebAndOnlyFans":
-        navigation.navigate("DarkWebAndOnlyFansScreen");
+        navigateToRoute("DarkWebAndOnlyFansScreen");
         break;
       case "DatingSitesAndComplications":
-        navigation.navigate("DatingSitesAndComplicationsScreen");
+        navigateToRoute("DatingSitesAndComplicationsScreen");
         break;
       case "ExamStress":
-        navigation.navigate("ExamStressScreen");
+        navigateToRoute("ExamStressScreen");
         break;
       case "FriendshipAndRelationship":
-        navigation.navigate("FriendshipAndRelationshipScreen");
+        navigateToRoute("FriendshipAndRelationshipScreen");
         break;
       case "GamblingAndGamingAddiction":
-        navigation.navigate("GamblingAndGamingAddictionScreen");
+        navigateToRoute("GamblingAndGamingAddictionScreen");
         break;
       case "InternetAddiction":
-        navigation.navigate("InternetAddictionScreen");
+        navigateToRoute("InternetAddictionScreen");
         break;
       case "ParentingFromChildView":
-        navigation.navigate("ParentingFromChildViewScreen");
+        navigateToRoute("ParentingFromChildViewScreen");
         break;
       case "ParentingFromParentsView":
-        navigation.navigate("ParentingFromParentsViewScreen");
+        navigateToRoute("ParentingFromParentsViewScreen");
         break;
       case "PornAddiction":
-        navigation.navigate("PornAddictionScreen");
+        navigateToRoute("PornAddictionScreen");
         break;
       case "SelfCareHygiene":
-        navigation.navigate("SelfCareHygieneScreen");
+        navigateToRoute("SelfCareHygieneScreen");
         break;
       case "SelfEsteemAndSelfIdentity":
-        navigation.navigate("SelfEsteemAndSelfIdentityScreen");
+        navigateToRoute("SelfEsteemAndSelfIdentityScreen");
         break;
       case "SocialMediaIssues":
-        navigation.navigate("SocialMediaIssuesScreen");
+        navigateToRoute("SocialMediaIssuesScreen");
         break;
       case "SubstanceAddiction":
-        navigation.navigate("SubstanceAddictionScreen");
+        navigateToRoute("SubstanceAddictionScreen");
         break;
       case "TraumaLossAndDreams":
-        navigation.navigate("TraumaLossAndDreamsScreen");
+        navigateToRoute("TraumaLossAndDreamsScreen");
         break;
       case "UnrealisticBeautyStandards":
-        navigation.navigate("UnrealisticBeautyStandardsScreen");
+        navigateToRoute("UnrealisticBeautyStandardsScreen");
         break;
       default:
         Alert.alert(
@@ -920,6 +953,101 @@ export default function MindToolsScreen() {
                 {t("mindToolsScreen.categories.bullyingscreen.description")}
               </Text>
             </Pressable>
+
+            {/* Suicidal Behaviour Card */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("SuicidalBehaviourScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="heart-dislike" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>
+                {t("mindToolsScreen.categories.suicidalBehaviour.title")}
+              </Text>
+              <Text style={styles.categoryDescription}>
+                {t("mindToolsScreen.categories.suicidalBehaviour.description")}
+              </Text>
+            </Pressable>
+
+            {/* Academic Stress */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("AcademicStressScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="school" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.academicStress.title")}</Text>
+              <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.academicStress.description")}</Text>
+            </Pressable>
+
+            {/* Dealing with children of special Needs */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("SpecialNeedsScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="people-circle" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.specialNeeds.title")}</Text>
+              <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.specialNeeds.description")}</Text>
+            </Pressable>
+
+            {/* Good Parenting */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("GoodParentingScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="heart" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.goodParenting.title")}</Text>
+              <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.goodParenting.description")}</Text>
+            </Pressable>
+
+            {/* Loneliness and Depression */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("LonelinessAndDepressionScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="person" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.lonelinessAndDepression.title")}</Text>
+              <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.lonelinessAndDepression.description")}</Text>
+            </Pressable>
+
+            {/* Anxiety Issues */}
+            <Pressable
+              style={styles.categoryCard}
+              onPress={() => navigation.navigate("AnxietyIssuesScreen")}
+            >
+              <View style={styles.taskHeader}>
+                <View style={styles.taskIconContainer}>
+                  <CustomIcon type="IO" name="pulse" size={24} color="#000000" />
+                </View>
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+              </View>
+              <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.anxietyIssues.title")}</Text>
+              <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.anxietyIssues.description")}</Text>
+            </Pressable>
+
 
             {/* Self Harm Behaviour Card - new */}
             <Pressable

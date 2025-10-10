@@ -10,7 +10,7 @@ import StressScreen from '../screens/main/MindTools/StressScreen';
 import InternetSocialMediaScreen from '../screens/main/MindTools/InternetSocialMediaScreen';
 import FamilyRelationshipScreen from '../screens/main/MindTools/FamilyRelationshipScreen';
 import SleepScreen from '../screens/main/MindTools/SleepScreen';
-import SuicidalBehaviourScreen from '../screens/main/MindTools/SuicidalBehaviourScreen';
+import SuicidalBehaviourScreen from '../screens/main/MindTools/Miniminds Screen/SuicidalBehaviourScreen';
 import SexLifeScreen from '../screens/main/MindTools/SexLifeScreen';
 import AddictionsScreen from '../screens/main/MindTools/AddictionsScreen';
 import CommonPsychologicalScreen from '../screens/main/MindTools/CommonPsychologicalScreen';
@@ -27,6 +27,11 @@ import BullyingScreen from '../screens/main/MindTools/Miniminds Screen/BullyingS
 import SelfHarmBehaviourScreen from '../screens/main/MindTools/Miniminds Screen/SelfHarmBehaviourScreen';
 import BunkingScreen from '../screens/main/MindTools/Miniminds Screen/BunkingScreen';
 import LearningDisabilityScreen from '../screens/main/MindTools/Miniminds Screen/LearningDisability';
+import AcademicStressScreen from '../screens/main/MindTools/Miniminds Screen/AcademicStressScreen';
+import SpecialNeedsScreen from '../screens/main/MindTools/Miniminds Screen/SpecialNeedsScreen';
+import GoodParentingScreen from '../screens/main/MindTools/Miniminds Screen/GoodParentingScreen';
+import LonelinessAndDepressionScreen from '../screens/main/MindTools/Miniminds Screen/LonelinessAndDepressionScreen';
+import AnxietyIssuesScreen from '../screens/main/MindTools/Miniminds Screen/AnxietyIssuesScreen';
 
 // Import intervention-related screens
 import InterventionsScreen from '../screens/main/MindTools/InterventionsScreen';
@@ -140,6 +145,26 @@ const MindToolsNavigator = () => {
       <MindtoolsStack.Screen 
         name="SelfHarmBehaviourScreen"
         component={SelfHarmBehaviourScreen}
+      />
+      <MindtoolsStack.Screen 
+        name="AcademicStressScreen"
+        component={AcademicStressScreen}
+      />
+      <MindtoolsStack.Screen 
+        name="SpecialNeedsScreen"
+        component={SpecialNeedsScreen}
+      />
+      <MindtoolsStack.Screen 
+        name="GoodParentingScreen"
+        component={GoodParentingScreen}
+      />
+      <MindtoolsStack.Screen 
+        name="LonelinessAndDepressionScreen"
+        component={LonelinessAndDepressionScreen}
+      />
+      <MindtoolsStack.Screen 
+        name="AnxietyIssuesScreen"
+        component={AnxietyIssuesScreen}
       />
       <MindtoolsStack.Screen 
         name="BunkingScreen"

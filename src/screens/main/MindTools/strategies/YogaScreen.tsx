@@ -1378,6 +1378,45 @@ export default function YogaScreen({ navigation, route }: any) {
       }
     }
 
+    // Handle Suicidal Behaviour data from comprehensive JSON file for Yoga
+    if (condition === "suicidal-behavior") {
+      try {
+        const data = require("../../../../assets/data/behaviour/Suicidal_Behaviour_comprehensive_data.json");
+        const itemsCandidate = data?.interventions?.yoga?.cards || data?.interventions?.yoga || data?.interventions?.yogaAndMeditation?.cards || data?.interventions?.yogaAndMeditation || data?.interventions?.cards || data?.interventions || null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Yoga data array found in Suicidal Behaviour data");
+          return null;
+        }
+
+        const localeKey = (locale || "").slice(0, 2);
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => ({
+          title: (item.title && typeof item.title === 'string') ? item.title : (item.title?.[localeField] || item.title?.english || item.CardTitle || item['Card Title'] || "No title"),
+          description: (item.description && typeof item.description === 'string') ? item.description : (item.description?.[localeField] || item.description?.english || item.CardDescription || item['Card Description'] || "No description"),
+          xp: item.xp || item.XP || 5,
+        }));
+
+        return {
+          condition: "suicidal-behavior",
+          intervention_type: "Yoga & Meditation Techniques",
+          interventions: interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Suicidal Behaviour yoga data:", error);
+        return null;
+      }
+    }
+
 
     // Check if we have translations for this condition
     const translationKeyMap: { [key: string]: string } = {
