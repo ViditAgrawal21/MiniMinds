@@ -1,0 +1,737 @@
+{
+    "condition": "Bullying in School",
+    "issueType": "General Issues",
+    "interventions": {
+      "commonSuggestions": {
+        "type": "Primary",
+        "interventionSubType": "10 Common Suggestions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 2,
+            "title": {
+              "english": "Encourage Open Communication",
+              "hindi": "खुले संचार को प्रोत्साहित करें",
+              "marathi": "मुक्त संवादाला प्रोत्साहन द्या"
+            },
+            "description": {
+              "english": "Why it works: Builds trust for sharing problems. Example: Child feels safe telling teacher or parent about bullying.",
+              "hindi": "यह क्यों काम करता है: समस्याओं को साझा करने के लिए विश्वास का निर्माण करता है। उदाहरण: बच्चा शिक्षक या माता-पिता को बदमाशी के बारे में बताने में सुरक्षित महसूस करता है।",
+              "marathi": "हे का काम करते: समस्या शेअर करण्यासाठी विश्वास निर्माण करते. उदाहरण: मुलाला शिक्षकांना किंवा पालकांना गुंडगिरीबद्दल सांगण्यास सुरक्षित वाटते."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 3,
+            "title": {
+              "english": "Teach Assertiveness",
+              "hindi": "दृढ़ता सिखाएं",
+              "marathi": "ठामपणा शिकवा"
+            },
+            "description": {
+              "english": "Why it works: Helps child stand up calmly without aggression. Example: Saying 'Stop, I don‚Äôt like that' to a bully.",
+              "hindi": "यह क्यों काम करता है: यह बच्चे को बिना किसी आक्रामकता के शांति से खड़े होने में मदद करता है। उदाहरण: किसी बदमाश से कहना, &#39;रुको, मुझे यह पसंद नहीं है।&#39;",
+              "marathi": "हे का काम करते: मुलाला आक्रमकतेशिवाय शांतपणे उभे राहण्यास मदत करते. उदाहरण: दादागिरी करणाऱ्याला &#39;थांबा, मला ते आवडत नाही&#39; असे म्हणणे."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 2,
+            "title": {
+              "english": "Build Peer Support",
+              "hindi": "सहकर्मी समर्थन बनाएँ",
+              "marathi": "पीअर सपोर्ट तयार करा"
+            },
+            "description": {
+              "english": "Why it works: Creates protective friendships. Example: Walking with friends reduces chances of being targeted.",
+              "hindi": "यह क्यों काम करता है: यह सुरक्षात्मक दोस्ती बनाता है। उदाहरण: दोस्तों के साथ घूमने से निशाना बनाए जाने की संभावना कम हो जाती है।",
+              "marathi": "हे का काम करते: संरक्षणात्मक मैत्री निर्माण करते. उदाहरण: मित्रांसोबत चालल्याने लक्ष्य होण्याची शक्यता कमी होते."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 4,
+            "title": {
+              "english": "Increase Teacher Awareness",
+              "hindi": "शिक्षक जागरूकता बढ़ाएँ",
+              "marathi": "शिक्षक जागरूकता वाढवा"
+            },
+            "description": {
+              "english": "Why it works: Ensures quick intervention. Example: Teacher monitors hallways to prevent bullying incidents.",
+              "hindi": "यह क्यों काम करता है: त्वरित हस्तक्षेप सुनिश्चित करता है। उदाहरण: शिक्षक बदमाशी की घटनाओं को रोकने के लिए गलियारों की निगरानी करते हैं।",
+              "marathi": "ते का काम करते: जलद हस्तक्षेप सुनिश्चित करते. उदाहरण: छळाच्या घटना टाळण्यासाठी शिक्षक हॉलवेवर लक्ष ठेवतात."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 3,
+            "title": {
+              "english": "Role-Play Responses",
+              "hindi": "भूमिका-खेल प्रतिक्रियाएँ",
+              "marathi": "भूमिका-नाटक प्रतिसाद"
+            },
+            "description": {
+              "english": "Why it works: Prepares child for real situations. Example: Practicing how to respond calmly when teased.",
+              "hindi": "यह क्यों काम करता है: यह बच्चे को वास्तविक परिस्थितियों के लिए तैयार करता है। उदाहरण: चिढ़ाए जाने पर शांति से प्रतिक्रिया करने का अभ्यास कराता है।",
+              "marathi": "हे का काम करते: मुलाला वास्तविक परिस्थितीसाठी तयार करते. उदाहरण: छेडले जाते तेव्हा शांतपणे कसे प्रतिसाद द्यायचा याचा सराव करणे."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 2,
+            "title": {
+              "english": "Promote Confidence Activities",
+              "hindi": "आत्मविश्वास बढ़ाने वाली गतिविधियाँ",
+              "marathi": "आत्मविश्वास उपक्रमांना प्रोत्साहन द्या"
+            },
+            "description": {
+              "english": "Why it works: Boosts self-esteem. Example: Joining sports or art clubs builds inner strength against bullying.",
+              "hindi": "यह क्यों काम करता है: आत्म-सम्मान बढ़ाता है। उदाहरण: खेल या कला क्लबों में शामिल होने से बदमाशी के खिलाफ आंतरिक शक्ति बढ़ती है।",
+              "marathi": "ते का कार्य करते: आत्मसन्मान वाढवते. उदाहरण: क्रीडा किंवा कला क्लबमध्ये सामील झाल्याने गुंडगिरीविरुद्ध आंतरिक शक्ती निर्माण होते."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 4,
+            "title": {
+              "english": "Document Incidents",
+              "hindi": "घटनाओं का दस्तावेजीकरण करें",
+              "marathi": "घटनांचे दस्तऐवजीकरण करा"
+            },
+            "description": {
+              "english": "Why it works: Provides evidence for support. Example: Writing dates and details of bullying in a journal for school authorities.",
+              "hindi": "यह क्यों काम करता है: समर्थन के लिए सबूत प्रदान करता है। उदाहरण: स्कूल अधिकारियों के लिए एक जर्नल में बदमाशी की तारीखें और विवरण लिखना।",
+              "marathi": "ते का काम करते: समर्थनासाठी पुरावे प्रदान करते. उदाहरण: शाळेच्या अधिकाऱ्यांसाठी जर्नलमध्ये गुंडगिरीच्या तारखा आणि तपशील लिहिणे."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 3,
+            "title": {
+              "english": "Encourage Bystander Support",
+              "hindi": "दर्शकों के समर्थन को प्रोत्साहित करें",
+              "marathi": "दर्शकांच्या मदतीला प्रोत्साहन द्या"
+            },
+            "description": {
+              "english": "Why it works: Reduces bullying when peers intervene. Example: Classmate tells bully to stop or reports to teacher.",
+              "hindi": "यह क्यों काम करता है: जब सहपाठी हस्तक्षेप करते हैं तो बदमाशी कम हो जाती है। उदाहरण: सहपाठी बदमाश को रुकने के लिए कहता है या शिक्षक को रिपोर्ट करता है।",
+              "marathi": "हे का काम करते: जेव्हा समवयस्क हस्तक्षेप करतात तेव्हा गुंडगिरी कमी होते. उदाहरण: वर्गमित्र गुंडगिरी थांबवण्यास सांगतो किंवा शिक्षकांना तक्रार करतो."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 5,
+            "title": {
+              "english": "Teach Stress-Relief Techniques",
+              "hindi": "तनाव-मुक्ति तकनीक सिखाएँ",
+              "marathi": "ताणतणाव कमी करण्याचे तंत्र शिकवा"
+            },
+            "description": {
+              "english": "Why it works: Helps manage emotional impact. Example: Deep breathing after bullying reduces anxiety.",
+              "hindi": "यह क्यों काम करता है: भावनात्मक प्रभाव को प्रबंधित करने में मदद करता है। उदाहरण: बदमाशी के बाद गहरी साँस लेने से चिंता कम होती है।",
+              "marathi": "हे का काम करते: भावनिक प्रभाव व्यवस्थापित करण्यास मदत करते. उदाहरण: गुंडगिरीनंतर खोल श्वास घेतल्याने चिंता कमी होते."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 5,
+            "title": {
+              "english": "Parental Involvement",
+              "hindi": "माता-पिता की भागीदारी",
+              "marathi": "पालकांचा सहभाग"
+            },
+            "description": {
+              "english": "Why it works: Strengthens support system. Example: Parents meet with school to address repeated bullying.",
+              "hindi": "यह क्यों काम करता है: सहायता प्रणाली को मज़बूत बनाता है। उदाहरण: माता-पिता बार-बार होने वाली बदमाशी को दूर करने के लिए स्कूल के साथ मिलते हैं।",
+              "marathi": "ते का काम करते: समर्थन प्रणाली मजबूत करते. उदाहरण: वारंवार होणाऱ्या छळवणूकीला तोंड देण्यासाठी पालक शाळेशी भेटतात."
+            }
+          }
+        ]
+      },
+      "yoga": {
+        "type": "Secondary",
+        "interventionSubType": "Yoga And Meditation Techniques",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 5,
+            "title": {
+              "english": "Mountain Pose (Tadasana)",
+              "hindi": "पर्वत मुद्रा (ताड़ासन)",
+              "marathi": "पर्वतीय आसन (ताडासन)"
+            },
+            "description": {
+              "english": "Why it helps: Builds grounding and self-confidence. What to do: Stand tall with deep breathing. Example: Child feels strong before going to school.",
+              "hindi": "यह क्यों मददगार है: इससे ज़मीनी स्तर पर पकड़ और आत्मविश्वास बढ़ता है। क्या करें: गहरी साँस लेते हुए सीधे खड़े हो जाएँ। उदाहरण: बच्चा स्कूल जाने से पहले खुद को मज़बूत महसूस करता है।",
+              "marathi": "हे का मदत करते: ग्राउंडिंग आणि आत्मविश्वास वाढवते. काय करावे: दीर्घ श्वास घेत उभे राहा. उदाहरण: शाळेत जाण्यापूर्वी मुलाला ताकद वाटते."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 6,
+            "title": {
+              "english": "Tree Pose (Vrikshasana)",
+              "hindi": "वृक्षासन",
+              "marathi": "Tree Pose (Vrikshasana)"
+            },
+            "description": {
+              "english": "Why it helps: Improves balance and focus. What to do: Stand on one leg, palms together, steady breath. Example: Builds calmness before facing peers.",
+              "hindi": "यह क्यों मददगार है: संतुलन और एकाग्रता में सुधार करता है। क्या करें: एक पैर पर खड़े हो जाएँ, हथेलियाँ एक साथ रखें, साँसें स्थिर रखें। उदाहरण: साथियों का सामना करने से पहले शांति बनाए रखता है।",
+              "marathi": "हे का मदत करते: संतुलन आणि लक्ष केंद्रित करणे सुधारते. काय करावे: एका पायावर उभे राहा, तळवे एकत्र ठेवा, स्थिर श्वास घ्या. उदाहरण: समवयस्कांना तोंड देण्यापूर्वी शांतता निर्माण करते."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 6,
+            "title": {
+              "english": "Child‚Äôs Pose (Balasana)",
+              "hindi": "बाल मुद्रा (बालासन)",
+              "marathi": "बाळाची आसन (बालासन)"
+            },
+            "description": {
+              "english": "Why it helps: Provides emotional safety and calmness. What to do: Kneel, stretch arms forward, rest forehead down. Example: Practice after a stressful school day.",
+              "hindi": "यह क्यों मददगार है: भावनात्मक सुरक्षा और शांति प्रदान करता है। क्या करें: घुटनों के बल बैठें, हाथों को आगे की ओर फैलाएँ, माथे को नीचे की ओर टिकाएँ। उदाहरण: तनावपूर्ण स्कूल के दिन के बाद अभ्यास करें।",
+              "marathi": "हे का मदत करते: भावनिक सुरक्षितता आणि शांतता प्रदान करते. काय करावे: गुडघे टेकणे, हात पुढे पसरवणे, कपाळ खाली टेकवणे. उदाहरण: तणावपूर्ण शाळेच्या दिवसानंतर सराव करा."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 7,
+            "title": {
+              "english": "Alternate Nostril Breathing (Nadi Shodhana)",
+              "hindi": "वैकल्पिक नासिका श्वास (नाड़ी शोधन)",
+              "marathi": "Alternate Nostril Breathing (Nadi Shodhana)"
+            },
+            "description": {
+              "english": "Why it helps: Reduces anxiety and restores balance. What to do: Inhale through one nostril, exhale through the other. Example: Practice before class presentations or peer interactions.",
+              "hindi": "यह क्यों मददगार है: चिंता कम करता है और संतुलन बहाल करता है। क्या करें: एक नासिका छिद्र से साँस लें, दूसरे छिद्र से साँस छोड़ें। उदाहरण: कक्षा में प्रस्तुतियों या साथियों के साथ बातचीत से पहले अभ्यास करें।",
+              "marathi": "हे का मदत करते: चिंता कमी करते आणि संतुलन पुनर्संचयित करते. काय करावे: एका नाकपुडीतून श्वास घ्या, दुसऱ्या नाकपुडीतून श्वास सोडा. उदाहरण: वर्ग सादरीकरणे किंवा समवयस्कांशी संवाद साधण्यापूर्वी सराव करा."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 7,
+            "title": {
+              "english": "Lion‚Äôs Breath (Simhasana)",
+              "hindi": "शेर की सांस (सिंहासन)",
+              "marathi": "सिंहाचा श्वास (सिंहासन)"
+            },
+            "description": {
+              "english": "Why it helps: Releases suppressed anger and frustration. What to do: Inhale deeply, exhale with a roar and tongue out. Example: Helps child release tension after bullying.",
+              "hindi": "यह क्यों मददगार है: दबा हुआ गुस्सा और हताशा बाहर निकलती है। क्या करें: गहरी साँस लें, ज़ोर से साँस छोड़ें और जीभ बाहर निकालें। उदाहरण: बदमाशी के बाद बच्चे को तनाव मुक्त करने में मदद करता है।",
+              "marathi": "हे का मदत करते: दबलेला राग आणि निराशा दूर करते. काय करावे: खोलवर श्वास घ्या, गर्जना करत श्वास सोडा आणि जीभ बाहेर काढा. उदाहरण: गुंडगिरीनंतर मुलाला तणाव कमी करण्यास मदत करते."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 7,
+            "title": {
+              "english": "Bhramari Pranayama (Bee Breath)",
+              "hindi": "Bhramari Pranayama (Bee Breath)",
+              "marathi": "भ्रामरी प्राणायाम (मधमाशीचा श्वास)"
+            },
+            "description": {
+              "english": "Why it helps: Calms nervous system and racing thoughts. What to do: Close ears, hum during exhalation. Example: Practice when feeling hurt by bullies‚Äô words.",
+              "hindi": "यह क्यों मददगार है: तंत्रिका तंत्र और भागते विचारों को शांत करता है। क्या करें: कान बंद करें, साँस छोड़ते समय गुनगुनाएँ। उदाहरण: जब आप किसी बदमाश के शब्दों से आहत हों, तो इसका अभ्यास करें।",
+              "marathi": "हे का मदत करते: मज्जासंस्था आणि विचारांना शांत करते. काय करावे: कान बंद करा, श्वास सोडताना गुणगुणणे. उदाहरण: गुंडांच्या शब्दांमुळे दुखावले जात असताना सराव करा."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 8,
+            "title": {
+              "english": "Seated Forward Bend (Paschimottanasana)",
+              "hindi": "बैठे हुए आगे की ओर झुकना (पश्चिमोत्तानासन)",
+              "marathi": "बसलेला पुढे वाकणे (पश्चिमोत्तानासन)"
+            },
+            "description": {
+              "english": "Why it helps: Relaxes mind and body. What to do: Sit with legs stretched, bend forward slowly. Example: Helps child manage sadness after bullying.",
+              "hindi": "यह क्यों मददगार है: मन और शरीर को आराम देता है। क्या करें: पैरों को फैलाकर बैठें, धीरे-धीरे आगे की ओर झुकें। उदाहरण: बदमाशी के बाद बच्चे की उदासी को संभालने में मदद करता है।",
+              "marathi": "हे का मदत करते: मन आणि शरीराला आराम देते. काय करावे: पाय पसरून बसा, हळू हळू पुढे वाकून. उदाहरण: छळानंतर मुलाला दुःख सहन करण्यास मदत करते."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 8,
+            "title": {
+              "english": "Guided Visualization",
+              "hindi": "निर्देशित विज़ुअलाइज़ेशन",
+              "marathi": "मार्गदर्शित व्हिज्युअलायझेशन"
+            },
+            "description": {
+              "english": "Why it helps: Builds positive self-image. What to do: Imagine being in a safe, kind place. Example: Visualize supportive friends at school.",
+              "hindi": "यह क्यों मददगार है: सकारात्मक आत्म-छवि बनाता है। क्या करें: एक सुरक्षित, दयालु जगह पर होने की कल्पना करें। उदाहरण: स्कूल में मददगार दोस्तों की कल्पना करें।",
+              "marathi": "ते का मदत करते: सकारात्मक स्वतःची प्रतिमा निर्माण करते. काय करावे: सुरक्षित, दयाळू ठिकाणी असल्याची कल्पना करा. उदाहरण: शाळेत सहाय्यक मित्रांची कल्पना करा."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 6,
+            "title": {
+              "english": "Mindful Walking",
+              "hindi": "सचेतन चलना",
+              "marathi": "मन लावून चालणे"
+            },
+            "description": {
+              "english": "Why it helps: Brings awareness and reduces stress. What to do: Walk slowly focusing on each step and breath. Example: Helps child reset after a conflict.",
+              "hindi": "यह क्यों मददगार है: जागरूकता लाता है और तनाव कम करता है। क्या करें: हर कदम और साँस पर ध्यान केंद्रित करते हुए धीरे-धीरे चलें। उदाहरण: किसी झगड़े के बाद बच्चे को शांत होने में मदद करता है।",
+              "marathi": "हे का मदत करते: जागरूकता आणते आणि ताण कमी करते. काय करावे: प्रत्येक पाऊल आणि श्वासावर लक्ष केंद्रित करून हळू चालणे. उदाहरण: संघर्षानंतर मुलाला आराम करण्यास मदत करते."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 9,
+            "title": {
+              "english": "Corpse Pose (Shavasana) with Positive Affirmations",
+              "hindi": "सकारात्मक प्रतिज्ञान के साथ शवासन",
+              "marathi": "सकारात्मक पुष्टीकरणांसह शवासन"
+            },
+            "description": {
+              "english": "Why it helps: Promotes deep relaxation and self-worth. What to do: Lie flat, breathe slowly, repeat affirmations like 'I am strong.' Example: Practice before sleep to reduce bullying stress.",
+              "hindi": "यह क्यों मददगार है: यह गहन विश्राम और आत्म-सम्मान को बढ़ावा देता है। क्या करें: सीधे लेट जाएँ, धीरे-धीरे साँस लें, और &#39;मैं मज़बूत हूँ&#39; जैसे सकारात्मक वाक्य दोहराएँ। उदाहरण: बदमाशी के तनाव को कम करने के लिए सोने से पहले अभ्यास करें।",
+              "marathi": "हे का मदत करते: खोल विश्रांती आणि आत्मसन्मान वाढवते. काय करावे: सरळ झोपा, हळूहळू श्वास घ्या, &#39;मी मजबूत आहे&#39; असे प्रतिपादन पुन्हा करा. उदाहरण: गुंडगिरीचा ताण कमी करण्यासाठी झोपण्यापूर्वी सराव करा."
+            }
+          }
+        ]
+      },
+      "relaxation": {
+        "type": "Secondary",
+        "interventionSubType": "Relaxation",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 6,
+            "title": {
+              "english": "Progressive Muscle Relaxation",
+              "hindi": "प्रगतिशील मांसपेशी विश्राम",
+              "marathi": "प्रोग्रेसिव्ह स्नायू विश्रांती"
+            },
+            "description": {
+              "english": "Why it helps: Releases tension from stressful encounters. What to do: Tense and relax muscle groups step by step. Example: Child relaxes body after a bullying incident.",
+              "hindi": "यह क्यों मददगार है: तनावपूर्ण मुठभेड़ों से तनाव मुक्त करता है। क्या करें: मांसपेशियों को धीरे-धीरे तनावमुक्त करें और आराम दें। उदाहरण: बदमाशी की घटना के बाद बच्चा अपने शरीर को आराम देता है।",
+              "marathi": "हे का मदत करते: तणावपूर्ण भेटींमधून तणाव दूर करते. काय करावे: स्नायू गटांना टप्प्याटप्प्याने ताण द्या आणि आराम द्या. उदाहरण: छळाच्या घटनेनंतर मूल शरीराला आराम देते."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 5,
+            "title": {
+              "english": "Deep Belly Breathing",
+              "hindi": "गहरी पेट की साँस",
+              "marathi": "खोल पोटाने श्वास घेणे"
+            },
+            "description": {
+              "english": "Why it helps: Slows heart rate and reduces fear. What to do: Inhale deeply into stomach, exhale slowly. Example: Practice before entering class where bullying happens.",
+              "hindi": "यह क्यों मददगार है: हृदय गति धीमी करता है और डर कम करता है। क्या करें: पेट में गहरी साँस लें, धीरे-धीरे साँस छोड़ें। उदाहरण: कक्षा में जाने से पहले अभ्यास करें जहाँ बदमाशी होती है।",
+              "marathi": "हे का मदत करते: हृदय गती कमी करते आणि भीती कमी करते. काय करावे: पोटात खोलवर श्वास घ्या, हळूहळू श्वास सोडा. उदाहरण: जिथे छळ होतो तिथे वर्गात प्रवेश करण्यापूर्वी सराव करा."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 7,
+            "title": {
+              "english": "Visualization of Safe Place",
+              "hindi": "सुरक्षित स्थान का दृश्यीकरण",
+              "marathi": "सुरक्षित ठिकाणाचे व्हिज्युअलायझेशन"
+            },
+            "description": {
+              "english": "Why it helps: Provides emotional comfort. What to do: Imagine being in a peaceful place like a garden. Example: Child uses visualization after teasing.",
+              "hindi": "यह क्यों मददगार है: भावनात्मक सुकून देता है। क्या करें: कल्पना कीजिए कि आप किसी शांत जगह जैसे बगीचे में हैं। उदाहरण: बच्चा चिढ़ाने के बाद कल्पना का इस्तेमाल करता है।",
+              "marathi": "ते का मदत करते: भावनिक आराम देते. काय करावे: बागेसारख्या शांत ठिकाणी असल्याची कल्पना करा. उदाहरण: छेडछाड केल्यानंतर मूल व्हिज्युअलायझेशन वापरते."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 8,
+            "title": {
+              "english": "Body Scan Relaxation",
+              "hindi": "बॉडी स्कैन विश्राम",
+              "marathi": "बॉडी स्कॅन आराम"
+            },
+            "description": {
+              "english": "Why it helps: Builds self-awareness and calm. What to do: Mentally scan body from head to toe releasing stress. Example: Reduces muscle tightness from school stress.",
+              "hindi": "यह क्यों मददगार है: आत्म-जागरूकता और शांति बढ़ाता है। क्या करें: तनाव मुक्त करने के लिए सिर से पैर तक शरीर का मानसिक रूप से निरीक्षण करें। उदाहरण: स्कूल के तनाव से होने वाली मांसपेशियों की जकड़न कम करता है।",
+              "marathi": "हे का मदत करते: आत्म-जागरूकता आणि शांतता निर्माण करते. काय करावे: डोक्यापासून पायापर्यंत शरीराचे मानसिकरित्या स्कॅन करा आणि ताण कमी करा. उदाहरण: शाळेच्या ताणामुळे स्नायूंचा ताण कमी होतो."
+            }
+          },
+          {
+            "id": 5,
+            "xp": 6,
+            "title": {
+              "english": "Listening to Calming Music",
+              "hindi": "शांत संगीत सुनना",
+              "marathi": "शांत करणारे संगीत ऐकणे"
+            },
+            "description": {
+              "english": "Why it helps: Distracts from negative experiences. What to do: Play soft, soothing music for 10 minutes. Example: Child listens after returning home from school.",
+              "hindi": "यह क्यों मददगार है: नकारात्मक अनुभवों से ध्यान भटकाता है। क्या करें: 10 मिनट तक हल्का, सुकून देने वाला संगीत बजाएँ। उदाहरण: बच्चा स्कूल से घर लौटने के बाद इसे सुनता है।",
+              "marathi": "हे का मदत करते: नकारात्मक अनुभवांपासून लक्ष विचलित करते. काय करावे: १० मिनिटे मऊ, सुखदायक संगीत वाजवा. उदाहरण: शाळेतून घरी परतल्यानंतर मूल ऐकते."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 7,
+            "title": {
+              "english": "Aromatherapy",
+              "hindi": "aromatherapy",
+              "marathi": "अरोमाथेरपी"
+            },
+            "description": {
+              "english": "Why it helps: Promotes calmness and relaxation. What to do: Use lavender or chamomile scents. Example: Diffuser helps child unwind after bullying.",
+              "hindi": "यह क्यों मददगार है: शांति और आराम को बढ़ावा देता है। क्या करें: लैवेंडर या कैमोमाइल की खुशबू का इस्तेमाल करें। उदाहरण: डिफ्यूज़र बदमाशी के बाद बच्चे को आराम पहुँचाने में मदद करता है।",
+              "marathi": "हे का मदत करते: शांतता आणि विश्रांती वाढवते. काय करावे: लैव्हेंडर किंवा कॅमोमाइल सुगंध वापरा. उदाहरण: डिफ्यूझर मुलाला छळानंतर आराम करण्यास मदत करते."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 9,
+            "title": {
+              "english": "Warm Bath Relaxation",
+              "hindi": "गर्म स्नान विश्राम",
+              "marathi": "उबदार आंघोळीने आराम"
+            },
+            "description": {
+              "english": "Why it helps: Relieves anxiety and relaxes body. What to do: Take a warm bath focusing on slow breathing. Example: Evening bath helps child release stress.",
+              "hindi": "यह क्यों मददगार है: चिंता दूर करता है और शरीर को आराम देता है। क्या करें: धीमी साँस लेने पर ध्यान केंद्रित करते हुए गुनगुने पानी से स्नान करें। उदाहरण: शाम को नहाने से बच्चे को तनाव से मुक्ति मिलती है।",
+              "marathi": "हे का मदत करते: चिंता कमी करते आणि शरीराला आराम देते. काय करावे: हळू श्वास घेण्यावर लक्ष केंद्रित करून उबदार आंघोळ करा. उदाहरण: संध्याकाळचे आंघोळ मुलाला तणावातून मुक्त होण्यास मदत करते."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 7,
+            "title": {
+              "english": "Nature Exposure",
+              "hindi": "प्रकृति का संपर्क",
+              "marathi": "निसर्ग प्रदर्शन"
+            },
+            "description": {
+              "english": "Why it helps: Reduces negative emotions and clears mind. What to do: Spend 15 minutes outdoors observing surroundings. Example: Walk in park helps child regain peace after conflict.",
+              "hindi": "यह क्यों मददगार है: नकारात्मक भावनाओं को कम करता है और मन को शांत करता है। क्या करें: 15 मिनट बाहर घूमकर अपने आस-पास के माहौल का अवलोकन करें। उदाहरण: पार्क में टहलने से बच्चे को झगड़े के बाद शांति पाने में मदद मिलती है।",
+              "marathi": "हे का मदत करते: नकारात्मक भावना कमी करते आणि मन स्वच्छ करते. काय करावे: १५ मिनिटे बाहेर राहून आजूबाजूचे निरीक्षण करा. उदाहरण: उद्यानात फिरल्याने मुलाला संघर्षानंतर शांतता परत मिळते."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 8,
+            "title": {
+              "english": "5-4-3-2-1 Grounding Technique",
+              "hindi": "5-4-3-2-1 ग्राउंडिंग तकनीक",
+              "marathi": "५-४-३-२-१ ग्राउंडिंग तंत्र"
+            },
+            "description": {
+              "english": "Why it helps: Shifts focus from bullying thoughts to present. What to do: Identify 5 things you see, 4 touch, 3 hear, 2 smell, 1 taste. Example: Practice after bullying episode in playground.",
+              "hindi": "यह क्यों मददगार है: बदमाशी के विचारों से ध्यान हटाकर वर्तमान पर केंद्रित करता है। क्या करें: 5 चीज़ें पहचानें जिन्हें आप देखते हैं, 4 जिन्हें छूते हैं, 3 जिन्हें सुनते हैं, 2 जिन्हें सूंघते हैं, 1 जिन्हें चखते हैं। उदाहरण: बदमाशी की घटना के बाद खेल के मैदान में अभ्यास करें।",
+              "marathi": "हे का मदत करते: गुंडगिरीच्या विचारांपासून सादरीकरणाकडे लक्ष केंद्रित करते. काय करावे: तुम्हाला दिसणाऱ्या ५ गोष्टी ओळखा, ४ स्पर्श, ३ ऐकू येणे, २ वास येणे, १ चव येणे. उदाहरण: खेळाच्या मैदानात गुंडगिरीच्या घटनेनंतर सराव करा."
+            }
+          },
+          {
+            "id": 10,
+            "xp": 7,
+            "title": {
+              "english": "Mindful Journaling",
+              "hindi": "माइंडफुल जर्नलिंग",
+              "marathi": "सजग जर्नलिंग"
+            },
+            "description": {
+              "english": "Why it helps: Provides safe space to process emotions. What to do: Write down feelings and thoughts mindfully. Example: Journaling about bullying helps reduce bottled-up anger.",
+              "hindi": "यह क्यों मददगार है: भावनाओं को व्यक्त करने के लिए एक सुरक्षित जगह प्रदान करता है। क्या करें: अपनी भावनाओं और विचारों को ध्यानपूर्वक लिखें। उदाहरण: बदमाशी के बारे में डायरी लिखने से दबे हुए गुस्से को कम करने में मदद मिलती है।",
+              "marathi": "हे का मदत करते: भावनांवर प्रक्रिया करण्यासाठी सुरक्षित जागा प्रदान करते. काय करावे: भावना आणि विचार जाणीवपूर्वक लिहा. उदाहरण: गुंडगिरीबद्दल जर्नल लिहिल्याने कोंडलेला राग कमी होण्यास मदत होते."
+            }
+          }
+        ]
+      },
+      "cbt": {
+        "type": "Tertiary",
+        "interventionSubType": "CBT Interventions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 6,
+            "title": {
+              "english": "Identify Negative Thoughts",
+              "hindi": "नकारात्मक विचारों की पहचान करें",
+              "marathi": "नकारात्मक विचार ओळखा"
+            },
+            "description": {
+              "english": "Why it helps: Builds awareness of harmful self-talk. What to do: Write down thoughts after bullying. Example: 'I‚Äôm weak' ‚Üí reframe to 'I handled a tough situation.'",
+              "hindi": "यह क्यों मददगार है: हानिकारक आत्म-चर्चा के बारे में जागरूकता बढ़ाता है। क्या करें: बदमाशी के बाद के विचारों को लिखें। उदाहरण: &#39;मैं कमज़ोर हूँ&#39; - इसे &#39;मैंने एक कठिन परिस्थिति का सामना किया&#39; में बदलें।",
+              "marathi": "हे का मदत करते: हानिकारक स्व-बोलण्याबद्दल जागरूकता निर्माण करते. काय करावे: छळानंतरचे विचार लिहा. उदाहरण: &#39;मी कमकुवत आहे&#39;, &#39;मी कठीण परिस्थिती हाताळली&#39; असे पुन्हा सांगा."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 8,
+            "title": {
+              "english": "Challenge Beliefs About Self",
+              "hindi": "स्वयं के बारे में मान्यताओं को चुनौती दें",
+              "marathi": "स्वतःबद्दलच्या विश्वासांना आव्हान द्या"
+            },
+            "description": {
+              "english": "Why it helps: Reduces low self-esteem. What to do: Question 'I deserve this treatment.' Example: Reframe to 'No one deserves bullying.'",
+              "hindi": "यह क्यों मददगार है: आत्म-सम्मान में कमी लाता है। क्या करें: सवाल करें, &#39;मैं इस तरह के व्यवहार का हकदार हूँ।&#39; उदाहरण: इसे इस तरह से कहें, &#39;कोई भी बदमाशी का हकदार नहीं है।&#39;",
+              "marathi": "ते का मदत करते: कमी आत्मसन्मान कमी करते. काय करावे: &#39;मी या वागणुकीला पात्र आहे&#39; असा प्रश्न. उदाहरण: &#39;कोणीही छळ करण्यास पात्र नाही&#39; असा शब्द पुन्हा सांगा."
+            }
+          },
+          {
+            "id": 3,
+            "xp": 7,
+            "title": {
+              "english": "Thought-Feeling-Behavior Link",
+              "hindi": "विचार-भावना-व्यवहार लिंक",
+              "marathi": "विचार-भावना-वर्तन दुवा"
+            },
+            "description": {
+              "english": "Why it helps: Connects thoughts with reactions. What to do: Track thought ‚Üí feeling ‚Üí action. Example: 'They laugh at me' ‚Üí sadness ‚Üí isolation; reframe to 'I can seek support.'",
+              "hindi": "यह क्यों मददगार है: विचारों को प्रतिक्रियाओं से जोड़ता है। क्या करें: विचार, भावना और क्रिया पर नज़र रखें। उदाहरण: &#39;वे मुझ पर हँसते हैं&#39;, &#39;उदासी&#39;, &#39;अकेलापन&#39;; इसे &#39;मैं मदद माँग सकता हूँ&#39; में बदलें।",
+              "marathi": "ते का मदत करते: विचारांना प्रतिक्रियांशी जोडते. काय करावे: विचार, भावना, कृती यांचा मागोवा घ्या. उदाहरण: &#39;ते माझ्यावर हसतात&#39;, दुःख, अलगाव; &#39;मी आधार घेऊ शकतो&#39; असे पुन्हा सांगा."
+            }
+          },
+          {
+            "id": 4,
+            "xp": 5,
+            "title": {
+              "english": "Use Coping Statements",
+              "hindi": "कोपिंग स्टेटमेंट्स का उपयोग करें",
+              "marathi": "कोपिंग स्टेटमेंट्स वापरा"
+            },
+            "description": {
+              "english": "Why it helps: Strengthens resilience. What to do: Practice rational phrases. Example: 'Their words don‚Äôt define me.'",
+              "hindi": "यह क्यों मददगार है: लचीलापन बढ़ाता है। क्या करें: तर्कसंगत वाक्यांशों का अभ्यास करें। उदाहरण: &#39;उनके शब्द मुझे परिभाषित नहीं करते।&#39;",
+              "marathi": "ते का मदत करते: लवचिकता मजबूत करते. काय करावे: तर्कशुद्ध वाक्यांचा सराव करा. उदाहरण: &#39;त्यांचे शब्द मला परिभाषित करत नाहीत.&#39;"
+            }
+          },
+          {
+            "id": 5,
+            "xp": 7,
+            "title": {
+              "english": "Role-Play Assertive Responses",
+              "hindi": "भूमिका-खेल मुखर प्रतिक्रियाएँ",
+              "marathi": "भूमिका-नाटक ठाम प्रतिसाद"
+            },
+            "description": {
+              "english": "Why it helps: Builds confidence in handling bullies. What to do: Practice responses with parent/teacher. Example: Say 'Stop, I don‚Äôt like that' firmly.",
+              "hindi": "यह क्यों मददगार है: धमकाने वालों से निपटने का आत्मविश्वास बढ़ाता है। क्या करें: माता-पिता/शिक्षक के साथ जवाबों का अभ्यास करें। उदाहरण: दृढ़ता से कहें, &#39;रुको, मुझे यह पसंद नहीं है।&#39;",
+              "marathi": "हे का मदत करते: गुंडगिरी हाताळण्यात आत्मविश्वास निर्माण करते. काय करावे: पालक/शिक्षकांसोबत प्रतिसादांचा सराव करा. उदाहरण: &#39;थांबा, मला ते आवडत नाही&#39; असे ठामपणे म्हणा."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 6,
+            "title": {
+              "english": "Reframe Failure",
+              "hindi": "रीफ्रेम विफलता",
+              "marathi": "रीफ्रेम अयशस्वी"
+            },
+            "description": {
+              "english": "Why it helps: Prevents hopelessness. What to do: Change 'I couldn‚Äôt stop them' to 'I‚Äôm learning to handle this.' Example: Builds problem-solving mindset.",
+              "hindi": "यह क्यों मददगार है: निराशा से बचाता है। क्या करें: &#39;मैं उन्हें रोक नहीं सका&#39; को बदलकर &#39;मैं इससे निपटना सीख रहा हूँ&#39; कर दें। उदाहरण: समस्या-समाधान की मानसिकता विकसित करता है।",
+              "marathi": "हे का मदत करते: निराशा टाळते. काय करावे: &#39;मी त्यांना थांबवू शकलो नाही&#39; असे बदलून &#39;मी हे हाताळायला शिकत आहे&#39; असे करा. उदाहरण: समस्या सोडवण्याची मानसिकता तयार करते."
+            }
+          },
+          {
+            "id": 7,
+            "xp": 8,
+            "title": {
+              "english": "Problem-Solving Training",
+              "hindi": "समस्या-समाधान प्रशिक्षण",
+              "marathi": "समस्या सोडवण्याचे प्रशिक्षण"
+            },
+            "description": {
+              "english": "Why it helps: Provides alternatives to avoidance. What to do: Brainstorm safe responses. Example: Sit with supportive peers at lunch instead of alone.",
+              "hindi": "यह क्यों मददगार है: यह बचने के विकल्प प्रदान करता है। क्या करें: सुरक्षित उपायों पर विचार-मंथन करें। उदाहरण: दोपहर के भोजन पर अकेले बैठने के बजाय, सहयोगी साथियों के साथ बैठें।",
+              "marathi": "ते का मदत करते: टाळण्याचे पर्याय प्रदान करते. काय करावे: सुरक्षित प्रतिसादांवर विचारमंथन करा. उदाहरण: दुपारच्या जेवणाच्या वेळी एकटे बसण्याऐवजी सहाय्यक समवयस्कांसोबत बसा."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 6,
+            "title": {
+              "english": "Reward Coping Efforts",
+              "hindi": "सामना करने के प्रयासों को पुरस्कृत करें",
+              "marathi": "सामना करण्याच्या प्रयत्नांना बक्षीस द्या"
+            },
+            "description": {
+              "english": "Why it helps: Reinforces positive attempts. What to do: Praise or reward effort, not outcome. Example: Celebrate when child reports bullying calmly.",
+              "hindi": "यह क्यों मददगार है: सकारात्मक प्रयासों को मज़बूत करता है। क्या करें: परिणाम की नहीं, बल्कि प्रयास की प्रशंसा करें या उसे पुरस्कृत करें। उदाहरण: जब बच्चा बदमाशी की शिकायत करे, तो शांति से उसका जश्न मनाएँ।",
+              "marathi": "ते का मदत करते: सकारात्मक प्रयत्नांना बळकटी देते. काय करावे: प्रयत्नांची प्रशंसा करा किंवा बक्षीस द्या, परिणाम नाही. उदाहरण: जेव्हा मूल गुंडगिरीची तक्रार शांतपणे करते तेव्हा आनंद साजरा करा."
+            }
+          },
+          {
+            "id": 9,
+            "xp": 7,
+            "title": {
+              "english": "Build Strength-Based Identity",
+              "hindi": "शक्ति-आधारित पहचान बनाएँ",
+              "marathi": "ताकदीवर आधारित ओळख निर्माण करा"
+            },
+            "description": {
+              "english": "Why it helps: Boosts self-worth beyond bullying. What to do: Focus on talents and strengths. Example: 'I‚Äôm good at drawing, that makes me unique.'",
+              "hindi": "यह क्यों मददगार है: बदमाशी से परे आत्म-सम्मान बढ़ाता है। क्या करें: अपनी प्रतिभा और खूबियों पर ध्यान केंद्रित करें। उदाहरण: &#39;मैं चित्रकारी में अच्छा हूँ, यही मुझे अनोखा बनाता है।&#39;",
+              "marathi": "हे का मदत करते: गुंडगिरीच्या पलीकडे स्वतःचे मूल्य वाढवते. काय करावे: प्रतिभा आणि ताकदीवर लक्ष केंद्रित करा. उदाहरण: &#39;मी चित्र काढण्यात चांगला आहे, त्यामुळे मी अद्वितीय बनतो.&#39;"
+            }
+          },
+          {
+            "id": 10,
+            "xp": 9,
+            "title": {
+              "english": "Monitor Progress",
+              "hindi": "प्रगति की निगरानी करें",
+              "marathi": "प्रगतीचे निरीक्षण करा"
+            },
+            "description": {
+              "english": "Why it helps: Tracks growth in coping skills. What to do: Keep record of situations and responses. Example: 'I ignored teasing today and felt stronger.'",
+              "hindi": "यह क्यों मददगार है: यह परिस्थितियों से निपटने के कौशल में वृद्धि को ट्रैक करता है। क्या करें: परिस्थितियों और प्रतिक्रियाओं का रिकॉर्ड रखें। उदाहरण: &#39;मैंने आज चिढ़ाने को नज़रअंदाज़ किया और खुद को ज़्यादा मज़बूत महसूस किया।&#39;",
+              "marathi": "हे का मदत करते: सामना करण्याच्या कौशल्यांमध्ये वाढ ट्रॅक करते. काय करावे: परिस्थिती आणि प्रतिसादांची नोंद ठेवा. उदाहरण: &#39;मी आज छेडछाडीकडे दुर्लक्ष केले आणि मला अधिक बळकटी आल्यासारखे वाटले.&#39;"
+            }
+          }
+        ]
+      },
+      "rebt": {
+        "type": "Tertiary",
+        "interventionSubType": "REBT Interventions",
+        "cards": [
+          {
+            "id": 1,
+            "xp": 7,
+            "title": {
+              "english": "Disputing Irrational Beliefs",
+              "hindi": "तर्कहीन विश्वासों पर विवाद",
+              "marathi": "अतार्किक श्रद्धांवर वाद घालणे"
+            },
+            "description": {
+              "english": "Why it helps: Breaks harmful self-blame. What to do: Challenge beliefs like 'I must be liked by everyone.' Example: Reframe to 'It‚Äôs okay if not everyone likes me.'",
+              "hindi": "यह क्यों मददगार है: हानिकारक आत्म-दोष से छुटकारा दिलाता है। क्या करें: ऐसी मान्यताओं को चुनौती दें जैसे, &#39;मुझे सभी को पसंद आना चाहिए।&#39; उदाहरण: अपनी सोच को इस तरह ढालें कि &#39;अगर सभी मुझे पसंद नहीं करते तो कोई बात नहीं।&#39;",
+              "marathi": "ते का मदत करते: हानिकारक स्वतःवरील दोष दूर करते. काय करावे: &#39;मला सर्वांना आवडले पाहिजे&#39; अशा समजुतींना आव्हान द्या. उदाहरण: &#39;जर सर्वांना मी आवडत नसेल तर काही हरकत नाही&#39; असे पुन्हा सांगा."
+            }
+          },
+          {
+            "id": 2,
+            "xp": 8,
+            "title": {
+              "english": "ABC Model Practice",
+              "hindi": "एबीसी मॉडल अभ्यास",
+              "marathi": "एबीसी मॉडेल सराव"
+            },
+            "description": {
+              "english": "Why it helps: Links events, beliefs, and consequences. What to do: Write Activating Event ‚Üí Belief ‚Üí Consequence. Example: Teased in class ‚Üí 'I‚Äôm worthless' ‚Üí sadness; reframe to 'Their words don‚Äôt define me.'",
+              "hindi": "यह क्यों मददगार है: घटनाओं, विश्वासों और परिणामों को जोड़ता है। क्या करें: सक्रिय करने वाली घटना - विश्वास - परिणाम लिखें। उदाहरण: कक्षा में चिढ़ाए जाने पर - &#39;मैं बेकार हूँ&#39; - उदासी; इसे &#39;उनके शब्द मुझे परिभाषित नहीं करते&#39; में बदलें।",
+              "marathi": "ते का मदत करते: घटना, श्रद्धा आणि परिणामांना जोडते. काय करावे: सक्रिय करणारा कार्यक्रम &quot;श्रद्धा&quot; &quot;परिणाम&quot; लिहा. उदाहरण: वर्गात छेडले गेले &quot;मी निरुपयोगी आहे&quot; &quot;दुःख&quot;; पुन्हा सांगा &quot;त्यांचे शब्द मला परिभाषित करत नाहीत.&quot;"
+            }
+          },
+          {
+            "id": 3,
+            "xp": 6,
+            "title": {
+              "english": "Rational Self-Talk",
+              "hindi": "तर्कसंगत आत्म-चर्चा",
+              "marathi": "तर्कसंगत स्व-संवाद"
+            },
+            "description": {
+              "english": "Why it helps: Builds internal strength. What to do: Practice rational phrases. Example: 'Being bullied doesn‚Äôt mean I‚Äôm weak.'",
+              "hindi": "यह क्यों मददगार है: आंतरिक शक्ति का निर्माण करता है। क्या करें: तर्कसंगत वाक्यांशों का अभ्यास करें। उदाहरण: &#39;मुझे धमकाया जा रहा है, इसका मतलब यह नहीं कि मैं कमज़ोर हूँ।&#39;",
+              "marathi": "ते का मदत करते: अंतर्गत शक्ती निर्माण करते. काय करावे: तर्कशुद्ध वाक्यांचा सराव करा. उदाहरण: &#39;धमकावणी दिली जात आहे याचा अर्थ मी कमकुवत आहे असे नाही.&#39;"
+            }
+          },
+          {
+            "id": 4,
+            "xp": 9,
+            "title": {
+              "english": "Unconditional Self-Acceptance",
+              "hindi": "बिना शर्त आत्म-स्वीकृति",
+              "marathi": "बिनशर्त स्व-स्वीकृती"
+            },
+            "description": {
+              "english": "Why it helps: Reduces shame from bullying. What to do: Affirm self-worth despite negative experiences. Example: 'I am valuable even if others mistreat me.'",
+              "hindi": "यह क्यों मददगार है: बदमाशी से होने वाली शर्मिंदगी कम होती है। क्या करें: नकारात्मक अनुभवों के बावजूद आत्म-सम्मान बनाए रखें। उदाहरण: &#39;अगर दूसरे मेरे साथ बुरा व्यवहार भी करें, तो भी मैं मूल्यवान हूँ।&#39;",
+              "marathi": "हे का मदत करते: गुंडगिरीमुळे होणारी लाज कमी करते. काय करावे: नकारात्मक अनुभव असूनही स्वतःचे मूल्य सिद्ध करा. उदाहरण: &#39;इतरांनी माझ्याशी गैरवर्तन केले तरीही मी मौल्यवान आहे.&#39;"
+            }
+          },
+          {
+            "id": 5,
+            "xp": 7,
+            "title": {
+              "english": "Recognize Musts and Shoulds",
+              "hindi": "क्या करना चाहिए और क्या नहीं, यह पहचानें",
+              "marathi": "गरजा आणि हव्या त्या ओळखा"
+            },
+            "description": {
+              "english": "Why it helps: Prevents rigid thinking. What to do: Replace 'Everyone must treat me kindly' with 'I want kindness, but I can cope if not.'",
+              "hindi": "यह क्यों मददगार है: यह कठोर सोच को रोकता है। क्या करें: &#39;हर किसी को मेरे साथ अच्छा व्यवहार करना चाहिए&#39; को &#39;मुझे अच्छा व्यवहार चाहिए, लेकिन अगर नहीं, तो मैं इसे संभाल सकता हूँ&#39; से बदलें।",
+              "marathi": "ते का मदत करते: कठोर विचारसरणीला प्रतिबंध करते. काय करावे: &#39;प्रत्येकाने माझ्याशी दयाळूपणे वागले पाहिजे&#39; याऐवजी &#39;मला दयाळूपणा हवा आहे, पण जर नसेल तर मी सामना करू शकतो&#39; असे लिहा."
+            }
+          },
+          {
+            "id": 6,
+            "xp": 7,
+            "title": {
+              "english": "Reframe Criticism",
+              "hindi": "आलोचना को नए सिरे से परिभाषित करें",
+              "marathi": "टीका पुन्हा मांडा"
+            },
+            "description": {
+              "english": "Why it helps: Stops hurt from harsh words. What to do: View insults as opinions, not truths. Example: 'They called me weak' ‚Üí 'That‚Äôs their view, not reality.'",
+              "hindi": "यह क्यों मददगार है: कठोर शब्दों से होने वाली ठेस को रोकता है। क्या करें: अपमान को राय समझें, सच्चाई नहीं। उदाहरण: &#39;उन्होंने मुझे कमज़ोर कहा&#39; - &#39;यह उनका नज़रिया है, हक़ीक़त नहीं।&#39;",
+              "marathi": "ते का मदत करते: कठोर शब्दांमुळे होणारे दुख थांबवते. काय करावे: अपमानाला सत्य म्हणून नव्हे तर मत म्हणून पहा. उदाहरण: &#39;त्यांनी मला कमकुवत म्हटले&#39; ‚Üí &#39;ते त्यांचे मत आहे, वास्तव नाही.&#39;"
+            }
+          },
+          {
+            "id": 7,
+            "xp": 8,
+            "title": {
+              "english": "Discomfort Tolerance Training",
+              "hindi": "असुविधा सहनशीलता प्रशिक्षण",
+              "marathi": "अस्वस्थता सहनशीलता प्रशिक्षण"
+            },
+            "description": {
+              "english": "Why it helps: Builds patience in stressful situations. What to do: Stay calm during teasing instead of reacting. Example: Tolerate mild discomfort without retaliation.",
+              "hindi": "यह क्यों मददगार है: तनावपूर्ण परिस्थितियों में धैर्य का विकास करता है। क्या करें: चिढ़ाने पर प्रतिक्रिया देने के बजाय शांत रहें। उदाहरण: बिना किसी प्रतिक्रिया के हल्की-फुल्की असुविधा को सहन करें।",
+              "marathi": "हे का मदत करते: तणावपूर्ण परिस्थितीत संयम निर्माण करते. काय करावे: प्रतिक्रिया देण्याऐवजी छेडछाड करताना शांत रहा. उदाहरण: सूड न घेता सौम्य अस्वस्थता सहन करा."
+            }
+          },
+          {
+            "id": 8,
+            "xp": 6,
+            "title": {
+              "english": "Rational Coping Statements",
+              "hindi": "तर्कसंगत मुकाबला कथन",
+              "marathi": "तर्कसंगत सामना विधाने"
+            },
+            "description": {
+              "english": "Why it helps: Offers tools during bullying. What to do: Repeat supportive statements. Example: 'I can stay calm, this moment will pass.'",
+              "hindi": "यह क्यों मददगार है: बदमाशी के दौरान यह मददगार साबित होता है। क्या करें: मददगार बातें दोहराएँ। उदाहरण: &#39;मैं शांत रह सकता हूँ, यह पल बीत जाएगा।&#39;",
+              "marathi": "ते का मदत करते: गुंडगिरी दरम्यान साधने देते. काय करावे: समर्थनात्मक विधाने पुन्हा करा. उदाहरण: &#39;मी शांत राहू शकतो, हा क्षण निघून जाईल.&#39;"
+            }
+          },
+          {
+            "id": 9,
+            "xp": 8,
+            "title": {
+              "english": "Flexible Thinking",
+              "hindi": "लचीली सोच",
+              "marathi": "लवचिक विचारसरणी"
+            },
+            "description": {
+              "english": "Why it helps: Reduces overgeneralization. What to do: Consider alternative explanations. Example: 'They laughed at me' ‚Üí 'They may laugh at anyone, not just me.'",
+              "hindi": "यह क्यों मददगार है: अतिसामान्यीकरण को कम करता है। क्या करें: वैकल्पिक व्याख्याओं पर विचार करें। उदाहरण: &#39;वे मुझ पर हँसे&#39; - &#39;वे किसी पर भी हँस सकते हैं, सिर्फ़ मुझ पर नहीं।&#39;",
+              "marathi": "ते का मदत करते: अतिसामान्यीकरण कमी करते. काय करावे: पर्यायी स्पष्टीकरणे विचारात घ्या. उदाहरण: &#39;ते माझ्यावर हसले&#39; ‚Üí &#39;ते फक्त माझ्यावरच नाही तर कोणावरही हसू शकतात.&#39;"
+            }
+          },
+          {
+            "id": 10,
+            "xp": 8,
+            "title": {
+              "english": "Develop Rational Alternatives",
+              "hindi": "तर्कसंगत विकल्प विकसित करें",
+              "marathi": "तर्कसंगत पर्याय विकसित करा"
+            },
+            "description": {
+              "english": "Why it helps: Encourages healthier responses. What to do: Replace harmful reactions with practical ones. Example: 'They pushed me ‚Üí I must fight' becomes 'I can report it to a teacher.'",
+              "hindi": "यह क्यों मददगार है: यह स्वस्थ प्रतिक्रियाओं को प्रोत्साहित करता है। क्या करें: हानिकारक प्रतिक्रियाओं को व्यावहारिक प्रतिक्रियाओं से बदलें। उदाहरण: &#39;उन्होंने मुझे धक्का दिया - &#39;मुझे लड़ना होगा&#39;, &#39;मैं इसकी शिकायत शिक्षक से कर सकता हूँ&#39; बन जाता है।",
+              "marathi": "ते का मदत करते: निरोगी प्रतिक्रियांना प्रोत्साहन देते. काय करावे: हानिकारक प्रतिक्रिया व्यावहारिक प्रतिक्रियांनी बदला. उदाहरण: &#39;त्यांनी मला ढकलले ‚Üí मला लढावे लागेल&#39; हे &#39;मी शिक्षकांना त्याची तक्रार करू शकतो&#39; असे बनते."
+            }
+          }
+        ]
+      }
+    }
+  }
+  

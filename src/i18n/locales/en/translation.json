@@ -18894,5 +18894,115 @@
     },
     "viewStrategyButton": "View Strategy",
     "importantNote": { "title": "Important note", "text": "If body image problems are causing major distress, consider professional support." }
-  }
-}
+  },
+    "bunkingScreen": {
+      "headerTitle": "Bunking in School",
+      "imageLabel": "Education",
+      "title": "Understanding School Avoidance",
+      "description": "Skipping school can be a sign of underlying issues like anxiety, stress, or disengagement. Learn to identify the causes and find support.",
+      "symptomsTitle": "Common Signs",
+      "symptoms": {
+        "avoidanceOfSchool": "Frequent avoidance of school or specific classes",
+        "academicStruggles": "Academic struggles and falling grades",
+        "lossOfInterest": "Loss of interest in learning activities",
+        "socialWithdrawal": "Social withdrawal from peers and activities",
+        "feelingOverwhelmed": "Feeling overwhelmed by school responsibilities"
+      },
+      "supportStrategiesTitle": "Support Strategies",
+      "strategies": {
+        "commonSuggestions": { "title": "10 Common Suggestions", "description": "Practical ways to challenge appearance-focused thoughts and media pressures." },
+      "yoga": { "title": "Yoga", "description": "Movement to reconnect with body function over appearance." },
+      "relaxation": { "title": "Relaxation", "description": "Reduce anxiety tied to body image with calming practices." },
+      "cbt": { "title": "CBT (Cognitive Behavioral Therapy)", "description": "Work to identify and reframe distorted body image beliefs." },
+      "rebt": { "title": "REBT (Rational Emotive Behavior Therapy)", "description": "Challenge absolutist ‘‘must’’ beliefs about appearance." }
+    },
+      
+      "viewStrategyButton": "View Strategy",
+      "alertTitle": "Need Help?",
+      "alertText": "If bunking school is persistent, talk to a counselor, teacher, or trusted adult about what's affecting your attendance."
+    },
+  
+    "bullyingScreen": {
+      "headerTitle": "Bullying in Schools",
+      "imageLabel": "Safety",
+      "title": "Understanding Bullying",
+      "description": "Bullying can have serious impacts on mental health and well-being. Learn to recognize the signs and find effective support strategies.",
+      "symptomsTitle": "Common Signs",
+      "symptoms": {
+        "withdrawalFromSocial": "Withdrawal from social activities and friendships",
+        "anxietyOrFear": "Anxiety or fear about going to school",
+        "lowSelfEsteem": "Low self-esteem and negative self-talk",
+        "academicDecline": "Decline in academic performance",
+        "physicalSymptoms": "Physical symptoms like headaches or stomachaches"
+      },
+      "supportStrategiesTitle": "Support Strategies",
+      "strategies": {
+        "commonSuggestions": {
+          "title": "10 Common Suggestions",
+          "description": "Practical steps to address bullying and build a support network."
+        },
+        "yoga": {
+          "title": "Yoga",
+          "description": "Movement practices to release stress and rebuild confidence."
+        },
+        "relaxation": {
+          "title": "Relaxation",
+          "description": "Calming techniques to manage anxiety and fear related to bullying."
+        },
+        "cbt": {
+          "title": "CBT (Cognitive Behavioral Therapy)",
+          "description": "Work to reframe negative self-beliefs caused by bullying experiences."
+        },
+        "rebt": {
+          "title": "REBT (Rational Emotive Behavior Therapy)",
+          "description": "Challenge beliefs about self-worth and develop emotional resilience."
+        }
+      },
+      "viewStrategyButton": "View Strategy",
+      "alertTitle": "Need Help?",
+      "alertText": "If you're experiencing bullying, talk to a trusted adult, counselor, or teacher immediately. You don't have to face this alone."
+    },
+      "learningDisabilityScreen": {
+        "headerTitle": "Learning Disability",
+        "imageLabel": "Learning",
+        "title": "Understanding Learning Disabilities",
+        "description": "Learning disabilities affect how the brain processes information. With the right support and strategies, everyone can learn effectively.",
+        "symptomsTitle": "Common Signs",
+        "symptoms": {
+          "difficultyReading": "Difficulty with reading, writing, or spelling",
+          "troubleWithMath": "Trouble understanding math concepts",
+          "memoryIssues": "Memory issues or forgetfulness",
+          "organizationChallenges": "Organization and time management challenges",
+          "frustrationWithLearning": "Frustration or anxiety around learning tasks"
+        },
+        "supportStrategiesTitle": "Support Strategies",
+        "strategies": {
+          "commonSuggestions": {
+            "title": "10 Common Suggestions",
+            "description": "Practical strategies and accommodations to support learning success."
+          },
+          "yoga": {
+            "title": "Yoga & Mindfulness",
+            "description": "Mind-body practices to improve focus and reduce learning-related stress."
+          },
+          "relaxation": {
+            "title": "Relaxation Techniques",
+            "description": "Methods to calm the mind and create a better learning environment."
+          },
+          "cbt": {
+            "title": "CBT (Cognitive Behavioral Therapy)",
+            "description": "Addressing negative thoughts and building confidence in learning abilities."
+          },
+          "rebt": {
+            "title": "REBT (Rational Emotive Behavior Therapy)",
+            "description": "Changing beliefs about learning challenges and building resilience."
+          }
+        },
+        "viewStrategyButton": "View Strategy",
+        "alertTitle": "Professional Support",
+        "alertText": "If you suspect a learning disability, consult with an educational psychologist or specialist for proper assessment and personalized learning plans."
+      }
+    }
+    
+  
+  
