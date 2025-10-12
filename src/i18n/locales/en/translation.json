@@ -9734,11 +9734,11 @@
               "description": "Mindfulness, grounding, and muscle relaxation methods to reduce tension."
             },
             "cbt": {
-              "title": "Cognitive Behavioral Therapy",
+              "title": "CBT (Cognitive Behavioral Therapy)",
               "description": "Identifying anxious thought patterns and learning healthier coping skills."
             },
             "rebt": {
-              "title": "Rational Emotive Behavior Therapy",
+              "title": "REBT (Rational Emotive Behavior Therapy)",
               "description": "Challenging irrational fears and replacing them with realistic perspectives."
             }
           },
@@ -19064,11 +19064,11 @@
           "description": "Techniques to find moments of calm and reduce caregiver stress."
         },
         "cbt": {
-          "title": "CBT",
+          "title": "CBT (Cognitive Behavioral Therapy)",
           "description": "Address negative thoughts and develop healthier caregiving perspectives."
         },
         "rebt": {
-          "title": "REBT",
+          "title": "REBT (Rational Emotive Behavior Therapy)",
           "description": "Challenge perfectionist beliefs and build emotional resilience as a caregiver."
         }
       },

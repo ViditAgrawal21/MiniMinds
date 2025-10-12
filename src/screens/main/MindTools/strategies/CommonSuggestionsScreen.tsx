@@ -140,6 +140,9 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "substance-addiction": "Substance Addiction",
       "trauma-loss-and-dreams": "Trauma, Loss and Dreams",
       "unrealistic-beauty-standards": "Unrealistic Beauty Standards",
+      "anxiety":"Anxiety Issues",
+      "loneliness-depression":"Loneliness & Depression",
+      "good-parenting":"Good Parenting",
       "eating-habits": "Eating Habits",
       "introvert-child": "Introvert Child",
       "breakupAndRebound": "Breakup and Rebound",
@@ -1047,6 +1050,387 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
         return null;
       }
     }
+
+    // handle Anxiety Issues data from comprehensive JSON file for Common Suggestions
+    if (condition === "unrealistic-beauty-standards") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/unrealistic_beauty_standards_10_common_suggestions.json",
+        );
+
+        // Prefer interventions.commonSuggestions.cards (this file), then fall back
+        // to other common shapes used across assets.
+        const itemsCandidate =
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.commonSuggestions ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Anxiety Issues data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            } as Intervention;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          } as Intervention;
+        });
+
+        return {
+          condition: "unrealistic-beauty-standards",
+          intervention_type: "10 Common Suggestions",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Anxiety Issues Common Suggestions data:", error);
+        return null;
+      }
+    }
+    // handle Loneliness & Depression data from comprehensive JSON file for Common Suggestions
+    if (condition === "loneliness-depression") {
+      try {
+        const data = require(
+          "../../../../assets/data/Emotion/Loneliness_comprehensive_data.json",
+        );
+
+        // Prefer interventions.commonSuggestions.cards (this file), then fall back
+        // to other common shapes used across assets.
+        const itemsCandidate =
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.commonSuggestions ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Loneliness & Depression data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            } as Intervention;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          } as Intervention;
+        });
+
+        return {
+          condition: "loneliness-depression",
+          intervention_type: "10 Common Suggestions",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Loneliness & Depression Common Suggestions data:", error);
+        return null;
+      }
+    }
+
+    // handle Anxiety data from comprehensive JSON file for Common Suggestions
+    if (condition === "anxiety") {
+      try {
+        const data = require(
+          "../../../../assets/data/behaviour/Anxiety_issues_like_PTSD_comprehensive_data.json",
+        );
+
+        // Prefer interventions.commonSuggestions.cards (this file), then fall back
+        // to other common shapes used across assets.
+        const itemsCandidate =
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.commonSuggestions ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Loneliness & Depression data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            } as Intervention;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          } as Intervention;
+        });
+
+        return {
+          condition: "anxiety",
+          intervention_type: "10 Common Suggestions",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Loneliness & Depression Common Suggestions data:", error);
+        return null;
+      }
+    }
+
+// handle Special Needs data from comprehensive JSON file for Common Suggestions
+if (condition === "special-needs") {
+  try {
+    const data = require(
+      "../../../../assets/data/Parenting/Dealing_with_Children_of_Special_Needs_comprehensive_data.json",
+    );
+
+    // Prefer interventions.commonSuggestions.cards (this file), then fall back
+    // to other common shapes used across assets.
+    const itemsCandidate =
+      data?.interventions?.commonSuggestions?.cards ||
+      data?.interventions?.commonSuggestions ||
+      data?.interventions?.cards ||
+      data?.interventions ||
+      data?.suggestions ||
+      null;
+
+    const items = Array.isArray(itemsCandidate)
+      ? itemsCandidate
+      : Array.isArray(itemsCandidate?.cards)
+      ? itemsCandidate.cards
+      : null;
+
+    if (!items || !Array.isArray(items)) {
+      console.error("No Common Suggestions data array found in Loneliness & Depression data");
+      return null;
+    }
+
+    // Normalize locale and map to the language field names used in this file
+    const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+    const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+    const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+    const localeField = localeFieldMap[lang] || "english";
+
+    const interventions = items.map((item: any) => {
+      // Prefer unified `translations` object if present
+      if (item.translations && typeof item.translations === "object") {
+        const translations = item.translations || {};
+        const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+        return {
+          title: chosen.title || chosen.heading || "",
+          description: chosen.description || chosen.body || "",
+          xp: item.xp || item.XP || 2,
+        } as Intervention;
+      }
+
+      // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+      const titleObj = item.title || item.Title || {};
+      const descObj = item.description || item.Description || {};
+
+      const title =
+        (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+        (typeof titleObj === "string" ? titleObj : "");
+
+      const description =
+        (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+        (typeof descObj === "string" ? descObj : "");
+
+      return {
+        title: title || "",
+        description: description || "",
+        xp: item.xp || item.XP || 2,
+      } as Intervention;
+    });
+
+    return {
+      condition: "special needs",
+      intervention_type: "10 Common Suggestions",
+      interventions,
+    };
+  } catch (error) {
+    console.error("Error loading Loneliness & Depression Common Suggestions data:", error);
+    return null;
+  }
+}
+
+    // handle Good Parenting data from comprehensive JSON file for Common Suggestions
+    if (condition === "good-parenting") {
+      try {
+        const data = require(
+          "../../../../assets/data/Parenting/Good_Parenting_comprehensive_data.json",
+        );
+
+        // Prefer interventions.commonSuggestions.cards (this file), then fall back
+        // to other common shapes used across assets.
+        const itemsCandidate =
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.commonSuggestions ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          data?.suggestions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No Common Suggestions data array found in Good Parenting data");
+          return null;
+        }
+
+        // Normalize locale and map to the language field names used in this file
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          // Prefer unified `translations` object if present
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 2,
+            } as Intervention;
+          }
+
+          // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+          const titleObj = item.title || item.Title || {};
+          const descObj = item.description || item.Description || {};
+
+          const title =
+            (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+            (typeof titleObj === "string" ? titleObj : "");
+
+          const description =
+            (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+            (typeof descObj === "string" ? descObj : "");
+
+          return {
+            title: title || "",
+            description: description || "",
+            xp: item.xp || item.XP || 2,
+          } as Intervention;
+        });
+
+        return {
+          condition: "good-parenting",
+          intervention_type: "10 Common Suggestions",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Good Parenting Common Suggestions data:", error);
+        return null;
+      }
+    }
+
+   
     
     //handle Substance Addiction data from comprehensive JSON file for Common Suggestions
     if (condition === "substance-addiction") {
@@ -1510,6 +1894,8 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "substance-addiction": "substanceAddiction",
       "trauma-loss-and-dreams": "traumaLossAndDreams",
       "unrealistic-beauty-standards": "unrealisticBeautyStandards",
+      "anxiety":"anxietyIssues",
+      "good-parenting":"Good Parenting",
       "dark-web-onlyfans": "darkWebAndOnlyFans",
       "environment-issues": "environmentIssues",
       "family-relationship": "familyRelationship",

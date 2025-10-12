@@ -406,6 +406,8 @@ export default function REBTScreen({ navigation, route }: any) {
       "social-media-issues": "Social Media Issues",
       "trauma-loss-and-dreams": "Trauma, Loss & Dreams",
       "unrealistic-beauty-standards": "Unrealistic Beauty Standards",
+      "loneliness-depression":"Loneliness & Depression",
+      "good-parenting":"Good Parenting",
       "introvert-child": "Introvert Child",
       "breakupAndRebound": "Breakup and Rebound",
       "friendship-and-relationship": "Frendship and Relationship",
@@ -1214,6 +1216,310 @@ export default function REBTScreen({ navigation, route }: any) {
           };
         } catch (error) {
           console.error("Error loading Unrealistic Beauty Standards REBT data:", error);
+          return null;
+        }
+      }
+
+      // handle Loneliness & Depression data from comprehensive JSON file for REBT
+      if (condition === "loneliness-depression") {
+        try {
+          const data = require(
+            "../../../../assets/data/Emotion/Loneliness_comprehensive_data.json",
+          );
+
+          // Prefer interventions.rebt.cards, then fall back to other common shapes
+          const itemsCandidate =
+            data?.interventions?.rebt?.cards ||
+            data?.interventions?.rebt ||
+            data?.interventions?.commonSuggestions?.cards ||
+            data?.interventions?.cards ||
+            data?.interventions ||
+            data?.suggestions ||
+            null;
+
+          const items = Array.isArray(itemsCandidate)
+            ? itemsCandidate
+            : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+          if (!items || !Array.isArray(items)) {
+            console.error("No REBT data array found in Loneliness & Depression data");
+            return null;
+          }
+
+          // Normalize locale and map to the language field names used in this file
+          const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+          const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+          const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+          const localeField = localeFieldMap[lang] || "english";
+
+          const interventions = items.map((item: any) => {
+            // Prefer unified `translations` object if present
+            if (item.translations && typeof item.translations === "object") {
+              const translations = item.translations || {};
+              const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+              return {
+                title: chosen.title || chosen.heading || "",
+                description: chosen.description || chosen.body || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            }
+
+            // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+            const titleObj = item.title || item.Title || {};
+            const descObj = item.description || item.Description || {};
+
+            const title =
+              (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+              (typeof titleObj === "string" ? titleObj : "");
+
+            const description =
+              (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+              (typeof descObj === "string" ? descObj : "");
+
+            return {
+              title: title || "",
+              description: description || "",
+              xp: item.xp || item.XP || 0,
+            } as REBTIntervention;
+          });
+
+          return {
+            condition: "loneliness-depression",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Loneliness & Depression REBT data:", error);
+          return null;
+        }
+      }
+
+      // handle special needs data from comprehensive JSON file for REBT
+      if (condition === "special-needs") {
+        try {
+          const data = require(
+            "../../../../assets/data/Parenting/Dealing_with_Children_of_Special_Needs_comprehensive_data.json",
+          );
+
+          // Prefer interventions.rebt.cards, then fall back to other common shapes
+          const itemsCandidate =
+            data?.interventions?.rebt?.cards ||
+            data?.interventions?.rebt ||
+            data?.interventions?.commonSuggestions?.cards ||
+            data?.interventions?.cards ||
+            data?.interventions ||
+            data?.suggestions ||
+            null;
+
+          const items = Array.isArray(itemsCandidate)
+            ? itemsCandidate
+            : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+          if (!items || !Array.isArray(items)) {
+            console.error("No REBT data array found in Loneliness & Depression data");
+            return null;
+          }
+
+          // Normalize locale and map to the language field names used in this file
+          const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+          const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+          const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+          const localeField = localeFieldMap[lang] || "english";
+
+          const interventions = items.map((item: any) => {
+            // Prefer unified `translations` object if present
+            if (item.translations && typeof item.translations === "object") {
+              const translations = item.translations || {};
+              const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+              return {
+                title: chosen.title || chosen.heading || "",
+                description: chosen.description || chosen.body || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            }
+
+            // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+            const titleObj = item.title || item.Title || {};
+            const descObj = item.description || item.Description || {};
+
+            const title =
+              (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+              (typeof titleObj === "string" ? titleObj : "");
+
+            const description =
+              (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+              (typeof descObj === "string" ? descObj : "");
+
+            return {
+              title: title || "",
+              description: description || "",
+              xp: item.xp || item.XP || 0,
+            } as REBTIntervention;
+          });
+
+          return {
+            condition: "special-needs",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Special needs REBT data:", error);
+          return null;
+        }
+      }
+
+       // handle anxiety data from comprehensive JSON file for REBT
+       if (condition === "anxiety") {
+        try {
+          const data = require(
+            "../../../../assets/data/Parenting/Dealing_with_Children_of_Special_Needs_comprehensive_data.json",
+          );
+
+          // Prefer interventions.rebt.cards, then fall back to other common shapes
+          const itemsCandidate =
+            data?.interventions?.rebt?.cards ||
+            data?.interventions?.rebt ||
+            data?.interventions?.commonSuggestions?.cards ||
+            data?.interventions?.cards ||
+            data?.interventions ||
+            data?.suggestions ||
+            null;
+
+          const items = Array.isArray(itemsCandidate)
+            ? itemsCandidate
+            : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+          if (!items || !Array.isArray(items)) {
+            console.error("No REBT data array found in Loneliness & Depression data");
+            return null;
+          }
+
+          // Normalize locale and map to the language field names used in this file
+          const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+          const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+          const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+          const localeField = localeFieldMap[lang] || "english";
+
+          const interventions = items.map((item: any) => {
+            // Prefer unified `translations` object if present
+            if (item.translations && typeof item.translations === "object") {
+              const translations = item.translations || {};
+              const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+              return {
+                title: chosen.title || chosen.heading || "",
+                description: chosen.description || chosen.body || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            }
+
+            // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+            const titleObj = item.title || item.Title || {};
+            const descObj = item.description || item.Description || {};
+
+            const title =
+              (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+              (typeof titleObj === "string" ? titleObj : "");
+
+            const description =
+              (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+              (typeof descObj === "string" ? descObj : "");
+
+            return {
+              title: title || "",
+              description: description || "",
+              xp: item.xp || item.XP || 0,
+            } as REBTIntervention;
+          });
+
+          return {
+            condition: "anxiety",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Anxiety REBT data:", error);
+          return null;
+        }
+      }
+
+      // handle Good Parenting data from comprehensive JSON file for REBT
+      if (condition === "good-parenting") {
+        try {
+          const data = require(
+            "../../../../assets/data/Parenting/Good_Parenting_comprehensive_data.json",
+          );
+
+          // Prefer interventions.rebt.cards, then fall back to other common shapes
+          const itemsCandidate =
+            data?.interventions?.rebt?.cards ||
+            data?.interventions?.rebt ||
+            data?.interventions?.commonSuggestions?.cards ||
+            data?.interventions?.cards ||
+            data?.interventions ||
+            data?.suggestions ||
+            null;
+
+          const items = Array.isArray(itemsCandidate)
+            ? itemsCandidate
+            : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+          if (!items || !Array.isArray(items)) {
+            console.error("No REBT data array found in Good Parenting Beauty Standards data");
+            return null;
+          }
+
+          // Normalize locale and map to the language field names used in this file
+          const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+          const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+          const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+          const localeField = localeFieldMap[lang] || "english";
+
+          const interventions = items.map((item: any) => {
+            // Prefer unified `translations` object if present
+            if (item.translations && typeof item.translations === "object") {
+              const translations = item.translations || {};
+              const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+              return {
+                title: chosen.title || chosen.heading || "",
+                description: chosen.description || chosen.body || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            }
+
+            // The asset commonly uses 'english'/'hindi'/'marathi' keys under title/description
+            const titleObj = item.title || item.Title || {};
+            const descObj = item.description || item.Description || {};
+
+            const title =
+              (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+              (typeof titleObj === "string" ? titleObj : "");
+
+            const description =
+              (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+              (typeof descObj === "string" ? descObj : "");
+
+            return {
+              title: title || "",
+              description: description || "",
+              xp: item.xp || item.XP || 0,
+            } as REBTIntervention;
+          });
+
+          return {
+            condition: "good-parenting",
+            intervention_type: "REBT",
+            interventions,
+          };
+        } catch (error) {
+          console.error("Error loading Good Parenting REBT data:", error);
           return null;
         }
       }
