@@ -11,13 +11,13 @@
             "xp": 4,
             "title": {
               "english": "Remove Means",
-              "hindi": "Remove Means",
-              "marathi": "Remove Means"
+              "hindi": "हानिकारक सामान दूर रखें",
+              "marathi": "धोकादायक वस्तू दूर करा"
             },
             "description": {
-              "english": "Store or dispose of sharp objects/medications; use lockboxes or safety caps; ask a trusted person to hold items temporarily. Example: Give razors to a roommate for a week to reduce immediate access.\"\"",
-              "hindi": "Store or dispose of sharp objects/medications; use lockboxes or safety caps; ask a trusted person to hold items temporarily. Example: Give razors to a roommate for a week to reduce immediate access.\"\"",
-              "marathi": "Store or dispose of sharp objects/medications; use lockboxes or safety caps; ask a trusted person to hold items temporarily. Example: Give razors to a roommate for a week to reduce immediate access.\"\""
+              "english": "Store or dispose of sharp objects/medications; use lockboxes or safety caps; ask a trusted person to hold items temporarily. Example: Give razors to a roommate for a week to reduce immediate access.",
+              "hindi": "खुरदरे वस्तुओं/दवाइयों को सुरक्षित रखें या नष्ट कर दें; लॉकबॉक्स या सुरक्षा कैप का उपयोग करें; किसी भरोसेमंद व्यक्ति से अस्थायी रूप से चीजें रखने को कहें। उदाहरण: तत्काल पहुँच कम करने के लिए एक सप्ताह के लिए रेज़र किसी रूममेट को दे दें।",
+              "marathi": "धारदार वस्तू/औषधे सुरक्षित ठिकाणी ठेवा किंवा नष्ट करा; लॉकबॉक्स किंवा सुरक्षा कव्हर वापरा; एखाद्या विश्वासू व्यक्तीला तात्पुरते वस्तू ठेवायला सांगा. उदाहरण: तातडीची उपलब्धता कमी करण्यासाठी रेझर एका आठवड्यासाठी रूममेटला देणे."
             }
           },
           {
@@ -25,13 +25,13 @@
             "xp": 3,
             "title": {
               "english": "Create a Safety Plan",
-              "hindi": "Create a Safety Plan",
-              "marathi": "Create a Safety Plan"
+              "hindi": "सुरक्षा योजना बनाएं",
+              "marathi": "सुरक्षा योजना तयार करा"
             },
             "description": {
-              "english": "Write warning signs; coping steps; contacts; and emergency numbers; keep it visible. Example: A one-page plan on the phone notes app with 3 grounding steps and a friend's number.\"\"",
-              "hindi": "Write warning signs; coping steps; contacts; and emergency numbers; keep it visible. Example: A one-page plan on the phone notes app with 3 grounding steps and a friend's number.\"\"",
-              "marathi": "Write warning signs; coping steps; contacts; and emergency numbers; keep it visible. Example: A one-page plan on the phone notes app with 3 grounding steps and a friend's number.\"\""
+              "english": "Write warning signs; coping steps; contacts; and emergency numbers; keep it visible. Example: A one-page plan on the phone notes app with 3 grounding steps and a friend's number.",
+              "hindi": "चेतावनी संकेत, मुकाबला कदम, संपर्क और आपातकालीन नंबर लिखकर एक स्पष्ट सुरक्षा योजना बनाएं और इसे जहाँ दिखे रखें। उदाहरण: फोन के नोट्स पर एक पन्ने की योजना जिसमें 3 ग्राउंडिंग कदम और एक दोस्त का नंबर हो।",
+              "marathi": "इशारे, सामना करण्याचे पावले, संपर्क आणि आपत्कालीन नंबर लिहून एक स्पष्ट सुरक्षा योजना तयार करा आणि ती दृश्यमान ठेवा. उदाहरण: फोनच्या नोट्समधील एक पानांची योजना ज्यात 3 ग्राउंडिंग स्टेप्स आणि मित्राचा नंबर असावा."
             }
           },
           {
@@ -39,13 +39,13 @@
             "xp": 3,
             "title": {
               "english": "Delay the Urge",
-              "hindi": "Delay the Urge",
-              "marathi": "Delay the Urge"
+              "hindi": "इच्छा को टालें",
+              "marathi": "आवेग थांबवा"
             },
             "description": {
-              "english": "Use the 10-minute rule—set a timer and do a neutral activity (shower; tea; walk). Example: Each time the urge hits; fold laundry for 10 minutes; urges often dip in intensity.\"\"",
-              "hindi": "Use the 10-minute rule—set a timer and do a neutral activity (shower; tea; walk). Example: Each time the urge hits; fold laundry for 10 minutes; urges often dip in intensity.\"\"",
-              "marathi": "Use the 10-minute rule—set a timer and do a neutral activity (shower; tea; walk). Example: Each time the urge hits; fold laundry for 10 minutes; urges often dip in intensity.\"\""
+              "english": "Use the 10-minute rule—set a timer and do a neutral activity (shower; tea; walk). Example: Each time the urge hits; fold laundry for 10 minutes; urges often dip in intensity.",
+              "hindi": "10‑मिनट नियम लागू करें — टाइमर सेट करें और कोई तटस्थ गतिविधि करें (नहाना; चाय; टहलना)। उदाहरण: हर बार जब आवेग आए तो 10 मिनट के लिए कपड़े मोड़ लें; अक्सर आवेग की तीव्रता घट जाती है।",
+              "marathi": "10‑मिनिट नियम वापरा — टायमर सेट करा आणि एक तटस्थ क्रिया करा (स्नान; चहा; चालणे). उदाहरण: प्रत्येकवेळी आवेग आला की 10 मिनिटांसाठी कपडे मांडणे; अनेकदा आवेगाचा तीव्रपणा कमी होतो."
             }
           },
           {
@@ -53,13 +53,13 @@
             "xp": 2,
             "title": {
               "english": "Grounding with Senses",
-              "hindi": "Grounding with Senses",
-              "marathi": "Grounding with Senses"
+              "hindi": "इंद्रियों के साथ ग्राउंडिंग",
+              "marathi": "इंद्रियांसह ग्राउंडिंग"
             },
             "description": {
-              "english": "5-4-3-2-1 method: name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste; pair with slow breathing. Example: In bed at night; label items in the room while exhaling for 6 counts.\"\"",
-              "hindi": "5-4-3-2-1 method: name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste; pair with slow breathing. Example: In bed at night; label items in the room while exhaling for 6 counts.\"\"",
-              "marathi": "5-4-3-2-1 method: name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste; pair with slow breathing. Example: In bed at night; label items in the room while exhaling for 6 counts.\"\""
+              "english": "5-4-3-2-1 method: name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste; pair with slow breathing. Example: In bed at night; label items in the room while exhaling for 6 counts.",
+              "hindi": "5‑4‑3‑2‑1 तरीका: 5 चीजें जिन्हें आप देखते हैं; 4 जिन्हें आप छूते हैं; 3 जो आप सुनते हैं; 2 जिन्हें आप सूंघते हैं; 1 जो आप चखते हैं; इसे धीमी साँस के साथ जोड़ें। उदाहरण: रात में बिस्तर पर, कमरे की वस्तुओं को नाम देकर बाहर धीरे‑धीरे 6 गिनती तक साँस छोड़ें।",
+              "marathi": "5‑4‑3‑2‑1 पद्धत: 5 गोष्टी ज्या तुम्ही पाहता; 4 ज्या तुम्ही स्पर्श करता; 3 ज्या तुम्ही ऐकता; 2 ज्या तुम्हाला वास येतो; 1 चव; हे हळूहळू श्वासासोबत करा. उदाहरण: रात्री उशीवर असताना खोलीतील वस्तू नावे घेऊन सहा मोजण्याच्या श्वासासह बाहेर सोडा."
             }
           },
           {
@@ -67,13 +67,13 @@
             "xp": 2,
             "title": {
               "english": "Soothing Alternatives",
-              "hindi": "Soothing Alternatives",
-              "marathi": "Soothing Alternatives"
+              "hindi": "शांत करने वाले विकल्प",
+              "marathi": "शांत करणारे पर्याय"
             },
             "description": {
-              "english": "Swap harmful action with safe sensations (ice cube on wrist; hold a frozen towel; draw on skin with marker). Example: Keep a \"\"\"\"cool kit\"\"\"\" in the freezer for high-urge moments.\"\"",
-              "hindi": "Swap harmful action with safe sensations (ice cube on wrist; hold a frozen towel; draw on skin with marker). Example: Keep a \"\"\"\"cool kit\"\"\"\" in the freezer for high-urge moments.\"\"",
-              "marathi": "Swap harmful action with safe sensations (ice cube on wrist; hold a frozen towel; draw on skin with marker). Example: Keep a \"\"\"\"cool kit\"\"\"\" in the freezer for high-urge moments.\"\""
+              "english": "Swap harmful action with safe sensations (ice cube on wrist; hold a frozen towel; draw on skin with marker). Example: Keep a 'cool kit' in the freezer for high-urge moments.",
+              "hindi": "हानिकारक क्रिया की जगह सुरक्षित संवेदनाएँ अपनाएँ (कलाई पर बर्फ का टुकड़ा; जमे हुए तौलिये को पकड़े; त्वचा पर मार्कर से आरेख बनाना)। उदाहरण: उच्च आवेग के समय के लिए फ्रिज में एक 'कूल किट' रखें।",
+              "marathi": "हानिकारक वर्तनाऐवजी सुरक्षित संवेदनांचा वापर करा (मनावर बर्फाचा तुकडा; गोठवलेले टॉवेल धरून ठेवणे; त्वचेवर मार्करने रेखाटन करणे). उदाहरण: उच्च आवेगाच्या क्षणी 'कूल किट' फ्रिजमध्ये ठेवा."
             }
           },
           {
@@ -81,13 +81,13 @@
             "xp": 3,
             "title": {
               "english": "Emotion Labeling",
-              "hindi": "Emotion Labeling",
-              "marathi": "Emotion Labeling"
+              "hindi": "भावनाओं का नामकरण",
+              "marathi": "भावना लेबल करणे"
             },
             "description": {
-              "english": "Name the emotion + intensity (e.g.; \"\"\"\"sad 7/10\"\"\"\") to reduce reactivity; write one need. Example: \"\"\"\"Overwhelmed 8/10—need rest and reassurance.\"\"\"\"\"\"",
-              "hindi": "Name the emotion + intensity (e.g.; \"\"\"\"sad 7/10\"\"\"\") to reduce reactivity; write one need. Example: \"\"\"\"Overwhelmed 8/10—need rest and reassurance.\"\"\"\"\"\"",
-              "marathi": "Name the emotion + intensity (e.g.; \"\"\"\"sad 7/10\"\"\"\") to reduce reactivity; write one need. Example: \"\"\"\"Overwhelmed 8/10—need rest and reassurance.\"\"\"\"\"\""
+              "english": "Name the emotion + intensity (e.g.; 'sad 7/10') to reduce reactivity; write one need. Example: 'Overwhelmed 8/10—need rest and reassurance.'",
+              "hindi": "भावना और उसकी तीव्रता बताएं (उदा. 'उदास 7/10') ताकि प्रतिक्रियाशीलता कम हो; एक आवश्यकता लिखें। उदाहरण: 'अतिभारित 8/10 — आराम और आश्वासन चाहिए।'",
+              "marathi": "भावना आणि तीव्रता नावाने सांगा (उदा. 'दु:खी 7/10') ज्यामुळे प्रतिक्रियाशीलता कमी होते; एक गरज लिहा. उदाहरण: 'ओव्हरव्हेल्म्ड 8/10 — आराम व आश्वासन हवे.'"
             }
           },
           {
@@ -95,13 +95,13 @@
             "xp": 4,
             "title": {
               "english": "Reach Out Early",
-              "hindi": "Reach Out Early",
-              "marathi": "Reach Out Early"
+              "hindi": "जल्द संपर्क करें",
+              "marathi": "लवकर संपर्क साधा"
             },
             "description": {
-              "english": "Text/call a trusted person before the urge peaks; use brief scripts. Example: Send \"\"\"\"Having a tough moment—can you stay on the phone 5 mins?\"\"\"\"\"\"",
-              "hindi": "Text/call a trusted person before the urge peaks; use brief scripts. Example: Send \"\"\"\"Having a tough moment—can you stay on the phone 5 mins?\"\"\"\"\"\"",
-              "marathi": "Text/call a trusted person before the urge peaks; use brief scripts. Example: Send \"\"\"\"Having a tough moment—can you stay on the phone 5 mins?\"\"\"\"\"\""
+              "english": "Text/call a trusted person before the urge peaks; use brief scripts. Example: Send 'Having a tough moment—can you stay on the phone 5 mins?'",
+              "hindi": "आवेग उछाल लेने से पहले किसी भरोसेमंद व्यक्ति को टेक्स्ट/कॉल करें; संक्षिप्त स्क्रिप्ट का उपयोग करें। उदाहरण: 'मुझे मुश्किल समय चल रहा है — क्या आप 5 मिनट के लिए फोन पर रहेंगे?'",
+              "marathi": "आवेग peak होण्यापूर्वी विश्वासू व्यक्तीला टेक्स्ट/कॉल करा; छोटे स्क्रिप्ट वापरा. उदाहरण: 'मला कठीण वेळ चालला आहे — 5 मिनिटांसाठी फोनवर राहशील का?'"
             }
           },
           {
@@ -109,13 +109,13 @@
             "xp": 5,
             "title": {
               "english": "Therapy and Crisis Resources",
-              "hindi": "Therapy and Crisis Resources",
-              "marathi": "Therapy and Crisis Resources"
+              "hindi": "थेरेपी और संकट संसाधन",
+              "marathi": "थेरपी व संकट संसाधने"
             },
             "description": {
-              "english": "Schedule regular therapy; save crisis contacts. Example: Book a weekly CBT/DBT session; add local crisis hotline and nearest ER in favorites.\"\"",
-              "hindi": "Schedule regular therapy; save crisis contacts. Example: Book a weekly CBT/DBT session; add local crisis hotline and nearest ER in favorites.\"\"",
-              "marathi": "Schedule regular therapy; save crisis contacts. Example: Book a weekly CBT/DBT session; add local crisis hotline and nearest ER in favorites.\"\""
+              "english": "Schedule regular therapy; save crisis contacts. Example: Book a weekly CBT/DBT session; add local crisis hotline and nearest ER in favorites.",
+              "hindi": "नियमित थेरेपी शेड्यूल करें; संकट संपर्क सहेजें। उदाहरण: साप्ताहिक CBT/DBT सत्र बुक करें; स्थानीय संकट हॉटलाइन और निकटतम आपातकालीन कक्ष को फेवरेट में जोड़ें।",
+              "marathi": "नियमित थेरपी ठरवा; संकट संपर्क जतन करा. उदाहरण: साप्ताहिक CBT/DBT सत्र बुक करा; स्थानिक संकट हॉटलाइन व जवळच्या ER चे नंबर जतन करा."
             }
           },
           {
@@ -123,145 +123,13 @@
             "xp": 2,
             "title": {
               "english": "Routine and Sleep",
-              "hindi": "Routine and Sleep",
-              "marathi": "Routine and Sleep"
+              "hindi": "दैनिक दिनचर्या और नींद",
+              "marathi": "दैनंदिन दिनचर्या आणि झोप"
             },
             "description": {
-              "english": "Keep consistent sleep/wake times; plan simple meals and movement. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch; prep snacks on Sundays.\"\"",
-              "hindi": "Keep consistent sleep/wake times; plan simple meals and movement. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch; prep snacks on Sundays.\"\"",
-              "marathi": "Keep consistent sleep/wake times; plan simple meals and movement. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch; prep snacks on Sundays.\"\""
-            }
-          }
-        ]
-      },
-      "relaxation": {
-        "type": "Secondary",
-        "interventionSubType": "Relaxation",
-        "cards": [
-          {
-            "id": 1,
-            "xp": 5,
-            "title": {
-              "english": "Box Breathing 4-4-4-4",
-              "hindi": "Box Breathing 4-4-4-4",
-              "marathi": "Box Breathing 4-4-4-4"
-            },
-            "description": {
-              "english": "Why it helps: Calms the nervous system rapidly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use during a surge (urge ≥7/10) until it drops by 2 points.\"\"",
-              "hindi": "Why it helps: Calms the nervous system rapidly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use during a surge (urge ≥7/10) until it drops by 2 points.\"\"",
-              "marathi": "Why it helps: Calms the nervous system rapidly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use during a surge (urge ≥7/10) until it drops by 2 points.\"\""
-            }
-          },
-          {
-            "id": 2,
-            "xp": 6,
-            "title": {
-              "english": "5-4-3-2-1 Grounding",
-              "hindi": "5-4-3-2-1 Grounding",
-              "marathi": "5-4-3-2-1 Grounding"
-            },
-            "description": {
-              "english": "Why it helps: Shifts attention from intrusive urges to present sensations. What to do: Name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste. Example: Do in a quiet corner after a triggering text.\"\"",
-              "hindi": "Why it helps: Shifts attention from intrusive urges to present sensations. What to do: Name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste. Example: Do in a quiet corner after a triggering text.\"\"",
-              "marathi": "Why it helps: Shifts attention from intrusive urges to present sensations. What to do: Name 5 things you see; 4 feel; 3 hear; 2 smell; 1 taste. Example: Do in a quiet corner after a triggering text.\"\""
-            }
-          },
-          {
-            "id": 3,
-            "xp": 7,
-            "title": {
-              "english": "Progressive Muscle Relaxation (PMR)",
-              "hindi": "Progressive Muscle Relaxation (PMR)",
-              "marathi": "Progressive Muscle Relaxation (PMR)"
-            },
-            "description": {
-              "english": "Why it helps: Releases tension that amplifies urges. What to do: Tense each muscle group 5s then release 10s from feet to head (10–12 groups). Example: Use before bed when rumination spikes.\"\"",
-              "hindi": "Why it helps: Releases tension that amplifies urges. What to do: Tense each muscle group 5s then release 10s from feet to head (10–12 groups). Example: Use before bed when rumination spikes.\"\"",
-              "marathi": "Why it helps: Releases tension that amplifies urges. What to do: Tense each muscle group 5s then release 10s from feet to head (10–12 groups). Example: Use before bed when rumination spikes.\"\""
-            }
-          },
-          {
-            "id": 4,
-            "xp": 6,
-            "title": {
-              "english": "Cold Temperature Reset",
-              "hindi": "Cold Temperature Reset",
-              "marathi": "Cold Temperature Reset"
-            },
-            "description": {
-              "english": "Why it helps: Lowers physiological arousal quickly. What to do: Hold ice or splash cold water on face for 30–60s while breathing slowly. Example: During peak urge to self-harm in the bathroom.\"\"",
-              "hindi": "Why it helps: Lowers physiological arousal quickly. What to do: Hold ice or splash cold water on face for 30–60s while breathing slowly. Example: During peak urge to self-harm in the bathroom.\"\"",
-              "marathi": "Why it helps: Lowers physiological arousal quickly. What to do: Hold ice or splash cold water on face for 30–60s while breathing slowly. Example: During peak urge to self-harm in the bathroom.\"\""
-            }
-          },
-          {
-            "id": 5,
-            "xp": 5,
-            "title": {
-              "english": "Safe Sensory Kit",
-              "hindi": "Safe Sensory Kit",
-              "marathi": "Safe Sensory Kit"
-            },
-            "description": {
-              "english": "Why it helps: Provides soothing alternatives to harmful behaviors. What to do: Prepare items: soft fabric; scented oil; stress ball; calming playlist. Example: Grip stress ball + lavender scent for 3 minutes.\"\"",
-              "hindi": "Why it helps: Provides soothing alternatives to harmful behaviors. What to do: Prepare items: soft fabric; scented oil; stress ball; calming playlist. Example: Grip stress ball + lavender scent for 3 minutes.\"\"",
-              "marathi": "Why it helps: Provides soothing alternatives to harmful behaviors. What to do: Prepare items: soft fabric; scented oil; stress ball; calming playlist. Example: Grip stress ball + lavender scent for 3 minutes.\"\""
-            }
-          },
-          {
-            "id": 6,
-            "xp": 7,
-            "title": {
-              "english": "Guided Imagery Sanctuary",
-              "hindi": "Guided Imagery Sanctuary",
-              "marathi": "Guided Imagery Sanctuary"
-            },
-            "description": {
-              "english": "Why it helps: Creates mental distance from triggers. What to do: Close eyes; visualize a safe place with 3 sensory details per sense for 5 minutes. Example: Beach scene with waves and warm sun.\"\"",
-              "hindi": "Why it helps: Creates mental distance from triggers. What to do: Close eyes; visualize a safe place with 3 sensory details per sense for 5 minutes. Example: Beach scene with waves and warm sun.\"\"",
-              "marathi": "Why it helps: Creates mental distance from triggers. What to do: Close eyes; visualize a safe place with 3 sensory details per sense for 5 minutes. Example: Beach scene with waves and warm sun.\"\""
-            }
-          },
-          {
-            "id": 7,
-            "xp": 5,
-            "title": {
-              "english": "Extended Exhale Breathing 4-6",
-              "hindi": "Extended Exhale Breathing 4-6",
-              "marathi": "Extended Exhale Breathing 4-6"
-            },
-            "description": {
-              "english": "Why it helps: Activates parasympathetic tone to reduce urge intensity. What to do: Inhale 4s; exhale 6s for 5 minutes; keep shoulders relaxed. Example: After conflict; sit and breathe before responding.\"\"",
-              "hindi": "Why it helps: Activates parasympathetic tone to reduce urge intensity. What to do: Inhale 4s; exhale 6s for 5 minutes; keep shoulders relaxed. Example: After conflict; sit and breathe before responding.\"\"",
-              "marathi": "Why it helps: Activates parasympathetic tone to reduce urge intensity. What to do: Inhale 4s; exhale 6s for 5 minutes; keep shoulders relaxed. Example: After conflict; sit and breathe before responding.\"\""
-            }
-          },
-          {
-            "id": 8,
-            "xp": 6,
-            "title": {
-              "english": "Soothing Self-Talk Script",
-              "hindi": "Soothing Self-Talk Script",
-              "marathi": "Soothing Self-Talk Script"
-            },
-            "description": {
-              "english": "Why it helps: Reduces shame and increases self-compassion. What to do: Read a prewritten script aloud slowly. Example: “This urge will pass. I choose safety. I deserve care even when I hurt.”\"\"",
-              "hindi": "Why it helps: Reduces shame and increases self-compassion. What to do: Read a prewritten script aloud slowly. Example: “This urge will pass. I choose safety. I deserve care even when I hurt.”\"\"",
-              "marathi": "Why it helps: Reduces shame and increases self-compassion. What to do: Read a prewritten script aloud slowly. Example: “This urge will pass. I choose safety. I deserve care even when I hurt.”\"\""
-            }
-          },
-          {
-            "id": 9,
-            "xp": 5,
-            "title": {
-              "english": "Mindful Walk 5 Minutes",
-              "hindi": "Mindful Walk 5 Minutes",
-              "marathi": "Mindful Walk 5 Minutes"
-            },
-            "description": {
-              "english": "Why it helps: Gentle movement disperses stress hormones. What to do: Walk slowly; match steps to breath; notice 3 new details each minute. Example: Loop the hallway or backyard during late-night spikes.\"\"",
-              "hindi": "Why it helps: Gentle movement disperses stress hormones. What to do: Walk slowly; match steps to breath; notice 3 new details each minute. Example: Loop the hallway or backyard during late-night spikes.\"\"",
-              "marathi": "Why it helps: Gentle movement disperses stress hormones. What to do: Walk slowly; match steps to breath; notice 3 new details each minute. Example: Loop the hallway or backyard during late-night spikes.\"\""
+              "english": "Keep consistent sleep/wake times; plan simple meals and movement. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch; prep snacks on Sundays.",
+              "hindi": "नियमित सोने‑जागने के समय रखें; सरल भोजन और हल्की गतिविधि की योजना बनाएं। उदाहरण: रात 11 बजे लाइट बंद; सुबह 7 बजे उठना; दोपहर के बाद 20‑मिनट की सैर; रविवार को स्नैक्स तैयार रखें।",
+              "marathi": "सुसंगत झोप/उठण्याच्या वेळा ठेवा; साधी भोजन व हलकी हालचाल नियोजित करा. उदाहरण: रात्री 11 वाजता दिवे बंद; सकाळी 7 वाजता उठा; जेवणानंतर 20 मिनिट चालणे; रविवारी स्नॅक्स तयार ठेवा."
             }
           }
         ]

@@ -5,134 +5,134 @@
     "commonSuggestions": {
       "type": "Primary",
       "interventionSubType": "10 Common Suggestions",
-      "cards": [
-        {
-          "id": 1,
-          "xp": 2,
-          "title": {
-            "english": "Establish Predictable Routines",
-            "hindi": "Establish Predictable Routines",
-            "marathi": "Establish Predictable Routines"
+        "cards": [
+          {
+            "id": 1,
+            "xp": 2,
+            "title": {
+              "english": "Establish Predictable Routines",
+              "hindi": "नियमित और अनुमानित दिनचर्या स्थापित करें",
+              "marathi": "पूर्वानुमेय दिनचर्या स्थापन करा"
+            },
+            "description": {
+              "english": "Create simple morning/bedtime routines to reduce friction. How it works: Fewer decisions lower stress and tantrums. Example: Brush-teeth; story; lights-out at 9 pm daily.",
+              "hindi": "घर्षण कम करने के लिए सरल सुबह/सोने की दिनचर्या बनाएं। यह कैसे काम करता है: कम निर्णय तनाव और जिद को कम करते हैं। उदाहरण: रोज़ दाँत ब्रश, कहानी, रात 9 बजे बत्ती बंद।",
+              "marathi": "घर्षण कमी करण्यासाठी सोपी सकाळ/झोपण्याची दिनचर्या तयार करा. याचे फायदे: कमी निर्णय → कमी तणाव व रागाट. उदाहरण: दररोज ब्रश, गोष्ट, रात्री 9 वाजता दिवे बंद."
+            }
           },
-          "description": {
-            "english": "Create simple morning/bedtime routines to reduce friction. How it works: Fewer decisions lower stress and tantrums. Example: Brush-teeth; story; lights-out at 9 pm daily.\"\"",
-            "hindi": "Create simple morning/bedtime routines to reduce friction. How it works: Fewer decisions lower stress and tantrums. Example: Brush-teeth; story; lights-out at 9 pm daily.\"\"",
-            "marathi": "Create simple morning/bedtime routines to reduce friction. How it works: Fewer decisions lower stress and tantrums. Example: Brush-teeth; story; lights-out at 9 pm daily.\"\""
-          }
-        },
-        {
-          "id": 2,
-          "xp": 2,
-          "title": {
-            "english": "One-on-One Time",
-            "hindi": "One-on-One Time",
-            "marathi": "One-on-One Time"
+          {
+            "id": 2,
+            "xp": 2,
+            "title": {
+              "english": "One-on-One Time",
+              "hindi": "एक‑एक समय",
+              "marathi": "एक‑एक वेळ"
+            },
+            "description": {
+              "english": "Spend 10–15 minutes of undivided attention daily. How it works: Fills connection tank; reducing attention-seeking behavior. Example: Play a board game after dinner; phones away.",
+              "hindi": "रोज़ 10–15 मिनट बिना विघ्न के ध्यान दें। यह कैसे काम करता है: जुड़ाव बढ़ता है और ध्यान खोजने वाला व्यवहार घटता है। उदाहरण: रात के बाद बोर्ड गेम खेलें; फोन दूर रखें।",
+              "marathi": "दररोज 10–15 मिनिटे पूर्ण लक्ष द्या. कसे काम करते: कनेक्शन भरते आणि लक्षवेधक वर्तन कमी करते. उदाहरण: जेवणानंतर बोर्ड गेम खेळा; फोन बाजूला ठेवा."
+            }
           },
-          "description": {
-            "english": "Spend 10–15 minutes of undivided attention daily. How it works: Fills connection tank; reducing attention-seeking behavior. Example: Play a board game after dinner; phones away.\"\"",
-            "hindi": "Spend 10–15 minutes of undivided attention daily. How it works: Fills connection tank; reducing attention-seeking behavior. Example: Play a board game after dinner; phones away.\"\"",
-            "marathi": "Spend 10–15 minutes of undivided attention daily. How it works: Fills connection tank; reducing attention-seeking behavior. Example: Play a board game after dinner; phones away.\"\""
-          }
-        },
-        {
-          "id": 3,
-          "xp": 3,
-          "title": {
-            "english": "Connect Before Correct",
-            "hindi": "Connect Before Correct",
-            "marathi": "Connect Before Correct"
+          {
+            "id": 3,
+            "xp": 3,
+            "title": {
+              "english": "Connect Before Correct",
+              "hindi": "सही करने से पहले जुड़ें",
+              "marathi": "बरोबर करण्यापूर्वी जोडून घ्या"
+            },
+            "description": {
+              "english": "Acknowledge feelings first; then guide behavior. How it works: Validates emotion; keeps brain receptive. Example: 'You’re upset the tablet is off; let’s breathe; then we’ll set a timer.'",
+              "hindi": "पहले भावनाओं को मान्यता दें; फिर व्यवहार मार्गदर्शित करें। यह कैसे काम करता है: भावना मान्यता से दिमाग सीखने के लिए खुला रहता है। उदाहरण: 'तुम नाराज़ हो कि टैबलेट बंद है; चलो एक‑दो गहरी साँस लें, फिर टाइमर सेट करते हैं।'",
+              "marathi": "कधीही वर्तन सुधारण्यापूर्वी भावना मान्य करा; नंतर मार्गदर्शन करा. कसे काम करते: भावना मान्य झाल्यावर मेंदू ग्रहणशील राहतो. उदाहरण: 'तुला राग आला कारण टॅबलेट बंद आहे; चल आता एकत्र श्वास घेऊ, मग टाइमर लावू.'"
+            }
           },
-          "description": {
-            "english": "Acknowledge feelings first; then guide behavior. How it works: Validates emotion; keeps brain receptive. Example: \"\"\"\"You’re upset the tablet is off; let’s breathe; then we’ll set a timer.\"\"\"\"\"\"",
-            "hindi": "Acknowledge feelings first; then guide behavior. How it works: Validates emotion; keeps brain receptive. Example: \"\"\"\"You’re upset the tablet is off; let’s breathe; then we’ll set a timer.\"\"\"\"\"\"",
-            "marathi": "Acknowledge feelings first; then guide behavior. How it works: Validates emotion; keeps brain receptive. Example: \"\"\"\"You’re upset the tablet is off; let’s breathe; then we’ll set a timer.\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 4,
-          "xp": 3,
-          "title": {
-            "english": "Clear and Consistent Boundaries",
-            "hindi": "Clear and Consistent Boundaries",
-            "marathi": "Clear and Consistent Boundaries"
+          {
+            "id": 4,
+            "xp": 3,
+            "title": {
+              "english": "Clear and Consistent Boundaries",
+              "hindi": "साफ़ और निरंतर सीमाएँ",
+              "marathi": "स्पष्ट आणि सातत्यपूर्ण सीमा"
+            },
+            "description": {
+              "english": "State rules simply and follow through calmly. How it works: Predictability builds trust and safety. Example: 'Markers stay on paper. If they go on walls; markers rest until tomorrow.'",
+              "hindi": "नियम सरल रखें और शांतिपूर्वक पालन कराएं। यह कैसे काम करता है: अनुमानितता भरोसा और सुरक्षा बनाती है। उदाहरण: 'मार्कर कागज़ पर रहें; दीवार पर लगे तो कल तक उपयोग नहीं होंगे।'",
+              "marathi": "नियम सोपे ठेवा व शांतपणे अंमलात आणा. कसे काम करते: पूर्वानुमेयता विश्वास व सुरक्षा निर्माण करते. उदाहरण: 'मार्कर कागदावरच वापरा; भिंतीवर गेल्यास ते उद्या वापरता येणार नाहीत.'"
+            }
           },
-          "description": {
-            "english": "State rules simply and follow through calmly. How it works: Predictability builds trust and safety. Example: \"\"\"\"Markers stay on paper. If they go on walls; markers rest until tomorrow.\"\"\"\"\"\"",
-            "hindi": "State rules simply and follow through calmly. How it works: Predictability builds trust and safety. Example: \"\"\"\"Markers stay on paper. If they go on walls; markers rest until tomorrow.\"\"\"\"\"\"",
-            "marathi": "State rules simply and follow through calmly. How it works: Predictability builds trust and safety. Example: \"\"\"\"Markers stay on paper. If they go on walls; markers rest until tomorrow.\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 5,
-          "xp": 2,
-          "title": {
-            "english": "Positive Reinforcement",
-            "hindi": "Positive Reinforcement",
-            "marathi": "Positive Reinforcement"
+          {
+            "id": 5,
+            "xp": 2,
+            "title": {
+              "english": "Positive Reinforcement",
+              "hindi": "सकारात्मक प्रोत्साहन",
+              "marathi": "सकारात्मक प्रोत्साहन"
+            },
+            "description": {
+              "english": "Praise specific behaviors you want repeated. How it works: Attention strengthens desired actions. Example: 'I noticed you shared your toys—that was kind.'",
+              "hindi": "आप जिन व्यवहारों को दोहराना चाहते हैं उन पर विशिष्ट प्रशंसा करें। यह कैसे काम करता है: ध्यान व पुरस्कार वांछित क्रियाओं को मजबूत करते हैं। उदाहरण: 'मैंने देखा कि तुमने अपने खिलौने बाँटे—बहुत अच्छा।'",
+              "marathi": "ज्या वर्तनांना तुम्ही पुनरावृत्ती हवी आहे त्याचे विशिष्ट कौतुक करा. कसे काम करते: लक्ष व बक्षीस इच्छित वर्तन वाढवतात. उदाहरण: 'मी पाहिले की तूने खेळणी वाटली—छान!'."
+            }
           },
-          "description": {
-            "english": "Praise specific behaviors you want repeated. How it works: Attention strengthens desired actions. Example: \"\"\"\"I noticed you shared your toys—that was kind.\"\"\"\"\"\"",
-            "hindi": "Praise specific behaviors you want repeated. How it works: Attention strengthens desired actions. Example: \"\"\"\"I noticed you shared your toys—that was kind.\"\"\"\"\"\"",
-            "marathi": "Praise specific behaviors you want repeated. How it works: Attention strengthens desired actions. Example: \"\"\"\"I noticed you shared your toys—that was kind.\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 6,
-          "xp": 3,
-          "title": {
-            "english": "Calm-Down Corner",
-            "hindi": "Calm-Down Corner",
-            "marathi": "Calm-Down Corner"
+          {
+            "id": 6,
+            "xp": 3,
+            "title": {
+              "english": "Calm-Down Corner",
+              "hindi": "शांत होने का कोना",
+              "marathi": "शांत होण्याचा कोपरा"
+            },
+            "description": {
+              "english": "Designate a quiet spot with calming items. How it works: Teaches self-regulation skills. Example: A basket with a soft toy; coloring pages; and a timer.",
+              "hindi": "एक शांत स्थान तय करें जिसमें शांत करने वाली चीजें हों। यह कैसे काम करता है: आत्म‑नियंत्रण कौशल सिखाता है। उदाहरण: एक टोकरी जिसमें नरम खिलौना, रंग भरने की किताब और टाइमर हो।",
+              "marathi": "एक शांत जागा ठेवा ज्यात शांत करणाऱ्या वस्तू असतील. कसे काम करते: आत्मनियमन कौशल्य शिकवते. उदाहरण: नरम खेळणं, रंग भरण्याची पुस्तिका आणि टाइमर असलेली टोकरी."
+            }
           },
-          "description": {
-            "english": "Designate a quiet spot with calming items. How it works: Teaches self-regulation skills. Example: A basket with a soft toy; coloring pages; and a timer.\"\"",
-            "hindi": "Designate a quiet spot with calming items. How it works: Teaches self-regulation skills. Example: A basket with a soft toy; coloring pages; and a timer.\"\"",
-            "marathi": "Designate a quiet spot with calming items. How it works: Teaches self-regulation skills. Example: A basket with a soft toy; coloring pages; and a timer.\"\""
-          }
-        },
-        {
-          "id": 7,
-          "xp": 4,
-          "title": {
-            "english": "Family Meetings",
-            "hindi": "Family Meetings",
-            "marathi": "Family Meetings"
+          {
+            "id": 7,
+            "xp": 4,
+            "title": {
+              "english": "Family Meetings",
+              "hindi": "परिवारिक बैठकें",
+              "marathi": "कुटुंब मीटिंग्स"
+            },
+            "description": {
+              "english": "Weekly 15–20 minute check-in for plans and feelings. How it works: Builds communication and problem-solving. Example: Each person shares a win; a worry; and a wish.",
+              "hindi": "साप्ताहिक 15–20 मिनट का चेक‑इन योजनाओं और भावनाओं के लिए। यह कैसे काम करता है: संचार और समस्या समाधान बनता है। उदाहरण: हर सदस्य एक जीत, एक चिंता और एक इच्छा साझा करे।",
+              "marathi": "साप्ताहिक 15–20 मिनिटांची चेक‑इन बैठक योजना व भावना शेअर करण्यासाठी. कसे काम करते: संवाद व समस्या सोडवणे वाढते. उदाहरण: प्रत्येकजण एक यश, एक चिंता आणि एक इच्छा शेअर करेल."
+            }
           },
-          "description": {
-            "english": "Weekly 15–20 minute check-in for plans and feelings. How it works: Builds communication and problem-solving. Example: Each person shares a win; a worry; and a wish.\"\"",
-            "hindi": "Weekly 15–20 minute check-in for plans and feelings. How it works: Builds communication and problem-solving. Example: Each person shares a win; a worry; and a wish.\"\"",
-            "marathi": "Weekly 15–20 minute check-in for plans and feelings. How it works: Builds communication and problem-solving. Example: Each person shares a win; a worry; and a wish.\"\""
-          }
-        },
-        {
-          "id": 8,
-          "xp": 3,
-          "title": {
-            "english": "Device Rules and Tech Hygiene",
-            "hindi": "Device Rules and Tech Hygiene",
-            "marathi": "Device Rules and Tech Hygiene"
+          {
+            "id": 8,
+            "xp": 3,
+            "title": {
+              "english": "Device Rules and Tech Hygiene",
+              "hindi": "डिवाइस नियम और तकनीकी स्वच्छता",
+              "marathi": "डिवाइस नियम आणि तंत्रज्ञान स्वच्छता"
+            },
+            "description": {
+              "english": "Set screen limits and no-device zones/times. How it works: Reduces conflict and improves sleep. Example: No phones at meals; chargers stay in kitchen overnight.",
+              "hindi": "स्क्रीन सीमाएँ और नो‑डिवाइस ज़ोन/टाइम तय करें। यह कैसे काम करता है: संघर्ष कम करता है और नींद बेहतर बनती है। उदाहरण: खाने के समय फोन नहीं; रात में चार्जर रसोई में रखें।",
+              "marathi": "स्क्रीन मर्यादा व नो‑डिवाइस झोन/वेळ ठेवा. कसे काम करते: संघर्ष कमी करतो व झोप सुधारतो. उदाहरण: जेवणाच्या वेळी फोन नाही; चार्जर्स रात्री स्वयंपाकघरात ठेवा."
+            }
           },
-          "description": {
-            "english": "Set screen limits and no-device zones/times. How it works: Reduces conflict and improves sleep. Example: No phones at meals; chargers stay in kitchen overnight.\"\"",
-            "hindi": "Set screen limits and no-device zones/times. How it works: Reduces conflict and improves sleep. Example: No phones at meals; chargers stay in kitchen overnight.\"\"",
-            "marathi": "Set screen limits and no-device zones/times. How it works: Reduces conflict and improves sleep. Example: No phones at meals; chargers stay in kitchen overnight.\"\""
+          {
+            "id": 9,
+            "xp": 2,
+            "title": {
+              "english": "Model the Behavior",
+              "hindi": "व्यवहार का आदर्श प्रस्तुत करें",
+              "marathi": "वर्तनाचे अनुकरण करा"
+            },
+            "description": {
+              "english": "Demonstrate respect; apologies; and coping skills. How it works: Kids imitate what they see. Example: 'I’m frustrated—taking three breaths before we talk.'",
+              "hindi": "सम्मान, माफी और सामना करने के कौशल दिखाएँ। यह कैसे काम करता है: बच्चे जो देखते हैं उसकी नकल करते हैं। उदाहरण: 'मैं परेशान हूँ—पहले तीन गहरी साँसें ले रहा/रही हूँ।'",
+              "marathi": "सन्मान, माफी व तणावाला सामोरे जाण्याची कौशल्य दाखवा. कसे काम करते: मुलं जे पाहतात त्याची नक्कल करतात. उदाहरण: 'मी त्रासलेलो आहे—आता तीन श्वास घेतो/घेते.'"
+            }
           }
-        },
-        {
-          "id": 9,
-          "xp": 2,
-          "title": {
-            "english": "Model the Behavior",
-            "hindi": "Model the Behavior",
-            "marathi": "Model the Behavior"
-          },
-          "description": {
-            "english": "Demonstrate respect; apologies; and coping skills. How it works: Kids imitate what they see. Example: \"\"\"\"I’m frustrated—taking three breaths before we talk.\"\"\"\"\"\"",
-            "hindi": "Demonstrate respect; apologies; and coping skills. How it works: Kids imitate what they see. Example: \"\"\"\"I’m frustrated—taking three breaths before we talk.\"\"\"\"\"\"",
-            "marathi": "Demonstrate respect; apologies; and coping skills. How it works: Kids imitate what they see. Example: \"\"\"\"I’m frustrated—taking three breaths before we talk.\"\"\"\"\"\""
-          }
-        }
-      ]
+        ]
     },
     "relaxation": {
       "type": "Secondary",
@@ -143,13 +143,13 @@
           "xp": 5,
           "title": {
             "english": "Box Breathing Reset (Parent Pause)",
-            "hindi": "Box Breathing Reset (Parent Pause)",
-            "marathi": "Box Breathing Reset (Parent Pause)"
+            "hindi": "बॉक्स ब्रेथिंग रीसेट (माता‑पिता विराम)",
+            "marathi": "बॉक्स श्वास रीसेट (पालक विश्रांती)"
           },
           "description": {
-            "english": "Why it helps: Quickly lowers arousal so you can respond calmly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 1–3 minutes before addressing behavior. Example: Step into hallway; 6 cycles; return with softer tone.\"\"",
-            "hindi": "Why it helps: Quickly lowers arousal so you can respond calmly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 1–3 minutes before addressing behavior. Example: Step into hallway; 6 cycles; return with softer tone.\"\"",
-            "marathi": "Why it helps: Quickly lowers arousal so you can respond calmly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 1–3 minutes before addressing behavior. Example: Step into hallway; 6 cycles; return with softer tone.\"\""
+            "english": "Why it helps: Quickly lowers arousal so you can respond calmly. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 1–3 minutes before addressing behavior. Example: Step into hallway; 6 cycles; return with softer tone.",
+            "hindi": "यह कैसे मदद करता है: उत्तेजना जल्दी कम करता है ताकि आप शांत प्रतिक्रिया दे सकें। क्या करें: 4 सेकंड अंदर लें; 4 सेकंड रोकें; 4 सेकंड बाहर छोड़ें; 4 सेकंड रोकें; 1–3 मिनट तक दोहराएं। उदाहरण: हॉलवे में जाकर 6 चक्र और वापस लौटें।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: उत्तेजना कमी करून शांतपणे प्रतिसाद देण्यास मदत करते. काय करावे: 4 सॅकंद श्वास घ्या; 4 ठेवा; 4 बाहेर सोडा; 4 ठेवा; 1–3 मिनिटे करा. उदाहरण: हॉलमध्ये जाऊन 6 चक्र करा व शांत ध्वनीत परत या."
           }
         },
         {
@@ -157,13 +157,13 @@
           "xp": 6,
           "title": {
             "english": "Progressive Muscle Relaxation (Mini-PMR)",
-            "hindi": "Progressive Muscle Relaxation (Mini-PMR)",
-            "marathi": "Progressive Muscle Relaxation (Mini-PMR)"
+            "hindi": "प्रोग्रेसिव मसल रिलैक्सेशन (मिनी‑PMR)",
+            "marathi": "प्रोग्रेसिव मसल रिलॅक्सेशन (मिनी‑PMR)"
           },
           "description": {
-            "english": "Why it helps: Releases muscle tension that fuels irritability. What to do: Tense shoulders/hands 5s; release 10s; repeat 5 rounds. Example: Do at the sink before giving instructions.\"\"",
-            "hindi": "Why it helps: Releases muscle tension that fuels irritability. What to do: Tense shoulders/hands 5s; release 10s; repeat 5 rounds. Example: Do at the sink before giving instructions.\"\"",
-            "marathi": "Why it helps: Releases muscle tension that fuels irritability. What to do: Tense shoulders/hands 5s; release 10s; repeat 5 rounds. Example: Do at the sink before giving instructions.\"\""
+            "english": "Why it helps: Releases muscle tension that fuels irritability. What to do: Tense shoulders/hands 5s; release 10s; repeat 5 rounds. Example: Do at the sink before giving instructions.",
+            "hindi": "यह कैसे मदद करता है: मांसपेशियों का तनाव कम कर चिड़चिड़ाहट घटाता है। क्या करें: कंधे/हाथ कसें 5 सेकंड; 10 सेकंड छोड़ें; 5 बार दोहराएं। उदाहरण: निर्देश देने से पहले सिंक पर करें।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: स्नायूंचा ताण कमी करून चिडचिड कमी करते. काय करावे: खांदे/हात 5s ताठ करा; 10s सोडा; 5 फेऱ्या करा. उदाहरण: सूचना देण्यापूर्वी सिंकमध्ये करा."
           }
         },
         {
@@ -171,13 +171,13 @@
           "xp": 7,
           "title": {
             "english": "5-4-3-2-1 Grounding with Child",
-            "hindi": "5-4-3-2-1 Grounding with Child",
-            "marathi": "5-4-3-2-1 Grounding with Child"
+            "hindi": "5-4-3-2-1 ग्राउंडिंग (बच्चे के साथ)",
+            "marathi": "5-4-3-2-1 ग्राउंडिंग (मुलासोबत)"
           },
           "description": {
-            "english": "Why it helps: Co-regulates you and your child during meltdowns. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste together. Example: Sit on rug and do the list before problem-solving.\"\"",
-            "hindi": "Why it helps: Co-regulates you and your child during meltdowns. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste together. Example: Sit on rug and do the list before problem-solving.\"\"",
-            "marathi": "Why it helps: Co-regulates you and your child during meltdowns. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste together. Example: Sit on rug and do the list before problem-solving.\"\""
+            "english": "Why it helps: Co-regulates you and your child during meltdowns. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste together. Example: Sit on rug and do the list before problem-solving.",
+            "hindi": "यह कैसे मदद करता है: बच्चे के साथ सह‑नियमन करता है। क्या करें: साथ में 5 चीजें देखें; 4 महसूस करें; 3 सुनें; 2 सुंघें; 1 चखें। उदाहरण: गलीचे पर बैठकर समस्या सुलझाने से पहले सूची बनाएं।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: लयबद्धपणे तुम्ही व तुमचे मूल एकत्र शांत होतात. काय करावे: एकत्र 5 गोष्टी पाहा; 4 स्पर्श करा; 3 ऐका; 2 वास घ्या; 1 चव चाखा. उदाहरण: गालिच्यावर बसून समस्येपूर्वी ही यादी करा."
           }
         },
         {
@@ -185,13 +185,13 @@
           "xp": 5,
           "title": {
             "english": "Extended Exhale Breathing 4-6",
-            "hindi": "Extended Exhale Breathing 4-6",
-            "marathi": "Extended Exhale Breathing 4-6"
+            "hindi": "लंबी छोड़ साँस 4‑6",
+            "marathi": "लांब श्वास बाहेर 4‑6"
           },
           "description": {
-            "english": "Why it helps: Activates the parasympathetic system for patience. What to do: Inhale 4s; exhale 6s for 3–5 minutes. Example: Use during homework resistance to keep voice steady.\"\"",
-            "hindi": "Why it helps: Activates the parasympathetic system for patience. What to do: Inhale 4s; exhale 6s for 3–5 minutes. Example: Use during homework resistance to keep voice steady.\"\"",
-            "marathi": "Why it helps: Activates the parasympathetic system for patience. What to do: Inhale 4s; exhale 6s for 3–5 minutes. Example: Use during homework resistance to keep voice steady.\"\""
+            "english": "Why it helps: Activates the parasympathetic system for patience. What to do: Inhale 4s; exhale 6s for 3–5 minutes. Example: Use during homework resistance to keep voice steady.",
+            "hindi": "यह कैसे मदद करता है: धैर्य के लिए शांत प्रणाली सक्रिय करता है। क्या करें: 4 सेकंड अंदर लें; 6 सेकंड बाहर छोड़ें; 3–5 मिनट तक करें। उदाहरण: होमवर्क में विरोध के समय प्रयोग करें ताकि आवाज़ स्थिर रहे।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: शांत प्रतिसाद वाढवते. काय करावे: 4s श्वास घ्या; 6s बाहेर सोडा; 3–5 मिनिटे करा. उदाहरण: गृहपाठाच्या विरोधात वापरा ज्याने आवाज स्थिर राहील."
           }
         },
         {
@@ -199,13 +199,13 @@
           "xp": 6,
           "title": {
             "english": "Calming Ritual Cue (Tea + Soft Light)",
-            "hindi": "Calming Ritual Cue (Tea + Soft Light)",
-            "marathi": "Calming Ritual Cue (Tea + Soft Light)"
+            "hindi": "शांत करने वाला रीति‑रिवाज संकेत (चाय + कोमल रोशनी)",
+            "marathi": "शांत करणारा संस्कार (चहा + मृदु प्रकाश)"
           },
           "description": {
-            "english": "Why it helps: Predictable routine signals wind-down for everyone. What to do: Dim lights; warm drink; low-volume music for 10 minutes pre-bed. Example: Start after dinner to reduce bedtime battles.\"\"",
-            "hindi": "Why it helps: Predictable routine signals wind-down for everyone. What to do: Dim lights; warm drink; low-volume music for 10 minutes pre-bed. Example: Start after dinner to reduce bedtime battles.\"\"",
-            "marathi": "Why it helps: Predictable routine signals wind-down for everyone. What to do: Dim lights; warm drink; low-volume music for 10 minutes pre-bed. Example: Start after dinner to reduce bedtime battles.\"\""
+            "english": "Why it helps: Predictable routine signals wind-down for everyone. What to do: Dim lights; warm drink; low-volume music for 10 minutes pre-bed. Example: Start after dinner to reduce bedtime battles.",
+            "hindi": "यह कैसे मदद करता है: अनुमानित रूटीन सबके लिए शांति का संकेत देता है। क्या करें: रोशनी कम करें; गर्म पेय लें; सोने से 10 मिनट पहले धीमी धुन बजाएं। उदाहरण: रात के खाने के बाद शुरू करें।",
+            "marathi": "हे कशासाठी उपयोगी आहे: सर्वांसाठी स्थिर संकेत देते की आता शांत होण्याचा वेळ आहे. काय करावे: दिवे मंद करा; गरम पेय; झोपेपूर्वी 10 मिनिटे मंद संगीत. उदाहरण: जेवणानंतर सुरू करा."
           }
         },
         {
@@ -213,13 +213,13 @@
           "xp": 6,
           "title": {
             "english": "Guided Imagery Safe Place",
-            "hindi": "Guided Imagery Safe Place",
-            "marathi": "Guided Imagery Safe Place"
+            "hindi": "निर्देशित कल्पना: सुरक्षित स्थान",
+            "marathi": "दिग्दर्शित प्रतिमा: सुरक्षित ठिकाण"
           },
           "description": {
-            "english": "Why it helps: Creates mental space from frustration. What to do: Close eyes; visualize a calm location with 3 sensory details per sense for 3 minutes. Example: Picture a quiet beach before re-entering the room.\"\"",
-            "hindi": "Why it helps: Creates mental space from frustration. What to do: Close eyes; visualize a calm location with 3 sensory details per sense for 3 minutes. Example: Picture a quiet beach before re-entering the room.\"\"",
-            "marathi": "Why it helps: Creates mental space from frustration. What to do: Close eyes; visualize a calm location with 3 sensory details per sense for 3 minutes. Example: Picture a quiet beach before re-entering the room.\"\""
+            "english": "Why it helps: Creates mental space from frustration. What to do: Close eyes; visualize a calm location with 3 sensory details per sense for 3 minutes. Example: Picture a quiet beach before re-entering the room.",
+            "hindi": "यह कैसे मदद करता है: आंतरिक दूरी बनाकर मन शांत करता है। क्या करें: आँखें बंद करें; 3‑3 संवेदनात्मक विवरणों के साथ एक सुरक्षित जगह की कल्पना 3 मिनट करें। उदाहरण: कमरे में वापस जाने से पहले शांत समुद्र का दृश्य सोचें।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: त्रासापासून मानसिक अंतर तयार करते. काय करावे: डोळे बंद करा; प्रत्येक इंद्रियासाठी 3 तपशीलांसह शांत जागेची कल्पना 3 मिनिटे करा. उदाहरण: खोलीत परत जाण्यापूर्वी शांत समुद्राचे दृश्य मनात करा."
           }
         },
         {
@@ -227,13 +227,13 @@
           "xp": 5,
           "title": {
             "english": "Soothing Self-Talk Script",
-            "hindi": "Soothing Self-Talk Script",
-            "marathi": "Soothing Self-Talk Script"
+            "hindi": "शांत करने वाली आत्म‑बात",
+            "marathi": "शांत करणारी आत्म‑भाषा"
           },
           "description": {
-            "english": "Why it helps: Reduces self-criticism that escalates reactivity. What to do: Repeat a prepared statement slowly. Example: “I can be firm and kind. This is hard and temporary. We’ll get through it.”\"\"",
-            "hindi": "Why it helps: Reduces self-criticism that escalates reactivity. What to do: Repeat a prepared statement slowly. Example: “I can be firm and kind. This is hard and temporary. We’ll get through it.”\"\"",
-            "marathi": "Why it helps: Reduces self-criticism that escalates reactivity. What to do: Repeat a prepared statement slowly. Example: “I can be firm and kind. This is hard and temporary. We’ll get through it.”\"\""
+            "english": "Why it helps: Reduces self-criticism that escalates reactivity. What to do: Repeat a prepared statement slowly. Example: “I can be firm and kind. This is hard and temporary. We’ll get through it.”",
+            "hindi": "यह कैसे मदद करता है: आत्म‑आलोचना घटाकर प्रतिक्रिया को नियंत्रित करता है। क्या करें: धीरे‑धीरे तैयार वाक्य दोहराएँ। उदाहरण: 'मैं सख्त और दयालु दोनों रह सकता/सकती हूँ। यह कठिन है पर अस्थायी है। हम इससे निकलेंगे।'",
+            "marathi": "हे कशासाठी उपयुक्त आहे: आत्म‑निंदा कमी करून प्रतिक्रिया नियंत्रित करते. काय करावे: तयार केलेले वाक्य हळूहळू पुन्हा म्हणा. उदाहरण: 'मी कठोर पण दयाळू राहू शकतो/शकते. हे कठीण आहे पर तात्पुरते आहे. आपण पार पडू.'"
           }
         },
         {
@@ -241,13 +241,13 @@
           "xp": 7,
           "title": {
             "english": "Joint Calm-Down Corner",
-            "hindi": "Joint Calm-Down Corner",
-            "marathi": "Joint Calm-Down Corner"
+            "hindi": "साझा शांत कोना",
+            "marathi": "सामायिक शांत कोपरा"
           },
           "description": {
-            "english": "Why it helps: Models emotion regulation and co-regulation. What to do: Set a space with pillows; sensory toys; and a visual breath card; sit together for 5 minutes. Example: Use after sibling conflict before discussing repair.\"\"",
-            "hindi": "Why it helps: Models emotion regulation and co-regulation. What to do: Set a space with pillows; sensory toys; and a visual breath card; sit together for 5 minutes. Example: Use after sibling conflict before discussing repair.\"\"",
-            "marathi": "Why it helps: Models emotion regulation and co-regulation. What to do: Set a space with pillows; sensory toys; and a visual breath card; sit together for 5 minutes. Example: Use after sibling conflict before discussing repair.\"\""
+            "english": "Why it helps: Models emotion regulation and co-regulation. What to do: Set a space with pillows; sensory toys; and a visual breath card; sit together for 5 minutes. Example: Use after sibling conflict before discussing repair.",
+            "hindi": "यह कैसे मदद करता है: भावनात्मक नियंत्रण का प्रदर्शन करता है। क्या करें: तख्ते/तकिये, संवेदनात्मक खिलौने और श्वास कार्ड रखें; 5 मिनट साथ बैठें। उदाहरण: भाई‑बहन के झगड़े के बाद इसका उपयोग करें।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: भावना नियंत्रित करण्याचे मॉडेल दाखवते. काय करावे: पिलो, संवेदनात्मक खेळणी व श्वास कार्ड ठेवा; 5 मिनिटे एकत्र बसा. उदाहरण: भावंडांच्या संघर्षानंतर वापरा."
           }
         },
         {
@@ -255,13 +255,13 @@
           "xp": 5,
           "title": {
             "english": "Mindful Walking Micro-Break",
-            "hindi": "Mindful Walking Micro-Break",
-            "marathi": "Mindful Walking Micro-Break"
+            "hindi": "ध्यानपूर्ण चलने का छोटा विराम",
+            "marathi": "सावध चालण्याचा सूक्ष्म विराम"
           },
           "description": {
-            "english": "Why it helps: Short movement disperses stress hormones. What to do: Walk 3–5 minutes; match steps to breath; notice 3 details per minute. Example: Loop the hallway before addressing a mess.\"\"",
-            "hindi": "Why it helps: Short movement disperses stress hormones. What to do: Walk 3–5 minutes; match steps to breath; notice 3 details per minute. Example: Loop the hallway before addressing a mess.\"\"",
-            "marathi": "Why it helps: Short movement disperses stress hormones. What to do: Walk 3–5 minutes; match steps to breath; notice 3 details per minute. Example: Loop the hallway before addressing a mess.\"\""
+            "english": "Why it helps: Short movement disperses stress hormones. What to do: Walk 3–5 minutes; match steps to breath; notice 3 details per minute. Example: Loop the hallway before addressing a mess.",
+            "hindi": "यह कैसे मदद करता है: छोटी हलचल तनाव‑हॉर्मोन्स को फैलाती है। क्या करें: 3–5 मिनट टहलें; कदमों को श्वास से मिलाएँ; हर मिनट 3 नई चीजें नोट करें। उदाहरण: गलीचा साफ करने से पहले हॉल में एक चक्कर लगाएँ।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: थोडे हालचाल केल्याने तणाव कमी होतो. काय करावे: 3–5 मिनिटे चालणे; पावलें श्वासाशी जुळवा; दर मिनिटी 3 नवीन गोष्टी पहा. उदाहरण: अडचण सोडवण्यापूर्वी हॉलचा एक फेरा." 
           }
         }
       ]
@@ -407,13 +407,13 @@
           "xp": 6,
           "title": {
             "english": "Clarify Parental Beliefs (A-B-C)",
-            "hindi": "Clarify Parental Beliefs (A-B-C)",
-            "marathi": "Clarify Parental Beliefs (A-B-C)"
+            "hindi": "पालन‑पोषण विश्वास स्पष्ट करें (A‑B‑C)",
+            "marathi": "पालकांच्या श्रद्धा स्पष्ट करा (A‑B‑C)"
           },
           "description": {
-            "english": "Why it helps: Reveals rigid demands that trigger yelling or inconsistency. What to do: Note Activating event (A); Belief (B); Consequence (C). Example: A: toy mess; B: \"\"\"\"Kids must obey instantly\"\"\"\"; C: anger 8/10.\"\"",
-            "hindi": "Why it helps: Reveals rigid demands that trigger yelling or inconsistency. What to do: Note Activating event (A); Belief (B); Consequence (C). Example: A: toy mess; B: \"\"\"\"Kids must obey instantly\"\"\"\"; C: anger 8/10.\"\"",
-            "marathi": "Why it helps: Reveals rigid demands that trigger yelling or inconsistency. What to do: Note Activating event (A); Belief (B); Consequence (C). Example: A: toy mess; B: \"\"\"\"Kids must obey instantly\"\"\"\"; C: anger 8/10.\"\""
+            "english": "Why it helps: Reveals rigid demands that trigger yelling or inconsistency. What to do: Note Activating event (A); Belief (B); Consequence (C). Example: A: toy mess; B: \"Kids must obey instantly\"; C: anger 8/10.",
+            "hindi": "यह कैसे मदद करता है: कठोर अपेक्षाएँ जो चिल्लाहट या असंगति को जन्म देती हैं उजागर होती हैं। क्या करें: सक्रिय घटना (A); विश्वास (B); परिणाम (C) नोट करें। उदाहरण: A: खिलौने बिखरे; B: 'बच्चों को तुरंत मानना चाहिए'; C: गुस्सा 8/10।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: कठोर गरजा ज्या ओरड किंवा असुसंगतता निर्माण करतात त्या उघड होतात. काय करावे: सक्रिय घटना (A); विश्वास (B); परिणाम (C) नोंदवा. उदाहरण: A: खेळणी गोंधळली; B: 'मुले लगेच ऐकली पाहिजेत'; C: राग 8/10."
           }
         },
         {
@@ -421,13 +421,13 @@
           "xp": 7,
           "title": {
             "english": "Dispute Rigid Musts",
-            "hindi": "Dispute Rigid Musts",
-            "marathi": "Dispute Rigid Musts"
+            "hindi": "कठोर 'चाहिए/जरूरी' विचार चुनौती दें",
+            "marathi": "कठोर 'हुशार/नेहमी' मान्यतांना आव्हान द्या"
           },
           "description": {
-            "english": "Why it helps: Softens perfectionism and reduces reactivity. What to do: Challenge \"\"\"\"must/should/always\"\"\"\" with logic; evidence; and usefulness. Example: \"\"\"\"Kids must be quiet\"\"\"\" → Not realistic; teaching voice levels works better.\"\"",
-            "hindi": "Why it helps: Softens perfectionism and reduces reactivity. What to do: Challenge \"\"\"\"must/should/always\"\"\"\" with logic; evidence; and usefulness. Example: \"\"\"\"Kids must be quiet\"\"\"\" → Not realistic; teaching voice levels works better.\"\"",
-            "marathi": "Why it helps: Softens perfectionism and reduces reactivity. What to do: Challenge \"\"\"\"must/should/always\"\"\"\" with logic; evidence; and usefulness. Example: \"\"\"\"Kids must be quiet\"\"\"\" → Not realistic; teaching voice levels works better.\"\""
+            "english": "Why it helps: Softens perfectionism and reduces reactivity. What to do: Challenge 'must/should/always' with logic, evidence, and usefulness. Example: 'Kids must be quiet' → Not realistic; teaching voice levels works better.",
+            "hindi": "यह कैसे मदद करता है: परिपूर्णतावाद को नरम करता है और प्रतिक्रियाशीलता घटाता है। क्या करें: 'चाहिए/उचित/हमेशा' जैसे विचारों को तार्किकता, साक्ष्य और उपयोगिता से चुनौती दें। उदाहरण: 'बच्चों को हमेशा शांत रहना चाहिए'—हकीकत नहीं; आवाज़ के स्तर सिखाना बेहतर है।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: परिपूर्णतावाद कमी करतो व प्रत्युत्तर कमी होतो. काय करावे: 'हवे/कायम' असे विचार तर्क, पुरावा व उपयुक्ततेने आव्हान करा. उदाहरण: 'मुलांनी शांत राहावे' → वास्तविक नाही; आवाज स्तर शिकवणे चांगले काम करते."
           }
         },
         {
@@ -435,13 +435,13 @@
           "xp": 6,
           "title": {
             "english": "Create Flexible Preferences",
-            "hindi": "Create Flexible Preferences",
-            "marathi": "Create Flexible Preferences"
+            "hindi": "लचीली प्राथमिकताएँ बनाएं",
+            "marathi": "लवचिक प्राधान्ये तयार करा"
           },
           "description": {
-            "english": "Why it helps: Rational alternatives lower stress and improve coaching. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer quick cleanup; but I can coach step-by-step without losing it.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Rational alternatives lower stress and improve coaching. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer quick cleanup; but I can coach step-by-step without losing it.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Rational alternatives lower stress and improve coaching. What to do: Replace demands with preferences and tolerance. Example: \"\"\"\"I prefer quick cleanup; but I can coach step-by-step without losing it.\"\"\"\"\"\""
+            "english": "Why it helps: Rational alternatives lower stress and improve coaching. What to do: Replace demands with preferences and tolerance. Example: 'I prefer quick cleanup; but I can coach step-by-step without losing it.'",
+            "hindi": "यह कैसे मदद करता है: तर्कसंगत विकल्प तनाव घटाते हैं और कोचिंग में मदद करते हैं। क्या करें: मांगों की जगह प्राथमिकताएँ और सहनशीलता रखें। उदाहरण: 'मुझे जल्दी साफ़‑सफाई पसंद है; पर मैं शांत होकर चरण‑दर‑चरण सिखा सकता/सकती हूँ।'",
+            "marathi": "हे कशासाठी उपयोगी आहे: तर्कसंगत पर्याय ताण कमी करतात व मार्गदर्शन सुधारतात. काय करावे: मागण्यांच्या जागी प्राधान्ये व सहनशीलता ठेवा. उदाहरण: 'मला झटपट साफ करायला आवडते; पण मी चरणानुसार शांतपणे शिकवू शकतो/शकते.'"
           }
         },
         {
@@ -449,13 +449,13 @@
           "xp": 5,
           "title": {
             "english": "Unconditional Self-Acceptance (USA)",
-            "hindi": "Unconditional Self-Acceptance (USA)",
-            "marathi": "Unconditional Self-Acceptance (USA)"
+            "hindi": "निःशर्त आत्म‑स्वीकृति (USA)",
+            "marathi": "अनिवार्य नाही पण आत्म‑स्वीकृती (USA)"
           },
           "description": {
-            "english": "Why it helps: Cuts shame after mistakes so repair is possible. What to do: Separate worth from one bad moment; plan repair. Example: \"\"\"\"I yelled; I’m still a caring parent—I'll apologize and reset.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Cuts shame after mistakes so repair is possible. What to do: Separate worth from one bad moment; plan repair. Example: \"\"\"\"I yelled; I’m still a caring parent—I'll apologize and reset.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Cuts shame after mistakes so repair is possible. What to do: Separate worth from one bad moment; plan repair. Example: \"\"\"\"I yelled; I’m still a caring parent—I'll apologize and reset.\"\"\"\"\"\""
+            "english": "Why it helps: Cuts shame after mistakes so repair is possible. What to do: Separate worth from one bad moment; plan repair. Example: 'I yelled; I’m still a caring parent—I'll apologize and reset.'",
+            "hindi": "यह कैसे मदद करता है: गलतियों के बाद शर्म घटती है जिससे सुधार संभव होता है। क्या करें: एक बुरे पल से अपनी अहमियत अलग रखें; सुधार की योजना बनाएं। उदाहरण: 'मैं चिल्लाया; मैं अभी भी एक देखभाल करने वाला अभिभावक हूँ—मैं माफ़ी मांगकर चीजें ठीक करूँगा/करूँगी।'",
+            "marathi": "हे कशासाठी उपयुक्त आहे: चुका केल्यानंतर शरमेचा घट होतो व सुधार शक्य होतो. काय करावे: एका वाईट क्षणापासून आत्ममूल्य वेगळे करा; सुधाराचे पाऊल ठरवा. उदाहरण: 'मी ओरडले; तरीही मी प्रेमळ पालक आहे—मी माफी मागेन व पुन्हा सुरू करेन.'"
           }
         },
         {
@@ -463,13 +463,13 @@
           "xp": 7,
           "title": {
             "english": "Unconditional Other-Acceptance (UOA) for Kids",
-            "hindi": "Unconditional Other-Acceptance (UOA) for Kids",
-            "marathi": "Unconditional Other-Acceptance (UOA) for Kids"
+            "hindi": "बच्चों के लिए निःशर्त स्वीकार (UOA)",
+            "marathi": "मुलांसाठी निःशर्त स्वीकार (UOA)"
           },
           "description": {
-            "english": "Why it helps: Reduces labeling the child as \"\"\"\"bad;\"\"\"\" enabling skill-teaching. What to do: View behavior as skills need; not character flaw. Example: \"\"\"\"They’re learning transitions; we’ll practice timers.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Reduces labeling the child as \"\"\"\"bad;\"\"\"\" enabling skill-teaching. What to do: View behavior as skills need; not character flaw. Example: \"\"\"\"They’re learning transitions; we’ll practice timers.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Reduces labeling the child as \"\"\"\"bad;\"\"\"\" enabling skill-teaching. What to do: View behavior as skills need; not character flaw. Example: \"\"\"\"They’re learning transitions; we’ll practice timers.\"\"\"\"\"\""
+            "english": "Why it helps: Reduces labeling the child as 'bad', enabling skill-teaching. What to do: View behavior as skills need, not character flaw. Example: 'They’re learning transitions; we’ll practice timers.'",
+            "hindi": "यह कैसे मदद करता है: बच्चे को 'बुरा' लेबल करने को घटाता है और कौशल सिखाने में मदद करता है। क्या करें: व्यवहार को चरित्र दोष न मानकर कौशल आवश्यकता के रूप में देखें। उदाहरण: 'वे ट्रांज़िशन सीख रहे हैं; हम टाइमर का अभ्यास करेंगे।'",
+            "marathi": "हे कशासाठी उपयोगी आहे: मुलांना 'वाईट' म्हणून लेबल करणे कमी करते व कौशल्ये शिकवण्यास मदत करते. काय करावे: वर्तनाला चारित्र्य दोष न समजता कौशल्यांची गरज म्हणून पहा. उदाहरण: 'ते संक्रमण शिकत आहेत; आपण टाइमरचा सराव करू.'"
           }
         },
         {
@@ -477,13 +477,13 @@
           "xp": 6,
           "title": {
             "english": "Low Frustration Tolerance Training",
-            "hindi": "Low Frustration Tolerance Training",
-            "marathi": "Low Frustration Tolerance Training"
+            "hindi": "कम सहनशीलता प्रशिक्षण",
+            "marathi": "कमी सहनशक्ती प्रशिक्षण"
           },
           "description": {
-            "english": "Why it helps: Increases patience during chaos. What to do: Rehearse toleration lines: \"\"\"\"It’s hard; not unbearable; I can handle 5 more minutes.\"\"\"\" Example: Stay calm through a tantrum with paced breathing.\"\"",
-            "hindi": "Why it helps: Increases patience during chaos. What to do: Rehearse toleration lines: \"\"\"\"It’s hard; not unbearable; I can handle 5 more minutes.\"\"\"\" Example: Stay calm through a tantrum with paced breathing.\"\"",
-            "marathi": "Why it helps: Increases patience during chaos. What to do: Rehearse toleration lines: \"\"\"\"It’s hard; not unbearable; I can handle 5 more minutes.\"\"\"\" Example: Stay calm through a tantrum with paced breathing.\"\""
+            "english": "Why it helps: Increases patience during chaos. What to do: Rehearse toleration lines: 'It’s hard; not unbearable; I can handle 5 more minutes.' Example: Stay calm through a tantrum with paced breathing.",
+            "hindi": "यह कैसे मदद करता है: अराजकता के दौरान धैर्य बढ़ता है। क्या करें: सहनशीलता वाक्यांशों का अभ्यास करें: 'यह मुश्किल है; असहनीय नहीं; मैं और 5 मिनट संभाल सकता/सकती हूँ।' उदाहरण: नियंत्रित श्वास के साथ गुस्से के दौरान शांत रहें।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: गोंधळात धीर वाढवतो. काय करावे: सहनशीलतेच्या ओळींचा सराव करा: 'हे कठीण आहे; असह्य नाही; मी आणखी 5 मिनिटे समजू शकतो/शकते.' उदाहरण: श्वास घेत शांत राहा."
           }
         },
         {
@@ -491,13 +491,13 @@
           "xp": 7,
           "title": {
             "english": "Consequences Reality Check",
-            "hindi": "Consequences Reality Check",
-            "marathi": "Consequences Reality Check"
+            "hindi": "परिणामों की वास्तविकता जांच",
+            "marathi": "परिणामांची वास्तविकता तपासा"
           },
           "description": {
-            "english": "Why it helps: Prevents impulsive punishments that backfire. What to do: Ask: Does this teach or just vent? Short vs long-term outcomes. Example: Taking all toys vs teaching \"\"\"\"clean one bin now.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Prevents impulsive punishments that backfire. What to do: Ask: Does this teach or just vent? Short vs long-term outcomes. Example: Taking all toys vs teaching \"\"\"\"clean one bin now.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Prevents impulsive punishments that backfire. What to do: Ask: Does this teach or just vent? Short vs long-term outcomes. Example: Taking all toys vs teaching \"\"\"\"clean one bin now.\"\"\"\"\"\""
+            "english": "Why it helps: Prevents impulsive punishments that backfire. What to do: Ask: Does this teach or just vent? Short vs long-term outcomes. Example: Taking all toys vs teaching 'clean one bin now.'",
+            "hindi": "यह कैसे मदद करता है: आवेग में दिए गए दंड जो उल्टे असर करते हैं उन्हें रोकता है। क्या करें: पूछें: क्या यह सिखाता है या सिर्फ उर्जा निकालता है? अल्पकालिक बनाम दीर्घकालिक परिणाम। उदाहरण: सभी खिलौने ले लेने के बजाय 'अब एक डिब्बा साफ करो' सिखाएँ।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: अचानक दिलेल्या शिक्षांना ज्यांचा उलटा परिणाम होतो तो टाळते. काय करावे: विचार करा: हे शिकवते का फक्त राग काढते? लहान vs दीर्घकालीन परिणाम. उदाहरण: सर्व खेळणी घेणे याऐवजी 'आता एक डबात स्वच्छ करा' शिकवा."
           }
         },
         {
@@ -505,13 +505,13 @@
           "xp": 6,
           "title": {
             "english": "ABC Diary with Repair Step",
-            "hindi": "ABC Diary with Repair Step",
-            "marathi": "ABC Diary with Repair Step"
+            "hindi": "ABC डायरी + सुधार कदम",
+            "marathi": "ABC डायरी व सुधार पाऊल"
           },
           "description": {
-            "english": "Why it helps: Builds awareness and course-correction. What to do: Log A-B-C; then D (dispute) and E (effective new action) + repair. Example: A: sibling fight; D: \"\"\"\"Kids don’t have to be perfect\"\"\"\"; E: coach turn-taking + apology.\"\"",
-            "hindi": "Why it helps: Builds awareness and course-correction. What to do: Log A-B-C; then D (dispute) and E (effective new action) + repair. Example: A: sibling fight; D: \"\"\"\"Kids don’t have to be perfect\"\"\"\"; E: coach turn-taking + apology.\"\"",
-            "marathi": "Why it helps: Builds awareness and course-correction. What to do: Log A-B-C; then D (dispute) and E (effective new action) + repair. Example: A: sibling fight; D: \"\"\"\"Kids don’t have to be perfect\"\"\"\"; E: coach turn-taking + apology.\"\""
+            "english": "Why it helps: Builds awareness and course-correction. What to do: Log A-B-C; then D (dispute) and E (effective new action) + repair. Example: A: sibling fight; D: 'Kids don’t have to be perfect'; E: coach turn-taking + apology.",
+            "hindi": "यह कैसे मदद करता है: जागरूकता और सुधार क्षमता बनाता है। क्या करें: A-B-C लॉग करें; फिर D (विवाद) और E (प्रभावी नया कदम) + सुधार। उदाहरण: A: भाई‑बहन झगड़ा; D: 'बच्चों को परिपूर्ण होने की ज़रूरत नहीं'; E: बारीने बोलना सिखाएं + माफी।",
+            "marathi": "हे कशासाठी उपयुक्त आहे: जागरूकता व कोर्स‑सुधारना वाढवते. काय करावे: A‑B‑C नोंद करा; नंतर D (विवाद) व E (प्रभावी नवीन क्रिया) + सुधार. उदाहरण: A: भावंड संघर्ष; D: 'मुलांनी परिपूर्ण असणे आवश्यक नाही'; E: पालटून बोलायला शिकवा + माफी."
           }
         },
         {
@@ -519,13 +519,13 @@
           "xp": 5,
           "title": {
             "english": "Implementation Intentions for Hot Moments",
-            "hindi": "Implementation Intentions for Hot Moments",
-            "marathi": "Implementation Intentions for Hot Moments"
+            "hindi": "गर्म पलों के लिए क्रियान्वयन इरादे",
+            "marathi": "गरम क्षणांसाठी अंमलबजावणी हेतू"
           },
           "description": {
-            "english": "Why it helps: Pre-commits calm actions under stress. What to do: IF-THEN plan. Example: \"\"\"\"If I feel volume rising; then I step away 60 seconds; sip water; return with one instruction.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Pre-commits calm actions under stress. What to do: IF-THEN plan. Example: \"\"\"\"If I feel volume rising; then I step away 60 seconds; sip water; return with one instruction.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Pre-commits calm actions under stress. What to do: IF-THEN plan. Example: \"\"\"\"If I feel volume rising; then I step away 60 seconds; sip water; return with one instruction.\"\"\"\"\"\""
+            "english": "Why it helps: Pre-commits calm actions under stress. What to do: IF-THEN plan. Example: 'If I feel volume rising; then I step away 60 seconds; sip water; return with one instruction.'",
+            "hindi": "यह कैसे मदद करता है: तनाव में शांत क्रियाओं के लिए पूर्व‑समर्पण करता है। क्या करें: IF‑THEN योजना बनाएं। उदाहरण: 'यदि मुझे आवाज़ बढ़ती दिखे, तो मैं 60 सेकंड के लिए हट जाऊँगा/जाऊँगी; पानी पियूँगा/पियूँगी; फिर एक निर्देश के साथ लौटूँगा/लौटूँगी।'",
+            "marathi": "हे कशासाठी उपयुक्त आहे: तणावात शांत क्रिया पूर्वनिर्धारित करतात. काय करावे: IF‑THEN योजना. उदाहरण: 'जर मला आवाज वाढताना वाटला तर मी 60 सेकंद दूर जाईन; पाणी पाईन; एका सूचनेसह परत येईन.'"
           }
         }
       ]

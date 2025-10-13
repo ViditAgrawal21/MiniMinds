@@ -668,69 +668,69 @@ export default function HomeTab() {
   }, []);
 
   // Initialize monitoring system on component mount
-  useEffect(() => {
-    const initializeApp = async () => {
-      try {
-        // Check if monitoring was previously enabled
-        const wasMonitoringActive = await AsyncStorage.getItem('monitoringActive');
+  // useEffect(() => {
+  //   const initializeApp = async () => {
+  //     try {
+  //       // Check if monitoring was previously enabled
+  //       const wasMonitoringActive = await AsyncStorage.getItem('monitoringActive');
         
-        if (wasMonitoringActive === 'true') {
-          // Check if monitoring is still active and permissions are still granted
-          const permissions = await checkMonitoringPermissions();
-          if (permissions.allGranted) {
-            setIsMonitoringActive(true);
-            console.log("Monitoring was previously active and permissions are still granted");
-          } else {
-            // Permissions were revoked, clean up
-            await AsyncStorage.removeItem('monitoringActive');
-            await AsyncStorage.removeItem('monitoringApp');
-          }
-        }
+  //       if (wasMonitoringActive === 'true') {
+  //         // Check if monitoring is still active and permissions are still granted
+  //         const permissions = await checkMonitoringPermissions();
+  //         if (permissions.allGranted) {
+  //           setIsMonitoringActive(true);
+  //           console.log("Monitoring was previously active and permissions are still granted");
+  //         } else {
+  //           // Permissions were revoked, clean up
+  //           await AsyncStorage.removeItem('monitoringActive');
+  //           await AsyncStorage.removeItem('monitoringApp');
+  //         }
+  //       }
 
-        // Always check and request permissions on every home screen visit
-        // Small delay to ensure home screen is fully loaded before showing permission dialog
-        setTimeout(() => {
-          requestPermissionsIfNeeded();
-        }, 2000);
+  //       // Always check and request permissions on every home screen visit
+  //       // Small delay to ensure home screen is fully loaded before showing permission dialog
+  //       setTimeout(() => {
+  //         requestPermissionsIfNeeded();
+  //       }, 2000);
         
-      } catch (error) {
-        console.error("Error initializing monitoring:", error);
-        setPermissionCheckComplete(true);
-      }
-    };
+  //     } catch (error) {
+  //       console.error("Error initializing monitoring:", error);
+  //       setPermissionCheckComplete(true);
+  //     }
+  //   };
 
-    initializeApp();
-  }, []);
+  //   initializeApp();
+  // }, []);
 
   // Start monitoring when permissions are granted
-  useEffect(() => {
-    if (monitoringPermissions?.allGranted && permissionCheckComplete && !isMonitoringActive) {
-      initializeMonitoring();
-    }
-  }, [monitoringPermissions, permissionCheckComplete, isMonitoringActive]);
+  // useEffect(() => {
+  //   if (monitoringPermissions?.allGranted && permissionCheckComplete && !isMonitoringActive) {
+  //     initializeMonitoring();
+  //   }
+  // }, [monitoringPermissions, permissionCheckComplete, isMonitoringActive]);
 
   // Listen for app state changes to check permissions when returning from settings
-  useEffect(() => {
-    const handleAppStateChange = (nextAppState: string) => {
-      if (nextAppState === 'active') {
-        console.log("App became active - checking permissions...");
-        // Small delay to ensure the app is fully active
-        setTimeout(async () => {
-          const permissions = await checkMonitoringPermissions();
-          if (permissions.allGranted && !isMonitoringActive) {
-            // User may have granted permissions, try to start monitoring
-            initializeMonitoring();
-          }
-        }, 1000);
-      }
-    };
+  // useEffect(() => {
+  //   const handleAppStateChange = (nextAppState: string) => {
+  //     if (nextAppState === 'active') {
+  //       console.log("App became active - checking permissions...");
+  //       // Small delay to ensure the app is fully active
+  //       setTimeout(async () => {
+  //         const permissions = await checkMonitoringPermissions();
+  //         if (permissions.allGranted && !isMonitoringActive) {
+  //           // User may have granted permissions, try to start monitoring
+  //           initializeMonitoring();
+  //         }
+  //       }, 1000);
+  //     }
+  //   };
 
-    const subscription = AppState.addEventListener('change', handleAppStateChange);
+  //   const subscription = AppState.addEventListener('change', handleAppStateChange);
     
-    return () => {
-      subscription?.remove();
-    };
-  }, [isMonitoringActive]);
+  //   return () => {
+  //     subscription?.remove();
+  //   };
+  // }, [isMonitoringActive]);
 
   useFocusEffect(
     React.useCallback(() => {
@@ -739,33 +739,33 @@ export default function HomeTab() {
   );
 
   // Check permissions every time user comes to home tab
-  useFocusEffect(
-    React.useCallback(() => {
-      const checkPermissionsOnFocus = async () => {
-        try {
-          console.log("Home tab focused - checking permissions...");
-          const permissions = await checkMonitoringPermissions();
+  // useFocusEffect(
+  //   React.useCallback(() => {
+  //     const checkPermissionsOnFocus = async () => {
+  //       try {
+  //         console.log("Home tab focused - checking permissions...");
+  //         const permissions = await checkMonitoringPermissions();
           
-          // If permissions are not granted, request them
-          if (!permissions.allGranted) {
-            console.log("Permissions not granted - requesting...");
-            // Small delay to ensure screen transition is complete
-            setTimeout(() => {
-              requestPermissionsIfNeeded();
-            }, 1000);
-          } else {
-            setPermissionCheckComplete(true);
-            console.log("All permissions granted");
-          }
-        } catch (error) {
-          console.error("Error checking permissions on focus:", error);
-          setPermissionCheckComplete(true);
-        }
-      };
+  //         // If permissions are not granted, request them
+  //         if (!permissions.allGranted) {
+  //           console.log("Permissions not granted - requesting...");
+  //           // Small delay to ensure screen transition is complete
+  //           setTimeout(() => {
+  //             requestPermissionsIfNeeded();
+  //           }, 1000);
+  //         } else {
+  //           setPermissionCheckComplete(true);
+  //           console.log("All permissions granted");
+  //         }
+  //       } catch (error) {
+  //         console.error("Error checking permissions on focus:", error);
+  //         setPermissionCheckComplete(true);
+  //       }
+  //     };
 
-      checkPermissionsOnFocus();
-    }, []),
-  );
+  //     checkPermissionsOnFocus();
+  //   }, []),
+  // );
 
   // Fetch interventions data on component mount
   useEffect(() => {
@@ -947,16 +947,16 @@ export default function HomeTab() {
           
           // Also check monitoring status when coming back to home
           const monitoringActive = await AsyncStorage.getItem('monitoringActive');
-          if (monitoringActive === 'true') {
-            const permissions = await checkMonitoringPermissions();
-            if (permissions.allGranted) {
-              setIsMonitoringActive(true);
-            } else {
-              // Permissions were revoked, stop monitoring
-              setIsMonitoringActive(false);
-              await AsyncStorage.setItem('monitoringActive', 'false');
-            }
-          }
+          // if (monitoringActive === 'true') {
+          //   const permissions = await checkMonitoringPermissions();
+          //   if (permissions.allGranted) {
+          //     setIsMonitoringActive(true);
+          //   } else {
+          //     // Permissions were revoked, stop monitoring
+          //     setIsMonitoringActive(false);
+          //     await AsyncStorage.setItem('monitoringActive', 'false');
+          //   }
+          // }
         } catch (error) {
           console.error("Error fetching profile:", error);
         }
@@ -1153,7 +1153,7 @@ export default function HomeTab() {
             />
 
             {/* Monitoring Status Indicator */}
-            {(isMonitoringActive || monitoringPermissions && Platform.OS === 'android') && (
+            {/* {(isMonitoringActive || monitoringPermissions && Platform.OS === 'android') && (
               <View style={styles.monitoringStatusContainer}>
                 <View style={[
                   styles.monitoringStatusBadge,
@@ -1192,7 +1192,7 @@ export default function HomeTab() {
                   </TouchableOpacity>
                 </View>
               </View>
-            )}
+            )} */}
 
             <View style={styles.tabContainer}>
               {["Daily", "Weekly", "Monthly"].map((tab) => (

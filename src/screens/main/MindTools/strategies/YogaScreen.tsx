@@ -297,7 +297,7 @@ export default function YogaScreen({ navigation, route }: any) {
       "academic": "Academic Stress",
       "selfharm": "Self Harm",
       "learning-disability": "Learning Disability",
-
+      "special-needs": "Dealing with Children of Special Needs",
       "loneliness-depression":"Loneliness & Depression",
     };
     const translationKey = conditionKeyMap[condition];

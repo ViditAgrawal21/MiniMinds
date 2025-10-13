@@ -99,13 +99,13 @@ export default function SelfHarmBehaviourScreen({ navigation }: any) {
             </Pressable>
           </View>
 
-          <View style={styles.strategyCard}>
+          {/* <View style={styles.strategyCard}>
             <Text style={styles.strategyTitle}>{t("selfHarmScreen.strategies.yoga.title")}</Text>
             <Text style={styles.strategyDescription}>{t("selfHarmScreen.strategies.yoga.description")}</Text>
             <Pressable style={styles.viewStrategyButton} onPress={() => handleViewStrategy("yoga")}>
               <Text style={styles.viewStrategyButtonText}>{t("selfHarmScreen.viewStrategyButton")}</Text>
             </Pressable>
-          </View>
+          </View> */}
 
           <View style={styles.strategyCard}>
             <Text style={styles.strategyTitle}>{t("selfHarmScreen.strategies.relaxation.title")}</Text>

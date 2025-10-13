@@ -370,6 +370,7 @@ export default function CBTScreen({ navigation, route }: any) {
       "eating-habits": "Eating Habits",
       "introvert-child": "Introvert Child",
       "breakupAndRebound": "Breakup and Rebound",
+      "special-needs": "Dealing with Children of Special Needs",
       "bullying": "Bullying",
       "dating-sites-and-complications": "Dating Sites and Complications",
       "friendship-and-relationship": "friendshipAndRelationshipScreen.headerTitle",

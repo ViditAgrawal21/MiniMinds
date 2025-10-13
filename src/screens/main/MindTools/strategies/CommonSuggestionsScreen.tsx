@@ -127,6 +127,7 @@ export default function CommonSuggestionsScreen({ navigation, route }: any) {
       "adhd": "adhdScreen.title",
       "aggressive-behaviour": "aggressiveBehaviourScreen.title",
       "conduct-issues": "conductIssues.headerTitle",
+      "special-needs": "Dealing with Children of Special Needs",
   "self-esteem-and-self-identity": "selfEsteemAndSelfIdentityScreen.headerTitle",
       // Miniminds conditions
      "abusive-language-back-answering": "Abusive Language & Back Answering",

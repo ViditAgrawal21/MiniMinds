@@ -23,11 +23,11 @@ export default function SuicidalBehaviourScreen({ navigation }: any) {
           condition: "suicidal-behavior",
         });
         break;
-      case "yoga":
-        navigation.navigate("YogaScreen", {
-          condition: "suicidal-behavior",
-        });
-        break;
+      // case "yoga":
+      //   navigation.navigate("YogaScreen", {
+      //     condition: "suicidal-behavior",
+      //   });
+      //   break;
       case "relaxation":
         navigation.navigate("RelaxationScreen", {
           condition: "suicidal-behavior",
@@ -117,13 +117,13 @@ export default function SuicidalBehaviourScreen({ navigation }: any) {
             </TouchableOpacity>
           </View>
 
-          <View style={styles.strategyCard}>
+          {/* <View style={styles.strategyCard}>
             <Text style={styles.strategyTitle}>{t("suicidalBehaviourScreen.strategies.yoga.title")}</Text>
             <Text style={styles.strategyDescription}>{t("suicidalBehaviourScreen.strategies.yoga.description")}</Text>
             <TouchableOpacity style={styles.viewStrategyButton} onPress={() => handleViewStrategy("yoga")}>
               <Text style={styles.viewStrategyButtonText}>{t("suicidalBehaviourScreen.viewStrategyButton")}</Text>
             </TouchableOpacity>
-          </View>
+          </View> */}
 
           <View style={styles.strategyCard}>
             <Text style={styles.strategyTitle}>{t("suicidalBehaviourScreen.strategies.relaxation.title")}</Text>

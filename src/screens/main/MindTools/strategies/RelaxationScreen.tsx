@@ -362,6 +362,7 @@ export default function RelaxationScreen({ navigation, route }: any) {
       "bunking": "Bunking in School",
       "academic": "Academic Stress",
       "selfharm": "Self Harm",
+      "special-needs": "Dealing with Children of Special Needs",
       "learning-disability": "Learning Disability",
     };
     const translationKey = conditionKeyMap[condition];

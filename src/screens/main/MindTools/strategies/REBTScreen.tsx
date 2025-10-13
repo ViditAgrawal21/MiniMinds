@@ -409,6 +409,7 @@ export default function REBTScreen({ navigation, route }: any) {
       "loneliness-depression":"Loneliness & Depression",
       "good-parenting":"Good Parenting",
       "introvert-child": "Introvert Child",
+      "special-needs": "Dealing with Children of Special Needs",
       "breakupAndRebound": "Breakup and Rebound",
       "friendship-and-relationship": "Frendship and Relationship",
       "abusive-language-back-answering": "Abusive Language & Back Answering",

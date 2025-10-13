@@ -1,534 +1,532 @@
 {
-  "condition": "Suicidal Behaviour",
-  "issueType": "General Issues",
   "interventions": {
-    "commonSuggestions": {
-      "type": "Primary",
-      "interventionSubType": "10 Common Suggestions",
-      "cards": [
-        {
-          "id": 1,
-          "xp": 4,
-          "title": {
-            "english": "Remove Immediate Means",
-            "hindi": "Remove Immediate Means",
-            "marathi": "Remove Immediate Means"
-          },
-          "description": {
-            "english": "Store or dispose of sharp objects/medications; use lockboxes and safety caps; ask a trusted person to hold items temporarily. How it works: Reduces access during crisis peaks. Example: Friend keeps razors and extra meds for two weeks.\"\"",
-            "hindi": "Store or dispose of sharp objects/medications; use lockboxes and safety caps; ask a trusted person to hold items temporarily. How it works: Reduces access during crisis peaks. Example: Friend keeps razors and extra meds for two weeks.\"\"",
-            "marathi": "Store or dispose of sharp objects/medications; use lockboxes and safety caps; ask a trusted person to hold items temporarily. How it works: Reduces access during crisis peaks. Example: Friend keeps razors and extra meds for two weeks.\"\""
-          }
+  "commonSuggestions": {
+    "type": "Primary",
+    "interventionSubType": "10 Common Suggestions",
+    "cards": [
+      {
+        "id": 1,
+        "xp": 4,
+        "title": {
+          "english": "Remove Immediate Means",
+          "hindi": "तत्काल उपयोगी सामान दूर रखें",
+          "marathi": "तात्काळ साधने दूर करा"
         },
-        {
-          "id": 2,
-          "xp": 4,
-          "title": {
-            "english": "Create a Safety Plan",
-            "hindi": "Create a Safety Plan",
-            "marathi": "Create a Safety Plan"
-          },
-          "description": {
-            "english": "List warning signs; coping steps; safe places; contacts; and emergency numbers; keep it visible. How it works: Provides a script under stress. Example: Phone note with 3 grounding steps + therapist and crisis numbers.\"\"",
-            "hindi": "List warning signs; coping steps; safe places; contacts; and emergency numbers; keep it visible. How it works: Provides a script under stress. Example: Phone note with 3 grounding steps + therapist and crisis numbers.\"\"",
-            "marathi": "List warning signs; coping steps; safe places; contacts; and emergency numbers; keep it visible. How it works: Provides a script under stress. Example: Phone note with 3 grounding steps + therapist and crisis numbers.\"\""
-          }
-        },
-        {
-          "id": 3,
-          "xp": 3,
-          "title": {
-            "english": "Delay-and-Distract Protocol",
-            "hindi": "Delay-and-Distract Protocol",
-            "marathi": "Delay-and-Distract Protocol"
-          },
-          "description": {
-            "english": "Use a 10–20 minute timer and do a neutral task (shower; tea; walk). How it works: Urges often crest and fall. Example: Wash dishes while listening to a calming playlist.\"\"",
-            "hindi": "Use a 10–20 minute timer and do a neutral task (shower; tea; walk). How it works: Urges often crest and fall. Example: Wash dishes while listening to a calming playlist.\"\"",
-            "marathi": "Use a 10–20 minute timer and do a neutral task (shower; tea; walk). How it works: Urges often crest and fall. Example: Wash dishes while listening to a calming playlist.\"\""
-          }
-        },
-        {
-          "id": 4,
-          "xp": 2,
-          "title": {
-            "english": "Grounding with Senses",
-            "hindi": "Grounding with Senses",
-            "marathi": "Grounding with Senses"
-          },
-          "description": {
-            "english": "Do 5-4-3-2-1 senses while breathing out slowly for 6 counts. How it works: Shifts focus to the present and calms the nervous system. Example: Name 5 things you see in the room while exhaling slowly.\"\"",
-            "hindi": "Do 5-4-3-2-1 senses while breathing out slowly for 6 counts. How it works: Shifts focus to the present and calms the nervous system. Example: Name 5 things you see in the room while exhaling slowly.\"\"",
-            "marathi": "Do 5-4-3-2-1 senses while breathing out slowly for 6 counts. How it works: Shifts focus to the present and calms the nervous system. Example: Name 5 things you see in the room while exhaling slowly.\"\""
-          }
-        },
-        {
-          "id": 5,
-          "xp": 2,
-          "title": {
-            "english": "Emotion Labeling",
-            "hindi": "Emotion Labeling",
-            "marathi": "Emotion Labeling"
-          },
-          "description": {
-            "english": "Name emotion + intensity and one need (e.g.; \"\"\"\"despair 8/10—need support\"\"\"\"). How it works: Lowers reactivity and clarifies next steps. Example: Write feelings on a sticky note and choose one helpful action.\"\"",
-            "hindi": "Name emotion + intensity and one need (e.g.; \"\"\"\"despair 8/10—need support\"\"\"\"). How it works: Lowers reactivity and clarifies next steps. Example: Write feelings on a sticky note and choose one helpful action.\"\"",
-            "marathi": "Name emotion + intensity and one need (e.g.; \"\"\"\"despair 8/10—need support\"\"\"\"). How it works: Lowers reactivity and clarifies next steps. Example: Write feelings on a sticky note and choose one helpful action.\"\""
-          }
-        },
-        {
-          "id": 6,
-          "xp": 4,
-          "title": {
-            "english": "Reach Out Early",
-            "hindi": "Reach Out Early",
-            "marathi": "Reach Out Early"
-          },
-          "description": {
-            "english": "Text/call a trusted person before the urge peaks; use a short script. How it works: Connection disrupts isolation. Example: \"\"\"\"Having a tough moment—can you stay on the line 5 minutes?\"\"\"\"\"\"",
-            "hindi": "Text/call a trusted person before the urge peaks; use a short script. How it works: Connection disrupts isolation. Example: \"\"\"\"Having a tough moment—can you stay on the line 5 minutes?\"\"\"\"\"\"",
-            "marathi": "Text/call a trusted person before the urge peaks; use a short script. How it works: Connection disrupts isolation. Example: \"\"\"\"Having a tough moment—can you stay on the line 5 minutes?\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 7,
-          "xp": 5,
-          "title": {
-            "english": "Therapy and Crisis Resources",
-            "hindi": "Therapy and Crisis Resources",
-            "marathi": "Therapy and Crisis Resources"
-          },
-          "description": {
-            "english": "Schedule regular therapy; save crisis contacts; know nearest ER/helpline. How it works: Ensures rapid access to professional help. Example: Weekly CBT/DBT session + crisis line on speed dial.\"\"",
-            "hindi": "Schedule regular therapy; save crisis contacts; know nearest ER/helpline. How it works: Ensures rapid access to professional help. Example: Weekly CBT/DBT session + crisis line on speed dial.\"\"",
-            "marathi": "Schedule regular therapy; save crisis contacts; know nearest ER/helpline. How it works: Ensures rapid access to professional help. Example: Weekly CBT/DBT session + crisis line on speed dial.\"\""
-          }
-        },
-        {
-          "id": 8,
-          "xp": 2,
-          "title": {
-            "english": "Routine",
-            "hindi": "Routine",
-            "marathi": "Routine"
-          },
-          "description": {
-            "english": " Sleep; and Nutrition;\"\"Keep consistent sleep/wake; simple meals; light movement. How it works: Stabilizes mood and energy. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch.\"\"",
-            "hindi": " Sleep; and Nutrition;\"\"Keep consistent sleep/wake; simple meals; light movement. How it works: Stabilizes mood and energy. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch.\"\"",
-            "marathi": " Sleep; and Nutrition;\"\"Keep consistent sleep/wake; simple meals; light movement. How it works: Stabilizes mood and energy. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch.\"\""
-          }
-        },
-        {
-          "id": 9,
-          "xp": 3,
-          "title": {
-            "english": "Limit Alcohol and Substances",
-            "hindi": "Limit Alcohol and Substances",
-            "marathi": "Limit Alcohol and Substances"
-          },
-          "description": {
-            "english": "Reduce or avoid use; especially during vulnerable times. How it works: Prevents impulse escalation. Example: No alcohol at home; choose a sparkling water routine.\"\"",
-            "hindi": "Reduce or avoid use; especially during vulnerable times. How it works: Prevents impulse escalation. Example: No alcohol at home; choose a sparkling water routine.\"\"",
-            "marathi": "Reduce or avoid use; especially during vulnerable times. How it works: Prevents impulse escalation. Example: No alcohol at home; choose a sparkling water routine.\"\""
-          }
+        "description": {
+          "english": "Store or dispose of sharp objects/medications; use lockboxes and safety caps; ask a trusted person to hold items temporarily. How it works: Reduces access during crisis peaks. Example: Friend keeps razors and extra meds for two weeks.",
+          "hindi": "तेज़ वस्तुएँ/दवाइयाँ सुरक्षित रूप से रखें या नष्ट करें; लॉक‑बॉक्स और सुरक्षा कैप का उपयोग करें; भरोसेमंद व्यक्ति को अस्थायी रूप से वस्तुएँ रखने के लिए कहें। यह कैसे काम करता है: संकट के चरम पर पहुंच को कम करता है। उदाहरण: मित्र दो हफ्ते के लिए रेज़र और अतिरिक्त दवाइयाँ रखता है।",
+          "marathi": "तीक्ष्ण वस्तू/औषधे सुरक्षित ठिकाणी ठेवा किंवा नष्ट करा; लॉकबॉक्स आणि सुरक्षा कव्हर वापरा; विश्वासू व्यक्तीला तात्पुरते वस्तू सांभाळायला सांगा. हे कसे काम करते: संकटाच्या वेळी प्रवेश कमी होतो. उदाहरण: मित्र दोन आठवडे रेझर आणि अतिरिक्त औषधे ठेवतो."
         }
-      ]
-    },
-    "relaxation": {
-      "type": "Secondary",
-      "interventionSubType": "Relaxation",
-      "cards": [
-        {
-          "id": 1,
-          "xp": 5,
-          "title": {
-            "english": "Box Breathing 4-4-4-4",
-            "hindi": "Box Breathing 4-4-4-4",
-            "marathi": "Box Breathing 4-4-4-4"
-          },
-          "description": {
-            "english": "Why it helps: Quickly reduces physiological arousal during crisis. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use when urge ≥7/10 to bring it down before taking next step.\"\"",
-            "hindi": "Why it helps: Quickly reduces physiological arousal during crisis. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use when urge ≥7/10 to bring it down before taking next step.\"\"",
-            "marathi": "Why it helps: Quickly reduces physiological arousal during crisis. What to do: Inhale 4s; hold 4s; exhale 4s; hold 4s for 3–5 minutes. Example: Use when urge ≥7/10 to bring it down before taking next step.\"\""
-          }
+      },
+      {
+        "id": 2,
+        "xp": 4,
+        "title": {
+          "english": "Create a Safety Plan",
+          "hindi": "सुरक्षा योजना बनाएं",
+          "marathi": "सुरक्षिततेची योजना तयार करा"
         },
-        {
-          "id": 2,
-          "xp": 6,
-          "title": {
-            "english": "5-4-3-2-1 Grounding",
-            "hindi": "5-4-3-2-1 Grounding",
-            "marathi": "5-4-3-2-1 Grounding"
-          },
-          "description": {
-            "english": "Why it helps: Anchors attention in the present to interrupt spirals. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste. Example: After a triggering message; complete the sequence before any action.\"\"",
-            "hindi": "Why it helps: Anchors attention in the present to interrupt spirals. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste. Example: After a triggering message; complete the sequence before any action.\"\"",
-            "marathi": "Why it helps: Anchors attention in the present to interrupt spirals. What to do: Name 5 see; 4 feel; 3 hear; 2 smell; 1 taste. Example: After a triggering message; complete the sequence before any action.\"\""
-          }
-        },
-        {
-          "id": 3,
-          "xp": 7,
-          "title": {
-            "english": "Progressive Muscle Relaxation (PMR)",
-            "hindi": "Progressive Muscle Relaxation (PMR)",
-            "marathi": "Progressive Muscle Relaxation (PMR)"
-          },
-          "description": {
-            "english": "Why it helps: Releases body tension that amplifies distress. What to do: Tense 5s/release 10s from feet to face for 8–10 minutes. Example: Do before bed when rumination spikes.\"\"",
-            "hindi": "Why it helps: Releases body tension that amplifies distress. What to do: Tense 5s/release 10s from feet to face for 8–10 minutes. Example: Do before bed when rumination spikes.\"\"",
-            "marathi": "Why it helps: Releases body tension that amplifies distress. What to do: Tense 5s/release 10s from feet to face for 8–10 minutes. Example: Do before bed when rumination spikes.\"\""
-          }
-        },
-        {
-          "id": 4,
-          "xp": 6,
-          "title": {
-            "english": "Cold Water or Ice Reset",
-            "hindi": "Cold Water or Ice Reset",
-            "marathi": "Cold Water or Ice Reset"
-          },
-          "description": {
-            "english": "Why it helps: Activates diving reflex to calm the nervous system. What to do: Splash cold water on face or hold ice 30–60s while slow breathing. Example: During peak urge; pair with a 10‑minute delay.\"\"",
-            "hindi": "Why it helps: Activates diving reflex to calm the nervous system. What to do: Splash cold water on face or hold ice 30–60s while slow breathing. Example: During peak urge; pair with a 10‑minute delay.\"\"",
-            "marathi": "Why it helps: Activates diving reflex to calm the nervous system. What to do: Splash cold water on face or hold ice 30–60s while slow breathing. Example: During peak urge; pair with a 10‑minute delay.\"\""
-          }
-        },
-        {
-          "id": 5,
-          "xp": 5,
-          "title": {
-            "english": "Extended Exhale Breathing 4-6",
-            "hindi": "Extended Exhale Breathing 4-6",
-            "marathi": "Extended Exhale Breathing 4-6"
-          },
-          "description": {
-            "english": "Why it helps: Lengthened exhale engages parasympathetic tone. What to do: Inhale 4s; exhale 6s for 5 minutes; shoulders relaxed. Example: After conflict; sit and breathe before making decisions.\"\"",
-            "hindi": "Why it helps: Lengthened exhale engages parasympathetic tone. What to do: Inhale 4s; exhale 6s for 5 minutes; shoulders relaxed. Example: After conflict; sit and breathe before making decisions.\"\"",
-            "marathi": "Why it helps: Lengthened exhale engages parasympathetic tone. What to do: Inhale 4s; exhale 6s for 5 minutes; shoulders relaxed. Example: After conflict; sit and breathe before making decisions.\"\""
-          }
-        },
-        {
-          "id": 6,
-          "xp": 7,
-          "title": {
-            "english": "Guided Imagery Safe Place",
-            "hindi": "Guided Imagery Safe Place",
-            "marathi": "Guided Imagery Safe Place"
-          },
-          "description": {
-            "english": "Why it helps: Creates mental distance from triggering thoughts. What to do: Close eyes and visualize a calming scene with rich sensory detail for 5 minutes. Example: Imagine a quiet lakeside at sunset.\"\"",
-            "hindi": "Why it helps: Creates mental distance from triggering thoughts. What to do: Close eyes and visualize a calming scene with rich sensory detail for 5 minutes. Example: Imagine a quiet lakeside at sunset.\"\"",
-            "marathi": "Why it helps: Creates mental distance from triggering thoughts. What to do: Close eyes and visualize a calming scene with rich sensory detail for 5 minutes. Example: Imagine a quiet lakeside at sunset.\"\""
-          }
-        },
-        {
-          "id": 7,
-          "xp": 5,
-          "title": {
-            "english": "Soothing Self-Talk Script",
-            "hindi": "Soothing Self-Talk Script",
-            "marathi": "Soothing Self-Talk Script"
-          },
-          "description": {
-            "english": "Why it helps: Counters harsh self-talk fueling urges. What to do: Read a prewritten script aloud slowly. Example: “This pain will pass. I choose safety and support. I deserve care.”\"\"",
-            "hindi": "Why it helps: Counters harsh self-talk fueling urges. What to do: Read a prewritten script aloud slowly. Example: “This pain will pass. I choose safety and support. I deserve care.”\"\"",
-            "marathi": "Why it helps: Counters harsh self-talk fueling urges. What to do: Read a prewritten script aloud slowly. Example: “This pain will pass. I choose safety and support. I deserve care.”\"\""
-          }
-        },
-        {
-          "id": 8,
-          "xp": 6,
-          "title": {
-            "english": "Mindful Walking 5–10 Minutes",
-            "hindi": "Mindful Walking 5–10 Minutes",
-            "marathi": "Mindful Walking 5–10 Minutes"
-          },
-          "description": {
-            "english": "Why it helps: Gentle movement reduces stress hormones and rumination. What to do: Walk; match steps to breath; notice 3 new details each minute. Example: Hallway or balcony walk during late-night spikes.\"\"",
-            "hindi": "Why it helps: Gentle movement reduces stress hormones and rumination. What to do: Walk; match steps to breath; notice 3 new details each minute. Example: Hallway or balcony walk during late-night spikes.\"\"",
-            "marathi": "Why it helps: Gentle movement reduces stress hormones and rumination. What to do: Walk; match steps to breath; notice 3 new details each minute. Example: Hallway or balcony walk during late-night spikes.\"\""
-          }
-        },
-        {
-          "id": 9,
-          "xp": 7,
-          "title": {
-            "english": "Body Scan Meditation",
-            "hindi": "Body Scan Meditation",
-            "marathi": "Body Scan Meditation"
-          },
-          "description": {
-            "english": "Why it helps: Builds interoceptive awareness to catch escalation early. What to do: Scan crown to toes; label sensations nonjudgmentally for 8–10 minutes. Example: Notice jaw/shoulder tension and release it.\"\"",
-            "hindi": "Why it helps: Builds interoceptive awareness to catch escalation early. What to do: Scan crown to toes; label sensations nonjudgmentally for 8–10 minutes. Example: Notice jaw/shoulder tension and release it.\"\"",
-            "marathi": "Why it helps: Builds interoceptive awareness to catch escalation early. What to do: Scan crown to toes; label sensations nonjudgmentally for 8–10 minutes. Example: Notice jaw/shoulder tension and release it.\"\""
-          }
+        "description": {
+          "english": "List warning signs; coping steps; safe places; contacts; and emergency numbers; keep it visible. How it works: Provides a script under stress. Example: Phone note with 3 grounding steps + therapist and crisis numbers.",
+          "hindi": "चेतावनी संकेत, मुकाबला कदम, सुरक्षित स्थान, संपर्क और आपातकालीन नंबर सूचीबद्ध करें; इसे दिखाई देने वाली जगह रखें। यह कैसे काम करता है: तनाव में उपयोग के लिए एक लिखित मार्ग देता है। उदाहरण: फोन पर 3 ग्राउंडिंग कदम + चिकित्सक और क्राइसिस नंबर का नोट।",
+          "marathi": "चेतावणी चिन्हे, मुकाबला पावले, सुरक्षित ठिकाणे, संपर्क आणि आपत्कालीन नंबर यांची यादी करा; हे दृश्यमान ठेवा. हे कसे काम करते: तणावात वापरण्यासाठी मार्गदर्शक प्रदान करते. उदाहरण: फोनवर 3 ग्राउंडिंग पावले + थेरपिस्ट व क्राइसिस नंबरचे नोंद."
         }
-      ]
-    },
-    "cbt": {
-      "type": "Tertiary",
-      "interventionSubType": "CBT Interventions",
-      "cards": [
-        {
-          "id": 1,
-          "xp": 6,
-          "title": {
-            "english": "Trigger and Situation Log",
-            "hindi": "Trigger and Situation Log",
-            "marathi": "Trigger and Situation Log"
-          },
-          "description": {
-            "english": "Why it helps: Identifies high-risk contexts so you can intervene early. What to do: Track time; place; mood (0–10); urge (0–10); preceding event. Example: 11 pm; alone after argument; sadness 8/10; urge 7/10.\"\"",
-            "hindi": "Why it helps: Identifies high-risk contexts so you can intervene early. What to do: Track time; place; mood (0–10); urge (0–10); preceding event. Example: 11 pm; alone after argument; sadness 8/10; urge 7/10.\"\"",
-            "marathi": "Why it helps: Identifies high-risk contexts so you can intervene early. What to do: Track time; place; mood (0–10); urge (0–10); preceding event. Example: 11 pm; alone after argument; sadness 8/10; urge 7/10.\"\""
-          }
+      },
+      {
+        "id": 3,
+        "xp": 3,
+        "title": {
+          "english": "Delay-and-Distract Protocol",
+          "hindi": "विलंब और ध्यान हटाने की रणनीति",
+          "marathi": "वाट पाहणे आणि विचलित करण्याची पद्धत"
         },
-        {
-          "id": 2,
-          "xp": 7,
-          "title": {
-            "english": "Automatic Thought Record",
-            "hindi": "Automatic Thought Record",
-            "marathi": "Automatic Thought Record"
-          },
-          "description": {
-            "english": "Why it helps: Surfaces thoughts that intensify despair. What to do: Write situation; automatic thought; emotion; behavior urge. Example: \"\"\"\"Failed the test\"\"\"\" → \"\"\"\"I’m hopeless\"\"\"\" → despair 9/10; urge 7/10.\"\"",
-            "hindi": "Why it helps: Surfaces thoughts that intensify despair. What to do: Write situation; automatic thought; emotion; behavior urge. Example: \"\"\"\"Failed the test\"\"\"\" → \"\"\"\"I’m hopeless\"\"\"\" → despair 9/10; urge 7/10.\"\"",
-            "marathi": "Why it helps: Surfaces thoughts that intensify despair. What to do: Write situation; automatic thought; emotion; behavior urge. Example: \"\"\"\"Failed the test\"\"\"\" → \"\"\"\"I’m hopeless\"\"\"\" → despair 9/10; urge 7/10.\"\""
-          }
-        },
-        {
-          "id": 3,
-          "xp": 8,
-          "title": {
-            "english": "Cognitive Restructuring",
-            "hindi": "Cognitive Restructuring",
-            "marathi": "Cognitive Restructuring"
-          },
-          "description": {
-            "english": "Why it helps: Replaces distortions with balanced; helpful thoughts. What to do: Evidence for/against; alternative view; realistic outcome. Example: \"\"\"\"No one cares\"\"\"\" → List recent check-ins; balanced: \"\"\"\"Some people do care.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Replaces distortions with balanced; helpful thoughts. What to do: Evidence for/against; alternative view; realistic outcome. Example: \"\"\"\"No one cares\"\"\"\" → List recent check-ins; balanced: \"\"\"\"Some people do care.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Replaces distortions with balanced; helpful thoughts. What to do: Evidence for/against; alternative view; realistic outcome. Example: \"\"\"\"No one cares\"\"\"\" → List recent check-ins; balanced: \"\"\"\"Some people do care.\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 4,
-          "xp": 6,
-          "title": {
-            "english": "Behavioral Activation",
-            "hindi": "Behavioral Activation",
-            "marathi": "Behavioral Activation"
-          },
-          "description": {
-            "english": "Why it helps: Lifts mood by increasing mastery/pleasure. What to do: Schedule 3 daily actions: one pleasure; one mastery; one connection. Example: Walk 15 min; submit one email; call a friend.\"\"",
-            "hindi": "Why it helps: Lifts mood by increasing mastery/pleasure. What to do: Schedule 3 daily actions: one pleasure; one mastery; one connection. Example: Walk 15 min; submit one email; call a friend.\"\"",
-            "marathi": "Why it helps: Lifts mood by increasing mastery/pleasure. What to do: Schedule 3 daily actions: one pleasure; one mastery; one connection. Example: Walk 15 min; submit one email; call a friend.\"\""
-          }
-        },
-        {
-          "id": 5,
-          "xp": 7,
-          "title": {
-            "english": "Distress Tolerance Toolkit",
-            "hindi": "Distress Tolerance Toolkit",
-            "marathi": "Distress Tolerance Toolkit"
-          },
-          "description": {
-            "english": "Why it helps: Provides safe; rapid strategies during peaks. What to do: Prepare ice; sour candy; grounding card; music; crisis numbers. Example: Hold ice 60s + 5-4-3-2-1 until urge <4/10.\"\"",
-            "hindi": "Why it helps: Provides safe; rapid strategies during peaks. What to do: Prepare ice; sour candy; grounding card; music; crisis numbers. Example: Hold ice 60s + 5-4-3-2-1 until urge <4/10.\"\"",
-            "marathi": "Why it helps: Provides safe; rapid strategies during peaks. What to do: Prepare ice; sour candy; grounding card; music; crisis numbers. Example: Hold ice 60s + 5-4-3-2-1 until urge <4/10.\"\""
-          }
-        },
-        {
-          "id": 6,
-          "xp": 9,
-          "title": {
-            "english": "Safety Plan and Means Restriction",
-            "hindi": "Safety Plan and Means Restriction",
-            "marathi": "Safety Plan and Means Restriction"
-          },
-          "description": {
-            "english": "Why it helps: Reduces immediate risk and guides action. What to do: List warning signs; coping steps; contacts; lock away/handoff sharps/meds. Example: Friend holds razors; crisis line on speed dial.\"\"",
-            "hindi": "Why it helps: Reduces immediate risk and guides action. What to do: List warning signs; coping steps; contacts; lock away/handoff sharps/meds. Example: Friend holds razors; crisis line on speed dial.\"\"",
-            "marathi": "Why it helps: Reduces immediate risk and guides action. What to do: List warning signs; coping steps; contacts; lock away/handoff sharps/meds. Example: Friend holds razors; crisis line on speed dial.\"\""
-          }
-        },
-        {
-          "id": 7,
-          "xp": 6,
-          "title": {
-            "english": "Problem-Solving Worksheet",
-            "hindi": "Problem-Solving Worksheet",
-            "marathi": "Problem-Solving Worksheet"
-          },
-          "description": {
-            "english": "Why it helps: Shifts from rumination to concrete steps. What to do: Define problem; brainstorm options; choose one; plan next action. Example: Debt stress → call helpline; set payment plan.\"\"",
-            "hindi": "Why it helps: Shifts from rumination to concrete steps. What to do: Define problem; brainstorm options; choose one; plan next action. Example: Debt stress → call helpline; set payment plan.\"\"",
-            "marathi": "Why it helps: Shifts from rumination to concrete steps. What to do: Define problem; brainstorm options; choose one; plan next action. Example: Debt stress → call helpline; set payment plan.\"\""
-          }
-        },
-        {
-          "id": 8,
-          "xp": 7,
-          "title": {
-            "english": "Urge Surfing with Timer",
-            "hindi": "Urge Surfing with Timer",
-            "marathi": "Urge Surfing with Timer"
-          },
-          "description": {
-            "english": "Why it helps: Teaches urges rise and fall without acting. What to do: 10–20 minute timer; breathe 4-in/6-out; rate urge each minute. Example: 8→6→4 by minute 12.\"\"",
-            "hindi": "Why it helps: Teaches urges rise and fall without acting. What to do: 10–20 minute timer; breathe 4-in/6-out; rate urge each minute. Example: 8→6→4 by minute 12.\"\"",
-            "marathi": "Why it helps: Teaches urges rise and fall without acting. What to do: 10–20 minute timer; breathe 4-in/6-out; rate urge each minute. Example: 8→6→4 by minute 12.\"\""
-          }
-        },
-        {
-          "id": 9,
-          "xp": 5,
-          "title": {
-            "english": "Compassionate Self-Talk Scripts",
-            "hindi": "Compassionate Self-Talk Scripts",
-            "marathi": "Compassionate Self-Talk Scripts"
-          },
-          "description": {
-            "english": "Why it helps: Lowers shame that fuels the cycle. What to do: Write 3 statements and read aloud in crisis. Example: \"\"\"\"This will pass. I can stay safe. I deserve care.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Lowers shame that fuels the cycle. What to do: Write 3 statements and read aloud in crisis. Example: \"\"\"\"This will pass. I can stay safe. I deserve care.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Lowers shame that fuels the cycle. What to do: Write 3 statements and read aloud in crisis. Example: \"\"\"\"This will pass. I can stay safe. I deserve care.\"\"\"\"\"\""
-          }
+        "description": {
+          "english": "Use a 10–20 minute timer and do a neutral task (shower; tea; walk). How it works: Urges often crest and fall. Example: Wash dishes while listening to a calming playlist.",
+          "hindi": "10–20 मिनट का टाइमर लगाकर कोई तटस्थ कार्य करें (नहाना; चाय; टहलकदमी)। यह कैसे काम करता है: आग्रह अक्सर चोटी पर पहुँचकर कम हो जाता है। उदाहरण: शांत करने वाली प्लेलिस्ट सुनते हुए बर्तन धोना।",
+          "marathi": "10–20 मिनिटांचा टाइमर वापरा आणि तटस्थ काम करा (स्नान; चहा; फेरफटका). हे कसे काम करते: आग्रह सामान्यतः कमी होतो. उदाहरण: शांत करणारी प्लेलिस्ट ऐकताना भांडी धुणे."
         }
-      ]
-    },
-    "rebt": {
-      "type": "Tertiary",
-      "interventionSubType": "REBT Interventions",
-      "cards": [
-        {
-          "id": 1,
-          "xp": 6,
-          "title": {
-            "english": "Identify Activating Events (A)",
-            "hindi": "Identify Activating Events (A)",
-            "marathi": "Identify Activating Events (A)"
-          },
-          "description": {
-            "english": "Why it helps: Reveals patterns that precede intense urges so intervention can start earlier. What to do: Log situations; thoughts; body cues; and times before spikes. Example: After conflict + 2 hours of rumination → urge rose to 7/10.\"\"",
-            "hindi": "Why it helps: Reveals patterns that precede intense urges so intervention can start earlier. What to do: Log situations; thoughts; body cues; and times before spikes. Example: After conflict + 2 hours of rumination → urge rose to 7/10.\"\"",
-            "marathi": "Why it helps: Reveals patterns that precede intense urges so intervention can start earlier. What to do: Log situations; thoughts; body cues; and times before spikes. Example: After conflict + 2 hours of rumination → urge rose to 7/10.\"\""
-          }
+      },
+      {
+        "id": 4,
+        "xp": 2,
+        "title": {
+          "english": "Grounding with Senses",
+          "hindi": "इंद्रियों से ग्राउंडिंग",
+          "marathi": "इंद्रियां वापरून जमिनीशी जोडणे"
         },
-        {
-          "id": 2,
-          "xp": 7,
-          "title": {
-            "english": "Spot Irrational Beliefs (B)",
-            "hindi": "Spot Irrational Beliefs (B)",
-            "marathi": "Spot Irrational Beliefs (B)"
-          },
-          "description": {
-            "english": "Why it helps: Uncovers rigid \"\"\"\"must/should/never\"\"\"\" beliefs that amplify despair. What to do: Write beliefs verbatim and circle demands and global ratings. Example: \"\"\"\"I must never burden anyone; if I do; I’m worthless.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Uncovers rigid \"\"\"\"must/should/never\"\"\"\" beliefs that amplify despair. What to do: Write beliefs verbatim and circle demands and global ratings. Example: \"\"\"\"I must never burden anyone; if I do; I’m worthless.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Uncovers rigid \"\"\"\"must/should/never\"\"\"\" beliefs that amplify despair. What to do: Write beliefs verbatim and circle demands and global ratings. Example: \"\"\"\"I must never burden anyone; if I do; I’m worthless.\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 3,
-          "xp": 8,
-          "title": {
-            "english": "Dispute with Logic/Evidence/Pragmatics (D)",
-            "hindi": "Dispute with Logic/Evidence/Pragmatics (D)",
-            "marathi": "Dispute with Logic/Evidence/Pragmatics (D)"
-          },
-          "description": {
-            "english": "Why it helps: Weakens catastrophic thinking and opens safer choices. What to do: Ask: Is it true? Where’s proof? Does this belief help me live the life I want? Example: \"\"\"\"No one cares\"\"\"\" → texts from 3 friends last week contradict it.\"\"",
-            "hindi": "Why it helps: Weakens catastrophic thinking and opens safer choices. What to do: Ask: Is it true? Where’s proof? Does this belief help me live the life I want? Example: \"\"\"\"No one cares\"\"\"\" → texts from 3 friends last week contradict it.\"\"",
-            "marathi": "Why it helps: Weakens catastrophic thinking and opens safer choices. What to do: Ask: Is it true? Where’s proof? Does this belief help me live the life I want? Example: \"\"\"\"No one cares\"\"\"\" → texts from 3 friends last week contradict it.\"\""
-          }
-        },
-        {
-          "id": 4,
-          "xp": 7,
-          "title": {
-            "english": "Form Rational Alternatives (E)",
-            "hindi": "Form Rational Alternatives (E)",
-            "marathi": "Form Rational Alternatives (E)"
-          },
-          "description": {
-            "english": "Why it helps: Replaces demands with flexible preferences and tolerance. What to do: Draft balanced beliefs and read them aloud daily. Example: \"\"\"\"I prefer relief now; but I can tolerate pain and use supports until it eases.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Replaces demands with flexible preferences and tolerance. What to do: Draft balanced beliefs and read them aloud daily. Example: \"\"\"\"I prefer relief now; but I can tolerate pain and use supports until it eases.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Replaces demands with flexible preferences and tolerance. What to do: Draft balanced beliefs and read them aloud daily. Example: \"\"\"\"I prefer relief now; but I can tolerate pain and use supports until it eases.\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 5,
-          "xp": 6,
-          "title": {
-            "english": "Unconditional Self-Acceptance (USA)",
-            "hindi": "Unconditional Self-Acceptance (USA)",
-            "marathi": "Unconditional Self-Acceptance (USA)"
-          },
-          "description": {
-            "english": "Why it helps: Reduces shame that fuels self-punishment. What to do: Separate actions from worth; use compassionate language. Example: \"\"\"\"I made mistakes; but my value is not defined by them.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Reduces shame that fuels self-punishment. What to do: Separate actions from worth; use compassionate language. Example: \"\"\"\"I made mistakes; but my value is not defined by them.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Reduces shame that fuels self-punishment. What to do: Separate actions from worth; use compassionate language. Example: \"\"\"\"I made mistakes; but my value is not defined by them.\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 6,
-          "xp": 6,
-          "title": {
-            "english": "Low Frustration Tolerance Training",
-            "hindi": "Low Frustration Tolerance Training",
-            "marathi": "Low Frustration Tolerance Training"
-          },
-          "description": {
-            "english": "Why it helps: Builds capacity to ride urge waves without acting. What to do: Practice toleration lines and timed delays. Example: \"\"\"\"It’s awful; not unbearable—set 10-minute timer + paced breathing.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Builds capacity to ride urge waves without acting. What to do: Practice toleration lines and timed delays. Example: \"\"\"\"It’s awful; not unbearable—set 10-minute timer + paced breathing.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Builds capacity to ride urge waves without acting. What to do: Practice toleration lines and timed delays. Example: \"\"\"\"It’s awful; not unbearable—set 10-minute timer + paced breathing.\"\"\"\"\"\""
-          }
-        },
-        {
-          "id": 7,
-          "xp": 7,
-          "title": {
-            "english": "Short- vs Long-Term Consequences Review",
-            "hindi": "Short- vs Long-Term Consequences Review",
-            "marathi": "Short- vs Long-Term Consequences Review"
-          },
-          "description": {
-            "english": "Why it helps: Counters tunnel vision for short-term relief. What to do: Two columns: immediate effects vs long-term costs/alternatives. Example: Relief 5 minutes vs medical risk; secrecy; alternative: call helpline + cold water splash.\"\"",
-            "hindi": "Why it helps: Counters tunnel vision for short-term relief. What to do: Two columns: immediate effects vs long-term costs/alternatives. Example: Relief 5 minutes vs medical risk; secrecy; alternative: call helpline + cold water splash.\"\"",
-            "marathi": "Why it helps: Counters tunnel vision for short-term relief. What to do: Two columns: immediate effects vs long-term costs/alternatives. Example: Relief 5 minutes vs medical risk; secrecy; alternative: call helpline + cold water splash.\"\""
-          }
-        },
-        {
-          "id": 8,
-          "xp": 6,
-          "title": {
-            "english": "ABC Diary with Urge Scale",
-            "hindi": "ABC Diary with Urge Scale",
-            "marathi": "ABC Diary with Urge Scale"
-          },
-          "description": {
-            "english": "Why it helps: Repetition speeds recognition and disputing in real time. What to do: Record A (event); B (belief); C (feeling/urge 0–10); D (dispute); E (new effect). Example: A: loneliness; B: \"\"\"\"I’ll always be alone\"\"\"\"; C: 8→ after D: 5.\"\"",
-            "hindi": "Why it helps: Repetition speeds recognition and disputing in real time. What to do: Record A (event); B (belief); C (feeling/urge 0–10); D (dispute); E (new effect). Example: A: loneliness; B: \"\"\"\"I’ll always be alone\"\"\"\"; C: 8→ after D: 5.\"\"",
-            "marathi": "Why it helps: Repetition speeds recognition and disputing in real time. What to do: Record A (event); B (belief); C (feeling/urge 0–10); D (dispute); E (new effect). Example: A: loneliness; B: \"\"\"\"I’ll always be alone\"\"\"\"; C: 8→ after D: 5.\"\""
-          }
-        },
-        {
-          "id": 9,
-          "xp": 5,
-          "title": {
-            "english": "Implementation Intentions Script",
-            "hindi": "Implementation Intentions Script",
-            "marathi": "Implementation Intentions Script"
-          },
-          "description": {
-            "english": "Why it helps: Automates safer responses under high emotion. What to do: IF-THEN plan tied to triggers. Example: \"\"\"\"If urge ≥6/10; then I text Sam; start 5-4-3-2-1; and go to the living room.\"\"\"\"\"\"",
-            "hindi": "Why it helps: Automates safer responses under high emotion. What to do: IF-THEN plan tied to triggers. Example: \"\"\"\"If urge ≥6/10; then I text Sam; start 5-4-3-2-1; and go to the living room.\"\"\"\"\"\"",
-            "marathi": "Why it helps: Automates safer responses under high emotion. What to do: IF-THEN plan tied to triggers. Example: \"\"\"\"If urge ≥6/10; then I text Sam; start 5-4-3-2-1; and go to the living room.\"\"\"\"\"\""
-          }
+        "description": {
+          "english": "Do 5-4-3-2-1 senses while breathing out slowly for 6 counts. How it works: Shifts focus to the present and calms the nervous system. Example: Name 5 things you see in the room while exhaling slowly.",
+          "hindi": "धीरे‑धीरे 6 गणना तक साँस छोड़ते हुए 5‑4‑3‑2‑1 इंद्रियों का अभ्यास करें। यह कैसे काम करता है: ध्यान वर्तमान में लाता है और तंत्रिका तंत्र को शांत करता है। उदाहरण: धीरे‑धीरे साँस छोड़ते हुए कमरे में आप जो 5 चीजें देखते हैं उनको नाम दें।",
+          "marathi": "हळुवार श्वास सोडताना 6 गणनेपर्यंत 5‑4‑3‑2‑1 इंद्रियांचा सराव करा. हे कसे काम करते: लक्ष वर्तमानात वळवते आणि तंत्रिका तंत्र शांत करते. उदाहरण: हळुवार श्वास सोडताना खोलीतील 5 गोष्टींना नाव द्या."
         }
-      ]
-    }
+      },
+      {
+        "id": 5,
+        "xp": 2,
+        "title": {
+          "english": "Emotion Labeling",
+          "hindi": "भावना नामकरण",
+          "marathi": "भावनांची नावे लावा"
+        },
+        "description": {
+          "english": "Name the feeling (angry, sad, numb) and rate intensity 1–10. How it works: Labels reduce fusion and create distance. Example: 'I feel numb, 7/10.'",
+          "hindi": "भावना का नाम बताएं (गुस्सा, उदासी, सुन्न) और तीव्रता 1–10 में आंकें। यह कैसे काम करता है: नामकरण से भावनात्मक उलझन कम होती है और दूरी बनती है। उदाहरण: 'मैं सुन्न महसूस कर रहा/रही हूँ, 7/10.'",
+          "marathi": "अनुभवाची नोंद करा (राग, दु:ख, सुन्नपणा) आणि तीव्रता 1–10 मध्ये द्या. हे कसे काम करते: नामकरणामुळे भावना कमी अखंड होतात आणि अंतर तयार होते. उदाहरण: 'मला सुन्न वाटते, 7/10.'"
+        }
+      },
+      {
+        "id": 6,
+        "xp": 4,
+        "title": {
+          "english": "Reach Out Early",
+          "hindi": "जल्दी संपर्क करें",
+          "marathi": "लवकर संपर्क करा"
+        },
+        "description": {
+          "english": "Call a friend, therapist, or crisis line before urges escalate. How it works: External support interrupts isolation. Example: Text a trusted person as soon as thoughts spike.",
+          "hindi": "आवेग बढ़ने से पहले दोस्त, चिकित्सक, या क्राइसिस लाइन को कॉल करें। यह कैसे काम करता है: बाहरी समर्थन अलगाव को तोड़ता है। उदाहरण: जैसे ही विचार बढ़ें, भरोसेमंद व्यक्ति को टेक्स्ट करें।",
+          "marathi": "आवेग वाढण्यापूर्वी मित्र, थेरपिस्ट किंवा क्राइसिस लाईनला कॉल करा. हे कसे काम करते: बाह्य मदत अलगाव मोडते. उदाहरण: विचार जास्त झाले की विश्वासू व्यक्तीला मेसेज करा."
+        }
+      },
+      {
+        "id": 7,
+        "xp": 5,
+        "title": {
+          "english": "Therapy and Crisis Resources",
+          "hindi": "थेरेपी और संकट संसाधन",
+          "marathi": "थेरपी आणि संकट साधने"
+        },
+        "description": {
+          "english": "Find local therapists, crisis centers, and emergency services; keep quick links and numbers. How it works: Speeds access to professional help. Example: Save national crisis hotline in contacts.",
+          "hindi": "स्थानीय चिकित्सक, क्राइसिस सेंटर और आपात सेवा ढूंढें; फास्ट लिंक और नंबर रखें। यह कैसे काम करता है: पेशेवर मदद तक पहुँच तेज़ होती है। उदाहरण: राष्ट्रीय क्राइसिस हॉटलाइन को कॉन्टैक्ट में सेव करें।",
+          "marathi": "स्थानिक थेरपिस्ट, संकट केंद्र आणि आपत्कालीन सेवा शोधा; वेगवान दुवे आणि नंबर ठेवा. हे कसे काम करते: व्यावसायिक मदतीपर्यंत पोहोच जलद होते. उदाहरण: राष्ट्रीय क्राइसिस हॉटलाइन संपर्कांमध्ये जतन करा."
+        }
+      },
+      {
+        "id": 8,
+        "xp": 2,
+        "title": {
+          "english": "Routine",
+          "hindi": "रूटीन",
+          "marathi": "संधारण"
+        },
+        "description": {
+          "english": "Sleep and nutrition: keep consistent sleep/wake; simple meals; light movement. How it works: Stabilizes mood and energy. Example: 11 pm lights out; 7 am wake; 20-minute walk after lunch.",
+          "hindi": "नींद और पोषण पर ध्यान दें; नियमित सोने‑जागने का समय रखें; साधारण भोजन और हल्की गतिविधि। यह कैसे काम करता है: मूड और ऊर्जा को स्थिर करता है। उदाहरण: 11 बजे बत्ती बंद; 7 बजे जागना; दोपहर के बाद 20‑मिनट पैदल चलना।",
+          "marathi": "झोप आणि पोषणावर लक्ष द्या; नियमित झोप/जागरण ठेवा; साधे जेवण आणि हलकी हालचाल. हे कसे काम करते: मनोवृत्ती व ऊर्जा स्थिर ठेवते. उदाहरण: रात्री 11 वाजता दिवे बंद; सकाळी 7 वाजता जागे होणे; दुपारनंतर 20 मिनिटांची फेरफटका."
+        }
+      },
+      {
+        "id": 9,
+        "xp": 3,
+        "title": {
+          "english": "Limit Alcohol and Substances",
+          "hindi": "शराब और पदार्थों की सीमा",
+          "marathi": "दारू व पदार्थांचा वापर मर्यादित करा"
+        },
+        "description": {
+          "english": "Reduce or avoid use; especially during vulnerable times. How it works: Prevents impulse escalation. Example: No alcohol at home; choose a sparkling water routine.",
+          "hindi": "उपयोग कम या रोकें; विशेषकर कमजोर अवसाद के समय। यह कैसे काम करता है: आवेग तेज़ी को रोकता है। उदाहरण: घर में शराब न रखें; स्पार्कलिंग पानी का विकल्प चुनें।",
+          "marathi": "वापर कमी करा किंवा टाळा; विशेषतः संवेदनशील काळात. हे कसे काम करते: आवेग वाढ रोखते. उदाहरण: घरी मदार नाही ठेवणे; चमचमीत पाण्याचा पर्याय निवडा."
+        }
+      }
+    ]
+  },
+  "relaxation": {
+    "type": "Secondary",
+    "interventionSubType": "Relaxation",
+    "cards": [
+      {
+        "id": 1,
+        "xp": 5,
+        "title": {
+          "english": "Distress Tolerance Toolkit",
+          "hindi": "दुख सहनशीलता टूलकिट",
+          "marathi": "दु:ख सहन क्षमता साधनसंग्रह"
+        },
+        "description": {
+          "english": "Why it helps: Provides safe, rapid strategies during peaks. What to do: Prepare ice; sour candy; grounding card; music; crisis numbers. Example: Hold ice 60s + 5-4-3-2-1 until urge <4/10.",
+          "hindi": "यह कैसे मदद करता है: चरम पर सुरक्षित, त्वरित रणनीतियाँ देता है। क्या करें: बर्फ तैयार रखें; खट्टा कैंडी; ग्राउंडिंग कार्ड; संगीत; क्राइसिस नंबर। उदाहरण: बर्फ 60s पकड़े रखें + 5‑4‑3‑2‑1 जब तक urge <4/10 न हो।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: शिखरावर सुरक्षित, तत्काळ धोरणे प्रदान करते. काय करावे: बर्फ तयार ठेवा; आंबट कँडी; ग्राउंडिंग कार्ड; संगीत; क्राइसिस नंबर. उदाहरण: बर्फ 60s धरून ठेवा + 5‑4‑3‑2‑1 जोपर्यंत urge <4/10 नाही."
+        }
+      },
+      {
+        "id": 2,
+        "xp": 7,
+        "title": {
+          "english": "Extended Exhale Breathing 4-6",
+          "hindi": "लंबा छोड़ साँस 4-6",
+          "marathi": "लांब उत्सर्जन श्वास 4-6"
+        },
+        "description": {
+          "english": "Why it helps: Lengthened exhale engages parasympathetic tone. What to do: Inhale 4s; exhale 6s for 3–5 minutes; keep shoulders relaxed. Example: After conflict, sit and breathe before deciding.",
+          "hindi": "यह कैसे मदद करता है: लंबी एक्सहेल परिसंवेदनात्मक प्रणाली को सक्रिय करती है। क्या करें: 4 सेकंड इनेल; 6 सेकंड एक्सहेल 3–5 मिनट तक; कंधे आराम रखें। उदाहरण: विवाद के बाद निर्णय से पहले बैठकर श्वास लें।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: लांब उत्सर्जन पॅरासंम्पॅथेटिक टोन सक्रिय करतो. काय करावे: 4s श्वास घ्या; 6s बाहेर सोडा 3–5 मिनिटे; खांदे आरामात ठेवा. उदाहरण: वादानंतर निर्णय घेण्यापूर्वी बसून श्वास घ्या."
+        }
+      },
+      {
+        "id": 3,
+        "xp": 6,
+        "title": {
+          "english": "Guided Imagery Safe Place",
+          "hindi": "निर्देशित इमेजरी सुरक्षित स्थान",
+          "marathi": "निर्देशित दृश्य सुरक्षित ठिकाण"
+        },
+        "description": {
+          "english": "Why it helps: Creates mental distance from triggering thoughts. What to do: Close eyes and visualize a calming scene with rich sensory detail for 5 minutes. Example: Imagine a quiet lakeside at sunset.",
+          "hindi": "यह कैसे मदद करता है: ट्रिगर करने वाले विचारों से मानसिक दूरी बनाता है। क्या करें: आँखें बंद कर शांत दृश्य की कल्पना 5 मिनट तक करें। उदाहरण: सूर्यास्त के समय एक शांत झील की कल्पना करें।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: ट्रिगर करणाऱ्या विचारांपासून मानसिक अंतर तयार करते. काय करावे: डोळे बंद करून शांत दृश्य 5 मिनिटे कल्पना करा. उदाहरण: सूर्यास्ताच्या वेळी शांत तलावाचे चित्र काढा."
+        }
+      },
+      {
+        "id": 4,
+        "xp": 6,
+        "title": {
+          "english": "Soothing Self-Talk Script",
+          "hindi": "शांत करने वाली आत्म‑बात की स्क्रिप्ट",
+          "marathi": "शांत करणारी आत्मसंवाद स्क्रिप्ट"
+        },
+        "description": {
+          "english": "Why it helps: Counters harsh self-talk that fuels urges. What to do: Read a prewritten script aloud slowly. Example: 'This pain will pass. I choose safety and support. I deserve care.'",
+          "hindi": "यह कैसे मदद करता है: कठोर आत्म‑बात को चुनौती देता है जो आवेगों को बढ़ाती है। क्या करें: पहले से लिखा हुआ स्क्रिप्ट धीरे‑धीरे पढ़ें। उदाहरण: 'यह दर्द बीत जाएगा। मैं सुरक्षा और समर्थन चुनता/चुनती हूँ। मैं देखभाल का हकदार हूँ।'",
+          "marathi": "हे कशासाठी उपयुक्त आहे: कठोर आत्मसंवादाला विरोध करतो ज्यामुळे आवेग वाढतो. काय करावे: पूर्वलिखित स्क्रिप्ट हळूहळू वाचा. उदाहरण: 'ही वेदना निघून जाईल. मी सुरक्षा व समर्थन निवडतो/निवडते. मला काळजी मिळण्यासारखे आहे.'"
+        }
+      },
+      {
+        "id": 5,
+        "xp": 6,
+        "title": {
+          "english": "Mindful Walking 5–10 Minutes",
+          "hindi": "माइंडफुल वॉक 5–10 मिनट",
+          "marathi": "माइंडफुल चाल 5–10 मिनिटे"
+        },
+        "description": {
+          "english": "Why it helps: Gentle movement reduces stress hormones and rumination. What to do: Walk; match steps to breath; notice 3 new details each minute. Example: Hallway or balcony walk during late-night spikes.",
+          "hindi": "यह कैसे मदद करता है: हल्की गतिविधि तनाव हार्मोन और घुमावदार विचार कम करती है। क्या करें: चलें; कदमों को सांस के साथ मिलाएँ; हर मिनट 3 नई चीजें नोट करें। उदाहरण: देर रात की तीव्रता के दौरान हॉलवे या बालकनी पर चलना।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: सौम्य हालचाल तणाव हार्मोन व वर्तणूक कमी करते. काय करावे: चालताना श्वासाशी पावले जुळवा; प्रत्येक मिनिटाला 3 नवीन तपशील पाहा. उदाहरण: उशिरा रात्रीच्या तणावात हॉलवे किंवा बालकनीवर चालणे."
+        }
+      },
+      {
+        "id": 6,
+        "xp": 5,
+        "title": {
+          "english": "Body Scan Meditation",
+          "hindi": "बॉडी स्कैन मेडिटेशन",
+          "marathi": "बॉडी स्कॅन मेडिटेशन"
+        },
+        "description": {
+          "english": "Why it helps: Builds interoceptive awareness to catch escalation early. What to do: Scan crown to toes; label sensations nonjudgmentally for 8–10 minutes. Example: Notice jaw/shoulder tension and release it.",
+          "hindi": "यह कैसे मदद करता है: आंतरिक संवेदनशीलता बनाता है ताकि तेज़ी को जल्दी पकड़ा जा सके। क्या करें: सिर से पैर तक स्कैन करें; 8–10 मिनट के लिए संवेदनाओं को बिना मूल्यांकन के नाम दें। उदाहरण: जबड़े/कंधे का तनाव महसूस कर उसे रिलीज़ करें।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: अंतर्ज्ञान वाढवते ज्यामुळे वाढ लवकर पकडता येते. काय करावे: मुकुटापासून पायापर्यंत स्कॅन करा; 8–10 मिनिटे संवेदनांना निंदक न देता नाव द्या. उदाहरण: जबडा/खांद्यातील ताण लक्षात घेऊन सोडा."
+        }
+      },
+      {
+        "id": 7,
+        "xp": 4,
+        "title": {
+          "english": "5-4-3-2-1 Grounding",
+          "hindi": "5-4-3-2-1 ग्राउंडिंग",
+          "marathi": "5-4-3-2-1 ग्राउंडिंग"
+        },
+        "description": {
+          "english": "Why it helps: Shifts focus to the present and calms the nervous system. What to do: Name 5 things you see; 4 you feel; 3 you hear; 2 you smell; 1 you taste while breathing slowly. Example: Use when urges spike to reorient attention.",
+          "hindi": "यह कैसे मदद करता है: ध्यान वर्तमान में लाता है और तंत्रिका तंत्र को शांत करता है। क्या करें: धीरे‑धीरे साँस लेते हुए 5‑4‑3‑2‑1 अभ्यास करें। उदाहरण: आवेग बढ़ने पर इसे इस्तेमाल कर ध्यान केन्द्रित करें।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: लक्ष वर्तमानात आणते व तंत्रिका तंत्र शांत करते. काय करावे: हळुवार श्वास घेताना 5‑4‑3‑2‑1 चा सराव करा. उदाहरण: आवेग वाढल्यावर वापरा आणि लक्ष सांभाळा."
+        }
+      },
+      {
+        "id": 8,
+        "xp": 3,
+        "title": {
+          "english": "Delay-and-Distract Protocol",
+          "hindi": "विलंब और ध्यान हटाने की रणनीति",
+          "marathi": "वाट पाहणे आणि विचलित करण्याची पद्धत"
+        },
+        "description": {
+          "english": "Why it helps: Brief delay often allows urges to crest and fall. What to do: Set a 10–20 minute timer and do a neutral task (shower; tea; walk). Example: Wash dishes while listening to calming music.",
+          "hindi": "यह कैसे मदद करता है: छोटा सा विलंब अक्सर आवेग को कम कर देता है। क्या करें: 10–20 मिनट का टाइमर लगाएं और कोई तटस्थ काम करें। उदाहरण: शांत संगीत सुनते हुए बर्तन धोना।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: थोडा विलंब आवेग कमी करतो. काय करावे: 10–20 मिनिटांचा टाइमर लावा व तटस्थ काम करा. उदाहरण: शांत संगीत ऐकताना भांडी धुणे."
+        }
+      },
+      {
+        "id": 9,
+        "xp": 2,
+        "title": {
+          "english": "Calming Ritual Cue (Tea + Soft Light)",
+          "hindi": "शांत करने वाला रीति‑रिवाज संकेत (चाय + कोमल रोशनी)",
+          "marathi": "शांत करणारा संस्कार (चहा + मृदु प्रकाश)"
+        },
+        "description": {
+          "english": "Why it helps: Predictable routine signals wind-down for everyone. What to do: Dim lights; warm drink; low-volume music for 10 minutes pre-bed. Example: Start after dinner to reduce bedtime battles.",
+          "hindi": "यह कैसे मदद करता है: अनुमानित रूटीन सभी के लिए शांत होने का संकेत देता है। क्या करें: रोशनी मंद करें; गरम पेय लें; सोने से 10 मिनट पहले धीमी धुन बजाएँ।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: नियमित संकेत देतो की आता शांत होण्याची वेळ आहे. काय करावे: दिवे मंद करा; गरम पेय; झोपेपूर्वी 10 मिनिटे मंद संगीत."
+        }
+      }
+    ]
+  },
+  "cbt": {
+    "type": "Tertiary",
+    "interventionSubType": "CBT Interventions",
+    "cards": [
+      {
+        "id": 1,
+        "xp": 6,
+        "title": {
+          "english": "Trigger and Situation Log",
+          "hindi": "ट्रिगर और स्थिति लॉग",
+          "marathi": "ट्रिगर आणि परिस्थिती लॉग"
+        },
+        "description": {
+          "english": "Why it helps: Identifies high-risk contexts so you can intervene early. What to do: Track time; place; mood (0–10); urge (0–10); preceding event. Example: 11 pm; alone after argument; sadness 8/10; urge 7/10.",
+          "hindi": "यह कैसे मदद करता है: उच्च‑जोखिम संदर्भों की पहचान करता है ताकि आप जल्दी हस्तक्षेप कर सकें। क्या करें: समय; स्थान; मूड (0–10); आवेग (0–10); पूर्व‑घटना ट्रैक करें। उदाहरण: रात 11 बजे; तर्क के बाद अकेला; उदासी 8/10; आवेग 7/10.",
+          "marathi": "हे कशासाठी उपयुक्त आहे: उच्च‑जोखमीच्या परिस्थिती ओळखते ज्यामुळे आपण लवकर हस्तक्षेप करू शकता. काय करावे: वेळ; ठिकाण; मूड (0–10); आवेग (0–10); आधीची घटना नोंदवा. उदाहरण: रात्री 11 वाजता; वादानंतर एकटा; दु:खीपणा 8/10; आवेग 7/10."
+        }
+      },
+      {
+        "id": 2,
+        "xp": 7,
+        "title": {
+          "english": "Automatic Thought Record",
+          "hindi": "स्वचालित विचार रिकॉर्ड",
+          "marathi": "स्वयंचलित विचार नोंद"
+        },
+        "description": {
+          "english": "Why it helps: Surfaces thoughts that intensify despair. What to do: Record the situation, automatic thought, emotion, and behavior/urge. Example: Failed the test → 'I'm hopeless' → despair 9/10; urge 7/10.",
+          "hindi": "यह कैसे मदद करता है: वे विचार सामने लाता है जो निराशा बढ़ाते हैं। क्या करें: स्थिति, स्वचालित विचार, भावना और व्यवहार/आवेग लिखें। उदाहरण: टेस्ट फेल → 'मैं आशाहीन हूँ' → निराशा 9/10; आवेग 7/10.",
+          "marathi": "हे कशासाठी उपयुक्त आहे: असे विचार समोर आणते जे निराशा तीव्र करतात. काय करावे: परिस्थिती, स्वयंचलित विचार, भावना आणि वर्तन/आवेग नोंदवा. उदाहरण: टेस्ट फेल → 'मी निराश आहे' → निराशा 9/10; आवेग 7/10."
+        }
+      },
+      {
+        "id": 3,
+        "xp": 8,
+        "title": {
+          "english": "Cognitive Restructuring",
+          "hindi": "संज्ञानात्मक पुनर्गठन",
+          "marathi": "संज्ञानात्मक पुनर्रचना"
+        },
+        "description": {
+          "english": "Why it helps: Replaces distortions with balanced, helpful thoughts. What to do: List evidence for and against; generate an alternative view; consider realistic outcomes. Example: 'No one cares' → List recent check‑ins; balanced: 'Some people do care.'",
+          "hindi": "यह कैसे मदद करता है: विरूपताओं को संतुलित, उपयोगी विचारों से बदलता है। क्या करें: समर्थन/विरोध के प्रमाण नोट करें; वैकल्पिक दृश्य बनाएं; यथार्थवादी परिणाम सोचें। उदाहरण: 'कोई परवाह नहीं करता' → हाल की जाँचों की सूची; संतुलित: 'कुछ लोग परवाह करते हैं।'",
+          "marathi": "हे कशासाठी उपयुक्त आहे: विकृतींना संतुलित, उपयुक्त विचारांनी बदलते. काय करावे: समर्थन व विरोधाचे पुरावे नोंदवा; पर्यायी दृष्टीकोन तयार करा; वास्तविक परिणाम विचारात घ्या. उदाहरण: 'कोणाची परवाह नाही' → अलीकडील तपासण्या सूचीबद्ध करा; संतुलित: 'काही लोक काळजी घेतात.'"
+        }
+      },
+      {
+        "id": 4,
+        "xp": 6,
+        "title": {
+          "english": "Behavioral Activation",
+          "hindi": "व्यवहारगत सक्रियता",
+          "marathi": "वर्तन सक्रियता"
+        },
+        "description": {
+          "english": "Why it helps: Lifts mood by increasing mastery and pleasure. What to do: Schedule three daily activities: one for pleasure, one for mastery, one for connection. Example: 15‑minute walk; send one email; call a friend.",
+          "hindi": "यह कैसे मदद करता है: मास्टरी और सुख बढ़ाकर मूड उठाता है। क्या करें: 3 दैनिक गतिविधियाँ तय करें: एक आनंद के लिए, एक कौशल के लिए, एक संपर्क के लिए। उदाहरण: 15 मिनट चलेँ; एक ईमेल भेजें; मित्र को कॉल करें।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: कौशल्य व आनंद वाढवून मूड सुधारतो. काय करावे: दररोज तीन क्रिया ठरवा: एक आनंदासाठी, एक कौशल्यासाठी, एक संबंधासाठी. उदाहरण: 15 मिनिटे चालणे; एक ईमेल पाठवणे; मित्राला कॉल करणे."
+        }
+      },
+      {
+        "id": 5,
+        "xp": 7,
+        "title": {
+          "english": "Distress Tolerance Toolkit",
+          "hindi": "दुःख सहनशीलता टूलकिट",
+          "marathi": "दु:ख सहनशक्ती साधनसंग्रह"
+        },
+        "description": {
+          "english": "Why it helps: Provides safe, rapid strategies during peaks. What to do: Prepare ice, sour candy, grounding card, music, and crisis numbers. Example: Hold ice for 60s and do 5‑4‑3‑2‑1 until urge <4/10.",
+          "hindi": "यह कैसे मदद करता है: चरम पर सुरक्षित, त्वरित रणनीतियाँ देता है। क्या करें: बर्फ, खट्टे कैंडी, ग्राउंडिंग कार्ड, संगीत और क्राइसिस नंबर तैयार रखें। उदाहरण: बर्फ 60 सेकंड तक रखें और 5‑4‑3‑2‑1 तब तक करें जब तक आवेग <4/10 न हो।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: शिखरावर सुरक्षित, तत्काळ उपाय देते. काय करावे: बर्फ, आंबट कँडी, ग्राउंडिंग कार्ड, संगीत आणि क्राइसिस नंबर तयार ठेवा. उदाहरण: बर्फ 60 सेकंद धरून ठेवा आणि 5‑4‑3‑2‑1 करा जोपर्यंत आवेग <4/10 नाही."
+        }
+      },
+      {
+        "id": 6,
+        "xp": 9,
+        "title": {
+          "english": "Safety Plan and Means Restriction",
+          "hindi": "सुरक्षा योजना और साधन प्रतिबंध",
+          "marathi": "सुरक्षा योजना आणि साधन प्रतिबंध"
+        },
+        "description": {
+          "english": "Why it helps: Reduces immediate risk and guides action. What to do: List warning signs, coping steps, contacts; lock away or hand off sharps/meds. Example: Friend holds razors; crisis line on speed dial.",
+          "hindi": "यह कैसे मदद करता है: तत्काल जोखिम घटाता है और कार्रवाई का मार्ग दिखाता है। क्या करें: चेतावनी संकेत, मुकाबला कदम, संपर्क सूची बनाएं; तीक्ष्ण/दवाइयाँ लॉक करें या किसी को सौंप दें। उदाहरण: मित्र रेज़र रखता है; क्राइसिस लाइन स्पीड डायल पर।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: तात्काळ जोखीम कमी करते व कृतीचे मार्गदर्शन करते. काय करावे: चेतावणी चिन्हे, उपाय, संपर्क यांची यादी करा; धारदार वस्तू/औषधे लॉक करा किंवा कोणाला द्या. उदाहरण: मित्र रेझर ठेवतो; क्राइसिस लाईन स्पीड डायलवर."
+        }
+      },
+      {
+        "id": 7,
+        "xp": 6,
+        "title": {
+          "english": "Problem-Solving Worksheet",
+          "hindi": "समस्या-समाधान वर्कशीट",
+          "marathi": "समस्या सोडवण्याची वर्कशीट"
+        },
+        "description": {
+          "english": "Why it helps: Shifts from rumination to concrete, actionable steps. What to do: Define the problem; brainstorm options; choose one; plan the next action. Example: Debt stress → call helpline; set a payment plan.",
+          "hindi": "यह कैसे मदद करता है: मनन से ठोस, कार्रवाई योग्य कदमों की ओर बदलता है। क्या करें: समस्या परिभाषित करें; विकल्प सोचें; एक चुनें; अगला कदम योजना बनाएं। उदाहरण: कर्ज का तनाव → हेल्पलाइन को कॉल करें; भुगतान योजना बनाएं।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: विचारांपासून ठोस व कृतीयोग्य पावलाकडे बदलते. काय करावे: समस्या परिभाषित करा; पर्याय सुचवा; एक निवडा; पुढील क्रिया नियोजन करा. उदाहरण: कर्जाचा ताण → हेल्पलाइनला कॉल करा; पेमेंट प्लॅन ठरवा."
+        }
+      },
+      {
+        "id": 8,
+        "xp": 7,
+        "title": {
+          "english": "Urge Surfing with Timer",
+          "hindi": "टाइमर के साथ आवेग का सामना",
+          "marathi": "टायमरसह आवेगाचा सामना"
+        },
+        "description": {
+          "english": "Why it helps: Teaches that urges rise and fall even if you don't act. What to do: Set a 10–20 minute timer; breathe 4‑in/6‑out; rate the urge each minute. Example: 8→6→4 by minute 12.",
+          "hindi": "यह कैसे मदद करता है: सिखाता है कि आवेग बिना कार्रवाई के भी बढ़ते और घटते हैं। क्या करें: 10–20 मिनट का टाइमर सेट करें; 4‑इन/6‑आउट श्वास लें; हर मिनट आवेग को रेट करें। उदाहरण: मिनट 12 तक 8→6→4।",
+          "marathi": "हे कशासाठी उपयुक्त आहे: शिकवते की आवेग क्रिया न करता वाढतात आणि कमी होतात. काय करावे: 10–20 मिनिटांचा टायमर लावा; 4‑इन/6‑आउट श्वास घ्या; प्रत्येक मिनिटी आवेग मोजा. उदाहरण: मिनिट 12 वर 8→6→4."
+        }
+      },
+      {
+        "id": 9,
+        "xp": 5,
+        "title": {
+          "english": "Compassionate Self-Talk Scripts",
+          "hindi": "दयालु आत्म‑बात की स्क्रिप्ट",
+          "marathi": "दयाळू आत्मसंवाद स्क्रिप्ट"
+        },
+        "description": {
+          "english": "Why it helps: Lowers shame that fuels the cycle. What to do: Write three compassionate statements and read them aloud in crisis. Example: 'This will pass. I can stay safe. I deserve care.'",
+          "hindi": "यह कैसे मदद करता है: लज्जा को घटाता है जो इस चक्र को बढ़ाती है। क्या करें: तीन दयालु वाक्य लिखें और संकट में इन्हें जोर से पढ़ें। उदाहरण: 'यह बीत जाएगा। मैं सुरक्षित रह सकता/सकती हूँ। मैं देखभाल पाने का हकदार हूँ।'",
+          "marathi": "हे कशासाठी उपयुक्त आहे: लाज कमी करते जी चक्राला इंधन देते. काय करावे: तीन दयाळू विधानं लिहा आणि संकटात ते मोठ्याने वाचा. उदाहरण: 'हे निघून जाईल. मी सुरक्षित राहू शकतो/शकते. मला काळजी मिळण्याचा अधिकार आहे.'"
+        }
+      }
+    ]
+  },
+  "rebt": {
+    "type": "Tertiary",
+    "interventionSubType": "REBT Interventions",
+    "cards": [
+      {
+        "id": 1,
+        "xp": 6,
+        "title": {
+          "english": "Identify Activating Events (A)",
+          "hindi": "सक्रिय करने वाली घटनाओं की पहचान (A)",
+          "marathi": "उद्दीपक घटना ओळखा (A)"
+        },
+        "description": {
+          "english": "Notice the triggering event that precedes strong emotions. How it works: Clarifies chain A→B→C so you can target beliefs. Example: A: insult at work; B: 'I'm worthless'; C: hopelessness.",
+          "hindi": "मजबूत भावनाओं से पहले आने वाली ट्रिगरिंग घटना को नोट करें। यह कैसे काम करता है: A→B→C श्रृंखला को स्पष्ट करता है ताकि आप विश्वासों को लक्षित कर सकें। उदाहरण: A: काम पर अपमान; B: 'मैं बेकार हूँ'; C: निराशा।",
+          "marathi": "प्रबळ भावना येण्यापूर्वीची ट्रिगर करणारी घटना लक्षात घ्या. हे कसे काम करते: A→B→C साखळी स्पष्ट होते ज्यामुळे आपण विश्वासांवर लक्ष केंद्रित करू शकतो. उदाहरण: A: कामावर अपमान; B: 'मी अपूर्ण आहे'; C: निराशा."
+        }
+      },
+      {
+        "id": 2,
+        "xp": 7,
+        "title": {
+          "english": "Spot Irrational Beliefs (B)",
+          "hindi": "अतार्किक विश्वासों की पहचान (B)",
+          "marathi": "अयोग्य विश्वास ओळखा (B)"
+        },
+        "description": {
+          "english": "Listen for 'must', 'always', or 'can't' statements that inflate distress. How it works: Identifying B lets you dispute it. Example: 'I must be liked by everyone.'",
+          "hindi": "ऐसे 'चाहिए', 'हमेशा', या 'नहीं कर सकता' वाक्यों पर ध्यान दें जो कष्ट बढ़ाते हैं। यह कैसे काम करता है: B की पहचान होने पर आप उसे चुनौती दे सकते हैं। उदाहरण: 'मुझे हर किसी से पसंद होना चाहिए।'",
+          "marathi": "'पाहिजे', 'नेहमी', किंवा 'नको' असे विधान जे तणाव वाढवतात ते ऐका. हे कसे काम करते: B ओळखल्यावर आपण त्याला विरोध करू शकतो. उदाहरण: 'मला सर्वांना आवडायला हवे.'"
+        }
+      },
+      {
+        "id": 3,
+        "xp": 8,
+        "title": {
+          "english": "Dispute with Logic/Evidence/Pragmatics (D)",
+          "hindi": "तर्क/साक्ष्य/प्रायोगिकता से चुनौती दें (D)",
+          "marathi": "तर्क/पुरावा/व्यवहारिकतेने वाद करा (D)"
+        },
+        "description": {
+          "english": "Ask: What is the evidence? Is this belief useful? What would I say to a friend? How it works: Replaces rigid beliefs with balanced appraisal. Example: Evidence shows people have mixed opinions.",
+          "hindi": "पूछें: क्या सबूत हैं? क्या यह विश्वास उपयोगी है? मैं किसी दोस्त से क्या कहता/कहती? यह कैसे काम करता है: कठोर विश्वासों को संतुलित मूल्यांकन से बदलता है। उदाहरण: सबूत दिखाते हैं कि लोगों की राय मिश्रित होती है।",
+          "marathi": "पडा: पुरावा काय आहे? हा विश्वास उपयुक्त आहे का? मी मित्राला काय सांगेन/सांगेन? हे कसे काम करते: कठोर विश्वासांना संतुलित मुल्यमापनाने बदलते. उदाहरण: पुरावे दर्शवतात की लोकांच्या मतात फरक असतो."
+        }
+      },
+      {
+        "id": 4,
+        "xp": 7,
+        "title": {
+          "english": "Form Rational Alternatives (E)",
+          "hindi": "तार्किक विकल्प बनाएं (E)",
+          "marathi": "तर्कसंगत पर्याय तयार करा (E)"
+        },
+        "description": {
+          "english": "Generate kinder, realistic thoughts to test behavior change. How it works: Leads to calmer responses and better decisions. Example: 'I can handle criticism and learn from it.'",
+          "hindi": "आदरणीय, यथार्थवादी विचार बनाएं जो व्यवहार बदलने की जांच करें। यह कैसे काम करता है: शांत प्रतिक्रियाएँ और बेहतर निर्णय दिलाता है। उदाहरण: 'मैं आलोचना सहन कर सकता/सकती हूँ और उससे सीख सकता/सकती हूँ।'",
+          "marathi": "दयाळू, वास्तववादी विचार तयार करा ज्यामुळे वर्तन बदलण्याचा प्रयत्न करता येईल. हे कसे काम करते: शांत प्रतिसाद व चांगले निर्णय आणते. उदाहरण: 'मी टीकेचा सामना करू शकतो/शकते आणि त्यातून शिकू शकतो/शकते.'"
+        }
+      },
+      {
+        "id": 5,
+        "xp": 6,
+        "title": {
+          "english": "Unconditional Self-Acceptance (USA)",
+          "hindi": "निःशर्त आत्म‑स्वीकृति (USA)",
+          "marathi": "निःशर्त आत्म‑स्वीकृती (USA)"
+        },
+        "description": {
+          "english": "Separate self‑worth from mistakes; remind yourself of core values. How it works: Reduces shame and enables repair. Example: 'I made a mistake, I can make amends.'",
+          "hindi": "गलतियों से आत्म‑मूल्य अलग करें; अपने मूल मूल्यों को याद रखें। यह कैसे काम करता है: शर्म कम करता है और सुधार की गुंजाइश देता है। उदाहरण: 'मैंने गलती की; मैं उसे सुधार सकता/सकती हूँ।'",
+          "marathi": "चुका आणि आत्म‑मूल्य वेगळे करा; आपले मूलभूत मूल्ये आठवा. हे कसे काम करते: लाज कमी करते आणि दुरुस्ती शक्य करते. उदाहरण: 'मी चूक केली; मी दुरुस्त करू शकतो/शकते.'"
+        }
+      },
+      {
+        "id": 6,
+        "xp": 6,
+        "title": {
+          "english": "Low Frustration Tolerance Training",
+          "hindi": "कम सहनशीलता प्रशिक्षण",
+          "marathi": "कमी सहनशक्ती प्रशिक्षण"
+        },
+        "description": {
+          "english": "Practice toleration statements: 'This is hard but bearable for now.' How it works: Lowers impulsive reactions. Example: Repeat calming line during urges.",
+          "hindi": "सहनशक्ति वाक्यांशों का अभ्यास करें: 'यह कठिन है पर अभी सहने योग्य है।' यह कैसे काम करता है: आवेगपूर्ण प्रतिक्रियाओं को घटाता है। उदाहरण: अनुरोधों के दौरान शांत करने वाली पंक्ति दोहराएँ।",
+          "marathi": "सहन वाक्यांच्या सराव करा: 'हे कठीण आहे पण सध्या वहायला होऊ शकते.' हे कसे काम करते: आवेगी प्रतिक्रिया कमी करते. उदाहरण: आवेगांच्या वेळी शांत करणारी ओळ पुन्हा पुन्हा म्हणा."
+        }
+      },
+      {
+        "id": 7,
+        "xp": 7,
+        "title": {
+          "english": "Short- vs Long-Term Consequences Review",
+          "hindi": "संक्षिप्त बनाम दीर्घकालिक परिणाम समीक्षा",
+          "marathi": "लघु-विरुद्ध दीर्घकालिक परिणामांची समीक्षा"
+        },
+        "description": {
+          "english": "Weigh immediate relief versus long-term costs before acting. How it works: Prevents harmful short-term fixes. Example: Choosing to call a friend rather than drinking.",
+          "hindi": "कार्रवाई करने से पहले तुरंत राहत बनाम दीर्घकालिक लागत का मूल्यांकन करें। यह कैसे काम करता है: हानिकारक अल्पकालिक उपायों को रोकता है। उदाहरण: शराब पीने के बजाय दोस्त को कॉल करना चुनना।",
+          "marathi": "कृती करण्यापूर्वी तात्काळ आराम विरुद्ध दीर्घकालीन किंमत मोजा. हे कसे काम करते: हानिकारक अल्पकालीन उपाय टाळते. उदाहरण: मद्यपान करण्याऐवजी मित्राला कॉल करणे निवडा."
+        }
+      },
+      {
+        "id": 8,
+        "xp": 6,
+        "title": {
+          "english": "ABC Diary with Urge Scale",
+          "hindi": "ABC डायरी + urges स्केल",
+          "marathi": "ABC डायरी व urges स्केल"
+        },
+        "description": {
+          "english": "Log A-B-C and rate urges; add a planned alternative when urge ≥7/10. How it works: Makes triggers explicit and actionable. Example: A: message; B: 'I’m a failure'; C: 8/10; Alternative: call therapist.",
+          "hindi": "A‑B‑C लॉग करें और urges आकलित करें; जब urge ≥7/10 हो तो एक नियोजित विकल्प जोड़ें। यह कैसे काम करता है: ट्रिगर्स को स्पष्ट और क्रियात्मक बनाता है। उदाहरण: A: संदेश; B: 'मैं असफल हूँ'; C: 8/10; विकल्प: चिकित्सक को कॉल करें।",
+          "marathi": "A-B-C नोंद करा आणि urges ची तीव्रता मापा; जेव्हा urge ≥7/10 असेल तेव्हा नियोजित पर्याय जोडा. हे कसे काम करते: ट्रिगर्स स्पष्ट व उपयुक्त बनवते. उदाहरण: A: संदेश; B: 'मी अपयशी आहे'; C: 8/10; पर्याय: थेरपिस्टला कॉल करा."
+        }
+      },
+      {
+        "id": 9,
+        "xp": 5,
+        "title": {
+          "english": "Implementation Intentions Script",
+          "hindi": "क्रियान्वयन इरादों की स्क्रिप्ट",
+          "marathi": "अंमलबजावणी हेतूची स्क्रिप्ट"
+        },
+        "description": {
+          "english": "Create IF‑THEN plans for hot moments. How it works: Automates calm choices under stress. Example: 'If urge ≥8/10, then call my support person and wait 15 minutes.'",
+          "hindi": "गरम पलों के लिए IF‑THEN योजनाएँ बनाएं। यह कैसे काम करता है: तनाव में शांत विकल्प स्वचालित करता है। उदाहरण: 'यदि urge ≥8/10 हो, तो मैं अपने सपोर्ट व्यक्ति को कॉल करूँगा/करूँगी और 15 मिनट प्रतीक्षा करूँगा/करूँगी।'",
+          "marathi": "गरम क्षणांसाठी IF‑THEN योजना तयार करा. हे कसे काम करते: तणावात शांत निर्णय स्वयंचलित करतो. उदाहरण: 'जर urge ≥8/10 असेल तर मी माझ्या सपोर्ट व्यक्तीला कॉल करेन व 15 मिनिटे थांबीन.'"
+        }
+      }
+    ]
+  }
   }
 }
