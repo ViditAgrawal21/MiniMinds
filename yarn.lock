@@ -1550,10 +1550,10 @@
   resolved "https://registry.npmjs.org/@react-native-community/slider/-/slider-5.0.1.tgz"
   integrity sha512-K3JRWkIW4wQ79YJ6+BPZzp1SamoikxfPRw7Yw4B4PElEQmqZFrmH9M5LxvIo460/3QSrZF/wCgi3qizJt7g/iw==
 
-"@react-native-google-signin/google-signin@^15.0.0":
+"@react-native-google-signin/google-signin@^16.0.0":
   version "15.0.0"
-  resolved "https://registry.npmjs.org/@react-native-google-signin/google-signin/-/google-signin-15.0.0.tgz"
-  integrity sha512-oU49nE+Z9TT/WaO1K7BH/QL2Nx3d2T3I5PGcYdD8swKNtfhMt8qCX/3mOnNEzthTBPrR0CWFGo3LXpkYspalog==
+  resolved "https://registry.npmjs.org/@react-native-google-signin/google-signin/-/google-signin-16.0.0.tgz"
+  integrity sha512-jVuzPo8odREekFc0b4RK3YsqCvedtLIM2P6NSszFr9cYyhKrUNikffPapL6LmkL9qkb8K6pDeb5CXg4qALOc0g==
 
 "@react-native-masked-view/masked-view@^0.3.2", "@react-native-masked-view/masked-view@>= 0.2.0":
   version "0.3.2"
@@ -1951,6 +1951,14 @@
   integrity sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==
   dependencies:
     undici-types "~7.10.0"
+
+"@types/react-native-google-signin@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/@types/react-native-google-signin/-/react-native-google-signin-1.0.7.tgz"
+  integrity sha512-b+5FjdzAk2yWmwVuiY/qxgw6B0HcwMA8eEroj8lliaAGGPacypJjCn0ZoTP44c/mBR1zheNQKb97joMLf8zX4Q==
+  dependencies:
+    "@types/react" "*"
+    react-native "*"
 
 "@types/react-native-html-to-pdf@^0.8.3":
   version "0.8.3"
