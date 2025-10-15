@@ -274,7 +274,7 @@ export default function InsightsScreen({
             <View style={styles.row}>
               {/* XP Card */}
               <LinearGradient
-                colors={["#8B5CF6", "#667EEA"]}
+                colors={["#F09161", "#CB6C46"]}
                 style={styles.xpCard}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
@@ -325,7 +325,7 @@ export default function InsightsScreen({
                 <View style={styles.cardHeader}>
                   <Text style={styles.bigNumber}>{interventionsCount}</Text>
                   <View style={styles.viewIconContainer}>
-                    <CustomIcon type="IO" name="eye-outline" size={12} color="#8b5cf6" />
+                    <CustomIcon type="IO" name="eye-outline" size={12} color="#CB6C46" />
                     <Text style={styles.viewText}>
                       {t("insights.dashboard.view")}
                     </Text>
@@ -362,11 +362,11 @@ export default function InsightsScreen({
               >
                 <View style={styles.cardHeader}>
                   <View style={styles.brainIconContainer}>
-                    <CustomIcon type="IO" name="medical" size={16} color="#8b5cf6" />
+                    <CustomIcon type="IO" name="medical" size={16} color="#CB6C46" />
                   </View>
                   <Text style={styles.bigNumber}>{conditionsCount}</Text>
                   <View style={styles.viewIconContainer}>
-                    <CustomIcon type="IO" name="eye-outline" size={12} color="#8b5cf6" />
+                    <CustomIcon type="IO" name="eye-outline" size={12} color="#CB6C46" />
                     <Text style={styles.viewText}>
                       {t("insights.dashboard.view")}
                     </Text>
@@ -399,7 +399,7 @@ export default function InsightsScreen({
                       type="IO" 
                       name="moon" 
                       size={20} 
-                      color="#8b5cf6" 
+                      color="#CB6C46" 
                     />
                   </View>
                   <View style={styles.sleepTextContainer}>
@@ -411,7 +411,7 @@ export default function InsightsScreen({
                     </Text>
                   </View>
                   <View style={styles.viewIconContainer}>
-                    <CustomIcon type="IO" name="eye-outline" size={12} color="#8b5cf6" />
+                    <CustomIcon type="IO" name="eye-outline" size={12} color="#CB6C46" />
                     <Text style={styles.viewText}>
                       {t("insights.dashboard.view")}
                     </Text>
@@ -537,7 +537,7 @@ export default function InsightsScreen({
           {isLoading ? (
             <ActivityIndicator
               size="large"
-              color="#AB47BC"
+              color="#CB6C46"
               style={{ marginTop: 40 }}
             />
           ) : !allResults.length ? (
@@ -560,13 +560,13 @@ export default function InsightsScreen({
                         backgroundGradientTo: "#ffffff",
                         decimalPlaces: 0,
                         color: (opacity = 1) =>
-                          `rgba(171, 71, 188, ${opacity})`,
+                          `rgba(203, 108, 70, ${opacity})`,
                         labelColor: (opacity = 1) =>
                           `rgba(85, 85, 85, ${opacity})`,
                         propsForDots: {
                           r: "5",
                           strokeWidth: "2",
-                          stroke: "#AB47BC",
+                          stroke: "#CB6C46",
                           fill: "#fff",
                         },
                         propsForBackgroundLines: {
@@ -660,13 +660,13 @@ export default function InsightsScreen({
 /* ---------- styles ---------- */
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "white" },
+  container: { flex: 1, backgroundColor: "#E4E1FE" },
   scrollContent: { paddingBottom: 40 },
   title: {
     fontSize: 20,
     fontWeight: "600",
     marginBottom: 20,
-    color: "#333",
+    color: "#2B395E",
     textAlign: "center",
   },
 
@@ -691,12 +691,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   activeTab: {
-    backgroundColor: "#AB47BC",
+    backgroundColor: "#CB6C46",
   },
   tabText: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#666",
+    color: "#2B395E",
   },
   activeTabText: {
     color: "#fff",
@@ -800,7 +800,7 @@ const styles = StyleSheet.create({
   viewText: {
     fontSize: 10,
     fontWeight: "600",
-    color: "#8b5cf6",
+    color: "#CB6C46",
   },
   bigNumber: {
     fontSize: 24,
@@ -831,7 +831,7 @@ const styles = StyleSheet.create({
   progressFill: {
     height: "100%",
     width: "75%",
-    backgroundColor: "#8B5CF6",
+    backgroundColor: "#CB6C46",
     borderRadius: 3,
   },
 
@@ -866,7 +866,7 @@ const styles = StyleSheet.create({
   chartTitle: {
     fontSize: 14,
     fontWeight: "bold",
-    color: "#AB47BC",
+    color: "#CB6C46",
     textAlign: "center",
     marginTop: 15,
   },
@@ -878,15 +878,15 @@ const styles = StyleSheet.create({
   },
   pageBtn: {
     borderWidth: 1,
-    borderColor: "#AB47BC",
+    borderColor: "#CB6C46",
     borderRadius: 20,
     paddingHorizontal: 14,
     paddingVertical: 4,
     marginHorizontal: 8,
   },
   pageBtnDisabled: { opacity: 0.3 },
-  pageBtnTxt: { fontSize: 16, color: "#AB47BC" },
-  pageIndicator: { fontSize: 12, color: "#AB47BC", fontWeight: "bold" },
+  pageBtnTxt: { fontSize: 16, color: "#CB6C46" },
+  pageIndicator: { fontSize: 12, color: "#CB6C46", fontWeight: "bold" },
   centeredMessage: {
     textAlign: "center",
     marginTop: 50,
@@ -911,7 +911,7 @@ const styles = StyleSheet.create({
   summaryTitle: {
     fontSize: 16,
     fontWeight: "bold",
-    color: "#AB47BC",
+    color: "#CB6C46",
     marginBottom: 10,
     textAlign: "center",
   },

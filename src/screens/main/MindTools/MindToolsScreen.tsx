@@ -268,7 +268,7 @@ export default function MindToolsScreen() {
         console.warn(`Failed to navigate to ${routeName}:`, e);
         Alert.alert(
           t("mindToolsScreen.navigation"),
-          t("mindToolsScreen.navigateTo", { categoryName }),
+          t("mindToolsScreen.navigateTo") + ` ${categoryName}`,
         );
       }
     };
@@ -388,7 +388,7 @@ export default function MindToolsScreen() {
       default:
         Alert.alert(
           t("mindToolsScreen.navigation"),
-          t("mindToolsScreen.navigateTo", { categoryName }),
+          t("mindToolsScreen.navigateTo") + ` ${categoryName}`,
         );
     }
   };
@@ -415,12 +415,12 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="happy-outline" size={24} color="#000000" />
+                  <CustomIcon type="IO" name="happy-outline" size={24} color="#CB6C46" />
                 </View>
                 <Text style={styles.taskNumber}>
                   {isLoading ? t("mindToolsScreen.loading") : dailyTasksCount}
                 </Text>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#2B395E" />
               </View>
               <Text style={styles.taskTitle}>
                 {t("mindToolsScreen.dailyTasksTitle")}
@@ -429,12 +429,8 @@ export default function MindToolsScreen() {
                 {isLoading
                   ? t("mindToolsScreen.dailyTasksDescriptionLoading")
                   : dailyTasksCount === 1
-                    ? t("mindToolsScreen.dailyTasksDescriptionSingular", {
-                      count: dailyTasksCount,
-                    })
-                    : t("mindToolsScreen.dailyTasksDescriptionPlural", {
-                      count: dailyTasksCount,
-                    })}
+                    ? t("mindToolsScreen.dailyTasksDescriptionSingular").replace('{{count}}', dailyTasksCount.toString())
+                    : t("mindToolsScreen.dailyTasksDescriptionPlural").replace('{{count}}', dailyTasksCount.toString())}
               </Text>
             </Pressable>
 
@@ -445,14 +441,14 @@ export default function MindToolsScreen() {
             >
               <View style={styles.taskHeader}>
                 <View style={styles.taskIconContainer}>
-                  <CustomIcon type="IO" name="calendar-outline" size={24} color="#000000" />
+                  <CustomIcon type="IO" name="calendar-outline" size={24} color="#CB6C46" />
                 </View>
                 <Text style={styles.taskNumber}>
                   {isLoading
                     ? t("mindToolsScreen.loading")
                     : interventionsCount}
                 </Text>
-                <CustomIcon type="IO" name="chevron-forward" size={16} color="#000000" />
+                <CustomIcon type="IO" name="chevron-forward" size={16} color="#2B395E" />
               </View>
               <Text style={styles.taskTitle}>
                 {t("mindToolsScreen.totalInterventionsTitle")}
@@ -461,15 +457,8 @@ export default function MindToolsScreen() {
                 {isLoading
                   ? t("mindToolsScreen.totalInterventionsDescriptionLoading")
                   : interventionsCount === 1
-                    ? t(
-                      "mindToolsScreen.totalInterventionsDescriptionSingular",
-                      {
-                        count: interventionsCount,
-                      },
-                    )
-                    : t("mindToolsScreen.totalInterventionsDescriptionPlural", {
-                      count: interventionsCount,
-                    })}
+                    ? t("mindToolsScreen.totalInterventionsDescriptionSingular").replace('{{count}}', interventionsCount.toString())
+                    : t("mindToolsScreen.totalInterventionsDescriptionPlural").replace('{{count}}', interventionsCount.toString())}
               </Text>
             </Pressable>
           </View>
@@ -484,7 +473,7 @@ export default function MindToolsScreen() {
           <Pressable style={styles.journalCard} onPress={handleJournalPress}>
             <View style={styles.journalContent}>
               <View style={styles.journalIconContainer}>
-                <CustomIcon type="IO" name="journal-outline" size={28} color="#000000" />
+                <CustomIcon type="IO" name="journal-outline" size={28} color="#CB6C46" />
               </View>
               <View style={styles.journalTextContainer}>
                 <Text style={styles.journalTitle}>
@@ -495,7 +484,7 @@ export default function MindToolsScreen() {
                 </Text>
               </View>
               <View style={styles.journalArrow}>
-                <CustomIcon type="IO" name="chevron-forward" size={20} color="#000000" />
+                <CustomIcon type="IO" name="chevron-forward" size={20} color="#2B395E" />
               </View>
             </View>
           </Pressable>
@@ -1114,7 +1103,7 @@ export default function MindToolsScreen() {
             >
               <View style={styles.eqCardHeader}>
                 <View style={styles.eqIconContainer}>
-                  <CustomIcon type="IO" name="heart" size={32} color="#000000" />
+                  <CustomIcon type="IO" name="heart" size={32} color="#CB6C46" />
                 </View>
                 <View style={styles.eqTextContainer}>
                   <Text style={styles.eqCardTitle}>
@@ -1129,7 +1118,7 @@ export default function MindToolsScreen() {
                   </Text>
                 </View>
                 <View style={styles.eqArrowContainer}>
-                  <CustomIcon type="IO" name="chevron-forward" size={20} color="#000000" />
+                  <CustomIcon type="IO" name="chevron-forward" size={20} color="#2B395E" />
                 </View>
               </View>
             </Pressable>
@@ -1545,7 +1534,7 @@ export default function MindToolsScreen() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "#f8f9ff",
+    backgroundColor: "#E4E1FE",
   },
   content: {
     paddingBottom: 32,
@@ -1557,7 +1546,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 20,
     fontWeight: "700",
-    color: "#1f2937",
+    color: "#2B395E",
     marginBottom: 16,
   },
   tasksGrid: {
@@ -1602,13 +1591,13 @@ const styles = StyleSheet.create({
   taskNumber: {
     fontSize: 24,
     fontWeight: "700",
-    color: "#1f2937",
+    color: "#2B395E",
     flex: 1,
   },
   taskTitle: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#1f2937",
+    color: "#2B395E",
     marginBottom: 8,
     lineHeight: 18,
   },
@@ -1651,7 +1640,7 @@ const styles = StyleSheet.create({
   journalTitle: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#1f2937",
+    color: "#2B395E",
     marginBottom: 4,
     lineHeight: 20,
   },
@@ -1687,7 +1676,7 @@ const styles = StyleSheet.create({
   categoryTitle: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#1f2937",
+    color: "#2B395E",
     marginBottom: 8,
     lineHeight: 18,
   },
@@ -1704,8 +1693,8 @@ const styles = StyleSheet.create({
     padding: 20,
     marginTop: 8,
     borderWidth: 2,
-    borderColor: "#8b5cf6",
-    shadowColor: "#8b5cf6",
+    borderColor: "#CB6C46",
+    shadowColor: "#CB6C46",
     shadowOffset: {
       width: 0,
       height: 4,
@@ -1735,7 +1724,7 @@ const styles = StyleSheet.create({
   eqCardTitle: {
     fontSize: 18,
     fontWeight: "700",
-    color: "#1f2937",
+    color: "#2B395E",
     marginBottom: 4,
     lineHeight: 24,
   },
@@ -1767,7 +1756,7 @@ const styles = StyleSheet.create({
     borderColor: "#f1f5f9",
   },
   upgradeButton: {
-    backgroundColor: "#AB47BC",
+    backgroundColor: "#CB6C46",
     borderRadius: 6,
     paddingHorizontal: 16,
     paddingVertical: 6,
@@ -1805,7 +1794,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 12,
-    color: '#1f2937',
+    color: '#2B395E',
   },
   dialogText: {
     fontSize: 14,

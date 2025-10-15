@@ -313,7 +313,7 @@ export default function ProfilePage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "transparent",
+    backgroundColor: "#E4E1FE",
   },
   scrollContent: {
     paddingBottom: 20,
@@ -336,7 +336,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   premiumText: {
-    color: "#C841CC",
+    color: "#CB6C46",
     fontSize: 14,
     fontFamily: "Poppins-Bold",
     textAlign: "center",

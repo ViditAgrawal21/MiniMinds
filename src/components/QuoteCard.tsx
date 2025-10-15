@@ -22,16 +22,24 @@ const styles = StyleSheet.create({
   container: {
     marginHorizontal: 25,
     marginTop: -45,
-    backgroundColor: "#F3E5F5",
+    backgroundColor: "#FFFFFF",
     borderRadius: 10,
     paddingVertical: 8,
     paddingHorizontal: 25,
     alignItems: "center",
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   title: {
     fontSize: 12,
     fontFamily: "Poppins-Bold",
-    color: "#9C27B0",
+    color: "#2B395E",
     marginBottom: 5,
   },
   quote: {
@@ -39,7 +47,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     fontFamily: "Poppins-Regular",
-    color: "#000000",
+    color: "#2B395E",
     textAlign: "center",
   },
 });

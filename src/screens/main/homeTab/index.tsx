@@ -1561,11 +1561,11 @@ export default function HomeTab() {
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    backgroundColor: "FFF",
+    backgroundColor: "#E4E1FE",
     alignItems: "center",
   },
   topMessageContainer: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#E4E1FE",
     padding: 16,
     width: "100%",
     alignItems: "center",
@@ -1580,7 +1580,7 @@ const styles = StyleSheet.create({
     fontFamily: "Poppins-Regular",
   },
   wellnessContainer: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#E4E1FE",
     alignItems: "center",
     paddingTop: 5,
     marginBottom: 5,
@@ -1666,7 +1666,7 @@ const styles = StyleSheet.create({
   },
   servicesBox: {
     width: "100%",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#E4E1FE",
     padding: 20,
     marginVertical: 15,
     alignItems: "center",
@@ -1675,7 +1675,7 @@ const styles = StyleSheet.create({
   servicesHeading: {
     fontSize: 14,
     fontWeight: "400",
-    color: "#333",
+    color: "#2B395E",
     marginBottom: 10,
     textAlign: "center",
     fontFamily: "Poppins-Regular",
@@ -1691,7 +1691,7 @@ const styles = StyleSheet.create({
     height: 78,
     borderRadius: 10,
     marginHorizontal: 8,
-    borderColor: "#D27AD5",
+    borderColor: "#CB6C46",
     borderWidth: 1,
     backgroundColor: "#FFFFFF",
     justifyContent: "center",
@@ -1701,7 +1701,7 @@ const styles = StyleSheet.create({
   serviceTitle: {
     fontSize: 12,
     fontWeight: "400",
-    color: "#555555",
+    color: "#2B395E",
     textAlign: "center",
     fontFamily: "Poppins-Regular",
   },
@@ -2159,7 +2159,7 @@ const styles = StyleSheet.create({
   interventionButtonsTitle: {
     fontSize: 18,
     fontWeight: "600",
-    color: "#333",
+    color: "#2B395E",
     marginBottom: 18,
     textAlign: "center",
     fontFamily: "Poppins-Bold",

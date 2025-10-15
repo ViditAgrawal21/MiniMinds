@@ -239,7 +239,7 @@ const TabItem = ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: "#E4E1FE",
   },
   screen: {
     flex: 1,
@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-around",
-    backgroundColor: "#F3E5F5",
+    backgroundColor: "#FFFFFF",
     height: 80,
     position: "absolute",
     bottom: 0,
@@ -270,13 +270,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: 5,
     borderRadius: 15,
-    backgroundColor: "#F3E5F5",
+    backgroundColor: "#FFFFFF",
     width: tabItemWidth,
     minWidth: 80,
   },
   activeTabItem: {
-    backgroundColor: "#D27AD5",
-    shadowColor: "#A63BAA",
+    backgroundColor: "#CB6C46",
+    shadowColor: "#2B395E",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
     shadowRadius: 4,
@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
 
   tabLabel: {
     fontSize: 10,
-    color: "#888",
+    color: "#2B395E",
     marginTop: 4,
     fontFamily: "Poppins-Regular", // Changed to use React Native CLI font naming convention
     textAlign: "center",

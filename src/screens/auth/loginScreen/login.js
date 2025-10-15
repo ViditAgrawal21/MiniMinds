@@ -720,7 +720,7 @@ const LoginScreen = ({ navigation }) => {
 
   return (
     <>
-      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
+      <StatusBar barStyle="dark-content" backgroundColor="#E4E1FE" />
       <SafeAreaView style={styles.container}>
         <View style={styles.header}>
           <View style={styles.logoContainer}>
@@ -764,11 +764,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#ffffff",
+    backgroundColor: "#E4E1FE",
   },
   container: {
     flex: 1,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#E4E1FE",
   },
   header: {
     alignItems: "center",
