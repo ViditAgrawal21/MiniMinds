@@ -1,6 +1,6 @@
 // Constants for the app
 export const APP_CONSTANTS = {
-  APP_NAME: 'ThoughtPro',
+  APP_NAME: 'MiniMinds',
   VERSION: '1.0.0',
   BUILD_NUMBER: 1,
 };
@@ -21,9 +21,9 @@ export const API_STATUS = {
 
 // Storage keys
 export const STORAGE_KEYS = {
-  AUTH_TOKEN: '@thoughtpro_auth_token',
-  USER_DATA: '@thoughtpro_user_data',
-  ONBOARDING_COMPLETED: '@thoughtpro_onboarding_completed',
+  AUTH_TOKEN: '@miniminds_auth_token',
+  USER_DATA: '@miniminds_user_data',
+  ONBOARDING_COMPLETED: '@miniminds_onboarding_completed',
 };
 
 // Navigation route names

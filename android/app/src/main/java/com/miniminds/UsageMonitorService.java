@@ -1,5 +1,5 @@
 
-package com.thoughtpro;
+package com.miniminds;
 
 import android.app.Service;
 import android.app.Notification;
@@ -25,7 +25,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.thoughtpro.OverlayService;
+import com.miniminds.OverlayService;
+import com.miniminds.MainActivity;
 
 public class UsageMonitorService extends Service {
     private static final String TAG = "UsageMonitorService";

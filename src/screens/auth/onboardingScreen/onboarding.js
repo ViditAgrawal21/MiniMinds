@@ -18,7 +18,7 @@ const OnBoardingScreen = ({ navigation }) => {
 
   const onboardingData = [
     {
-      title: 'Welcome to ThoughtPro',
+      title: 'Welcome to MiniMinds',
       description: 'Discover the power of positive thinking and mental wellness.',
       // image: require('../../assets/images/onboarding1.png'),
     },

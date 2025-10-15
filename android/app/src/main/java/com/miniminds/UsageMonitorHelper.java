@@ -1,4 +1,4 @@
-package com.thoughtpro;
+package com.miniminds;
 
 import android.app.usage.UsageStatsManager;
 import android.content.Context;

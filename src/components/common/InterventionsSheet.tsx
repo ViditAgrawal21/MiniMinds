@@ -6,7 +6,6 @@ import {
   StyleSheet,
   Pressable,
   ScrollView,
-  Image,
 } from "react-native";
 
 type Props = {
@@ -22,40 +21,110 @@ export default function InterventionsSheet({
   onSelectIntervention,
   selectedTest,
 }: Props) {
-  return (
-    <Modal visible={visible} animationType="slide" transparent>
-      <View style={styles.overlay}>
-        <View style={styles.sheet}>
-          <View style={styles.header}>
-            <Text style={styles.headerText}>Recommended Interventions</Text>
-            <Pressable onPress={onClose}>
-              <Text style={styles.close}>X</Text>
-            </Pressable>
-          </View>
+  // Early return - don't render anything if not visible
+  if (!visible) {
+    return null;
+  }
 
-          <ScrollView contentContainerStyle={styles.listContainer}>
-            {selectedTest.interventionData.interventions.map(
-              (item: any, index: number) => (
-                <Pressable
-                  key={index}
-                  style={styles.row}
-                  onPress={() => onSelectIntervention(item)}
-                  android_ripple={{ color: "#DDD" }}
-                >
-                  {/* <View style={styles.leftBox}>
-                    <Image source={item.image} style={styles.icon} />
-                  </View> */}
-                  <View style={styles.textArea}>
-                    <Text style={styles.condition}>
-                      {selectedTest.scan_title}
-                    </Text>
-                    <Text style={styles.subtitle}>{item.name}</Text>
-                  </View>
+  // Validate data structure completely
+  const isValid = 
+    selectedTest &&
+    typeof selectedTest === 'object' &&
+    selectedTest.interventionData &&
+    typeof selectedTest.interventionData === 'object' &&
+    selectedTest.interventionData.interventions &&
+    Array.isArray(selectedTest.interventionData.interventions) &&
+    selectedTest.interventionData.interventions.length > 0;
+
+  // If data is invalid, show error UI
+  if (!isValid) {
+    console.log("InterventionsSheet: Invalid data structure");
+    return (
+      <Modal visible={visible} animationType="slide" transparent onRequestClose={onClose}>
+        <View style={styles.overlay}>
+          <Pressable style={styles.overlayTouchable} onPress={onClose}>
+            <View style={styles.sheet}>
+              <View style={styles.header}>
+                <Text style={styles.headerText}>{"No Data"}</Text>
+                <Pressable onPress={onClose}>
+                  <Text style={styles.close}>{"✕"}</Text>
                 </Pressable>
-              ),
-            )}
-          </ScrollView>
+              </View>
+              <View style={styles.listContainer}>
+                <Text style={styles.errorText}>{"No interventions available"}</Text>
+              </View>
+            </View>
+          </Pressable>
         </View>
+      </Modal>
+    );
+  }
+
+  // Filter and validate interventions
+  const validInterventions = selectedTest.interventionData.interventions.filter((item: any) => {
+    return item && typeof item === 'object' && item.name;
+  });
+
+  if (validInterventions.length === 0) {
+    return (
+      <Modal visible={visible} animationType="slide" transparent onRequestClose={onClose}>
+        <View style={styles.overlay}>
+          <Pressable style={styles.overlayTouchable} onPress={onClose}>
+            <View style={styles.sheet}>
+              <View style={styles.header}>
+                <Text style={styles.headerText}>{"No Interventions"}</Text>
+                <Pressable onPress={onClose}>
+                  <Text style={styles.close}>{"✕"}</Text>
+                </Pressable>
+              </View>
+              <View style={styles.listContainer}>
+                <Text style={styles.errorText}>{"No valid interventions found"}</Text>
+              </View>
+            </View>
+          </Pressable>
+        </View>
+      </Modal>
+    );
+  }
+
+  // Safe extraction of scan title
+  const scanTitle = selectedTest.scan_title 
+    ? String(selectedTest.scan_title) 
+    : "Unknown Category";
+
+  return (
+    <Modal visible={visible} animationType="slide" transparent onRequestClose={onClose}>
+      <View style={styles.overlay}>
+        <Pressable style={styles.overlayTouchable} onPress={onClose}>
+          <View style={styles.sheet}>
+            <View style={styles.header}>
+              <Text style={styles.headerText}>{"Recommended Interventions"}</Text>
+              <Pressable onPress={onClose}>
+                <Text style={styles.close}>{"✕"}</Text>
+              </Pressable>
+            </View>
+
+            <ScrollView contentContainerStyle={styles.listContainer}>
+              {validInterventions.map((item: any, index: number) => {
+                const itemName = item.name ? String(item.name) : "Unnamed";
+                
+                return (
+                  <Pressable
+                    key={`int-${index}`}
+                    style={styles.row}
+                    onPress={() => onSelectIntervention(item)}
+                    android_ripple={{ color: "#DDD" }}
+                  >
+                    <View style={styles.textArea}>
+                      <Text style={styles.condition}>{scanTitle}</Text>
+                      <Text style={styles.subtitle}>{itemName}</Text>
+                    </View>
+                  </Pressable>
+                );
+              })}
+            </ScrollView>
+          </View>
+        </Pressable>
       </View>
     </Modal>
   );
@@ -65,6 +134,12 @@ const styles = StyleSheet.create({
   overlay: {
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  overlayTouchable: {
+    flex: 1,
+    width: '100%',
     justifyContent: "center",
     alignItems: "center",
   },
@@ -106,20 +181,6 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
   },
-  leftBox: {
-    width: 60,
-    height: 60,
-    backgroundColor: "#FFD668",
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: 10,
-  },
-  icon: {
-    width: 50,
-    height: 50,
-    resizeMode: "contain",
-  },
   textArea: {
     flex: 1,
     justifyContent: "center",
@@ -133,5 +194,11 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 14,
     color: "#666",
+  },
+  errorText: {
+    fontSize: 16,
+    color: "#F44336",
+    textAlign: "center",
+    padding: 20,
   },
 });

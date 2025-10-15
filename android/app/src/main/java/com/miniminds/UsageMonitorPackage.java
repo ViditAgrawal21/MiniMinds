@@ -1,4 +1,4 @@
-package com.thoughtpro;
+package com.miniminds;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

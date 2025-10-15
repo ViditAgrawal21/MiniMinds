@@ -1,4 +1,4 @@
-package com.thoughtpro;
+package com.miniminds;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.thoughtpro.UsageStatsModule;
+import com.miniminds.UsageStatsModule;
 
 public class UsageStatsPackage implements ReactPackage {
   @Override

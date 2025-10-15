@@ -15,7 +15,7 @@ export interface LanguageContextProps {
   setLocale: (locale: string) => Promise<void>;
   supportedLanguages: Record<string, string>;
   isLoading: boolean;
-  t: (key: string, options?: any) => string;
+  t: (key: string, fallback?: string) => string;  // ✅ CHANGED
 }
 
 const LanguageContext = createContext<LanguageContextProps | undefined>(
@@ -77,12 +77,27 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
     }
   }, []);
 
+  // ✅ NEW: Wrapper function to handle fallback text properly
+  const tWithFallback = useCallback((key: string, fallback?: string): string => {
+    try {
+      const translation = t(key);
+      // If translation equals the key, it means the key wasn't found
+      if (translation === key && fallback) {
+        return fallback;
+      }
+      return String(translation || fallback || key);
+    } catch (error) {
+      console.error('Translation error:', error);
+      return fallback || key;
+    }
+  }, [t]);
+
   const contextValue: LanguageContextProps = {
     locale,
     setLocale,
     supportedLanguages,
     isLoading,
-    t,
+    t: tWithFallback,  // ✅ CHANGED from 't' to 'tWithFallback'
   };
 
   return (
@@ -95,12 +110,9 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
 export const useLanguage = (): LanguageContextProps => {
   const context = useContext(LanguageContext);
   if (!context) {
-    // If the provider isn't mounted, return a safe fallback using the i18n singleton
-    // so components can still read current language and call t().
     const fallbackLocale = i18n?.language || getCurrentLanguage();
     return {
       locale: fallbackLocale,
-      // setLocale will attempt to change i18n language but won't rely on provider
       setLocale: async (newLocale: string) => {
         try {
           await changeLanguage(newLocale);
@@ -111,7 +123,17 @@ export const useLanguage = (): LanguageContextProps => {
       },
       supportedLanguages: getSupportedLanguages(),
       isLoading: false,
-      t: i18n && typeof i18n.t === 'function' ? i18n.t.bind(i18n) : (k: string, o?: any) => k,
+      // ✅ CHANGED: Fallback t function
+      t: i18n && typeof i18n.t === 'function' 
+        ? (key: string, fallback?: string): string => {
+            try {
+              const translation = i18n.t(key);
+              return String(translation === key && fallback ? fallback : translation);
+            } catch {
+              return fallback || key;
+            }
+          }
+        : (k: string, fallback?: string) => fallback || k,
     } as LanguageContextProps;
   }
 

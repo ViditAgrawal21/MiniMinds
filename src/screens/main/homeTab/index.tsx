@@ -57,7 +57,7 @@ type EqTip = { title: string; description: string[] };
 
 const mindToolsKeys = [
   "emotionalAuditing",
-  "reverseGratitude", 
+  "reverseGratitude",
   "fiveRule",
   "microMeditation",
   "jomo",
@@ -151,7 +151,7 @@ async function getStoredProfile(): Promise<{
         currentAvatar: obj.currentAvatar,
       };
     }
-  } catch {}
+  } catch { }
   return { imageUri: null };
 }
 
@@ -390,15 +390,15 @@ const getWellnessAvatar = (
     const avatars =
       avatarGender === "female"
         ? {
-            sad: require("@/assets/avatars/female-sad.jpeg"),
-            mid: require("@/assets/avatars/female-mid.jpeg"),
-            happy: require("@/assets/avatars/female-happy.jpeg"),
-          }
+          sad: require("@/assets/avatars/female-sad.jpeg"),
+          mid: require("@/assets/avatars/female-mid.jpeg"),
+          happy: require("@/assets/avatars/female-happy.jpeg"),
+        }
         : {
-            sad: require("@/assets/avatars/male-sad.jpeg"),
-            mid: require("@/assets/avatars/male-mid.jpeg"),
-            happy: require("@/assets/avatars/male-happy.jpeg"),
-          };
+          sad: require("@/assets/avatars/male-sad.jpeg"),
+          mid: require("@/assets/avatars/male-mid.jpeg"),
+          happy: require("@/assets/avatars/male-happy.jpeg"),
+        };
     return Object.values(avatars)[avatarIndex];
   }
 
@@ -417,15 +417,15 @@ const getWellnessAvatar = (
   const avatars =
     gender === "FEMALE"
       ? {
-          sad: require("@/assets/avatars/female-sad.jpeg"),
-          mid: require("@/assets/avatars/female-mid.jpeg"),
-          happy: require("@/assets/avatars/female-happy.jpeg"),
-        }
+        sad: require("@/assets/avatars/female-sad.jpeg"),
+        mid: require("@/assets/avatars/female-mid.jpeg"),
+        happy: require("@/assets/avatars/female-happy.jpeg"),
+      }
       : {
-          sad: require("@/assets/avatars/male-sad.jpeg"),
-          mid: require("@/assets/avatars/male-mid.jpeg"),
-          happy: require("@/assets/avatars/male-happy.jpeg"),
-        };
+        sad: require("@/assets/avatars/male-sad.jpeg"),
+        mid: require("@/assets/avatars/male-mid.jpeg"),
+        happy: require("@/assets/avatars/male-happy.jpeg"),
+      };
 
   if (score <= 40) {
     return avatars.sad;
@@ -439,10 +439,10 @@ const getWellnessAvatar = (
 export default function HomeTab() {
   // Language hook  
   const { locale } = useLanguage();
-  
+
   // Exit confirmation hook
   const { ExitConfirmationModal } = useExitConfirmation();
-  
+
   // Move these hooks to the very top of the component
   const [selectedTip, setSelectedTip] = useState<SimpleTip | null>(null);
   const [tipModalVisible, setTipModalVisible] = useState(false);
@@ -545,16 +545,16 @@ export default function HomeTab() {
         return;
       }
       const permissions = await checkMonitoringPermissions();
-      
+
       if (!permissions.allGranted) {
         // Check if user has declined before to show appropriate message
         const hasDeclinedBefore = await AsyncStorage.getItem('hasDeclinedMonitoringPermissions');
-        
+
         const title = hasDeclinedBefore ? "Complete Setup for Digital Wellness" : "Digital Wellness Monitoring";
-        const message = hasDeclinedBefore 
+        const message = hasDeclinedBefore
           ? "To use ThoughtPro's digital wellness features, please enable the required permissions:\n\n• Usage Access: To track app usage time\n• Display over other apps: To show mindful break reminders\n\nThese features help you maintain healthy digital habits."
           : "ThoughtPro can help you monitor your app usage for better digital wellness. This requires two permissions:\n\n• Usage Access: To track app usage time\n• Display over other apps: To show mindful break reminders\n\nWould you like to enable these features?";
-        
+
         Alert.alert(
           title,
           message,
@@ -575,7 +575,7 @@ export default function HomeTab() {
                   if (!permissions.usageStats) {
                     console.log("Requesting usage stats permission...");
                     await UsageMonitorHelper.openUsageStatsSettings();
-                    
+
                     // Show instruction alert for usage stats
                     setTimeout(() => {
                       Alert.alert(
@@ -587,7 +587,7 @@ export default function HomeTab() {
                   } else if (!permissions.overlay) {
                     console.log("Requesting overlay permission...");
                     await UsageMonitorHelper.openOverlaySettings();
-                    
+
                     // Show instruction alert for overlay
                     setTimeout(() => {
                       Alert.alert(
@@ -597,7 +597,7 @@ export default function HomeTab() {
                       );
                     }, 500);
                   }
-                  
+
                   // Check again after user potentially granted permissions
                   setTimeout(async () => {
                     const updatedPermissions = await checkMonitoringPermissions();
@@ -646,16 +646,16 @@ export default function HomeTab() {
 
       // For demo, let's start with YouTube monitoring
       const defaultApp = appsToMonitor[0];
-      
+
       console.log(`Starting monitoring for ${defaultApp.name}...`);
       await UsageMonitorHelper.startMonitoring(defaultApp.packageName, defaultApp.limitMinutes);
       setIsMonitoringActive(true);
       console.log(`Monitoring started for ${defaultApp.name} (${defaultApp.limitMinutes} minutes)`);
-      
+
       // Store monitoring state in AsyncStorage for persistence
       await AsyncStorage.setItem('monitoringActive', 'true');
       await AsyncStorage.setItem('monitoringApp', JSON.stringify(defaultApp));
-      
+
     } catch (error) {
       console.error("Error initializing monitoring:", error);
       // Don't show error to user as this is a background feature
@@ -673,7 +673,7 @@ export default function HomeTab() {
   //     try {
   //       // Check if monitoring was previously enabled
   //       const wasMonitoringActive = await AsyncStorage.getItem('monitoringActive');
-        
+
   //       if (wasMonitoringActive === 'true') {
   //         // Check if monitoring is still active and permissions are still granted
   //         const permissions = await checkMonitoringPermissions();
@@ -692,7 +692,7 @@ export default function HomeTab() {
   //       setTimeout(() => {
   //         requestPermissionsIfNeeded();
   //       }, 2000);
-        
+
   //     } catch (error) {
   //       console.error("Error initializing monitoring:", error);
   //       setPermissionCheckComplete(true);
@@ -726,7 +726,7 @@ export default function HomeTab() {
   //   };
 
   //   const subscription = AppState.addEventListener('change', handleAppStateChange);
-    
+
   //   return () => {
   //     subscription?.remove();
   //   };
@@ -745,7 +745,7 @@ export default function HomeTab() {
   //       try {
   //         console.log("Home tab focused - checking permissions...");
   //         const permissions = await checkMonitoringPermissions();
-          
+
   //         // If permissions are not granted, request them
   //         if (!permissions.allGranted) {
   //           console.log("Permissions not granted - requesting...");
@@ -944,7 +944,7 @@ export default function HomeTab() {
               setProfileImage(wellnessAvatar);
             }
           }
-          
+
           // Also check monitoring status when coming back to home
           const monitoringActive = await AsyncStorage.getItem('monitoringActive');
           // if (monitoringActive === 'true') {
@@ -1074,7 +1074,7 @@ export default function HomeTab() {
   const mtIdx = daysElapsed % mindToolsKeys.length;
   const currentKey = mindToolsKeys[mtIdx];
   const nextKey = mindToolsKeys[(mtIdx + 1) % mindToolsKeys.length];
-  
+
   const todaysMindTools = [
     {
       title: t(`mindToolsTips.${currentKey}.title`),
@@ -1119,576 +1119,442 @@ export default function HomeTab() {
 
   return (
     <SafeAreaView style={styles.container} edges={["top"]}>
-        <View style={{ flex: 1 }}>
-          <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.container}>
-            <View style={styles.topMessageContainer}>
-              <TopMessage
-                message={
-                  finalScore! > 70
-                    ? t("homeTab.greatJob")
-                    : t("homeTab.youCanDoBetter")
-                }
-                highlightText={finalScore! > 70 ? "" : t("homeTab.mindTools")}
-                suffixText={finalScore! > 70 ? "" : t("homeTab.forSuggestions")}
-                customTextStyle={
-                  finalScore! > 70
-                    ? styles.greatJobText
-                    : styles.youCanDoBetterText
-                }
-                customMessageParts={
-                  finalScore! > 70
-                    ? []
-                    : [
-                        { text: "Check out ", style: styles.normalText },
-                        { text: "MIND TOOLS", style: styles.highlightedText },
-                        { text: " for suggestions", style: styles.normalText },
-                      ]
-                }
-              />
-            </View>
-
-            <WellnessScore
-              score={finalScore !== null ? finalScore : 0}
-              profileImage={profileImage}
+      <View style={{ flex: 1 }}>
+        <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.container}>
+          <View style={styles.topMessageContainer}>
+            <TopMessage
+              message={
+                finalScore! > 70
+                  ? t("homeTab.greatJob")
+                  : t("homeTab.youCanDoBetter")
+              }
+              highlightText={finalScore! > 70 ? "" : t("homeTab.mindTools")}
+              suffixText={finalScore! > 70 ? "" : t("homeTab.forSuggestions")}
+              customTextStyle={
+                finalScore! > 70
+                  ? styles.greatJobText
+                  : styles.youCanDoBetterText
+              }
+              customMessageParts={
+                finalScore! > 70
+                  ? []
+                  : [
+                    { text: "Check out ", style: styles.normalText },
+                    { text: "MIND TOOLS", style: styles.highlightedText },
+                    { text: " for suggestions", style: styles.normalText },
+                  ]
+              }
             />
+          </View>
 
-            {/* Monitoring Status Indicator */}
-            {/* {(isMonitoringActive || monitoringPermissions && Platform.OS === 'android') && (
-              <View style={styles.monitoringStatusContainer}>
-                <View style={[
-                  styles.monitoringStatusBadge,
-                  !monitoringPermissions?.allGranted && styles.monitoringStatusBadgeWarning
-                ]}>
-                  <View style={[
-                    styles.monitoringStatusDot,
-                    { backgroundColor: isMonitoringActive ? "#4CAF50" : !monitoringPermissions?.allGranted ? "#FF9800" : "#FFC107" }
-                  ]} />
-                  <Text style={[
-                    styles.monitoringStatusText,
-                    !monitoringPermissions?.allGranted && styles.monitoringStatusTextWarning
-                  ]}>
-                    {isMonitoringActive 
-                      ? t("homeTab.digitalWellnessActive", "Digital Wellness Monitoring Active")
-                      : !monitoringPermissions?.allGranted 
-                        ? "Digital Wellness - Setup Required"
-                        : "Digital Wellness Available"
-                    }
-                  </Text>
-                  <TouchableOpacity 
-                    onPress={() => {
-                      if (!monitoringPermissions?.allGranted) {
-                        requestPermissionsIfNeeded();
-                      } else {
-                        setShowMonitoringSettings(true);
-                      }
-                    }}
-                    style={styles.monitoringSettingsButton}
-                  >
-                    <Icon 
-                      name={!monitoringPermissions?.allGranted ? "warning" : "settings"} 
-                      size={16} 
-                      color={!monitoringPermissions?.allGranted ? "#F57C00" : "#2E7D32"} 
-                    />
-                  </TouchableOpacity>
+          <WellnessScore
+            score={finalScore !== null ? finalScore : 0}
+            profileImage={profileImage}
+          />
+
+          <ServiceCards />
+
+          <View style={styles.interventionButtonsContainer}>
+            <Text style={styles.interventionButtonsTitle}>
+              {t("homeTab.currentInterventions")}
+            </Text>
+            <View style={styles.interventionButtonsRow}>
+              <TouchableOpacity
+                style={styles.interventionButton}
+                activeOpacity={0.7}
+                onPress={() =>
+                  (navigation as any).navigate("InterventionsScreen", {
+                    activeTab: "Daily",
+                    sourceScreen: "homeTab",
+                  })
+                }
+                accessible={true}
+                accessibilityLabel={`${t("homeTab.dailyInterventions")}: ${interventionCounts.Daily} items`}
+              >
+                <View style={styles.interventionIconContainer}>
+                  <Icon name="calendar-today" size={30} color="#4A90E2" />
                 </View>
-              </View>
-            )} */}
-
-            <View style={styles.tabContainer}>
-              {["Daily", "Weekly", "Monthly"].map((tab) => (
-                <TabButton
-                  key={tab}
-                  title={tab}
-                  isActive={activeTab === tab}
-                  onPress={() =>
-                    setActiveTab(tab as "Daily" | "Weekly" | "Monthly")
+                <Text numberOfLines={1} style={styles.interventionButtonText}>
+                  {t("homeTab.dailyInterventions")}
+                </Text>
+                <Text
+                  style={
+                    interventionCounts.Daily > 0
+                      ? styles.interventionButtonCount
+                      : styles.interventionButtonCountEmpty
                   }
-                />
-              ))}
+                >
+                  {interventionCounts.Daily}
+                </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={styles.interventionButton}
+                activeOpacity={0.7}
+                onPress={() =>
+                  (navigation as any).navigate("InterventionsScreen", {
+                    activeTab: "Weekly",
+                    sourceScreen: "homeTab",
+                  })
+                }
+                accessible={true}
+                accessibilityLabel={`${t("homeTab.weeklyInterventions")}: ${interventionCounts.Weekly} items`}
+              >
+                <View
+                  style={[
+                    styles.interventionIconContainer,
+                    { backgroundColor: "#E6F2FF" },
+                  ]}
+                >
+                  <Icon name="view-week" size={30} color="#5D9DF5" />
+                </View>
+                <Text numberOfLines={1} style={styles.interventionButtonText}>
+                  {t("homeTab.weeklyInterventions")}
+                </Text>
+                <Text
+                  style={
+                    interventionCounts.Weekly > 0
+                      ? styles.interventionButtonCount
+                      : styles.interventionButtonCountEmpty
+                  }
+                >
+                  {interventionCounts.Weekly}
+                </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={styles.interventionButton}
+                activeOpacity={0.7}
+                onPress={() =>
+                  (navigation as any).navigate("InterventionsScreen", {
+                    activeTab: "Bi-weekly",
+                    sourceScreen: "homeTab",
+                  })
+                }
+                accessible={true}
+                accessibilityLabel={`${t("homeTab.biweeklyInterventions")}: ${interventionCounts["Bi-weekly"]} items`}
+              >
+                <View
+                  style={[
+                    styles.interventionIconContainer,
+                    { backgroundColor: "#EEF7FF" },
+                  ]}
+                >
+                  <Icon name="date-range" size={30} color="#70A9F7" />
+                </View>
+                <Text numberOfLines={1} style={styles.interventionButtonText}>
+                  {t("homeTab.biweeklyInterventions")}
+                </Text>
+                <Text
+                  style={
+                    interventionCounts["Bi-weekly"] > 0
+                      ? styles.interventionButtonCount
+                      : styles.interventionButtonCountEmpty
+                  }
+                >
+                  {interventionCounts["Bi-weekly"]}
+                </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={styles.interventionButton}
+                activeOpacity={0.7}
+                onPress={() =>
+                  (navigation as any).navigate("InterventionsScreen", {
+                    activeTab: "Monthly",
+                    sourceScreen: "homeTab",
+                  })
+                }
+                accessible={true}
+                accessibilityLabel={`${t("homeTab.monthlyInterventions")}: ${interventionCounts.Monthly} items`}
+              >
+                <View
+                  style={[
+                    styles.interventionIconContainer,
+                    { backgroundColor: "#F0F7FF" },
+                  ]}
+                >
+                  <Icon name="event-note" size={30} color="#85B8FF" />
+                </View>
+                <Text numberOfLines={1} style={styles.interventionButtonText}>
+                  {t("homeTab.monthlyInterventions")}
+                </Text>
+                <Text
+                  style={
+                    interventionCounts.Monthly > 0
+                      ? styles.interventionButtonCount
+                      : styles.interventionButtonCountEmpty
+                  }
+                >
+                  {interventionCounts.Monthly}
+                </Text>
+              </TouchableOpacity>
             </View>
-            <ServiceCards />
+          </View>
 
-            {/* Intervention Buttons */}
-            <View style={styles.interventionButtonsContainer}>
-              <Text style={styles.interventionButtonsTitle}>
-                {t("homeTab.currentInterventions")}
-              </Text>
-              <View style={styles.interventionButtonsRow}>
-                <TouchableOpacity
-                  style={styles.interventionButton}
-                  activeOpacity={0.7}
-                  onPress={() =>
-                    (navigation as any).navigate("InterventionsScreen", {
-                      activeTab: "Daily",
-                      sourceScreen: "homeTab",
-                    })
-                  }
-                  accessible={true}
-                  accessibilityLabel={`${t("homeTab.dailyInterventions")}: ${interventionCounts.Daily} items`}
-                >
-                  <View style={styles.interventionIconContainer}>
-                    <Icon name="calendar-today" size={30} color="#4A90E2" />
-                  </View>
-                  <Text numberOfLines={1} style={styles.interventionButtonText}>
-                    {t("homeTab.dailyInterventions")}
-                  </Text>
-                  <Text
-                    style={
-                      interventionCounts.Daily > 0
-                        ? styles.interventionButtonCount
-                        : styles.interventionButtonCountEmpty
-                    }
-                  >
-                    {interventionCounts.Daily}
-                  </Text>
-                </TouchableOpacity>
 
-                <TouchableOpacity
-                  style={styles.interventionButton}
-                  activeOpacity={0.7}
-                  onPress={() =>
-                    (navigation as any).navigate("InterventionsScreen", {
-                      activeTab: "Weekly",
-                      sourceScreen: "homeTab",
-                    })
-                  }
-                  accessible={true}
-                  accessibilityLabel={`${t("homeTab.weeklyInterventions")}: ${interventionCounts.Weekly} items`}
-                >
-                  <View
-                    style={[
-                      styles.interventionIconContainer,
-                      { backgroundColor: "#E6F2FF" },
-                    ]}
-                  >
-                    <Icon name="view-week" size={30} color="#5D9DF5" />
-                  </View>
-                  <Text numberOfLines={1} style={styles.interventionButtonText}>
-                    {t("homeTab.weeklyInterventions")}
-                  </Text>
-                  <Text
-                    style={
-                      interventionCounts.Weekly > 0
-                        ? styles.interventionButtonCount
-                        : styles.interventionButtonCountEmpty
-                    }
-                  >
-                    {interventionCounts.Weekly}
-                  </Text>
-                </TouchableOpacity>
+          {interventionsList.length > 0 && (
+            <RecommendedInterventionsList
+              scans={interventionsList}
+              onScanSelect={(id) => {
+                const selected = interventionsList.find(
+                  (item) => item.id === id,
+                );
+                if (!selected) return;
 
-                <TouchableOpacity
-                  style={styles.interventionButton}
-                  activeOpacity={0.7}
-                  onPress={() =>
-                    (navigation as any).navigate("InterventionsScreen", {
-                      activeTab: "Bi-weekly",
-                      sourceScreen: "homeTab",
-                    })
-                  }
-                  accessible={true}
-                  accessibilityLabel={`${t("homeTab.biweeklyInterventions")}: ${interventionCounts["Bi-weekly"]} items`}
-                >
-                  <View
-                    style={[
-                      styles.interventionIconContainer,
-                      { backgroundColor: "#EEF7FF" },
-                    ]}
-                  >
-                    <Icon name="date-range" size={30} color="#70A9F7" />
-                  </View>
-                  <Text numberOfLines={1} style={styles.interventionButtonText}>
-                    {t("homeTab.biweeklyInterventions")}
-                  </Text>
-                  <Text
-                    style={
-                      interventionCounts["Bi-weekly"] > 0
-                        ? styles.interventionButtonCount
-                        : styles.interventionButtonCountEmpty
-                    }
-                  >
-                    {interventionCounts["Bi-weekly"]}
-                  </Text>
-                </TouchableOpacity>
+                // Map scan_title to screen name - making sure these match the exact names in AppNavigation.js
+                const screenMapping = {
+                  "Addictions": "AddictionsScreen",
+                  "Anger Management": "AngerManagementScreen",
+                  "Common Psychological Issues": "CommonPsychologicalScreen",
+                  "Environment Issues Affecting Mental Wellbeing": "EnvironmentIssuesScreen",
+                  "Family and Relationship": "FamilyRelationshipScreen",
+                  "Financial Mental Health": "FinancialMentalHealthScreen",
+                  "General Physical Fitness": "PhysicalFitnessScreen",
+                  "Internet Dependence": "InternetDependenceScreen",
+                  "Internet and Social Media Issue": "InternetSocialMediaScreen",
+                  "Sleep": "SleepScreen",
+                  "Stress": "StressScreen",
+                  "Suicidal Behaviour": "SuicidalBehaviourScreen",
+                  "Sex Life": "SexLifeScreen",
+                  "Professional Mental Health": "ProfessionalMentalHealthScreen",
+                  "Social Mental Health": "SocialMentalHealthScreen",
+                  "Youngster Issues": "YoungsterIssuesScreen"
+                };
 
-                <TouchableOpacity
-                  style={styles.interventionButton}
-                  activeOpacity={0.7}
-                  onPress={() =>
-                    (navigation as any).navigate("InterventionsScreen", {
-                      activeTab: "Monthly",
-                      sourceScreen: "homeTab",
-                    })
-                  }
-                  accessible={true}
-                  accessibilityLabel={`${t("homeTab.monthlyInterventions")}: ${interventionCounts.Monthly} items`}
-                >
-                  <View
-                    style={[
-                      styles.interventionIconContainer,
-                      { backgroundColor: "#F0F7FF" },
-                    ]}
-                  >
-                    <Icon name="event-note" size={30} color="#85B8FF" />
-                  </View>
-                  <Text numberOfLines={1} style={styles.interventionButtonText}>
-                    {t("homeTab.monthlyInterventions")}
-                  </Text>
-                  <Text
-                    style={
-                      interventionCounts.Monthly > 0
-                        ? styles.interventionButtonCount
-                        : styles.interventionButtonCountEmpty
-                    }
-                  >
-                    {interventionCounts.Monthly}
-                  </Text>
-                </TouchableOpacity>
-              </View>
-            </View>
+                // Convert navigation object to any to bypass type checking
+                const nav = navigation as any;
+                console.log("Selected scan:", selected.scan_title);
 
-            {/* Recommended Interventions */}
-            {interventionsList.length > 0 && (
-              <RecommendedInterventionsList
-                scans={interventionsList}
-                onScanSelect={(id) => {
-                  const selected = interventionsList.find(
-                    (item) => item.id === id,
-                  );
-                  if (!selected) return;
-
-                  // Map scan_title to screen name - making sure these match the exact names in AppNavigation.js
-                  const screenMapping = {
-                    "Addictions": "AddictionsScreen",
-                    "Anger Management": "AngerManagementScreen", 
-                    "Common Psychological Issues": "CommonPsychologicalScreen",
-                    "Environment Issues Affecting Mental Wellbeing": "EnvironmentIssuesScreen",
-                    "Family and Relationship": "FamilyRelationshipScreen",
-                    "Financial Mental Health": "FinancialMentalHealthScreen",
-                    "General Physical Fitness": "PhysicalFitnessScreen",
-                    "Internet Dependence": "InternetDependenceScreen",
-                    "Internet and Social Media Issue": "InternetSocialMediaScreen",
-                    "Sleep": "SleepScreen",
-                    "Stress": "StressScreen",
-                    "Suicidal Behaviour": "SuicidalBehaviourScreen", 
-                    "Sex Life": "SexLifeScreen",
-                    "Professional Mental Health": "ProfessionalMentalHealthScreen",
-                    "Social Mental Health": "SocialMentalHealthScreen",
-                    "Youngster Issues": "YoungsterIssuesScreen"
-                  };
-                  
-                  // Convert navigation object to any to bypass type checking
-                  const nav = navigation as any;
-                  console.log("Selected scan:", selected.scan_title);
-                  
-                  try {
-                    nav.navigate({
-                      screen: screenMapping[selected.scan_title as keyof typeof screenMapping] || 'MindToolsMain',
-                      params: { category: selected.scan_title }
-                    })
-                    // The correct way to navigate to a nested navigator screen
+                try {
+                  nav.navigate({
+                    screen: screenMapping[selected.scan_title as keyof typeof screenMapping] || 'MindToolsMain',
+                    params: { category: selected.scan_title }
+                  })
+                  // The correct way to navigate to a nested navigator screen
                   //   nav.navigate(
                   //     screen: selected.scan_title || 'MindToolsMain',
                   //       params: { category: selected.scan_title }
                   // );
-                    
-                    console.log("Navigation completed to MindTools");
-                  } catch (error) {
-                    console.error("Navigation error:", error);
-                    
-                    // Fallback approach
-                    try {
-                      // If the main navigation fails, try just navigating to the MindTools tab
-                      nav.navigate('MainApp', { screen: 'MindTools' });
-                      console.log("Fallback navigation to MindTools tab");
-                    } catch (fallbackError) {
-                      console.error("Fallback navigation error:", fallbackError);
-                    }
+
+                  console.log("Navigation completed to MindTools");
+                } catch (error) {
+                  console.error("Navigation error:", error);
+
+                  // Fallback approach
+                  try {
+                    // If the main navigation fails, try just navigating to the MindTools tab
+                    nav.navigate('MainApp', { screen: 'MindTools' });
+                    console.log("Fallback navigation to MindTools tab");
+                  } catch (fallbackError) {
+                    console.error("Fallback navigation error:", fallbackError);
                   }
-                }}
-              />
-            )}
+                }
+              }}
+            />
+          )}
 
-            {/* Daily Mind‑Tools & EQ Test */}
-            <View style={styles.tipCardsContainer}>
-              {/* 2 Mind‑Tools cards */}
-              {todaysMindTools.map((tip, i) => (
-                <TouchableOpacity
-                  key={`mt-${i}`}
-                  style={styles.tipCard}
-                  accessible
-                  accessibilityLabel={tip.title}
-                  onPress={() => handleTipCardPress(tip)}
-                  activeOpacity={0.8}
-                >
-                  <Text style={styles.tipTitle}>{tip.title}</Text>
-                  <Text
-                    style={styles.tipDescription}
-                    numberOfLines={2}
-                    ellipsizeMode="tail"
-                  >
-                    {tip.description}
-                  </Text>
-                </TouchableOpacity>
-              ))}
 
-              {/* EQ Test Button */}
+          <View style={styles.tipCardsContainer}>
+
+            {todaysMindTools.map((tip, i) => (
               <TouchableOpacity
-                style={styles.eqTestButton}
-                onPress={handleEQTestPress}
+                key={`mt-${i}`}
+                style={styles.tipCard}
                 accessible
-                accessibilityLabel={t("homeTab.eqTest")}
+                accessibilityLabel={tip.title}
+                onPress={() => handleTipCardPress(tip)}
+                activeOpacity={0.8}
               >
-                <Text style={styles.eqTestButtonText}>
-                  {t("homeTab.eqTest") || "EQ Test"}
+                <Text style={styles.tipTitle}>{tip.title}</Text>
+                <Text
+                  style={styles.tipDescription}
+                  numberOfLines={2}
+                  ellipsizeMode="tail"
+                >
+                  {tip.description}
                 </Text>
               </TouchableOpacity>
+            ))}
 
-              {/* Mind‑Tools Tip Modal */}
-              <Modal
-                visible={tipModalVisible}
-                transparent={true}
-                animationType="slide"
-                onRequestClose={() => setTipModalVisible(false)}
-              >
-                <View style={styles.tipModalOverlay}>
-                  <View style={styles.tipModalContainer}>
-                    {/* Header */}
-                    <View style={styles.tipModalHeader}>
-                      <Text style={styles.tipModalTitle}>
-                        {selectedTip?.title || "Loading..."}
+
+            <TouchableOpacity
+              style={styles.eqTestButton}
+              onPress={handleEQTestPress}
+              accessible
+              accessibilityLabel={t("homeTab.eqTest")}
+            >
+              <Text style={styles.eqTestButtonText}>
+                {t("homeTab.eqTest") || "EQ Test"}
+              </Text>
+            </TouchableOpacity>
+
+
+            <Modal
+              visible={tipModalVisible}
+              transparent={true}
+              animationType="slide"
+              onRequestClose={() => setTipModalVisible(false)}
+            >
+              <View style={styles.tipModalOverlay}>
+                <View style={styles.tipModalContainer}>
+
+                  <View style={styles.tipModalHeader}>
+                    <Text style={styles.tipModalTitle}>
+                      {selectedTip?.title || "Loading..."}
+                    </Text>
+                    <TouchableOpacity
+                      style={styles.tipModalCloseIcon}
+                      onPress={() => setTipModalVisible(false)}
+                    >
+                      <Text style={styles.tipModalCloseText}>✕</Text>
+                    </TouchableOpacity>
+                  </View>
+
+
+                  <View style={{ flex: 1, padding: 20 }}>
+                    <ScrollView
+                      showsVerticalScrollIndicator={true}
+                      style={{ flex: 1 }}
+                    >
+
+                      <Text style={{
+                        fontSize: 16,
+                        marginBottom: 20,
+                        color: "#333",
+                        lineHeight: 24
+                      }}>
+                        {selectedTip?.description || "No description available"}
                       </Text>
-                      <TouchableOpacity
-                        style={styles.tipModalCloseIcon}
-                        onPress={() => setTipModalVisible(false)}
-                      >
-                        <Text style={styles.tipModalCloseText}>✕</Text>
-                      </TouchableOpacity>
-                    </View>
-                    
-                    {/* Content Area */}
-                    <View style={{ flex: 1, padding: 20 }}>
-                      <ScrollView 
-                        showsVerticalScrollIndicator={true}
-                        style={{ flex: 1 }}
-                      >
-                        {/* Description */}
-                        <Text style={{ 
-                          fontSize: 16, 
-                          marginBottom: 20, 
-                          color: "#333",
-                          lineHeight: 24
-                        }}>
-                          {selectedTip?.description || "No description available"}
-                        </Text>
-                        
-                        {/* Example */}
-                        {selectedTip?.example && (
-                          <View style={{ marginBottom: 20 }}>
-                            <Text style={{ 
-                              fontSize: 18, 
-                              fontWeight: "bold", 
-                              color: "#2196F3",
-                              marginBottom: 10 
-                            }}>
-                              💡 {t("homeTab.example")}
-                            </Text>
-                            <Text style={{ 
-                              fontSize: 15, 
-                              backgroundColor: "#F0F0F0",
-                              padding: 15,
-                              borderRadius: 8,
-                              lineHeight: 22
-                            }}>
-                              {selectedTip.example}
-                            </Text>
-                          </View>
-                        )}
-                        
-                        {/* Task */}
-                        {selectedTip?.task && (
-                          <View style={{ marginBottom: 20 }}>
-                            <Text style={{ 
-                              fontSize: 18, 
-                              fontWeight: "bold", 
-                              color: "#2196F3",
-                              marginBottom: 10 
-                            }}>
-                              🎯 {t("homeTab.tryThis")}
-                            </Text>
-                            <Text style={{ 
-                              fontSize: 15, 
-                              backgroundColor: "#F0F0F0",
-                              padding: 15,
-                              borderRadius: 8,
-                              lineHeight: 22
-                            }}>
-                              {selectedTip.task}
-                            </Text>
-                          </View>
-                        )}
-                      </ScrollView>
-                    </View>
-                    
-                    {/* Close Button */}
-                    <View style={styles.tipModalFooter}>
-                      <TouchableOpacity
-                        style={styles.tipModalCloseButton}
-                        onPress={() => setTipModalVisible(false)}
-                        activeOpacity={0.8}
-                      >
-                        <Text style={styles.tipModalCloseButtonText}>{t("homeTab.gotIt")}</Text>
-                      </TouchableOpacity>
-                    </View>
+
+
+                      {selectedTip?.example && (
+                        <View style={{ marginBottom: 20 }}>
+                          <Text style={{
+                            fontSize: 18,
+                            fontWeight: "bold",
+                            color: "#2196F3",
+                            marginBottom: 10
+                          }}>
+                            💡 {t("homeTab.example")}
+                          </Text>
+                          <Text style={{
+                            fontSize: 15,
+                            backgroundColor: "#F0F0F0",
+                            padding: 15,
+                            borderRadius: 8,
+                            lineHeight: 22
+                          }}>
+                            {selectedTip.example}
+                          </Text>
+                        </View>
+                      )}
+
+
+                      {selectedTip?.task && (
+                        <View style={{ marginBottom: 20 }}>
+                          <Text style={{
+                            fontSize: 18,
+                            fontWeight: "bold",
+                            color: "#2196F3",
+                            marginBottom: 10
+                          }}>
+                            🎯 {t("homeTab.tryThis")}
+                          </Text>
+                          <Text style={{
+                            fontSize: 15,
+                            backgroundColor: "#F0F0F0",
+                            padding: 15,
+                            borderRadius: 8,
+                            lineHeight: 22
+                          }}>
+                            {selectedTip.task}
+                          </Text>
+                        </View>
+                      )}
+                    </ScrollView>
+                  </View>
+
+
+                  <View style={styles.tipModalFooter}>
+                    <TouchableOpacity
+                      style={styles.tipModalCloseButton}
+                      onPress={() => setTipModalVisible(false)}
+                      activeOpacity={0.8}
+                    >
+                      <Text style={styles.tipModalCloseButtonText}>{t("homeTab.gotIt")}</Text>
+                    </TouchableOpacity>
                   </View>
                 </View>
-              </Modal>
-            </View>
+              </View>
+            </Modal>
+          </View>
 
-            {/* This is the primary tertiary secondary intervention component. */}
-            {selectedTestId && (
-              <InterventionsSheet
-                visible={sheetVisible}
-                onClose={() => setSheetVisible(false)}
-                selectedTest={interventionsList.find(
-                  (item) => item.id === selectedTestId,
-                )}
-                onSelectIntervention={(item) => {
-                  setSelectedIntervention(item);
-                  setSheetVisible(false);
-                  setDetailVisible(true);
-                }}
+
+          <InterventionsSheet
+  visible={sheetVisible && selectedTestId > 0}
+  onClose={() => setSheetVisible(false)}
+  selectedTest={
+    selectedTestId > 0 
+      ? interventionsList.find((item) => item.id === selectedTestId) 
+      : null
+  }
+  onSelectIntervention={(item) => {
+    setSelectedIntervention(item);
+    setSheetVisible(false);
+    setDetailVisible(true);
+  }}
+/>
+
+          {interventionsList.length > 0 &&
+            selectedTestId > 0 &&
+            selectedIntervention && (
+              <InterventionDetailModal
+                visible={detailVisible}
+                intervention={selectedIntervention}
+                onClose={() => setDetailVisible(false)}
               />
             )}
+        </ScrollView>
 
-            {/* This is the text detail component */}
-            {interventionsList.length > 0 &&
-              selectedTestId > 0 &&
-              selectedIntervention && (
-                <InterventionDetailModal
-                  visible={detailVisible}
-                  intervention={selectedIntervention}
-                  onClose={() => setDetailVisible(false)}
-                />
-              )}
-          </ScrollView>
-          {/* Floating Action Button */}
-          {/* <View style={styles.fabContainer}>
-            <FAB
-              style={styles.fab}
-              icon="plus"
-              size="large"
-              color="#FFFFFF"
-              onPress={toggleModal}
-            />
-          </View> */}
-          {/* Modal for adding activity */}
-          {/* <Modal
-            transparent={true}
-            visible={isModalVisible}
-            animationType="slide"
-            onRequestClose={toggleModal}
-          >
-            <KeyboardAvoidingView
-              style={styles.modalContainer}
-              behavior={Platform.OS === "ios" ? "padding" : "height"}
-            >
-              <View style={styles.addActivityContainer}>
-                <TouchableOpacity
-                  onPress={toggleModal}
-                  style={styles.closeIconContainer}
-                >
-                  <IconButton icon="close" iconColor="white" size={25} />
-                </TouchableOpacity>
-                <View style={styles.inputGroup}>
-                  <Text style={styles.inputLabel}>
-                    {t("homeTab.activityTitle")}
-                  </Text>
-                  <TextInput
-                    style={styles.input}
-                    placeholder={t("homeTab.selectCategory")}
-                    value={activityTitle}
-                    onChangeText={setActivityTitle}
-                  />
-                </View>
-
-                <View style={styles.row}>
-                  <Text style={styles.inputLabel}>{t("homeTab.duration")}</Text>
-                  <TextInput
-                    style={styles.durationInput}
-                    placeholder="HH:MM"
-                    value={activityDuration}
-                    onChangeText={setActivityDuration}
-                    keyboardType="numeric"
-                  />
-                </View>
-                <View style={styles.inputGroup}>
-                  <Text style={styles.inputLabel}>
-                    {t("homeTab.addTagsRemarks")}
-                  </Text>
-                  <TextInput
-                    style={[styles.input, styles.remarksInput]}
-                    placeholder={t("homeTab.selectCategory")}
-                    value={activityRemarks}
-                    onChangeText={setActivityRemarks}
-                    multiline
-                  />
-                </View>
-
-                <Pressable onPress={handleAddActivity}>
-                  <View style={styles.modalButtons}>
-                    <Button
-                      mode="contained"
-                      style={styles.saveButton}
-                      labelStyle={styles.saveButtonLabel}
-                    >
-                      {t("homeTab.enter")}
-                    </Button>
-                  </View>
-                </Pressable>
-              </View>
-            </KeyboardAvoidingView>
-          </Modal> */}
-
-          {/* Success Message */}
-          <Modal
-            transparent={true}
-            visible={isSuccessMessageVisible}
-            animationType="slide"
-          >
-            <View style={styles.modalContainer}>
-              <View style={styles.successContent}>
-                <Text style={styles.successMessage}>
-                  {t("homeTab.activityAddedSuccess")}
-                </Text>
-                <Text style={styles.successSubtext}>
-                  {t("homeTab.editActivityTimeLimit")}
-                </Text>
-              </View>
+        <Modal
+          transparent={true}
+          visible={isSuccessMessageVisible}
+          animationType="slide"
+        >
+          <View style={styles.modalContainer}>
+            <View style={styles.successContent}>
+              <Text style={styles.successMessage}>
+                {t("homeTab.activityAddedSuccess")}
+              </Text>
+              <Text style={styles.successSubtext}>
+                {t("homeTab.editActivityTimeLimit")}
+              </Text>
             </View>
-          </Modal>
+          </View>
+        </Modal>
 
-          {/* Exit Confirmation Modal */}
-          <ExitConfirmationModal />
 
-          {/* Monitoring Settings Modal */}
-          <Modal
-            visible={showMonitoringSettings}
-            animationType="slide"
-            onRequestClose={() => setShowMonitoringSettings(false)}
-          >
-            <MonitoringSettings 
-              onClose={() => {
-                setShowMonitoringSettings(false);
-                // Refresh monitoring status after settings change
-                setTimeout(() => {
-                  checkMonitoringPermissions();
-                }, 1000);
-              }} 
-            />
-          </Modal>
-        </View>
-      </SafeAreaView>
+        <ExitConfirmationModal />
+
+
+        <Modal
+          visible={showMonitoringSettings}
+          animationType="slide"
+          onRequestClose={() => setShowMonitoringSettings(false)}
+        >
+          <MonitoringSettings
+            onClose={() => {
+              setShowMonitoringSettings(false);
+              // Refresh monitoring status after settings change
+              setTimeout(() => {
+                checkMonitoringPermissions();
+              }, 1000);
+            }}
+          />
+        </Modal>
+      </View>
+    </SafeAreaView>
   );
 }
 

@@ -725,12 +725,12 @@ const LoginScreen = ({ navigation }) => {
         <View style={styles.header}>
           <View style={styles.logoContainer}>
             <Image
-              source={require("../../../assets/images/thought-pro-icon.png")}
+              source={require("../../../assets/images/mini-minds-icon-login.png")}
               style={styles.logo}
               resizeMode="contain"
             />
           </View>
-          <Text style={styles.title}>Thought Pro</Text>
+          <Text style={styles.title}>MiniMinds</Text>
           <Text style={styles.subtitle}>Your Mental Wellness Companion</Text>
         </View>
         <View style={styles.content}>

@@ -1,4 +1,4 @@
-package com.thoughtpro;
+package com.miniminds;
 
 import android.content.Intent;
 import android.util.Log;

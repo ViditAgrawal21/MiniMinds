@@ -29,13 +29,15 @@ const {height,width} = useWindowDimensions()
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor={theme.colors.primary} />
 
-      <Image resizeMethod={"scale"} source={require('@/assets/images/thought-pro-splash.png')} style={{
-        height:height,
-        width:width
-      }} />
+      <Image 
+        resizeMode="stretch" 
+        source={require('@/assets/images/mini-minds-splash-icon.png')} 
+        style={styles.splashImage} 
+      />
 
+      {/* Optional: Keep text as fallback or remove completely */}
       {/* <View style={styles.logoContainer}>
-        <Text style={styles.logoText}>ThoughtPro</Text>
+        <Text style={styles.logoText}>Mini Minds</Text>
         <Text style={styles.tagline}>Think Better, Live Better</Text>
       </View> */}
     </View>
@@ -48,6 +50,13 @@ const getStyles = (theme) => StyleSheet.create({
     backgroundColor: theme.colors.primary,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  splashImage: {
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    top: 0,
+    left: 0,
   },
   logoContainer: {
     alignItems: 'center',
