@@ -282,7 +282,7 @@ export default function InsightsScreen({
                 <View style={styles.xpHeader}>
                   <CustomIcon type="IO" name="flash" size={20} color="white" />
                   <Text style={styles.xpNumber}>
-                    {totalXP} {t("insights.dashboard.xpLabel")}
+                    {`${totalXP} ${t("insights.dashboard.xpLabel")}`}
                   </Text>
                 </View>
                 <Text style={styles.xpSubtitle}>
@@ -592,9 +592,7 @@ export default function InsightsScreen({
                           </Text>
                         </Pressable>
                         <Text style={styles.pageIndicator}>
-                          {page + 1}
-                          {t("insights.chart.pageIndicatorSeparator")}
-                          {totalPages}
+                          {`${page + 1}${t("insights.chart.pageIndicatorSeparator")}${totalPages}`}
                         </Text>
                         <Pressable
                           onPress={() =>
@@ -617,7 +615,7 @@ export default function InsightsScreen({
                   <Text style={styles.centeredMessage}>
                     {t("insights.messages.noResultsMatchFilters")}
                   </Text>
-                )}{" "}
+                )}
                 <Text style={styles.chartTitle}>
                   {scanF
                     ? t("insights.chart.scanScoreOverTime", {

@@ -359,7 +359,6 @@ const ServiceCards = () => {
             ]}
           >
             <View
-              key={index}
               accessible={true}
               accessibilityLabel={`${t(getTranslationKey(service))}`}
             >
@@ -1492,19 +1491,19 @@ export default function HomeTab() {
 
 
           <InterventionsSheet
-  visible={sheetVisible && selectedTestId > 0}
-  onClose={() => setSheetVisible(false)}
-  selectedTest={
-    selectedTestId > 0 
-      ? interventionsList.find((item) => item.id === selectedTestId) 
-      : null
-  }
-  onSelectIntervention={(item) => {
-    setSelectedIntervention(item);
-    setSheetVisible(false);
-    setDetailVisible(true);
-  }}
-/>
+            visible={sheetVisible && selectedTestId > 0}
+            onClose={() => setSheetVisible(false)}
+            selectedTest={
+              selectedTestId > 0
+                ? interventionsList.find((item) => item.id === selectedTestId)
+                : null
+            }
+            onSelectIntervention={(item) => {
+              setSelectedIntervention(item);
+              setSheetVisible(false);
+              setDetailVisible(true);
+            }}
+          />
 
           {interventionsList.length > 0 &&
             selectedTestId > 0 &&

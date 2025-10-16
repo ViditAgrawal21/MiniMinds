@@ -78,12 +78,12 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.miniminds"
+    namespace "com.syneptlabs.miniminds"
     defaultConfig {
-        applicationId "com.miniminds"
+        applicationId "com.syneptlabs.miniminds"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 2
+        versionCode 3
         versionName "1.1"
     }
     signingConfigs {

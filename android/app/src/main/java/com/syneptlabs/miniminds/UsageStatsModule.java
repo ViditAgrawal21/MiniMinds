@@ -1,4 +1,4 @@
-package com.miniminds;
+package com.syneptlabs.miniminds;
 
 import android.app.usage.UsageStats;
 import android.app.usage.UsageStatsManager;
@@ -22,7 +22,7 @@ import java.util.List;
 import android.view.*;
 import android.widget.TextView;
 import android.graphics.PixelFormat;
-import com.miniminds.R;
+import com.syneptlabs.miniminds.R;
 
 import com.facebook.react.bridge.*;
 

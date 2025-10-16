@@ -152,7 +152,7 @@ export default function UpgradeToPremium() {
           </TouchableOpacity>
         </View>
         <Text style={styles.title}>
-          {t("upgrade.screen.title", "Thought Pro")}
+          {t("upgrade.screen.title", "MiniMinds")}
         </Text>
   <View style={styles.tableContainer}>
           {/* Benefits Table */}

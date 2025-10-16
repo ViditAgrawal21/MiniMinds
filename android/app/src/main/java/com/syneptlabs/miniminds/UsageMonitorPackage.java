@@ -1,4 +1,4 @@
-package com.miniminds;
+package com.syneptlabs.miniminds;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

@@ -1,4 +1,4 @@
-package com.miniminds;
+package com.syneptlabs.miniminds;
 
 import android.app.usage.UsageStatsManager;
 import android.content.Context;

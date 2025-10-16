@@ -1,4 +1,4 @@
-package com.miniminds;
+package com.syneptlabs.miniminds;
 
 import android.content.Intent;
 import android.util.Log;

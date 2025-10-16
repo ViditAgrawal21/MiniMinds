@@ -15,7 +15,7 @@ export interface LanguageContextProps {
   setLocale: (locale: string) => Promise<void>;
   supportedLanguages: Record<string, string>;
   isLoading: boolean;
-  t: (key: string, fallback?: string) => string;  // ✅ CHANGED
+  t: (key: string, options?: string | Record<string, any>) => string;
 }
 
 const LanguageContext = createContext<LanguageContextProps | undefined>(
@@ -77,18 +77,30 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
     }
   }, []);
 
-  // ✅ NEW: Wrapper function to handle fallback text properly
-  const tWithFallback = useCallback((key: string, fallback?: string): string => {
+  // ✅ NEW: Wrapper function to handle fallback text and interpolation
+  const tWithFallback = useCallback((key: string, options?: string | Record<string, any>): string => {
     try {
-      const translation = t(key);
-      // If translation equals the key, it means the key wasn't found
-      if (translation === key && fallback) {
-        return fallback;
+      // If options is a string, treat it as fallback (backward compatibility)
+      if (typeof options === 'string') {
+        const translation = t(key);
+        if (translation === key && options) {
+          return options;
+        }
+        return String(translation || options || key);
       }
-      return String(translation || fallback || key);
+      
+      // If options is an object, use it for interpolation
+      if (typeof options === 'object') {
+        const translation = t(key, options);
+        return String(translation || key);
+      }
+      
+      // No options provided
+      const translation = t(key);
+      return String(translation || key);
     } catch (error) {
       console.error('Translation error:', error);
-      return fallback || key;
+      return typeof options === 'string' ? options : key;
     }
   }, [t]);
 
@@ -123,17 +135,29 @@ export const useLanguage = (): LanguageContextProps => {
       },
       supportedLanguages: getSupportedLanguages(),
       isLoading: false,
-      // ✅ CHANGED: Fallback t function
+      // ✅ CHANGED: Fallback t function with interpolation support
       t: i18n && typeof i18n.t === 'function' 
-        ? (key: string, fallback?: string): string => {
+        ? (key: string, options?: string | Record<string, any>): string => {
             try {
+              // If options is a string, treat it as fallback
+              if (typeof options === 'string') {
+                const translation = i18n.t(key);
+                return String(translation === key && options ? options : translation);
+              }
+              // If options is an object, use it for interpolation
+              if (typeof options === 'object') {
+                const translation = i18n.t(key, options);
+                return String(translation);
+              }
+              // No options
               const translation = i18n.t(key);
-              return String(translation === key && fallback ? fallback : translation);
+              return String(translation);
             } catch {
-              return fallback || key;
+              return typeof options === 'string' ? options : key;
             }
           }
-        : (k: string, fallback?: string) => fallback || k,
+        : (k: string, options?: string | Record<string, any>) => 
+            typeof options === 'string' ? options : k,
     } as LanguageContextProps;
   }
 

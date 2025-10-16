@@ -1,4 +1,4 @@
-package com.miniminds
+package com.syneptlabs.miniminds
 
 import android.app.Application
 import com.facebook.react.PackageList
