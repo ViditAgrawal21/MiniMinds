@@ -1,8 +1,8 @@
-# ThoughtPro — Account Deletion and Data Deletion Policy
+# MiniMinds — Account Deletion and Data Deletion Policy
 
-Last updated: 2025-09-01
+Last updated: 2025-10-16
 
-This page explains how users can request deletion of their ThoughtPro account and associated data. It follows Google Play policy requirements and is intended to be used as the Delete account URL in the Play Console.
+This page explains how users can request deletion of their MiniMinds account and associated data. It follows Google Play policy requirements and is intended to be used as the Delete account URL in the Play Console.
 
 Developer: Synept Labs  
 Support email: syneptlabs@gmail.com
@@ -11,13 +11,13 @@ Support email: syneptlabs@gmail.com
 
 ## How to request account deletion
 
-You can request deletion of your ThoughtPro account at any time by emailing us.
+You can request deletion of your MiniMinds account at any time by emailing us.
 
-1. Compose an email to syneptlabs@gmail.com from the email address linked to your ThoughtPro account.  
-2. Subject line: DELETE MY THOUGHTPRO ACCOUNT  
+1. Compose an email to syneptlabs@gmail.com from the email address linked to your MiniMinds account.  
+2. Subject line: DELETE MY MINIMINDS ACCOUNT  
 3. Include the following details in the email body:
    - Your full name (optional but helpful)
-   - The email address used to sign in to ThoughtPro
+   - The email address used to sign in to MiniMinds
    - Platform (Android / iOS) and app version (if known)
    - A statement that you want your account and data permanently deleted
 4. Send the email. We will acknowledge receipt and begin the verification process.
@@ -44,7 +44,7 @@ Once verified and processed, we will permanently delete the following data assoc
 - Profile information you provided in the app
 - App preferences and settings
 - In-app activity data and content you created (e.g., notes, saved items, history)
-- Device/account links used for sign-in to ThoughtPro
+- Device/account links used for sign-in to MiniMinds
 
 After deletion, you will lose access to your account and any data or content stored within it.
 
@@ -93,9 +93,9 @@ We respond to all verified deletion requests and will notify you when the proces
 
 ## How to use this page in the Google Play Console
 
-Copy this page’s public URL and paste it into the Delete account URL field in the Play Console. If hosted on GitHub, a typical link is:
+Copy this page's public URL and paste it into the Delete account URL field in the Play Console. If hosted on GitHub, a typical link is:
 
-https://github.com/dipesh4edutopia/thought-pro/blob/main/ACCOUNT_DELETION.md
+https://github.com/ViditAgrawal21/MiniMinds/blob/main/thought-pro/ACCOUNT_DELETION.md
 
 This page:
 - Clearly states how users can request deletion and how we verify ownership
