@@ -19,15 +19,15 @@ const styles = StyleSheet.create({
     height: 8,
     width: "100%",
     flexDirection: "row",
-    backgroundColor: "#E1BEE7", // Light purple
+    backgroundColor: "#FFE4CC", // Light orange
     borderRadius: 4,
     overflow: "hidden",
     marginBottom: 16, // Adds space below the bar
   },
   filler: {
-    backgroundColor: "#AB47BC", // Purple
+    backgroundColor: "#FF8C00", // Orange
   },
   remaining: {
-    backgroundColor: "rgba(171, 71, 188, 0.2)", // Faded purple
+    backgroundColor: "rgba(255, 140, 0, 0.2)", // Faded orange
   },
 });

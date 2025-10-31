@@ -386,6 +386,9 @@ export default function CBTScreen({ navigation, route }: any) {
       "learning-disability": "Learning Disability",
       "good-parenting":"Good Parenting",
       "loneliness-depression":"Loneliness and Depression",
+      "sexualOrientationIssues":"sexualOrientationIssuesScreen.headerTitle",
+      "emotionalSexEducation":"emotionalSexEducationScreen.headerTitle",
+      "earlySexualAnxiety":"earlySexualAnxietyScreen.headerTitle",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -1933,6 +1936,180 @@ if (condition === "exam-stress-fear-of-failure") {
         };
       } catch (error) {
         console.error("Error loading Learning Disability CBT data:", error);
+        return null;
+      }
+    }
+
+      //sexualOrientationIssues
+      if (condition === "sexualOrientationIssues") {
+      try {
+        const data = require("../../../../assets/data/emotional_sex_education/sexual_orientation_issues.json");
+
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Sexual Orientation data");
+          return null;
+        }
+
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          return {
+            title: item.title?.[localeField] || item.title?.english || item.title || "",
+            description: item.description?.[localeField] || item.description?.english || item.description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "sexualOrientationIssues",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Sexual Orientation CBT data:", error);
+        return null;
+      }
+    }
+
+    // Handle Early Sexual Anxiety CBT data from comprehensive JSON file
+    if (condition === "earlySexualAnxiety") {
+      try {
+        const data = require("../../../../assets/data/emotional_sex_education/early_sexual_anxiety_information_inclusion.json");
+
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Early Sexual Anxiety data");
+          return null;
+        }
+
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          return {
+            title: item.title?.[localeField] || item.title?.english || item.title || "",
+            description: item.description?.[localeField] || item.description?.english || item.description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "earlySexualAnxiety",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Early Sexual Anxiety CBT data:", error);
+        return null;
+      }
+    }
+
+      //Emotiaonl sex education
+      if (condition === "emotionalSexEducation") {
+      try {
+        const data = require("../../../../assets/data/emotional_sex_education/emotional_sex_education.json");
+
+        const itemsCandidate =
+          data?.interventions?.cbt?.cards ||
+          data?.interventions?.cbt ||
+          data?.interventions?.commonSuggestions?.cards ||
+          data?.interventions?.cards ||
+          data?.interventions ||
+          null;
+
+        const items = Array.isArray(itemsCandidate)
+          ? itemsCandidate
+          : Array.isArray(itemsCandidate?.cards)
+          ? itemsCandidate.cards
+          : null;
+
+        if (!items || !Array.isArray(items)) {
+          console.error("No CBT data array found in Emotiaonl sex education data");
+          return null;
+        }
+
+        const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+        const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+        const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+        const localeField = localeFieldMap[lang] || "english";
+
+        const interventions = items.map((item: any) => {
+          if (item.translations && typeof item.translations === "object") {
+            const translations = item.translations || {};
+            const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+            return {
+              title: chosen.title || chosen.heading || "",
+              description: chosen.description || chosen.body || "",
+              xp: item.xp || item.XP || 0,
+            };
+          }
+
+          return {
+            title: item.title?.[localeField] || item.title?.english || item.title || "",
+            description: item.description?.[localeField] || item.description?.english || item.description || "",
+            xp: item.xp || item.XP || 0,
+          };
+        });
+
+        return {
+          condition: "emotionalSexEducation",
+          intervention_type: "CBT",
+          interventions,
+        };
+      } catch (error) {
+        console.error("Error loading Emotiaonl sex education CBT data:", error);
         return null;
       }
     }

@@ -35,7 +35,7 @@ const HomeScreen = ({ navigation }) => {
       
       <ScrollView style={styles.content}>
         <View style={styles.welcomeSection}>
-          <Text style={styles.welcomeTitle}>Welcome to ThoughtPro</Text>
+          <Text style={styles.welcomeTitle}>Welcome to Minimimds</Text>
           <Text style={styles.welcomeSubtitle}>
             Your mental health and wellness companion
           </Text>

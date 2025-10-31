@@ -7,10 +7,14 @@ import {
   TouchableOpacity,
   TextInput,
   Alert,
+  ScrollView,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { t } from '../../../i18n/locales/i18n';
+import ImagePicker from '@/components/ImagePicker';
+import CustomIcon from '@/components/CustomIcon';
 
 const STORAGE_KEY = 'profile_v1';
 
@@ -43,21 +47,63 @@ const EditProfile = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [relation, setRelation] = useState('');
+  const [imageUri, setImageUri] = useState<string | null>(null);
+  
   useEffect(() => {
     getStoredProfile().then((p) => {
       if (p.name) setName(p.name);
       if (p.email) setEmail(p.email);
       if (p.phoneNumber) setPhoneNumber(p.phoneNumber);
       if (p.relation) setRelation(p.relation);
+      if (p.imageUri) setImageUri(p.imageUri);
     });
   }, []);
   const navigation = useNavigation();
 
+  const handleImageSelected = (uri: string) => {
+    setImageUri(uri);
+  };
+
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container} edges={["top"]}>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        {/* Header */}
+        <View style={styles.header}>
+          <TouchableOpacity
+            style={styles.backButton}
+            onPress={() => navigation.goBack()}
+          >
+            <CustomIcon type="IO" name="arrow-back" size={24} color="#2B395E" />
+          </TouchableOpacity>
+          <Text style={styles.headerTitle}>
+            {t('editProfile.title', 'Edit Profile')}
+          </Text>
+        </View>
+
+        {/* Profile Photo */}
+        <View style={styles.photoSection}>
+          <ImagePicker
+            onImageSelected={handleImageSelected}
+            imageUri={imageUri || undefined}
+            buttonText={t("editProfile.changePhoto", "Change Photo")}
+            allowCamera={true}
+            allowGallery={true}
+            quality={0.8}
+            maxWidth={800}
+            maxHeight={800}
+            borderColor="#FF8C00"
+            editIconColor="#FF8C00"
+            placeholderComponent={
+              <View style={styles.photoPlaceholder}>
+                <CustomIcon type="IO" name="person" size={48} color="#FF8C00" />
+              </View>
+            }
+            containerStyle={styles.imagePickerContainer}
+          />
+        </View>
       
-      {/* Input Fields */}
-      <View style={styles.form}>
+        {/* Input Fields */}
+        <View style={styles.form}>
         <Text style={styles.label}>{t('editProfile.name')}</Text>
         <TextInput
           style={styles.input}
@@ -109,6 +155,7 @@ const EditProfile = () => {
               email,
               phoneNumber,
               relation,
+              imageUri,
             });
             Alert.alert(t('editProfile.success'), t('editProfile.profileUpdated'));
             navigation.goBack();
@@ -117,15 +164,49 @@ const EditProfile = () => {
           <Text style={styles.addButtonText}>{t('editProfile.save')}</Text>
         </TouchableOpacity>
       </View>
-    </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
     backgroundColor: '#F9F9F9',
+  },
+  scrollContent: {
+    padding: 20,
+  },
+  header: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 20,
+  },
+  backButton: {
+    marginRight: 12,
+    padding: 4,
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: "600",
+    color: "#2B395E",
+    fontFamily: "Poppins-SemiBold",
+  },
+  photoSection: {
+    alignItems: "center",
+    marginBottom: 32,
+    paddingVertical: 20,
+  },
+  photoPlaceholder: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    backgroundColor: "#FFE4CC",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  imagePickerContainer: {
+    // Additional styles for image picker if needed
   },
   imageContainer: {
     alignItems: 'center',
@@ -136,7 +217,7 @@ const styles = StyleSheet.create({
     height: 120,
     borderRadius: 60,
     borderWidth: 3,
-    borderColor: '#D27AD5',
+    borderColor: '#FF8C00',
     justifyContent: 'center',
     alignItems: 'center',
     overflow: 'hidden',
@@ -150,7 +231,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 0,
     right: 0,
-    backgroundColor: '#D27AD5',
+    backgroundColor: '#FF8C00',
     width: 40,
     height: 40,
     borderRadius: 20,
@@ -171,9 +252,9 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   input: {
-    backgroundColor: '#FCEEF9',
+    backgroundColor: '#FFE4CC',
     borderWidth: 1,
-    borderColor: '#D27AD5',
+    borderColor: '#FF8C00',
     borderRadius: 8,
     paddingVertical: 10,
     paddingHorizontal: 15,
@@ -188,19 +269,19 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFFFF',
     borderWidth: 1,
-    borderColor: '#D27AD5',
+    borderColor: '#FF8C00',
     borderRadius: 8,
     paddingVertical: 10,
     alignItems: 'center',
     marginRight: 10,
   },
   cancelButtonText: {
-    color: '#D27AD5',
+    color: '#FF8C00',
     fontSize: 16,
   },
   addButton: {
     flex: 1,
-    backgroundColor: '#D27AD5',
+    backgroundColor: '#FF8C00',
     borderRadius: 8,
     paddingVertical: 10,
     alignItems: 'center',

@@ -50,28 +50,51 @@ export const ensureWellnessScoreInitialized = async (): Promise<number> => {
 };
 
 /**
- * Increment wellness score by delta (XP gained) capped at 100.
+ * Increment wellness score by delta (XP gained or lost) capped at 0-100.
  * If not initialized, initializes first from onboarding baseline.
  * Returns the new score and the applied delta (may be less than requested if capped).
+ * Supports negative deltas for decrementing score.
  */
 export const incrementWellnessScore = async (
   delta: number,
 ): Promise<{ newScore: number; appliedDelta: number }> => {
-  if (!delta || delta <= 0) {
+  if (!delta || delta === 0) {
     const current = await getWellnessScore();
     return { newScore: current, appliedDelta: 0 };
   }
   const current = await ensureWellnessScoreInitialized();
-  if (current >= 100) {
-    return { newScore: 100, appliedDelta: 0 };
+  
+  // Handle positive delta (increment)
+  if (delta > 0) {
+    if (current >= 100) {
+      return { newScore: 100, appliedDelta: 0 };
+    }
+    const target = current + delta;
+    const newScore = target > 100 ? 100 : target;
+    const appliedDelta = newScore - current;
+    try {
+      await AsyncStorage.setItem(WELLNESS_SCORE_KEY, String(newScore));
+    } catch (e) {
+      console.warn("incrementWellnessScore persist error", e);
+    }
+    return { newScore, appliedDelta };
   }
-  const target = current + delta;
-  const newScore = target > 100 ? 100 : target;
-  const appliedDelta = newScore - current;
-  try {
-    await AsyncStorage.setItem(WELLNESS_SCORE_KEY, String(newScore));
-  } catch (e) {
-    console.warn("incrementWellnessScore persist error", e);
+  
+  // Handle negative delta (decrement)
+  if (delta < 0) {
+    if (current <= 0) {
+      return { newScore: 0, appliedDelta: 0 };
+    }
+    const target = current + delta;
+    const newScore = target < 0 ? 0 : target;
+    const appliedDelta = newScore - current;
+    try {
+      await AsyncStorage.setItem(WELLNESS_SCORE_KEY, String(newScore));
+    } catch (e) {
+      console.warn("incrementWellnessScore persist error", e);
+    }
+    return { newScore, appliedDelta };
   }
-  return { newScore, appliedDelta };
+  
+  return { newScore: current, appliedDelta: 0 };
 };

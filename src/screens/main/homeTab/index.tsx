@@ -280,50 +280,14 @@ const ServiceCards = () => {
   const navigation = useNavigation<HomeTabNavigationProp>();
   const [activeService, setActiveService] = useState<string | null>(null);
 
-  // Map service names to their translation keys
-  const getTranslationKey = (service: string) => {
-    switch (service) {
-      case "Health Assessment":
-        return "homeTab.healthAssessment";
-      case "Explore Scans":
-        return "homeTab.exploreScans";
-      case "Anger Management":
-        return "homeTab.angerManagement";
-      case "Stress":
-        return "homeTab.stress";
-      case "Internet and Social Media Issue":
-        return "homeTab.internetAndSocialMedia";
-      default:
-        return "";
-    }
-  };
-
-  function redirectToScans(service: string) {
-    setActiveService(service); // Set the active card
-    if (service === "Explore Scans") {
-      // @ts-ignore
-      navigation.navigate("ConditionScansScreen");
-    } else if (service === "Health Assessment") {
-      // @ts-ignore
-      navigation.navigate("MentalHealthAssessment");
-    } else if (service === "Anger Management") {
-      // @ts-ignore
-      navigation.navigate("ScanIntro", { scanName: "Anger Management" });
-    } else if (service === "Stress") {
-      // @ts-ignore
-      navigation.navigate("ScanIntro", { scanName: "Stress" });
-    } else if (service === "Internet and Social Media Issue") {
-      // @ts-ignore
-      navigation.navigate("ScanIntro", { scanName: "Internet and Social Media Issue" });
-    }
-  }
-
-  const services = [
-    "Health Assessment", // New button in the first position
-    "Explore Scans", // Moved to the second position
-    "Anger Management",
-    "Stress",
-    "Internet and Social Media Issue",
+  const categories = [
+    { label: t("conditionScans.positiveMentalHealth", "Positive Mental Health"), value: "Positive Mental Health", isSpecial: true },
+    { label: t("conditionScans.behaviourIssues", "Behaviour Issues"), value: "Behaviour Issues" },
+    { label: t("conditionScans.schoolingAcademics", "Schooling and Academics"), value: "Schooling and Academics" },
+    { label: t("conditionScans.internetSocialMedia", "Internet & Social Media Issues"), value: "Internet & Social Media Issues" },
+    { label: t("conditionScans.parentingIssues", "Parenting Issues"), value: "Parenting Issues" },
+    { label: t("conditionScans.psychologicalIssues", "Psychological Issues"), value: "Psychological Issues" },
+    { label: t("conditionScans.emotionalIssues", "Emotional Issues"), value: "Emotional Issues" },
   ];
 
   return (
@@ -349,26 +313,93 @@ const ServiceCards = () => {
           paddingHorizontal: 0,
         }}
       >
-        {services.map((service, index) => (
+        {/* Health Assessment Button */}
+        <Pressable
+          onPress={() => {
+            setActiveService("Health Assessment");
+            // @ts-ignore
+            navigation.navigate("MentalHealthAssessment");
+          }}
+          style={[
+            styles.serviceCard,
+            activeService === "Health Assessment" && styles.activeCard,
+          ]}
+        >
+          <View
+            accessible={true}
+            accessibilityLabel={t("homeTab.healthAssessment")}
+          >
+            <Text
+              style={[
+                styles.serviceTitle,
+                activeService === "Health Assessment" && styles.activeTitle,
+              ]}
+            >
+              {t("homeTab.healthAssessment")}
+            </Text>
+          </View>
+        </Pressable>
+
+        {/* Explore Scans Button */}
+        <Pressable
+          onPress={() => {
+            setActiveService("Explore Scans");
+            // @ts-ignore
+            navigation.navigate("ConditionScansScreen");
+          }}
+          style={[
+            styles.serviceCard,
+            activeService === "Explore Scans" && styles.activeCard,
+          ]}
+        >
+          <View
+            accessible={true}
+            accessibilityLabel={t("homeTab.exploreScans")}
+          >
+            <Text
+              style={[
+                styles.serviceTitle,
+                activeService === "Explore Scans" && styles.activeTitle,
+              ]}
+            >
+              {t("homeTab.exploreScans")}
+            </Text>
+          </View>
+        </Pressable>
+
+        {/* Category Chips */}
+        {categories.map((category, index) => (
           <Pressable
             key={index}
-            onPress={() => redirectToScans(service)}
             style={[
               styles.serviceCard,
-              activeService === service && styles.activeCard, // Highlight active card
+              activeService === category.value && styles.activeCard,
+              category.isSpecial && styles.specialCard,
             ]}
+            onPress={() => {
+              setActiveService(category.value);
+              // Navigate to Positive Mental Health or ConditionScansScreen
+              if (category.value === "Positive Mental Health") {
+                (navigation as any).navigate("PositiveMentalHealthScreen");
+              } else {
+                (navigation as any).navigate("ConditionScansScreen", {
+                  initialTab: category.value
+                });
+              }
+            }}
           >
             <View
               accessible={true}
-              accessibilityLabel={`${t(getTranslationKey(service))}`}
+              accessibilityLabel={category.label}
             >
               <Text
                 style={[
                   styles.serviceTitle,
-                  activeService === service && styles.activeTitle, // Change text color for active card
+                  activeService === category.value && styles.activeTitle,
+                  category.isSpecial && styles.specialTitle,
                 ]}
               >
-                {t(getTranslationKey(service))}
+                {category.label}
               </Text>
             </View>
           </Pressable>
@@ -1704,6 +1735,16 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: "Poppins-Regular",
   },
+  specialCard: {
+    borderColor: "#4CAF50",
+    borderWidth: 2,
+    backgroundColor: "#F0FDF4",
+  },
+  specialTitle: {
+    color: "#166534",
+    fontWeight: "600",
+    fontFamily: "Poppins-SemiBold",
+  },
   titleContainer: {
     justifyContent: "center",
     marginRight: 15,
@@ -2431,5 +2472,38 @@ const styles = StyleSheet.create({
   monitoringSettingsButton: {
     marginLeft: 8,
     padding: 4,
+  },
+  // Category Filter Styles
+  categoryFiltersContainer: {
+    width: "100%",
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+    backgroundColor: "#FFFFFF",
+    marginBottom: 10,
+  },
+  categoryFiltersTitle: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#1a1a1a",
+    fontFamily: "Poppins-SemiBold",
+    marginBottom: 12,
+  },
+  categoryScrollContent: {
+    paddingRight: 16,
+  },
+  categoryFilterChip: {
+    backgroundColor: "#F5F5F5",
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 20,
+    marginRight: 10,
+    borderWidth: 1,
+    borderColor: "#E0E0E0",
+  },
+  categoryFilterText: {
+    fontSize: 13,
+    fontWeight: "500",
+    color: "#333",
+    fontFamily: "Poppins-Medium",
   },
 });

@@ -810,7 +810,7 @@ export default function AddictionScanResult() {
     if (isLoading) {
       return (
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#AB47BC" />
+          <ActivityIndicator size="large" color="#FF8C00" />
           <Text style={styles.loadingText}>
             {t("scanResult.ui.loadingHistoryText")}
           </Text>
@@ -834,7 +834,7 @@ export default function AddictionScanResult() {
             datasets: [
               {
                 data: pagedData,
-                color: (opacity = 1) => `rgba(171, 71, 188, ${opacity})`,
+                color: (opacity = 1) => `rgba(255, 140, 0, ${opacity})`,
                 strokeWidth: 2,
               },
             ],
@@ -846,7 +846,7 @@ export default function AddictionScanResult() {
             backgroundGradientFrom: "#ffffff",
             backgroundGradientTo: "#ffffff",
             decimalPlaces: 0,
-            color: (opacity = 1) => `rgba(171, 71, 188, ${opacity})`,
+            color: (opacity = 1) => `rgba(255, 140, 0, ${opacity})`,
             labelColor: (opacity = 1) => `rgba(85, 85, 85, ${opacity})`,
             style: {
               borderRadius: 16,
@@ -854,7 +854,7 @@ export default function AddictionScanResult() {
             propsForDots: {
               r: "4",
               strokeWidth: "2",
-              stroke: "#AB47BC",
+              stroke: "#FF8C00",
             },
             propsForLabels: {
               fontSize: 10,
@@ -1072,7 +1072,7 @@ const styles = StyleSheet.create({
   },
 
   scoreBox: {
-    backgroundColor: "#9C27B0",
+    backgroundColor: "#FF8C00",
     borderRadius: 12,
     paddingHorizontal: 20,
     paddingVertical: 30,
@@ -1093,7 +1093,7 @@ const styles = StyleSheet.create({
   },
 
   rangeContainer: {
-    backgroundColor: "#AB47BC",
+    backgroundColor: "#FF9920",
     borderRadius: 10,
     width: "100%",
     paddingVertical: 12,
@@ -1103,7 +1103,7 @@ const styles = StyleSheet.create({
   rangeRow: { flexDirection: "row", alignItems: "center", marginVertical: 2 },
   rangeText: { color: "#fff", fontSize: 14, textAlign: "center" },
   activeRangeBox: {
-    backgroundColor: "#CE93D8",
+    backgroundColor: "#FFB84D",
     borderRadius: 8,
     paddingHorizontal: 8,
     paddingVertical: 4,
@@ -1129,7 +1129,7 @@ const styles = StyleSheet.create({
   },
   pageBtn: {
     borderWidth: 1,
-    borderColor: "#AB47BC",
+    borderColor: "#FF8C00",
     borderRadius: 20,
     paddingHorizontal: 14,
     paddingVertical: 4,
@@ -1140,17 +1140,17 @@ const styles = StyleSheet.create({
   },
   pageBtnTxt: {
     fontSize: 16,
-    color: "#AB47BC",
+    color: "#FF8C00",
   },
   pageIndicator: {
     fontSize: 12,
-    color: "#AB47BC",
+    color: "#FF8C00",
   },
 
   shiftText: {
     fontSize: 14,
     fontWeight: "bold",
-    color: "#AB47BC",
+    color: "#FF8C00",
     textAlign: "center",
     marginVertical: 10,
   },
@@ -1158,7 +1158,7 @@ const styles = StyleSheet.create({
   infoTitle: {
     fontSize: 16,
     fontWeight: "bold",
-    color: "#AB47BC",
+    color: "#FF8C00",
     textAlign: "center",
     marginVertical: 10,
     marginHorizontal: 20,
@@ -1200,7 +1200,7 @@ const styles = StyleSheet.create({
   modalTitle: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "#AB47BC",
+    color: "#FF8C00",
     marginBottom: 10,
   },
   modalDoctorInfo: {
@@ -1216,7 +1216,7 @@ const styles = StyleSheet.create({
   },
   loadingText: {
     marginTop: 10,
-    color: "#666",
+    color: "#FF8C00",
     fontSize: 14,
   },
 });

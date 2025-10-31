@@ -13,7 +13,7 @@ const LabelText: React.FC<LabelTextProps> = ({ children, style }) => {
 const styles = StyleSheet.create({
   label: {
     fontSize: 16,
-    color: "#A63BAA",
+    color: "#FF8C00",
     fontFamily: "Poppins-Medium",
     fontWeight: "500",
     alignSelf: "flex-start",

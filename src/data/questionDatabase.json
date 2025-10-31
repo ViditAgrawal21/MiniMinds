@@ -115,7 +115,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Behaviour Issues"
     },
     "Abusive language and back answering": {
       "questions": [
@@ -232,7 +232,7 @@
         false,
         false
       ],
-      "category": "Peer to Peer Interaction"
+      "category": "Parenting Issues"
     },
     "Academic Stress": {
       "questions": [
@@ -349,7 +349,7 @@
         false,
         false
       ],
-      "category": "Education"
+      "category": "Schooling and Academics"
     },
     "Anxiety issues (PTSD/Phobia/Panic/Conversion)": {
       "questions": [
@@ -466,7 +466,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Psychological Issues"
     },
     "Autism and Intellectual Disability": {
       "questions": [
@@ -583,7 +583,7 @@
         true,
         false
       ],
-      "category": "Other"
+      "category": "Psychological Issues"
     },
     "Breakup and Rebound": {
       "questions": [
@@ -700,7 +700,7 @@
         false,
         true
       ],
-      "category": "Peer to Peer Interaction"
+      "category": "Emotional Issues"
     },
     "Bullying in School": {
       "questions": [
@@ -817,7 +817,7 @@
         false,
         false
       ],
-      "category": "Education"
+      "category": "Schooling and Academics"
     },
     "Bunking in School": {
       "questions": [
@@ -934,7 +934,7 @@
         false,
         false
       ],
-      "category": "Education"
+      "category": "Schooling and Academics"
     },
     "Conduct Issues": {
       "questions": [
@@ -1161,124 +1161,7 @@
         false,
         false
       ],
-      "category": "Peer to Peer Interaction"
-    },
-    "Darkweb/OnlyFans Sites": {
-      "questions": [
-        {
-          "text": "I spend significant time browsing or purchasing content on dark web or subscription adult platforms.",
-          "scores": {
-            "stronglyAgree": 10,
-            "agree": 8,
-            "neutral": 6,
-            "disagree": 4,
-            "stronglyDisagree": 2
-          }
-        },
-        {
-          "text": "I feel strong urges to access these sites and struggle to resist them.",
-          "scores": {
-            "stronglyAgree": 10,
-            "agree": 8,
-            "neutral": 6,
-            "disagree": 4,
-            "stronglyDisagree": 2
-          }
-        },
-        {
-          "text": "My use of these platforms has led to secrecy, conflicts, or problems in relationships.",
-          "scores": {
-            "stronglyAgree": 10,
-            "agree": 8,
-            "neutral": 6,
-            "disagree": 4,
-            "stronglyDisagree": 2
-          }
-        },
-        {
-          "text": "I have spent money I could not afford on subscriptions or related content.",
-          "scores": {
-            "stronglyAgree": 10,
-            "agree": 8,
-            "neutral": 6,
-            "disagree": 4,
-            "stronglyDisagree": 2
-          }
-        },
-        {
-          "text": "I continue using these sites despite concerns about legality, privacy, or personal values.",
-          "scores": {
-            "stronglyAgree": 10,
-            "agree": 8,
-            "neutral": 6,
-            "disagree": 4,
-            "stronglyDisagree": 2
-          }
-        },
-        {
-          "text": "I can avoid these platforms and focus on other activities without distress.",
-          "scores": {
-            "stronglyAgree": 2,
-            "agree": 4,
-            "neutral": 6,
-            "disagree": 8,
-            "stronglyDisagree": 10
-          }
-        },
-        {
-          "text": "I set clear limits (time/money) for online content and stick to them consistently.",
-          "scores": {
-            "stronglyAgree": 2,
-            "agree": 4,
-            "neutral": 6,
-            "disagree": 8,
-            "stronglyDisagree": 10
-          }
-        },
-        {
-          "text": "I prioritize sleep, work/study, and offline relationships over these sites.",
-          "scores": {
-            "stronglyAgree": 2,
-            "agree": 4,
-            "neutral": 6,
-            "disagree": 8,
-            "stronglyDisagree": 10
-          }
-        },
-        {
-          "text": "I use privacy and safety practices online and avoid risky or illegal sites.",
-          "scores": {
-            "stronglyAgree": 2,
-            "agree": 4,
-            "neutral": 6,
-            "disagree": 8,
-            "stronglyDisagree": 10
-          }
-        },
-        {
-          "text": "I can take extended breaks from these platforms without cravings or withdrawal-like feelings.",
-          "scores": {
-            "stronglyAgree": 2,
-            "agree": 4,
-            "neutral": 6,
-            "disagree": 8,
-            "stronglyDisagree": 10
-          }
-        }
-      ],
-      "isReverseScored": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "category": "Peer to Peer Interaction"
+      "category": "Behaviour Issues"
     },
     "Dating Sites and Complications": {
       "questions": [
@@ -1395,7 +1278,7 @@
         false,
         true
       ],
-      "category": "Peer to Peer Interaction"
+      "category": "Internet & Social Media Issues"
     },
     "Dealing trauma loss and death/Acute stress": {
       "questions": [
@@ -1512,7 +1395,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Emotional Issues"
     },
     "Dealing with children of special Needs": {
       "questions": [
@@ -1629,7 +1512,7 @@
         false,
         false
       ],
-      "category": "Family Bonding"
+      "category": "Parenting Issues"
     },
     "Eating Habits": {
       "questions": [
@@ -1746,7 +1629,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Behaviour Issues"
     },
     "Exam Stress/Fear of failure": {
       "questions": [
@@ -1863,7 +1746,7 @@
         false,
         false
       ],
-      "category": "Education"
+      "category": "Schooling and Academics"
     },
     "Friendship and relationship issues/FOMO": {
       "questions": [
@@ -1980,7 +1863,7 @@
         false,
         false
       ],
-      "category": "Peer to Peer Interaction"
+      "category": "Emotional Issues"
     },
     "Gaming Addiction": {
       "questions": [
@@ -2097,7 +1980,7 @@
         false,
         false
       ],
-      "category": "Peer to Peer Interaction"
+      "category": "Internet & Social Media Issues"
     },
     "Good Parenting": {
       "questions": [
@@ -2214,7 +2097,7 @@
         false,
         false
       ],
-      "category": "Family Bonding"
+      "category": "Parenting Issues"
     },
     "Internet Addiction": {
       "questions": [
@@ -2331,7 +2214,7 @@
         false,
         false
       ],
-      "category": "Peer to Peer Interaction"
+      "category": "Internet & Social Media Issues"
     },
     "Introvert child": {
       "questions": [
@@ -2448,7 +2331,7 @@
         false,
         false
       ],
-      "category": "Family Bonding"
+      "category": "Behaviour Issues"
     },
     "Learning Disability": {
       "questions": [
@@ -2565,7 +2448,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Psychological Issues"
     },
     "Learning Issues and Disability": {
       "questions": [
@@ -2682,7 +2565,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Schooling and Academics"
     },
     "Loneliness and Depression": {
       "questions": [
@@ -2799,7 +2682,7 @@
         true,
         false
       ],
-      "category": "Other"
+      "category": "Psychological Issues"
     },
     "Parenting (Child POV)": {
       "questions": [
@@ -2916,7 +2799,7 @@
         false,
         false
       ],
-      "category": "Family Bonding"
+      "category": "Parenting Issues"
     },
     "Parenting (Parent POV)": {
       "questions": [
@@ -3033,7 +2916,7 @@
         false,
         true
       ],
-      "category": "Family Bonding"
+      "category": "Parenting Issues"
     },
     "Porn Addiction": {
       "questions": [
@@ -3150,7 +3033,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Internet & Social Media Issues"
     },
     "Self Esteem and self identity issues": {
       "questions": [
@@ -3267,7 +3150,7 @@
         false,
         true
       ],
-      "category": "Other"
+      "category": "Emotional Issues"
     },
     "Self Harm behaviour": {
       "questions": [
@@ -3384,7 +3267,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Behaviour Issues"
     },
     "Self care and Hygiene": {
       "questions": [
@@ -3501,7 +3384,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Behaviour Issues"
     },
     "Social Media Issues": {
       "questions": [
@@ -3618,7 +3501,7 @@
         false,
         false
       ],
-      "category": "Peer to Peer Interaction"
+      "category": "Internet & Social Media Issues"
     },
     "Substance Addiction": {
       "questions": [
@@ -3735,7 +3618,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Behaviour Issues"
     },
     "Suicidal Behaviour": {
       "questions": [
@@ -3852,7 +3735,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Psychological Issues"
     },
     "Unrealistic Beauty Standards/Body image issues/obesity": {
       "questions": [
@@ -3969,7 +3852,7 @@
         false,
         false
       ],
-      "category": "Other"
+      "category": "Emotional Issues"
     },
     "Violent and Aggressive Behaviour": {
       "questions": [
@@ -4086,7 +3969,7 @@
         false,
         false
       ],
-      "category": "Peer to Peer Interaction"
+      "category": "Behaviour Issues"
     }
   }
 }

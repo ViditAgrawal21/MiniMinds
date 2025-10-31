@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { Linking } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import BreakupAndReboundScreen from '@/screens/main/MindTools/Miniminds Screen/BreakupAndReboundScreen';
-import DarkWebAndOnlyFansScreen from '@/screens/main/MindTools/Miniminds Screen/DarkWebAndOnlyFansScreen';
 import DatingSitesAndComplicationsScreen from '@/screens/main/MindTools/Miniminds Screen/DatingSitesAndComplicationsScreen';
 import ExamStressScreen from '@/screens/main/MindTools/Miniminds Screen/ExamStressScreen';
 import FriendshipAndRelationshipScreen from '@/screens/main/MindTools/Miniminds Screen/FriendshipAndRelationshipScreen';
@@ -19,6 +18,9 @@ import SubstanceAddictionScreen from '@/screens/main/MindTools/Miniminds Screen/
 import TraumaLossAndDreamsScreen from '@/screens/main/MindTools/Miniminds Screen/TraumaLossAndDreamsScreen';
 import UnrealisticBeautyStandardsScreen from '@/screens/main/MindTools/Miniminds Screen/UnrealisticBeautyStandardsScreen';
 import AbusiveLanguageBackAnsweringScreen from '@/screens/main/MindTools/Miniminds Screen/AbusiveLanguageBackAnsweringScreen';
+import EarlySexualAnxietyScreen from '@/screens/main/MindTools/Miniminds Screen/EarlySexualAnxietyScreen';
+import EmotionalSexEducationScreen from '@/screens/main/MindTools/Miniminds Screen/EmotionalSexEducationScreen';
+import SexualOrientationIssuesScreen from '@/screens/main/MindTools/Miniminds Screen/SexualOrientationIssuesScreen';
 
 // Import your screens here
 import SplashScreen from '../screens/auth/splashScreen/splash';
@@ -44,6 +46,7 @@ import EditProfile from '@/screens/main/EditProfileScreen/EditProfile';
 
 // Import HomeTab related screens
 import MentalHealthAssessment from '@/screens/main/homeTab/MentalHealthAssessment';
+import PositiveMentalHealthScreen from '@/screens/main/PositiveMentalHealth/PositiveMentalHealthScreen';
 
 // Import ConditionsScan related screens
 import ConditionScansScreen from '@/screens/main/conditionsScan/ConditionScansScreen';
@@ -109,6 +112,12 @@ import PremiumScreen from '@/screens/PremiumScreen';
 // import SettingsScreen from '../screens/main/settingsScreen/settings';
 import EatingHabitScreen from '@/screens/main/MindTools/Miniminds Screen/EatingHabitScreen';
 import IntrovertChildScreen from '@/screens/main/MindTools/Miniminds Screen/IntrovertChildScreen';
+
+// Import Guardian Settings screens
+import GuardianSettingsScreen from '@/screens/main/GuardianSettings/GuardianSettingsScreen';
+import GuardianListScreen from '@/screens/main/GuardianSettings/GuardianListScreen';
+import AddGuardianScreen from '@/screens/main/GuardianSettings/AddGuardianScreen';
+import EditGuardianScreen from '@/screens/main/GuardianSettings/EditGuardianScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -226,9 +235,14 @@ const AppNavigation = () => {
 
       {/* HomeTab related screens */}
       <Stack.Screen name="MentalHealthAssessment" component={MentalHealthAssessment} />
+      <Stack.Screen name="PositiveMentalHealthScreen" component={PositiveMentalHealthScreen} options={{ headerShown: false }} />
 
       {/* ConditionsScan related screens */}
-      <Stack.Screen name="ConditionScansScreen" component={ConditionScansScreen} />
+      <Stack.Screen 
+        name="ConditionScansScreen" 
+        component={ConditionScansScreen}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen name="ScanIntro" component={ScanIntro} />
       <Stack.Screen name="ScanQuestions" component={ScanQuestions} />
       <Stack.Screen name="ScanResult" component={ScanResult} />
@@ -296,9 +310,14 @@ const AppNavigation = () => {
       <Stack.Screen name="UpgradeToPremium" component={PremiumScreen} />
       <Stack.Screen name="EditProfile" component={EditProfile} />
 
+      {/* Guardian Settings screens */}
+      <Stack.Screen name="GuardianSettings" component={GuardianSettingsScreen} />
+      <Stack.Screen name="GuardianList" component={GuardianListScreen} />
+      <Stack.Screen name="AddGuardian" component={AddGuardianScreen} />
+      <Stack.Screen name="EditGuardian" component={EditGuardianScreen} />
+
       
           <Stack.Screen name="BreakupAndReboundScreen" component={BreakupAndReboundScreen} />
-      <Stack.Screen name="DarkWebAndOnlyFansScreen" component={DarkWebAndOnlyFansScreen} />
       <Stack.Screen name="DatingSitesAndComplicationsScreen" component={DatingSitesAndComplicationsScreen} />
       <Stack.Screen name="ExamStressScreen" component={ExamStressScreen} />
       <Stack.Screen name="FriendshipAndRelationshipScreen" component={FriendshipAndRelationshipScreen} />
@@ -314,6 +333,9 @@ const AppNavigation = () => {
       <Stack.Screen name="TraumaLossAndDreamsScreen" component={TraumaLossAndDreamsScreen} />
       <Stack.Screen name="UnrealisticBeautyStandardsScreen" component={UnrealisticBeautyStandardsScreen} />
       <Stack.Screen name="AbusiveLanguageBackAnsweringScreen" component={AbusiveLanguageBackAnsweringScreen} />
+      <Stack.Screen name="EarlySexualAnxietyScreen" component={EarlySexualAnxietyScreen} />
+      <Stack.Screen name="EmotionalSexEducationScreen" component={EmotionalSexEducationScreen} />
+      <Stack.Screen name="SexualOrientationIssuesScreen" component={SexualOrientationIssuesScreen} />
 </Stack.Navigator>
     </LanguageProvider>
   );

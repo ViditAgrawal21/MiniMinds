@@ -59,7 +59,7 @@ export default function ParentingFromChildViewScreen({ navigation }:any){
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="people-circle-outline" size={48} color="#8b5cf6" />
+              <CustomIcon type="IO" name="happy-outline" size={48} color="#8b5cf6" />
               <Text style={styles.imageLabel}>
                 {t("parentingFromChildView.imageLabel")}
               </Text>

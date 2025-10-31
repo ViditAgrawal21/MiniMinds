@@ -14,6 +14,12 @@ import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomIcon from "./CustomIcon";
 import { t } from "../i18n/locales/i18n";
+import {
+  launchImageLibrary,
+  launchCamera,
+  ImagePickerResponse,
+} from 'react-native-image-picker';
+import { Platform, PermissionsAndroid } from 'react-native';
 
 
 const STORAGE_KEY = "profile_v1";
@@ -184,36 +190,80 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
   );
 
   /** -------------------------------- Image picker -------------------------- */
-  async function requestPermission() {
-    // Since expo-image-picker is not available, we'll just return true for now
-    // In a real implementation, you would use react-native-image-picker
-    Alert.alert("Info", "Image picker functionality needs to be implemented with react-native-image-picker");
-    return false;
-  }
+  const requestCameraPermission = async (): Promise<boolean> => {
+    if (Platform.OS === 'android') {
+      try {
+        const granted = await PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.CAMERA,
+          {
+            title: 'Camera Permission',
+            message: 'This app needs access to camera to take photos.',
+            buttonNeutral: 'Ask Me Later',
+            buttonNegative: 'Cancel',
+            buttonPositive: 'OK',
+          },
+        );
+        return granted === PermissionsAndroid.RESULTS.GRANTED;
+      } catch (err) {
+        console.warn(err);
+        return false;
+      }
+    }
+    return true;
+  };
 
-  async function pickImage() {
-    const ok = await requestPermission();
-    if (!ok) return;
+  const handleImageResponse = (response: ImagePickerResponse) => {
+    if (response.didCancel || response.errorCode) {
+      return;
+    }
 
-    // TODO: Implement with react-native-image-picker
-    Alert.alert("Info", "Image picker functionality needs to be implemented with react-native-image-picker");
-    
-    // Placeholder implementation - in real app you would use react-native-image-picker
-    // const result = await ImagePicker.launchImageLibraryAsync({
-    //   mediaTypes: ImagePicker.MediaTypeOptions.Images,
-    //   quality: 0.8,
-    // });
-    // if (!result.canceled && result.assets.length > 0) {
-    //   const uri = result.assets[0].uri;
-    //   setImageUri(uri);
-    //   setAvatarGender(null);
-    //   setAvatarIndex(null);
-    //   await updateProfile({
-    //     imageUri: uri,
-    //     avatarGender: null,
-    //     avatarIndex: null,
-    //   });
-    // }
+    if (response.assets && response.assets.length > 0) {
+      const asset = response.assets[0];
+      if (asset.uri) {
+        setImageUri(asset.uri);
+        // Save to storage
+        updateProfile({ imageUri: asset.uri });
+      }
+    }
+  };
+
+  const selectFromGallery = () => {
+    launchImageLibrary({
+      mediaType: 'photo',
+      includeBase64: false,
+      maxHeight: 800,
+      maxWidth: 800,
+      quality: 0.8,
+      selectionLimit: 1,
+    }, handleImageResponse);
+  };
+
+  const selectFromCamera = async () => {
+    const hasPermission = await requestCameraPermission();
+    if (hasPermission) {
+      launchCamera({
+        mediaType: 'photo',
+        includeBase64: false,
+        maxHeight: 800,
+        maxWidth: 800,
+        quality: 0.8,
+      }, handleImageResponse);
+    } else {
+      Alert.alert(
+        'Permission Denied',
+        'Camera permission is required to take photos.',
+      );
+    }
+  };
+
+  function pickImage() {
+    const options: any[] = [
+      { text: 'TAKE PHOTO', onPress: selectFromCamera },
+      { text: 'CHOOSE FROM GALLERY', onPress: selectFromGallery },
+      { text: 'CANCEL', style: 'cancel' }
+    ];
+
+    Alert.alert('Select Image', 'Choose an option', options);
   }
 
   /** ----------------------------- Avatar picker --------------------------- */

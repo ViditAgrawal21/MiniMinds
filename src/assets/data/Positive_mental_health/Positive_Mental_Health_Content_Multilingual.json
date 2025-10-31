@@ -1,0 +1,445 @@
+{
+  "topics": [
+    {
+      "en": {
+        "title": "Finding Your Ikigai: A Psychologist's Guide to Purpose with Practical Steps",
+        "description": "A Japanese concept for finding your reason for being by aligning what you love, what you're good at, what the world needs, and what you can be paid for.",
+        "steps": [
+          {
+            "step": 1,
+            "title": "Do a Gentle Energy Audit (Love)",
+            "description": "List 15 moments when you felt alive, notice patterns, and use prompts to identify what creates energy."
+          },
+          {
+            "step": 2,
+            "title": "Map Your Strengths (Good At)",
+            "description": "Identify 5-7 repeatable strengths, ask 5 people for feedback, and distinguish between skills and strengths."
+          },
+          {
+            "step": 3,
+            "title": "Define the Beneficiary (World Needs)",
+            "description": "Identify who benefits most from your strengths and what problems you care about solving."
+          },
+          {
+            "step": 4,
+            "title": "Locate the Value Exchange (Paid For)",
+            "description": "Translate strengths into outcomes people pay for and map various options."
+          },
+          {
+            "step": 5,
+            "title": "Create Ikigai Hypotheses",
+            "description": "Write 2-3 testable statements linking beneficiary, outcome, strength, and emotional impact."
+          },
+          {
+            "step": 6,
+            "title": "Design 30-Day Micro-Experiments",
+            "description": "Run small, low-risk tests to validate your hypotheses with success metrics."
+          },
+          {
+            "step": 7,
+            "title": "Review and Iterate",
+            "description": "Keep what gives energy and value, drop what doesn't, and refine your approach."
+          }
+        ]
+      },
+      "hi": {
+        "title": "अपना इकिगाई खोजें: उद्देश्य के साथ एक मनोवैज्ञानिक की मार्गदर्शिका",
+        "description": "एक जापानी अवधारणा जो आपके अस्तित्व का कारण खोजने में मदद करती है जो आप पसंद करते हैं, आप क्या अच्छे हैं, दुनिया को क्या चाहिए, और आप क्या कमा सकते हैं, इन सभी को संरेखित करके।",
+        "steps": [
+          {
+            "step": 1,
+            "title": "कोमल ऊर्जा ऑडिट करें (प्रेम)",
+            "description": "15 क्षणों की सूची बनाएं जब आप जीवंत महसूस करते थे, पैटर्न देखें, और ऊर्जा बनाने वाली चीजों की पहचान करें।"
+          },
+          {
+            "step": 2,
+            "title": "अपनी शक्तियों को मैप करें (अच्छा है)",
+            "description": "5-7 दोहराए जाने वाले कौशल की पहचान करें, 5 लोगों से प्रतिक्रिया मांगें, और कौशल बनाम शक्तियों में अंतर करें।"
+          },
+          {
+            "step": 3,
+            "title": "लाभार्थी को परिभाषित करें (दुनिया को क्या चाहिए)",
+            "description": "पहचानें कि आपकी शक्तियों से किसे सबसे अधिक लाभ होता है और आप किन समस्याओं को हल करने की परवाह करते हैं।"
+          },
+          {
+            "step": 4,
+            "title": "मूल्य विनिमय का पता लगाएं (भुगतान किया जा सकता है)",
+            "description": "शक्तियों को परिणामों में अनुवाद करें जिसके लिए लोग भुगतान करते हैं और विभिन्न विकल्प को मैप करें।"
+          },
+          {
+            "step": 5,
+            "title": "इकिगाई परिकल्पनाएं बनाएं",
+            "description": "2-3 परीक्षण योग्य कथन लिखें जो लाभार्थी, परिणाम, शक्ति और भावनात्मक प्रभाव को जोड़ते हैं।"
+          },
+          {
+            "step": 6,
+            "title": "30-दिन के सूक्ष्म प्रयोग डिज़ाइन करें",
+            "description": "अपनी परिकल्पनाओं को मान्य करने के लिए छोटे, कम जोखिम वाले परीक्षण चलाएं।"
+          },
+          {
+            "step": 7,
+            "title": "समीक्षा और पुनरावृत्ति करें",
+            "description": "जो ऊर्जा और मूल्य देता है उसे रखें, जो नहीं देता उसे छोड़ें, और अपने दृष्टिकोण को परिष्कृत करें।"
+          }
+        ]
+      },
+      "mr": {
+        "title": "आपले इकिगाई शोधा: हेतू सह मनोविज्ञानाचे मार्गदर्शन व्यावहारिक पायर्‍या सह",
+        "description": "एक जपानी संकल्पना जी आपल्या अस्तित्वाचे कारण शोधण्यास मदत करते: आप काय प्रेम करता, आप काय चांगले आहे, जगाला काय लागते आणि आप काय कमवू शकता.",
+        "steps": [
+          {
+            "step": 1,
+            "title": "सौम्य ऊर्जा ऑडिट करा (प्रेम)",
+            "description": "15 क्षणांची यादी बनवा जेव्हा तू जिवंत वाटला, नमुने पहा, आणि ऊर्जा निर्माण करणार्‍या गोष्टी ओळखा."
+          },
+          {
+            "step": 2,
+            "title": "आपल्या शक्तीचे नकाशा बनवा (चांगले आहे)",
+            "description": "5-7 पुनरावृत्ती होणार्‍या कौशल्यांची ओळख करा, 5 लोकांकडून प्रतिक्रिया मिळवा, आणि कौशल्य विरुद्ध शक्तीमध्ये फरक करा."
+          },
+          {
+            "step": 3,
+            "title": "लाभार्थ्याचे अर्थ स्पष्ट करा (जगाला काय लागते)",
+            "description": "ओळखा की तुमच्या शक्तीचा सर्वात जास्त फायदा कोणाला होतो आणि तुम्हाला कोणच्या समस्या सोडवायला गरज आहे."
+          },
+          {
+            "step": 4,
+            "title": "मूल्य विनिमय शोधा (भुगतान केले जाऊ शकते)",
+            "description": "शक्तीचे परिणामांमध्ये भाषांतर करा ज्यासाठी लोक भुगतान करतात आणि विविध पर्याय मॅप करा."
+          },
+          {
+            "step": 5,
+            "title": "इकिगाई गृहीतके तयार करा",
+            "description": "2-3 परीक्षण योग्य विधाने लिहा जी लाभार्थी, परिणाम, शक्ती आणि भावनिक प्रभाव जोडतात."
+          },
+          {
+            "step": 6,
+            "title": "30-दिवसांचे सूक्ष्म प्रयोग डिজाइन करा",
+            "description": "तुमच्या गृहीतकांचा प्रमाण देण्यासाठी लहान, कमी जोखीमचे चाचणी चलवा."
+          },
+          {
+            "step": 7,
+            "title": "पुनरावलोकन आणि पुनरावृत्ती करा",
+            "description": "जे ऊर्जा आणि मूल्य देते ते ठेवा, जे नाही ते सोडा, आणि तुमचे दृष्टिकोन सुधारा."
+          }
+        ]
+      }
+    },
+    {
+      "en": {
+        "title": "Social Responsibility for Children: Growing Kind, Fair, and Helpful Citizens",
+        "description": "Teaching children to notice how their actions affect others and to make choices that make things better.",
+        "steps": [
+          {
+            "step": 1,
+            "title": "Notice",
+            "description": "Ask: Who is affected? How might they feel? What does this place need?"
+          },
+          {
+            "step": 2,
+            "title": "Choose",
+            "description": "Pick one kind action: help, share, include, repair, speak up."
+          },
+          {
+            "step": 3,
+            "title": "Do",
+            "description": "Act with calm voice, kind words, and follow-through."
+          },
+          {
+            "step": 4,
+            "title": "Reflect",
+            "description": "Ask: What changed because I helped? What will I try next time?"
+          }
+        ]
+      },
+      "hi": {
+        "title": "बच्चों के लिए सामाजिक जिम्मेदारी: दयालु, न्यायप्रिय और सहायक नागरिक बढ़ाना",
+        "description": "बच्चों को सिखाना कि उनके कार्य दूसरों को कैसे प्रभावित करते हैं और ऐसे विकल्प कैसे बनाएं जो चीजों को बेहतर बनाएं।",
+        "steps": [
+          {
+            "step": 1,
+            "title": "ध्यान दें",
+            "description": "पूछें: किसे असर पड़ता है? वे कैसा महसूस कर सकते हैं? इस जगह को क्या चाहिए?"
+          },
+          {
+            "step": 2,
+            "title": "चुनें",
+            "description": "एक दयालु कार्य चुनें: मदद करें, साझा करें, शामिल करें, मरम्मत करें, बोलें।"
+          },
+          {
+            "step": 3,
+            "title": "करो",
+            "description": "शांत आवाज, दयालु शब्दों और अनुवर्ती कार्रवाई के साथ कार्य करें।"
+          },
+          {
+            "step": 4,
+            "title": "प्रतिबिंबित करें",
+            "description": "पूछें: मेरी मदद के कारण क्या बदला? अगली बार मैं क्या करूंगा?"
+          }
+        ]
+      },
+      "mr": {
+        "title": "मुलांसाठी सामाजिक जबाबदारी: दयाळू, न्यायप्रिय आणि सहायक नागरिक वाढवणे",
+        "description": "मुलांना शिकवणे की त्यांच्या कृती इतरांना कसे प्रभावित करतात आणि गोष्टी बेहतर करणारे निर्णय कसे घ्यायचे.",
+        "steps": [
+          {
+            "step": 1,
+            "title": "लक्ष द्या",
+            "description": "विचारा: कोणाला प्रभाव पडतो? त्यांना कसे वाटू शकते? या जागेला काय हवे?"
+          },
+          {
+            "step": 2,
+            "title": "निवडा",
+            "description": "एक दयाळू क्रिया निवडा: मदत करा, शेअर करा, समाविष्ट करा, दुरुस्त करा, बोला."
+          },
+          {
+            "step": 3,
+            "title": "करा",
+            "description": "शांत आवाज, दयाळू शब्द आणि अनुवर्तन सह कार्य करा."
+          },
+          {
+            "step": 4,
+            "title": "विचार करा",
+            "description": "विचारा: मी मदत केल्यामुळे काय बदलले? पुढेच्या वेळी मी काय करीन?"
+          }
+        ]
+      }
+    },
+    {
+      "en": {
+        "title": "How to Get Better at Talking and Making Friends: A Kid's Step-by-Step Guide",
+        "description": "A practical guide for children to build conversation and friendship skills through small daily practice.",
+        "steps": [
+          {
+            "step": 1,
+            "title": "Know Your Starting Point",
+            "description": "Pick 2-3 places to practice and set tiny goals."
+          },
+          {
+            "step": 2,
+            "title": "Use a Friendly Mindset",
+            "description": "Be curious, not perfect. Remember that everyone feels awkward sometimes."
+          },
+          {
+            "step": 3,
+            "title": "Body Basics That Help",
+            "description": "Stand tall, make eye contact, smile, and nod to show listening."
+          },
+          {
+            "step": 4,
+            "title": "Easy Ways to Start a Conversation",
+            "description": "Use simple openers and exit kindly."
+          },
+          {
+            "step": 5,
+            "title": "Be a Great Listener (70/30 Rule)",
+            "description": "Listen more than you talk using tell, explain, and describe prompts."
+          },
+          {
+            "step": 6,
+            "title": "Ask Good Questions",
+            "description": "Start broad, notice something interesting, then go one step deeper."
+          },
+          {
+            "step": 7,
+            "title": "Share About Yourself (The 1-2-3 Formula)",
+            "description": "Share 1 fact + 1 feeling + 1 question."
+          },
+          {
+            "step": 8,
+            "title": "Join Groups and Include Others",
+            "description": "Learn to join groups, contribute ideas, and include others."
+          },
+          {
+            "step": 9,
+            "title": "Fix Awkward Moments Quickly",
+            "description": "Have responses ready for forgetting what to say or interrupting."
+          },
+          {
+            "step": 10,
+            "title": "Calm Nerves with a Brave Ladder",
+            "description": "Build a ladder from easy to hard talking situations and use breathing techniques."
+          }
+        ]
+      },
+      "hi": {
+        "title": "बातचीत और दोस्ती बनाने में बेहतर कैसे हों: एक बच्चे की चरण-दर-चरण मार्गदर्शिका",
+        "description": "बच्चों के लिए छोटे दैनिक अभ्यास के माध्यम से बातचीत और दोस्ती कौशल बनाने के लिए एक व्यावहारिक मार्गदर्शिका।",
+        "steps": [
+          {
+            "step": 1,
+            "title": "अपना प्रारंभिक बिंदु जानें",
+            "description": "अभ्यास के लिए 2-3 स्थान चुनें और छोटे लक्ष्य निर्धारित करें।"
+          },
+          {
+            "step": 2,
+            "title": "एक दोस्ताना मानसिकता का उपयोग करें",
+            "description": "जिज्ञासु रहें, पूर्ण नहीं। याद रखें कि कभी-कभी हर कोई अजीब महसूस करता है।"
+          },
+          {
+            "step": 3,
+            "title": "शरीर की मूलें जो मदद करती हैं",
+            "description": "सीधे खड़े हों, आंखों का संपर्क बनाएं, मुस्कुराएं, और सुनने के लिए सिर हिलाएं।"
+          },
+          {
+            "step": 4,
+            "title": "बातचीत शुरू करने के आसान तरीके",
+            "description": "सरल शुरुआत का उपयोग करें और दयालुता से निकलें।"
+          },
+          {
+            "step": 5,
+            "title": "एक महान श्रोता बनें (70/30 नियम)",
+            "description": "बताएं, समझाएं, और वर्णन करें प्रॉम्प्ट का उपयोग करके अधिक सुनें।"
+          },
+          {
+            "step": 6,
+            "title": "अच्छे सवाल पूछें",
+            "description": "व्यापक रूप से शुरू करें, कुछ दिलचस्प देखें, फिर एक कदम गहरा जाएं।"
+          },
+          {
+            "step": 7,
+            "title": "अपने बारे में साझा करें (1-2-3 सूत्र)",
+            "description": "1 तथ्य + 1 भावना + 1 प्रश्न साझा करें।"
+          },
+          {
+            "step": 8,
+            "title": "समूहों में शामिल हों और दूसरों को शामिल करें",
+            "description": "समूहों में शामिल होना, विचार योगदान देना, और दूसरों को शामिल करना सीखें।"
+          },
+          {
+            "step": 9,
+            "title": "अजीब पलों को जल्दी ठीक करें",
+            "description": "कहने के लिए भूलने या बाधित करने के लिए प्रतिक्रिया तैयार रखें।"
+          },
+          {
+            "step": 10,
+            "title": "एक साहसी सीढ़ी से तंत्रिकाओं को शांत करें",
+            "description": "आसान से कठिन बातचीत की स्थितियों तक एक सीढ़ी बनाएं और श्वास तकनीकों का उपयोग करें।"
+          }
+        ]
+      },
+      "mr": {
+        "title": "बातमी करणे आणि मित्र बनवणे कसे चांगले व्हायचे: मुलांसाठी चरण-दर-चरण मार्गदर्शन",
+        "description": "लहान दैनिक सराव द्वारे बातमी आणि मैत्रीचे कौशल्य बनविण्यासाठी मुलांसाठी व्यावहारिक मार्गदर्शन.",
+        "steps": [
+          {
+            "step": 1,
+            "title": "तुमचा प्रारंभ बिंदू जाणा",
+            "description": "सराव साठी 2-3 ठिकाणे निवडा आणि लहान उद्दिष्टे ठरवा."
+          },
+          {
+            "step": 2,
+            "title": "मित्रसुलभ मनोदृष्टी वापरा",
+            "description": "जिज्ञासू रहा, परिपूर्ण नाही. लक्षात ठेवा की कधी कधी सर्वजण विचित्र वाटतात."
+          },
+          {
+            "step": 3,
+            "title": "शरीराची मूलतत्वे जी मदत करतात",
+            "description": "सरळ उभे रहा, डोळ्यांचा संपर्क बनवा, हसा, आणि ऐकण्यासाठी डोके हलवा."
+          },
+          {
+            "step": 4,
+            "title": "बातमी सुरू करण्याचे सोपे मार्ग",
+            "description": "सोप्या सुरुवातीचा वापर करा आणि दयाळूपणाने बाहेर पडा."
+          },
+          {
+            "step": 5,
+            "title": "एक महान श्रोता व्हा (70/30 नियम)",
+            "description": "सांगा, समजावा, वर्णन करा या प्रॉम्प्टचा वापर करून अधिक ऐका."
+          },
+          {
+            "step": 6,
+            "title": "चांगले प्रश्न विचारा",
+            "description": "व्यापकपणे सुरू करा, काहीतरी मनोरंजक पहा, मग एक पाऊल खोलवर जा."
+          },
+          {
+            "step": 7,
+            "title": "स्वतःविषयी सामायिक करा (1-2-3 सूत्र)",
+            "description": "1 तथ्य + 1 भावना + 1 प्रश्न सामायिक करा."
+          },
+          {
+            "step": 8,
+            "title": "गटांमध्ये सामील व्हा आणि इतरांना समाविष्ट करा",
+            "description": "गटांमध्ये सामील होणे, विचार योगदान देणे, आणि इतरांना समाविष्ट करणे शिका."
+          },
+          {
+            "step": 9,
+            "title": "विचित्र क्षणांचे लवकर निराकरण करा",
+            "description": "काय म्हणायचे हे विसरण्यासाठी किंवा व्यत्यय आणण्यासाठी प्रतिक्रिया तयार ठेवा."
+          },
+          {
+            "step": 10,
+            "title": "सहाय्यक सिडीने तंत्रिका शांत करा",
+            "description": "सोप्या ते कठीण बातमीच्या परिस्थितीपर्यंत सिडी बनवा आणि श्वास तंत्र वापरा."
+          }
+        ]
+      }
+    },
+    {
+      "en": {
+        "title": "Mindfulness for Children: Why It Matters and How to Build It Into Daily Routines",
+        "description": "Teaching children to pay gentle, curious attention to the present moment without judgment.",
+        "benefits": [
+          "Emotional regulation",
+          "Attention and learning",
+          "Stress resilience",
+          "Social skills",
+          "Sleep and somatic health",
+          "Confidence"
+        ]
+      },
+      "hi": {
+        "title": "बच्चों के लिए माइंडफुलनेस: यह क्यों महत्वपूर्ण है और इसे दैनिक दिनचर्या में कैसे शामिल करें",
+        "description": "बच्चों को वर्तमान क्षण पर कोमल, जिज्ञासु ध्यान देना सिखाना, बिना निर्णय के।",
+        "benefits": [
+          "भावनात्मक विनियमन",
+          "ध्यान और सीखना",
+          "तनाव लचीलापन",
+          "सामाजिक कौशल",
+          "नींद और सोमैटिक स्वास्थ्य",
+          "आत्मविश्वास"
+        ]
+      },
+      "mr": {
+        "title": "मुलांसाठी सजागता: हे महत्वाचे का आहे आणि दैनिक दिनचर्यांमध्ये त्याचा समावेश कसा करायचा",
+        "description": "मुलांना वर्तमान क्षणाकडे सौम्य, जिज्ञासु लक्ष देणे शिकवणे, कोणत्याही निर्णयाशिवाय.",
+        "benefits": [
+          "भावनिक नियमन",
+          "लक्ष आणि शिक्षण",
+          "तणाव लचीकपणा",
+          "सामाजिक कौशल्य",
+          "झोप आणि शारीरिक स्वास्थ्य",
+          "आत्मविश्वास"
+        ]
+      }
+    },
+    {
+      "en": {
+        "title": "10 Great Suggestions for Positive Mental Health of a Child",
+        "description": "Evidence-based strategies for supporting a child's mental health and wellbeing."
+      },
+      "hi": {
+        "title": "बच्चे के सकारात्मक मानसिक स्वास्थ्य के लिए 10 शानदार सुझाव",
+        "description": "बच्चे के मानसिक स्वास्थ्य और सुख को समर्थन करने के लिए साक्ष्य-आधारित रणनीतियाँ।"
+      },
+      "mr": {
+        "title": "मुलाच्या सकारात्मक मानसिक आरोग्यासाठी 10 शानदार सुझाव",
+        "description": "मुलाच्या मानसिक आरोग्य आणि कल्याण समर्थन करण्यासाठी साक्ष्य-आधारित रणनीती."
+      }
+    },
+    {
+      "en": {
+        "title": "10 Great Suggestions for Good Parenting",
+        "description": "Parenting strategies grounded in research about child development and family wellbeing."
+      },
+      "hi": {
+        "title": "अच्छी पालन-पोषण के लिए 10 शानदार सुझाव",
+        "description": "बाल विकास और पारिवारिक सुख के बारे में अनुसंधान पर आधारित पालन-पोषण रणनीतियाँ।"
+      },
+      "mr": {
+        "title": "चांगल्या पालन-पोषणासाठी 10 शानदार सुझाव",
+        "description": "मुल विकास आणि पारिवारिक कल्याण संबंधी संशोधनावर आधारित पालन-पोषण रणनीती."
+      }
+    }
+  ]
+}

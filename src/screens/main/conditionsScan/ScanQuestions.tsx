@@ -420,7 +420,7 @@ export default function ScanQuestions() {
 
       {isLoading && (
         <View style={styles.loadingOverlay}>
-          <ActivityIndicator size="large" color="#AB47BC" />
+          <ActivityIndicator size="large" color="#FF8C00" />
         </View>
       )}
 

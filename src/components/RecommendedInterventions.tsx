@@ -685,13 +685,14 @@ export default function RecommendedInterventions({
       
       // Map scan names to condition slugs used in strategy screens
       const conditionMappings: Record<string, string> = {
+        // Original mappings
         "Anger Management": "anger-management",
         "Stress": "stress", 
         "Internet and Social Media Issue": "internet-social-media",
-        "Internet & Social Media": "internet-social-media", // Alternative form
-        "Internet Social Media": "internet-social-media", // Short form
+        "Internet & Social Media": "internet-social-media",
+        "Internet Social Media": "internet-social-media",
         "Family and Relationship": "family-relationship",
-        "Family & Relationship": "family-relationship", // Alternative form
+        "Family & Relationship": "family-relationship",
         "Sleep": "sleep",
         "Suicidal Behaviour": "suicidal-behaviour",
         "Sex Life": "sex-life",
@@ -705,15 +706,48 @@ export default function RecommendedInterventions({
         "Social Mental Health": "social-mental-health",
         "Youngster Issues": "youngster-issues",
         "Job Insecurity": "job-insecurity",
-        // Additional mappings for alternative names
         "Environment Issues": "environment-issues",
         "Physical Fitness": "general-physical-fitness",
-        "Internet Addiction": "internet-dependence", // Alternative name
-        "Social Issues": "social-mental-health", // Alternative name
+        "Internet Addiction": "internet-addiction",
+        "Social Issues": "social-mental-health",
+        
+        // All conditions from questionDatabase.json
+        "ADHD": "adhd",
+        "Abusive language and back answering": "abusive-language-back-answering",
+        "Academic Stress": "academic",
+        "Anxiety issues (PTSD/Phobia/Panic/Conversion)": "anxiety",
+        "Autism and Intellectual Disability": "autism",
+        "Breakup and Rebound": "breakupAndRebound",
+        "Bullying in School": "bullying",
+        "Bunking in School": "bunking",
+        "Conduct Issues": "conduct-issues",
+        "Dating Sites and Complications": "dating-sites-and-complications",
+        "Dealing trauma loss and death/Acute stress": "trauma-loss-and-dreams",
+        "Dealing with children of special Needs": "special-needs",
+        "Eating Habits": "eating-habits",
+        "Exam Stress/Fear of failure": "exam-stress-fear-of-failure",
+        "Friendship and relationship issues/FOMO": "friendship-and-relationship",
+        "Gaming Addiction": "gambling-and-gaming-addiction",
+        "Good Parenting": "good-parenting",
+        "Introvert child": "introvert-child",
+        "Learning Disability": "learning-disability",
+        "Learning Issues and Disability": "learning-disability",
+        "Loneliness and Depression": "loneliness-depression",
+        "Parenting (Child POV)": "parenting-from-child-view",
+        "Parenting (Parent POV)": "parenting-from-parents-view",
+        "Porn Addiction": "porn-addiction",
+        "Self Esteem and self identity issues": "self-esteem-and-self-identity",
+        "Self Harm behaviour": "selfharm",
+        "Self care and Hygiene": "self-care-hygiene",
+        "Social Media Issues": "social-media-issues",
+        "Substance Addiction": "substance-addiction",
+        "Unrealistic Beauty Standards/Body image issues/obesity": "unrealistic-beauty-standards",
+        "Violent and Aggressive Behaviour": "aggressive-behaviour",
       };
       
       // Try exact match first
       if (conditionMappings[scanName]) {
+        console.log(`Exact match found for "${scanName}" -> "${conditionMappings[scanName]}"`);
         return conditionMappings[scanName];
       }
       
@@ -721,14 +755,17 @@ export default function RecommendedInterventions({
       const normalizedScanName = scanName.toLowerCase();
       for (const [key, value] of Object.entries(conditionMappings)) {
         if (
+          key.toLowerCase() === normalizedScanName ||
           key.toLowerCase().includes(normalizedScanName) ||
           normalizedScanName.includes(key.toLowerCase())
         ) {
+          console.log(`Fuzzy match found for "${scanName}" -> "${value}"`);
           return value;
         }
       }
       
       // Default fallback
+      console.warn(`No mapping found for "${scanName}", using default`);
       return "common-psychological-issues";
     };
 

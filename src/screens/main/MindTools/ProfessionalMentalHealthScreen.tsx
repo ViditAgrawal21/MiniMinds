@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
+import { View, Text, StyleSheet, ScrollView, Pressable, Image } from "react-native";
 import CustomIcon from "../../../components/CustomIcon";
 import { t } from "../../../i18n/locales/i18n"; // Import the translation function
 
@@ -51,12 +51,11 @@ export default function ProfessionalMentalHealthScreen({ navigation }: any) {
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
-            <View style={styles.imageContainer}>
-              <CustomIcon type="IO" name="briefcase" size={48} color="#374151" />
-              <Text style={styles.imageLabel}>
-                {t("professionalMentalHealth.imageLabel")}
-              </Text>
-            </View>
+            <Image 
+              source={require("@/assets/images/professional-mental-health.png")}
+              style={styles.illustrationImage}
+              resizeMode="contain"
+            />
           </View>
         </View>
         <Text style={styles.title}>
@@ -232,6 +231,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.05,
     shadowRadius: 4,
     elevation: 1,
+    overflow: "hidden",
+  },
+  illustrationImage: {
+    width: 140,
+    height: 140,
   },
   imageContainer: { alignItems: "center" },
   imageLabel: {

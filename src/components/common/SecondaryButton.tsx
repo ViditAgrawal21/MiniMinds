@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   button: {
     padding: 0,
     backgroundColor: "#FFF",
-    borderColor: "#C841CC",
+    borderColor: "#FF8C00",
     borderRadius: 10,
     borderWidth: 3,
     marginBottom: 10,
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0,
   },
   buttonText: {
-    color: "#D27AD5",
+    color: "#FF8C00",
     fontSize: 20,
     fontWeight: "400",
     fontFamily: "Poppins-Regular",

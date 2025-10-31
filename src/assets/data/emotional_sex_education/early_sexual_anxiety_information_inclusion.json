@@ -1,0 +1,375 @@
+{
+  "condition": "Early Sexual Anxiety Information and Inclusion",
+  "issueType": "Early Sexual Anxiety Information and Inclusion",
+  "lastUpdated": "2025-10-31",
+  "interventions": {
+    "common_suggestion": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Normalize Learning and Nerves",
+            "hindi": "सीखने और घबराहट को सामान्य बनाएं",
+            "marathi": "शिक्षण आणि घाबरण सामान्य करा"
+          },
+          "description": {
+            "english": "Explain that feeling nervous about body/sex topics is common and reduces with practice and good info. How it works example: Start classes with 'It’s okay not to know'; share one myth-to-fact each week to show learning progress.",
+            "hindi": "Explain that feeling nervous about body/sex topics is common and reduces with practice and good info. How it works example: Start classes with 'It’s okay not to know'; share one myth-to-fact each week to show learning progress.",
+            "marathi": "Explain that feeling nervous about body/sex topics is common and reduces with practice and good info. How it works example: Start classes with 'It’s okay not to know'; share one myth-to-fact each week to show learning progress."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Use Inclusive Language",
+            "hindi": "समावेशी भाषा का उपयोग करें",
+            "marathi": "समावेशक भाषा वापरा"
+          },
+          "description": {
+            "english": "Adopt person-first, gender-neutral terms and ask preferred words to reduce shame and confusion. How it works example: Ask 'What words feel right for your body/identity?' Mirror their terms and use they/them until clarified.",
+            "hindi": "Adopt person-first, gender-neutral terms and ask preferred words to reduce shame and confusion. How it works example: Ask 'What words feel right for your body/identity?' Mirror their terms and use they/them until clarified.",
+            "marathi": "Adopt person-first, gender-neutral terms and ask preferred words to reduce shame and confusion. How it works example: Ask 'What words feel right for your body/identity?' Mirror their terms and use they/them until clarified."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 2,
+          "title": {
+            "english": "Feelings and Body Signals Map",
+            "hindi": "भावनाएं और शरीर के संकेतों का मानचित्र",
+            "marathi": "भावना आणि शरीराचे संकेत नक्शा"
+          },
+          "description": {
+            "english": "Teach kids to notice thoughts, emotions, and body cues when topics feel uncomfortable. How it works example: Create a simple map: Situation—new word; Feeling—nervous 6/10; Body—tummy knot; Action—raise hand for a pause.",
+            "hindi": "Teach kids to notice thoughts, emotions, and body cues when topics feel uncomfortable. How it works example: Create a simple map: Situation—new word; Feeling—nervous 6/10; Body—tummy knot; Action—raise hand for a pause.",
+            "marathi": "Teach kids to notice thoughts, emotions, and body cues when topics feel uncomfortable. How it works example: Create a simple map: Situation—new word; Feeling—nervous 6/10; Body—tummy knot; Action—raise hand for a pause."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Consent Basics for All Interactions",
+            "hindi": "सभी इंटरैक्शन के लिए सहमति की मूल बातें",
+            "marathi": "सर्व परस्पर क्रियांसाठी सहमती की मूलतत्वे"
+          },
+          "description": {
+            "english": "Introduce age-appropriate consent (asking, listening, respecting no/stop). How it works example: Practice: 'Can I give you a high-five?' Respect 'no' and offer alternatives like a wave or smile.",
+            "hindi": "Introduce age-appropriate consent (asking, listening, respecting no/stop). How it works example: Practice: 'Can I give you a high-five?' Respect 'no' and offer alternatives like a wave or smile.",
+            "marathi": "Introduce age-appropriate consent (asking, listening, respecting no/stop). How it works example: Practice: 'Can I give you a high-five?' Respect 'no' and offer alternatives like a wave or smile."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 4,
+          "title": {
+            "english": "Gradual Exposure to Topics",
+            "hindi": "विषयों के लिए क्रमिक जोखिम",
+            "marathi": "विषयांना हळूहळू उघड करणे"
+          },
+          "description": {
+            "english": "Sequence lessons from neutral to more sensitive content, advancing only when comfort improves. How it works example: Start with body safety rules → feelings → anatomy terms → puberty changes; check comfort ratings before moving on.",
+            "hindi": "Sequence lessons from neutral to more sensitive content, advancing only when comfort improves. How it works example: Start with body safety rules → feelings → anatomy terms → puberty changes; check comfort ratings before moving on.",
+            "marathi": "Sequence lessons from neutral to more sensitive content, advancing only when comfort improves. How it works example: Start with body safety rules → feelings → anatomy terms → puberty changes; check comfort ratings before moving on."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 2,
+          "title": {
+            "english": "Short Grounding Routines",
+            "hindi": "छोटी ग्राउंडिंग दिनचर्या",
+            "marathi": "लहान ग्राउंडिंग दिनचर्या"
+          },
+          "description": {
+            "english": "Teach quick calming skills before/after lessons to lower arousal. How it works example: 60-second 5-4-3-2-1 senses scan plus two slow exhales; resume learning when intensity ≤3/10.",
+            "hindi": "Teach quick calming skills before/after lessons to lower arousal. How it works example: 60-second 5-4-3-2-1 senses scan plus two slow exhales; resume learning when intensity ≤3/10.",
+            "marathi": "Teach quick calming skills before/after lessons to lower arousal. How it works example: 60-second 5-4-3-2-1 senses scan plus two slow exhales; resume learning when intensity ≤3/10."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 3,
+          "title": {
+            "english": "Media Myth Busting",
+            "hindi": "मीडिया मिथ बस्टिंग",
+            "marathi": "मीडिया मिथ बस्टिंग"
+          },
+          "description": {
+            "english": "Compare media/porn/social posts with real-life, consent-based expectations. How it works example: Show a claim, ask 'Is this realistic, kind, and safe?' Replace with age-appropriate facts and inclusive examples.",
+            "hindi": "Compare media/porn/social posts with real-life, consent-based expectations. How it works example: Show a claim, ask 'Is this realistic, kind, and safe?' Replace with age-appropriate facts and inclusive examples.",
+            "marathi": "Compare media/porn/social posts with real-life, consent-based expectations. How it works example: Show a claim, ask 'Is this realistic, kind, and safe?' Replace with age-appropriate facts and inclusive examples."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Secondary",
+      "interventionSubType": "CBT (Cognitive Behavioral Therapy)",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Feelings‑Thoughts‑Body Map",
+            "hindi": "Feelings‑Thoughts‑Body Map",
+            "marathi": "Feelings‑Thoughts‑Body Map"
+          },
+          "description": {
+            "english": "Create simple worksheets mapping situation → thought → feeling (0–10) → body sensation → action. How it works example: Situation—health class term; Thought—'This is bad'; Feeling—fear 6/10; Body—stomach flip; Action—ask for pause + deep breaths.",
+            "hindi": "Create simple worksheets mapping situation → thought → feeling (0–10) → body sensation → action. How it works example: Situation—health class term; Thought—'This is bad'; Feeling—fear 6/10; Body—stomach flip; Action—ask for pause + deep breaths.",
+            "marathi": "Create simple worksheets mapping situation → thought → feeling (0–10) → body sensation → action. How it works example: Situation—health class term; Thought—'This is bad'; Feeling—fear 6/10; Body—stomach flip; Action—ask for pause + deep breaths."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Thought Catcher Cards",
+            "hindi": "Thought Catcher Cards",
+            "marathi": "Thought Catcher Cards"
+          },
+          "description": {
+            "english": "Build a deck of common anxious thoughts with balanced responses in kid‑friendly words. How it works example: Card: 'If I ask, I’m weird.' Balanced: 'Questions help me learn; adults can handle it kindly.' Use before/after class.",
+            "hindi": "Build a deck of common anxious thoughts with balanced responses in kid‑friendly words. How it works example: Card: 'If I ask, I’m weird.' Balanced: 'Questions help me learn; adults can handle it kindly.' Use before/after class.",
+            "marathi": "Build a deck of common anxious thoughts with balanced responses in kid‑friendly words. How it works example: Card: 'If I ask, I’m weird.' Balanced: 'Questions help me learn; adults can handle it kindly.' Use before/after class."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Graded Exposure to Safe Topics",
+            "hindi": "Graded Exposure to Safe Topics",
+            "marathi": "Graded Exposure to Safe Topics"
+          },
+          "description": {
+            "english": "Create a step ladder from neutral to harder topics; repeat each step until anxiety ≤3/10 before moving up. How it works example: Name body parts → consent basics → crush feelings → puberty changes; rehearse with calm breathing.",
+            "hindi": "Create a step ladder from neutral to harder topics; repeat each step until anxiety ≤3/10 before moving up. How it works example: Name body parts → consent basics → crush feelings → puberty changes; rehearse with calm breathing.",
+            "marathi": "Create a step ladder from neutral to harder topics; repeat each step until anxiety ≤3/10 before moving up. How it works example: Name body parts → consent basics → crush feelings → puberty changes; rehearse with calm breathing."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Behavioral Experiments (Kind Tests)",
+            "hindi": "Behavioral Experiments (Kind Tests)",
+            "marathi": "Behavioral Experiments (Kind Tests)"
+          },
+          "description": {
+            "english": "Test predictions gently and record outcomes to update beliefs. How it works example: Prediction—'Teacher will be mad if I ask.' Test—ask privately; Outcome—teacher thanks you; Learning—fear drops; Belief—'It’s okay to ask.'",
+            "hindi": "Test predictions gently and record outcomes to update beliefs. How it works example: Prediction—'Teacher will be mad if I ask.' Test—ask privately; Outcome—teacher thanks you; Learning—fear drops; Belief—'It’s okay to ask.'",
+            "marathi": "Test predictions gently and record outcomes to update beliefs. How it works example: Prediction—'Teacher will be mad if I ask.' Test—ask privately; Outcome—teacher thanks you; Learning—fear drops; Belief—'It’s okay to ask.'"
+          }
+        },
+        {
+          "id": 5,
+          "xp": 4,
+          "title": {
+            "english": "Safety Behavior Audit and Fade",
+            "hindi": "Safety Behavior Audit and Fade",
+            "marathi": "Safety Behavior Audit and Fade"
+          },
+          "description": {
+            "english": "Identify avoidant habits (changing topic, looking down) and fade one at a time using coping skills. How it works example: Practice one clear sentence ('Can you explain that word?') while keeping eye contact for 3 seconds.",
+            "hindi": "Identify avoidant habits (changing topic, looking down) and fade one at a time using coping skills. How it works example: Practice one clear sentence ('Can you explain that word?') while keeping eye contact for 3 seconds.",
+            "marathi": "Identify avoidant habits (changing topic, looking down) and fade one at a time using coping skills. How it works example: Practice one clear sentence ('Can you explain that word?') while keeping eye contact for 3 seconds."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Consent and Communication Rehearsal",
+            "hindi": "Consent and Communication Rehearsal",
+            "marathi": "Consent and Communication Rehearsal"
+          },
+          "description": {
+            "english": "Role‑play asking for help, saying no/stop, and using inclusive terms to build confidence. How it works example: Script—'I’m not ready; can we slow down?' Practice with a trusted adult, then use in class or peer settings.",
+            "hindi": "Role‑play asking for help, saying no/stop, and using inclusive terms to build confidence. How it works example: Script—'I’m not ready; can we slow down?' Practice with a trusted adult, then use in class or peer settings.",
+            "marathi": "Role‑play asking for help, saying no/stop, and using inclusive terms to build confidence. How it works example: Script—'I’m not ready; can we slow down?' Practice with a trusted adult, then use in class or peer settings."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Mindful Grounding Routine",
+            "hindi": "Mindful Grounding Routine",
+            "marathi": "Mindful Grounding Routine"
+          },
+          "description": {
+            "english": "Teach short grounding (5‑4‑3‑2‑1 senses, 4‑7‑8 breathing) to lower arousal before/after lessons. How it works example: Do 60 seconds of senses scan, then one 4‑7‑8 cycle; resume when fear ≤3/10.",
+            "hindi": "Teach short grounding (5‑4‑3‑2‑1 senses, 4‑7‑8 breathing) to lower arousal before/after lessons. How it works example: Do 60 seconds of senses scan, then one 4‑7‑8 cycle; resume when fear ≤3/10.",
+            "marathi": "Teach short grounding (5‑4‑3‑2‑1 senses, 4‑7‑8 breathing) to lower arousal before/after lessons. How it works example: Do 60 seconds of senses scan, then one 4‑7‑8 cycle; resume when fear ≤3/10."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 2,
+          "title": {
+            "english": "Values and Kindness Actions",
+            "hindi": "Values and Kindness Actions",
+            "marathi": "Values and Kindness Actions"
+          },
+          "description": {
+            "english": "Identify guiding values (kindness, respect, safety) and pick small actions aligned with them. How it works example: Value—respect; Action—ask permission before high‑five and use correct terms; log pride level afterward.",
+            "hindi": "Identify guiding values (kindness, respect, safety) and pick small actions aligned with them. How it works example: Value—respect; Action—ask permission before high‑five and use correct terms; log pride level afterward.",
+            "marathi": "Identify guiding values (kindness, respect, safety) and pick small actions aligned with them. How it works example: Value—respect; Action—ask permission before high‑five and use correct terms; log pride level afterward."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 3,
+          "title": {
+            "english": "Relapse Prevention Plan Lite",
+            "hindi": "Relapse Prevention Plan Lite",
+            "marathi": "Relapse Prevention Plan Lite"
+          },
+          "description": {
+            "english": "List triggers, early signs, coping steps, and helpers; keep it on a card/phone. How it works example: Trigger—jokes; Signs—heart race; Steps—breathe, use boundary script, tell trusted adult, schedule calming activity later.",
+            "hindi": "List triggers, early signs, coping steps, and helpers; keep it on a card/phone. How it works example: Trigger—jokes; Signs—heart race; Steps—breathe, use boundary script, tell trusted adult, schedule calming activity later.",
+            "marathi": "List triggers, early signs, coping steps, and helpers; keep it on a card/phone. How it works example: Trigger—jokes; Signs—heart race; Steps—breathe, use boundary script, tell trusted adult, schedule calming activity later."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Secondary",
+      "interventionSubType": "REBT (Rational Emotive Behavior Therapy)",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Spot 'Must/Should' Demands",
+            "hindi": "Spot 'Must/Should' Demands",
+            "marathi": "Spot 'Must/Should' Demands"
+          },
+          "description": {
+            "english": "Identify rigid demands that raise anxiety (e.g., 'I must never feel awkward,' 'Teachers should never use those words'). How it works example: Keep a tally of 'must/should' for one week; when one appears, label it 'Demand' and rewrite as a preference.",
+            "hindi": "Identify rigid demands that raise anxiety (e.g., 'I must never feel awkward,' 'Teachers should never use those words'). How it works example: Keep a tally of 'must/should' for one week; when one appears, label it 'Demand' and rewrite as a preference.",
+            "marathi": "Identify rigid demands that raise anxiety (e.g., 'I must never feel awkward,' 'Teachers should never use those words'). How it works example: Keep a tally of 'must/should' for one week; when one appears, label it 'Demand' and rewrite as a preference."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Dispute Catastrophizing Gently",
+            "hindi": "Dispute Catastrophizing Gently",
+            "marathi": "Dispute Catastrophizing Gently"
+          },
+          "description": {
+            "english": "Challenge 'It will be awful if I ask a question' with truth, logic, and usefulness tests. How it works example: Ask: Is it 100% true? Does feeling awkward = disaster? Does this belief help me learn? Replace with a calmer, realistic belief.",
+            "hindi": "Challenge 'It will be awful if I ask a question' with truth, logic, and usefulness tests. How it works example: Ask: Is it 100% true? Does feeling awkward = disaster? Does this belief help me learn? Replace with a calmer, realistic belief.",
+            "marathi": "Challenge 'It will be awful if I ask a question' with truth, logic, and usefulness tests. How it works example: Ask: Is it 100% true? Does feeling awkward = disaster? Does this belief help me learn? Replace with a calmer, realistic belief."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Create Rational Alternatives",
+            "hindi": "तर्कसंगत विकल्प बनाएं",
+            "marathi": "तर्कसंगत पर्याय तयार करा"
+          },
+          "description": {
+            "english": "Build flexible beliefs focused on coping (preferences, probabilities, tolerability). How it works example: Change 'I must know it all now' to 'I’d prefer to understand; it’s okay to learn step by step, and I can handle brief discomfort.'",
+            "hindi": "Build flexible beliefs focused on coping (preferences, probabilities, tolerability). How it works example: Change 'I must know it all now' to 'I’d prefer to understand; it’s okay to learn step by step, and I can handle brief discomfort.'",
+            "marathi": "Build flexible beliefs focused on coping (preferences, probabilities, tolerability). How it works example: Change 'I must know it all now' to 'I’d prefer to understand; it’s okay to learn step by step, and I can handle brief discomfort.'"
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Unconditional Self-Acceptance",
+            "hindi": "बिना शर्त आत्म-स्वीकृति",
+            "marathi": "बिना शर्त स्व-स्वीकार"
+          },
+          "description": {
+            "english": "Separate self-worth from moments of confusion, blushes, or questions. How it works example: After stumbling on a term, say: 'I’m okay as a person even when I’m learning; making mistakes doesn’t define me.' Repeat before/after classes.",
+            "hindi": "Separate self-worth from moments of confusion, blushes, or questions. How it works example: After stumbling on a term, say: 'I’m okay as a person even when I’m learning; making mistakes doesn’t define me.' Repeat before/after classes.",
+            "marathi": "Separate self-worth from moments of confusion, blushes, or questions. How it works example: After stumbling on a term, say: 'I’m okay as a person even when I’m learning; making mistakes doesn’t define me.' Repeat before/after classes."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Unconditional Other-Acceptance",
+            "hindi": "बिना शर्त अन्य-स्वीकृति",
+            "marathi": "बिना शर्त इतर स्वीकार"
+          },
+          "description": {
+            "english": "View others as fallible without global condemnation while setting limits on unhelpful behavior. How it works example: Reframe 'That teacher is terrible' to 'The teacher used a word I didn’t know; I’ll ask for clarification calmly.'",
+            "hindi": "View others as fallible without global condemnation while setting limits on unhelpful behavior. How it works example: Reframe 'That teacher is terrible' to 'The teacher used a word I didn’t know; I’ll ask for clarification calmly.'",
+            "marathi": "View others as fallible without global condemnation while setting limits on unhelpful behavior. How it works example: Reframe 'That teacher is terrible' to 'The teacher used a word I didn’t know; I’ll ask for clarification calmly.'"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Frustration Tolerance Training",
+            "hindi": "निराशा सहनशीलता प्रशिक्षण",
+            "marathi": "निराशा सहनशीलता प्रशिक्षण"
+          },
+          "description": {
+            "english": "Grow 'I can stand it' beliefs for short-term discomfort during inclusive discussions. How it works example: During a 7/10 anxiety spike, repeat 'This is uncomfortable and I can stand it' while slow-breathing for 2 minutes; resume when anxiety ≤3/10.",
+            "hindi": "Grow 'I can stand it' beliefs for short-term discomfort during inclusive discussions. How it works example: During a 7/10 anxiety spike, repeat 'This is uncomfortable and I can stand it' while slow-breathing for 2 minutes; resume when anxiety ≤3/10.",
+            "marathi": "Grow 'I can stand it' beliefs for short-term discomfort during inclusive discussions. How it works example: During a 7/10 anxiety spike, repeat 'This is uncomfortable and I can stand it' while slow-breathing for 2 minutes; resume when anxiety ≤3/10."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Preferential Thinking Practice",
+            "hindi": "वरीयता विचार अभ्यास",
+            "marathi": "प्राधान्य विचार सराव"
+          },
+          "description": {
+            "english": "Turn demands into preferences to reduce pressure and shame. How it works example: Create a two-column list: Demands → Preferences; read the preference column before health class to prime flexible thinking.",
+            "hindi": "Turn demands into preferences to reduce pressure and shame. How it works example: Create a two-column list: Demands → Preferences; read the preference column before health class to prime flexible thinking.",
+            "marathi": "Turn demands into preferences to reduce pressure and shame. How it works example: Create a two-column list: Demands → Preferences; read the preference column before health class to prime flexible thinking."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Shame-Attacking Micro-Exercises",
+            "hindi": "शर्मनाक हमले सूक्ष्म व्यायाम",
+            "marathi": "शर्म-आक्रमण सूक्ष्म व्यायाम"
+          },
+          "description": {
+            "english": "Plan safe, age-appropriate exposures to harmless embarrassment to weaken shame. How it works example: After class, calmly ask the meaning of a neutral term; record outcome—no catastrophe, confidence +1.",
+            "hindi": "Plan safe, age-appropriate exposures to harmless embarrassment to weaken shame. How it works example: After class, calmly ask the meaning of a neutral term; record outcome—no catastrophe, confidence +1.",
+            "marathi": "Plan safe, age-appropriate exposures to harmless embarrassment to weaken shame. How it works example: After class, calmly ask the meaning of a neutral term; record outcome—no catastrophe, confidence +1."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Relapse Philosophy and Rehearsal",
+            "hindi": "पुनरावृत्ति दर्शन और पुनः अभ्यास",
+            "marathi": "पुनरावृत्ति तत्वज्ञान आणि पुनःप्रयोग"
+          },
+          "description": {
+            "english": "Normalize setbacks and practice returning to rational beliefs after spikes. How it works example: If anxiety flares again, complete ABC, dispute the belief, choose a rational alternative, and take one small value-based action the same day.",
+            "hindi": "Normalize setbacks and practice returning to rational beliefs after spikes. How it works example: If anxiety flares again, complete ABC, dispute the belief, choose a rational alternative, and take one small value-based action the same day.",
+            "marathi": "Normalize setbacks and practice returning to rational beliefs after spikes. How it works example: If anxiety flares again, complete ABC, dispute the belief, choose a rational alternative, and take one small value-based action the same day."
+          }
+        }
+      ]
+    }
+  }
+}

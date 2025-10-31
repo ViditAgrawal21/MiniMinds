@@ -1,0 +1,403 @@
+{
+  "condition": "Sexual Orientation Issues",
+  "issueType": "Sexual Orientation Issues",
+  "lastUpdated": "2025-10-31",
+  "interventions": {
+    "common_suggestion": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 2,
+          "title": {
+            "english": "Supportive Peer Connection",
+            "hindi": "समर्थक साथी जुड़ाव",
+            "marathi": "समर्थक समवयस्क संबंध"
+          },
+          "description": {
+            "english": "Join affirming groups or moderated communities to reduce isolation and hear diverse journeys. How it works example: Attend one LGBTQIA+ meetup or online group per week; share one question and one win to build connection and perspective.",
+            "hindi": "Join affirming groups or moderated communities to reduce isolation and hear diverse journeys. How it works example: Attend one LGBTQIA+ meetup or online group per week; share one question and one win to build connection and perspective.",
+            "marathi": "Join affirming groups or moderated communities to reduce isolation and hear diverse journeys. How it works example: Attend one LGBTQIA+ meetup or online group per week; share one question and one win to build connection and perspective."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 3,
+          "title": {
+            "english": "Values and Beliefs Dialogue",
+            "hindi": "मूल्य और विश्वास संवाद",
+            "marathi": "मूल्य आणि विश्वास संवाद"
+          },
+          "description": {
+            "english": "Map personal, cultural, and family beliefs; keep those that support dignity and reframe those that harm well‑being. How it works example: Two-column exercise—Belief vs. Impact; keep beliefs that foster self-respect, rewrite rigid ones into compassionate, flexible statements.",
+            "hindi": "Map personal, cultural, and family beliefs; keep those that support dignity and reframe those that harm well‑being. How it works example: Two-column exercise—Belief vs. Impact; keep beliefs that foster self-respect, rewrite rigid ones into compassionate, flexible statements.",
+            "marathi": "Map personal, cultural, and family beliefs; keep those that support dignity and reframe those that harm well‑being. How it works example: Two-column exercise—Belief vs. Impact; keep beliefs that foster self-respect, rewrite rigid ones into compassionate, flexible statements."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Boundary Setting with Others",
+            "hindi": "दूसरों के साथ सीमा निर्धारण",
+            "marathi": "इतरांसह सीमा निर्धारण"
+          },
+          "description": {
+            "english": "Create scripts to manage intrusive questions and protect emotional safety. How it works example: Practice: 'I choose what I share and when.' or 'I’m not discussing that.' Use calm tone, repeat once, and change topic or exit.",
+            "hindi": "Create scripts to manage intrusive questions and protect emotional safety. How it works example: Practice: 'I choose what I share and when.' or 'I’m not discussing that.' Use calm tone, repeat once, and change topic or exit.",
+            "marathi": "Create scripts to manage intrusive questions and protect emotional safety. How it works example: Practice: 'I choose what I share and when.' or 'I’m not discussing that.' Use calm tone, repeat once, and change topic or exit."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 4,
+          "title": {
+            "english": "Selective Disclosure Plan",
+            "hindi": "चयनात्मक प्रकटीकरण योजना",
+            "marathi": "निवडक प्रकटीकरण योजना"
+          },
+          "description": {
+            "english": "Plan if/when/to whom to share; prepare supports and timing. How it works example: Make a disclosure matrix—Green (safe), Yellow (unsure), Red (unsafe). Line up a check-in text with a friend before and after the conversation.",
+            "hindi": "Plan if/when/to whom to share; prepare supports and timing. How it works example: Make a disclosure matrix—Green (safe), Yellow (unsure), Red (unsafe). Line up a check-in text with a friend before and after the conversation.",
+            "marathi": "Plan if/when/to whom to share; prepare supports and timing. How it works example: Make a disclosure matrix—Green (safe), Yellow (unsure), Red (unsafe). Line up a check-in text with a friend before and after the conversation."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 3,
+          "title": {
+            "english": "Coping with Minority Stress",
+            "hindi": "Coping with Minority Stress",
+            "marathi": "Coping with Minority Stress"
+          },
+          "description": {
+            "english": "Learn skills for stigma stress: grounding, self-compassion, and reattribution. How it works example: When hearing a slur, note 'This reflects bias, not my worth,' do 5-4-3-2-1 senses, then a kind self-statement: 'I’m okay and connected to allies.'",
+            "hindi": "Learn skills for stigma stress: grounding, self-compassion, and reattribution. How it works example: When hearing a slur, note 'This reflects bias, not my worth,' do 5-4-3-2-1 senses, then a kind self-statement: 'I’m okay and connected to allies.'",
+            "marathi": "Learn skills for stigma stress: grounding, self-compassion, and reattribution. How it works example: When hearing a slur, note 'This reflects bias, not my worth,' do 5-4-3-2-1 senses, then a kind self-statement: 'I’m okay and connected to allies.'"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Affirming Professional Support",
+            "hindi": "Affirming Professional Support",
+            "marathi": "Affirming Professional Support"
+          },
+          "description": {
+            "english": "Connect with LGBTQIA+-affirming therapists or counselors for exploration and stress reduction. How it works example: Search an affirming provider directory, book an intake, set goals like 'reduce shame' or 'plan disclosure,' and track progress monthly.",
+            "hindi": "Connect with LGBTQIA+-affirming therapists or counselors for exploration and stress reduction. How it works example: Search an affirming provider directory, book an intake, set goals like 'reduce shame' or 'plan disclosure,' and track progress monthly.",
+            "marathi": "Connect with LGBTQIA+-affirming therapists or counselors for exploration and stress reduction. How it works example: Search an affirming provider directory, book an intake, set goals like 'reduce shame' or 'plan disclosure,' and track progress monthly."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 3,
+          "title": {
+            "english": "Relationship Literacy",
+            "hindi": "Relationship Literacy",
+            "marathi": "Relationship Literacy"
+          },
+          "description": {
+            "english": "Discuss healthy relationship expectations, consent, and communication across orientations and cultures. How it works example: With a partner, set a 'consent check-in' habit and a repair script for missteps; review boundaries monthly.",
+            "hindi": "Discuss healthy relationship expectations, consent, and communication across orientations and cultures. How it works example: With a partner, set a 'consent check-in' habit and a repair script for missteps; review boundaries monthly.",
+            "marathi": "Discuss healthy relationship expectations, consent, and communication across orientations and cultures. How it works example: With a partner, set a 'consent check-in' habit and a repair script for missteps; review boundaries monthly."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Family Conversation Toolkit",
+            "hindi": "Family Conversation Toolkit",
+            "marathi": "Family Conversation Toolkit"
+          },
+          "description": {
+            "english": "Prepare goals, talking points, limits, and de-escalation strategies tailored to family dynamics. How it works example: Write key points, pick a low-stress time, set a time limit, plan time-outs, and schedule a follow-up chat.",
+            "hindi": "Prepare goals, talking points, limits, and de-escalation strategies tailored to family dynamics. How it works example: Write key points, pick a low-stress time, set a time limit, plan time-outs, and schedule a follow-up chat.",
+            "marathi": "Prepare goals, talking points, limits, and de-escalation strategies tailored to family dynamics. How it works example: Write key points, pick a low-stress time, set a time limit, plan time-outs, and schedule a follow-up chat."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 5,
+          "title": {
+            "english": "Safety and Legal Awareness",
+            "hindi": "Safety and Legal Awareness",
+            "marathi": "Safety and Legal Awareness"
+          },
+          "description": {
+            "english": "Know local protections, school/work policies, and supports; plan responses to harassment. How it works example: Save HR policy links and hotline numbers, identify allies at school/work, and document incidents with dates/times.",
+            "hindi": "Know local protections, school/work policies, and supports; plan responses to harassment. How it works example: Save HR policy links and hotline numbers, identify allies at school/work, and document incidents with dates/times.",
+            "marathi": "Know local protections, school/work policies, and supports; plan responses to harassment. How it works example: Save HR policy links and hotline numbers, identify allies at school/work, and document incidents with dates/times."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Secondary",
+      "interventionSubType": "CBT (Cognitive Behavioral Therapy)",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "Cognitive Restructuring",
+            "marathi": "Cognitive Restructuring"
+          },
+          "description": {
+            "english": "Test unhelpful beliefs with evidence-for/against and generate balanced alternatives. How it works example: Belief—'If I come out to a friend, I’ll lose them.' Evidence-for—one past rejection; Against—three supportive friends; Alternative—'Risk exists, but odds and supports favor safety.'",
+            "hindi": "Test unhelpful beliefs with evidence-for/against and generate balanced alternatives. How it works example: Belief—'If I come out to a friend, I’ll lose them.' Evidence-for—one past rejection; Against—three supportive friends; Alternative—'Risk exists, but odds and supports favor safety.'",
+            "marathi": "Test unhelpful beliefs with evidence-for/against and generate balanced alternatives. How it works example: Belief—'If I come out to a friend, I’ll lose them.' Evidence-for—one past rejection; Against—three supportive friends; Alternative—'Risk exists, but odds and supports favor safety.'"
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Behavioral Experiments on Disclosure",
+            "hindi": "Behavioral Experiments on Disclosure",
+            "marathi": "Behavioral Experiments on Disclosure"
+          },
+          "description": {
+            "english": "Run small tests of predictions and record outcomes to update beliefs. How it works example: Prediction—'If I share with one trusted friend, they’ll avoid me.' Test—tell friend; Outcome—supportive; Learning—catastrophe unlikely; Anxiety drops 3 points.",
+            "hindi": "Run small tests of predictions and record outcomes to update beliefs. How it works example: Prediction—'If I share with one trusted friend, they’ll avoid me.' Test—tell friend; Outcome—supportive; Learning—catastrophe unlikely; Anxiety drops 3 points.",
+            "marathi": "Run small tests of predictions and record outcomes to update beliefs. How it works example: Prediction—'If I share with one trusted friend, they’ll avoid me.' Test—tell friend; Outcome—supportive; Learning—catastrophe unlikely; Anxiety drops 3 points."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Exposure Hierarchy for Visibility",
+            "hindi": "Exposure Hierarchy for Visibility",
+            "marathi": "Exposure Hierarchy for Visibility"
+          },
+          "description": {
+            "english": "Create a graded ladder from low- to higher-visibility steps; repeat until anxiety ≤3/10 before advancing. How it works example: Journal privately → post in anonymous forum → wear subtle symbol with ally → tell close friend → broader disclosure when ready.",
+            "hindi": "Create a graded ladder from low- to higher-visibility steps; repeat until anxiety ≤3/10 before advancing. How it works example: Journal privately → post in anonymous forum → wear subtle symbol with ally → tell close friend → broader disclosure when ready.",
+            "marathi": "Create a graded ladder from low- to higher-visibility steps; repeat until anxiety ≤3/10 before advancing. How it works example: Journal privately → post in anonymous forum → wear subtle symbol with ally → tell close friend → broader disclosure when ready."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 4,
+          "title": {
+            "english": "Safety Behaviors Audit and Fade",
+            "hindi": "Safety Behaviors Audit and Fade",
+            "marathi": "Safety Behaviors Audit and Fade"
+          },
+          "description": {
+            "english": "Identify behaviors that maintain anxiety (e.g., pronoun dodging) and fade them gradually with coping tools. How it works example: Drop one safety behavior at a time during low-risk chats; pair with slow breathing and a prepared exit line.",
+            "hindi": "Identify behaviors that maintain anxiety (e.g., pronoun dodging) and fade them gradually with coping tools. How it works example: Drop one safety behavior at a time during low-risk chats; pair with slow breathing and a prepared exit line.",
+            "marathi": "Identify behaviors that maintain anxiety (e.g., pronoun dodging) and fade them gradually with coping tools. How it works example: Drop one safety behavior at a time during low-risk chats; pair with slow breathing and a prepared exit line."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Values-Based Action Plan",
+            "hindi": "Values-Based Action Plan",
+            "marathi": "Values-Based Action Plan"
+          },
+          "description": {
+            "english": "Clarify values (authenticity, safety, connection) and take small actions aligned with them despite uncertainty. How it works example: Value—authenticity + safety; Action—use accurate language with trusted ally this week; Log anxiety before/after.",
+            "hindi": "Clarify values (authenticity, safety, connection) and take small actions aligned with them despite uncertainty. How it works example: Value—authenticity + safety; Action—use accurate language with trusted ally this week; Log anxiety before/after.",
+            "marathi": "Clarify values (authenticity, safety, connection) and take small actions aligned with them despite uncertainty. How it works example: Value—authenticity + safety; Action—use accurate language with trusted ally this week; Log anxiety before/after."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Assertive Communication Practice",
+            "hindi": "Assertive Communication Practice",
+            "marathi": "Assertive Communication Practice"
+          },
+          "description": {
+            "english": "Role‑play I‑statements, boundary scripts, and exit lines to reduce rumination and anticipatory anxiety. How it works example: Script—'I’m not discussing that; let’s change topics.' Practice with a friend; deploy at family dinner.",
+            "hindi": "Role‑play I‑statements, boundary scripts, and exit lines to reduce rumination and anticipatory anxiety. How it works example: Script—'I’m not discussing that; let’s change topics.' Practice with a friend; deploy at family dinner.",
+            "marathi": "Role‑play I‑statements, boundary scripts, and exit lines to reduce rumination and anticipatory anxiety. How it works example: Script—'I’m not discussing that; let’s change topics.' Practice with a friend; deploy at family dinner."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Mindful Grounding During Triggers",
+            "hindi": "Mindful Grounding During Triggers",
+            "marathi": "Mindful Grounding During Triggers"
+          },
+          "description": {
+            "english": "Use present‑moment attention to sensations/breath to interrupt spirals. How it works example: 5‑4‑3‑2‑1 senses + paced exhale before responding to intrusive questions; respond only when intensity ≤4/10.",
+            "hindi": "Use present‑moment attention to sensations/breath to interrupt spirals. How it works example: 5‑4‑3‑2‑1 senses + paced exhale before responding to intrusive questions; respond only when intensity ≤4/10.",
+            "marathi": "Use present‑moment attention to sensations/breath to interrupt spirals. How it works example: 5‑4‑3‑2‑1 senses + paced exhale before responding to intrusive questions; respond only when intensity ≤4/10."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 3,
+          "title": {
+            "english": "Relapse Prevention and Trigger Plan",
+            "hindi": "Relapse Prevention and Trigger Plan",
+            "marathi": "Relapse Prevention and Trigger Plan"
+          },
+          "description": {
+            "english": "Map triggers, early signs, coping steps, and supports; rehearse the plan. How it works example: Trigger—holiday gatherings; Plan—text ally, set time limit, carry scripts, schedule recovery activity after; Review weekly.",
+            "hindi": "Map triggers, early signs, coping steps, and supports; rehearse the plan. How it works example: Trigger—holiday gatherings; Plan—text ally, set time limit, carry scripts, schedule recovery activity after; Review weekly.",
+            "marathi": "Map triggers, early signs, coping steps, and supports; rehearse the plan. How it works example: Trigger—holiday gatherings; Plan—text ally, set time limit, carry scripts, schedule recovery activity after; Review weekly."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Compassionate Self‑Talk",
+            "hindi": "Compassionate Self‑Talk",
+            "marathi": "Compassionate Self‑Talk"
+          },
+          "description": {
+            "english": "Replace self‑downing with supportive, realistic coaching. How it works example: Swap 'I’m broken' with 'I’m a whole person learning about myself; progress over perfection.' Read twice daily and during spikes.",
+            "hindi": "Replace self‑downing with supportive, realistic coaching. How it works example: Swap 'I’m broken' with 'I’m a whole person learning about myself; progress over perfection.' Read twice daily and during spikes.",
+            "marathi": "Replace self‑downing with supportive, realistic coaching. How it works example: Swap 'I’m broken' with 'I’m a whole person learning about myself; progress over perfection.' Read twice daily and during spikes."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Secondary",
+      "interventionSubType": "REBT (Rational Emotive Behavior Therapy)",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Spot Irrational Demands",
+            "hindi": "अपरिमेय मांगों को चिह्नित करें",
+            "marathi": "अतार्किक मागणी शोधा"
+          },
+          "description": {
+            "english": "Identify must/should beliefs about acceptance and timelines (e.g., 'I must be 100% sure now,' 'My parents must approve immediately'). How it works example: Keep a daily tally of 'must/should' statements; label each as Demand and rewrite as a Preference.",
+            "hindi": "Identify must/should beliefs about acceptance and timelines (e.g., 'I must be 100% sure now,' 'My parents must approve immediately'). How it works example: Keep a daily tally of 'must/should' statements; label each as Demand and rewrite as a Preference.",
+            "marathi": "Identify must/should beliefs about acceptance and timelines (e.g., 'I must be 100% sure now,' 'My parents must approve immediately'). How it works example: Keep a daily tally of 'must/should' statements; label each as Demand and rewrite as a Preference."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Dispute Catastrophizing",
+            "hindi": "आपदा को चुनौती दें",
+            "marathi": "आपदा विवाद करा"
+          },
+          "description": {
+            "english": "Challenge awfulizing predictions about disclosure or visibility using truth, logic, and usefulness tests. How it works example: Ask: Is total rejection guaranteed? Does 'one bad reaction = ruined life' logically follow? Does this belief help me act wisely?",
+            "hindi": "Challenge awfulizing predictions about disclosure or visibility using truth, logic, and usefulness tests. How it works example: Ask: Is total rejection guaranteed? Does 'one bad reaction = ruined life' logically follow? Does this belief help me act wisely?",
+            "marathi": "Challenge awfulizing predictions about disclosure or visibility using truth, logic, and usefulness tests. How it works example: Ask: Is total rejection guaranteed? Does 'one bad reaction = ruined life' logically follow? Does this belief help me act wisely?"
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Formulate Rational Alternatives",
+            "hindi": "तर्कसंगत विकल्प तैयार करें",
+            "marathi": "तर्कसंगत पर्याय तयार करा"
+          },
+          "description": {
+            "english": "Replace rigid beliefs with flexible, reality-based, coping-focused beliefs. How it works example: Shift 'I must be fully accepted now' to 'I’d prefer acceptance; some won’t approve yet, and I can cope, seek allies, and live my values.'",
+            "hindi": "Replace rigid beliefs with flexible, reality-based, coping-focused beliefs. How it works example: Shift 'I must be fully accepted now' to 'I’d prefer acceptance; some won’t approve yet, and I can cope, seek allies, and live my values.'",
+            "marathi": "Replace rigid beliefs with flexible, reality-based, coping-focused beliefs. How it works example: Shift 'I must be fully accepted now' to 'I’d prefer acceptance; some won’t approve yet, and I can cope, seek allies, and live my values.'"
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Unconditional Self-Acceptance",
+            "hindi": "बिना शर्त आत्म-स्वीकृति",
+            "marathi": "बिना शर्त स्व-स्वीकार"
+          },
+          "description": {
+            "english": "Separate self-worth from others’ reactions, labels, or mistakes; drop global self-downing. How it works example: After an awkward disclosure, state: 'My worth isn’t up for vote; I’m a fallible, okay person learning over time.'",
+            "hindi": "Separate self-worth from others’ reactions, labels, or mistakes; drop global self-downing. How it works example: After an awkward disclosure, state: 'My worth isn’t up for vote; I’m a fallible, okay person learning over time.'",
+            "marathi": "Separate self-worth from others’ reactions, labels, or mistakes; drop global self-downing. How it works example: After an awkward disclosure, state: 'My worth isn’t up for vote; I’m a fallible, okay person learning over time.'"
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Unconditional Other-Acceptance",
+            "hindi": "बिना शर्त अन्य-स्वीकृति",
+            "marathi": "बिना शर्त इतर स्वीकार"
+          },
+          "description": {
+            "english": "Accept others as imperfect humans while rejecting harmful behaviors; reduce global condemnation. How it works example: Reframe 'They’re terrible people' to 'They behaved poorly; I’ll set limits and protect myself without damning the whole person.'",
+            "hindi": "Accept others as imperfect humans while rejecting harmful behaviors; reduce global condemnation. How it works example: Reframe 'They’re terrible people' to 'They behaved poorly; I’ll set limits and protect myself without damning the whole person.'",
+            "marathi": "Accept others as imperfect humans while rejecting harmful behaviors; reduce global condemnation. How it works example: Reframe 'They’re terrible people' to 'They behaved poorly; I’ll set limits and protect myself without damning the whole person.'"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Frustration Tolerance Training",
+            "hindi": "निराशा सहनशीलता प्रशिक्षण",
+            "marathi": "निराशा सहनशीलता प्रशिक्षण"
+          },
+          "description": {
+            "english": "Build 'I can stand it' beliefs for discomfort during conversations or mixed reactions. How it works example: During a tense talk, repeat 'This is hard and I can stand it' while slow-breathing for 5 minutes; note urge to escape decreases.",
+            "hindi": "Build 'I can stand it' beliefs for discomfort during conversations or mixed reactions. How it works example: During a tense talk, repeat 'This is hard and I can stand it' while slow-breathing for 5 minutes; note urge to escape decreases.",
+            "marathi": "Build 'I can stand it' beliefs for discomfort during conversations or mixed reactions. How it works example: During a tense talk, repeat 'This is hard and I can stand it' while slow-breathing for 5 minutes; note urge to escape decreases."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Preferential Thinking Builder",
+            "hindi": "Preferential Thinking Builder",
+            "marathi": "Preferential Thinking Builder"
+          },
+          "description": {
+            "english": "Convert demands to preferences to reduce pressure and shame. How it works example: Write a two-column list: Demands → Preferences; read the preference column before family events to prime flexible, resilient thinking.",
+            "hindi": "Convert demands to preferences to reduce pressure and shame. How it works example: Write a two-column list: Demands → Preferences; read the preference column before family events to prime flexible, resilient thinking.",
+            "marathi": "Convert demands to preferences to reduce pressure and shame. How it works example: Write a two-column list: Demands → Preferences; read the preference column before family events to prime flexible, resilient thinking."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Shame-Attacking Exercises (Safe Micro-Steps)",
+            "hindi": "शर्मनाक व्यायाम (सुरक्षित सूक्ष्म-कदम)",
+            "marathi": "शर्म-आक्रमण व्यायाम (सुरक्षित सूक्ष्म-पायर्‍या)"
+          },
+          "description": {
+            "english": "Plan mild, safe exposures to feared judgments to weaken shame. How it works example: Wear a subtle pride symbol with a supportive friend present; log outcome—no catastrophe, self-consciousness drops 2 points.",
+            "hindi": "Plan mild, safe exposures to feared judgments to weaken shame. How it works example: Wear a subtle pride symbol with a supportive friend present; log outcome—no catastrophe, self-consciousness drops 2 points.",
+            "marathi": "Plan mild, safe exposures to feared judgments to weaken shame. How it works example: Wear a subtle pride symbol with a supportive friend present; log outcome—no catastrophe, self-consciousness drops 2 points."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Relapse Philosophy and Rehearsal",
+            "hindi": "पुनरावृत्ति दर्शन और पुनः अभ्यास",
+            "marathi": "पुनरावृत्ति तत्वज्ञान आणि पुनःप्रयोग"
+          },
+          "description": {
+            "english": "Normalize setbacks and rehearse returning to rational beliefs after spikes or tough interactions. How it works example: After a setback, complete ABC, dispute the belief, choose a rational alternative, and take one small value-based action the same day.",
+            "hindi": "Normalize setbacks and rehearse returning to rational beliefs after spikes or tough interactions. How it works example: After a setback, complete ABC, dispute the belief, choose a rational alternative, and take one small value-based action the same day.",
+            "marathi": "Normalize setbacks and rehearse returning to rational beliefs after spikes or tough interactions. How it works example: After a setback, complete ABC, dispute the belief, choose a rational alternative, and take one small value-based action the same day."
+          }
+        }
+      ]
+    }
+  }
+}

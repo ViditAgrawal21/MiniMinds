@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontFamily: "Poppins-Medium",
     fontWeight: "500",
-    color: "#A63BAA",
+    color: "#FF8C00",
     marginBottom: 15,
     textAlign: "center",
   },

@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
   content: { flex: 1 },
 
   header: {
-    backgroundColor: "#AB47BC",
+    backgroundColor: "#FF8C00",
     paddingVertical: 20,
     paddingHorizontal: 30,
     alignItems: "center",
@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
   infoNumber: {
     fontSize: 46,
     fontFamily: "Poppins-Medium",
-    color: "#D27AD5",
+    color: "#FF8C00",
   },
   infoLabel: {
     fontSize: 15,
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
   infoLabelPurple: {
     fontSize: 16,
     fontFamily: "Poppins-regular",
-    color: "#D27AD5",
+    color: "#FF8C00",
     marginLeft: 5,
   },
   infoSmallLabel: {

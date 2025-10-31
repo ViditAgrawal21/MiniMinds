@@ -422,6 +422,9 @@ export default function REBTScreen({ navigation, route }: any) {
       "academic": "Academic Stress",
       "selfharm": "Self Harm Behavior",
       "learning-disability": "Learning Disability",
+      "sexualOrientationIssues":"sexualOrientationIssuesScreen.headerTitle",
+      "emotionalSexEducation":"emotionalSexEducationScreen.headerTitle",
+      "earlySexualAnxiety":"earlySexualAnxietyScreen.headerTitle",
     };
     const translationKey = conditionKeyMap[condition];
     return translationKey ? t(translationKey) : condition;
@@ -2012,6 +2015,214 @@ export default function REBTScreen({ navigation, route }: any) {
             };
           } catch (error) {
             console.error("Error loading Learning Disability REBT data:", error);
+            return null;
+          }
+        }
+
+        // Handle Sexual Orientation REBT data from comprehensive JSON file
+        if (condition === "sexualOrientationIssues") {
+          try {
+            const data = require("../../../../assets/data/emotional_sex_education/sexual_orientation_issues.json");
+
+            const itemsCandidate =
+              data?.interventions?.rebt?.cards ||
+              data?.interventions?.rebt ||
+              data?.interventions?.commonSuggestions?.cards ||
+              data?.interventions?.cards ||
+              data?.interventions ||
+              null;
+
+            const items = Array.isArray(itemsCandidate)
+              ? itemsCandidate
+              : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+            if (!items || !Array.isArray(items)) {
+              console.error("No REBT data array found in Sexual Orientation data");
+              return null;
+            }
+
+            const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+            const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+            const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+            const localeField = localeFieldMap[lang] || "english";
+
+            const interventions = items.map((item: any) => {
+              if (item.translations && typeof item.translations === "object") {
+                const translations = item.translations || {};
+                const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+                return {
+                  title: chosen.title || chosen.heading || "",
+                  description: chosen.description || chosen.body || "",
+                  xp: item.xp || item.XP || 0,
+                } as REBTIntervention;
+              }
+
+              const titleObj = item.title || item.Title || {};
+              const descObj = item.description || item.Description || {};
+
+              const title =
+                (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+                (typeof titleObj === "string" ? titleObj : "");
+
+              const description =
+                (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+                (typeof descObj === "string" ? descObj : "");
+
+              return {
+                title: title || "",
+                description: description || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            });
+
+            return {
+              condition: "sexualOrientationIssues",
+              intervention_type: "REBT",
+              interventions,
+            };
+          } catch (error) {
+            console.error("Error loading Sexual Orientation REBT data:", error);
+            return null;
+          }
+        }
+
+
+        // Handle Emotional Sex Education REBT data from comprehensive JSON file
+        if (condition === "emotionalSexEducation") {
+          try {
+            const data = require("../../../../assets/data/emotional_sex_education/emotional_sex_education.json");
+
+            const itemsCandidate =
+              data?.interventions?.rebt?.cards ||
+              data?.interventions?.rebt ||
+              data?.interventions?.commonSuggestions?.cards ||
+              data?.interventions?.cards ||
+              data?.interventions ||
+              null;
+
+            const items = Array.isArray(itemsCandidate)
+              ? itemsCandidate
+              : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+            if (!items || !Array.isArray(items)) {
+              console.error("No REBT data array found in Emotional Sex Education data");
+              return null;
+            }
+
+            const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+            const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+            const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+            const localeField = localeFieldMap[lang] || "english";
+
+            const interventions = items.map((item: any) => {
+              if (item.translations && typeof item.translations === "object") {
+                const translations = item.translations || {};
+                const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+                return {
+                  title: chosen.title || chosen.heading || "",
+                  description: chosen.description || chosen.body || "",
+                  xp: item.xp || item.XP || 0,
+                } as REBTIntervention;
+              }
+
+              const titleObj = item.title || item.Title || {};
+              const descObj = item.description || item.Description || {};
+
+              const title =
+                (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+                (typeof titleObj === "string" ? titleObj : "");
+
+              const description =
+                (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+                (typeof descObj === "string" ? descObj : "");
+
+              return {
+                title: title || "",
+                description: description || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            });
+
+            return {
+              condition: "emotionalSexEducation",
+              intervention_type: "REBT",
+              interventions,
+            };
+          } catch (error) {
+            console.error("Error loading Emotional Sex Educationn REBT data:", error);
+            return null;
+          }
+        }
+
+        // Handle Early Sexual Anxiety REBT data from comprehensive JSON file
+        if (condition === "earlySexualAnxiety") {
+          try {
+            const data = require("../../../../assets/data/emotional_sex_education/early_sexual_anxiety_information_inclusion.json");
+
+            const itemsCandidate =
+              data?.interventions?.rebt?.cards ||
+              data?.interventions?.rebt ||
+              data?.interventions?.commonSuggestions?.cards ||
+              data?.interventions?.cards ||
+              data?.interventions ||
+              null;
+
+            const items = Array.isArray(itemsCandidate)
+              ? itemsCandidate
+              : Array.isArray(itemsCandidate?.cards)
+              ? itemsCandidate.cards
+              : null;
+
+            if (!items || !Array.isArray(items)) {
+              console.error("No REBT data array found in Early Sexual Anxiety data");
+              return null;
+            }
+
+            const localeKey = ((locale || "").slice(0, 2) || "en").toLowerCase();
+            const lang = ["en", "hi", "mr"].includes(localeKey) ? localeKey : "en";
+            const localeFieldMap: { [k: string]: string } = { en: "english", hi: "hindi", mr: "marathi" };
+            const localeField = localeFieldMap[lang] || "english";
+
+            const interventions = items.map((item: any) => {
+              if (item.translations && typeof item.translations === "object") {
+                const translations = item.translations || {};
+                const chosen = translations[lang] || translations[localeField] || translations["en"] || translations["english"] || {};
+                return {
+                  title: chosen.title || chosen.heading || "",
+                  description: chosen.description || chosen.body || "",
+                  xp: item.xp || item.XP || 0,
+                } as REBTIntervention;
+              }
+
+              const titleObj = item.title || item.Title || {};
+              const descObj = item.description || item.Description || {};
+
+              const title =
+                (typeof titleObj === "object" && (titleObj[localeField] || titleObj[lang] || titleObj["english"] || titleObj["en"])) ||
+                (typeof titleObj === "string" ? titleObj : "");
+
+              const description =
+                (typeof descObj === "object" && (descObj[localeField] || descObj[lang] || descObj["english"] || descObj["en"])) ||
+                (typeof descObj === "string" ? descObj : "");
+
+              return {
+                title: title || "",
+                description: description || "",
+                xp: item.xp || item.XP || 0,
+              } as REBTIntervention;
+            });
+
+            return {
+              condition: "searlySexualAnxiety",
+              intervention_type: "REBT",
+              interventions,
+            };
+          } catch (error) {
+            console.error("Error loading Early Sexual Anxiety REBT data:", error);
             return null;
           }
         }

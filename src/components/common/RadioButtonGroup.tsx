@@ -51,19 +51,19 @@ const styles = StyleSheet.create({
     height: 20,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: "#D27AD5",
+    borderColor: "#FFB84D",
     justifyContent: "center",
     alignItems: "center",
     marginRight: 12,
   },
   radioButtonSelected: {
-    borderColor: "#AB47BC",
+    borderColor: "#FF8C00",
   },
   radioButtonInner: {
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: "#AB47BC",
+    backgroundColor: "#FF8C00",
   },
 });
 

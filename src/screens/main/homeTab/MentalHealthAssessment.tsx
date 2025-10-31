@@ -310,7 +310,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   selectedOption: {
-    backgroundColor: "#D27AD5",
+    backgroundColor: "#FF8C00",
   },
   optionText: {
     fontSize: 16,
@@ -329,7 +329,7 @@ const styles = StyleSheet.create({
   },
   navButton: {
     padding: 10,
-    backgroundColor: "#D27AD5",
+    backgroundColor: "#FF8C00",
     borderRadius: 8,
     width: 100,
     alignItems: "center",
@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
   homeButton: {
     marginTop: 20,
     padding: 15,
-    backgroundColor: "#D27AD5",
+    backgroundColor: "#FF8C00",
     borderRadius: 8,
     alignItems: "center",
     width: "100%",

@@ -1352,9 +1352,14 @@
   "conditionScans": {
     "headerTitle": "Check your conditional wellness",
     "all": "All",
-    "education": "Education",
-    "peerInteraction": "Peer to Peer Interaction",
-    "familyBonding": "Family Bonding",
+    "positiveMentalHealth": "Positive Mental Health",
+    "behaviourIssues": "Behaviour Issues",
+    "schoolingAcademics": "Schooling and Academics",
+    "internetSocialMedia": "Internet & Social Media Issues",
+    "parentingIssues": "Parenting Issues",
+    "psychologicalIssues": "Psychological Issues",
+    "emotionalIssues": "Emotional Issues",
+    "other": "Other",
     "examAnxiety": "Exam Anxiety scan",
     "quickPersonality": "Quick Personality scan",
     "bipolar": "Bipolar scan",
@@ -1404,7 +1409,7 @@
       "validUntil": "Valid until"
     },
     "screen": {
-      "title": "Thought Pro",
+      "title": "MiniMinds",
       "earlyBirdOffer": "EARLY BIRD OFFER",
       "earlyBirdSubtitle": "Buy Premium plans for a nominal price.",
       "benefits": {
@@ -8888,7 +8893,7 @@
     "viewJournalHistory": "View journal history",
     "journalTitle": "View all journal history here",
     "journalSubtitle": "Journal your thoughts for better treatment",
-    "mentalHealthConditions": "Mental Health Conditions",
+    "mentalHealthConditions": "Well Being Tools",
     "navigation": "Navigation",
     "navigateTo": "Navigate to {{categoryName}}",
     "categories": {
@@ -9104,6 +9109,18 @@
       "learningdisability": {
         "title": "Learning Disability",
         "description": "Strategies to support learning differences and practical classroom accommodations"
+      },
+      "earlySexualAnxiety": {
+        "title": "Early Sexual Anxiety Information and Inclusion",
+        "description": "Understanding sexual anxiety and building healthy attitudes towards sexuality"
+      },
+      "emotionalSexEducation": {
+        "title": "Emotional Sex Education",
+        "description": "Developing emotional awareness and healthy relationships around sexuality"
+      },
+      "sexualOrientationIssues": {
+        "title": "Sexual Orientation Issues",
+        "description": "Support for identity exploration and acceptance"
       }
     },
     "upgradeDialog": {
@@ -19207,6 +19224,102 @@
         "viewStrategyButton": "View Strategy",
         "alertTitle": "Professional Support",
         "alertText": "If you suspect a learning disability, consult with an educational psychologist or specialist for proper assessment and personalized learning plans."
+      },
+      "earlySexualAnxietyScreen": {
+        "headerTitle": "Early Sexual Anxiety",
+        "imageLabel": "Information",
+        "title": "Understanding Early Sexual Anxiety",
+        "description": "Sexual anxiety in early stages can affect well-being and relationships. Learn to recognize signs and find supportive strategies.",
+        "symptomsTitle": "Common Signs",
+        "symptoms": {
+          "fearOfIntimacy": "Fear or discomfort around intimacy and physical closeness",
+          "anxietyAboutBody": "Anxiety about body image and sexual performance",
+          "lackOfInformation": "Lack of accurate information about sexuality",
+          "difficultyDiscussing": "Difficulty discussing sexual topics openly",
+          "stressAndWorry": "Stress and worry affecting confidence and relationships"
+        },
+        "supportStrategiesTitle": "Support Strategies",
+        "strategies": {
+          "commonSuggestions": {
+            "title": "10 Common Suggestions",
+            "description": "Practical steps to build healthy attitudes and reduce anxiety."
+          },
+          "cbt": {
+            "title": "CBT (Cognitive Behavioral Therapy)",
+            "description": "Work to reframe negative beliefs and build confidence."
+          },
+          "rebt": {
+            "title": "REBT (Rational Emotive Behavior Therapy)",
+            "description": "Challenge irrational beliefs and develop emotional resilience."
+          }
+        },
+        "viewStrategyButton": "View Strategy",
+        "alertTitle": "Need Support?",
+        "alertText": "If you're experiencing sexual anxiety, consider talking to a counselor or therapist who specializes in sexual health. You deserve support and accurate information."
+      },
+      "emotionalSexEducationScreen": {
+        "headerTitle": "Emotional Sex Education",
+        "imageLabel": "Emotional Awareness",
+        "title": "Understanding Emotional Aspects of Sexuality",
+        "description": "Emotional sex education helps develop healthy relationships and emotional awareness around sexuality. Learn essential skills for emotional well-being.",
+        "symptomsTitle": "Common Signs",
+        "symptoms": {
+          "lackOfEmotionalAwareness": "Lack of emotional awareness in relationships",
+          "difficultyExpressing": "Difficulty expressing feelings and boundaries",
+          "confusionAboutConsent": "Confusion about consent and communication",
+          "relationshipChallenges": "Challenges in maintaining healthy relationships",
+          "inadequateKnowledge": "Inadequate knowledge about emotional aspects of intimacy"
+        },
+        "supportStrategiesTitle": "Support Strategies",
+        "strategies": {
+          "commonSuggestions": {
+            "title": "10 Common Suggestions",
+            "description": "Practical guidance for emotional growth and healthy relationships."
+          },
+          "cbt": {
+            "title": "CBT (Cognitive Behavioral Therapy)",
+            "description": "Build emotional intelligence and communication skills."
+          },
+          "rebt": {
+            "title": "REBT (Rational Emotive Behavior Therapy)",
+            "description": "Challenge beliefs about relationships and develop emotional resilience."
+          }
+        },
+        "viewStrategyButton": "View Strategy",
+        "alertTitle": "Important Note",
+        "alertText": "Emotional sex education is essential for healthy development. Seek guidance from trusted educators, counselors, or therapists for comprehensive support."
+      },
+      "sexualOrientationIssuesScreen": {
+        "headerTitle": "Sexual Orientation Issues",
+        "imageLabel": "Identity & Acceptance",
+        "title": "Support for Sexual Orientation Concerns",
+        "description": "Understanding and accepting sexual orientation is a personal journey. Find support and strategies to navigate identity exploration with confidence.",
+        "symptomsTitle": "Common Signs",
+        "symptoms": {
+          "identityConfusion": "Confusion or uncertainty about sexual identity",
+          "fearOfRejection": "Fear of rejection from family or friends",
+          "socialStigma": "Experiencing social stigma or discrimination",
+          "anxietyDepression": "Anxiety or depression related to identity concerns",
+          "lackOfSupport": "Lack of supportive resources or community"
+        },
+        "supportStrategiesTitle": "Support Strategies",
+        "strategies": {
+          "commonSuggestions": {
+            "title": "10 Common Suggestions",
+            "description": "Practical steps for identity exploration and finding support."
+          },
+          "cbt": {
+            "title": "CBT (Cognitive Behavioral Therapy)",
+            "description": "Address negative thoughts and build self-acceptance."
+          },
+          "rebt": {
+            "title": "REBT (Rational Emotive Behavior Therapy)",
+            "description": "Challenge societal beliefs and develop emotional strength."
+          }
+        },
+        "viewStrategyButton": "View Strategy",
+        "alertTitle": "You're Not Alone",
+        "alertText": "If you're exploring your sexual orientation, know that support is available. Consider reaching out to LGBTQ+ support groups, counselors, or trusted allies."
       }
     }
     

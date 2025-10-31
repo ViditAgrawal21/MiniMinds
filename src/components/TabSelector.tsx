@@ -62,14 +62,14 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "flex-start",
     borderWidth: 1,
-    borderColor: "#D27AD5",
+    borderColor: "#FF8C00",
     borderRadius: 10,
     marginRight: 10,
     paddingLeft: 10,
     gap: 10,
   },
   selectedTab: {
-    backgroundColor: "#D27AD5",
+    backgroundColor: "#FF8C00",
   },
   fixedTabSize: {
     flexDirection: "row",

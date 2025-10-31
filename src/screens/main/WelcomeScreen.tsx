@@ -31,14 +31,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 34,
     fontWeight: "800",
-    color: "#C841CC",
+    color: "#FF8C00",
     marginTop: 26,
     fontFamily: "Poppins-ExtraBold",
   },
   subtitle: {
     fontSize: 34,
     fontWeight: "500",
-    color: "#C841CC",
+    color: "#FF8C00",
     marginBottom: 60,
     marginTop: -5,
     fontFamily: "Poppins-Medium",
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 20,
     fontWeight: "500",
-    color: "#D27AD5",
+    color: "#FF8C00",
     marginBottom: 30,
     textAlign: "center",
     fontFamily: "Poppins-Medium",

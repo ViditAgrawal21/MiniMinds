@@ -144,6 +144,31 @@ export const getConditionXP = async (conditionId: string): Promise<number> => {
   }
 };
 
+// Global User XP Management (separate from condition-specific XP)
+const GLOBAL_XP_KEY = "globalUserXP";
+
+export const getGlobalUserXP = async (): Promise<number> => {
+  try {
+    const stored = await AsyncStorage.getItem(GLOBAL_XP_KEY);
+    return stored ? parseInt(stored, 10) : 0;
+  } catch (error) {
+    console.error("Error getting global user XP:", error);
+    return 0;
+  }
+};
+
+export const addGlobalUserXP = async (xpAmount: number): Promise<number> => {
+  try {
+    const currentXP = await getGlobalUserXP();
+    const newXP = Math.max(0, currentXP + xpAmount); // Prevent negative XP
+    await AsyncStorage.setItem(GLOBAL_XP_KEY, newXP.toString());
+    return newXP;
+  } catch (error) {
+    console.error("Error adding global user XP:", error);
+    return 0;
+  }
+};
+
 export const getInterventionsForCondition = async (
   conditionId: string
 ): Promise<Intervention[]> => {

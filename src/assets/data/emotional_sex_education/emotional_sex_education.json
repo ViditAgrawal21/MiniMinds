@@ -1,0 +1,403 @@
+{
+  "condition": "Emotional Sex Education",
+  "issueType": "Emotional Sex Education",
+  "lastUpdated": "2025-10-31",
+  "interventions": {
+    "common_suggestion": {
+      "type": "Primary",
+      "interventionSubType": "10 Common Suggestions",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Consent as an Ongoing Conversation",
+            "hindi": "सहमति एक चल रही बातचीत के रूप में",
+            "marathi": "सहमती एक सतत संभाषण म्हणून"
+          },
+          "description": {
+            "english": "Frame consent as checking in before, during, and after; normalize pauses and changing minds. How it works example: Before: 'Are you into this?' During: 'Still okay?' After: 'Anything you’d change next time?' Respect any no without debate.",
+            "hindi": "Frame consent as checking in before, during, and after; normalize pauses and changing minds. How it works example: Before: 'Are you into this?' During: 'Still okay?' After: 'Anything you’d change next time?' Respect any no without debate.",
+            "marathi": "Frame consent as checking in before, during, and after; normalize pauses and changing minds. How it works example: Before: 'Are you into this?' During: 'Still okay?' After: 'Anything you’d change next time?' Respect any no without debate."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 2,
+          "title": {
+            "english": "Personal Boundaries Map",
+            "hindi": "व्यक्तिगत सीमाओं का मानचित्र",
+            "marathi": "व्यक्तिगत सीमांचा नक्शा"
+          },
+          "description": {
+            "english": "Create a traffic-light map (green/yellow/red) of comfortable, unsure, and not-okay behaviors. How it works example: Green—hand holding; Yellow—undressing; Red—sex when intoxicated. Share maps and agree to stay within both partners’ green zones.",
+            "hindi": "Create a traffic-light map (green/yellow/red) of comfortable, unsure, and not-okay behaviors. How it works example: Green—hand holding; Yellow—undressing; Red—sex when intoxicated. Share maps and agree to stay within both partners’ green zones.",
+            "marathi": "Create a traffic-light map (green/yellow/red) of comfortable, unsure, and not-okay behaviors. How it works example: Green—hand holding; Yellow—undressing; Red—sex when intoxicated. Share maps and agree to stay within both partners’ green zones."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Values Clarification",
+            "hindi": "मूल्यों का स्पष्टीकरण",
+            "marathi": "मूल्य स्पष्टीकरण"
+          },
+          "description": {
+            "english": "Identify values (care, honesty, safety) and align behaviors accordingly. How it works example: List top 3 values; if a choice conflicts (e.g., secrecy vs honesty), pause and renegotiate or decline the activity.",
+            "hindi": "Identify values (care, honesty, safety) and align behaviors accordingly. How it works example: List top 3 values; if a choice conflicts (e.g., secrecy vs honesty), pause and renegotiate or decline the activity.",
+            "marathi": "Identify values (care, honesty, safety) and align behaviors accordingly. How it works example: List top 3 values; if a choice conflicts (e.g., secrecy vs honesty), pause and renegotiate or decline the activity."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Aftercare Planning",
+            "hindi": "आफ्टरकेयर योजना",
+            "marathi": "आफ्टरकेयर योजना"
+          },
+          "description": {
+            "english": "Plan post-intimacy emotional care tailored to preferences. How it works example: Agree on options like '10-minute cuddle,' 'quiet alone time,' or 'debrief text tomorrow'; keep water/snack kit ready.",
+            "hindi": "Plan post-intimacy emotional care tailored to preferences. How it works example: Agree on options like '10-minute cuddle,' 'quiet alone time,' or 'debrief text tomorrow'; keep water/snack kit ready.",
+            "marathi": "Plan post-intimacy emotional care tailored to preferences. How it works example: Agree on options like '10-minute cuddle,' 'quiet alone time,' or 'debrief text tomorrow'; keep water/snack kit ready."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 3,
+          "title": {
+            "english": "Handling Rejection Kindly",
+            "hindi": "अस्वीकार को दयालुता से संभालना",
+            "marathi": "नकार सौजन्याने हाताळणे"
+          },
+          "description": {
+            "english": "Teach scripts for giving and receiving 'no' without shame or pressure. How it works example: Receiving: 'Thanks for telling me; I care about your comfort.' Giving: 'Not today; I’d prefer to cuddle/watch a movie.'",
+            "hindi": "Teach scripts for giving and receiving 'no' without shame or pressure. How it works example: Receiving: 'Thanks for telling me; I care about your comfort.' Giving: 'Not today; I’d prefer to cuddle/watch a movie.'",
+            "marathi": "Teach scripts for giving and receiving 'no' without shame or pressure. How it works example: Receiving: 'Thanks for telling me; I care about your comfort.' Giving: 'Not today; I’d prefer to cuddle/watch a movie.'"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 4,
+          "title": {
+            "english": "Triggers and Safety Plan",
+            "hindi": "ट्रिगर और सुरक्षा योजना",
+            "marathi": "ट्रिगर आणि सुरक्षा योजना"
+          },
+          "description": {
+            "english": "Identify emotional/trauma triggers, early warning signs, and a plan to pause or stop safely. How it works example: Cue—heart racing when pace is fast; Plan—say 'yellow,' switch to grounding or stop and debrief later.",
+            "hindi": "Identify emotional/trauma triggers, early warning signs, and a plan to pause or stop safely. How it works example: Cue—heart racing when pace is fast; Plan—say 'yellow,' switch to grounding or stop and debrief later.",
+            "marathi": "Identify emotional/trauma triggers, early warning signs, and a plan to pause or stop safely. How it works example: Cue—heart racing when pace is fast; Plan—say 'yellow,' switch to grounding or stop and debrief later."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 3,
+          "title": {
+            "english": "Media Literacy Check",
+            "hindi": "मीडिया साक्षरता जांच",
+            "marathi": "मीडिया साक्षरता तपासणी"
+          },
+          "description": {
+            "english": "Discuss how porn/social media shape expectations; separate fantasy from consent-based reality. How it works example: Compare a scene to real life: 'Would this be safe and consensual in real time?' Adjust expectations accordingly.",
+            "hindi": "Discuss how porn/social media shape expectations; separate fantasy from consent-based reality. How it works example: Compare a scene to real life: 'Would this be safe and consensual in real time?' Adjust expectations accordingly.",
+            "marathi": "Discuss how porn/social media shape expectations; separate fantasy from consent-based reality. How it works example: Compare a scene to real life: 'Would this be safe and consensual in real time?' Adjust expectations accordingly."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "STI and Pregnancy Emotion Talk",
+            "hindi": "STI और गर्भावस्था भावना बात",
+            "marathi": "STI आणि गर्भावस्था भावना संभाषण"
+          },
+          "description": {
+            "english": "Combine practical safety steps with emotional scripts and shared decisions. How it works example: 'I test every 3 months; last negative May 2. I’d like condoms and to test together—what’s your plan?' Include emergency contraception plan.",
+            "hindi": "Combine practical safety steps with emotional scripts and shared decisions. How it works example: 'I test every 3 months; last negative May 2. I’d like condoms and to test together—what’s your plan?' Include emergency contraception plan.",
+            "marathi": "Combine practical safety steps with emotional scripts and shared decisions. How it works example: 'I test every 3 months; last negative May 2. I’d like condoms and to test together—what’s your plan?' Include emergency contraception plan."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 3,
+          "title": {
+            "english": "Healthy Communication Skills",
+            "hindi": "स्वास्थ्यकर संचार कौशल",
+            "marathi": "आरोग्यदायी संचार कौशल्य"
+          },
+          "description": {
+            "english": "Practice I-statements, reflective listening, and time-outs to reduce conflict and increase intimacy. How it works example: 'I feel anxious when plans change; can we check in first?' If voices rise, take a 20-minute time-out and schedule a resume time.",
+            "hindi": "Practice I-statements, reflective listening, and time-outs to reduce conflict and increase intimacy. How it works example: 'I feel anxious when plans change; can we check in first?' If voices rise, take a 20-minute time-out and schedule a resume time.",
+            "marathi": "Practice I-statements, reflective listening, and time-outs to reduce conflict and increase intimacy. How it works example: 'I feel anxious when plans change; can we check in first?' If voices rise, take a 20-minute time-out and schedule a resume time."
+          }
+        }
+      ]
+    },
+    "cbt": {
+      "type": "Secondary",
+      "interventionSubType": "CBT (Cognitive Behavioral Therapy)",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Cognitive Restructuring",
+            "hindi": "Cognitive Restructuring",
+            "marathi": "Cognitive Restructuring"
+          },
+          "description": {
+            "english": "Challenge unhelpful thoughts using evidence-for/against and balanced alternatives. How it works example: Thought—'I must satisfy perfectly.' Evidence-for: none; Evidence-against: partner values communication, prior good experiences; Balanced thought—'We can learn together; pauses are okay.'",
+            "hindi": "Challenge unhelpful thoughts using evidence-for/against and balanced alternatives. How it works example: Thought—'I must satisfy perfectly.' Evidence-for: none; Evidence-against: partner values communication, prior good experiences; Balanced thought—'We can learn together; pauses are okay.'",
+            "marathi": "Challenge unhelpful thoughts using evidence-for/against and balanced alternatives. How it works example: Thought—'I must satisfy perfectly.' Evidence-for: none; Evidence-against: partner values communication, prior good experiences; Balanced thought—'We can learn together; pauses are okay.'"
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Behavioral Experiments",
+            "hindi": "Behavioral Experiments",
+            "marathi": "Behavioral Experiments"
+          },
+          "description": {
+            "english": "Test predictions in low-stakes steps and record outcomes. How it works example: Prediction—'If I ask to slow down, they’ll be upset.' Test—use script to request a slower pace; Outcome—partner appreciates clarity; Learning—rejection was overestimated.",
+            "hindi": "Test predictions in low-stakes steps and record outcomes. How it works example: Prediction—'If I ask to slow down, they’ll be upset.' Test—use script to request a slower pace; Outcome—partner appreciates clarity; Learning—rejection was overestimated.",
+            "marathi": "Test predictions in low-stakes steps and record outcomes. How it works example: Prediction—'If I ask to slow down, they’ll be upset.' Test—use script to request a slower pace; Outcome—partner appreciates clarity; Learning—rejection was overestimated."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 4,
+          "title": {
+            "english": "Exposure Hierarchy for Intimacy Cues",
+            "hindi": "Exposure Hierarchy for Intimacy Cues",
+            "marathi": "Exposure Hierarchy for Intimacy Cues"
+          },
+          "description": {
+            "english": "Create a graded ladder from least to most anxiety-provoking interactions; repeat each step until anxiety ≤3/10. How it works example: Texting affection → discussing boundaries → holding hands → kissing → mindful touch with clothes on; advance only when habituated.",
+            "hindi": "Create a graded ladder from least to most anxiety-provoking interactions; repeat each step until anxiety ≤3/10. How it works example: Texting affection → discussing boundaries → holding hands → kissing → mindful touch with clothes on; advance only when habituated.",
+            "marathi": "Create a graded ladder from least to most anxiety-provoking interactions; repeat each step until anxiety ≤3/10. How it works example: Texting affection → discussing boundaries → holding hands → kissing → mindful touch with clothes on; advance only when habituated."
+          }
+        },
+        {
+          "id": 4,
+          "xp": 3,
+          "title": {
+            "english": "Communication Skills Training",
+            "hindi": "Communication Skills Training",
+            "marathi": "Communication Skills Training"
+          },
+          "description": {
+            "english": "Practice I‑statements, reflective listening, consent check-ins, and repair scripts. How it works example: Script—'I feel nervous and would prefer a slower pace—are you okay with that?' Debrief after to reinforce effective phrases.",
+            "hindi": "Practice I‑statements, reflective listening, consent check-ins, and repair scripts. How it works example: Script—'I feel nervous and would prefer a slower pace—are you okay with that?' Debrief after to reinforce effective phrases.",
+            "marathi": "Practice I‑statements, reflective listening, consent check-ins, and repair scripts. How it works example: Script—'I feel nervous and would prefer a slower pace—are you okay with that?' Debrief after to reinforce effective phrases."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Mindful Sensation Practice",
+            "hindi": "Mindful Sensation Practice",
+            "marathi": "Mindful Sensation Practice"
+          },
+          "description": {
+            "english": "Shift attention from performance to present-moment sensations to reduce catastrophizing. How it works example: 5-minute exercise noticing temperature/pressure/texture; when mind drifts to 'perform,' gently return to sensation.",
+            "hindi": "Shift attention from performance to present-moment sensations to reduce catastrophizing. How it works example: 5-minute exercise noticing temperature/pressure/texture; when mind drifts to 'perform,' gently return to sensation.",
+            "marathi": "Shift attention from performance to present-moment sensations to reduce catastrophizing. How it works example: 5-minute exercise noticing temperature/pressure/texture; when mind drifts to 'perform,' gently return to sensation."
+          }
+        },
+        {
+          "id": 6,
+          "xp": 4,
+          "title": {
+            "english": "Safety Behaviors Audit and Fade",
+            "hindi": "Safety Behaviors Audit and Fade",
+            "marathi": "Safety Behaviors Audit and Fade"
+          },
+          "description": {
+            "english": "List avoidance/safety behaviors that maintain anxiety and drop them gradually with coping tools. How it works example: Identify 'keeping lights off,' 'over-rehearsing lines'; fade one at a time while using paced breathing and consent pauses.",
+            "hindi": "List avoidance/safety behaviors that maintain anxiety and drop them gradually with coping tools. How it works example: Identify 'keeping lights off,' 'over-rehearsing lines'; fade one at a time while using paced breathing and consent pauses.",
+            "marathi": "List avoidance/safety behaviors that maintain anxiety and drop them gradually with coping tools. How it works example: Identify 'keeping lights off,' 'over-rehearsing lines'; fade one at a time while using paced breathing and consent pauses."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Values-Based Action Plan",
+            "hindi": "Values-Based Action Plan",
+            "marathi": "Values-Based Action Plan"
+          },
+          "description": {
+            "english": "Clarify values (care, honesty, consent) and choose small aligned behaviors despite anxiety. How it works example: Value—respect; Action—ask 'Still okay to continue?' even if anxious; Track anxiety before/after to see value-based action reduces fear.",
+            "hindi": "Clarify values (care, honesty, consent) and choose small aligned behaviors despite anxiety. How it works example: Value—respect; Action—ask 'Still okay to continue?' even if anxious; Track anxiety before/after to see value-based action reduces fear.",
+            "marathi": "Clarify values (care, honesty, consent) and choose small aligned behaviors despite anxiety. How it works example: Value—respect; Action—ask 'Still okay to continue?' even if anxious; Track anxiety before/after to see value-based action reduces fear."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 3,
+          "title": {
+            "english": "Relapse Prevention Plan",
+            "hindi": "Relapse Prevention Plan",
+            "marathi": "Relapse Prevention Plan"
+          },
+          "description": {
+            "english": "Anticipate triggers, early warning signs, coping steps, and supports. How it works example: Trigger—unexpected escalation; Plan—signal 'yellow,' switch to cuddling, do 4-7-8 breathing, debrief next day; Save plan on phone.",
+            "hindi": "Anticipate triggers, early warning signs, coping steps, and supports. How it works example: Trigger—unexpected escalation; Plan—signal 'yellow,' switch to cuddling, do 4-7-8 breathing, debrief next day; Save plan on phone.",
+            "marathi": "Anticipate triggers, early warning signs, coping steps, and supports. How it works example: Trigger—unexpected escalation; Plan—signal 'yellow,' switch to cuddling, do 4-7-8 breathing, debrief next day; Save plan on phone."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Compassionate Self-Talk",
+            "hindi": "Compassionate Self-Talk",
+            "marathi": "Compassionate Self-Talk"
+          },
+          "description": {
+            "english": "Develop a supportive inner coach to counter shame and all-or-nothing judgments. How it works example: Replace 'I ruined everything' with 'Learning moments happen; we communicated and can try again.' Keep a pocket list of phrases.",
+            "hindi": "Develop a supportive inner coach to counter shame and all-or-nothing judgments. How it works example: Replace 'I ruined everything' with 'Learning moments happen; we communicated and can try again.' Keep a pocket list of phrases.",
+            "marathi": "Develop a supportive inner coach to counter shame and all-or-nothing judgments. How it works example: Replace 'I ruined everything' with 'Learning moments happen; we communicated and can try again.' Keep a pocket list of phrases."
+          }
+        }
+      ]
+    },
+    "rebt": {
+      "type": "Secondary",
+      "interventionSubType": "REBT (Rational Emotive Behavior Therapy)",
+      "cards": [
+        {
+          "id": 1,
+          "xp": 3,
+          "title": {
+            "english": "Identify Irrational Demands",
+            "hindi": "अपरिमेय मांगों की पहचान करें",
+            "marathi": "अतार्किक मागणी ओळखा"
+          },
+          "description": {
+            "english": "Spot 'must/should' thoughts about sex/affection (e.g., 'My partner must always be satisfied' or 'I must never feel awkward'). How it works example: Keep a tally of must/should statements for one week; when one appears, label it 'Demand,' then rewrite as a preference.",
+            "hindi": "Spot 'must/should' thoughts about sex/affection (e.g., 'My partner must always be satisfied' or 'I must never feel awkward'). How it works example: Keep a tally of must/should statements for one week; when one appears, label it 'Demand,' then rewrite as a preference.",
+            "marathi": "Spot 'must/should' thoughts about sex/affection (e.g., 'My partner must always be satisfied' or 'I must never feel awkward'). How it works example: Keep a tally of must/should statements for one week; when one appears, label it 'Demand,' then rewrite as a preference."
+          }
+        },
+        {
+          "id": 2,
+          "xp": 4,
+          "title": {
+            "english": "Dispute Catastrophic Thinking",
+            "hindi": "आपदा संबंधी सोच पर विवाद",
+            "marathi": "आपदा विचार वर विवाद"
+          },
+          "description": {
+            "english": "Challenge awfulizing like 'If I say no, it will ruin the relationship' using truth, logic, and practicality tests. How it works example: Ask: Is breakup guaranteed? Does pausing logically mean rejection? Does this belief help closeness? Replace with a rational alternative.",
+            "hindi": "Challenge awfulizing like 'If I say no, it will ruin the relationship' using truth, logic, and practicality tests. How it works example: Ask: Is breakup guaranteed? Does pausing logically mean rejection? Does this belief help closeness? Replace with a rational alternative.",
+            "marathi": "Challenge awfulizing like 'If I say no, it will ruin the relationship' using truth, logic, and practicality tests. How it works example: Ask: Is breakup guaranteed? Does pausing logically mean rejection? Does this belief help closeness? Replace with a rational alternative."
+          }
+        },
+        {
+          "id": 3,
+          "xp": 3,
+          "title": {
+            "english": "Create Rational Alternatives",
+            "hindi": "तर्कसंगत विकल्प बनाएं",
+            "marathi": "तर्कसंगत पर्याय तयार करा"
+          },
+          "description": {
+            "english": "Replace rigid beliefs with flexible, coping-focused views (preferences, probabilities, tolerability). How it works example: Change 'I must satisfy perfectly' to 'I’d prefer mutual pleasure; if it’s imperfect, we pause and learn—I can tolerate discomfort.'",
+            "hindi": "Replace rigid beliefs with flexible, coping-focused views (preferences, probabilities, tolerability). How it works example: Change 'I must satisfy perfectly' to 'I’d prefer mutual pleasure; if it’s imperfect, we pause and learn—I can tolerate discomfort.'",
+            "marathi": "Replace rigid beliefs with flexible, coping-focused views (preferences, probabilities, tolerability). How it works example: Change 'I must satisfy perfectly' to 'I’d prefer mutual pleasure; if it’s imperfect, we pause and learn—I can tolerate discomfort.'"
+          }
+        },
+        {
+          "id": 4,
+          "xp": 2,
+          "title": {
+            "english": "Unconditional Self-Acceptance Practice",
+            "hindi": "बिना शर्त आत्म-स्वीकृति अभ्यास",
+            "marathi": "बिना शर्त स्व-स्वीकार सराव"
+          },
+          "description": {
+            "english": "Separate self-worth from sexual performance, desire level, or experience; drop global self-ratings. How it works example: After an awkward moment, state: 'I’m okay as a person even when I stumble; skills are learnable.' Repeat before/after intimacy talks.",
+            "hindi": "Separate self-worth from sexual performance, desire level, or experience; drop global self-ratings. How it works example: After an awkward moment, state: 'I’m okay as a person even when I stumble; skills are learnable.' Repeat before/after intimacy talks.",
+            "marathi": "Separate self-worth from sexual performance, desire level, or experience; drop global self-ratings. How it works example: After an awkward moment, state: 'I’m okay as a person even when I stumble; skills are learnable.' Repeat before/after intimacy talks."
+          }
+        },
+        {
+          "id": 5,
+          "xp": 2,
+          "title": {
+            "english": "Unconditional Other-Acceptance",
+            "hindi": "बिना शर्त अन्य-स्वीकृति",
+            "marathi": "बिना शर्त इतर स्वीकार"
+          },
+          "description": {
+            "english": "Accept partners as fallible while setting limits on unhelpful behaviors; reduce global condemnation. How it works example: Reframe 'They’re selfish' to 'They acted insensitively this time; I’ll state a boundary and a request without character attacks.'",
+            "hindi": "Accept partners as fallible while setting limits on unhelpful behaviors; reduce global condemnation. How it works example: Reframe 'They’re selfish' to 'They acted insensitively this time; I’ll state a boundary and a request without character attacks.'",
+            "marathi": "Accept partners as fallible while setting limits on unhelpful behaviors; reduce global condemnation. How it works example: Reframe 'They’re selfish' to 'They acted insensitively this time; I’ll state a boundary and a request without character attacks.'"
+          }
+        },
+        {
+          "id": 6,
+          "xp": 3,
+          "title": {
+            "english": "Frustration Tolerance Training",
+            "hindi": "निराशा सहनशीलता प्रशिक्षण",
+            "marathi": "निराशा सहनशीलता प्रशिक्षण"
+          },
+          "description": {
+            "english": "Build 'I can stand it' beliefs for discomfort during consent talks, pacing, or learning new skills. How it works example: During a 7/10 anxiety consent chat, repeat 'This is uncomfortable and I can stand it' while breathing slowly for five minutes.",
+            "hindi": "Build 'I can stand it' beliefs for discomfort during consent talks, pacing, or learning new skills. How it works example: During a 7/10 anxiety consent chat, repeat 'This is uncomfortable and I can stand it' while breathing slowly for five minutes.",
+            "marathi": "Build 'I can stand it' beliefs for discomfort during consent talks, pacing, or learning new skills. How it works example: During a 7/10 anxiety consent chat, repeat 'This is uncomfortable and I can stand it' while breathing slowly for five minutes."
+          }
+        },
+        {
+          "id": 7,
+          "xp": 2,
+          "title": {
+            "english": "Preferential Thinking Shift",
+            "hindi": "वरीयता विचार शिफ्ट",
+            "marathi": "प्राधान्य विचार बदल"
+          },
+          "description": {
+            "english": "Turn demands into preferences (e.g., 'I’d prefer mutual pleasure and can learn step by step if it’s imperfect'). How it works example: Write a two-column list: Demands → Preferences; read the preference column before dates to prime flexible thinking.",
+            "hindi": "Turn demands into preferences (e.g., 'I’d prefer mutual pleasure and can learn step by step if it’s imperfect'). How it works example: Write a two-column list: Demands → Preferences; read the preference column before dates to prime flexible thinking.",
+            "marathi": "Turn demands into preferences (e.g., 'I’d prefer mutual pleasure and can learn step by step if it’s imperfect'). How it works example: Write a two-column list: Demands → Preferences; read the preference column before dates to prime flexible thinking."
+          }
+        },
+        {
+          "id": 8,
+          "xp": 4,
+          "title": {
+            "english": "Shame-Attacking Exercises (Safe)",
+            "hindi": "शर्मनाक व्यायाम (सुरक्षित)",
+            "marathi": "शर्म-आक्रमण व्यायाम (सुरक्षित)"
+          },
+          "description": {
+            "english": "Plan mild, respectful exposures to feared embarrassment around intimacy communication to weaken shame. How it works example: Practice saying one preference ('Could we slow down?') despite blushing; log outcome—no catastrophe, confidence increases.",
+            "hindi": "Plan mild, respectful exposures to feared embarrassment around intimacy communication to weaken shame. How it works example: Practice saying one preference ('Could we slow down?') despite blushing; log outcome—no catastrophe, confidence increases.",
+            "marathi": "Plan mild, respectful exposures to feared embarrassment around intimacy communication to weaken shame. How it works example: Practice saying one preference ('Could we slow down?') despite blushing; log outcome—no catastrophe, confidence increases."
+          }
+        },
+        {
+          "id": 9,
+          "xp": 2,
+          "title": {
+            "english": "Relapse Philosophy for Setbacks",
+            "hindi": "विफलताओं के लिए पुनरावृत्ति दर्शन",
+            "marathi": "विफलतांसाठी पुनरावृत्ति तत्वज्ञान"
+          },
+          "description": {
+            "english": "Normalize ups/downs; rehearse returning to rational beliefs after awkward moments or miscommunications. How it works example: After a misstep, complete ABC, dispute the belief, choose a rational alternative, and schedule a 24-hour repair check-in.",
+            "hindi": "Normalize ups/downs; rehearse returning to rational beliefs after awkward moments or miscommunications. How it works example: After a misstep, complete ABC, dispute the belief, choose a rational alternative, and schedule a 24-hour repair check-in.",
+            "marathi": "Normalize ups/downs; rehearse returning to rational beliefs after awkward moments or miscommunications. How it works example: After a misstep, complete ABC, dispute the belief, choose a rational alternative, and schedule a 24-hour repair check-in."
+          }
+        }
+      ]
+    }
+  }
+}

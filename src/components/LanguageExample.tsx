@@ -68,7 +68,7 @@ const LanguageExample: React.FC = () => {
         </Text>
         
         <Text style={styles.sampleText}>
-          {t('welcome', 'Welcome to ThoughtPro')}
+          {t('welcome', 'Welcome to Miniminds')}
         </Text>
         
         <Text style={styles.sampleText}>

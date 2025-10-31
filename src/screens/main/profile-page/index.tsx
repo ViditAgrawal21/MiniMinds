@@ -17,6 +17,12 @@ import { useNavigation } from "@react-navigation/native";
 import { t } from "@/i18n/locales/i18n"; // Import translation function
 import { useExitConfirmation } from "@/hooks/useExitConfirmation";
 
+// Import Guardian Settings screens
+import GuardianSettingsScreen from "../GuardianSettings/GuardianSettingsScreen";
+import GuardianListScreen from "../GuardianSettings/GuardianListScreen";
+import AddGuardianScreen from "../GuardianSettings/AddGuardianScreen";
+import EditGuardianScreen from "../GuardianSettings/EditGuardianScreen";
+
 interface MenuItem {
   label: string;
   subLabel?: string;
@@ -30,6 +36,8 @@ export default function ProfilePage() {
   const [onboardingType, setOnboardingType] = useState<"self" | "child" | null>(
     null,
   );
+  const [currentScreen, setCurrentScreen] = useState<string | null>(null);
+  const [selectedGuardian, setSelectedGuardian] = useState<any>(null);
 
   // Exit confirmation hook
   const { ExitConfirmationModal } = useExitConfirmation();
@@ -222,14 +230,14 @@ export default function ProfilePage() {
       progress: onboardingProgress,
       type: "onboarding",
     },
-    // {
-    //   label: t("profilePage.guardianSettings", "Guardian Settings"),
-    //   subLabel: t(
-    //     "profilePage.guardianSettingsSubLabel",
-    //     "Add Guardian, Edit Guardian, Password",
-    //   ),
-    //   type: "guardian"
-    // },
+    {
+      label: t("profilePage.guardianSettings", "Guardian Settings"),
+      subLabel: t(
+        "profilePage.guardianSettingsSubLabel",
+        "Manage your guardians and notifications",
+      ),
+      type: "guardian"
+    },
     {
       label: t("profilePage.changeLanguage", "Change language"),
       type: "language",
@@ -245,8 +253,69 @@ export default function ProfilePage() {
     },
   ];
 
-  return (
-    <SafeAreaView style={styles.container} edges={["top"]}>
+  // Render Guardian Settings screens
+  const renderScreen = () => {
+    if (currentScreen === "GuardianSettings") {
+      return (
+        <GuardianSettingsScreen
+          navigation={{
+            navigate: (screen: string) => {
+              setCurrentScreen(screen);
+            },
+            goBack: () => setCurrentScreen(null),
+          }}
+        />
+      );
+    }
+
+    if (currentScreen === "GuardianList") {
+      return (
+        <GuardianListScreen
+          navigation={{
+            navigate: (screen: string, params?: any) => {
+              if (screen === "EditGuardian" && params?.guardian) {
+                setSelectedGuardian(params.guardian);
+                setCurrentScreen("EditGuardian");
+              } else {
+                setCurrentScreen(screen);
+              }
+            },
+            goBack: () => setCurrentScreen("GuardianSettings"),
+          }}
+        />
+      );
+    }
+
+    if (currentScreen === "AddGuardian") {
+      return (
+        <AddGuardianScreen
+          navigation={{
+            goBack: () => setCurrentScreen("GuardianList"),
+          }}
+        />
+      );
+    }
+
+    if (currentScreen === "EditGuardian" && selectedGuardian) {
+      return (
+        <EditGuardianScreen
+          navigation={{
+            goBack: () => {
+              setCurrentScreen("GuardianList");
+              setSelectedGuardian(null);
+            },
+          }}
+          route={{
+            params: {
+              guardian: selectedGuardian,
+            },
+          }}
+        />
+      );
+    }
+
+    // Default Profile Page
+    return (
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <ProfileHeader />
         <QuoteCard
@@ -261,9 +330,9 @@ export default function ProfilePage() {
               progress={item.progress}
               onPress={() => {
                 switch (item.type) {
-                  // case "guardian":
-                  //   navigation.navigate("GuardianSettings" as never);
-                  //   break;
+                  case "guardian":
+                    setCurrentScreen("GuardianSettings");
+                    break;
                   case "language":
                     navigation.navigate("LanguageSelect", {
                       reset: true,
@@ -303,6 +372,12 @@ export default function ProfilePage() {
           </Pressable>
         </View>
       </ScrollView>
+    );
+  };
+
+  return (
+    <SafeAreaView style={styles.container} edges={["top"]}>
+      {renderScreen()}
       
       {/* Exit Confirmation Modal */}
       <ExitConfirmationModal />
