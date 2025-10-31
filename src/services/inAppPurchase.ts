@@ -644,11 +644,8 @@ export const hasThoughtProSubscription = async (): Promise<boolean> => {
   try {
     if (!isConnected) {
       const connected = await initIAP();
-      if (!connected && isTestingEnvironment()) {
-        console.log('🧪 Billing unavailable - using mock subscription check for development');
-        return await mockHasSubscriptionForDev();
-      }
       if (!connected) {
+        // Always return false - no mock data, user is free plan
         return false;
       }
     }
@@ -664,14 +661,9 @@ export const hasThoughtProSubscription = async (): Promise<boolean> => {
     
     return !!activeSubscription;
   } catch (error) {
-    console.error('Error checking ThoughtPro subscription status:', error);
+    console.error('Error checking MiniMinds subscription status:', error);
     
-    // If billing is unavailable and we're in development, use mock check
-    if (isTestingEnvironment()) {
-      console.log('🧪 Using mock subscription check due to billing error in development');
-      return await mockHasSubscriptionForDev();
-    }
-    
+    // Always return false - user is free plan by default
     return false;
   }
 };

@@ -51,46 +51,9 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
   const loadSubscriptionData = async () => {
     try {
       setIsLoading(true);
-      console.log('🔄 Loading ThoughtPro subscription data...');
-      
-      // Initialize IAP connection
-      await initIAP();
-      console.log('✅ IAP initialized');
-      
-      // Get available subscriptions
-      const subscriptions = await getAvailableSubscriptions();
-      console.log('📦 Available subscriptions:', subscriptions);
-      
-      const targetSubscription = subscriptions.find(sub => 
-        sub.id === 'thoughtpro_subscriptions' || 
-        sub.id.includes('thoughtpro_subscriptions') ||
-        sub.id.includes('thoughtpro')
-      );
-      
-      console.log('🎯 Target subscription found:', targetSubscription);
-      
-      if (targetSubscription) {
-        setSubscription(targetSubscription);
-        
-        // Get available base plans
-        const plans = await getAvailableBasePlans();
-        console.log('📋 Available base plans:', plans);
-        setBasePlans(plans);
-      } else {
-        console.warn('⚠️ No matching subscription found');
-        console.log('Available subscription IDs:', subscriptions.map(s => s.id));
-      }
-      
-      // Check if user already has this subscription
-      const hasActive = await hasThoughtProSubscription();
-      console.log('🔐 Has active subscription:', hasActive);
-      setIsActive(hasActive);
-      
-      if (hasActive) {
-        const info = await getThoughtProSubscriptionInfo();
-        setSubscriptionInfo(info);
-      }
-      
+      // Skip IAP initialization - just show coming soon message
+      console.log('🔄 Subscription features coming soon...');
+      setIsActive(false); // Always free plan
     } catch (error) {
       console.error('❌ Error loading subscription data:', error);
     } finally {
@@ -120,9 +83,9 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
             setSubscriptionInfo(info);
             
             Alert.alert(
-              'Purchase Successful!',
-              `Thank you for subscribing to ThoughtPro ${planType} plan! You now have access to all premium features.`,
-              [{ text: 'OK', onPress: onPurchaseSuccess }]
+              'Coming Soon!',
+              'Subscription features will be available soon. Stay tuned!',
+              [{ text: 'OK' }]
             );
           }
         }, 2000);
@@ -186,7 +149,7 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
   if (isActive) {
     return (
       <View style={[styles.container, styles.activeContainer]}>
-        <Text style={styles.title}>🎉 ThoughtPro Premium Active</Text>
+        <Text style={styles.title}>🎉 MiniMinds Premium Active</Text>
         <Text style={styles.activeDescription}>
           You have access to all premium features!
         </Text>
@@ -216,35 +179,25 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
     );
   }
 
-  if (!subscription && basePlans.length === 0) {
+  // Always show coming soon message - no subscription loading
+  if (true) {
     return (
       <View style={styles.container}>
-        <Text style={styles.errorTitle}>Subscription Plans Not Available</Text>
-        <Text style={styles.errorText}>
-          We couldn't load the subscription information. This might be due to:
-          {'\n'}• Network connectivity issues
-          {'\n'}• Google Play Services not available
-          {'\n'}• App not properly configured in Play Console
-          {'\n'}• Subscription not published in Play Console
-        </Text>
-        <TouchableOpacity
-          style={[styles.button, styles.restoreButton]}
-          onPress={loadSubscriptionData}
-          disabled={isLoading}
-        >
-          <Text style={styles.restoreButtonText}>
-            {isLoading ? 'Loading...' : 'Try Again'}
+        <View style={styles.comingSoonContainer}>
+          <Text style={styles.comingSoonIcon}>🚀</Text>
+          <Text style={styles.title}>Premium Plans Coming Soon!</Text>
+          <Text style={styles.comingSoonText}>
+            We're working on bringing you amazing premium features. Stay tuned for updates!
           </Text>
-        </TouchableOpacity>
-        
-        {__DEV__ && (
-          <TouchableOpacity
-            style={[styles.button, styles.debugButton]}
-            onPress={debugSubscriptionSetup}
-          >
-            <Text style={styles.debugButtonText}>🔍 Debug Subscription</Text>
-          </TouchableOpacity>
-        )}
+          <View style={styles.featuresContainer}>
+            <Text style={styles.featuresTitle}>What's Coming:</Text>
+            <Text style={styles.featureItem}>✨ Unlimited access to all tools</Text>
+            <Text style={styles.featureItem}>🎯 Advanced interventions</Text>
+            <Text style={styles.featureItem}>📊 Detailed progress tracking</Text>
+            <Text style={styles.featureItem}>🎥 Premium video content</Text>
+            <Text style={styles.featureItem}>� 1-on-1 professional support</Text>
+          </View>
+        </View>
       </View>
     );
   }
@@ -257,8 +210,8 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
         </View>
       )}
       
-      <Text style={styles.title}>Choose Your ThoughtPro Plan</Text>
-      <Text style={styles.subtitle}>Unlock all premium features</Text>
+      <Text style={styles.title}>MiniMinds Premium Plans</Text>
+      <Text style={styles.subtitle}>Coming Soon - Stay Tuned!</Text>
       
       {/* Plan Selection */}
       <View style={styles.plansContainer}>
@@ -327,20 +280,12 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
       {/* Purchase Button */}
       <TouchableOpacity
         style={[styles.button, styles.purchaseButton]}
-        onPress={() => handlePurchase(selectedPlan === 'plan-299' ? 'monthly' : 'yearly')}
-        disabled={isPurchasing}
+        onPress={() => Alert.alert('Coming Soon', 'Subscription plans will be available soon. Stay tuned for updates!')}
+        disabled={false}
       >
-        {isPurchasing ? (
-          <View style={styles.loadingContainer}>
-            <ActivityIndicator size="small" color="white" />
-            <Text style={styles.loadingButtonText}>Processing...</Text>
-          </View>
-        ) : (
-          <Text style={styles.purchaseButtonText}>
-            Subscribe for {getDisplayPrice(selectedPlan)}
-            {selectedPlan === 'plan-yearly' ? '/year' : '/month'}
-          </Text>
-        )}
+        <Text style={styles.purchaseButtonText}>
+          Coming Soon
+        </Text>
       </TouchableOpacity>
       
       <TouchableOpacity
@@ -599,6 +544,21 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: 'center',
     fontWeight: '600',
+  },
+  comingSoonContainer: {
+    alignItems: 'center',
+    paddingVertical: 20,
+  },
+  comingSoonIcon: {
+    fontSize: 48,
+    marginBottom: 16,
+  },
+  comingSoonText: {
+    fontSize: 16,
+    textAlign: 'center',
+    color: '#6b7280',
+    marginBottom: 24,
+    lineHeight: 24,
   },
 });
 

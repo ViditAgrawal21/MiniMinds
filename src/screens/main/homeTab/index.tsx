@@ -582,8 +582,8 @@ export default function HomeTab() {
 
         const title = hasDeclinedBefore ? "Complete Setup for Digital Wellness" : "Digital Wellness Monitoring";
         const message = hasDeclinedBefore
-          ? "To use ThoughtPro's digital wellness features, please enable the required permissions:\n\n• Usage Access: To track app usage time\n• Display over other apps: To show mindful break reminders\n\nThese features help you maintain healthy digital habits."
-          : "ThoughtPro can help you monitor your app usage for better digital wellness. This requires two permissions:\n\n• Usage Access: To track app usage time\n• Display over other apps: To show mindful break reminders\n\nWould you like to enable these features?";
+          ? "To use MiniMinds' digital wellness features, please enable the required permissions:\n\n• Usage Access: To track app usage time\n• Display over other apps: To show mindful break reminders\n\nThese features help you maintain healthy digital habits."
+          : "MiniMinds can help you monitor your app usage for better digital wellness. This requires two permissions:\n\n• Usage Access: To track app usage time\n• Display over other apps: To show mindful break reminders\n\nWould you like to enable these features?";
 
         Alert.alert(
           title,
@@ -610,7 +610,7 @@ export default function HomeTab() {
                     setTimeout(() => {
                       Alert.alert(
                         "Enable Usage Access",
-                        "Please find 'ThoughtPro' in the list and enable 'Permit usage access'. Then return to the app.",
+                        "Please find 'MiniMinds' in the list and enable 'Permit usage access'. Then return to the app.",
                         [{ text: "OK" }]
                       );
                     }, 500);
@@ -622,7 +622,7 @@ export default function HomeTab() {
                     setTimeout(() => {
                       Alert.alert(
                         "Enable Display Over Other Apps",
-                        "Please enable 'Display over other apps' for ThoughtPro, then return to the app.",
+                        "Please enable 'Display over other apps' for MiniMinds, then return to the app.",
                         [{ text: "OK" }]
                       );
                     }, 500);

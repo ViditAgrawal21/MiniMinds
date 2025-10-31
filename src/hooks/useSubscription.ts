@@ -5,12 +5,14 @@ import {
   getAvailableSubscriptions,
   Product,
 } from '../services/inAppPurchase';
+import { hasActiveRedeemCode } from '../utils/redeemCodeUtils';
 
 export interface SubscriptionState {
   hasAccess: boolean;
   isLoading: boolean;
   subscription: Product | null;
   error: string | null;
+  hasRedeemCode: boolean;
 }
 
 export const useSubscription = () => {
@@ -19,6 +21,7 @@ export const useSubscription = () => {
     isLoading: true,
     subscription: null,
     error: null,
+    hasRedeemCode: false,
   });
 
   const checkSubscriptionStatus = useCallback(async () => {
@@ -26,6 +29,22 @@ export const useSubscription = () => {
       setState(prev => ({ ...prev, isLoading: true, error: null }));
       
       console.log('🔄 Checking subscription status...');
+      
+      // Check for redeem code first (faster check)
+      const hasRedeemAccess = await hasActiveRedeemCode();
+      console.log('🎟️ Has active redeem code:', hasRedeemAccess);
+      
+      // If user has redeem code, grant access immediately
+      if (hasRedeemAccess) {
+        setState({
+          hasAccess: true,
+          isLoading: false,
+          subscription: null,
+          error: null,
+          hasRedeemCode: true,
+        });
+        return true;
+      }
       
       // Initialize IAP connection
       await initIAP();
@@ -63,6 +82,7 @@ export const useSubscription = () => {
         isLoading: false,
         subscription,
         error: null,
+        hasRedeemCode: false,
       });
       
       return hasAccess;

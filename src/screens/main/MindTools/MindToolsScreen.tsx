@@ -1,5 +1,5 @@
 // app/screens/MindToolsScreen.tsx
-import React, { useState, useCallback, use } from "react";
+import React, { useState, useCallback, use, useEffect } from "react";
 import {
   View,
   Text,
@@ -23,6 +23,7 @@ import MoodSelector from "../../../components/MoodSelector";
 //import Interventions from "../../../components/Interventions/Interventions";
 import MindfulPlaylist from "../../../components/MindfulPlaylist/MindfulPlaylist";
 import { useExitConfirmation } from "../../../hooks/useExitConfirmation";
+import { hasActiveRedeemCode } from "../../../utils/redeemCodeUtils";
 
 // Define your navigation stack param list
 type RootStackParamList = {
@@ -95,6 +96,8 @@ export default function MindToolsScreen() {
   const [blockedPlan, setBlockedPlan] = useState<"basic" | "premium" | null>(
     null,
   );
+  // Redeem code access state
+  const [hasRedeemAccess, setHasRedeemAccess] = useState(false);
   // Filter state
   const [selectedFilter, setSelectedFilter] = useState<string>("All");
   const [filterDropdownVisible, setFilterDropdownVisible] = useState(false);
@@ -238,6 +241,31 @@ export default function MindToolsScreen() {
   const shouldShowCategory = (categoryKey: string): boolean => {
     if (selectedFilter === "All") return true;
     return categoryToFilter[categoryKey] === selectedFilter;
+  };
+
+  // Check for redeem code access on screen focus
+  useFocusEffect(
+    useCallback(() => {
+      const checkRedeemCode = async () => {
+        const hasAccess = await hasActiveRedeemCode();
+        setHasRedeemAccess(hasAccess);
+        if (hasAccess) {
+          console.log("✅ User has redeem code access - all cards unlocked");
+        }
+      };
+      checkRedeemCode();
+    }, [])
+  );
+
+  // Helper function to check if a card is visible (free or unlocked via redeem code)
+  const freeCards = ["AggressiveBehaviour", "LonelinessAndDepression", "InternetAddiction"];
+  const isCardVisible = (cardKey: string): boolean => {
+    // If user has redeem code, unlock all cards
+    if (hasRedeemAccess) {
+      return true;
+    }
+    // Otherwise, only show free cards
+    return freeCards.includes(cardKey);
   };
 
   const loadCounts = useCallback(async () => {
@@ -623,336 +651,679 @@ export default function MindToolsScreen() {
           </View>
 
           <View style={styles.categoriesGrid}>
-            {/* Row 1 - ADHD Card */}
-            {shouldShowCategory("ADHD") && (
+            {/* ========== FREE CARDS - PINNED AT TOP ========== */}
+            
+            {/* FREE CARD 1 - Aggressive Behaviour */}
+            {shouldShowCategory("AggressiveBehaviour") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("ADHDScreen")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("AggressiveBehaviour") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("AggressiveBehaviour")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("AggressiveBehaviourScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="flash" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="warning" size={24} color={!isCardVisible("AggressiveBehaviour") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("AggressiveBehaviour") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
-                  {t("mindToolsScreen.categories.adhd.title")}
+                <Text style={[styles.categoryTitle, !isCardVisible("AggressiveBehaviour") && styles.lockedText]}>
+                  {t("mindToolsScreen.categories.aggressiveBehaviour.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
-                  {t("mindToolsScreen.categories.adhd.description")}
+                <Text style={[styles.categoryDescription, !isCardVisible("AggressiveBehaviour") && styles.lockedText]}>
+                  {t("mindToolsScreen.categories.aggressiveBehaviour.description")}
                 </Text>
+                {!isCardVisible("AggressiveBehaviour") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
-            {shouldShowCategory("AggressiveBehaviour") && (
+            {/* FREE CARD 2 - Loneliness and Depression */}
+            {shouldShowCategory("LonelinessAndDepression") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("AggressiveBehaviourScreen")}
+                style={[styles.categoryCard, !isCardVisible("LonelinessAndDepression") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("LonelinessAndDepression")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("LonelinessAndDepressionScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="warning" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="person" size={24} color={!isCardVisible("LonelinessAndDepression") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("LonelinessAndDepression") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
-                  {t("mindToolsScreen.categories.aggressiveBehaviour.title")}
+                <Text style={[styles.categoryTitle, !isCardVisible("LonelinessAndDepression") && styles.lockedText]}>{t("mindToolsScreen.categories.lonelinessAndDepression.title")}</Text>
+                <Text style={[styles.categoryDescription, !isCardVisible("LonelinessAndDepression") && styles.lockedText]}>{t("mindToolsScreen.categories.lonelinessAndDepression.description")}</Text>
+                {!isCardVisible("LonelinessAndDepression") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
+              </Pressable>
+            )}
+
+            {/* FREE CARD 3 - Internet Addiction */}
+            {shouldShowCategory("InternetAddiction") && (
+              <Pressable
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("InternetAddiction") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("InternetAddiction")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("InternetAddiction");
+                  }
+                }}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="wifi-outline" size={24} color={!isCardVisible("InternetAddiction") ? "#999" : "#FF8C00"} />
+                  </View>
+                  {!isCardVisible("InternetAddiction") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
+                </View>
+                <Text style={[styles.categoryTitle, !isCardVisible("InternetAddiction") && styles.lockedText]}>
+                  {t("mindToolsScreen.categories.internetaddictionscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
-                  {t("mindToolsScreen.categories.aggressiveBehaviour.description")}
+                <Text style={[styles.categoryDescription, !isCardVisible("InternetAddiction") && styles.lockedText]}>
+                  {t("mindToolsScreen.categories.internetaddictionscreen.description")}
                 </Text>
+                {!isCardVisible("InternetAddiction") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
+              </Pressable>
+            )}
+
+            {/* ========== PREMIUM/LOCKED CARDS ========== */}
+            
+            {/* ADHD Card */}
+            {shouldShowCategory("ADHD") && (
+              <Pressable
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("ADHD") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("ADHD")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("ADHDScreen");
+                  }
+                }}
+              >
+                <View style={styles.taskHeader}>
+                  <View style={styles.taskIconContainer}>
+                    <CustomIcon type="IO" name="flash" size={24} color={!isCardVisible("ADHD") ? "#999" : "#FF8C00"} />
+                  </View>
+                  {!isCardVisible("ADHD") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
+                </View>
+                <Text style={[styles.categoryTitle, !isCardVisible("ADHD") && styles.lockedText]}>
+                  {t("mindToolsScreen.categories.adhd.title")}
+                </Text>
+                <Text style={[styles.categoryDescription, !isCardVisible("ADHD") && styles.lockedText]}>
+                  {t("mindToolsScreen.categories.adhd.description")}
+                </Text>
+                {!isCardVisible("ADHD") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Row 2 */}
             {shouldShowCategory("ConductIssues") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("ConductIssueScreen")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("ConductIssues") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("ConductIssues")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("ConductIssueScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
                     <CustomIcon type="IO"
                       name="warning-outline"
                       size={24}
-                      color="#FF8C00"
+                      color={!isCardVisible("ConductIssues") ? "#999" : "#FF8C00"}
                     />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("ConductIssues") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("ConductIssues") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.conductIssues.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("ConductIssues") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.conductIssues.description")}
                 </Text>
+                {!isCardVisible("ConductIssues") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("Eating Habits") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("Eating Habits")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("Eating Habits") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("Eating Habits")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("Eating Habits");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="restaurant" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="restaurant" size={24} color={!isCardVisible("Eating Habits") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("Eating Habits") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("Eating Habits") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.eatingHabits.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("Eating Habits") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.eatingHabits.description")}
                 </Text>
+                {!isCardVisible("Eating Habits") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Introvert Child - New Card */}
             {shouldShowCategory("Introvert Child") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("Introvert Child")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("Introvert Child") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("Introvert Child")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("Introvert Child");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="person-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="person-outline" size={24} color={!isCardVisible("Introvert Child") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("Introvert Child") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("Introvert Child") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.introvertChild.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("Introvert Child") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.introvertChild.description")}
                 </Text>
+                {!isCardVisible("Introvert Child") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Row 3 */}
             {shouldShowCategory("BreakupAndRebound") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("BreakupAndRebound")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("BreakupAndRebound") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("BreakupAndRebound")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("BreakupAndRebound");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="heart-dislike" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="heart-dislike" size={24} color={!isCardVisible("BreakupAndRebound") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("BreakupAndRebound") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("BreakupAndRebound") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.breakupandrebound.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("BreakupAndRebound") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.breakupandrebound.description")}
                 </Text>
+                {!isCardVisible("BreakupAndRebound") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("AbusiveLanguageBackAnswering") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("AbusiveLanguageBackAnswering")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("AbusiveLanguageBackAnswering") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("AbusiveLanguageBackAnswering")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("AbusiveLanguageBackAnswering");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="warning-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="warning-outline" size={24} color={!isCardVisible("AbusiveLanguageBackAnswering") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("AbusiveLanguageBackAnswering") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("AbusiveLanguageBackAnswering") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.abusiveLanguageBackAnswering.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("AbusiveLanguageBackAnswering") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.abusiveLanguageBackAnswering.description")}
                 </Text>
+                {!isCardVisible("AbusiveLanguageBackAnswering") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Row 4 */}
             {shouldShowCategory("ExamStress") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("ExamStress")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("ExamStress") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("ExamStress")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("ExamStress");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="document-text-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="document-text-outline" size={24} color={!isCardVisible("ExamStress") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("ExamStress") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("ExamStress") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.examstressscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("ExamStress") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.examstressscreen.description")}
                 </Text>
+                {!isCardVisible("ExamStress") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Row 5 */}
             {shouldShowCategory("FriendshipAndRelationship") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("FriendshipAndRelationship")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("FriendshipAndRelationship") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("FriendshipAndRelationship")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("FriendshipAndRelationship");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="people-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="people-outline" size={24} color={!isCardVisible("FriendshipAndRelationship") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("FriendshipAndRelationship") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("FriendshipAndRelationship") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.friendshipandrelationshipscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("FriendshipAndRelationship") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.friendshipandrelationshipscreen.description")}
                 </Text>
+                {!isCardVisible("FriendshipAndRelationship") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("DatingSitesAndComplications") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("DatingSitesAndComplications")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("DatingSitesAndComplications") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("DatingSitesAndComplications")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("DatingSitesAndComplications");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="people-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="people-outline" size={24} color={!isCardVisible("DatingSitesAndComplications") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("DatingSitesAndComplications") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("DatingSitesAndComplications") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.datingsitesandcomplicationsscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("DatingSitesAndComplications") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.datingsitesandcomplicationsscreen.description")}
                 </Text>
+                {!isCardVisible("DatingSitesAndComplications") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Row 6 */}
             {shouldShowCategory("GamblingAndGamingAddiction") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("GamblingAndGamingAddiction")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("GamblingAndGamingAddiction") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("GamblingAndGamingAddiction")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("GamblingAndGamingAddiction");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="game-controller-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="game-controller-outline" size={24} color={!isCardVisible("GamblingAndGamingAddiction") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("GamblingAndGamingAddiction") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("GamblingAndGamingAddiction") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.gamblingandgamingaddictionscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("GamblingAndGamingAddiction") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.gamblingandgamingaddictionscreen.description")}
                 </Text>
-              </Pressable>
-            )}
-
-            {shouldShowCategory("InternetAddiction") && (
-              <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("InternetAddiction")}
-              >
-                <View style={styles.taskHeader}>
-                  <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="wifi-outline" size={24} color="#FF8C00" />
+                {!isCardVisible("GamblingAndGamingAddiction") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
-                </View>
-                <Text style={styles.categoryTitle}>
-                  {t("mindToolsScreen.categories.internetaddictionscreen.title")}
-                </Text>
-                <Text style={styles.categoryDescription}>
-                  {t("mindToolsScreen.categories.internetaddictionscreen.description")}
-                </Text>
+                )}
               </Pressable>
             )}
 
             {/* Row 7 */}
             {shouldShowCategory("ParentingFromChildView") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("ParentingFromChildView")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("ParentingFromChildView") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("ParentingFromChildView")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("ParentingFromChildView");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="happy-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="happy-outline" size={24} color={!isCardVisible("ParentingFromChildView") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("ParentingFromChildView") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("ParentingFromChildView") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.parentingfromchildviewscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("ParentingFromChildView") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.parentingfromchildviewscreen.description")}
                 </Text>
+                {!isCardVisible("ParentingFromChildView") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("ParentingFromParentsView") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("ParentingFromParentsView")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("ParentingFromParentsView") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("ParentingFromParentsView")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("ParentingFromParentsView");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="people-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="people-outline" size={24} color={!isCardVisible("ParentingFromParentsView") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("ParentingFromParentsView") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("ParentingFromParentsView") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.parentingfromparentsviewscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("ParentingFromParentsView") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.parentingfromparentsviewscreen.description")}
                 </Text>
+                {!isCardVisible("ParentingFromParentsView") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Row 8 */}
             {shouldShowCategory("PornAddiction") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("PornAddiction")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("PornAddiction") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("PornAddiction")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("PornAddiction");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="eye-off-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="eye-off-outline" size={24} color={!isCardVisible("PornAddiction") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("PornAddiction") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("PornAddiction") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.pornaddictionscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("PornAddiction") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.pornaddictionscreen.description")}
                 </Text>
+                {!isCardVisible("PornAddiction") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("SelfCareHygiene") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => handleCategoryPress("SelfCareHygiene")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("SelfCareHygiene") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("SelfCareHygiene")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    handleCategoryPress("SelfCareHygiene");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="medkit-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="medkit-outline" size={24} color={!isCardVisible("SelfCareHygiene") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("SelfCareHygiene") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("SelfCareHygiene") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.selfcarehygienescreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("SelfCareHygiene") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.selfcarehygienescreen.description")}
                 </Text>
+                {!isCardVisible("SelfCareHygiene") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
@@ -978,354 +1349,612 @@ export default function MindToolsScreen() {
             {/* Self Esteem & Self Identity Card */}
             {shouldShowCategory("SelfEsteemAndSelfIdentity") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("SelfEsteemAndSelfIdentityScreen")}
+                style={[
+                  styles.categoryCard,
+                  !isCardVisible("SelfEsteemAndSelfIdentity") && styles.lockedCard
+                ]}
+                onPress={() => {
+                  if (!isCardVisible("SelfEsteemAndSelfIdentity")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("SelfEsteemAndSelfIdentityScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="ribbon-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="ribbon-outline" size={24} color={!isCardVisible("SelfEsteemAndSelfIdentity") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("SelfEsteemAndSelfIdentity") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("SelfEsteemAndSelfIdentity") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.selfesteemandselfidentityscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("SelfEsteemAndSelfIdentity") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.selfesteemandselfidentityscreen.description")}
                 </Text>
+                {!isCardVisible("SelfEsteemAndSelfIdentity") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("SocialMediaIssues") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("SocialMediaIssuesScreen")}
+                style={[styles.categoryCard, !isCardVisible("SocialMediaIssues") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("SocialMediaIssues")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("SocialMediaIssuesScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="share-social-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="share-social-outline" size={24} color={!isCardVisible("SocialMediaIssues") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("SocialMediaIssues") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("SocialMediaIssues") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.socialmediaissuesscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("SocialMediaIssues") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.socialmediaissuesscreen.description")}
                 </Text>
+                {!isCardVisible("SocialMediaIssues") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("SubstanceAddiction") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("SubstanceAddictionScreen")}
+                style={[styles.categoryCard, !isCardVisible("SubstanceAddiction") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("SubstanceAddiction")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("SubstanceAddictionScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="medkit-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="medkit-outline" size={24} color={!isCardVisible("SubstanceAddiction") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("SubstanceAddiction") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("SubstanceAddiction") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.substanceaddictionscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("SubstanceAddiction") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.substanceaddictionscreen.description")}
                 </Text>
+                {!isCardVisible("SubstanceAddiction") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("TraumaLossAndDreams") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("TraumaLossAndDreamsScreen")}
+                style={[styles.categoryCard, !isCardVisible("TraumaLossAndDreams") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("TraumaLossAndDreams")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("TraumaLossAndDreamsScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="moon-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="moon-outline" size={24} color={!isCardVisible("TraumaLossAndDreams") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("TraumaLossAndDreams") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("TraumaLossAndDreams") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.traumalossanddreamsscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("TraumaLossAndDreams") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.traumalossanddreamsscreen.description")}
                 </Text>
+                {!isCardVisible("TraumaLossAndDreams") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {shouldShowCategory("UnrealisticBeautyStandards") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("UnrealisticBeautyStandardsScreen")}
+                style={[styles.categoryCard, !isCardVisible("UnrealisticBeautyStandards") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("UnrealisticBeautyStandards")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("UnrealisticBeautyStandardsScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="happy-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="happy-outline" size={24} color={!isCardVisible("UnrealisticBeautyStandards") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("UnrealisticBeautyStandards") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("UnrealisticBeautyStandards") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("UnrealisticBeautyStandards") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.unrealisticbeautystandardsscreen.description")}
                 </Text>
+                {!isCardVisible("UnrealisticBeautyStandards") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Bullying Card - visible in main grid */}
             {shouldShowCategory("Bullying") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("BullyingScreen")}
+                style={[styles.categoryCard, !isCardVisible("Bullying") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("Bullying")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("BullyingScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="hand-left-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="hand-left-outline" size={24} color={!isCardVisible("Bullying") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("Bullying") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("Bullying") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.bullyingscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("Bullying") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.bullyingscreen.description")}
                 </Text>
+                {!isCardVisible("Bullying") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Suicidal Behaviour Card */}
             {shouldShowCategory("Suicidal Behaviour") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("SuicidalBehaviourScreen")}
+                style={[styles.categoryCard, !isCardVisible("Suicidal Behaviour") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("Suicidal Behaviour")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("SuicidalBehaviourScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="heart-dislike" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="heart-dislike" size={24} color={!isCardVisible("Suicidal Behaviour") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("Suicidal Behaviour") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("Suicidal Behaviour") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.suicidalBehaviour.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("Suicidal Behaviour") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.suicidalBehaviour.description")}
                 </Text>
+                {!isCardVisible("Suicidal Behaviour") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Academic Stress */}
             {shouldShowCategory("AcademicStress") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("AcademicStressScreen")}
+                style={[styles.categoryCard, !isCardVisible("AcademicStress") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("AcademicStress")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("AcademicStressScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="school" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="school" size={24} color={!isCardVisible("AcademicStress") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("AcademicStress") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.academicStress.title")}</Text>
-                <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.academicStress.description")}</Text>
+                <Text style={[styles.categoryTitle, !isCardVisible("AcademicStress") && styles.lockedText]}>{t("mindToolsScreen.categories.academicStress.title")}</Text>
+                <Text style={[styles.categoryDescription, !isCardVisible("AcademicStress") && styles.lockedText]}>{t("mindToolsScreen.categories.academicStress.description")}</Text>
+                {!isCardVisible("AcademicStress") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Dealing with children of special Needs */}
             {shouldShowCategory("SpecialNeeds") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("SpecialNeedsScreen")}
+                style={[styles.categoryCard, !isCardVisible("SpecialNeeds") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("SpecialNeeds")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("SpecialNeedsScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="people-circle" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="people-circle" size={24} color={!isCardVisible("SpecialNeeds") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("SpecialNeeds") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.specialNeeds.title")}</Text>
-                <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.specialNeeds.description")}</Text>
+                <Text style={[styles.categoryTitle, !isCardVisible("SpecialNeeds") && styles.lockedText]}>{t("mindToolsScreen.categories.specialNeeds.title")}</Text>
+                <Text style={[styles.categoryDescription, !isCardVisible("SpecialNeeds") && styles.lockedText]}>{t("mindToolsScreen.categories.specialNeeds.description")}</Text>
+                {!isCardVisible("SpecialNeeds") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Good Parenting */}
             {shouldShowCategory("GoodParenting") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("GoodParentingScreen")}
+                style={[styles.categoryCard, !isCardVisible("GoodParenting") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("GoodParenting")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("GoodParentingScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="heart" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="heart" size={24} color={!isCardVisible("GoodParenting") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("GoodParenting") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.goodParenting.title")}</Text>
-                <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.goodParenting.description")}</Text>
-              </Pressable>
-            )}
-
-            {/* Loneliness and Depression */}
-            {shouldShowCategory("LonelinessAndDepression") && (
-              <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("LonelinessAndDepressionScreen")}
-              >
-                <View style={styles.taskHeader}>
-                  <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="person" size={24} color="#FF8C00" />
+                <Text style={[styles.categoryTitle, !isCardVisible("GoodParenting") && styles.lockedText]}>{t("mindToolsScreen.categories.goodParenting.title")}</Text>
+                <Text style={[styles.categoryDescription, !isCardVisible("GoodParenting") && styles.lockedText]}>{t("mindToolsScreen.categories.goodParenting.description")}</Text>
+                {!isCardVisible("GoodParenting") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
-                </View>
-                <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.lonelinessAndDepression.title")}</Text>
-                <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.lonelinessAndDepression.description")}</Text>
+                )}
               </Pressable>
             )}
 
             {/* Anxiety Issues */}
             {shouldShowCategory("AnxietyIssues") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("AnxietyIssuesScreen")}
+                style={[styles.categoryCard, !isCardVisible("AnxietyIssues") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("AnxietyIssues")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("AnxietyIssuesScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="pulse" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="pulse" size={24} color={!isCardVisible("AnxietyIssues") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("AnxietyIssues") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>{t("mindToolsScreen.categories.anxietyIssues.title")}</Text>
-                <Text style={styles.categoryDescription}>{t("mindToolsScreen.categories.anxietyIssues.description")}</Text>
+                <Text style={[styles.categoryTitle, !isCardVisible("AnxietyIssues") && styles.lockedText]}>{t("mindToolsScreen.categories.anxietyIssues.title")}</Text>
+                <Text style={[styles.categoryDescription, !isCardVisible("AnxietyIssues") && styles.lockedText]}>{t("mindToolsScreen.categories.anxietyIssues.description")}</Text>
+                {!isCardVisible("AnxietyIssues") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Self Harm Behaviour Card - new */}
             {shouldShowCategory("SelfHarmBehaviour") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("SelfHarmBehaviourScreen")}
+                style={[styles.categoryCard, !isCardVisible("SelfHarmBehaviour") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("SelfHarmBehaviour")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("SelfHarmBehaviourScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="bandage-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="bandage-outline" size={24} color={!isCardVisible("SelfHarmBehaviour") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("SelfHarmBehaviour") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("SelfHarmBehaviour") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.selfharmbehaviour.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("SelfHarmBehaviour") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.selfharmbehaviour.description")}
                 </Text>
+                {!isCardVisible("SelfHarmBehaviour") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Bunking Card - visible in main grid */}
             {shouldShowCategory("Bunking") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("BunkingScreen")}
+                style={[styles.categoryCard, !isCardVisible("Bunking") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("Bunking")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("BunkingScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="school-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="school-outline" size={24} color={!isCardVisible("Bunking") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("Bunking") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("Bunking") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.bunkingscreen.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("Bunking") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.bunkingscreen.description")}
                 </Text>
+                {!isCardVisible("Bunking") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Learning Disability Card - visible in main grid */}
             {shouldShowCategory("LearningDisability") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("LearningDisabilityScreen")}
+                style={[styles.categoryCard, !isCardVisible("LearningDisability") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("LearningDisability")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("LearningDisabilityScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="book-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="book-outline" size={24} color={!isCardVisible("LearningDisability") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  {!isCardVisible("LearningDisability") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#FF8C00" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("LearningDisability") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.learningdisability.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("LearningDisability") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.learningdisability.description")}
                 </Text>
+                {!isCardVisible("LearningDisability") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Early Sexual Anxiety Information and Inclusion Card */}
             {shouldShowCategory("EarlySexualAnxiety") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("EarlySexualAnxietyScreen")}
+                style={[styles.categoryCard, !isCardVisible("EarlySexualAnxiety") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("EarlySexualAnxiety")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("EarlySexualAnxietyScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="information-circle-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="information-circle-outline" size={24} color={!isCardVisible("EarlySexualAnxiety") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#2B395E" />
+                  {!isCardVisible("EarlySexualAnxiety") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#2B395E" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("EarlySexualAnxiety") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.earlySexualAnxiety.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("EarlySexualAnxiety") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.earlySexualAnxiety.description")}
                 </Text>
+                {!isCardVisible("EarlySexualAnxiety") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Emotional Sex Education Card */}
             {shouldShowCategory("EmotionalSexEducation") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("EmotionalSexEducationScreen")}
+                style={[styles.categoryCard, !isCardVisible("EmotionalSexEducation") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("EmotionalSexEducation")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("EmotionalSexEducationScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="heart-circle-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="heart-circle-outline" size={24} color={!isCardVisible("EmotionalSexEducation") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#2B395E" />
+                  {!isCardVisible("EmotionalSexEducation") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#2B395E" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("EmotionalSexEducation") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.emotionalSexEducation.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("EmotionalSexEducation") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.emotionalSexEducation.description")}
                 </Text>
+                {!isCardVisible("EmotionalSexEducation") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
             {/* Sexual Orientation Issues Card */}
             {shouldShowCategory("SexualOrientationIssues") && (
               <Pressable
-                style={styles.categoryCard}
-                onPress={() => navigation.navigate("SexualOrientationIssuesScreen")}
+                style={[styles.categoryCard, !isCardVisible("SexualOrientationIssues") && styles.lockedCard]}
+                onPress={() => {
+                  if (!isCardVisible("SexualOrientationIssues")) {
+                    setBlockedPlan("basic");
+                    setDialogVisible(true);
+                  } else {
+                    navigation.navigate("SexualOrientationIssuesScreen");
+                  }
+                }}
               >
                 <View style={styles.taskHeader}>
                   <View style={styles.taskIconContainer}>
-                    <CustomIcon type="IO" name="people-circle-outline" size={24} color="#FF8C00" />
+                    <CustomIcon type="IO" name="people-circle-outline" size={24} color={!isCardVisible("SexualOrientationIssues") ? "#999" : "#FF8C00"} />
                   </View>
-                  <CustomIcon type="IO" name="chevron-forward" size={16} color="#2B395E" />
+                  {!isCardVisible("SexualOrientationIssues") ? (
+                    <CustomIcon type="IO" name="lock-closed" size={16} color="#999" />
+                  ) : (
+                    <CustomIcon type="IO" name="chevron-forward" size={16} color="#2B395E" />
+                  )}
                 </View>
-                <Text style={styles.categoryTitle}>
+                <Text style={[styles.categoryTitle, !isCardVisible("SexualOrientationIssues") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.sexualOrientationIssues.title")}
                 </Text>
-                <Text style={styles.categoryDescription}>
+                <Text style={[styles.categoryDescription, !isCardVisible("SexualOrientationIssues") && styles.lockedText]}>
                   {t("mindToolsScreen.categories.sexualOrientationIssues.description")}
                 </Text>
+                {!isCardVisible("SexualOrientationIssues") && (
+                  <View style={styles.premiumBadge}>
+                    <Text style={styles.premiumBadgeText}>Premium</Text>
+                  </View>
+                )}
               </Pressable>
             )}
 
@@ -1778,6 +2407,29 @@ const styles = StyleSheet.create({
   filterOptionTextSelected: {
     color: '#FF8C00',
     fontWeight: '600',
+  },
+  // Locked card styles
+  lockedCard: {
+    opacity: 0.5,
+    backgroundColor: '#f5f5f5',
+  },
+  lockedText: {
+    color: '#999',
+  },
+  premiumBadge: {
+    position: 'absolute',
+    top: 8,
+    right: 8,
+    backgroundColor: '#FF8C00',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 4,
+  },
+  premiumBadgeText: {
+    color: '#fff',
+    fontSize: 10,
+    fontWeight: '700',
+    textTransform: 'uppercase',
   },
 });
 

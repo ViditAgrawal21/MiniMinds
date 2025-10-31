@@ -12,10 +12,10 @@
     "profile": "Profile"
   },
   "upgradeDialog": {
-    "title": "Ultra Access Required",
-    "message": "This feature requires ultra access. Upgrade now to unlock CBT and REBT therapeutic strategies along with other ultra features.",
-    "upgradeButton": "Upgrade to Ultra",
-    "cancelButton": "Cancel"
+    "title": "Premium Features Coming Soon",
+    "message": "Premium features will be available soon. Stay tuned for updates!",
+    "upgradeButton": "Got It",
+    "cancelButton": "Close"
   },
   "privacyNotice": {
     "title": "Privacy TLDR",
@@ -262,11 +262,11 @@
     },
     "upgradeDialog": {
       "premium": {
-        "title": "Ultra Plan Required",
-        "message": "All EQ tests require a Premium plan. Upgrade now to access these features and enjoy our complete emotional intelligence assessment suite."
+        "title": "Premium Features Coming Soon",
+        "message": "Premium features will be available soon. Stay tuned for updates!"
       },
-      "upgradeButton": "Upgrade Now",
-      "cancelButton": "Cancel"
+      "upgradeButton": "Got It",
+      "cancelButton": "Close"
     },
     "statusModal": {
       "completed": {
@@ -843,8 +843,10 @@
       "latestRecommendedTiers": "Latest recommended tiers: {{tiers}}"
     },
     "scanTypes": {
+      "ADHD": "ADHD",
       "Addictions": "Addictions",
       "Anger Management": "Anger Management",
+      "Anxiety issues (PTSD/Phobia/Panic/Conversion)": "Anxiety Issues",
       "Common Psychological Issues": "Common Psychological Issues",
       "Environment Issues Affecting Mental Wellbeing": "Environment Issues Affecting Mental Wellbeing",
       "Family and Relationship": "Family and Relationship",
@@ -1390,15 +1392,15 @@
     "jobInsecurityQuestion": "Job Insecurity",
     "upgradeDialog": {
       "basic": {
-        "title": "Premium Plan Required",
-        "message": "This scan requires a Premium plan. Upgrade now to access this feature and unlock more wellness tools."
+        "title": "Premium Features Coming Soon",
+        "message": "This feature will be available soon with our premium plans. Stay tuned for updates!"
       },
       "premium": {
-        "title": "Ultra Plan Required",
-        "message": "This scan requires a Ultra plan. Upgrade now to access this feature and enjoy our complete wellness experience."
+        "title": "Premium Features Coming Soon",
+        "message": "This feature will be available soon with our premium plans. Stay tuned for updates!"
       },
-      "upgradeButton": "Upgrade Now",
-      "cancelButton": "Cancel"
+      "upgradeButton": "Got It",
+      "cancelButton": "Close"
     }
   },
   "upgrade": {
@@ -9125,15 +9127,15 @@
     },
     "upgradeDialog": {
       "basic": {
-        "title": "Premium Plan Required",
-        "message": "This tool requires a Premium plan. Upgrade now to access this feature and unlock more wellness tools."
+        "title": "Premium Features Coming Soon",
+        "message": "This feature will be available soon with our premium plans. Stay tuned for updates!"
       },
       "premium": {
-        "title": "Ultra Plan Required",
-        "message": "This tool requires a Ultra plan. Upgrade now to access this feature and enjoy our complete wellness experience."
+        "title": "Premium Features Coming Soon",
+        "message": "This feature will be available soon with our premium plans. Stay tuned for updates!"
       },
-      "upgradeButton": "Upgrade Now",
-      "cancelButton": "Cancel"
+      "upgradeButton": "Got It",
+      "cancelButton": "Close"
     }
   },
   "introvertChildScreen": {
