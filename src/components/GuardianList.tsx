@@ -127,21 +127,21 @@ const GuardianListScreen = () => {
               placeholder="Enter the Name of Guardian"
               value={form.name}
               onChangeText={text => setForm(f => ({ ...f, name: text }))}
-              style={{ borderBottomWidth: 1, marginBottom: 10, borderColor: '#D27AD5', borderRadius: 6, padding: 8 }}
+              style={{ borderBottomWidth: 1, marginBottom: 10, borderColor: '#D27AD5', borderRadius: 6, padding: 8, color: '#1a1a1a' }}
               placeholderTextColor="#C841CC"
             />
             <TextInput
               placeholder="Enter the Email address"
               value={form.email}
               onChangeText={text => setForm(f => ({ ...f, email: text }))}
-              style={{ borderBottomWidth: 1, marginBottom: 10, borderColor: '#D27AD5', borderRadius: 6, padding: 8 }}
+              style={{ borderBottomWidth: 1, marginBottom: 10, borderColor: '#D27AD5', borderRadius: 6, padding: 8, color: '#1a1a1a' }}
               placeholderTextColor="#C841CC"
             />
             <TextInput
               placeholder="Enter the Phone Number"
               value={form.phone}
               onChangeText={text => setForm(f => ({ ...f, phone: text }))}
-              style={{ borderBottomWidth: 1, marginBottom: 10, borderColor: '#D27AD5', borderRadius: 6, padding: 8 }}
+              style={{ borderBottomWidth: 1, marginBottom: 10, borderColor: '#D27AD5', borderRadius: 6, padding: 8, color: '#1a1a1a' }}
               keyboardType="phone-pad"
               placeholderTextColor="#C841CC"
             />
@@ -149,7 +149,7 @@ const GuardianListScreen = () => {
               placeholder="Enter Your Relation with User"
               value={form.relation}
               onChangeText={text => setForm(f => ({ ...f, relation: text }))}
-              style={{ borderBottomWidth: 1, marginBottom: 10, borderColor: '#D27AD5', borderRadius: 6, padding: 8 }}
+              style={{ borderBottomWidth: 1, marginBottom: 10, borderColor: '#D27AD5', borderRadius: 6, padding: 8, color: '#1a1a1a' }}
               placeholderTextColor="#C841CC"
             />
             <View style={{ flexDirection: "row", justifyContent: "flex-end" }}>

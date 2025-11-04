@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     fontSize: 16,
     backgroundColor: '#fff',
+    color: '#1a1a1a',
     minHeight: 48,
   },
   multilineInput: {

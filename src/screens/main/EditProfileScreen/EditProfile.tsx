@@ -260,6 +260,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     marginBottom: 15,
     fontSize: 14,
+    color: '#1a1a1a',
   },
   buttonContainer: {
     flexDirection: 'row',

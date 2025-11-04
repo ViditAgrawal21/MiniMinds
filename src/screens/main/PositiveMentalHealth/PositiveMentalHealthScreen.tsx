@@ -370,7 +370,11 @@ export default function PositiveMentalHealthScreen() {
           </View>
 
           {selectedTopic && (
-            <ScrollView style={styles.modalContent} showsVerticalScrollIndicator={false}>
+            <ScrollView 
+              style={styles.modalContent} 
+              showsVerticalScrollIndicator={false}
+              contentContainerStyle={styles.modalScrollContent}
+            >
               <View style={styles.modalTitleContainer}>
                 <Text style={styles.modalTitle}>{selectedTopic.title}</Text>
                 <Text style={styles.modalDescription}>{selectedTopic.description}</Text>
@@ -662,6 +666,9 @@ const styles = StyleSheet.create({
   modalContent: {
     flex: 1,
     backgroundColor: '#F9FAFB',
+  },
+  modalScrollContent: {
+    paddingBottom: 40,
   },
   modalTitleContainer: {
     backgroundColor: '#FFFFFF',

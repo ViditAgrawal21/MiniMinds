@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     fontSize: 16,
     backgroundColor: "#fff",
+    color: "#1a1a1a",
     fontWeight: "400",
     fontFamily: "Poppins-Regular",
     marginBottom: 16,

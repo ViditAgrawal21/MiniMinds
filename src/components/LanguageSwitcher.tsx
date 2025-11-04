@@ -16,7 +16,7 @@ const LanguageSwitcher: React.FC = () => {
   if (isLoading) {
     return (
       <View style={[styles.container, styles.loadingContainer]}>
-        <ActivityIndicator size="large" color="#007AFF" />
+        <ActivityIndicator size="large" color="#FF8C00" />
         <Text style={styles.loadingText}>{t('loading', 'Loading...')}</Text>
       </View>
     );

@@ -52,9 +52,9 @@ export default function ProfessionalMentalHealthScreen({ navigation }: any) {
         <View style={styles.illustrationContainer}>
           <View style={styles.illustrationBox}>
             <Image 
-              source={require("@/assets/images/professional-mental-health.png")}
+              source={{ uri: "https://img.youtube.com/vi/AUWhdmKyOE8/hqdefault.jpg" }}
               style={styles.illustrationImage}
-              resizeMode="contain"
+              resizeMode="cover"
             />
           </View>
         </View>

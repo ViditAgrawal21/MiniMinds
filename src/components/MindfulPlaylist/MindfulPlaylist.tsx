@@ -43,11 +43,13 @@ function VideoThumbnail({ uri, style }: ThumbProps) {
   const [isLoading, setIsLoading] = React.useState(true);
 
   // Reset when the parent passes a new URI
-  React.useEffect(() => {
-    setSourceUri(uri);
-    setFailedOnce(false);
-    setIsLoading(true);
-  }, [uri]);
+  // React.useEffect(() => {
+  //   setSourceUri(uri);
+  //   setFailedOnce(false);
+  //   setIsLoading(true);
+  // }, [uri]);
+
+  console.log("Thumbnail URI:", uri);
 
   // Nothing to show? leave the space empty
   if (!sourceUri) {
@@ -342,39 +344,39 @@ const playlistData = [
     category: "Professional Mental Health",
     items: [
       {
-        title: "APA’s Mental Health Videos on YouTube",
-        link: "https://www.youtube.com/user/AmericanPsychiatric",
-        thumbnail: null,
+        title: "What are mental health problems? - Source: Mind",
+        link: "https://www.youtube.com/watch?v=AUWhdmKyOE8",
+        thumbnail: "https://img.youtube.com/vi/AUWhdmKyOE8/hqdefault.jpg",
       },
       {
-        title: "Mental Health: Manager’s Edition and Worker’s Edition",
-        link: "https://channel1.com.au/product/mental-health-and-wellbeing/",
-        thumbnail: null,
+        title: "5 MOST COMMON Mental Illnesses EXPLAINED - Source: Junior Doctor",
+        link: "https://www.youtube.com/watch?v=BdhbPTkfVcw",
+        thumbnail: "https://img.youtube.com/vi/BdhbPTkfVcw/hqdefault.jpg",
       },
       {
-        title: "Is Technology Dangerous to Our Mental Health?",
-        link: "https://tom.makematic.com/is-technology-dangerous-to-our-mental-health/",
-        thumbnail: null,
+        title: "Every Mental Illness Explained in 8 Minutes - Source: YouTube",
+        link: "https://www.youtube.com/watch?v=3NKqq20W538",
+        thumbnail: "https://img.youtube.com/vi/3NKqq20W538/hqdefault.jpg",
       },
       {
-        title: "Hiding in Plain Sight: Youth Mental Illness",
-        link: "https://www.pbs.org/show/hiding-plain-sight-youth-mental-illness/",
-        thumbnail: null,
+        title: "Financial Stress & Mental Health - Source: Dr. Greg Jantz",
+        link: "https://www.youtube.com/watch?v=tc5xG7or648",
+        thumbnail: "https://img.youtube.com/vi/tc5xG7or648/hqdefault.jpg",
       },
       {
-        title: "Mysteries of Mental Illness",
-        link: "https://www.pbs.org/show/mysteries-mental-illness/",
-        thumbnail: null,
+        title: "Money and Mental Health - Source: Dr. Thomas Richardson",
+        link: "https://www.youtube.com/watch?v=LbNX1YTh_6s",
+        thumbnail: "https://img.youtube.com/vi/LbNX1YTh_6s/hqdefault.jpg",
       },
       {
-        title: "Decolonizing Mental Health",
-        link: "https://www.pbs.org/show/mysteries-mental-illness/collections/decolonizing-mental-health/",
-        thumbnail: null,
+        title: "Mental Health in the Workplace - Source: Professional Guide",
+        link: "https://www.youtube.com/watch?v=w32o0bYUaWI",
+        thumbnail: "https://img.youtube.com/vi/w32o0bYUaWI/hqdefault.jpg",
       },
       {
-        title: "Working Through It",
-        link: "https://www.workplacestrategiesformentalhealth.com/resources/mental-health-awareness-videos",
-        thumbnail: null,
+        title: "Professional Mental Health Support - Source: Expert Panel",
+        link: "https://www.youtube.com/watch?v=CZGYdsuTLkk",
+        thumbnail: "https://img.youtube.com/vi/CZGYdsuTLkk/hqdefault.jpg",
       },
     ],
   },

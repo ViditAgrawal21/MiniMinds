@@ -79,7 +79,7 @@ const LanguageSelectScreen: React.FC = (reset) => {
   if (isLoading || isNavigating) {
     return (
       <SafeAreaView style={[styles.container, styles.loadingContainer]}>
-        <ActivityIndicator size="large" color="#3498db" />
+        <ActivityIndicator size="large" color="#FF8C00" />
         <Text style={styles.loadingText}>
           {isNavigating 
             ? t('languageSelect.changing', 'Changing language...') 
@@ -117,7 +117,7 @@ const LanguageSelectScreen: React.FC = (reset) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#E4E1FE",
   },
   loadingContainer: {
     justifyContent: "center",
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
   loadingText: {
     marginTop: 20,
     fontSize: 16,
-    color: "#666",
+    color: "#2B395E",
     textAlign: "center",
   },
   content: {
@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 40,
     textAlign: "center",
+    color: "#2B395E",
   },
   buttonContainer: {
     flexDirection: "row",
@@ -148,7 +149,7 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   button: {
-    backgroundColor: "#3498db",
+    backgroundColor: "#FF8C00",
     paddingVertical: 12,
     paddingHorizontal: 24,
     borderRadius: 8,
