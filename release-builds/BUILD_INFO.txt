@@ -1,0 +1,58 @@
+MiniMinds - Release Build Information
+=====================================
+
+Build Date: November 4, 2025
+Version: 1.1
+Version Code: 6
+Package Name: com.syneptlabs.miniminds
+
+Files Generated:
+----------------
+✅ MiniMinds-v1.1-build6-release.apk (~84.5 MB)
+   - Standard Android APK file
+   - For direct installation on Android devices
+   - Can be uploaded to APK-based stores
+
+✅ MiniMinds-v1.1-build6-release.aab (~46.3 MB) 
+   - Android App Bundle (Recommended for Google Play Store)
+   - Smaller file size due to dynamic delivery
+   - Optimized for Google Play Store distribution
+
+Build Configuration:
+-------------------
+- Target SDK: As configured in build.gradle
+- Min SDK: As configured in build.gradle
+- Signed with: release.keystore
+- Proguard: Disabled (enableProguardInReleaseBuilds = false)
+- Hermes: Enabled
+- React Native: 0.81.0
+
+Architecture Support:
+--------------------
+- armeabi-v7a (32-bit ARM)
+- arm64-v8a (64-bit ARM) 
+- x86 (32-bit Intel)
+- x86_64 (64-bit Intel)
+
+Recent Changes:
+--------------
+✅ Fixed search text visibility issues
+✅ Fixed text input visibility in light theme
+✅ Fixed Professional Mental Health image loading
+✅ Fixed language selection screen theming
+✅ Fixed modal content visibility
+✅ Fixed Professional Mental Health thumbnails with working YouTube video IDs
+
+Notes:
+------
+- Both APK and AAB are signed with the release keystore
+- Ready for production deployment
+- AAB is recommended for Google Play Store submission
+- APK can be used for direct distribution or other app stores
+
+Distribution Options:
+--------------------
+1. Google Play Store: Use the .aab file
+2. Direct Installation: Use the .apk file
+3. Other App Stores: Use the .apk file
+4. Enterprise Distribution: Use the .apk file

@@ -1,0 +1,28 @@
+What's new in MiniMinds v1.1 - Enhanced User Experience:
+
+🎯 INTERFACE IMPROVEMENTS
+• Fixed search text visibility issues in light theme for better usability
+• Resolved text input color problems across all forms and components  
+• Enhanced language selection screen with consistent theming and loading indicators
+• Improved modal content display and scrolling experience
+
+🖼️ CONTENT ENHANCEMENTS  
+• Added Professional Mental Health video library with working YouTube thumbnails
+• Fixed image loading issues throughout the app
+• Integrated 7 new educational videos from mental health professionals
+• Enhanced media content reliability and faster loading times
+
+🔧 BUG FIXES
+• Fixed invisible search text that made searching difficult
+• Resolved text input visibility in Guardian List, Custom Text Input, and Edit Profile screens
+• Fixed Professional Mental Health screen image loading problems
+• Enhanced modal content padding to prevent content cut-off
+• Improved YouTube thumbnail fetching system for consistent media display
+
+⚡ PERFORMANCE IMPROVEMENTS
+• Optimized thumbnail loading for faster content access
+• Enhanced component rendering efficiency
+• Improved error handling for media content
+• Better memory management for image and video content
+
+This update delivers a smoother, more intuitive experience for mental health and wellness support, making it easier to access professional resources and educational content.

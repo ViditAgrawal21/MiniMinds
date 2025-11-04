@@ -1,0 +1,29 @@
+# MiniMinds v1.1 - App Store Release Notes
+
+## 🎯 Release Name: "Enhanced User Experience"
+
+### 📱 What's New:
+• **Improved Interface**: Fixed search visibility and text input issues for better usability
+• **Enhanced Content**: Added Professional Mental Health video library with working thumbnails
+• **Better Theming**: Updated language selection with consistent design and loading indicators
+• **Media Fixes**: Resolved image loading and modal display issues
+
+### 🔧 Bug Fixes:
+• Fixed invisible search text in light theme
+• Resolved text input visibility problems
+• Fixed Professional Mental Health image loading
+• Enhanced modal content scrolling
+• Improved YouTube thumbnail integration
+
+### 📊 Performance:
+• Optimized media loading for faster content access
+• Enhanced thumbnail fetching system
+• Improved component rendering efficiency
+
+This update focuses on delivering a smoother, more intuitive experience for mental health and wellness support.
+
+---
+
+**Version:** 1.1 (Build 6)  
+**Compatibility:** Android 5.0+  
+**Size:** ~45MB (Optimized)
